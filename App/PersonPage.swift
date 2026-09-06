@@ -36,7 +36,9 @@ struct PersonPage: View {
                     NavigationLink(value: DetailRoute.article(p.id)) {
                         HStack(alignment: .center, spacing: 14) {
                             VStack(alignment: .leading, spacing: 5) {
-                                Text("生平长读").font(.headline).foregroundStyle(Theme.ink)
+                                Text("生平长读")
+                                    .font(.system(.title3, design: .serif).weight(.medium))
+                                    .foregroundStyle(Theme.ink)
                                 if !typeSize.isAccessibilitySize { Text(article.title).font(.caption).foregroundStyle(Theme.muted).lineLimit(2) }
                             }
                             Spacer(minLength: 8)
@@ -232,35 +234,21 @@ struct MajorEventsPanel: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 14) {
             sectionTitle("重大事件")
-            let categoryLayout = typeSize.isAccessibilitySize
-                ? AnyLayout(VStackLayout(alignment: .leading, spacing: 0))
-                : AnyLayout(HStackLayout(spacing: 0))
-            categoryLayout {
-                ForEach(Array(MajorEventCategory.allCases.enumerated()), id: \.element.id) { index, category in
-                    Button {
-                        withAnimation(reduceMotion ? nil : .easeOut(duration: 0.18)) { selection = category }
-                    } label: {
-                        VStack(spacing: 8) {
-                            Text(category.rawValue)
-                                .font(.subheadline.weight(selection == category ? .semibold : .regular))
-                                .foregroundStyle(selection == category ? Theme.ink : Theme.muted)
-                            Rectangle()
-                                .fill(selection == category ? Theme.cinnabar : .clear)
-                                .frame(width: 24, height: 1.5)
-                        }
-                        .frame(minHeight: 42)
-                        .frame(
-                            maxWidth: .infinity,
-                            alignment: index == 0 ? .leading : (index == MajorEventCategory.allCases.count - 1 ? .trailing : .center)
-                        )
-                        .contentShape(Rectangle())
-                    }
-                    .buttonStyle(QuietRowStyle())
-                    .accessibilityIdentifier("eventCategory_\(category.rawValue)")
-                    .accessibilityAddTraits(selection == category ? .isSelected : [])
+            if typeSize.isAccessibilitySize {
+                VStack(alignment: .leading, spacing: 0) {
+                    ForEach(MajorEventCategory.allCases) { category in categoryButton(category) }
                 }
+            } else {
+                GeometryReader { proxy in
+                    HStack(spacing: 0) {
+                        ForEach(MajorEventCategory.allCases) { category in
+                            categoryButton(category)
+                                .frame(width: proxy.size.width / CGFloat(MajorEventCategory.allCases.count))
+                        }
+                    }
+                }
+                .frame(height: 42)
             }
-            .accessibilityElement(children: .contain)
 
             if visibleEvents.isEmpty {
                 Text("暂无条目")
@@ -285,6 +273,28 @@ struct MajorEventsPanel: View {
             }
         }
         .padding(.vertical, 4)
+    }
+
+    private func categoryButton(_ category: MajorEventCategory) -> some View {
+        Button {
+            withAnimation(reduceMotion ? nil : .easeOut(duration: 0.18)) { selection = category }
+        } label: {
+            VStack(spacing: 8) {
+                Text(category.rawValue)
+                    .font(.subheadline.weight(selection == category ? .semibold : .regular))
+                    .foregroundStyle(selection == category ? Theme.ink : Theme.muted)
+                    .frame(maxWidth: .infinity, alignment: typeSize.isAccessibilitySize ? .leading : .center)
+                Rectangle()
+                    .fill(selection == category ? Theme.cinnabar : .clear)
+                    .frame(width: 24, height: 1.5)
+                    .frame(maxWidth: .infinity, alignment: typeSize.isAccessibilitySize ? .leading : .center)
+            }
+            .frame(maxWidth: .infinity, minHeight: 42)
+            .contentShape(Rectangle())
+        }
+        .buttonStyle(QuietRowStyle())
+        .accessibilityIdentifier("eventCategory_\(category.rawValue)")
+        .accessibilityAddTraits(selection == category ? .isSelected : [])
     }
 }
 

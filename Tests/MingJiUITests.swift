@@ -491,6 +491,10 @@ final class MingJiUITests: XCTestCase {
         app.buttons["eventCategory_社会"].tap()
         reach(app.buttons["event_v11_wanggongchang_1626"], in: app)
         XCTAssertTrue(app.buttons["event_v11_wanggongchang_1626"].label.contains("王恭厂大爆炸"))
+        app.buttons["event_v11_wanggongchang_1626"].tap()
+        reach(app.buttons["资料与出处"], in: app, attempts: 12); app.buttons["资料与出处"].tap()
+        XCTAssertTrue(app.buttons["source_v11_dpm_wanggongchang"].waitForExistence(timeout: 5))
+        shot("v37-numbered-sources", app)
     }
 
     @MainActor func testV8KangxiSonsAndCompactHierarchy() throws {
@@ -518,12 +522,31 @@ final class MingJiUITests: XCTestCase {
         let app = launch(enterFamily: false)
         reach(app.buttons["dynasty_zhou"], in: app, attempts: 8)
         app.buttons["dynasty_zhou"].tap()
+        XCTAssertTrue(app.buttons["zhouGuideEntry"].waitForExistence(timeout: 5))
+        reach(app.buttons["zhouGuideEntry"], in: app, attempts: 10)
+        app.buttons["zhouGuideEntry"].tap()
+        XCTAssertTrue(app.descendants(matching: .any)["zhouGuidePage"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.buttons["zhouPeriod_春秋"].exists)
         XCTAssertTrue(app.buttons["zhouTopic_confucius"].waitForExistence(timeout: 5))
         reach(app.buttons["zhouTopic_confucius"], in: app, attempts: 10)
         app.buttons["zhouTopic_confucius"].tap()
         XCTAssertTrue(app.descendants(matching: .any)["eraTopic_confucius"].waitForExistence(timeout: 5))
         XCTAssertTrue(app.staticTexts["仁、礼与君子"].exists)
         shot("v29-zhou-confucius", app)
+    }
+
+    @MainActor func testV37ZhouPeriodsAndExpandedTopics() throws {
+        let app = launch(enterFamily: false)
+        reach(app.buttons["dynasty_zhou"], in: app, attempts: 8); app.buttons["dynasty_zhou"].tap()
+        reach(app.buttons["zhouGuideEntry"], in: app, attempts: 12); app.buttons["zhouGuideEntry"].tap()
+        app.buttons["zhouPeriod_西周"].tap()
+        XCTAssertTrue(app.buttons["zhouTopic_zhou-wu"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.buttons["zhouTopic_duke-zhou"].exists)
+        app.buttons["zhouPeriod_战国"].tap()
+        XCTAssertTrue(app.buttons["zhouTopic_mencius"].waitForExistence(timeout: 5))
+        reach(app.buttons["zhouTopic_shang-yang"], in: app, attempts: 12)
+        XCTAssertTrue(app.buttons["zhouTopic_shang-yang"].exists)
+        shot("v37-zhou-guide", app)
     }
 
     @MainActor func testV29ZhuDiSignatureEventsStayVisible() throws {

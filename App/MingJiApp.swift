@@ -15,7 +15,7 @@ enum DetailRoute: Hashable {
     case personSection(String, PersonSection), relatives(String, FamilyGroup)
     case personEvents(String, MajorEventCategory)
     case person(String), family(String), connections(String), event(String), object(String), tomb(String), article(String), portrait(String)
-    case dynasty(String), prehistorySite(String), eraTopic(String), collectionCategory(String, String), about
+    case dynasty(String), prehistorySite(String), zhouGuide, eraTopic(String), collectionCategory(String, String), about
 }
 struct RootView: View {
     let store: HistoryStore
@@ -167,6 +167,7 @@ struct RouteDestination: View {
         switch route {
         case .dynasty(let id): DynastyDetailPage(store: store, dynastyID: id)
         case .prehistorySite(let id): PrehistorySitePage(store: store, siteID: id)
+        case .zhouGuide: ZhouGuidePage(store: store)
         case .eraTopic(let id): EraTopicPage(store: store, topicID: id)
         case .collectionCategory(let dynastyID, let id):
             if let category = CollectionCategory(rawValue: id) {

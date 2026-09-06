@@ -21,7 +21,7 @@ struct DynastyDetailPage: View {
                         TerritoryMapCard(store: store, map: map)
                     }
                     if dynastyID == "zhou", let guide = store.zhouGuide {
-                        ZhouTopicShelf(guide: guide)
+                        ZhouGuideEntry(guide: guide)
                     }
                     VStack(alignment: .leading, spacing: 0) {
                         Text("理解这个时代").font(.system(.title3, design: .serif).weight(.medium)).foregroundStyle(Theme.ink).padding(.bottom, 3)
@@ -46,45 +46,106 @@ struct DynastyDetailPage: View {
     }
 }
 
-private struct ZhouTopicShelf: View {
+private struct ZhouGuideEntry: View {
     let guide: EraGuide
-    private let groups = ["思想", "诸侯", "变法"]
+    var body: some View {
+        NavigationLink(value: DetailRoute.zhouGuide) {
+            VStack(alignment: .leading, spacing: 10) {
+                Text("周代专题").font(.caption.weight(.medium)).foregroundStyle(Theme.cinnabar)
+                Text(guide.title).font(.system(.title2, design: .serif).weight(.medium)).foregroundStyle(Theme.ink)
+                Text(guide.subtitle).font(.subheadline).foregroundStyle(Theme.text).lineSpacing(4)
+                Text("\(guide.topics.count)个专题　西周至战国")
+                    .font(.caption.monospacedDigit()).foregroundStyle(Theme.muted)
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding(.vertical, 18)
+            .overlay(alignment: .top) { Rectangle().fill(Theme.line.opacity(0.55)).frame(height: 0.5) }
+            .overlay(alignment: .bottom) { Rectangle().fill(Theme.line.opacity(0.55)).frame(height: 0.5) }
+            .contentShape(Rectangle())
+        }
+        .buttonStyle(QuietRowStyle())
+        .accessibilityIdentifier("zhouGuideEntry")
+    }
+}
+
+struct ZhouGuidePage: View {
+    let store: HistoryStore
+    @State private var selectedPeriod = "春秋"
+    private let periods = ["西周", "春秋", "战国"]
+    private let categories = ["建国与礼制", "诸侯与争霸", "变法与治理", "思想"]
+    private var guide: EraGuide? { store.zhouGuide }
+    private var topics: [EraTopic] { guide?.topics.filter { $0.period == selectedPeriod } ?? [] }
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 16) {
-            VStack(alignment: .leading, spacing: 7) {
-                Text(guide.title).font(.system(.title3, design: .serif).weight(.medium)).foregroundStyle(Theme.ink)
-                Text(guide.subtitle).font(.subheadline).foregroundStyle(Theme.muted).lineSpacing(4)
-            }
-            ForEach(groups, id: \.self) { group in
-                let topics = guide.topics.filter { $0.category == group }
-                if !topics.isEmpty {
-                    VStack(alignment: .leading, spacing: 0) {
-                        Text(group).font(.caption.weight(.medium)).foregroundStyle(Theme.cinnabar).padding(.bottom, 4)
-                        ForEach(topics) { topic in
-                            NavigationLink(value: DetailRoute.eraTopic(topic.id)) {
-                                VStack(alignment: .leading, spacing: 6) {
-                                    HStack(alignment: .firstTextBaseline) {
-                                        Text(topic.name).font(.system(.headline, design: .serif)).foregroundStyle(Theme.ink)
-                                        Spacer()
-                                        Text(topic.years).font(.caption.monospacedDigit()).foregroundStyle(Theme.muted)
-                                    }
-                                    Text(topic.call).font(.caption).foregroundStyle(Theme.cinnabar)
-                                    Text(topic.summary).font(.subheadline).foregroundStyle(Theme.text).lineLimit(2).lineSpacing(4)
-                                }
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                                .padding(.vertical, 15)
-                                .contentShape(Rectangle())
-                            }
-                            .buttonStyle(QuietRowStyle())
-                            .accessibilityIdentifier("zhouTopic_\(topic.id)")
-                            if topic.id != topics.last?.id { Divider().overlay(Theme.line.opacity(0.45)) }
+        ScrollView {
+            if let guide {
+                VStack(alignment: .leading, spacing: 26) {
+                    VStack(alignment: .leading, spacing: 9) {
+                        Text(guide.title).font(.system(size: 34, weight: .medium, design: .serif)).foregroundStyle(Theme.ink)
+                        Text(guide.overview).font(.body).foregroundStyle(Theme.text).lineSpacing(7)
+                    }
+                    periodSelector
+                    VStack(alignment: .leading, spacing: 26) {
+                        ForEach(categories, id: \.self) { category in
+                            let items = topics.filter { $0.category == category }
+                            if !items.isEmpty { topicGroup(category, items: items) }
                         }
                     }
                 }
+                .padding(.horizontal, 24).padding(.top, 22).padding(.bottom, 70)
             }
         }
-        .accessibilityElement(children: .contain)
+        .background(Theme.paper).foregroundStyle(Theme.text)
+        .navigationTitle("周代人物与思想").navigationBarTitleDisplayMode(.inline)
+        .toolbarBackground(Theme.paper, for: .navigationBar).toolbarBackground(.visible, for: .navigationBar)
+        .accessibilityIdentifier("zhouGuidePage")
+    }
+
+    private var periodSelector: some View {
+        GeometryReader { proxy in
+            HStack(spacing: 0) {
+                ForEach(Array(periods.enumerated()), id: \.offset) { _, period in
+                    let active = selectedPeriod == period
+                    Button {
+                        withAnimation(.easeOut(duration: 0.18)) { selectedPeriod = period }
+                    } label: {
+                        VStack(spacing: 9) {
+                            Text(period).font(.subheadline).fontWeight(active ? .semibold : .regular)
+                                .foregroundStyle(active ? Theme.ink : Theme.muted)
+                            Rectangle().fill(active ? Theme.cinnabar : .clear).frame(width: 30, height: 1.5)
+                        }
+                        .frame(width: proxy.size.width / 3)
+                        .frame(minHeight: 44)
+                        .contentShape(Rectangle())
+                    }
+                    .buttonStyle(QuietRowStyle())
+                    .accessibilityIdentifier("zhouPeriod_\(period)")
+                    .accessibilityAddTraits(active ? .isSelected : [])
+                }
+            }
+        }.frame(height: 44)
+    }
+
+    private func topicGroup(_ category: String, items: [EraTopic]) -> some View {
+        VStack(alignment: .leading, spacing: 0) {
+            Text(category).font(.caption.weight(.medium)).foregroundStyle(Theme.cinnabar).padding(.bottom, 5)
+            ForEach(items) { topic in
+                NavigationLink(value: DetailRoute.eraTopic(topic.id)) {
+                    VStack(alignment: .leading, spacing: 6) {
+                        HStack(alignment: .firstTextBaseline, spacing: 12) {
+                            Text(topic.name).font(.system(.title3, design: .serif).weight(.medium)).foregroundStyle(Theme.ink)
+                            Spacer(minLength: 8)
+                            Text(topic.years).font(.caption.monospacedDigit()).foregroundStyle(Theme.muted).multilineTextAlignment(.trailing)
+                        }
+                        Text(topic.call).font(.subheadline).foregroundStyle(Theme.text)
+                    }
+                    .frame(maxWidth: .infinity, minHeight: 62, alignment: .leading)
+                    .padding(.vertical, 12).contentShape(Rectangle())
+                }
+                .buttonStyle(QuietRowStyle()).accessibilityIdentifier("zhouTopic_\(topic.id)")
+                if topic.id != items.last?.id { Rectangle().fill(Theme.line.opacity(0.45)).frame(height: 0.5) }
+            }
+        }
     }
 }
 
@@ -97,7 +158,8 @@ struct EraTopicPage: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 26) {
                     VStack(alignment: .leading, spacing: 8) {
-                        Text(topic.category).font(.caption.weight(.medium)).foregroundStyle(Theme.cinnabar)
+                        Text([topic.period, topic.category].compactMap { $0 }.joined(separator: "　"))
+                            .font(.caption.weight(.medium)).foregroundStyle(Theme.cinnabar)
                         Text(topic.name).font(.system(size: 38, weight: .medium, design: .serif)).foregroundStyle(Theme.ink)
                         Text(topic.call).font(.title3).foregroundStyle(Theme.text)
                         Text(topic.years).font(.caption.monospacedDigit()).foregroundStyle(Theme.muted)
@@ -114,10 +176,17 @@ struct EraTopicPage: View {
                     }
                     VStack(alignment: .leading, spacing: 10) {
                         Text("资料依据").font(.system(.headline, design: .serif)).foregroundStyle(Theme.ink)
-                        ForEach(topic.sources) { source in
+                        ForEach(Array(topic.sources.enumerated()), id: \.element.id) { index, source in
                             if let url = URL(string: source.url) {
-                                Link(source.title, destination: url)
-                                    .font(.caption).foregroundStyle(Theme.cinnabar).frame(minHeight: 36, alignment: .leading)
+                                HStack(alignment: .top, spacing: 12) {
+                                    Text(String(format: "%02d", index + 1))
+                                        .font(.caption2.monospacedDigit().weight(.medium)).foregroundStyle(Theme.cinnabar)
+                                        .frame(width: 24, alignment: .leading).padding(.top, 3).accessibilityHidden(true)
+                                    Link(source.title, destination: url)
+                                        .font(.caption).foregroundStyle(Theme.cinnabar)
+                                        .multilineTextAlignment(.leading)
+                                        .frame(maxWidth: .infinity, minHeight: 36, alignment: .leading)
+                                }
                             }
                         }
                     }

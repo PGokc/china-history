@@ -112,6 +112,7 @@ struct EraTopicSection: Codable, Identifiable {
 }
 struct EraTopic: Codable, Identifiable {
     let id, name, call, years, category, summary: String
+    let period: String?
     let sections: [EraTopicSection]
     let sources: [EraTopicSource]
 }

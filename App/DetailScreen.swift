@@ -81,27 +81,54 @@ struct SourcesView: View {
     var compact = false
     var body: some View {
         if compact {
-            entries
+            entries(numbered: false)
         } else {
             VStack(alignment: .leading, spacing: 16) {
                 Divider()
-                DisclosureGroup("资料与出处") { entries.padding(.top, 12) }
+                DisclosureGroup("资料与出处") { entries(numbered: true).padding(.top, 12) }
                     .font(.subheadline).tint(Theme.muted)
             }
         }
     }
-    private var entries: some View {
-        VStack(alignment: .leading, spacing: 16) {
-            ForEach(Array(Set(ids)).sorted(), id: \.self) { id in
+    private var uniqueIDs: [String] {
+        ids.reduce(into: []) { result, id in
+            if !result.contains(id) { result.append(id) }
+        }
+    }
+    private func entries(numbered: Bool) -> some View {
+        VStack(alignment: .leading, spacing: 0) {
+            ForEach(Array(uniqueIDs.enumerated()), id: \.element) { index, id in
                 if let source = store.content.sources.first(where: { $0.id == id }), let url = URL(string: source.url) {
-                    VStack(alignment: .leading, spacing: 4) {
-                        Link(source.title, destination: url)
-                            .font(.subheadline).frame(minHeight: 44, alignment: .leading)
-                            .accessibilityHint("在浏览器中打开原始出处")
-                        if !source.note.isEmpty { Text(source.note).font(.caption).foregroundStyle(Theme.muted).fixedSize(horizontal: false, vertical: true) }
+                    HStack(alignment: .top, spacing: numbered ? 14 : 0) {
+                        if numbered {
+                            Text(String(format: "%02d", index + 1))
+                                .font(.caption2.monospacedDigit().weight(.medium))
+                                .foregroundStyle(Theme.cinnabar)
+                                .frame(width: 24, alignment: .leading)
+                                .padding(.top, 3)
+                                .accessibilityHidden(true)
+                        }
+                        VStack(alignment: .leading, spacing: 6) {
+                            Link(source.title, destination: url)
+                                .font(.subheadline)
+                                .multilineTextAlignment(.leading)
+                                .frame(maxWidth: .infinity, minHeight: 36, alignment: .leading)
+                                .accessibilityHint("在浏览器中打开原始出处")
+                                .accessibilityIdentifier("source_\(id)")
+                            if !source.note.isEmpty {
+                                Text(source.note).font(.caption).foregroundStyle(Theme.muted)
+                                    .multilineTextAlignment(.leading)
+                                    .fixedSize(horizontal: false, vertical: true)
+                            }
+                        }
+                        .frame(maxWidth: .infinity, alignment: .leading)
                     }
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.vertical, 10)
+                    if index < uniqueIDs.count - 1 { Rectangle().fill(Theme.line.opacity(0.4)).frame(height: 0.5) }
                 }
             }
         }
+        .frame(maxWidth: .infinity, alignment: .leading)
     }
 }

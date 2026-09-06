@@ -301,9 +301,13 @@ if d['version'] >= 17:
  zhou=json.loads((R/'App/Resources/zhou_topics.json').read_text())
  topic_ids={x['id'] for x in zhou['topics']}
  assert {'confucius','laozi','hanfei','chu-zhuang','zhao-wuling'} <= topic_ids
+ assert len(zhou['topics']) >= 15
+ assert {'zhou-wu','duke-zhou','qi-huan-guanzhong','jin-wen','sun-wu','mozi','mencius','zhuangzi','xunzi','shang-yang'} <= topic_ids
+ assert {x.get('period') for x in zhou['topics']} == {'西周','春秋','战国'}
+ assert {x['category'] for x in zhou['topics']} <= {'建国与礼制','诸侯与争霸','变法与治理','思想'}
  assert all(len(x['sections'])>=3 and len(x['sources'])>=2 for x in zhou['topics'])
  assert all(source['url'].startswith('https://') for x in zhou['topics'] for source in x['sources'])
- print('V17 PASS: Zhu Di’s three signature projects are discoverable; five Spring–Autumn/Warring States topics include layered text and sources')
+ print('V17 PASS: Zhu Di’s three signature projects are discoverable; fifteen Zhou topics span Western Zhou, Spring–Autumn and Warring States')
 if d['version'] == 18:
  ideas={x['id']:x for x in d['objects'] if x.get('symbol')=='brain.head.profile'}
  required={'idea_confucian_tradition','idea_daoist_tradition','idea_wang_yangming','idea_self_strengthening'}
