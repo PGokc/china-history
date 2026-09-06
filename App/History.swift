@@ -177,7 +177,7 @@ struct Content: Codable {
         }
     }
     func orderLabel(_ p: Person) -> String {
-        guard let n = p.birthOrder else { return p.kind }
+        guard let n = p.birthOrder else { return "子女" }
         return n == 1 ? "长子" : "第\(n)子"
     }
     func associates(_ id: String) -> [Association] { (content.associations ?? []).filter { $0.from == id || $0.to == id } }

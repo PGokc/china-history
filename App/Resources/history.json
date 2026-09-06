@@ -1,5 +1,5 @@
 {
-  "version": 18,
+  "version": 20,
   "reviewed": "2026-09-06",
   "people": [
     {
@@ -802,6 +802,40 @@
       "image": null
     },
     {
+      "id": "q_giocangga",
+      "name": "觉昌安",
+      "call": "清景祖（追尊）",
+      "temple": "景祖",
+      "era": "",
+      "reign": "",
+      "summary": "努尔哈赤祖父，明代建州左卫首领之一；清朝建立后被追尊为景祖翼皇帝。",
+      "kind": "清代宗室先祖",
+      "note": "又见译写“觉昌安”。追尊称号属于清朝建立后的祖先礼制，不等同于其生前称帝。",
+      "parent": null,
+      "birthOrder": null,
+      "sources": [
+        "v5qe_qsg1"
+      ],
+      "image": null
+    },
+    {
+      "id": "q_taksi",
+      "name": "塔克世",
+      "call": "清显祖（追尊）",
+      "temple": "显祖",
+      "era": "",
+      "reign": "",
+      "summary": "努尔哈赤之父。1583年与其父觉昌安同死于古勒城之战，清朝建立后被追尊为显祖宣皇帝。",
+      "kind": "清代宗室先祖",
+      "note": "追尊称号属于后来建立的宗庙世系，不应写成其生前实际帝号。",
+      "parent": "q_giocangga",
+      "birthOrder": null,
+      "sources": [
+        "v5qe_qsg1"
+      ],
+      "image": null
+    },
+    {
       "id": "q_nurhaci",
       "name": "爱新觉罗·努尔哈赤",
       "call": "天命汗",
@@ -832,7 +866,8 @@
       "kind": "皇帝",
       "note": "1592年生，1643年卒。天聪时期为后金汗，崇德时期为大清皇帝。",
       "parent": "q_nurhaci",
-      "image": "qing_hongtaiji"
+      "image": "qing_hongtaiji",
+      "birthOrder": 8
     },
     {
       "id": "q_shunzhi",
@@ -849,7 +884,8 @@
       "kind": "皇帝",
       "note": "1638年生，1661年卒。1643年即位，1644年为顺治元年。",
       "parent": "q_hongtaiji",
-      "image": "qing_shunzhi"
+      "image": "qing_shunzhi",
+      "birthOrder": 9
     },
     {
       "id": "q_kangxi",
@@ -866,7 +902,8 @@
       "kind": "皇帝",
       "note": "1654年生，1722年卒。在位六十一年，年号从次年开始。",
       "parent": "q_shunzhi",
-      "image": "qing_kangxi"
+      "image": "qing_kangxi",
+      "birthOrder": 3
     },
     {
       "id": "q_yongzheng",
@@ -901,7 +938,8 @@
       "kind": "皇帝",
       "note": "1711年生，1799年卒。1796年禅位后仍掌最高决策至去世。",
       "parent": "q_yongzheng",
-      "image": "qing_qianlong"
+      "image": "qing_qianlong",
+      "birthOrder": 4
     },
     {
       "id": "q_jiaqing",
@@ -918,7 +956,8 @@
       "kind": "皇帝",
       "note": "1760年生，1820年卒。名义在位与实际亲政须分开。",
       "parent": "q_qianlong",
-      "image": "qing_jiaqing"
+      "image": "qing_jiaqing",
+      "birthOrder": 15
     },
     {
       "id": "q_daoguang",
@@ -935,7 +974,8 @@
       "kind": "皇帝",
       "note": "1782年生，1850年卒。个人节俭不能概括其时代的制度危机。",
       "parent": "q_jiaqing",
-      "image": "qing_daoguang"
+      "image": "qing_daoguang",
+      "birthOrder": 2
     },
     {
       "id": "q_xianfeng",
@@ -952,7 +992,8 @@
       "kind": "皇帝",
       "note": "1831年生，1861年卒。1860年避往承德，翌年在热河去世。",
       "parent": "q_daoguang",
-      "image": "qing_xianfeng"
+      "image": "qing_xianfeng",
+      "birthOrder": 4
     },
     {
       "id": "q_tongzhi",
@@ -969,7 +1010,8 @@
       "kind": "皇帝",
       "note": "1856年生，1875年卒。1873年亲政，亲政时间不足两年。",
       "parent": "q_xianfeng",
-      "image": "qing_tongzhi"
+      "image": "qing_tongzhi",
+      "birthOrder": 1
     },
     {
       "id": "q_guangxu",
@@ -986,7 +1028,8 @@
       "kind": "皇帝",
       "note": "1871年生，1908年卒。是同治帝堂弟，并非其子。",
       "parent": "q_yixuan",
-      "image": "qing_guangxu"
+      "image": "qing_guangxu",
+      "birthOrder": 2
     },
     {
       "id": "q_xuantong",
@@ -1003,7 +1046,8 @@
       "kind": "皇帝",
       "note": "1906年生，1967年卒。没有庙号；伪满洲国不是清朝延续。",
       "parent": "q_zaifeng",
-      "image": "qing_xuantong"
+      "image": "qing_xuantong",
+      "birthOrder": 1
     },
     {
       "id": "q_daishan",
@@ -1016,7 +1060,7 @@
       "kind": "清代宗室与政治人物",
       "note": "1583—1648。不能把大贝勒等同于已经确定的皇太子。",
       "parent": "q_nurhaci",
-      "birthOrder": null,
+      "birthOrder": 2,
       "sources": [
         "v5qn_qsg216"
       ],
@@ -1033,7 +1077,7 @@
       "kind": "清代宗室与政治人物",
       "note": "1612—1650。死后先受尊崇、旋遭追夺，乾隆朝恢复睿亲王封号。",
       "parent": "q_nurhaci",
-      "birthOrder": null,
+      "birthOrder": 14,
       "sources": [
         "v5qn_qsg218"
       ],
@@ -1050,7 +1094,7 @@
       "kind": "清代宗室与政治人物",
       "note": "1614—1649。其南征军功与战争杀戮应同时进入评价。",
       "parent": "q_nurhaci",
-      "birthOrder": null,
+      "birthOrder": 15,
       "sources": [
         "v5qn_qsg218"
       ],
@@ -1067,7 +1111,7 @@
       "kind": "清代宗室与政治人物",
       "note": "1609—1648。豪格身后获昭雪，不等于其战争行为免于评价。",
       "parent": "q_hongtaiji",
-      "birthOrder": null,
+      "birthOrder": 1,
       "sources": [
         "v5qn_qsg219"
       ],
@@ -1135,7 +1179,7 @@
       "kind": "清代宗室与政治人物",
       "note": "1833—1898。政治起落多次，不能把晚清对外政策都归于一人。",
       "parent": "q_daoguang",
-      "birthOrder": null,
+      "birthOrder": 6,
       "sources": [
         "v5qn_qsg221"
       ],
@@ -1152,7 +1196,7 @@
       "kind": "清代宗室与政治人物",
       "note": "1840—1891。载湉入承大统后，奕譞以臣礼自处。",
       "parent": "q_daoguang",
-      "birthOrder": null,
+      "birthOrder": 7,
       "sources": [
         "v5qn_qsg221"
       ],
@@ -2596,6 +2640,48 @@
       "title": "中国政府网 · 中国近代史概况",
       "url": "https://www.gov.cn/guoqing/2021-04/09/content_5555766.htm",
       "note": "概述洋务派、自强求富及洋务运动对近代化进程的影响。"
+    },
+    {
+      "id": "v19_cssn_yangming",
+      "title": "中国社会科学网 · 王阳明《传习录》及其思想",
+      "url": "https://www.cssn.cn/zx/zx_rdkx/202505/t20250513_5873568.shtml",
+      "note": "说明程朱理学的官学地位，以及王阳明心学的形成与实践取向。"
+    },
+    {
+      "id": "v19_cssn_taizhou",
+      "title": "中国社会科学网 · 泰州学派与儒学日用化",
+      "url": "https://www.cssn.cn/dfpd/gdzxbd/202509/t20250922_5916619.shtml",
+      "note": "介绍王艮、百姓日用即道与泰州学派的平民化倾向。"
+    },
+    {
+      "id": "v19_cssn_xixue",
+      "title": "中国社会科学网 · 晚明清初格物之学的中西会通",
+      "url": "https://www.cssn.cn/skgz/bwyc/202404/t20240408_5745159.shtml",
+      "note": "说明徐光启、利玛窦、《几何原本》与晚明实学转向。"
+    },
+    {
+      "id": "v19_cssn_huang",
+      "title": "中国社会科学网 · 黄宗羲思想及其现代展开",
+      "url": "https://www.cssn.cn/skgz/bwyc/202408/t20240812_5770106.shtml",
+      "note": "梳理明清之际对君主政治、民本与公共治理的反思。"
+    },
+    {
+      "id": "v19_cssn_kaozheng",
+      "title": "中国社会科学网 · 清代经学与乾嘉考据",
+      "url": "https://www.cssn.cn/skgz/bwyc/202604/t20260409_5979776.shtml",
+      "note": "说明清初考据兴起、乾嘉时期发展及其经学研究方法。"
+    },
+    {
+      "id": "v19_cppcc_reform",
+      "title": "全国政协 · 洋务运动与维新变法",
+      "url": "https://www.cppcc.gov.cn/zxww/xinhai100/tansuo/index.shtml",
+      "note": "概述自强求富、中体西用与戊戌维新的制度改革主张。"
+    },
+    {
+      "id": "v19_nopss_keju",
+      "title": "全国哲学社会科学工作办公室 · 科举停废与近代中国社会",
+      "url": "https://www.nopss.gov.cn/GB/230165/236301/16514199.html",
+      "note": "说明废科举、新式教育、报刊传播与清末社会结构变化。"
     }
   ],
   "relations": [
@@ -6224,52 +6310,18 @@
       ]
     },
     {
-      "id": "idea_confucian_tradition",
-      "title": "儒家传统",
-      "subtitle": "从仁礼之学到明清制度与士人生活",
-      "symbol": "brain.head.profile",
-      "body": "儒家并不是两千多年里始终不变的一套答案。先秦儒者以仁、礼、德性与修身讨论个人、家庭和政治秩序；宋明学者又在佛、道思想的挑战下，重新解释心、性、理与实践。\n\n明清时期，朱熹所整理的经典体系深刻影响科举与士人教育，儒学也进入礼制、家族和日常伦理。与此同时，王阳明等人对既有解释提出新的路径。理解儒家，需要同时看到经典、制度与现实生活之间不断发生的调整。",
-      "note": "“儒家”是跨越多个时代、内部持续分化的思想传统，不宜把某一位思想家的主张等同于全部儒学。",
-      "image": null,
-      "people": [],
-      "sources": [
-        "v18_sep_confucius",
-        "v18_sep_songming"
-      ],
-      "dynasties": [
-        "ming",
-        "qing"
-      ]
-    },
-    {
-      "id": "idea_daoist_tradition",
-      "title": "道家思想",
-      "subtitle": "从老庄文本到自然、无为与多种历史解释",
-      "symbol": "brain.head.profile",
-      "body": "道家思想通常以《老子》《庄子》为重要起点，关注“道”、自然、无为以及人在变化世界中的处境。它对强制、名分和固化价值保持警惕，并用水、道路和万物变化等意象讨论行动与秩序。\n\n后世所谓道家、道教和老庄之学彼此相关，却不能简单视为同一个概念。明清人的政治讨论、文学艺术与个人修养中，都能看到老庄思想被重新解释和使用。",
-      "note": "页面讨论的是思想史中的道家传统；宗教道教另有自身的经典、组织和仪式历史。",
-      "image": null,
-      "people": [],
-      "sources": [
-        "v18_sep_daoism"
-      ],
-      "dynasties": [
-        "ming",
-        "qing"
-      ]
-    },
-    {
       "id": "idea_wang_yangming",
       "title": "王阳明心学",
       "subtitle": "心即理、知行合一与致良知",
       "symbol": "brain.head.profile",
-      "body": "王守仁，号阳明，是明代最有影响力的思想家之一。他把道德判断与人的内在实践紧密联系起来，以“心即理”“知行合一”“致良知”等命题回应当时的学术与政治困境。\n\n“知行合一”并不是先知道再去行动，而是强调真正的道德认识必然落实为行动；脱离实践的口头知识并不充分。阳明后学在中晚明形成多条支流，影响士人讲学、社会行动，也引发对空谈心性的批评。",
+      "body": "王守仁，号阳明，是明代最有影响力的思想家之一。他把道德判断与人的内在实践紧密联系起来，以“心即理”“知行合一”“致良知”等命题回应当时的学术与政治困境。\n\n“知行合一”并不是先知道再去行动，而是强调真正的道德认识必然落实为行动；脱离实践的口头知识并不充分。阳明后学在中晚明形成多条支流，影响士人讲学、社会行动，也引发对空谈心性的批评。\n\n它的传播也依靠书院、讲会、弟子往来和地方官员网络。思想进入现实后，既能鼓励道德行动，也可能被批评为忽视经典考证与具体制度。",
       "note": "心学并非一句励志格言。阅读时应区分王阳明本人的论述、后学发展和后世的通俗化解释。",
       "image": null,
       "people": [
         "houzhao"
       ],
       "sources": [
+        "v19_cssn_yangming",
         "v18_sep_songming"
       ],
       "dynasties": [
@@ -6289,7 +6341,141 @@
         "q_tongzhi"
       ],
       "sources": [
-        "v18_gov_yangwu"
+        "v18_gov_yangwu",
+        "v19_cppcc_reform"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "idea_ming_chengzhu",
+      "title": "程朱理学与科举",
+      "subtitle": "官学秩序、四书解释与士人仕途",
+      "symbol": "brain.head.profile",
+      "body": "明代承接元代以来以朱熹《四书章句集注》为核心的经学秩序。学校教育、科举命题与士人的入仕道路相互联结，程朱理学因此不只是书斋中的哲学，也成为国家选官和地方教化的重要语言。\n\n官学地位并不意味着思想完全一致。读书人既在共同的经典框架中竞争，也不断争论如何理解“格物”“心性”和道德实践。到明代中期，王阳明正是在程朱理学占优势的环境中提出新的解释。\n\n从洪武朝学校建设到科举答卷格式，国家所要求的是可共同评判的经典语言；具体政治选择仍受皇权、官僚程序和地方处境制约。",
+      "note": "本页讨论明代制度化的程朱理学，不能把科举文章、地方教化与所有士人的真实信念视为完全相同。",
+      "image": null,
+      "people": [
+        "youtang",
+        "houzhao"
+      ],
+      "sources": [
+        "v19_cssn_yangming",
+        "v18_sep_songming"
+      ],
+      "dynasties": [
+        "ming"
+      ]
+    },
+    {
+      "id": "idea_ming_taizhou",
+      "title": "泰州学派与民间讲学",
+      "subtitle": "百姓日用、良知与晚明社会",
+      "symbol": "brain.head.profile",
+      "body": "王艮从阳明学出发，在明代中后期形成泰州学派。学者以“百姓日用即道”等说法，把道德实践从士大夫书斋推向日常生活，并通过讲会、师友网络向商人、农人和手工业者传播。\n\n泰州后学内部差异很大，既有人强调尊身、安身和百姓生活，也出现何心隐、李贽等更具批判性的声音。它反映了晚明商业社会、民间讲学与士人思想变化之间的联系，不能概括成单一的“反传统”运动。\n\n讲学活动扩大了思想参与者的范围，也引起朝廷和部分士大夫对结社、议论与社会秩序的警惕。思想传播与晚明政治环境因此相互牵动。",
+      "note": "“泰州学派”是后世概括的学术谱系；成员主张并不完全一致，也不宜把后来的启蒙概念直接套到每位人物身上。",
+      "image": null,
+      "people": [
+        "houcong",
+        "yijun"
+      ],
+      "sources": [
+        "v19_cssn_taizhou"
+      ],
+      "dynasties": [
+        "ming"
+      ]
+    },
+    {
+      "id": "idea_ming_xixue",
+      "title": "晚明实学与西学会通",
+      "subtitle": "徐光启、利玛窦与格物知识的新边界",
+      "symbol": "brain.head.profile",
+      "body": "晚明士人面对历法、农政、水利和边防等现实问题，形成更重实证与实用知识的学术取向。徐光启与利玛窦合作翻译《几何原本》前六卷，又参与历法、测量和农学研究，以传统“格物穷理”的语言理解来自欧洲的数学和自然知识。\n\n这场交流同时包含科学、宗教与政治。传教士带来新的世界地图、天文方法和宗教观念，中国士人则主动选择、翻译和改造。它扩大了晚明知识世界，却没有在短时间内取代原有学术与制度。",
+      "note": "“西学东渐”不是西方知识单向输入；翻译、选择、质疑和本土解释同样决定了知识如何传播。",
+      "image": null,
+      "people": [
+        "yijun",
+        "youjian"
+      ],
+      "sources": [
+        "v19_cssn_xixue"
+      ],
+      "dynasties": [
+        "ming"
+      ]
+    },
+    {
+      "id": "idea_qing_jingshi",
+      "title": "明清之际的经世反思",
+      "subtitle": "黄宗羲、顾炎武、王夫之面对王朝覆亡",
+      "symbol": "brain.head.profile",
+      "body": "明亡清兴使许多学者重新追问政治败坏、士人责任和学问用途。黄宗羲反思君主专制及学校、法制与公共治理；顾炎武强调学问应回应制度与民生；王夫之则在历史与哲学著述中讨论治乱兴亡。\n\n这些思想形成于明清交替的创伤之中，与遗民身份、抗清经历和清初秩序密切相关。三人的立场与体系并不相同，把他们合称为“经世反思”，是为了呈现共同问题，而不是制造一个统一学派。\n\n与此同时，清廷通过科举、修史与尊崇程朱理学重建正统。遗民的批判与新王朝的文化整合共同构成清初思想世界。",
+      "note": "相关著作后来获得新的解释，但不能直接等同于近代民主或民族国家理论。",
+      "image": null,
+      "people": [
+        "q_shunzhi",
+        "q_kangxi"
+      ],
+      "sources": [
+        "v19_cssn_huang"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "idea_qing_kaozheng",
+      "title": "乾嘉考据学",
+      "subtitle": "从经典字句、制度名物回到可核查证据",
+      "symbol": "brain.head.profile",
+      "body": "清初以来，经学研究逐渐重视文字、音韵、训诂、校勘和制度名物。到乾隆、嘉庆时期，考据方法形成显著学术风气，学者通过版本与材料互证，纠正经典流传和旧注中的问题。\n\n考据学并非只有琐碎辨字，它提高了文献整理的精密程度，也影响历史、金石和目录之学。不过，不同学者对义理、现实政治和学术目的仍有分歧，不能把整个清代学术缩写成单一的“乾嘉汉学”。\n\n文字狱与政治环境是否直接造成考据转向，学界有不同解释。更稳妥的理解，是把材料条件、学术积累、制度环境和学者选择同时纳入。",
+      "note": "“乾嘉考据学”是概括性的学术史名称；其兴起跨越清初至嘉道时期，内部有不同地域与师承。",
+      "image": null,
+      "people": [
+        "q_qianlong",
+        "q_jiaqing"
+      ],
+      "sources": [
+        "v19_cssn_kaozheng"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "idea_qing_reform",
+      "title": "维新变法",
+      "subtitle": "从器物自强走向制度改革",
+      "symbol": "brain.head.profile",
+      "body": "甲午战败后，康有为、梁启超等维新人士把民族危机与制度改革联系起来，借助学会、报刊和上书传播变法主张。1898年，光绪帝颁布诏令，改革教育、行政、经济和军事，史称戊戌变法。\n\n变法很快在政变中中止，但公共舆论、新式学堂与政治制度的讨论继续扩散。维新派内部并非意见一致，其主张也受到日本明治经验、西方政治知识和传统经学解释的共同影响。\n\n它与此前洋务运动的差别，在于改革者把议院、官制和教育制度本身纳入讨论；但新旧主张之间仍存在延续，并非突然从技术学习跳到全盘改变。",
+      "note": "戊戌变法既是政治事件，也是观念传播过程；评价其成败，需要区分诏令设计、实际执行与长期影响。",
+      "image": null,
+      "people": [
+        "q_guangxu"
+      ],
+      "sources": [
+        "v19_cppcc_reform"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "idea_qing_new_policy",
+      "title": "清末新政与废科举",
+      "subtitle": "旧制度退出，新式教育与职业世界形成",
+      "symbol": "brain.head.profile",
+      "body": "1901年后，清廷推行新政，改革官制、军制、教育、法律和财政。1905年科举停废，持续千余年的经典考试不再是士人进入官僚体系的主要通道；新式学堂、留学、报刊和专业资格逐渐塑造新的知识人与职业群体。\n\n制度变化推动法律、国民、地方自治与立宪等观念传播，也打破了旧有士绅秩序的稳定路径。新政旨在挽救清朝统治，许多措施却产生超出朝廷控制的社会后果，并延续到民国。\n\n新式教育扩大知识来源，也使传统功名持有者和乡村社会承受转型压力。制度退出带来的机会与失序，需要放在同一幅图景中观察。",
+      "note": "废科举不是单独一道命令造成的瞬间现代化，应与学制改革、就业结构和地方社会变化一并理解。",
+      "image": null,
+      "people": [
+        "q_guangxu",
+        "q_xuantong"
+      ],
+      "sources": [
+        "v19_nopss_keju"
       ],
       "dynasties": [
         "qing"
@@ -6403,73 +6589,73 @@
       "id": "q_0",
       "person": "q_nurhaci",
       "years": "1616—1626",
-      "transition": "建后金，1626年去世；生前并未使用清朝国号"
+      "transition": "开创后金"
     },
     {
       "id": "q_1",
       "person": "q_hongtaiji",
       "years": "1626—1643",
-      "transition": "继任后金大汗，1636年称帝并改国号为清"
+      "transition": "父 → 子"
     },
     {
       "id": "q_2",
       "person": "q_shunzhi",
       "years": "1643—1661",
-      "transition": "幼年即位，多尔衮摄政；1644年清军入关"
+      "transition": "父 → 子"
     },
     {
       "id": "q_3",
       "person": "q_kangxi",
       "years": "1661—1722",
-      "transition": "幼年即位，1669年亲自掌权"
+      "transition": "父 → 子"
     },
     {
       "id": "q_4",
       "person": "q_yongzheng",
       "years": "1722—1735",
-      "transition": "康熙帝去世后即位，后建立秘密建储制度"
+      "transition": "父 → 子"
     },
     {
       "id": "q_5",
       "person": "q_qianlong",
       "years": "1735—1796",
-      "transition": "1735年即位；1796年禅位，仍以太上皇身份掌权至1799年"
+      "transition": "父 → 子"
     },
     {
       "id": "q_6",
       "person": "q_jiaqing",
       "years": "1796—1820",
-      "transition": "受禅即位；乾隆帝1799年去世后开始实际亲政"
+      "transition": "父 → 子 · 受禅即位"
     },
     {
       "id": "q_7",
       "person": "q_daoguang",
       "years": "1820—1850",
-      "transition": "嘉庆帝去世后即位，任内经历鸦片战争"
+      "transition": "父 → 子"
     },
     {
       "id": "q_8",
       "person": "q_xianfeng",
       "years": "1850—1861",
-      "transition": "道光帝去世后即位，内外交困加深"
+      "transition": "父 → 子"
     },
     {
       "id": "q_9",
       "person": "q_tongzhi",
       "years": "1861—1875",
-      "transition": "幼年即位，两宫皇太后垂帘听政"
+      "transition": "父 → 子"
     },
     {
       "id": "q_10",
       "person": "q_guangxu",
       "years": "1875—1908",
-      "transition": "被选为同治帝嗣子入继大统，慈禧太后长期掌握最高权力"
+      "transition": "堂兄 → 堂弟 · 嗣子入继"
     },
     {
       "id": "q_11",
       "person": "q_xuantong",
       "years": "1908—1912",
-      "transition": "幼年即位，1912年退位诏书终结清朝统治"
+      "transition": "叔 → 侄 · 兼祧入继"
     }
   ],
   "tombs": [
@@ -7482,6 +7668,24 @@
       "sources": [
         "v2f_ms126"
       ]
+    },
+    {
+      "from": "q_taksi",
+      "to": "q_giocangga",
+      "kind": "father",
+      "sources": [
+        "v5qe_qsg1"
+      ],
+      "note": "父子关系；清朝建立后纳入追尊祖先世系。"
+    },
+    {
+      "from": "q_nurhaci",
+      "to": "q_taksi",
+      "kind": "father",
+      "sources": [
+        "v5qe_qsg1"
+      ],
+      "note": "生父关系；塔克世后来被追尊为显祖。"
     }
   ],
   "articles": [

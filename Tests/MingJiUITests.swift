@@ -577,4 +577,31 @@ final class MingJiUITests: XCTestCase {
         shot("v33-person-overview", app)
     }
 
+    @MainActor func testV34ExpandedFamilyAndQingSuccessionLanguage() throws {
+        let app = launch()
+        XCTAssertTrue(app.buttons["relative_di"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["祖先"].exists)
+        XCTAssertTrue(app.staticTexts["子女"].exists)
+        shot("v34-expanded-family", app)
+
+        app.tabBars.buttons["朝代"].tap()
+        reach(app.buttons["dynasty_qing"], in: app, attempts: 18)
+        app.buttons["dynasty_qing"].tap()
+        XCTAssertTrue(app.navigationBars.firstMatch.waitForExistence(timeout: 5))
+        app.navigationBars.buttons.element(boundBy: 0).tap()
+        shot("v34-dynasty-selection", app)
+
+        app.tabBars.buttons["家族"].tap()
+        XCTAssertTrue(app.buttons["relative_q_taksi"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["第8子"].exists)
+        XCTAssertTrue(app.staticTexts["第14子"].exists)
+        shot("v35-qing-expanded-lineage", app)
+
+        app.tabBars.buttons["帝序"].tap()
+        XCTAssertTrue(app.descendants(matching: .any)["successionPage_qing"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["开创后金"].exists)
+        XCTAssertTrue(app.staticTexts["父子相承"].exists)
+        shot("v34-qing-succession", app)
+    }
+
 }

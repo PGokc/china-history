@@ -131,14 +131,21 @@ struct DynastyRow: View {
                 .foregroundStyle(isSelected ? Theme.cinnabar : Theme.muted)
                 .multilineTextAlignment(typeSize.isAccessibilitySize ? .leading : .trailing)
                 .fixedSize(horizontal: false, vertical: true)
+            if isSelected {
+                VStack(spacing: -1) {
+                    Text("当")
+                    Text("前")
+                }
+                .font(.system(size: 9, design: .serif).weight(.medium))
+                .foregroundStyle(Theme.cinnabar)
+                .frame(width: 24, height: 36)
+                .overlay { Rectangle().stroke(Theme.cinnabar.opacity(0.82), lineWidth: 0.8) }
+                .transition(.opacity.combined(with: .scale(scale: 0.9)))
+                .accessibilityHidden(true)
+            }
         }
         .padding(.vertical, 20).padding(.horizontal, 16)
-        .background(isSelected ? Theme.ink.opacity(0.045) : Color.clear)
-        .overlay(alignment: .leading) {
-            Rectangle().fill(Theme.cinnabar)
-                .frame(width: 2, height: isSelected ? 34 : 0)
-                .opacity(isSelected ? 1 : 0)
-        }
+        .background(isSelected ? Theme.cinnabar.opacity(0.025) : Color.clear)
         .animation(.easeOut(duration: 0.22), value: isSelected)
         .contentShape(Rectangle())
     }
@@ -230,6 +237,7 @@ struct FamilyPage: View {
         VStack(spacing: 0) {
             let parents = store.parents(selected)
             if !parents.isEmpty && !typeSize.isAccessibilitySize {
+                familySectionHeading("祖先", detail: "父母与上一代")
                 HStack(alignment: .top, spacing: 12) {
                     ForEach(parents) { link in
                         node(store.person(link.to), label: store.parentLabel(link.kind), direction: .top)
@@ -241,6 +249,7 @@ struct FamilyPage: View {
                 .transition(reduceMotion ? .identity : .asymmetric(insertion: .move(edge: edge).combined(with: .opacity), removal: .opacity))
             if typeSize.isAccessibilitySize && !parents.isEmpty {
                 VStack(spacing: 10) {
+                    familySectionHeading("祖先", detail: "父母与上一代")
                     ForEach(parents) { link in
                         node(store.person(link.to), label: store.parentLabel(link.kind), direction: .top)
                     }
@@ -260,17 +269,48 @@ struct FamilyPage: View {
                 }.padding(.top, 8)
             }
             let children = store.children(selected)
-            if children.count > 3 {
+            if !children.isEmpty {
                 BranchConnector(count: 1, upward: false).frame(height: 22)
-                NavigationRow(title: "全部子女", subtitle: "\(children.count)位，姓名、封号与排行", symbol: "person.2", route: .relatives(selected, .children), identifier: "allChildren")
-            } else if !children.isEmpty {
-                if !typeSize.isAccessibilitySize { BranchConnector(count: children.count, upward: false).frame(height: 30) }
-                let layout = typeSize.isAccessibilitySize ? AnyLayout(VStackLayout(spacing: 12)) : AnyLayout(HStackLayout(alignment: .top, spacing: 12))
-                layout {
-                    ForEach(children) { child in node(child, label: store.orderLabel(child), direction: .bottom) }
-                }.padding(.top, typeSize.isAccessibilitySize ? 16 : 0)
+                HStack(alignment: .firstTextBaseline) {
+                    familySectionHeading("子女", detail: "\(children.count)位，按已知排行")
+                    Spacer(minLength: 12)
+                    NavigationLink(value: DetailRoute.relatives(selected, .children)) {
+                        Text("查看排行").font(.caption).foregroundStyle(Theme.cinnabar).frame(minHeight: 44)
+                    }
+                    .buttonStyle(QuietRowStyle())
+                    .accessibilityIdentifier("allChildren")
+                }
+                let columns = typeSize.isAccessibilitySize ? [GridItem(.flexible())] : [GridItem(.flexible(), spacing: 12), GridItem(.flexible())]
+                LazyVGrid(columns: columns, alignment: .leading, spacing: 12) {
+                    ForEach(children) { child in childNode(child) }
+                }
             }
         }.accessibilityElement(children: .contain)
+    }
+    func familySectionHeading(_ title: String, detail: String) -> some View {
+        VStack(alignment: .leading, spacing: 3) {
+            Text(title).font(.system(.headline, design: .serif)).foregroundStyle(Theme.ink)
+            Text(detail).font(.caption2).foregroundStyle(Theme.muted)
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding(.bottom, 10)
+    }
+    func childNode(_ person: Person) -> some View {
+        Button { focus(person.id, from: .bottom) } label: {
+            VStack(alignment: .leading, spacing: 5) {
+                Text(store.orderLabel(person)).font(.caption2).foregroundStyle(Theme.cinnabar)
+                Text(person.name.replacingOccurrences(of: "爱新觉罗·", with: ""))
+                    .font(.system(.headline, design: .serif)).foregroundStyle(Theme.ink)
+                Text(person.call).font(.caption2).foregroundStyle(Theme.muted).lineLimit(1)
+            }
+            .frame(maxWidth: .infinity, minHeight: 62, alignment: .leading)
+            .padding(.horizontal, 12).padding(.vertical, 10)
+            .background(.white.opacity(0.48))
+            .overlay { Rectangle().stroke(Theme.line.opacity(0.42), lineWidth: 0.5) }
+        }
+        .buttonStyle(QuietRowStyle())
+        .accessibilityIdentifier("relative_\(person.id)")
+        .accessibilityLabel("\(store.orderLabel(person))，\(person.name)，切换人物")
     }
     var hero: some View {
         Group {
@@ -449,7 +489,9 @@ private struct SuccessionRow: View {
 
     private var transitionText: String {
         switch item.transition {
+        case "开创后金": return "开创后金"
         case "父 → 子": return "父子相承"
+        case "父 → 子 · 受禅即位": return "父子相承，受禅即位"
         case "祖父 → 孙": return "祖孙相承"
         case "侄 → 叔 · 靖难夺位": return "靖难夺位"
         case "父 → 子 · 首次在位": return "父子相承，首次在位"
@@ -457,6 +499,8 @@ private struct SuccessionRow: View {
         case "弟 → 兄 · 夺门复位": return "夺门复位"
         case "兄 → 弟": return "兄弟相继"
         case "堂兄 → 堂弟": return "旁支入继"
+        case "堂兄 → 堂弟 · 嗣子入继": return "堂弟以嗣子入继"
+        case "叔 → 侄 · 兼祧入继": return "侄辈兼祧入继"
         default:
             return item.transition
                 .replacingOccurrences(of: " → ", with: "至")

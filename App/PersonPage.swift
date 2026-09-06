@@ -284,20 +284,23 @@ struct FamilyMembersPage: View {
     var people: [Person] { group == .children ? store.children(personID) : store.siblings(store.person(personID)) }
     var body: some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: 12) {
-                Text(store.person(personID).name).font(.subheadline).foregroundStyle(Theme.cinnabar)
-                Text("按已知排行列示").font(.caption).foregroundStyle(Theme.muted)
+            VStack(alignment: .leading, spacing: 18) {
+                VStack(alignment: .leading, spacing: 5) {
+                    Text(store.person(personID).name).font(.system(.title3, design: .serif).weight(.medium)).foregroundStyle(Theme.ink)
+                    Text(group == .children ? "按已知排行列示" : "按亲缘关系列示").font(.caption).foregroundStyle(Theme.muted)
+                }
                 VStack(spacing: 0) {
                     ForEach(people) { person in
                         NavigationLink(value: DetailRoute.family(person.id)) {
-                            HStack(alignment: .center, spacing: 16) {
-                                Text(store.orderLabel(person)).font(.caption).foregroundStyle(Theme.cinnabar).frame(width: 52, alignment: .leading)
-                                VStack(alignment: .leading, spacing: 4) {
+                            VStack(alignment: .leading, spacing: 5) {
+                                Text(group == .children ? store.orderLabel(person) : store.siblingLabel(person, relativeTo: store.person(personID)))
+                                    .font(.caption2).foregroundStyle(Theme.cinnabar)
+                                HStack(alignment: .firstTextBaseline, spacing: 10) {
                                     Text(person.name.replacingOccurrences(of: "爱新觉罗·", with: "")).font(.system(.headline, design: .serif)).foregroundStyle(Theme.ink)
-                                    Text(person.call).font(.caption).foregroundStyle(Theme.muted)
+                                    Text(person.call).font(.caption).foregroundStyle(Theme.muted).lineLimit(1)
+                                    Spacer(minLength: 0)
                                 }
-                                Spacer(minLength: 8)
-                            }.frame(minHeight: 52).contentShape(Rectangle())
+                            }.frame(maxWidth: .infinity, minHeight: 58, alignment: .leading).padding(.vertical, 11).contentShape(Rectangle())
                                 .overlay(alignment: .bottom) { Rectangle().fill(Theme.line.opacity(0.45)).frame(height: 0.5) }
                         }.buttonStyle(QuietRowStyle()).accessibilityIdentifier("member_\(person.id)")
                     }

@@ -304,7 +304,7 @@ if d['version'] >= 17:
  assert all(len(x['sections'])>=3 and len(x['sources'])>=2 for x in zhou['topics'])
  assert all(source['url'].startswith('https://') for x in zhou['topics'] for source in x['sources'])
  print('V17 PASS: Zhu Di’s three signature projects are discoverable; five Spring–Autumn/Warring States topics include layered text and sources')
-if d['version'] >= 18:
+if d['version'] == 18:
  ideas={x['id']:x for x in d['objects'] if x.get('symbol')=='brain.head.profile'}
  required={'idea_confucian_tradition','idea_daoist_tradition','idea_wang_yangming','idea_self_strengthening'}
  assert required <= ideas.keys(),('missing idea topics',required-ideas.keys())
@@ -313,3 +313,32 @@ if d['version'] >= 18:
  assert ideas['idea_self_strengthening']['dynasties']==['qing']
  assert all(len(x['body'])>120 and x['sources'] for x in ideas.values())
  print('V18 PASS: four sourced thought-and-change topics are classified for Ming and Qing browsing')
+if d['version'] >= 19:
+ ideas={x['id']:x for x in d['objects'] if x.get('symbol')=='brain.head.profile'}
+ required={
+  'idea_ming_chengzhu','idea_wang_yangming','idea_ming_taizhou','idea_ming_xixue',
+  'idea_qing_jingshi','idea_qing_kaozheng','idea_self_strengthening',
+  'idea_qing_reform','idea_qing_new_policy'
+ }
+ assert required == ideas.keys(),('unexpected thought topics',required ^ ideas.keys())
+ assert all(x['dynasties']==['ming'] for key,x in ideas.items() if key.startswith('idea_ming_') or key=='idea_wang_yangming')
+ assert all(x['dynasties']==['qing'] for key,x in ideas.items() if key.startswith('idea_qing_') or key=='idea_self_strengthening')
+ assert all(len(x['body'])>180 and x['sources'] and set(x['sources'])<=sources.keys() for x in ideas.values())
+ q_transitions={x['id']:x['transition'] for x in d['sequence'] if x['id'].startswith('q_')}
+ assert q_transitions['q_1']=='父 → 子' and q_transitions['q_9']=='父 → 子'
+ assert q_transitions['q_10']=='堂兄 → 堂弟 · 嗣子入继'
+ assert q_transitions['q_11']=='叔 → 侄 · 兼祧入继'
+ print('V19 PASS: nine dynasty-specific thought topics and concise Qing succession relations are verified')
+if d['version'] >= 20:
+ people={p['id']:p for p in d['people']}
+ assert people['q_taksi']['parent']=='q_giocangga'
+ assert people['q_nurhaci'].get('birthOrder') is None
+ expected_orders={
+  'q_hongtaiji':8,'q_shunzhi':9,'q_kangxi':3,'q_qianlong':4,
+  'q_daishan':2,'q_dorgon':14,'q_dodo':15,'q_hoog':1,
+  'q_yixin':6,'q_yixuan':7
+ }
+ assert all(people[person_id]['birthOrder']==order for person_id,order in expected_orders.items())
+ links={(x['from'],x['to'],x['kind']) for x in d['familyLinks']}
+ assert ('q_nurhaci','q_taksi','father') in links and ('q_taksi','q_giocangga','father') in links
+ print('V20 PASS: Qing founder ancestry and visible child-order labels are sourced and explicit')
