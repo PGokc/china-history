@@ -1,6 +1,6 @@
 {
-  "version": 17,
-  "reviewed": "2026-09-05",
+  "version": 18,
+  "reviewed": "2026-09-06",
   "people": [
     {
       "id": "yuanzhang",
@@ -2572,6 +2572,30 @@
       "title": "韩建业：寺洼遗址——马家窑文化最大最重要的聚落遗址",
       "url": "https://www.cssn.cn/kgxc/kgxc_kgxl/202502/t20250228_5855037.shtml",
       "note": "2025年2月28日。区分马家窑文化整体年代与寺洼大型聚落约5000年前的年代。"
+    },
+    {
+      "id": "v18_sep_confucius",
+      "title": "斯坦福哲学百科 · 孔子",
+      "url": "https://plato.stanford.edu/entries/confucius/",
+      "note": "梳理孔子思想、礼与德性，以及儒家传统在帝制时代的延展。"
+    },
+    {
+      "id": "v18_sep_songming",
+      "title": "斯坦福哲学百科 · 宋明儒学",
+      "url": "https://plato.stanford.edu/entries/song-ming-confucianism/",
+      "note": "介绍宋明儒学的思想脉络，以及朱熹、王阳明在传统中的位置。"
+    },
+    {
+      "id": "v18_sep_daoism",
+      "title": "斯坦福哲学百科 · 道家思想",
+      "url": "https://plato.stanford.edu/entries/daoism/",
+      "note": "说明道家作为思想传统的形成、核心概念与历史分化。"
+    },
+    {
+      "id": "v18_gov_yangwu",
+      "title": "中国政府网 · 中国近代史概况",
+      "url": "https://www.gov.cn/guoqing/2021-04/09/content_5555766.htm",
+      "note": "概述洋务派、自强求富及洋务运动对近代化进程的影响。"
     }
   ],
   "relations": [
@@ -6197,6 +6221,78 @@
       "sources": [
         "v5qe_saac_abdication",
         "v5qn_qing_annals"
+      ]
+    },
+    {
+      "id": "idea_confucian_tradition",
+      "title": "儒家传统",
+      "subtitle": "从仁礼之学到明清制度与士人生活",
+      "symbol": "brain.head.profile",
+      "body": "儒家并不是两千多年里始终不变的一套答案。先秦儒者以仁、礼、德性与修身讨论个人、家庭和政治秩序；宋明学者又在佛、道思想的挑战下，重新解释心、性、理与实践。\n\n明清时期，朱熹所整理的经典体系深刻影响科举与士人教育，儒学也进入礼制、家族和日常伦理。与此同时，王阳明等人对既有解释提出新的路径。理解儒家，需要同时看到经典、制度与现实生活之间不断发生的调整。",
+      "note": "“儒家”是跨越多个时代、内部持续分化的思想传统，不宜把某一位思想家的主张等同于全部儒学。",
+      "image": null,
+      "people": [],
+      "sources": [
+        "v18_sep_confucius",
+        "v18_sep_songming"
+      ],
+      "dynasties": [
+        "ming",
+        "qing"
+      ]
+    },
+    {
+      "id": "idea_daoist_tradition",
+      "title": "道家思想",
+      "subtitle": "从老庄文本到自然、无为与多种历史解释",
+      "symbol": "brain.head.profile",
+      "body": "道家思想通常以《老子》《庄子》为重要起点，关注“道”、自然、无为以及人在变化世界中的处境。它对强制、名分和固化价值保持警惕，并用水、道路和万物变化等意象讨论行动与秩序。\n\n后世所谓道家、道教和老庄之学彼此相关，却不能简单视为同一个概念。明清人的政治讨论、文学艺术与个人修养中，都能看到老庄思想被重新解释和使用。",
+      "note": "页面讨论的是思想史中的道家传统；宗教道教另有自身的经典、组织和仪式历史。",
+      "image": null,
+      "people": [],
+      "sources": [
+        "v18_sep_daoism"
+      ],
+      "dynasties": [
+        "ming",
+        "qing"
+      ]
+    },
+    {
+      "id": "idea_wang_yangming",
+      "title": "王阳明心学",
+      "subtitle": "心即理、知行合一与致良知",
+      "symbol": "brain.head.profile",
+      "body": "王守仁，号阳明，是明代最有影响力的思想家之一。他把道德判断与人的内在实践紧密联系起来，以“心即理”“知行合一”“致良知”等命题回应当时的学术与政治困境。\n\n“知行合一”并不是先知道再去行动，而是强调真正的道德认识必然落实为行动；脱离实践的口头知识并不充分。阳明后学在中晚明形成多条支流，影响士人讲学、社会行动，也引发对空谈心性的批评。",
+      "note": "心学并非一句励志格言。阅读时应区分王阳明本人的论述、后学发展和后世的通俗化解释。",
+      "image": null,
+      "people": [
+        "houzhao"
+      ],
+      "sources": [
+        "v18_sep_songming"
+      ],
+      "dynasties": [
+        "ming"
+      ]
+    },
+    {
+      "id": "idea_self_strengthening",
+      "title": "洋务运动",
+      "subtitle": "在内忧外患中追求自强与求富",
+      "symbol": "brain.head.profile",
+      "body": "十九世纪六十至九十年代，清朝部分官员在战争与内乱的压力下推动洋务事业，以“自强”“求富”为主要口号，兴办军事工业、民用企业、新式学堂，派遣留学生，并尝试建设近代海军。\n\n洋务运动首先服务于清王朝的自救，没有完成政治制度的根本改造，也未能阻止甲午战争的失败。不过，它引入机器生产、近代技术教育和新的经营组织，成为中国近代化进程中的重要阶段。把它放入“思想与变革”，是为了同时观察观念、制度和技术实践如何彼此推动。",
+      "note": "洋务运动是政治、军事、经济和教育改革的综合过程，并非单纯的思想流派。",
+      "image": null,
+      "people": [
+        "q_yixin",
+        "q_tongzhi"
+      ],
+      "sources": [
+        "v18_gov_yangwu"
+      ],
+      "dynasties": [
+        "qing"
       ]
     }
   ],

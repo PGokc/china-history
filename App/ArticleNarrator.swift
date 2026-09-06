@@ -25,9 +25,6 @@ struct NarrationVoiceOption: Identifiable, Hashable {
         if key.contains("li-mu") || key.contains("limu") { return "李沐" }
         if key.contains("yu-shu") || key.contains("yushu") { return "语舒" }
         if key.contains("tingting") || key.contains("ting-ting") { return "婷婷" }
-        if id.lowercased().contains("siri") {
-            return gender == .male ? "沉稳男声" : "自然女声"
-        }
         return gender == .male ? "普通话男声" : "普通话女声"
     }
     var character: String {
@@ -176,7 +173,7 @@ final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDele
         try? session.setActive(true)
 
         let utterance = AVSpeechUtterance(string: Self.spokenText(for: section))
-        utterance.voice = AVSpeechSynthesisVoice(identifier: selectedVoiceID) ?? AVSpeechSynthesisVoice(language: "zh-CN")
+        utterance.voice = Self.mandarinVoice(identifier: selectedVoiceID)
         utterance.rate = speed.rate
         utterance.pitchMultiplier = 1.0
         utterance.prefersAssistiveTechnologySettings = false
@@ -220,22 +217,41 @@ final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDele
     }
 
     private static func installedChineseVoices() -> [NarrationVoiceOption] {
-        AVSpeechSynthesisVoice.speechVoices()
-            .filter {
-                $0.language == "zh-CN"
-                    && !$0.identifier.lowercased().contains("eloquence")
-                    && !$0.identifier.lowercased().contains("novelty")
-            }
-            .map(NarrationVoiceOption.init)
-            .sorted {
-                let lhsSiri = $0.id.lowercased().contains("siri") ? 0 : 1
-                let rhsSiri = $1.id.lowercased().contains("siri") ? 0 : 1
-                if lhsSiri != rhsSiri { return lhsSiri < rhsSiri }
-                if $0.qualityRank != $1.qualityRank { return $0.qualityRank > $1.qualityRank }
-                return $0.name.localizedStandardCompare($1.name) == .orderedAscending
-            }
-            .prefix(4)
-            .map { $0 }
+        let preferredNames = ["tingting", "ting-ting", "yu-shu", "yushu", "li-mu", "limu"]
+        let candidates = AVSpeechSynthesisVoice.speechVoices().filter { voice in
+            let language = voice.language.replacingOccurrences(of: "_", with: "-").lowercased()
+            let key = "\(voice.name) \(voice.identifier)".lowercased()
+            return language == "zh-cn"
+                && !key.contains("siri")
+                && !key.contains("eloquence")
+                && !key.contains("novelty")
+                && !key.contains("personal")
+                && preferredNames.contains(where: { key.contains($0) })
+        }
+
+        var bestByName: [String: NarrationVoiceOption] = [:]
+        for voice in candidates.map(NarrationVoiceOption.init) {
+            let key = voice.displayName
+            if let current = bestByName[key], current.qualityRank >= voice.qualityRank { continue }
+            bestByName[key] = voice
+        }
+        let order = ["婷婷": 0, "语舒": 1, "李沐": 2]
+        return bestByName.values.sorted {
+            let left = order[$0.displayName] ?? 99
+            let right = order[$1.displayName] ?? 99
+            if left != right { return left < right }
+            return $0.qualityRank > $1.qualityRank
+        }.prefix(4).map { $0 }
+    }
+
+    private static func mandarinVoice(identifier: String) -> AVSpeechSynthesisVoice? {
+        if let voice = AVSpeechSynthesisVoice(identifier: identifier),
+           voice.language.replacingOccurrences(of: "_", with: "-").lowercased() == "zh-cn",
+           !voice.identifier.lowercased().contains("siri") {
+            return voice
+        }
+        return installedChineseVoices().first.flatMap { AVSpeechSynthesisVoice(identifier: $0.id) }
+            ?? AVSpeechSynthesisVoice(language: "zh-CN")
     }
 
     nonisolated func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didFinish utterance: AVSpeechUtterance) {
@@ -384,7 +400,7 @@ struct NarrationSettingsSheet: View {
                             Rectangle().fill(Theme.line.opacity(0.45)).frame(height: 0.5)
                         }
                         if narrator.voices.isEmpty { Text("未发现可用的中文系统声音").font(.subheadline).foregroundStyle(Theme.muted) }
-                        Text("只显示适合长文的普通话声音，最多四种。若这里只有一种，请在系统设置的“辅助功能—朗读内容—声音—中文”中下载语舒、李沐或优化音质版本。")
+                        Text("这里只显示设备中已安装的中国大陆普通话声音。需要更多选择，可在系统的中文声音设置中下载语舒或李沐。")
                             .font(.caption).foregroundStyle(Theme.muted).lineSpacing(4)
                     }
                 }.padding(24)

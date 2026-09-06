@@ -304,3 +304,12 @@ if d['version'] >= 17:
  assert all(len(x['sections'])>=3 and len(x['sources'])>=2 for x in zhou['topics'])
  assert all(source['url'].startswith('https://') for x in zhou['topics'] for source in x['sources'])
  print('V17 PASS: Zhu Di’s three signature projects are discoverable; five Spring–Autumn/Warring States topics include layered text and sources')
+if d['version'] >= 18:
+ ideas={x['id']:x for x in d['objects'] if x.get('symbol')=='brain.head.profile'}
+ required={'idea_confucian_tradition','idea_daoist_tradition','idea_wang_yangming','idea_self_strengthening'}
+ assert required <= ideas.keys(),('missing idea topics',required-ideas.keys())
+ assert {'ming','qing'} <= set(ideas['idea_confucian_tradition']['dynasties'])
+ assert ideas['idea_wang_yangming']['dynasties']==['ming']
+ assert ideas['idea_self_strengthening']['dynasties']==['qing']
+ assert all(len(x['body'])>120 and x['sources'] for x in ideas.values())
+ print('V18 PASS: four sourced thought-and-change topics are classified for Ming and Qing browsing')

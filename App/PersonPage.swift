@@ -14,7 +14,7 @@ struct PersonPage: View {
     var p: Person { store.person(personID) }
     var body: some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: 22) {
+            VStack(alignment: .leading, spacing: 30) {
                 HStack(alignment: .top, spacing: 18) {
                     if store.portrait(p.id) != nil || store.image(p.id) != nil {
                         NavigationLink(value: DetailRoute.portrait(p.id)) {
@@ -25,13 +25,13 @@ struct PersonPage: View {
                         }.buttonStyle(QuietRowStyle()).accessibilityIdentifier("portraitEntry")
                     }
                     VStack(alignment: .leading, spacing: 8) {
-                        Text(p.kind).font(.caption).foregroundStyle(Theme.cinnabar)
+                        Text(p.kind).font(.caption.weight(.medium)).foregroundStyle(Theme.cinnabar)
                         Text(p.name).font(.system(.largeTitle, design: .serif)).foregroundStyle(Theme.ink)
                         Text(p.call).font(.subheadline).foregroundStyle(Theme.muted)
                         if p.kind == "皇帝" { Text("在位 \(p.reign)").font(.caption).monospacedDigit() }
                     }.frame(maxWidth: .infinity, alignment: .leading)
                 }
-                if !typeSize.isAccessibilitySize { Text(p.summary).font(.subheadline).lineSpacing(5).fixedSize(horizontal: false, vertical: true) }
+                if !typeSize.isAccessibilitySize { Text(p.summary).font(.body).lineSpacing(7).fixedSize(horizontal: false, vertical: true) }
                 if let article = store.article(p.id) {
                     NavigationLink(value: DetailRoute.article(p.id)) {
                         HStack(alignment: .center, spacing: 14) {
@@ -40,8 +40,9 @@ struct PersonPage: View {
                                 if !typeSize.isAccessibilitySize { Text(article.title).font(.caption).foregroundStyle(Theme.muted).lineLimit(2) }
                             }
                             Spacer(minLength: 8)
-                        }.padding(.vertical, 16).frame(maxWidth: .infinity, alignment: .leading).contentShape(Rectangle())
-                            .overlay(alignment: .top) { Rectangle().fill(Theme.ink).frame(height: 1) }
+                        }.padding(.vertical, 17).frame(maxWidth: .infinity, alignment: .leading).contentShape(Rectangle())
+                            .overlay(alignment: .top) { Rectangle().fill(Theme.line.opacity(0.8)).frame(height: 0.5) }
+                            .overlay(alignment: .bottom) { Rectangle().fill(Theme.line.opacity(0.8)).frame(height: 0.5) }
                     }.buttonStyle(QuietRowStyle()).accessibilityIdentifier("articleEntry")
                 }
                 PersonQuickLinks(items: quickLinks)
@@ -67,16 +68,16 @@ struct PersonPage: View {
     }
     var quickLinks: [PersonQuickItem] {
         var items: [PersonQuickItem] = []
-        if store.hasFamily(p.id) || !store.associates(p.id).isEmpty { items.append(.init(id: "category_relationships", title: "关系", symbol: "person.2", route: .personSection(p.id, .relationships))) }
-        if p.kind != "皇帝" && !store.events(p.id).isEmpty { items.append(.init(id: "category_events", title: "事件", symbol: "clock", route: .personEvents(p.id, store.preferredEventCategory(p.id)))) }
-        if store.tomb(p.id) != nil || !store.objects(p.id).isEmpty { items.append(.init(id: "category_remains", title: "遗珍", symbol: "building.columns", route: .personSection(p.id, .remains))) }
-        items.append(.init(id: "category_records", title: "资料", symbol: "doc.text", route: .personSection(p.id, .records)))
+        if store.hasFamily(p.id) || !store.associates(p.id).isEmpty { items.append(.init(id: "category_relationships", title: "人物关系", subtitle: relationSummary, route: .personSection(p.id, .relationships))) }
+        if p.kind != "皇帝" && !store.events(p.id).isEmpty { items.append(.init(id: "category_events", title: "重大事件", subtitle: "\(store.events(p.id).count)项相关事件", route: .personEvents(p.id, store.preferredEventCategory(p.id)))) }
+        if store.tomb(p.id) != nil || !store.objects(p.id).isEmpty { items.append(.init(id: "category_remains", title: "遗珍与陵寝", subtitle: heritageSummary, route: .personSection(p.id, .remains))) }
+        items.append(.init(id: "category_records", title: "称号与资料", subtitle: p.kind == "皇帝" ? "庙号、年号与史料依据" : "生平称号与史料依据", route: .personSection(p.id, .records)))
         return items
     }
 }
 
 struct PersonQuickItem: Identifiable {
-    let id, title, symbol: String
+    let id, title, subtitle: String
     let route: DetailRoute
 }
 
@@ -84,21 +85,18 @@ struct PersonQuickLinks: View {
     @Environment(\.dynamicTypeSize) private var typeSize
     let items: [PersonQuickItem]
     var body: some View {
-        let layout = typeSize.isAccessibilitySize
-            ? AnyLayout(VStackLayout(alignment: .leading, spacing: 0))
-            : AnyLayout(HStackLayout(spacing: 0))
-        layout {
+        VStack(alignment: .leading, spacing: 0) {
+            Text("继续了解").font(.system(.title3, design: .serif).weight(.medium)).foregroundStyle(Theme.ink).padding(.bottom, 8)
             ForEach(Array(items.enumerated()), id: \.element.id) { index, item in
-                if index > 0 && !typeSize.isAccessibilitySize { Rectangle().fill(Theme.line.opacity(0.55)).frame(width: 0.5, height: 30) }
                 NavigationLink(value: item.route) {
-                    VStack(spacing: 7) {
-                        Text(item.title).font(.subheadline).foregroundStyle(Theme.ink)
-                    }.frame(maxWidth: .infinity, minHeight: 52)
+                    VStack(alignment: .leading, spacing: 5) {
+                        Text(item.title).font(.headline).foregroundStyle(Theme.ink)
+                        if !item.subtitle.isEmpty { Text(item.subtitle).font(.caption).foregroundStyle(Theme.muted).lineLimit(typeSize.isAccessibilitySize ? nil : 2) }
+                    }.frame(maxWidth: .infinity, minHeight: 54, alignment: .leading).padding(.vertical, 12).contentShape(Rectangle())
                 }.buttonStyle(QuietRowStyle()).accessibilityIdentifier(item.id)
+                if index < items.count - 1 { Rectangle().fill(Theme.line.opacity(0.5)).frame(height: 0.5) }
             }
         }
-        .overlay(alignment: .top) { Rectangle().fill(Theme.line.opacity(0.7)).frame(height: 0.5) }
-        .overlay(alignment: .bottom) { Rectangle().fill(Theme.line.opacity(0.7)).frame(height: 0.5) }
     }
 }
 

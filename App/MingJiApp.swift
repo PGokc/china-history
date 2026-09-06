@@ -30,9 +30,8 @@ struct RootView: View {
         self.store = store
         let savedDynasty = UserDefaults.standard.string(forKey: "selectedDynasty") ?? "ming"
         let dynasty = ["ming", "qing"].contains(savedDynasty) ? savedDynasty : "ming"
-        let recent = UserDefaults.standard.string(forKey: "lastPerson_\(dynasty)") ?? store.defaultPerson(in: dynasty)
         _selectedDynasty = State(initialValue: dynasty)
-        _selected = State(initialValue: store.validPerson(recent, in: dynasty) ? recent : store.defaultPerson(in: dynasty))
+        _selected = State(initialValue: store.defaultPerson(in: dynasty))
     }
     var body: some View {
         TabView(selection: $tab) {
@@ -59,22 +58,20 @@ struct RootView: View {
                     // second launch without --uitesting to verify persistence.
                     let defaults = UserDefaults.standard
                     defaults.removeObject(forKey: "selectedDynasty")
-                    defaults.removeObject(forKey: "lastPerson_ming")
-                    defaults.removeObject(forKey: "lastPerson_qing")
                     selectedDynasty = "ming"; selected = "yuanzhang"; tab = 0
                 }
             }
             .onChange(of: selectedDynasty) { _, dynasty in
                 UserDefaults.standard.set(dynasty, forKey: "selectedDynasty")
-                let recent = UserDefaults.standard.string(forKey: "lastPerson_\(dynasty)") ?? store.defaultPerson(in: dynasty)
-                selected = store.validPerson(recent, in: dynasty) ? recent : store.defaultPerson(in: dynasty)
+                selected = store.defaultPerson(in: dynasty)
                 familyPath.removeAll(); sequencePath.removeAll(); collectionPath.removeAll()
             }
-            .onChange(of: selected) { _, id in
-                if store.validPerson(id, in: selectedDynasty) { UserDefaults.standard.set(id, forKey: "lastPerson_\(selectedDynasty)") }
-            }
-            .onChange(of: tab) { _, _ in
+            .onChange(of: tab) { _, newTab in
                 NotificationCenter.default.post(name: .stopArticleNarration, object: nil)
+                if newTab == 2 {
+                    selected = store.defaultPerson(in: selectedDynasty)
+                    familyPath.removeAll()
+                }
             }
     }
 }
@@ -135,8 +132,14 @@ struct DynastyRow: View {
                 .multilineTextAlignment(typeSize.isAccessibilitySize ? .leading : .trailing)
                 .fixedSize(horizontal: false, vertical: true)
         }
-        .padding(.vertical, 20).padding(.horizontal, 14)
-        .background(isSelected ? Theme.cinnabar.opacity(0.07) : Color.clear, in: RoundedRectangle(cornerRadius: 6))
+        .padding(.vertical, 20).padding(.horizontal, 16)
+        .background(isSelected ? Theme.ink.opacity(0.045) : Color.clear)
+        .overlay(alignment: .leading) {
+            Rectangle().fill(Theme.cinnabar)
+                .frame(width: 2, height: isSelected ? 34 : 0)
+                .opacity(isSelected ? 1 : 0)
+        }
+        .animation(.easeOut(duration: 0.22), value: isSelected)
         .contentShape(Rectangle())
     }
 }
@@ -220,8 +223,6 @@ struct FamilyPage: View {
                 if !store.siblings(p).isEmpty { siblings }
             }.padding(.horizontal, 24).padding(.top, 14).padding(.bottom, 72)
         }.background(Theme.paper).foregroundStyle(Theme.text)
-            .onAppear { UserDefaults.standard.set(selected, forKey: "lastPerson_\(dynastyID)") }
-            .onChange(of: selected) { _, id in UserDefaults.standard.set(id, forKey: "lastPerson_\(dynastyID)") }
             .navigationTitle(isRoot ? (dynastyID == "qing" ? "清朝家族" : "明朝家族") : "\(p.name)家族").navigationBarTitleDisplayMode(.inline).toolbarBackground(Theme.paper, for: .navigationBar).toolbarBackground(.visible, for: .navigationBar)
             .toolbar { if isRoot { ToolbarItem(placement: .topBarTrailing) { NavigationLink(value: DetailRoute.about) { Image(systemName: "info.circle").font(.system(size: 17)) }.accessibilityLabel("阅读说明") } } }
     }
@@ -474,7 +475,7 @@ struct CollectionPage: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 0) {
-                Text(dynastyID == "qing" ? "从器物与陵寝，看清代生活、制度与皇室记忆。" : "从器物与陵寝，看明代工艺、知识与皇室记忆。")
+                Text(dynastyID == "qing" ? "从思想、器物与陵寝，理解清代的制度、生活与时代转折。" : "从思想、器物与陵寝，理解明代的知识、工艺与社会面貌。")
                     .font(.subheadline).foregroundStyle(Theme.muted).lineSpacing(4).padding(.bottom, 24)
                 ForEach(categories) { category in
                     NavigationLink(value: DetailRoute.collectionCategory(dynastyID, category.rawValue)) {
@@ -499,7 +500,8 @@ struct CollectionPage: View {
     private func artifacts(for category: CollectionCategory) -> [Artifact] {
         store.objects(in: dynastyID).filter { object in
             switch category {
-            case .objects: return !Self.isBook(object) && !Self.isArchitecture(object)
+            case .ideas: return Self.isIdea(object)
+            case .objects: return !Self.isIdea(object) && !Self.isBook(object) && !Self.isArchitecture(object)
             case .texts: return Self.isBook(object)
             case .architecture: return Self.isArchitecture(object)
             case .tombs: return false
@@ -510,16 +512,17 @@ struct CollectionPage: View {
         object.symbol == "book.closed" || object.symbol == "music.note" || object.symbol == "doc.text"
     }
     fileprivate static func isArchitecture(_ object: Artifact) -> Bool { object.symbol.hasPrefix("building.columns") }
+    fileprivate static func isIdea(_ object: Artifact) -> Bool { object.symbol == "brain.head.profile" }
 }
 
 private enum CollectionCategory: String, CaseIterable, Identifiable {
-    case objects, texts, architecture, tombs
+    case ideas, objects, texts, architecture, tombs
     var id: String { rawValue }
     var title: String {
-        switch self { case .objects: return "器物"; case .texts: return "典籍文书"; case .architecture: return "建筑与纪念"; case .tombs: return "帝王陵寝" }
+        switch self { case .ideas: return "思想与变革"; case .objects: return "器物"; case .texts: return "典籍文书"; case .architecture: return "建筑与纪念"; case .tombs: return "帝王陵寝" }
     }
     var note: String {
-        switch self { case .objects: return "瓷器与日常物质遗存"; case .texts: return "制度、知识与艺术文本"; case .architecture: return "宫殿、寺院与纪念空间"; case .tombs: return "陵区、墓主与皇位传承" }
+        switch self { case .ideas: return "观念如何形成，又如何改变时代"; case .objects: return "瓷器与日常物质遗存"; case .texts: return "制度、知识与艺术文本"; case .architecture: return "宫殿、寺院与纪念空间"; case .tombs: return "陵区、墓主与皇位传承" }
     }
 }
 
@@ -531,7 +534,8 @@ private struct CollectionCategoryPage: View {
     private var artifacts: [Artifact] {
         store.objects(in: dynastyID).filter { object in
             switch category {
-            case .objects: return !CollectionPage.isBook(object) && !CollectionPage.isArchitecture(object)
+            case .ideas: return CollectionPage.isIdea(object)
+            case .objects: return !CollectionPage.isIdea(object) && !CollectionPage.isBook(object) && !CollectionPage.isArchitecture(object)
             case .texts: return CollectionPage.isBook(object)
             case .architecture: return CollectionPage.isArchitecture(object)
             case .tombs: return false

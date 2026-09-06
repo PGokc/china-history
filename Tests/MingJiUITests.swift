@@ -126,7 +126,7 @@ final class MingJiUITests: XCTestCase {
         XCTAssertTrue(app.buttons["articleContents"].isHittable)
         shot("v25-reader", app)
     }
-    @MainActor func testFamilyMotherSwipeAndPersistence() throws {
+    @MainActor func testFamilyExplorationAndFreshEntry() throws {
         let app = launch(); shot("01-family", app)
         app.buttons["relative_ma"].tap()
         XCTAssertTrue(app.buttons["personHero"].label.contains("马氏"))
@@ -143,7 +143,9 @@ final class MingJiUITests: XCTestCase {
         app.buttons["relative_zhanji"].tap()
         app.terminate(); app.launchArguments = []; app.launch(); XCTAssertTrue(app.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10)); app.tabBars.buttons["家族"].tap()
         XCTAssertTrue(app.buttons["personHero"].waitForExistence(timeout: 10))
-        XCTAssertTrue(app.buttons["personHero"].label.contains("朱瞻基"))
+        let founderShown = NSPredicate(format: "label CONTAINS %@", "朱元璋")
+        expectation(for: founderShown, evaluatedWith: app.buttons["personHero"])
+        waitForExpectations(timeout: 3)
         app.buttons["personHero"].tap()
         XCTAssertTrue(app.buttons["portraitEntry"].waitForExistence(timeout: 5))
         app.buttons["portraitEntry"].tap(); shot("03-portrait",app)
@@ -547,7 +549,32 @@ final class MingJiUITests: XCTestCase {
         for rejected in ["Eddy", "Flo", "Grandma", "Grandpa", "Reed", "Rocko", "Sandy", "Shelley"] {
             XCTAssertFalse(app.staticTexts[rejected].exists)
         }
+        for index in 0..<voiceButtons.count {
+            XCTAssertFalse(voiceButtons.element(boundBy: index).identifier.lowercased().contains("siri"))
+        }
         shot("v29-narration-voices", app)
+    }
+
+    @MainActor func testV33ThoughtCollectionAndFreshFamilyTab() throws {
+        let app = launch(enterFamily: false)
+        app.tabBars.buttons["遗珍"].tap()
+        XCTAssertTrue(app.buttons["collectionCategory_ideas"].waitForExistence(timeout: 5))
+        app.buttons["collectionCategory_ideas"].tap()
+        XCTAssertTrue(app.buttons["artifact_idea_wang_yangming"].waitForExistence(timeout: 5))
+        app.tabBars.buttons["家族"].tap()
+        XCTAssertTrue(app.buttons["personHero"].label.contains("朱元璋"))
+        chooseChild("di", in: app)
+        XCTAssertTrue(app.buttons["personHero"].label.contains("朱棣"))
+        app.tabBars.buttons["朝代"].tap()
+        app.tabBars.buttons["家族"].tap()
+        XCTAssertTrue(app.buttons["personHero"].label.contains("朱元璋"))
+    }
+
+    @MainActor func testV33PersonOverviewVisual() throws {
+        let app = launch()
+        app.buttons["personHero"].tap()
+        XCTAssertTrue(app.buttons["articleEntry"].waitForExistence(timeout: 5))
+        shot("v33-person-overview", app)
     }
 
 }

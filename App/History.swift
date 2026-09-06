@@ -48,6 +48,7 @@ struct Artifact: Codable, Identifiable {
     let id, title, subtitle, symbol, body, note: String
     let image: String?
     let people, sources: [String]
+    let dynasties: [String]?
 }
 struct Succession: Codable, Identifiable { let id, person, years, transition: String }
 struct Tomb: Codable, Identifiable { let id, person, title, area, location, status, body, note: String; let sources: [String] }
@@ -231,7 +232,10 @@ struct Content: Codable {
     func people(in dynastyID: String) -> [Person] { content.people.filter { self.dynastyID(for: $0.id) == dynastyID } }
     func sequence(in dynastyID: String) -> [Succession] { content.sequence.filter { self.dynastyID(for: $0.person) == dynastyID } }
     func objects(in dynastyID: String) -> [Artifact] {
-        content.objects.filter { object in object.people.contains { self.dynastyID(for: $0) == dynastyID } }
+        content.objects.filter { object in
+            if let dynasties = object.dynasties { return dynasties.contains(dynastyID) }
+            return object.people.contains { self.dynastyID(for: $0) == dynastyID }
+        }
     }
     func tombs(in dynastyID: String) -> [Tomb] { (content.tombs ?? []).filter { self.dynastyID(for: $0.person) == dynastyID } }
     func defaultPerson(in dynastyID: String) -> String { dynastyID == "qing" ? "q_nurhaci" : "yuanzhang" }
