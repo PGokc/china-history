@@ -34,7 +34,7 @@ struct DynastyDetailPage: View {
                         }
                     }
                     SourcesView(store: store, ids: profile.sources)
-                }.padding(.horizontal, 24).padding(.top, 22).padding(.bottom, 70)
+                }.padding(.horizontal, 24).padding(.top, 22).padding(.bottom, 24)
             }
             .background(Theme.paper)
             .navigationTitle(dynasty.name + "概览")

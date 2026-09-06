@@ -42,12 +42,18 @@ struct ArticleReader: View {
                                 .background(GeometryReader { g in Color.clear.preference(key: ReadingPositions.self, value: [section.id: g.frame(in: .named("reading")).minY]) })
                         }
                         Divider()
-                        if !store.associates(personID).isEmpty { RelatedPeople(store: store, personID: personID, limit: 3) }
-                        if store.hasFamily(personID) {
-                            NavigationLink(value: DetailRoute.family(personID)) { Label("查看\(store.person(personID).name)家族", systemImage: "point.3.connected.trianglepath.dotted").frame(minHeight: 48) }
+                        if !store.associates(personID).isEmpty || store.hasFamily(personID) {
+                            RelatedPeople(store: store, personID: personID, limit: 6, title: "相关人物", includeFamily: true)
                         }
-                        if let tomb = store.tomb(personID) { NavigationLink("陵寝　\(tomb.title)", value: DetailRoute.tomb(tomb.id)).frame(minHeight: 44) }
-                        ForEach(store.objects(personID)) { object in NavigationLink(object.title, value: DetailRoute.object(object.id)).frame(minHeight: 44) }
+                        VStack(alignment: .leading, spacing: 0) {
+                            sectionTitle("继续探索")
+                            if store.hasFamily(personID) {
+                                NavigationRow(title: "家族世系", subtitle: "祖先、同辈与子女", symbol: "point.3.connected.trianglepath.dotted", route: .family(personID), identifier: "articleFamily")
+                            }
+                            if store.tomb(personID) != nil || !store.objects(personID).isEmpty {
+                                NavigationRow(title: "遗珍与陵寝", subtitle: articleHeritageSummary, symbol: "building.columns", route: .personSection(personID, .remains), identifier: "articleHeritage")
+                            }
+                        }
                         SourcesView(store: store, ids: article.sources)
                     }.padding(24).padding(.bottom, 28)
                 }.coordinateSpace(name: "reading").background(Theme.paper).foregroundStyle(Theme.text)
@@ -86,6 +92,10 @@ struct ArticleReader: View {
         } else {
             ContentUnavailableView("暂无长文", systemImage: "book.closed")
         }
+    }
+    private var articleHeritageSummary: String {
+        let names = [store.tomb(personID)?.title].compactMap { $0 } + store.objects(personID).map(\.title)
+        return names.prefix(2).joined(separator: "、")
     }
     @ViewBuilder func chapterLinks(_ section: ArticleSection) -> some View {
         let people = section.people ?? []

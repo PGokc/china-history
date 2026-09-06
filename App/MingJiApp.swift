@@ -444,22 +444,26 @@ private struct SuccessionRow: View {
             }
 
             VStack(alignment: .leading, spacing: 0) {
-                HStack(alignment: .firstTextBaseline, spacing: 10) {
-                    Text(person.name)
-                        .font(.system(.title3, design: .serif).weight(.semibold))
-                        .foregroundStyle(Theme.ink)
-                    Text("庙号 \(person.temple)")
-                        .font(.caption)
-                        .foregroundStyle(Theme.muted)
-                        .accessibilityIdentifier("successionTemple_\(item.id)")
-                    Spacer(minLength: 0)
-                }
+                Text(person.name)
+                    .font(.system(.title3, design: .serif).weight(.semibold))
+                    .foregroundStyle(Theme.ink)
+                    .fixedSize(horizontal: false, vertical: true)
 
-                Text("年号 \(eraName)")
-                    .font(.subheadline.weight(.medium))
-                    .foregroundStyle(Theme.cinnabar)
+                HStack(alignment: .firstTextBaseline, spacing: 12) {
+                    Text("年号 \(eraName)")
+                        .font(.subheadline.weight(.medium))
+                        .foregroundStyle(Theme.cinnabar)
+                        .accessibilityIdentifier("successionEra_\(item.id)")
+                    Spacer(minLength: 8)
+                    if !person.temple.isEmpty {
+                        Text("庙号 \(person.temple)")
+                            .font(.caption)
+                            .foregroundStyle(Theme.muted)
+                            .multilineTextAlignment(.trailing)
+                            .accessibilityIdentifier("successionTemple_\(item.id)")
+                    }
+                }
                     .padding(.top, 7)
-                    .accessibilityIdentifier("successionEra_\(item.id)")
 
                 HStack(alignment: .firstTextBaseline, spacing: 12) {
                     Text("在位 \(item.years)")

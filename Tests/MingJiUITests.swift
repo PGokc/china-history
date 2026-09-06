@@ -478,8 +478,8 @@ final class MingJiUITests: XCTestCase {
         app.buttons["eventCategory_文化"].tap()
         reach(app.buttons["event_advice"], in: app); XCTAssertTrue(app.buttons["event_advice"].isHittable)
         app.buttons["eventCategory_经济"].tap()
-        let empty = app.staticTexts["暂无条目"]
-        reach(empty, in: app); XCTAssertTrue(empty.isHittable)
+        reach(app.buttons["event_v12_hongwu_registers"], in: app)
+        XCTAssertTrue(app.buttons["event_v12_hongwu_registers"].isHittable)
         reach(app.buttons["category_events"], in: app); XCTAssertTrue(app.buttons["category_events"].isHittable)
     }
 
@@ -602,6 +602,33 @@ final class MingJiUITests: XCTestCase {
         XCTAssertTrue(app.staticTexts["开创后金"].exists)
         XCTAssertTrue(app.staticTexts["父子相承"].exists)
         shot("v34-qing-succession", app)
+    }
+
+    @MainActor func testV36ReadingHierarchyAndKangxiRelatedPeople() throws {
+        let app = launch(enterFamily: false)
+        reach(app.buttons["dynasty_qing"], in: app, attempts: 18)
+        app.buttons["dynasty_qing"].tap()
+        XCTAssertTrue(app.navigationBars.firstMatch.waitForExistence(timeout: 5))
+        app.navigationBars.buttons.element(boundBy: 0).tap()
+
+        app.tabBars.buttons["帝序"].tap()
+        reach(app.buttons["succession_q_3"], in: app, attempts: 14)
+        shot("v36-succession-metadata", app)
+        app.buttons["succession_q_3"].tap()
+        app.buttons["personHero"].tap()
+        XCTAssertTrue(app.staticTexts["人物档案"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.buttons["eventCategory_政治"].exists)
+        XCTAssertTrue(app.buttons["eventCategory_社会"].exists)
+        shot("v36-person-overview", app)
+
+        openArticle(in: app)
+        reach(app.buttons["articleFamily"], in: app, attempts: 30)
+        XCTAssertGreaterThanOrEqual(
+            app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "associate_")).count,
+            5
+        )
+        XCTAssertTrue(app.buttons["articleHeritage"].exists)
+        shot("v36-article-footer", app)
     }
 
 }

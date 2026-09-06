@@ -14,7 +14,7 @@ struct PersonPage: View {
     var p: Person { store.person(personID) }
     var body: some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: 30) {
+            VStack(alignment: .leading, spacing: 24) {
                 HStack(alignment: .top, spacing: 18) {
                     if store.portrait(p.id) != nil || store.image(p.id) != nil {
                         NavigationLink(value: DetailRoute.portrait(p.id)) {
@@ -86,13 +86,20 @@ struct PersonQuickLinks: View {
     let items: [PersonQuickItem]
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
-            Text("继续了解").font(.system(.title3, design: .serif).weight(.medium)).foregroundStyle(Theme.ink).padding(.bottom, 8)
+            Text("人物档案").font(.system(.title3, design: .serif).weight(.medium)).foregroundStyle(Theme.ink).padding(.bottom, 6)
             ForEach(Array(items.enumerated()), id: \.element.id) { index, item in
                 NavigationLink(value: item.route) {
-                    VStack(alignment: .leading, spacing: 5) {
-                        Text(item.title).font(.headline).foregroundStyle(Theme.ink)
-                        if !item.subtitle.isEmpty { Text(item.subtitle).font(.caption).foregroundStyle(Theme.muted).lineLimit(typeSize.isAccessibilitySize ? nil : 2) }
-                    }.frame(maxWidth: .infinity, minHeight: 54, alignment: .leading).padding(.vertical, 12).contentShape(Rectangle())
+                    HStack(alignment: .top, spacing: 14) {
+                        Text(String(format: "%02d", index + 1))
+                            .font(.caption2.monospacedDigit().weight(.medium))
+                            .foregroundStyle(Theme.cinnabar)
+                            .frame(width: 24, alignment: .leading)
+                            .padding(.top, 2)
+                        VStack(alignment: .leading, spacing: 5) {
+                            Text(item.title).font(.headline).foregroundStyle(Theme.ink)
+                            if !item.subtitle.isEmpty { Text(item.subtitle).font(.caption).foregroundStyle(Theme.muted).lineLimit(typeSize.isAccessibilitySize ? nil : 2) }
+                        }
+                    }.frame(maxWidth: .infinity, minHeight: 52, alignment: .leading).padding(.vertical, 10).contentShape(Rectangle())
                 }.buttonStyle(QuietRowStyle()).accessibilityIdentifier(item.id)
                 if index < items.count - 1 { Rectangle().fill(Theme.line.opacity(0.5)).frame(height: 0.5) }
             }
@@ -229,7 +236,7 @@ struct MajorEventsPanel: View {
                 ? AnyLayout(VStackLayout(alignment: .leading, spacing: 0))
                 : AnyLayout(HStackLayout(spacing: 0))
             categoryLayout {
-                ForEach(MajorEventCategory.allCases) { category in
+                ForEach(Array(MajorEventCategory.allCases.enumerated()), id: \.element.id) { index, category in
                     Button {
                         withAnimation(reduceMotion ? nil : .easeOut(duration: 0.18)) { selection = category }
                     } label: {
@@ -241,7 +248,11 @@ struct MajorEventsPanel: View {
                                 .fill(selection == category ? Theme.cinnabar : .clear)
                                 .frame(width: 24, height: 1.5)
                         }
-                        .frame(maxWidth: .infinity, minHeight: 42)
+                        .frame(minHeight: 42)
+                        .frame(
+                            maxWidth: .infinity,
+                            alignment: index == 0 ? .leading : (index == MajorEventCategory.allCases.count - 1 ? .trailing : .center)
+                        )
                         .contentShape(Rectangle())
                     }
                     .buttonStyle(QuietRowStyle())
