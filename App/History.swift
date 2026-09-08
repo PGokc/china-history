@@ -6,6 +6,7 @@ struct Person: Codable, Identifiable {
     let id, name, call, temple, era, reign, summary, kind, note: String
     let parent: String?
     let birthOrder: Int?
+    let birthOrderNote: String?
     let sources: [String]
     var image: String?
 }
@@ -166,7 +167,7 @@ struct Content: Codable {
     }
     func spouses(_ id: String) -> [Person] { links.filter { $0.kind == "spouse" && ($0.from == id || $0.to == id) }.map { person($0.from == id ? $0.to : $0.from) } }
     func siblings(_ p: Person) -> [Person] {
-        let parentIds = Set(parents(p.id).map(\.to))
+        let parentIds = Set(parents(p.id).filter { ["father", "mother"].contains($0.kind) }.map(\.to))
         let ids = Set(links.filter { ["father", "mother"].contains($0.kind) && parentIds.contains($0.to) }.map(\.from))
         return content.people.filter { ids.contains($0.id) && $0.id != p.id }.sorted { ($0.birthOrder ?? 99) < ($1.birthOrder ?? 99) }
     }
@@ -184,7 +185,7 @@ struct Content: Codable {
         }
     }
     func orderLabel(_ p: Person) -> String {
-        guard let n = p.birthOrder else { return "子女" }
+        guard let n = p.birthOrder else { return p.birthOrderNote ?? "子女" }
         return n == 1 ? "长子" : "第\(n)子"
     }
     func associates(_ id: String) -> [Association] { (content.associations ?? []).filter { $0.from == id || $0.to == id } }

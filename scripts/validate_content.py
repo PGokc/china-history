@@ -346,3 +346,35 @@ if d['version'] >= 20:
  links={(x['from'],x['to'],x['kind']) for x in d['familyLinks']}
  assert ('q_nurhaci','q_taksi','father') in links and ('q_taksi','q_giocangga','father') in links
  print('V20 PASS: Qing founder ancestry and visible child-order labels are sourced and explicit')
+
+if d['version'] >= 21:
+ sons={'q_honghui','q_hongfen','q_hongyun','q_hongshi','q_qianlong','q_hongzhou','q_fuyi','q_fuhui','q_fupei','q_hongzhan'}
+ biological={e['from'] for e in d['familyLinks'] if e['to']=='q_yongzheng' and e['kind']=='father'}
+ assert sons == biological, ('Yongzheng sons',sons ^ biological)
+ mother_map={'q_honghui':'q_ulanara','q_hongfen':'q_lishi','q_hongyun':'q_lishi','q_hongshi':'q_lishi','q_qianlong':'q_niuhuru','q_hongzhou':'q_gengshi','q_fuyi':'q_nianshi','q_fuhui':'q_nianshi','q_fupei':'q_nianshi','q_hongzhan':'q_liushi'}
+ for pid,mother in mother_map.items():
+  assert {(e['to'],e['kind']) for e in d['familyLinks'] if e['from']==pid} >= {('q_yongzheng','father'),(mother,'mother')}
+ for pid in ['q_hongfen','q_fuyi','q_fuhui','q_fupei']:
+  assert people[pid].get('birthOrder') is None and people[pid]['birthOrderNote']=='未列齿序'
+ for pid,order in {'q_honghui':1,'q_hongyun':2,'q_hongshi':3,'q_qianlong':4,'q_hongzhou':5,'q_hongzhan':6}.items():assert people[pid]['birthOrder']==order
+ assert ('q_hongzhan','q_yinli','adoptiveFather') in links
+ for pid in ['q_yongzheng','q_yinti']:assert (pid,'q_wuya','mother') in links
+ assert '1770' in people['q_hongzhou']['note'] and '纯懿' in people['q_gengshi']['call']
+ new_readers={'q_hongshi','q_hongzhou','q_hongzhan','q_zhangtingyu','q_eertai','q_niangengyao','q_longkodo'}
+ assert new_readers <= articles.keys()
+ for pid in new_readers:
+  assert len(articles[pid]['sections']) >= 3
+  assert any(pid in e['people'] for e in d['events'])
+  assert any(s.get('events') for s in articles[pid]['sections'])
+ assert all('eventLinks' not in s for a in d['articles'] for s in a['sections']), 'obsolete chapter link key'
+ for pid in qing_emperors:assert any(s.get('events') for s in articles[pid]['sections'])
+ print('V21 PASS: ten Yongzheng sons, six mothers, separate adoptive father, seven new biographies and restored Qing chapter links')
+
+if d['version'] >= 21:
+ associates={(a['from'],a['to']):a for a in d['associations']}
+ assert '皇兄' in associates['q_yinti','q_yongzheng']['role']
+ assert '同母弟' in associates['q_yinti','q_yongzheng']['inverse']
+ assert '皇弟' in associates['q_yinreng','q_yinsi']['role']
+ assert '皇太后' in associates['q_yixin','q_cixi']['role']
+ assert '姨母' not in associates['q_cixi','q_yixuan']['inverse']
+ print('V21 PASS: Qing association labels describe the other person in both directions')

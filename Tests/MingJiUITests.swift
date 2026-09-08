@@ -741,4 +741,118 @@ final class MingJiUITests: XCTestCase {
         shot("v38-text-detail", app)
     }
 
+
+    @MainActor func openYongzhengFamily(_ large: Bool = false) -> XCUIApplication {
+        let app = launch(large, enterFamily: false)
+        reach(app.buttons["dynasty_qing"], in: app, attempts: 18)
+        app.buttons["dynasty_qing"].tap()
+        openEmperor("q_4", in: app)
+        XCTAssertTrue(app.buttons["personHero"].label.contains("胤禛"))
+        return app
+    }
+
+    @MainActor func testV39YongzhengSonsAndMothers() throws {
+        let app = openYongzhengFamily()
+        reach(app.buttons["relative_q_ulanara"], in: app)
+        shot("v39-six-consorts", app)
+        for id in ["q_ulanara", "q_niuhuru", "q_lishi", "q_gengshi", "q_nianshi", "q_liushi"] {
+            XCTAssertTrue(app.buttons["relative_" + id].exists)
+        }
+        reach(app.buttons["allChildren"], in: app)
+        app.swipeUp(); shot("v39-sons-overview", app)
+        app.buttons["allChildren"].tap()
+        for id in ["q_honghui", "q_hongyun", "q_hongshi", "q_qianlong", "q_hongzhou", "q_hongzhan", "q_hongfen", "q_fuyi", "q_fuhui", "q_fupei"] {
+            reach(app.buttons["member_" + id], in: app)
+        }
+        shot("v39-unranked-sons", app)
+        XCTAssertLessThan(app.buttons["member_q_fupei"].frame.maxY, app.tabBars.firstMatch.frame.minY)
+        app.buttons["member_q_fupei"].tap()
+        reach(app.buttons["personHero"], in: app)
+        XCTAssertTrue(app.buttons["personHero"].label.contains("福沛"))
+        XCTAssertTrue(app.buttons["relative_q_nianshi"].exists)
+    }
+
+    @MainActor func testV39HongshiReadingAndRestoredLinks() throws {
+        let app = openYongzhengFamily()
+        reach(app.buttons["relative_q_hongshi"], in: app)
+        app.buttons["relative_q_hongshi"].tap()
+        reach(app.buttons["personHero"], in: app)
+        app.buttons["personHero"].tap()
+        XCTAssertTrue(app.buttons["articleEntry"].waitForExistence(timeout: 5))
+        shot("v39-hongshi-overview", app)
+        openArticle(in: app)
+        app.buttons["articleContents"].tap()
+        app.buttons["从撤去黄带到早逝"].tap()
+        let links = app.buttons["chapterLinks_q_hongshi_2"]
+        reach(links, in: app, attempts: 14); links.tap()
+        let event = app.buttons.matching(NSPredicate(format: "label CONTAINS %@", "弘时被撤去皇子身份")).firstMatch
+        reach(event, in: app); event.tap()
+        XCTAssertTrue(app.staticTexts["弘时被撤去皇子身份"].waitForExistence(timeout: 5))
+        shot("v39-hongshi-event", app)
+    }
+
+    @MainActor func testV39AdoptiveParentsLargeType() throws {
+        let app = openYongzhengFamily(true)
+        reach(app.buttons["allChildren"], in: app, attempts: 20); app.buttons["allChildren"].tap()
+        reach(app.buttons["member_q_hongzhan"], in: app, attempts: 16); app.buttons["member_q_hongzhan"].tap()
+        reach(app.buttons["personHero"], in: app)
+        XCTAssertTrue(app.buttons["personHero"].label.contains("弘曕"))
+        for id in ["q_yinli", "q_yongzheng", "q_liushi"] {
+            let parent = app.buttons["relative_" + id]
+            reach(parent, in: app, attempts: 18)
+            XCTAssertGreaterThan(parent.frame.width, 200)
+            XCTAssertLessThanOrEqual(parent.frame.maxX, app.frame.maxX)
+        }
+        shot("v39-three-parents-large", app)
+        XCTAssertTrue(app.buttons["allSiblings"].exists)
+        app.buttons["relative_q_liushi"].tap()
+        reach(app.buttons["personHero"], in: app)
+        XCTAssertTrue(app.buttons["personHero"].label.contains("刘氏"))
+    }
+
+    @MainActor func testV39YongzhengCourtChapterLinks() throws {
+        let app = openYongzhengFamily()
+        app.buttons["personHero"].tap()
+        openArticle(in: app)
+        app.buttons["articleContents"].tap(); app.buttons["有争议的继位"].tap()
+        let links = app.buttons["chapterLinks_q-yongzheng-1"]
+        reach(links, in: app); links.tap()
+        let event = app.buttons.matching(NSPredicate(format: "label CONTAINS %@", "雍正帝即位")).firstMatch
+        reach(event, in: app)
+        XCTAssertTrue(event.isHittable)
+        let person = app.buttons.matching(NSPredicate(format: "label CONTAINS %@", "隆科多")).firstMatch
+        reach(person, in: app); person.tap()
+        XCTAssertTrue(app.buttons["articleEntry"].waitForExistence(timeout: 5))
+        shot("v39-longkodo-overview", app)
+        openArticle(in: app)
+        app.buttons["articleContents"].tap(); app.buttons["荣宠消退之后"].tap()
+        shot("v39-longkodo-reading", app)
+    }
+
+    @MainActor func testV39CourtRelationshipsAndHongzhou() throws {
+        let app = openYongzhengFamily()
+        app.buttons["personHero"].tap()
+        openAssociates(in: app)
+        let brother = app.buttons["associate_q_yinti"]
+        reach(brother, in: app)
+        XCTAssertTrue(brother.label.contains("同母弟"))
+        for id in ["q_zhangtingyu", "q_eertai", "q_niangengyao", "q_longkodo"] {
+            reach(app.buttons["associate_" + id], in: app)
+        }
+        shot("v39-court-connections", app)
+        app.buttons["associate_q_zhangtingyu"].tap()
+        XCTAssertTrue(app.buttons["articleEntry"].waitForExistence(timeout: 5))
+        openArticle(in: app)
+        shot("v39-zhangtingyu-reading", app)
+        app.terminate()
+
+        let fresh = openYongzhengFamily()
+        reach(fresh.buttons["relative_q_hongzhou"], in: fresh)
+        fresh.buttons["relative_q_hongzhou"].tap()
+        XCTAssertTrue(fresh.buttons["relative_q_gengshi"].waitForExistence(timeout: 5))
+        fresh.buttons["personHero"].tap()
+        reach(fresh.buttons["category_records"], in: fresh); fresh.buttons["category_records"].tap()
+        XCTAssertTrue(fresh.staticTexts.matching(NSPredicate(format: "label CONTAINS %@", "1770")).firstMatch.exists)
+        shot("v39-hongzhou-records", fresh)
+    }
 }

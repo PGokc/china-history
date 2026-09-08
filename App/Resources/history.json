@@ -1,6 +1,6 @@
 {
-  "version": 20,
-  "reviewed": "2026-09-06",
+  "version": 21,
+  "reviewed": "2026-09-08",
   "people": [
     {
       "id": "yuanzhang",
@@ -933,10 +933,13 @@
       "summary": "扩展疆域、推动文化工程，也经历人口财政压力与晚年官僚积弊。",
       "sources": [
         "v5qe_qsg10_15",
-        "v5qe_dpm_lineage"
+        "v5qe_dpm_lineage",
+        "v5qn_qsg214",
+        "v5qn_qsg220",
+        "v39_qsg165"
       ],
       "kind": "皇帝",
-      "note": "1711年生，1799年卒。1796年禅位后仍掌最高决策至去世。",
+      "note": "1711年生，1799年卒。1796年禅位后仍掌最高决策至去世。 生母孝圣宪皇后钮祜禄氏；雍正皇四子，弘昼为其异母弟。",
       "parent": "q_yongzheng",
       "image": "qing_qianlong",
       "birthOrder": 4
@@ -1333,7 +1336,7 @@
       "temple": "",
       "era": "",
       "reign": "",
-      "summary": "康熙帝第十四子、雍正帝同母弟，晚年统兵西北；康熙去世后被召回，历经降爵与禁锢，乾隆朝获释。",
+      "summary": "康熙帝第十四子、雍正帝同母弟，康熙晚年统兵西北；康熙去世后被召回，历经降爵与禁锢，乾隆朝获释。",
       "kind": "清代宗室与政治人物",
       "note": "1688—1755。雍正朝避讳后写作允禵；不要与皇四子胤禛混淆。",
       "parent": "q_kangxi",
@@ -1414,6 +1417,389 @@
         "v26_zhang"
       ],
       "image": null
+    },
+    {
+      "id": "q_honghui",
+      "name": "爱新觉罗·弘晖",
+      "call": "端亲王",
+      "temple": "",
+      "era": "",
+      "reign": "",
+      "summary": "雍正长子，生母为嫡福晋乌拉那拉氏。他在康熙年间早殇，未及父亲即位；乾隆初年追封端亲王。",
+      "kind": "宗室",
+      "note": "1697—1704。端亲王是身后追封，并非生前爵位。",
+      "parent": "q_yongzheng",
+      "birthOrder": 1,
+      "sources": [
+        "v5qn_qsg220",
+        "v39_qsg165",
+        "v39_dpm_princes"
+      ]
+    },
+    {
+      "id": "q_hongfen",
+      "name": "爱新觉罗·弘昐",
+      "call": "早殇皇子",
+      "temple": "",
+      "era": "",
+      "reign": "",
+      "summary": "雍正与李氏所生，弘昀、弘时的同母兄弟。弘昐出生先于弘昀，因早殇未列通常皇子齿序，所以弘昀仍称皇次子。",
+      "kind": "宗室",
+      "note": "1697—1699。姓名为弘昐；不能将出生先后与皇子齿序混同。",
+      "parent": "q_yongzheng",
+      "birthOrder": null,
+      "sources": [
+        "v5qn_qsg220",
+        "v39_qsg165",
+        "v39_dpm_princes"
+      ],
+      "birthOrderNote": "未列齿序"
+    },
+    {
+      "id": "q_hongyun",
+      "name": "爱新觉罗·弘昀",
+      "call": "皇次子",
+      "temple": "",
+      "era": "",
+      "reign": "",
+      "summary": "雍正皇次子，生母齐妃李氏，与弘昐、弘时同母。他在康熙四十九年早殇，未及父亲即位。",
+      "kind": "宗室",
+      "note": "1700—1710。齿序为第二；出生先后在未列齿序的弘昐之后。",
+      "parent": "q_yongzheng",
+      "birthOrder": 2,
+      "sources": [
+        "v5qn_qsg220",
+        "v39_qsg165",
+        "v39_dpm_princes"
+      ]
+    },
+    {
+      "id": "q_hongshi",
+      "name": "爱新觉罗·弘时",
+      "call": "皇三子",
+      "temple": "",
+      "era": "",
+      "reign": "",
+      "summary": "雍正皇三子，生母齐妃李氏，乾隆的兄长。雍正朝遭撤去皇子身份、削除宗籍，1727年去世；乾隆即位后命恢复玉牒。其死因不能按后世赐死传说作定论。",
+      "kind": "宗室",
+      "note": "1704—1727。处分过程结合雍正四年谕旨与乾隆初复籍奏议理解；《清史稿》简记五年削籍，档案研究区分了处分与去世的时间。",
+      "parent": "q_yongzheng",
+      "birthOrder": 3,
+      "sources": [
+        "v5qn_qsg220",
+        "v39_qsg165",
+        "v39_dpm_princes"
+      ]
+    },
+    {
+      "id": "q_hongzhou",
+      "name": "爱新觉罗·弘昼",
+      "call": "和恭亲王",
+      "temple": "",
+      "era": "",
+      "reign": "",
+      "summary": "雍正皇五子，生母耿氏。雍正十一年与弘历同日封亲王，十三年参与办理苗疆事务，乾隆朝曾预议政事。和亲王的经历兼有宗室优遇与君臣约束，不能只用荒诞轶闻解释。",
+      "kind": "宗室",
+      "note": "康熙五十年生，乾隆三十五年（1770）卒。其生日在农历岁末，跨公历1712年；旧词条所列1765卒年与皇子世表不合，本页采用世表。",
+      "parent": "q_yongzheng",
+      "birthOrder": 5,
+      "sources": [
+        "v5qn_qsg220",
+        "v39_qsg165",
+        "v39_dpm_princes"
+      ]
+    },
+    {
+      "id": "q_fuyi",
+      "name": "爱新觉罗·福宜",
+      "call": "早殇皇子",
+      "temple": "",
+      "era": "",
+      "reign": "",
+      "summary": "雍正与年氏所生，福惠、福沛的同母兄长。康熙五十九年出生，次年夭折，未列通常皇子齿序。",
+      "kind": "宗室",
+      "note": "1720—1721。未及父亲即位，史籍所存主要为亲缘及早殇记录。",
+      "parent": "q_yongzheng",
+      "birthOrder": null,
+      "sources": [
+        "v5qn_qsg220",
+        "v39_qsg165",
+        "v39_dpm_princes"
+      ],
+      "birthOrderNote": "未列齿序"
+    },
+    {
+      "id": "q_fuhui",
+      "name": "爱新觉罗·福惠",
+      "call": "怀亲王",
+      "temple": "",
+      "era": "",
+      "reign": "",
+      "summary": "雍正与年氏所生，福宜之弟、福沛之兄。雍正六年幼年去世，乾隆初追封怀亲王，与弘晖同属身后获亲王名分的早殇皇子。",
+      "kind": "宗室",
+      "note": "1721—1728。排行在旧籍中记法不一；故宫2024年档案研究表一列未序齿，本页不强配数字。怀亲王为追封。",
+      "parent": "q_yongzheng",
+      "birthOrder": null,
+      "sources": [
+        "v5qn_qsg220",
+        "v39_qsg165",
+        "v39_dpm_princes"
+      ],
+      "birthOrderNote": "未列齿序"
+    },
+    {
+      "id": "q_fupei",
+      "name": "爱新觉罗·福沛",
+      "call": "早殇皇子",
+      "temple": "",
+      "era": "",
+      "reign": "",
+      "summary": "雍正与年氏所生，福宜、福惠的同母弟。雍正元年出生后很快夭折，未列通常皇子齿序。",
+      "kind": "宗室",
+      "note": "1723年出生后旋即早殇。不能据亲属的政治遭遇推断他的死因。",
+      "parent": "q_yongzheng",
+      "birthOrder": null,
+      "sources": [
+        "v5qn_qsg220",
+        "v39_qsg165",
+        "v39_dpm_princes"
+      ],
+      "birthOrderNote": "未列齿序"
+    },
+    {
+      "id": "q_hongzhan",
+      "name": "爱新觉罗·弘曕",
+      "call": "果恭郡王",
+      "temple": "",
+      "era": "",
+      "reign": "",
+      "summary": "雍正最年幼的儿子，生母谦妃刘氏，通常称皇六子。乾隆三年出继果毅亲王允礼并承爵，后来降贝勒，去世前复封果郡王。出继改变承嗣归属，并不改变生父母。",
+      "kind": "宗室",
+      "note": "1733—1765。名字为弘曕。1738年出继果亲王一支，1763年降爵，1765年复封郡王后去世，谥恭。",
+      "parent": "q_yongzheng",
+      "birthOrder": 6,
+      "sources": [
+        "v5qn_qsg220",
+        "v39_qsg165",
+        "v39_dpm_princes"
+      ]
+    },
+    {
+      "id": "q_ulanara",
+      "name": "乌拉那拉氏",
+      "call": "孝敬宪皇后",
+      "temple": "",
+      "era": "",
+      "reign": "",
+      "summary": "雍正的嫡福晋，雍正即位后册立为皇后，生皇长子弘晖。1731年去世，后来与雍正合葬泰陵。",
+      "kind": "后妃",
+      "note": "费扬古之女。1723年册立为皇后；不以未经确证的生年推算年龄。",
+      "parent": null,
+      "birthOrder": null,
+      "sources": [
+        "v5qn_qsg214",
+        "v39_dpm_xiaojing"
+      ]
+    },
+    {
+      "id": "q_niuhuru",
+      "name": "钮祜禄氏",
+      "call": "孝圣宪皇后",
+      "temple": "",
+      "era": "",
+      "reign": "",
+      "summary": "乾隆的生母，雍正朝由熹妃晋熹贵妃。弘历即位后尊为皇太后，多次奉母出巡并举行寿庆；1777年去世，葬清西陵泰东陵。",
+      "kind": "后妃",
+      "note": "凌柱之女。孝圣宪皇后是身后尊谥，雍正朝未曾册为皇后；不可将不同时期位号混写。",
+      "parent": null,
+      "birthOrder": null,
+      "sources": [
+        "v5qn_qsg214"
+      ]
+    },
+    {
+      "id": "q_lishi",
+      "name": "李氏",
+      "call": "齐妃",
+      "temple": "",
+      "era": "",
+      "reign": "",
+      "summary": "雍正潜邸侧福晋，即位后封齐妃。生弘昐、弘昀、弘时及一女；三子中两人早殇，弘时成年后遭处分。儿子的政治遭遇不能用来推断她参与夺嫡。",
+      "kind": "后妃",
+      "note": "生母关系据《清史稿》后妃传与诸王传，并参故宫档案研究。其女后追封怀恪公主。",
+      "parent": null,
+      "birthOrder": null,
+      "sources": [
+        "v5qn_qsg214",
+        "v5qn_qsg220"
+      ]
+    },
+    {
+      "id": "q_gengshi",
+      "name": "耿氏",
+      "call": "裕妃，谥纯懿皇贵妃",
+      "temple": "",
+      "era": "",
+      "reign": "",
+      "summary": "和亲王弘昼的生母，早年为胤禛潜邸格格，雍正朝先后封裕嫔、裕妃。乾隆朝多次尊封，晚年为裕皇贵太妃，去世后谥纯懿，葬泰陵妃园寝。",
+      "kind": "后妃",
+      "note": "卒于乾隆四十九年十二月，已跨公历1785年。《皇朝通志》载次年二月谥纯懿；《清史稿》后妃传作纯悫，记载有异，不据此解释为改谥。",
+      "parent": null,
+      "birthOrder": null,
+      "sources": [
+        "v5qn_qsg214",
+        "v39_tongzhi50"
+      ]
+    },
+    {
+      "id": "q_nianshi",
+      "name": "年氏",
+      "call": "敦肃皇贵妃",
+      "temple": "",
+      "era": "",
+      "reign": "",
+      "summary": "年羹尧之妹，曾为胤禛侧福晋，雍正即位后封贵妃。生福宜、福惠、福沛及一女，均早逝。1725年病重时晋皇贵妃，去世后谥敦肃，后来葬入泰陵。",
+      "kind": "后妃",
+      "note": "年遐龄之女。封号与丧礼有史籍记录；不能因兄长获罪便推断她遭到赐死。",
+      "parent": "q_nianxialing",
+      "birthOrder": null,
+      "sources": [
+        "v5qn_qsg214"
+      ]
+    },
+    {
+      "id": "q_liushi",
+      "name": "刘氏",
+      "call": "谦妃",
+      "temple": "",
+      "era": "",
+      "reign": "",
+      "summary": "雍正幼子弘曕的生母，雍正朝由贵人晋谦嫔，乾隆即位后尊谦妃。弘曕后来出继果亲王一支，仍与她保有生母子关系。",
+      "kind": "后妃",
+      "note": "母子关系与后妃位号据《清史稿》后妃传。生父母关系与宗法承嗣分别列示。",
+      "parent": null,
+      "birthOrder": null,
+      "sources": [
+        "v5qn_qsg214",
+        "v5qn_qsg220"
+      ]
+    },
+    {
+      "id": "q_wuya",
+      "name": "乌雅氏",
+      "call": "孝恭仁皇后",
+      "temple": "",
+      "era": "",
+      "reign": "",
+      "summary": "康熙德妃，生胤禛、胤祚、胤禵。胤禛即位后尊她为皇太后，她于1723年去世，葬景陵。雍正与胤禵是同父同母兄弟，政治际遇却有很大差别。",
+      "kind": "后妃",
+      "note": "1660—1723。母子与兄弟关系据后妃传、诸王传；不将后世关于母子情感的猜测当作史实。",
+      "parent": null,
+      "birthOrder": null,
+      "sources": [
+        "v5qn_qsg214",
+        "v5qn_qsg220",
+        "v39_dpm_xiaogong"
+      ]
+    },
+    {
+      "id": "q_yinli",
+      "name": "爱新觉罗·允礼",
+      "call": "果毅亲王",
+      "temple": "",
+      "era": "",
+      "reign": "",
+      "summary": "康熙第十七子，雍正异母弟。雍正朝封果郡王，后晋亲王，参与理藩院、户部等事务，受遗命辅政。1738年去世后，雍正幼子弘曕出继其后并承爵。",
+      "kind": "宗室",
+      "note": "原名胤礼，雍正朝避讳改允礼。生母陈氏；乾隆三年卒，谥毅。弘曕为嗣子，不是亲生子。",
+      "parent": "q_kangxi",
+      "birthOrder": 17,
+      "sources": [
+        "v5qn_qsg220",
+        "v39_qsg165"
+      ]
+    },
+    {
+      "id": "q_zhangtingyu",
+      "name": "张廷玉",
+      "call": "大学士，军机大臣",
+      "temple": "",
+      "era": "",
+      "reign": "",
+      "summary": "桐城出身的清代大学士，历仕康熙、雍正、乾隆三朝。参与军机处早期规制与官修史书事务，受雍正遗命辅佐弘历；晚年退休引发君臣冲突，身后仍按遗命配享太庙。",
+      "kind": "大臣",
+      "note": "1672—1755。字衡臣，桐城人，张英之子。进士年按本传康熙三十九年（1700）；曾参与官修《明史》，并非一人独著。",
+      "parent": null,
+      "birthOrder": null,
+      "sources": [
+        "v39_qsg288",
+        "v39_dpm_zhang"
+      ]
+    },
+    {
+      "id": "q_eertai",
+      "name": "鄂尔泰",
+      "call": "云贵总督，大学士",
+      "temple": "",
+      "era": "",
+      "reign": "",
+      "summary": "满洲镶蓝旗的雍正朝重臣，在西南推动改土归流，后入军机并受顾命辅佐乾隆。他的经历连接地方行政扩张、边疆战争及内廷决策，也留下改流中的暴力与治理失误。",
+      "kind": "大臣",
+      "note": "西林觉罗氏，满洲镶蓝旗。1745年卒，谥文端。1755年撤出贤良祠与配享太庙是不同事项。",
+      "parent": null,
+      "birthOrder": null,
+      "sources": [
+        "v39_qsg288"
+      ]
+    },
+    {
+      "id": "q_niangengyao",
+      "name": "年羹尧",
+      "call": "川陕总督，抚远大将军",
+      "temple": "",
+      "era": "",
+      "reign": "",
+      "summary": "由进士出身而掌西北军务的清代重臣，参与康熙末年入藏战争后勤，雍正初指挥青海战事。军功带来显赫权势，他随后被逐步夺职、列罪，雍正三年十二月被令自裁。",
+      "kind": "大臣",
+      "note": "字亮工，汉军镶黄旗。雍正三年十二月奉命自裁，公历已为1726年。年氏皇贵妃为其妹；定罪条目应理解为当时朝廷的指控。",
+      "parent": "q_nianxialing",
+      "birthOrder": null,
+      "sources": [
+        "v39_qsg295"
+      ]
+    },
+    {
+      "id": "q_longkodo",
+      "name": "隆科多",
+      "call": "步军统领，吏部尚书",
+      "temple": "",
+      "era": "",
+      "reign": "",
+      "summary": "佟佳氏勋贵，康熙晚年任步军统领，在皇位交接中受顾命。雍正初执掌重要政务，之后遭削职与审讯，1727年被终身禁锢，次年死于禁所。",
+      "kind": "大臣",
+      "note": "佟佳氏，满洲镶黄旗，佟国维之子、孝懿仁皇后之弟。1728年死于禁所，不能写成处死；并非雍正生母乌雅氏的兄弟。",
+      "parent": null,
+      "birthOrder": null,
+      "sources": [
+        "v39_qsg295"
+      ]
+    },
+    {
+      "id": "q_nianxialing",
+      "name": "年遐龄",
+      "call": "湖广巡抚",
+      "temple": "",
+      "era": "",
+      "reign": "",
+      "summary": "年羹尧与敦肃皇贵妃年氏之父，曾任湖广巡抚。儿子获罪后遭革职，去世后又获恢复原职，其经历折射雍正朝对功臣家属的连带处分与宽免。",
+      "kind": "大臣",
+      "note": "年羹尧传记其受处分与身后复职；年氏父女关系见后妃传。",
+      "parent": null,
+      "birthOrder": null,
+      "sources": [
+        "v39_qsg295",
+        "v5qn_qsg214"
+      ]
     }
   ],
   "sources": [
@@ -2325,9 +2711,9 @@
     },
     {
       "id": "v5qn_qsg220",
-      "title": "《清史稿》卷220 · 康熙诸子传",
+      "title": "《清史稿》卷220 圣祖、世宗诸子传",
       "url": "https://zh.wikisource.org/zh-hans/清史稿/卷220",
-      "note": "允礽、允禩、允祥各传；储位两废两立、皇子结党、雍正朝处分及怡亲王政务。"
+      "note": "康熙诸子、雍正十子及果亲王承嗣。弘昼卒年与皇子世表不合，取世表乾隆三十五年；早殇皇子齿序并参故宫档案研究。网络录文中的弘适等字形须对读。"
     },
     {
       "id": "v5qn_qsg221",
@@ -2337,9 +2723,9 @@
     },
     {
       "id": "v5qn_qsg214",
-      "title": "《清史稿》卷214 · 后妃传",
+      "title": "《清史稿》卷214 后妃传",
       "url": "https://zh.wikisource.org/zh-hans/清史稿/卷214",
-      "note": "慈禧、隆裕相关后妃传；垂帘、光绪婚姻、宣统监国与退位。"
+      "note": "核对清代后妃位号、皇子生母及陵寝。耿氏谥号在本传作纯悫，另据《皇朝通志》取纯懿；网络录文异字须与世表、档案对读。"
     },
     {
       "id": "v5qn_dpm_xuantong",
@@ -2682,6 +3068,54 @@
       "title": "全国哲学社会科学工作办公室 · 科举停废与近代中国社会",
       "url": "https://www.nopss.gov.cn/GB/230165/236301/16514199.html",
       "note": "说明废科举、新式教育、报刊传播与清末社会结构变化。"
+    },
+    {
+      "id": "v39_qsg165",
+      "title": "《清史稿》卷165 皇子世表五",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷165",
+      "note": "与诸王传及故宫档案研究对读。弘昼卒年据本表取乾隆三十五年（1770），旧传作三十年。表中早殇皇子的编号与其他材料不一，不作为统一排行。"
+    },
+    {
+      "id": "v39_dpm_princes",
+      "title": "林姝《弘时与福晋合葬：清西陵阿哥园寝考析》",
+      "url": "https://www.dpm.org.cn/Uploads/file/2025/01/06/1736130517OeoEusmYI260.pdf",
+      "note": "《紫禁城》2024年第12期，故宫博物院宫廷历史研究。核对雍正十子及生母、弘时处分与恢复玉牒；表一所列福惠未序齿，与旧籍排行有异。"
+    },
+    {
+      "id": "v39_qsg288",
+      "title": "《清史稿》卷288 鄂尔泰、张廷玉传",
+      "url": "https://zh.wikisource.org/wiki/清史稿/卷288",
+      "note": "用于官职、军机事务、改土归流、顾命与晚年处分。张廷玉进士年按本传康熙三十九年（1700）；旧词条有不同记载。原传政治评价与罪名须结合其叙述立场理解。"
+    },
+    {
+      "id": "v39_qsg295",
+      "title": "《清史稿》卷295 隆科多、年羹尧传",
+      "url": "https://zh.wikisource.org/wiki/清史稿/卷295",
+      "note": "核对皇位交接、西北军务及处分经过。定罪条目是当时朝廷的指控；年羹尧卒于雍正三年十二月，已跨公历1726年，隆科多1728年死于禁所。"
+    },
+    {
+      "id": "v39_tongzhi50",
+      "title": "《皇朝通志》卷50 谥略三",
+      "url": "https://zh.wikisource.org/wiki/皇朝通志_(四庫全書本)/卷050",
+      "note": "四库全书本记耿氏谥纯懿皇贵妃，乾隆五十年二月谥。《清史稿》后妃传作纯悫，与诸王传及本书不合；不据此推断曾经改谥。"
+    },
+    {
+      "id": "v39_dpm_xiaojing",
+      "title": "故宫博物院 清世宗孝敬宪皇后",
+      "url": "https://www.dpm.org.cn/court/figure/104003.html",
+      "note": "核对嫡福晋、册后、弘晖及泰陵合葬；生年未作确切断言。"
+    },
+    {
+      "id": "v39_dpm_xiaogong",
+      "title": "故宫博物院 清圣祖孝恭仁皇后",
+      "url": "https://www.dpm.org.cn/court/figure/104000.html",
+      "note": "核对乌雅氏身份、德妃位号及生卒。与后妃传、诸王传合读母子关系。"
+    },
+    {
+      "id": "v39_dpm_zhang",
+      "title": "故宫博物院 张廷玉",
+      "url": "https://www.dpm.org.cn/lemmas/241593.html",
+      "note": "核对1672—1755生卒及人物身份；进士年与本传有异，该项采用《清史稿》卷288。"
     }
   ],
   "relations": [
@@ -4563,7 +4997,8 @@
       "people": [
         "q_yongzheng",
         "q_yinsi",
-        "q_yinxiang"
+        "q_yinxiang",
+        "q_longkodo"
       ],
       "peopleRoles": {
         "q_yongzheng": "继位君主",
@@ -4572,7 +5007,8 @@
       },
       "sources": [
         "v5qn_qsg220",
-        "v5qn_qing_annals"
+        "v5qn_qing_annals",
+        "v39_qsg295"
       ],
       "kind": "历史事件",
       "category": "政治"
@@ -4585,7 +5021,8 @@
       "impact": "改变了清廷的权力结构、疆域治理或对外处境，并产生超出宫廷的社会影响。",
       "people": [
         "q_yongzheng",
-        "q_yinreng"
+        "q_yinreng",
+        "q_qianlong"
       ],
       "peopleRoles": {
         "q_yongzheng": "制度建立者",
@@ -4593,7 +5030,8 @@
       },
       "sources": [
         "v5qn_qsg220",
-        "v5qn_qing_annals"
+        "v5qn_qing_annals",
+        "v5qe_dpm_secret"
       ],
       "kind": "历史事件",
       "category": "政治"
@@ -4606,14 +5044,16 @@
       "impact": "改变了清廷的权力结构、疆域治理或对外处境，并产生超出宫廷的社会影响。",
       "people": [
         "q_yongzheng",
-        "q_yinxiang"
+        "q_yinxiang",
+        "q_eertai"
       ],
       "peopleRoles": {
         "q_yongzheng": "在位君主",
         "q_yinxiang": "中央辅政亲王"
       },
       "sources": [
-        "v5qn_qing_annals"
+        "v5qn_qing_annals",
+        "v39_qsg288"
       ],
       "kind": "历史事件",
       "category": "政治"
@@ -6117,10 +6557,13 @@
       "body": "一般以雍正七年因西北用兵设置军机房为创设起点；创设时间亦有其他学说。雍正十年正式改称办理军机处，之后逐步发展为处理军政机要的机构。",
       "impact": "军机大臣向皇帝提供意见、办理文书，裁决仍归皇帝。它由军事事务扩展至日常政务，是一个发展过程，而非一日形成全部职权。",
       "people": [
-        "q_yongzheng"
+        "q_yongzheng",
+        "q_zhangtingyu",
+        "q_eertai"
       ],
       "sources": [
-        "v26_military"
+        "v26_military",
+        "v39_qsg288"
       ],
       "kind": "历史事件",
       "category": "政治"
@@ -6155,6 +6598,215 @@
       ],
       "kind": "历史事件",
       "category": "政治"
+    },
+    {
+      "id": "v39_hongshi_removed",
+      "year": "1726",
+      "title": "弘时被撤去皇子身份",
+      "body": "雍正四年谕旨令弘时为允禩之子、撤去黄带，并交宗室约束养赡，后又削除宗籍。弘时次年去世；其处分缘由与死因不能按后世小说作定论。",
+      "impact": "宗籍处分改变了皇子的政治与宗法地位；乾隆即位后另作恢复安排。",
+      "people": [
+        "q_hongshi",
+        "q_yongzheng",
+        "q_yinsi"
+      ],
+      "sources": [
+        "v39_dpm_princes",
+        "v5qn_qsg220"
+      ],
+      "category": "政治",
+      "kind": "历史事件"
+    },
+    {
+      "id": "v39_princes_1733",
+      "year": "1733",
+      "title": "弘历与弘昼同封亲王",
+      "body": "雍正十一年二月，皇四子弘历封宝亲王，皇五子弘昼封和亲王。二人同日受封不意味着同时被确立为皇储；弘历的继承地位与秘密建储相连。",
+      "impact": "封爵与储位属于不同制度安排，不能仅按爵位推断继承顺序。",
+      "people": [
+        "q_yongzheng",
+        "q_qianlong",
+        "q_hongzhou"
+      ],
+      "sources": [
+        "v5qe_dpm_yongzheng",
+        "v5qn_qsg220"
+      ],
+      "category": "政治",
+      "kind": "历史事件"
+    },
+    {
+      "id": "v39_miao_affairs",
+      "year": "1735",
+      "title": "皇子与重臣办理苗疆事务",
+      "body": "雍正十三年，弘历、弘昼与鄂尔泰等奉命办理苗疆事务。当时西南改流后的冲突尚未平息，鄂尔泰也因前期治理安排受到追责。",
+      "impact": "皇子参与军政与地方治理危机发生在同一时期，不等于曾亲赴前线统兵。",
+      "people": [
+        "q_yongzheng",
+        "q_qianlong",
+        "q_hongzhou",
+        "q_eertai"
+      ],
+      "sources": [
+        "v5qn_qsg220",
+        "v39_qsg288"
+      ],
+      "category": "军事",
+      "kind": "历史事件"
+    },
+    {
+      "id": "v39_qianlong_accession",
+      "year": "1735",
+      "title": "弘历继位与顾命辅政",
+      "body": "雍正去世后，确立弘历继承地位的密诏开启，弘历即位，次年改元乾隆。允礼、鄂尔泰、张廷玉等受先帝遗命参与辅政。",
+      "impact": "秘密建储首次落实于帝位交接，宗室与重臣共同参与新朝政务。",
+      "people": [
+        "q_qianlong",
+        "q_yongzheng",
+        "q_yinli",
+        "q_eertai",
+        "q_zhangtingyu"
+      ],
+      "sources": [
+        "v5qe_dpm_yongzheng",
+        "v39_qsg288",
+        "v5qn_qsg220"
+      ],
+      "category": "政治",
+      "kind": "历史事件"
+    },
+    {
+      "id": "v39_hongshi_restored",
+      "year": "1735",
+      "title": "乾隆命弘时恢复玉牒",
+      "body": "乾隆即位后，命宗人府等议复弘时宗籍。奏议将弘时与允禩案的牵连列为理由，随后恢复玉牒名分。",
+      "impact": "恢复宗籍并不是确认弘时曾被立为皇储，也不能据此反推其死因。",
+      "people": [
+        "q_qianlong",
+        "q_hongshi"
+      ],
+      "sources": [
+        "v39_dpm_princes"
+      ],
+      "category": "政治",
+      "kind": "历史事件"
+    },
+    {
+      "id": "v39_guo_adoption",
+      "year": "1738",
+      "title": "弘曕出继果亲王一支",
+      "body": "果毅亲王允礼去世后，乾隆命雍正幼子弘曕为嗣，承袭果亲王。弘曕的生父为雍正，生母为刘氏，允礼是宗法上的嗣父。",
+      "impact": "王府承嗣可以跨越兄弟支系；血缘与出继关系需要分别理解。",
+      "people": [
+        "q_hongzhan",
+        "q_yinli",
+        "q_qianlong",
+        "q_liushi"
+      ],
+      "sources": [
+        "v5qn_qsg220",
+        "v39_qsg165"
+      ],
+      "category": "政治",
+      "kind": "历史事件"
+    },
+    {
+      "id": "v39_hongzhan_demoted",
+      "year": "1763—1765",
+      "title": "弘曕降爵与复封",
+      "body": "乾隆二十八年，弘曕因事遭朝廷申斥，从亲王降为贝勒。三十年病重时复封果郡王，不久去世，谥恭。",
+      "impact": "同为皇子出身也受宗室纪律约束；果恭郡王是其最终爵谥，不能与生前亲王时期混为一谈。",
+      "people": [
+        "q_hongzhan",
+        "q_qianlong"
+      ],
+      "sources": [
+        "v5qn_qsg220",
+        "v39_qsg165"
+      ],
+      "category": "政治",
+      "kind": "历史事件"
+    },
+    {
+      "id": "v39_nian_campaign",
+      "year": "1723—1724",
+      "title": "青海罗卜藏丹津战事",
+      "body": "罗卜藏丹津在青海起兵后，雍正授年羹尧抚远大将军印，统筹作战，岳钟琪等率军进攻。1724年罗卜藏丹津败走，清廷随后部署驻兵、屯田等措施。",
+      "impact": "军事胜利扩大清廷对青海的控制，也伴随寺院焚毁、杀戮与居民流离，须兼看战争代价。",
+      "people": [
+        "q_yongzheng",
+        "q_niangengyao"
+      ],
+      "sources": [
+        "v39_qsg295"
+      ],
+      "category": "军事",
+      "kind": "历史事件"
+    },
+    {
+      "id": "v39_nian_punishment",
+      "year": "1725—1726",
+      "title": "年羹尧遭夺职与自裁",
+      "body": "雍正三年，年羹尧被调离西北并收回军印，继而降爵夺职。十二月朝廷列出九十二款罪名，命其自裁；此时已跨入公历1726年。",
+      "impact": "军功、官员任用和皇权控制交织于案件之中；朝廷指控不能直接替代逐项辨析，也无可靠根据将其解释成篡位灭口。",
+      "people": [
+        "q_yongzheng",
+        "q_niangengyao",
+        "q_nianxialing"
+      ],
+      "sources": [
+        "v39_qsg295"
+      ],
+      "category": "政治",
+      "kind": "历史事件"
+    },
+    {
+      "id": "v39_longkodo_confinement",
+      "year": "1727—1728",
+      "title": "隆科多被终身禁锢",
+      "body": "隆科多因私藏玉牒等问题受审，朝廷列出四十一款罪名。雍正免其正法，在畅春园外筑屋禁锢；1728年隆科多死于禁所。",
+      "impact": "受顾命与外戚身份未能保障其政治地位；其结局是禁所去世，不能写作处死。",
+      "people": [
+        "q_yongzheng",
+        "q_longkodo"
+      ],
+      "sources": [
+        "v39_qsg295"
+      ],
+      "category": "政治",
+      "kind": "历史事件"
+    },
+    {
+      "id": "v39_wumeng",
+      "year": "1730",
+      "title": "乌蒙冲突与清军镇压",
+      "body": "乌蒙一带因驻军将领刘起元贪虐等因素爆发冲突，并波及周边。鄂尔泰调军镇压，本传记有焚寨和残酷杀戮。",
+      "impact": "改土归流不仅改变行政归属，新官兵侵扰与军事报复同样影响地方社会，不能只以版图扩大衡量改革。",
+      "people": [
+        "q_yongzheng",
+        "q_eertai"
+      ],
+      "sources": [
+        "v39_qsg288"
+      ],
+      "category": "社会",
+      "kind": "历史事件"
+    },
+    {
+      "id": "v39_zhang_retirement",
+      "year": "1748—1755",
+      "title": "张廷玉退休与配享风波",
+      "body": "张廷玉晚年请求退休，围绕南归、谢恩和确认配享等问题屡受乾隆责难，1750年被撤去配享资格。1755年他去世，乾隆仍遵雍正遗命，恢复其配享太庙。",
+      "impact": "官员退休与身后荣典仍受皇帝意志制约，长期谨慎任职未能消除君臣关系中的不确定性。",
+      "people": [
+        "q_zhangtingyu",
+        "q_qianlong"
+      ],
+      "sources": [
+        "v39_qsg288"
+      ],
+      "category": "政治",
+      "kind": "历史事件"
     }
   ],
   "objects": [
@@ -7686,6 +8338,327 @@
         "v5qe_qsg1"
       ],
       "note": "生父关系；塔克世后来被追尊为显祖。"
+    },
+    {
+      "from": "q_honghui",
+      "to": "q_yongzheng",
+      "kind": "father",
+      "note": "生父为雍正；齿序与所有皇子出生先后不同。",
+      "sources": [
+        "v5qn_qsg220",
+        "v39_dpm_princes"
+      ]
+    },
+    {
+      "from": "q_honghui",
+      "to": "q_ulanara",
+      "kind": "mother",
+      "note": "生母关系见世宗诸子及后妃传，并参档案研究。",
+      "sources": [
+        "v5qn_qsg214",
+        "v5qn_qsg220",
+        "v39_dpm_princes"
+      ]
+    },
+    {
+      "from": "q_hongfen",
+      "to": "q_yongzheng",
+      "kind": "father",
+      "note": "生父为雍正；齿序与所有皇子出生先后不同。",
+      "sources": [
+        "v5qn_qsg220",
+        "v39_dpm_princes"
+      ]
+    },
+    {
+      "from": "q_hongfen",
+      "to": "q_lishi",
+      "kind": "mother",
+      "note": "生母关系见世宗诸子及后妃传，并参档案研究。",
+      "sources": [
+        "v5qn_qsg214",
+        "v5qn_qsg220",
+        "v39_dpm_princes"
+      ]
+    },
+    {
+      "from": "q_hongyun",
+      "to": "q_yongzheng",
+      "kind": "father",
+      "note": "生父为雍正；齿序与所有皇子出生先后不同。",
+      "sources": [
+        "v5qn_qsg220",
+        "v39_dpm_princes"
+      ]
+    },
+    {
+      "from": "q_hongyun",
+      "to": "q_lishi",
+      "kind": "mother",
+      "note": "生母关系见世宗诸子及后妃传，并参档案研究。",
+      "sources": [
+        "v5qn_qsg214",
+        "v5qn_qsg220",
+        "v39_dpm_princes"
+      ]
+    },
+    {
+      "from": "q_hongshi",
+      "to": "q_yongzheng",
+      "kind": "father",
+      "note": "生父为雍正；齿序与所有皇子出生先后不同。",
+      "sources": [
+        "v5qn_qsg220",
+        "v39_dpm_princes"
+      ]
+    },
+    {
+      "from": "q_hongshi",
+      "to": "q_lishi",
+      "kind": "mother",
+      "note": "生母关系见世宗诸子及后妃传，并参档案研究。",
+      "sources": [
+        "v5qn_qsg214",
+        "v5qn_qsg220",
+        "v39_dpm_princes"
+      ]
+    },
+    {
+      "from": "q_hongzhou",
+      "to": "q_yongzheng",
+      "kind": "father",
+      "note": "生父为雍正；齿序与所有皇子出生先后不同。",
+      "sources": [
+        "v5qn_qsg220",
+        "v39_dpm_princes"
+      ]
+    },
+    {
+      "from": "q_hongzhou",
+      "to": "q_gengshi",
+      "kind": "mother",
+      "note": "生母关系见世宗诸子及后妃传，并参档案研究。",
+      "sources": [
+        "v5qn_qsg214",
+        "v5qn_qsg220",
+        "v39_dpm_princes"
+      ]
+    },
+    {
+      "from": "q_fuyi",
+      "to": "q_yongzheng",
+      "kind": "father",
+      "note": "生父为雍正；齿序与所有皇子出生先后不同。",
+      "sources": [
+        "v5qn_qsg220",
+        "v39_dpm_princes"
+      ]
+    },
+    {
+      "from": "q_fuyi",
+      "to": "q_nianshi",
+      "kind": "mother",
+      "note": "生母关系见世宗诸子及后妃传，并参档案研究。",
+      "sources": [
+        "v5qn_qsg214",
+        "v5qn_qsg220",
+        "v39_dpm_princes"
+      ]
+    },
+    {
+      "from": "q_fuhui",
+      "to": "q_yongzheng",
+      "kind": "father",
+      "note": "生父为雍正；齿序与所有皇子出生先后不同。",
+      "sources": [
+        "v5qn_qsg220",
+        "v39_dpm_princes"
+      ]
+    },
+    {
+      "from": "q_fuhui",
+      "to": "q_nianshi",
+      "kind": "mother",
+      "note": "生母关系见世宗诸子及后妃传，并参档案研究。",
+      "sources": [
+        "v5qn_qsg214",
+        "v5qn_qsg220",
+        "v39_dpm_princes"
+      ]
+    },
+    {
+      "from": "q_fupei",
+      "to": "q_yongzheng",
+      "kind": "father",
+      "note": "生父为雍正；齿序与所有皇子出生先后不同。",
+      "sources": [
+        "v5qn_qsg220",
+        "v39_dpm_princes"
+      ]
+    },
+    {
+      "from": "q_fupei",
+      "to": "q_nianshi",
+      "kind": "mother",
+      "note": "生母关系见世宗诸子及后妃传，并参档案研究。",
+      "sources": [
+        "v5qn_qsg214",
+        "v5qn_qsg220",
+        "v39_dpm_princes"
+      ]
+    },
+    {
+      "from": "q_hongzhan",
+      "to": "q_yongzheng",
+      "kind": "father",
+      "note": "生父为雍正；齿序与所有皇子出生先后不同。",
+      "sources": [
+        "v5qn_qsg220",
+        "v39_dpm_princes"
+      ]
+    },
+    {
+      "from": "q_hongzhan",
+      "to": "q_liushi",
+      "kind": "mother",
+      "note": "生母关系见世宗诸子及后妃传，并参档案研究。",
+      "sources": [
+        "v5qn_qsg214",
+        "v5qn_qsg220",
+        "v39_dpm_princes"
+      ]
+    },
+    {
+      "from": "q_qianlong",
+      "to": "q_niuhuru",
+      "kind": "mother",
+      "note": "弘历为钮祜禄氏所生；乾隆即位后尊生母为皇太后。",
+      "sources": [
+        "v5qn_qsg214"
+      ]
+    },
+    {
+      "from": "q_yongzheng",
+      "to": "q_ulanara",
+      "kind": "spouse",
+      "note": "雍正的嫡福晋、侧福晋或妃嫔；具体位号沿革见人物资料。",
+      "sources": [
+        "v5qn_qsg214"
+      ]
+    },
+    {
+      "from": "q_yongzheng",
+      "to": "q_niuhuru",
+      "kind": "spouse",
+      "note": "雍正的嫡福晋、侧福晋或妃嫔；具体位号沿革见人物资料。",
+      "sources": [
+        "v5qn_qsg214"
+      ]
+    },
+    {
+      "from": "q_yongzheng",
+      "to": "q_lishi",
+      "kind": "spouse",
+      "note": "雍正的嫡福晋、侧福晋或妃嫔；具体位号沿革见人物资料。",
+      "sources": [
+        "v5qn_qsg214"
+      ]
+    },
+    {
+      "from": "q_yongzheng",
+      "to": "q_gengshi",
+      "kind": "spouse",
+      "note": "雍正的嫡福晋、侧福晋或妃嫔；具体位号沿革见人物资料。",
+      "sources": [
+        "v5qn_qsg214"
+      ]
+    },
+    {
+      "from": "q_yongzheng",
+      "to": "q_nianshi",
+      "kind": "spouse",
+      "note": "雍正的嫡福晋、侧福晋或妃嫔；具体位号沿革见人物资料。",
+      "sources": [
+        "v5qn_qsg214"
+      ]
+    },
+    {
+      "from": "q_yongzheng",
+      "to": "q_liushi",
+      "kind": "spouse",
+      "note": "雍正的嫡福晋、侧福晋或妃嫔；具体位号沿革见人物资料。",
+      "sources": [
+        "v5qn_qsg214"
+      ]
+    },
+    {
+      "from": "q_kangxi",
+      "to": "q_wuya",
+      "kind": "spouse",
+      "note": "乌雅氏为康熙德妃，后追谥孝恭仁皇后。",
+      "sources": [
+        "v5qn_qsg214"
+      ]
+    },
+    {
+      "from": "q_yongzheng",
+      "to": "q_wuya",
+      "kind": "mother",
+      "note": "乌雅氏所生；胤禛与胤禵为同父同母兄弟。",
+      "sources": [
+        "v5qn_qsg214",
+        "v5qn_qsg220"
+      ]
+    },
+    {
+      "from": "q_yinti",
+      "to": "q_wuya",
+      "kind": "mother",
+      "note": "乌雅氏所生；胤禛与胤禵为同父同母兄弟。",
+      "sources": [
+        "v5qn_qsg214",
+        "v5qn_qsg220"
+      ]
+    },
+    {
+      "from": "q_yinli",
+      "to": "q_kangxi",
+      "kind": "father",
+      "note": "允礼为康熙第十七子。",
+      "sources": [
+        "v5qn_qsg220",
+        "v39_qsg165"
+      ]
+    },
+    {
+      "from": "q_hongzhan",
+      "to": "q_yinli",
+      "kind": "adoptiveFather",
+      "note": "1738年允礼去世后，以弘曕为嗣并承爵；生父仍为雍正。",
+      "sources": [
+        "v5qn_qsg220",
+        "v39_qsg165"
+      ]
+    },
+    {
+      "from": "q_niangengyao",
+      "to": "q_nianxialing",
+      "kind": "father",
+      "note": "年遐龄之子女；年羹尧与年氏为兄妹。",
+      "sources": [
+        "v39_qsg295",
+        "v5qn_qsg214"
+      ]
+    },
+    {
+      "from": "q_nianshi",
+      "to": "q_nianxialing",
+      "kind": "father",
+      "note": "年遐龄之子女；年羹尧与年氏为兄妹。",
+      "sources": [
+        "v39_qsg295",
+        "v5qn_qsg214"
+      ]
     }
   ],
   "articles": [
@@ -10674,8 +11647,8 @@
           "sources": [
             "v5qe_qsg1"
           ],
-          "eventLinks": [],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "q-nurhaci-2",
@@ -10684,8 +11657,8 @@
           "sources": [
             "v5qe_qsg1"
           ],
-          "eventLinks": [],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "q-nurhaci-3",
@@ -10694,10 +11667,10 @@
           "sources": [
             "v5qe_qsg1"
           ],
-          "eventLinks": [
+          "kind": "史实与解读",
+          "events": [
             "qev_later_jin_1616"
-          ],
-          "kind": "史实与解读"
+          ]
         },
         {
           "id": "q-nurhaci-4",
@@ -10706,7 +11679,6 @@
           "sources": [
             "v5qe_qsg1"
           ],
-          "eventLinks": [],
           "kind": "史实与解读",
           "events": [
             "v13_nurhaci_sarhu"
@@ -10719,8 +11691,8 @@
           "sources": [
             "v5qe_qsg1"
           ],
-          "eventLinks": [],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "q-nurhaci-6",
@@ -10729,10 +11701,10 @@
           "sources": [
             "v5qe_qsg1"
           ],
-          "eventLinks": [
+          "kind": "史实与解读",
+          "events": [
             "qev_nurhaci_death_1626"
-          ],
-          "kind": "史实与解读"
+          ]
         },
         {
           "id": "q-nurhaci-7",
@@ -10742,8 +11714,8 @@
             "v5qe_qsg1",
             "v5qe_dpm_lineage"
           ],
-          "eventLinks": [],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         }
       ],
       "sources": [
@@ -10763,10 +11735,10 @@
           "sources": [
             "v5qe_qsg2_3"
           ],
-          "eventLinks": [
+          "kind": "史实与解读",
+          "events": [
             "qev_hongtaiji_khan_1626"
-          ],
-          "kind": "史实与解读"
+          ]
         },
         {
           "id": "q-hongtaiji-2",
@@ -10775,8 +11747,8 @@
           "sources": [
             "v5qe_qsg2_3"
           ],
-          "eventLinks": [],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "q-hongtaiji-3",
@@ -10785,8 +11757,8 @@
           "sources": [
             "v5qe_qsg2_3"
           ],
-          "eventLinks": [],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "q-hongtaiji-4",
@@ -10796,10 +11768,10 @@
             "v5qe_qsg2_3",
             "v5qe_dpm_lineage"
           ],
-          "eventLinks": [
+          "kind": "史实与解读",
+          "events": [
             "qev_qing_name_1636"
-          ],
-          "kind": "史实与解读"
+          ]
         },
         {
           "id": "q-hongtaiji-5",
@@ -10808,7 +11780,6 @@
           "sources": [
             "v5qe_qsg2_3"
           ],
-          "eventLinks": [],
           "kind": "史实与解读",
           "events": [
             "v13_hongtaiji_songjin"
@@ -10821,8 +11792,8 @@
           "sources": [
             "v5qe_qsg2_3"
           ],
-          "eventLinks": [],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "q-hongtaiji-7",
@@ -10832,8 +11803,8 @@
             "v5qe_qsg2_3",
             "v5qe_dpm_lineage"
           ],
-          "eventLinks": [],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         }
       ],
       "sources": [
@@ -10854,8 +11825,8 @@
             "v5qe_qsg4_5",
             "v5qe_dpm_lineage"
           ],
-          "eventLinks": [],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "q-shunzhi-2",
@@ -10865,10 +11836,10 @@
             "v5qe_qsg4_5",
             "v5qe_dpm_life"
           ],
-          "eventLinks": [
+          "kind": "史实与解读",
+          "events": [
             "qev_qing_entry_1644"
-          ],
-          "kind": "史实与解读"
+          ]
         },
         {
           "id": "q-shunzhi-3",
@@ -10877,7 +11848,6 @@
           "sources": [
             "v5qe_qsg4_5"
           ],
-          "eventLinks": [],
           "kind": "史实与解读",
           "events": [
             "v12_shunzhi_hair_order"
@@ -10890,10 +11860,10 @@
           "sources": [
             "v5qe_qsg4_5"
           ],
-          "eventLinks": [
+          "kind": "史实与解读",
+          "events": [
             "qev_shunzhi_regency_end_1651"
-          ],
-          "kind": "史实与解读"
+          ]
         },
         {
           "id": "q-shunzhi-5",
@@ -10902,8 +11872,8 @@
           "sources": [
             "v5qe_qsg4_5"
           ],
-          "eventLinks": [],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "q-shunzhi-6",
@@ -10913,8 +11883,8 @@
             "v5qe_qsg4_5",
             "v5qe_dpm_reader"
           ],
-          "eventLinks": [],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "q-shunzhi-7",
@@ -10924,8 +11894,8 @@
             "v5qe_qsg4_5",
             "v5qe_dpm_lineage"
           ],
-          "eventLinks": [],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         }
       ],
       "sources": [
@@ -10948,10 +11918,10 @@
             "v5qe_qsg6_8",
             "v5qe_dpm_kangxi"
           ],
-          "eventLinks": [
+          "kind": "史实与解读",
+          "events": [
             "qev_oboi_removed_1669"
-          ],
-          "kind": "史实与解读"
+          ]
         },
         {
           "id": "q-kangxi-2",
@@ -10961,10 +11931,10 @@
             "v5qe_qsg6_8",
             "v5qe_dpm_three"
           ],
-          "eventLinks": [
+          "kind": "史实与解读",
+          "events": [
             "qev_three_feudatories_1673"
-          ],
-          "kind": "史实与解读"
+          ]
         },
         {
           "id": "q-kangxi-3",
@@ -10974,10 +11944,10 @@
             "v5qe_qsg6_8",
             "v5qe_dpm_kangxi"
           ],
-          "eventLinks": [
+          "kind": "史实与解读",
+          "events": [
             "qev_taiwan_1683"
-          ],
-          "kind": "史实与解读"
+          ]
         },
         {
           "id": "q-kangxi-4",
@@ -10987,10 +11957,10 @@
             "v5qe_qsg6_8",
             "v5qe_dpm_kangxi"
           ],
-          "eventLinks": [
+          "kind": "史实与解读",
+          "events": [
             "qev_treaty_nerchinsk_1689"
-          ],
-          "kind": "史实与解读"
+          ]
         },
         {
           "id": "q-kangxi-5",
@@ -11001,7 +11971,6 @@
             "v5qe_dpm_kangxi",
             "v26_tour"
           ],
-          "eventLinks": [],
           "kind": "史实与解读",
           "events": [
             "v12_kangxi_tax",
@@ -11017,8 +11986,8 @@
             "v5qe_qsg6_8",
             "v5qe_dpm_kangxi"
           ],
-          "eventLinks": [],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "q-kangxi-7",
@@ -11029,8 +11998,8 @@
             "v5qe_dpm_kangxi",
             "v5qe_dpm_secret"
           ],
-          "eventLinks": [],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         }
       ],
       "sources": [
@@ -11053,12 +12022,16 @@
           "sources": [
             "v5qe_qsg9",
             "v5qe_dpm_yongzheng",
-            "v5qe_dpm_secret"
+            "v5qe_dpm_secret",
+            "v39_qsg295"
           ],
-          "eventLinks": [
+          "kind": "史实与解读",
+          "events": [
             "qev_yongzheng_accession_1722"
           ],
-          "kind": "史实与解读"
+          "people": [
+            "q_longkodo"
+          ]
         },
         {
           "id": "q-yongzheng-2",
@@ -11068,8 +12041,8 @@
             "v5qe_qsg9",
             "v5qe_dpm_yongzheng"
           ],
-          "eventLinks": [],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "q-yongzheng-3",
@@ -11079,7 +12052,6 @@
             "v5qe_qsg9",
             "v5qe_dpm_yongzheng"
           ],
-          "eventLinks": [],
           "kind": "史实与解读",
           "events": [
             "v12_yongzheng_tax"
@@ -11091,12 +12063,17 @@
           "text": "雍正朝在云南、贵州、广西等地更积极推行改土归流，以朝廷任命的流官取代部分世袭土司，并重新编户、征税、驻军。政策削弱地方世袭权力，扩大中央行政深入程度；实施中也伴随战争、迁徙和对当地社会结构的强制改造。土司并未从全国所有地区消失，改流范围与结果各不相同。理解这项政策，既要看到国家整合，也要看到边地居民承担的冲突成本。",
           "sources": [
             "v5qe_qsg9",
-            "v5qe_dpm_gaitu"
+            "v5qe_dpm_gaitu",
+            "v39_qsg288"
           ],
-          "eventLinks": [
-            "qev_gaitu_guiliu_1726"
+          "kind": "史实与解读",
+          "events": [
+            "qev_gaitu_guiliu_1726",
+            "v39_wumeng"
           ],
-          "kind": "史实与解读"
+          "people": [
+            "q_eertai"
+          ]
         },
         {
           "id": "q-yongzheng-5",
@@ -11105,12 +12082,16 @@
           "sources": [
             "v5qe_qsg9",
             "v5qe_dpm_yongzheng",
-            "v26_military"
+            "v26_military",
+            "v39_qsg288"
           ],
-          "eventLinks": [],
           "kind": "史实与解读",
           "events": [
             "v26_grand_council"
+          ],
+          "people": [
+            "q_zhangtingyu",
+            "q_eertai"
           ]
         },
         {
@@ -11119,12 +12100,20 @@
           "text": "1723年，雍正帝把储君姓名密封，藏于乾清宫“正大光明”匾后，另留一份随身，以死后共同开启。这项做法针对康熙朝公开储位引发的长期争斗，后来成为乾嘉道咸诸帝继承的重要方式。秘密建储减少皇子公开结党空间，却也把选择权更集中于在位皇帝。与此同时，胤禩、胤禟等宗室受到严厉处分，说明稳定继承制度与打击现实对手同时发生。",
           "sources": [
             "v5qe_qsg9",
-            "v5qe_dpm_secret"
+            "v5qe_dpm_secret",
+            "v5qn_qsg220"
           ],
-          "eventLinks": [
-            "qev_secret_succession_1723"
+          "kind": "史实与解读",
+          "events": [
+            "qev_secret_succession_1723",
+            "v39_hongshi_removed",
+            "v39_princes_1733"
           ],
-          "kind": "史实与解读"
+          "people": [
+            "q_hongshi",
+            "q_qianlong",
+            "q_hongzhou"
+          ]
         },
         {
           "id": "q-yongzheng-7",
@@ -11132,12 +12121,19 @@
           "text": "雍正帝留下大量朱批奏折，以勤于处理政务著称。他也借文字狱、思想训谕与官僚处分维护权威，对曾静案先公开辩论、后由乾隆改判，显示政治尺度并非固定。1735年雍正帝在圆明园去世，弘历依秘密建储继位，葬清西陵泰陵，庙号世宗。十三年统治修补财政、重塑行政，却伴随高度集权和严厉政治控制；勤政可以说明工作方式，不能自动等同于所有政策都合理。\n\n奏折里勤政，地方上如何发生。雍正帝每日批阅大量奏折，朱批常直接追问官员责任，使中央能迅速干预地方事务。密折扩大信息来源，也可能鼓励官员相互监视，皇帝仍须判断奏报真假。田文镜、李卫、鄂尔泰等受重用官员在河南、浙江和西南推行清查、缉私与改流，地方反应各不相同。雍正以整顿为名处置年羹尧、隆科多及宗室对手，行政问责与政治清洗有时交织，不能把所有处分都归为反腐。对雍正暴卒、吕四娘行刺等故事，正史与档案没有可靠支持；能确认的是他1735年在圆明园去世，继承密诏随即开启。严密文书留下丰富材料，也不意味着皇帝能够完全看见基层现实。\n\n在族群与文化政策上，雍正撰写《大义觉迷录》回应曾静案，强调清朝统治的正当性，并把相关言论颁行各地。他试图以公开辩论统一观念，乾隆即位后却收毁该书并处死曾静。父子处理同一案件的方法相反，提醒人们：皇帝发布的政治论述首先服务当时权力需要，不能直接视为全社会已接受的共同认识。",
           "sources": [
             "v5qe_qsg9",
-            "v5qe_dpm_yongzheng"
+            "v5qe_dpm_yongzheng",
+            "v39_qsg295"
           ],
-          "eventLinks": [],
           "kind": "史实与解读",
           "events": [
-            "v13_yongzheng_tushu"
+            "v13_yongzheng_tushu",
+            "v39_nian_punishment",
+            "v39_longkodo_confinement"
+          ],
+          "people": [
+            "q_niangengyao",
+            "q_longkodo",
+            "q_eertai"
           ]
         }
       ],
@@ -11146,7 +12142,10 @@
         "v5qe_dpm_yongzheng",
         "v5qe_dpm_secret",
         "v5qe_dpm_gaitu",
-        "v26_military"
+        "v26_military",
+        "v5qn_qsg220",
+        "v39_qsg288",
+        "v39_qsg295"
       ]
     },
     {
@@ -11162,10 +12161,10 @@
             "v5qe_qsg10_15",
             "v5qe_dpm_lineage"
           ],
-          "eventLinks": [
+          "kind": "史实与解读",
+          "events": [
             "qev_qianlong_accession_1735"
-          ],
-          "kind": "史实与解读"
+          ]
         },
         {
           "id": "q-qianlong-2",
@@ -11175,10 +12174,10 @@
             "v5qe_qsg10_15",
             "v5qe_dpm_qianlong"
           ],
-          "eventLinks": [
+          "kind": "史实与解读",
+          "events": [
             "qev_qianlong_xinjiang_1759"
-          ],
-          "kind": "史实与解读"
+          ]
         },
         {
           "id": "q-qianlong-3",
@@ -11187,7 +12186,6 @@
           "sources": [
             "v5qe_qsg10_15"
           ],
-          "eventLinks": [],
           "kind": "史实与解读",
           "events": [
             "v12_qianlong_population"
@@ -11201,7 +12199,6 @@
             "v5qe_qsg10_15",
             "v5qe_dpm_reader"
           ],
-          "eventLinks": [],
           "kind": "史实与解读",
           "events": [
             "v12_qianlong_siku"
@@ -11216,7 +12213,6 @@
             "v5qe_dpm_qianlong",
             "v26_qianlong"
           ],
-          "eventLinks": [],
           "kind": "史实与解读",
           "events": [
             "v26_macartney"
@@ -11229,10 +12225,10 @@
           "sources": [
             "v5qe_qsg10_15"
           ],
-          "eventLinks": [
+          "kind": "史实与解读",
+          "events": [
             "qev_white_lotus_1796"
-          ],
-          "kind": "史实与解读"
+          ]
         },
         {
           "id": "q-qianlong-7",
@@ -11242,10 +12238,10 @@
             "v5qe_qsg10_15",
             "v5qe_dpm_lineage"
           ],
-          "eventLinks": [
+          "kind": "史实与解读",
+          "events": [
             "qev_qianlong_abdication_1796"
-          ],
-          "kind": "史实与解读"
+          ]
         }
       ],
       "sources": [
@@ -11269,10 +12265,10 @@
             "v5qe_qsg16",
             "v5qe_dpm_lineage"
           ],
-          "eventLinks": [
+          "kind": "史实与解读",
+          "events": [
             "qev_qianlong_abdication_1796"
-          ],
-          "kind": "史实与解读"
+          ]
         },
         {
           "id": "q-jiaqing-2",
@@ -11281,11 +12277,11 @@
           "sources": [
             "v5qe_qsg16"
           ],
-          "eventLinks": [
+          "kind": "史实与解读",
+          "events": [
             "qev_jiaqing_rule_1799",
             "qev_heshen_fall_1799"
-          ],
-          "kind": "史实与解读"
+          ]
         },
         {
           "id": "q-jiaqing-3",
@@ -11294,10 +12290,10 @@
           "sources": [
             "v5qe_qsg16"
           ],
-          "eventLinks": [
+          "kind": "史实与解读",
+          "events": [
             "qev_white_lotus_1796"
-          ],
-          "kind": "史实与解读"
+          ]
         },
         {
           "id": "q-jiaqing-4",
@@ -11307,8 +12303,8 @@
             "v5qe_qsg16",
             "v5qe_dpm_reader"
           ],
-          "eventLinks": [],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "q-jiaqing-5",
@@ -11317,7 +12313,6 @@
           "sources": [
             "v5qe_qsg16"
           ],
-          "eventLinks": [],
           "kind": "史实与解读",
           "events": [
             "v12_jiaqing_palace_attack"
@@ -11330,8 +12325,8 @@
           "sources": [
             "v5qe_qsg16"
           ],
-          "eventLinks": [],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "q-jiaqing-7",
@@ -11341,8 +12336,8 @@
             "v5qe_qsg16",
             "v5qe_dpm_lineage"
           ],
-          "eventLinks": [],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         }
       ],
       "sources": [
@@ -11364,8 +12359,8 @@
             "v5qe_qsg17_19",
             "v5qe_dpm_lineage"
           ],
-          "eventLinks": [],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "q-daoguang-2",
@@ -11374,7 +12369,6 @@
           "sources": [
             "v5qe_qsg17_19"
           ],
-          "eventLinks": [],
           "kind": "史实与解读",
           "events": [
             "v12_daoguang_silver"
@@ -11388,8 +12382,8 @@
             "v5qe_qsg17_19",
             "v5qe_chn_opium"
           ],
-          "eventLinks": [],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "q-daoguang-4",
@@ -11399,10 +12393,10 @@
             "v5qe_qsg17_19",
             "v5qe_chn_opium"
           ],
-          "eventLinks": [
+          "kind": "史实与解读",
+          "events": [
             "qev_opium_war_1840"
-          ],
-          "kind": "史实与解读"
+          ]
         },
         {
           "id": "q-daoguang-5",
@@ -11412,10 +12406,10 @@
             "v5qe_qsg17_19",
             "v5qe_chn_opium"
           ],
-          "eventLinks": [
+          "kind": "史实与解读",
+          "events": [
             "qev_nanjing_treaty_1842"
-          ],
-          "kind": "史实与解读"
+          ]
         },
         {
           "id": "q-daoguang-6",
@@ -11425,8 +12419,8 @@
             "v5qe_qsg17_19",
             "v5qe_chn_jintian"
           ],
-          "eventLinks": [],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "q-daoguang-7",
@@ -11437,8 +12431,8 @@
             "v5qe_dpm_lineage",
             "v5qe_chn_opium"
           ],
-          "eventLinks": [],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         }
       ],
       "sources": [
@@ -11461,8 +12455,8 @@
             "v5qe_qsg20",
             "v5qe_dpm_lineage"
           ],
-          "eventLinks": [],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "q-xianfeng-2",
@@ -11472,10 +12466,10 @@
             "v5qe_qsg20",
             "v5qe_chn_jintian"
           ],
-          "eventLinks": [
+          "kind": "史实与解读",
+          "events": [
             "qev_taiping_1851"
-          ],
-          "kind": "史实与解读"
+          ]
         },
         {
           "id": "q-xianfeng-3",
@@ -11484,7 +12478,6 @@
           "sources": [
             "v5qe_qsg20"
           ],
-          "eventLinks": [],
           "kind": "史实与解读",
           "events": [
             "v12_xianfeng_lijin"
@@ -11497,10 +12490,10 @@
           "sources": [
             "v5qe_qsg20"
           ],
-          "eventLinks": [
+          "kind": "史实与解读",
+          "events": [
             "qev_second_opium_war_1856"
-          ],
-          "kind": "史实与解读"
+          ]
         },
         {
           "id": "q-xianfeng-5",
@@ -11509,7 +12502,6 @@
           "sources": [
             "v5qe_qsg20"
           ],
-          "eventLinks": [],
           "kind": "史实与解读",
           "events": [
             "v13_xianfeng_zongli"
@@ -11523,8 +12515,8 @@
             "v5qe_qsg20",
             "v5qe_dpm_life"
           ],
-          "eventLinks": [],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "q-xianfeng-7",
@@ -11534,8 +12526,8 @@
             "v5qe_qsg20",
             "v5qe_dpm_life"
           ],
-          "eventLinks": [],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         }
       ],
       "sources": [
@@ -11558,8 +12550,8 @@
             "v5qe_qsg21_22",
             "v5qe_dpm_lineage"
           ],
-          "eventLinks": [],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "q-tongzhi-2",
@@ -11569,10 +12561,10 @@
             "v5qe_qsg21_22",
             "v5qe_chn_jintian"
           ],
-          "eventLinks": [
+          "kind": "史实与解读",
+          "events": [
             "qev_tongzhi_restoration_1861"
-          ],
-          "kind": "史实与解读"
+          ]
         },
         {
           "id": "q-tongzhi-3",
@@ -11581,12 +12573,10 @@
           "sources": [
             "v5qe_qsg21_22"
           ],
-          "eventLinks": [
-            "qev_self_strengthening_1860s"
-          ],
           "kind": "史实与解读",
           "events": [
-            "v12_tongzhi_tongwen"
+            "v12_tongzhi_tongwen",
+            "qev_self_strengthening_1860s"
           ]
         },
         {
@@ -11596,8 +12586,8 @@
           "sources": [
             "v5qe_qsg21_22"
           ],
-          "eventLinks": [],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "q-tongzhi-5",
@@ -11607,8 +12597,8 @@
             "v5qe_qsg21_22",
             "v5qe_dpm_reader"
           ],
-          "eventLinks": [],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "q-tongzhi-6",
@@ -11617,8 +12607,8 @@
           "sources": [
             "v5qe_qsg21_22"
           ],
-          "eventLinks": [],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "q-tongzhi-7",
@@ -11628,8 +12618,8 @@
             "v5qe_qsg21_22",
             "v5qe_dpm_lineage"
           ],
-          "eventLinks": [],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         }
       ],
       "sources": [
@@ -11652,10 +12642,10 @@
             "v5qe_qsg23_24",
             "v5qe_dpm_lineage"
           ],
-          "eventLinks": [
+          "kind": "史实与解读",
+          "events": [
             "qev_guangxu_accession_1875"
-          ],
-          "kind": "史实与解读"
+          ]
         },
         {
           "id": "q-guangxu-2",
@@ -11665,8 +12655,8 @@
             "v5qe_qsg23_24",
             "v5qe_dpm_reader"
           ],
-          "eventLinks": [],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "q-guangxu-3",
@@ -11675,10 +12665,10 @@
           "sources": [
             "v5qe_qsg23_24"
           ],
-          "eventLinks": [
+          "kind": "史实与解读",
+          "events": [
             "qev_sino_japanese_war_1894"
-          ],
-          "kind": "史实与解读"
+          ]
         },
         {
           "id": "q-guangxu-4",
@@ -11687,10 +12677,10 @@
           "sources": [
             "v5qe_qsg23_24"
           ],
-          "eventLinks": [
+          "kind": "史实与解读",
+          "events": [
             "qev_hundred_days_1898"
-          ],
-          "kind": "史实与解读"
+          ]
         },
         {
           "id": "q-guangxu-5",
@@ -11699,8 +12689,8 @@
           "sources": [
             "v5qe_qsg23_24"
           ],
-          "eventLinks": [],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "q-guangxu-6",
@@ -11710,7 +12700,6 @@
             "v5qe_qsg23_24",
             "v26_guangxu"
           ],
-          "eventLinks": [],
           "kind": "史实与解读",
           "events": [
             "v12_guangxu_exam",
@@ -11725,8 +12714,8 @@
             "v5qe_qsg23_24",
             "v5qe_dpm_lineage"
           ],
-          "eventLinks": [],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         }
       ],
       "sources": [
@@ -11749,10 +12738,10 @@
             "v5qe_qsg25",
             "v5qe_dpm_lineage"
           ],
-          "eventLinks": [
+          "kind": "史实与解读",
+          "events": [
             "qev_xuantong_accession_1908"
-          ],
-          "kind": "史实与解读"
+          ]
         },
         {
           "id": "q-xuantong-2",
@@ -11761,8 +12750,8 @@
           "sources": [
             "v5qe_qsg25"
           ],
-          "eventLinks": [],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "q-xuantong-3",
@@ -11771,7 +12760,6 @@
           "sources": [
             "v5qe_qsg25"
           ],
-          "eventLinks": [],
           "kind": "史实与解读",
           "events": [
             "v12_xuantong_railway"
@@ -11784,10 +12772,10 @@
           "sources": [
             "v5qe_qsg25"
           ],
-          "eventLinks": [
+          "kind": "史实与解读",
+          "events": [
             "qev_xinhai_1911"
-          ],
-          "kind": "史实与解读"
+          ]
         },
         {
           "id": "q-xuantong-5",
@@ -11797,10 +12785,10 @@
             "v5qe_qsg25",
             "v5qe_saac_abdication"
           ],
-          "eventLinks": [
+          "kind": "史实与解读",
+          "events": [
             "qev_abdication_1912"
-          ],
-          "kind": "史实与解读"
+          ]
         },
         {
           "id": "q-xuantong-6",
@@ -11810,10 +12798,10 @@
             "v5qe_qsg25",
             "v5qe_saac_abdication"
           ],
-          "eventLinks": [
+          "kind": "史实与解读",
+          "events": [
             "qev_manchukuo_1932"
-          ],
-          "kind": "史实与解读"
+          ]
         },
         {
           "id": "q-xuantong-7",
@@ -11823,8 +12811,8 @@
             "v5qe_qsg25",
             "v5qe_saac_abdication"
           ],
-          "eventLinks": [],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         }
       ],
       "sources": [
@@ -13592,6 +14580,429 @@
       "sources": [
         "v26_zhang"
       ]
+    },
+    {
+      "person": "q_zhangtingyu",
+      "title": "张廷玉：制度、文书与君臣晚境",
+      "dek": "桐城出身的清代大学士，历仕康熙、雍正、乾隆三朝。参与军机处早期规制与官修史书事务，受雍正遗命辅佐弘历；晚年退休引发君臣冲突，身后仍按遗命配享太庙。",
+      "sections": [
+        {
+          "id": "q_zhangtingyu_1",
+          "title": "从翰林走到政务中枢",
+          "text": "张廷玉来自安徽桐城，是大学士张英的次子。康熙三十九年，他考中进士，进入翰林院，后来在南书房供职，并历任内阁学士、刑部侍郎等职。这样的经历使他既熟悉经史文字，也逐步进入实际政务。雍正即位后，张廷玉先后担任礼部、户部等重要职务，升任大学士。他所处理的并非只有典礼与文章，还包括考试、钱粮以及地方人口管理。对于江南山地流徙种植、结棚而居的人口，他建议地方慎选官员管理，并给读书或有技勇者考验录用的机会。这一建议仍处在清代国家控制人口的框架中，却显示他的工作横跨文书、行政和社会事务。",
+          "kind": "史实与解读",
+          "sources": [
+            "v39_qsg288"
+          ],
+          "people": [
+            "q_yongzheng"
+          ],
+          "events": [
+            "v26_grand_council"
+          ]
+        },
+        {
+          "id": "q_zhangtingyu_2",
+          "title": "文书背后的制度",
+          "text": "雍正朝西北用兵，需要迅速而保密地处理军务，军机机构由此发展。张廷玉参与早期规制，将一般公文与机要奏折的办理途径加以区分，帮助皇帝把机密政务集中到内廷处理。军机大臣能够接近决策中心，但其权力来自皇帝委任，不能把他们等同于可以自行决定国事的宰相。他也曾指出刑部不分案情轻重、一概收禁的弊端，主张允许分别取保，并要求都察院、大理寺纠正截引律例、草率定罪的问题。雍正批准交九卿议行。灾后经过直隶时，他还提出延长赈济、以工代赈。把这些具体奏议放在一起，才能看到谨慎近臣如何通过日常程序影响国家治理。",
+          "kind": "史实与解读",
+          "sources": [
+            "v39_qsg288"
+          ],
+          "people": [
+            "q_yongzheng"
+          ],
+          "events": [
+            "v39_qianlong_accession"
+          ]
+        },
+        {
+          "id": "q_zhangtingyu_3",
+          "title": "荣典与退休之间",
+          "text": "雍正临终，张廷玉与鄂尔泰等受顾命，参与乾隆即位后的政务，并得到将来配享太庙的承诺。他也参与官修《明史》等文化事务。乾隆年间，年老多病的张廷玉请求退休，皇帝却将退居乡里与受恩尽忠联系起来，数次阻止。获准后，他又请求确认身后配享，随后因谢恩礼节、皇长子去世期间请求南归等事接连遭责。朝廷撤去其配享资格，命缴还赏赐。1755年张廷玉去世，乾隆最终仍遵雍正遗诏，让他配享太庙。这个结局并非简单的功臣圆满退场：退休、礼仪和身后荣典都受皇帝意志左右，个人数十年的谨慎也无法消除这种不确定性。他最终成为清代配享太庙的汉大臣中的特殊一例。这样的礼制荣誉十分突出，却不应遮住他在刑部、赈济和文书制度中留下的实际工作。",
+          "kind": "史实与解读",
+          "sources": [
+            "v39_qsg288"
+          ],
+          "people": [
+            "q_yongzheng"
+          ],
+          "events": [
+            "v39_zhang_retirement"
+          ]
+        }
+      ],
+      "sources": [
+        "v39_qsg288"
+      ]
+    },
+    {
+      "person": "q_eertai",
+      "title": "鄂尔泰：西南改流与内廷辅政",
+      "dek": "满洲镶蓝旗的雍正朝重臣，在西南推动改土归流，后入军机并受顾命辅佐乾隆。他的经历连接地方行政扩张、边疆战争及内廷决策，也留下改流中的暴力与治理失误。",
+      "sections": [
+        {
+          "id": "q_eertai_1",
+          "title": "从旗员到西南督抚",
+          "text": "鄂尔泰出身满洲镶蓝旗，康熙年间中举，做过侍卫和内务府官员。雍正即位后，他被擢任江苏布政使，随后调往西南，最终主持云贵等地事务。他在江苏时曾购谷储备赈济，也考察太湖水利；进入西南之后，面对的却是土司、地方官与村寨之间更复杂的权力关系。当地土司以世袭方式管理部分地区，流官则由国家任命，二者并存已久。鄂尔泰主张扩大流官管理范围，希望通过调整行政归属、设府县和驻军，使朝廷能够更直接地控制地方。他提出的办法得到雍正支持，成为这一时期西南改土归流的重要推动力。",
+          "kind": "史实与解读",
+          "sources": [
+            "v39_qsg288"
+          ],
+          "people": [
+            "q_yongzheng"
+          ],
+          "events": [
+            "qev_gaitu_guiliu_1726"
+          ]
+        },
+        {
+          "id": "q_eertai_2",
+          "title": "改流的扩张与代价",
+          "text": "从雍正四年起，鄂尔泰以招抚、迫令交地和军事进攻等手段推进改流，重新划分部分省界、编定户口赋额、设置地方官与营汛。这改变了原有土司权力，也改变了居民面对征税、司法和军队的方式。不能因为它扩大国家行政范围，便把整个过程写成没有代价的安定。1730年，乌蒙一带因驻军将领刘起元贪虐等因素爆发严重冲突，并波及周边地区。鄂尔泰调军镇压，本传明确记载焚寨与残酷杀戮。旧土司被迁徙或剥夺权力、新官兵侵扰以及军事报复，交织在同一改革过程中。1735年苗疆再起危机，鄂尔泰承认此前安排不当，主动请求削爵，说明改流并没有自动解决地方治理的问题。",
+          "kind": "史实与解读",
+          "sources": [
+            "v39_qsg288"
+          ],
+          "people": [
+            "q_yongzheng"
+          ],
+          "events": [
+            "v39_wumeng"
+          ]
+        },
+        {
+          "id": "q_eertai_3",
+          "title": "进入内廷之后",
+          "text": "1732年，鄂尔泰入京任大学士，办理军机事务，又参与西北军务。他曾指出对准噶尔长期用兵会消耗国家，劝皇帝不要急于求成。雍正去世前，他与张廷玉等受顾命，参与开启确立弘历继承地位的密诏，随后在乾隆初年总理事务。其地位体现了雍正用地方功臣参与中央决策的安排。1745年鄂尔泰去世，获谥文端，依遗命配享太庙。然而身后评价仍会变动：十年后胡中藻案发，乾隆追责其门生与亲属交往，并将他撤出贤良祠。太庙与贤良祠是不同祭祀场所，不宜混写。评价鄂尔泰，既要看行政能力，也要看政策所依赖的强制手段及其持续后果。本传还记他提出疏浚云南水道、修堤与开垦等措施，说明西南治理并非只有改流；水利和生计事务同样属于督抚职责，只是常被军功叙事掩盖。",
+          "kind": "史实与解读",
+          "sources": [
+            "v39_qsg288"
+          ],
+          "people": [
+            "q_yongzheng"
+          ],
+          "events": [
+            "v39_qianlong_accession"
+          ]
+        }
+      ],
+      "sources": [
+        "v39_qsg288"
+      ]
+    },
+    {
+      "person": "q_niangengyao",
+      "title": "年羹尧：从西北军功到夺职自裁",
+      "dek": "由进士出身而掌西北军务的清代重臣，参与康熙末年入藏战争后勤，雍正初指挥青海战事。军功带来显赫权势，他随后被逐步夺职、列罪，雍正三年十二月被令自裁。",
+      "sections": [
+        {
+          "id": "q_niangengyao_1",
+          "title": "文官出身的边疆统帅",
+          "text": "年羹尧并非从普通士兵一路升为将军。他在康熙三十九年考中进士，入翰林，后来升任四川巡抚，逐渐承担边疆军政。准噶尔势力进入西藏后，四川成为清军进藏的重要通道。年羹尧参与安排兵力、驿站与粮运，并建议调整里塘、巴塘等地的行政归属，以保障运输。1720年清军进入西藏，具体前线统军另有将领；年羹尧的贡献主要在组织与后勤，不能把全部战功归到他一人。长期军务也造成财政亏空。他曾请求加征火耗补充经费，遭康熙驳斥，皇帝指出军队沿途取用与地方垫支相连。这一分歧显示，边疆战争的资源负担并不止发生在战场。",
+          "kind": "史实与解读",
+          "sources": [
+            "v39_qsg295"
+          ],
+          "people": [
+            "q_yongzheng"
+          ],
+          "events": [
+            "v39_nian_campaign"
+          ]
+        },
+        {
+          "id": "q_niangengyao_2",
+          "title": "青海战功与权势",
+          "text": "雍正即位后，年羹尧接掌重要军务。1723年罗卜藏丹津在青海起兵，清廷授他抚远大将军印，统筹多路兵力。次年岳钟琪等率军深入，罗卜藏丹津败走，年羹尧因功晋爵，家族亦获荣宠。他随后提出驻兵、屯田、市场与部落管理等善后安排，军事胜利因此进一步转为制度控制。但战事也伴随焚毁寺院、杀戮和人口迁徙，不能只用胜利者的奖叙衡量其影响。年羹尧拥有举荐官员、调度将领的能力，朝廷给予的特殊礼遇使他声势极盛。这种权势仍来自皇帝授权，一旦君臣信任改变，军功不能保证其地位永久不变。",
+          "kind": "史实与解读",
+          "sources": [
+            "v39_qsg295"
+          ],
+          "people": [
+            "q_yongzheng"
+          ],
+          "events": [
+            "v39_nian_campaign"
+          ]
+        },
+        {
+          "id": "q_niangengyao_3",
+          "title": "从夺印到自裁",
+          "text": "雍正三年，年羹尧遭到越来越多的责难。皇帝先将他调任杭州将军，收回军印，随后继续降爵夺职。各地官员陆续参劾，案件涉及官员任用、财物、军事处分与礼仪越分。到当年十二月，朝廷列出九十二款罪名，命他在狱中自裁，其子年富被杀，其他亲属也遭处分。奏折中颠倒“朝乾夕惕”一语确实被皇帝指责，但不能把败亡归结为写错四个字。同样，现有材料不能证明他因知道雍正篡位秘密而被灭口。较稳妥的理解是：军政权力、个人行为、官僚冲突与皇帝强化控制彼此交织；定罪文书能够说明朝廷如何处置他，却不能免除对每项指控的辨析。他的亲属后来又陆续获得宽免，父亲年遐龄死后恢复原职，亦说明处分并非一次判定后永不改变，皇帝仍能够重新调整对整个家族的处置。",
+          "kind": "史实与解读",
+          "sources": [
+            "v39_qsg295"
+          ],
+          "people": [
+            "q_yongzheng"
+          ],
+          "events": [
+            "v39_nian_punishment"
+          ]
+        }
+      ],
+      "sources": [
+        "v39_qsg295"
+      ]
+    },
+    {
+      "person": "q_longkodo",
+      "title": "隆科多：皇位交接后的荣宠与禁锢",
+      "dek": "佟佳氏勋贵，康熙晚年任步军统领，在皇位交接中受顾命。雍正初执掌重要政务，之后遭削职与审讯，1727年被终身禁锢，次年死于禁所。",
+      "sections": [
+        {
+          "id": "q_longkodo_1",
+          "title": "外戚与京城职守",
+          "text": "隆科多是佟国维之子，也是康熙孝懿仁皇后的弟弟，出身满洲镶黄旗。他的政治起点与清初勋贵、皇室婚姻紧密相连，但任职并非始终顺利。康熙年间，他做过侍卫、副都统等职，曾因属员违法而被免去部分职务。后来获任步军统领，又兼理藩院尚书。步军统领掌管京城相关治安与防卫事务，使他在康熙晚年处于特殊位置。谈论他与雍正的关系时，不能直接称作生母之弟；其“舅舅”称谓所联系的是孝懿皇后这一皇室关系。准确区分血缘、婚姻与宫廷称谓，才能理解他为什么既是大臣，又拥有外戚身份。",
+          "kind": "史实与解读",
+          "sources": [
+            "v39_qsg295"
+          ],
+          "people": [
+            "q_yongzheng"
+          ],
+          "events": [
+            "qev_yongzheng_accession_1722"
+          ]
+        },
+        {
+          "id": "q_longkodo_2",
+          "title": "皇位交接中的重臣",
+          "text": "1722年康熙去世，隆科多在皇位交接中承受顾命。雍正即位后，命他与马齐总理事务，并任吏部尚书，给予爵位与礼遇。此后他参与《圣祖实录》《大清会典》及《明史》等官修书籍事务，地位并不只限于宫门防卫。皇帝还让他与年羹尧同获特殊赏赐，两人成为雍正初年格外显赫的臣僚。不过，受顾命可以确认，并不等于关于继位的各种故事都得到证明。有关篡改遗诏、以秘密威胁皇帝的情节，不能仅凭他后来获罪倒推成立。传世记载本身形成于政治斗争之后，须分清皇帝的公开说法、案件材料与后人的猜测。",
+          "kind": "史实与解读",
+          "sources": [
+            "v39_qsg295"
+          ],
+          "people": [
+            "q_yongzheng"
+          ],
+          "events": [
+            "qev_yongzheng_accession_1722"
+          ]
+        },
+        {
+          "id": "q_longkodo_3",
+          "title": "荣宠消退之后",
+          "text": "从雍正三年起，隆科多陆续失去步军统领等职与特殊赏赐。家仆牛伦索取财物的案件又牵出受贿指控，他被免去尚书，转办边疆事务，一度奉命勘议俄国边界。1727年，私藏玉牒等问题引发新的审讯，朝廷列出四十一款罪名，原拟处死。雍正最终以他在康熙去世时承旨为由免其正法，在畅春园外筑屋，将其终身禁锢。1728年他死于禁所，家属也受到不同处分。对于这些罪名，应说明是当时朝廷的认定；既不能一概抹去行政与贪腐问题，也不能把整案简化为公开透明的司法审判。他的结局反映了外戚、功臣与皇权之间并不稳定的关系。两个儿子的结局也不同：岳兴阿被夺官，玉柱被发往黑龙江，不能笼统写成全家处死。这些差别提醒读者，政治案件中的亲属处分需要逐人辨认。",
+          "kind": "史实与解读",
+          "sources": [
+            "v39_qsg295"
+          ],
+          "people": [
+            "q_yongzheng"
+          ],
+          "events": [
+            "v39_longkodo_confinement"
+          ]
+        }
+      ],
+      "sources": [
+        "v39_qsg295"
+      ]
+    },
+    {
+      "person": "q_hongshi",
+      "title": "弘时：皇子身份与宗籍的失而复得",
+      "dek": "从雍正潜邸的年长儿子，到被撤去黄带的三阿哥，弘时的短暂一生留下了皇室亲情与政治处分交错的痕迹。",
+      "sections": [
+        {
+          "title": "年长的儿子，并非既定的储君",
+          "text": "弘时生于康熙四十三年，生母是后来受封齐妃的李氏。李氏另有两个儿子弘昐、弘昀，均在康熙年间早逝。按全部儿子的出生先后，弘时前面还有嫡福晋所生的弘晖；但由于弘昐没有列入通常的皇子序齿，弘时被称作皇三子。这个称谓说的是家谱中的名次，不能简单理解为雍正一共只生过三个儿子。\n\n雍正即位时，弘晖与弘昀已经去世，弘时成为在世诸子中最年长的一位。然而，年长并没有使他自动成为继承人。皇子之间的长幼、母亲的身份、皇帝对个人的判断，与正式确定储位是不同层面的问题。雍正没有照搬康熙公开册立皇太子的做法，而以秘密方式安排继承。后来即位的是皇四子弘历。弘时在世时没有取得亲王或郡王的封爵，也没有留下像弘历、弘昼那样在雍正末年共同办理政务的记录。",
+          "id": "q_hongshi_1",
+          "kind": "史实与解读",
+          "sources": [
+            "v5qn_qsg220",
+            "v39_qsg165",
+            "v5qn_qsg214",
+            "v39_dpm_princes"
+          ],
+          "people": [
+            "q_lishi",
+            "q_honghui",
+            "q_qianlong"
+          ],
+          "events": [
+            "qev_secret_succession_1723"
+          ]
+        },
+        {
+          "title": "从撤去黄带到早逝",
+          "text": "雍正四年，弘时的处境发生剧烈变化。后来的档案援引当年谕旨，说明雍正曾命他为允禩之子，并撤去黄带，交允祹约束养赡。黄带与宗籍不仅是服饰和册页上的标记，也关系到清代皇族身份的承认。弘时仍是雍正的亲生儿子，但他在皇室制度中的位置已经受到处分。把血缘与名分分开，才能理解这道命令的分量。\n\n《清史稿》用放纵不谨概括弘时获咎，却没有写出一套完整的行为经过。后世据此展开了种种夺嫡故事，有的甚至写成父亲为弘历清除对手。现有记载不足以证明这些情节。能够确认的是，他在雍正五年去世，没有活到弘历继位。对于具体死因，也不宜把赐死、服毒等说法直接当作事实。弘时的遭遇确与皇室政治紧张相连，但其中仍有不能用想象补足的环节。",
+          "id": "q_hongshi_2",
+          "kind": "史实与解读",
+          "sources": [
+            "v5qn_qsg220",
+            "v39_qsg165",
+            "v5qn_qsg214",
+            "v39_dpm_princes"
+          ],
+          "people": [
+            "q_yongzheng",
+            "q_yinsi"
+          ],
+          "events": [
+            "v39_hongshi_removed"
+          ]
+        },
+        {
+          "title": "乾隆朝重新写入家谱",
+          "text": "弘历即位后，提出将已故的三阿哥重新收入谱牒。有关谕旨一面维护父亲从严管教诸子的解释，一面以兄弟之情提出恢复名分；随后有关大臣议奏，弘时重新列入玉牒。新皇帝没有因此宣布父亲的全部处置错误，而是在既有皇权秩序之内，为兄长调整身后身份。这使弘时成为观察雍正、乾隆两朝宗室政策衔接的一个具体人物。\n\n恢复宗籍并不等于追封亲王。弘时与早殇后追封端亲王的弘晖、追封怀亲王的福惠，各有不同的身后待遇。阅读他们的家谱，应分别辨认亲缘、封爵和安葬信息。弘时的故事也提示我们：一位没有登上皇位、没有建立显赫功业的皇子，仍然能够帮助理解帝王家庭如何被制度约束。他留下的疑问值得保留，而已经能够确认的姓名、母系、处分与恢复宗籍，同样值得认真记住。",
+          "id": "q_hongshi_3",
+          "kind": "史实与解读",
+          "sources": [
+            "v5qn_qsg220",
+            "v39_qsg165",
+            "v5qn_qsg214",
+            "v39_dpm_princes"
+          ],
+          "people": [
+            "q_qianlong",
+            "q_fuhui"
+          ],
+          "events": [
+            "v39_hongshi_restored"
+          ]
+        }
+      ],
+      "sources": [
+        "v5qn_qsg220",
+        "v39_qsg165",
+        "v5qn_qsg214",
+        "v39_dpm_princes"
+      ]
+    },
+    {
+      "person": "q_hongzhou",
+      "title": "弘昼：和亲王的兄弟与君臣之间",
+      "dek": "与弘历一同参与雍正末年的政务，后来成为乾隆的弟弟和臣下。封爵、家产与君臣分际，比流传的怪诞轶事更接近弘昼的真实位置。",
+      "sections": [
+        {
+          "title": "与宝亲王一同受命",
+          "text": "弘昼生于康熙五十年十一月，生母耿氏后来在雍正朝受封裕嫔、裕妃。他比弘历略小，是通常序齿中的皇五子。雍正十一年，弘昼受封和亲王，弘历受封宝亲王。两位皇子的爵位都是亲王，却不能由此推断二人在皇位继承上具有同样的位置：王爵是宗室身份，储位则关乎大统，二者并不相等。\n\n雍正十三年，朝廷设办理苗疆事务处，命弘历与弘昼共同参与其事。这项任命说明弘昼并非完全远离政治生活的闲散宗室。皇子可以在皇帝安排下接触事务、承担职责，同时仍受其他重臣和中央制度的约束。雍正去世后，弘历继位，弘昼则继续以和亲王身份活动。同父兄弟之间，自此又有了皇帝与臣下的关系，这种双重身份贯穿他此后的经历。",
+          "id": "q_hongzhou_1",
+          "kind": "史实与解读",
+          "sources": [
+            "v5qn_qsg220",
+            "v39_qsg165",
+            "v5qn_qsg214",
+            "v39_dpm_princes"
+          ],
+          "people": [
+            "q_gengshi",
+            "q_qianlong"
+          ],
+          "events": [
+            "v39_princes_1733",
+            "v39_miao_affairs"
+          ]
+        },
+        {
+          "title": "亲近有恩，言行有界",
+          "text": "《清史稿》记载，弘昼在乾隆朝曾参与议政，并得到雍正潜邸旧有资财。丰厚的家产和皇帝的优待，使他在诸王中处境优越；但这些恩遇并没有使他脱离君臣秩序。传记所载的一次监试经历尤其能反映这种分际：弘昼与乾隆在正大光明殿监试八旗子弟，因请皇帝退食未获同意，说出了带有质问意味的话，次日又入见谢罪。\n\n这一记载不必被加工成惊险的宫廷冲突。值得留意的是，即使皇帝随后宽容，弘昼仍需为越过礼节的言语认错。亲王的地位来自封授，政治空间也依赖皇帝的容许。史书还记他喜欢谈论丧礼、安排模拟祭奠等行为，但这些是传记中的轶事，并不能证明他有一套以装疯避祸为目的的计划。把异于常人的举动直接解释成高明权术，反而会遮住已有证据所呈现的日常权力关系。",
+          "id": "q_hongzhou_2",
+          "kind": "史实与解读",
+          "sources": [
+            "v5qn_qsg220",
+            "v39_qsg165",
+            "v5qn_qsg214",
+            "v39_dpm_princes"
+          ],
+          "people": [
+            "q_qianlong"
+          ],
+          "events": [
+            "v39_qianlong_accession"
+          ]
+        },
+        {
+          "title": "爵位传承与身后的名字",
+          "text": "弘昼卒于乾隆三十五年，谥恭，故称和恭亲王。这一年份见于《清史稿》的皇子世表，表中同时记载儿子永璧于同年承袭和亲王。诸王列传另有乾隆三十年去世的记载，两处不合；结合世表的承袭时间和后来的园寝研究，应取三十五年。辨别这种差异，也是阅读历史人物年代时不可省略的一步。\n\n永璧之后，这一支继续传承爵位，后代所袭等级又有变化。弘昼的封号、母亲耿氏的尊封以及子孙的承袭，说明清代皇室成员的身份并非一成不变，而是随诏令、世代与功过调整。弘昼与弘历的人生道路不同，却也不只有皇位竞争这一种解释。把他放回雍正的家庭、乾隆朝的政务与和亲王一支的世系中，才会看见一个既享有特殊恩遇、又始终面对礼法限制的宗室成员。",
+          "id": "q_hongzhou_3",
+          "kind": "史实与解读",
+          "sources": [
+            "v5qn_qsg220",
+            "v39_qsg165",
+            "v5qn_qsg214",
+            "v39_dpm_princes"
+          ],
+          "people": [
+            "q_gengshi"
+          ],
+          "events": []
+        }
+      ],
+      "sources": [
+        "v5qn_qsg220",
+        "v39_qsg165",
+        "v5qn_qsg214",
+        "v39_dpm_princes"
+      ]
+    },
+    {
+      "person": "q_hongzhan",
+      "title": "弘曕：从雍正幼子到果亲王嗣子",
+      "dek": "一位皇子的家谱中，可以同时有亲生父母与嗣父。弘曕的出继、袭爵和降封，展现了清代皇族延续宗支的方式。",
+      "sections": [
+        {
+          "title": "幼子与叔父的一支",
+          "text": "弘曕生于雍正十一年，生母是后来受尊为谦妃的刘氏。他是雍正最年幼的儿子，通常称皇六子；这个名次没有把所有早殇兄长都计算在内。雍正去世时，弘曕尚在幼年，继位的弘历既是皇帝，也是他的兄长。弘曕没有经历过成年皇子之间同样的政治生活，他后来最重要的身份变化，来自乾隆朝对宗支承续的安排。\n\n乾隆三年，果毅亲王允礼去世。允礼是康熙第十七子、雍正的异母弟，曾参与理藩院、户部等事务，又在雍正临终时受遗诏辅政。由于需要承接其宗支，朝廷令弘曕出继允礼，并承袭果亲王爵。于是，弘曕在血缘上仍是雍正与刘氏之子，在宗法上则成为允礼的嗣子。两种父子关系同时存在，并不是史书把同一个人的父亲写错了。",
+          "id": "q_hongzhan_1",
+          "kind": "史实与解读",
+          "sources": [
+            "v5qn_qsg220",
+            "v39_qsg165",
+            "v5qn_qsg214"
+          ],
+          "people": [
+            "q_liushi",
+            "q_yinli",
+            "q_yongzheng"
+          ],
+          "events": [
+            "v39_guo_adoption"
+          ]
+        },
+        {
+          "title": "王府生活与降爵",
+          "text": "《清史稿》记弘曕善诗词、喜藏书，其收藏可与怡亲王府明善堂相提并论。诗文与藏书是他个人经历的一面，但传记也记下王府的经济活动及其问题：他曾涉及煤窑、民产，又利用与官员的往来谋利。弘曕拥有亲王身份，并不表示这些行为在政治上没有后果。皇帝对宗室的约束，也包括财富取得、与官员交结以及奉养母亲等事项。\n\n乾隆二十八年，弘曕受到集中处分，被降为贝勒，罢去差使。列传把多项过失一并记录，并提及圆明园失火后他来得迟、言行失礼等情形。不能把这一系列处分简化成单独一次失礼，也不能仅凭皇帝严厉就推断其遭遇全出于猜忌。可以确认的是，亲王爵位并未给他提供不受问责的保护，王府内部的生活与外部的政治关系都可能进入皇帝的审察范围。",
+          "id": "q_hongzhan_2",
+          "kind": "史实与解读",
+          "sources": [
+            "v5qn_qsg220",
+            "v39_qsg165",
+            "v5qn_qsg214"
+          ],
+          "people": [
+            "q_qianlong"
+          ],
+          "events": [
+            "v39_hongzhan_demoted"
+          ]
+        },
+        {
+          "title": "复封果郡王之后",
+          "text": "乾隆三十年，弘曕病重，乾隆前往探视，随后恢复其郡王爵位。弘曕不久去世，谥恭，身后称果恭郡王。这里的复封并不是重新取得原有亲王爵：亲王与郡王是不同等级，读封号时需要看清变化。其子永瑹承袭果郡王，果亲王允礼一支由此继续延续。\n\n弘曕的经历把家谱中常见的几个词联系在一起：出生说明血缘，出继说明承嗣，袭爵说明爵位传承，降封与复封则显示身份等级的调整。只列一条父子连线，容易遗漏这一支的来历；只讲得宠或失宠，又无法说明宗法安排如何运行。把雍正、刘氏、允礼与弘曕同时放在关系中看，便能理解清代皇族如何在没有直接继承人的宗支之间安排承续，也能看到这种安排并不会免除受封者本人所承担的政治和礼法责任。",
+          "id": "q_hongzhan_3",
+          "kind": "史实与解读",
+          "sources": [
+            "v5qn_qsg220",
+            "v39_qsg165",
+            "v5qn_qsg214"
+          ],
+          "people": [
+            "q_yinli"
+          ],
+          "events": [
+            "v39_hongzhan_demoted"
+          ]
+        }
+      ],
+      "sources": [
+        "v5qn_qsg220",
+        "v39_qsg165",
+        "v5qn_qsg214"
+      ]
     }
   ],
   "portraits": [
@@ -14578,8 +15989,8 @@
     {
       "from": "q_yinreng",
       "to": "q_yinsi",
-      "role": "储位竞争中的皇兄",
-      "inverse": "获得部分推举的皇弟",
+      "role": "获得部分推举的皇弟",
+      "inverse": "储位竞争中的皇兄",
       "period": "1708—1712",
       "note": "政治关系按所列时期理解，血缘与婚姻另见 familyLinks。",
       "sources": [
@@ -14611,8 +16022,8 @@
     {
       "from": "q_yixin",
       "to": "q_cixi",
-      "role": "政变合作者与议政王",
-      "inverse": "联合后又反复罢复的皇太后",
+      "role": "联合后又反复罢复的皇太后",
+      "inverse": "政变合作者与议政王",
       "period": "1861—1884",
       "note": "政治关系按所列时期理解，血缘与婚姻另见 familyLinks。",
       "sources": [
@@ -14623,7 +16034,7 @@
       "from": "q_cixi",
       "to": "q_yixuan",
       "role": "姻亲与光绪生父",
-      "inverse": "姨母、皇太后与最高决策者",
+      "inverse": "姻亲、皇太后与最高决策者",
       "period": "1860年代—1891",
       "note": "政治关系按所列时期理解，血缘与婚姻另见 familyLinks。",
       "sources": [
@@ -14644,8 +16055,8 @@
     {
       "from": "q_yinzhi_elder",
       "to": "q_yinreng",
-      "role": "废储后主张严惩的皇兄",
-      "inverse": "遭监守与厌胜的废太子",
+      "role": "遭监守与厌胜的废太子",
+      "inverse": "废储后主张严惩的皇兄",
       "period": "1708",
       "note": "政治冲突与亲兄弟关系须分开理解。",
       "sources": [
@@ -14655,8 +16066,8 @@
     {
       "from": "q_yinzhi_third",
       "to": "q_yinreng",
-      "role": "一度亲近并揭发厌胜案的皇弟",
-      "inverse": "储位危机中的皇兄",
+      "role": "储位危机中的皇兄",
+      "inverse": "一度亲近并揭发厌胜案的皇弟",
       "period": "1708—1712",
       "note": "《清史稿》记其亲近太子，同时称其未曾怂恿为恶。",
       "sources": [
@@ -14666,8 +16077,8 @@
     {
       "from": "q_yintang",
       "to": "q_yinsi",
-      "role": "储位争议中的支持者",
-      "inverse": "获得支持的皇兄",
+      "role": "获得支持的皇兄",
+      "inverse": "储位争议中的支持者",
       "period": "1708—1726",
       "note": "“党附”是雍正朝政治定性，具体行动按年份分列。",
       "sources": [
@@ -14677,8 +16088,8 @@
     {
       "from": "q_yine",
       "to": "q_yinsi",
-      "role": "储位争议中的支持者",
-      "inverse": "获得支持的皇兄",
+      "role": "获得支持的皇兄",
+      "inverse": "储位争议中的支持者",
       "period": "1708—1723",
       "note": "政治关系不等于共同参与每一项行动。",
       "sources": [
@@ -14688,8 +16099,8 @@
     {
       "from": "q_yinti",
       "to": "q_yongzheng",
-      "role": "同母弟与西北统帅",
-      "inverse": "继位后召回并处分的皇兄",
+      "role": "继位后召回并处分的皇兄",
+      "inverse": "同母弟与西北统帅",
       "period": "1718—1735",
       "note": "两人同母；军职、储位传说与继位后的处分应分别核对。",
       "sources": [
@@ -14808,6 +16219,94 @@
       "note": "君臣关系与皇位交替相连。",
       "sources": [
         "v26_zhang"
+      ]
+    },
+    {
+      "from": "q_yongzheng",
+      "to": "q_zhangtingyu",
+      "role": "机要近臣与顾命大臣",
+      "inverse": "任用与处置的皇帝",
+      "period": "雍正朝",
+      "note": "张廷玉的任职与政治命运，须结合具体时期理解。",
+      "sources": [
+        "v39_qsg288"
+      ]
+    },
+    {
+      "from": "q_yongzheng",
+      "to": "q_eertai",
+      "role": "改土归流与军机重臣",
+      "inverse": "任用与处置的皇帝",
+      "period": "雍正朝",
+      "note": "鄂尔泰的任职与政治命运，须结合具体时期理解。",
+      "sources": [
+        "v39_qsg288"
+      ]
+    },
+    {
+      "from": "q_yongzheng",
+      "to": "q_niangengyao",
+      "role": "西北统帅，后遭夺职治罪",
+      "inverse": "任用与处置的皇帝",
+      "period": "雍正朝",
+      "note": "年羹尧的任职与政治命运，须结合具体时期理解。",
+      "sources": [
+        "v39_qsg295"
+      ]
+    },
+    {
+      "from": "q_yongzheng",
+      "to": "q_longkodo",
+      "role": "受顾命，后遭禁锢的重臣",
+      "inverse": "任用与处置的皇帝",
+      "period": "雍正朝",
+      "note": "隆科多的任职与政治命运，须结合具体时期理解。",
+      "sources": [
+        "v39_qsg295"
+      ]
+    },
+    {
+      "from": "q_qianlong",
+      "to": "q_zhangtingyu",
+      "role": "受先帝遗命辅政",
+      "inverse": "即位初年辅佐的君主",
+      "period": "1735年起",
+      "note": "雍正临终受命参与辅政，关系延续至乾隆初。",
+      "sources": [
+        "v39_qsg288"
+      ]
+    },
+    {
+      "from": "q_qianlong",
+      "to": "q_eertai",
+      "role": "受先帝遗命辅政",
+      "inverse": "即位初年辅佐的君主",
+      "period": "1735年起",
+      "note": "雍正临终受命参与辅政，关系延续至乾隆初。",
+      "sources": [
+        "v39_qsg288"
+      ]
+    },
+    {
+      "from": "q_qianlong",
+      "to": "q_yinli",
+      "role": "受先帝遗命辅政",
+      "inverse": "即位初年辅佐的君主",
+      "period": "1735年起",
+      "note": "雍正临终受命参与辅政，关系延续至乾隆初。",
+      "sources": [
+        "v5qn_qsg220"
+      ]
+    },
+    {
+      "from": "q_zhangtingyu",
+      "to": "q_eertai",
+      "role": "军机与顾命同僚",
+      "inverse": "军机与顾命同僚",
+      "period": "雍正末年至乾隆初",
+      "note": "共同参与机要政务与皇位交接。",
+      "sources": [
+        "v39_qsg288"
       ]
     }
   ],

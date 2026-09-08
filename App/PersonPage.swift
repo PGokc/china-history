@@ -317,6 +317,10 @@ struct FamilyMembersPage: View {
                 VStack(alignment: .leading, spacing: 5) {
                     Text(store.person(personID).name).font(.system(.title3, design: .serif).weight(.medium)).foregroundStyle(Theme.ink)
                     Text(group == .children ? "按已知排行列示" : "按亲缘关系列示").font(.caption).foregroundStyle(Theme.muted)
+                    if group == .children && people.contains(where: { $0.birthOrderNote != nil }) {
+                        Text("已列齿序者在前，未列齿序者另列；排行不等于全部子女的出生先后。")
+                            .font(.caption).foregroundStyle(Theme.muted).lineSpacing(4)
+                    }
                 }
                 VStack(spacing: 0) {
                     ForEach(people) { person in

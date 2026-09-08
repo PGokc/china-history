@@ -218,26 +218,34 @@ struct FamilyPage: View {
         if peers.indices.contains(next) { focus(peers[next].id, from: value.translation.width < 0 ? .trailing : .leading) }
     }
     var body: some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: 22) {
-                if let previous = trail.last {
-                    Button {
-                        _ = trail.popLast(); edge = .leading
-                        withAnimation(reduceMotion ? nil : .easeInOut(duration: 0.24)) { selected = previous }
-                    } label: { Label("返回 \(store.person(previous).name)", systemImage: "arrow.uturn.backward") }
-                        .font(.subheadline).frame(minHeight: 44).accessibilityIdentifier("historyBack")
+        ScrollViewReader { proxy in
+            ScrollView {
+                VStack(alignment: .leading, spacing: 22) {
+                    if let previous = trail.last {
+                        Button {
+                            _ = trail.popLast(); edge = .leading
+                            withAnimation(reduceMotion ? nil : .easeInOut(duration: 0.24)) { selected = previous }
+                        } label: { Label("返回 \(store.person(previous).name)", systemImage: "arrow.uturn.backward") }
+                            .font(.subheadline).frame(minHeight: 44).accessibilityIdentifier("historyBack")
+                    }
+                    graph
+                    if !store.siblings(p).isEmpty { siblings }
+                }.padding(.horizontal, 24).padding(.top, 14).padding(.bottom, 72)
+                    .id("familyTop")
+            }.background(Theme.paper).foregroundStyle(Theme.text)
+                .onChange(of: selected) { _, _ in
+                    withAnimation(reduceMotion ? nil : .easeInOut(duration: 0.24)) {
+                        proxy.scrollTo("familyTop", anchor: .top)
+                    }
                 }
-                graph
-                if !store.siblings(p).isEmpty { siblings }
-            }.padding(.horizontal, 24).padding(.top, 14).padding(.bottom, 72)
-        }.background(Theme.paper).foregroundStyle(Theme.text)
+        }
             .navigationTitle(isRoot ? (dynastyID == "qing" ? "清朝家族" : "明朝家族") : "\(p.name)家族").navigationBarTitleDisplayMode(.inline).toolbarBackground(Theme.paper, for: .navigationBar).toolbarBackground(.visible, for: .navigationBar)
             .toolbar { if isRoot { ToolbarItem(placement: .topBarTrailing) { NavigationLink(value: DetailRoute.about) { Image(systemName: "info.circle").font(.system(size: 17)) }.accessibilityLabel("阅读说明") } } }
     }
     var graph: some View {
         VStack(spacing: 0) {
             let parents = store.parents(selected)
-            if !parents.isEmpty && !typeSize.isAccessibilitySize {
+            if !parents.isEmpty && !typeSize.isAccessibilitySize && parents.count <= 2 {
                 familySectionHeading("祖先", detail: "父母与上一代")
                 HStack(alignment: .top, spacing: 12) {
                     ForEach(parents) { link in
@@ -248,7 +256,7 @@ struct FamilyPage: View {
             }
             hero.id(selected)
                 .transition(reduceMotion ? .identity : .asymmetric(insertion: .move(edge: edge).combined(with: .opacity), removal: .opacity))
-            if typeSize.isAccessibilitySize && !parents.isEmpty {
+            if !parents.isEmpty && (typeSize.isAccessibilitySize || parents.count > 2) {
                 VStack(spacing: 10) {
                     familySectionHeading("祖先", detail: "父母与上一代")
                     ForEach(parents) { link in
@@ -258,22 +266,30 @@ struct FamilyPage: View {
             }
             let spouses = store.spouses(selected)
             if !spouses.isEmpty {
-                let layout = typeSize.isAccessibilitySize ? AnyLayout(VStackLayout(alignment: .leading, spacing: 10)) : AnyLayout(HStackLayout(spacing: 10))
-                layout {
-                    Rectangle().fill(Theme.line).frame(width: 22, height: 1)
-                    Text("配偶").font(.caption).foregroundStyle(Theme.muted)
-                    ForEach(spouses) { person in
-                        Button { focus(person.id, from: .trailing) } label: { Text(person.name).font(.subheadline).padding(.horizontal, 10).frame(minHeight: 44).background(.white.opacity(0.5)) }
+                VStack(alignment: .leading, spacing: 4) {
+                    familySectionHeading("配偶", detail: "婚姻与后妃关系")
+                    let columns = typeSize.isAccessibilitySize ? [GridItem(.flexible())] : [GridItem(.flexible(), spacing: 20), GridItem(.flexible())]
+                    LazyVGrid(columns: columns, alignment: .leading, spacing: 14) {
+                        ForEach(spouses) { person in
+                            Button { focus(person.id, from: .trailing) } label: {
+                                VStack(alignment: .leading, spacing: 5) {
+                                    Text(person.name).font(.system(.headline, design: .serif)).foregroundStyle(Theme.ink)
+                                    Text(person.call).font(.caption).foregroundStyle(Theme.muted)
+                                }.frame(maxWidth: .infinity, minHeight: 44, alignment: .leading)
+                                    .fixedSize(horizontal: false, vertical: true)
+                                    .contentShape(Rectangle())
+                            }
+                            .buttonStyle(QuietRowStyle())
                             .accessibilityIdentifier("relative_\(person.id)")
+                        }
                     }
-                    Spacer(minLength: 0)
-                }.padding(.top, 8)
+                }.padding(.top, 22)
             }
             let children = store.children(selected)
             if !children.isEmpty {
                 BranchConnector(count: 1, upward: false).frame(height: 22)
                 HStack(alignment: .firstTextBaseline) {
-                    familySectionHeading("子女", detail: "收录\(children.count)位，按已知排行")
+                    familySectionHeading("子女", detail: children.contains { $0.birthOrderNote != nil } ? "收录\(children.count)位，已列齿序在前" : "收录\(children.count)位，按已知排行")
                     Spacer(minLength: 12)
                     NavigationLink(value: DetailRoute.relatives(selected, .children)) {
                         Text("查看排行").font(.caption).foregroundStyle(Theme.cinnabar).frame(minHeight: 44)
@@ -284,6 +300,12 @@ struct FamilyPage: View {
                 let columns = typeSize.isAccessibilitySize ? [GridItem(.flexible())] : [GridItem(.flexible(), spacing: 12), GridItem(.flexible())]
                 LazyVGrid(columns: columns, alignment: .leading, spacing: 12) {
                     ForEach(children) { child in childNode(child) }
+                }
+                if children.contains(where: { $0.birthOrderNote != nil }) {
+                    Text("齿序是宗谱所列排行，并不等于所有子女的出生先后；部分早殇皇子未列齿序。")
+                        .font(.caption).foregroundStyle(Theme.muted).lineSpacing(4)
+                        .frame(maxWidth: .infinity, alignment: .leading).padding(.top, 14)
+                        .accessibilityIdentifier("childOrderExplanation")
                 }
             }
         }.accessibilityElement(children: .contain)
@@ -354,12 +376,20 @@ struct FamilyPage: View {
     var siblings: some View {
         VStack(alignment: .leading, spacing: 10) {
             HStack { Text("同辈").font(.subheadline); Spacer(); if !typeSize.isAccessibilitySize { Text("可左右轻扫人物卡").font(.caption).foregroundStyle(Theme.muted) } }
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 14) {
-                    ForEach(store.siblings(p)) { person in
-                        Button { focus(person.id, from: .trailing) } label: {
-                            HStack(spacing: 8) { Text(store.siblingLabel(person, relativeTo: p)).foregroundStyle(Theme.muted); Text(person.name) }.font(.subheadline).padding(.horizontal, 14).frame(minHeight: 48).background(.white.opacity(0.5))
-                        }.buttonStyle(QuietRowStyle()).accessibilityIdentifier("relative_\(person.id)")
+            if typeSize.isAccessibilitySize {
+                NavigationLink(value: DetailRoute.relatives(selected, .siblings)) {
+                    Text("查看\(store.siblings(p).count)位同辈")
+                        .font(.headline).foregroundStyle(Theme.ink)
+                        .frame(maxWidth: .infinity, minHeight: 44, alignment: .leading)
+                }.buttonStyle(QuietRowStyle()).accessibilityIdentifier("allSiblings")
+            } else {
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 14) {
+                        ForEach(store.siblings(p)) { person in
+                            Button { focus(person.id, from: .trailing) } label: {
+                                HStack(spacing: 8) { Text(store.siblingLabel(person, relativeTo: p)).foregroundStyle(Theme.muted); Text(person.name) }.font(.subheadline).padding(.horizontal, 14).frame(minHeight: 48).background(.white.opacity(0.5))
+                            }.buttonStyle(QuietRowStyle()).accessibilityIdentifier("relative_\(person.id)")
+                        }
                     }
                 }
             }
