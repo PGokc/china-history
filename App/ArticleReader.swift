@@ -88,7 +88,7 @@ struct ArticleReader: View {
                     }
                     .onDisappear { narrator.stop() }
                     .onReceive(NotificationCenter.default.publisher(for: .stopArticleNarration)) { _ in narrator.stop() }
-            }.navigationTitle(store.person(personID).name).navigationBarTitleDisplayMode(.inline).toolbarBackground(Theme.paper, for: .navigationBar).toolbarBackground(.visible, for: .navigationBar).accessibilityIdentifier("articleReader")
+            }.navigationTitle(store.person(personID).name).navigationBarTitleDisplayMode(.inline).toolbarBackground(Theme.paper, for: .navigationBar).toolbarBackground(.visible, for: .navigationBar)
         } else {
             ContentUnavailableView("暂无长文", systemImage: "book.closed")
         }

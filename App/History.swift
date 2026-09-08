@@ -49,6 +49,12 @@ struct Artifact: Codable, Identifiable {
     let image: String?
     let people, sources: [String]
     let dynasties: [String]?
+    var collectionCategory: CollectionCategory {
+        if symbol == "brain.head.profile" { return .ideas }
+        if ["book.closed", "music.note", "doc.text"].contains(symbol) { return .texts }
+        if symbol.hasPrefix("building.columns") { return .architecture }
+        return .objects
+    }
 }
 struct Succession: Codable, Identifiable { let id, person, years, transition: String }
 struct Tomb: Codable, Identifiable { let id, person, title, area, location, status, body, note: String; let sources: [String] }

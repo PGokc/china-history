@@ -61,7 +61,7 @@ struct PersonPage: View {
     var relationSummary: String {
         var parts: [String] = []
         if let father = store.parents(p.id).first(where: { $0.kind == "father" }) { parts.append("父亲\(store.person(father.to).name)") }
-        if !store.children(p.id).isEmpty { parts.append("\(store.children(p.id).count)位子女") }
+        if !store.children(p.id).isEmpty { parts.append("收录\(store.children(p.id).count)位子女") }
         if parts.isEmpty { return store.hasFamily(p.id) ? "家族亲属与往来人物" : "往来人物与关系变迁" }
         return parts.joined(separator: "，")
     }
@@ -176,7 +176,7 @@ struct PersonSectionPage: View {
                 NavigationRow(title: person.name, subtitle: "配偶　\(person.call)", symbol: "person", route: .person(person.id), identifier: "spouse_\(person.id)")
             }
             if !store.children(p.id).isEmpty {
-                NavigationRow(title: "子女", subtitle: "\(store.children(p.id).count)位，按排行", symbol: "person.2", route: .relatives(p.id, .children), identifier: "allChildren")
+                NavigationRow(title: "子女", subtitle: "收录\(store.children(p.id).count)位，按排行", symbol: "person.2", route: .relatives(p.id, .children), identifier: "allChildren")
             }
             if !store.siblings(p).isEmpty {
                 NavigationRow(title: "同辈", subtitle: "\(store.siblings(p).count)位，同父或同母", symbol: "person.2", route: .relatives(p.id, .siblings), identifier: "allSiblings")
@@ -251,17 +251,25 @@ struct MajorEventsPanel: View {
             }
 
             if visibleEvents.isEmpty {
-                Text("暂无条目")
-                    .font(.subheadline).foregroundStyle(Theme.muted)
-                    .frame(maxWidth: .infinity, minHeight: 60, alignment: .leading)
-                .accessibilityIdentifier("majorEventsEmpty")
+                VStack(alignment: .leading, spacing: 8) {
+                    Text("本页尚未收录与\(store.person(personID).name)相关的\(selection.rawValue)事件。")
+                        .font(.subheadline).foregroundStyle(Theme.muted)
+                        .fixedSize(horizontal: false, vertical: true)
+                        .accessibilityIdentifier("majorEventsEmpty")
+                    if let alternative = MajorEventCategory.allCases.first(where: { !store.events(personID, in: $0).isEmpty }) {
+                        Button("浏览\(alternative.rawValue)事件") { selection = alternative }
+                            .font(.subheadline).foregroundStyle(Theme.cinnabar)
+                            .frame(minHeight: 44).buttonStyle(QuietRowStyle())
+                            .accessibilityIdentifier("majorEventsAlternative")
+                    }
+                }.frame(maxWidth: .infinity, minHeight: 60, alignment: .leading)
             } else {
                 VStack(spacing: 0) {
                     ForEach(visibleEvents) { EventRow(event: $0) }
                 }
             }
 
-            if previewLimit != nil {
+            if let previewLimit, filteredEvents.count > previewLimit {
                 NavigationLink(value: DetailRoute.personEvents(personID, selection)) {
                     Text("查看全部事件").frame(maxWidth: .infinity, alignment: .leading)
                     .font(.subheadline.weight(.medium))

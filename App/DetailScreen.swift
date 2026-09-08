@@ -35,11 +35,11 @@ struct DetailScreen: View {
     }
     func objectContent(_ o: Artifact) -> some View {
         Group {
-            title("器物与典籍", o.title)
+            title(o.collectionCategory.title, o.title)
             if let image = o.image { LocalImage(name: image).frame(maxWidth: .infinity).frame(height: 290).accessibilityLabel(o.title) }
             Text(o.subtitle).font(.headline).foregroundStyle(Theme.muted)
             Text(o.body).lineSpacing(6)
-            block("观看提示", o.note)
+            block(o.collectionCategory.detailNoteTitle, o.note)
             linkedPeople(o.people)
             SourcesView(store: store, ids: o.sources)
         }

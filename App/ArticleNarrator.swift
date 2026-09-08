@@ -58,6 +58,11 @@ final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDele
     private let previewSynthesizer = AVSpeechSynthesizer()
     private var sections: [ArticleSection] = []
     private var autoAdvanceEnabled = false
+    // Ignore delegate callbacks from an utterance replaced by navigation or settings.
+    private var activeUtteranceID: ObjectIdentifier?
+    private var previewUtteranceID: ObjectIdentifier?
+    private var restartOnResume = false
+    @Published private(set) var previewVoiceID: String?
 
     override init() {
         let available = Self.installedChineseVoices()
@@ -71,6 +76,7 @@ final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDele
         speed = NarrationSpeed(rawValue: UserDefaults.standard.string(forKey: "narrationSpeed") ?? "") ?? .normal
         super.init()
         synthesizer.delegate = self
+        previewSynthesizer.delegate = self
     }
 
     var isActive: Bool { isSpeaking || isPaused }
@@ -78,22 +84,32 @@ final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDele
     var canGoNext: Bool { isActive && currentIndex + 1 < sectionCount }
 
     func toggle(article: Article, from sectionID: String?) {
+        stopPreview()
         if isPaused {
-            synthesizer.continueSpeaking()
-            isPaused = false
-            isSpeaking = true
-        } else if synthesizer.isSpeaking {
-            synthesizer.pauseSpeaking(at: .word)
-            isPaused = true
-            isSpeaking = false
+            if restartOnResume {
+                speakCurrentSection()
+            } else if synthesizer.continueSpeaking() {
+                isPaused = false
+                isSpeaking = true
+            }
+        } else if isSpeaking {
+            pause()
         } else {
             start(article: article, from: sectionID)
         }
     }
 
+    private func pause() {
+        guard isSpeaking, synthesizer.pauseSpeaking(at: .immediate) else { return }
+        isPaused = true
+        isSpeaking = false
+    }
+
     func start(article: Article, from sectionID: String?) {
         guard !article.sections.isEmpty else { return }
-        previewSynthesizer.stopSpeaking(at: .immediate)
+        stopPreview()
+        activeUtteranceID = nil
+        synthesizer.stopSpeaking(at: .immediate)
         autoAdvanceEnabled = true
         sections = article.sections
         sectionCount = sections.count
@@ -112,6 +128,7 @@ final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDele
     }
 
     func changeSpeed(_ newSpeed: NarrationSpeed) {
+        guard speed != newSpeed else { return }
         speed = newSpeed
         UserDefaults.standard.set(newSpeed.rawValue, forKey: "narrationSpeed")
         guard isActive else { return }
@@ -119,7 +136,7 @@ final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDele
     }
 
     func changeVoice(_ identifier: String) {
-        guard voices.contains(where: { $0.id == identifier }) else { return }
+        guard identifier != selectedVoiceID, voices.contains(where: { $0.id == identifier }) else { return }
         selectedVoiceID = identifier
         UserDefaults.standard.set(identifier, forKey: "narrationVoice")
         guard isActive else { return }
@@ -127,11 +144,22 @@ final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDele
     }
 
     func preview(_ option: NarrationVoiceOption) {
-        previewSynthesizer.stopSpeaking(at: .immediate)
+        stopPreview()
+        pause()
+        configureAudioSession()
         let utterance = AVSpeechUtterance(string: "这里是\(option.displayName)，为你朗读中国历史。")
         utterance.voice = AVSpeechSynthesisVoice(identifier: option.id)
         utterance.rate = NarrationSpeed.normal.rate
+        previewUtteranceID = ObjectIdentifier(utterance)
+        previewVoiceID = option.id
         previewSynthesizer.speak(utterance)
+    }
+
+    func stopPreview() {
+        previewUtteranceID = nil
+        previewVoiceID = nil
+        previewSynthesizer.stopSpeaking(at: .immediate)
+        if !isActive { try? AVAudioSession.sharedInstance().setActive(false, options: .notifyOthersOnDeactivation) }
     }
 
     func refreshVoices() {
@@ -144,8 +172,10 @@ final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDele
 
     func stop() {
         autoAdvanceEnabled = false
+        activeUtteranceID = nil
+        restartOnResume = false
         synthesizer.stopSpeaking(at: .immediate)
-        previewSynthesizer.stopSpeaking(at: .immediate)
+        stopPreview()
         isSpeaking = false
         isPaused = false
         currentSectionID = nil
@@ -155,22 +185,30 @@ final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDele
 
     private func move(to index: Int) {
         guard sections.indices.contains(index) else { return }
+        stopPreview()
+        let keepPaused = isPaused
+        activeUtteranceID = nil
         synthesizer.stopSpeaking(at: .immediate)
         currentIndex = index
-        speakCurrentSection()
+        if keepPaused {
+            restartOnResume = true
+            currentSectionID = sections[index].id
+            currentTitle = sections[index].title
+        } else {
+            speakCurrentSection()
+        }
     }
 
     private func speakCurrentSection() {
         guard sections.indices.contains(currentIndex) else { return }
+        restartOnResume = false
         let section = sections[currentIndex]
         currentSectionID = section.id
         currentTitle = section.title
         isPaused = false
         isSpeaking = true
 
-        let session = AVAudioSession.sharedInstance()
-        try? session.setCategory(.playback, mode: .spokenAudio, options: [.duckOthers, .interruptSpokenAudioAndMixWithOthers])
-        try? session.setActive(true)
+        configureAudioSession()
 
         let utterance = AVSpeechUtterance(string: Self.spokenText(for: section))
         utterance.voice = Self.mandarinVoice(identifier: selectedVoiceID)
@@ -179,7 +217,14 @@ final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDele
         utterance.prefersAssistiveTechnologySettings = false
         utterance.preUtteranceDelay = 0.12
         utterance.postUtteranceDelay = 0.35
+        activeUtteranceID = ObjectIdentifier(utterance)
         synthesizer.speak(utterance)
+    }
+
+    private func configureAudioSession() {
+        let session = AVAudioSession.sharedInstance()
+        try? session.setCategory(.playback, mode: .spokenAudio, options: [.duckOthers, .interruptSpokenAudioAndMixWithOthers])
+        try? session.setActive(true)
     }
 
     private func finishedSection() {
@@ -255,14 +300,24 @@ final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDele
     }
 
     nonisolated func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didFinish utterance: AVSpeechUtterance) {
-        Task { @MainActor [weak self] in self?.finishedSection() }
+        let id = ObjectIdentifier(utterance)
+        Task { @MainActor [weak self] in
+            guard let self else { return }
+            if self.previewUtteranceID == id {
+                self.stopPreview()
+            } else if self.activeUtteranceID == id {
+                self.activeUtteranceID = nil
+                self.finishedSection()
+            }
+        }
     }
 
     nonisolated func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didCancel utterance: AVSpeechUtterance) {
+        let id = ObjectIdentifier(utterance)
         Task { @MainActor [weak self] in
-            guard let self, !self.synthesizer.isSpeaking else { return }
-            self.isSpeaking = false
-            self.isPaused = false
+            guard let self else { return }
+            if self.previewUtteranceID == id { self.stopPreview() }
+            if self.activeUtteranceID == id { self.stop() }
         }
     }
 }
@@ -393,9 +448,13 @@ struct NarrationSettingsSheet: View {
                                         if narrator.selectedVoiceID == voice.id { Image(systemName: "checkmark").foregroundStyle(Theme.cinnabar) }
                                     }.frame(minHeight: 52).contentShape(Rectangle())
                                 }.buttonStyle(.plain).accessibilityIdentifier("narrationVoice_\(voice.id)")
-                                Button { narrator.preview(voice) } label: {
-                                    Image(systemName: "speaker.wave.2").frame(width: 36, height: 44)
-                                }.buttonStyle(.plain).accessibilityLabel("试听\(voice.displayName)")
+                                Button {
+                                    if narrator.previewVoiceID == voice.id { narrator.stopPreview() }
+                                    else { narrator.preview(voice) }
+                                } label: {
+                                    Image(systemName: narrator.previewVoiceID == voice.id ? "stop.fill" : "speaker.wave.2").frame(width: 44, height: 44)
+                                }.buttonStyle(.plain).accessibilityLabel(narrator.previewVoiceID == voice.id ? "停止试听\(voice.displayName)" : "试听\(voice.displayName)")
+                                .accessibilityIdentifier("narrationPreview_\(voice.id)")
                             }
                             Rectangle().fill(Theme.line.opacity(0.45)).frame(height: 0.5)
                         }
@@ -409,6 +468,7 @@ struct NarrationSettingsSheet: View {
             .navigationTitle("朗读设置").navigationBarTitleDisplayMode(.inline).toolbarBackground(Theme.paper, for: .navigationBar).toolbarBackground(.visible, for: .navigationBar)
             .toolbar { ToolbarItem(placement: .confirmationAction) { Button("完成") { dismiss() } } }
             .onAppear { narrator.refreshVoices() }
+            .onDisappear { narrator.stopPreview() }
         }
     }
 }

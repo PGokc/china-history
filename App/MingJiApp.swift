@@ -273,7 +273,7 @@ struct FamilyPage: View {
             if !children.isEmpty {
                 BranchConnector(count: 1, upward: false).frame(height: 22)
                 HStack(alignment: .firstTextBaseline) {
-                    familySectionHeading("子女", detail: "\(children.count)位，按已知排行")
+                    familySectionHeading("子女", detail: "收录\(children.count)位，按已知排行")
                     Spacer(minLength: 12)
                     NavigationLink(value: DetailRoute.relatives(selected, .children)) {
                         Text("查看排行").font(.caption).foregroundStyle(Theme.cinnabar).frame(minHeight: 44)
@@ -547,28 +547,18 @@ struct CollectionPage: View {
     }
 
     private func artifacts(for category: CollectionCategory) -> [Artifact] {
-        store.objects(in: dynastyID).filter { object in
-            switch category {
-            case .ideas: return Self.isIdea(object)
-            case .objects: return !Self.isIdea(object) && !Self.isBook(object) && !Self.isArchitecture(object)
-            case .texts: return Self.isBook(object)
-            case .architecture: return Self.isArchitecture(object)
-            case .tombs: return false
-            }
-        }
+        store.objects(in: dynastyID).filter { $0.collectionCategory == category }
     }
-    fileprivate static func isBook(_ object: Artifact) -> Bool {
-        object.symbol == "book.closed" || object.symbol == "music.note" || object.symbol == "doc.text"
-    }
-    fileprivate static func isArchitecture(_ object: Artifact) -> Bool { object.symbol.hasPrefix("building.columns") }
-    fileprivate static func isIdea(_ object: Artifact) -> Bool { object.symbol == "brain.head.profile" }
 }
 
-private enum CollectionCategory: String, CaseIterable, Identifiable {
+enum CollectionCategory: String, CaseIterable, Identifiable {
     case ideas, objects, texts, architecture, tombs
     var id: String { rawValue }
     var title: String {
         switch self { case .ideas: return "思想与变革"; case .objects: return "器物"; case .texts: return "典籍文书"; case .architecture: return "建筑与纪念"; case .tombs: return "帝王陵寝" }
+    }
+    var detailNoteTitle: String {
+        switch self { case .ideas: return "理解线索"; case .texts: return "阅读线索"; default: return "观看提示" }
     }
     var note: String {
         switch self { case .ideas: return "观念如何形成，又如何改变时代"; case .objects: return "瓷器与日常物质遗存"; case .texts: return "制度、知识与艺术文本"; case .architecture: return "宫殿、寺院与纪念空间"; case .tombs: return "陵区、墓主与皇位传承" }
@@ -581,15 +571,7 @@ private struct CollectionCategoryPage: View {
     let category: CollectionCategory
     @Environment(\.dynamicTypeSize) private var typeSize
     private var artifacts: [Artifact] {
-        store.objects(in: dynastyID).filter { object in
-            switch category {
-            case .ideas: return CollectionPage.isIdea(object)
-            case .objects: return !CollectionPage.isIdea(object) && !CollectionPage.isBook(object) && !CollectionPage.isArchitecture(object)
-            case .texts: return CollectionPage.isBook(object)
-            case .architecture: return CollectionPage.isArchitecture(object)
-            case .tombs: return false
-            }
-        }
+        store.objects(in: dynastyID).filter { $0.collectionCategory == category }
     }
     private var areaOrder: [String] {
         dynastyID == "qing" ? ["沈阳 · 盛京三陵", "河北 · 清东陵", "河北 · 清西陵", "特殊安葬"] : ["南京 · 明孝陵", "北京 · 明十三陵", "北京 · 景泰陵", "尚无定论"]
