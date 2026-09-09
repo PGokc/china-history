@@ -70,6 +70,10 @@ struct PersonPage: View {
     }
     var quickLinks: [PersonQuickItem] {
         var items: [PersonQuickItem] = []
+        if let context = store.reignContext(p.id), !context.people.isEmpty {
+            let names = context.people.prefix(4).map { store.person($0).name.replacingOccurrences(of: "爱新觉罗·", with: "") }.joined(separator: "、")
+            items.append(.init(id: "category_court", title: "当朝人物", subtitle: names, route: .personSection(p.id, .court)))
+        }
         if store.hasFamily(p.id) || !store.associates(p.id).isEmpty { items.append(.init(id: "category_relationships", title: "人物关系", subtitle: relationSummary, route: .personSection(p.id, .relationships))) }
         if p.kind != "皇帝" && !store.events(p.id).isEmpty { items.append(.init(id: "category_events", title: "重大事件", subtitle: "\(store.events(p.id).count)项相关事件", route: .personEvents(p.id, store.preferredEventCategory(p.id)))) }
         if store.tomb(p.id) != nil || !store.objects(p.id).isEmpty { items.append(.init(id: "category_remains", title: "遗珍与陵寝", subtitle: heritageSummary, route: .personSection(p.id, .remains))) }
@@ -110,7 +114,7 @@ struct PersonQuickLinks: View {
 }
 
 enum PersonSection: String, Hashable {
-    case relationships = "人物关系", events = "重大事件", remains = "遗珍", records = "称号与资料"
+    case relationships = "人物关系", court = "当朝人物", events = "重大事件", lifeEvents = "生平相关事件", remains = "遗珍", records = "称号与资料"
 }
 enum FamilyGroup: String, Hashable { case children = "子女", siblings = "同辈" }
 
@@ -143,7 +147,7 @@ struct PersonSectionPage: View {
         self.store = store
         self.personID = personID
         self.section = section
-        _selectedEventCategory = State(initialValue: initialEventCategory ?? store.preferredEventCategory(personID))
+        _selectedEventCategory = State(initialValue: initialEventCategory ?? store.preferredEventCategory(personID, inReignOnly: section != .lifeEvents))
     }
     var p: Person { store.person(personID) }
     var body: some View {
@@ -152,8 +156,12 @@ struct PersonSectionPage: View {
                 Text(p.name).font(.subheadline).foregroundStyle(Theme.cinnabar)
                 switch section {
                 case .relationships: relationships
-                case .events:
-                    MajorEventsPanel(store: store, personID: p.id, selection: $selectedEventCategory, previewLimit: nil)
+                case .court: court
+                case .events, .lifeEvents:
+                    MajorEventsPanel(store: store, personID: p.id, selection: $selectedEventCategory, previewLimit: nil, inReignOnly: section != .lifeEvents)
+                    if section == .events && store.reignContext(p.id) != nil && store.events(p.id).count > store.reignEvents(p.id).count {
+                        NavigationRow(title: "生平相关事件", subtitle: "包括即位前与身后影响", symbol: "clock", route: .personSection(p.id, .lifeEvents), identifier: "lifetimeEvents")
+                    }
                 case .remains:
                     if let t = store.tomb(p.id) {
                         NavigationRow(title: t.title, subtitle: "陵寝　\(t.area)", symbol: "mountain.2", route: .tomb(t.id), identifier: "tombCard")
@@ -166,6 +174,23 @@ struct PersonSectionPage: View {
             }.padding(24)
         }.background(Theme.paper).foregroundStyle(Theme.text)
             .navigationTitle(section.rawValue).navigationBarTitleDisplayMode(.inline).toolbarBackground(Theme.paper, for: .navigationBar).toolbarBackground(.visible, for: .navigationBar)
+    }
+    @ViewBuilder var court: some View {
+        if let context = store.reignContext(p.id) {
+            VStack(alignment: .leading, spacing: 18) {
+                Text("在位 \(context.periodLabel)").font(.caption).foregroundStyle(Theme.muted)
+                if !context.note.isEmpty { Text(context.note).font(.subheadline).lineSpacing(5) }
+                VStack(spacing: 0) {
+                    ForEach(context.people, id: \.self) { id in
+                        let person = store.person(id)
+                        let relation = store.associates(p.id).first { $0.from == id || $0.to == id }
+                        let role = relation.map { $0.from == p.id ? $0.role : $0.inverse } ?? person.call
+                        NavigationRow(title: person.name, subtitle: role, symbol: "person", route: .person(id), identifier: "court_\(id)")
+                    }
+                }
+                SourcesView(store: store, ids: context.sources)
+            }
+        }
     }
     var relationships: some View {
         VStack(alignment: .leading, spacing: 0) {
@@ -226,7 +251,8 @@ struct MajorEventsPanel: View {
     let personID: String
     @Binding var selection: MajorEventCategory
     let previewLimit: Int?
-    var filteredEvents: [HistoryEvent] { store.events(personID, in: selection) }
+    var inReignOnly = true
+    var filteredEvents: [HistoryEvent] { store.events(personID, in: selection, inReignOnly: inReignOnly) }
     var visibleEvents: [HistoryEvent] {
         guard let previewLimit else { return filteredEvents }
         return Array(filteredEvents.prefix(previewLimit))
@@ -234,6 +260,10 @@ struct MajorEventsPanel: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 14) {
             sectionTitle("重大事件")
+            if let context = store.reignContext(personID) {
+                Text(inReignOnly ? "在位时期  \(context.periodLabel)" : "生平及身后影响")
+                    .font(.caption).foregroundStyle(Theme.muted).accessibilityIdentifier("eventTimeScope")
+            }
             if typeSize.isAccessibilitySize {
                 VStack(alignment: .leading, spacing: 0) {
                     ForEach(MajorEventCategory.allCases) { category in categoryButton(category) }
@@ -256,7 +286,7 @@ struct MajorEventsPanel: View {
                         .font(.subheadline).foregroundStyle(Theme.muted)
                         .fixedSize(horizontal: false, vertical: true)
                         .accessibilityIdentifier("majorEventsEmpty")
-                    if let alternative = MajorEventCategory.allCases.first(where: { !store.events(personID, in: $0).isEmpty }) {
+                    if let alternative = MajorEventCategory.allCases.first(where: { !store.events(personID, in: $0, inReignOnly: inReignOnly).isEmpty }) {
                         Button("浏览\(alternative.rawValue)事件") { selection = alternative }
                             .font(.subheadline).foregroundStyle(Theme.cinnabar)
                             .frame(minHeight: 44).buttonStyle(QuietRowStyle())
@@ -269,7 +299,7 @@ struct MajorEventsPanel: View {
                 }
             }
 
-            if let previewLimit, filteredEvents.count > previewLimit {
+            if let previewLimit, filteredEvents.count > previewLimit || store.reignContext(personID) != nil {
                 NavigationLink(value: DetailRoute.personEvents(personID, selection)) {
                     Text("查看全部事件").frame(maxWidth: .infinity, alignment: .leading)
                     .font(.subheadline.weight(.medium))

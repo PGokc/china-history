@@ -127,8 +127,17 @@ struct EraGuide: Codable {
     let title, subtitle, overview: String
     let topics: [EraTopic]
 }
+struct ReignPeriod: Codable { let label: String; let start, end: Int }
+struct ReignContext: Codable {
+    let person: String
+    let periods: [ReignPeriod]
+    let people, events, sources: [String]
+    let note: String
+    var periodLabel: String { periods.map(\.label).joined(separator: "；") }
+}
 struct Content: Codable {
     let version: Int
+    let reignContexts: [ReignContext]?
     let reviewed: String
     let people: [Person]
     let sources: [Source]
@@ -196,16 +205,23 @@ struct Content: Codable {
             return a < b
         }
     }
+    func reignContext(_ id: String) -> ReignContext? { content.reignContexts?.first { $0.person == id } }
+    func reignEvents(_ id: String) -> [HistoryEvent] {
+        guard let context = reignContext(id) else { return events(id) }
+        let ids = Set(context.events)
+        return events(id).filter { ids.contains($0.id) }
+    }
     func eventCategory(_ event: HistoryEvent) -> MajorEventCategory {
         MajorEventCategory(rawValue: event.category ?? "") ?? .politics
     }
-    func events(_ id: String, in category: MajorEventCategory) -> [HistoryEvent] {
+    func events(_ id: String, in category: MajorEventCategory, inReignOnly: Bool = true) -> [HistoryEvent] {
         let featured: [String: Int] = [
             "v12_zhenghe_voyages": 0,
+            "v40m1_voyages_yongle": 0,
             "v12_yongle_dadian": 1,
             "v17_yongle_mobei": 0
         ]
-        return events(id).filter { eventCategory($0) == category }.sorted { lhs, rhs in
+        return (inReignOnly ? reignEvents(id) : events(id)).filter { eventCategory($0) == category }.sorted { lhs, rhs in
             let left = featured[lhs.id] ?? 100
             let right = featured[rhs.id] ?? 100
             if left != right { return left < right }
@@ -216,9 +232,9 @@ struct Content: Codable {
     }
     /// Opens a person's event shelf on its most useful category. The fixed
     /// category order resolves ties so the result stays stable as content grows.
-    func preferredEventCategory(_ id: String) -> MajorEventCategory {
+    func preferredEventCategory(_ id: String, inReignOnly: Bool = true) -> MajorEventCategory {
         MajorEventCategory.allCases.max { lhs, rhs in
-            events(id, in: lhs).count < events(id, in: rhs).count
+            events(id, in: lhs, inReignOnly: inReignOnly).count < events(id, in: rhs, inReignOnly: inReignOnly).count
         } ?? .politics
     }
     func featuredEvents(_ id: String) -> [HistoryEvent] {

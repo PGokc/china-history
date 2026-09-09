@@ -378,3 +378,46 @@ if d['version'] >= 21:
  assert '皇太后' in associates['q_yixin','q_cixi']['role']
  assert '姨母' not in associates['q_cixi','q_yixuan']['inverse']
  print('V21 PASS: Qing association labels describe the other person in both directions')
+
+if d['version'] >= 22:
+ contexts={c['person']:c for c in d['reignContexts']}
+ events={e['id']:e for e in d['events']}
+ assert len(contexts)==len(d['reignContexts']) and contexts.keys()==emperors
+ assert len(articles)==len(d['articles']), 'duplicate person articles'
+ assert len({(a['from'],a['to'],a['period']) for a in d['associations']})==len(d['associations']), 'duplicate relationship identity'
+ for pid,c in contexts.items():
+  assert len(c['people'])>=2 and len(c['people'])==len(set(c['people'])),(pid,'reign people')
+  assert len(c['events'])>=2 and len(c['events'])==len(set(c['events'])),(pid,'reign events')
+  assert c['sources'] and set(c['sources'])<=sources.keys(),(pid,'reign sources')
+  expected=[]
+  for seq in d['sequence']:
+   if seq['person']==pid:
+    years=[int(y) for y in re.findall(r'\d{4}',seq['years'])]
+    expected.append({'label':seq['years'],'start':years[0],'end':years[-1]})
+  assert c['periods']==expected,(pid,'reign periods')
+  for actor in c['people']:
+   assert actor in people and actor in articles,(pid,actor,'missing actor biography')
+   assert any({a['from'],a['to']}=={pid,actor} for a in d['associations']),(pid,actor,'missing contextual relationship')
+  for eid in c['events']:
+   assert eid in events and pid in events[eid]['people'],(pid,eid,'reign event link')
+   label=events[eid]['year']
+   years=[int(y) for y in re.findall(r'\d{4}',label)]
+   if '年代' in label and years:years.append(max(years)+9)
+   century=re.search(r'(\d{1,2})世纪',label)
+   if not years and century:years=[(int(century[1])-1)*100+1,int(century[1])*100]
+   assert years and any(min(years)<=p['end'] and max(years)>=p['start'] for p in c['periods']),(pid,eid,'outside reign')
+ # Calendar-year overlap alone cannot distinguish an accession within that year.
+ excluded={
+  'gaochi':{'beijing'},'qizhen':{'v2e_changeheir'},'qiyu':{'v2e_jingrestore'},
+  'changluo':{'v2l_crown','v2l_tingji','v2l_taichang','v2l_yigong'},
+  'youxiao':{'v2l_yigong','v26_zhang_death'},'zaihou':{'v26_zhang_chief'},
+  'q_qianlong':{'v39_miao_affairs','qev_white_lotus_1796'},
+  'q_xuantong':{'qev_manchukuo_1932'}
+ }
+ for pid,ids in excluded.items():assert not ids.intersection(contexts[pid]['events']),(pid,'pre-accession or post-reign event')
+ for pid,a in articles.items():
+  if any(s.startswith('v40') for s in a['sources']):
+   assert any(s.get('events') for s in a['sections']),(pid,'reviewed biography lacks event navigation')
+ assert 'v39_qianlong_accession' not in events and 'qev_qianlong_accession_1735' in events
+ assert all('改变了清廷的权力结构、疆域治理或对外处境' not in e['impact'] for e in d['events']), 'generic Qing impact'
+ print('V22 PASS: all 28 emperors have sourced reign periods, linked people and curated events; pre-accession and post-reign cases stay separate')

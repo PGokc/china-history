@@ -555,7 +555,7 @@ final class MingJiUITests: XCTestCase {
         openEmperor("2", in: app)
         app.buttons["personHero"].tap()
         app.buttons["eventCategory_文化"].tap()
-        XCTAssertTrue(app.buttons["event_v12_zhenghe_voyages"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.buttons["event_v40m1_voyages_yongle"].waitForExistence(timeout: 5))
         XCTAssertTrue(app.buttons["event_v12_yongle_dadian"].exists)
         app.buttons["eventCategory_军事"].tap()
         XCTAssertTrue(app.buttons["event_v17_yongle_mobei"].waitForExistence(timeout: 5))
@@ -855,4 +855,100 @@ final class MingJiUITests: XCTestCase {
         XCTAssertTrue(fresh.staticTexts.matching(NSPredicate(format: "label CONTAINS %@", "1770")).firstMatch.exists)
         shot("v39-hongzhou-records", fresh)
     }
+
+    @MainActor func testV40EveryEmperorHasReignPeople() throws {
+        continueAfterFailure = false
+        let app = launch(enterFamily: false)
+        for dynasty in ["ming", "qing"] {
+            if dynasty == "qing" {
+                app.tabBars.buttons["朝代"].tap()
+                reach(app.buttons["dynasty_qing"], in: app, attempts: 20)
+                app.buttons["dynasty_qing"].tap()
+            }
+            app.tabBars.buttons["帝序"].tap()
+            if dynasty == "qing" { XCTAssertTrue(app.buttons["succession_q_0"].isHittable) }
+            let sequences = dynasty == "ming" ? (0...16).filter { $0 != 7 }.map(String.init) : (0...11).map { "q_\($0)" }
+            for sequence in sequences {
+                let row = app.buttons["succession_" + sequence]
+                reach(row, in: app, attempts: 18); row.tap()
+                XCTAssertTrue(app.buttons["personHero"].waitForExistence(timeout: 5))
+                app.buttons["personHero"].tap()
+                let court = app.buttons["category_court"]
+                XCTAssertTrue(court.waitForExistence(timeout: 5), sequence)
+                reach(court, in: app); court.tap()
+                XCTAssertTrue(app.navigationBars["当朝人物"].waitForExistence(timeout: 5))
+                XCTAssertGreaterThanOrEqual(app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "court_")).count, 2, sequence)
+                if ["3", "9", "14", "q_2", "q_6", "q_10", "q_11"].contains(sequence) { shot("v40-court-" + sequence, app) }
+                for _ in 0..<3 { app.navigationBars.buttons.element(boundBy: 0).tap() }
+            }
+        }
+    }
+
+    @MainActor func testV40ShortReignKeepsEarlierLifeSeparate() throws {
+        let app = launch(enterFamily: false)
+        openEmperor("14", in: app); app.buttons["personHero"].tap()
+        reach(app.buttons["eventCategory_政治"], in: app); app.buttons["eventCategory_政治"].tap()
+        reach(app.buttons["category_events"], in: app); app.buttons["category_events"].tap()
+        XCTAssertTrue(app.staticTexts["eventTimeScope"].label.contains("1620"))
+        XCTAssertFalse(app.buttons["event_v2l_crown"].exists)
+        XCTAssertFalse(app.buttons["event_v2l_tingji"].exists)
+        let earlier = app.buttons["lifetimeEvents"]
+        reach(earlier, in: app, attempts: 12)
+        shot("v40-taichang-reign-events", app)
+        earlier.tap()
+        XCTAssertTrue(app.navigationBars["生平相关事件"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["eventTimeScope"].label.contains("生平"))
+        reach(app.buttons["event_v2l_crown"], in: app)
+        XCTAssertTrue(app.buttons["event_v2l_tingji"].exists)
+        shot("v40-taichang-life-events", app)
+    }
+
+    @MainActor func testV40XuantongExcludesManchukuoFromReign() throws {
+        let app = launch(enterFamily: false)
+        reach(app.buttons["dynasty_qing"], in: app, attempts: 20); app.buttons["dynasty_qing"].tap()
+        openEmperor("q_11", in: app); app.buttons["personHero"].tap()
+        reach(app.buttons["eventCategory_政治"], in: app); app.buttons["eventCategory_政治"].tap()
+        reach(app.buttons["category_events"], in: app); app.buttons["category_events"].tap()
+        XCTAssertFalse(app.buttons["event_qev_manchukuo_1932"].exists)
+        let lifetime = app.buttons["lifetimeEvents"]
+        reach(lifetime, in: app); lifetime.tap()
+        XCTAssertTrue(app.navigationBars["生平相关事件"].waitForExistence(timeout: 5))
+        reach(app.buttons["event_qev_manchukuo_1932"], in: app, attempts: 14)
+        shot("v40-xuantong-life-events", app)
+    }
+
+    @MainActor func testV40LargeTypeCourtToPersonAndArticle() throws {
+        let app = launch(true, enterFamily: false)
+        openEmperor("3", in: app); app.buttons["personHero"].tap()
+        reach(app.buttons["category_court"], in: app); app.buttons["category_court"].tap()
+        let person = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "court_")).firstMatch
+        reach(person, in: app); shot("v40-court-large", app); person.tap()
+        XCTAssertTrue(app.buttons["articleEntry"].waitForExistence(timeout: 5))
+        openArticle(in: app)
+        XCTAssertEqual(app.buttons["narrationToggle"].label, "开始朗读")
+        shot("v40-court-article-large", app)
+    }
+    @MainActor func testV40QingPersonChapterEventAndSources() throws {
+        let app = launch(enterFamily: false)
+        reach(app.buttons["dynasty_qing"], in: app, attempts: 20); app.buttons["dynasty_qing"].tap()
+        openEmperor("q_7", in: app); app.buttons["personHero"].tap()
+        reach(app.buttons["category_court"], in: app); app.buttons["category_court"].tap()
+        reach(app.buttons["court_q_linzexu"], in: app); app.buttons["court_q_linzexu"].tap()
+        openArticle(in: app)
+        app.buttons["articleContents"].tap(); app.buttons["广东禁烟与战争转折"].tap()
+        let links = app.buttons["chapterLinks_v40q_linzexu_2"]
+        reach(links, in: app, attempts: 14); links.tap()
+        let event = app.buttons.matching(NSPredicate(format: "label CONTAINS %@", "林则徐主持虎门销烟")).firstMatch
+        reach(event, in: app); event.tap()
+        XCTAssertTrue(app.staticTexts["林则徐主持虎门销烟"].waitForExistence(timeout: 5))
+        shot("v40-humen-event", app)
+        let sources = app.buttons["资料与出处"]
+        reach(sources, in: app, attempts: 14); sources.tap()
+        let source = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "source_")).firstMatch
+        reach(source, in: app); app.swipeUp()
+        XCTAssertTrue(source.isHittable)
+        XCTAssertLessThanOrEqual(source.frame.maxY, app.tabBars.firstMatch.frame.minY)
+        shot("v40-humen-source-footer", app)
+    }
+
 }

@@ -454,6 +454,7 @@ struct SuccessionPage: View {
             }.padding(24)
         }.background(Theme.paper).foregroundStyle(Theme.text).navigationTitle(dynastyID == "qing" ? "清朝帝序" : "明朝帝序").navigationBarTitleDisplayMode(.inline).toolbarBackground(Theme.paper, for: .navigationBar).toolbarBackground(.visible, for: .navigationBar)
             .accessibilityIdentifier("successionPage_\(dynastyID)")
+            .id(dynastyID)
     }
 }
 
