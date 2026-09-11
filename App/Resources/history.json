@@ -1,5 +1,5 @@
 {
-  "version": 22,
+  "version": 23,
   "reviewed": "2026-09-09",
   "people": [
     {
@@ -2605,6 +2605,234 @@
       ],
       "kind": "重要人物",
       "note": "推动反清革命组织与共和主张，1912年在南京就任临时大总统，参与清末向共和政体的转换。"
+    },
+    {
+      "id": "m41_huzongxian",
+      "name": "胡宗宪",
+      "call": "招抚与海防之间",
+      "temple": "",
+      "era": "",
+      "reign": "",
+      "summary": "嘉靖朝东南军务重臣，组织招抚和战争，也深陷严嵩、赵文华构成的政治关系。",
+      "parent": null,
+      "sources": [
+        "v41m_ms205",
+        "v40m2_ms212"
+      ],
+      "kind": "人物",
+      "note": "嘉靖朝东南军务重臣，组织招抚和战争，也深陷严嵩、赵文华构成的政治关系。"
+    },
+    {
+      "id": "m41_yudayou",
+      "name": "俞大猷",
+      "call": "海防与边防的将领",
+      "temple": "",
+      "era": "",
+      "reign": "",
+      "summary": "历经嘉靖、隆庆和万历初年，在东南沿海与北方边塞任事，与戚继光共同构成明代练兵史的重要一面。",
+      "parent": null,
+      "sources": [
+        "v40m2_ms212",
+        "v41m_ms205",
+        "v41m_ms222"
+      ],
+      "kind": "人物",
+      "note": "历经嘉靖、隆庆和万历初年，在东南沿海与北方边塞任事，与戚继光共同构成明代练兵史的重要一面。"
+    },
+    {
+      "id": "m41_tanlun",
+      "name": "谭纶",
+      "call": "从台州到蓟镇",
+      "temple": "",
+      "era": "",
+      "reign": "",
+      "summary": "兼具地方治理与军事统筹经验，支持戚继光练兵，并把军饷、权限和战后民生纳入海防与边防。",
+      "parent": null,
+      "sources": [
+        "v41m_ms222",
+        "v40m2_ms212"
+      ],
+      "kind": "人物",
+      "note": "兼具地方治理与军事统筹经验，支持戚继光练兵，并把军饷、权限和战后民生纳入海防与边防。"
+    },
+    {
+      "id": "m41_wangchonggu",
+      "name": "王崇古",
+      "call": "边防与封贡谈判",
+      "temple": "",
+      "era": "",
+      "reign": "",
+      "summary": "从东南军务转入北边经略，是隆庆封贡中主持交涉的重要官员，也主张在互市之外维持防备。",
+      "parent": null,
+      "sources": [
+        "v41m_ms222"
+      ],
+      "kind": "人物",
+      "note": "从东南军务转入北边经略，是隆庆封贡中主持交涉的重要官员，也主张在互市之外维持防备。"
+    },
+    {
+      "id": "m41_lishizhen",
+      "name": "李时珍",
+      "call": "从辨药到《本草纲目》",
+      "temple": "",
+      "era": "",
+      "reign": "",
+      "summary": "蕲州医者与本草学家，长期辨析文献、药名和品类；1578年成稿的著作，到1596年才刊行。",
+      "parent": null,
+      "sources": [
+        "v41m_ms299",
+        "v41m_hb_bencao"
+      ],
+      "kind": "人物",
+      "note": "蕲州医者与本草学家，长期辨析文献、药名和品类；1578年成稿的著作，到1596年才刊行。"
+    },
+    {
+      "id": "m41_songyingxing",
+      "name": "宋应星",
+      "call": "把农工经验写入书中",
+      "temple": "",
+      "era": "",
+      "reign": "",
+      "summary": "江西奉新人，明末任地方官。《天工开物》于1637年刊行，系统记录农业与手工业知识。",
+      "parent": null,
+      "sources": [
+        "v41m_tiangong_preface",
+        "v41m_nlc_tiangong",
+        "v41m_ihns_song"
+      ],
+      "kind": "人物",
+      "note": "江西奉新人，明末任地方官。《天工开物》于1637年刊行，系统记录农业与手工业知识。"
+    },
+    {
+      "id": "q_wangding",
+      "name": "王鼎",
+      "call": "大学士与治河大臣",
+      "temple": "",
+      "era": "",
+      "reign": "嘉庆至道光时期",
+      "summary": "以财政、河工与司法事务进入中枢，在鸦片战争期间支持抵抗，也亲历治河经费与灾民安置的压力。",
+      "parent": null,
+      "sources": [
+        "v41q_qsg363"
+      ],
+      "kind": "重要人物",
+      "note": "以财政、河工与司法事务进入中枢，在鸦片战争期间支持抵抗，也亲历治河经费与灾民安置的压力。"
+    },
+    {
+      "id": "q_qishan",
+      "name": "琦善",
+      "call": "督抚与交涉大臣",
+      "temple": "",
+      "era": "",
+      "reign": "嘉庆至咸丰时期",
+      "summary": "长期任地方督抚，鸦片战争中赴广东议和。其军事判断、谈判权限和未获批准的穿鼻议约，需要分开考察。",
+      "parent": null,
+      "sources": [
+        "v41q_qsg370",
+        "v41q_chuanbi_letter",
+        "v41q_hk_yearbook"
+      ],
+      "kind": "重要人物",
+      "note": "长期任地方督抚，鸦片战争中赴广东议和。其军事判断、谈判权限和未获批准的穿鼻议约，需要分开考察。"
+    },
+    {
+      "id": "q_dingruchang",
+      "name": "丁汝昌",
+      "call": "北洋海军提督",
+      "temple": "",
+      "era": "",
+      "reign": "光绪时期",
+      "summary": "由旧式军队进入新式海军，主持北洋舰队事务，经历黄海海战与威海覆败；个人责任须放回军政体系考察。",
+      "parent": null,
+      "sources": [
+        "v41q_qsg462"
+      ],
+      "kind": "重要人物",
+      "note": "由旧式军队进入新式海军，主持北洋舰队事务，经历黄海海战与威海覆败；个人责任须放回军政体系考察。"
+    },
+    {
+      "id": "q_liujintang",
+      "name": "刘锦棠",
+      "call": "新疆首任巡抚",
+      "temple": "",
+      "era": "",
+      "reign": "同治至光绪时期",
+      "summary": "在左宗棠麾下统军西征，随后参与新疆建省和地方制度重组，经历从战争到行政建设的转变。",
+      "parent": null,
+      "sources": [
+        "v41q_qsg454",
+        "v41q_province"
+      ],
+      "kind": "重要人物",
+      "note": "在左宗棠麾下统军西征，随后参与新疆建省和地方制度重组，经历从战争到行政建设的转变。"
+    },
+    {
+      "id": "q_zengjize",
+      "name": "曾纪泽",
+      "call": "出使英法俄大臣",
+      "temple": "",
+      "era": "",
+      "reign": "光绪时期",
+      "summary": "曾国藩之子，长期从事驻外外交，参与重订伊犁条约；其工作体现交涉与军事、财政条件之间的关系。",
+      "parent": null,
+      "sources": [
+        "v41q_qsg446"
+      ],
+      "kind": "重要人物",
+      "note": "曾国藩之子，长期从事驻外外交，参与重订伊犁条约；其工作体现交涉与军事、财政条件之间的关系。"
+    },
+    {
+      "id": "q_liangqichao",
+      "name": "梁启超",
+      "call": "维新思想家与报人",
+      "temple": "",
+      "era": "",
+      "reign": "光绪至宣统时期",
+      "summary": "以政论、报刊和历史写作参与变革讨论，从维新到新民论述，连接知识传播、国民观念与政治选择。",
+      "parent": null,
+      "sources": [
+        "v41q_liang_ink",
+        "v41q_liang_press",
+        "v41q_xinmin",
+        "v41q_xinmin_index"
+      ],
+      "kind": "重要人物",
+      "note": "以政论、报刊和历史写作参与变革讨论，从维新到新民论述，连接知识传播、国民观念与政治选择。"
+    },
+    {
+      "id": "q_yanfu",
+      "name": "严复",
+      "call": "翻译家与海军教育者",
+      "temple": "",
+      "era": "",
+      "reign": "光绪至宣统时期",
+      "summary": "以海军教育为起点，通过译著讨论社会、经济与自由；翻译中的按语和取舍，也是晚清思想史的重要材料。",
+      "parent": null,
+      "sources": [
+        "v41q_yan_bio",
+        "v41q_yan_books",
+        "v41q_tianyan",
+        "v41q_yan_manuscript"
+      ],
+      "kind": "重要人物",
+      "note": "以海军教育为起点，通过译著讨论社会、经济与自由；翻译中的按语和取舍，也是晚清思想史的重要材料。"
+    },
+    {
+      "id": "q_huangxing",
+      "name": "黄兴",
+      "call": "反清革命组织者",
+      "temple": "",
+      "era": "",
+      "reign": "光绪至宣统时期",
+      "summary": "参与华兴会和同盟会组织，指挥黄花岗起义与阳夏战事，连接地下动员、军事行动和共和建国。",
+      "parent": null,
+      "sources": [
+        "v41q_huang_archive",
+        "v41q_huanghuagang",
+        "v40q_tongmenghui"
+      ],
+      "kind": "重要人物",
+      "note": "参与华兴会和同盟会组织，指挥黄花岗起义与阳夏战事，连接地下动员、军事行动和共和建国。"
     }
   ],
   "sources": [
@@ -4275,6 +4503,156 @@
       "title": "《清史稿》卷7：圣祖本纪",
       "url": "https://zh.wikisource.org/zh-hans/清史稿/卷7",
       "note": "据本卷相关本传与纪事核对任职、政务及事件经过。此书为未定稿，带有清廷立场；原文评价与数字须结合史料判断。"
+    },
+    {
+      "id": "v41m_ms205",
+      "title": "《明史》卷二百五：张经、胡宗宪传",
+      "url": "https://zh.wikisource.org/zh-hans/明史/卷205",
+      "note": "清修正史。参见张经传王江泾战事及胡宗宪传招抚、岑港与罢职下狱诸段；有关品行与归责保留史传立场。"
+    },
+    {
+      "id": "v41m_ms222",
+      "title": "《明史》卷二百二十二：谭纶、王崇古传",
+      "url": "https://zh.wikisource.org/zh-hans/明史/卷222",
+      "note": "核对福建战役、蓟镇练兵和隆庆封贡交涉；和平安排并未取消边防。"
+    },
+    {
+      "id": "v41m_ms299",
+      "title": "《明史》卷二百九十九：李时珍传",
+      "url": "https://zh.wikisource.org/zh-hans/明史/卷299",
+      "note": "方技列传李时珍条。核对本草分类、编纂及身后献书；具体初刊年代另参纪念馆资料。"
+    },
+    {
+      "id": "v41m_tiangong_preface",
+      "title": "宋应星《天工开物》自序",
+      "url": "https://zh.wikisource.org/wiki/天工開物/自序",
+      "note": "公版原著。自序署崇祯丁丑孟夏，说明选材、删篇、刊刻资助及农工知识取向。"
+    },
+    {
+      "id": "v41m_nlc_tiangong",
+      "title": "国家典籍博物馆：《天工开物》",
+      "url": "https://www.nlc.cn/nmcb/jpww/gengu/20240904_2641043.shtml",
+      "note": "馆藏典籍介绍，用于核对著作范围与宋应星仕履。"
+    },
+    {
+      "id": "v41m_ihns_song",
+      "title": "中国科学院自然科学史研究所：宋应星",
+      "url": "https://agri-history.ihns.ac.cn/agriculturists/syx.htm",
+      "note": "农业科技史研究资料。核对籍贯、科举及仕履；卒年存在约数，不作确定日期。"
+    },
+    {
+      "id": "v41m_hb_bencao",
+      "title": "李时珍纪念馆访谈：《本草纲目》从写作到出版",
+      "url": "https://wlt.hubei.gov.cn/bmdt/mtjj/202208/t20220824_4277457.shtml",
+      "note": "湖北省文化和旅游厅转载长江日报对李时珍纪念馆馆长胡庆华的访谈。仅采用1578年成稿、1596年金陵刊行等书史信息。"
+    },
+    {
+      "id": "v41q_qsg462",
+      "title": "《清史稿》卷462：丁汝昌传",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷462",
+      "note": "据公版原文核对履历及纪事；此书未定稿，叙事和评价带有清廷立场，战争数字与传奇细节不直接沿用。"
+    },
+    {
+      "id": "v41q_qsg454",
+      "title": "《清史稿》卷454：刘锦棠传",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷454",
+      "note": "据公版原文核对履历及纪事；此书未定稿，叙事和评价带有清廷立场，战争数字与传奇细节不直接沿用。"
+    },
+    {
+      "id": "v41q_qsg446",
+      "title": "《清史稿》卷446：曾纪泽传",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷446",
+      "note": "据公版原文核对履历及纪事；此书未定稿，叙事和评价带有清廷立场，战争数字与传奇细节不直接沿用。"
+    },
+    {
+      "id": "v41q_qsg363",
+      "title": "《清史稿》卷363：王鼎传",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷363",
+      "note": "据公版原文核对履历及纪事；此书未定稿，叙事和评价带有清廷立场，战争数字与传奇细节不直接沿用。"
+    },
+    {
+      "id": "v41q_qsg370",
+      "title": "《清史稿》卷370：琦善传",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷370",
+      "note": "据公版原文核对履历及纪事；此书未定稿，叙事和评价带有清廷立场，战争数字与传奇细节不直接沿用。"
+    },
+    {
+      "id": "v41q_liang_ink",
+      "title": "中国国家博物馆：梁启超的墨盒",
+      "url": "https://www.chnmuseum.cn/zp/zpml/gmww/202104/t20210402_249501.shtml",
+      "note": "核对从学康有为及在《时务报》的政论写作。"
+    },
+    {
+      "id": "v41q_liang_press",
+      "title": "梁启超《论报馆有益于国事》",
+      "url": "https://zh.wikisource.org/zh/論報館有益於國事",
+      "note": "1896年原文；用于说明梁启超对新闻、知识和政治沟通的主张。"
+    },
+    {
+      "id": "v41q_xinmin",
+      "title": "梁启超《新民说》第三节",
+      "url": "https://zh.wikisource.org/wiki/新民說/第三節",
+      "note": "公版原文，讨论更新国民与保存、补充既有文化的关系。"
+    },
+    {
+      "id": "v41q_xinmin_index",
+      "title": "梁启超《新民说》",
+      "url": "https://zh.wikisource.org/zh-hans/新民說",
+      "note": "1902—1906年连载各节目录；成书过程与不同主题应分开理解。"
+    },
+    {
+      "id": "v41q_yan_bio",
+      "title": "福建省图书馆：严复",
+      "url": "https://www.fjlib.net/zt/fxmr/mrcl/mrzl/202006/t20200624_433381.htm",
+      "note": "据《三坊七巷志》核对海军教育、翻译与清末任职；译著出版年份另以著译目录核对。"
+    },
+    {
+      "id": "v41q_yan_books",
+      "title": "福建省图书馆：严复著译要目",
+      "url": "https://www.fjlib.net/zt/fxmr/mrcl/yf/202010/t20201026_445696.htm",
+      "note": "区分译稿、连载、木刻及后续版次，不将全部译著统称为《天演论》。"
+    },
+    {
+      "id": "v41q_tianyan",
+      "title": "严复《天演论·译例言》",
+      "url": "https://zh.wikisource.org/zh-hans/天演論/譯例言",
+      "note": "严复说明翻译标准、改写与按语，以及梁启超、卢氏兄弟等对刊行的推动。"
+    },
+    {
+      "id": "v41q_huang_archive",
+      "title": "湖南省档案局：黄兴",
+      "url": "https://sdaj.hunan.gov.cn/sdaj/wszt/xxsl/xxrw/200609/t20060928_1977842.html",
+      "note": "核对华兴会、黄花岗和阳夏战事。文中同盟会成立日有误，本轮不采用，另据国博既有来源。"
+    },
+    {
+      "id": "v41q_huanghuagang",
+      "title": "中国国家博物馆：黄花岗起义战士",
+      "url": "https://www.chnmuseum.cn/zp/zpml/201812/t20181218_25815.shtml",
+      "note": "核对1911年4月27日起义及七十二烈士纪念的来历；不将72解释为全体死难者总数。"
+    },
+    {
+      "id": "v41q_chuanbi_letter",
+      "title": "义律致琦善照会，1841年1月16日",
+      "url": "https://zh.wikisource.org/zh-hans/穿鼻草約",
+      "note": "页面通称《穿鼻草约》，实际所录为义律署名照会，不能当成双方签署并获批准的条约。"
+    },
+    {
+      "id": "v41q_hk_yearbook",
+      "title": "《香港年报2021》历史章，第322页",
+      "url": "https://www.yearbook.gov.hk/2021/en/pdf/E22.pdf",
+      "note": "原文明确双方政府均未接受穿鼻条件；与1841年占领及1842年《南京条约》区分。"
+    },
+    {
+      "id": "v41q_province",
+      "title": "塔城地区行政公署：何以新疆",
+      "url": "https://xjtc.gov.cn/ywdt/xjyw/content_47188",
+      "note": "用于核对1884年新疆建省与刘锦棠任首任巡抚，不将报导全部历史解释直接当成定论。"
+    },
+    {
+      "id": "v41q_yan_manuscript",
+      "title": "中国国家博物馆：严复译赫胥黎《天演论》手稿",
+      "url": "https://www.chnmuseum.cn/zp/zpml/gmww/202112/t20211214_253190.shtml",
+      "note": "核对严复海军教育及译著经历，手稿实物与1898年刊本应分开。"
     }
   ],
   "relations": [
@@ -5006,15 +5384,18 @@
       "id": "v2l_coastal",
       "year": "1564",
       "title": "福建海防战事",
-      "body": "1564年，戚继光部在福建仙游解围并追击海上武装，俞大猷等也在广东作战。东南海防的改善依靠多支队伍配合，并非一位将领独力完成。",
-      "impact": "东南部分地区局势改善，但长期用兵与地方供给仍有代价。",
+      "body": "1564年，戚继光部在福建仙游解围并追击海上武装，谭纶参与福建海防的组织与战后安排；俞大猷在广东作战。福建、广东各有战场与指挥系统，东南海防的改善来自多支队伍接续作战，并非一位将领独力完成。",
+      "impact": "局部战局改善后，水寨、军饷与百姓赋役仍须整顿；战争成果需要持续治理来维持。",
       "people": [
         "houcong",
-        "m40_qijiguang"
+        "m40_qijiguang",
+        "m41_yudayou",
+        "m41_tanlun"
       ],
       "sources": [
         "v2l_ms18",
-        "v40m2_ms212"
+        "v40m2_ms212",
+        "v41m_ms222"
       ],
       "kind": "历史事件",
       "category": "军事"
@@ -5057,17 +5438,19 @@
       "id": "v2l_altan",
       "year": "1570—1571",
       "title": "俺答封贡与互市",
-      "body": "把汉那吉来投后，王崇古等与俺答方面展开交涉，高拱、张居正支持封贡。1571年，朝廷授俺答顺义王号并落实贡市安排，将军事防备与贸易、政治约定结合。",
-      "impact": "在保持边防的同时，以贸易与政治约定缓和部分边境冲突。",
+      "body": "1570年，把汉那吉来投，王崇古与方逢时等利用这一契机，同俺答方面交涉归还人口及处置赵全等问题；高拱、张居正支持封贡。1571年朝廷封俺答为顺义王，并落实贡市、贸易和赏赐安排。",
+      "impact": "边地交往获得较稳定的制度渠道，但王崇古并不保证永久无战，军事防备和对其他蒙古部众的应对仍然必要。",
       "people": [
         "zaihou",
         "m40_gaogong",
-        "zhangjuzheng"
+        "zhangjuzheng",
+        "m41_wangchonggu"
       ],
       "sources": [
         "v2l_ms19",
         "v2l_ms213",
-        "v40m2_ms213"
+        "v40m2_ms213",
+        "v41m_ms222"
       ],
       "kind": "历史事件",
       "category": "军事"
@@ -6430,13 +6813,17 @@
       "impact": "英国以海军优势迫使清廷沿海与长江防线接连失守，战争暴露军事、情报与外交判断的局限，并以不平等条约结束。",
       "people": [
         "q_daoguang",
-        "q_linzexu"
+        "q_linzexu",
+        "q_qishan",
+        "q_wangding"
       ],
       "peopleRoles": {
         "q_daoguang": "在位决策君主"
       },
       "sources": [
-        "v5qn_qing_annals"
+        "v5qn_qing_annals",
+        "v41q_qsg370",
+        "v41q_qsg363"
       ],
       "kind": "历史事件",
       "category": "军事"
@@ -6591,7 +6978,8 @@
         "q_guangxu",
         "q_cixi",
         "q_yixin",
-        "q_lihongzhang"
+        "q_lihongzhang",
+        "q_dingruchang"
       ],
       "peopleRoles": {
         "q_guangxu": "在位君主",
@@ -6599,7 +6987,8 @@
         "q_yixin": "战后参与军务者"
       },
       "sources": [
-        "v5qn_qing_annals"
+        "v5qn_qing_annals",
+        "v41q_qsg462"
       ],
       "kind": "历史事件",
       "category": "军事"
@@ -6613,7 +7002,8 @@
       "people": [
         "q_guangxu",
         "q_cixi",
-        "q_kangyouwei"
+        "q_kangyouwei",
+        "q_liangqichao"
       ],
       "peopleRoles": {
         "q_guangxu": "推行变法的皇帝",
@@ -6622,7 +7012,8 @@
       "sources": [
         "v5qn_qsg221",
         "v5qn_qsg214",
-        "v5qn_qing_annals"
+        "v5qn_qing_annals",
+        "v41q_liang_ink"
       ],
       "kind": "历史事件",
       "category": "政治"
@@ -8516,14 +8907,16 @@
       "id": "v40m2_jizhen_training_1568",
       "year": "1568—1571",
       "title": "戚继光练兵蓟镇，修筑敌台",
-      "body": "戚继光调往北方后主持蓟镇练兵，按地形组织车、骑、步兵和火器，又推动边墙敌台建设。隆庆五年，一批敌台工程完成。",
-      "impact": "北边防御不只依靠长城，还需要军队训练、驻守、粮械与统一指挥；东南经验在新的环境中被重新调整。",
+      "body": "隆庆朝，谭纶总督蓟辽、保定，建议集中军权、保障粮饷并引入熟悉的将领。戚继光调至北方后，于1568年起整训蓟镇部队，设置营伍、修筑敌台并协调步骑战车。谭纶负责支持和统筹，戚继光承担具体训练与防御建设。",
+      "impact": "东南练兵经验被调整用于北方边防，效果依赖军费、将领权限与朝廷持续支持，不能只归结为修筑城墙。",
       "people": [
         "zaihou",
-        "m40_qijiguang"
+        "m40_qijiguang",
+        "m41_tanlun"
       ],
       "sources": [
-        "v40m2_ms212"
+        "v40m2_ms212",
+        "v41m_ms222"
       ],
       "kind": "历史事件",
       "category": "军事"
@@ -8993,10 +9386,12 @@
       "impact": "清廷恢复对南北疆主要城镇的控制，并进一步讨论建省。俄占伊犁仍需另行交涉，不能视作这次战役一并解决。",
       "people": [
         "q_guangxu",
-        "q_zuozongtang"
+        "q_zuozongtang",
+        "q_liujintang"
       ],
       "sources": [
-        "v40q_qsg412"
+        "v40q_qsg412",
+        "v41q_qsg454"
       ],
       "kind": "历史事件",
       "category": "军事"
@@ -9026,10 +9421,12 @@
       "impact": "革命团体获得更清楚的共同组织与政治目标，共和方案同清廷预备立宪及保皇路线的竞争进一步展开。",
       "people": [
         "q_guangxu",
-        "q_sunyatsen"
+        "q_sunyatsen",
+        "q_huangxing"
       ],
       "sources": [
-        "v40q_tongmenghui"
+        "v40q_tongmenghui",
+        "v41q_huang_archive"
       ],
       "kind": "历史事件",
       "category": "政治"
@@ -9085,6 +9482,338 @@
       "sources": [
         "v40m2_ms218"
       ]
+    },
+    {
+      "id": "v41m_wangjiangjing",
+      "year": "1555年",
+      "title": "王江泾之战",
+      "body": "嘉靖三十四年，总督张经组织各路官军，在王江泾击败倭寇。胡宗宪、俞大猷等参与相关作战。战后赵文华等借朝廷关系争夺功劳，张经仍被逮捕处死，不能把这场胜利仅归于后来接任的胡宗宪。",
+      "impact": "战场胜利与朝廷问责相互背离，也使东南统帅更迭。",
+      "people": [
+        "houcong",
+        "m41_huzongxian",
+        "m41_yudayou"
+      ],
+      "sources": [
+        "v41m_ms205",
+        "v40m2_ms212"
+      ],
+      "kind": "历史事件",
+      "category": "军事"
+    },
+    {
+      "id": "v41m_xuhai",
+      "year": "1556年",
+      "title": "胡宗宪分化徐海集团",
+      "body": "胡宗宪以招抚与军事压力相配合，利用徐海、陈东、麻叶之间的矛盾瓦解沿海武装。徐海接受招抚后，猜疑和冲突仍不断扩大，最终在官军围攻中投水而死；俞大猷等继续清剿海上残部。",
+      "impact": "招抚并非简单的和平归顺，承诺、离间与围攻交织，暂时削弱了浙江沿海的一支主要武装。",
+      "people": [
+        "houcong",
+        "m41_huzongxian",
+        "m41_yudayou"
+      ],
+      "sources": [
+        "v41m_ms205",
+        "v40m2_ms212"
+      ],
+      "kind": "历史事件",
+      "category": "军事"
+    },
+    {
+      "id": "v41m_cengang",
+      "year": "1557—1558年",
+      "title": "汪直来归与岑港围战",
+      "body": "胡宗宪派人联络汪直后，汪直于1557年来到浙江。胡宗宪与巡按王本固对处置方式意见不同，汪直被拘；其部众占据舟山岑港。1558年俞大猷、戚继光等围攻受挫，部分海上武装造船突围南下。",
+      "impact": "招抚、司法处置与地方军事之间缺乏一致安排，既延长战事，也引发将领责任之争。",
+      "people": [
+        "houcong",
+        "m41_huzongxian",
+        "m41_yudayou",
+        "m40_qijiguang"
+      ],
+      "sources": [
+        "v41m_ms205",
+        "v40m2_ms212"
+      ],
+      "kind": "历史事件",
+      "category": "军事"
+    },
+    {
+      "id": "v41m_pinghaiwei",
+      "year": "1563年",
+      "title": "平海卫之战与兴化收复",
+      "body": "谭纶巡抚福建后统筹进攻平海卫，戚继光率部进击，俞大猷、刘显分任左右。官军获胜后收复兴化等地。谭纶随后请求减轻战区赋役，并调整海防部署；胜利依靠统筹、分路进军与地方供给共同实现。",
+      "impact": "福建战局得到扭转，恢复生产、减轻征派和重建水寨成为战后治理的一部分。",
+      "people": [
+        "houcong",
+        "m41_tanlun",
+        "m41_yudayou",
+        "m40_qijiguang"
+      ],
+      "sources": [
+        "v41m_ms222",
+        "v40m2_ms212"
+      ],
+      "kind": "历史事件",
+      "category": "军事"
+    },
+    {
+      "id": "v41m_bencao_draft",
+      "year": "1578年",
+      "title": "《本草纲目》成稿",
+      "body": "李时珍长期搜集文献、辨析药物异名与品类，至1578年完成《本草纲目》初稿，此后仍有修订。全书按部类组织药物，兼述名称、产地、形态及当时的医药认识。",
+      "impact": "成稿标志长期整理进入新的阶段，但距离雕版刊印、广泛传播仍有十八年。",
+      "people": [
+        "yijun",
+        "m41_lishizhen"
+      ],
+      "sources": [
+        "v41m_ms299",
+        "v41m_hb_bencao"
+      ],
+      "kind": "历史事件",
+      "category": "文化"
+    },
+    {
+      "id": "v41m_bencao_print",
+      "year": "1596年",
+      "title": "《本草纲目》在金陵刊行",
+      "body": "李时珍1593年去世后，《本草纲目》于1596年由金陵胡承龙刊行。成稿、修订、家人推动与书坊刻印属于不同环节；作者生前完成著述，并未亲见这一初刊本问世。",
+      "impact": "印本使药物整理成果越出手稿范围，后续版本与传播也不断改变读者接触此书的方式。",
+      "people": [
+        "yijun",
+        "m41_lishizhen"
+      ],
+      "sources": [
+        "v41m_ms299",
+        "v41m_hb_bencao"
+      ],
+      "kind": "历史事件",
+      "category": "文化"
+    },
+    {
+      "id": "v41m_tiangong_print",
+      "year": "1637年",
+      "title": "《天工开物》刊行",
+      "body": "宋应星的《天工开物》于崇祯十年刊行，以十八篇记述农业与手工业知识。自序说明编书并不服务科举进取，并记朋友涂伯聚对刊刻的资助。书中技术来自劳动经验与既有知识的整理，不能都算作作者的发明。",
+      "impact": "农工生产获得系统的文字与图像记录，为理解晚明物质生活、工艺和知识传播留下重要材料。",
+      "people": [
+        "youjian",
+        "m41_songyingxing"
+      ],
+      "sources": [
+        "v41m_tiangong_preface",
+        "v41m_nlc_tiangong"
+      ],
+      "kind": "历史事件",
+      "category": "文化"
+    },
+    {
+      "id": "v41q_river_audit",
+      "year": "1822",
+      "title": "王鼎核查河南河工报销",
+      "body": "道光派王鼎与玉麟核查河南河工费用。王鼎区分工程项目之间的实际挪补与违规折钱征收，要求依实核销。",
+      "impact": "核查显示成文财政规则与地方工程用款的张力；整顿河工需要核对物料、工役及账目，不能仅靠追究一个总额。",
+      "people": [
+        "q_daoguang",
+        "q_wangding"
+      ],
+      "category": "经济",
+      "sources": [
+        "v41q_qsg363"
+      ],
+      "kind": "历史事件"
+    },
+    {
+      "id": "v41q_kaifeng_flood",
+      "year": "1841—1842",
+      "title": "祥符决口与开封治河",
+      "body": "黄河决口威胁开封，王鼎等督办堵口，林则徐也在遣戍途中奉命参与。王鼎反对轻率迁城，并考虑洪水经淮河、洪泽湖扩散的风险，工程于1842年告成。",
+      "impact": "堵口缓解了连锁水患，但巨额工程开支与灾后民生仍给清廷和地方带来压力；治河与鸦片战争同期消耗财政资源。",
+      "people": [
+        "q_daoguang",
+        "q_wangding",
+        "q_linzexu"
+      ],
+      "category": "社会",
+      "sources": [
+        "v41q_qsg363"
+      ],
+      "kind": "历史事件"
+    },
+    {
+      "id": "v41q_chuanbi",
+      "year": "1841",
+      "title": "穿鼻议约与香港被占",
+      "body": "英军攻取虎门外炮台后，琦善与义律继续交涉香港、还地及通商问题。义律提出的穿鼻条件未获中英两国政府批准，英军却在1月占领香港岛。",
+      "impact": "谈判未能终止战争，琦善获罪、义律也被撤换。1841年军事占领与1842年《南京条约》规定割让属于不同环节，不能混作一次已生效的割地条约。",
+      "people": [
+        "q_daoguang",
+        "q_qishan"
+      ],
+      "category": "政治",
+      "sources": [
+        "v41q_qsg370",
+        "v41q_chuanbi_letter",
+        "v41q_hk_yearbook"
+      ],
+      "kind": "历史事件"
+    },
+    {
+      "id": "v41q_beiyang",
+      "year": "1888",
+      "title": "北洋海军确立经制",
+      "body": "清廷确定北洋海军组织章程，丁汝昌任提督，李鸿章继续主持北洋相关军政。舰队建设包含舰只、训练、港口、经费与人员管理。",
+      "impact": "新式海军获得较明确的组织形式，但长期训练、补充装备及海陆协同仍是持续任务，成军不等于已经具备稳定作战优势。",
+      "people": [
+        "q_guangxu",
+        "q_lihongzhang",
+        "q_dingruchang"
+      ],
+      "category": "军事",
+      "sources": [
+        "v41q_qsg462"
+      ],
+      "kind": "历史事件"
+    },
+    {
+      "id": "v41q_weihai",
+      "year": "1895",
+      "title": "威海失守与北洋舰队覆亡",
+      "body": "日军从陆海两面压迫威海，陆上炮台失守后，港内舰队陷于困境。丁汝昌在失败前夕服毒身亡，北洋海军最终覆败。",
+      "impact": "清廷失去重要海防力量，甲午战争局势进一步恶化；官兵牺牲与基地失守说明海军作战离不开岸防和整体战略。",
+      "people": [
+        "q_guangxu",
+        "q_dingruchang",
+        "q_lihongzhang"
+      ],
+      "category": "军事",
+      "sources": [
+        "v41q_qsg462"
+      ],
+      "kind": "历史事件"
+    },
+    {
+      "id": "v41q_xinjiang_province",
+      "year": "1884",
+      "title": "新疆建省与刘锦棠任巡抚",
+      "body": "清廷在新疆建立行省，任命刘锦棠为首任巡抚，逐步安排府州县、驿传、赋税、学校及水利等事务。",
+      "impact": "省制使边疆治理更紧密接入清廷行政体系，军事控制与地方日常治理重新分工；旧有军政安排并非一日全部消失。",
+      "people": [
+        "q_guangxu",
+        "q_liujintang",
+        "q_zuozongtang"
+      ],
+      "category": "政治",
+      "sources": [
+        "v41q_qsg454",
+        "v41q_province"
+      ],
+      "kind": "历史事件"
+    },
+    {
+      "id": "v41q_ili_treaty",
+      "year": "1881",
+      "title": "曾纪泽重订伊犁条约",
+      "body": "清廷拒绝接受崇厚所订前约后，曾纪泽赴俄重议边界、通商及赔款，争回伊犁主要地区和重要通道。",
+      "impact": "新约改善了前约的领土与交通安排，但仍伴随赔款、部分土地和商务权益损失；外交成果应与军事准备及避免战争的取舍合看。",
+      "people": [
+        "q_guangxu",
+        "q_zengjize",
+        "q_zuozongtang"
+      ],
+      "category": "政治",
+      "sources": [
+        "v41q_qsg446"
+      ],
+      "kind": "历史事件"
+    },
+    {
+      "id": "v41q_shiwu",
+      "year": "1896",
+      "title": "梁启超以《时务报》传播维新主张",
+      "body": "梁启超通过《时务报》政论讨论教育、制度改革及报刊功能，主张译介国外消息、记录新政和交涉事务，让读者了解更广阔的政治世界。",
+      "impact": "报刊成为连接士人、官员与新知识的传播渠道，维新不再只表现为朝廷奏折，也进入持续的公共阅读。",
+      "people": [
+        "q_guangxu",
+        "q_liangqichao"
+      ],
+      "category": "文化",
+      "sources": [
+        "v41q_liang_ink",
+        "v41q_liang_press"
+      ],
+      "kind": "历史事件"
+    },
+    {
+      "id": "v41q_xinmin",
+      "year": "1902—1906",
+      "title": "《新民说》陆续发表",
+      "body": "梁启超在《新民丛报》陆续发表《新民说》，讨论公德、权利、自由、自治、义务和政治能力，主张更新国民而非一概抛弃传统。",
+      "impact": "改革讨论扩展到国民日常能力与公共生活，报刊提供新的政治词汇；作者的判断具有时代条件，不能直接当作现代概念的标准定义。",
+      "people": [
+        "q_guangxu",
+        "q_liangqichao"
+      ],
+      "category": "文化",
+      "sources": [
+        "v41q_xinmin",
+        "v41q_xinmin_index"
+      ],
+      "kind": "历史事件"
+    },
+    {
+      "id": "v41q_tianyan",
+      "year": "1898",
+      "title": "严复译著《天演论》刊行",
+      "body": "严复译介赫胥黎著作，并加入按语、调整表达，借以讨论新的思想问题。梁启超、卢氏兄弟等参与借抄及推动刊印。",
+      "impact": "译著扩大了晚清读者理解竞争与社会变化的语言资源，也提出信、达、雅及新术语的翻译问题；译者发挥须与原作者观点区分。",
+      "people": [
+        "q_guangxu",
+        "q_yanfu",
+        "q_liangqichao"
+      ],
+      "category": "文化",
+      "sources": [
+        "v41q_tianyan",
+        "v41q_yan_books"
+      ],
+      "kind": "历史事件"
+    },
+    {
+      "id": "v41q_huanghuagang",
+      "year": "1911",
+      "title": "黄兴率队发动广州起义",
+      "body": "4月27日黄兴等发动广州起义，进攻两广总督衙门并与清军巷战，因缺乏足够策应而失败。部分死难者后来合葬黄花岗。",
+      "impact": "行动付出伤亡和被捕的代价，成为反清革命的重要纪念；七十二烈士是收殓纪念形成的称谓，不是全体死难者的精确总数。",
+      "people": [
+        "q_xuantong",
+        "q_huangxing",
+        "q_sunyatsen"
+      ],
+      "category": "军事",
+      "sources": [
+        "v41q_huanghuagang",
+        "v41q_huang_archive"
+      ],
+      "kind": "历史事件"
+    },
+    {
+      "id": "v41q_yangxia",
+      "year": "1911",
+      "title": "黄兴参与阳夏保卫战",
+      "body": "武昌起义后，黄兴到武汉担任革命军战时总司令，在汉口、汉阳方向抵御北洋军。两地先后失守，各省响应和南北谈判仍继续发展。",
+      "impact": "军事胜负与政权存续没有简单对应：战事扩大伤亡与社会损失，也与地方脱离清廷、寻求全国政治安排相互交织。",
+      "people": [
+        "q_xuantong",
+        "q_huangxing",
+        "q_yuanshikai"
+      ],
+      "category": "军事",
+      "sources": [
+        "v41q_huang_archive"
+      ],
+      "kind": "历史事件"
     }
   ],
   "objects": [
@@ -9248,11 +9977,13 @@
       "note": "心学并非一句励志格言。阅读时应区分王阳明本人的论述、后学发展和后世的通俗化解释。",
       "image": null,
       "people": [
-        "houzhao"
+        "houzhao",
+        "m40_wangshouren"
       ],
       "sources": [
         "v19_cssn_yangming",
-        "v18_sep_songming"
+        "v18_sep_songming",
+        "v40m2_ms195"
       ],
       "dynasties": [
         "ming"
@@ -9263,16 +9994,24 @@
       "title": "洋务运动",
       "subtitle": "在内忧外患中追求自强与求富",
       "symbol": "brain.head.profile",
-      "body": "十九世纪六十至九十年代，清朝部分官员在战争与内乱的压力下推动洋务事业，以“自强”“求富”为主要口号，兴办军事工业、民用企业、新式学堂，派遣留学生，并尝试建设近代海军。\n\n洋务运动首先服务于清王朝的自救，没有完成政治制度的根本改造，也未能阻止甲午战争的失败。不过，它引入机器生产、近代技术教育和新的经营组织，成为中国近代化进程中的重要阶段。把它放入“思想与变革”，是为了同时观察观念、制度和技术实践如何彼此推动。",
+      "body": "十九世纪六十至九十年代，清朝部分官员在战争与内乱的压力下推动洋务事业，以“自强”“求富”为主要口号，兴办军事工业、民用企业、新式学堂，派遣留学生，并尝试建设近代海军。\n\n洋务运动首先服务于清王朝的自救，没有完成政治制度的根本改造，也未能阻止甲午战争的失败。不过，它引入机器生产、近代技术教育和新的经营组织，成为中国近代化进程中的重要阶段。在这些事业中，观念、制度和技术实践相互影响，具体举措又取决于地方财政、官员协调与对外局势。",
       "note": "洋务运动是政治、军事、经济和教育改革的综合过程，并非单纯的思想流派。",
       "image": null,
       "people": [
         "q_yixin",
-        "q_tongzhi"
+        "q_tongzhi",
+        "q_zengguofan",
+        "q_zuozongtang",
+        "q_lihongzhang",
+        "q_zhangzhidong"
       ],
       "sources": [
         "v18_gov_yangwu",
-        "v19_cppcc_reform"
+        "v19_cppcc_reform",
+        "v40q_qsg405",
+        "v40q_qsg412",
+        "v40q_qsg411",
+        "v40q_qsg437"
       ],
       "dynasties": [
         "qing"
@@ -9288,11 +10027,13 @@
       "image": null,
       "people": [
         "youtang",
-        "houzhao"
+        "houzhao",
+        "m40_wangshouren"
       ],
       "sources": [
         "v19_cssn_yangming",
-        "v18_sep_songming"
+        "v18_sep_songming",
+        "v40m2_ms195"
       ],
       "dynasties": [
         "ming"
@@ -9327,10 +10068,15 @@
       "image": null,
       "people": [
         "yijun",
-        "youjian"
+        "youjian",
+        "m40_xuguangqi",
+        "m40_limadou"
       ],
       "sources": [
-        "v19_cssn_xixue"
+        "v19_cssn_xixue",
+        "v40m2_ms251",
+        "v40m2_ihns_xu",
+        "v40m2_dpm_ricci"
       ],
       "dynasties": [
         "ming"
@@ -9383,10 +10129,17 @@
       "note": "戊戌变法既是政治事件，也是观念传播过程；评价其成败，需要区分诏令设计、实际执行与长期影响。",
       "image": null,
       "people": [
-        "q_guangxu"
+        "q_guangxu",
+        "q_kangyouwei",
+        "q_liangqichao"
       ],
       "sources": [
-        "v19_cppcc_reform"
+        "v19_cppcc_reform",
+        "v40q_qsg473",
+        "v41q_liang_ink",
+        "v41q_liang_press",
+        "v41q_xinmin",
+        "v41q_xinmin_index"
       ],
       "dynasties": [
         "qing"
@@ -9402,10 +10155,73 @@
       "image": null,
       "people": [
         "q_guangxu",
-        "q_xuantong"
+        "q_xuantong",
+        "q_zhangzhidong",
+        "q_yuanshikai"
       ],
       "sources": [
-        "v19_nopss_keju"
+        "v19_nopss_keju",
+        "v40q_qsg437",
+        "v40q_qsg25"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v41m_bencao_book",
+      "title": "本草纲目",
+      "subtitle": "1578年成稿，1596年金陵刊行",
+      "symbol": "book.closed",
+      "body": "李时珍长期整理药物名称、品类和前代文献，形成十六部、五十二卷的本草著作。药物辨名、产地形态及当时医药认识在书中相互联系，既可读作医药史材料，也可观察传统博物知识的组织方法。",
+      "note": "成稿与刊行相隔多年，李时珍去世后由金陵胡承龙刊行初刻本。此处介绍著作，不对应一册特定馆藏实物。",
+      "people": [
+        "m41_lishizhen",
+        "yijun"
+      ],
+      "sources": [
+        "v41m_ms299",
+        "v41m_hb_bencao"
+      ],
+      "dynasties": [
+        "ming"
+      ]
+    },
+    {
+      "id": "v41m_tiangong_book",
+      "title": "天工开物",
+      "subtitle": "1637年刊行的农工技术著作",
+      "symbol": "book.closed",
+      "body": "宋应星以十八篇记述谷物、纺织、染色、陶瓷、冶铸、造纸等生产知识，以文字和图像呈现材料与工艺之间的关系。书中技术多出自累积的劳动经验，作者的贡献在于观察、组织与记录，而非独自发明这些工艺。",
+      "note": "自序署崇祯丁丑孟夏，并记友人对刊刻的资助。此处介绍著作，不对应一册特定馆藏实物。",
+      "people": [
+        "m41_songyingxing",
+        "youjian"
+      ],
+      "sources": [
+        "v41m_tiangong_preface",
+        "v41m_nlc_tiangong"
+      ],
+      "dynasties": [
+        "ming"
+      ]
+    },
+    {
+      "id": "v41q_tianyan_book",
+      "title": "《天演论》",
+      "subtitle": "严复译著与新观念的中文表达",
+      "symbol": "book.closed",
+      "body": "严复依据赫胥黎著作译成《天演论》，1898年刊行。它不是逐字译文：译者调整表达、解释术语，并加入按语，把原作同自身关切连接起来。\n\n《译例言》讨论信、达、雅，也记录夏曾佑、吴汝纶对篇名与文字的意见，以及梁启超、卢氏兄弟推动刊印的过程。由此可以看到，知识进入另一种语言，需要翻译者、读者、校订者和出版者共同参与。\n\n阅读时应区分赫胥黎原作、严复解释与晚清读者的发挥。不能把竞争的社会解释当作一条证明强权天然正当的科学定律。",
+      "note": "此处介绍译著及其传播，不指认某一册馆藏实物。",
+      "image": null,
+      "people": [
+        "q_yanfu",
+        "q_liangqichao",
+        "q_guangxu"
+      ],
+      "sources": [
+        "v41q_tianyan",
+        "v41q_yan_books"
       ],
       "dynasties": [
         "qing"
@@ -12166,15 +12982,25 @@
           "text": "1550年，俺答所部突破边防，逼近北京，史称庚戌之变。京师戒严、临时调兵与事后处分，暴露了首都周边防御的压力。东南沿海又长期遭遇倭患，戚继光、俞大猷等将领在浙江、福建、广东作战，至嘉靖后期部分地区局势明显改善。南北两线各有形势，沿海倭患还与复杂的武装走私和海盗活动相互纠缠。对当地居民而言，防御成效与供军负担并存；朝廷则持续在招募、运输、军费和人事之间作艰难选择。",
           "sources": [
             "v2l_ms18",
-            "v2l_ms78"
+            "v2l_ms78",
+            "v41m_ms205",
+            "v41m_ms222",
+            "v40m2_ms212"
           ],
           "kind": "史实与解读",
           "events": [
             "v2l_gengxu",
-            "v2l_coastal"
+            "v2l_coastal",
+            "v41m_wangjiangjing",
+            "v41m_xuhai",
+            "v41m_cengang",
+            "v41m_pinghaiwei"
           ],
           "people": [
-            "m40_qijiguang"
+            "m40_qijiguang",
+            "m41_huzongxian",
+            "m41_yudayou",
+            "m41_tanlun"
           ]
         },
         {
@@ -12224,7 +13050,10 @@
         "v2l_ms18",
         "v2l_ms78",
         "v2l_ms19",
-        "v2l_xianling"
+        "v2l_xianling",
+        "v41m_ms205",
+        "v41m_ms222",
+        "v40m2_ms212"
       ]
     },
     {
@@ -12283,7 +13112,8 @@
           "text": "北边并未因改元就平静。隆庆初年，俺答所部仍攻入山西，京师也有戒严。转机出现在1570年，把汉那吉来投明朝；此后王崇古等边臣与高拱、张居正推动交涉，俺答也提出封贡要求。1571年，明廷封俺答为顺义王，贡市安排逐步落实。这不是一方突然被另一方彻底征服，而是通过爵号、人员交还和贸易建立较可持续的秩序。它降低了部分边境冲突的强度，却不等于所有蒙古部众从此一致行动，更不意味着军队可以停止训练。",
           "sources": [
             "v2l_ms19",
-            "v2l_ms213"
+            "v2l_ms213",
+            "v41m_ms222"
           ],
           "kind": "史实与解读",
           "events": [
@@ -12291,7 +13121,8 @@
             "v40m2_jizhen_training_1568"
           ],
           "people": [
-            "m40_qijiguang"
+            "m40_qijiguang",
+            "m41_wangchonggu"
           ]
         },
         {
@@ -12346,7 +13177,8 @@
         "v2l_ms213",
         "v2l_sea",
         "v2l_ms81",
-        "v2l_ms20"
+        "v2l_ms20",
+        "v41m_ms222"
       ]
     },
     {
@@ -15000,11 +15832,17 @@
           "title": "漕运、盐政与银价",
           "text": "道光朝治理黄河、运河，尝试海运漕粮，并整顿盐政和仓储。人口增长、土地压力、灾荒与地方亏空相互作用，基层征收常依赖附加费用。鸦片输入导致白银外流只是银贵钱贱的原因之一，国际银价、税制与货币结构也在其中。百姓用铜钱交易、以白银纳税，银价上涨会增加实际负担。经济困局不能只归结为皇帝不懂节俭之外的财政。",
           "sources": [
-            "v5qe_qsg17_19"
+            "v5qe_qsg17_19",
+            "v41q_qsg363"
           ],
           "kind": "史实与解读",
           "events": [
-            "v12_daoguang_silver"
+            "v12_daoguang_silver",
+            "v41q_river_audit",
+            "v41q_kaifeng_flood"
+          ],
+          "people": [
+            "q_wangding"
           ]
         },
         {
@@ -15034,11 +15872,18 @@
           "text": "1840年英国发动战争，舰队沿海北上。清军在火炮、舰船、训练和指挥上暴露差距，地方谈判与中央命令反复变化。道光帝先后任用、罢免林则徐、琦善等人，和战摇摆并未阻止战火扩大。战争失败不能简化成武器一项：财政动员、情报、外交规则和官僚报喜避责都影响决策。沿海城市和居民承受炮火、征发与贸易中断。",
           "sources": [
             "v5qe_qsg17_19",
-            "v5qe_chn_opium"
+            "v5qe_chn_opium",
+            "v41q_qsg370",
+            "v41q_hk_yearbook"
           ],
           "kind": "史实与解读",
           "events": [
-            "qev_opium_war_1840"
+            "qev_opium_war_1840",
+            "v41q_chuanbi"
+          ],
+          "people": [
+            "q_qishan",
+            "q_wangding"
           ]
         },
         {
@@ -15085,7 +15930,10 @@
         "v5qe_chn_jintian",
         "v40q_qsg369",
         "v40q_qsg486",
-        "v40q_haiguo_preface"
+        "v40q_haiguo_preface",
+        "v41q_qsg363",
+        "v41q_qsg370",
+        "v41q_hk_yearbook"
       ]
     },
     {
@@ -15347,11 +16195,17 @@
           "title": "甲午战败的冲击",
           "text": "1894年中日甲午战争爆发。清朝陆海军在朝鲜、黄海和辽东等战场失利，北洋舰队最终覆没。1895年签订《马关条约》，清政府割让台湾、澎湖及辽东半岛，赔款并增开通商；辽东后来因三国干涉还辽而赎回。战败暴露洋务建设在财政、指挥、训练和国家协调上的缺陷，也促使士人和官员要求更广泛改革。光绪支持作战与后续改革，但不能独自控制战争机器。",
           "sources": [
-            "v5qe_qsg23_24"
+            "v5qe_qsg23_24",
+            "v41q_qsg462"
           ],
           "kind": "史实与解读",
           "events": [
-            "qev_sino_japanese_war_1894"
+            "qev_sino_japanese_war_1894",
+            "v41q_beiyang",
+            "v41q_weihai"
+          ],
+          "people": [
+            "q_dingruchang"
           ]
         },
         {
@@ -15359,11 +16213,19 @@
           "title": "百日维新的内容与速度",
           "text": "1898年光绪帝采纳康有为、梁启超等主张，发布一系列诏令，涉及学校、科举、行政、工商与军事，史称戊戌变法。改革希望在危机中迅速改变人才和国家能力，但诏令密集、地方执行条件不一，裁撤机构也触动官员利益。变法并非只有两位士人设计，张之洞等既有洋务改革、各省实践与官僚奏议也是背景。具体措施有的后来被废止，有的被清末新政重新采用。",
           "sources": [
-            "v5qe_qsg23_24"
+            "v5qe_qsg23_24",
+            "v41q_liang_press",
+            "v41q_tianyan"
           ],
           "kind": "史实与解读",
           "events": [
-            "qev_hundred_days_1898"
+            "qev_hundred_days_1898",
+            "v41q_shiwu",
+            "v41q_tianyan"
+          ],
+          "people": [
+            "q_liangqichao",
+            "q_yanfu"
           ]
         },
         {
@@ -15423,7 +16285,10 @@
         "v26_guangxu",
         "v40q_qsg412",
         "v40q_qsg437",
-        "v40q_tongmenghui"
+        "v40q_tongmenghui",
+        "v41q_qsg462",
+        "v41q_liang_press",
+        "v41q_tianyan"
       ]
     },
     {
@@ -15473,20 +16338,25 @@
           "sources": [
             "v5qe_qsg25",
             "v40q_qsg25",
-            "v40q_sun_declaration"
+            "v40q_sun_declaration",
+            "v41q_huang_archive",
+            "v41q_huanghuagang"
           ],
           "kind": "史实与解读",
           "events": [
             "qev_xinhai_1911",
             "v40q_yuan_return",
-            "v40q_nanjing_republic"
+            "v40q_nanjing_republic",
+            "v41q_huanghuagang",
+            "v41q_yangxia"
           ],
           "people": [
             "q_zaifeng",
             "q_longyu",
             "q_yuanshikai",
             "q_sunyatsen",
-            "q_zhangzhidong"
+            "q_zhangzhidong",
+            "q_huangxing"
           ]
         },
         {
@@ -15532,7 +16402,9 @@
         "v5qe_dpm_lineage",
         "v5qe_saac_abdication",
         "v40q_qsg25",
-        "v40q_sun_declaration"
+        "v40q_sun_declaration",
+        "v41q_huang_archive",
+        "v41q_huanghuagang"
       ]
     },
     {
@@ -18980,13 +19852,20 @@
           "text": "戚继光承袭军职，后来转战浙江、福建。他面对的海上武装包含不同来源的人，倭患不能简单理解成日本正规军单独入侵。明军原有卫所兵在训练和组织上存在问题，戚继光招募新兵，结合地形和武器建立队伍，强调号令、配合与赏罚。与俞大猷等将领的行动相互配合，才逐渐改变沿海局势。后世所谓戚家军，既让人记住将领，也应让人看到士兵的长期训练、地方的粮饷承担与战乱中的民众。",
           "kind": "史实与解读",
           "sources": [
-            "v40m2_ms212"
+            "v40m2_ms212",
+            "v41m_ms205",
+            "v41m_ms222"
           ],
           "people": [
-            "houcong"
+            "houcong",
+            "m41_huzongxian",
+            "m41_yudayou",
+            "m41_tanlun"
           ],
           "events": [
-            "v2l_coastal"
+            "v2l_coastal",
+            "v41m_cengang",
+            "v41m_pinghaiwei"
           ]
         },
         {
@@ -18995,10 +19874,12 @@
           "text": "隆庆年间，朝廷将戚继光调往北方，负责蓟州等地练兵和防守。他没有照搬东南战法，而是按照平原、山地与近边地形，安排车、骑、步兵和火器的配合，又推动修建敌台，使驻兵、储粮和边墙相互结合。训练不仅针对士卒，也要求将领熟悉指挥方法。边防因而是一套需要持续维护的系统：筑墙只是其中一部分，若人员、粮械与统属混乱，坚固工事也难发挥作用。他在蓟镇的工作延续到万历前期。",
           "kind": "史实与解读",
           "sources": [
-            "v40m2_ms212"
+            "v40m2_ms212",
+            "v41m_ms222"
           ],
           "people": [
-            "zaihou"
+            "zaihou",
+            "m41_tanlun"
           ],
           "events": [
             "v40m2_jizhen_training_1568"
@@ -19017,7 +19898,9 @@
         }
       ],
       "sources": [
-        "v40m2_ms212"
+        "v40m2_ms212",
+        "v41m_ms205",
+        "v41m_ms222"
       ]
     },
     {
@@ -20086,16 +20969,21 @@
           "text": "遣戍并未使林则徐完全离开公共事务。他在新疆参与勘察和水利相关工作，获释后又被起用办理地方政务。其主持整理的外国资料后来成为魏源编《海国图志》的重要基础。两人的联系，展示了行政危机怎样推动新的知识需求：不仅要发表对外态度，还要知道海路、兵器、地理和各国情势。林则徐并不是现代意义上的全面西化倡导者，他仍在清代国家与士大夫制度中寻找办法。把禁烟、水利、遣戍和知识传播放在一起，可以看到一个官员如何在失败与处分之后继续影响此后的改革讨论。",
           "kind": "史实与解读",
           "sources": [
-            "v40q_qsg369"
+            "v40q_qsg369",
+            "v41q_qsg363"
           ],
-          "people": [],
+          "people": [
+            "q_wangding"
+          ],
           "events": [
-            "v40q_haiguo"
+            "v40q_haiguo",
+            "v41q_kaifeng_flood"
           ]
         }
       ],
       "sources": [
-        "v40q_qsg369"
+        "v40q_qsg369",
+        "v41q_qsg363"
       ]
     },
     {
@@ -20242,16 +21130,25 @@
           "text": "光绪初年，朝廷讨论海防与西北边防的经费取舍，左宗棠反对放弃新疆，主张恢复统治并稳固边疆。1876至1877年，他组织粮运和军费，由刘锦棠等率军收复阿古柏势力控制的主要地区。伊犁问题则涉及俄国占领与后来的外交交涉，并非同一次战役解决。左宗棠随后提出新疆建省建议，1884年清廷正式设省。此事连接军事、外交与行政，但建省也开启新的地方治理问题。理解其功绩，应同时观察筹饷负担、战后安置和当地社会，而非只保留抬棺出征一类流行叙事。",
           "kind": "史实与解读",
           "sources": [
-            "v40q_qsg412"
+            "v40q_qsg412",
+            "v41q_qsg454",
+            "v41q_qsg446"
           ],
-          "people": [],
+          "people": [
+            "q_liujintang",
+            "q_zengjize"
+          ],
           "events": [
-            "v40q_xinjiang_campaign"
+            "v40q_xinjiang_campaign",
+            "v41q_xinjiang_province",
+            "v41q_ili_treaty"
           ]
         }
       ],
       "sources": [
-        "v40q_qsg412"
+        "v40q_qsg412",
+        "v41q_qsg454",
+        "v41q_qsg446"
       ]
     },
     {
@@ -20280,12 +21177,18 @@
           "text": "同治后期起，李鸿章长期担任直隶总督兼北洋大臣，经营海防、交涉、学堂与企业。他赞成制造轮船、训练海军和派学生出洋，认为缺少实际器械与人才便无从自强。军工之外，航运与煤矿等事业也与财政和国防需要相连。新式项目既依赖官府支持，也遭遇经费、管理和利益关系的限制，不能以建厂数量直接衡量国家实力。李鸿章并非中枢全权决策者，仍需面对皇帝、太后及各部大臣的意见，但其长期掌管的资源也使他必须承担相应政策责任。",
           "kind": "史实与解读",
           "sources": [
-            "v40q_qsg411"
+            "v40q_qsg411",
+            "v41q_qsg462",
+            "v41q_yan_bio"
           ],
-          "people": [],
+          "people": [
+            "q_dingruchang",
+            "q_yanfu"
+          ],
           "events": [
             "qev_self_strengthening_1860s",
-            "v40q_overseas_students"
+            "v40q_overseas_students",
+            "v41q_beiyang"
           ]
         },
         {
@@ -20294,17 +21197,23 @@
           "text": "1894至1895年甲午战争中，北洋军事体系遭到严重失败。李鸿章赴日谈判并签订《马关条约》，割地、赔款等条件进一步损害中国主权；1901年他又参与《辛丑条约》交涉。签约人不能被当成列强侵略的发起者，但其此前军备、用人和判断也不能因此免于评估。把他仅写成替朝廷背责，或把全部失败都推给他个人，都会掩盖清廷决策结构和国际力量差距。他的一生同时呈现了学习新技术的努力、军事制度的局限与在失败局面中谈判的代价。",
           "kind": "史实与解读",
           "sources": [
-            "v40q_qsg411"
+            "v40q_qsg411",
+            "v41q_qsg462"
           ],
-          "people": [],
+          "people": [
+            "q_dingruchang"
+          ],
           "events": [
             "qev_sino_japanese_war_1894",
-            "v26_boxer_protocol"
+            "v26_boxer_protocol",
+            "v41q_weihai"
           ]
         }
       ],
       "sources": [
-        "v40q_qsg411"
+        "v40q_qsg411",
+        "v41q_qsg462",
+        "v41q_yan_bio"
       ]
     },
     {
@@ -20443,11 +21352,15 @@
           "text": "1898年光绪召见康有为，准其参与提出新政建议。改革涉及学堂、取士、农工商、言路和行政调整，不能只归纳为宫廷密谋。康有为虽然影响较大，并不是能够指挥全国官僚的首相；皇帝也受到慈禧及既有权力结构制约。新政密集发布之后，执行与政治协调日益困难，九月政变使改革进程中断。康有为逃亡，谭嗣同等六人被处死，光绪失去实际行动自由。有关围园和告密的细节有多种材料，应区分可证经过与各方事后解释，避免把复杂政变归结为单一人物的一次背叛。",
           "kind": "史实与解读",
           "sources": [
-            "v40q_qsg473"
+            "v40q_qsg473",
+            "v41q_liang_ink"
           ],
-          "people": [],
+          "people": [
+            "q_liangqichao"
+          ],
           "events": [
-            "qev_hundred_days_1898"
+            "qev_hundred_days_1898",
+            "v41q_shiwu"
           ]
         },
         {
@@ -20463,7 +21376,8 @@
         }
       ],
       "sources": [
-        "v40q_qsg473"
+        "v40q_qsg473",
+        "v41q_liang_ink"
       ]
     },
     {
@@ -20541,7 +21455,8 @@
           ],
           "people": [
             "q_guangxu",
-            "q_xuantong"
+            "q_xuantong",
+            "q_huangxing"
           ],
           "events": [
             "v40q_tongmenghui"
@@ -20555,12 +21470,18 @@
           "sources": [
             "v40q_tongmenghui",
             "v40q_sun_declaration",
-            "v40q_qsg25"
+            "v40q_qsg25",
+            "v41q_huang_archive",
+            "v41q_huanghuagang"
           ],
-          "people": [],
+          "people": [
+            "q_huangxing"
+          ],
           "events": [
             "qev_xinhai_1911",
-            "v40q_nanjing_republic"
+            "v40q_nanjing_republic",
+            "v41q_huanghuagang",
+            "v41q_yangxia"
           ]
         },
         {
@@ -20582,7 +21503,840 @@
       "sources": [
         "v40q_tongmenghui",
         "v40q_sun_declaration",
-        "v40q_qsg25"
+        "v40q_qsg25",
+        "v41q_huang_archive",
+        "v41q_huanghuagang"
+      ]
+    },
+    {
+      "person": "m41_huzongxian",
+      "title": "胡宗宪：招抚与海防之间",
+      "dek": "嘉靖朝东南军务重臣，组织招抚和战争，也深陷严嵩、赵文华构成的政治关系。",
+      "sections": [
+        {
+          "id": "m41_huzongxian-1",
+          "title": "进入东南战局",
+          "text": "胡宗宪是徽州绩溪人，嘉靖年间中进士，经历地方行政和监察任职后巡按浙江。沿海武装既有日本人，也有参与走私、劫掠的中国海商及其部众，不能将每个集团视为同一支军队。1555年王江泾获胜时，统帅是张经，胡宗宪和俞大猷等参与其间。然而赵文华等利用朝廷关系争夺功劳，张经仍被处死。胡宗宪随后升任浙江巡抚并掌握更大军权。他的崛起既与处理军务有关，也离不开赵文华、严嵩的支持，战功和权力关系必须放在一起理解。",
+          "kind": "史实与解读",
+          "sources": [
+            "v41m_ms205",
+            "v40m2_ms212"
+          ],
+          "events": [
+            "v41m_wangjiangjing"
+          ],
+          "people": [
+            "houcong",
+            "m41_yudayou",
+            "m40_yansong"
+          ]
+        },
+        {
+          "id": "m41_huzongxian-2",
+          "title": "徐海与汪直的不同结局",
+          "text": "胡宗宪并非只靠会战解决海患。他接触汪直家属，派人出海联络，又利用徐海与陈东、麻叶等人的矛盾实施招抚和分化。1556年徐海集团崩溃，招抚承诺与随后围攻之间的张力也暴露出来。汪直1557年来归后，胡宗宪与巡按王本固的处置意见并不一致，最终汪直被拘，其部众固守岑港。次年的围攻十分艰难，部分武装突围南下。把这些过程写成一次成功的计谋，会遮蔽朝廷、地方官员、将领和海商各自的利益，也无法解释战事为何仍然延续。",
+          "kind": "史实与解读",
+          "sources": [
+            "v41m_ms205",
+            "v40m2_ms212"
+          ],
+          "events": [
+            "v41m_xuhai",
+            "v41m_cengang"
+          ],
+          "people": [
+            "m41_yudayou",
+            "m40_qijiguang"
+          ]
+        },
+        {
+          "id": "m41_huzongxian-3",
+          "title": "功劳之外的政治代价",
+          "text": "胡宗宪能够组织多支队伍，也善于向朝廷报捷和经营关系。清修《明史》同时记载他依附严嵩、馈赠权贵和增加地方负担，对其品行的论断带有史传鲜明的褒贬。严嵩倒台后，胡宗宪遭弹劾并一度获释闲住，后来因罗龙文案相关书信再被捕，死于狱中。对他的评价不必在名将与奸臣之间二选一：东南战争的组织工作确有作用，招抚中的反复、官场倾轧以及战争费用也确实需要检视。辨清不同人的贡献，比把全部胜利集中到一人身上更接近当时局面。",
+          "kind": "史实与解读",
+          "sources": [
+            "v41m_ms205"
+          ],
+          "events": [
+            "v40m2_yansong_removed_1562"
+          ],
+          "people": [
+            "m40_yansong",
+            "houcong"
+          ]
+        }
+      ],
+      "sources": [
+        "v41m_ms205",
+        "v40m2_ms212"
+      ]
+    },
+    {
+      "person": "m41_yudayou",
+      "title": "俞大猷：海防与边防的将领",
+      "dek": "历经嘉靖、隆庆和万历初年，在东南沿海与北方边塞任事，与戚继光共同构成明代练兵史的重要一面。",
+      "sections": [
+        {
+          "id": "m41_yudayou-1",
+          "title": "将领怎样形成",
+          "text": "俞大猷是福建晋江人，早年研习经学、兵法和武艺，后来从基层军职逐步进入东南战场。嘉靖朝沿海战事繁杂，船只、潮汐、登陆点和地方情报都关系胜败；勇力无法替代对战局的判断。1555年王江泾之战属于张经统筹的联合作战，俞大猷也在其中出力。此后他参与对徐海残部等海上武装的进攻，却并非每战都能获胜或及时得到奖赏。《明史》所见的仕途反复，提醒我们不能将一个人的整个军旅生涯压缩成始终顺利的抗倭传奇。",
+          "kind": "史实与解读",
+          "sources": [
+            "v40m2_ms212",
+            "v41m_ms205"
+          ],
+          "events": [
+            "v41m_wangjiangjing",
+            "v41m_xuhai"
+          ],
+          "people": [
+            "m41_huzongxian",
+            "houcong"
+          ]
+        },
+        {
+          "id": "m41_yudayou-2",
+          "title": "与戚继光并肩，也各有战场",
+          "text": "岑港围战中，俞大猷与戚继光都受到朝廷催责，突围事件又引起责任推诿，俞大猷一度下狱。此后他重新任职，参与福建战事。1563年平海卫之战由谭纶统筹，戚继光和俞大猷等分路配合；次年福建、广东的作战又各有主力。俞、戚的合作包括水陆协同，却不意味着二人总在同一地点。1565年针对吴平的进攻中，水陆夹击取得进展，吴平仍然逃走，追击也未尽成功。分清共同作战、不同防区和未竟目标，才能读出海防的真实难度。",
+          "kind": "史实与解读",
+          "sources": [
+            "v40m2_ms212",
+            "v41m_ms222",
+            "v41m_ms205"
+          ],
+          "events": [
+            "v41m_cengang",
+            "v41m_pinghaiwei",
+            "v2l_coastal"
+          ],
+          "people": [
+            "m40_qijiguang",
+            "m41_tanlun"
+          ]
+        },
+        {
+          "id": "m41_yudayou-3",
+          "title": "跨过三个年号",
+          "text": "俞大猷的经历没有在嘉靖朝结束。他也曾赴北方任事，提出和使用车营；隆庆朝继续在南方对付曾一本等武装。到万历初年，他仍曾任福建总兵，却因闾峡澳一带的失利被夺职，后来再领车营而辞归。史传称他作战重在预先筹划，并保存同时代人对其军事能力的评价，但这些评价不应抹去具体失误。他和戚继光留下的意义，也不只在杀敌数量，而在训练、器械、协同和军纪这些可被传授的组织经验；不同地区的战法须随实际条件调整。",
+          "kind": "史实与解读",
+          "sources": [
+            "v40m2_ms212"
+          ],
+          "events": [],
+          "people": [
+            "zaihou",
+            "yijun",
+            "m40_qijiguang"
+          ]
+        }
+      ],
+      "sources": [
+        "v40m2_ms212",
+        "v41m_ms205",
+        "v41m_ms222"
+      ]
+    },
+    {
+      "person": "m41_tanlun",
+      "title": "谭纶：从台州到蓟镇",
+      "dek": "兼具地方治理与军事统筹经验，支持戚继光练兵，并把军饷、权限和战后民生纳入海防与边防。",
+      "sections": [
+        {
+          "id": "m41_tanlun-1",
+          "title": "从知府开始练兵",
+          "text": "江西宜黄人谭纶中进士后进入中央官署，后来出任台州知府，直接面对沿海战乱。他训练地方兵，强调编伍、号令与彼此配合，也与在浙江作战的戚继光建立合作。这里的练兵并非单纯教授武艺：谁负责指挥、部队如何集合、临敌如何保持队形，都决定平日编制能否成为战场力量。地方官又必须筹集供给并维持民众生活，军事和行政因此紧密相连。这种经历使谭纶后来讨论国防时，往往同时考虑将领能力、制度支持与地方承受力。",
+          "kind": "史实与解读",
+          "sources": [
+            "v41m_ms222"
+          ],
+          "events": [],
+          "people": [
+            "m40_qijiguang"
+          ]
+        },
+        {
+          "id": "m41_tanlun-2",
+          "title": "胜利之后仍有治理",
+          "text": "1563年谭纶巡抚福建，面对兴化等地失陷的局面，组织平海卫进攻，戚继光、俞大猷和刘显等共同作战。不同传记从各自主角出发书写战功，合读才能看见统筹者与一线将领的分工。收复失地之后，谭纶请求缓征、减轻赋役，并整顿水寨和防区，推荐熟悉战局的将领接续任职。仙游等后续战事说明，一次胜利并不意味着整个沿海立即平定。受兵灾影响的居民需要恢复生产，军队却仍要粮饷，能否处理这种矛盾，也是海防成败的一部分。",
+          "kind": "史实与解读",
+          "sources": [
+            "v41m_ms222",
+            "v40m2_ms212"
+          ],
+          "events": [
+            "v41m_pinghaiwei",
+            "v2l_coastal"
+          ],
+          "people": [
+            "houcong",
+            "m41_yudayou",
+            "m40_qijiguang"
+          ]
+        },
+        {
+          "id": "m41_tanlun-3",
+          "title": "让将领有条件做成事",
+          "text": "隆庆朝谭纶总督蓟辽、保定，将东南经验带到北方。他提出，练兵既要钱粮，也要朝廷信任；军法执行、流言攻讦和功成后的嫉忌，都可能使计划中断。他支持戚继光到蓟镇整训，由戚具体推进营伍与敌台建设，并争取朝廷减少掣肘。这不是照搬海边的战法，北方步骑配合、城台与战车都有不同要求。谭纶后来任兵部尚书，万历初继续参与军政，1577年去世。他的作用在于连接现场经验与中央决策，使练兵不只是将领个人的愿望。",
+          "kind": "史实与解读",
+          "sources": [
+            "v41m_ms222",
+            "v40m2_ms212"
+          ],
+          "events": [
+            "v40m2_jizhen_training_1568"
+          ],
+          "people": [
+            "zaihou",
+            "yijun",
+            "m40_qijiguang",
+            "zhangjuzheng"
+          ]
+        }
+      ],
+      "sources": [
+        "v41m_ms222",
+        "v40m2_ms212"
+      ]
+    },
+    {
+      "person": "m41_wangchonggu",
+      "title": "王崇古：边防与封贡谈判",
+      "dek": "从东南军务转入北边经略，是隆庆封贡中主持交涉的重要官员，也主张在互市之外维持防备。",
+      "sections": [
+        {
+          "id": "m41_wangchonggu-1",
+          "title": "经略来自不同地方的经验",
+          "text": "山西蒲州人王崇古在嘉靖朝中进士，曾任刑部官员和地方知府，后来主管常州、镇江一带兵备，经历沿海战争，也与俞大猷有过军事合作。他随后转向宁夏等北方地区，处理战守、归附和地方防务。东南与北边面对的敌情不同，却都需要在用兵、招抚和供给之间权衡。王崇古的政治经验因此不只来自奏章和朝议，还包括同边地军民以及不同武装势力打交道；这为隆庆朝的谈判提供了实际基础，但谈判能否成事仍取决于朝廷与对方的选择。",
+          "kind": "史实与解读",
+          "sources": [
+            "v41m_ms222"
+          ],
+          "events": [],
+          "people": [
+            "houcong",
+            "m41_yudayou"
+          ]
+        },
+        {
+          "id": "m41_wangchonggu-2",
+          "title": "把一次来投变成交涉机会",
+          "text": "1570年俺答之孙把汉那吉来投，王崇古与方逢时等把这一事件转化为交涉机会。明方要求处理被掠人口和赵全等问题，也把归还把汉那吉纳入交换条件。高拱、张居正支持推进，朝廷内部却有人担心欺诈和边防松弛。1571年封俺答为顺义王后，贡市、赏赐、贸易品类和人员往来陆续获得安排。和平并不是皇帝一句诏令便自然出现，而是地方交涉、中央决断及蒙古方面利益共同作用的结果，参与者之间也需要不断建立信任。",
+          "kind": "史实与解读",
+          "sources": [
+            "v41m_ms222"
+          ],
+          "events": [
+            "v2l_altan"
+          ],
+          "people": [
+            "zaihou",
+            "m40_gaogong",
+            "zhangjuzheng"
+          ]
+        },
+        {
+          "id": "m41_wangchonggu-3",
+          "title": "互市并非放弃防备",
+          "text": "王崇古没有把封贡说成永远无战的保证。他主张给守约者稳定的贸易和政治待遇，同时保留战守准备；其他蒙古部众也不会自动接受同样安排。互市涉及商人、布帛、牲畜、税收与赏赐，使边地社会从战争之外获得交往渠道，却也带来持续协调的事务。万历初年王崇古进入中央，参与军政和刑部事务，后来因边防意见等问题辞归。他的经历适合放在战争与和平连续变化的历史里理解：减少冲突需要制度和利益支撑，维持成果同样需要长期投入。",
+          "kind": "史实与解读",
+          "sources": [
+            "v41m_ms222"
+          ],
+          "events": [
+            "v2l_altan"
+          ],
+          "people": [
+            "yijun",
+            "zhangjuzheng"
+          ]
+        }
+      ],
+      "sources": [
+        "v41m_ms222"
+      ]
+    },
+    {
+      "person": "m41_lishizhen",
+      "title": "李时珍：从辨药到《本草纲目》",
+      "dek": "蕲州医者与本草学家，长期辨析文献、药名和品类；1578年成稿的著作，到1596年才刊行。",
+      "sections": [
+        {
+          "id": "m41_lishizhen-1",
+          "title": "为什么要重编本草",
+          "text": "李时珍字东璧，是湖广蕲州人。他所面对的本草传统积累深厚，却也存在异名混淆、品类交错和旧说彼此矛盾的问题。清修《明史》记述，他广泛搜集资料，反复修改，希望让读者较清楚地辨认药物，而非只把前人文字再抄一遍。《本草纲目》以名称的纲目关系整理条目，先处理名字和释名，再讨论出产、形态及相关认识。对一种物品究竟是什么、不同地区的叫法是否指向同物的追问，使这项工作同时具有医药、博物与文献整理的意义。",
+          "kind": "史实与解读",
+          "sources": [
+            "v41m_ms299"
+          ],
+          "events": [
+            "v41m_bencao_draft"
+          ],
+          "people": []
+        },
+        {
+          "id": "m41_lishizhen-2",
+          "title": "成稿不是工作的终点",
+          "text": "长期编纂在1578年形成初稿，后来仍经过修订。全书分十六部、五十二卷，既继承传统本草，也增补药物和材料。书中有关气味、主治和附方的组织方式，体现了当时医药知识的结构；它不是现代实验验证后的药品说明书。理解这部著作，需要同时看见整理工作的价值与时代认识的限制。李时珍没有因身处万历朝就成为朝廷政治的附属人物，真正贯穿其事业的是辨名、归类、取舍旧说和反复修订；这些缓慢的工作并不依赖某一次宫廷事件来获得意义。",
+          "kind": "史实与解读",
+          "sources": [
+            "v41m_ms299",
+            "v41m_hb_bencao"
+          ],
+          "events": [
+            "v41m_bencao_draft"
+          ],
+          "people": [
+            "yijun"
+          ]
+        },
+        {
+          "id": "m41_lishizhen-3",
+          "title": "从家中书稿走向印本",
+          "text": "一部大型著作写成之后，还需要资金、刻工和出版者。李时珍1593年去世，1596年《本草纲目》才由金陵胡承龙刊行，作者并未亲见这一印本。家人保存和推动书稿，书坊承担雕版刊刻，都是知识传播不可省略的环节。《明史》还记载其子献书朝廷，但献书与金陵初刊不宜直接合并成皇帝主持出版的故事。区分成稿、修订、刊行与后来流传，才能知道不同年代发生了什么，也能看见一部名著背后不止作者一人的劳动。",
+          "kind": "史实与解读",
+          "sources": [
+            "v41m_ms299",
+            "v41m_hb_bencao"
+          ],
+          "events": [
+            "v41m_bencao_print"
+          ],
+          "people": [
+            "yijun"
+          ]
+        }
+      ],
+      "sources": [
+        "v41m_ms299",
+        "v41m_hb_bencao"
+      ]
+    },
+    {
+      "person": "m41_songyingxing",
+      "title": "宋应星：把农工经验写入书中",
+      "dek": "江西奉新人，明末任地方官。《天工开物》于1637年刊行，系统记录农业与手工业知识。",
+      "sections": [
+        {
+          "id": "m41_songyingxing-1",
+          "title": "科举道路之外的观察",
+          "text": "宋应星生于江西奉新，1615年中举，此后多次会试未第，明末曾任分宜教谕及其他地方官职。传统士人的进身道路强调经义与文章，他却把相当多的注意力放在生产和日常物用上。《天工开物》自序批评只熟悉书名、却不知道衣食器物如何制成的求知方式；在他看来，穿衣、吃饭和使用器械，本就与具体技艺相连。这并不意味着他与读书传统毫无关系，而是表明一个士人可以从既有学问出发，重新决定哪些经验值得进入书本。",
+          "kind": "史实与解读",
+          "sources": [
+            "v41m_tiangong_preface",
+            "v41m_ihns_song"
+          ],
+          "events": [],
+          "people": []
+        },
+        {
+          "id": "m41_songyingxing-2",
+          "title": "十八篇中的劳动世界",
+          "text": "《天工开物》按十八篇展开，从谷物生产、纺织染色，到陶瓷、冶铸、舟车和造纸，再及金属、兵器等领域。这样的安排把食物和基本物用放在显著位置，使读者沿着材料和工序理解器物。宋应星在自序说明取舍，也承认受见闻和条件所限，删去未能妥善完成的部分。书中所记不能全部算作他的个人发明：许多知识来自长期形成的生产经验。著述的重要贡献在于选择、组织和记录，使原本分散在不同地域与行业中的技艺能够在同一部书中被比较和阅读。",
+          "kind": "史实与解读",
+          "sources": [
+            "v41m_tiangong_preface",
+            "v41m_nlc_tiangong"
+          ],
+          "events": [
+            "v41m_tiangong_print"
+          ],
+          "people": []
+        },
+        {
+          "id": "m41_songyingxing-3",
+          "title": "一部书如何留下来",
+          "text": "1637年《天工开物》刊行，自序署崇祯丁丑孟夏，并说明朋友涂伯聚帮助刊刻。经费、资料和共同讨论的条件都曾限制他的计划，这些自述让名著的形成显得具体而真实。它问世时明朝已处在战争与财政压力之中，但社会中的生产和知识活动并未停止。宋应星后来离开仕途，入清不仕；有关卒年通常以约数记载，不宜给出过度精确的结论。今天读这部书，可以用它观察晚明工艺与生活，也须辨认地域差异和作者见闻边界，不能把它当作当时全部技术的完整清单。",
+          "kind": "史实与解读",
+          "sources": [
+            "v41m_tiangong_preface",
+            "v41m_nlc_tiangong",
+            "v41m_ihns_song"
+          ],
+          "events": [
+            "v41m_tiangong_print"
+          ],
+          "people": [
+            "youjian"
+          ]
+        }
+      ],
+      "sources": [
+        "v41m_tiangong_preface",
+        "v41m_nlc_tiangong",
+        "v41m_ihns_song"
+      ]
+    },
+    {
+      "person": "q_wangding",
+      "title": "王鼎：从财政核查进入中枢",
+      "dek": "以财政、河工与司法事务进入中枢，在鸦片战争期间支持抵抗，也亲历治河经费与灾民安置的压力。",
+      "sections": [
+        {
+          "id": "v41q_wangding_1",
+          "title": "从财政核查进入中枢",
+          "text": "王鼎在嘉庆朝由翰林逐步进入部院，道光初年受命核查河南河工报销。面对名目与实际用款不符，他没有把所有差额一概判作贪污，而是区分物料、土方和夫工之间的挪补，指出折钱征收中的违规。这类工作要求理解账目和工程实际，也显示清代财政规则与地方执行之间的距离。他后来进入军机处、任户部尚书，又参与盐务整理，尝试削减浮费、理清积欠。王鼎的政治经历不能只由一件死亡故事概括：在战争以前，他已长期处理国家如何筹钱、如何核销，以及官吏如何承担责任的问题。",
+          "kind": "史实与解读",
+          "sources": [
+            "v41q_qsg363"
+          ],
+          "people": [
+            "q_daoguang"
+          ],
+          "events": [
+            "v41q_river_audit"
+          ]
+        },
+        {
+          "id": "v41q_wangding_2",
+          "title": "黄河决口与开封城",
+          "text": "1841年黄河在祥符一带决口，开封受到洪水威胁。朝廷派王鼎等人督办，他反对轻率迁城，理由不只是守住省城，也包括黄水东下注入淮河、洪泽湖以后可能造成的连锁灾害。工程必须等候合适水情、调集材料并筹措巨款，他驻在工地督促办理，次年堵口告成。林则徐在遣戍途中也奉命参与河工。治河需要官员判断，更依赖大量工役、物料和运输；完成堵口并不意味着沿线灾民立即恢复生计，也不能把后来的黄河治理问题说成在这一次工程中全部解决。",
+          "kind": "史实与解读",
+          "sources": [
+            "v41q_qsg363",
+            "v40q_qsg369"
+          ],
+          "people": [
+            "q_daoguang",
+            "q_linzexu"
+          ],
+          "events": [
+            "v41q_kaifeng_flood"
+          ]
+        },
+        {
+          "id": "v41q_wangding_3",
+          "title": "战和之争中的身后叙事",
+          "text": "鸦片战争期间，王鼎主张抵抗，对林则徐获罪不满，回京后继续陈说意见。1842年他去世。《清史稿》记载其自缢，并把遗疏和穆彰阿联系起来，叙成以死进谏的故事；这属于需要辨明史料层次的记载，具体遗疏流转不能仅凭后世道德评价坐实。支持抵抗并不自动等于提出了可行的作战方案，主张议和也不能免除决策责任。王鼎的经历让人看到，同一朝廷同时承受外战与洪灾，财政、河工、官员处分和皇帝对消息的取舍，彼此牵连。",
+          "kind": "史实与解读",
+          "sources": [
+            "v41q_qsg363"
+          ],
+          "people": [
+            "q_daoguang",
+            "q_linzexu"
+          ],
+          "events": [
+            "qev_opium_war_1840"
+          ]
+        }
+      ],
+      "sources": [
+        "v41q_qsg363"
+      ]
+    },
+    {
+      "person": "q_qishan",
+      "title": "琦善：河运官员面对海疆战争",
+      "dek": "长期任地方督抚，鸦片战争中赴广东议和。其军事判断、谈判权限和未获批准的穿鼻议约，需要分开考察。",
+      "sections": [
+        {
+          "id": "v41q_qishan_1",
+          "title": "河运官员面对海疆战争",
+          "text": "琦善早年的职责集中在地方行政、河工与漕运。他曾因河堤决口受处分，也在两江任内讨论盘运和海运，处理黄河、运河淤塞对粮运的影响。1840年英军北上后，他在天津接触英方，随后奉道光命赴广东查办，接替林则徐。此时他已是深受皇帝倚任的高级官员，并非临时出现的谈判者。他对武器、兵力与沿海防御的判断，与林则徐存在明显分歧。皇帝则期待在控制损失的同时使英军退去，交涉大臣必须不断请示，无法自行决定所有通商和领土条件。",
+          "kind": "史实与解读",
+          "sources": [
+            "v41q_qsg370"
+          ],
+          "people": [
+            "q_daoguang",
+            "q_linzexu"
+          ],
+          "events": [
+            "qev_opium_war_1840"
+          ]
+        },
+        {
+          "id": "v41q_qishan_2",
+          "title": "穿鼻议约为什么没有定案",
+          "text": "1841年初，英军攻取沙角、大角炮台，双方在军事压力下继续交涉。义律致琦善照会提出以香港换还定海及炮台，并要求另行面谈订约；这份文件不能直接当成双方正式签署的条约。后来通称的穿鼻草约条件没有得到中英两国政府批准，英军却已占领香港岛。道光得知有关让地及通商交涉后严惩琦善，英方也不满意义律所获条件。1842年《南京条约》正式规定割让香港岛，应与这一阶段的谈判及军事占领分别叙述。把它们压成“琦善签约割港”一句，会混淆不同法律与政治过程。",
+          "kind": "史实与解读",
+          "sources": [
+            "v41q_qsg370",
+            "v41q_chuanbi_letter",
+            "v41q_hk_yearbook"
+          ],
+          "people": [
+            "q_daoguang"
+          ],
+          "events": [
+            "v41q_chuanbi"
+          ]
+        },
+        {
+          "id": "v41q_qishan_3",
+          "title": "惩处与再次起用",
+          "text": "琦善被革职押解后，仍陆续获起用，担任边疆和地方职务。他的仕途没有随着广东交涉立即结束，说明清廷虽把失败责任集中于若干官员，仍依赖熟悉行政的旧臣。讨论他的责任，应检验防御部署、情报判断和对皇帝的报告，不能只用忠奸二分。另一方面，看到清军技术劣势，也不能据此把英国以武力索地索款解释为正当。琦善既不是凭个人就能终止战争的外交奇才，也不能承担整个政治与军事体系的全部过失；他的遭遇反映了战局变化、授权含混与朝廷反复之间的冲突。",
+          "kind": "史实与解读",
+          "sources": [
+            "v41q_qsg370",
+            "v41q_hk_yearbook"
+          ],
+          "people": [
+            "q_daoguang"
+          ],
+          "events": []
+        }
+      ],
+      "sources": [
+        "v41q_qsg370",
+        "v41q_chuanbi_letter",
+        "v41q_hk_yearbook"
+      ]
+    },
+    {
+      "person": "q_dingruchang",
+      "title": "丁汝昌：旧军将领与新式舰队",
+      "dek": "由旧式军队进入新式海军，主持北洋舰队事务，经历黄海海战与威海覆败；个人责任须放回军政体系考察。",
+      "sections": [
+        {
+          "id": "v41q_dingruchang_1",
+          "title": "旧军将领与新式舰队",
+          "text": "丁汝昌早年在水陆军中作战，后来进入李鸿章主持的北洋系统，赴欧洲接运兵舰并考察军营、船厂。新式海军需要的不只是购买舰只，还包括训练、保养、弹药、港口和指挥制度。1888年北洋海军确立经制，他出任提督，负责统率这支由不同履历官兵组成的舰队。许多舰上军官受过船政学堂及海外训练，统帅则来自原有军事网络，彼此协作是持续的管理任务。将海军等同于几艘铁甲舰，容易忽略它作为长期组织所需的人才与经费，也无法说明战时命令为何常受中枢和北洋大臣制约。",
+          "kind": "史实与解读",
+          "sources": [
+            "v41q_qsg462"
+          ],
+          "people": [
+            "q_guangxu",
+            "q_lihongzhang"
+          ],
+          "events": [
+            "v41q_beiyang"
+          ]
+        },
+        {
+          "id": "v41q_dingruchang_2",
+          "title": "黄海海战之后",
+          "text": "1894年战争爆发，北洋舰队在黄海与日本舰队交战，损失多艘军舰。丁汝昌作为统帅负有指挥责任，但战局也涉及舰队训练、通信、弹药和中枢战略。海战后尚存舰只转入更受限制的行动状态，旅顺失守后，威海成为重要据点。解释这些变化需要区分海上交战与陆上基地防御，不宜用一名将领的性格代替军事分析。舰队是否能够继续出击，需要考虑受损舰只、补给和战场情报，而不能只凭战后评价作答。将领最终身死值得纪念，却也不能由此倒推此前所有决策正确；军功记载与责任分析仍需分别处理。",
+          "kind": "史实与解读",
+          "sources": [
+            "v41q_qsg462"
+          ],
+          "people": [
+            "q_guangxu",
+            "q_lihongzhang"
+          ],
+          "events": [
+            "qev_sino_japanese_war_1894"
+          ]
+        },
+        {
+          "id": "v41q_dingruchang_3",
+          "title": "威海困局与身后评价",
+          "text": "1895年日军从陆海两面压迫威海，岸上炮台失守使港内舰队处境更加危险。援军未能解围，舰船又受攻击，北洋海军的抵抗最终崩溃，丁汝昌在失败前夕服毒身亡。有关降书形成、部属与洋员活动，史料叙述并不完全一致，不宜把戏剧化细节写成唯一版本。清廷最初因其已获处分而未予同等抚恤，宣统时期才恢复其官职。军事失败、个人死亡和后来的纪念分别属于不同层次；舰队覆亡既造成官兵牺牲，也让清廷失去重要海防力量，不能仅作为一位统帅的悲剧来理解。",
+          "kind": "史实与解读",
+          "sources": [
+            "v41q_qsg462"
+          ],
+          "people": [
+            "q_guangxu"
+          ],
+          "events": [
+            "v41q_weihai"
+          ]
+        }
+      ],
+      "sources": [
+        "v41q_qsg462"
+      ]
+    },
+    {
+      "person": "q_liujintang",
+      "title": "刘锦棠：从湘军进入西北战场",
+      "dek": "在左宗棠麾下统军西征，随后参与新疆建省和地方制度重组，经历从战争到行政建设的转变。",
+      "sections": [
+        {
+          "id": "v41q_liujintang_1",
+          "title": "从湘军进入西北战场",
+          "text": "刘锦棠随叔父刘松山从军，参与对捻军及西北反清力量的战争。刘松山战死后，他接领部队，在左宗棠节制下继续作战。这支军队依靠将领之间的私人信任和地方筹饷维系，统帅更替必须同时稳定军心与补给。西北战争伴随围困、处决和人口强制迁移，《清史稿》即有相关记载，却常使用清廷敌我语言和褒扬军功的笔法。理解刘锦棠的崛起，既需交代指挥能力和军事网络，也须把战争中的非战斗人员放回叙事，不能将所有被镇压者都当成同一类军事敌人。",
+          "kind": "史实与解读",
+          "sources": [
+            "v41q_qsg454"
+          ],
+          "people": [
+            "q_tongzhi",
+            "q_zuozongtang"
+          ],
+          "events": []
+        },
+        {
+          "id": "v41q_liujintang_2",
+          "title": "新疆战役中的前线指挥",
+          "text": "1876—1877年，左宗棠统筹粮饷和进军方向，刘锦棠等将领执行前线行动，先后攻取乌鲁木齐、达坂城等地，继续向南疆推进。穿越缺水地区、保持粮道和处理投降部众，同攻城一样关系战局。他并非独自完成全部战役，其他部队与运输人员同样承担关键任务。清军恢复对新疆主要地区的控制后，俄国占据伊犁的问题仍未解决，需要后续交涉。《清史稿》关于阿古柏死亡的细节有争议，不能把一种叙述直接等同于定论；军事成果与当地社会经历也应分别观察。",
+          "kind": "史实与解读",
+          "sources": [
+            "v41q_qsg454"
+          ],
+          "people": [
+            "q_guangxu",
+            "q_zuozongtang"
+          ],
+          "events": [
+            "v40q_xinjiang_campaign"
+          ]
+        },
+        {
+          "id": "v41q_liujintang_3",
+          "title": "建省意味着什么",
+          "text": "1884年新疆建省，刘锦棠成为首任巡抚。新的安排逐步建立府州县、驿传和学校，整理赋税、屯垦与水利，使地方治理更紧密地接入清朝省制。他从战场统帅转向行政主持者，所面对的已不仅是军事据点，还包括人口恢复、耕作和财政持续性。省制并未让当地原有制度一夜消失，伊犁等地仍有不同军政安排；各地区执行也需要时间。把建省写成一次命令即可完成的改革，会遮住长期制度调整以及民众承受的负担。它同时体现清廷加强边疆控制与战后重建的双重目标。",
+          "kind": "史实与解读",
+          "sources": [
+            "v41q_qsg454",
+            "v41q_province"
+          ],
+          "people": [
+            "q_guangxu",
+            "q_zuozongtang"
+          ],
+          "events": [
+            "v41q_xinjiang_province"
+          ]
+        }
+      ],
+      "sources": [
+        "v41q_qsg454",
+        "v41q_province"
+      ]
+    },
+    {
+      "person": "q_zengjize",
+      "title": "曾纪泽：从家学走向驻外使馆",
+      "dek": "曾国藩之子，长期从事驻外外交，参与重订伊犁条约；其工作体现交涉与军事、财政条件之间的关系。",
+      "sections": [
+        {
+          "id": "v41q_zengjize_1",
+          "title": "从家学走向驻外使馆",
+          "text": "曾纪泽为曾国藩长子，早年通过荫叙进入官场，父亲去世后承袭爵位。1878年奉命出使英国、法国，后来兼使俄国。驻外使臣必须持续处理本国指示、外国政府程序和复杂的信息来源，工作方式与临时奉命远行的旧式使者不同。曾纪泽不仅需要传递文书，也要判断对方的底线，并把当地政治变化解释给清廷。家族声望有助于其进入官僚体系，却不能替代实际交涉能力。观察他的经历，可以把晚清外交从几次签约现场扩展为使馆中的日常沟通、报告与决策过程。",
+          "kind": "史实与解读",
+          "sources": [
+            "v41q_qsg446"
+          ],
+          "people": [
+            "q_guangxu",
+            "q_zengguofan"
+          ],
+          "events": []
+        },
+        {
+          "id": "v41q_zengjize_2",
+          "title": "伊犁改约的取舍",
+          "text": "俄国占据伊犁后，崇厚谈成的条约受到清廷强烈反对，曾纪泽被派去重议。他判断领土边界难以日后改动，应优先争取，而商务条款尚有调整空间。这并不是认定赔款和通商毫无代价，而是在不利条件下设定谈判次序。1881年重订条约，使清廷收回伊犁主要地区及重要通道，但仍付出赔款、部分土地和其他权益的损失。左宗棠等人的军事准备是交涉背景之一，外交也避免了直接对俄开战的更大风险。成果既不宜写成毫无损失的胜利，也不应抹去相对前约所争得的实际改善。",
+          "kind": "史实与解读",
+          "sources": [
+            "v41q_qsg446"
+          ],
+          "people": [
+            "q_guangxu",
+            "q_zuozongtang"
+          ],
+          "events": [
+            "v41q_ili_treaty"
+          ]
+        },
+        {
+          "id": "v41q_zengjize_3",
+          "title": "使臣能改变多少",
+          "text": "曾纪泽随后继续处理法国侵越等交涉，并参与洋药税厘问题，回国后任职总理衙门及部院。他的工作横跨疆界、贸易与军事采购，表明外交不能同财政和技术事务截然分开。然而使臣并不掌握全部军队、经费和最高决策权，奏议能否采用仍取决于清廷。后世常以善辩塑造外交家的形象，但谈判结果更来自准备、授权、力量对比和时机。曾纪泽的意义在于把具体利益拆开衡量，通过反复文书与谈判争取可行结果；这种专业工作与宫廷中的名望政治既相互联系，也存在张力。",
+          "kind": "史实与解读",
+          "sources": [
+            "v41q_qsg446"
+          ],
+          "people": [
+            "q_guangxu"
+          ],
+          "events": []
+        }
+      ],
+      "sources": [
+        "v41q_qsg446"
+      ]
+    },
+    {
+      "person": "q_liangqichao",
+      "title": "梁启超：报刊成为政治课堂",
+      "dek": "以政论、报刊和历史写作参与变革讨论，从维新到新民论述，连接知识传播、国民观念与政治选择。",
+      "sections": [
+        {
+          "id": "v41q_liangqichao_1",
+          "title": "报刊成为政治课堂",
+          "text": "梁启超从学康有为，参与维新思想的整理与传播。1896年，他在《时务报》撰写政论，讨论教育、科举与制度改革。他在《论报馆有益于国事》中，把信息闭塞看作国家积弱的重要原因，主张介绍国外新闻、各省新政、交涉案件和实用知识。报刊因而不只是记录奇闻，而是帮助读者理解自己同更大政治世界的关系。不过他也批评虚构新闻、借评论报私怨及奉承权贵。把梁启超仅看成文笔激昂的宣传家，会忽略他对信息质量与公共讨论条件的具体思考。",
+          "kind": "史实与解读",
+          "sources": [
+            "v41q_liang_ink",
+            "v41q_liang_press"
+          ],
+          "people": [
+            "q_guangxu",
+            "q_kangyouwei"
+          ],
+          "events": [
+            "v41q_shiwu"
+          ]
+        },
+        {
+          "id": "v41q_liangqichao_2",
+          "title": "新民并非抛弃全部传统",
+          "text": "戊戌变法失败后，梁启超流亡海外，继续办报写作。1902年起陆续发表《新民说》，把问题从朝廷应当改什么，扩展到国民应当具备什么能力。他讨论公德、权利、自由、自治和义务，也强调保存并更新自身文化，补充原来不足的知识与习惯。这些议论带有时代紧迫感，并非今日各项概念的现成定义。他借读者熟悉的文字解释陌生制度，使报刊成为持续学习的空间；与此同时，关于国民性格的概括也可能过于笼统，需要把社会处境与作者判断分开。",
+          "kind": "史实与解读",
+          "sources": [
+            "v41q_xinmin",
+            "v41q_xinmin_index",
+            "v40q_qsg473"
+          ],
+          "people": [
+            "q_guangxu"
+          ],
+          "events": [
+            "v41q_xinmin",
+            "qev_hundred_days_1898"
+          ]
+        },
+        {
+          "id": "v41q_liangqichao_3",
+          "title": "在改革方案之间思考",
+          "text": "梁启超不是始终沿一条固定路线前进的思想家。他重视政治参与和公民能力，但具体主张会随对时局的判断而变化。阅读《新民说》的不同章节，会发现知识传播、道德改造和制度改革并不总能顺畅结合：仅有激烈言论，未必马上形成组织和治理能力。这也解释了晚清改革讨论为何不能简单等同于赞成革命或拥护某一位皇帝。他与康有为之间既有师承，也有思想发展；与严复译著的联系则显示，报刊和翻译共同提供了新的讨论语言，而读者如何理解这些语言，又会产生超出作者计划的影响。",
+          "kind": "史实与解读",
+          "sources": [
+            "v41q_xinmin",
+            "v41q_tianyan"
+          ],
+          "people": [
+            "q_kangyouwei",
+            "q_yanfu"
+          ],
+          "events": [
+            "v41q_tianyan"
+          ]
+        }
+      ],
+      "sources": [
+        "v41q_liang_ink",
+        "v41q_liang_press",
+        "v41q_xinmin",
+        "v41q_xinmin_index"
+      ]
+    },
+    {
+      "person": "q_yanfu",
+      "title": "严复：海军教育打开的知识道路",
+      "dek": "以海军教育为起点，通过译著讨论社会、经济与自由；翻译中的按语和取舍，也是晚清思想史的重要材料。",
+      "sections": [
+        {
+          "id": "v41q_yanfu_1",
+          "title": "海军教育打开的知识道路",
+          "text": "严复在福建船政学习驾驶，1877年赴英国学习海军，归国后从事教学，后来进入北洋水师学堂。他接触到的西学最初同航海、军事训练和技术人才培养紧密相连，却逐渐把注意力扩展到社会制度和学术方法。甲午战争前后，他通过政论讨论国家危机，不把富强仅仅归结为机器与军舰。海军教育者转向译介政治社会著作，反映了洋务所培养的知识经验如何越出最初范围。不过译介新思想不表示他赞同所有激进政治方案，学习经历与政治选择仍应分开理解。",
+          "kind": "史实与解读",
+          "sources": [
+            "v41q_yan_manuscript"
+          ],
+          "people": [
+            "q_guangxu",
+            "q_lihongzhang"
+          ],
+          "events": []
+        },
+        {
+          "id": "v41q_yanfu_2",
+          "title": "《天演论》中的翻译与发挥",
+          "text": "1898年《天演论》刊行，把赫胥黎著作带入中国读者的讨论。严复明确说明自己并非逐字对译，有时调整句式、增加解释，并在按语中加入比较和看法。因此阅读这部书，必须区分原作者、译者和后来的接受者。所谓信、达、雅，涉及准确表达、使人理解与文辞选择之间的平衡，而不是简单追求华丽。严复还记下与友人商量篇名术语的过程，显示一个新概念如何逐步获得中文形式。梁启超、卢氏兄弟等参与借抄和推动刊印，书籍传播也依赖具体的人际与出版网络。",
+          "kind": "史实与解读",
+          "sources": [
+            "v41q_tianyan",
+            "v41q_yan_books"
+          ],
+          "people": [
+            "q_guangxu",
+            "q_liangqichao"
+          ],
+          "events": [
+            "v41q_tianyan"
+          ]
+        },
+        {
+          "id": "v41q_yanfu_3",
+          "title": "从社会学到自由的界限",
+          "text": "严复后续译介的范围包括经济学、社会学、政治法律和逻辑，不能全用进化论三个字概括。《原富》与《群己权界论》等书，使财富生产、个人与社会权力的界限进入新的讨论。他在清末还参与教育及宪政咨询，宣统时期任资政院议员。知识上的开放与政治上的审慎同时存在，体现当时改革者对于秩序和参与方式的不同判断。译著并未给中国问题提供可以直接照搬的答案；其价值还在于让读者获得比较、质疑和重新命名问题的工具，具体解释则须回到每部书的内容。",
+          "kind": "史实与解读",
+          "sources": [
+            "v41q_yan_bio",
+            "v41q_yan_books"
+          ],
+          "people": [
+            "q_guangxu",
+            "q_xuantong"
+          ],
+          "events": []
+        }
+      ],
+      "sources": [
+        "v41q_yan_bio",
+        "v41q_yan_books",
+        "v41q_tianyan",
+        "v41q_yan_manuscript"
+      ]
+    },
+    {
+      "person": "q_huangxing",
+      "title": "黄兴：把革命主张变成组织",
+      "dek": "参与华兴会和同盟会组织，指挥黄花岗起义与阳夏战事，连接地下动员、军事行动和共和建国。",
+      "sections": [
+        {
+          "id": "v41q_huangxing_1",
+          "title": "把革命主张变成组织",
+          "text": "黄兴回国任教后，在湖南联络学生、军人及会党，参与创建华兴会并任会长。筹划起义需要资金、武器、保密和跨地协调，并不只是发表反清言论。计划泄露后，他流亡日本，1905年与孙中山等参与成立同盟会，承担日常会务与组织工作。华兴会和其他团体带来的网络，使同盟会能够联结不同地域的革命者，但各人的经验与主张也并不完全一致。黄兴的作用首先是将政治目标转化为可运作的组织，协调人员与行动，而非用个人勇敢替代集体准备。",
+          "kind": "史实与解读",
+          "sources": [
+            "v41q_huang_archive",
+            "v40q_tongmenghui"
+          ],
+          "people": [
+            "q_guangxu",
+            "q_sunyatsen"
+          ],
+          "events": [
+            "v40q_tongmenghui"
+          ]
+        },
+        {
+          "id": "v41q_huangxing_2",
+          "title": "黄花岗的失败与纪念",
+          "text": "1911年4月27日，革命党人在广州发动起义，黄兴率队进攻两广总督衙门，随后在城中与清军交战。行动未能得到足够策应，起义失败，多人战死或被捕后遇害，黄兴受伤脱险。后来收殓和安葬形成黄花岗七十二烈士的纪念，“七十二”并不是整场行动所有死难者的精确总数。牺牲激励后来者，但不应把起义写成必然通向成功的一站；参与者当时面对的是真实的失败、伤残与失去同伴。纪念价值与军事行动中暴露的组织问题，可以同时被看见。",
+          "kind": "史实与解读",
+          "sources": [
+            "v41q_huanghuagang",
+            "v41q_huang_archive"
+          ],
+          "people": [
+            "q_xuantong",
+            "q_sunyatsen"
+          ],
+          "events": [
+            "v41q_huanghuagang"
+          ]
+        },
+        {
+          "id": "v41q_huangxing_3",
+          "title": "阳夏战事与共和转折",
+          "text": "武昌起义后，黄兴赶赴武汉，担任革命军战时总司令，参与汉口、汉阳方向的防御。北洋军持续进攻，革命军虽抵抗，最终仍失去两地。战场上的失利没有使各省响应立即终止，军事、地方政治与南北谈判开始相互影响。此后黄兴参与南京临时政府的军事工作，支持孙中山就任临时大总统。1912年清帝退位终结王朝统治，却不代表军队整合和政治分歧已经解决。黄兴的经历提示，共和的建立包含组织合作和妥协，也包含无法用胜利结局抹去的战争损失。",
+          "kind": "史实与解读",
+          "sources": [
+            "v41q_huang_archive"
+          ],
+          "people": [
+            "q_xuantong",
+            "q_sunyatsen",
+            "q_yuanshikai"
+          ],
+          "events": [
+            "v41q_yangxia",
+            "v40q_nanjing_republic"
+          ]
+        }
+      ],
+      "sources": [
+        "v41q_huang_archive",
+        "v41q_huanghuagang",
+        "v40q_tongmenghui"
       ]
     }
   ],
@@ -23129,6 +24883,347 @@
       "sources": [
         "v40q_qsg437"
       ]
+    },
+    {
+      "to": "m41_huzongxian",
+      "role": "东南军务重臣",
+      "inverse": "任事时期的皇帝",
+      "period": "嘉靖朝",
+      "note": "主持东南招抚与军事，依赖朝廷支持，也卷入严嵩倒台后的案件。",
+      "sources": [
+        "v41m_ms205"
+      ],
+      "from": "houcong"
+    },
+    {
+      "to": "m41_yudayou",
+      "role": "东南海防将领",
+      "inverse": "任事时期的皇帝",
+      "period": "嘉靖朝",
+      "note": "参与浙江、福建与广东作战，不同年份与防区各有同僚协作。",
+      "sources": [
+        "v40m2_ms212"
+      ],
+      "from": "houcong"
+    },
+    {
+      "to": "m41_yudayou",
+      "role": "南方军务将领",
+      "inverse": "任事时期的皇帝",
+      "period": "隆庆朝",
+      "note": "继续在南方任事，参与对曾一本等武装的战争。",
+      "sources": [
+        "v40m2_ms212"
+      ],
+      "from": "zaihou"
+    },
+    {
+      "to": "m41_yudayou",
+      "role": "万历初年的福建总兵",
+      "inverse": "任事时期的皇帝",
+      "period": "万历初年",
+      "note": "任福建总兵时因战事失利被夺职，后再领车营而辞归。",
+      "sources": [
+        "v40m2_ms212"
+      ],
+      "from": "yijun"
+    },
+    {
+      "to": "m41_tanlun",
+      "role": "地方海防组织者",
+      "inverse": "任事时期的皇帝",
+      "period": "嘉靖朝",
+      "note": "从台州练兵到福建巡抚，协调将领并兼顾战后恢复。",
+      "sources": [
+        "v41m_ms222"
+      ],
+      "from": "houcong"
+    },
+    {
+      "to": "m41_tanlun",
+      "role": "蓟辽保定总督",
+      "inverse": "任事时期的皇帝",
+      "period": "隆庆朝",
+      "note": "支持戚继光在蓟镇练兵，争取军饷和指挥权限。",
+      "sources": [
+        "v41m_ms222"
+      ],
+      "from": "zaihou"
+    },
+    {
+      "to": "m41_tanlun",
+      "role": "兵部尚书",
+      "inverse": "任事时期的皇帝",
+      "period": "万历初年",
+      "note": "继续参与中央军政，1577年去世。",
+      "sources": [
+        "v41m_ms222"
+      ],
+      "from": "yijun"
+    },
+    {
+      "to": "m41_wangchonggu",
+      "role": "兵备与边防官员",
+      "inverse": "任事时期的皇帝",
+      "period": "嘉靖朝",
+      "note": "历经东南兵备与宁夏巡抚，积累战守和交涉经验。",
+      "sources": [
+        "v41m_ms222"
+      ],
+      "from": "houcong"
+    },
+    {
+      "to": "m41_wangchonggu",
+      "role": "封贡交涉主持者",
+      "inverse": "任事时期的皇帝",
+      "period": "隆庆朝",
+      "note": "与方逢时等推动把汉那吉事件后的谈判及贡市安排。",
+      "sources": [
+        "v41m_ms222"
+      ],
+      "from": "zaihou"
+    },
+    {
+      "to": "m41_wangchonggu",
+      "role": "中央军政官员",
+      "inverse": "任事时期的皇帝",
+      "period": "万历初年",
+      "note": "参与中央政务，仍关注封贡后的边防问题。",
+      "sources": [
+        "v41m_ms222"
+      ],
+      "from": "yijun"
+    },
+    {
+      "to": "m41_lishizhen",
+      "role": "同时代本草学家",
+      "inverse": "著述活动所处时期的皇帝",
+      "period": "万历朝",
+      "note": "著作在万历年间成稿和刊行；这一联系不等于他是皇帝的政治辅臣。",
+      "sources": [
+        "v41m_ms299",
+        "v41m_hb_bencao"
+      ],
+      "from": "yijun"
+    },
+    {
+      "to": "m41_songyingxing",
+      "role": "同时代技术著述者",
+      "inverse": "著述活动所处时期的皇帝",
+      "period": "崇祯朝",
+      "note": "任地方官并出版《天工开物》，联系来自时代和著述，而非宫廷辅政。",
+      "sources": [
+        "v41m_tiangong_preface",
+        "v41m_nlc_tiangong"
+      ],
+      "from": "youjian"
+    },
+    {
+      "from": "q_daoguang",
+      "to": "q_wangding",
+      "role": "大学士与治河大臣",
+      "inverse": "君主",
+      "period": "道光朝",
+      "note": "主持财政核查、河工，参与战和政策讨论。",
+      "sources": [
+        "v41q_qsg363"
+      ]
+    },
+    {
+      "from": "q_daoguang",
+      "to": "q_qishan",
+      "role": "督抚与钦差大臣",
+      "inverse": "君主",
+      "period": "道光朝",
+      "note": "奉命赴广东交涉，所议穿鼻条件未获批准，随后受到处分。",
+      "sources": [
+        "v41q_qsg370",
+        "v41q_chuanbi_letter",
+        "v41q_hk_yearbook"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q_dingruchang",
+      "role": "北洋海军提督",
+      "inverse": "同时期的皇帝",
+      "period": "光绪朝",
+      "note": "以北洋海军提督身份参与这一时期的政务、军事或知识传播；时代关联不等于私人往来。",
+      "sources": [
+        "v41q_qsg462"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q_liujintang",
+      "role": "新疆统军与首任巡抚",
+      "inverse": "同时期的皇帝",
+      "period": "光绪朝",
+      "note": "以新疆统军与首任巡抚身份参与这一时期的政务、军事或知识传播；时代关联不等于私人往来。",
+      "sources": [
+        "v41q_qsg454",
+        "v41q_province"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q_zengjize",
+      "role": "驻外使臣",
+      "inverse": "同时期的皇帝",
+      "period": "光绪朝",
+      "note": "以驻外使臣身份参与这一时期的政务、军事或知识传播；时代关联不等于私人往来。",
+      "sources": [
+        "v41q_qsg446"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q_liangqichao",
+      "role": "维新报人与思想家",
+      "inverse": "同时期的皇帝",
+      "period": "光绪朝",
+      "note": "以维新报人与思想家身份参与这一时期的政务、军事或知识传播；时代关联不等于私人往来。",
+      "sources": [
+        "v41q_liang_ink",
+        "v41q_liang_press",
+        "v41q_xinmin",
+        "v41q_xinmin_index"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q_yanfu",
+      "role": "海军教育者与译者",
+      "inverse": "同时期的皇帝",
+      "period": "光绪朝",
+      "note": "以海军教育者与译者身份参与这一时期的政务、军事或知识传播；时代关联不等于私人往来。",
+      "sources": [
+        "v41q_yan_bio",
+        "v41q_yan_books",
+        "v41q_tianyan"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q_huangxing",
+      "role": "反清革命组织者",
+      "inverse": "所对抗政权的皇帝",
+      "period": "光绪朝",
+      "note": "参与华兴会与同盟会组织，推动推翻清朝统治。",
+      "sources": [
+        "v41q_huang_archive",
+        "v41q_huanghuagang",
+        "v40q_tongmenghui"
+      ]
+    },
+    {
+      "from": "q_xuantong",
+      "to": "q_huangxing",
+      "role": "革命军统帅",
+      "inverse": "所对抗政权的皇帝",
+      "period": "宣统朝",
+      "note": "指挥黄花岗起义并参与阳夏战事，继而参与南京临时政府。",
+      "sources": [
+        "v41q_huang_archive",
+        "v41q_huanghuagang",
+        "v40q_tongmenghui"
+      ]
+    },
+    {
+      "from": "q_xuantong",
+      "to": "q_yanfu",
+      "role": "资政院议员与学者",
+      "inverse": "同时期的皇帝",
+      "period": "宣统朝",
+      "note": "参与清末咨询与教育事务，不能等同于幼帝亲自主持其任用。",
+      "sources": [
+        "v41q_yan_bio",
+        "v41q_yan_books",
+        "v41q_tianyan"
+      ]
+    },
+    {
+      "from": "q_linzexu",
+      "to": "q_wangding",
+      "role": "共同参与治河的大臣",
+      "inverse": "同办河工者",
+      "period": "1841—1842",
+      "note": "黄河决口后，两人在同一治理过程中承担工作。",
+      "sources": [
+        "v41q_qsg363"
+      ]
+    },
+    {
+      "from": "q_lihongzhang",
+      "to": "q_dingruchang",
+      "role": "北洋海军统帅",
+      "inverse": "北洋军政主持者",
+      "period": "光绪朝",
+      "note": "丁汝昌统率舰队，军事行动受到北洋及中枢命令制约。",
+      "sources": [
+        "v41q_qsg462"
+      ]
+    },
+    {
+      "from": "q_zuozongtang",
+      "to": "q_liujintang",
+      "role": "前线统军将领",
+      "inverse": "统筹西征的上级",
+      "period": "同治至光绪",
+      "note": "西北和新疆战事中形成统属关系，战后又与建省工作相连。",
+      "sources": [
+        "v41q_qsg454",
+        "v41q_province"
+      ]
+    },
+    {
+      "from": "q_zengguofan",
+      "to": "q_zengjize",
+      "role": "长子与外交使臣",
+      "inverse": "父亲",
+      "period": "晚清",
+      "note": "曾纪泽承袭父亲爵位，后来以驻外使臣著称；其外交功绩发生在曾国藩去世后。",
+      "sources": [
+        "v41q_qsg446"
+      ]
+    },
+    {
+      "from": "q_kangyouwei",
+      "to": "q_liangqichao",
+      "role": "从学弟子与维新同道",
+      "inverse": "老师与维新同道",
+      "period": "光绪朝",
+      "note": "早年从学，合作传播维新主张，其后思想各有发展。",
+      "sources": [
+        "v41q_liang_ink",
+        "v41q_liang_press",
+        "v41q_xinmin",
+        "v41q_xinmin_index"
+      ]
+    },
+    {
+      "from": "q_sunyatsen",
+      "to": "q_huangxing",
+      "role": "革命组织与军事合作者",
+      "inverse": "同盟会总理与革命同道",
+      "period": "1905—1912",
+      "note": "共同参与同盟会和共和建国，分别承担组织与军事工作。",
+      "sources": [
+        "v41q_huang_archive",
+        "v41q_huanghuagang",
+        "v40q_tongmenghui"
+      ]
+    },
+    {
+      "from": "q_liangqichao",
+      "to": "q_yanfu",
+      "role": "译著交流者",
+      "inverse": "借抄并推动译著刊印的报人",
+      "period": "1890年代",
+      "note": "《天演论·译例言》记述梁启超借抄并劝刊的过程。",
+      "sources": [
+        "v41q_tianyan"
+      ]
     }
   ],
   "dynasties": [
@@ -25126,7 +27221,8 @@
         "v2f_ms126",
         "v4p_ms116",
         "v4p_ms4",
-        "v4p_ms117"
+        "v4p_ms117",
+        "v40m1_ms8"
       ],
       "note": ""
     },
@@ -25172,7 +27268,9 @@
         "v4p_ms116",
         "v4p_ms117",
         "v40m1_ms147",
-        "v40m1_ms148"
+        "v40m1_ms148",
+        "v40m1_ms8",
+        "v40m1_ms153"
       ],
       "note": ""
     },
@@ -25240,7 +27338,10 @@
         "v40m1_ms153",
         "v40m1_ms304",
         "v12_dpm_xuande_bluewhite",
-        "v12_dpm_xuande_kilns"
+        "v12_dpm_xuande_kilns",
+        "v40m1_ms8",
+        "v3n_ms170",
+        "v3n_dpm_yuqian"
       ],
       "note": ""
     },
@@ -25291,7 +27392,10 @@
         "v40m1_ms176",
         "v3n_zhihua",
         "v40m1_ms304",
-        "v2e_ms113"
+        "v2e_ms113",
+        "v40m1_ms8",
+        "v40m1_ms153",
+        "v3n_dpm_yuqian"
       ],
       "note": "正统与天顺为两次在位时期；景泰朝政务另见朱祁钰。"
     },
@@ -25328,7 +27432,10 @@
         "v40m1_ms170",
         "v40m1_ms11",
         "v40m1_ms89",
-        "v2e_ms113"
+        "v2e_ms113",
+        "v3n_dpm_yuqian",
+        "v40m1_ms304",
+        "v2e_ms12"
       ],
       "note": ""
     },
@@ -25441,7 +27548,11 @@
         "m40_xujie",
         "m40_qijiguang",
         "m40_hairui",
-        "m40_gaogong"
+        "m40_gaogong",
+        "m41_huzongxian",
+        "m41_yudayou",
+        "m41_tanlun",
+        "m41_wangchonggu"
       ],
       "events": [
         "v2l_greatrites",
@@ -25449,7 +27560,11 @@
         "v2l_coastal",
         "v13_jiajing_minglun",
         "v40m2_yansong_removed_1562",
-        "v40m2_hairui_memorial_1566"
+        "v40m2_hairui_memorial_1566",
+        "v41m_wangjiangjing",
+        "v41m_xuhai",
+        "v41m_cengang",
+        "v41m_pinghaiwei"
       ],
       "sources": [
         "v2l_ms17",
@@ -25458,7 +27573,9 @@
         "v40m2_ms213",
         "v40m2_ms212",
         "v13_dpm_jiajing_books",
-        "v40m2_ms226"
+        "v40m2_ms226",
+        "v41m_ms222",
+        "v41m_ms205"
       ],
       "note": ""
     },
@@ -25476,7 +27593,10 @@
         "m40_xujie",
         "m40_hairui",
         "m40_qijiguang",
-        "zhangjuzheng"
+        "zhangjuzheng",
+        "m41_yudayou",
+        "m41_tanlun",
+        "m41_wangchonggu"
       ],
       "events": [
         "v2l_release",
@@ -25492,7 +27612,9 @@
         "v2l_sea",
         "v2l_ms213",
         "v40m2_ms212",
-        "v26_zhang"
+        "v26_zhang",
+        "v41m_ms222",
+        "v41m_ms205"
       ],
       "note": ""
     },
@@ -25511,7 +27633,11 @@
         "m40_fangcongzhe",
         "m40_xuguangqi",
         "m40_limadou",
-        "m40_qijiguang"
+        "m40_qijiguang",
+        "m41_yudayou",
+        "m41_tanlun",
+        "m41_wangchonggu",
+        "m41_lishizhen"
       ],
       "events": [
         "v2l_whip",
@@ -25527,7 +27653,9 @@
         "v40m2_geometry_1607",
         "v40m2_mining_protests_1599",
         "v40m2_bozhou_1600",
-        "v40_shen_resignation_1591"
+        "v40_shen_resignation_1591",
+        "v41m_bencao_draft",
+        "v41m_bencao_print"
       ],
       "sources": [
         "v2l_ms78",
@@ -25543,7 +27671,11 @@
         "v40m2_ms218",
         "v40m2_ms244",
         "v40m2_ms251",
-        "v40m2_ms212"
+        "v40m2_ms212",
+        "v41m_ms299",
+        "v41m_hb_bencao",
+        "v41m_ms205",
+        "v41m_ms222"
       ],
       "note": ""
     },
@@ -25625,7 +27757,8 @@
         "m40_sunchengzong",
         "m40_xuguangqi",
         "m40_lizicheng",
-        "m40_weizhongxian"
+        "m40_weizhongxian",
+        "m41_songyingxing"
       ],
       "events": [
         "v2l_weifall",
@@ -25634,7 +27767,8 @@
         "v2l_beijing1644",
         "v12_chongzhen_crisis",
         "v40m2_calendar_1629",
-        "v40m2_dashun_1644"
+        "v40m2_dashun_1644",
+        "v41m_tiangong_print"
       ],
       "sources": [
         "v2l_ms23",
@@ -25648,7 +27782,10 @@
         "v40m2_ms251",
         "v40m2_ihns_xu",
         "v40m2_ms244",
-        "v40m2_ms250"
+        "v40m2_ms250",
+        "v41m_tiangong_preface",
+        "v41m_nlc_tiangong",
+        "v41m_ihns_song"
       ],
       "note": ""
     },
@@ -25835,7 +27972,8 @@
         "v39_qsg288",
         "v39_dpm_princes",
         "v5qe_dpm_yongzheng",
-        "v40q_qsg294"
+        "v40q_qsg294",
+        "v39_dpm_zhang"
       ],
       "note": ""
     },
@@ -25881,7 +28019,8 @@
         "v39_qsg165",
         "v40q_qsg319",
         "v40q_qsg302",
-        "v40q_qsg320"
+        "v40q_qsg320",
+        "v39_dpm_zhang"
       ],
       "note": "聚焦1735—1796年在位时期，禅位后的太上皇经历另见生平相关事件。"
     },
@@ -25930,14 +28069,19 @@
       ],
       "people": [
         "q_linzexu",
-        "q_weiyuan"
+        "q_weiyuan",
+        "q_wangding",
+        "q_qishan"
       ],
       "events": [
         "qev_opium_war_1840",
         "qev_nanjing_treaty_1842",
         "v12_daoguang_silver",
         "v40q_humen",
-        "v40q_haiguo"
+        "v40q_haiguo",
+        "v41q_river_audit",
+        "v41q_kaifeng_flood",
+        "v41q_chuanbi"
       ],
       "sources": [
         "v5qn_qing_annals",
@@ -25945,7 +28089,11 @@
         "v5qe_chn_opium",
         "v40q_qsg369",
         "v40q_qsg486",
-        "v40q_haiguo_preface"
+        "v40q_haiguo_preface",
+        "v41q_qsg370",
+        "v41q_qsg363",
+        "v41q_chuanbi_letter",
+        "v41q_hk_yearbook"
       ],
       "note": ""
     },
@@ -25983,7 +28131,8 @@
         "v40q_qsg405",
         "v40q_qsg412",
         "v40q_qsg411",
-        "v5qn_qsg221"
+        "v5qn_qsg221",
+        "v40q_tianchao"
       ],
       "note": ""
     },
@@ -26021,7 +28170,9 @@
         "v40q_qsg475",
         "v40q_hong_seal",
         "v40q_qsg412",
-        "v40q_qsg411"
+        "v40q_qsg411",
+        "v40q_hong_army",
+        "v40q_tianchao"
       ],
       "note": "同治初年由两宫皇太后垂帘，奕訢等参与主持政务，不宜把所有决策直接归于幼帝。"
     },
@@ -26040,7 +28191,13 @@
         "q_zhangzhidong",
         "q_kangyouwei",
         "q_yuanshikai",
-        "q_sunyatsen"
+        "q_sunyatsen",
+        "q_dingruchang",
+        "q_liujintang",
+        "q_zengjize",
+        "q_liangqichao",
+        "q_yanfu",
+        "q_huangxing"
       ],
       "events": [
         "qev_guangxu_accession_1875",
@@ -26050,7 +28207,14 @@
         "v26_boxer_protocol",
         "v40q_xinjiang_campaign",
         "v40q_new_policy_memorial",
-        "v40q_tongmenghui"
+        "v40q_tongmenghui",
+        "v41q_beiyang",
+        "v41q_weihai",
+        "v41q_xinjiang_province",
+        "v41q_ili_treaty",
+        "v41q_shiwu",
+        "v41q_xinmin",
+        "v41q_tianyan"
       ],
       "sources": [
         "v5qn_qsg221",
@@ -26063,7 +28227,22 @@
         "v40q_tongmenghui",
         "v40q_qsg411",
         "v40q_qsg473",
-        "v40q_qsg25"
+        "v40q_qsg25",
+        "v41q_qsg462",
+        "v41q_liang_ink",
+        "v41q_qsg454",
+        "v41q_huang_archive",
+        "v41q_province",
+        "v41q_qsg446",
+        "v41q_liang_press",
+        "v41q_xinmin",
+        "v41q_xinmin_index",
+        "v41q_tianyan",
+        "v41q_yan_books",
+        "v40q_sun_declaration",
+        "v41q_yan_bio",
+        "v41q_yan_manuscript",
+        "v41q_huanghuagang"
       ],
       "note": ""
     },
@@ -26081,7 +28260,9 @@
         "q_longyu",
         "q_yuanshikai",
         "q_sunyatsen",
-        "q_zhangzhidong"
+        "q_zhangzhidong",
+        "q_huangxing",
+        "q_yanfu"
       ],
       "events": [
         "qev_xuantong_accession_1908",
@@ -26089,7 +28270,9 @@
         "qev_abdication_1912",
         "v12_xuantong_railway",
         "v40q_yuan_return",
-        "v40q_nanjing_republic"
+        "v40q_nanjing_republic",
+        "v41q_huanghuagang",
+        "v41q_yangxia"
       ],
       "sources": [
         "v5qn_qsg221",
@@ -26100,7 +28283,14 @@
         "v40q_sun_declaration",
         "v5qn_dpm_xuantong",
         "v5qn_qinghistory_zaifeng",
-        "v40q_qsg437"
+        "v40q_qsg437",
+        "v41q_huanghuagang",
+        "v41q_huang_archive",
+        "v40q_tongmenghui",
+        "v41q_yan_bio",
+        "v41q_yan_books",
+        "v41q_tianyan",
+        "v41q_yan_manuscript"
       ],
       "note": "清朝宣统时期为1908—1912年，载沣摄政，隆裕参与退位决策。溥仪后来的个人经历另见生平相关事件。"
     }

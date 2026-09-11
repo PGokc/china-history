@@ -76,7 +76,7 @@ struct PersonPage: View {
         }
         if store.hasFamily(p.id) || !store.associates(p.id).isEmpty { items.append(.init(id: "category_relationships", title: "人物关系", subtitle: relationSummary, route: .personSection(p.id, .relationships))) }
         if p.kind != "皇帝" && !store.events(p.id).isEmpty { items.append(.init(id: "category_events", title: "重大事件", subtitle: "\(store.events(p.id).count)项相关事件", route: .personEvents(p.id, store.preferredEventCategory(p.id)))) }
-        if store.tomb(p.id) != nil || !store.objects(p.id).isEmpty { items.append(.init(id: "category_remains", title: "遗珍与陵寝", subtitle: heritageSummary, route: .personSection(p.id, .remains))) }
+        if store.tomb(p.id) != nil || !store.objects(p.id).isEmpty { items.append(.init(id: "category_remains", title: store.tomb(p.id) == nil ? "相关遗珍" : "遗珍与陵寝", subtitle: heritageSummary, route: .personSection(p.id, .remains))) }
         items.append(.init(id: "category_records", title: "称号与资料", subtitle: p.kind == "皇帝" ? "庙号、年号与史料依据" : "生平称号与史料依据", route: .personSection(p.id, .records)))
         return items
     }

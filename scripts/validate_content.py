@@ -421,3 +421,30 @@ if d['version'] >= 22:
  assert 'v39_qianlong_accession' not in events and 'qev_qianlong_accession_1735' in events
  assert all('改变了清廷的权力结构、疆域治理或对外处境' not in e['impact'] for e in d['events']), 'generic Qing impact'
  print('V22 PASS: all 28 emperors have sourced reign periods, linked people and curated events; pre-accession and post-reign cases stay separate')
+
+if d['version'] >= 23:
+ names={p['name']:p['id'] for p in d['people']}
+ added_names={'胡宗宪','俞大猷','谭纶','王崇古','宋应星','李时珍','梁启超','丁汝昌','刘锦棠','黄兴','曾纪泽','严复','王鼎','琦善'}
+ assert added_names <= names.keys(), ('missing expanded figures',added_names-names.keys())
+ for name in added_names:
+  pid=names[name]
+  assert pid in articles and len(articles[pid]['sections'])>=3,(pid,'missing layered biography')
+  assert any(s.get('events') for s in articles[pid]['sections']),(pid,'missing chapter event')
+  assert any(pid in e['people'] for e in d['events']),(pid,'no event relationship')
+  assert any(pid in c['people'] for c in d['reignContexts']),(pid,'not discoverable in reign people')
+ objects={o['id']:o for o in d['objects']}
+ assert len(objects)==len(d['objects']), 'duplicate artifact ID'
+ topic_people={
+  'idea_wang_yangming':{'m40_wangshouren'},
+  'idea_ming_xixue':{'m40_xuguangqi','m40_limadou'},
+  'idea_self_strengthening':{'q_zengguofan','q_zuozongtang','q_lihongzhang','q_zhangzhidong'},
+  'idea_qing_reform':{'q_kangyouwei',names['梁启超']},
+  'idea_qing_new_policy':{'q_zhangzhidong','q_yuanshikai'}
+ }
+ for oid,required in topic_people.items():assert required <= set(objects[oid]['people']),(oid,'topic author links')
+ for title,name in [('本草纲目','李时珍'),('天工开物','宋应星')]:
+  books=[o for o in d['objects'] if title in o['title']]
+  assert len(books)==1 and names[name] in books[0]['people'],(title,'book and author link')
+  assert books[0]['symbol'] in ['book.closed','doc.text'] and books[0]['dynasties']==['ming']
+ assert all('把它放入' not in o['body'] for o in d['objects']), 'editorial classification copy'
+ print('V23 PASS: fourteen figures connect reigns, biographies and events; knowledge texts and thought topics link to their authors')

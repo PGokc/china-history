@@ -951,4 +951,69 @@ final class MingJiUITests: XCTestCase {
         shot("v40-humen-source-footer", app)
     }
 
+    @MainActor func testV41ThoughtTopicLinksToItsAuthor() throws {
+        let app = launch(enterFamily: false)
+        app.tabBars.buttons["遗珍"].tap(); app.buttons["collectionCategory_ideas"].tap()
+        app.buttons["artifact_idea_wang_yangming"].tap()
+        let author = app.buttons["explore_m40_wangshouren"]
+        reach(author, in: app, attempts: 14); shot("v41-yangming-topic-people", app); author.tap()
+        XCTAssertTrue(app.buttons["articleEntry"].waitForExistence(timeout: 5))
+        openArticle(in: app)
+        XCTAssertEqual(app.buttons["narrationToggle"].label, "开始朗读")
+        shot("v41-yangming-author-reader", app)
+    }
+
+    @MainActor func testV41MedicalTextToAuthor() throws {
+        let app = launch(enterFamily: false)
+        app.tabBars.buttons["遗珍"].tap(); app.buttons["collectionCategory_texts"].tap()
+        let book = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@ AND label CONTAINS %@", "artifact_", "本草纲目")).firstMatch
+        reach(book, in: app, attempts: 18); book.tap()
+        shot("v41-bencao-text", app)
+        let author = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@ AND label CONTAINS %@", "explore_", "李时珍")).firstMatch
+        reach(author, in: app, attempts: 14); author.tap()
+        openArticle(in: app)
+        XCTAssertEqual(app.buttons["narrationToggle"].label, "开始朗读")
+        shot("v41-lishizhen-reader", app)
+        app.navigationBars.buttons.element(boundBy: 0).tap()
+        let heritage = app.buttons["category_remains"]
+        reach(heritage, in: app)
+        XCTAssertTrue(heritage.label.contains("相关遗珍"))
+        XCTAssertFalse(heritage.label.contains("陵寝"))
+        heritage.tap()
+        let relatedBook = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@ AND label CONTAINS %@", "personObject_", "本草纲目")).firstMatch
+        reach(relatedBook, in: app); relatedBook.tap()
+        shot("v41-lishizhen-back-to-book", app)
+        let sources = app.buttons["资料与出处"]
+        reach(sources, in: app, attempts: 14); sources.tap()
+        let entries = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "source_"))
+        XCTAssertGreaterThan(entries.count, 0)
+        let lastSource = entries.element(boundBy: entries.count - 1)
+        reach(lastSource, in: app, attempts: 16); app.swipeUp()
+        XCTAssertLessThanOrEqual(lastSource.frame.maxY, app.tabBars.firstMatch.frame.minY)
+        shot("v41-bencao-source-footer", app)
+    }
+
+    @MainActor func testV41ExpandedQingCourtToNavalFigure() throws {
+        let app = launch(enterFamily: false)
+        reach(app.buttons["dynasty_qing"], in: app, attempts: 20); app.buttons["dynasty_qing"].tap()
+        openEmperor("q_10", in: app); app.buttons["personHero"].tap()
+        reach(app.buttons["category_court"], in: app); app.buttons["category_court"].tap()
+        let person = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@ AND label CONTAINS %@", "court_", "丁汝昌")).firstMatch
+        reach(person, in: app, attempts: 16); shot("v41-guangxu-expanded-court", app); person.tap()
+        openArticle(in: app); shot("v41-dingruchang-reader", app)
+    }
+
+    @MainActor func testV41LargeTypeReformTopicToLiang() throws {
+        let app = launch(true, enterFamily: false)
+        reach(app.buttons["dynasty_qing"], in: app, attempts: 25); app.buttons["dynasty_qing"].tap()
+        app.tabBars.buttons["遗珍"].tap()
+        reach(app.buttons["collectionCategory_ideas"], in: app); app.buttons["collectionCategory_ideas"].tap()
+        reach(app.buttons["artifact_idea_qing_reform"], in: app, attempts: 16); app.buttons["artifact_idea_qing_reform"].tap()
+        let person = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@ AND label CONTAINS %@", "explore_", "梁启超")).firstMatch
+        reach(person, in: app, attempts: 24); shot("v41-liang-topic-large", app); person.tap()
+        openArticle(in: app)
+        XCTAssertEqual(app.buttons["narrationToggle"].label, "开始朗读")
+        shot("v41-liang-reader-large", app)
+    }
+
 }
