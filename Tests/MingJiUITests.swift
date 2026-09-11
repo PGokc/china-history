@@ -974,6 +974,11 @@ final class MingJiUITests: XCTestCase {
         openArticle(in: app)
         XCTAssertEqual(app.buttons["narrationToggle"].label, "开始朗读")
         shot("v41-lishizhen-reader", app)
+        let articleHeritage = app.buttons["articleHeritage"]
+        reach(articleHeritage, in: app, attempts: 20)
+        XCTAssertTrue(articleHeritage.label.contains("相关遗珍"))
+        XCTAssertFalse(articleHeritage.label.contains("陵寝"))
+        shot("v42-author-article-footer", app)
         app.navigationBars.buttons.element(boundBy: 0).tap()
         let heritage = app.buttons["category_remains"]
         reach(heritage, in: app)
@@ -1014,6 +1019,70 @@ final class MingJiUITests: XCTestCase {
         openArticle(in: app)
         XCTAssertEqual(app.buttons["narrationToggle"].label, "开始朗读")
         shot("v41-liang-reader-large", app)
+    }
+
+    @MainActor func reachReadingLink(_ element: XCUIElement, in app: XCUIApplication) {
+        for _ in 0..<24 {
+            if element.isHittable { return }
+            let above = element.exists && element.frame.midY < app.frame.height * 0.3
+            let start = app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: above ? 0.4 : 0.65))
+            let end = app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: above ? 0.65 : 0.4))
+            start.press(forDuration: 0.05, thenDragTo: end)
+        }
+        XCTAssertTrue(element.isHittable)
+    }
+
+    @MainActor func testV42HongzhiScholarAndChapterEvent() throws {
+        let app = launch(enterFamily: false)
+        openEmperor("9", in: app); app.buttons["personHero"].tap()
+        reach(app.buttons["category_court"], in: app); app.buttons["category_court"].tap()
+        let person = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@ AND label CONTAINS %@", "court_", "丘濬")).firstMatch
+        reach(person, in: app, attempts: 16); shot("v42-hongzhi-court", app); person.tap()
+        openArticle(in: app)
+        XCTAssertEqual(app.buttons["narrationToggle"].label, "开始朗读")
+        shot("v42-qiu-reader", app)
+        let links = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "chapterLinks_")).firstMatch
+        reachReadingLink(links, in: app); links.tap()
+        let event = app.buttons.matching(NSPredicate(format: "label CONTAINS %@", "大藤峡战争")).firstMatch
+        reachReadingLink(event, in: app); event.tap()
+        let sources = app.buttons["资料与出处"]
+        reach(sources, in: app, attempts: 16); sources.tap()
+        let entries = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "source_"))
+        XCTAssertGreaterThan(entries.count, 0)
+        let last = entries.element(boundBy: entries.count - 1)
+        reach(last, in: app, attempts: 16); app.swipeUp()
+        XCTAssertLessThanOrEqual(last.frame.maxY, app.tabBars.firstMatch.frame.minY)
+        shot("v42-ming-event-sources", app)
+    }
+
+    @MainActor func testV42KangxiRiverOfficialsLargeType() throws {
+        let app = launch(true, enterFamily: false)
+        reach(app.buttons["dynasty_qing"], in: app, attempts: 25); app.buttons["dynasty_qing"].tap()
+        openEmperor("q_3", in: app); app.buttons["personHero"].tap()
+        reach(app.buttons["category_court"], in: app, attempts: 16); app.buttons["category_court"].tap()
+        let person = app.buttons["court_q_jinfu"]
+        reach(person, in: app, attempts: 20); shot("v42-kangxi-court-large", app); person.tap()
+        openArticle(in: app)
+        XCTAssertEqual(app.buttons["narrationToggle"].label, "开始朗读")
+        shot("v42-jinfu-reader-large", app)
+    }
+
+    @MainActor func testV42JiaqingHasSongyun() throws {
+        let app = launch(enterFamily: false)
+        reach(app.buttons["dynasty_qing"], in: app, attempts: 20); app.buttons["dynasty_qing"].tap()
+        openEmperor("q_6", in: app); app.buttons["personHero"].tap()
+        reach(app.buttons["category_court"], in: app); app.buttons["category_court"].tap()
+        let person = app.buttons["court_q_songyun"]
+        reach(person, in: app, attempts: 16); shot("v42-jiaqing-court", app); person.tap()
+        openArticle(in: app)
+        XCTAssertEqual(app.buttons["narrationToggle"].label, "开始朗读")
+        shot("v42-songyun-reader", app)
+        let chapter = app.buttons["chapterLinks_v42q_songyun_2"]
+        reachReadingLink(chapter, in: app); chapter.tap()
+        let event = app.buttons.matching(NSPredicate(format: "label CONTAINS %@", "松筠推动伊犁开渠与旗屯试种")).firstMatch
+        reachReadingLink(event, in: app); event.tap()
+        XCTAssertTrue(app.buttons["资料与出处"].waitForExistence(timeout: 5))
+        shot("v42-ili-canals-event", app)
     }
 
 }

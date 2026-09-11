@@ -448,3 +448,22 @@ if d['version'] >= 23:
   assert books[0]['symbol'] in ['book.closed','doc.text'] and books[0]['dynasties']==['ming']
  assert all('把它放入' not in o['body'] for o in d['objects']), 'editorial classification copy'
  print('V23 PASS: fourteen figures connect reigns, biographies and events; knowledge texts and thought topics link to their authors')
+
+if d['version'] >= 24:
+ names={p['name']:p['id'] for p in d['people']}
+ required={'徐有贞','韩雍','余子俊','丘濬','马文升','靳辅','陈潢','于成龙','阿桂','松筠'}
+ assert required <= names.keys(), ('missing governance figures',required-names.keys())
+ for name in required:
+  pid=names[name];article=articles[pid]
+  assert len(article['sections']) >= 3,(pid,'layered biography')
+  assert any(s.get('events') for s in article['sections']),(pid,'chapter event navigation')
+  contexts_for_person=[c for c in d['reignContexts'] if pid in c['people']]
+  assert contexts_for_person,(pid,'no reign entry')
+  assert any(pid in events[eid]['people'] for c in contexts_for_person for eid in c['events']),(pid,'no linked in-reign event')
+  for c in contexts_for_person:
+   assert any({edge['from'],edge['to']}=={pid,c['person']} for edge in d['associations']),(pid,c['person'],'missing relationship description')
+ assert names['松筠'] in contexts['q_jiaqing']['people']
+ assert names['丘濬'] in contexts['youtang']['people']
+ assert names['靳辅'] in contexts['q_kangxi']['people']
+ assert '北溟' in people[names['于成龙']]['note'] and '振甲' in people[names['于成龙']]['note'], 'distinguish the two Yu Chenglongs'
+ print('V24 PASS: ten governance figures have sourced biographies, in-reign events and contextual relationships; namesakes stay distinct')

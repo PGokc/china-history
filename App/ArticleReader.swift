@@ -51,7 +51,7 @@ struct ArticleReader: View {
                                 NavigationRow(title: "家族世系", subtitle: "祖先、同辈与子女", symbol: "point.3.connected.trianglepath.dotted", route: .family(personID), identifier: "articleFamily")
                             }
                             if store.tomb(personID) != nil || !store.objects(personID).isEmpty {
-                                NavigationRow(title: "遗珍与陵寝", subtitle: articleHeritageSummary, symbol: "building.columns", route: .personSection(personID, .remains), identifier: "articleHeritage")
+                                NavigationRow(title: store.tomb(personID) == nil ? "相关遗珍" : "遗珍与陵寝", subtitle: articleHeritageSummary, symbol: "building.columns", route: .personSection(personID, .remains), identifier: "articleHeritage")
                             }
                         }
                         SourcesView(store: store, ids: article.sources)
