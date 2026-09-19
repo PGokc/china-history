@@ -10,10 +10,13 @@ struct ArticleReader: View {
     private let resume: String?
     @State private var current: String?
     @State private var ready = false
+    @State private var positions: [String: CGFloat] = [:]
     @StateObject private var narrator = ArticleNarrator()
     init(store: HistoryStore, personID: String) {
         self.store = store; self.personID = personID
-        resume = UserDefaults.standard.string(forKey: "reading_" + personID)
+        let saved = UserDefaults.standard.string(forKey: "reading_" + personID)
+        resume = saved.flatMap { id in store.article(personID)?.sections.contains(where: { $0.id == id }) == true ? id : nil }
+        _current = State(initialValue: resume)
     }
     var body: some View {
         if let article = store.article(personID) {
@@ -45,45 +48,61 @@ struct ArticleReader: View {
                         if !store.associates(personID).isEmpty || store.hasFamily(personID) {
                             RelatedPeople(store: store, personID: personID, limit: 6, title: "相关人物", includeFamily: true)
                         }
-                        VStack(alignment: .leading, spacing: 0) {
-                            sectionTitle("继续探索")
-                            if store.hasFamily(personID) {
-                                NavigationRow(title: "家族世系", subtitle: "祖先、同辈与子女", symbol: "point.3.connected.trianglepath.dotted", route: .family(personID), identifier: "articleFamily")
-                            }
-                            if store.tomb(personID) != nil || !store.objects(personID).isEmpty {
-                                NavigationRow(title: store.tomb(personID) == nil ? "相关遗珍" : "遗珍与陵寝", subtitle: articleHeritageSummary, symbol: "building.columns", route: .personSection(personID, .remains), identifier: "articleHeritage")
+                        if store.hasFamily(personID) || store.tomb(personID) != nil || !store.objects(personID).isEmpty {
+                            VStack(alignment: .leading, spacing: 0) {
+                                sectionTitle("继续探索")
+                                if store.hasFamily(personID) {
+                                    NavigationRow(title: "家族世系", subtitle: "祖先、同辈与子女", symbol: "point.3.connected.trianglepath.dotted", route: .family(personID), identifier: "articleFamily")
+                                }
+                                if store.tomb(personID) != nil || !store.objects(personID).isEmpty {
+                                    NavigationRow(title: store.tomb(personID) == nil ? "相关遗珍" : "遗珍与陵寝", subtitle: articleHeritageSummary, symbol: "building.columns", route: .personSection(personID, .remains), identifier: "articleHeritage")
+                                }
                             }
                         }
                         SourcesView(store: store, ids: article.sources)
                     }.padding(24).padding(.bottom, 28)
                 }.coordinateSpace(name: "reading").background(Theme.paper).foregroundStyle(Theme.text)
-                    .onPreferenceChange(ReadingPositions.self) { positions in
-                        guard ready, let closest = positions.min(by: { abs($0.value - 80) < abs($1.value - 80) })?.key else { return }
-                        current = closest; UserDefaults.standard.set(closest, forKey: "reading_" + personID)
+                    .onPreferenceChange(ReadingPositions.self) { value in
+                        positions = value
+                        updateProgress(article)
                     }
                     .task {
                         guard !ready else { return }
-                        if let resume, article.sections.contains(where: { $0.id == resume }) {
-                            try? await Task.sleep(for: .milliseconds(150))
-                            proxy.scrollTo(resume, anchor: .top)
-                        }
-                        try? await Task.sleep(for: .milliseconds(350)); ready = true
+                        do {
+                            if let resume {
+                                try await Task.sleep(for: .milliseconds(150))
+                                proxy.scrollTo(resume, anchor: .top)
+                            }
+                            try await Task.sleep(for: .milliseconds(350))
+                            ready = true
+                            updateProgress(article)
+                        } catch { return }
                     }
                     .onChange(of: narrator.currentSectionID) { _, sectionID in
                         guard let sectionID else { return }
-                        current = sectionID
-                        UserDefaults.standard.set(sectionID, forKey: "reading_" + personID)
+                        remember(sectionID)
                         withAnimation(.easeOut(duration: 0.28)) { proxy.scrollTo(sectionID, anchor: .top) }
                     }
                     .safeAreaInset(edge: .bottom, spacing: 0) {
-                        ArticleNarrationBar(article: article, visibleSectionID: current ?? resume, narrator: narrator)
+                        ArticleNarrationBar(article: article, visibleSectionID: current, narrator: narrator)
                     }
                     .toolbar {
                         ToolbarItem(placement: .topBarTrailing) {
                             Menu {
-                                Button("开篇") { proxy.scrollTo("opening", anchor: .top); UserDefaults.standard.removeObject(forKey: "reading_" + personID) }
-                                ForEach(article.sections) { section in Button(section.title) { proxy.scrollTo(section.id, anchor: .top); current = section.id; UserDefaults.standard.set(section.id, forKey: "reading_" + personID) } }
+                                Button("开篇") {
+                                    narrator.stop()
+                                    remember(nil)
+                                    proxy.scrollTo("opening", anchor: .top)
+                                }
+                                ForEach(article.sections) { section in
+                                    Button(section.title) {
+                                        narrator.stop()
+                                        remember(section.id)
+                                        proxy.scrollTo(section.id, anchor: .top)
+                                    }
+                                }
                             } label: { Image(systemName: "list.bullet").font(.system(size: 17, weight: .medium)).accessibilityLabel("目录") }.accessibilityIdentifier("articleContents")
+                                .accessibilityValue(article.sections.first(where: { $0.id == current })?.title ?? "开篇")
                         }
                     }
                     .onDisappear { narrator.stop() }
@@ -92,6 +111,16 @@ struct ArticleReader: View {
         } else {
             ContentUnavailableView("暂无长文", systemImage: "book.closed")
         }
+    }
+    private func remember(_ sectionID: String?) {
+        current = sectionID
+        if let sectionID { UserDefaults.standard.set(sectionID, forKey: "reading_" + personID) }
+        else { UserDefaults.standard.removeObject(forKey: "reading_" + personID) }
+    }
+    private func updateProgress(_ article: Article) {
+        guard ready, !positions.isEmpty, !narrator.isActive else { return }
+        let sectionID = ReadingProgress.section(positions: positions, order: article.sections.map(\.id))
+        if current != sectionID { remember(sectionID) }
     }
     private var articleHeritageSummary: String {
         let names = [store.tomb(personID)?.title].compactMap { $0 } + store.objects(personID).map(\.title)

@@ -25,6 +25,8 @@ struct Association: Codable, Identifiable {
 }
 struct HistoryEvent: Codable, Identifiable {
     let id, year, title, body, impact, kind: String
+    /// Editorial placement for period labels; never displayed as an exact date.
+    let sortYear: Int?
     let category: String?
     let people, sources: [String]
     let peopleRoles: [String: String]?
@@ -211,9 +213,8 @@ struct Content: Codable {
     func associates(_ id: String) -> [Association] { (content.associations ?? []).filter { $0.from == id || $0.to == id } }
     func events(_ id: String) -> [HistoryEvent] {
         content.events.filter { $0.people.contains(id) }.sorted {
-            let a = Int($0.year.prefix(while: { $0.isNumber })) ?? 0
-            let b = Int($1.year.prefix(while: { $0.isNumber })) ?? 0
-            return a < b
+            EventChronology.precedes($0.year, placement: $0.sortYear, id: $0.id,
+                                     $1.year, placement: $1.sortYear, id: $1.id)
         }
     }
     func reignContext(_ id: String) -> ReignContext? { content.reignContexts?.first { $0.person == id } }
@@ -236,9 +237,8 @@ struct Content: Codable {
             let left = featured[lhs.id] ?? 100
             let right = featured[rhs.id] ?? 100
             if left != right { return left < right }
-            let leftYear = Int(lhs.year.prefix(while: { $0.isNumber })) ?? 0
-            let rightYear = Int(rhs.year.prefix(while: { $0.isNumber })) ?? 0
-            return leftYear < rightYear
+            return EventChronology.precedes(lhs.year, placement: lhs.sortYear, id: lhs.id,
+                                            rhs.year, placement: rhs.sortYear, id: rhs.id)
         }
     }
     /// Opens a person's event shelf on its most useful category. The fixed

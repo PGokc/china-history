@@ -522,3 +522,15 @@ if d['version'] >= 25:
   if obj['id'].startswith('v43'):
    assert len(re.findall(r'[\u4e00-\u9fff]',obj['body']))>=180,(obj['id'],'new heritage topic too thin')
  print('V25 PASS: complete Tang/Song/Yuan imperial coverage, core biographies, reign context, cross-linked heritage and Ming/Qing transition figures')
+
+if d['version'] >= 26:
+ for event in d['events']:
+  explicit = re.match(r'^(\d{3,4})(?!\d|世纪)', event['year'])
+  placement = event.get('sortYear')
+  assert explicit or placement is not None, (event['id'], 'period label needs chronology placement')
+  if placement is not None:
+   assert type(placement) is int and 600 <= placement <= 2000, (event['id'], 'invalid chronology placement')
+   century = re.match(r'^(\d+)世纪', event['year'])
+   if century:
+    n = int(century[1]); assert (n-1)*100 < placement <= n*100, (event['id'], 'placement outside century')
+ print('V26 PASS: every event has a usable chronology key; period labels retain their display precision')

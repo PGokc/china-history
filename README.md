@@ -1,6 +1,6 @@
 # 史迹
 
-一款供个人学习使用的 iPhone 原生中国历史应用。当前版本为 **0.43**，最低支持 iOS 17。
+一款供个人学习使用的 iPhone 原生中国历史应用。当前版本为 **0.44**，最低支持 iOS 17。
 
 ## 当前内容
 
@@ -18,6 +18,7 @@
 - 明代程朱理学、阳明心学、泰州学派与晚明实学，清代经世反思、乾嘉考据、洋务、维新和清末新政等思想与变革专题。
 - 《本草纲目》《天工开物》《天演论》典籍专题与作者相互关联，思想专题可以进入核心人物长读。
 - 中文长文朗读、阅读进度和系统大字号支持。
+- 0.44 修正概括年代事件排序、章节续读与开篇重置，清理空探索标题并改善出处触控与朗读禁用状态；见 [三轮审视记录](Docs/verification-v44.md)。
 
 应用无账户、广告、分析追踪或第三方运行时依赖。正式内容位于 `App/Resources/history.json`，春秋战国专题位于 `App/Resources/zhou_topics.json`。
 
@@ -33,6 +34,7 @@
 
 ```sh
 python3 scripts/validate_content.py
+python3 scripts/test_reader_logic.py
 python3 scripts/generate_project.py
 open MingJi.xcodeproj
 ```

@@ -1249,4 +1249,91 @@ final class MingJiUITests: XCTestCase {
         }
     }
 
+    @MainActor func testV44ReaderFooterHasNoEmptyExploration() throws {
+        let app = launch()
+        app.buttons["personHero"].tap()
+        reachReadingLink(app.buttons["category_court"], in: app); app.buttons["category_court"].tap()
+        reachReadingLink(app.buttons["court_lishanzhang"], in: app); app.buttons["court_lishanzhang"].tap()
+        openArticle(in: app)
+        app.buttons["articleContents"].tap(); app.buttons["史书里也留下了质问"].tap()
+        for _ in 0..<5 { app.swipeUp() }
+        XCTAssertFalse(app.staticTexts["继续探索"].exists)
+        let sources = app.buttons["资料与出处"]
+        XCTAssertTrue(sources.isHittable)
+        XCTAssertLessThanOrEqual(sources.frame.maxY, app.buttons["narrationToggle"].frame.minY)
+        XCTAssertEqual(app.buttons["narrationToggle"].label, "开始朗读")
+        shot("v44-round1-reader-footer", app)
+        sources.tap()
+        let source = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "source_")).firstMatch
+        reachReadingLink(source, in: app); app.swipeUp()
+        XCTAssertGreaterThanOrEqual(source.frame.height, 44 - 0.01)
+        XCTAssertLessThanOrEqual(source.frame.maxY, app.buttons["narrationToggle"].frame.minY)
+        shot("v44-round3-source-touch-target", app)
+    }
+
+    @MainActor func testV44OpeningResetsProgressAndNarration() throws {
+        let app = launch(); openArticle(in: app)
+        let menu = app.buttons["articleContents"]
+        menu.tap(); app.buttons["1368年为什么值得单独记住"].tap()
+        XCTAssertEqual(menu.value as? String, "1368年为什么值得单独记住")
+        app.buttons["narrationToggle"].tap()
+        XCTAssertEqual(app.buttons["narrationToggle"].label, "暂停朗读")
+        menu.tap(); app.buttons["开篇"].tap()
+        XCTAssertEqual(app.buttons["narrationToggle"].label, "开始朗读")
+        XCTAssertEqual(menu.value as? String, "开篇")
+        shot("v44-round2-opening", app)
+        app.navigationBars.buttons.element(boundBy: 0).tap(); openArticle(in: app)
+        XCTAssertEqual(menu.value as? String, "开篇")
+        XCTAssertEqual(app.buttons["narrationToggle"].label, "开始朗读")
+        app.buttons["narrationToggle"].tap()
+        XCTAssertTrue(app.buttons["narrationPrevious"].waitForExistence(timeout: 5))
+        XCTAssertFalse(app.buttons["narrationPrevious"].isEnabled)
+        XCTAssertEqual(menu.value as? String, "一场饥荒之后")
+        app.tabBars.buttons["朝代"].tap(); app.tabBars.buttons["家族"].tap(); openArticle(in: app)
+        XCTAssertEqual(app.buttons["narrationToggle"].label, "开始朗读")
+        shot("v44-round2-no-autoplay", app)
+    }
+
+    @MainActor func testV44LargeReaderSourcesAndDisabledControls() throws {
+        let app = launch(true)
+        app.buttons["personHero"].tap()
+        reachReadingLink(app.buttons["category_court"], in: app); app.buttons["category_court"].tap()
+        reachReadingLink(app.buttons["court_lishanzhang"], in: app); app.buttons["court_lishanzhang"].tap()
+        openArticle(in: app)
+        app.buttons["articleContents"].tap(); app.buttons["开篇"].tap()
+        XCTAssertFalse(app.buttons["narrationPrevious"].isEnabled)
+        XCTAssertFalse(app.buttons["narrationNext"].isEnabled)
+        XCTAssertEqual(app.buttons["narrationToggle"].value as? String, "在战场背后组织胜利")
+        shot("v44-round3-large-reader", app)
+        app.buttons["articleContents"].tap()
+        reachReadingLink(app.buttons["史书里也留下了质问"], in: app)
+        shot("v44-round3-large-contents", app)
+        app.buttons["史书里也留下了质问"].tap()
+        let sources = app.buttons["资料与出处"]
+        reachReadingLink(sources, in: app); sources.tap()
+        let links = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "source_"))
+        let last = links.element(boundBy: links.count - 1)
+        reachReadingLink(last, in: app); app.swipeUp()
+        XCTAssertGreaterThanOrEqual(last.frame.height, 44 - 0.01)
+        XCTAssertLessThanOrEqual(last.frame.maxY, app.buttons["narrationToggle"].frame.minY)
+        XCTAssertFalse(app.staticTexts["继续探索"].exists)
+        shot("v44-round3-large-source-footer", app)
+    }
+
+    @MainActor func testV44PeriodEventsKeepChronologicalPlacement() throws {
+        let app = launch(enterFamily: false)
+        selectDynastyV43("qing", in: app); openEmperor("q_2", in: app)
+        app.buttons["personHero"].tap()
+        reachReadingLink(app.buttons["eventCategory_政治"], in: app); app.buttons["eventCategory_政治"].tap()
+        reachReadingLink(app.buttons["category_events"], in: app); app.buttons["category_events"].tap()
+        let ids = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "event_")).allElementsBoundByIndex.map(\.identifier)
+        let early = try XCTUnwrap(ids.firstIndex(of: "event_v43mq_zheng_split"))
+        let period = try XCTUnwrap(ids.firstIndex(of: "event_v43mq_wang_yongli"))
+        let later = try XCTUnwrap(ids.firstIndex(of: "event_qev_shunzhi_regency_end_1651"))
+        XCTAssertLessThan(early, period)
+        XCTAssertLessThan(period, later)
+        XCTAssertTrue(app.buttons["event_v43mq_wang_yongli"].label.contains("17世纪中叶"))
+        shot("v44-period-event-order", app)
+    }
+
 }

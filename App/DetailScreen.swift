@@ -109,10 +109,13 @@ struct SourcesView: View {
                                 .accessibilityHidden(true)
                         }
                         VStack(alignment: .leading, spacing: 6) {
-                            Link(source.title, destination: url)
-                                .font(.subheadline)
-                                .multilineTextAlignment(.leading)
-                                .frame(maxWidth: .infinity, minHeight: 36, alignment: .leading)
+                            Link(destination: url) {
+                                Text(source.title)
+                                    .font(.subheadline)
+                                    .multilineTextAlignment(.leading)
+                                    .frame(maxWidth: .infinity, minHeight: 44, alignment: .topLeading)
+                                    .contentShape(Rectangle())
+                            }
                                 .accessibilityHint("在浏览器中打开原始出处")
                                 .accessibilityIdentifier("source_\(id)")
                             if !source.note.isEmpty {

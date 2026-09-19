@@ -348,6 +348,10 @@ struct ArticleNarrationBar: View {
         narrator.isActive ? narrator.currentTitle : "从当前章节开始"
     }
 
+    private var startingTitle: String {
+        article.sections.first(where: { $0.id == visibleSectionID })?.title ?? article.sections.first?.title ?? ""
+    }
+
     var body: some View {
         VStack(spacing: 0) {
             Rectangle().fill(Theme.line.opacity(0.75)).frame(height: 0.5)
@@ -366,6 +370,7 @@ struct ArticleNarrationBar: View {
                 .foregroundStyle(Theme.cinnabar)
                 .accessibilityLabel(narrator.isSpeaking ? "暂停朗读" : (narrator.isPaused ? "继续朗读" : "开始朗读"))
                 .accessibilityIdentifier("narrationToggle")
+                .accessibilityValue(narrator.isActive ? narrator.currentTitle : startingTitle)
 
                 if !typeSize.isAccessibilitySize {
                 VStack(alignment: .leading, spacing: 3) {
@@ -377,16 +382,18 @@ struct ArticleNarrationBar: View {
                 } else { Spacer(minLength: 0) }
 
                 Button { narrator.previous() } label: {
-                    Image(systemName: "backward.end").frame(width: 44, height: 44)
+                    Image(systemName: "backward.end").font(.system(size: 17, weight: .medium)).frame(width: 44, height: 44)
                 }
                 .disabled(!narrator.canGoPrevious)
+                .foregroundStyle(narrator.canGoPrevious ? Theme.ink : Theme.muted.opacity(0.35))
                 .accessibilityLabel("上一节")
                 .accessibilityIdentifier("narrationPrevious")
 
                 Button { narrator.next() } label: {
-                    Image(systemName: "forward.end").frame(width: 44, height: 44)
+                    Image(systemName: "forward.end").font(.system(size: 17, weight: .medium)).frame(width: 44, height: 44)
                 }
                 .disabled(!narrator.canGoNext)
+                .foregroundStyle(narrator.canGoNext ? Theme.ink : Theme.muted.opacity(0.35))
                 .accessibilityLabel("下一节")
                 .accessibilityIdentifier("narrationNext")
 
@@ -401,7 +408,7 @@ struct ArticleNarrationBar: View {
             .padding(.horizontal, 18)
             .padding(.vertical, 9)
         }
-        .background(Theme.paper.opacity(0.97))
+        .background(Theme.paper)
         .foregroundStyle(Theme.ink)
         .sheet(isPresented: $showingSettings) {
             NarrationSettingsSheet(narrator: narrator)

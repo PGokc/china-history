@@ -1,5 +1,5 @@
 {
-  "version": 25,
+  "version": 26,
   "reviewed": "2026-09-20",
   "people": [
     {
@@ -8774,7 +8774,8 @@
         "sheng-study"
       ],
       "kind": "史料与解读",
-      "category": "文化"
+      "category": "文化",
+      "sortYear": 1357
     },
     {
       "id": "hanend",
@@ -10278,7 +10279,8 @@
         "v4p_ms117"
       ],
       "kind": "历史事件",
-      "category": "文化"
+      "category": "文化",
+      "sortYear": 1403
     },
     {
       "id": "v4p_zhousseat",
@@ -11602,7 +11604,8 @@
       "peopleRoles": {
         "q_qianlong": "在位皇帝；其长期统治覆盖人口与垦殖快速扩张阶段"
       },
-      "category": "社会"
+      "category": "社会",
+      "sortYear": 1750
     },
     {
       "id": "v12_jiaqing_palace_attack",
@@ -14395,7 +14398,8 @@
         "v43mq_gu"
       ],
       "category": "文化",
-      "kind": "历史事件"
+      "kind": "历史事件",
+      "sortYear": 1650
     },
     {
       "id": "v43mq_rizhi_work",
@@ -14412,7 +14416,8 @@
         "v43mq_rizhi"
       ],
       "category": "文化",
-      "kind": "历史事件"
+      "kind": "历史事件",
+      "sortYear": 1650
     },
     {
       "id": "v43mq_wang_juren",
@@ -14444,7 +14449,8 @@
         "v43mq_huang"
       ],
       "category": "政治",
-      "kind": "历史事件"
+      "kind": "历史事件",
+      "sortYear": 1650
     },
     {
       "id": "v43mq_wang_writings",
@@ -14460,7 +14466,8 @@
         "v43mq_huang"
       ],
       "category": "文化",
-      "kind": "历史事件"
+      "kind": "历史事件",
+      "sortYear": 1670
     },
     {
       "id": "v43t_founding",
