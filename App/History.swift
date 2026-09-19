@@ -4,6 +4,7 @@ import SwiftUI
 struct Source: Codable, Identifiable { let id, title, url, note: String }
 struct Person: Codable, Identifiable {
     let id, name, call, temple, era, reign, summary, kind, note: String
+    let dynasty: String?
     let parent: String?
     let birthOrder: Int?
     let birthOrderNote: String?
@@ -57,7 +58,7 @@ struct Artifact: Codable, Identifiable {
         return .objects
     }
 }
-struct Succession: Codable, Identifiable { let id, person, years, transition: String }
+struct Succession: Codable, Identifiable { let id, person, years, transition: String; let eraLabel: String? }
 struct Tomb: Codable, Identifiable { let id, person, title, area, location, status, body, note: String; let sources: [String] }
 struct ArticleSection: Codable, Identifiable {
     let id, title, text, kind: String
@@ -197,6 +198,16 @@ struct Content: Codable {
         guard let n = p.birthOrder else { return p.birthOrderNote ?? "子女" }
         return n == 1 ? "长子" : "第\(n)子"
     }
+    func childLabel(_ child: Person, of parentID: String) -> String {
+        let kinds = Set(links.filter { $0.from == child.id && $0.to == parentID }.map(\.kind))
+        if kinds.contains("father") || kinds.contains("mother") { return orderLabel(child) }
+        if kinds.contains("adoptiveFather") || kinds.contains("adoptiveMother") { return "嗣子" }
+        return "礼制承继"
+    }
+    func hasNonBiologicalChildren(_ id: String) -> Bool {
+        links.contains { $0.to == id && ["adoptiveFather", "adoptiveMother", "ritual"].contains($0.kind) }
+    }
+    func childrenHeading(_ id: String) -> String { hasNonBiologicalChildren(id) ? "子女与承继" : "子女" }
     func associates(_ id: String) -> [Association] { (content.associations ?? []).filter { $0.from == id || $0.to == id } }
     func events(_ id: String) -> [HistoryEvent] {
         content.events.filter { $0.people.contains(id) }.sorted {
@@ -252,7 +263,22 @@ struct Content: Codable {
         if let portrait = portrait(id) { return portrait.image }
         return person(id).image
     }
-    func dynastyID(for personID: String) -> String { personID.hasPrefix("q_") ? "qing" : "ming" }
+    func dynastyID(for personID: String) -> String {
+        if let id = content.people.first(where: { $0.id == personID })?.dynasty { return id }
+        return personID.hasPrefix("q_") ? "qing" : "ming"
+    }
+    func dynastyName(_ id: String) -> String {
+        id == "song_liao_xia_jin" ? "宋代" : (dynasty(id)?.name ?? "") + "朝"
+    }
+    func sequenceIntroduction(_ id: String) -> String {
+        switch id {
+        case "tang": return "李唐皇位经历复位、武周改国与多次宫廷政变。武则天统治的武周单列，中宗与睿宗两次在位分别呈现。"
+        case "song_liao_xia_jin": return "这里列出北宋与南宋皇帝。宋与辽、西夏、金长期并立；各国君主与交往见人物和事件，疆域并不由一条帝序概括。"
+        case "yuan": return "1271年忽必烈建国号元，此前已于1260年即蒙古大汗位。两都之战出现争位，文宗两次在位分列；1368年退出大都以后的北元另在生平中说明。"
+        case "qing": return "从后金兴起到帝制终结，皇位传承始终与宗室、摄政和时代转折相连。努尔哈赤与皇太极属于入关前的两代统治者。"
+        default: return "从洪武开国到崇祯亡国，明代皇位大体沿朱元璋一系传承，也经历靖难、土木堡之变与复辟等重要转折。朱祁镇两度在位，在序列中分段呈现。"
+        }
+    }
     func people(in dynastyID: String) -> [Person] { content.people.filter { self.dynastyID(for: $0.id) == dynastyID } }
     func sequence(in dynastyID: String) -> [Succession] { content.sequence.filter { self.dynastyID(for: $0.person) == dynastyID } }
     func objects(in dynastyID: String) -> [Artifact] {
@@ -262,7 +288,7 @@ struct Content: Codable {
         }
     }
     func tombs(in dynastyID: String) -> [Tomb] { (content.tombs ?? []).filter { self.dynastyID(for: $0.person) == dynastyID } }
-    func defaultPerson(in dynastyID: String) -> String { dynastyID == "qing" ? "q_nurhaci" : "yuanzhang" }
+    func defaultPerson(in dynastyID: String) -> String { sequence(in: dynastyID).first?.person ?? "yuanzhang" }
     func validPerson(_ personID: String, in dynastyID: String) -> Bool {
         content.people.contains { $0.id == personID && self.dynastyID(for: $0.id) == dynastyID }
     }

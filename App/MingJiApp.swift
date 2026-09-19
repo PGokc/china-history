@@ -15,6 +15,7 @@ enum DetailRoute: Hashable {
     case personSection(String, PersonSection), relatives(String, FamilyGroup)
     case personEvents(String, MajorEventCategory)
     case person(String), family(String), connections(String), event(String), object(String), tomb(String), article(String), portrait(String)
+    case dynastySequence(String), dynastyCollection(String)
     case dynasty(String), prehistorySite(String), zhouGuide, eraTopic(String), collectionCategory(String, String), about
 }
 struct RootView: View {
@@ -29,7 +30,7 @@ struct RootView: View {
     init(store: HistoryStore) {
         self.store = store
         let savedDynasty = UserDefaults.standard.string(forKey: "selectedDynasty") ?? "ming"
-        let dynasty = ["ming", "qing"].contains(savedDynasty) ? savedDynasty : "ming"
+        let dynasty = store.dynasty(savedDynasty)?.selectable == true ? savedDynasty : "ming"
         _selectedDynasty = State(initialValue: dynasty)
         _selected = State(initialValue: store.defaultPerson(in: dynasty))
     }
@@ -165,6 +166,8 @@ struct RouteDestination: View {
     @Binding var path: [DetailRoute]
     var body: some View {
         switch route {
+        case .dynastySequence(let id): SuccessionPage(store: store, dynastyID: id)
+        case .dynastyCollection(let id): CollectionPage(store: store, dynastyID: id)
         case .dynasty(let id): DynastyDetailPage(store: store, dynastyID: id)
         case .prehistorySite(let id): PrehistorySitePage(store: store, siteID: id)
         case .zhouGuide: ZhouGuidePage(store: store)
@@ -239,7 +242,7 @@ struct FamilyPage: View {
                     }
                 }
         }
-            .navigationTitle(isRoot ? (dynastyID == "qing" ? "清朝家族" : "明朝家族") : "\(p.name)家族").navigationBarTitleDisplayMode(.inline).toolbarBackground(Theme.paper, for: .navigationBar).toolbarBackground(.visible, for: .navigationBar)
+            .navigationTitle(isRoot ? (store.dynastyName(dynastyID) + "家族") : "\(p.name)家族").navigationBarTitleDisplayMode(.inline).toolbarBackground(Theme.paper, for: .navigationBar).toolbarBackground(.visible, for: .navigationBar)
             .toolbar { if isRoot { ToolbarItem(placement: .topBarTrailing) { NavigationLink(value: DetailRoute.about) { Image(systemName: "info.circle").font(.system(size: 17)) }.accessibilityLabel("阅读说明") } } }
     }
     var graph: some View {
@@ -289,10 +292,10 @@ struct FamilyPage: View {
             if !children.isEmpty {
                 BranchConnector(count: 1, upward: false).frame(height: 22)
                 HStack(alignment: .firstTextBaseline) {
-                    familySectionHeading("子女", detail: children.contains { $0.birthOrderNote != nil } ? "收录\(children.count)位，已列齿序在前" : "收录\(children.count)位，按已知排行")
+                    familySectionHeading(store.childrenHeading(selected), detail: store.hasNonBiologicalChildren(selected) ? "收录\(children.count)位，亲生与嗣继分别标示" : children.contains { $0.birthOrderNote != nil } ? "收录\(children.count)位，已列齿序在前" : "收录\(children.count)位，按已知排行")
                     Spacer(minLength: 12)
                     NavigationLink(value: DetailRoute.relatives(selected, .children)) {
-                        Text("查看排行").font(.caption).foregroundStyle(Theme.cinnabar).frame(minHeight: 44)
+                        Text(store.hasNonBiologicalChildren(selected) ? "查看全部" : "查看排行").font(.caption).foregroundStyle(Theme.cinnabar).frame(minHeight: 44)
                     }
                     .buttonStyle(QuietRowStyle())
                     .accessibilityIdentifier("allChildren")
@@ -321,7 +324,7 @@ struct FamilyPage: View {
     func childNode(_ person: Person) -> some View {
         Button { focus(person.id, from: .bottom) } label: {
             VStack(alignment: .leading, spacing: 5) {
-                Text(store.orderLabel(person)).font(.caption2).foregroundStyle(Theme.cinnabar)
+                Text(store.childLabel(person, of: selected)).font(.caption2).foregroundStyle(Theme.cinnabar)
                 Text(person.name.replacingOccurrences(of: "爱新觉罗·", with: ""))
                     .font(.system(.headline, design: .serif)).foregroundStyle(Theme.ink)
                 Text(person.call).font(.caption2).foregroundStyle(Theme.muted).lineLimit(1)
@@ -333,11 +336,13 @@ struct FamilyPage: View {
         }
         .buttonStyle(QuietRowStyle())
         .accessibilityIdentifier("relative_\(person.id)")
-        .accessibilityLabel("\(store.orderLabel(person))，\(person.name)，切换人物")
+        .accessibilityLabel("\(store.childLabel(person, of: selected))，\(person.name)，切换人物")
     }
     var hero: some View {
         Group {
-            if typeSize.isAccessibilitySize {
+            if store.image(selected) == nil {
+                VStack(alignment: .leading, spacing: 14) { Text(p.name).font(.system(.title, design: .serif)); heroDetails }
+            } else if typeSize.isAccessibilitySize {
                 VStack(alignment: .leading, spacing: 16) {
                     HStack(alignment: .top, spacing: 16) { LocalImage(name: store.image(selected), compact: true).frame(width: 72, height: 100); Text(p.name).font(.system(.title, design: .serif)) }
                     heroDetails
@@ -435,7 +440,7 @@ struct SuccessionPage: View {
     var body: some View {
         ScrollView {
             LazyVStack(alignment: .leading, spacing: 0) {
-                Text(dynastyID == "qing" ? "从后金兴起到帝制终结，皇位传承始终与宗室、摄政和时代转折相连。努尔哈赤与皇太极属于入关前的两代统治者。" : "从洪武开国到崇祯亡国，明代皇位大体沿朱元璋一系传承，也经历靖难、土木堡之变与复辟等重要转折。朱祁镇两度在位，在序列中分段呈现。")
+                Text(store.sequenceIntroduction(dynastyID))
                     .font(.subheadline).foregroundStyle(Theme.muted).padding(.bottom, 20).fixedSize(horizontal: false, vertical: true)
                 ForEach(items) { item in
                     let p = store.person(item.person)
@@ -444,15 +449,15 @@ struct SuccessionPage: View {
                             person: p,
                             item: item,
                             imageName: store.image(p.id),
-                            hidesPortrait: typeSize.isAccessibilitySize
+                            hidesPortrait: typeSize.isAccessibilitySize || store.image(p.id) == nil
                         )
                     }.buttonStyle(QuietRowStyle()).accessibilityIdentifier("succession_\(item.id)")
-                    Rectangle().fill(Theme.line.opacity(0.46)).frame(height: 0.5).padding(.leading, typeSize.isAccessibilitySize ? 0 : 78)
+                    Rectangle().fill(Theme.line.opacity(0.46)).frame(height: 0.5).padding(.leading, typeSize.isAccessibilitySize || store.image(p.id) == nil ? 0 : 78)
                 }
                 Text(dynastyID == "qing" ? "努尔哈赤生前为后金大汗；1636年皇太极改国号为清。公历年概括实际统治，摄政与太上皇掌权另在人物和事件中说明。" : "公历年概括实际在位；同年交接不表示全年同时在位。年号起讫与实际在位年份分别列示。")
                     .font(.caption).foregroundStyle(Theme.muted).padding(.top, 22).fixedSize(horizontal: false, vertical: true)
             }.padding(24)
-        }.background(Theme.paper).foregroundStyle(Theme.text).navigationTitle(dynastyID == "qing" ? "清朝帝序" : "明朝帝序").navigationBarTitleDisplayMode(.inline).toolbarBackground(Theme.paper, for: .navigationBar).toolbarBackground(.visible, for: .navigationBar)
+        }.background(Theme.paper).foregroundStyle(Theme.text).navigationTitle(store.dynastyName(dynastyID) + "帝序").navigationBarTitleDisplayMode(.inline).toolbarBackground(Theme.paper, for: .navigationBar).toolbarBackground(.visible, for: .navigationBar)
             .accessibilityIdentifier("successionPage_\(dynastyID)")
             .id(dynastyID)
     }
@@ -488,7 +493,7 @@ private struct SuccessionRow: View {
                         .accessibilityIdentifier("successionEra_\(item.id)")
                     Spacer(minLength: 8)
                     if !person.temple.isEmpty {
-                        Text("庙号 \(person.temple)")
+                        Text(["无", "无庙号"].contains(person.temple) ? "无庙号" : "庙号 \(person.temple)")
                             .font(.caption)
                             .foregroundStyle(Theme.muted)
                             .multilineTextAlignment(.trailing)
@@ -519,6 +524,7 @@ private struct SuccessionRow: View {
     }
 
     private var eraName: String {
+        if let label = item.eraLabel { return label }
         if person.id == "qizhen" { return item.id == "7" ? "天顺" : "正统" }
         return person.era.split(separator: " ").first.map(String.init) ?? person.era
     }
@@ -549,13 +555,13 @@ struct CollectionPage: View {
     let dynastyID: String
 
     private var categories: [CollectionCategory] {
-        CollectionCategory.allCases.filter { $0 == .tombs || !artifacts(for: $0).isEmpty }
+        CollectionCategory.allCases.filter { $0 == .tombs ? !store.tombs(in: dynastyID).isEmpty : !artifacts(for: $0).isEmpty }
     }
 
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 0) {
-                Text(dynastyID == "qing" ? "从思想、器物与陵寝，理解清代的制度、生活与时代转折。" : "从思想、器物与陵寝，理解明代的知识、工艺与社会面貌。")
+                Text("从思想、典籍与遗存，理解制度、知识和生活的变化。")
                     .font(.subheadline).foregroundStyle(Theme.muted).lineSpacing(4).padding(.bottom, 24)
                 ForEach(categories) { category in
                     NavigationLink(value: DetailRoute.collectionCategory(dynastyID, category.rawValue)) {
@@ -573,7 +579,7 @@ struct CollectionPage: View {
             }.padding(.horizontal, 24).padding(.top, 24).padding(.bottom, 70)
         }
         .background(Theme.paper).foregroundStyle(Theme.text)
-        .navigationTitle(dynastyID == "qing" ? "清朝遗珍" : "明朝遗珍").navigationBarTitleDisplayMode(.inline).toolbarBackground(Theme.paper, for: .navigationBar).toolbarBackground(.visible, for: .navigationBar)
+        .navigationTitle(store.dynastyName(dynastyID) + "遗珍").navigationBarTitleDisplayMode(.inline).toolbarBackground(Theme.paper, for: .navigationBar).toolbarBackground(.visible, for: .navigationBar)
         .accessibilityIdentifier("collectionPage_\(dynastyID)")
     }
 
@@ -592,7 +598,7 @@ enum CollectionCategory: String, CaseIterable, Identifiable {
         switch self { case .ideas: return "理解线索"; case .texts: return "阅读线索"; default: return "观看提示" }
     }
     var note: String {
-        switch self { case .ideas: return "观念如何形成，又如何改变时代"; case .objects: return "瓷器与日常物质遗存"; case .texts: return "制度、知识与艺术文本"; case .architecture: return "宫殿、寺院与纪念空间"; case .tombs: return "陵区、墓主与皇位传承" }
+        switch self { case .ideas: return "观念如何形成，又如何改变时代"; case .objects: return "器物中的工艺、生活与交流"; case .texts: return "制度、知识与艺术文本"; case .architecture: return "宫殿、寺院与纪念空间"; case .tombs: return "陵区、墓主与皇位传承" }
     }
 }
 
@@ -605,7 +611,11 @@ private struct CollectionCategoryPage: View {
         store.objects(in: dynastyID).filter { $0.collectionCategory == category }
     }
     private var areaOrder: [String] {
-        dynastyID == "qing" ? ["沈阳 · 盛京三陵", "河北 · 清东陵", "河北 · 清西陵", "特殊安葬"] : ["南京 · 明孝陵", "北京 · 明十三陵", "北京 · 景泰陵", "尚无定论"]
+        let preferred = dynastyID == "qing" ? ["沈阳 · 盛京三陵", "河北 · 清东陵", "河北 · 清西陵", "特殊安葬"] : ["南京 · 明孝陵", "北京 · 明十三陵", "北京 · 景泰陵", "尚无定论"]
+        let actual = store.tombs(in: dynastyID).map(\.area)
+        return (preferred + actual).reduce(into: [String]()) { result, area in
+            if actual.contains(area) && !result.contains(area) { result.append(area) }
+        }
     }
     private func areaParts(_ area: String) -> (place: String?, name: String) {
         let parts = area.components(separatedBy: " · ")

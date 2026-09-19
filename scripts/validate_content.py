@@ -12,13 +12,18 @@ def image_path(name):
 
 assert len(people)==len(d['people'])
 assert len(sources)==len(d['sources'])
+for collection in ['events','objects','sequence','tombs']:
+ assert len({x['id'] for x in d[collection]})==len(d[collection]),(collection,'duplicate identifier')
 emperors={p['id'] for p in people.values() if p['kind']=='皇帝'}
-ming_emperors={pid for pid in emperors if not pid.startswith('q_')}
+ming_emperors={pid for pid in emperors if people[pid].get('dynasty','qing' if pid.startswith('q_') else 'ming')=='ming'}
 qing_emperors={pid for pid in emperors if pid.startswith('q_')}
 assert len(ming_emperors)==16
 assert len(qing_emperors)==(12 if d['version']>=5 else 0)
-assert len(d['sequence'])==(29 if d['version']>=5 else 17) and {s['person'] for s in d['sequence']}==emperors
-counts=Counter(s['person'] for s in d['sequence']);assert counts['qizhen']==2 and all(v==1 for k,v in counts.items() if k!='qizhen')
+legacy_emperors=ming_emperors|qing_emperors
+assert len(d['sequence'])==(83 if d['version']>=25 else 29 if d['version']>=5 else 17) and {s['person'] for s in d['sequence']}==emperors
+counts=Counter(s['person'] for s in d['sequence'])
+repeated={'qizhen','t_zhongzong','t_ruizong','y_tugh_temur'} if d['version']>=25 else {'qizhen'}
+assert all(counts[p]==2 for p in repeated) and all(v==1 for k,v in counts.items() if k not in repeated)
 assert [s['years'] for s in d['sequence'] if s['person']=='qizhen']==['1435—1449','1457—1464']
 for collection in ['people','events','objects','tombs']:
  for item in d[collection]:
@@ -36,7 +41,8 @@ for p in people.values():
 assert people['houcong']['parent']=='youyuan' and people['youyuan']['kind']!='皇帝'
 assert people['yunwen']['parent']=='biao' and people['biao']['parent']=='yuanzhang'
 assert people['gaoxu']['parent']==people['gaochi']['parent']=='di'
-assert {t['person'] for t in d['tombs']}==emperors and len(d['tombs'])==(28 if d['version']>=5 else 16)
+assert legacy_emperors<={t['person'] for t in d['tombs']}<=emperors
+assert len({t['person'] for t in d['tombs']})==len(d['tombs'])
 assert len([t for t in d['tombs'] if t['area']=='北京 · 明十三陵'])==13
 assert next(t for t in d['tombs'] if t['person']=='yunwen')['area']=='尚无定论'
 assert next(t for t in d['tombs'] if t['person']=='qiyu')['area']=='北京 · 景泰陵'
@@ -50,7 +56,7 @@ if d['version'] >= 2:
  for pid,a in articles.items():
   assert pid in people and a['sections']
   chars=sum(len(re.findall(r'[\u4e00-\u9fff]',s['text'])) for s in a['sections'])
-  assert chars >= (1200 if pid in emperors else 500),(pid,'article too short',chars)
+  assert chars >= (1200 if pid in legacy_emperors else 650 if pid in emperors else 500),(pid,'article too short',chars)
   assert len({s['id'] for s in a['sections']})==len(a['sections'])
   assert set(a['sources'])<=sources.keys()
   for s in a['sections']:
@@ -59,7 +65,7 @@ if d['version'] >= 2:
    assert set(s.get('events',[]))<={e['id'] for e in d['events']},(pid,s['id'],'chapter events')
    assert not re.search(r'本应用|本版本|第一版|后续补充|开发进度|AI生成|用户要求',s['text']), (pid,'product process copy')
  portraits={p['person']:p for p in d['portraits']}
- assert emperors<=portraits.keys()
+ assert legacy_emperors<=portraits.keys()
  for pid,portrait in portraits.items():
   assert pid in people and set(portrait['sourceIds'])<=sources.keys()
   assert people[pid].get('image')==portrait.get('image'),(pid,'portrait mapping')
@@ -109,7 +115,7 @@ if d['version'] >= 4:
  print('V4 PASS: five selected princes have sourced father/order, full biographies and linked events; later portraits have visible qualification labels')
 
 if d['version'] >= 5:
- assert [x['id'] for x in d['dynasties'] if x['selectable']]==['ming','qing']
+ assert [x['id'] for x in d['dynasties'] if x['selectable']]==(['tang','song_liao_xia_jin','yuan','ming','qing'] if d['version']>=25 else ['ming','qing'])
  assert len(d['dynasties'])>=15 and all(x['sources'] and set(x['sources'])<=sources.keys() for x in d['dynasties'])
  assert [s['person'] for s in d['sequence'] if s['person'].startswith('q_')]==[
   'q_nurhaci','q_hongtaiji','q_shunzhi','q_kangxi','q_yongzheng','q_qianlong',
@@ -324,7 +330,8 @@ if d['version'] >= 19:
   'idea_qing_jingshi','idea_qing_kaozheng','idea_self_strengthening',
   'idea_qing_reform','idea_qing_new_policy'
  }
- assert required == ideas.keys(),('unexpected thought topics',required ^ ideas.keys())
+ ming_qing_ideas={key for key,x in ideas.items() if set(x.get('dynasties',[]))&{'ming','qing'}}
+ assert required == ming_qing_ideas,('unexpected Ming/Qing thought topics',required ^ ming_qing_ideas)
  assert all(x['dynasties']==['ming'] for key,x in ideas.items() if key.startswith('idea_ming_') or key=='idea_wang_yangming')
  assert all(x['dynasties']==['qing'] for key,x in ideas.items() if key.startswith('idea_qing_') or key=='idea_self_strengthening')
  assert all(len(x['body'])>180 and x['sources'] and set(x['sources'])<=sources.keys() for x in ideas.values())
@@ -392,16 +399,17 @@ if d['version'] >= 22:
   expected=[]
   for seq in d['sequence']:
    if seq['person']==pid:
-    years=[int(y) for y in re.findall(r'\d{4}',seq['years'])]
+    years=[int(y) for y in re.findall(r'\d{3,4}',seq['years'])]
     expected.append({'label':seq['years'],'start':years[0],'end':years[-1]})
-  assert c['periods']==expected,(pid,'reign periods')
+  assert [(p['start'],p['end']) for p in c['periods']]==[(p['start'],p['end']) for p in expected],(pid,'reign periods')
+  assert all(p['label'] for p in c['periods']),(pid,'reign label')
   for actor in c['people']:
    assert actor in people and actor in articles,(pid,actor,'missing actor biography')
    assert any({a['from'],a['to']}=={pid,actor} for a in d['associations']),(pid,actor,'missing contextual relationship')
   for eid in c['events']:
    assert eid in events and pid in events[eid]['people'],(pid,eid,'reign event link')
    label=events[eid]['year']
-   years=[int(y) for y in re.findall(r'\d{4}',label)]
+   years=[int(y) for y in re.findall(r'\d{3,4}',label)]
    if '年代' in label and years:years.append(max(years)+9)
    century=re.search(r'(\d{1,2})世纪',label)
    if not years and century:years=[(int(century[1])-1)*100+1,int(century[1])*100]
@@ -420,7 +428,7 @@ if d['version'] >= 22:
    assert any(s.get('events') for s in a['sections']),(pid,'reviewed biography lacks event navigation')
  assert 'v39_qianlong_accession' not in events and 'qev_qianlong_accession_1735' in events
  assert all('改变了清廷的权力结构、疆域治理或对外处境' not in e['impact'] for e in d['events']), 'generic Qing impact'
- print('V22 PASS: all 28 emperors have sourced reign periods, linked people and curated events; pre-accession and post-reign cases stay separate')
+ print('V22 PASS: all emperors have sourced reign periods, linked people and curated events; pre-accession and post-reign cases stay separate')
 
 if d['version'] >= 23:
  names={p['name']:p['id'] for p in d['people']}
@@ -467,3 +475,50 @@ if d['version'] >= 24:
  assert names['靳辅'] in contexts['q_kangxi']['people']
  assert '北溟' in people[names['于成龙']]['note'] and '振甲' in people[names['于成龙']]['note'], 'distinguish the two Yu Chenglongs'
  print('V24 PASS: ten governance figures have sourced biographies, in-reign events and contextual relationships; namesakes stay distinct')
+
+
+if d['version'] >= 25:
+ dynasty_ids={x['id'] for x in d['dynasties']}
+ required={'tang':(22,24,45,10),'song_liao_xia_jin':(18,18,40,13),'yuan':(11,12,30,12)}
+ for dynasty,(emperor_count,segment_count,event_count,other_count) in required.items():
+  members={p['id'] for p in d['people'] if p.get('dynasty')==dynasty}
+  rulers=members&emperors
+  assert len(rulers)==emperor_count,(dynasty,'emperor coverage')
+  assert len([x for x in d['sequence'] if x['person'] in rulers])==segment_count,(dynasty,'sequence coverage')
+  assert len(members-emperors)>=other_count,(dynasty,'important people coverage')
+  assert len([e for e in d['events'] if set(e['people'])&members])>=event_count,(dynasty,'events coverage')
+  assert len([o for o in d['objects'] if dynasty in o.get('dynasties',[])])>=4,(dynasty,'heritage coverage')
+  for pid in rulers:
+   assert pid in articles and len(articles[pid]['sections'])>=3,(pid,'article structure')
+   assert any(x.get('events') for x in articles[pid]['sections']),(pid,'chapter event discovery')
+   assert any(x.get('people') for x in articles[pid]['sections']),(pid,'chapter people discovery')
+ for p in d['people']:
+  if p.get('dynasty'): assert p['dynasty'] in dynasty_ids,(p['id'],'unknown dynasty')
+ core={'t_gaozu','t_taizong','t_gaozong','t_wuzetian','t_xuanzong','t_suzong','t_dezong','t_xianzong',
+       's_taizu','s_taizong','s_zhenzong','s_renzong','s_shenzong','s_huizong','s_gaozong','s_xiaozong',
+       'y_kublai','y_temur','y_ayurbarwada','y_toghon_temur'}
+ for pid in core:
+  chars=sum(len(re.findall(r'[\u4e00-\u9fff]',x['text'])) for x in articles[pid]['sections'])
+  assert chars>=1200,(pid,'core biography depth',chars)
+ for pid in ['s_liao_shengzong','s_xia_jingzong','s_jin_taizu','y_genghis','y_ogedei','y_guyuk','y_mongke']:
+  assert pid in people and pid in articles and pid not in emperors,(pid,'parallel ruler or Mongol forehistory')
+ for pid in ['m_zhengchenggong','q_wusangui','q_huangzongxi','q_guyanwu','q_wangfuzhi']:
+  assert pid in people and pid in articles,(pid,'Ming Qing transition expansion')
+  assert any(pid in c['people'] for c in d['reignContexts']),(pid,'reign entry missing')
+  assert any(pid in e['people'] for e in d['events']),(pid,'event entry missing')
+ assert any(e['from']=='s_xiaozong' and e['to']=='s_gaozong' and e['kind']=='adoptiveFather' for e in d['familyLinks']), 'Song adoption must not become biological lineage'
+ assert people['s_xiaozong'].get('parent')!='s_gaozong'
+ assert people['y_kublai'].get('parent')!='y_mongke'
+ for pid in ['t_wuzetian','t_shangdi','t_aidi','s_gongdi','s_zhaobing']:
+  assert people[pid]['temple']=='无庙号',(pid,'common or posthumous title is not a temple name')
+ for pid,a in articles.items():
+  if people[pid].get('dynasty') in {'tang','song_liao_xia_jin','yuan'}:
+   assert not re.search(r'人物页|留在页面|本轮|数据包|不能写成|不赋予儿童',json.dumps(a,ensure_ascii=False)),(pid,'editorial instruction leaked')
+ chapter_event_ids={eid for a in d['articles'] for sec in a['sections'] for eid in sec.get('events',[])}
+ for event in d['events']:
+  if event['id'].startswith('v43'):
+   assert event['people'] or event['id'] in chapter_event_ids,(event['id'],'unreachable event')
+ for obj in d['objects']:
+  if obj['id'].startswith('v43'):
+   assert len(re.findall(r'[\u4e00-\u9fff]',obj['body']))>=180,(obj['id'],'new heritage topic too thin')
+ print('V25 PASS: complete Tang/Song/Yuan imperial coverage, core biographies, reign context, cross-linked heritage and Ming/Qing transition figures')

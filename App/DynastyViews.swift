@@ -17,6 +17,13 @@ struct DynastyDetailPage: View {
                         Text(profile.subtitle).font(.title3).foregroundStyle(Theme.text).lineSpacing(4)
                     }
                     DynastyOverviewBlock(title: "朝代总览", text: profile.overview)
+                    if dynasty.selectable {
+                        VStack(alignment: .leading, spacing: 20) {
+                            dynastyEntry("帝序与在位人物", subtitle: "循在位次序，读人物与时代", route: .dynastySequence(dynastyID), id: "dynastySequence_" + dynastyID)
+                            dynastyEntry("家族世系", subtitle: "亲属关系与皇位传承", route: .family(store.defaultPerson(in: dynastyID)), id: "dynastyFamily_" + dynastyID)
+                            dynastyEntry("思想与遗珍", subtitle: "从文物、著述与制度理解历史", route: .dynastyCollection(dynastyID), id: "dynastyCollection_" + dynastyID)
+                        }.padding(.vertical, 4)
+                    }
                     if let map = store.territoryMap(dynastyID) {
                         TerritoryMapCard(store: store, map: map)
                     }
@@ -43,6 +50,14 @@ struct DynastyDetailPage: View {
         } else {
             ContentUnavailableView("尚无朝代介绍", systemImage: "book.closed")
         }
+    }
+    private func dynastyEntry(_ title: String, subtitle: String, route: DetailRoute, id: String) -> some View {
+        NavigationLink(value: route) {
+            VStack(alignment: .leading, spacing: 5) {
+                Text(title).font(.system(.headline, design: .serif)).foregroundStyle(Theme.ink)
+                Text(subtitle).font(.subheadline).foregroundStyle(Theme.muted)
+            }.frame(maxWidth: .infinity, alignment: .leading).contentShape(Rectangle())
+        }.buttonStyle(QuietRowStyle()).accessibilityIdentifier(id)
     }
 }
 

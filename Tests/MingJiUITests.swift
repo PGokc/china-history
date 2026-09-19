@@ -1085,4 +1085,168 @@ final class MingJiUITests: XCTestCase {
         shot("v42-ili-canals-event", app)
     }
 
+    @MainActor func selectDynastyV43(_ id: String, in app: XCUIApplication) {
+        let button = app.buttons["dynasty_" + id]
+        reachReadingLink(button, in: app); button.tap()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyDetail_" + id].waitForExistence(timeout: 5))
+    }
+
+    @MainActor func testV43NewDynastiesHaveWorkingTabsAndPersist() throws {
+        let values = [("tang", "t_0", "唐朝帝序"), ("song_liao_xia_jin", "s_0", "宋代帝序"), ("yuan", "y_0", "元朝帝序")]
+        for (dynasty, first, title) in values {
+            let app = launch(enterFamily: false)
+            selectDynastyV43(dynasty, in: app)
+            let entry = app.buttons["dynastySequence_" + dynasty]
+            reachReadingLink(entry, in: app); shot("v43-overview-" + dynasty, app); entry.tap()
+            XCTAssertTrue(app.navigationBars[title].waitForExistence(timeout: 5))
+            XCTAssertTrue(app.buttons["succession_" + first].exists)
+            shot("v43-sequence-" + dynasty, app)
+            app.tabBars.buttons["家族"].tap()
+            XCTAssertTrue(app.buttons["personHero"].waitForExistence(timeout: 5))
+            shot("v43-family-" + dynasty, app)
+            app.tabBars.buttons["遗珍"].tap()
+            XCTAssertGreaterThan(app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "collectionCategory_")).count, 0)
+            shot("v43-collection-" + dynasty, app)
+            if dynasty == "yuan" { XCTAssertFalse(app.buttons["collectionCategory_tombs"].exists) }
+            XCTAssertEqual(app.tabBars.buttons.allElementsBoundByIndex.map(\.label), ["朝代", "帝序", "家族", "遗珍"])
+            app.terminate()
+        }
+        let persisted = XCUIApplication(); persisted.launchArguments = []; persisted.launch()
+        persisted.tabBars.buttons["帝序"].tap()
+        XCTAssertTrue(persisted.buttons["succession_y_0"].waitForExistence(timeout: 5))
+        XCTAssertFalse(persisted.buttons["succession_0"].exists)
+    }
+
+    @MainActor func testV43TangRestorationsAndWuZhouReader() throws {
+        let app = launch(enterFamily: false)
+        selectDynastyV43("tang", in: app); app.tabBars.buttons["帝序"].tap()
+        reachReadingLink(app.buttons["succession_t_3"], in: app)
+        XCTAssertEqual(app.staticTexts["successionEra_t_3"].label, "年号 嗣圣")
+        reachReadingLink(app.buttons["succession_t_6"], in: app)
+        XCTAssertEqual(app.staticTexts["successionEra_t_6"].label, "年号 神龙、景龙")
+        reachReadingLink(app.buttons["succession_t_5"], in: app)
+        XCTAssertTrue(app.staticTexts["successionReign_t_5"].label.contains("武周"))
+        XCTAssertEqual(app.staticTexts["successionTemple_t_5"].label, "无庙号")
+        shot("v43-wuzhou-restorations", app)
+        app.buttons["succession_t_5"].tap(); app.buttons["personHero"].tap()
+        reachReadingLink(app.buttons["category_court"], in: app); app.buttons["category_court"].tap()
+        XCTAssertGreaterThanOrEqual(app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "court_")).count, 2)
+        shot("v43-wuzhou-people", app)
+        app.navigationBars.buttons.element(boundBy: 0).tap(); openArticle(in: app)
+        XCTAssertEqual(app.buttons["narrationToggle"].label, "开始朗读")
+        shot("v43-wuzhou-reader", app)
+    }
+
+    @MainActor func testV43SongAdoptiveFatherAndParallelRuler() throws {
+        let app = launch(enterFamily: false)
+        selectDynastyV43("song_liao_xia_jin", in: app)
+        openEmperor("s_10", in: app)
+        shot("v43-song-adoption", app)
+        let adoptive = app.buttons.matching(NSPredicate(format: "label CONTAINS %@", "嗣父")).firstMatch
+        XCTAssertTrue(adoptive.exists)
+        app.buttons["personHero"].tap()
+        reachReadingLink(app.buttons["category_relationships"], in: app); app.buttons["category_relationships"].tap()
+        XCTAssertTrue(app.buttons["parent_s_gaozong"].exists)
+        XCTAssertTrue(app.buttons["parent_s_gaozong"].label.contains("嗣父"))
+        shot("v43-song-parent-records", app)
+        app.buttons["parent_s_gaozong"].tap()
+        reachReadingLink(app.buttons["category_relationships"], in: app); app.buttons["category_relationships"].tap()
+        reachReadingLink(app.buttons["allChildren"], in: app); app.buttons["allChildren"].tap()
+        let son = app.buttons["member_s_xiaozong"]
+        XCTAssertTrue(son.waitForExistence(timeout: 5))
+        XCTAssertTrue(son.label.contains("嗣子"))
+        shot("v43-song-adopted-son", app)
+        let fresh = launch(enterFamily: false)
+        selectDynastyV43("song_liao_xia_jin", in: fresh); openEmperor("s_2", in: fresh); fresh.buttons["personHero"].tap()
+        reachReadingLink(fresh.buttons["category_court"], in: fresh); fresh.buttons["category_court"].tap()
+        let ruler = fresh.buttons["court_s_liao_shengzong"]
+        reachReadingLink(ruler, in: fresh); ruler.tap(); openArticle(in: fresh)
+        XCTAssertEqual(fresh.buttons["narrationToggle"].label, "开始朗读")
+        shot("v43-liao-contemporary-reader", fresh)
+    }
+
+    @MainActor func testV43YuanLargeTypeAndShortReign() throws {
+        let app = launch(true, enterFamily: false)
+        selectDynastyV43("yuan", in: app); openEmperor("y_0", in: app); app.buttons["personHero"].tap()
+        openArticle(in: app)
+        XCTAssertEqual(app.buttons["narrationToggle"].label, "开始朗读")
+        shot("v43-kublai-reader-large", app)
+        let links = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "chapterLinks_")).firstMatch
+        reachReadingLink(links, in: app); links.tap(); shot("v43-yuan-chapter-links-large", app)
+        let fresh = launch(enterFamily: false)
+        selectDynastyV43("yuan", in: fresh); openEmperor("y_10", in: fresh); fresh.buttons["personHero"].tap()
+        reachReadingLink(fresh.buttons["category_court"], in: fresh); fresh.buttons["category_court"].tap()
+        XCTAssertGreaterThanOrEqual(fresh.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "court_")).count, 2)
+        shot("v43-yuan-short-reign", fresh)
+    }
+
+    @MainActor func testV43MingQingThoughtAuthorsAndSources() throws {
+        let app = launch(enterFamily: false)
+        selectDynastyV43("qing", in: app); app.tabBars.buttons["遗珍"].tap()
+        app.buttons["collectionCategory_ideas"].tap()
+        let topic = app.buttons["artifact_idea_qing_jingshi"]
+        reachReadingLink(topic, in: app); topic.tap()
+        let author = app.buttons["explore_q_huangzongxi"]
+        reachReadingLink(author, in: app); shot("v43-qing-thought-authors", app); author.tap(); openArticle(in: app)
+        XCTAssertEqual(app.buttons["narrationToggle"].label, "开始朗读")
+        shot("v43-huangzongxi-reader", app)
+        let chapter = app.buttons["chapterLinks_q_huangzongxi_2"]
+        reachReadingLink(chapter, in: app); chapter.tap()
+        let event = app.buttons.matching(NSPredicate(format: "label CONTAINS %@", "《明夷待访录》的政治追问")).firstMatch
+        reachReadingLink(event, in: app); event.tap()
+        let sources = app.buttons["资料与出处"]
+        reachReadingLink(sources, in: app); sources.tap()
+        let source = app.buttons["source_v43mq_mingyi"]
+        reachReadingLink(source, in: app); app.swipeUp()
+        XCTAssertLessThanOrEqual(source.frame.maxY, app.tabBars.firstMatch.frame.minY)
+        shot("v43-mingyi-sources", app)
+    }
+
+    @MainActor func testV43QingAdoptedSonUsesRelationshipLabel() throws {
+        let app = openYongzhengFamily()
+        reachReadingLink(app.buttons["relative_q_hongzhan"], in: app); app.buttons["relative_q_hongzhan"].tap()
+        reachReadingLink(app.buttons["relative_q_yinli"], in: app); app.buttons["relative_q_yinli"].tap()
+        let child = app.buttons["relative_q_hongzhan"]
+        reachReadingLink(child, in: app)
+        XCTAssertTrue(child.label.hasPrefix("嗣子"))
+        XCTAssertFalse(child.label.hasPrefix("第6子"))
+        shot("v43-qing-adopted-son", app)
+    }
+
+    @MainActor func testV43TangLiteratureAndTranslation() throws {
+        for (object, person) in [("v43t_jiangjinjiu_object", "t_libai"), ("v43t_xiyuji_object", "t_xuanzang")] {
+            let app = launch(enterFamily: false)
+            selectDynastyV43("tang", in: app); app.tabBars.buttons["遗珍"].tap()
+            app.buttons["collectionCategory_texts"].tap()
+            let topic = app.buttons["artifact_" + object]
+            reachReadingLink(topic, in: app); topic.tap()
+            let author = app.buttons["explore_" + person]
+            reachReadingLink(author, in: app); shot("v43-topic-" + person, app); author.tap()
+            openArticle(in: app)
+            XCTAssertEqual(app.buttons["narrationToggle"].label, "开始朗读")
+            shot("v43-reader-" + person, app)
+            app.terminate()
+        }
+    }
+
+    @MainActor func testV43ExpandedHeritageSources() throws {
+        let topics = [("song_liao_xia_jin", "texts", "v43s_mengxi"), ("yuan", "ideas", "v43y_phagpa_letters"), ("tang", "objects", "v43t_gold_tablet")]
+        for (dynasty, category, object) in topics {
+            let app = launch(enterFamily: false)
+            selectDynastyV43(dynasty, in: app); app.tabBars.buttons["遗珍"].tap()
+            app.buttons["collectionCategory_" + category].tap()
+            let topic = app.buttons["artifact_" + object]
+            reachReadingLink(topic, in: app); topic.tap()
+            shot("v43-heritage-" + object, app)
+            let disclosure = app.buttons["资料与出处"]
+            reachReadingLink(disclosure, in: app); disclosure.tap()
+            let source = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "source_")).firstMatch
+            reachReadingLink(source, in: app); app.swipeUp()
+            XCTAssertTrue(source.exists)
+            XCTAssertLessThanOrEqual(source.frame.maxY, app.tabBars.firstMatch.frame.minY)
+            shot("v43-heritage-sources-" + object, app)
+            app.terminate()
+        }
+    }
+
 }

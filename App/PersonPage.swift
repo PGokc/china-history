@@ -61,7 +61,7 @@ struct PersonPage: View {
     var relationSummary: String {
         var parts: [String] = []
         if let father = store.parents(p.id).first(where: { $0.kind == "father" }) { parts.append("父亲\(store.person(father.to).name)") }
-        if !store.children(p.id).isEmpty { parts.append("收录\(store.children(p.id).count)位子女") }
+        if !store.children(p.id).isEmpty { parts.append("收录\(store.children(p.id).count)位" + (store.hasNonBiologicalChildren(p.id) ? "子女与嗣继者" : "子女")) }
         if parts.isEmpty { return store.hasFamily(p.id) ? "家族亲属与往来人物" : "往来人物与关系变迁" }
         return parts.joined(separator: "，")
     }
@@ -201,7 +201,7 @@ struct PersonSectionPage: View {
                 NavigationRow(title: person.name, subtitle: "配偶　\(person.call)", symbol: "person", route: .person(person.id), identifier: "spouse_\(person.id)")
             }
             if !store.children(p.id).isEmpty {
-                NavigationRow(title: "子女", subtitle: "收录\(store.children(p.id).count)位，按排行", symbol: "person.2", route: .relatives(p.id, .children), identifier: "allChildren")
+                NavigationRow(title: store.childrenHeading(p.id), subtitle: "收录\(store.children(p.id).count)位，" + (store.hasNonBiologicalChildren(p.id) ? "区分亲生与嗣继" : "按已知排行"), symbol: "person.2", route: .relatives(p.id, .children), identifier: "allChildren")
             }
             if !store.siblings(p).isEmpty {
                 NavigationRow(title: "同辈", subtitle: "\(store.siblings(p).count)位，同父或同母", symbol: "person.2", route: .relatives(p.id, .siblings), identifier: "allSiblings")
@@ -346,7 +346,7 @@ struct FamilyMembersPage: View {
             VStack(alignment: .leading, spacing: 18) {
                 VStack(alignment: .leading, spacing: 5) {
                     Text(store.person(personID).name).font(.system(.title3, design: .serif).weight(.medium)).foregroundStyle(Theme.ink)
-                    Text(group == .children ? "按已知排行列示" : "按亲缘关系列示").font(.caption).foregroundStyle(Theme.muted)
+                    Text(group == .children ? (store.hasNonBiologicalChildren(personID) ? "亲生与嗣继关系分别标示" : "按已知排行列示") : "按亲缘关系列示").font(.caption).foregroundStyle(Theme.muted)
                     if group == .children && people.contains(where: { $0.birthOrderNote != nil }) {
                         Text("已列齿序者在前，未列齿序者另列；排行不等于全部子女的出生先后。")
                             .font(.caption).foregroundStyle(Theme.muted).lineSpacing(4)
@@ -356,7 +356,7 @@ struct FamilyMembersPage: View {
                     ForEach(people) { person in
                         NavigationLink(value: DetailRoute.family(person.id)) {
                             VStack(alignment: .leading, spacing: 5) {
-                                Text(group == .children ? store.orderLabel(person) : store.siblingLabel(person, relativeTo: store.person(personID)))
+                                Text(group == .children ? store.childLabel(person, of: personID) : store.siblingLabel(person, relativeTo: store.person(personID)))
                                     .font(.caption2).foregroundStyle(Theme.cinnabar)
                                 HStack(alignment: .firstTextBaseline, spacing: 10) {
                                     Text(person.name.replacingOccurrences(of: "爱新觉罗·", with: "")).font(.system(.headline, design: .serif)).foregroundStyle(Theme.ink)
@@ -369,6 +369,6 @@ struct FamilyMembersPage: View {
                     }
                 }
             }.padding(24)
-        }.background(Theme.paper).navigationTitle(group.rawValue).navigationBarTitleDisplayMode(.inline).toolbarBackground(Theme.paper, for: .navigationBar).toolbarBackground(.visible, for: .navigationBar)
+        }.background(Theme.paper).navigationTitle(group == .children ? store.childrenHeading(personID) : group.rawValue).navigationBarTitleDisplayMode(.inline).toolbarBackground(Theme.paper, for: .navigationBar).toolbarBackground(.visible, for: .navigationBar)
     }
 }

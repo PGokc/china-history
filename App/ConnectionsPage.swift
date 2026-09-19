@@ -65,7 +65,7 @@ struct RelatedPeople: View {
             return "配偶　\(store.person(id).call)"
         }
         if let child = store.children(personID).first(where: { $0.id == id }) {
-            return "\(store.orderLabel(child))　\(child.call)"
+            return "\(store.childLabel(child, of: personID))　\(child.call)"
         }
         return store.person(id).call
     }
