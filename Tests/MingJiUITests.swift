@@ -1137,6 +1137,39 @@ final class MingJiUITests: XCTestCase {
         shot("v43-wuzhou-reader", app)
     }
 
+    @MainActor func testV45TangAndSongImperialPortraits() throws {
+        let tang = launch(enterFamily: false)
+        let tangDynasty = tang.buttons["dynasty_tang"]
+        reachReadingLink(tangDynasty, in: tang); tangDynasty.tap()
+        tang.navigationBars.buttons.element(boundBy: 0).tap()
+        tang.tabBars.buttons["帝序"].tap()
+        XCTAssertTrue(tang.buttons["succession_t_0"].waitForExistence(timeout: 5))
+        shot("v45-tang-sequence-portraits", tang)
+        tang.buttons["succession_t_0"].tap()
+        XCTAssertTrue(tang.buttons["personHero"].label.contains("后世宫廷像"))
+        tang.buttons["personHero"].tap()
+        XCTAssertTrue(tang.buttons["portraitEntry"].waitForExistence(timeout: 5))
+        tang.buttons["portraitEntry"].tap()
+        XCTAssertTrue(tang.staticTexts["后世宫廷像"].waitForExistence(timeout: 5))
+        shot("v45-tang-gaozu-portrait", tang)
+        tang.terminate()
+
+        let song = launch(enterFamily: false)
+        let songDynasty = song.buttons["dynasty_song_liao_xia_jin"]
+        reachReadingLink(songDynasty, in: song); songDynasty.tap()
+        song.navigationBars.buttons.element(boundBy: 0).tap()
+        song.tabBars.buttons["帝序"].tap()
+        XCTAssertTrue(song.buttons["succession_s_0"].waitForExistence(timeout: 5))
+        shot("v45-song-sequence-portraits", song)
+        song.buttons["succession_s_0"].tap()
+        XCTAssertTrue(song.buttons["personHero"].label.contains("南薰殿旧藏"))
+        song.buttons["personHero"].tap()
+        XCTAssertTrue(song.buttons["portraitEntry"].waitForExistence(timeout: 5))
+        song.buttons["portraitEntry"].tap()
+        XCTAssertTrue(song.staticTexts["南薰殿旧藏"].waitForExistence(timeout: 5))
+        shot("v45-song-taizu-portrait", song)
+    }
+
     @MainActor func testV43SongAdoptiveFatherAndParallelRuler() throws {
         let app = launch(enterFamily: false)
         selectDynastyV43("song_liao_xia_jin", in: app)

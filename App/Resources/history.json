@@ -1,5 +1,5 @@
 {
-  "version": 26,
+  "version": 27,
   "reviewed": "2026-09-20",
   "people": [
     {
@@ -3091,7 +3091,8 @@
       "sources": [
         "v43t_jts1"
       ],
-      "dynasty": "tang"
+      "dynasty": "tang",
+      "image": "portrait_t_gaozu_npm"
     },
     {
       "id": "t_taizong",
@@ -3108,7 +3109,8 @@
         "v43t_jts2",
         "v43t_jts3"
       ],
-      "dynasty": "tang"
+      "dynasty": "tang",
+      "image": "portrait_t_taizong_npm"
     },
     {
       "id": "t_gaozong",
@@ -3208,7 +3210,8 @@
         "v43t_jts8",
         "v43t_jts9"
       ],
-      "dynasty": "tang"
+      "dynasty": "tang",
+      "image": "portrait_t_xuanzong_npm"
     },
     {
       "id": "t_suzong",
@@ -4435,7 +4438,8 @@
         "v43s_ss003"
       ],
       "dynasty": "song_liao_xia_jin",
-      "birthOrder": 2
+      "birthOrder": 2,
+      "image": "portrait_s_taizu_npm"
     },
     {
       "id": "s_taizong",
@@ -4453,7 +4457,8 @@
         "v43s_ss005"
       ],
       "dynasty": "song_liao_xia_jin",
-      "birthOrder": 3
+      "birthOrder": 3,
+      "image": "portrait_s_taizong_npm"
     },
     {
       "id": "s_zhenzong",
@@ -4471,7 +4476,8 @@
         "v43s_ss007",
         "v43s_ss008"
       ],
-      "dynasty": "song_liao_xia_jin"
+      "dynasty": "song_liao_xia_jin",
+      "image": "portrait_s_zhenzong_npm"
     },
     {
       "id": "s_renzong",
@@ -4489,7 +4495,8 @@
         "v43s_ss011",
         "v43s_ss012"
       ],
-      "dynasty": "song_liao_xia_jin"
+      "dynasty": "song_liao_xia_jin",
+      "image": "portrait_s_renzong_npm"
     },
     {
       "id": "s_yingzong",
@@ -4505,7 +4512,8 @@
       "sources": [
         "v43s_ss013"
       ],
-      "dynasty": "song_liao_xia_jin"
+      "dynasty": "song_liao_xia_jin",
+      "image": "portrait_s_yingzong_npm"
     },
     {
       "id": "s_shenzong",
@@ -4523,7 +4531,8 @@
         "v43s_ss015",
         "v43s_ss016"
       ],
-      "dynasty": "song_liao_xia_jin"
+      "dynasty": "song_liao_xia_jin",
+      "image": "portrait_s_shenzong_npm"
     },
     {
       "id": "s_zhezong",
@@ -4540,7 +4549,8 @@
         "v43s_ss017",
         "v43s_ss018"
       ],
-      "dynasty": "song_liao_xia_jin"
+      "dynasty": "song_liao_xia_jin",
+      "image": "portrait_s_zhezong_npm"
     },
     {
       "id": "s_huizong",
@@ -4559,7 +4569,8 @@
         "v43s_ss021",
         "v43s_ss022"
       ],
-      "dynasty": "song_liao_xia_jin"
+      "dynasty": "song_liao_xia_jin",
+      "image": "portrait_s_huizong_npm"
     },
     {
       "id": "s_qinzong",
@@ -4575,7 +4586,8 @@
       "sources": [
         "v43s_ss023"
       ],
-      "dynasty": "song_liao_xia_jin"
+      "dynasty": "song_liao_xia_jin",
+      "image": "portrait_s_qinzong_npm"
     },
     {
       "id": "s_gaozong",
@@ -4594,7 +4606,8 @@
         "v43s_ss030",
         "v43s_ss032"
       ],
-      "dynasty": "song_liao_xia_jin"
+      "dynasty": "song_liao_xia_jin",
+      "image": "portrait_s_gaozong_npm"
     },
     {
       "id": "s_xiaozong",
@@ -4612,7 +4625,8 @@
         "v43s_ss034",
         "v43s_ss035"
       ],
-      "dynasty": "song_liao_xia_jin"
+      "dynasty": "song_liao_xia_jin",
+      "image": "portrait_s_xiaozong_npm"
     },
     {
       "id": "s_guangzong",
@@ -4628,7 +4642,8 @@
       "sources": [
         "v43s_ss036"
       ],
-      "dynasty": "song_liao_xia_jin"
+      "dynasty": "song_liao_xia_jin",
+      "image": "portrait_s_guangzong_npm"
     },
     {
       "id": "s_ningzong",
@@ -4647,7 +4662,8 @@
         "v43s_ss039",
         "v43s_ss040"
       ],
-      "dynasty": "song_liao_xia_jin"
+      "dynasty": "song_liao_xia_jin",
+      "image": "portrait_s_ningzong_npm"
     },
     {
       "id": "s_lizong",
@@ -4666,7 +4682,8 @@
         "v43s_ss045",
         "v43s_sh7"
       ],
-      "dynasty": "song_liao_xia_jin"
+      "dynasty": "song_liao_xia_jin",
+      "image": "portrait_s_lizong_npm"
     },
     {
       "id": "s_duzong",
@@ -4683,7 +4700,8 @@
         "v43s_ss046",
         "v43s_sh7"
       ],
-      "dynasty": "song_liao_xia_jin"
+      "dynasty": "song_liao_xia_jin",
+      "image": "portrait_s_duzong_npm"
     },
     {
       "id": "s_gongdi",
@@ -8717,6 +8735,120 @@
       "title": "《旧五代史》卷143 礼志下",
       "url": "https://zh.wikisource.org/zh-hans/舊五代史/卷143",
       "note": "记后唐追议李柷景宗庙号及后来奏去庙号，须区别哀帝谥称与庙号的更改。"
+    },
+    {
+      "id": "v45_dpm_imperial_portrait_study",
+      "title": "故宫博物院《南薰殿旧藏历代帝后像研究》",
+      "url": "https://www.dpm.org.cn/Uploads/File/2020/03/23/u5e782d915118c.pdf",
+      "note": "故宫研究指出唐代帝王真容原迹无一存世，传世唐高祖、唐太宗等属于后世摹绘；宋代正式帝王御容则有较完整传承。用于限定图像性质，不能把后世唐帝像当作本人写生。"
+    },
+    {
+      "id": "v45_npm_t_gaozu",
+      "title": "国立故宫博物院｜历代帝王半身像册·唐高祖",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/15646?dep=P",
+      "note": "馆方藏品页提供品名、人物识别、质地、尺寸、题跋和开放图像；应用采用馆方IIIF图像。"
+    },
+    {
+      "id": "v45_npm_t_taizong",
+      "title": "国立故宫博物院｜历代帝王半身像册·唐太宗",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/15647?dep=P",
+      "note": "馆方藏品页提供品名、人物识别、质地、尺寸、题跋和开放图像；应用采用馆方IIIF图像。"
+    },
+    {
+      "id": "v45_npm_t_xuanzong",
+      "title": "国立故宫博物院｜历代帝王半身像册·唐玄宗",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/15648?dep=P",
+      "note": "馆方藏品页提供品名、人物识别、质地、尺寸、题跋和开放图像；应用采用馆方IIIF图像。"
+    },
+    {
+      "id": "v45_npm_s_taizu",
+      "title": "国立故宫博物院｜宋代帝半身像册·宋太祖",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/14757?dep=P",
+      "note": "馆方藏品页提供品名、人物识别、质地、尺寸、题跋和开放图像；应用采用馆方IIIF图像。"
+    },
+    {
+      "id": "v45_npm_s_taizong",
+      "title": "国立故宫博物院｜宋代帝半身像册·宋太宗",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/14758?dep=P",
+      "note": "馆方藏品页提供品名、人物识别、质地、尺寸、题跋和开放图像；应用采用馆方IIIF图像。"
+    },
+    {
+      "id": "v45_npm_s_zhenzong",
+      "title": "国立故宫博物院｜宋代帝半身像册·宋真宗",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/14759?dep=P",
+      "note": "馆方藏品页提供品名、人物识别、质地、尺寸、题跋和开放图像；应用采用馆方IIIF图像。"
+    },
+    {
+      "id": "v45_npm_s_renzong",
+      "title": "国立故宫博物院｜宋代帝半身像册·宋仁宗",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/14760?dep=P",
+      "note": "馆方藏品页提供品名、人物识别、质地、尺寸、题跋和开放图像；应用采用馆方IIIF图像。"
+    },
+    {
+      "id": "v45_npm_s_yingzong",
+      "title": "国立故宫博物院｜宋代帝半身像册·宋英宗",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/14761?dep=P",
+      "note": "馆方藏品页提供品名、人物识别、质地、尺寸、题跋和开放图像；应用采用馆方IIIF图像。"
+    },
+    {
+      "id": "v45_npm_s_shenzong",
+      "title": "国立故宫博物院｜宋代帝半身像册·宋神宗",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/14762?dep=P",
+      "note": "馆方藏品页提供品名、人物识别、质地、尺寸、题跋和开放图像；应用采用馆方IIIF图像。"
+    },
+    {
+      "id": "v45_npm_s_zhezong",
+      "title": "国立故宫博物院｜宋代帝半身像册·宋哲宗",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/14764?dep=P",
+      "note": "馆方藏品页提供品名、人物识别、质地、尺寸、题跋和开放图像；应用采用馆方IIIF图像。"
+    },
+    {
+      "id": "v45_npm_s_huizong",
+      "title": "国立故宫博物院｜宋代帝半身像册·宋徽宗",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/14765?dep=P",
+      "note": "馆方藏品页提供品名、人物识别、质地、尺寸、题跋和开放图像；应用采用馆方IIIF图像。"
+    },
+    {
+      "id": "v45_npm_s_qinzong",
+      "title": "国立故宫博物院｜宋代帝半身像册·宋钦宗",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/14766?dep=P",
+      "note": "馆方藏品页提供品名、人物识别、质地、尺寸、题跋和开放图像；应用采用馆方IIIF图像。"
+    },
+    {
+      "id": "v45_npm_s_gaozong",
+      "title": "国立故宫博物院｜宋代帝半身像册·宋高宗",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/14767?dep=P",
+      "note": "馆方藏品页提供品名、人物识别、质地、尺寸、题跋和开放图像；应用采用馆方IIIF图像。"
+    },
+    {
+      "id": "v45_npm_s_xiaozong",
+      "title": "国立故宫博物院｜宋代帝半身像册·宋孝宗",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/14768?dep=P",
+      "note": "馆方藏品页提供品名、人物识别、质地、尺寸、题跋和开放图像；应用采用馆方IIIF图像。"
+    },
+    {
+      "id": "v45_npm_s_guangzong",
+      "title": "国立故宫博物院｜宋代帝半身像册·宋光宗",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/14770?dep=P",
+      "note": "馆方藏品页提供品名、人物识别、质地、尺寸、题跋和开放图像；应用采用馆方IIIF图像。"
+    },
+    {
+      "id": "v45_npm_s_ningzong",
+      "title": "国立故宫博物院｜宋代帝半身像册·宋宁宗",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/14777?dep=P",
+      "note": "馆方藏品页提供品名、人物识别、质地、尺寸、题跋和开放图像；应用采用馆方IIIF图像。"
+    },
+    {
+      "id": "v45_npm_s_lizong",
+      "title": "国立故宫博物院｜宋代帝半身像册·宋理宗",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/14782?dep=P",
+      "note": "馆方藏品页提供品名、人物识别、质地、尺寸、题跋和开放图像；应用采用馆方IIIF图像。"
+    },
+    {
+      "id": "v45_npm_s_duzong",
+      "title": "国立故宫博物院｜宋代帝半身像册·宋度宗",
+      "url": "https://digitalarchive.npm.gov.tw/Collection/Detail/14783?dep=P",
+      "note": "馆方藏品页提供品名、人物识别、质地、尺寸、题跋和开放图像；应用采用馆方IIIF图像。"
     }
   ],
   "relations": [
@@ -43450,6 +43582,330 @@
       "status": "历史画像",
       "searchNote": "",
       "displayLabel": "1909年照片"
+    },
+    {
+      "person": "t_gaozu",
+      "image": "portrait_t_gaozu_npm",
+      "title": "历代帝王半身像册·唐高祖",
+      "attribution": "作者未载",
+      "date": "后世宫廷绘像；乾隆十三年（1748）重装",
+      "collection": "国立故宫博物院，台北",
+      "description": "南薰殿旧藏帝王图册中的后世形象，人物依据题签识别。唐代帝王真容原迹已无存世，因此这幅图用于呈现后世宫廷如何想象和祭祀该帝王，不能视为本人容貌的写生记录。",
+      "sourceIds": [
+        "v45_npm_t_gaozu",
+        "v45_dpm_imperial_portrait_study"
+      ],
+      "sourceURL": "https://digitalarchive.npm.gov.tw/Collection/Detail/15646?dep=P",
+      "imageURL": "https://iiifod.npm.gov.tw/iiif/2/C2A%2FC2A000331N000000013PAB/full/900,/0/default.jpg",
+      "status": "历史画像",
+      "searchNote": "",
+      "displayLabel": "后世宫廷像"
+    },
+    {
+      "person": "t_taizong",
+      "image": "portrait_t_taizong_npm",
+      "title": "历代帝王半身像册·唐太宗",
+      "attribution": "作者未载",
+      "date": "后世宫廷绘像；乾隆十三年（1748）重装",
+      "collection": "国立故宫博物院，台北",
+      "description": "南薰殿旧藏帝王图册中的后世形象，人物依据题签识别。唐代帝王真容原迹已无存世，因此这幅图用于呈现后世宫廷如何想象和祭祀该帝王，不能视为本人容貌的写生记录。",
+      "sourceIds": [
+        "v45_npm_t_taizong",
+        "v45_dpm_imperial_portrait_study"
+      ],
+      "sourceURL": "https://digitalarchive.npm.gov.tw/Collection/Detail/15647?dep=P",
+      "imageURL": "https://iiifod.npm.gov.tw/iiif/2/C2A%2FC2A000331N000000014PAB/full/900,/0/default.jpg",
+      "status": "历史画像",
+      "searchNote": "",
+      "displayLabel": "后世宫廷像"
+    },
+    {
+      "person": "t_xuanzong",
+      "image": "portrait_t_xuanzong_npm",
+      "title": "历代帝王半身像册·唐玄宗",
+      "attribution": "作者未载",
+      "date": "后世宫廷绘像；乾隆十三年（1748）重装",
+      "collection": "国立故宫博物院，台北",
+      "description": "南薰殿旧藏帝王图册中的后世形象，人物依据题签识别。唐代帝王真容原迹已无存世，因此这幅图用于呈现后世宫廷如何想象和祭祀该帝王，不能视为本人容貌的写生记录。",
+      "sourceIds": [
+        "v45_npm_t_xuanzong",
+        "v45_dpm_imperial_portrait_study"
+      ],
+      "sourceURL": "https://digitalarchive.npm.gov.tw/Collection/Detail/15648?dep=P",
+      "imageURL": "https://iiifod.npm.gov.tw/iiif/2/C2A%2FC2A000331N000000014PAB/full/900,/0/default.jpg",
+      "status": "历史画像",
+      "searchNote": "",
+      "displayLabel": "后世宫廷像"
+    },
+    {
+      "person": "s_taizu",
+      "image": "portrait_s_taizu_npm",
+      "title": "宋代帝半身像册·宋太祖",
+      "attribution": "作者未载",
+      "date": "宋代帝王图像传承；乾隆十三年（1748）重装",
+      "collection": "国立故宫博物院，台北",
+      "description": "南薰殿旧藏《宋代帝半身像》册中的一开，馆方以题签与旧藏著录确认人物。册页在清乾隆十三年重装；历史画像可反映宫廷御容传统，但仍不能等同现代摄影意义上的容貌记录。",
+      "sourceIds": [
+        "v45_npm_s_taizu",
+        "v45_dpm_imperial_portrait_study"
+      ],
+      "sourceURL": "https://digitalarchive.npm.gov.tw/Collection/Detail/14757?dep=P",
+      "imageURL": "https://iiifod.npm.gov.tw/iiif/2/C2A%2FC2A000322N000000002PAB/full/900,/0/default.jpg",
+      "status": "历史画像",
+      "searchNote": "",
+      "displayLabel": "南薰殿旧藏"
+    },
+    {
+      "person": "s_taizong",
+      "image": "portrait_s_taizong_npm",
+      "title": "宋代帝半身像册·宋太宗",
+      "attribution": "作者未载",
+      "date": "宋代帝王图像传承；乾隆十三年（1748）重装",
+      "collection": "国立故宫博物院，台北",
+      "description": "南薰殿旧藏《宋代帝半身像》册中的一开，馆方以题签与旧藏著录确认人物。册页在清乾隆十三年重装；历史画像可反映宫廷御容传统，但仍不能等同现代摄影意义上的容貌记录。",
+      "sourceIds": [
+        "v45_npm_s_taizong",
+        "v45_dpm_imperial_portrait_study"
+      ],
+      "sourceURL": "https://digitalarchive.npm.gov.tw/Collection/Detail/14758?dep=P",
+      "imageURL": "https://iiifod.npm.gov.tw/iiif/2/C2A%2FC2A000322N000000003PAB/full/900,/0/default.jpg",
+      "status": "历史画像",
+      "searchNote": "",
+      "displayLabel": "南薰殿旧藏"
+    },
+    {
+      "person": "s_zhenzong",
+      "image": "portrait_s_zhenzong_npm",
+      "title": "宋代帝半身像册·宋真宗",
+      "attribution": "作者未载",
+      "date": "宋代帝王图像传承；乾隆十三年（1748）重装",
+      "collection": "国立故宫博物院，台北",
+      "description": "南薰殿旧藏《宋代帝半身像》册中的一开，馆方以题签与旧藏著录确认人物。册页在清乾隆十三年重装；历史画像可反映宫廷御容传统，但仍不能等同现代摄影意义上的容貌记录。",
+      "sourceIds": [
+        "v45_npm_s_zhenzong",
+        "v45_dpm_imperial_portrait_study"
+      ],
+      "sourceURL": "https://digitalarchive.npm.gov.tw/Collection/Detail/14759?dep=P",
+      "imageURL": "https://iiifod.npm.gov.tw/iiif/2/C2A%2FC2A000322N000000004PAB/full/900,/0/default.jpg",
+      "status": "历史画像",
+      "searchNote": "",
+      "displayLabel": "南薰殿旧藏"
+    },
+    {
+      "person": "s_renzong",
+      "image": "portrait_s_renzong_npm",
+      "title": "宋代帝半身像册·宋仁宗",
+      "attribution": "作者未载",
+      "date": "宋代帝王图像传承；乾隆十三年（1748）重装",
+      "collection": "国立故宫博物院，台北",
+      "description": "南薰殿旧藏《宋代帝半身像》册中的一开，馆方以题签与旧藏著录确认人物。册页在清乾隆十三年重装；历史画像可反映宫廷御容传统，但仍不能等同现代摄影意义上的容貌记录。",
+      "sourceIds": [
+        "v45_npm_s_renzong",
+        "v45_dpm_imperial_portrait_study"
+      ],
+      "sourceURL": "https://digitalarchive.npm.gov.tw/Collection/Detail/14760?dep=P",
+      "imageURL": "https://iiifod.npm.gov.tw/iiif/2/C2A%2FC2A000322N000000005PAB/full/900,/0/default.jpg",
+      "status": "历史画像",
+      "searchNote": "",
+      "displayLabel": "南薰殿旧藏"
+    },
+    {
+      "person": "s_yingzong",
+      "image": "portrait_s_yingzong_npm",
+      "title": "宋代帝半身像册·宋英宗",
+      "attribution": "作者未载",
+      "date": "宋代帝王图像传承；乾隆十三年（1748）重装",
+      "collection": "国立故宫博物院，台北",
+      "description": "南薰殿旧藏《宋代帝半身像》册中的一开，馆方以题签与旧藏著录确认人物。册页在清乾隆十三年重装；历史画像可反映宫廷御容传统，但仍不能等同现代摄影意义上的容貌记录。",
+      "sourceIds": [
+        "v45_npm_s_yingzong",
+        "v45_dpm_imperial_portrait_study"
+      ],
+      "sourceURL": "https://digitalarchive.npm.gov.tw/Collection/Detail/14761?dep=P",
+      "imageURL": "https://iiifod.npm.gov.tw/iiif/2/C2A%2FC2A000322N000000006PAB/full/900,/0/default.jpg",
+      "status": "历史画像",
+      "searchNote": "",
+      "displayLabel": "南薰殿旧藏"
+    },
+    {
+      "person": "s_shenzong",
+      "image": "portrait_s_shenzong_npm",
+      "title": "宋代帝半身像册·宋神宗",
+      "attribution": "作者未载",
+      "date": "宋代帝王图像传承；乾隆十三年（1748）重装",
+      "collection": "国立故宫博物院，台北",
+      "description": "南薰殿旧藏《宋代帝半身像》册中的一开，馆方以题签与旧藏著录确认人物。册页在清乾隆十三年重装；历史画像可反映宫廷御容传统，但仍不能等同现代摄影意义上的容貌记录。",
+      "sourceIds": [
+        "v45_npm_s_shenzong",
+        "v45_dpm_imperial_portrait_study"
+      ],
+      "sourceURL": "https://digitalarchive.npm.gov.tw/Collection/Detail/14762?dep=P",
+      "imageURL": "https://iiifod.npm.gov.tw/iiif/2/C2A%2FC2A000322N000000007PAB/full/900,/0/default.jpg",
+      "status": "历史画像",
+      "searchNote": "",
+      "displayLabel": "南薰殿旧藏"
+    },
+    {
+      "person": "s_zhezong",
+      "image": "portrait_s_zhezong_npm",
+      "title": "宋代帝半身像册·宋哲宗",
+      "attribution": "作者未载",
+      "date": "宋代帝王图像传承；乾隆十三年（1748）重装",
+      "collection": "国立故宫博物院，台北",
+      "description": "南薰殿旧藏《宋代帝半身像》册中的一开，馆方以题签与旧藏著录确认人物。册页在清乾隆十三年重装；历史画像可反映宫廷御容传统，但仍不能等同现代摄影意义上的容貌记录。",
+      "sourceIds": [
+        "v45_npm_s_zhezong",
+        "v45_dpm_imperial_portrait_study"
+      ],
+      "sourceURL": "https://digitalarchive.npm.gov.tw/Collection/Detail/14764?dep=P",
+      "imageURL": "https://iiifod.npm.gov.tw/iiif/2/C2A%2FC2A000322N000000008PAB/full/900,/0/default.jpg",
+      "status": "历史画像",
+      "searchNote": "",
+      "displayLabel": "南薰殿旧藏"
+    },
+    {
+      "person": "s_huizong",
+      "image": "portrait_s_huizong_npm",
+      "title": "宋代帝半身像册·宋徽宗",
+      "attribution": "作者未载",
+      "date": "宋代帝王图像传承；乾隆十三年（1748）重装",
+      "collection": "国立故宫博物院，台北",
+      "description": "南薰殿旧藏《宋代帝半身像》册中的一开，馆方以题签与旧藏著录确认人物。册页在清乾隆十三年重装；历史画像可反映宫廷御容传统，但仍不能等同现代摄影意义上的容貌记录。",
+      "sourceIds": [
+        "v45_npm_s_huizong",
+        "v45_dpm_imperial_portrait_study"
+      ],
+      "sourceURL": "https://digitalarchive.npm.gov.tw/Collection/Detail/14765?dep=P",
+      "imageURL": "https://iiifod.npm.gov.tw/iiif/2/C2A%2FC2A000322N000000009PAB/full/900,/0/default.jpg",
+      "status": "历史画像",
+      "searchNote": "",
+      "displayLabel": "南薰殿旧藏"
+    },
+    {
+      "person": "s_qinzong",
+      "image": "portrait_s_qinzong_npm",
+      "title": "宋代帝半身像册·宋钦宗",
+      "attribution": "作者未载",
+      "date": "宋代帝王图像传承；乾隆十三年（1748）重装",
+      "collection": "国立故宫博物院，台北",
+      "description": "南薰殿旧藏《宋代帝半身像》册中的一开，馆方以题签与旧藏著录确认人物。册页在清乾隆十三年重装；历史画像可反映宫廷御容传统，但仍不能等同现代摄影意义上的容貌记录。",
+      "sourceIds": [
+        "v45_npm_s_qinzong",
+        "v45_dpm_imperial_portrait_study"
+      ],
+      "sourceURL": "https://digitalarchive.npm.gov.tw/Collection/Detail/14766?dep=P",
+      "imageURL": "https://iiifod.npm.gov.tw/iiif/2/C2A%2FC2A000322N000000010PAB/full/900,/0/default.jpg",
+      "status": "历史画像",
+      "searchNote": "",
+      "displayLabel": "南薰殿旧藏"
+    },
+    {
+      "person": "s_gaozong",
+      "image": "portrait_s_gaozong_npm",
+      "title": "宋代帝半身像册·宋高宗",
+      "attribution": "作者未载",
+      "date": "宋代帝王图像传承；乾隆十三年（1748）重装",
+      "collection": "国立故宫博物院，台北",
+      "description": "南薰殿旧藏《宋代帝半身像》册中的一开，馆方以题签与旧藏著录确认人物。册页在清乾隆十三年重装；历史画像可反映宫廷御容传统，但仍不能等同现代摄影意义上的容貌记录。",
+      "sourceIds": [
+        "v45_npm_s_gaozong",
+        "v45_dpm_imperial_portrait_study"
+      ],
+      "sourceURL": "https://digitalarchive.npm.gov.tw/Collection/Detail/14767?dep=P",
+      "imageURL": "https://iiifod.npm.gov.tw/iiif/2/C2A%2FC2A000322N000000011PAB/full/900,/0/default.jpg",
+      "status": "历史画像",
+      "searchNote": "",
+      "displayLabel": "南薰殿旧藏"
+    },
+    {
+      "person": "s_xiaozong",
+      "image": "portrait_s_xiaozong_npm",
+      "title": "宋代帝半身像册·宋孝宗",
+      "attribution": "作者未载",
+      "date": "宋代帝王图像传承；乾隆十三年（1748）重装",
+      "collection": "国立故宫博物院，台北",
+      "description": "南薰殿旧藏《宋代帝半身像》册中的一开，馆方以题签与旧藏著录确认人物。册页在清乾隆十三年重装；历史画像可反映宫廷御容传统，但仍不能等同现代摄影意义上的容貌记录。",
+      "sourceIds": [
+        "v45_npm_s_xiaozong",
+        "v45_dpm_imperial_portrait_study"
+      ],
+      "sourceURL": "https://digitalarchive.npm.gov.tw/Collection/Detail/14768?dep=P",
+      "imageURL": "https://iiifod.npm.gov.tw/iiif/2/C2A%2FC2A000322N000000012PAB/full/900,/0/default.jpg",
+      "status": "历史画像",
+      "searchNote": "",
+      "displayLabel": "南薰殿旧藏"
+    },
+    {
+      "person": "s_guangzong",
+      "image": "portrait_s_guangzong_npm",
+      "title": "宋代帝半身像册·宋光宗",
+      "attribution": "作者未载",
+      "date": "宋代帝王图像传承；乾隆十三年（1748）重装",
+      "collection": "国立故宫博物院，台北",
+      "description": "南薰殿旧藏《宋代帝半身像》册中的一开，馆方以题签与旧藏著录确认人物。册页在清乾隆十三年重装；历史画像可反映宫廷御容传统，但仍不能等同现代摄影意义上的容貌记录。",
+      "sourceIds": [
+        "v45_npm_s_guangzong",
+        "v45_dpm_imperial_portrait_study"
+      ],
+      "sourceURL": "https://digitalarchive.npm.gov.tw/Collection/Detail/14770?dep=P",
+      "imageURL": "https://iiifod.npm.gov.tw/iiif/2/C2A%2FC2A000322N000000013PAB/full/900,/0/default.jpg",
+      "status": "历史画像",
+      "searchNote": "",
+      "displayLabel": "南薰殿旧藏"
+    },
+    {
+      "person": "s_ningzong",
+      "image": "portrait_s_ningzong_npm",
+      "title": "宋代帝半身像册·宋宁宗",
+      "attribution": "作者未载",
+      "date": "宋代帝王图像传承；乾隆十三年（1748）重装",
+      "collection": "国立故宫博物院，台北",
+      "description": "南薰殿旧藏《宋代帝半身像》册中的一开，馆方以题签与旧藏著录确认人物。册页在清乾隆十三年重装；历史画像可反映宫廷御容传统，但仍不能等同现代摄影意义上的容貌记录。",
+      "sourceIds": [
+        "v45_npm_s_ningzong",
+        "v45_dpm_imperial_portrait_study"
+      ],
+      "sourceURL": "https://digitalarchive.npm.gov.tw/Collection/Detail/14777?dep=P",
+      "imageURL": "https://iiifod.npm.gov.tw/iiif/2/C2A%2FC2A000322N000000014PAB/full/900,/0/default.jpg",
+      "status": "历史画像",
+      "searchNote": "",
+      "displayLabel": "南薰殿旧藏"
+    },
+    {
+      "person": "s_lizong",
+      "image": "portrait_s_lizong_npm",
+      "title": "宋代帝半身像册·宋理宗",
+      "attribution": "作者未载",
+      "date": "宋代帝王图像传承；乾隆十三年（1748）重装",
+      "collection": "国立故宫博物院，台北",
+      "description": "南薰殿旧藏《宋代帝半身像》册中的一开，馆方以题签与旧藏著录确认人物。册页在清乾隆十三年重装；历史画像可反映宫廷御容传统，但仍不能等同现代摄影意义上的容貌记录。",
+      "sourceIds": [
+        "v45_npm_s_lizong",
+        "v45_dpm_imperial_portrait_study"
+      ],
+      "sourceURL": "https://digitalarchive.npm.gov.tw/Collection/Detail/14782?dep=P",
+      "imageURL": "https://iiifod.npm.gov.tw/iiif/2/C2A%2FC2A000322N000000015PAB/full/900,/0/default.jpg",
+      "status": "历史画像",
+      "searchNote": "",
+      "displayLabel": "南薰殿旧藏"
+    },
+    {
+      "person": "s_duzong",
+      "image": "portrait_s_duzong_npm",
+      "title": "宋代帝半身像册·宋度宗",
+      "attribution": "作者未载",
+      "date": "宋代帝王图像传承；乾隆十三年（1748）重装",
+      "collection": "国立故宫博物院，台北",
+      "description": "南薰殿旧藏《宋代帝半身像》册中的一开，馆方以题签与旧藏著录确认人物。册页在清乾隆十三年重装；历史画像可反映宫廷御容传统，但仍不能等同现代摄影意义上的容貌记录。",
+      "sourceIds": [
+        "v45_npm_s_duzong",
+        "v45_dpm_imperial_portrait_study"
+      ],
+      "sourceURL": "https://digitalarchive.npm.gov.tw/Collection/Detail/14783?dep=P",
+      "imageURL": "https://iiifod.npm.gov.tw/iiif/2/C2A%2FC2A000322N000000016PAB/full/900,/0/default.jpg",
+      "status": "历史画像",
+      "searchNote": "",
+      "displayLabel": "南薰殿旧藏"
     }
   ],
   "associations": [

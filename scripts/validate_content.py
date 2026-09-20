@@ -534,3 +534,20 @@ if d['version'] >= 26:
    if century:
     n = int(century[1]); assert (n-1)*100 < placement <= n*100, (event['id'], 'placement outside century')
  print('V26 PASS: every event has a usable chronology key; period labels retain their display precision')
+
+if d['version'] >= 27:
+ tang_portraits={'t_gaozu','t_taizong','t_xuanzong'}
+ song_portraits={
+  's_taizu','s_taizong','s_zhenzong','s_renzong','s_yingzong',
+  's_shenzong','s_zhezong','s_huizong','s_qinzong','s_gaozong',
+  's_xiaozong','s_guangzong','s_ningzong','s_lizong','s_duzong'
+ }
+ for pid in tang_portraits:
+  assert portraits[pid]['image'] and portraits[pid]['displayLabel']=='后世宫廷像'
+  assert '真容原迹' in portraits[pid]['description']
+ for pid in song_portraits:
+  assert portraits[pid]['image'] and portraits[pid]['displayLabel']=='南薰殿旧藏'
+  assert '乾隆十三年' in portraits[pid]['description']
+ assert not ({'s_gongdi','s_duanzong','s_zhaobing'} & portraits.keys())
+ assert all(people[pid].get('image')==portraits[pid]['image'] for pid in tang_portraits|song_portraits)
+ print('V27 PASS: three qualified later Tang portraits and fifteen NPM Song imperial portraits are mapped; unsupported late-Song child-emperor images stay absent')
