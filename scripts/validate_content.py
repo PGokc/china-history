@@ -20,7 +20,7 @@ qing_emperors={pid for pid in emperors if pid.startswith('q_')}
 assert len(ming_emperors)==16
 assert len(qing_emperors)==(12 if d['version']>=5 else 0)
 legacy_emperors=ming_emperors|qing_emperors
-expected_sequence_count = 111 if d['version']>=31 else 85 if d['version']>=30 else 83 if d['version']>=25 else 29 if d['version']>=5 else 17
+expected_sequence_count = 116 if d['version']>=32 else 111 if d['version']>=31 else 85 if d['version']>=30 else 83 if d['version']>=25 else 29 if d['version']>=5 else 17
 assert len(d['sequence'])==expected_sequence_count and {s['person'] for s in d['sequence']}==emperors
 counts=Counter(s['person'] for s in d['sequence'])
 repeated={'qizhen','t_zhongzong','t_ruizong','y_tugh_temur'} if d['version']>=25 else {'qizhen'}
@@ -116,7 +116,7 @@ if d['version'] >= 4:
  print('V4 PASS: five selected princes have sourced father/order, full biographies and linked events; later portraits have visible qualification labels')
 
 if d['version'] >= 5:
- expected_selectable = ['qin','han','tang','song_liao_xia_jin','yuan','ming','qing'] if d['version']>=31 else ['qin','tang','song_liao_xia_jin','yuan','ming','qing'] if d['version']>=30 else ['tang','song_liao_xia_jin','yuan','ming','qing'] if d['version']>=25 else ['ming','qing']
+ expected_selectable = ['qin','han','sui','tang','song_liao_xia_jin','yuan','ming','qing'] if d['version']>=32 else ['qin','han','tang','song_liao_xia_jin','yuan','ming','qing'] if d['version']>=31 else ['qin','tang','song_liao_xia_jin','yuan','ming','qing'] if d['version']>=30 else ['tang','song_liao_xia_jin','yuan','ming','qing'] if d['version']>=25 else ['ming','qing']
  assert [x['id'] for x in d['dynasties'] if x['selectable']]==expected_selectable
  assert len(d['dynasties'])>=15 and all(x['sources'] and set(x['sources'])<=sources.keys() for x in d['dynasties'])
  assert [s['person'] for s in d['sequence'] if s['person'].startswith('q_')]==[
@@ -648,3 +648,26 @@ if d['version'] >= 31:
  assert {c['person'] for c in d['reignContexts'] if c['person'] in han_people}==han_emperors
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成',json.dumps([people[p] for p in han_people]+han_events+han_objects+[articles[p] for p in han_people],ensure_ascii=False))
  print('V31 PASS: Han has twenty-six bounded reigns, sixty people, five event lenses, twelve heritage entries, six tombs and full linked readings')
+
+if d['version'] >= 32:
+ sui_people={p['id'] for p in d['people'] if p.get('dynasty')=='sui'}
+ sui_emperors={p['id'] for p in d['people'] if p.get('dynasty')=='sui' and p['kind']=='皇帝'}
+ assert len(sui_people)>=25 and sui_emperors=={'sui_wendi','sui_yangdi','sui_gongdi_you','sui_yanghao','sui_gongdi_tong'}
+ sui_sequence=[x for x in d['sequence'] if x['person'] in sui_people]
+ assert [x['person'] for x in sui_sequence]==['sui_wendi','sui_yangdi','sui_gongdi_you','sui_yanghao','sui_gongdi_tong']
+ assert any('争议' in people[p]['note'] for p in {'sui_yangdi','sui_yanghao','sui_gongdi_tong'})
+ sui_events=[e for e in d['events'] if e['id'].startswith('v50s_')]
+ counts=Counter(e['category'] for e in sui_events)
+ assert len(sui_events)>=40 and all(counts[c]>=8 for c in {'政治','军事','文化','经济','社会'}),counts
+ assert all(e['sources'] and e.get('peopleRoles') and e.get('sortYear') is not None for e in sui_events)
+ sui_objects=[o for o in d['objects'] if 'sui' in o.get('dynasties',[])]
+ assert len(sui_objects)>=12 and all(o['sources'] and o['people'] for o in sui_objects)
+ assert len([t for t in d['tombs'] if t['person'] in sui_people])>=2
+ for pid in sui_people:
+  assert pid in articles,(pid,'missing Sui reading')
+  chars=sum(len(re.findall(r'[\u4e00-\u9fff]',s['text'])) for s in articles[pid]['sections'])
+  assert chars>=(700 if pid in sui_emperors else 520),(pid,'Sui reading depth',chars)
+  assert all(s['sources'] and s.get('events') and s.get('people') for s in articles[pid]['sections']),(pid,'Sui chapter lacks evidence or navigation')
+ assert {c['person'] for c in d['reignContexts'] if c['person'] in sui_people}==sui_emperors
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成',json.dumps([people[p] for p in sui_people]+sui_events+sui_objects+[articles[p] for p in sui_people],ensure_ascii=False))
+ print('V32 PASS: Sui includes five explicitly bounded claimants, twenty-five people, five event lenses, twelve heritage entries, two securely identified imperial tombs and full linked readings')

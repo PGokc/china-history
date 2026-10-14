@@ -1565,4 +1565,47 @@ final class MingJiUITests: XCTestCase {
         shot("v49-han-baling-source", tomb)
     }
 
+    @MainActor func testV50SuiCompleteHistoryPaths() throws {
+        let sequence = XCUIApplication()
+        sequence.launchArguments = ["--uitesting", "--ui-dynasty", "sui"]
+        sequence.launch()
+        XCTAssertTrue(sequence.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        XCTAssertEqual(sequence.tabBars.buttons.allElementsBoundByIndex.map(\.label), ["朝代", "帝序", "家族", "遗珍"])
+        sequence.tabBars.buttons["帝序"].tap()
+        XCTAssertTrue(sequence.descendants(matching: .any)["successionPage_sui"].waitForExistence(timeout: 5))
+        XCTAssertTrue(sequence.buttons["succession_v50s_01"].exists)
+        let yangTong = sequence.buttons["succession_v50s_05"]
+        reachReadingLink(yangTong, in: sequence)
+        XCTAssertTrue(yangTong.exists)
+        shot("v50-sui-parallel-sequence", sequence)
+        sequence.terminate()
+
+        let person = XCUIApplication()
+        person.launchArguments = ["--uitesting", "--ui-dynasty", "sui"]
+        person.launch()
+        XCTAssertTrue(person.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        person.tabBars.buttons["帝序"].tap()
+        person.buttons["succession_v50s_01"].tap()
+        person.buttons["personHero"].tap()
+        for category in ["政治", "军事", "文化", "经济", "社会"] {
+            XCTAssertTrue(person.buttons["eventCategory_" + category].exists, category)
+        }
+        openArticle(in: person)
+        XCTAssertTrue(person.buttons["articleContents"].waitForExistence(timeout: 5))
+        shot("v50-sui-wendi-reader", person)
+        person.terminate()
+
+        let heritage = XCUIApplication()
+        heritage.launchArguments = ["--uitesting", "--ui-dynasty", "sui"]
+        heritage.launch()
+        XCTAssertTrue(heritage.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        heritage.tabBars.buttons["遗珍"].tap()
+        heritage.buttons["collectionCategory_objects"].tap()
+        let bottle = heritage.buttons["artifact_v50s_obj_flat"]
+        reachReadingLink(bottle, in: heritage); bottle.tap()
+        XCTAssertTrue(heritage.staticTexts["观看提示"].waitForExistence(timeout: 5))
+        XCTAssertTrue(heritage.buttons["explore_sui_lijingxun"].exists)
+        shot("v50-sui-lijingxun-object", heritage)
+    }
+
 }

@@ -1,5 +1,5 @@
 {
-  "version": 31,
+  "version": 32,
   "reviewed": "2026-10-14",
   "people": [
     {
@@ -7021,6 +7021,436 @@
         "v49h_houhanshu"
       ],
       "dynasty": "han"
+    },
+    {
+      "id": "sui_wendi",
+      "name": "杨坚",
+      "call": "隋文帝",
+      "temple": "高祖",
+      "era": "开皇",
+      "reign": "581—604",
+      "summary": "建立隋朝、灭陈统一南北，并重整律令、户籍与中央制度。",
+      "kind": "皇帝",
+      "note": "开皇政治并非一人独成，高颎、苏威等官员与北周以来的制度积累同样重要。",
+      "parent": null,
+      "sources": [
+        "v50s_suishu1",
+        "v50s_suishu2"
+      ],
+      "dynasty": "sui"
+    },
+    {
+      "id": "sui_yangdi",
+      "name": "杨广",
+      "call": "隋炀帝",
+      "temple": "世祖",
+      "era": "大业",
+      "reign": "604—618",
+      "summary": "营建东都、贯通运河并经营边疆，也因战争与高强度动员使统治迅速崩解。",
+      "kind": "皇帝",
+      "note": "关于文帝死前宫廷经过，正史叙述带有强烈道德评判；可确认的是杨广随后即位，不能把具体谋害细节写成无争议事实。",
+      "parent": "sui_wendi",
+      "sources": [
+        "v50s_suishu3",
+        "v50s_suishu4"
+      ],
+      "dynasty": "sui",
+      "birthOrder": 2
+    },
+    {
+      "id": "sui_gongdi_you",
+      "name": "杨侑",
+      "call": "隋恭帝",
+      "temple": "",
+      "era": "义宁",
+      "reign": "617—618",
+      "summary": "李渊控制长安后拥立的少年皇帝，次年禅位于唐。",
+      "kind": "皇帝",
+      "note": "其统治仅覆盖关中政权；同一时期江都、洛阳与各地势力并立。",
+      "parent": "sui_yangzhao",
+      "sources": [
+        "v50s_suishu5",
+        "v50s_zz185",
+        "v50s_zz186"
+      ],
+      "dynasty": "sui",
+      "birthOrder": 3
+    },
+    {
+      "id": "sui_yanghao",
+      "name": "杨浩",
+      "call": "秦王后被拥立",
+      "temple": "",
+      "era": "沿用大业",
+      "reign": "618",
+      "summary": "江都兵变后被宇文化及拥立，旋即遭废杀。",
+      "kind": "皇帝",
+      "note": "杨浩缺乏独立权力，且未建立稳定年号与行政中心；列入帝序是为呈现隋末并立，而非主张单线正统。",
+      "parent": null,
+      "sources": [
+        "v50s_suishu4",
+        "v50s_zz186"
+      ],
+      "dynasty": "sui"
+    },
+    {
+      "id": "sui_gongdi_tong",
+      "name": "杨侗",
+      "call": "皇泰主",
+      "temple": "",
+      "era": "皇泰",
+      "reign": "618—619",
+      "summary": "洛阳留守集团拥立的隋室成员，王世充掌权后被迫禅位并遇害。",
+      "kind": "皇帝",
+      "note": "唐代正史多称越王侗或皇泰主；其政权延续到619年，超出通常以618年为终点的隋朝断代。",
+      "parent": "sui_yangzhao",
+      "sources": [
+        "v50s_suishu5",
+        "v50s_zz186"
+      ],
+      "dynasty": "sui",
+      "birthOrder": 2
+    },
+    {
+      "id": "sui_dugu",
+      "name": "独孤伽罗",
+      "call": "文献皇后",
+      "temple": "",
+      "era": "",
+      "reign": "557—602",
+      "summary": "与杨坚共同经历北周至隋的权力转折，深度参与宫廷决策与继承安排。",
+      "kind": "皇后",
+      "note": "史书既记录其政治影响，也以传统后妃规范评价她；“惧内”等后世标签不足以概括其作用。",
+      "parent": null,
+      "sources": [
+        "v50s_suishu36",
+        "v50s_suishu1"
+      ],
+      "dynasty": "sui"
+    },
+    {
+      "id": "sui_yangyong",
+      "name": "杨勇",
+      "call": "废太子",
+      "temple": "",
+      "era": "",
+      "reign": "约568—604",
+      "summary": "杨坚长子，曾为皇太子，开皇二十年被废。",
+      "kind": "皇太子",
+      "note": "废立牵涉家庭关系、政治集团和行为评价，不能仅归因于个人奢侈。",
+      "parent": "sui_wendi",
+      "sources": [
+        "v50s_suishu2",
+        "v50s_suishu59"
+      ],
+      "dynasty": "sui",
+      "birthOrder": 1
+    },
+    {
+      "id": "sui_yangzhao",
+      "name": "杨昭",
+      "call": "元德太子",
+      "temple": "",
+      "era": "",
+      "reign": "584—606",
+      "summary": "杨广长子，短暂担任皇太子，其早逝改变了隋末继承结构。",
+      "kind": "皇太子",
+      "note": "杨侑与杨侗均为其子，隋末两地拥立由此具有相同家系来源。",
+      "parent": "sui_yangdi",
+      "sources": [
+        "v50s_suishu59"
+      ],
+      "dynasty": "sui",
+      "birthOrder": 1
+    },
+    {
+      "id": "sui_xiaohou",
+      "name": "萧氏",
+      "call": "萧皇后",
+      "temple": "",
+      "era": "",
+      "reign": "约567—647",
+      "summary": "出自西梁宗室，随杨广经历统一、江都兵变和隋末流离。",
+      "kind": "皇后",
+      "note": "其晚年辗转于宇文化及、窦建德与突厥势力之间，归唐时间及细节应以正史互证。",
+      "parent": null,
+      "sources": [
+        "v50s_suishu36",
+        "v50s_suishu4"
+      ],
+      "dynasty": "sui"
+    },
+    {
+      "id": "sui_gaojiong",
+      "name": "高颎",
+      "call": "开皇名相",
+      "temple": "",
+      "era": "",
+      "reign": "约541—607",
+      "summary": "参与隋朝建国、制度整合和灭陈谋划，后在大业朝被杀。",
+      "kind": "宰辅",
+      "note": "传统叙事常把开皇治理归功于高颎，但政策形成仍是皇帝、官僚和既有制度共同作用。",
+      "parent": null,
+      "sources": [
+        "v50s_suishu41",
+        "v50s_suishu2"
+      ],
+      "dynasty": "sui"
+    },
+    {
+      "id": "sui_suwei",
+      "name": "苏威",
+      "call": "纳言、尚书右仆射",
+      "temple": "",
+      "era": "",
+      "reign": "542—623",
+      "summary": "以减轻赋役和制度建设著称，也在政权更替中多次任职。",
+      "kind": "宰辅",
+      "note": "其反复出仕常受道德批评，理解时还需看到隋末政权快速更替与官僚生存处境。",
+      "parent": null,
+      "sources": [
+        "v50s_suishu41",
+        "v50s_suishu24"
+      ],
+      "dynasty": "sui"
+    },
+    {
+      "id": "sui_yangsu",
+      "name": "杨素",
+      "call": "越国公",
+      "temple": "",
+      "era": "",
+      "reign": "544—606",
+      "summary": "北周旧将，参与灭陈、平定江南反抗和隋初权力斗争。",
+      "kind": "将领与权臣",
+      "note": "杨素兼具军事统帅和政治权臣身份；其与杨广即位的关系在史书中夹有推测和道德叙事。",
+      "parent": null,
+      "sources": [
+        "v50s_suishu48",
+        "v50s_suishu2"
+      ],
+      "dynasty": "sui"
+    },
+    {
+      "id": "sui_yuwenkai",
+      "name": "宇文恺",
+      "call": "营建大兴与东都的规划者",
+      "temple": "",
+      "era": "",
+      "reign": "555—612",
+      "summary": "主持或参与大兴城、东都洛阳等大型营建，把礼制、交通与城市空间结合。",
+      "kind": "建筑与规划",
+      "note": "古代大型工程由大量无名工匠与役夫完成，不能把都城完全归为单一设计者的个人作品。",
+      "parent": null,
+      "sources": [
+        "v50s_suishu50",
+        "v50s_dpm_tomb"
+      ],
+      "dynasty": "sui"
+    },
+    {
+      "id": "sui_hanqinhu",
+      "name": "韩擒虎",
+      "call": "灭陈将领",
+      "temple": "",
+      "era": "",
+      "reign": "538—592",
+      "summary": "率军渡江进入建康，是隋灭陈战争的重要统帅之一。",
+      "kind": "将领",
+      "note": "灭陈是多路军队协同结果，韩擒虎入城不等于一人完成统一。",
+      "parent": null,
+      "sources": [
+        "v50s_suishu52",
+        "v50s_suishu2"
+      ],
+      "dynasty": "sui"
+    },
+    {
+      "id": "sui_heruobi",
+      "name": "贺若弼",
+      "call": "灭陈将领",
+      "temple": "",
+      "era": "",
+      "reign": "544—607",
+      "summary": "率军自广陵渡江，与韩擒虎等共同推进灭陈战争。",
+      "kind": "将领",
+      "note": "其战后争功和大业朝遇害，显示军功集团与皇权之间的紧张。",
+      "parent": null,
+      "sources": [
+        "v50s_suishu52",
+        "v50s_suishu3"
+      ],
+      "dynasty": "sui"
+    },
+    {
+      "id": "sui_changsunsheng",
+      "name": "长孙晟",
+      "call": "外交与边防将领",
+      "temple": "",
+      "era": "",
+      "reign": "552—609",
+      "summary": "长期处理突厥事务，以离间、结盟和军事威慑配合北方边防。",
+      "kind": "外交与将领",
+      "note": "“一箭双雕”等故事强化了传奇色彩，更重要的是其对突厥内部关系与草原政治的长期观察。",
+      "parent": null,
+      "sources": [
+        "v50s_suishu64",
+        "v50s_suishu2"
+      ],
+      "dynasty": "sui"
+    },
+    {
+      "id": "sui_peiju",
+      "name": "裴矩",
+      "call": "西域经营者",
+      "temple": "",
+      "era": "",
+      "reign": "547—627",
+      "summary": "在河西与西域调查交通、贸易和政权关系，编成《西域图记》。",
+      "kind": "官员与地理知识",
+      "note": "裴矩既推动交流，也以情报与朝贡知识服务大业朝扩张；不能只写成丝路赞歌。",
+      "parent": null,
+      "sources": [
+        "v50s_suishu67",
+        "v50s_suishu3"
+      ],
+      "dynasty": "sui"
+    },
+    {
+      "id": "sui_niuhong",
+      "name": "牛弘",
+      "call": "经籍整理主持者",
+      "temple": "",
+      "era": "",
+      "reign": "545—610",
+      "summary": "主持搜求、整理图书并参与礼制与法律工作。",
+      "kind": "学者与官员",
+      "note": "经籍整理依赖抄写、征集和官府藏书体系，是战乱后知识重建的一部分。",
+      "parent": null,
+      "sources": [
+        "v50s_suishu32",
+        "v50s_suishu25"
+      ],
+      "dynasty": "sui"
+    },
+    {
+      "id": "sui_lichun",
+      "name": "李春",
+      "call": "赵州桥匠师",
+      "temple": "",
+      "era": "",
+      "reign": "生卒年不详",
+      "summary": "传统文献记载的赵州桥营造者，代表隋代桥梁工程经验。",
+      "kind": "工匠",
+      "note": "关于李春个人生平的可靠材料极少；应把重点放在桥体、工程技术与后世维修记录。",
+      "parent": null,
+      "sources": [
+        "v50s_zhaozhou"
+      ],
+      "dynasty": "sui"
+    },
+    {
+      "id": "sui_lijingxun",
+      "name": "李静训",
+      "call": "宫廷贵族少女",
+      "temple": "",
+      "era": "",
+      "reign": "600—608",
+      "summary": "九岁去世，其未被盗墓葬保存了隋代宫廷生活、工艺和跨区域交流的重要实物。",
+      "kind": "历史人物",
+      "note": "她并非政治决策者；入选源于墓葬材料能让儿童、服饰、器用和家族网络进入历史叙述。",
+      "parent": null,
+      "sources": [
+        "v50s_nmc_jade",
+        "v50s_nmc_necklace",
+        "v50s_nmc_glass"
+      ],
+      "dynasty": "sui"
+    },
+    {
+      "id": "sui_zhangxutuo",
+      "name": "张须陀",
+      "call": "隋末将领",
+      "temple": "",
+      "era": "",
+      "reign": "565—616",
+      "summary": "在河南、山东镇压起事并组织赈济，后与瓦岗军作战阵亡。",
+      "kind": "将领",
+      "note": "正史的忠臣框架需与地方饥荒、征役和反抗背景一并阅读。",
+      "parent": null,
+      "sources": [
+        "v50s_suishu71",
+        "v50s_zz185"
+      ],
+      "dynasty": "sui"
+    },
+    {
+      "id": "sui_yangxuangan",
+      "name": "杨玄感",
+      "call": "黎阳起兵者",
+      "temple": "",
+      "era": "",
+      "reign": "？—613",
+      "summary": "杨素之子，利用高句丽战争后方压力起兵，迅速失败。",
+      "kind": "反叛者",
+      "note": "其行动主要依靠贵族与官僚网络，并未稳定整合广泛反隋力量。",
+      "parent": null,
+      "sources": [
+        "v50s_suishu70",
+        "v50s_suishu4"
+      ],
+      "dynasty": "sui"
+    },
+    {
+      "id": "sui_limi",
+      "name": "李密",
+      "call": "瓦岗军领袖",
+      "temple": "",
+      "era": "",
+      "reign": "582—619",
+      "summary": "参与杨玄感起兵，后成为瓦岗军核心领袖并建立魏政权。",
+      "kind": "群雄",
+      "note": "瓦岗并非单一农民起义组织，地方武装、士人和流民在其中并存。",
+      "parent": null,
+      "sources": [
+        "v50s_suishu70",
+        "v50s_zz185"
+      ],
+      "dynasty": "sui"
+    },
+    {
+      "id": "sui_yuwenhuaji",
+      "name": "宇文化及",
+      "call": "江都兵变首领",
+      "temple": "",
+      "era": "",
+      "reign": "？—619",
+      "summary": "发动江都兵变杀杨广，拥立杨浩后又废杀之。",
+      "kind": "权臣与群雄",
+      "note": "其政权缺乏稳固基础，北返途中不断失去军心和控制区。",
+      "parent": null,
+      "sources": [
+        "v50s_suishu4",
+        "v50s_zz186"
+      ],
+      "dynasty": "sui"
+    },
+    {
+      "id": "sui_liyuan",
+      "name": "李渊",
+      "call": "唐国公、唐高祖",
+      "temple": "",
+      "era": "",
+      "reign": "566—635",
+      "summary": "隋末自太原起兵，控制长安后拥立杨侑，618年建立唐朝。",
+      "kind": "隋臣与唐开国皇帝",
+      "note": "在隋代页面中聚焦其作为隋臣和易代参与者；唐朝统治另见唐代帝序。",
+      "parent": null,
+      "sources": [
+        "v50s_zz185",
+        "v50s_zz186"
+      ],
+      "dynasty": "sui"
     }
   ],
   "sources": [
@@ -10515,6 +10945,204 @@
       "title": "The Cambridge History of China, Vol. 1: The Ch’in and Han Empires",
       "url": "https://www.cambridge.org/core/books/cambridge-history-of-china/7758F515C697F736EE15E04F377FE23C",
       "note": "秦汉政治制度、边疆、财政和社会史研究综述，作为传世文献之外的现代研究参照。"
+    },
+    {
+      "id": "v50s_suishu1",
+      "title": "《隋书》卷一·高祖上",
+      "url": "https://zh.wikisource.org/zh-hans/隋書/卷01",
+      "note": "杨坚建国、开皇前期纪事。"
+    },
+    {
+      "id": "v50s_suishu2",
+      "title": "《隋书》卷二·高祖下",
+      "url": "https://zh.wikisource.org/zh-hans/隋書/卷02",
+      "note": "灭陈、制度建设与开皇后期纪事。"
+    },
+    {
+      "id": "v50s_suishu3",
+      "title": "《隋书》卷三·炀帝上",
+      "url": "https://zh.wikisource.org/zh-hans/隋書/卷03",
+      "note": "杨广早年、即位与大业前期纪事。"
+    },
+    {
+      "id": "v50s_suishu4",
+      "title": "《隋书》卷四·炀帝下",
+      "url": "https://zh.wikisource.org/zh-hans/隋書/卷04",
+      "note": "高句丽战争、各地反抗与江都结局。"
+    },
+    {
+      "id": "v50s_suishu5",
+      "title": "《隋书》卷五·恭帝",
+      "url": "https://zh.wikisource.org/zh-hans/隋書/卷05",
+      "note": "杨侑、杨侗及隋末并立政权纪事。"
+    },
+    {
+      "id": "v50s_suishu24",
+      "title": "《隋书》卷二十四·食货志",
+      "url": "https://zh.wikisource.org/zh-hans/隋書/卷24",
+      "note": "均田、户籍、赋役、仓储与财政。"
+    },
+    {
+      "id": "v50s_suishu25",
+      "title": "《隋书》卷二十五·刑法志",
+      "url": "https://zh.wikisource.org/zh-hans/隋書/卷25",
+      "note": "开皇律及隋代刑法变化。"
+    },
+    {
+      "id": "v50s_suishu27",
+      "title": "《隋书》卷二十七·百官志中",
+      "url": "https://zh.wikisource.org/zh-hans/隋書/卷27",
+      "note": "中央官制及制度沿革。"
+    },
+    {
+      "id": "v50s_suishu32",
+      "title": "《隋书》卷三十二·经籍志一",
+      "url": "https://zh.wikisource.org/zh-hans/隋書/卷32",
+      "note": "书籍整理、分类与典藏。"
+    },
+    {
+      "id": "v50s_suishu36",
+      "title": "《隋书》卷三十六·后妃传",
+      "url": "https://zh.wikisource.org/zh-hans/隋書/卷36",
+      "note": "独孤皇后、萧皇后生平。"
+    },
+    {
+      "id": "v50s_suishu41",
+      "title": "《隋书》卷四十一·高颎等传",
+      "url": "https://zh.wikisource.org/zh-hans/隋書/卷41",
+      "note": "高颎、苏威等重臣事迹。"
+    },
+    {
+      "id": "v50s_suishu48",
+      "title": "《隋书》卷四十八·杨素等传",
+      "url": "https://zh.wikisource.org/zh-hans/隋書/卷48",
+      "note": "杨素、宇文庆等传记。"
+    },
+    {
+      "id": "v50s_suishu50",
+      "title": "《隋书》卷五十·宇文恺等传",
+      "url": "https://zh.wikisource.org/zh-hans/隋書/卷50",
+      "note": "宇文恺及都城营建。"
+    },
+    {
+      "id": "v50s_suishu52",
+      "title": "《隋书》卷五十二·韩擒虎等传",
+      "url": "https://zh.wikisource.org/zh-hans/隋書/卷52",
+      "note": "韩擒虎、贺若弼等灭陈将领。"
+    },
+    {
+      "id": "v50s_suishu59",
+      "title": "《隋书》卷五十九·炀帝三子",
+      "url": "https://zh.wikisource.org/zh-hans/隋書/卷59",
+      "note": "杨昭、杨侑、杨侗的家族与继承关系。"
+    },
+    {
+      "id": "v50s_suishu63",
+      "title": "《隋书》卷六十三·史祥等传",
+      "url": "https://zh.wikisource.org/zh-hans/隋書/卷63",
+      "note": "隋代军事人物与地方治理。"
+    },
+    {
+      "id": "v50s_suishu64",
+      "title": "《隋书》卷六十四·李圆通等传",
+      "url": "https://zh.wikisource.org/zh-hans/隋書/卷64",
+      "note": "长孙晟等人的边疆活动。"
+    },
+    {
+      "id": "v50s_suishu67",
+      "title": "《隋书》卷六十七·裴矩等传",
+      "url": "https://zh.wikisource.org/zh-hans/隋書/卷67",
+      "note": "裴矩经营西域与大业政治。"
+    },
+    {
+      "id": "v50s_suishu70",
+      "title": "《隋书》卷七十·杨玄感等传",
+      "url": "https://zh.wikisource.org/zh-hans/隋書/卷70",
+      "note": "杨玄感起兵及隋末政治。"
+    },
+    {
+      "id": "v50s_suishu71",
+      "title": "《隋书》卷七十一·诚节传",
+      "url": "https://zh.wikisource.org/zh-hans/隋書/卷71",
+      "note": "张须陀等隋末军事人物。"
+    },
+    {
+      "id": "v50s_zz185",
+      "title": "《资治通鉴》卷一百八十五",
+      "url": "https://zh.wikisource.org/zh-hans/資治通鑑/卷185",
+      "note": "大业十三年至义宁元年的政局。"
+    },
+    {
+      "id": "v50s_zz186",
+      "title": "《资治通鉴》卷一百八十六",
+      "url": "https://zh.wikisource.org/zh-hans/資治通鑑/卷186",
+      "note": "义宁二年及隋唐易代。"
+    },
+    {
+      "id": "v50s_nmc_flat",
+      "title": "中国国家博物馆·白瓷双耳扁瓶",
+      "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202111/t20211116_252159.shtml",
+      "note": "李静训墓出土隋代白瓷。"
+    },
+    {
+      "id": "v50s_nmc_glass",
+      "title": "中国国家博物馆·椭圆形绿玻璃瓶",
+      "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202111/t20211116_252162.shtml",
+      "note": "李静训墓玻璃器及工艺分析。"
+    },
+    {
+      "id": "v50s_nmc_jade",
+      "title": "中国国家博物馆·金玉满堂",
+      "url": "https://www.chnmuseum.cn/yj/xscg/xslw/201812/t20181224_33153.shtml",
+      "note": "李静训墓镶金口白玉杯与家世。"
+    },
+    {
+      "id": "v50s_nmc_necklace",
+      "title": "中国国家博物馆·域外奇珍传中土",
+      "url": "https://www.chnmuseum.cn/yj/xscg/xslw/201812/t20181224_33157.shtml",
+      "note": "李静训墓金项链与跨区域交流。"
+    },
+    {
+      "id": "v50s_nmc_bottle",
+      "title": "中国国家博物馆·瓶美酒香",
+      "url": "https://www.chnmuseum.cn/yj/xscg/xslw/201812/t20181224_33156.shtml",
+      "note": "白瓷龙柄传瓶及白瓷发展。"
+    },
+    {
+      "id": "v50s_dpm_tomb",
+      "title": "故宫博物院·隋墓画像石棺研究",
+      "url": "https://www.dpm.org.cn/journal/257040.html",
+      "note": "隋代墓葬、都城、礼制与视觉文化研究。"
+    },
+    {
+      "id": "v50s_canal",
+      "title": "北京市文物局·大运河",
+      "url": "https://wwj.beijing.gov.cn/bjww/362771/362778/364359/",
+      "note": "大运河构成、遗产段落与历史价值。"
+    },
+    {
+      "id": "v50s_tailing",
+      "title": "杨凌示范区·隋泰陵",
+      "url": "https://yangling.gov.cn/zgyl/lyzy/1.html",
+      "note": "隋文帝与独孤皇后合葬泰陵的位置和保护级别。"
+    },
+    {
+      "id": "v50s_yangdi_tomb",
+      "title": "江苏省文化和旅游厅·隋炀帝陵遗址公园",
+      "url": "https://wlt.jiangsu.gov.cn/art/2024/2/22/art_695_11156089.html",
+      "note": "扬州曹庄隋炀帝墓保护展示。"
+    },
+    {
+      "id": "v50s_zhaozhou",
+      "title": "中国文化遗产研究院·赵州桥保护",
+      "url": "https://www.cach.org.cn/tabid/76/InfoID/238/frtid/76/Default.aspx",
+      "note": "赵州桥作为隋代大型石拱桥的保护与研究线索。"
+    },
+    {
+      "id": "v50s_chgis",
+      "title": "中国历史地理信息系统",
+      "url": "https://chgis.fas.harvard.edu/",
+      "note": "隋代疆域示意的历史地理参照。"
     }
   ],
   "relations": [
@@ -22002,6 +22630,957 @@
         "han_guangwu": "相关人物",
         "han_an": "相关人物"
       }
+    },
+    {
+      "id": "v50s_zhou_sui",
+      "year": "581",
+      "title": "杨坚代周建隋",
+      "body": "北周静帝禅位，杨坚即皇帝位，改国号隋。新王朝继承北周官僚、军队和关陇政治网络，并开始重组权力。",
+      "impact": "王朝更替不是凭空开端；北周制度、门阀与军事资源继续影响隋初。",
+      "people": [
+        "sui_wendi",
+        "sui_dugu",
+        "sui_gaojiong"
+      ],
+      "sources": [
+        "v50s_suishu1"
+      ],
+      "kind": "历史事件",
+      "category": "政治",
+      "sortYear": 581,
+      "peopleRoles": {
+        "sui_wendi": "主导者",
+        "sui_dugu": "参与者",
+        "sui_gaojiong": "参与者"
+      }
+    },
+    {
+      "id": "v50s_daxing",
+      "year": "582—583",
+      "title": "营建大兴城",
+      "body": "隋朝在汉长安故城东南营建新都大兴城，宇文恺参与规划，宫城、皇城与里坊形成清楚层次。",
+      "impact": "都城空间把礼制、行政和居民管理结合起来，唐长安继续沿用并扩展这一基础。",
+      "people": [
+        "sui_wendi",
+        "sui_yuwenkai"
+      ],
+      "sources": [
+        "v50s_suishu1",
+        "v50s_suishu50"
+      ],
+      "kind": "历史事件",
+      "category": "政治",
+      "sortYear": 582,
+      "peopleRoles": {
+        "sui_wendi": "主导者",
+        "sui_yuwenkai": "参与者"
+      }
+    },
+    {
+      "id": "v50s_kaihuang_law",
+      "year": "583",
+      "title": "开皇律定型",
+      "body": "隋初多次修订律令，开皇三年形成较稳定体系，删减部分北周苛重条文并调整刑名。",
+      "impact": "开皇律成为唐律的重要前提，但法律文本与实际司法仍需区分。",
+      "people": [
+        "sui_wendi",
+        "sui_gaojiong",
+        "sui_niuhong"
+      ],
+      "sources": [
+        "v50s_suishu25"
+      ],
+      "kind": "历史事件",
+      "category": "政治",
+      "sortYear": 583,
+      "peopleRoles": {
+        "sui_wendi": "主导者",
+        "sui_gaojiong": "参与者",
+        "sui_niuhong": "参与者"
+      }
+    },
+    {
+      "id": "v50s_central_system",
+      "year": "开皇年间",
+      "title": "重整中央官制",
+      "body": "隋在南北朝制度基础上调整尚书、门下、内史等机构及六部职掌，形成更清晰的中央行政分工。",
+      "impact": "后来常称“三省六部”，但制度是在长期演变中逐步成形，并非一次设计完成。",
+      "people": [
+        "sui_wendi",
+        "sui_gaojiong",
+        "sui_suwei"
+      ],
+      "sources": [
+        "v50s_suishu27"
+      ],
+      "kind": "历史事件",
+      "category": "政治",
+      "sortYear": 590,
+      "peopleRoles": {
+        "sui_wendi": "主导者",
+        "sui_gaojiong": "参与者",
+        "sui_suwei": "参与者"
+      }
+    },
+    {
+      "id": "v50s_depose_yong",
+      "year": "600",
+      "title": "废黜太子杨勇",
+      "body": "文帝与独孤皇后废杨勇，改立晋王杨广为太子。宫廷生活评价、夫妇政治与官僚集团竞争交织。",
+      "impact": "继承次序被改写，也加剧后世围绕杨广夺嫡手段的争议。",
+      "people": [
+        "sui_wendi",
+        "sui_dugu",
+        "sui_yangyong",
+        "sui_yangdi"
+      ],
+      "sources": [
+        "v50s_suishu2",
+        "v50s_suishu36"
+      ],
+      "kind": "历史事件",
+      "category": "政治",
+      "sortYear": 600,
+      "peopleRoles": {
+        "sui_wendi": "主导者",
+        "sui_dugu": "参与者",
+        "sui_yangyong": "参与者",
+        "sui_yangdi": "参与者"
+      }
+    },
+    {
+      "id": "v50s_accession_604",
+      "year": "604",
+      "title": "杨广即位",
+      "body": "文帝去世后杨广即位。正史记载宫廷疑案，但具体经过长期存在争议。",
+      "impact": "评价即位过程时应区分可确认的权力交接与带有道德目的的细节叙事。",
+      "people": [
+        "sui_yangdi",
+        "sui_yangyong",
+        "sui_yangsu"
+      ],
+      "sources": [
+        "v50s_suishu2",
+        "v50s_suishu3",
+        "v50s_suishu48"
+      ],
+      "kind": "历史事件",
+      "category": "政治",
+      "sortYear": 604,
+      "peopleRoles": {
+        "sui_yangdi": "主导者",
+        "sui_yangyong": "参与者",
+        "sui_yangsu": "参与者"
+      }
+    },
+    {
+      "id": "v50s_changan_court",
+      "year": "617",
+      "title": "长安拥立杨侑",
+      "body": "李渊军进入长安后拥立杨侑，遥尊杨广为太上皇，使用义宁年号。",
+      "impact": "隋末中央权力已经分裂，长安政权的实际军事和行政主导者是李渊集团。",
+      "people": [
+        "sui_gongdi_you",
+        "sui_liyuan"
+      ],
+      "sources": [
+        "v50s_suishu5",
+        "v50s_zz185"
+      ],
+      "kind": "历史事件",
+      "category": "政治",
+      "sortYear": 617,
+      "peopleRoles": {
+        "sui_gongdi_you": "主导者",
+        "sui_liyuan": "参与者"
+      }
+    },
+    {
+      "id": "v50s_jiangdu_coup",
+      "year": "618",
+      "title": "江都兵变",
+      "body": "江都军人集团发动兵变，宇文化及等杀死杨广与多名宗室、大臣。",
+      "impact": "隋朝最高权力中心崩解，江都、长安、洛阳出现不同的隋室名义与新政权。",
+      "people": [
+        "sui_yangdi",
+        "sui_xiaohou",
+        "sui_yuwenhuaji",
+        "sui_yanghao"
+      ],
+      "sources": [
+        "v50s_suishu4",
+        "v50s_zz186"
+      ],
+      "kind": "历史事件",
+      "category": "政治",
+      "sortYear": 618,
+      "peopleRoles": {
+        "sui_yangdi": "主导者",
+        "sui_xiaohou": "参与者",
+        "sui_yuwenhuaji": "参与者",
+        "sui_yanghao": "兵变后被拥立者"
+      }
+    },
+    {
+      "id": "v50s_parallel_courts",
+      "year": "618—619",
+      "title": "杨浩、杨侗与并立终局",
+      "body": "宇文化及拥立杨浩后废杀；洛阳方面拥立杨侗，至619年被王世充取代。",
+      "impact": "“隋亡于618”是方便的断代，实际政权崩解具有地域差异和重叠过程。",
+      "people": [
+        "sui_gongdi_you",
+        "sui_yanghao",
+        "sui_gongdi_tong",
+        "sui_yuwenhuaji"
+      ],
+      "sources": [
+        "v50s_suishu5",
+        "v50s_zz186"
+      ],
+      "kind": "历史事件",
+      "category": "政治",
+      "sortYear": 618,
+      "peopleRoles": {
+        "sui_yanghao": "主导者",
+        "sui_gongdi_tong": "参与者",
+        "sui_yuwenhuaji": "参与者",
+        "sui_gongdi_you": "长安退位者"
+      }
+    },
+    {
+      "id": "v50s_yuchi",
+      "year": "580",
+      "title": "平定尉迟迥",
+      "body": "杨坚掌握北周朝政后，尉迟迥等起兵反对，高颎等组织军队平定。",
+      "impact": "这场战争清除了建隋前最直接的军事障碍，也显示关东对权力转移的抵抗。",
+      "people": [
+        "sui_wendi",
+        "sui_gaojiong"
+      ],
+      "sources": [
+        "v50s_suishu1"
+      ],
+      "kind": "历史事件",
+      "category": "军事",
+      "sortYear": 580,
+      "peopleRoles": {
+        "sui_wendi": "主导者",
+        "sui_gaojiong": "参与者"
+      }
+    },
+    {
+      "id": "v50s_turk_split",
+      "year": "582—584",
+      "title": "应对突厥分裂",
+      "body": "隋朝以防御、军事行动、婚盟和离间等方式利用突厥内部矛盾，长孙晟长期参与谋划。",
+      "impact": "北方压力一度缓解，但草原政治并未因此被永久控制。",
+      "people": [
+        "sui_wendi",
+        "sui_changsunsheng",
+        "sui_gaojiong"
+      ],
+      "sources": [
+        "v50s_suishu2",
+        "v50s_suishu64"
+      ],
+      "kind": "历史事件",
+      "category": "军事",
+      "sortYear": 583,
+      "peopleRoles": {
+        "sui_wendi": "主导者",
+        "sui_changsunsheng": "参与者",
+        "sui_gaojiong": "参与者"
+      }
+    },
+    {
+      "id": "v50s_conquer_chen",
+      "year": "588—589",
+      "title": "灭陈与南北统一",
+      "body": "隋组织多路大军渡江攻陈，韩擒虎、贺若弼等进入建康，陈后主被俘。",
+      "impact": "长期南北分立结束，但行政、赋役与地方社会的整合仍需多年。",
+      "people": [
+        "sui_wendi",
+        "sui_yangdi",
+        "sui_gaojiong",
+        "sui_hanqinhu",
+        "sui_heruobi"
+      ],
+      "sources": [
+        "v50s_suishu2",
+        "v50s_suishu52"
+      ],
+      "kind": "历史事件",
+      "category": "军事",
+      "sortYear": 589,
+      "peopleRoles": {
+        "sui_wendi": "主导者",
+        "sui_yangdi": "参与者",
+        "sui_gaojiong": "参与者",
+        "sui_hanqinhu": "参与者",
+        "sui_heruobi": "参与者"
+      }
+    },
+    {
+      "id": "v50s_south_revolt",
+      "year": "590",
+      "title": "江南反抗与镇压",
+      "body": "统一后江南多地反抗隋的行政调整，杨素等率军镇压。",
+      "impact": "军事统一并不等于社会立即认同，新政权在江南的治理经历强烈摩擦。",
+      "people": [
+        "sui_wendi",
+        "sui_yangsu"
+      ],
+      "sources": [
+        "v50s_suishu2",
+        "v50s_suishu48"
+      ],
+      "kind": "历史事件",
+      "category": "军事",
+      "sortYear": 590,
+      "peopleRoles": {
+        "sui_wendi": "主导者",
+        "sui_yangsu": "参与者"
+      }
+    },
+    {
+      "id": "v50s_tuyuhun",
+      "year": "609",
+      "title": "西征吐谷浑",
+      "body": "隋炀帝亲自西行，隋军进击吐谷浑，并试图设置郡县、经营河西与青海通道。",
+      "impact": "扩张加强西域交通想象，也把军需和行政成本推向边疆。",
+      "people": [
+        "sui_yangdi",
+        "sui_peiju"
+      ],
+      "sources": [
+        "v50s_suishu3",
+        "v50s_suishu67"
+      ],
+      "kind": "历史事件",
+      "category": "军事",
+      "sortYear": 609,
+      "peopleRoles": {
+        "sui_yangdi": "主导者",
+        "sui_peiju": "参与者"
+      }
+    },
+    {
+      "id": "v50s_koguryo",
+      "year": "612—614",
+      "title": "三征高句丽",
+      "body": "隋炀帝连续发动大规模战争，首次远征尤其动员庞大军队和运输体系，却未达到预期目标。",
+      "impact": "伤亡、逃亡与后勤压力削弱国家控制，成为隋末危机的重要加速因素。",
+      "people": [
+        "sui_yangdi"
+      ],
+      "sources": [
+        "v50s_suishu4"
+      ],
+      "kind": "历史事件",
+      "category": "军事",
+      "sortYear": 612,
+      "peopleRoles": {
+        "sui_yangdi": "主导者"
+      }
+    },
+    {
+      "id": "v50s_xuangan",
+      "year": "613",
+      "title": "杨玄感黎阳起兵",
+      "body": "第二次高句丽战争期间，杨玄感利用黎阳仓与后方空虚起兵，李密参与谋划，旋即失败。",
+      "impact": "贵族反叛公开暴露统治裂缝，也迫使远征军仓促回撤。",
+      "people": [
+        "sui_yangxuangan",
+        "sui_limi",
+        "sui_yangdi"
+      ],
+      "sources": [
+        "v50s_suishu4",
+        "v50s_suishu70"
+      ],
+      "kind": "历史事件",
+      "category": "军事",
+      "sortYear": 613,
+      "peopleRoles": {
+        "sui_yangxuangan": "主导者",
+        "sui_limi": "参与者",
+        "sui_yangdi": "参与者"
+      }
+    },
+    {
+      "id": "v50s_wagang",
+      "year": "616—618",
+      "title": "瓦岗军兴起",
+      "body": "河南饥荒和征役背景下，瓦岗军吸纳地方武装与流民；李密掌权后争夺洛口仓和东都外围。",
+      "impact": "粮仓、交通和政治号召共同决定隋末群雄竞争，不宜只概括为单一类型起义。",
+      "people": [
+        "sui_limi",
+        "sui_zhangxutuo",
+        "sui_gongdi_tong"
+      ],
+      "sources": [
+        "v50s_suishu71",
+        "v50s_zz185"
+      ],
+      "kind": "历史事件",
+      "category": "军事",
+      "sortYear": 616,
+      "peopleRoles": {
+        "sui_limi": "主导者",
+        "sui_zhangxutuo": "参与者",
+        "sui_gongdi_tong": "洛阳政权君主"
+      }
+    },
+    {
+      "id": "v50s_exams",
+      "year": "587—607",
+      "title": "贡举与选官扩大",
+      "body": "隋廷设置秀才、明经等科，并在大业时期继续调整贡举。地方荐举与中央考试的作用上升。",
+      "impact": "这是科举制度形成的重要阶段，但不能简单用某一年“发明科举”概括。",
+      "people": [
+        "sui_wendi",
+        "sui_yangdi"
+      ],
+      "sources": [
+        "v50s_suishu2",
+        "v50s_suishu3"
+      ],
+      "kind": "历史事件",
+      "category": "文化",
+      "sortYear": 587,
+      "peopleRoles": {
+        "sui_wendi": "主导者",
+        "sui_yangdi": "参与者"
+      }
+    },
+    {
+      "id": "v50s_catalogue",
+      "year": "开皇年间",
+      "title": "搜书与经籍整理",
+      "body": "经历长期战乱后，隋廷征集散佚书籍，牛弘等参与整理官府藏书和礼乐文献。",
+      "impact": "《隋书·经籍志》保存了知识分类和书籍存佚的重要线索。",
+      "people": [
+        "sui_wendi",
+        "sui_niuhong"
+      ],
+      "sources": [
+        "v50s_suishu32"
+      ],
+      "kind": "历史事件",
+      "category": "文化",
+      "sortYear": 590,
+      "peopleRoles": {
+        "sui_wendi": "主导者",
+        "sui_niuhong": "参与者"
+      }
+    },
+    {
+      "id": "v50s_buddhism",
+      "year": "581—604",
+      "title": "佛教复兴与舍利营建",
+      "body": "文帝时期支持佛寺、译经和分送舍利等活动，佛教重新获得国家层面的强力支持。",
+      "impact": "宗教政策连接王权正当性、地方寺院与社会救济，也伴随资源动员。",
+      "people": [
+        "sui_wendi",
+        "sui_dugu"
+      ],
+      "sources": [
+        "v50s_suishu1",
+        "v50s_suishu2"
+      ],
+      "kind": "历史事件",
+      "category": "文化",
+      "sortYear": 601,
+      "peopleRoles": {
+        "sui_wendi": "主导者",
+        "sui_dugu": "参与者"
+      }
+    },
+    {
+      "id": "v50s_luoyang",
+      "year": "605—606",
+      "title": "营建东都洛阳",
+      "body": "杨广即位后大规模营建东都，宇文恺参与规划宫城、郭城与交通体系。",
+      "impact": "洛阳成为运河网络中心和政治舞台，快速建设同时带来集中徭役。",
+      "people": [
+        "sui_yangdi",
+        "sui_yuwenkai"
+      ],
+      "sources": [
+        "v50s_suishu3",
+        "v50s_suishu50"
+      ],
+      "kind": "历史事件",
+      "category": "文化",
+      "sortYear": 605,
+      "peopleRoles": {
+        "sui_yangdi": "主导者",
+        "sui_yuwenkai": "参与者"
+      }
+    },
+    {
+      "id": "v50s_zhaozhou_bridge",
+      "year": "约605—616",
+      "title": "赵州桥建成",
+      "body": "赵州桥以敞肩石拱减轻桥体重量并利于泄洪，传统记载由匠师李春营造。",
+      "impact": "桥梁实体比李春个人生平保存得更清楚，体现隋代工程计算与施工经验。",
+      "people": [
+        "sui_lichun"
+      ],
+      "sources": [
+        "v50s_zhaozhou"
+      ],
+      "kind": "历史事件",
+      "category": "文化",
+      "sortYear": 610,
+      "peopleRoles": {
+        "sui_lichun": "主导者"
+      }
+    },
+    {
+      "id": "v50s_silk_road",
+      "year": "大业年间",
+      "title": "《西域图记》与河西交流",
+      "body": "裴矩在张掖等地接触商旅、调查路线和政权，编成《西域图记》。",
+      "impact": "地理知识促进交流，也服务于朝廷的外交、礼仪与扩张目标。",
+      "people": [
+        "sui_peiju",
+        "sui_yangdi"
+      ],
+      "sources": [
+        "v50s_suishu67"
+      ],
+      "kind": "历史事件",
+      "category": "文化",
+      "sortYear": 608,
+      "peopleRoles": {
+        "sui_peiju": "主导者",
+        "sui_yangdi": "参与者"
+      }
+    },
+    {
+      "id": "v50s_lijingxun_burial",
+      "year": "608",
+      "title": "李静训墓与宫廷物质文化",
+      "body": "九岁的李静训去世后葬于大兴城内万善尼寺附近，未被盗墓葬保存大量金银、玻璃、瓷器和首饰。",
+      "impact": "墓葬让儿童生活、女性装饰、工艺技术和丝路交流获得具体物证。",
+      "people": [
+        "sui_lijingxun",
+        "sui_xiaohou"
+      ],
+      "sources": [
+        "v50s_nmc_jade",
+        "v50s_nmc_necklace",
+        "v50s_nmc_glass"
+      ],
+      "kind": "历史事件",
+      "category": "文化",
+      "sortYear": 608,
+      "peopleRoles": {
+        "sui_lijingxun": "主导者",
+        "sui_xiaohou": "参与者"
+      }
+    },
+    {
+      "id": "v50s_white_porcelain",
+      "year": "隋代",
+      "title": "白瓷技术趋于成熟",
+      "body": "北朝以来的白瓷在隋代继续发展，李静训墓白瓷器釉色、造型与域外元素显示技术和审美变化。",
+      "impact": "白瓷后来成为唐宋陶瓷的重要系统，隋代器物保存了转折阶段。",
+      "people": [
+        "sui_lijingxun"
+      ],
+      "sources": [
+        "v50s_nmc_flat",
+        "v50s_nmc_bottle"
+      ],
+      "kind": "历史事件",
+      "category": "文化",
+      "sortYear": 610,
+      "peopleRoles": {
+        "sui_lijingxun": "主导者"
+      }
+    },
+    {
+      "id": "v50s_equal_field",
+      "year": "581—604",
+      "title": "均田与赋役重整",
+      "body": "隋初在北朝制度基础上推行均田、租调与力役安排，试图把户口、土地和国家征发重新对应。",
+      "impact": "制度能否落实取决于地方土地占有、人口流动与官府登记，并非纸面规定即可平均土地。",
+      "people": [
+        "sui_wendi",
+        "sui_suwei"
+      ],
+      "sources": [
+        "v50s_suishu24"
+      ],
+      "kind": "历史事件",
+      "category": "经济",
+      "sortYear": 585,
+      "peopleRoles": {
+        "sui_wendi": "主导者",
+        "sui_suwei": "参与者"
+      }
+    },
+    {
+      "id": "v50s_household_check",
+      "year": "585",
+      "title": "大索貌阅",
+      "body": "朝廷核对户籍中的年龄、体貌与家庭关系，查出大量隐漏人口。",
+      "impact": "国家税役基础扩大，也加强了对家庭与人口流动的控制。",
+      "people": [
+        "sui_wendi",
+        "sui_suwei"
+      ],
+      "sources": [
+        "v50s_suishu24"
+      ],
+      "kind": "历史事件",
+      "category": "经济",
+      "sortYear": 585,
+      "peopleRoles": {
+        "sui_wendi": "主导者",
+        "sui_suwei": "参与者"
+      }
+    },
+    {
+      "id": "v50s_tax_register",
+      "year": "585",
+      "title": "输籍定样",
+      "body": "隋廷制定户等和赋役登记标准，由地方依资产评定户等。",
+      "impact": "措施削弱部分豪强对依附人口的控制，却也把更多人口纳入国家税役。",
+      "people": [
+        "sui_wendi",
+        "sui_suwei"
+      ],
+      "sources": [
+        "v50s_suishu24"
+      ],
+      "kind": "历史事件",
+      "category": "经济",
+      "sortYear": 585,
+      "peopleRoles": {
+        "sui_wendi": "主导者",
+        "sui_suwei": "参与者"
+      }
+    },
+    {
+      "id": "v50s_granaries",
+      "year": "开皇至大业",
+      "title": "官仓与义仓体系",
+      "body": "各地设置官仓和义仓，平时积储粮食，用于运输、军需或灾荒救济。",
+      "impact": "仓储既是救荒工具，也是战争和大型工程的后勤基础。",
+      "people": [
+        "sui_wendi",
+        "sui_yangdi"
+      ],
+      "sources": [
+        "v50s_suishu24"
+      ],
+      "kind": "历史事件",
+      "category": "经济",
+      "sortYear": 590,
+      "peopleRoles": {
+        "sui_wendi": "主导者",
+        "sui_yangdi": "参与者"
+      }
+    },
+    {
+      "id": "v50s_canal",
+      "year": "605—610",
+      "title": "贯通运河网络",
+      "body": "隋代先后整治和开凿通济渠、邗沟、永济渠、江南河等水道，以洛阳为中心连接南北。",
+      "impact": "运河强化漕运与区域联系，工程依托旧河道和历代积累，也造成巨量劳役。",
+      "people": [
+        "sui_yangdi",
+        "sui_yuwenkai"
+      ],
+      "sources": [
+        "v50s_suishu3",
+        "v50s_canal"
+      ],
+      "kind": "历史事件",
+      "category": "经济",
+      "sortYear": 605,
+      "peopleRoles": {
+        "sui_yangdi": "主导者",
+        "sui_yuwenkai": "参与者"
+      }
+    },
+    {
+      "id": "v50s_luoyang_granary",
+      "year": "大业年间",
+      "title": "东都粮仓与漕运",
+      "body": "洛阳周边大型仓储承接运河运来的粮食，为首都、军队和远征提供供应。",
+      "impact": "隋末各方争夺粮仓，说明仓储节点能够转化为军事和政治资源。",
+      "people": [
+        "sui_yangdi",
+        "sui_limi"
+      ],
+      "sources": [
+        "v50s_suishu24",
+        "v50s_zz185"
+      ],
+      "kind": "历史事件",
+      "category": "经济",
+      "sortYear": 610,
+      "peopleRoles": {
+        "sui_yangdi": "主导者",
+        "sui_limi": "参与者"
+      }
+    },
+    {
+      "id": "v50s_western_trade",
+      "year": "大业年间",
+      "title": "张掖互市与西域使者",
+      "body": "朝廷在河西接待商旅和使者，裴矩等推动贸易、贡使与政治联络。",
+      "impact": "繁盛交流与国家展示并存，接待费用和扩张意图也需纳入评价。",
+      "people": [
+        "sui_yangdi",
+        "sui_peiju"
+      ],
+      "sources": [
+        "v50s_suishu67"
+      ],
+      "kind": "历史事件",
+      "category": "经济",
+      "sortYear": 609,
+      "peopleRoles": {
+        "sui_yangdi": "主导者",
+        "sui_peiju": "参与者"
+      }
+    },
+    {
+      "id": "v50s_fiscal_overload",
+      "year": "610—618",
+      "title": "战争与工程挤压财政",
+      "body": "东都、宫殿、运河和高句丽战争连续动员人口、车船与粮食，地方承受能力不断下降。",
+      "impact": "国家早期积累被快速消耗，逃户、盗贼和地方武装扩大。",
+      "people": [
+        "sui_yangdi",
+        "sui_zhangxutuo"
+      ],
+      "sources": [
+        "v50s_suishu4",
+        "v50s_suishu24"
+      ],
+      "kind": "历史事件",
+      "category": "经济",
+      "sortYear": 614,
+      "peopleRoles": {
+        "sui_yangdi": "主导者",
+        "sui_zhangxutuo": "参与者"
+      }
+    },
+    {
+      "id": "v50s_reduce_labor",
+      "year": "开皇前期",
+      "title": "减役与休养",
+      "body": "隋初多次调整赋役、减省部分开支，并在统一后推动人口复业。",
+      "impact": "较轻的早期负担和政治稳定有利于人口、耕地与仓储恢复，但成效不能只归于皇帝节俭。",
+      "people": [
+        "sui_wendi",
+        "sui_suwei",
+        "sui_gaojiong"
+      ],
+      "sources": [
+        "v50s_suishu2",
+        "v50s_suishu24"
+      ],
+      "kind": "历史事件",
+      "category": "社会",
+      "sortYear": 584,
+      "peopleRoles": {
+        "sui_wendi": "主导者",
+        "sui_suwei": "参与者",
+        "sui_gaojiong": "参与者"
+      }
+    },
+    {
+      "id": "v50s_south_integration",
+      "year": "589以后",
+      "title": "南北人口与制度重新连接",
+      "body": "统一使官员、军队、商旅、僧侣和家庭更频繁跨越旧政权边界，法律与行政逐步趋同。",
+      "impact": "文化差异并未消失，江南反抗与后续调整显示整合需要协商和强制。",
+      "people": [
+        "sui_wendi",
+        "sui_yangsu",
+        "sui_hanqinhu"
+      ],
+      "sources": [
+        "v50s_suishu2",
+        "v50s_suishu48"
+      ],
+      "kind": "历史事件",
+      "category": "社会",
+      "sortYear": 591,
+      "peopleRoles": {
+        "sui_wendi": "主导者",
+        "sui_yangsu": "参与者",
+        "sui_hanqinhu": "参与者"
+      }
+    },
+    {
+      "id": "v50s_famine",
+      "year": "610年代",
+      "title": "灾荒、逃亡与地方失序",
+      "body": "黄河流域等地灾害与征役压力交叠，饥民、逃户和小规模武装不断增加。",
+      "impact": "社会危机为瓦岗等力量提供人口与粮食诉求，也削弱地方官府。",
+      "people": [
+        "sui_yangdi",
+        "sui_zhangxutuo",
+        "sui_limi"
+      ],
+      "sources": [
+        "v50s_suishu4",
+        "v50s_zz185"
+      ],
+      "kind": "历史事件",
+      "category": "社会",
+      "sortYear": 615,
+      "peopleRoles": {
+        "sui_yangdi": "主导者",
+        "sui_zhangxutuo": "参与者",
+        "sui_limi": "参与者"
+      }
+    },
+    {
+      "id": "v50s_canal_labor",
+      "year": "605—610",
+      "title": "运河劳役与沿线社会",
+      "body": "运河工程征发大量男女劳力和运输资源，沿线居民承担施工、供给与迁徙压力。",
+      "impact": "长期交通收益与当时民众成本同时存在，不能以结果抹去劳动者处境。",
+      "people": [
+        "sui_yangdi"
+      ],
+      "sources": [
+        "v50s_suishu3",
+        "v50s_canal"
+      ],
+      "kind": "历史事件",
+      "category": "社会",
+      "sortYear": 607,
+      "peopleRoles": {
+        "sui_yangdi": "主导者"
+      }
+    },
+    {
+      "id": "v50s_koguryo_mobilization",
+      "year": "612—614",
+      "title": "远征中的全民动员",
+      "body": "高句丽战争征集士兵、民夫、车牛和船只，漫长运输线使普通家庭持续失去劳动力和物资。",
+      "impact": "军事失败通过死亡、逃亡和债役扩散为全国性社会问题。",
+      "people": [
+        "sui_yangdi"
+      ],
+      "sources": [
+        "v50s_suishu4"
+      ],
+      "kind": "历史事件",
+      "category": "社会",
+      "sortYear": 613,
+      "peopleRoles": {
+        "sui_yangdi": "主导者"
+      }
+    },
+    {
+      "id": "v50s_court_women",
+      "year": "581—618",
+      "title": "后妃与宫廷政治",
+      "body": "独孤皇后参与开皇继承讨论，萧皇后则随杨广巡幸并经历江都政变。",
+      "impact": "女性政治作用真实存在，但史书多从德行、嫉妒或劝谏框架书写，需要辨析。",
+      "people": [
+        "sui_dugu",
+        "sui_xiaohou",
+        "sui_wendi",
+        "sui_yangdi"
+      ],
+      "sources": [
+        "v50s_suishu36"
+      ],
+      "kind": "历史事件",
+      "category": "社会",
+      "sortYear": 600,
+      "peopleRoles": {
+        "sui_dugu": "主导者",
+        "sui_xiaohou": "参与者",
+        "sui_wendi": "参与者",
+        "sui_yangdi": "参与者"
+      }
+    },
+    {
+      "id": "v50s_material_world",
+      "year": "608",
+      "title": "九岁墓主的生活世界",
+      "body": "李静训墓中的首饰、器皿和俑群呈现贵族儿童所处的家庭、服饰和礼仪环境。",
+      "impact": "精美随葬品代表上层生活，不能直接推广为普通人的日常。",
+      "people": [
+        "sui_lijingxun"
+      ],
+      "sources": [
+        "v50s_nmc_jade",
+        "v50s_nmc_necklace",
+        "v50s_nmc_glass"
+      ],
+      "kind": "历史事件",
+      "category": "社会",
+      "sortYear": 608,
+      "peopleRoles": {
+        "sui_lijingxun": "主导者"
+      }
+    },
+    {
+      "id": "v50s_regime_displacement",
+      "year": "617—619",
+      "title": "易代中的迁徙与暴力",
+      "body": "群雄争夺城池、粮仓与交通线，军队和居民在长安、洛阳、江都及河北之间承受征粮、迁徙和战斗。",
+      "impact": "王朝终结是多地持续数年的社会过程，远超宫廷禅让仪式。",
+      "people": [
+        "sui_gongdi_you",
+        "sui_gongdi_tong",
+        "sui_yanghao",
+        "sui_liyuan",
+        "sui_yuwenhuaji"
+      ],
+      "sources": [
+        "v50s_zz185",
+        "v50s_zz186"
+      ],
+      "kind": "历史事件",
+      "category": "社会",
+      "sortYear": 618,
+      "peopleRoles": {
+        "sui_gongdi_you": "主导者",
+        "sui_gongdi_tong": "参与者",
+        "sui_yanghao": "参与者",
+        "sui_liyuan": "参与者",
+        "sui_yuwenhuaji": "参与者"
+      }
+    },
+    {
+      "id": "v50s_yangzhao_death",
+      "year": "606",
+      "title": "杨昭早逝与储位悬空",
+      "body": "皇太子杨昭在洛阳去世。杨广此后没有立即从杨昭诸子中确立新的成年继承人，宗室继承结构逐渐变得脆弱。",
+      "impact": "杨侑、杨侗后来分别在长安和洛阳被拥立，都与杨昭一系的继承资格有关。",
+      "people": [
+        "sui_yangzhao",
+        "sui_yangdi",
+        "sui_gongdi_you",
+        "sui_gongdi_tong"
+      ],
+      "sources": [
+        "v50s_suishu59"
+      ],
+      "kind": "历史事件",
+      "category": "政治",
+      "sortYear": 606,
+      "peopleRoles": {
+        "sui_yangzhao": "去世的皇太子",
+        "sui_yangdi": "皇帝与父亲",
+        "sui_gongdi_you": "后来的继承者",
+        "sui_gongdi_tong": "后来的继承者"
+      }
     }
   ],
   "objects": [
@@ -23310,6 +24889,232 @@
       "dynasties": [
         "han"
       ]
+    },
+    {
+      "id": "v50s_obj_canal",
+      "title": "隋唐大运河",
+      "subtitle": "连接南北，也留下劳役成本",
+      "symbol": "building.columns",
+      "image": null,
+      "body": "隋代以洛阳为中心整治、开凿多段水道，把海河、黄河、淮河、长江和钱塘江流域的交通进一步连缀。今天的大运河世界遗产包含多个时代的河段，不能全部归为杨广一朝新建。",
+      "note": "把工程遗产、历代续修和隋代劳役同时呈现。",
+      "people": [
+        "sui_yangdi",
+        "sui_yuwenkai"
+      ],
+      "sources": [
+        "v50s_canal",
+        "v50s_suishu3"
+      ],
+      "dynasties": [
+        "sui"
+      ]
+    },
+    {
+      "id": "v50s_obj_daxing",
+      "title": "大兴城格局",
+      "subtitle": "唐长安之前的都城底盘",
+      "symbol": "building.columns",
+      "image": null,
+      "body": "大兴城以宫城、皇城、里坊和道路组织都城空间，宇文恺参与规划。唐长安延续其基本格局，并在后世成为东亚都城史的重要参照。",
+      "note": "城市由官员、工匠与役夫共同建成，图纸式“独立设计者”叙述需要克制。",
+      "people": [
+        "sui_wendi",
+        "sui_yuwenkai"
+      ],
+      "sources": [
+        "v50s_suishu50",
+        "v50s_dpm_tomb"
+      ],
+      "dynasties": [
+        "sui"
+      ]
+    },
+    {
+      "id": "v50s_obj_zhaozhou",
+      "title": "赵州桥",
+      "subtitle": "留在河道上的隋代工程",
+      "symbol": "building.columns",
+      "image": null,
+      "body": "赵州桥的大跨径敞肩石拱在减重、泄洪和结构受力之间取得平衡。传统记载将营造者记为李春，但其个人生平几乎不可考。",
+      "note": "现存桥体历经维修，不能把今天看到的每一块构件都直接视为隋代原件。",
+      "people": [
+        "sui_lichun"
+      ],
+      "sources": [
+        "v50s_zhaozhou"
+      ],
+      "dynasties": [
+        "sui"
+      ]
+    },
+    {
+      "id": "v50s_obj_law",
+      "title": "开皇律",
+      "subtitle": "由北朝律制走向唐律",
+      "symbol": "book.closed",
+      "image": null,
+      "body": "开皇律删并刑名、调整条文，为唐律体系提供重要基础。法典呈现国家规范，实际司法仍受诏令、官僚运作和地方条件影响。",
+      "note": "原文并非完整独立传世，主要通过《隋书》及后世法制材料认识。",
+      "people": [
+        "sui_wendi",
+        "sui_gaojiong",
+        "sui_niuhong"
+      ],
+      "sources": [
+        "v50s_suishu25"
+      ],
+      "dynasties": [
+        "sui"
+      ]
+    },
+    {
+      "id": "v50s_obj_catalogue",
+      "title": "《隋书·经籍志》所见藏书",
+      "subtitle": "战乱之后重建知识目录",
+      "symbol": "book.closed",
+      "image": null,
+      "body": "隋廷搜集和整理书籍，唐修《隋书·经籍志》据此保存四部分类、著录和亡佚线索。目录既记录知识，也反映国家选择与典藏能力。",
+      "note": "《隋书》成书于唐代，不能把经籍志文字等同于隋代当时原始目录。",
+      "people": [
+        "sui_niuhong",
+        "sui_wendi"
+      ],
+      "sources": [
+        "v50s_suishu32"
+      ],
+      "dynasties": [
+        "sui"
+      ]
+    },
+    {
+      "id": "v50s_obj_flat",
+      "title": "白瓷双耳扁瓶",
+      "subtitle": "兽面、忍冬与成熟中的白瓷",
+      "symbol": "sparkles",
+      "image": null,
+      "body": "李静训墓出土的扁瓶以兽面、忍冬和联珠纹组成装饰，白釉未施满器身。它让隋代白瓷工艺与多元纹样在一件小器物上相遇。",
+      "note": "墓葬年代明确，但纹样来源不能凭相似性指定为某一单一文化。",
+      "people": [
+        "sui_lijingxun"
+      ],
+      "sources": [
+        "v50s_nmc_flat"
+      ],
+      "dynasties": [
+        "sui"
+      ]
+    },
+    {
+      "id": "v50s_obj_bottle",
+      "title": "白瓷龙柄传瓶",
+      "subtitle": "器形与工艺的跨区域转化",
+      "symbol": "sparkles",
+      "image": null,
+      "body": "双腹相联、龙柄探入口沿的传瓶结合本土制瓷经验与北朝以来的域外器形因素，显示隋代白瓷色调和造型日趋成熟。",
+      "note": "“域外影响”不等于整件器物从域外输入。",
+      "people": [
+        "sui_lijingxun"
+      ],
+      "sources": [
+        "v50s_nmc_bottle"
+      ],
+      "dynasties": [
+        "sui"
+      ]
+    },
+    {
+      "id": "v50s_obj_necklace",
+      "title": "嵌珍珠宝石金项链",
+      "subtitle": "一条项链中的丝路材料与样式",
+      "symbol": "sparkles",
+      "image": null,
+      "body": "李静训墓金项链使用珍珠、宝石、青金石与金质构件，造型带有中亚、西亚艺术因素。它可能经贸易、外交或赏赐进入贵族家族。",
+      "note": "具体取得路径缺少直接记录，只能陈述多种可能。",
+      "people": [
+        "sui_lijingxun",
+        "sui_peiju"
+      ],
+      "sources": [
+        "v50s_nmc_necklace"
+      ],
+      "dynasties": [
+        "sui"
+      ]
+    },
+    {
+      "id": "v50s_obj_glass",
+      "title": "椭圆形绿玻璃瓶",
+      "subtitle": "本土造型与多种玻璃技术",
+      "symbol": "sparkles",
+      "image": null,
+      "body": "薄壁绿玻璃瓶以吹制法成形，李静训墓同出玻璃器既有高铅玻璃，也有受西方技术影响的钠钙玻璃，显示不同工艺并存。",
+      "note": "化学成分和造型证据比笼统的“进口品”标签更可靠。",
+      "people": [
+        "sui_lijingxun"
+      ],
+      "sources": [
+        "v50s_nmc_glass"
+      ],
+      "dynasties": [
+        "sui"
+      ]
+    },
+    {
+      "id": "v50s_obj_jade",
+      "title": "镶金口白玉杯",
+      "subtitle": "贵族儿童墓中的精工玉器",
+      "symbol": "sparkles",
+      "image": null,
+      "body": "白玉杯口沿镶金，器形简洁，出土于九岁的李静训墓。精美随葬反映其特殊家世与宫廷关系，而非一般隋代儿童生活。",
+      "note": "以墓志与考古组合判断墓主身份，避免用器物价值推断个人性格。",
+      "people": [
+        "sui_lijingxun"
+      ],
+      "sources": [
+        "v50s_nmc_jade"
+      ],
+      "dynasties": [
+        "sui"
+      ]
+    },
+    {
+      "id": "v50s_obj_tailing",
+      "title": "隋文帝泰陵",
+      "subtitle": "统一王朝开国者的合葬陵",
+      "symbol": "building.columns",
+      "image": null,
+      "body": "泰陵位于陕西杨陵区，是杨坚与独孤皇后的合葬陵。地面建筑多已不存，夯土陵冢和遗址环境仍保存王朝礼制的空间证据。",
+      "note": "现状说明来自文物保护单位资料，未发掘部分不作内部结构推断。",
+      "people": [
+        "sui_wendi",
+        "sui_dugu"
+      ],
+      "sources": [
+        "v50s_tailing"
+      ],
+      "dynasties": [
+        "sui"
+      ]
+    },
+    {
+      "id": "v50s_obj_yangdi_tomb",
+      "title": "曹庄隋炀帝墓出土遗存",
+      "subtitle": "墓志、牙齿与高等级器物共同确认身份",
+      "symbol": "building.columns",
+      "image": null,
+      "body": "扬州曹庄墓葬经墓志、出土器物与人骨等材料综合论证，确认是杨广与萧皇后最后埋葬地。墓葬规模与其身后处境有关。",
+      "note": "它与清代阮元考订修缮的旧陵址不是同一处，应明确区分。",
+      "people": [
+        "sui_yangdi",
+        "sui_xiaohou"
+      ],
+      "sources": [
+        "v50s_yangdi_tomb"
+      ],
+      "dynasties": [
+        "sui"
+      ]
     }
   ],
   "sequence": [
@@ -24060,6 +25865,41 @@
       "years": "189—220",
       "transition": "董卓废少帝后改立陈留王",
       "eraLabel": "永汉至延康"
+    },
+    {
+      "id": "v50s_01",
+      "person": "sui_wendi",
+      "years": "581—604",
+      "transition": "受北周静帝禅让，建立隋朝",
+      "eraLabel": "开皇"
+    },
+    {
+      "id": "v50s_02",
+      "person": "sui_yangdi",
+      "years": "604—618",
+      "transition": "文帝去世后即位；宫廷经过存在争议",
+      "eraLabel": "大业"
+    },
+    {
+      "id": "v50s_03",
+      "person": "sui_gongdi_you",
+      "years": "617—618",
+      "transition": "李渊控制长安后拥立",
+      "eraLabel": "义宁"
+    },
+    {
+      "id": "v50s_04",
+      "person": "sui_yanghao",
+      "years": "618",
+      "transition": "江都兵变后由宇文化及拥立",
+      "eraLabel": "沿用大业"
+    },
+    {
+      "id": "v50s_05",
+      "person": "sui_gongdi_tong",
+      "years": "618—619",
+      "transition": "洛阳留守集团拥立，与诸政权并立",
+      "eraLabel": "皇泰"
     }
   ],
   "tombs": [
@@ -24577,6 +26417,34 @@
       "sources": [
         "v49h_houhanshu"
       ]
+    },
+    {
+      "id": "v50s_tomb_wendi",
+      "person": "sui_wendi",
+      "title": "泰陵",
+      "area": "陕西 · 杨陵",
+      "location": "陕西省咸阳市杨陵区五泉镇王上村东北三畤原",
+      "status": "隋文帝杨坚与文献皇后独孤氏合葬陵；全国重点文物保护单位。",
+      "body": "陵园地面建筑大多不存，现存覆斗形夯土陵冢。泰陵的位置、合葬关系和遗址状态有地方政府与文物保护资料支持。",
+      "sources": [
+        "v50s_tailing",
+        "v50s_suishu2"
+      ],
+      "note": "未进行系统考古发掘的内部结构不作推测。"
+    },
+    {
+      "id": "v50s_tomb_yangdi",
+      "person": "sui_yangdi",
+      "title": "曹庄隋炀帝墓",
+      "area": "江苏 · 扬州",
+      "location": "江苏省扬州市邗江区西湖街道曹庄一带",
+      "status": "2013年考古发现并确认；与萧皇后为相邻合葬墓，遗址公园已开放。",
+      "body": "墓志、高等级金玉带、铺首、俑群与人骨研究共同支持墓主身份。墓葬规模较小，与杨广被杀后多次改葬的历史处境相连。",
+      "sources": [
+        "v50s_yangdi_tomb",
+        "v50s_suishu4"
+      ],
+      "note": "与扬州另一处清代考订的“隋炀帝陵”区别展示。"
     }
   ],
   "familyLinks": [
@@ -26523,6 +28391,103 @@
         "v49h_houhanshu"
       ],
       "note": "和帝皇后，和帝死后以皇太后身份临朝。"
+    },
+    {
+      "from": "sui_yangdi",
+      "to": "sui_wendi",
+      "kind": "father",
+      "sources": [
+        "v50s_suishu1"
+      ],
+      "note": "正史明确记载的婚姻或亲生亲子关系。"
+    },
+    {
+      "from": "sui_yangdi",
+      "to": "sui_dugu",
+      "kind": "mother",
+      "sources": [
+        "v50s_suishu36",
+        "v50s_suishu59"
+      ],
+      "note": "正史明确记载的婚姻或亲生亲子关系。"
+    },
+    {
+      "from": "sui_yangyong",
+      "to": "sui_wendi",
+      "kind": "father",
+      "sources": [
+        "v50s_suishu1"
+      ],
+      "note": "正史明确记载的婚姻或亲生亲子关系。"
+    },
+    {
+      "from": "sui_yangyong",
+      "to": "sui_dugu",
+      "kind": "mother",
+      "sources": [
+        "v50s_suishu36",
+        "v50s_suishu59"
+      ],
+      "note": "正史明确记载的婚姻或亲生亲子关系。"
+    },
+    {
+      "from": "sui_yangzhao",
+      "to": "sui_yangdi",
+      "kind": "father",
+      "sources": [
+        "v50s_suishu1"
+      ],
+      "note": "正史明确记载的婚姻或亲生亲子关系。"
+    },
+    {
+      "from": "sui_yangzhao",
+      "to": "sui_xiaohou",
+      "kind": "mother",
+      "sources": [
+        "v50s_suishu36",
+        "v50s_suishu59"
+      ],
+      "note": "正史明确记载的婚姻或亲生亲子关系。"
+    },
+    {
+      "from": "sui_gongdi_you",
+      "to": "sui_yangzhao",
+      "kind": "father",
+      "sources": [
+        "v50s_suishu36",
+        "v50s_suishu59"
+      ],
+      "note": "正史明确记载的婚姻或亲生亲子关系。"
+    },
+    {
+      "from": "sui_gongdi_tong",
+      "to": "sui_yangzhao",
+      "kind": "father",
+      "sources": [
+        "v50s_suishu36",
+        "v50s_suishu59"
+      ],
+      "note": "正史明确记载的婚姻或亲生亲子关系。"
+    },
+    {
+      "from": "sui_wendi",
+      "to": "sui_dugu",
+      "kind": "spouse",
+      "sources": [
+        "v50s_suishu36",
+        "v50s_suishu59"
+      ],
+      "note": "正史明确记载的婚姻或亲生亲子关系。"
+    },
+    {
+      "from": "sui_yangdi",
+      "to": "sui_xiaohou",
+      "kind": "spouse",
+      "sources": [
+        "v50s_suishu36",
+        "v50s_suishu59"
+      ],
+      "note": "正史明确记载的婚姻或亲生亲子关系。"
     }
   ],
   "articles": [
@@ -55186,6 +57151,1881 @@
         "v49h_houhanshu",
         "v49h_cambridge"
       ]
+    },
+    {
+      "person": "sui_wendi",
+      "title": "杨坚：隋文帝",
+      "dek": "建立隋朝、灭陈统一南北，并重整律令、户籍与中央制度。",
+      "sections": [
+        {
+          "id": "sui_wendi-v50-1",
+          "title": "生平坐标",
+          "text": "建立隋朝、灭陈统一南北，并重整律令、户籍与中央制度。 “杨坚代周建隋”发生于581。北周静帝禅位，杨坚即皇帝位，改国号隋。新王朝继承北周官僚、军队和关陇政治网络，并开始重组权力。王朝更替不是凭空开端；北周制度、门阀与军事资源继续影响隋初。 “重整中央官制”发生于开皇年间。隋在南北朝制度基础上调整尚书、门下、内史等机构及六部职掌，形成更清晰的中央行政分工。后来常称“三省六部”，但制度是在长期演变中逐步成形，并非一次设计完成。",
+          "sources": [
+            "v50s_suishu1",
+            "v50s_suishu2"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_zhou_sui"
+          ],
+          "people": [
+            "sui_gaojiong"
+          ]
+        },
+        {
+          "id": "sui_wendi-v50-2",
+          "title": "行动与转折",
+          "text": "“营建大兴城”发生于582—583。隋朝在汉长安故城东南营建新都大兴城，宇文恺参与规划，宫城、皇城与里坊形成清楚层次。都城空间把礼制、行政和居民管理结合起来，唐长安继续沿用并扩展这一基础。 这条线索解释了杨坚为何不能只用“隋文帝”这一称号概括。 “废黜太子杨勇”发生于600。文帝与独孤皇后废杨勇，改立晋王杨广为太子。宫廷生活评价、夫妇政治与官僚集团竞争交织。继承次序被改写，也加剧后世围绕杨广夺嫡手段的争议。",
+          "sources": [
+            "v50s_suishu1",
+            "v50s_suishu2"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_daxing"
+          ],
+          "people": [
+            "sui_suwei"
+          ]
+        },
+        {
+          "id": "sui_wendi-v50-3",
+          "title": "人物关系与实物证据",
+          "text": "杨坚与高颎的关系是“宰辅与军事统筹”。参与建国、灭陈和制度整合，后因政治分歧失势。 杨坚与苏威的关系是“制度与赋役顾问”。参与官制、法律与赋役调整。 “大兴城格局”提供了另一类证据。大兴城以宫城、皇城、里坊和道路组织都城空间，宇文恺参与规划。唐长安延续其基本格局，并在后世成为东亚都城史的重要参照。城市由官员、工匠与役夫共同建成，图纸式“独立设计者”叙述需要克制。 “开皇律”提供了另一类证据。开皇律删并刑名、调整条文，为唐律体系提供重要基础。法典呈现国家规范，实际司法仍受诏令、官僚运作和地方条件影响。原文并非完整独立传世，主要通过《隋书》及后世法制材料认识。 “开皇律定型”发生于583。隋初多次修订律令，开皇三年形成较稳定体系，删减部分北周苛重条文并调整刑名。开皇律成为唐律的重要前提，但法律文本与实际司法仍需区分。",
+          "sources": [
+            "v50s_suishu1",
+            "v50s_suishu2"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_kaihuang_law"
+          ],
+          "people": [
+            "sui_yuwenkai"
+          ]
+        },
+        {
+          "id": "sui_wendi-v50-4",
+          "title": "史料边界",
+          "text": "开皇政治并非一人独成，高颎、苏威等官员与北周以来的制度积累同样重要。 关于杨坚，本篇主要依据《隋书》卷一·高祖上、《隋书》卷二·高祖下。杨坚建国、开皇前期纪事。评价杨坚时，应把纪传的个人叙事与制度、事件或考古证据分开。",
+          "sources": [
+            "v50s_suishu1",
+            "v50s_suishu2"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_central_system"
+          ],
+          "people": [
+            "sui_hanqinhu"
+          ]
+        }
+      ],
+      "sources": [
+        "v50s_suishu1",
+        "v50s_suishu2"
+      ]
+    },
+    {
+      "person": "sui_yangdi",
+      "title": "杨广：隋炀帝",
+      "dek": "营建东都、贯通运河并经营边疆，也因战争与高强度动员使统治迅速崩解。",
+      "sections": [
+        {
+          "id": "sui_yangdi-v50-1",
+          "title": "生平坐标",
+          "text": "营建东都、贯通运河并经营边疆，也因战争与高强度动员使统治迅速崩解。 “废黜太子杨勇”发生于600。文帝与独孤皇后废杨勇，改立晋王杨广为太子。宫廷生活评价、夫妇政治与官僚集团竞争交织。继承次序被改写，也加剧后世围绕杨广夺嫡手段的争议。 “灭陈与南北统一”发生于588—589。隋组织多路大军渡江攻陈，韩擒虎、贺若弼等进入建康，陈后主被俘。长期南北分立结束，但行政、赋役与地方社会的整合仍需多年。",
+          "sources": [
+            "v50s_suishu3",
+            "v50s_suishu4"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_depose_yong"
+          ],
+          "people": [
+            "sui_yuwenkai"
+          ]
+        },
+        {
+          "id": "sui_yangdi-v50-2",
+          "title": "行动与转折",
+          "text": "“杨广即位”发生于604。文帝去世后杨广即位。正史记载宫廷疑案，但具体经过长期存在争议。评价即位过程时应区分可确认的权力交接与带有道德目的的细节叙事。 这条线索解释了杨广为何不能只用“隋炀帝”这一称号概括。 “西征吐谷浑”发生于609。隋炀帝亲自西行，隋军进击吐谷浑，并试图设置郡县、经营河西与青海通道。扩张加强西域交通想象，也把军需和行政成本推向边疆。",
+          "sources": [
+            "v50s_suishu3",
+            "v50s_suishu4"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_accession_604"
+          ],
+          "people": [
+            "sui_peiju"
+          ]
+        },
+        {
+          "id": "sui_yangdi-v50-3",
+          "title": "人物关系与实物证据",
+          "text": "杨广与宇文恺的关系是“东都营建主持者”。参与东都洛阳规划营建。 杨广与裴矩的关系是“西域经营与地理顾问”。调查西域交通并服务朝廷外交扩张。 “隋唐大运河”提供了另一类证据。隋代以洛阳为中心整治、开凿多段水道，把海河、黄河、淮河、长江和钱塘江流域的交通进一步连缀。今天的大运河世界遗产包含多个时代的河段，不能全部归为杨广一朝新建。把工程遗产、历代续修和隋代劳役同时呈现。 “曹庄隋炀帝墓出土遗存”提供了另一类证据。扬州曹庄墓葬经墓志、出土器物与人骨等材料综合论证，确认是杨广与萧皇后最后埋葬地。墓葬规模与其身后处境有关。它与清代阮元考订修缮的旧陵址不是同一处，应明确区分。 “江都兵变”发生于618。江都军人集团发动兵变，宇文化及等杀死杨广与多名宗室、大臣。隋朝最高权力中心崩解，江都、长安、洛阳出现不同的隋室名义与新政权。",
+          "sources": [
+            "v50s_suishu3",
+            "v50s_suishu4"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_jiangdu_coup"
+          ],
+          "people": [
+            "sui_yangxuangan"
+          ]
+        },
+        {
+          "id": "sui_yangdi-v50-4",
+          "title": "史料边界",
+          "text": "关于文帝死前宫廷经过，正史叙述带有强烈道德评判；可确认的是杨广随后即位，不能把具体谋害细节写成无争议事实。 关于杨广，本篇主要依据《隋书》卷三·炀帝上、《隋书》卷四·炀帝下。杨广早年、即位与大业前期纪事。评价杨广时，应把纪传的个人叙事与制度、事件或考古证据分开。",
+          "sources": [
+            "v50s_suishu3",
+            "v50s_suishu4"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_conquer_chen"
+          ],
+          "people": [
+            "sui_yuwenhuaji"
+          ]
+        }
+      ],
+      "sources": [
+        "v50s_suishu3",
+        "v50s_suishu4"
+      ]
+    },
+    {
+      "person": "sui_gongdi_you",
+      "title": "杨侑：隋恭帝",
+      "dek": "李渊控制长安后拥立的少年皇帝，次年禅位于唐。",
+      "sections": [
+        {
+          "id": "sui_gongdi_you-v50-1",
+          "title": "生平坐标",
+          "text": "李渊控制长安后拥立的少年皇帝，次年禅位于唐。 “长安拥立杨侑”发生于617。李渊军进入长安后拥立杨侑，遥尊杨广为太上皇，使用义宁年号。隋末中央权力已经分裂，长安政权的实际军事和行政主导者是李渊集团。 “杨昭早逝与储位悬空”发生于606。皇太子杨昭在洛阳去世。杨广此后没有立即从杨昭诸子中确立新的成年继承人，宗室继承结构逐渐变得脆弱。杨侑、杨侗后来分别在长安和洛阳被拥立，都与杨昭一系的继承资格有关。",
+          "sources": [
+            "v50s_suishu5",
+            "v50s_zz185",
+            "v50s_zz186"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_changan_court"
+          ],
+          "people": [
+            "sui_liyuan"
+          ]
+        },
+        {
+          "id": "sui_gongdi_you-v50-2",
+          "title": "行动与转折",
+          "text": "“杨浩、杨侗与并立终局”发生于618—619。宇文化及拥立杨浩后废杀；洛阳方面拥立杨侗，至619年被王世充取代。“隋亡于618”是方便的断代，实际政权崩解具有地域差异和重叠过程。 这条线索解释了杨侑为何不能只用“隋恭帝”这一称号概括。 理解杨侑时还要联系隋代专题“统一不是终点”：灭陈结束南北政权对峙，江南行政、社会与文化整合仍经历反抗、镇压和长期调整。这构成其所处环境的一部分。",
+          "sources": [
+            "v50s_suishu5",
+            "v50s_zz185",
+            "v50s_zz186"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_parallel_courts"
+          ],
+          "people": [
+            "sui_gongdi_tong"
+          ]
+        },
+        {
+          "id": "sui_gongdi_you-v50-3",
+          "title": "人物关系与实物证据",
+          "text": "杨侑与李渊的关系是“实际掌权者”。李渊控制长安后拥立杨侑，随后接受禅位。 杨侑与杨侗的关系是“并立的隋室宗亲”。分别在长安与洛阳被不同政治集团拥立。 “易代中的迁徙与暴力”发生于617—619。群雄争夺城池、粮仓与交通线，军队和居民在长安、洛阳、江都及河北之间承受征粮、迁徙和战斗。王朝终结是多地持续数年的社会过程，远超宫廷禅让仪式。 理解杨侑时还要联系隋代专题“制度在继承中成形”：律令、三省六部、贡举和户籍制度均继承北朝及南朝经验，并由唐朝继续调整，不宜归结为某一年的突然发明。这构成其所处环境的一部分。",
+          "sources": [
+            "v50s_suishu5",
+            "v50s_zz185",
+            "v50s_zz186"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_regime_displacement"
+          ],
+          "people": [
+            "sui_yangzhao"
+          ]
+        },
+        {
+          "id": "sui_gongdi_you-v50-4",
+          "title": "史料边界",
+          "text": "其统治仅覆盖关中政权；同一时期江都、洛阳与各地势力并立。 关于杨侑，本篇主要依据《隋书》卷五·恭帝、《资治通鉴》卷一百八十五、《资治通鉴》卷一百八十六。杨侑、杨侗及隋末并立政权纪事。评价杨侑时，应把纪传的个人叙事与制度、事件或考古证据分开。 理解杨侑时还要联系隋代专题“都城、运河与跨区域交流”：大兴、洛阳和运河重组政治与物资交通；李静训墓等材料则显示白瓷、玻璃、宝石和域外样式如何进入贵族生活。这构成其所处环境的一部分。",
+          "sources": [
+            "v50s_suishu5",
+            "v50s_zz185",
+            "v50s_zz186"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_yangzhao_death"
+          ],
+          "people": [
+            "sui_yangzhao"
+          ]
+        }
+      ],
+      "sources": [
+        "v50s_suishu5",
+        "v50s_zz185",
+        "v50s_zz186"
+      ]
+    },
+    {
+      "person": "sui_yanghao",
+      "title": "杨浩：秦王后被拥立",
+      "dek": "江都兵变后被宇文化及拥立，旋即遭废杀。",
+      "sections": [
+        {
+          "id": "sui_yanghao-v50-1",
+          "title": "生平坐标",
+          "text": "江都兵变后被宇文化及拥立，旋即遭废杀。 “江都兵变”发生于618。江都军人集团发动兵变，宇文化及等杀死杨广与多名宗室、大臣。隋朝最高权力中心崩解，江都、长安、洛阳出现不同的隋室名义与新政权。 理解杨浩时还要联系隋代专题“统一不是终点”：灭陈结束南北政权对峙，江南行政、社会与文化整合仍经历反抗、镇压和长期调整。这构成其所处环境的一部分。 杨浩生活或活动的年代标为618。这一时间标签用于定位生平，不表示现有史料能够逐年恢复其行动。",
+          "sources": [
+            "v50s_suishu4",
+            "v50s_zz186"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_jiangdu_coup"
+          ],
+          "people": [
+            "sui_yuwenhuaji"
+          ]
+        },
+        {
+          "id": "sui_yanghao-v50-2",
+          "title": "行动与转折",
+          "text": "“杨浩、杨侗与并立终局”发生于618—619。宇文化及拥立杨浩后废杀；洛阳方面拥立杨侗，至619年被王世充取代。“隋亡于618”是方便的断代，实际政权崩解具有地域差异和重叠过程。 这条线索解释了杨浩为何不能只用“秦王后被拥立”这一称号概括。 理解杨浩时还要联系隋代专题“制度在继承中成形”：律令、三省六部、贡举和户籍制度均继承北朝及南朝经验，并由唐朝继续调整，不宜归结为某一年的突然发明。这构成其所处环境的一部分。",
+          "sources": [
+            "v50s_suishu4",
+            "v50s_zz186"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_parallel_courts"
+          ],
+          "people": [
+            "sui_gongdi_tong"
+          ]
+        },
+        {
+          "id": "sui_yanghao-v50-3",
+          "title": "人物关系与实物证据",
+          "text": "杨浩与宇文化及的关系是“拥立者与控制者”。拥立后不久即废杀杨浩。 杨浩与杨侗的关系是“并立的隋室宗亲”。分别在江都与洛阳被拥立。 “易代中的迁徙与暴力”发生于617—619。群雄争夺城池、粮仓与交通线，军队和居民在长安、洛阳、江都及河北之间承受征粮、迁徙和战斗。王朝终结是多地持续数年的社会过程，远超宫廷禅让仪式。 理解杨浩时还要联系隋代专题“都城、运河与跨区域交流”：大兴、洛阳和运河重组政治与物资交通；李静训墓等材料则显示白瓷、玻璃、宝石和域外样式如何进入贵族生活。这构成其所处环境的一部分。",
+          "sources": [
+            "v50s_suishu4",
+            "v50s_zz186"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_regime_displacement"
+          ],
+          "people": [
+            "sui_gongdi_tong"
+          ]
+        },
+        {
+          "id": "sui_yanghao-v50-4",
+          "title": "史料边界",
+          "text": "杨浩缺乏独立权力，且未建立稳定年号与行政中心；列入帝序是为呈现隋末并立，而非主张单线正统。 关于杨浩，本篇主要依据《隋书》卷四·炀帝下、《资治通鉴》卷一百八十六。高句丽战争、各地反抗与江都结局。评价杨浩时，应把纪传的个人叙事与制度、事件或考古证据分开。 理解杨浩时还要联系隋代专题“动员能力反噬国家”：远征、工程、灾荒和财政压力叠加，使逃亡与反抗扩大。隋末并非一次禅让，而是多个区域政权逐步取代中央。这构成其所处环境的一部分。",
+          "sources": [
+            "v50s_suishu4",
+            "v50s_zz186"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_regime_displacement"
+          ],
+          "people": [
+            "sui_gongdi_tong"
+          ]
+        }
+      ],
+      "sources": [
+        "v50s_suishu4",
+        "v50s_zz186"
+      ]
+    },
+    {
+      "person": "sui_gongdi_tong",
+      "title": "杨侗：皇泰主",
+      "dek": "洛阳留守集团拥立的隋室成员，王世充掌权后被迫禅位并遇害。",
+      "sections": [
+        {
+          "id": "sui_gongdi_tong-v50-1",
+          "title": "生平坐标",
+          "text": "洛阳留守集团拥立的隋室成员，王世充掌权后被迫禅位并遇害。 “杨浩、杨侗与并立终局”发生于618—619。宇文化及拥立杨浩后废杀；洛阳方面拥立杨侗，至619年被王世充取代。“隋亡于618”是方便的断代，实际政权崩解具有地域差异和重叠过程。 “杨昭早逝与储位悬空”发生于606。皇太子杨昭在洛阳去世。杨广此后没有立即从杨昭诸子中确立新的成年继承人，宗室继承结构逐渐变得脆弱。杨侑、杨侗后来分别在长安和洛阳被拥立，都与杨昭一系的继承资格有关。 理解杨侗时还要联系隋代专题“都城、运河与跨区域交流”：大兴、洛阳和运河重组政治与物资交通；李静训墓等材料则显示白瓷、玻璃、宝石和域外样式如何进入贵族生活。这构成其所处环境的一部分。",
+          "sources": [
+            "v50s_suishu5",
+            "v50s_zz186"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_parallel_courts"
+          ],
+          "people": [
+            "sui_gongdi_you"
+          ]
+        },
+        {
+          "id": "sui_gongdi_tong-v50-2",
+          "title": "行动与转折",
+          "text": "“瓦岗军兴起”发生于616—618。河南饥荒和征役背景下，瓦岗军吸纳地方武装与流民；李密掌权后争夺洛口仓和东都外围。粮仓、交通和政治号召共同决定隋末群雄竞争，不宜只概括为单一类型起义。 这条线索解释了杨侗为何不能只用“皇泰主”这一称号概括。 杨侗与李密的关系是“洛阳外围军事对手”。瓦岗军与东都政权围绕粮仓和交通争夺。",
+          "sources": [
+            "v50s_suishu5",
+            "v50s_zz186"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_wagang"
+          ],
+          "people": [
+            "sui_yanghao"
+          ]
+        },
+        {
+          "id": "sui_gongdi_tong-v50-3",
+          "title": "人物关系与实物证据",
+          "text": "杨侗与杨侑的关系是“并立的隋室宗亲”。分别在长安与洛阳被不同政治集团拥立。 杨侗与杨浩的关系是“并立的隋室宗亲”。分别在江都与洛阳被拥立。 “易代中的迁徙与暴力”发生于617—619。群雄争夺城池、粮仓与交通线，军队和居民在长安、洛阳、江都及河北之间承受征粮、迁徙和战斗。王朝终结是多地持续数年的社会过程，远超宫廷禅让仪式。 理解杨侗时还要联系隋代专题“统一不是终点”：灭陈结束南北政权对峙，江南行政、社会与文化整合仍经历反抗、镇压和长期调整。这构成其所处环境的一部分。",
+          "sources": [
+            "v50s_suishu5",
+            "v50s_zz186"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_regime_displacement"
+          ],
+          "people": [
+            "sui_limi"
+          ]
+        },
+        {
+          "id": "sui_gongdi_tong-v50-4",
+          "title": "史料边界",
+          "text": "唐代正史多称越王侗或皇泰主；其政权延续到619年，超出通常以618年为终点的隋朝断代。 关于杨侗，本篇主要依据《隋书》卷五·恭帝、《资治通鉴》卷一百八十六。杨侑、杨侗及隋末并立政权纪事。评价杨侗时，应把纪传的个人叙事与制度、事件或考古证据分开。 理解杨侗时还要联系隋代专题“制度在继承中成形”：律令、三省六部、贡举和户籍制度均继承北朝及南朝经验，并由唐朝继续调整，不宜归结为某一年的突然发明。这构成其所处环境的一部分。",
+          "sources": [
+            "v50s_suishu5",
+            "v50s_zz186"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_yangzhao_death"
+          ],
+          "people": [
+            "sui_yangzhao"
+          ]
+        }
+      ],
+      "sources": [
+        "v50s_suishu5",
+        "v50s_zz186"
+      ]
+    },
+    {
+      "person": "sui_dugu",
+      "title": "独孤伽罗：文献皇后",
+      "dek": "与杨坚共同经历北周至隋的权力转折，深度参与宫廷决策与继承安排。",
+      "sections": [
+        {
+          "id": "sui_dugu-v50-1",
+          "title": "生平坐标",
+          "text": "与杨坚共同经历北周至隋的权力转折，深度参与宫廷决策与继承安排。 “杨坚代周建隋”发生于581。北周静帝禅位，杨坚即皇帝位，改国号隋。新王朝继承北周官僚、军队和关陇政治网络，并开始重组权力。王朝更替不是凭空开端；北周制度、门阀与军事资源继续影响隋初。 “后妃与宫廷政治”发生于581—618。独孤皇后参与开皇继承讨论，萧皇后则随杨广巡幸并经历江都政变。女性政治作用真实存在，但史书多从德行、嫉妒或劝谏框架书写，需要辨析。",
+          "sources": [
+            "v50s_suishu36",
+            "v50s_suishu1"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_zhou_sui"
+          ],
+          "people": [
+            "sui_wendi"
+          ]
+        },
+        {
+          "id": "sui_dugu-v50-2",
+          "title": "行动与转折",
+          "text": "“废黜太子杨勇”发生于600。文帝与独孤皇后废杨勇，改立晋王杨广为太子。宫廷生活评价、夫妇政治与官僚集团竞争交织。继承次序被改写，也加剧后世围绕杨广夺嫡手段的争议。 这条线索解释了独孤伽罗为何不能只用“文献皇后”这一称号概括。",
+          "sources": [
+            "v50s_suishu36",
+            "v50s_suishu1"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_depose_yong"
+          ],
+          "people": [
+            "sui_yangdi"
+          ]
+        },
+        {
+          "id": "sui_dugu-v50-3",
+          "title": "人物关系与实物证据",
+          "text": "独孤伽罗与杨坚的关系是“皇帝与配偶”。共同经历建隋与储位变动。 “隋文帝泰陵”提供了另一类证据。泰陵位于陕西杨陵区，是杨坚与独孤皇后的合葬陵。地面建筑多已不存，夯土陵冢和遗址环境仍保存王朝礼制的空间证据。现状说明来自文物保护单位资料，未发掘部分不作内部结构推断。 “佛教复兴与舍利营建”发生于581—604。文帝时期支持佛寺、译经和分送舍利等活动，佛教重新获得国家层面的强力支持。宗教政策连接王权正当性、地方寺院与社会救济，也伴随资源动员。",
+          "sources": [
+            "v50s_suishu36",
+            "v50s_suishu1"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_buddhism"
+          ],
+          "people": [
+            "sui_yangyong"
+          ]
+        },
+        {
+          "id": "sui_dugu-v50-4",
+          "title": "史料边界",
+          "text": "史书既记录其政治影响，也以传统后妃规范评价她；“惧内”等后世标签不足以概括其作用。 关于独孤伽罗，本篇主要依据《隋书》卷三十六·后妃传、《隋书》卷一·高祖上。独孤皇后、萧皇后生平。评价独孤伽罗时，应把纪传的个人叙事与制度、事件或考古证据分开。",
+          "sources": [
+            "v50s_suishu36",
+            "v50s_suishu1"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_court_women"
+          ],
+          "people": [
+            "sui_yangyong"
+          ]
+        }
+      ],
+      "sources": [
+        "v50s_suishu36",
+        "v50s_suishu1"
+      ]
+    },
+    {
+      "person": "sui_yangyong",
+      "title": "杨勇：废太子",
+      "dek": "杨坚长子，曾为皇太子，开皇二十年被废。",
+      "sections": [
+        {
+          "id": "sui_yangyong-v50-1",
+          "title": "生平坐标",
+          "text": "杨坚长子，曾为皇太子，开皇二十年被废。 “废黜太子杨勇”发生于600。文帝与独孤皇后废杨勇，改立晋王杨广为太子。宫廷生活评价、夫妇政治与官僚集团竞争交织。继承次序被改写，也加剧后世围绕杨广夺嫡手段的争议。 理解杨勇时还要联系隋代专题“统一不是终点”：灭陈结束南北政权对峙，江南行政、社会与文化整合仍经历反抗、镇压和长期调整。这构成其所处环境的一部分。",
+          "sources": [
+            "v50s_suishu2",
+            "v50s_suishu59"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_depose_yong"
+          ],
+          "people": [
+            "sui_wendi"
+          ]
+        },
+        {
+          "id": "sui_yangyong-v50-2",
+          "title": "行动与转折",
+          "text": "“杨广即位”发生于604。文帝去世后杨广即位。正史记载宫廷疑案，但具体经过长期存在争议。评价即位过程时应区分可确认的权力交接与带有道德目的的细节叙事。 这条线索解释了杨勇为何不能只用“废太子”这一称号概括。 理解杨勇时还要联系隋代专题“制度在继承中成形”：律令、三省六部、贡举和户籍制度均继承北朝及南朝经验，并由唐朝继续调整，不宜归结为某一年的突然发明。这构成其所处环境的一部分。",
+          "sources": [
+            "v50s_suishu2",
+            "v50s_suishu59"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_accession_604"
+          ],
+          "people": [
+            "sui_dugu"
+          ]
+        },
+        {
+          "id": "sui_yangyong-v50-3",
+          "title": "人物关系与实物证据",
+          "text": "“废黜太子杨勇”发生于600。文帝与独孤皇后废杨勇，改立晋王杨广为太子。宫廷生活评价、夫妇政治与官僚集团竞争交织。继承次序被改写，也加剧后世围绕杨广夺嫡手段的争议。 灭陈结束南北政权对峙，江南行政、社会与文化整合仍经历反抗、镇压和长期调整。 理解杨勇时还要联系隋代专题“都城、运河与跨区域交流”：大兴、洛阳和运河重组政治与物资交通；李静训墓等材料则显示白瓷、玻璃、宝石和域外样式如何进入贵族生活。这构成其所处环境的一部分。",
+          "sources": [
+            "v50s_suishu2",
+            "v50s_suishu59"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_accession_604"
+          ],
+          "people": [
+            "sui_dugu"
+          ]
+        },
+        {
+          "id": "sui_yangyong-v50-4",
+          "title": "史料边界",
+          "text": "废立牵涉家庭关系、政治集团和行为评价，不能仅归因于个人奢侈。 关于杨勇，本篇主要依据《隋书》卷二·高祖下、《隋书》卷五十九·炀帝三子。灭陈、制度建设与开皇后期纪事。评价杨勇时，应把纪传的个人叙事与制度、事件或考古证据分开。",
+          "sources": [
+            "v50s_suishu2",
+            "v50s_suishu59"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_accession_604"
+          ],
+          "people": [
+            "sui_dugu"
+          ]
+        }
+      ],
+      "sources": [
+        "v50s_suishu2",
+        "v50s_suishu59"
+      ]
+    },
+    {
+      "person": "sui_yangzhao",
+      "title": "杨昭：元德太子",
+      "dek": "杨广长子，短暂担任皇太子，其早逝改变了隋末继承结构。",
+      "sections": [
+        {
+          "id": "sui_yangzhao-v50-1",
+          "title": "生平坐标",
+          "text": "杨广长子，短暂担任皇太子，其早逝改变了隋末继承结构。 “杨昭早逝与储位悬空”发生于606。皇太子杨昭在洛阳去世。杨广此后没有立即从杨昭诸子中确立新的成年继承人，宗室继承结构逐渐变得脆弱。杨侑、杨侗后来分别在长安和洛阳被拥立，都与杨昭一系的继承资格有关。 理解杨昭时还要联系隋代专题“统一不是终点”：灭陈结束南北政权对峙，江南行政、社会与文化整合仍经历反抗、镇压和长期调整。这构成其所处环境的一部分。",
+          "sources": [
+            "v50s_suishu59"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_yangzhao_death"
+          ],
+          "people": [
+            "sui_yangdi"
+          ]
+        },
+        {
+          "id": "sui_yangzhao-v50-2",
+          "title": "行动与转折",
+          "text": "杨侑与杨侗均为其子，隋末两地拥立由此具有相同家系来源。 这条线索解释了杨昭为何不能只用“元德太子”这一称号概括。 理解杨昭时还要联系隋代专题“制度在继承中成形”：律令、三省六部、贡举和户籍制度均继承北朝及南朝经验，并由唐朝继续调整，不宜归结为某一年的突然发明。这构成其所处环境的一部分。",
+          "sources": [
+            "v50s_suishu59"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_yangzhao_death"
+          ],
+          "people": [
+            "sui_xiaohou"
+          ]
+        },
+        {
+          "id": "sui_yangzhao-v50-3",
+          "title": "人物关系与实物证据",
+          "text": "“杨昭早逝与储位悬空”发生于606。皇太子杨昭在洛阳去世。杨广此后没有立即从杨昭诸子中确立新的成年继承人，宗室继承结构逐渐变得脆弱。杨侑、杨侗后来分别在长安和洛阳被拥立，都与杨昭一系的继承资格有关。 灭陈结束南北政权对峙，江南行政、社会与文化整合仍经历反抗、镇压和长期调整。 理解杨昭时还要联系隋代专题“都城、运河与跨区域交流”：大兴、洛阳和运河重组政治与物资交通；李静训墓等材料则显示白瓷、玻璃、宝石和域外样式如何进入贵族生活。这构成其所处环境的一部分。",
+          "sources": [
+            "v50s_suishu59"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_yangzhao_death"
+          ],
+          "people": [
+            "sui_gongdi_you"
+          ]
+        },
+        {
+          "id": "sui_yangzhao-v50-4",
+          "title": "史料边界",
+          "text": "杨侑与杨侗均为其子，隋末两地拥立由此具有相同家系来源。 关于杨昭，本篇主要依据《隋书》卷五十九·炀帝三子。杨昭、杨侑、杨侗的家族与继承关系。评价杨昭时，应把纪传的个人叙事与制度、事件或考古证据分开。",
+          "sources": [
+            "v50s_suishu59"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_yangzhao_death"
+          ],
+          "people": [
+            "sui_gongdi_tong"
+          ]
+        }
+      ],
+      "sources": [
+        "v50s_suishu59"
+      ]
+    },
+    {
+      "person": "sui_xiaohou",
+      "title": "萧氏：萧皇后",
+      "dek": "出自西梁宗室，随杨广经历统一、江都兵变和隋末流离。",
+      "sections": [
+        {
+          "id": "sui_xiaohou-v50-1",
+          "title": "生平坐标",
+          "text": "出自西梁宗室，随杨广经历统一、江都兵变和隋末流离。 “江都兵变”发生于618。江都军人集团发动兵变，宇文化及等杀死杨广与多名宗室、大臣。隋朝最高权力中心崩解，江都、长安、洛阳出现不同的隋室名义与新政权。 理解萧氏时还要联系隋代专题“统一不是终点”：灭陈结束南北政权对峙，江南行政、社会与文化整合仍经历反抗、镇压和长期调整。这构成其所处环境的一部分。",
+          "sources": [
+            "v50s_suishu36",
+            "v50s_suishu4"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_jiangdu_coup"
+          ],
+          "people": [
+            "sui_yangdi"
+          ]
+        },
+        {
+          "id": "sui_xiaohou-v50-2",
+          "title": "行动与转折",
+          "text": "“李静训墓与宫廷物质文化”发生于608。九岁的李静训去世后葬于大兴城内万善尼寺附近，未被盗墓葬保存大量金银、玻璃、瓷器和首饰。墓葬让儿童生活、女性装饰、工艺技术和丝路交流获得具体物证。 这条线索解释了萧氏为何不能只用“萧皇后”这一称号概括。 理解萧氏时还要联系隋代专题“制度在继承中成形”：律令、三省六部、贡举和户籍制度均继承北朝及南朝经验，并由唐朝继续调整，不宜归结为某一年的突然发明。这构成其所处环境的一部分。",
+          "sources": [
+            "v50s_suishu36",
+            "v50s_suishu4"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_lijingxun_burial"
+          ],
+          "people": [
+            "sui_yangzhao"
+          ]
+        },
+        {
+          "id": "sui_xiaohou-v50-3",
+          "title": "人物关系与实物证据",
+          "text": "萧氏与杨广的关系是“皇帝与配偶”。共同经历巡幸与江都兵变。 “曹庄隋炀帝墓出土遗存”提供了另一类证据。扬州曹庄墓葬经墓志、出土器物与人骨等材料综合论证，确认是杨广与萧皇后最后埋葬地。墓葬规模与其身后处境有关。它与清代阮元考订修缮的旧陵址不是同一处，应明确区分。 “后妃与宫廷政治”发生于581—618。独孤皇后参与开皇继承讨论，萧皇后则随杨广巡幸并经历江都政变。女性政治作用真实存在，但史书多从德行、嫉妒或劝谏框架书写，需要辨析。",
+          "sources": [
+            "v50s_suishu36",
+            "v50s_suishu4"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_court_women"
+          ],
+          "people": [
+            "sui_yangzhao"
+          ]
+        },
+        {
+          "id": "sui_xiaohou-v50-4",
+          "title": "史料边界",
+          "text": "其晚年辗转于宇文化及、窦建德与突厥势力之间，归唐时间及细节应以正史互证。 关于萧氏，本篇主要依据《隋书》卷三十六·后妃传、《隋书》卷四·炀帝下。独孤皇后、萧皇后生平。评价萧氏时，应把纪传的个人叙事与制度、事件或考古证据分开。",
+          "sources": [
+            "v50s_suishu36",
+            "v50s_suishu4"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_court_women"
+          ],
+          "people": [
+            "sui_yangzhao"
+          ]
+        }
+      ],
+      "sources": [
+        "v50s_suishu36",
+        "v50s_suishu4"
+      ]
+    },
+    {
+      "person": "sui_gaojiong",
+      "title": "高颎：开皇名相",
+      "dek": "参与隋朝建国、制度整合和灭陈谋划，后在大业朝被杀。",
+      "sections": [
+        {
+          "id": "sui_gaojiong-v50-1",
+          "title": "生平坐标",
+          "text": "参与隋朝建国、制度整合和灭陈谋划，后在大业朝被杀。 “杨坚代周建隋”发生于581。北周静帝禅位，杨坚即皇帝位，改国号隋。新王朝继承北周官僚、军队和关陇政治网络，并开始重组权力。王朝更替不是凭空开端；北周制度、门阀与军事资源继续影响隋初。 “平定尉迟迥”发生于580。杨坚掌握北周朝政后，尉迟迥等起兵反对，高颎等组织军队平定。这场战争清除了建隋前最直接的军事障碍，也显示关东对权力转移的抵抗。",
+          "sources": [
+            "v50s_suishu41",
+            "v50s_suishu2"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_zhou_sui"
+          ],
+          "people": [
+            "sui_wendi"
+          ]
+        },
+        {
+          "id": "sui_gaojiong-v50-2",
+          "title": "行动与转折",
+          "text": "“开皇律定型”发生于583。隋初多次修订律令，开皇三年形成较稳定体系，删减部分北周苛重条文并调整刑名。开皇律成为唐律的重要前提，但法律文本与实际司法仍需区分。 这条线索解释了高颎为何不能只用“开皇名相”这一称号概括。",
+          "sources": [
+            "v50s_suishu41",
+            "v50s_suishu2"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_kaihuang_law"
+          ],
+          "people": [
+            "sui_wendi"
+          ]
+        },
+        {
+          "id": "sui_gaojiong-v50-3",
+          "title": "人物关系与实物证据",
+          "text": "高颎与杨坚的关系是“君主”。参与建国、灭陈和制度整合，后因政治分歧失势。 “开皇律”提供了另一类证据。开皇律删并刑名、调整条文，为唐律体系提供重要基础。法典呈现国家规范，实际司法仍受诏令、官僚运作和地方条件影响。原文并非完整独立传世，主要通过《隋书》及后世法制材料认识。 “重整中央官制”发生于开皇年间。隋在南北朝制度基础上调整尚书、门下、内史等机构及六部职掌，形成更清晰的中央行政分工。后来常称“三省六部”，但制度是在长期演变中逐步成形，并非一次设计完成。",
+          "sources": [
+            "v50s_suishu41",
+            "v50s_suishu2"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_central_system"
+          ],
+          "people": [
+            "sui_wendi"
+          ]
+        },
+        {
+          "id": "sui_gaojiong-v50-4",
+          "title": "史料边界",
+          "text": "传统叙事常把开皇治理归功于高颎，但政策形成仍是皇帝、官僚和既有制度共同作用。 关于高颎，本篇主要依据《隋书》卷四十一·高颎等传、《隋书》卷二·高祖下。高颎、苏威等重臣事迹。评价高颎时，应把纪传的个人叙事与制度、事件或考古证据分开。",
+          "sources": [
+            "v50s_suishu41",
+            "v50s_suishu2"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_yuchi"
+          ],
+          "people": [
+            "sui_wendi"
+          ]
+        }
+      ],
+      "sources": [
+        "v50s_suishu41",
+        "v50s_suishu2"
+      ]
+    },
+    {
+      "person": "sui_suwei",
+      "title": "苏威：纳言、尚书右仆射",
+      "dek": "以减轻赋役和制度建设著称，也在政权更替中多次任职。",
+      "sections": [
+        {
+          "id": "sui_suwei-v50-1",
+          "title": "生平坐标",
+          "text": "以减轻赋役和制度建设著称，也在政权更替中多次任职。 “重整中央官制”发生于开皇年间。隋在南北朝制度基础上调整尚书、门下、内史等机构及六部职掌，形成更清晰的中央行政分工。后来常称“三省六部”，但制度是在长期演变中逐步成形，并非一次设计完成。 “输籍定样”发生于585。隋廷制定户等和赋役登记标准，由地方依资产评定户等。措施削弱部分豪强对依附人口的控制，却也把更多人口纳入国家税役。",
+          "sources": [
+            "v50s_suishu41",
+            "v50s_suishu24"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_central_system"
+          ],
+          "people": [
+            "sui_wendi"
+          ]
+        },
+        {
+          "id": "sui_suwei-v50-2",
+          "title": "行动与转折",
+          "text": "“均田与赋役重整”发生于581—604。隋初在北朝制度基础上推行均田、租调与力役安排，试图把户口、土地和国家征发重新对应。制度能否落实取决于地方土地占有、人口流动与官府登记，并非纸面规定即可平均土地。 这条线索解释了苏威为何不能只用“纳言、尚书右仆射”这一称号概括。 “减役与休养”发生于开皇前期。隋初多次调整赋役、减省部分开支，并在统一后推动人口复业。较轻的早期负担和政治稳定有利于人口、耕地与仓储恢复，但成效不能只归于皇帝节俭。",
+          "sources": [
+            "v50s_suishu41",
+            "v50s_suishu24"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_equal_field"
+          ],
+          "people": [
+            "sui_wendi"
+          ]
+        },
+        {
+          "id": "sui_suwei-v50-3",
+          "title": "人物关系与实物证据",
+          "text": "苏威与杨坚的关系是“君主”。参与官制、法律与赋役调整。 “大索貌阅”发生于585。朝廷核对户籍中的年龄、体貌与家庭关系，查出大量隐漏人口。国家税役基础扩大，也加强了对家庭与人口流动的控制。 理解苏威时还要联系隋代专题“统一不是终点”：灭陈结束南北政权对峙，江南行政、社会与文化整合仍经历反抗、镇压和长期调整。这构成其所处环境的一部分。",
+          "sources": [
+            "v50s_suishu41",
+            "v50s_suishu24"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_household_check"
+          ],
+          "people": [
+            "sui_wendi"
+          ]
+        },
+        {
+          "id": "sui_suwei-v50-4",
+          "title": "史料边界",
+          "text": "其反复出仕常受道德批评，理解时还需看到隋末政权快速更替与官僚生存处境。 关于苏威，本篇主要依据《隋书》卷四十一·高颎等传、《隋书》卷二十四·食货志。高颎、苏威等重臣事迹。评价苏威时，应把纪传的个人叙事与制度、事件或考古证据分开。",
+          "sources": [
+            "v50s_suishu41",
+            "v50s_suishu24"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_tax_register"
+          ],
+          "people": [
+            "sui_wendi"
+          ]
+        }
+      ],
+      "sources": [
+        "v50s_suishu41",
+        "v50s_suishu24"
+      ]
+    },
+    {
+      "person": "sui_yangsu",
+      "title": "杨素：越国公",
+      "dek": "北周旧将，参与灭陈、平定江南反抗和隋初权力斗争。",
+      "sections": [
+        {
+          "id": "sui_yangsu-v50-1",
+          "title": "生平坐标",
+          "text": "北周旧将，参与灭陈、平定江南反抗和隋初权力斗争。 “杨广即位”发生于604。文帝去世后杨广即位。正史记载宫廷疑案，但具体经过长期存在争议。评价即位过程时应区分可确认的权力交接与带有道德目的的细节叙事。 理解杨素时还要联系隋代专题“统一不是终点”：灭陈结束南北政权对峙，江南行政、社会与文化整合仍经历反抗、镇压和长期调整。这构成其所处环境的一部分。",
+          "sources": [
+            "v50s_suishu48",
+            "v50s_suishu2"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_accession_604"
+          ],
+          "people": [
+            "sui_wendi"
+          ]
+        },
+        {
+          "id": "sui_yangsu-v50-2",
+          "title": "行动与转折",
+          "text": "“江南反抗与镇压”发生于590。统一后江南多地反抗隋的行政调整，杨素等率军镇压。军事统一并不等于社会立即认同，新政权在江南的治理经历强烈摩擦。 这条线索解释了杨素为何不能只用“越国公”这一称号概括。 理解杨素时还要联系隋代专题“制度在继承中成形”：律令、三省六部、贡举和户籍制度均继承北朝及南朝经验，并由唐朝继续调整，不宜归结为某一年的突然发明。这构成其所处环境的一部分。",
+          "sources": [
+            "v50s_suishu48",
+            "v50s_suishu2"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_south_revolt"
+          ],
+          "people": [
+            "sui_wendi"
+          ]
+        },
+        {
+          "id": "sui_yangsu-v50-3",
+          "title": "人物关系与实物证据",
+          "text": "杨素与杨坚的关系是“君主”。参与灭陈、平定江南与朝廷政治。 “南北人口与制度重新连接”发生于589以后。统一使官员、军队、商旅、僧侣和家庭更频繁跨越旧政权边界，法律与行政逐步趋同。文化差异并未消失，江南反抗与后续调整显示整合需要协商和强制。 理解杨素时还要联系隋代专题“都城、运河与跨区域交流”：大兴、洛阳和运河重组政治与物资交通；李静训墓等材料则显示白瓷、玻璃、宝石和域外样式如何进入贵族生活。这构成其所处环境的一部分。",
+          "sources": [
+            "v50s_suishu48",
+            "v50s_suishu2"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_south_integration"
+          ],
+          "people": [
+            "sui_wendi"
+          ]
+        },
+        {
+          "id": "sui_yangsu-v50-4",
+          "title": "史料边界",
+          "text": "杨素兼具军事统帅和政治权臣身份；其与杨广即位的关系在史书中夹有推测和道德叙事。 关于杨素，本篇主要依据《隋书》卷四十八·杨素等传、《隋书》卷二·高祖下。杨素、宇文庆等传记。评价杨素时，应把纪传的个人叙事与制度、事件或考古证据分开。",
+          "sources": [
+            "v50s_suishu48",
+            "v50s_suishu2"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_south_integration"
+          ],
+          "people": [
+            "sui_wendi"
+          ]
+        }
+      ],
+      "sources": [
+        "v50s_suishu48",
+        "v50s_suishu2"
+      ]
+    },
+    {
+      "person": "sui_yuwenkai",
+      "title": "宇文恺：营建大兴与东都的规划者",
+      "dek": "主持或参与大兴城、东都洛阳等大型营建，把礼制、交通与城市空间结合。",
+      "sections": [
+        {
+          "id": "sui_yuwenkai-v50-1",
+          "title": "生平坐标",
+          "text": "主持或参与大兴城、东都洛阳等大型营建，把礼制、交通与城市空间结合。 “营建大兴城”发生于582—583。隋朝在汉长安故城东南营建新都大兴城，宇文恺参与规划，宫城、皇城与里坊形成清楚层次。都城空间把礼制、行政和居民管理结合起来，唐长安继续沿用并扩展这一基础。",
+          "sources": [
+            "v50s_suishu50",
+            "v50s_dpm_tomb"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_daxing"
+          ],
+          "people": [
+            "sui_wendi"
+          ]
+        },
+        {
+          "id": "sui_yuwenkai-v50-2",
+          "title": "行动与转折",
+          "text": "“营建东都洛阳”发生于605—606。杨广即位后大规模营建东都，宇文恺参与规划宫城、郭城与交通体系。洛阳成为运河网络中心和政治舞台，快速建设同时带来集中徭役。 这条线索解释了宇文恺为何不能只用“营建大兴与东都的规划者”这一称号概括。",
+          "sources": [
+            "v50s_suishu50",
+            "v50s_dpm_tomb"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_luoyang"
+          ],
+          "people": [
+            "sui_yangdi"
+          ]
+        },
+        {
+          "id": "sui_yuwenkai-v50-3",
+          "title": "人物关系与实物证据",
+          "text": "宇文恺与杨坚的关系是“君主”。参与大兴城规划与大型建筑。 宇文恺与杨广的关系是“君主”。参与东都洛阳规划营建。 “隋唐大运河”提供了另一类证据。隋代以洛阳为中心整治、开凿多段水道，把海河、黄河、淮河、长江和钱塘江流域的交通进一步连缀。今天的大运河世界遗产包含多个时代的河段，不能全部归为杨广一朝新建。把工程遗产、历代续修和隋代劳役同时呈现。 “大兴城格局”提供了另一类证据。大兴城以宫城、皇城、里坊和道路组织都城空间，宇文恺参与规划。唐长安延续其基本格局，并在后世成为东亚都城史的重要参照。城市由官员、工匠与役夫共同建成，图纸式“独立设计者”叙述需要克制。 “贯通运河网络”发生于605—610。隋代先后整治和开凿通济渠、邗沟、永济渠、江南河等水道，以洛阳为中心连接南北。运河强化漕运与区域联系，工程依托旧河道和历代积累，也造成巨量劳役。",
+          "sources": [
+            "v50s_suishu50",
+            "v50s_dpm_tomb"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_canal"
+          ],
+          "people": [
+            "sui_yangdi"
+          ]
+        },
+        {
+          "id": "sui_yuwenkai-v50-4",
+          "title": "史料边界",
+          "text": "古代大型工程由大量无名工匠与役夫完成，不能把都城完全归为单一设计者的个人作品。 关于宇文恺，本篇主要依据《隋书》卷五十·宇文恺等传、《故宫博物院·隋墓画像石棺研究》。宇文恺及都城营建。评价宇文恺时，应把纪传的个人叙事与制度、事件或考古证据分开。",
+          "sources": [
+            "v50s_suishu50",
+            "v50s_dpm_tomb"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_canal"
+          ],
+          "people": [
+            "sui_yangdi"
+          ]
+        }
+      ],
+      "sources": [
+        "v50s_suishu50",
+        "v50s_dpm_tomb"
+      ]
+    },
+    {
+      "person": "sui_hanqinhu",
+      "title": "韩擒虎：灭陈将领",
+      "dek": "率军渡江进入建康，是隋灭陈战争的重要统帅之一。",
+      "sections": [
+        {
+          "id": "sui_hanqinhu-v50-1",
+          "title": "生平坐标",
+          "text": "率军渡江进入建康，是隋灭陈战争的重要统帅之一。 “灭陈与南北统一”发生于588—589。隋组织多路大军渡江攻陈，韩擒虎、贺若弼等进入建康，陈后主被俘。长期南北分立结束，但行政、赋役与地方社会的整合仍需多年。 理解韩擒虎时还要联系隋代专题“统一不是终点”：灭陈结束南北政权对峙，江南行政、社会与文化整合仍经历反抗、镇压和长期调整。这构成其所处环境的一部分。",
+          "sources": [
+            "v50s_suishu52",
+            "v50s_suishu2"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_conquer_chen"
+          ],
+          "people": [
+            "sui_wendi"
+          ]
+        },
+        {
+          "id": "sui_hanqinhu-v50-2",
+          "title": "行动与转折",
+          "text": "“南北人口与制度重新连接”发生于589以后。统一使官员、军队、商旅、僧侣和家庭更频繁跨越旧政权边界，法律与行政逐步趋同。文化差异并未消失，江南反抗与后续调整显示整合需要协商和强制。 这条线索解释了韩擒虎为何不能只用“灭陈将领”这一称号概括。 理解韩擒虎时还要联系隋代专题“制度在继承中成形”：律令、三省六部、贡举和户籍制度均继承北朝及南朝经验，并由唐朝继续调整，不宜归结为某一年的突然发明。这构成其所处环境的一部分。",
+          "sources": [
+            "v50s_suishu52",
+            "v50s_suishu2"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_south_integration"
+          ],
+          "people": [
+            "sui_wendi"
+          ]
+        },
+        {
+          "id": "sui_hanqinhu-v50-3",
+          "title": "人物关系与实物证据",
+          "text": "韩擒虎与杨坚的关系是“君主”。率一路隋军渡江进入建康。 理解韩擒虎时还要联系隋代专题“都城、运河与跨区域交流”：大兴、洛阳和运河重组政治与物资交通；李静训墓等材料则显示白瓷、玻璃、宝石和域外样式如何进入贵族生活。这构成其所处环境的一部分。",
+          "sources": [
+            "v50s_suishu52",
+            "v50s_suishu2"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_south_integration"
+          ],
+          "people": [
+            "sui_wendi"
+          ]
+        },
+        {
+          "id": "sui_hanqinhu-v50-4",
+          "title": "史料边界",
+          "text": "灭陈是多路军队协同结果，韩擒虎入城不等于一人完成统一。 关于韩擒虎，本篇主要依据《隋书》卷五十二·韩擒虎等传、《隋书》卷二·高祖下。韩擒虎、贺若弼等灭陈将领。评价韩擒虎时，应把纪传的个人叙事与制度、事件或考古证据分开。 理解韩擒虎时还要联系隋代专题“动员能力反噬国家”：远征、工程、灾荒和财政压力叠加，使逃亡与反抗扩大。隋末并非一次禅让，而是多个区域政权逐步取代中央。这构成其所处环境的一部分。",
+          "sources": [
+            "v50s_suishu52",
+            "v50s_suishu2"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_south_integration"
+          ],
+          "people": [
+            "sui_wendi"
+          ]
+        }
+      ],
+      "sources": [
+        "v50s_suishu52",
+        "v50s_suishu2"
+      ]
+    },
+    {
+      "person": "sui_heruobi",
+      "title": "贺若弼：灭陈将领",
+      "dek": "率军自广陵渡江，与韩擒虎等共同推进灭陈战争。",
+      "sections": [
+        {
+          "id": "sui_heruobi-v50-1",
+          "title": "生平坐标",
+          "text": "率军自广陵渡江，与韩擒虎等共同推进灭陈战争。 “灭陈与南北统一”发生于588—589。隋组织多路大军渡江攻陈，韩擒虎、贺若弼等进入建康，陈后主被俘。长期南北分立结束，但行政、赋役与地方社会的整合仍需多年。 理解贺若弼时还要联系隋代专题“统一不是终点”：灭陈结束南北政权对峙，江南行政、社会与文化整合仍经历反抗、镇压和长期调整。这构成其所处环境的一部分。",
+          "sources": [
+            "v50s_suishu52",
+            "v50s_suishu3"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_conquer_chen"
+          ],
+          "people": [
+            "sui_wendi"
+          ]
+        },
+        {
+          "id": "sui_heruobi-v50-2",
+          "title": "行动与转折",
+          "text": "贺若弼与杨坚的关系是“君主”。率军渡江，与多路军队协同灭陈。 这条线索解释了贺若弼为何不能只用“灭陈将领”这一称号概括。 理解贺若弼时还要联系隋代专题“制度在继承中成形”：律令、三省六部、贡举和户籍制度均继承北朝及南朝经验，并由唐朝继续调整，不宜归结为某一年的突然发明。这构成其所处环境的一部分。",
+          "sources": [
+            "v50s_suishu52",
+            "v50s_suishu3"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_conquer_chen"
+          ],
+          "people": [
+            "sui_wendi"
+          ]
+        },
+        {
+          "id": "sui_heruobi-v50-3",
+          "title": "人物关系与实物证据",
+          "text": "贺若弼与杨坚的关系是“君主”。率军渡江，与多路军队协同灭陈。 理解贺若弼时还要联系隋代专题“都城、运河与跨区域交流”：大兴、洛阳和运河重组政治与物资交通；李静训墓等材料则显示白瓷、玻璃、宝石和域外样式如何进入贵族生活。这构成其所处环境的一部分。",
+          "sources": [
+            "v50s_suishu52",
+            "v50s_suishu3"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_conquer_chen"
+          ],
+          "people": [
+            "sui_wendi"
+          ]
+        },
+        {
+          "id": "sui_heruobi-v50-4",
+          "title": "史料边界",
+          "text": "其战后争功和大业朝遇害，显示军功集团与皇权之间的紧张。 关于贺若弼，本篇主要依据《隋书》卷五十二·韩擒虎等传、《隋书》卷三·炀帝上。韩擒虎、贺若弼等灭陈将领。评价贺若弼时，应把纪传的个人叙事与制度、事件或考古证据分开。 理解贺若弼时还要联系隋代专题“动员能力反噬国家”：远征、工程、灾荒和财政压力叠加，使逃亡与反抗扩大。隋末并非一次禅让，而是多个区域政权逐步取代中央。这构成其所处环境的一部分。",
+          "sources": [
+            "v50s_suishu52",
+            "v50s_suishu3"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_conquer_chen"
+          ],
+          "people": [
+            "sui_wendi"
+          ]
+        }
+      ],
+      "sources": [
+        "v50s_suishu52",
+        "v50s_suishu3"
+      ]
+    },
+    {
+      "person": "sui_changsunsheng",
+      "title": "长孙晟：外交与边防将领",
+      "dek": "长期处理突厥事务，以离间、结盟和军事威慑配合北方边防。",
+      "sections": [
+        {
+          "id": "sui_changsunsheng-v50-1",
+          "title": "生平坐标",
+          "text": "长期处理突厥事务，以离间、结盟和军事威慑配合北方边防。 “应对突厥分裂”发生于582—584。隋朝以防御、军事行动、婚盟和离间等方式利用突厥内部矛盾，长孙晟长期参与谋划。北方压力一度缓解，但草原政治并未因此被永久控制。 理解长孙晟时还要联系隋代专题“统一不是终点”：灭陈结束南北政权对峙，江南行政、社会与文化整合仍经历反抗、镇压和长期调整。这构成其所处环境的一部分。",
+          "sources": [
+            "v50s_suishu64",
+            "v50s_suishu2"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_turk_split"
+          ],
+          "people": [
+            "sui_wendi"
+          ]
+        },
+        {
+          "id": "sui_changsunsheng-v50-2",
+          "title": "行动与转折",
+          "text": "长孙晟与杨坚的关系是“君主”。以情报、外交和军事策略处理北方关系。 这条线索解释了长孙晟为何不能只用“外交与边防将领”这一称号概括。 理解长孙晟时还要联系隋代专题“制度在继承中成形”：律令、三省六部、贡举和户籍制度均继承北朝及南朝经验，并由唐朝继续调整，不宜归结为某一年的突然发明。这构成其所处环境的一部分。",
+          "sources": [
+            "v50s_suishu64",
+            "v50s_suishu2"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_turk_split"
+          ],
+          "people": [
+            "sui_wendi"
+          ]
+        },
+        {
+          "id": "sui_changsunsheng-v50-3",
+          "title": "人物关系与实物证据",
+          "text": "长孙晟与杨坚的关系是“君主”。以情报、外交和军事策略处理北方关系。 理解长孙晟时还要联系隋代专题“都城、运河与跨区域交流”：大兴、洛阳和运河重组政治与物资交通；李静训墓等材料则显示白瓷、玻璃、宝石和域外样式如何进入贵族生活。这构成其所处环境的一部分。",
+          "sources": [
+            "v50s_suishu64",
+            "v50s_suishu2"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_turk_split"
+          ],
+          "people": [
+            "sui_wendi"
+          ]
+        },
+        {
+          "id": "sui_changsunsheng-v50-4",
+          "title": "史料边界",
+          "text": "“一箭双雕”等故事强化了传奇色彩，更重要的是其对突厥内部关系与草原政治的长期观察。 关于长孙晟，本篇主要依据《隋书》卷六十四·李圆通等传、《隋书》卷二·高祖下。长孙晟等人的边疆活动。评价长孙晟时，应把纪传的个人叙事与制度、事件或考古证据分开。 理解长孙晟时还要联系隋代专题“动员能力反噬国家”：远征、工程、灾荒和财政压力叠加，使逃亡与反抗扩大。隋末并非一次禅让，而是多个区域政权逐步取代中央。这构成其所处环境的一部分。",
+          "sources": [
+            "v50s_suishu64",
+            "v50s_suishu2"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_turk_split"
+          ],
+          "people": [
+            "sui_wendi"
+          ]
+        }
+      ],
+      "sources": [
+        "v50s_suishu64",
+        "v50s_suishu2"
+      ]
+    },
+    {
+      "person": "sui_peiju",
+      "title": "裴矩：西域经营者",
+      "dek": "在河西与西域调查交通、贸易和政权关系，编成《西域图记》。",
+      "sections": [
+        {
+          "id": "sui_peiju-v50-1",
+          "title": "生平坐标",
+          "text": "在河西与西域调查交通、贸易和政权关系，编成《西域图记》。 “西征吐谷浑”发生于609。隋炀帝亲自西行，隋军进击吐谷浑，并试图设置郡县、经营河西与青海通道。扩张加强西域交通想象，也把军需和行政成本推向边疆。 理解裴矩时还要联系隋代专题“统一不是终点”：灭陈结束南北政权对峙，江南行政、社会与文化整合仍经历反抗、镇压和长期调整。这构成其所处环境的一部分。",
+          "sources": [
+            "v50s_suishu67",
+            "v50s_suishu3"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_tuyuhun"
+          ],
+          "people": [
+            "sui_yangdi"
+          ]
+        },
+        {
+          "id": "sui_peiju-v50-2",
+          "title": "行动与转折",
+          "text": "“《西域图记》与河西交流”发生于大业年间。裴矩在张掖等地接触商旅、调查路线和政权，编成《西域图记》。地理知识促进交流，也服务于朝廷的外交、礼仪与扩张目标。 这条线索解释了裴矩为何不能只用“西域经营者”这一称号概括。 理解裴矩时还要联系隋代专题“制度在继承中成形”：律令、三省六部、贡举和户籍制度均继承北朝及南朝经验，并由唐朝继续调整，不宜归结为某一年的突然发明。这构成其所处环境的一部分。",
+          "sources": [
+            "v50s_suishu67",
+            "v50s_suishu3"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_silk_road"
+          ],
+          "people": [
+            "sui_yangdi"
+          ]
+        },
+        {
+          "id": "sui_peiju-v50-3",
+          "title": "人物关系与实物证据",
+          "text": "裴矩与杨广的关系是“君主”。调查西域交通并服务朝廷外交扩张。 “嵌珍珠宝石金项链”提供了另一类证据。李静训墓金项链使用珍珠、宝石、青金石与金质构件，造型带有中亚、西亚艺术因素。它可能经贸易、外交或赏赐进入贵族家族。具体取得路径缺少直接记录，只能陈述多种可能。 “张掖互市与西域使者”发生于大业年间。朝廷在河西接待商旅和使者，裴矩等推动贸易、贡使与政治联络。繁盛交流与国家展示并存，接待费用和扩张意图也需纳入评价。",
+          "sources": [
+            "v50s_suishu67",
+            "v50s_suishu3"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_western_trade"
+          ],
+          "people": [
+            "sui_yangdi"
+          ]
+        },
+        {
+          "id": "sui_peiju-v50-4",
+          "title": "史料边界",
+          "text": "裴矩既推动交流，也以情报与朝贡知识服务大业朝扩张；不能只写成丝路赞歌。 关于裴矩，本篇主要依据《隋书》卷六十七·裴矩等传、《隋书》卷三·炀帝上。裴矩经营西域与大业政治。评价裴矩时，应把纪传的个人叙事与制度、事件或考古证据分开。",
+          "sources": [
+            "v50s_suishu67",
+            "v50s_suishu3"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_western_trade"
+          ],
+          "people": [
+            "sui_yangdi"
+          ]
+        }
+      ],
+      "sources": [
+        "v50s_suishu67",
+        "v50s_suishu3"
+      ]
+    },
+    {
+      "person": "sui_niuhong",
+      "title": "牛弘：经籍整理主持者",
+      "dek": "主持搜求、整理图书并参与礼制与法律工作。",
+      "sections": [
+        {
+          "id": "sui_niuhong-v50-1",
+          "title": "生平坐标",
+          "text": "主持搜求、整理图书并参与礼制与法律工作。 “开皇律定型”发生于583。隋初多次修订律令，开皇三年形成较稳定体系，删减部分北周苛重条文并调整刑名。开皇律成为唐律的重要前提，但法律文本与实际司法仍需区分。 理解牛弘时还要联系隋代专题“统一不是终点”：灭陈结束南北政权对峙，江南行政、社会与文化整合仍经历反抗、镇压和长期调整。这构成其所处环境的一部分。",
+          "sources": [
+            "v50s_suishu32",
+            "v50s_suishu25"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_kaihuang_law"
+          ],
+          "people": [
+            "sui_wendi"
+          ]
+        },
+        {
+          "id": "sui_niuhong-v50-2",
+          "title": "行动与转折",
+          "text": "“搜书与经籍整理”发生于开皇年间。经历长期战乱后，隋廷征集散佚书籍，牛弘等参与整理官府藏书和礼乐文献。《隋书·经籍志》保存了知识分类和书籍存佚的重要线索。 这条线索解释了牛弘为何不能只用“经籍整理主持者”这一称号概括。 理解牛弘时还要联系隋代专题“制度在继承中成形”：律令、三省六部、贡举和户籍制度均继承北朝及南朝经验，并由唐朝继续调整，不宜归结为某一年的突然发明。这构成其所处环境的一部分。",
+          "sources": [
+            "v50s_suishu32",
+            "v50s_suishu25"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_catalogue"
+          ],
+          "people": [
+            "sui_wendi"
+          ]
+        },
+        {
+          "id": "sui_niuhong-v50-3",
+          "title": "人物关系与实物证据",
+          "text": "“开皇律”提供了另一类证据。开皇律删并刑名、调整条文，为唐律体系提供重要基础。法典呈现国家规范，实际司法仍受诏令、官僚运作和地方条件影响。原文并非完整独立传世，主要通过《隋书》及后世法制材料认识。 “《隋书·经籍志》所见藏书”提供了另一类证据。隋廷搜集和整理书籍，唐修《隋书·经籍志》据此保存四部分类、著录和亡佚线索。目录既记录知识，也反映国家选择与典藏能力。《隋书》成书于唐代，不能把经籍志文字等同于隋代当时原始目录。",
+          "sources": [
+            "v50s_suishu32",
+            "v50s_suishu25"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_catalogue"
+          ],
+          "people": [
+            "sui_wendi"
+          ]
+        },
+        {
+          "id": "sui_niuhong-v50-4",
+          "title": "史料边界",
+          "text": "经籍整理依赖抄写、征集和官府藏书体系，是战乱后知识重建的一部分。 关于牛弘，本篇主要依据《隋书》卷三十二·经籍志一、《隋书》卷二十五·刑法志。书籍整理、分类与典藏。评价牛弘时，应把纪传的个人叙事与制度、事件或考古证据分开。",
+          "sources": [
+            "v50s_suishu32",
+            "v50s_suishu25"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_catalogue"
+          ],
+          "people": [
+            "sui_wendi"
+          ]
+        }
+      ],
+      "sources": [
+        "v50s_suishu32",
+        "v50s_suishu25"
+      ]
+    },
+    {
+      "person": "sui_lichun",
+      "title": "李春：赵州桥匠师",
+      "dek": "传统文献记载的赵州桥营造者，代表隋代桥梁工程经验。",
+      "sections": [
+        {
+          "id": "sui_lichun-v50-1",
+          "title": "生平坐标",
+          "text": "传统文献记载的赵州桥营造者，代表隋代桥梁工程经验。 “赵州桥建成”发生于约605—616。赵州桥以敞肩石拱减轻桥体重量并利于泄洪，传统记载由匠师李春营造。桥梁实体比李春个人生平保存得更清楚，体现隋代工程计算与施工经验。 理解李春时还要联系隋代专题“统一不是终点”：灭陈结束南北政权对峙，江南行政、社会与文化整合仍经历反抗、镇压和长期调整。这构成其所处环境的一部分。",
+          "sources": [
+            "v50s_zhaozhou"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_zhaozhou_bridge"
+          ],
+          "people": [
+            "sui_wendi"
+          ]
+        },
+        {
+          "id": "sui_lichun-v50-2",
+          "title": "行动与转折",
+          "text": "“赵州桥”提供了另一类证据。赵州桥的大跨径敞肩石拱在减重、泄洪和结构受力之间取得平衡。传统记载将营造者记为李春，但其个人生平几乎不可考。现存桥体历经维修，不能把今天看到的每一块构件都直接视为隋代原件。 这条线索解释了李春为何不能只用“赵州桥匠师”这一称号概括。 理解李春时还要联系隋代专题“制度在继承中成形”：律令、三省六部、贡举和户籍制度均继承北朝及南朝经验，并由唐朝继续调整，不宜归结为某一年的突然发明。这构成其所处环境的一部分。",
+          "sources": [
+            "v50s_zhaozhou"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_zhaozhou_bridge"
+          ],
+          "people": [
+            "sui_wendi"
+          ]
+        },
+        {
+          "id": "sui_lichun-v50-3",
+          "title": "人物关系与实物证据",
+          "text": "“赵州桥”提供了另一类证据。赵州桥的大跨径敞肩石拱在减重、泄洪和结构受力之间取得平衡。传统记载将营造者记为李春，但其个人生平几乎不可考。现存桥体历经维修，不能把今天看到的每一块构件都直接视为隋代原件。",
+          "sources": [
+            "v50s_zhaozhou"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_zhaozhou_bridge"
+          ],
+          "people": [
+            "sui_wendi"
+          ]
+        },
+        {
+          "id": "sui_lichun-v50-4",
+          "title": "史料边界",
+          "text": "关于李春个人生平的可靠材料极少；应把重点放在桥体、工程技术与后世维修记录。 关于李春，本篇主要依据《中国文化遗产研究院·赵州桥保护》。赵州桥作为隋代大型石拱桥的保护与研究线索。评价李春时，应把纪传的个人叙事与制度、事件或考古证据分开。",
+          "sources": [
+            "v50s_zhaozhou"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_zhaozhou_bridge"
+          ],
+          "people": [
+            "sui_wendi"
+          ]
+        }
+      ],
+      "sources": [
+        "v50s_zhaozhou"
+      ]
+    },
+    {
+      "person": "sui_lijingxun",
+      "title": "李静训：宫廷贵族少女",
+      "dek": "九岁去世，其未被盗墓葬保存了隋代宫廷生活、工艺和跨区域交流的重要实物。",
+      "sections": [
+        {
+          "id": "sui_lijingxun-v50-1",
+          "title": "生平坐标",
+          "text": "九岁去世，其未被盗墓葬保存了隋代宫廷生活、工艺和跨区域交流的重要实物。 “李静训墓与宫廷物质文化”发生于608。九岁的李静训去世后葬于大兴城内万善尼寺附近，未被盗墓葬保存大量金银、玻璃、瓷器和首饰。墓葬让儿童生活、女性装饰、工艺技术和丝路交流获得具体物证。",
+          "sources": [
+            "v50s_nmc_jade",
+            "v50s_nmc_necklace",
+            "v50s_nmc_glass"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_lijingxun_burial"
+          ],
+          "people": [
+            "sui_wendi"
+          ]
+        },
+        {
+          "id": "sui_lijingxun-v50-2",
+          "title": "行动与转折",
+          "text": "“白瓷技术趋于成熟”发生于隋代。北朝以来的白瓷在隋代继续发展，李静训墓白瓷器釉色、造型与域外元素显示技术和审美变化。白瓷后来成为唐宋陶瓷的重要系统，隋代器物保存了转折阶段。 这条线索解释了李静训为何不能只用“宫廷贵族少女”这一称号概括。",
+          "sources": [
+            "v50s_nmc_jade",
+            "v50s_nmc_necklace",
+            "v50s_nmc_glass"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_white_porcelain"
+          ],
+          "people": [
+            "sui_wendi"
+          ]
+        },
+        {
+          "id": "sui_lijingxun-v50-3",
+          "title": "人物关系与实物证据",
+          "text": "“白瓷双耳扁瓶”提供了另一类证据。李静训墓出土的扁瓶以兽面、忍冬和联珠纹组成装饰，白釉未施满器身。它让隋代白瓷工艺与多元纹样在一件小器物上相遇。墓葬年代明确，但纹样来源不能凭相似性指定为某一单一文化。 “白瓷龙柄传瓶”提供了另一类证据。双腹相联、龙柄探入口沿的传瓶结合本土制瓷经验与北朝以来的域外器形因素，显示隋代白瓷色调和造型日趋成熟。“域外影响”不等于整件器物从域外输入。 “九岁墓主的生活世界”发生于608。李静训墓中的首饰、器皿和俑群呈现贵族儿童所处的家庭、服饰和礼仪环境。精美随葬品代表上层生活，不能直接推广为普通人的日常。",
+          "sources": [
+            "v50s_nmc_jade",
+            "v50s_nmc_necklace",
+            "v50s_nmc_glass"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_material_world"
+          ],
+          "people": [
+            "sui_wendi"
+          ]
+        },
+        {
+          "id": "sui_lijingxun-v50-4",
+          "title": "史料边界",
+          "text": "她并非政治决策者；入选源于墓葬材料能让儿童、服饰、器用和家族网络进入历史叙述。 关于李静训，本篇主要依据《中国国家博物馆·金玉满堂》、《中国国家博物馆·域外奇珍传中土》、《中国国家博物馆·椭圆形绿玻璃瓶》。李静训墓镶金口白玉杯与家世。评价李静训时，应把纪传的个人叙事与制度、事件或考古证据分开。",
+          "sources": [
+            "v50s_nmc_jade",
+            "v50s_nmc_necklace",
+            "v50s_nmc_glass"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_material_world"
+          ],
+          "people": [
+            "sui_wendi"
+          ]
+        }
+      ],
+      "sources": [
+        "v50s_nmc_jade",
+        "v50s_nmc_necklace",
+        "v50s_nmc_glass"
+      ]
+    },
+    {
+      "person": "sui_zhangxutuo",
+      "title": "张须陀：隋末将领",
+      "dek": "在河南、山东镇压起事并组织赈济，后与瓦岗军作战阵亡。",
+      "sections": [
+        {
+          "id": "sui_zhangxutuo-v50-1",
+          "title": "生平坐标",
+          "text": "在河南、山东镇压起事并组织赈济，后与瓦岗军作战阵亡。 “瓦岗军兴起”发生于616—618。河南饥荒和征役背景下，瓦岗军吸纳地方武装与流民；李密掌权后争夺洛口仓和东都外围。粮仓、交通和政治号召共同决定隋末群雄竞争，不宜只概括为单一类型起义。 理解张须陀时还要联系隋代专题“统一不是终点”：灭陈结束南北政权对峙，江南行政、社会与文化整合仍经历反抗、镇压和长期调整。这构成其所处环境的一部分。",
+          "sources": [
+            "v50s_suishu71",
+            "v50s_zz185"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_wagang"
+          ],
+          "people": [
+            "sui_limi"
+          ]
+        },
+        {
+          "id": "sui_zhangxutuo-v50-2",
+          "title": "行动与转折",
+          "text": "“战争与工程挤压财政”发生于610—618。东都、宫殿、运河和高句丽战争连续动员人口、车船与粮食，地方承受能力不断下降。国家早期积累被快速消耗，逃户、盗贼和地方武装扩大。 这条线索解释了张须陀为何不能只用“隋末将领”这一称号概括。 理解张须陀时还要联系隋代专题“制度在继承中成形”：律令、三省六部、贡举和户籍制度均继承北朝及南朝经验，并由唐朝继续调整，不宜归结为某一年的突然发明。这构成其所处环境的一部分。",
+          "sources": [
+            "v50s_suishu71",
+            "v50s_zz185"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_fiscal_overload"
+          ],
+          "people": [
+            "sui_yangdi"
+          ]
+        },
+        {
+          "id": "sui_zhangxutuo-v50-3",
+          "title": "人物关系与实物证据",
+          "text": "张须陀与李密的关系是“战场对手”。在河南与瓦岗军交战。 张须陀与杨广的关系是“君主”。受命应对河南、山东反抗力量。 “灾荒、逃亡与地方失序”发生于610年代。黄河流域等地灾害与征役压力交叠，饥民、逃户和小规模武装不断增加。社会危机为瓦岗等力量提供人口与粮食诉求，也削弱地方官府。",
+          "sources": [
+            "v50s_suishu71",
+            "v50s_zz185"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_famine"
+          ],
+          "people": [
+            "sui_yangdi"
+          ]
+        },
+        {
+          "id": "sui_zhangxutuo-v50-4",
+          "title": "史料边界",
+          "text": "正史的忠臣框架需与地方饥荒、征役和反抗背景一并阅读。 关于张须陀，本篇主要依据《隋书》卷七十一·诚节传、《资治通鉴》卷一百八十五。张须陀等隋末军事人物。评价张须陀时，应把纪传的个人叙事与制度、事件或考古证据分开。",
+          "sources": [
+            "v50s_suishu71",
+            "v50s_zz185"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_famine"
+          ],
+          "people": [
+            "sui_yangdi"
+          ]
+        }
+      ],
+      "sources": [
+        "v50s_suishu71",
+        "v50s_zz185"
+      ]
+    },
+    {
+      "person": "sui_yangxuangan",
+      "title": "杨玄感：黎阳起兵者",
+      "dek": "杨素之子，利用高句丽战争后方压力起兵，迅速失败。",
+      "sections": [
+        {
+          "id": "sui_yangxuangan-v50-1",
+          "title": "生平坐标",
+          "text": "杨素之子，利用高句丽战争后方压力起兵，迅速失败。 “杨玄感黎阳起兵”发生于613。第二次高句丽战争期间，杨玄感利用黎阳仓与后方空虚起兵，李密参与谋划，旋即失败。贵族反叛公开暴露统治裂缝，也迫使远征军仓促回撤。 理解杨玄感时还要联系隋代专题“统一不是终点”：灭陈结束南北政权对峙，江南行政、社会与文化整合仍经历反抗、镇压和长期调整。这构成其所处环境的一部分。",
+          "sources": [
+            "v50s_suishu70",
+            "v50s_suishu4"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_xuangan"
+          ],
+          "people": [
+            "sui_yangdi"
+          ]
+        },
+        {
+          "id": "sui_yangxuangan-v50-2",
+          "title": "行动与转折",
+          "text": "杨玄感与杨广的关系是“被反对的君主”。利用远征后方空虚起兵。 这条线索解释了杨玄感为何不能只用“黎阳起兵者”这一称号概括。 理解杨玄感时还要联系隋代专题“制度在继承中成形”：律令、三省六部、贡举和户籍制度均继承北朝及南朝经验，并由唐朝继续调整，不宜归结为某一年的突然发明。这构成其所处环境的一部分。",
+          "sources": [
+            "v50s_suishu70",
+            "v50s_suishu4"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_xuangan"
+          ],
+          "people": [
+            "sui_yangdi"
+          ]
+        },
+        {
+          "id": "sui_yangxuangan-v50-3",
+          "title": "人物关系与实物证据",
+          "text": "杨玄感与杨广的关系是“被反对的君主”。利用远征后方空虚起兵。 理解杨玄感时还要联系隋代专题“都城、运河与跨区域交流”：大兴、洛阳和运河重组政治与物资交通；李静训墓等材料则显示白瓷、玻璃、宝石和域外样式如何进入贵族生活。这构成其所处环境的一部分。",
+          "sources": [
+            "v50s_suishu70",
+            "v50s_suishu4"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_xuangan"
+          ],
+          "people": [
+            "sui_yangdi"
+          ]
+        },
+        {
+          "id": "sui_yangxuangan-v50-4",
+          "title": "史料边界",
+          "text": "其行动主要依靠贵族与官僚网络，并未稳定整合广泛反隋力量。 关于杨玄感，本篇主要依据《隋书》卷七十·杨玄感等传、《隋书》卷四·炀帝下。杨玄感起兵及隋末政治。评价杨玄感时，应把纪传的个人叙事与制度、事件或考古证据分开。 理解杨玄感时还要联系隋代专题“动员能力反噬国家”：远征、工程、灾荒和财政压力叠加，使逃亡与反抗扩大。隋末并非一次禅让，而是多个区域政权逐步取代中央。这构成其所处环境的一部分。",
+          "sources": [
+            "v50s_suishu70",
+            "v50s_suishu4"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_xuangan"
+          ],
+          "people": [
+            "sui_yangdi"
+          ]
+        }
+      ],
+      "sources": [
+        "v50s_suishu70",
+        "v50s_suishu4"
+      ]
+    },
+    {
+      "person": "sui_limi",
+      "title": "李密：瓦岗军领袖",
+      "dek": "参与杨玄感起兵，后成为瓦岗军核心领袖并建立魏政权。",
+      "sections": [
+        {
+          "id": "sui_limi-v50-1",
+          "title": "生平坐标",
+          "text": "参与杨玄感起兵，后成为瓦岗军核心领袖并建立魏政权。 “杨玄感黎阳起兵”发生于613。第二次高句丽战争期间，杨玄感利用黎阳仓与后方空虚起兵，李密参与谋划，旋即失败。贵族反叛公开暴露统治裂缝，也迫使远征军仓促回撤。 “灾荒、逃亡与地方失序”发生于610年代。黄河流域等地灾害与征役压力交叠，饥民、逃户和小规模武装不断增加。社会危机为瓦岗等力量提供人口与粮食诉求，也削弱地方官府。",
+          "sources": [
+            "v50s_suishu70",
+            "v50s_zz185"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_xuangan"
+          ],
+          "people": [
+            "sui_zhangxutuo"
+          ]
+        },
+        {
+          "id": "sui_limi-v50-2",
+          "title": "行动与转折",
+          "text": "“瓦岗军兴起”发生于616—618。河南饥荒和征役背景下，瓦岗军吸纳地方武装与流民；李密掌权后争夺洛口仓和东都外围。粮仓、交通和政治号召共同决定隋末群雄竞争，不宜只概括为单一类型起义。 这条线索解释了李密为何不能只用“瓦岗军领袖”这一称号概括。 理解李密时还要联系隋代专题“统一不是终点”：灭陈结束南北政权对峙，江南行政、社会与文化整合仍经历反抗、镇压和长期调整。这构成其所处环境的一部分。",
+          "sources": [
+            "v50s_suishu70",
+            "v50s_zz185"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_wagang"
+          ],
+          "people": [
+            "sui_gongdi_tong"
+          ]
+        },
+        {
+          "id": "sui_limi-v50-3",
+          "title": "人物关系与实物证据",
+          "text": "李密与张须陀的关系是“战场对手”。在河南与瓦岗军交战。 李密与杨侗的关系是“洛阳隋廷”。瓦岗军与东都政权围绕粮仓和交通争夺。 “东都粮仓与漕运”发生于大业年间。洛阳周边大型仓储承接运河运来的粮食，为首都、军队和远征提供供应。隋末各方争夺粮仓，说明仓储节点能够转化为军事和政治资源。 理解李密时还要联系隋代专题“制度在继承中成形”：律令、三省六部、贡举和户籍制度均继承北朝及南朝经验，并由唐朝继续调整，不宜归结为某一年的突然发明。这构成其所处环境的一部分。",
+          "sources": [
+            "v50s_suishu70",
+            "v50s_zz185"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_luoyang_granary"
+          ],
+          "people": [
+            "sui_gongdi_tong"
+          ]
+        },
+        {
+          "id": "sui_limi-v50-4",
+          "title": "史料边界",
+          "text": "瓦岗并非单一农民起义组织，地方武装、士人和流民在其中并存。 关于李密，本篇主要依据《隋书》卷七十·杨玄感等传、《资治通鉴》卷一百八十五。杨玄感起兵及隋末政治。评价李密时，应把纪传的个人叙事与制度、事件或考古证据分开。",
+          "sources": [
+            "v50s_suishu70",
+            "v50s_zz185"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_famine"
+          ],
+          "people": [
+            "sui_gongdi_tong"
+          ]
+        }
+      ],
+      "sources": [
+        "v50s_suishu70",
+        "v50s_zz185"
+      ]
+    },
+    {
+      "person": "sui_yuwenhuaji",
+      "title": "宇文化及：江都兵变首领",
+      "dek": "发动江都兵变杀杨广，拥立杨浩后又废杀之。",
+      "sections": [
+        {
+          "id": "sui_yuwenhuaji-v50-1",
+          "title": "生平坐标",
+          "text": "发动江都兵变杀杨广，拥立杨浩后又废杀之。 “江都兵变”发生于618。江都军人集团发动兵变，宇文化及等杀死杨广与多名宗室、大臣。隋朝最高权力中心崩解，江都、长安、洛阳出现不同的隋室名义与新政权。 理解宇文化及时还要联系隋代专题“统一不是终点”：灭陈结束南北政权对峙，江南行政、社会与文化整合仍经历反抗、镇压和长期调整。这构成其所处环境的一部分。",
+          "sources": [
+            "v50s_suishu4",
+            "v50s_zz186"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_jiangdu_coup"
+          ],
+          "people": [
+            "sui_yangdi"
+          ]
+        },
+        {
+          "id": "sui_yuwenhuaji-v50-2",
+          "title": "行动与转折",
+          "text": "“杨浩、杨侗与并立终局”发生于618—619。宇文化及拥立杨浩后废杀；洛阳方面拥立杨侗，至619年被王世充取代。“隋亡于618”是方便的断代，实际政权崩解具有地域差异和重叠过程。 这条线索解释了宇文化及为何不能只用“江都兵变首领”这一称号概括。 理解宇文化及时还要联系隋代专题“制度在继承中成形”：律令、三省六部、贡举和户籍制度均继承北朝及南朝经验，并由唐朝继续调整，不宜归结为某一年的突然发明。这构成其所处环境的一部分。",
+          "sources": [
+            "v50s_suishu4",
+            "v50s_zz186"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_parallel_courts"
+          ],
+          "people": [
+            "sui_yanghao"
+          ]
+        },
+        {
+          "id": "sui_yuwenhuaji-v50-3",
+          "title": "人物关系与实物证据",
+          "text": "宇文化及与杨广的关系是“被杀的君主”。发动兵变，终结杨广统治。 宇文化及与杨浩的关系是“被拥立者”。拥立后不久即废杀杨浩。 “易代中的迁徙与暴力”发生于617—619。群雄争夺城池、粮仓与交通线，军队和居民在长安、洛阳、江都及河北之间承受征粮、迁徙和战斗。王朝终结是多地持续数年的社会过程，远超宫廷禅让仪式。 理解宇文化及时还要联系隋代专题“都城、运河与跨区域交流”：大兴、洛阳和运河重组政治与物资交通；李静训墓等材料则显示白瓷、玻璃、宝石和域外样式如何进入贵族生活。这构成其所处环境的一部分。",
+          "sources": [
+            "v50s_suishu4",
+            "v50s_zz186"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_regime_displacement"
+          ],
+          "people": [
+            "sui_yanghao"
+          ]
+        },
+        {
+          "id": "sui_yuwenhuaji-v50-4",
+          "title": "史料边界",
+          "text": "其政权缺乏稳固基础，北返途中不断失去军心和控制区。 关于宇文化及，本篇主要依据《隋书》卷四·炀帝下、《资治通鉴》卷一百八十六。高句丽战争、各地反抗与江都结局。评价宇文化及时，应把纪传的个人叙事与制度、事件或考古证据分开。",
+          "sources": [
+            "v50s_suishu4",
+            "v50s_zz186"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_regime_displacement"
+          ],
+          "people": [
+            "sui_yanghao"
+          ]
+        }
+      ],
+      "sources": [
+        "v50s_suishu4",
+        "v50s_zz186"
+      ]
+    },
+    {
+      "person": "sui_liyuan",
+      "title": "李渊：唐国公、唐高祖",
+      "dek": "隋末自太原起兵，控制长安后拥立杨侑，618年建立唐朝。",
+      "sections": [
+        {
+          "id": "sui_liyuan-v50-1",
+          "title": "生平坐标",
+          "text": "隋末自太原起兵，控制长安后拥立杨侑，618年建立唐朝。 “长安拥立杨侑”发生于617。李渊军进入长安后拥立杨侑，遥尊杨广为太上皇，使用义宁年号。隋末中央权力已经分裂，长安政权的实际军事和行政主导者是李渊集团。 理解李渊时还要联系隋代专题“统一不是终点”：灭陈结束南北政权对峙，江南行政、社会与文化整合仍经历反抗、镇压和长期调整。这构成其所处环境的一部分。",
+          "sources": [
+            "v50s_zz185",
+            "v50s_zz186"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_changan_court"
+          ],
+          "people": [
+            "sui_gongdi_you"
+          ]
+        },
+        {
+          "id": "sui_liyuan-v50-2",
+          "title": "行动与转折",
+          "text": "“易代中的迁徙与暴力”发生于617—619。群雄争夺城池、粮仓与交通线，军队和居民在长安、洛阳、江都及河北之间承受征粮、迁徙和战斗。王朝终结是多地持续数年的社会过程，远超宫廷禅让仪式。 这条线索解释了李渊为何不能只用“唐国公、唐高祖”这一称号概括。 理解李渊时还要联系隋代专题“制度在继承中成形”：律令、三省六部、贡举和户籍制度均继承北朝及南朝经验，并由唐朝继续调整，不宜归结为某一年的突然发明。这构成其所处环境的一部分。",
+          "sources": [
+            "v50s_zz185",
+            "v50s_zz186"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_regime_displacement"
+          ],
+          "people": [
+            "sui_gongdi_you"
+          ]
+        },
+        {
+          "id": "sui_liyuan-v50-3",
+          "title": "人物关系与实物证据",
+          "text": "李渊与杨侑的关系是“被拥立的隋帝”。李渊控制长安后拥立杨侑，随后接受禅位。 理解李渊时还要联系隋代专题“都城、运河与跨区域交流”：大兴、洛阳和运河重组政治与物资交通；李静训墓等材料则显示白瓷、玻璃、宝石和域外样式如何进入贵族生活。这构成其所处环境的一部分。",
+          "sources": [
+            "v50s_zz185",
+            "v50s_zz186"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_regime_displacement"
+          ],
+          "people": [
+            "sui_gongdi_you"
+          ]
+        },
+        {
+          "id": "sui_liyuan-v50-4",
+          "title": "史料边界",
+          "text": "在隋代页面中聚焦其作为隋臣和易代参与者；唐朝统治另见唐代帝序。 关于李渊，本篇主要依据《资治通鉴》卷一百八十五、《资治通鉴》卷一百八十六。大业十三年至义宁元年的政局。评价李渊时，应把纪传的个人叙事与制度、事件或考古证据分开。 理解李渊时还要联系隋代专题“动员能力反噬国家”：远征、工程、灾荒和财政压力叠加，使逃亡与反抗扩大。隋末并非一次禅让，而是多个区域政权逐步取代中央。这构成其所处环境的一部分。",
+          "sources": [
+            "v50s_zz185",
+            "v50s_zz186"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v50s_regime_displacement"
+          ],
+          "people": [
+            "sui_gongdi_you"
+          ]
+        }
+      ],
+      "sources": [
+        "v50s_zz185",
+        "v50s_zz186"
+      ]
     }
   ],
   "portraits": [
@@ -61845,6 +65685,236 @@
       "sources": [
         "v49h_houhanshu"
       ]
+    },
+    {
+      "from": "sui_wendi",
+      "to": "sui_gaojiong",
+      "role": "宰辅与军事统筹",
+      "inverse": "君主",
+      "period": "开皇朝",
+      "note": "参与建国、灭陈和制度整合，后因政治分歧失势。",
+      "sources": [
+        "v50s_suishu41"
+      ]
+    },
+    {
+      "from": "sui_wendi",
+      "to": "sui_suwei",
+      "role": "制度与赋役顾问",
+      "inverse": "君主",
+      "period": "开皇朝",
+      "note": "参与官制、法律与赋役调整。",
+      "sources": [
+        "v50s_suishu41",
+        "v50s_suishu24"
+      ]
+    },
+    {
+      "from": "sui_wendi",
+      "to": "sui_yuwenkai",
+      "role": "都城营建主持者",
+      "inverse": "君主",
+      "period": "开皇朝",
+      "note": "参与大兴城规划与大型建筑。",
+      "sources": [
+        "v50s_suishu50"
+      ]
+    },
+    {
+      "from": "sui_wendi",
+      "to": "sui_hanqinhu",
+      "role": "灭陈将领",
+      "inverse": "君主",
+      "period": "588—589",
+      "note": "率一路隋军渡江进入建康。",
+      "sources": [
+        "v50s_suishu52"
+      ]
+    },
+    {
+      "from": "sui_wendi",
+      "to": "sui_heruobi",
+      "role": "灭陈将领",
+      "inverse": "君主",
+      "period": "588—589",
+      "note": "率军渡江，与多路军队协同灭陈。",
+      "sources": [
+        "v50s_suishu52"
+      ]
+    },
+    {
+      "from": "sui_wendi",
+      "to": "sui_changsunsheng",
+      "role": "突厥事务谋臣",
+      "inverse": "君主",
+      "period": "开皇朝",
+      "note": "以情报、外交和军事策略处理北方关系。",
+      "sources": [
+        "v50s_suishu64"
+      ]
+    },
+    {
+      "from": "sui_yangdi",
+      "to": "sui_yuwenkai",
+      "role": "东都营建主持者",
+      "inverse": "君主",
+      "period": "大业初",
+      "note": "参与东都洛阳规划营建。",
+      "sources": [
+        "v50s_suishu50"
+      ]
+    },
+    {
+      "from": "sui_yangdi",
+      "to": "sui_peiju",
+      "role": "西域经营与地理顾问",
+      "inverse": "君主",
+      "period": "大业朝",
+      "note": "调查西域交通并服务朝廷外交扩张。",
+      "sources": [
+        "v50s_suishu67"
+      ]
+    },
+    {
+      "from": "sui_yangdi",
+      "to": "sui_yangxuangan",
+      "role": "反叛的贵族",
+      "inverse": "被反对的君主",
+      "period": "613",
+      "note": "利用远征后方空虚起兵。",
+      "sources": [
+        "v50s_suishu70"
+      ]
+    },
+    {
+      "from": "sui_yangdi",
+      "to": "sui_yuwenhuaji",
+      "role": "江都兵变首领",
+      "inverse": "被杀的君主",
+      "period": "618",
+      "note": "发动兵变，终结杨广统治。",
+      "sources": [
+        "v50s_suishu4",
+        "v50s_zz186"
+      ]
+    },
+    {
+      "from": "sui_zhangxutuo",
+      "to": "sui_limi",
+      "role": "战场对手",
+      "inverse": "战场对手",
+      "period": "616",
+      "note": "在河南与瓦岗军交战。",
+      "sources": [
+        "v50s_suishu71"
+      ]
+    },
+    {
+      "from": "sui_gongdi_you",
+      "to": "sui_liyuan",
+      "role": "实际掌权者",
+      "inverse": "被拥立的隋帝",
+      "period": "617—618",
+      "note": "李渊控制长安后拥立杨侑，随后接受禅位。",
+      "sources": [
+        "v50s_suishu5",
+        "v50s_zz186"
+      ]
+    },
+    {
+      "from": "sui_yanghao",
+      "to": "sui_yuwenhuaji",
+      "role": "拥立者与控制者",
+      "inverse": "被拥立者",
+      "period": "618",
+      "note": "拥立后不久即废杀杨浩。",
+      "sources": [
+        "v50s_zz186"
+      ]
+    },
+    {
+      "from": "sui_wendi",
+      "to": "sui_dugu",
+      "role": "共同参与继承与宫廷决策",
+      "inverse": "皇帝与配偶",
+      "period": "北周末至开皇朝",
+      "note": "共同经历建隋与储位变动。",
+      "sources": [
+        "v50s_suishu1",
+        "v50s_suishu4"
+      ]
+    },
+    {
+      "from": "sui_wendi",
+      "to": "sui_yangsu",
+      "role": "军事统帅与权臣",
+      "inverse": "君主",
+      "period": "开皇朝",
+      "note": "参与灭陈、平定江南与朝廷政治。",
+      "sources": [
+        "v50s_suishu1",
+        "v50s_suishu4"
+      ]
+    },
+    {
+      "from": "sui_yangdi",
+      "to": "sui_xiaohou",
+      "role": "随行皇后",
+      "inverse": "皇帝与配偶",
+      "period": "大业朝",
+      "note": "共同经历巡幸与江都兵变。",
+      "sources": [
+        "v50s_suishu1",
+        "v50s_suishu4"
+      ]
+    },
+    {
+      "from": "sui_yangdi",
+      "to": "sui_zhangxutuo",
+      "role": "地方军事将领",
+      "inverse": "君主",
+      "period": "大业末",
+      "note": "受命应对河南、山东反抗力量。",
+      "sources": [
+        "v50s_suishu1",
+        "v50s_suishu4"
+      ]
+    },
+    {
+      "from": "sui_gongdi_you",
+      "to": "sui_gongdi_tong",
+      "role": "并立的隋室宗亲",
+      "inverse": "并立的隋室宗亲",
+      "period": "617—619",
+      "note": "分别在长安与洛阳被不同政治集团拥立。",
+      "sources": [
+        "v50s_suishu5",
+        "v50s_zz186"
+      ]
+    },
+    {
+      "from": "sui_yanghao",
+      "to": "sui_gongdi_tong",
+      "role": "并立的隋室宗亲",
+      "inverse": "并立的隋室宗亲",
+      "period": "618",
+      "note": "分别在江都与洛阳被拥立。",
+      "sources": [
+        "v50s_suishu5",
+        "v50s_zz186"
+      ]
+    },
+    {
+      "from": "sui_gongdi_tong",
+      "to": "sui_limi",
+      "role": "洛阳外围军事对手",
+      "inverse": "洛阳隋廷",
+      "period": "618",
+      "note": "瓦岗军与东都政权围绕粮仓和交通争夺。",
+      "sources": [
+        "v50s_suishu5",
+        "v50s_zz186"
+      ]
     }
   ],
   "dynasties": [
@@ -61954,10 +66024,12 @@
       "id": "sui",
       "name": "隋",
       "years": "581—618",
-      "selectable": false,
+      "selectable": true,
       "note": "结束长期分裂，重建统一政治秩序。",
       "sources": [
-        "v5d_nmc_ancient"
+        "v50s_suishu1",
+        "v50s_suishu5",
+        "v50s_dpm_tomb"
       ]
     },
     {
@@ -62271,27 +66343,39 @@
     },
     {
       "id": "sui",
-      "subtitle": "再统一与大型工程的代价",
-      "overview": "隋由北周外戚杨坚建立，589年灭陈后结束南北长期分裂。朝廷重新整合户籍、赋役和地方行政，三省六部、选官制度与法律体系为唐代进一步发展奠定基础。大运河及交通建设强化了南方经济区与北方政治中心的联系。\n\n统一也伴随高强度的工程和战争动员。隋炀帝时期多次远征高句丽，徭役、运输和财政压力与地方灾害相互叠加，各地反抗迅速扩散。618年前后隋政权崩溃。它延续不足四十年，却完成了从南北朝到唐帝国之间关键的制度和空间重组。",
+      "subtitle": "再统一、制度重组与动员极限",
+      "overview": "581年杨坚代北周建隋，589年灭陈，南北重新归于一个中央政权。隋廷重整律令、官制、户籍、赋役和仓储，大兴城与东都洛阳连接政治空间，贡举、经籍整理和白瓷等文化变化也为唐代的发展提供基础。\n\n统一依赖强大的资源组织能力，也暴露这种能力的限度。运河、都城与边疆经营留下长期遗产，高句丽战争和连续工程却在短期内集中消耗人力物力。617年以后长安、江都、洛阳等权力中心并立；618年唐朝建立常被视为隋亡节点，但杨侗的洛阳政权延续到619年。",
       "sections": [
         {
           "id": "unity",
-          "title": "重建统一",
-          "text": "灭陈后，全国重新置于一个中央政权之下。"
+          "title": "统一不是终点",
+          "text": "灭陈结束南北政权对峙，江南行政、社会与文化整合仍经历反抗、镇压和长期调整。"
         },
         {
           "id": "institutions",
-          "title": "制度遗产",
-          "text": "三省六部、选官与地方治理的调整被唐代继承发展。"
+          "title": "制度在继承中成形",
+          "text": "律令、三省六部、贡举和户籍制度均继承北朝及南朝经验，并由唐朝继续调整，不宜归结为某一年的突然发明。"
         },
         {
-          "id": "end",
-          "title": "短促终局",
-          "text": "对高句丽战争、工程动员和政治危机引发广泛反抗。"
+          "id": "connections",
+          "title": "都城、运河与跨区域交流",
+          "text": "大兴、洛阳和运河重组政治与物资交通；李静训墓等材料则显示白瓷、玻璃、宝石和域外样式如何进入贵族生活。"
+        },
+        {
+          "id": "collapse",
+          "title": "动员能力反噬国家",
+          "text": "远征、工程、灾荒和财政压力叠加，使逃亡与反抗扩大。隋末并非一次禅让，而是多个区域政权逐步取代中央。"
         }
       ],
       "sources": [
-        "v5d_nmc_ancient"
+        "v50s_suishu1",
+        "v50s_suishu2",
+        "v50s_suishu3",
+        "v50s_suishu4",
+        "v50s_suishu5",
+        "v50s_suishu24",
+        "v50s_dpm_tomb",
+        "v50s_canal"
       ]
     },
     {
@@ -63348,7 +67432,7 @@
     {
       "id": "sui",
       "date": "约609年",
-      "caption": "以隋炀帝时期为代表。统一、运河和郡县体系加强南北联系，边疆控制仍有层次差异。",
+      "caption": "以大业五年前后的控制范围作概略示意。隋已统一南北，并向吐谷浑故地设置郡县；边疆军政控制、羁縻与短期占领不能用同一实线表达。",
       "centerLatitude": 33.0,
       "centerLongitude": 108.0,
       "latitudeDelta": 32.0,
@@ -63393,8 +67477,9 @@
         }
       ],
       "sources": [
-        "v9_chgis",
-        "v5d_nmc_ancient"
+        "v50s_chgis",
+        "v50s_suishu3",
+        "v50s_suishu4"
       ]
     },
     {
@@ -67166,6 +71251,147 @@
         "v49h_cambridge"
       ],
       "note": "按本纪纪年列示；短朝与年内交接保留实际制度边界。"
+    },
+    {
+      "person": "sui_wendi",
+      "periods": [
+        {
+          "label": "581—604",
+          "start": 581,
+          "end": 604
+        }
+      ],
+      "people": [
+        "sui_dugu",
+        "sui_gaojiong",
+        "sui_suwei",
+        "sui_yangsu",
+        "sui_yuwenkai",
+        "sui_hanqinhu",
+        "sui_heruobi",
+        "sui_changsunsheng"
+      ],
+      "events": [
+        "v50s_zhou_sui",
+        "v50s_daxing",
+        "v50s_kaihuang_law",
+        "v50s_conquer_chen",
+        "v50s_equal_field",
+        "v50s_household_check",
+        "v50s_tax_register",
+        "v50s_depose_yong"
+      ],
+      "sources": [
+        "v50s_suishu1",
+        "v50s_suishu2"
+      ],
+      "note": ""
+    },
+    {
+      "person": "sui_yangdi",
+      "periods": [
+        {
+          "label": "604—618",
+          "start": 604,
+          "end": 618
+        }
+      ],
+      "people": [
+        "sui_xiaohou",
+        "sui_yuwenkai",
+        "sui_peiju",
+        "sui_yangxuangan",
+        "sui_zhangxutuo",
+        "sui_yuwenhuaji"
+      ],
+      "events": [
+        "v50s_accession_604",
+        "v50s_luoyang",
+        "v50s_canal",
+        "v50s_tuyuhun",
+        "v50s_koguryo",
+        "v50s_xuangan",
+        "v50s_fiscal_overload",
+        "v50s_jiangdu_coup"
+      ],
+      "sources": [
+        "v50s_suishu3",
+        "v50s_suishu4"
+      ],
+      "note": ""
+    },
+    {
+      "person": "sui_gongdi_you",
+      "periods": [
+        {
+          "label": "617—618",
+          "start": 617,
+          "end": 618
+        }
+      ],
+      "people": [
+        "sui_liyuan",
+        "sui_gongdi_tong"
+      ],
+      "events": [
+        "v50s_changan_court",
+        "v50s_regime_displacement",
+        "v50s_parallel_courts"
+      ],
+      "sources": [
+        "v50s_suishu5",
+        "v50s_zz185",
+        "v50s_zz186"
+      ],
+      "note": "并立政权的统治范围与名义帝号分开说明。"
+    },
+    {
+      "person": "sui_yanghao",
+      "periods": [
+        {
+          "label": "618",
+          "start": 618,
+          "end": 618
+        }
+      ],
+      "people": [
+        "sui_yuwenhuaji",
+        "sui_gongdi_tong"
+      ],
+      "events": [
+        "v50s_jiangdu_coup",
+        "v50s_parallel_courts"
+      ],
+      "sources": [
+        "v50s_suishu4",
+        "v50s_zz186"
+      ],
+      "note": "并立政权的统治范围与名义帝号分开说明。"
+    },
+    {
+      "person": "sui_gongdi_tong",
+      "periods": [
+        {
+          "label": "618—619",
+          "start": 618,
+          "end": 619
+        }
+      ],
+      "people": [
+        "sui_gongdi_you",
+        "sui_yanghao",
+        "sui_limi"
+      ],
+      "events": [
+        "v50s_parallel_courts",
+        "v50s_regime_displacement",
+        "v50s_wagang"
+      ],
+      "sources": [
+        "v50s_suishu5",
+        "v50s_zz186"
+      ],
+      "note": "并立政权的统治范围与名义帝号分开说明。"
     }
   ]
 }
