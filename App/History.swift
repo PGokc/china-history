@@ -265,7 +265,8 @@ struct Content: Codable {
     }
     func dynastyID(for personID: String) -> String {
         if let id = content.people.first(where: { $0.id == personID })?.dynasty { return id }
-        return personID.hasPrefix("q_") ? "qing" : "ming"
+        assertionFailure("Person \(personID) has no explicit dynasty")
+        return "ming"
     }
     func dynastyName(_ id: String) -> String {
         id == "song_liao_xia_jin" ? "宋代" : (dynasty(id)?.name ?? "") + "朝"

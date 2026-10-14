@@ -1369,4 +1369,29 @@ final class MingJiUITests: XCTestCase {
         shot("v44-period-event-order", app)
     }
 
+    @MainActor func testV46ExpandedImperialReadingAcrossDynasties() throws {
+        let cases = [
+            ("tang", "t_18", "会昌政策既有军事面，也有社会代价"),
+            ("song_liao_xia_jin", "s_13", "从史弥远执政到蒙古战争"),
+            ("yuan", "y_5", "晋王体系进入中央之后")
+        ]
+        for (dynasty, sequence, sectionTitle) in cases {
+            let app = XCUIApplication()
+            app.launchArguments = ["--uitesting", "--ui-dynasty", dynasty]
+            app.launch()
+            XCTAssertTrue(app.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+            openEmperor(sequence, in: app)
+            app.buttons["personHero"].tap()
+            openArticle(in: app)
+            app.buttons["articleContents"].tap()
+            let section = app.buttons[sectionTitle]
+            reachReadingLink(section, in: app)
+            XCTAssertTrue(section.isHittable)
+            section.tap()
+            XCTAssertEqual(app.buttons["articleContents"].value as? String, sectionTitle)
+            shot("v46-expanded-" + dynasty, app)
+            app.terminate()
+        }
+    }
+
 }

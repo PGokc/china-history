@@ -1,6 +1,6 @@
 {
-  "version": 27,
-  "reviewed": "2026-09-20",
+  "version": 28,
+  "reviewed": "2026-10-13",
   "people": [
     {
       "id": "yuanzhang",
@@ -19,7 +19,8 @@
       "kind": "皇帝",
       "note": "幼名重八，字国瑞。1328年生，1398年卒。庙号用于宗庙祭祀，年号用于纪年；它们都不是姓名。",
       "image": "226244",
-      "birthOrder": 4
+      "birthOrder": 4,
+      "dynasty": "ming"
     },
     {
       "id": "yunwen",
@@ -36,7 +37,8 @@
       "kind": "皇帝",
       "note": "1398年即位，1399年改元。1402年南京失守后的下落有争议。南明追尊称号不代表在位时称呼。",
       "image": "portrait_v4_yunwen",
-      "birthOrder": null
+      "birthOrder": null,
+      "dynasty": "ming"
     },
     {
       "id": "di",
@@ -54,7 +56,8 @@
       "kind": "皇帝",
       "note": "1402年即位，次年改元。初庙号太宗，嘉靖十七年（1538）改为成祖。关于生母的不同说法暂不画成确定亲生连线。",
       "image": "226257",
-      "birthOrder": 4
+      "birthOrder": 4,
+      "dynasty": "ming"
     },
     {
       "id": "gaochi",
@@ -71,7 +74,8 @@
       "kind": "皇帝",
       "note": "1424年即位，1425年改元。朱高煦是他的弟弟，朱瞻基是他的儿子。",
       "image": "226249",
-      "birthOrder": 1
+      "birthOrder": 1,
+      "dynasty": "ming"
     },
     {
       "id": "zhanji",
@@ -89,7 +93,8 @@
       "kind": "皇帝",
       "note": "1425年即位，次年改元。器物标注“宣德”，首先指制作时期，不能直接证明皇帝亲自使用。",
       "image": "226252",
-      "birthOrder": 1
+      "birthOrder": 1,
+      "dynasty": "ming"
     },
     {
       "id": "qizhen",
@@ -107,7 +112,8 @@
       "kind": "皇帝",
       "note": "人物只收录一次；帝序中出现两段。1449—1457年不算他的实际在位期。",
       "image": "226258",
-      "birthOrder": 1
+      "birthOrder": 1,
+      "dynasty": "ming"
     },
     {
       "id": "qiyu",
@@ -124,7 +130,8 @@
       "kind": "皇帝",
       "note": "1449年即位，1450年改元。“代宗”是后来的庙号，不是其当政时自称。",
       "image": "portrait_v4_qiyu",
-      "birthOrder": 2
+      "birthOrder": 2,
+      "dynasty": "ming"
     },
     {
       "id": "jianshen",
@@ -141,7 +148,8 @@
       "kind": "皇帝",
       "note": "",
       "image": "portrait_jianshen",
-      "birthOrder": null
+      "birthOrder": null,
+      "dynasty": "ming"
     },
     {
       "id": "youtang",
@@ -159,7 +167,8 @@
       "kind": "皇帝",
       "note": "",
       "image": "226266",
-      "birthOrder": 3
+      "birthOrder": 3,
+      "dynasty": "ming"
     },
     {
       "id": "houzhao",
@@ -177,7 +186,8 @@
       "kind": "皇帝",
       "note": "",
       "image": "226240",
-      "birthOrder": null
+      "birthOrder": null,
+      "dynasty": "ming"
     },
     {
       "id": "houcong",
@@ -194,7 +204,8 @@
       "kind": "皇帝",
       "note": "亲生父亲为朱祐杬；入继大统与亲生关系有别。嘉靖四十五年十二月跨入公历1567年，故实际在位与年号末年不同。",
       "image": "226241",
-      "birthOrder": null
+      "birthOrder": null,
+      "dynasty": "ming"
     },
     {
       "id": "zaihou",
@@ -211,7 +222,8 @@
       "kind": "皇帝",
       "note": "即位在农历嘉靖四十五年十二月，对应公历1567年。",
       "image": "226264",
-      "birthOrder": null
+      "birthOrder": null,
+      "dynasty": "ming"
     },
     {
       "id": "yijun",
@@ -228,7 +240,8 @@
       "kind": "皇帝",
       "note": "",
       "image": "226265",
-      "birthOrder": null
+      "birthOrder": null,
+      "dynasty": "ming"
     },
     {
       "id": "changluo",
@@ -245,7 +258,8 @@
       "kind": "皇帝",
       "note": "泰昌是同年改元的特殊情况，不能把所有明帝都套入“次年改元”。",
       "image": "226242",
-      "birthOrder": null
+      "birthOrder": null,
+      "dynasty": "ming"
     },
     {
       "id": "youxiao",
@@ -263,7 +277,8 @@
       "kind": "皇帝",
       "note": "",
       "image": "226243",
-      "birthOrder": null
+      "birthOrder": null,
+      "dynasty": "ming"
     },
     {
       "id": "youjian",
@@ -280,7 +295,8 @@
       "kind": "皇帝",
       "note": "1644年北京失守，崇祯帝死于煤山；此后明朝宗室在南方继续建立政权。",
       "image": "portrait_v4_youjian",
-      "birthOrder": null
+      "birthOrder": null,
+      "dynasty": "ming"
     },
     {
       "id": "bailiu",
@@ -298,7 +314,8 @@
       "kind": "追尊祖先",
       "note": "",
       "image": null,
-      "birthOrder": null
+      "birthOrder": null,
+      "dynasty": "ming"
     },
     {
       "id": "sijiu",
@@ -317,7 +334,8 @@
       "kind": "追尊祖先",
       "note": "",
       "image": null,
-      "birthOrder": null
+      "birthOrder": null,
+      "dynasty": "ming"
     },
     {
       "id": "chuyi",
@@ -335,7 +353,8 @@
       "kind": "追尊祖先",
       "note": "",
       "image": null,
-      "birthOrder": null
+      "birthOrder": null,
+      "dynasty": "ming"
     },
     {
       "id": "shizhen",
@@ -354,7 +373,8 @@
       "kind": "追尊祖先",
       "note": "",
       "image": null,
-      "birthOrder": null
+      "birthOrder": null,
+      "dynasty": "ming"
     },
     {
       "id": "chen",
@@ -372,7 +392,8 @@
       "kind": "亲属",
       "note": "",
       "image": null,
-      "birthOrder": null
+      "birthOrder": null,
+      "dynasty": "ming"
     },
     {
       "id": "xinglong",
@@ -391,7 +412,8 @@
       "kind": "亲属",
       "note": "",
       "image": null,
-      "birthOrder": 1
+      "birthOrder": 1,
+      "dynasty": "ming"
     },
     {
       "id": "ma",
@@ -410,7 +432,8 @@
       "kind": "皇后",
       "note": "",
       "image": "portrait_ma",
-      "birthOrder": null
+      "birthOrder": null,
+      "dynasty": "ming"
     },
     {
       "id": "biao",
@@ -429,7 +452,8 @@
       "kind": "皇太子",
       "note": "追尊与实际在位分开记录，所以不计入十六帝。",
       "image": null,
-      "birthOrder": 1
+      "birthOrder": 1,
+      "dynasty": "ming"
     },
     {
       "id": "gaoxu",
@@ -446,7 +470,8 @@
       "kind": "藩王",
       "note": "",
       "image": null,
-      "birthOrder": 2
+      "birthOrder": 2,
+      "dynasty": "ming"
     },
     {
       "id": "youyuan",
@@ -464,7 +489,8 @@
       "kind": "藩王",
       "note": "大礼议围绕礼制名分展开，不能以一条“过继”线替代整个争论。",
       "image": "portrait_youyuan",
-      "birthOrder": 4
+      "birthOrder": 4,
+      "dynasty": "ming"
     },
     {
       "id": "guo",
@@ -482,7 +508,8 @@
       "kind": "相关人物",
       "note": "",
       "image": null,
-      "birthOrder": null
+      "birthOrder": null,
+      "dynasty": "ming"
     },
     {
       "id": "chenyou",
@@ -499,7 +526,8 @@
       "kind": "相关人物",
       "note": "",
       "image": null,
-      "birthOrder": null
+      "birthOrder": null,
+      "dynasty": "ming"
     },
     {
       "id": "zhang",
@@ -517,7 +545,8 @@
       "kind": "相关人物",
       "note": "",
       "image": null,
-      "birthOrder": null
+      "birthOrder": null,
+      "dynasty": "ming"
     },
     {
       "id": "han",
@@ -535,7 +564,8 @@
       "kind": "相关人物",
       "note": "死亡经过及朱元璋是否授意，史料记述存在分歧。",
       "image": null,
-      "birthOrder": null
+      "birthOrder": null,
+      "dynasty": "ming"
     },
     {
       "id": "sheng",
@@ -553,7 +583,8 @@
       "kind": "相关人物",
       "note": "“高筑墙、广积粮、缓称王”是常见叙事；其具体形成与传播有学术考辨，不作为解释成功的万能答案。",
       "image": null,
-      "birthOrder": null
+      "birthOrder": null,
+      "dynasty": "ming"
     },
     {
       "id": "lishanzhang",
@@ -570,7 +601,8 @@
       "sources": [
         "v2f_ms127"
       ],
-      "image": null
+      "image": null,
+      "dynasty": "ming"
     },
     {
       "id": "lanyu",
@@ -587,7 +619,8 @@
       "sources": [
         "v2f_ms132"
       ],
-      "image": null
+      "image": null,
+      "dynasty": "ming"
     },
     {
       "id": "xuda",
@@ -604,7 +637,8 @@
       "sources": [
         "v2f_ms125"
       ],
-      "image": null
+      "image": null,
+      "dynasty": "ming"
     },
     {
       "id": "tanghe",
@@ -621,7 +655,8 @@
       "sources": [
         "v2f_ms126"
       ],
-      "image": null
+      "image": null,
+      "dynasty": "ming"
     },
     {
       "id": "lijinglong",
@@ -638,7 +673,8 @@
       "sources": [
         "v2f_ms126"
       ],
-      "image": null
+      "image": null,
+      "dynasty": "ming"
     },
     {
       "id": "yuqian",
@@ -656,7 +692,8 @@
         "v3n_ms170",
         "v3n_dpm_yuqian"
       ],
-      "image": null
+      "image": null,
+      "dynasty": "ming"
     },
     {
       "id": "esen",
@@ -673,7 +710,8 @@
       "sources": [
         "v3n_ms328"
       ],
-      "image": null
+      "image": null,
+      "dynasty": "ming"
     },
     {
       "id": "shiheng",
@@ -691,7 +729,8 @@
         "v3n_ms173",
         "v2e_ms12"
       ],
-      "image": null
+      "image": null,
+      "dynasty": "ming"
     },
     {
       "id": "wangzhen",
@@ -709,7 +748,8 @@
         "v3n_ms304",
         "v2e_ms12"
       ],
-      "image": null
+      "image": null,
+      "dynasty": "ming"
     },
     {
       "id": "shang",
@@ -727,7 +767,8 @@
         "v4p_ms116",
         "v4p_ms3"
       ],
-      "image": null
+      "image": null,
+      "dynasty": "ming"
     },
     {
       "id": "gang",
@@ -745,7 +786,8 @@
         "v4p_ms116",
         "v4p_ms3"
       ],
-      "image": null
+      "image": null,
+      "dynasty": "ming"
     },
     {
       "id": "bai",
@@ -763,7 +805,8 @@
         "v4p_ms117",
         "v4p_ms4"
       ],
-      "image": null
+      "image": null,
+      "dynasty": "ming"
     },
     {
       "id": "su",
@@ -781,7 +824,8 @@
         "v4p_ms116",
         "v4p_faminepreface"
       ],
-      "image": null
+      "image": null,
+      "dynasty": "ming"
     },
     {
       "id": "quan",
@@ -799,7 +843,8 @@
         "v4p_ms117",
         "v4p_qinmusic"
       ],
-      "image": null
+      "image": null,
+      "dynasty": "ming"
     },
     {
       "id": "q_giocangga",
@@ -816,7 +861,8 @@
       "sources": [
         "v5qe_qsg1"
       ],
-      "image": null
+      "image": null,
+      "dynasty": "qing"
     },
     {
       "id": "q_taksi",
@@ -833,7 +879,8 @@
       "sources": [
         "v5qe_qsg1"
       ],
-      "image": null
+      "image": null,
+      "dynasty": "qing"
     },
     {
       "id": "q_nurhaci",
@@ -849,7 +896,8 @@
       ],
       "kind": "皇帝",
       "note": "1559年生，1626年卒。1616年建立的是国号金的政权，通常称后金。",
-      "image": "qing_nurhaci"
+      "image": "qing_nurhaci",
+      "dynasty": "qing"
     },
     {
       "id": "q_hongtaiji",
@@ -867,7 +915,8 @@
       "note": "1592年生，1643年卒。天聪时期为后金汗，崇德时期为大清皇帝。",
       "parent": "q_nurhaci",
       "image": "qing_hongtaiji",
-      "birthOrder": 8
+      "birthOrder": 8,
+      "dynasty": "qing"
     },
     {
       "id": "q_shunzhi",
@@ -885,7 +934,8 @@
       "note": "1638年生，1661年卒。1643年即位，1644年为顺治元年。",
       "parent": "q_hongtaiji",
       "image": "qing_shunzhi",
-      "birthOrder": 9
+      "birthOrder": 9,
+      "dynasty": "qing"
     },
     {
       "id": "q_kangxi",
@@ -903,7 +953,8 @@
       "note": "1654年生，1722年卒。在位六十一年，年号从次年开始。",
       "parent": "q_shunzhi",
       "image": "qing_kangxi",
-      "birthOrder": 3
+      "birthOrder": 3,
+      "dynasty": "qing"
     },
     {
       "id": "q_yongzheng",
@@ -921,7 +972,8 @@
       "note": "1678年生，1735年卒。继位争议须区分档案事实与后世传说。",
       "parent": "q_kangxi",
       "birthOrder": 4,
-      "image": "qing_yongzheng"
+      "image": "qing_yongzheng",
+      "dynasty": "qing"
     },
     {
       "id": "q_qianlong",
@@ -942,7 +994,8 @@
       "note": "1711年生，1799年卒。1796年禅位后仍掌最高决策至去世。 生母孝圣宪皇后钮祜禄氏；雍正皇四子，弘昼为其异母弟。",
       "parent": "q_yongzheng",
       "image": "qing_qianlong",
-      "birthOrder": 4
+      "birthOrder": 4,
+      "dynasty": "qing"
     },
     {
       "id": "q_jiaqing",
@@ -960,7 +1013,8 @@
       "note": "1760年生，1820年卒。名义在位与实际亲政须分开。",
       "parent": "q_qianlong",
       "image": "qing_jiaqing",
-      "birthOrder": 15
+      "birthOrder": 15,
+      "dynasty": "qing"
     },
     {
       "id": "q_daoguang",
@@ -978,7 +1032,8 @@
       "note": "1782年生，1850年卒。个人节俭不能概括其时代的制度危机。",
       "parent": "q_jiaqing",
       "image": "qing_daoguang",
-      "birthOrder": 2
+      "birthOrder": 2,
+      "dynasty": "qing"
     },
     {
       "id": "q_xianfeng",
@@ -996,7 +1051,8 @@
       "note": "1831年生，1861年卒。1860年避往承德，翌年在热河去世。",
       "parent": "q_daoguang",
       "image": "qing_xianfeng",
-      "birthOrder": 4
+      "birthOrder": 4,
+      "dynasty": "qing"
     },
     {
       "id": "q_tongzhi",
@@ -1014,7 +1070,8 @@
       "note": "1856年生，1875年卒。1873年亲政，亲政时间不足两年。",
       "parent": "q_xianfeng",
       "image": "qing_tongzhi",
-      "birthOrder": 1
+      "birthOrder": 1,
+      "dynasty": "qing"
     },
     {
       "id": "q_guangxu",
@@ -1032,7 +1089,8 @@
       "note": "1871年生，1908年卒。是同治帝堂弟，并非其子。",
       "parent": "q_yixuan",
       "image": "qing_guangxu",
-      "birthOrder": 2
+      "birthOrder": 2,
+      "dynasty": "qing"
     },
     {
       "id": "q_xuantong",
@@ -1050,7 +1108,8 @@
       "note": "1906年生，1967年卒。没有庙号；伪满洲国不是清朝延续。",
       "parent": "q_zaifeng",
       "image": "qing_xuantong",
-      "birthOrder": 1
+      "birthOrder": 1,
+      "dynasty": "qing"
     },
     {
       "id": "q_daishan",
@@ -1067,7 +1126,8 @@
       "sources": [
         "v5qn_qsg216"
       ],
-      "image": null
+      "image": null,
+      "dynasty": "qing"
     },
     {
       "id": "q_dorgon",
@@ -1084,7 +1144,8 @@
       "sources": [
         "v5qn_qsg218"
       ],
-      "image": null
+      "image": null,
+      "dynasty": "qing"
     },
     {
       "id": "q_dodo",
@@ -1101,7 +1162,8 @@
       "sources": [
         "v5qn_qsg218"
       ],
-      "image": null
+      "image": null,
+      "dynasty": "qing"
     },
     {
       "id": "q_hoog",
@@ -1118,7 +1180,8 @@
       "sources": [
         "v5qn_qsg219"
       ],
-      "image": null
+      "image": null,
+      "dynasty": "qing"
     },
     {
       "id": "q_yinreng",
@@ -1135,7 +1198,8 @@
       "sources": [
         "v5qn_qsg220"
       ],
-      "image": null
+      "image": null,
+      "dynasty": "qing"
     },
     {
       "id": "q_yinsi",
@@ -1152,7 +1216,8 @@
       "sources": [
         "v5qn_qsg220"
       ],
-      "image": null
+      "image": null,
+      "dynasty": "qing"
     },
     {
       "id": "q_yinxiang",
@@ -1169,7 +1234,8 @@
       "sources": [
         "v5qn_qsg220"
       ],
-      "image": null
+      "image": null,
+      "dynasty": "qing"
     },
     {
       "id": "q_yixin",
@@ -1186,7 +1252,8 @@
       "sources": [
         "v5qn_qsg221"
       ],
-      "image": null
+      "image": null,
+      "dynasty": "qing"
     },
     {
       "id": "q_yixuan",
@@ -1203,7 +1270,8 @@
       "sources": [
         "v5qn_qsg221"
       ],
-      "image": null
+      "image": null,
+      "dynasty": "qing"
     },
     {
       "id": "q_zaifeng",
@@ -1221,7 +1289,8 @@
         "v5qn_dpm_xuantong",
         "v5qn_qinghistory_zaifeng"
       ],
-      "image": null
+      "image": null,
+      "dynasty": "qing"
     },
     {
       "id": "q_cixi",
@@ -1238,7 +1307,8 @@
       "sources": [
         "v5qn_qsg214"
       ],
-      "image": null
+      "image": null,
+      "dynasty": "qing"
     },
     {
       "id": "q_longyu",
@@ -1255,7 +1325,8 @@
       "sources": [
         "v5qn_qsg214"
       ],
-      "image": null
+      "image": null,
+      "dynasty": "qing"
     },
     {
       "id": "q_yinzhi_elder",
@@ -1273,7 +1344,8 @@
         "v5qn_qsg220",
         "v5qe_dpm_kangxi"
       ],
-      "image": null
+      "image": null,
+      "dynasty": "qing"
     },
     {
       "id": "q_yinzhi_third",
@@ -1291,7 +1363,8 @@
         "v5qn_qsg220",
         "v5qe_dpm_kangxi"
       ],
-      "image": null
+      "image": null,
+      "dynasty": "qing"
     },
     {
       "id": "q_yintang",
@@ -1309,7 +1382,8 @@
         "v5qn_qsg220",
         "v5qe_dpm_kangxi"
       ],
-      "image": null
+      "image": null,
+      "dynasty": "qing"
     },
     {
       "id": "q_yine",
@@ -1327,7 +1401,8 @@
         "v5qn_qsg220",
         "v5qe_dpm_kangxi"
       ],
-      "image": null
+      "image": null,
+      "dynasty": "qing"
     },
     {
       "id": "q_yinti",
@@ -1345,7 +1420,8 @@
         "v5qn_qsg220",
         "v5qe_dpm_kangxi"
       ],
-      "image": null
+      "image": null,
+      "dynasty": "qing"
     },
     {
       "id": "changyuchun",
@@ -1363,7 +1439,8 @@
         "v2f_ms125",
         "v15_dpm_chang"
       ],
-      "image": null
+      "image": null,
+      "dynasty": "ming"
     },
     {
       "id": "liwenzhong",
@@ -1381,7 +1458,8 @@
         "v2f_ms126",
         "v15_dpm_hongwu"
       ],
-      "image": null
+      "image": null,
+      "dynasty": "ming"
     },
     {
       "id": "liuji",
@@ -1399,7 +1477,8 @@
         "v15_ms128",
         "v15_dpm_liuji"
       ],
-      "image": null
+      "image": null,
+      "dynasty": "ming"
     },
     {
       "id": "zhangjuzheng",
@@ -1416,7 +1495,8 @@
       "sources": [
         "v26_zhang"
       ],
-      "image": null
+      "image": null,
+      "dynasty": "ming"
     },
     {
       "id": "q_honghui",
@@ -1434,7 +1514,8 @@
         "v5qn_qsg220",
         "v39_qsg165",
         "v39_dpm_princes"
-      ]
+      ],
+      "dynasty": "qing"
     },
     {
       "id": "q_hongfen",
@@ -1453,7 +1534,8 @@
         "v39_qsg165",
         "v39_dpm_princes"
       ],
-      "birthOrderNote": "未列齿序"
+      "birthOrderNote": "未列齿序",
+      "dynasty": "qing"
     },
     {
       "id": "q_hongyun",
@@ -1471,7 +1553,8 @@
         "v5qn_qsg220",
         "v39_qsg165",
         "v39_dpm_princes"
-      ]
+      ],
+      "dynasty": "qing"
     },
     {
       "id": "q_hongshi",
@@ -1489,7 +1572,8 @@
         "v5qn_qsg220",
         "v39_qsg165",
         "v39_dpm_princes"
-      ]
+      ],
+      "dynasty": "qing"
     },
     {
       "id": "q_hongzhou",
@@ -1507,7 +1591,8 @@
         "v5qn_qsg220",
         "v39_qsg165",
         "v39_dpm_princes"
-      ]
+      ],
+      "dynasty": "qing"
     },
     {
       "id": "q_fuyi",
@@ -1526,7 +1611,8 @@
         "v39_qsg165",
         "v39_dpm_princes"
       ],
-      "birthOrderNote": "未列齿序"
+      "birthOrderNote": "未列齿序",
+      "dynasty": "qing"
     },
     {
       "id": "q_fuhui",
@@ -1545,7 +1631,8 @@
         "v39_qsg165",
         "v39_dpm_princes"
       ],
-      "birthOrderNote": "未列齿序"
+      "birthOrderNote": "未列齿序",
+      "dynasty": "qing"
     },
     {
       "id": "q_fupei",
@@ -1564,7 +1651,8 @@
         "v39_qsg165",
         "v39_dpm_princes"
       ],
-      "birthOrderNote": "未列齿序"
+      "birthOrderNote": "未列齿序",
+      "dynasty": "qing"
     },
     {
       "id": "q_hongzhan",
@@ -1582,7 +1670,8 @@
         "v5qn_qsg220",
         "v39_qsg165",
         "v39_dpm_princes"
-      ]
+      ],
+      "dynasty": "qing"
     },
     {
       "id": "q_ulanara",
@@ -1599,7 +1688,8 @@
       "sources": [
         "v5qn_qsg214",
         "v39_dpm_xiaojing"
-      ]
+      ],
+      "dynasty": "qing"
     },
     {
       "id": "q_niuhuru",
@@ -1615,7 +1705,8 @@
       "birthOrder": null,
       "sources": [
         "v5qn_qsg214"
-      ]
+      ],
+      "dynasty": "qing"
     },
     {
       "id": "q_lishi",
@@ -1632,7 +1723,8 @@
       "sources": [
         "v5qn_qsg214",
         "v5qn_qsg220"
-      ]
+      ],
+      "dynasty": "qing"
     },
     {
       "id": "q_gengshi",
@@ -1649,7 +1741,8 @@
       "sources": [
         "v5qn_qsg214",
         "v39_tongzhi50"
-      ]
+      ],
+      "dynasty": "qing"
     },
     {
       "id": "q_nianshi",
@@ -1665,7 +1758,8 @@
       "birthOrder": null,
       "sources": [
         "v5qn_qsg214"
-      ]
+      ],
+      "dynasty": "qing"
     },
     {
       "id": "q_liushi",
@@ -1682,7 +1776,8 @@
       "sources": [
         "v5qn_qsg214",
         "v5qn_qsg220"
-      ]
+      ],
+      "dynasty": "qing"
     },
     {
       "id": "q_wuya",
@@ -1700,7 +1795,8 @@
         "v5qn_qsg214",
         "v5qn_qsg220",
         "v39_dpm_xiaogong"
-      ]
+      ],
+      "dynasty": "qing"
     },
     {
       "id": "q_yinli",
@@ -1717,7 +1813,8 @@
       "sources": [
         "v5qn_qsg220",
         "v39_qsg165"
-      ]
+      ],
+      "dynasty": "qing"
     },
     {
       "id": "q_zhangtingyu",
@@ -1734,7 +1831,8 @@
       "sources": [
         "v39_qsg288",
         "v39_dpm_zhang"
-      ]
+      ],
+      "dynasty": "qing"
     },
     {
       "id": "q_eertai",
@@ -1750,7 +1848,8 @@
       "birthOrder": null,
       "sources": [
         "v39_qsg288"
-      ]
+      ],
+      "dynasty": "qing"
     },
     {
       "id": "q_niangengyao",
@@ -1766,7 +1865,8 @@
       "birthOrder": null,
       "sources": [
         "v39_qsg295"
-      ]
+      ],
+      "dynasty": "qing"
     },
     {
       "id": "q_longkodo",
@@ -1782,7 +1882,8 @@
       "birthOrder": null,
       "sources": [
         "v39_qsg295"
-      ]
+      ],
+      "dynasty": "qing"
     },
     {
       "id": "q_nianxialing",
@@ -1799,7 +1900,8 @@
       "sources": [
         "v39_qsg295",
         "v5qn_qsg214"
-      ]
+      ],
+      "dynasty": "qing"
     },
     {
       "id": "m40_qitai",
@@ -1815,7 +1917,8 @@
         "v40m1_ms4"
       ],
       "kind": "重要人物",
-      "note": "原名德，溧水人；洪武十八年进士，建文朝参预军国事务。"
+      "note": "原名德，溧水人；洪武十八年进士，建文朝参预军国事务。",
+      "dynasty": "ming"
     },
     {
       "id": "m40_huangzicheng",
@@ -1831,7 +1934,8 @@
         "v40m1_ms4"
       ],
       "kind": "重要人物",
-      "note": "名湜，以字行，分宜人；建文朝任太常卿，参与军国事务。"
+      "note": "名湜，以字行，分宜人；建文朝任太常卿，参与军国事务。",
+      "dynasty": "ming"
     },
     {
       "id": "m40_fangxiaoru",
@@ -1847,7 +1951,8 @@
         "v40m1_ms4"
       ],
       "kind": "重要人物",
-      "note": "字希直，一字希古，宁海人。所谓诛十族的具体说法不能直接视为无争议定论。"
+      "note": "字希直，一字希古，宁海人。所谓诛十族的具体说法不能直接视为无争议定论。",
+      "dynasty": "ming"
     },
     {
       "id": "m40_yangshiqi",
@@ -1863,7 +1968,8 @@
         "v40m1_ms8"
       ],
       "kind": "重要人物",
-      "note": "名寓，以字行，泰和人。三杨中的西杨，正统九年去世。"
+      "note": "名寓，以字行，泰和人。三杨中的西杨，正统九年去世。",
+      "dynasty": "ming"
     },
     {
       "id": "m40_yangrong",
@@ -1879,7 +1985,8 @@
         "v40m1_ms153"
       ],
       "kind": "重要人物",
-      "note": "字勉仁，建安人，建文二年进士。三杨中的东杨，正统五年去世。"
+      "note": "字勉仁，建安人，建文二年进士。三杨中的东杨，正统五年去世。",
+      "dynasty": "ming"
     },
     {
       "id": "m40_yangpu",
@@ -1895,7 +2002,8 @@
         "v40m1_ms8"
       ],
       "kind": "重要人物",
-      "note": "字弘济，石首人，建文二年进士。三杨中的南杨，正统十一年去世。"
+      "note": "字弘济，石首人，建文二年进士。三杨中的南杨，正统十一年去世。",
+      "dynasty": "ming"
     },
     {
       "id": "m40_xiayuanji",
@@ -1911,7 +2019,8 @@
         "v40m1_ms8"
       ],
       "kind": "重要人物",
-      "note": "字维喆，先世德兴人，随家居湘阴；历仕洪武至宣德朝。"
+      "note": "字维喆，先世德兴人，随家居湘阴；历仕洪武至宣德朝。",
+      "dynasty": "ming"
     },
     {
       "id": "m40_zhenghe",
@@ -1926,7 +2035,8 @@
         "v40m1_ms304"
       ],
       "kind": "重要人物",
-      "note": "云南人，又称三保太监。远航目的不宜仅归结为寻找建文帝，宝船尺寸与身后行迹也应谨慎讨论。"
+      "note": "云南人，又称三保太监。远航目的不宜仅归结为寻找建文帝，宝船尺寸与身后行迹也应谨慎讨论。",
+      "dynasty": "ming"
     },
     {
       "id": "m40_zhouchen",
@@ -1941,7 +2051,8 @@
         "v40m1_ms153"
       ],
       "kind": "重要人物",
-      "note": "字恂如，吉水人，永乐二年进士；宣德五年起巡抚江南，景泰四年去世。"
+      "note": "字恂如，吉水人，永乐二年进士；宣德五年起巡抚江南，景泰四年去世。",
+      "dynasty": "ming"
     },
     {
       "id": "m40_lixian",
@@ -1957,7 +2068,8 @@
         "v40m1_ms304"
       ],
       "kind": "重要人物",
-      "note": "字原德，邓人，宣德八年进士；景泰朝历任侍郎，天顺朝进入内阁。"
+      "note": "字原德，邓人，宣德八年进士；景泰朝历任侍郎，天顺朝进入内阁。",
+      "dynasty": "ming"
     },
     {
       "id": "m40_shanglu",
@@ -1973,7 +2085,8 @@
         "v40m1_ms304"
       ],
       "kind": "重要人物",
-      "note": "字弘载，淳安人；正统十年会试、殿试均第一。曾参与景泰易储后的朝政，须与其其他政绩一并理解。"
+      "note": "字弘载，淳安人；正统十年会试、殿试均第一。曾参与景泰易储后的朝政，须与其其他政绩一并理解。",
+      "dynasty": "ming"
     },
     {
       "id": "m40_wangzhi",
@@ -1989,7 +2102,8 @@
         "v40m1_ms176"
       ],
       "kind": "重要人物",
-      "note": "出身大藤峡地区，曾侍万贵妃，后任御马监太监。不得与嘉靖时期海上人物汪直混为一人。"
+      "note": "出身大藤峡地区，曾侍万贵妃，后任御马监太监。不得与嘉靖时期海上人物汪直混为一人。",
+      "dynasty": "ming"
     },
     {
       "id": "m40_yaoguangxiao",
@@ -2004,7 +2118,8 @@
       "kind": "重要人物",
       "sources": [
         "v40m1_ms145"
-      ]
+      ],
+      "dynasty": "ming"
     },
     {
       "id": "m40_xiejin",
@@ -2020,7 +2135,8 @@
       "sources": [
         "v40m1_ms147",
         "v40m1_ms145"
-      ]
+      ],
+      "dynasty": "ming"
     },
     {
       "id": "m40_liujian",
@@ -2035,7 +2151,8 @@
         "v40m2_ms181"
       ],
       "kind": "人物",
-      "note": "弘治朝重臣，与谢迁、李东阳共同辅政；正德初反对刘瑾得势，离开内阁。"
+      "note": "弘治朝重臣，与谢迁、李东阳共同辅政；正德初反对刘瑾得势，离开内阁。",
+      "dynasty": "ming"
     },
     {
       "id": "m40_xieqian",
@@ -2050,7 +2167,8 @@
         "v40m2_ms181"
       ],
       "kind": "人物",
-      "note": "弘治朝大学士，参与政务与财政议论；正德初与刘健一同反对刘瑾，后被迫离职。"
+      "note": "弘治朝大学士，参与政务与财政议论；正德初与刘健一同反对刘瑾，后被迫离职。",
+      "dynasty": "ming"
     },
     {
       "id": "m40_lidongyang",
@@ -2065,7 +2183,8 @@
         "v40m2_ms181"
       ],
       "kind": "人物",
-      "note": "弘治、正德间的大学士，也是茶陵诗派的重要人物；在刘瑾掌权时期留任，政治选择长期受到议论。"
+      "note": "弘治、正德间的大学士，也是茶陵诗派的重要人物；在刘瑾掌权时期留任，政治选择长期受到议论。",
+      "dynasty": "ming"
     },
     {
       "id": "m40_liujin",
@@ -2080,7 +2199,8 @@
         "v40m2_ms304"
       ],
       "kind": "人物",
-      "note": "武宗东宫旧侍，正德初掌司礼监并扩大政治权力；1510年被处死。"
+      "note": "武宗东宫旧侍，正德初掌司礼监并扩大政治权力；1510年被处死。",
+      "dynasty": "ming"
     },
     {
       "id": "m40_wangshouren",
@@ -2095,7 +2215,8 @@
         "v40m2_ms195"
       ],
       "kind": "人物",
-      "note": "又称王阳明。以心学讲学闻名，也在正德朝治理南赣、平定宁王之乱；其学说与军政实践须分别理解。"
+      "note": "又称王阳明。以心学讲学闻名，也在正德朝治理南赣、平定宁王之乱；其学说与军政实践须分别理解。",
+      "dynasty": "ming"
     },
     {
       "id": "m40_yansong",
@@ -2110,7 +2231,8 @@
         "v40m2_ms308"
       ],
       "kind": "人物",
-      "note": "长期任职嘉靖内阁，与其子严世蕃形成权势网络；1562年失去皇帝支持，被罢职。"
+      "note": "长期任职嘉靖内阁，与其子严世蕃形成权势网络；1562年失去皇帝支持，被罢职。",
+      "dynasty": "ming"
     },
     {
       "id": "m40_xujie",
@@ -2126,7 +2248,8 @@
         "v40m2_ms226"
       ],
       "kind": "人物",
-      "note": "嘉靖后期接替严嵩掌内阁，参与穆宗即位时的政策调整；其家族田产与地方矛盾也受到追究。"
+      "note": "嘉靖后期接替严嵩掌内阁，参与穆宗即位时的政策调整；其家族田产与地方矛盾也受到追究。",
+      "dynasty": "ming"
     },
     {
       "id": "m40_qijiguang",
@@ -2141,7 +2264,8 @@
         "v40m2_ms212"
       ],
       "kind": "人物",
-      "note": "嘉靖朝参与东南抗倭，隆庆、万历间主持蓟镇练兵和防御；以军事组织与训练见长。"
+      "note": "嘉靖朝参与东南抗倭，隆庆、万历间主持蓟镇练兵和防御；以军事组织与训练见长。",
+      "dynasty": "ming"
     },
     {
       "id": "m40_hairui",
@@ -2156,7 +2280,8 @@
         "v40m2_ms226"
       ],
       "kind": "人物",
-      "note": "嘉靖末上疏批评皇帝，隆庆时获释并处理江南政务；清廉声誉之外，施政方法也引发争论。"
+      "note": "嘉靖末上疏批评皇帝，隆庆时获释并处理江南政务；清廉声誉之外，施政方法也引发争论。",
+      "dynasty": "ming"
     },
     {
       "id": "m40_gaogong",
@@ -2171,7 +2296,8 @@
         "v40m2_ms213"
       ],
       "kind": "人物",
-      "note": "穆宗藩邸讲官，隆庆时主持中枢政务，支持俺答封贡；在皇帝更替后与冯保、张居正的冲突中失势。"
+      "note": "穆宗藩邸讲官，隆庆时主持中枢政务，支持俺答封贡；在皇帝更替后与冯保、张居正的冲突中失势。",
+      "dynasty": "ming"
     },
     {
       "id": "m40_shenshixing",
@@ -2186,7 +2312,8 @@
         "v40m2_ms218"
       ],
       "kind": "人物",
-      "note": "张居正之后的重要首辅，尝试以调和维持政务；在立储争论中受到皇帝与言官双重压力。"
+      "note": "张居正之后的重要首辅，尝试以调和维持政务；在立储争论中受到皇帝与言官双重压力。",
+      "dynasty": "ming"
     },
     {
       "id": "m40_fangcongzhe",
@@ -2203,7 +2330,8 @@
         "v40m2_ms21"
       ],
       "kind": "人物",
-      "note": "万历末长期主持内阁，参与泰昌朝政务和皇位交接；红丸案中的责任有长期争论。"
+      "note": "万历末长期主持内阁，参与泰昌朝政务和皇位交接；红丸案中的责任有长期争论。",
+      "dynasty": "ming"
     },
     {
       "id": "m40_yanglian",
@@ -2218,7 +2346,8 @@
         "v40m2_ms244"
       ],
       "kind": "人物",
-      "note": "参与光宗病中议政及熹宗继位，天启四年弹劾魏忠贤，次年在诏狱中遇害。"
+      "note": "参与光宗病中议政及熹宗继位，天启四年弹劾魏忠贤，次年在诏狱中遇害。",
+      "dynasty": "ming"
     },
     {
       "id": "m40_weizhongxian",
@@ -2234,7 +2363,8 @@
         "v40m2_ms244"
       ],
       "kind": "人物",
-      "note": "依托熹宗信任及内外官员合作扩大权力，打击异己；崇祯即位后失势自尽。"
+      "note": "依托熹宗信任及内外官员合作扩大权力，打击异己；崇祯即位后失势自尽。",
+      "dynasty": "ming"
     },
     {
       "id": "m40_sunchengzong",
@@ -2249,7 +2379,8 @@
         "v40m2_ms250"
       ],
       "kind": "人物",
-      "note": "熹宗讲官，后督师辽东；支持以宁远等据点经营关外，崇祯时再度任用，晚年死于高阳守城。"
+      "note": "熹宗讲官，后督师辽东；支持以宁远等据点经营关外，崇祯时再度任用，晚年死于高阳守城。",
+      "dynasty": "ming"
     },
     {
       "id": "m40_yuanchonghuan",
@@ -2265,7 +2396,8 @@
         "v40m2_ms250"
       ],
       "kind": "人物",
-      "note": "天启年间守宁远，崇祯初督师辽东；1629年入狱，次年被处死，案情与责任长期引发讨论。"
+      "note": "天启年间守宁远，崇祯初督师辽东；1629年入狱，次年被处死，案情与责任长期引发讨论。",
+      "dynasty": "ming"
     },
     {
       "id": "m40_xuguangqi",
@@ -2281,7 +2413,8 @@
         "v40m2_ihns_xu"
       ],
       "kind": "人物",
-      "note": "明末学者与大臣，参与中西数学翻译，研究农政，主持崇祯改历，把求知与实际政务相联系。"
+      "note": "明末学者与大臣，参与中西数学翻译，研究农政，主持崇祯改历，把求知与实际政务相联系。",
+      "dynasty": "ming"
     },
     {
       "id": "m40_limadou",
@@ -2297,7 +2430,8 @@
         "v40m2_ihns_xu"
       ],
       "kind": "人物",
-      "note": "意大利耶稣会士，万历年间来华；与中国学者合作译书、刊图，促进晚明的数学与地理知识交流。"
+      "note": "意大利耶稣会士，万历年间来华；与中国学者合作译书、刊图，促进晚明的数学与地理知识交流。",
+      "dynasty": "ming"
     },
     {
       "id": "m40_lizicheng",
@@ -2312,7 +2446,8 @@
         "v40m2_ms309"
       ],
       "kind": "人物",
-      "note": "明末起事领袖，1644年建立大顺并攻入北京；其兴起与灾荒、赋役、战争相联系，结局有不同记载。"
+      "note": "明末起事领袖，1644年建立大顺并攻入北京；其兴起与灾荒、赋役、战争相联系，结局有不同记载。",
+      "dynasty": "ming"
     },
     {
       "id": "q_feiyingdong",
@@ -2327,7 +2462,8 @@
         "v40q_qsg225"
       ],
       "kind": "重要人物",
-      "note": "参与后金建国与萨尔浒之战，也承担议政、司法和部众管理；他的经历连接了部落归附与八旗国家的形成。"
+      "note": "参与后金建国与萨尔浒之战，也承担议政、司法和部众管理；他的经历连接了部落归附与八旗国家的形成。",
+      "dynasty": "qing"
     },
     {
       "id": "q_fanwencheng",
@@ -2342,7 +2478,8 @@
         "v40q_qsg232"
       ],
       "kind": "重要人物",
-      "note": "以文书、制度与政治谋划服务后金和清廷，参与内三院建设及入关后的统治安排。"
+      "note": "以文书、制度与政治谋划服务后金和清廷，参与内三院建设及入关后的统治安排。",
+      "dynasty": "qing"
     },
     {
       "id": "q_hongchengchou",
@@ -2357,7 +2494,8 @@
         "v40q_qsg237"
       ],
       "kind": "重要人物",
-      "note": "明朝督师在松锦战败后降清，顺治时经略南方，成为明清易代中极具争议的政治与军事人物。"
+      "note": "明朝督师在松锦战败后降清，顺治时经略南方，成为明清易代中极具争议的政治与军事人物。",
+      "dynasty": "qing"
     },
     {
       "id": "q_oboi",
@@ -2372,7 +2510,8 @@
         "v40q_qsg249"
       ],
       "kind": "重要人物",
-      "note": "早年以军功起家，顺治末受命辅佐幼主；圈地与权力冲突扩大后，1669年被康熙拘禁。"
+      "note": "早年以军功起家，顺治末受命辅佐幼主；圈地与权力冲突扩大后，1669年被康熙拘禁。",
+      "dynasty": "qing"
     },
     {
       "id": "q_shilang",
@@ -2387,7 +2526,8 @@
         "v40q_qsg260"
       ],
       "kind": "重要人物",
-      "note": "熟悉东南海疆的水师将领，1683年指挥澎湖战役，随后主张清廷驻守台湾。"
+      "note": "熟悉东南海疆的水师将领，1683年指挥澎湖战役，随后主张清廷驻守台湾。",
+      "dynasty": "qing"
     },
     {
       "id": "q_liwei",
@@ -2402,7 +2542,8 @@
         "v40q_qsg294"
       ],
       "kind": "重要人物",
-      "note": "从捐纳入仕的地方官，受雍正重用处理盐政、水利和治安；其政务远比戏说形象复杂。"
+      "note": "从捐纳入仕的地方官，受雍正重用处理盐政、水利和治安；其政务远比戏说形象复杂。",
+      "dynasty": "qing"
     },
     {
       "id": "q_heshen",
@@ -2417,7 +2558,8 @@
         "v40q_qsg319"
       ],
       "kind": "重要人物",
-      "note": "兼掌军机、财政和内务事务，凭皇帝信任扩大权势；1799年嘉庆亲政后被治罪。"
+      "note": "兼掌军机、财政和内务事务，凭皇帝信任扩大权势；1799年嘉庆亲政后被治罪。",
+      "dynasty": "qing"
     },
     {
       "id": "q_jiyun",
@@ -2432,7 +2574,8 @@
         "v40q_qsg320"
       ],
       "kind": "重要人物",
-      "note": "以目录、校勘和学术判断参与大型修书工程；编书的成就与政治审查须同时理解。"
+      "note": "以目录、校勘和学术判断参与大型修书工程；编书的成就与政治审查须同时理解。",
+      "dynasty": "qing"
     },
     {
       "id": "q_liuyong",
@@ -2447,7 +2590,8 @@
         "v40q_qsg302"
       ],
       "kind": "重要人物",
-      "note": "历任学政、地方官和中枢大臣，参与国泰案调查及漕政议论；清名之外也有失察和处分。"
+      "note": "历任学政、地方官和中枢大臣，参与国泰案调查及漕政议论；清名之外也有失察和处分。",
+      "dynasty": "qing"
     },
     {
       "id": "q_linzexu",
@@ -2462,7 +2606,8 @@
         "v40q_qsg369"
       ],
       "kind": "重要人物",
-      "note": "主持广东禁烟和虎门销烟，也从事水利赈济与外国情报译介；战败后遭革职遣戍，不能以此倒置侵略责任。"
+      "note": "主持广东禁烟和虎门销烟，也从事水利赈济与外国情报译介；战败后遭革职遣戍，不能以此倒置侵略责任。",
+      "dynasty": "qing"
     },
     {
       "id": "q_weiyuan",
@@ -2478,7 +2623,8 @@
         "v40q_haiguo_preface"
       ],
       "kind": "重要人物",
-      "note": "整理政务与世界地理知识，撰《海国图志》，主张学习外国长处以改善中国的应对能力。"
+      "note": "整理政务与世界地理知识，撰《海国图志》，主张学习外国长处以改善中国的应对能力。",
+      "dynasty": "qing"
     },
     {
       "id": "q_zengguofan",
@@ -2493,7 +2639,8 @@
         "v40q_qsg405"
       ],
       "kind": "重要人物",
-      "note": "组织湘军对抗太平天国，成为晚清军事与地方权力变化的关键人物，也参与早期洋务事业。"
+      "note": "组织湘军对抗太平天国，成为晚清军事与地方权力变化的关键人物，也参与早期洋务事业。",
+      "dynasty": "qing"
     },
     {
       "id": "q_zuozongtang",
@@ -2508,7 +2655,8 @@
         "v40q_qsg412"
       ],
       "kind": "重要人物",
-      "note": "从湖南幕府走向督抚职位，创办福州船政，主持西征及新疆建省建议，经历多场代价沉重的战争。"
+      "note": "从湖南幕府走向督抚职位，创办福州船政，主持西征及新疆建省建议，经历多场代价沉重的战争。",
+      "dynasty": "qing"
     },
     {
       "id": "q_lihongzhang",
@@ -2523,7 +2671,8 @@
         "v40q_qsg411"
       ],
       "kind": "重要人物",
-      "note": "由淮军与洋务起家，长期主持北洋事务；甲午战败及不平等条约的签订，使其政绩与责任难以分开。"
+      "note": "由淮军与洋务起家，长期主持北洋事务；甲午战败及不平等条约的签订，使其政绩与责任难以分开。",
+      "dynasty": "qing"
     },
     {
       "id": "q_hongxiuquan",
@@ -2541,7 +2690,8 @@
         "v40q_qsg475"
       ],
       "kind": "重要人物",
-      "note": "领导与清廷对峙的太平天国，以宗教组织和社会改革愿景动员民众，其政权也存在等级、强制与内部冲突。"
+      "note": "领导与清廷对峙的太平天国，以宗教组织和社会改革愿景动员民众，其政权也存在等级、强制与内部冲突。",
+      "dynasty": "qing"
     },
     {
       "id": "q_zhangzhidong",
@@ -2556,7 +2706,8 @@
         "v40q_qsg437"
       ],
       "kind": "重要人物",
-      "note": "推动军工、铁路和新式教育，同时坚持维护清廷与传统政治秩序，晚清改革中的建设与限制集中体现在其身上。"
+      "note": "推动军工、铁路和新式教育，同时坚持维护清廷与传统政治秩序，晚清改革中的建设与限制集中体现在其身上。",
+      "dynasty": "qing"
     },
     {
       "id": "q_kangyouwei",
@@ -2571,7 +2722,8 @@
         "v40q_qsg473"
       ],
       "kind": "重要人物",
-      "note": "以经学解释支持改革，1898年获光绪召见并参与变法建议，政变后流亡，始终倾向保留君主制度。"
+      "note": "以经学解释支持改革，1898年获光绪召见并参与变法建议，政变后流亡，始终倾向保留君主制度。",
+      "dynasty": "qing"
     },
     {
       "id": "q_yuanshikai",
@@ -2587,7 +2739,8 @@
         "v40q_qsg25"
       ],
       "kind": "重要人物",
-      "note": "依靠新军和北洋网络进入中枢，辛亥革命后被重新起用，成为南北议和与清帝退位的关键政治人物。"
+      "note": "依靠新军和北洋网络进入中枢，辛亥革命后被重新起用，成为南北议和与清帝退位的关键政治人物。",
+      "dynasty": "qing"
     },
     {
       "id": "q_sunyatsen",
@@ -2604,7 +2757,8 @@
         "v40q_qsg25"
       ],
       "kind": "重要人物",
-      "note": "推动反清革命组织与共和主张，1912年在南京就任临时大总统，参与清末向共和政体的转换。"
+      "note": "推动反清革命组织与共和主张，1912年在南京就任临时大总统，参与清末向共和政体的转换。",
+      "dynasty": "qing"
     },
     {
       "id": "m41_huzongxian",
@@ -2620,7 +2774,8 @@
         "v40m2_ms212"
       ],
       "kind": "人物",
-      "note": "嘉靖朝东南军务重臣，组织招抚和战争，也深陷严嵩、赵文华构成的政治关系。"
+      "note": "嘉靖朝东南军务重臣，组织招抚和战争，也深陷严嵩、赵文华构成的政治关系。",
+      "dynasty": "ming"
     },
     {
       "id": "m41_yudayou",
@@ -2637,7 +2792,8 @@
         "v41m_ms222"
       ],
       "kind": "人物",
-      "note": "历经嘉靖、隆庆和万历初年，在东南沿海与北方边塞任事，与戚继光共同构成明代练兵史的重要一面。"
+      "note": "历经嘉靖、隆庆和万历初年，在东南沿海与北方边塞任事，与戚继光共同构成明代练兵史的重要一面。",
+      "dynasty": "ming"
     },
     {
       "id": "m41_tanlun",
@@ -2653,7 +2809,8 @@
         "v40m2_ms212"
       ],
       "kind": "人物",
-      "note": "兼具地方治理与军事统筹经验，支持戚继光练兵，并把军饷、权限和战后民生纳入海防与边防。"
+      "note": "兼具地方治理与军事统筹经验，支持戚继光练兵，并把军饷、权限和战后民生纳入海防与边防。",
+      "dynasty": "ming"
     },
     {
       "id": "m41_wangchonggu",
@@ -2668,7 +2825,8 @@
         "v41m_ms222"
       ],
       "kind": "人物",
-      "note": "从东南军务转入北边经略，是隆庆封贡中主持交涉的重要官员，也主张在互市之外维持防备。"
+      "note": "从东南军务转入北边经略，是隆庆封贡中主持交涉的重要官员，也主张在互市之外维持防备。",
+      "dynasty": "ming"
     },
     {
       "id": "m41_lishizhen",
@@ -2684,7 +2842,8 @@
         "v41m_hb_bencao"
       ],
       "kind": "人物",
-      "note": "蕲州医者与本草学家，长期辨析文献、药名和品类；1578年成稿的著作，到1596年才刊行。"
+      "note": "蕲州医者与本草学家，长期辨析文献、药名和品类；1578年成稿的著作，到1596年才刊行。",
+      "dynasty": "ming"
     },
     {
       "id": "m41_songyingxing",
@@ -2701,7 +2860,8 @@
         "v41m_ihns_song"
       ],
       "kind": "人物",
-      "note": "江西奉新人，明末任地方官。《天工开物》于1637年刊行，系统记录农业与手工业知识。"
+      "note": "江西奉新人，明末任地方官。《天工开物》于1637年刊行，系统记录农业与手工业知识。",
+      "dynasty": "ming"
     },
     {
       "id": "q_wangding",
@@ -2716,7 +2876,8 @@
         "v41q_qsg363"
       ],
       "kind": "重要人物",
-      "note": "以财政、河工与司法事务进入中枢，在鸦片战争期间支持抵抗，也亲历治河经费与灾民安置的压力。"
+      "note": "以财政、河工与司法事务进入中枢，在鸦片战争期间支持抵抗，也亲历治河经费与灾民安置的压力。",
+      "dynasty": "qing"
     },
     {
       "id": "q_qishan",
@@ -2733,7 +2894,8 @@
         "v41q_hk_yearbook"
       ],
       "kind": "重要人物",
-      "note": "长期任地方督抚，鸦片战争中赴广东议和。其军事判断、谈判权限和未获批准的穿鼻议约，需要分开考察。"
+      "note": "长期任地方督抚，鸦片战争中赴广东议和。其军事判断、谈判权限和未获批准的穿鼻议约，需要分开考察。",
+      "dynasty": "qing"
     },
     {
       "id": "q_dingruchang",
@@ -2748,7 +2910,8 @@
         "v41q_qsg462"
       ],
       "kind": "重要人物",
-      "note": "由旧式军队进入新式海军，主持北洋舰队事务，经历黄海海战与威海覆败；个人责任须放回军政体系考察。"
+      "note": "由旧式军队进入新式海军，主持北洋舰队事务，经历黄海海战与威海覆败；个人责任须放回军政体系考察。",
+      "dynasty": "qing"
     },
     {
       "id": "q_liujintang",
@@ -2764,7 +2927,8 @@
         "v41q_province"
       ],
       "kind": "重要人物",
-      "note": "在左宗棠麾下统军西征，随后参与新疆建省和地方制度重组，经历从战争到行政建设的转变。"
+      "note": "在左宗棠麾下统军西征，随后参与新疆建省和地方制度重组，经历从战争到行政建设的转变。",
+      "dynasty": "qing"
     },
     {
       "id": "q_zengjize",
@@ -2779,7 +2943,8 @@
         "v41q_qsg446"
       ],
       "kind": "重要人物",
-      "note": "曾国藩之子，长期从事驻外外交，参与重订伊犁条约；其工作体现交涉与军事、财政条件之间的关系。"
+      "note": "曾国藩之子，长期从事驻外外交，参与重订伊犁条约；其工作体现交涉与军事、财政条件之间的关系。",
+      "dynasty": "qing"
     },
     {
       "id": "q_liangqichao",
@@ -2797,7 +2962,8 @@
         "v41q_xinmin_index"
       ],
       "kind": "重要人物",
-      "note": "以政论、报刊和历史写作参与变革讨论，从维新到新民论述，连接知识传播、国民观念与政治选择。"
+      "note": "以政论、报刊和历史写作参与变革讨论，从维新到新民论述，连接知识传播、国民观念与政治选择。",
+      "dynasty": "qing"
     },
     {
       "id": "q_yanfu",
@@ -2815,7 +2981,8 @@
         "v41q_yan_manuscript"
       ],
       "kind": "重要人物",
-      "note": "以海军教育为起点，通过译著讨论社会、经济与自由；翻译中的按语和取舍，也是晚清思想史的重要材料。"
+      "note": "以海军教育为起点，通过译著讨论社会、经济与自由；翻译中的按语和取舍，也是晚清思想史的重要材料。",
+      "dynasty": "qing"
     },
     {
       "id": "q_huangxing",
@@ -2832,7 +2999,8 @@
         "v40q_tongmenghui"
       ],
       "kind": "重要人物",
-      "note": "参与华兴会和同盟会组织，指挥黄花岗起义与阳夏战事，连接地下动员、军事行动和共和建国。"
+      "note": "参与华兴会和同盟会组织，指挥黄花岗起义与阳夏战事，连接地下动员、军事行动和共和建国。",
+      "dynasty": "qing"
     },
     {
       "id": "m42_xuyouzhen",
@@ -2848,7 +3016,8 @@
         "v42m_ms83"
       ],
       "kind": "人物",
-      "note": "景泰朝主持沙湾治河，天顺初参与夺门并推动于谦案。工程能力与政治责任需要放在一起理解。"
+      "note": "景泰朝主持沙湾治河，天顺初参与夺门并推动于谦案。工程能力与政治责任需要放在一起理解。",
+      "dynasty": "ming"
     },
     {
       "id": "m42_hanyong",
@@ -2863,7 +3032,8 @@
         "v42m_ms178"
       ],
       "kind": "人物",
-      "note": "成化初年两广军务的重要组织者；从大藤峡战争到总督与巡抚权限调整，可见军事胜利之后的治理难题。"
+      "note": "成化初年两广军务的重要组织者；从大藤峡战争到总督与巡抚权限调整，可见军事胜利之后的治理难题。",
+      "dynasty": "ming"
     },
     {
       "id": "m42_yuzijun",
@@ -2879,7 +3049,8 @@
         "v42m_ms73"
       ],
       "kind": "人物",
-      "note": "从财政与地方治理转入边防，主持延绥边墙和移镇榆林；晚年宣大工程的争议显示，修边也必须计算民力。"
+      "note": "从财政与地方治理转入边防，主持延绥边墙和移镇榆林；晚年宣大工程的争议显示，修边也必须计算民力。",
+      "dynasty": "ming"
     },
     {
       "id": "m42_qiujun",
@@ -2895,7 +3066,8 @@
         "v42m_ms178"
       ],
       "kind": "人物",
-      "note": "琼山学者与弘治阁臣，以《大学衍义补》讨论治国事务；著述、教育和实际施政之间既有联系，也存在距离。"
+      "note": "琼山学者与弘治阁臣，以《大学衍义补》讨论治国事务；著述、教育和实际施政之间既有联系，也存在距离。",
+      "dynasty": "ming"
     },
     {
       "id": "m42_mawensheng",
@@ -2910,7 +3082,8 @@
         "v42m_ms182"
       ],
       "kind": "人物",
-      "note": "历经成化、弘治与正德初年，在边防、兵政和官员任用中反复争取整顿；军需压力也是其关心的民生问题。"
+      "note": "历经成化、弘治与正德初年，在边防、兵政和官员任用中反复争取整顿；军需压力也是其关心的民生问题。",
+      "dynasty": "ming"
     },
     {
       "id": "q_jinfu",
@@ -2925,7 +3098,8 @@
         "v42q_qsg279"
       ],
       "kind": "重要人物",
-      "note": "1677年任河道总督，1688年罢职，1692年复任后病逝。治河经历横跨工程筹划、漕运保障与田地受淹争议。"
+      "note": "1677年任河道总督，1688年罢职，1692年复任后病逝。治河经历横跨工程筹划、漕运保障与田地受淹争议。",
+      "dynasty": "qing"
     },
     {
       "id": "q_chenhuang",
@@ -2940,7 +3114,8 @@
         "v42q_qsg279"
       ],
       "kind": "重要人物",
-      "note": "字天一，浙江钱塘人。《清史稿》记其1688年被押往京师后、未入狱即病卒；1692年靳辅请复其官衔，未获实行。"
+      "note": "字天一，浙江钱塘人。《清史稿》记其1688年被押往京师后、未入狱即病卒；1692年靳辅请复其官衔，未获实行。",
+      "dynasty": "qing"
     },
     {
       "id": "q_yuchenglong",
@@ -2955,7 +3130,8 @@
         "v42q_qsg277"
       ],
       "kind": "重要人物",
-      "note": "字北溟，山西永宁人，1684年卒。与字振甲、汉军出身、后来任河道总督的同名于成龙是两人；本人物不参与1688年河工廷辩。"
+      "note": "字北溟，山西永宁人，1684年卒。与字振甲、汉军出身、后来任河道总督的同名于成龙是两人；本人物不参与1688年河工廷辩。",
+      "dynasty": "qing"
     },
     {
       "id": "q_agui",
@@ -2970,7 +3146,8 @@
         "v42q_qsg318"
       ],
       "kind": "重要人物",
-      "note": "乾隆朝参与西北军事、屯田、河工与财政案件调查，1797年去世。其经历不包括1799年的和珅案。"
+      "note": "乾隆朝参与西北军事、屯田、河工与财政案件调查，1797年去世。其经历不包括1799年的和珅案。",
+      "dynasty": "qing"
     },
     {
       "id": "q_songyun",
@@ -2986,7 +3163,8 @@
         "v42q_xinjiang_tun"
       ],
       "kind": "重要人物",
-      "note": "先后参与库伦交涉、伊犁水利与新疆财政筹议。1809年因未经审讯擅杀而被降职，水利成效与处置责任应分别考察。"
+      "note": "先后参与库伦交涉、伊犁水利与新疆财政筹议。1809年因未经审讯擅杀而被降职，水利成效与处置责任应分别考察。",
+      "dynasty": "qing"
     },
     {
       "id": "m_zhengchenggong",
@@ -33434,6 +33612,25 @@
             "t_xuanzong",
             "t_empresswei"
           ]
+        },
+        {
+          "id": "v46-depth",
+          "title": "复位并没有消除宫廷边界",
+          "text": "神龙政变让李显重新成为皇帝，却没有自动建立稳定的决策秩序。武氏旧臣、拥立功臣、韦皇后与安乐公主各有政治资源，诏令、人事和婚姻因而彼此牵连。中宗朝一面恢复李唐国号和被贬官员，一面继续处理吐蕃关系、选官与地方奏报，并非只有宫闱故事。金城公主入吐蕃尤其说明，婚姻仍被用作边疆外交的一部分。阅读这一朝，应把皇帝的名义地位、能够控制诏令的人和真正执行政务的官僚分开观察；710年的突然死亡之所以迅速引发拥立与政变，正因为这三层权力从未重新合拢。",
+          "kind": "史实与解读",
+          "sources": [
+            "v43t_jts6",
+            "v43t_jts7"
+          ],
+          "people": [
+            "t_wuzetian",
+            "t_empresswei",
+            "t_taiping"
+          ],
+          "events": [
+            "v43t_shenlong",
+            "v43t_jincheng"
+          ]
         }
       ]
     },
@@ -33525,6 +33722,26 @@
             "t_xuanzong",
             "t_wuzetian",
             "t_zhongzong"
+          ]
+        },
+        {
+          "id": "v46-depth",
+          "title": "太上皇阶段也是在位史的一部分",
+          "text": "睿宗第二次即位后，李隆基因唐隆政变获得声望，太平公主则凭宗室身份和长期宫廷网络影响人事。712年传位并未让这种结构立刻终止：睿宗以太上皇身份仍保留部分重大任命与军国裁决，直到713年先天政变之后才彻底退出。这个过程提醒我们，禅位日期只是制度上的分界，权力移交往往需要更长时间。把睿宗简单写成“无为让位”会遮住他的选择：他先以让位避免父子冲突扩大，又在新的力量对比形成后停止干预。唐前期连续复位和宫廷政变，也由此转入玄宗亲政的新阶段。",
+          "kind": "史实与解读",
+          "sources": [
+            "v43t_jts6",
+            "v43t_jts7",
+            "v43t_jts8"
+          ],
+          "people": [
+            "t_xuanzong",
+            "t_taiping",
+            "t_yaochong"
+          ],
+          "events": [
+            "v43t_tanglong_coup",
+            "v43t_ruizong_abdication"
           ]
         }
       ]
@@ -33940,6 +34157,26 @@
             "t_liuyan",
             "t_dezong"
           ]
+        },
+        {
+          "id": "v46-depth",
+          "title": "战争结束以后，国家并未恢复原状",
+          "text": "763年史朝义败亡通常被视为安史战争终点，但代宗面对的并不是可以直接复原的开元体制。河北诸镇保留军队与地盘，朝廷需要在承认部分既成权力和维持名义秩序之间妥协；同年吐蕃军进入长安，又暴露关中防务的脆弱。郭子仪等将领能够解急，却无法替代长期财政建设。刘晏整顿漕运、盐政与江淮运输，正是朝廷把生存基础转向东南财赋的表现。理解代宗朝，关键不是问“叛乱是否平定”，而是看战争如何改变军镇、宫廷和财政之间的关系，这些变化会继续制约德宗及其后的皇帝。",
+          "kind": "史实与解读",
+          "sources": [
+            "v43t_jts10",
+            "v43t_jts11"
+          ],
+          "people": [
+            "t_guoziyi",
+            "t_liuyan",
+            "t_dezong"
+          ],
+          "events": [
+            "v43t_rebellion_end",
+            "v43t_tibet_changan",
+            "v43t_grain_transport"
+          ]
         }
       ]
     },
@@ -34148,6 +34385,23 @@
             "t_xianzong",
             "t_wangshuwen"
           ]
+        },
+        {
+          "id": "v46-depth",
+          "title": "短朝不能只用成败概括",
+          "text": "顺宗在太子时期已长期参与政务，即位时却受疾病限制，诏令传递、面见大臣和宫廷军权因此格外重要。王叔文集团推动罢宫市、整顿财政和更换部分官员，触及的是德宗后期积累的问题；他们试图影响神策军指挥，更直接碰到宦官掌军的权力核心。改革只持续数月，并不等于所有措施都出自一套完整方案，也不能把失败只归因于某个个人。顺宗传位后，参与者遭贬，宪宗朝又在不同条件下继续处理藩镇与财政。把疾病、制度通道和人事联盟放在一起，才能解释永贞时期为什么变化迅速、结束也同样迅速。",
+          "kind": "史实与解读",
+          "sources": [
+            "v43t_jts14"
+          ],
+          "people": [
+            "t_wangshuwen",
+            "t_xianzong"
+          ],
+          "events": [
+            "v43t_yongzhen",
+            "v43t_shunzong_transfer"
+          ]
         }
       ]
     },
@@ -34349,6 +34603,23 @@
             "t_peidu",
             "t_lideyu"
           ]
+        },
+        {
+          "id": "v46-depth",
+          "title": "会盟与河北反复发生在同一朝",
+          "text": "穆宗继承宪宗削藩后的局面，但河北三镇很快再次脱离朝廷直接控制，说明一次军事胜利没有重建稳定的地方秩序。与此同时，821至822年的唐蕃会盟以誓文和会盟碑确认双方边界与使节往来，为长期冲突提供另一种处理方式。这两件事放在一起，可以看见长庆朝并非只有“守成失败”：朝廷对东部军镇缺少持续控制力，却仍能在西部通过谈判形成可执行的外交安排。穆宗在位短、宫廷赏赐和游宴受到史家批评，但评价不能替代结构分析；财政承受力、节度使继承和中央军权才是政策能否延续的关键。",
+          "kind": "史实与解读",
+          "sources": [
+            "v43t_jts16"
+          ],
+          "people": [
+            "t_peidu",
+            "t_lideyu"
+          ],
+          "events": [
+            "v43t_hebei_reversal",
+            "v43t_changqing_peace"
+          ]
         }
       ]
     },
@@ -34420,6 +34691,23 @@
           ],
           "people": [
             "t_wenzong"
+          ]
+        },
+        {
+          "id": "v46-depth",
+          "title": "宫城事件暴露的安全与用人问题",
+          "text": "敬宗即位时年少，朝政仍由既有宰相、宦官和禁军体系共同运转。824年张韶等染坊役夫闯入宫城，人数和持续时间都有限，却说明宫门警备、役使群体与内部接应可能形成漏洞。827年敬宗又被近侍杀害，随后拥立文宗，宫廷安全问题直接转化为皇位安排。史书常以游猎、击球和拒谏塑造敬宗形象，这些记载可以帮助理解君臣关系，却不应遮住制度层面：谁控制禁军、谁能接近皇帝、事变后谁主持拥立，才决定短朝如何结束。因材料多来自事后编纂，对个人性格的道德判断也需要与可核实事件分开。",
+          "kind": "史实与解读",
+          "sources": [
+            "v43t_jts17a"
+          ],
+          "people": [
+            "t_peidu",
+            "t_lideyu"
+          ],
+          "events": [
+            "v43t_jingzong_intrusion",
+            "v43t_jingzong_killed"
           ]
         }
       ]
@@ -34504,6 +34792,27 @@
             "t_wuzong",
             "t_qiushiliang"
           ]
+        },
+        {
+          "id": "v46-depth",
+          "title": "文化工程与宫廷危机同时存在",
+          "text": "文宗试图减少宫廷支出、整顿吏治，也支持把儒家经典刻石保存，开成石经至今仍是这一朝可见的文化遗产。与此同时，神策军由宦官掌握，皇帝和部分大臣试图改变这一格局，最终在835年的甘露之变中遭到反击，大批官员被杀。两条线不能互相抵消：政治危机没有让国家行政完全停止，经典校勘和地方财政也没有证明中央权力已经稳固。所谓牛李党争同样不能替代对具体议题的分析，官员在任用、藩镇和财政上的立场并非永远属于两个固定阵营。文宗朝的复杂性，正在于制度日常仍运转，而最高层的安全与军权却极不稳定。",
+          "kind": "史实与解读",
+          "sources": [
+            "v43t_jts17a",
+            "v43t_jts17b",
+            "v43t_beilin_stone"
+          ],
+          "people": [
+            "t_qiushiliang",
+            "t_peidu",
+            "t_lideyu"
+          ],
+          "events": [
+            "v43t_wenzong_retrench",
+            "v43t_ganlu",
+            "v43t_kaicheng_stone"
+          ]
         }
       ]
     },
@@ -34583,6 +34892,24 @@
             "t_xuanzong_late",
             "t_lideyu"
           ]
+        },
+        {
+          "id": "v46-depth",
+          "title": "会昌政策既有军事面，也有社会代价",
+          "text": "武宗朝以李德裕为主要宰相，利用河北诸镇之间的差异平定泽潞，显示中央仍能在特定条件下组织跨区域军事行动。会昌毁佛则是另一种国家动员：寺院、僧尼、土地和赋役被重新登记，佛教机构受到大规模打击，同时也波及其他外来宗教。它既包含皇帝个人信仰取向，也与财政、户籍和国家控制资源的诉求相连，不能只解释成一次思想争论。宣宗即位后迅速调整相关措施，更说明政策依赖特定的君臣组合。评价武宗朝时，应同时看军事成绩、行政能力和社会伤害，避免用“中兴”二字覆盖被迫还俗者与地方社会承受的变化。",
+          "kind": "史实与解读",
+          "sources": [
+            "v43t_jts18a",
+            "v43t_jts18b"
+          ],
+          "people": [
+            "t_lideyu",
+            "t_qiushiliang"
+          ],
+          "events": [
+            "v43t_zhaoyi",
+            "v43t_huichang_buddhism"
+          ]
         }
       ]
     },
@@ -34660,6 +34987,23 @@
             "t_lideyu",
             "t_baiminzhong"
           ]
+        },
+        {
+          "id": "v46-depth",
+          "title": "河陇归附并非朝廷单方面收复",
+          "text": "宣宗即位后调整会昌时期的宗教和用人政策，史家因而常以“大中之治”概括这一朝。但河湟局势的变化尤其需要辨明过程：吐蕃内部动荡后，张议潮等地方力量在沙州起事，陆续控制河西州郡，再遣使归唐；朝廷随后设置归义军并授予名号。它不是中央大军从长安一路收复，也不是地方政权与唐廷毫无关系，而是地方行动、交通恢复和名义册封共同形成的结果。宣宗重视官员考核与奏报，却仍面对宦官、藩镇和财政的长期约束。把治理声誉与制度边界并列，才能理解大中年间的恢复为何真实又有限。",
+          "kind": "史实与解读",
+          "sources": [
+            "v43t_jts18b"
+          ],
+          "people": [
+            "t_lideyu",
+            "t_baiminzhong"
+          ],
+          "events": [
+            "v43t_dazhong_reversal",
+            "v43t_hehuang"
+          ]
         }
       ]
     },
@@ -34733,6 +35077,23 @@
           "people": [
             "t_xizong",
             "t_kangchengxun"
+          ]
+        },
+        {
+          "id": "v46-depth",
+          "title": "南方战争把财政与兵役压力带到内地",
+          "text": "懿宗朝的危机并非到黄巢起事才突然出现。南诏与唐在西南反复交战，调兵、转运和军费持续消耗地方；从桂林戍卒返乡问题发展起来的庞勋兵变，又把边防役期、军队待遇与东南交通连成一场地区战争。朝廷依靠康承训等将领平乱，却没有消除士兵和地方社会承受的压力。873年迎佛骨引发的争论常被写成个人崇佛故事，但它也发生在财政紧张和政治威信下降的背景中。理解懿宗朝，应把边疆战争、军役制度、宫廷支出和宗教仪式放在同一张因果网里，而不是把王朝衰落归结为单一嗜好。",
+          "kind": "史实与解读",
+          "sources": [
+            "v43t_jts19a"
+          ],
+          "people": [
+            "t_kangchengxun",
+            "t_baiminzhong"
+          ],
+          "events": [
+            "v43t_pangxun",
+            "v43t_yizong_bone"
           ]
         }
       ]
@@ -34810,6 +35171,26 @@
             "t_likeyong",
             "t_zhaozong"
           ]
+        },
+        {
+          "id": "v46-depth",
+          "title": "收复长安不等于恢复国家控制",
+          "text": "黄巢军进入长安后，僖宗转入四川，唐廷必须依靠各地节度使和沙陀军队组织反攻。李克用参与收复长安，朱温由黄巢阵营转而受唐任命，这些军事强人的地位都在战争中上升。884年黄巢败亡只是战事节点，中央并未重新掌握足以约束诸镇的兵力和财源。田令孜与河中军镇冲突，又迫使僖宗再次出奔，说明宫廷近侍、禁军和地方强藩之间的矛盾仍在扩大。阅读这一朝，不能把“起义被镇压”误作秩序恢复；战争结束后形成的新军事格局，反而为昭宗时期的挟持、废立和王朝终结准备了条件。",
+          "kind": "史实与解读",
+          "sources": [
+            "v43t_jts19b"
+          ],
+          "people": [
+            "t_huangchao",
+            "t_tianlingzi",
+            "t_zhuwen",
+            "t_likeyong"
+          ],
+          "events": [
+            "v43t_huangchao_changan",
+            "v43t_huangchao_end",
+            "v43t_xizong_flight"
+          ]
         }
       ]
     },
@@ -34884,6 +35265,25 @@
           "people": [
             "t_zhuwen",
             "t_aidi"
+          ]
+        },
+        {
+          "id": "v46-depth",
+          "title": "皇帝试图重建权力，却失去可用的军队",
+          "text": "昭宗并非完全放弃重建中央权力，他曾试图整顿禁军、削弱掌军宦官并在军镇之间寻找支援。但朝廷自身缺乏稳定财赋和可靠军队，每一次借助外部力量都可能产生新的控制者。李茂贞在凤翔挟持皇帝，朱温以围城迫使其交出朝廷，随后又清除宦官、强迁洛阳。形式上，诏令和百官仍然存在；实际上，皇帝的行止、官员生死与首都位置都由军阀决定。904年昭宗遇害并非孤立暗杀，而是多年军权外移的结果。用这条线索阅读晚唐，能看见制度外壳如何在军事资源被抽空后逐步失去作用。",
+          "kind": "史实与解读",
+          "sources": [
+            "v43t_jts20a"
+          ],
+          "people": [
+            "t_zhuwen",
+            "t_likeyong",
+            "t_tianlingzi"
+          ],
+          "events": [
+            "v43t_zhaozong_heir",
+            "v43t_fengxiang",
+            "v43t_move_luoyang"
           ]
         }
       ]
@@ -36959,6 +37359,29 @@
             "y_tugh_temur",
             "y_zhao_mengfu"
           ]
+        },
+        {
+          "id": "v46-depth",
+          "title": "扩张财政工具的代价很快显现",
+          "text": "海山依靠北方军旅和诸王支持取得皇位，并立弟爱育黎拔力八达为皇太子，试图用兄终弟及再回到本支子孙的安排稳定继承。至大年间恢复尚书省、发行至大银钞，又增加赏赐、官署与中都工程，政策共同指向扩大朝廷可支配资源。新钞和役使却在灾荒背景下加重社会负担，执行成本迅速显现。武宗死后，仁宗撤销尚书省并调整钞法，说明短朝政策没有形成稳固共识。评价海山不能只凭军功或财政“改革”命名；继承承诺、货币信用和工程动员必须放在一起，才能理解其朝政为何在三年后大幅逆转。",
+          "kind": "史实与解读",
+          "sources": [
+            "v43y_ys022",
+            "v43y_ys024",
+            "v43y_ys031",
+            "v43y_ys023",
+            "v43y_ys093",
+            "v43y_ys172"
+          ],
+          "people": [
+            "y_ayurbarwada",
+            "y_zhao_mengfu"
+          ],
+          "events": [
+            "v43y_kulug_accession",
+            "v43y_kulug_money",
+            "v43y_kulug_labor"
+          ]
         }
       ],
       "sources": [
@@ -37025,6 +37448,28 @@
           "people": [
             "y_baizhu",
             "y_yesun_temur"
+          ]
+        },
+        {
+          "id": "v46-depth",
+          "title": "法律整顿触及的是权贵用人",
+          "text": "硕德八剌即位后与拜住合作，试图限制权臣和近侍对选官、财政的干预，并清理仁宗末年以来的部分弊政。《大元通制》把历朝诏令、条格和断例汇为可供行政司法使用的规范，反映元朝并非只靠临时命令治理；法律能否落实，却仍取决于中央与诸王、行省和宿卫集团的力量关系。1323年南坡之变中，皇帝与拜住同时被杀，参与者来自掌握宿卫和宫廷通道的高层。改革目标与暴力结局之间没有简单因果，但事变说明制度文本无法自动约束控制武力的人。英宗朝虽短，仍应放在元代法制和权力结构史中阅读。",
+          "kind": "史实与解读",
+          "sources": [
+            "v43y_ys027",
+            "v43y_ys136",
+            "v43y_ys172",
+            "v43y_ys028",
+            "v43y_ys029"
+          ],
+          "people": [
+            "y_baizhu",
+            "y_zhao_mengfu"
+          ],
+          "events": [
+            "v43y_gegeen_reform",
+            "v43y_code",
+            "v43y_nanpo"
           ]
         }
       ],
@@ -37095,6 +37540,27 @@
             "y_tugh_temur",
             "y_daolasha",
             "y_yan_tiemuer"
+          ]
+        },
+        {
+          "id": "v46-depth",
+          "title": "晋王体系进入中央之后",
+          "text": "也孙铁木儿长期以晋王身份镇守北方，掌太祖四大斡耳朵及相关军马。他在南坡之变后即位，一面惩处部分弑君者、强调自身继承资格，一面仍依靠倒剌沙等晋王府旧臣。泰定年间各地灾害与饥荒记录频繁，朝廷持续采取赈粮、减免和修治措施；这些日常行政比宫廷叙事更能显示短期治理的实际内容。皇太子阿速吉八被确定为继承人，但皇帝死于上都时，大都与上都形成两个政治中心，燕铁木儿另立图帖睦尔。此前未能整合的宿卫、王府和两都官僚网络，随即转化为公开战争。",
+          "kind": "史实与解读",
+          "sources": [
+            "v43y_ys029",
+            "v43y_ys030",
+            "v43y_ys138",
+            "v43y_ys032"
+          ],
+          "people": [
+            "y_daolasha",
+            "y_yan_tiemuer"
+          ],
+          "events": [
+            "v43y_yesun_accession",
+            "v43y_yesun_relief",
+            "v43y_two_capitals"
           ]
         }
       ],
@@ -37233,6 +37699,33 @@
             "y_budashiri",
             "y_rinchinbal",
             "y_yan_tiemuer"
+          ]
+        },
+        {
+          "id": "v46-depth",
+          "title": "文化工程不能遮住拥立集团",
+          "text": "图帖睦尔在两都之战中由燕铁木儿等拥立，随后迎兄和世㻋即位；明宗南行突然去世后，他再次登位。史料对死亡原因留下疑点，现有证据不足以把谋害传闻写成定论，但复位确实强化了拥立集团的权力。文宗设奎章阁、聚集儒臣并编纂《经世大典》，使制度、地理和政务知识得到整理，赵孟頫等文化传统也继续影响宫廷。与此同时，燕铁木儿家族控制军政，人事与赏赐高度集中。文宗朝应同时从文化建设和权力依附两面理解：典籍工程留下长久影响，却没有解决皇位继承和宿卫政治反复制造危机的问题。",
+          "kind": "史实与解读",
+          "sources": [
+            "v43y_ys032",
+            "v43y_ys138",
+            "v43y_ys031",
+            "v43y_ys033",
+            "v43y_ys038",
+            "v43y_ys114",
+            "v43y_ys034",
+            "v43y_ys037"
+          ],
+          "people": [
+            "y_yan_tiemuer",
+            "y_late_bayan",
+            "y_budashiri",
+            "y_kusala"
+          ],
+          "events": [
+            "v43y_two_capitals",
+            "v43y_kusala_death",
+            "v43y_kuizhang"
           ]
         }
       ],
@@ -39259,6 +39752,26 @@
             "v43s_puyi",
             "v43s_tongjian_start"
           ]
+        },
+        {
+          "id": "v46-depth",
+          "title": "短朝仍改变了继承与历史书写",
+          "text": "英宗以宗室子身份入宫，继承仁宗皇位后，生父赵允让应获何种称号成为濮议核心。这不是单纯礼仪争吵：皇帝如何表达生身关系，关系到嗣承制度、太后地位和官员能否限制君主意志。韩琦、欧阳修与司马光等人的立场也不完全相同，不能把争论压成固定党派。英宗患病时由曹太后协助处理政务，恢复后又面对两宫关系与人事调整。与此同时，他支持司马光继续编修编年史，为后来的《资治通鉴》提供制度条件。四年在位虽短，却把宗室入继、礼制解释和国家修史三个问题留给了神宗朝。",
+          "kind": "史实与解读",
+          "sources": [
+            "v43s_ss013",
+            "v43s_ss319",
+            "v43s_ss336"
+          ],
+          "people": [
+            "s_hanqi",
+            "s_ouyangxiu",
+            "s_simaguang"
+          ],
+          "events": [
+            "v43s_puyi",
+            "v43s_tongjian_start"
+          ]
         }
       ]
     },
@@ -39471,6 +39984,28 @@
             "v43s_yuanyou",
             "v43s_shaosheng"
           ]
+        },
+        {
+          "id": "v46-depth",
+          "title": "两次转向都借用了制度语言",
+          "text": "哲宗幼年即位时，高太后临朝，司马光等人废改部分新法，史称元祐更化。亲政后，章惇等人以恢复神宗政策为名推进绍述，并对元祐官员展开贬斥。两次转向都不是把所有制度全部推倒重来：役法、财政和边防措施在地方执行时仍有延续、修改与差异。把这一时期只写成“新旧党争”，容易忽略皇帝成年亲政、太后去世和官僚履历对政策节奏的影响。哲宗没有留下成年子嗣，他去世后的继承选择又把端王赵佶推上皇位。政策清算与继承断口相接，使绍圣朝的政治后果延伸到徽宗初年。",
+          "kind": "史实与解读",
+          "sources": [
+            "v43s_ss017",
+            "v43s_ss018",
+            "v43s_ss336",
+            "v43s_ss338",
+            "v43s_ss471"
+          ],
+          "people": [
+            "s_simaguang",
+            "s_zhangdun",
+            "s_sushi"
+          ],
+          "events": [
+            "v43s_yuanyou",
+            "v43s_shaosheng"
+          ]
         }
       ]
     },
@@ -39662,6 +40197,25 @@
           ],
           "people": [
             "s_ligang"
+          ],
+          "events": [
+            "v43s_jingkang_defense",
+            "v43s_jingkang"
+          ]
+        },
+        {
+          "id": "v46-depth",
+          "title": "战与和并不是两条可以随时切换的道路",
+          "text": "钦宗接手的是金军已经南下、边防体系迅速崩解的局面。第一次开封保卫期间，李纲组织守城与各地勤王，朝廷同时遣使议和；金军暂退后，宋廷既未完成防务重整，也在处置主战官员和履行和约之间反复。第二次围城时，兵力、粮食、外援和指挥条件都比前一次更差。把失败完全归给某次和议或某位大臣，会掩盖多年联金灭辽、燕云交割和军事财政积弱的累积作用。1127年徽钦二帝及宗室被俘，北宋结束；钦宗个人此后长期被拘，但南宋政治又不断借他的名义讨论迎归与正统。",
+          "kind": "史实与解读",
+          "sources": [
+            "v43s_ss023",
+            "v43s_ss358"
+          ],
+          "people": [
+            "s_ligang",
+            "s_zhangbangchang",
+            "s_tongguan"
           ],
           "events": [
             "v43s_jingkang_defense",
@@ -40065,6 +40619,28 @@
             "v43s_shaoxi_accounts",
             "v43s_huizi_extension"
           ]
+        },
+        {
+          "id": "v46-depth",
+          "title": "两宫关系为何会成为国家问题",
+          "text": "光宗受禅后，史料持续记录他的健康变化以及与孝宗、李皇后的紧张关系。个人疾病的具体诊断无法由后世材料确定，但可以确认的是，皇帝长期不能正常朝见太上皇，使礼仪、奏事和官员站队都受到影响。1194年孝宗去世后，光宗未能主持丧礼，赵汝愚、韩侂胄和太皇太后共同推动宁宗即位，绍熙内禅由此形成。与此同时，会计录编修、会子展界与兑付争论说明行政和财政并未停摆。这个短朝的意义正在于：家庭关系只有通过皇位、礼制和官僚程序，才会放大成国家危机；不能把制度问题简化为宫廷逸闻。",
+          "kind": "史实与解读",
+          "sources": [
+            "v43s_ss036",
+            "v43s_ss037",
+            "v43s_ss392",
+            "v43s_ss181"
+          ],
+          "people": [
+            "s_zhoubida",
+            "s_zhaoruyu",
+            "s_hantuozhou"
+          ],
+          "events": [
+            "v43s_shaoxi",
+            "v43s_shaoxi_accounts",
+            "v43s_huizi_extension"
+          ]
         }
       ]
     },
@@ -40188,6 +40764,33 @@
             "v43s_kaixi",
             "v43s_jiading_treaty"
           ]
+        },
+        {
+          "id": "v46-depth",
+          "title": "三次权力组合塑造了三十年长朝",
+          "text": "宁宗即位之初，赵汝愚与韩侂胄共同参与拥立，随后联盟破裂，庆元党禁把学术名目、官员升降和政治排斥结合起来。韩侂胄后来发动开禧北伐，军事失利后被杀，宋金以嘉定和议重新安排关系。史弥远由此进入长期执政阶段，并在宁宗无成年亲子的背景下主导继承安排。三段政治不能只用“权臣轮替”概括：皇帝、后宫、台谏、边防将领和地方财赋都影响决策空间。朱熹学说先受禁抑，后来逐步得到恢复，也显示政治标签会随联盟变化。1224年的拥立理宗，是这一长期结构留下的最后重大结果。",
+          "kind": "史实与解读",
+          "sources": [
+            "v43s_ss037",
+            "v43s_ss038",
+            "v43s_ss039",
+            "v43s_ss040",
+            "v43s_ss041",
+            "v43s_ss474",
+            "v43s_ss414"
+          ],
+          "people": [
+            "s_zhaoruyu",
+            "s_hantuozhou",
+            "s_shimiyuan",
+            "s_zhuxi"
+          ],
+          "events": [
+            "v43s_qingyuan",
+            "v43s_kaixi",
+            "v43s_jiading_treaty",
+            "v43s_lizong_accession"
+          ]
         }
       ]
     },
@@ -40309,6 +40912,33 @@
           "events": [
             "v43s_lizong_accession"
           ]
+        },
+        {
+          "id": "v46-depth",
+          "title": "从史弥远执政到蒙古战争",
+          "text": "理宗由史弥远安排入继，早期政务深受其影响；史弥远死后，皇帝亲政并调整人事。1234年宋蒙联合灭金后，宋军试图进入洛阳，随即与蒙古发生冲突，北方安全并未因金亡而改善。朝廷把周敦颐、程颢、程颐、张载、朱熹等纳入官方祭祀与学术秩序，使理学获得更明确的国家正统地位；这条文化线与持续战争、财政压力同时存在。晚年贾似道上升、公田法推行，又把军粮筹措和土地利益连在一起。理宗朝长达四十年，既不能只写成思想史，也不能只当作亡国前奏，它是南宋制度选择逐渐收窄的关键阶段。",
+          "kind": "史实与解读",
+          "sources": [
+            "v43s_ss041",
+            "v43s_ss042",
+            "v43s_ss045",
+            "v43s_ss173",
+            "v43s_ss474",
+            "v43s_sh7",
+            "v43s_ss046",
+            "v43s_ss414"
+          ],
+          "people": [
+            "s_shimiyuan",
+            "s_jiashidao",
+            "s_matingluan",
+            "s_wentianxiang"
+          ],
+          "events": [
+            "v43s_cai_zhou",
+            "v43s_ru_learning",
+            "v43s_gongtian"
+          ]
         }
       ]
     },
@@ -40406,6 +41036,28 @@
           ],
           "events": [
             "v43s_xiangyang"
+          ]
+        },
+        {
+          "id": "v46-depth",
+          "title": "襄樊失守改变了长江防线",
+          "text": "度宗即位时，蒙古与南宋的战争已延续多年，襄阳、樊城成为连接汉水与长江防线的枢纽。1268年起的长期围攻不仅是两座城的守战，还涉及援军、粮运、水军和新式攻城技术；1273年失守后，元军沿汉水进入长江的条件明显改善。贾似道掌握较大权力，但把失败完全归于“权相蒙蔽”会掩盖边防资源与中央财政的长期困境。马廷鸾等人的进退，则显示朝廷内部仍有不同意见和奏议渠道。度宗去世后留下幼主，军事压力、继承脆弱和财政问题在同一时刻汇合，南宋随后数年的崩解由此加速。",
+          "kind": "史实与解读",
+          "sources": [
+            "v43s_ss046",
+            "v43s_ss474",
+            "v43s_ss173",
+            "v43s_ss414"
+          ],
+          "people": [
+            "s_jiashidao",
+            "s_matingluan",
+            "s_wentianxiang",
+            "s_zhangshijie"
+          ],
+          "events": [
+            "v43s_xiangyang",
+            "v43s_ma_chancellor"
           ]
         }
       ]

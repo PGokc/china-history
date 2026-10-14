@@ -54,12 +54,17 @@ struct RootView: View {
             }.tabItem { Label("遗珍", systemImage: "building.columns") }.tag(3)
         }.tint(Theme.cinnabar).preferredColorScheme(.light)
             .onAppear {
-                if ProcessInfo.processInfo.arguments.contains("--uitesting") {
+                let arguments = ProcessInfo.processInfo.arguments
+                if arguments.contains("--uitesting") {
                     // Keep UI tests independent while still allowing an explicit
                     // second launch without --uitesting to verify persistence.
                     let defaults = UserDefaults.standard
                     defaults.removeObject(forKey: "selectedDynasty")
-                    selectedDynasty = "ming"; selected = "yuanzhang"; tab = 0
+                    let requested: String? = arguments.firstIndex(of: "--ui-dynasty").flatMap { index in
+                        arguments.indices.contains(index + 1) ? arguments[index + 1] : nil
+                    }
+                    let dynasty = requested.flatMap { store.dynasty($0)?.selectable == true ? $0 : nil } ?? "ming"
+                    selectedDynasty = dynasty; selected = store.defaultPerson(in: dynasty); tab = 0
                 }
             }
             .onChange(of: selectedDynasty) { _, dynasty in

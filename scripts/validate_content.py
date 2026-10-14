@@ -551,3 +551,19 @@ if d['version'] >= 27:
  assert not ({'s_gongdi','s_duanzong','s_zhaobing'} & portraits.keys())
  assert all(people[pid].get('image')==portraits[pid]['image'] for pid in tang_portraits|song_portraits)
  print('V27 PASS: three qualified later Tang portraits and fifteen NPM Song imperial portraits are mapped; unsupported late-Song child-emperor images stay absent')
+
+if d['version'] >= 28:
+ assert all(p.get('dynasty') in {x['id'] for x in d['dynasties']} for p in d['people']), 'every person needs an explicit valid dynasty'
+ expanded={
+  't_zhongzong','t_ruizong','t_daizong','t_shunzong','t_muzong','t_jingzong','t_wenzong','t_wuzong',
+  't_xuanzong_late','t_yizong','t_xizong','t_zhaozong','s_yingzong','s_zhezong','s_qinzong',
+  's_guangzong','s_ningzong','s_lizong','s_duzong','y_kulug','y_gegeen','y_yesun_temur','y_tugh_temur'
+ }
+ for pid in expanded:
+  article=articles[pid]
+  section=next((x for x in article['sections'] if x['id']=='v46-depth'),None)
+  assert section and section.get('sources') and section.get('people') and section.get('events'),(pid,'missing sourced depth section')
+  chars=sum(len(re.findall(r'[\u4e00-\u9fff]',x['text'])) for x in article['sections'])
+  assert chars>=850,(pid,'expanded article is still thin',chars)
+ assert all(not re.search(r'本轮|补充内容|数据缺口|页面需要',json.dumps(articles[pid],ensure_ascii=False)) for pid in expanded), 'editorial language leaked into product copy'
+ print('V28 PASS: 23 Tang, Song and Yuan imperial readings exceed the depth floor; all 331 people have explicit dynasty ownership')
