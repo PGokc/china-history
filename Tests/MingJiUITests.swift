@@ -1446,4 +1446,61 @@ final class MingJiUITests: XCTestCase {
         shot("v47-yuan-source-bottom", yuan)
     }
 
+    @MainActor func testV48QinCompleteHistoryPaths() throws {
+        let sequence = XCUIApplication()
+        sequence.launchArguments = ["--uitesting", "--ui-dynasty", "qin"]
+        sequence.launch()
+        XCTAssertTrue(sequence.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        XCTAssertEqual(sequence.tabBars.buttons.allElementsBoundByIndex.map(\.label), ["朝代", "帝序", "家族", "遗珍"])
+        sequence.tabBars.buttons["帝序"].tap()
+        XCTAssertTrue(sequence.descendants(matching: .any)["successionPage_qin"].waitForExistence(timeout: 5))
+        XCTAssertTrue(sequence.buttons["succession_qin_0"].exists)
+        XCTAssertTrue(sequence.buttons["succession_qin_1"].exists)
+        XCTAssertFalse(sequence.staticTexts["子婴"].exists)
+        XCTAssertFalse(sequence.staticTexts["庙号 始皇帝"].exists)
+        shot("v48-qin-sequence", sequence)
+        sequence.buttons["succession_qin_0"].tap()
+        sequence.buttons["personHero"].tap()
+        for category in ["政治", "军事", "文化", "经济", "社会"] {
+            XCTAssertTrue(sequence.buttons["eventCategory_" + category].exists, category)
+        }
+        openArticle(in: sequence)
+        sequence.buttons["articleContents"].tap()
+        let chapter = sequence.buttons["皇帝、郡县与可计算的帝国"]
+        reachReadingLink(chapter, in: sequence); chapter.tap()
+        XCTAssertEqual(sequence.buttons["articleContents"].value as? String, "皇帝、郡县与可计算的帝国")
+        shot("v48-qin-shihuang-reader", sequence)
+        sequence.terminate()
+
+        let heritage = XCUIApplication()
+        heritage.launchArguments = ["--uitesting", "--ui-dynasty", "qin"]
+        heritage.launch()
+        XCTAssertTrue(heritage.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        heritage.tabBars.buttons["遗珍"].tap()
+        heritage.buttons["collectionCategory_texts"].tap()
+        let slips = heritage.buttons["artifact_v48q_shuihudi"]
+        reachReadingLink(slips, in: heritage); slips.tap()
+        XCTAssertTrue(heritage.staticTexts["观看提示"].waitForExistence(timeout: 5))
+        let xi = heritage.buttons["explore_qin_xi"]
+        reachReadingLink(xi, in: heritage); xi.tap()
+        XCTAssertTrue(heritage.buttons["articleEntry"].waitForExistence(timeout: 5))
+        shot("v48-qin-slips-to-clerk", heritage)
+        heritage.terminate()
+
+        let tomb = XCUIApplication()
+        tomb.launchArguments = ["--uitesting", "--ui-dynasty", "qin"]
+        tomb.launch()
+        XCTAssertTrue(tomb.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        tomb.tabBars.buttons["遗珍"].tap()
+        tomb.buttons["collectionCategory_tombs"].tap()
+        XCTAssertTrue(tomb.buttons["tomb_qin_shihuang"].waitForExistence(timeout: 5))
+        tomb.buttons["tomb_qin_shihuang"].tap()
+        let sources = tomb.buttons["资料与出处"]
+        reach(sources, in: tomb, attempts: 14); sources.tap()
+        let lastSource = tomb.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "source_")).allElementsBoundByIndex.last!
+        reachReadingLink(lastSource, in: tomb); tomb.swipeUp()
+        XCTAssertLessThanOrEqual(lastSource.frame.maxY, tomb.tabBars.firstMatch.frame.minY)
+        shot("v48-qin-tomb-sources", tomb)
+    }
+
 }

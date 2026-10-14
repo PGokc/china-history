@@ -459,12 +459,23 @@ struct SuccessionPage: View {
                     }.buttonStyle(QuietRowStyle()).accessibilityIdentifier("succession_\(item.id)")
                     Rectangle().fill(Theme.line.opacity(0.46)).frame(height: 0.5).padding(.leading, typeSize.isAccessibilitySize || store.image(p.id) == nil ? 0 : 78)
                 }
-                Text(dynastyID == "qing" ? "努尔哈赤生前为后金大汗；1636年皇太极改国号为清。公历年概括实际统治，摄政与太上皇掌权另在人物和事件中说明。" : "公历年概括实际在位；同年交接不表示全年同时在位。年号起讫与实际在位年份分别列示。")
+                Text(successionNote)
                     .font(.caption).foregroundStyle(Theme.muted).padding(.top, 22).fixedSize(horizontal: false, vertical: true)
             }.padding(24)
         }.background(Theme.paper).foregroundStyle(Theme.text).navigationTitle(store.dynastyName(dynastyID) + "帝序").navigationBarTitleDisplayMode(.inline).toolbarBackground(Theme.paper, for: .navigationBar).toolbarBackground(.visible, for: .navigationBar)
             .accessibilityIdentifier("successionPage_\(dynastyID)")
             .id(dynastyID)
+    }
+
+    private var successionNote: String {
+        switch dynastyID {
+        case "qin":
+            return "秦始皇称帝前已为秦王；子婴在前207年即位后使用秦王称号，未列入皇帝序列。公元前年份由数值较大者向较小者推进。"
+        case "qing":
+            return "努尔哈赤生前为后金大汗；1636年皇太极改国号为清。公历年概括实际统治，摄政与太上皇掌权另在人物和事件中说明。"
+        default:
+            return "公历年概括实际在位；同年交接不表示全年同时在位。年号起讫与实际在位年份分别列示。"
+        }
     }
 }
 
@@ -627,7 +638,11 @@ private struct CollectionCategoryPage: View {
         return parts.count == 2 ? (parts[0], parts[1]) : (nil, area)
     }
     private func reignName(_ person: Person) -> String {
-        person.call.replacingOccurrences(of: "皇帝", with: "")
+        if let label = store.sequence(in: dynastyID).first(where: { $0.person == person.id })?.eraLabel,
+           !label.isEmpty {
+            return label
+        }
+        return person.call.replacingOccurrences(of: "皇帝", with: "")
     }
     private func shortName(_ person: Person) -> String {
         person.name.replacingOccurrences(of: "爱新觉罗·", with: "")

@@ -77,7 +77,10 @@ struct PersonPage: View {
         if store.hasFamily(p.id) || !store.associates(p.id).isEmpty { items.append(.init(id: "category_relationships", title: "人物关系", subtitle: relationSummary, route: .personSection(p.id, .relationships))) }
         if p.kind != "皇帝" && !store.events(p.id).isEmpty { items.append(.init(id: "category_events", title: "重大事件", subtitle: "\(store.events(p.id).count)项相关事件", route: .personEvents(p.id, store.preferredEventCategory(p.id)))) }
         if store.tomb(p.id) != nil || !store.objects(p.id).isEmpty { items.append(.init(id: "category_remains", title: store.tomb(p.id) == nil ? "相关遗珍" : "遗珍与陵寝", subtitle: heritageSummary, route: .personSection(p.id, .remains))) }
-        items.append(.init(id: "category_records", title: "称号与资料", subtitle: p.kind == "皇帝" ? "庙号、年号与史料依据" : "生平称号与史料依据", route: .personSection(p.id, .records)))
+        let recordsSubtitle = p.kind == "皇帝"
+            ? (p.temple.isEmpty && p.era.isEmpty ? "称号、在位与史料依据" : "庙号、年号与史料依据")
+            : "生平称号与史料依据"
+        items.append(.init(id: "category_records", title: "称号与资料", subtitle: recordsSubtitle, route: .personSection(p.id, .records)))
         return items
     }
 }
@@ -217,7 +220,11 @@ struct PersonSectionPage: View {
     var records: some View {
         VStack(alignment: .leading, spacing: 22) {
             fact("常用称呼", p.call)
-            if p.kind == "皇帝" { fact("庙号", p.temple); fact("实际在位", p.reign); fact("年号纪年", p.era) }
+            if p.kind == "皇帝" {
+                if !p.temple.isEmpty { fact("庙号", p.temple) }
+                if !p.reign.isEmpty { fact("实际在位", p.reign) }
+                if !p.era.isEmpty { fact("年号纪年", p.era) }
+            }
             else if !p.temple.isEmpty && !["不适用", "无庙号"].contains(p.temple) { fact("追尊与称号", p.temple) }
             if !p.note.isEmpty { fact("生平补记", p.note) }
             if store.portrait(p.id) != nil { NavigationRow(title: "画像与出处", subtitle: store.portrait(p.id)?.title ?? "", symbol: "photo", route: .portrait(p.id), identifier: "recordPortrait") }

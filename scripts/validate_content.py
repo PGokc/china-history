@@ -20,7 +20,8 @@ qing_emperors={pid for pid in emperors if pid.startswith('q_')}
 assert len(ming_emperors)==16
 assert len(qing_emperors)==(12 if d['version']>=5 else 0)
 legacy_emperors=ming_emperors|qing_emperors
-assert len(d['sequence'])==(83 if d['version']>=25 else 29 if d['version']>=5 else 17) and {s['person'] for s in d['sequence']}==emperors
+expected_sequence_count = 85 if d['version']>=30 else 83 if d['version']>=25 else 29 if d['version']>=5 else 17
+assert len(d['sequence'])==expected_sequence_count and {s['person'] for s in d['sequence']}==emperors
 counts=Counter(s['person'] for s in d['sequence'])
 repeated={'qizhen','t_zhongzong','t_ruizong','y_tugh_temur'} if d['version']>=25 else {'qizhen'}
 assert all(counts[p]==2 for p in repeated) and all(v==1 for k,v in counts.items() if k not in repeated)
@@ -115,7 +116,8 @@ if d['version'] >= 4:
  print('V4 PASS: five selected princes have sourced father/order, full biographies and linked events; later portraits have visible qualification labels')
 
 if d['version'] >= 5:
- assert [x['id'] for x in d['dynasties'] if x['selectable']]==(['tang','song_liao_xia_jin','yuan','ming','qing'] if d['version']>=25 else ['ming','qing'])
+ expected_selectable = ['qin','tang','song_liao_xia_jin','yuan','ming','qing'] if d['version']>=30 else ['tang','song_liao_xia_jin','yuan','ming','qing'] if d['version']>=25 else ['ming','qing']
+ assert [x['id'] for x in d['dynasties'] if x['selectable']]==expected_selectable
  assert len(d['dynasties'])>=15 and all(x['sources'] and set(x['sources'])<=sources.keys() for x in d['dynasties'])
  assert [s['person'] for s in d['sequence'] if s['person'].startswith('q_')]==[
   'q_nurhaci','q_hongtaiji','q_shunzhi','q_kangxi','q_yongzheng','q_qianlong',
@@ -413,7 +415,7 @@ if d['version'] >= 22:
    if '年代' in label and years:years.append(max(years)+9)
    century=re.search(r'(\d{1,2})世纪',label)
    if not years and century:years=[(int(century[1])-1)*100+1,int(century[1])*100]
-   assert years and any(min(years)<=p['end'] and max(years)>=p['start'] for p in c['periods']),(pid,eid,'outside reign')
+   assert years and any(min(years)<=max(p['start'],p['end']) and max(years)>=min(p['start'],p['end']) for p in c['periods']),(pid,eid,'outside reign')
  # Calendar-year overlap alone cannot distinguish an accession within that year.
  excluded={
   'gaochi':{'beijing'},'qizhen':{'v2e_changeheir'},'qiyu':{'v2e_jingrestore'},
@@ -529,7 +531,8 @@ if d['version'] >= 26:
   placement = event.get('sortYear')
   assert explicit or placement is not None, (event['id'], 'period label needs chronology placement')
   if placement is not None:
-   assert type(placement) is int and 600 <= placement <= 2000, (event['id'], 'invalid chronology placement')
+   minimum_year = -230 if d['version'] >= 30 else 600
+   assert type(placement) is int and minimum_year <= placement <= 2000, (event['id'], 'invalid chronology placement')
    century = re.match(r'^(\d+)世纪', event['year'])
    if century:
     n = int(century[1]); assert (n-1)*100 < placement <= n*100, (event['id'], 'placement outside century')
@@ -591,3 +594,32 @@ if d['version'] >= 29:
   assert section and section.get('events') and section.get('people') and section.get('sources'),(pid,'missing contextual chapter')
  assert not re.search(r'本轮(?:新增|补充|修改|开发)|补充内容|数据缺口|高标准|验收线',json.dumps(d['articles'],ensure_ascii=False)), 'editorial language leaked into product copy'
  print('V29 PASS: Tang, Song and Yuan each have five event lenses and eight heritage entries; Li Jie and Wang Ximeng have sourced full readings')
+
+if d['version'] >= 30:
+ qin_people={p['id'] for p in d['people'] if p.get('dynasty')=='qin'}
+ required_people={
+  'qin_zhuangxiang','qin_zhaoji','qin_shihuang','qin_fusu','qin_er_shi','qin_ziying',
+  'qin_lvbuwei','qin_lisi','qin_zhaogao','qin_mengtian','qin_wangjian','qin_chen_sheng',
+  'qin_wuguang','qin_xiangyu','qin_liubang','qin_xi'
+ }
+ assert qin_people==required_people,('Qin people coverage',qin_people^required_people)
+ assert {p['id'] for p in d['people'] if p.get('dynasty')=='qin' and p['kind']=='皇帝'}=={'qin_shihuang','qin_er_shi'}
+ assert people['qin_shihuang']['temple']=='' and people['qin_er_shi']['temple']=='', 'Qin imperial titles are not temple names'
+ assert [x['person'] for x in d['sequence'] if x['person'] in qin_people]==['qin_shihuang','qin_er_shi']
+ assert all(x['person']!='qin_ziying' for x in d['sequence']) and people['qin_ziying']['kind']=='秦王'
+ qin_events=[e for e in d['events'] if e['id'].startswith('v48q_')]
+ counts=Counter(e['category'] for e in qin_events)
+ assert len(qin_events)>=25 and all(counts[c]>=5 for c in {'政治','军事','文化','经济','社会'}),counts
+ assert all(e['sources'] and e.get('peopleRoles') and e.get('sortYear') is not None for e in qin_events)
+ qin_objects=[o for o in d['objects'] if 'qin' in o.get('dynasties',[])]
+ assert len(qin_objects)>=9 and all(o['sources'] and o['people'] for o in qin_objects)
+ assert any(t['person']=='qin_shihuang' for t in d['tombs'])
+ qin_articles={pid:articles[pid] for pid in required_people if pid in articles}
+ assert {'qin_shihuang','qin_er_shi','qin_lisi','qin_zhaogao','qin_mengtian','qin_wangjian','qin_lvbuwei','qin_fusu','qin_ziying','qin_chen_sheng','qin_wuguang','qin_xiangyu','qin_liubang','qin_xi'}<=qin_articles.keys()
+ for pid,a in qin_articles.items():
+  chars=sum(len(re.findall(r'[\u4e00-\u9fff]',s['text'])) for s in a['sections'])
+  assert len(a['sections'])>=4 and chars>=(650 if pid in {'qin_shihuang','qin_er_shi'} else 500),(pid,'Qin reading depth',chars)
+  assert all(s['sources'] and (s.get('events') or s.get('people')) for s in a['sections']),(pid,'chapter lacks evidence or exploration')
+ assert {c['person'] for c in d['reignContexts'] if c['person'] in qin_people}=={'qin_shihuang','qin_er_shi'}
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成',json.dumps([people[p] for p in qin_people]+qin_events+qin_objects+list(qin_articles.values()),ensure_ascii=False))
+ print('V30 PASS: Qin has a bounded two-emperor sequence, sixteen sourced people, five event lenses, nine heritage entries, a tomb and fourteen full readings')

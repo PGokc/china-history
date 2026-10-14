@@ -1,5 +1,5 @@
 {
-  "version": 29,
+  "version": 30,
   "reviewed": "2026-10-14",
   "people": [
     {
@@ -5794,6 +5794,273 @@
         "v47s_dpm_qianli"
       ],
       "dynasty": "song_liao_xia_jin"
+    },
+    {
+      "id": "qin_zhuangxiang",
+      "name": "异人（子楚）",
+      "call": "秦庄襄王",
+      "temple": "",
+      "era": "",
+      "reign": "前250—前247",
+      "summary": "秦始皇之父，在吕不韦经营与秦赵政治环境中由在赵质子成为秦王。",
+      "kind": "秦国君主",
+      "note": "其从质子到继位的过程主要见《史记》；后世关于嬴政生父的说法有争议。",
+      "parent": null,
+      "sources": [
+        "v48q_shiji85",
+        "v48q_shiji6"
+      ],
+      "dynasty": "qin"
+    },
+    {
+      "id": "qin_zhaoji",
+      "name": "赵姬",
+      "call": "秦始皇之母",
+      "temple": "",
+      "era": "",
+      "reign": "战国末至秦初",
+      "summary": "庄襄王夫人、秦始皇之母，曾居赵国；太后时期卷入嫪毐事件。",
+      "kind": "王室亲属",
+      "note": "姓名并非同时代材料明确留下的本名；“赵姬”是后世常用称呼。",
+      "parent": null,
+      "sources": [
+        "v48q_shiji85",
+        "v48q_shiji6"
+      ],
+      "dynasty": "qin"
+    },
+    {
+      "id": "qin_shihuang",
+      "name": "嬴政",
+      "call": "始皇帝",
+      "temple": "",
+      "era": "",
+      "reign": "前221—前210",
+      "summary": "从秦王到首位皇帝，完成六国统一并重组帝国制度，也以大规模战争、工程与思想控制加重社会负担。",
+      "kind": "皇帝",
+      "note": "前247年即秦王位，前221年称始皇帝；帝序按称帝后的秦帝国阶段列示。",
+      "parent": "qin_zhuangxiang",
+      "sources": [
+        "v48q_shiji6",
+        "v48q_shiji87"
+      ],
+      "dynasty": "qin"
+    },
+    {
+      "id": "qin_fusu",
+      "name": "扶苏",
+      "call": "秦始皇长子",
+      "temple": "",
+      "era": "",
+      "reign": "前3世纪—前210",
+      "summary": "秦始皇长子，曾劝谏坑杀方士儒生，后在上郡蒙恬军中监军，沙丘政变后被迫自杀。",
+      "kind": "皇子",
+      "note": "没有正式即位；其政治形象主要由秦亡后的叙事保存。",
+      "parent": "qin_shihuang",
+      "sources": [
+        "v48q_shiji6",
+        "v48q_shiji88"
+      ],
+      "dynasty": "qin"
+    },
+    {
+      "id": "qin_er_shi",
+      "name": "胡亥",
+      "call": "秦二世",
+      "temple": "",
+      "era": "",
+      "reign": "前210—前207",
+      "summary": "秦始皇少子，沙丘后继位；赵高权势上升、徭役战争与各地反抗在其统治中迅速汇合。",
+      "kind": "皇帝",
+      "note": "继位过程主要见《史记》；不可把秦亡全部归结为一人的性格。",
+      "parent": "qin_shihuang",
+      "sources": [
+        "v48q_shiji6",
+        "v48q_shiji87"
+      ],
+      "dynasty": "qin"
+    },
+    {
+      "id": "qin_ziying",
+      "name": "子婴",
+      "call": "秦王",
+      "temple": "",
+      "era": "",
+      "reign": "前207",
+      "summary": "赵高死后即位，降称秦王并诛赵高；四十余日后向刘邦投降，后被项羽杀害。",
+      "kind": "秦王",
+      "note": "《史记》不同篇章对其世系说法不一，不设置确定父子关系。",
+      "parent": null,
+      "sources": [
+        "v48q_shiji6",
+        "v48q_shiji8"
+      ],
+      "dynasty": "qin"
+    },
+    {
+      "id": "qin_lvbuwei",
+      "name": "吕不韦",
+      "call": "相国与文信侯",
+      "temple": "",
+      "era": "",
+      "reign": "前3世纪—前235",
+      "summary": "从商人转入秦国政治，经营异人继位并长期任相国，主持门客编纂《吕氏春秋》。",
+      "kind": "政治人物",
+      "note": "其政治经营可考；关于嬴政生父的传闻不作定论。",
+      "parent": null,
+      "sources": [
+        "v48q_shiji85"
+      ],
+      "dynasty": "qin"
+    },
+    {
+      "id": "qin_lisi",
+      "name": "李斯",
+      "call": "廷尉与丞相",
+      "temple": "",
+      "era": "",
+      "reign": "约前284—前208",
+      "summary": "从楚地入秦，参与统一后的制度设计和文字行政，也提出焚书建议并卷入沙丘继承，最终为赵高所害。",
+      "kind": "政治人物",
+      "note": "统一措施是朝廷与官僚系统共同实施，不能都归为李斯个人发明。",
+      "parent": null,
+      "sources": [
+        "v48q_shiji87",
+        "v48q_shiji6"
+      ],
+      "dynasty": "qin"
+    },
+    {
+      "id": "qin_zhaogao",
+      "name": "赵高",
+      "call": "中车府令与丞相",
+      "temple": "",
+      "era": "",
+      "reign": "前3世纪—前207",
+      "summary": "掌管近侍与法律事务，参与沙丘继承安排，二世朝控制中枢并迫使皇帝自杀，后被子婴诛杀。",
+      "kind": "宫廷政治人物",
+      "note": "“指鹿为马”等故事具有强烈道德叙事色彩，应与可核对的官职和政变过程分读。",
+      "parent": null,
+      "sources": [
+        "v48q_shiji6",
+        "v48q_shiji87"
+      ],
+      "dynasty": "qin"
+    },
+    {
+      "id": "qin_mengtian",
+      "name": "蒙恬",
+      "call": "北边统军者",
+      "temple": "",
+      "era": "",
+      "reign": "前3世纪—前210",
+      "summary": "参加灭齐并率军北击匈奴、经营北边，扶苏监军期间与其共处上郡，沙丘后被迫自杀。",
+      "kind": "将领",
+      "note": "秦长城是在战国旧墙与新筑防线基础上的边防工程，不能与现存明长城混同。",
+      "parent": null,
+      "sources": [
+        "v48q_shiji88",
+        "v48q_shiji6"
+      ],
+      "dynasty": "qin"
+    },
+    {
+      "id": "qin_wangjian",
+      "name": "王翦",
+      "call": "灭六国主将",
+      "temple": "",
+      "era": "",
+      "reign": "战国末",
+      "summary": "秦国重要将领，参与灭赵、燕、楚；攻楚时坚持重兵并在出征前反复请求田宅以自保。",
+      "kind": "将领",
+      "note": "《史记》保存的兵力和对话带有传记塑形，战争结果与任职可作为较稳固线索。",
+      "parent": null,
+      "sources": [
+        "v48q_shiji73"
+      ],
+      "dynasty": "qin"
+    },
+    {
+      "id": "qin_chen_sheng",
+      "name": "陈胜",
+      "call": "张楚首倡者",
+      "temple": "",
+      "era": "",
+      "reign": "前3世纪—前208",
+      "summary": "戍卒出身，在大泽乡与吴广起事并建立张楚政权，推动秦末反抗由局部兵变扩展为政治挑战。",
+      "kind": "起事领袖",
+      "note": "著名口号与起事细节主要见汉代史家叙述，需保留文本形成距离。",
+      "parent": null,
+      "sources": [
+        "v48q_shiji48"
+      ],
+      "dynasty": "qin"
+    },
+    {
+      "id": "qin_wuguang",
+      "name": "吴广",
+      "call": "大泽乡起事者",
+      "temple": "",
+      "era": "",
+      "reign": "前3世纪—前208",
+      "summary": "与陈胜共同发动大泽乡起事，后率部攻荥阳，因军中冲突被部将所杀。",
+      "kind": "起事领袖",
+      "note": "不应只作为陈胜故事中的陪衬；其具体经历同样受传世史料有限所约束。",
+      "parent": null,
+      "sources": [
+        "v48q_shiji48"
+      ],
+      "dynasty": "qin"
+    },
+    {
+      "id": "qin_xiangyu",
+      "name": "项羽",
+      "call": "楚军统帅",
+      "temple": "",
+      "era": "",
+      "reign": "前232—前202",
+      "summary": "楚国将门之后，秦末起兵，在巨鹿击败秦军主力，入关后杀子婴并重组诸侯格局。",
+      "kind": "军事与政治人物",
+      "note": "其主要事业延续到楚汉战争；这里呈现与秦亡直接相关的阶段。",
+      "parent": null,
+      "sources": [
+        "v48q_shiji7",
+        "v48q_shiji6"
+      ],
+      "dynasty": "qin"
+    },
+    {
+      "id": "qin_liubang",
+      "name": "刘邦",
+      "call": "入关的沛公",
+      "temple": "",
+      "era": "",
+      "reign": "前256或前247—前195",
+      "summary": "秦末从沛县起兵，先于诸侯主力进入关中，接受子婴投降；其汉帝国事业另属于后续历史。",
+      "kind": "军事与政治人物",
+      "note": "出生年份有不同说法；这里聚焦秦末入关，不用汉初正统叙事遮蔽其他力量。",
+      "parent": null,
+      "sources": [
+        "v48q_shiji8",
+        "v48q_shiji6"
+      ],
+      "dynasty": "qin"
+    },
+    {
+      "id": "qin_xi",
+      "name": "喜",
+      "call": "睡虎地秦吏",
+      "temple": "",
+      "era": "",
+      "reign": "前3世纪",
+      "summary": "睡虎地十一号墓主人，简牍中的编年与法律文书让普通基层官吏的工作和时代经历进入历史视野。",
+      "kind": "基层官吏",
+      "note": "人骨复原与简牍研究能补充生平，但不能由一座墓推及所有秦吏。",
+      "parent": null,
+      "sources": [
+        "v48q_hubei_slips"
+      ],
+      "dynasty": "qin"
     }
   ],
   "sources": [
@@ -9108,6 +9375,114 @@
       "title": "故宫博物院院刊：元代青花瓷器识鉴",
       "url": "https://www.dpm.org.cn/Uploads/pdf/4634/T00020_00.pdf",
       "note": "故宫研究人员从造型、纹饰、胎釉和彩料辨析元青花；用于讲解器物特征，也提醒市场断代不能只看单一纹样。"
+    },
+    {
+      "id": "v48q_shiji6",
+      "title": "《史记》卷六·秦始皇本纪",
+      "url": "https://zh.wikisource.org/zh-hans/史记/卷006",
+      "note": "记秦王政统一、巡行、制度措施、继承危机与秦亡过程；成书晚于事件，诏令、叙事和人物评价须分层阅读。"
+    },
+    {
+      "id": "v48q_shiji73",
+      "title": "《史记》卷七十三·白起王翦列传",
+      "url": "https://zh.wikisource.org/zh-hans/史记/卷073",
+      "note": "用于王翦、王贲及灭赵、燕、魏、楚等战争；兵力数字和人物对话保留史家叙事性质。"
+    },
+    {
+      "id": "v48q_shiji85",
+      "title": "《史记》卷八十五·吕不韦列传",
+      "url": "https://zh.wikisource.org/zh-hans/史记/卷085",
+      "note": "用于吕不韦、庄襄王与赵姬相关政治经历；关于秦始皇生父的传闻存在长期争议，不作定论。"
+    },
+    {
+      "id": "v48q_shiji87",
+      "title": "《史记》卷八十七·李斯列传",
+      "url": "https://zh.wikisource.org/zh-hans/史记/卷087",
+      "note": "用于李斯的仕途、统一后制度建议、焚书令、沙丘继承与遭诛经过；奏议文本与传记叙事需互证。"
+    },
+    {
+      "id": "v48q_shiji88",
+      "title": "《史记》卷八十八·蒙恬列传",
+      "url": "https://zh.wikisource.org/zh-hans/史记/卷088",
+      "note": "用于蒙恬北边军事、扶苏监军及沙丘之后被迫自杀等经历。"
+    },
+    {
+      "id": "v48q_shiji48",
+      "title": "《史记》卷四十八·陈涉世家",
+      "url": "https://zh.wikisource.org/zh-hans/史记/卷048",
+      "note": "用于陈胜、吴广起事及秦末扩散过程；大雨误期与法令后果的著名叙述不能替代出土秦律的具体核查。"
+    },
+    {
+      "id": "v48q_shiji7",
+      "title": "《史记》卷七·项羽本纪",
+      "url": "https://zh.wikisource.org/zh-hans/史记/卷007",
+      "note": "用于巨鹿之战、项羽入关与秦末军事局势。"
+    },
+    {
+      "id": "v48q_shiji8",
+      "title": "《史记》卷八·高祖本纪",
+      "url": "https://zh.wikisource.org/zh-hans/史记/卷008",
+      "note": "用于刘邦入关、约法与秦政权终结；汉初正统叙事需与其他篇章对读。"
+    },
+    {
+      "id": "v48q_bmy_collection",
+      "title": "秦始皇帝陵博物院：重要藏品与兵马俑坑",
+      "url": "https://www.bmy.com.cn/collection/",
+      "note": "用于兵马俑坑、俑马类型与陵园陪葬体系；“世界第八大奇迹”等传播称谓不作为学术判断。"
+    },
+    {
+      "id": "v48q_bmy_chariot",
+      "title": "秦始皇帝陵博物院：铜车马坑",
+      "url": "https://www.bmy.com.cn/pithorse.html",
+      "note": "用于铜车马发现位置、结构、比例和彩绘信息。"
+    },
+    {
+      "id": "v48q_bmy_armor",
+      "title": "秦始皇帝陵博物院：秦石甲胄",
+      "url": "https://bmy.com.cn/impor_collections/425.html",
+      "note": "用于K9801陪葬坑石甲胄的材料、结构和制作信息；石甲是否实战使用不据此下结论。"
+    },
+    {
+      "id": "v48q_bmy_research",
+      "title": "秦始皇帝陵博物院：秦陵大遗址考古的新思路与突破",
+      "url": "https://www.bmy.com.cn/news/news/512.html",
+      "note": "用于陵园陪葬坑、铜车马、石甲胄、百戏俑与青铜水禽等考古认识。"
+    },
+    {
+      "id": "v48q_hubei_slips",
+      "title": "湖北省博物馆：云梦睡虎地秦简",
+      "url": "https://www.hbww.org.cn/zgzb/p/6912.html",
+      "note": "用于睡虎地秦简的出土背景与法律、行政、社会内容；简文展示具体制度，不等于各地执行完全一致。"
+    },
+    {
+      "id": "v48q_nmc_liye",
+      "title": "中国国家博物馆：里耶秦简亮相国博",
+      "url": "https://www.chnmuseum.cn/zx/gbxw/201908/t20190807_140376.shtml",
+      "note": "用于里耶秦简纪年范围、县政文书与秦代社会生活。"
+    },
+    {
+      "id": "v48q_nmc_halfliang",
+      "title": "中国国家博物馆：半两铜钱",
+      "url": "https://www.chnmuseum.cn/zp/zpml/hb/202209/t20220906_257267.shtml",
+      "note": "用于秦统一后半两钱的形制、法定重量与实际流通差异。"
+    },
+    {
+      "id": "v48q_nmc_weight",
+      "title": "中国国家博物馆：八斤铜权",
+      "url": "https://www.chnmuseum.cn/zp/zpml/csp/202008/t20200826_247418.shtml",
+      "note": "用于秦始皇二十六年统一度量衡诏文与铜权实测信息。"
+    },
+    {
+      "id": "v48q_nmc_tiger",
+      "title": "中国国家博物馆：阳陵虎符",
+      "url": "https://www.chnmuseum.cn/zp/zpml/csp/202008/t20200826_247415.shtml",
+      "note": "用于虎符铭文、左右分持与验合调兵制度。"
+    },
+    {
+      "id": "v48q_nmc_ancient",
+      "title": "中国国家博物馆：古代中国·秦汉时期",
+      "url": "https://www.chnmuseum.cn/portals/0/web/zt/gudai/detail4.html",
+      "note": "用于秦统一制度及秦始皇、秦二世双诏版、半两钱等馆藏说明。"
     }
   ],
   "relations": [
@@ -18155,6 +18530,632 @@
         "s_huizong": "指授并赐画的皇帝",
         "s_caijing": "受赐并题跋者"
       }
+    },
+    {
+      "id": "v48q_unification",
+      "year": "前221",
+      "sortYear": -221,
+      "title": "秦灭六国并建立帝国",
+      "body": "秦先后灭韩、赵、魏、楚、燕、齐，秦王政在前221年结束诸侯国长期并立并称皇帝。",
+      "impact": "统一让更大范围的行政、交通和征发得以整合，也把战争后安置与区域差异带入新帝国。",
+      "people": [
+        "qin_shihuang",
+        "qin_wangjian",
+        "qin_lisi"
+      ],
+      "sources": [
+        "v48q_shiji6",
+        "v48q_shiji73"
+      ],
+      "kind": "历史事件",
+      "category": "政治",
+      "peopleRoles": {
+        "qin_shihuang": "完成统一并称皇帝",
+        "qin_wangjian": "灭赵、燕、楚主将",
+        "qin_lisi": "参与制度重组"
+      }
+    },
+    {
+      "id": "v48q_commandery",
+      "year": "前221以后",
+      "sortYear": -220,
+      "title": "郡县行政向全国扩展",
+      "body": "统一后朝廷否定大规模分封宗室的方案，在更广区域设置郡县，由中央任免官吏。",
+      "impact": "郡县制增强中央调度，却仍依赖地方吏员、文书与交通；设置范围和名称在秦代持续变化。",
+      "people": [
+        "qin_shihuang",
+        "qin_lisi",
+        "qin_xi"
+      ],
+      "sources": [
+        "v48q_shiji6",
+        "v48q_hubei_slips",
+        "v48q_nmc_liye"
+      ],
+      "kind": "历史事件",
+      "category": "政治",
+      "peopleRoles": {
+        "qin_shihuang": "最高决策者",
+        "qin_lisi": "主张郡县",
+        "qin_xi": "基层行政见证"
+      }
+    },
+    {
+      "id": "v48q_imperial_title",
+      "year": "前221",
+      "sortYear": -221,
+      "title": "皇帝名号与政治语言重组",
+      "body": "秦王政与群臣议定皇帝名号，自称始皇帝，并重组制、诏、玺等权力语言。",
+      "impact": "新称号把战国秦王的地位提升为超越诸王的帝国君主，后世王朝反复继承并调整。",
+      "people": [
+        "qin_shihuang",
+        "qin_lisi"
+      ],
+      "sources": [
+        "v48q_shiji6"
+      ],
+      "kind": "历史事件",
+      "category": "政治",
+      "peopleRoles": {
+        "qin_shihuang": "首位采用皇帝称号",
+        "qin_lisi": "参与议制"
+      }
+    },
+    {
+      "id": "v48q_fengshan",
+      "year": "前219",
+      "sortYear": -219,
+      "title": "泰山封禅与东方巡行",
+      "body": "始皇东巡并举行封禅，刻石颂秦功德；儒生对礼制程序意见不一。",
+      "impact": "巡行既宣示新政权，也暴露秦廷需要借地方山川、旧国记忆和文字纪功建立正当性。",
+      "people": [
+        "qin_shihuang",
+        "qin_lisi"
+      ],
+      "sources": [
+        "v48q_shiji6"
+      ],
+      "kind": "历史事件",
+      "category": "政治",
+      "peopleRoles": {
+        "qin_shihuang": "巡行与封禅",
+        "qin_lisi": "随行刻石"
+      }
+    },
+    {
+      "id": "v48q_sand_dune",
+      "year": "前210",
+      "sortYear": -210,
+      "title": "沙丘继承安排",
+      "body": "始皇死于巡行途中，胡亥、赵高与李斯压下死讯并更改继承安排，扶苏、蒙恬随后被迫自杀。",
+      "impact": "不透明继承使近侍、丞相与边军关系骤变，也让二世政权从开始就背负合法性和信任危机。",
+      "people": [
+        "qin_shihuang",
+        "qin_er_shi",
+        "qin_fusu",
+        "qin_lisi",
+        "qin_zhaogao",
+        "qin_mengtian"
+      ],
+      "sources": [
+        "v48q_shiji6",
+        "v48q_shiji87",
+        "v48q_shiji88"
+      ],
+      "kind": "历史事件",
+      "category": "政治",
+      "peopleRoles": {
+        "qin_shihuang": "死于巡行",
+        "qin_er_shi": "继位者",
+        "qin_fusu": "被排除的长子",
+        "qin_lisi": "参与继承安排",
+        "qin_zhaogao": "主导近侍操作",
+        "qin_mengtian": "受牵连边将"
+      }
+    },
+    {
+      "id": "v48q_wangyi",
+      "year": "前207",
+      "sortYear": -207,
+      "title": "望夷宫政变与子婴即位",
+      "body": "赵高迫使秦二世自杀，随后拥立子婴；子婴降号为秦王并设计诛杀赵高。",
+      "impact": "中枢政变没有恢复地方控制，秦政权已难以调动足够资源应对各路军队。",
+      "people": [
+        "qin_er_shi",
+        "qin_zhaogao",
+        "qin_ziying"
+      ],
+      "sources": [
+        "v48q_shiji6"
+      ],
+      "kind": "历史事件",
+      "category": "政治",
+      "peopleRoles": {
+        "qin_er_shi": "被迫自杀",
+        "qin_zhaogao": "发动政变后被诛",
+        "qin_ziying": "继位并反制赵高"
+      }
+    },
+    {
+      "id": "v48q_zhao",
+      "year": "前228",
+      "sortYear": -228,
+      "title": "秦军灭赵",
+      "body": "王翦等率军攻赵，邯郸陷落，赵王迁被俘；赵公子嘉仍在代地维持抵抗。",
+      "impact": "灭国不是一次战役即让全部地区安定，旧国人员、城邑和边地需要继续处理。",
+      "people": [
+        "qin_shihuang",
+        "qin_wangjian"
+      ],
+      "sources": [
+        "v48q_shiji6",
+        "v48q_shiji73"
+      ],
+      "kind": "历史事件",
+      "category": "军事",
+      "peopleRoles": {
+        "qin_shihuang": "秦王",
+        "qin_wangjian": "统军主将"
+      }
+    },
+    {
+      "id": "v48q_wei",
+      "year": "前225",
+      "sortYear": -225,
+      "title": "引河灌大梁，魏亡",
+      "body": "王贲率秦军围大梁，引河水灌城，魏王假投降。",
+      "impact": "水攻造成军事突破，也给城市居民和区域水利带来难以由胜负叙事概括的损失。",
+      "people": [
+        "qin_shihuang",
+        "qin_wangjian"
+      ],
+      "sources": [
+        "v48q_shiji6",
+        "v48q_shiji73"
+      ],
+      "kind": "历史事件",
+      "category": "军事",
+      "peopleRoles": {
+        "qin_shihuang": "秦王",
+        "qin_wangjian": "王贲之父与秦将代表"
+      }
+    },
+    {
+      "id": "v48q_chu",
+      "year": "前224—前223",
+      "sortYear": -224,
+      "title": "王翦率重兵灭楚",
+      "body": "李信、蒙恬先前伐楚受挫，始皇重新起用王翦；王翦以重兵击败楚军并俘楚王。",
+      "impact": "战争显示统一并非直线推进，也说明君主判断、将领经验、补给和兵力共同决定结果。",
+      "people": [
+        "qin_shihuang",
+        "qin_wangjian",
+        "qin_mengtian"
+      ],
+      "sources": [
+        "v48q_shiji73"
+      ],
+      "kind": "历史事件",
+      "category": "军事",
+      "peopleRoles": {
+        "qin_shihuang": "调整统帅与兵力",
+        "qin_wangjian": "灭楚主将",
+        "qin_mengtian": "参加前期伐楚"
+      }
+    },
+    {
+      "id": "v48q_north",
+      "year": "前215—前214",
+      "sortYear": -215,
+      "title": "蒙恬经营北边",
+      "body": "蒙恬率军北击匈奴，秦廷连接、修筑战国以来的北方防线，并经营直道等交通。",
+      "impact": "北边工程与驻军加强调动，也持续消耗粮食、劳力；秦长城不能直接等同今日所见明长城。",
+      "people": [
+        "qin_shihuang",
+        "qin_mengtian",
+        "qin_fusu"
+      ],
+      "sources": [
+        "v48q_shiji6",
+        "v48q_shiji88"
+      ],
+      "kind": "历史事件",
+      "category": "军事",
+      "peopleRoles": {
+        "qin_shihuang": "下令经营北边",
+        "qin_mengtian": "统军与工程组织",
+        "qin_fusu": "上郡监军"
+      }
+    },
+    {
+      "id": "v48q_lingnan",
+      "year": "前214前后",
+      "sortYear": -214,
+      "title": "岭南军事与行政扩展",
+      "body": "秦军多次向岭南推进，并设置南海、桂林、象等郡，灵渠等运输工程服务于人员物资调动。",
+      "impact": "军事征服、移民与行政设置改变南方区域联系，但实际控制强弱不能只由地图上的郡名判断。",
+      "people": [
+        "qin_shihuang"
+      ],
+      "sources": [
+        "v48q_shiji6"
+      ],
+      "kind": "历史事件",
+      "category": "军事",
+      "peopleRoles": {
+        "qin_shihuang": "发动扩张与设置郡县"
+      }
+    },
+    {
+      "id": "v48q_julu",
+      "year": "前207",
+      "sortYear": -207,
+      "title": "巨鹿之战击溃秦军主力",
+      "body": "项羽率楚军渡河救赵，在巨鹿击败章邯、王离所部；秦军随后大规模投降。",
+      "impact": "战役使秦廷失去关东主要军事支柱，各路反秦力量的政治竞争随之加剧。",
+      "people": [
+        "qin_xiangyu",
+        "qin_ziying",
+        "qin_er_shi"
+      ],
+      "sources": [
+        "v48q_shiji7",
+        "v48q_shiji6"
+      ],
+      "kind": "历史事件",
+      "category": "军事",
+      "peopleRoles": {
+        "qin_xiangyu": "楚军统帅",
+        "qin_ziying": "秦中枢继承者",
+        "qin_er_shi": "战败时的在位皇帝"
+      }
+    },
+    {
+      "id": "v48q_script",
+      "year": "前221以后",
+      "sortYear": -220,
+      "title": "文字书写走向统一规范",
+      "body": "统一后秦廷以小篆等规范处理官方书写，实际行政中隶化书体也持续发展。",
+      "impact": "跨区域文书更易识读，但不能理解为民间从此只剩一种字体，出土简牍显示书写实践更复杂。",
+      "people": [
+        "qin_shihuang",
+        "qin_lisi",
+        "qin_xi"
+      ],
+      "sources": [
+        "v48q_shiji6",
+        "v48q_hubei_slips",
+        "v48q_nmc_liye"
+      ],
+      "kind": "历史事件",
+      "category": "文化",
+      "peopleRoles": {
+        "qin_shihuang": "推动统一规范",
+        "qin_lisi": "参与文字制度",
+        "qin_xi": "简牍书写见证"
+      }
+    },
+    {
+      "id": "v48q_burning",
+      "year": "前213",
+      "sortYear": -213,
+      "title": "焚书令",
+      "body": "李斯建议除秦史、博士官藏及医药卜筮种树等实用书外，限制民间收藏和私下讨论部分典籍，始皇采纳。",
+      "impact": "政策打击以古非今与私人教学，造成文献损失；“焚书”范围不应被夸大为烧尽天下所有书。",
+      "people": [
+        "qin_shihuang",
+        "qin_lisi",
+        "qin_fusu"
+      ],
+      "sources": [
+        "v48q_shiji6",
+        "v48q_shiji87"
+      ],
+      "kind": "历史事件",
+      "category": "文化",
+      "peopleRoles": {
+        "qin_shihuang": "批准政策",
+        "qin_lisi": "提出建议",
+        "qin_fusu": "次年劝谏相关处置"
+      }
+    },
+    {
+      "id": "v48q_scholars",
+      "year": "前212",
+      "sortYear": -212,
+      "title": "咸阳方士案件与坑杀",
+      "body": "方士逃亡并批评始皇后，朝廷追查咸阳人员，《史记》称四百六十余人被坑，扶苏因劝谏被派往上郡。",
+      "impact": "事件表现思想与人身控制；传统“坑儒”概括混合方士、诸生等身份，人数和对象仍需谨慎表述。",
+      "people": [
+        "qin_shihuang",
+        "qin_fusu",
+        "qin_mengtian"
+      ],
+      "sources": [
+        "v48q_shiji6",
+        "v48q_shiji88"
+      ],
+      "kind": "历史事件",
+      "category": "文化",
+      "peopleRoles": {
+        "qin_shihuang": "下令追查处置",
+        "qin_fusu": "进谏者",
+        "qin_mengtian": "扶苏所赴军中主将"
+      }
+    },
+    {
+      "id": "v48q_inscriptions",
+      "year": "前219—前210",
+      "sortYear": -219,
+      "title": "巡行刻石书写帝国功业",
+      "body": "始皇多次东巡，在峄山、泰山、琅邪、之罘、碣石、会稽等地刻石纪功。",
+      "impact": "刻辞把政治宣言固定在地方景观中；现存文本经过拓本、著录或重刻传播，不能都当作原石原貌。",
+      "people": [
+        "qin_shihuang",
+        "qin_lisi"
+      ],
+      "sources": [
+        "v48q_shiji6"
+      ],
+      "kind": "历史事件",
+      "category": "文化",
+      "peopleRoles": {
+        "qin_shihuang": "巡行主体",
+        "qin_lisi": "参与刻辞"
+      }
+    },
+    {
+      "id": "v48q_slip_archive",
+      "year": "前221—前208",
+      "sortYear": -221,
+      "title": "县廷文书留下日常行政",
+      "body": "里耶秦简保存迁陵县收发文书、户籍、物资和人员往来，睡虎地秦简保存法律与官吏工作材料。",
+      "impact": "秦帝国不只存在于皇帝诏令，也由大量基层书写、核算和转递维持；文书规定与实际执行仍需区分。",
+      "people": [
+        "qin_xi",
+        "qin_lisi",
+        "qin_shihuang"
+      ],
+      "sources": [
+        "v48q_hubei_slips",
+        "v48q_nmc_liye"
+      ],
+      "kind": "历史事件",
+      "category": "文化",
+      "peopleRoles": {
+        "qin_xi": "基层文书使用者代表",
+        "qin_lisi": "中枢文书制度参与者",
+        "qin_shihuang": "帝国最高权力"
+      }
+    },
+    {
+      "id": "v48q_weights",
+      "year": "前221以后",
+      "sortYear": -220,
+      "title": "度量衡标准推广",
+      "body": "秦廷把统一度量衡诏文刻铸在权、量等器物上，各地官府据标准进行核验。",
+      "impact": "标准便利税赋、工程和市场交换，但器物实测和地方执行仍可能存在差异。",
+      "people": [
+        "qin_shihuang",
+        "qin_lisi",
+        "qin_xi"
+      ],
+      "sources": [
+        "v48q_nmc_weight",
+        "v48q_nmc_ancient"
+      ],
+      "kind": "历史事件",
+      "category": "经济",
+      "peopleRoles": {
+        "qin_shihuang": "颁布诏令",
+        "qin_lisi": "制度执行者",
+        "qin_xi": "地方行政代表"
+      }
+    },
+    {
+      "id": "v48q_coin",
+      "year": "前221以后",
+      "sortYear": -220,
+      "title": "半两钱成为帝国法定铜币",
+      "body": "统一后秦以半两钱作为法定铜币形制之一，圆形方孔和重量文字影响后世铸币。",
+      "impact": "统一币制便利跨区交易，但出土实物重量并不完全一致，法定标准与流通现实需要分别观察。",
+      "people": [
+        "qin_shihuang",
+        "qin_lisi"
+      ],
+      "sources": [
+        "v48q_nmc_halfliang",
+        "v48q_nmc_ancient"
+      ],
+      "kind": "历史事件",
+      "category": "经济",
+      "peopleRoles": {
+        "qin_shihuang": "统一政权最高决策者",
+        "qin_lisi": "中枢制度参与者"
+      }
+    },
+    {
+      "id": "v48q_roads",
+      "year": "前220以后",
+      "sortYear": -220,
+      "title": "驰道、直道与车轨规范",
+      "body": "秦廷修筑连接政治中心与各地的道路，并推动车辆轨距等规范；直道服务北边交通。",
+      "impact": "道路提高军政调动速度，也依靠持续征发维护；路线和保存状况须以考古证据逐段判断。",
+      "people": [
+        "qin_shihuang",
+        "qin_mengtian"
+      ],
+      "sources": [
+        "v48q_shiji6",
+        "v48q_shiji88",
+        "v48q_nmc_ancient"
+      ],
+      "kind": "历史事件",
+      "category": "经济",
+      "peopleRoles": {
+        "qin_shihuang": "道路建设决策者",
+        "qin_mengtian": "北边直道相关统军者"
+      }
+    },
+    {
+      "id": "v48q_lingqu",
+      "year": "前3世纪末",
+      "sortYear": -214,
+      "title": "灵渠连接湘江与漓江水系",
+      "body": "为岭南用兵和运输，秦人在分水岭地区建设灵渠，沟通长江与珠江水系。",
+      "impact": "工程改善物资转运并形成长期交通遗产，最初军事目标与后来的区域经济作用需分别说明。",
+      "people": [
+        "qin_shihuang"
+      ],
+      "sources": [
+        "v48q_shiji6",
+        "v48q_nmc_ancient"
+      ],
+      "kind": "历史事件",
+      "category": "经济",
+      "peopleRoles": {
+        "qin_shihuang": "南方工程与用兵决策者"
+      }
+    },
+    {
+      "id": "v48q_land_register",
+      "year": "前216",
+      "sortYear": -216,
+      "title": "使黔首自实田",
+      "body": "《史记》记始皇三十一年使黔首自实田，要求民户申报土地，具体执行与后果仍有解释空间。",
+      "impact": "它反映国家试图把土地、户籍与赋役纳入可计算行政，但一句纪年无法证明全国实施完全一致。",
+      "people": [
+        "qin_shihuang",
+        "qin_xi"
+      ],
+      "sources": [
+        "v48q_shiji6",
+        "v48q_hubei_slips",
+        "v48q_nmc_liye"
+      ],
+      "kind": "历史事件",
+      "category": "经济",
+      "peopleRoles": {
+        "qin_shihuang": "发布政策",
+        "qin_xi": "基层登记工作代表"
+      }
+    },
+    {
+      "id": "v48q_xianyang_migration",
+      "year": "前221",
+      "sortYear": -221,
+      "title": "迁豪富十二万户到咸阳",
+      "body": "统一后朝廷迁徙富豪与有势力家族到咸阳附近，使其置于中央控制并服务都城建设。",
+      "impact": "强制迁徙改变家庭、财产和地方关系，也让咸阳集聚人口与消费；史书数字仍需视为概数。",
+      "people": [
+        "qin_shihuang",
+        "qin_lisi"
+      ],
+      "sources": [
+        "v48q_shiji6"
+      ],
+      "kind": "历史事件",
+      "category": "社会",
+      "peopleRoles": {
+        "qin_shihuang": "迁徙决策者",
+        "qin_lisi": "中枢执行者"
+      }
+    },
+    {
+      "id": "v48q_corvee",
+      "year": "前3世纪末",
+      "sortYear": -215,
+      "title": "宫殿、陵园与边防工程征发",
+      "body": "阿房宫、骊山陵园、道路和边防等工程同时推进，需要大量刑徒、戍卒与徭役劳动。",
+      "impact": "工程留下技术与交通遗产，也使家庭承受离乡、运输、疾病和死亡风险；人数记载须谨慎。",
+      "people": [
+        "qin_shihuang",
+        "qin_xi"
+      ],
+      "sources": [
+        "v48q_shiji6",
+        "v48q_bmy_research",
+        "v48q_hubei_slips"
+      ],
+      "kind": "历史事件",
+      "category": "社会",
+      "peopleRoles": {
+        "qin_shihuang": "工程决策者",
+        "qin_xi": "基层征发制度见证"
+      }
+    },
+    {
+      "id": "v48q_households",
+      "year": "前221以后",
+      "sortYear": -220,
+      "title": "户籍、什伍与责任网络",
+      "body": "秦制以户籍和基层编组掌握人口、赋役与治安，法律文书对官吏、家庭和相互告发规定细密。",
+      "impact": "国家能力深入日常生活，但不同地区承接秦制的速度、地方惯例与实际执行不能一概而论。",
+      "people": [
+        "qin_shihuang",
+        "qin_lisi",
+        "qin_xi"
+      ],
+      "sources": [
+        "v48q_hubei_slips",
+        "v48q_nmc_liye"
+      ],
+      "kind": "历史事件",
+      "category": "社会",
+      "peopleRoles": {
+        "qin_shihuang": "帝国制度最高权力",
+        "qin_lisi": "法律行政参与者",
+        "qin_xi": "基层执行者"
+      }
+    },
+    {
+      "id": "v48q_dazexiang",
+      "year": "前209",
+      "sortYear": -209,
+      "title": "大泽乡起事",
+      "body": "陈胜、吴广率戍卒在大泽乡起事，随后建立张楚并派兵向多地发展。",
+      "impact": "起事打破秦廷对公开反抗的压制，但“误期必死”不能只凭一句传世叙事推定为所有情形的统一法律。",
+      "people": [
+        "qin_chen_sheng",
+        "qin_wuguang",
+        "qin_er_shi"
+      ],
+      "sources": [
+        "v48q_shiji48",
+        "v48q_hubei_slips"
+      ],
+      "kind": "历史事件",
+      "category": "社会",
+      "peopleRoles": {
+        "qin_chen_sheng": "起事领袖",
+        "qin_wuguang": "共同发动者",
+        "qin_er_shi": "在位皇帝"
+      }
+    },
+    {
+      "id": "v48q_entry_guanzhong",
+      "year": "前207",
+      "sortYear": -207,
+      "title": "刘邦入关与子婴投降",
+      "body": "刘邦军先入关中，子婴素车白马出降；刘邦随后约束军队并以简化法令争取地方支持。",
+      "impact": "秦王朝终结不等于战争结束，项羽入关与随后诸侯分封又开启新的权力冲突。",
+      "people": [
+        "qin_liubang",
+        "qin_ziying",
+        "qin_xiangyu"
+      ],
+      "sources": [
+        "v48q_shiji8",
+        "v48q_shiji7",
+        "v48q_shiji6"
+      ],
+      "kind": "历史事件",
+      "category": "社会",
+      "peopleRoles": {
+        "qin_liubang": "先入关者",
+        "qin_ziying": "出降的秦王",
+        "qin_xiangyu": "随后入关的诸侯统帅"
+      }
     }
   ],
   "objects": [
@@ -19078,6 +20079,171 @@
       "dynasties": [
         "yuan"
       ]
+    },
+    {
+      "id": "v48q_terracotta",
+      "title": "秦兵马俑",
+      "subtitle": "军阵、工匠与陵园陪葬体系",
+      "symbol": "square.grid.3x3",
+      "body": "兵马俑坑位于秦始皇陵东侧，是陵园陪葬体系的一部分。不同兵种、服饰、姿态与制作痕迹可用于研究军队形象和工匠组织；陶俑不是按现存秦军个人逐一复制的“真人肖像”。",
+      "note": "观看时区分考古出土事实、复原方案与“千人千面”等传播概括。",
+      "people": [
+        "qin_shihuang"
+      ],
+      "sources": [
+        "v48q_bmy_collection",
+        "v48q_bmy_research"
+      ],
+      "dynasties": [
+        "qin"
+      ]
+    },
+    {
+      "id": "v48q_chariots",
+      "title": "秦陵彩绘铜车马",
+      "subtitle": "缩小的御用车驾模型",
+      "symbol": "car.side",
+      "body": "两乘铜车马出土于秦始皇陵封土西侧，以约二分之一比例表现单辕、双轮、四马系驾车辆，并保存复杂金银构件和彩绘。它们帮助理解车辆结构与青铜工艺，但作为随葬品并非实际巡行车辆本身。",
+      "note": "留意服马、骖马、衡轭和胁驱等结构，也要区分修复后的展示状态与出土时碎裂状态。",
+      "people": [
+        "qin_shihuang"
+      ],
+      "sources": [
+        "v48q_bmy_chariot"
+      ],
+      "dynasties": [
+        "qin"
+      ]
+    },
+    {
+      "id": "v48q_stone_armor",
+      "title": "秦陵石甲胄",
+      "subtitle": "为陵园制作的石质防护装备模型",
+      "symbol": "shield",
+      "body": "K9801陪葬坑出土石甲、石胄和石马甲，以石灰石甲片磨制、钻孔并用铜丝串联。精细结构补充文献缺失，也显示陵园工役投入。石质重量与材质使其是否用于实战不能简单由外形判断。",
+      "note": "把它作为陵园制度、甲胄结构和石作工艺证据，不把石甲直接等同秦军日常装备。",
+      "people": [
+        "qin_shihuang"
+      ],
+      "sources": [
+        "v48q_bmy_armor",
+        "v48q_bmy_research"
+      ],
+      "dynasties": [
+        "qin"
+      ]
+    },
+    {
+      "id": "v48q_shuihudi",
+      "title": "云梦睡虎地秦简",
+      "subtitle": "法律、官吏工作与个人编年",
+      "symbol": "book.closed",
+      "body": "睡虎地十一号墓出土大量秦简，内容包括法律条文、法律答问、办案程式、为吏准则、日书与墓主喜的编年。它让秦制从史家概括进入具体条文和基层工作，也显示行政知识与择日信仰并存。",
+      "note": "简文记录规定、案例或个人抄本，不能自动证明所有地区、所有案件都按同样方式执行。",
+      "people": [
+        "qin_xi",
+        "qin_shihuang",
+        "qin_lisi"
+      ],
+      "sources": [
+        "v48q_hubei_slips"
+      ],
+      "dynasties": [
+        "qin"
+      ]
+    },
+    {
+      "id": "v48q_liye",
+      "title": "里耶秦简",
+      "subtitle": "迁陵县廷的收发文书",
+      "symbol": "doc.text",
+      "body": "里耶古城一号井出土秦简，纪年从秦王政二十五年至秦二世二年，包含邮传、户籍、物资、官吏考核和往来公文。它展示县廷如何把帝国命令转成日复一日的登记、核算和催办。",
+      "note": "单一县廷文书极其珍贵，但迁陵的边地条件不能代表秦帝国所有郡县。",
+      "people": [
+        "qin_xi",
+        "qin_shihuang",
+        "qin_er_shi"
+      ],
+      "sources": [
+        "v48q_nmc_liye"
+      ],
+      "dynasties": [
+        "qin"
+      ]
+    },
+    {
+      "id": "v48q_halfliang",
+      "title": "秦半两钱",
+      "subtitle": "法定标准与流通实物",
+      "symbol": "circle",
+      "body": "统一后半两成为秦帝国法定铜币形制。钱文标出重量，圆形方孔影响后世，但实际出土钱币重量并不整齐。制度要求、铸造批次、磨损和流通环境共同造成差异。",
+      "note": "看钱文、重量和铸造痕迹，不凭“半两”二字认定每枚实重完全相同。",
+      "people": [
+        "qin_shihuang",
+        "qin_lisi"
+      ],
+      "sources": [
+        "v48q_nmc_halfliang",
+        "v48q_nmc_ancient"
+      ],
+      "dynasties": [
+        "qin"
+      ]
+    },
+    {
+      "id": "v48q_weight",
+      "title": "秦八斤铜权",
+      "subtitle": "刻着统一度量衡诏书的砝码",
+      "symbol": "scalemass",
+      "body": "国博藏八斤铜权铸有“八斤”并刻始皇二十六年统一度量衡诏书。器物把皇帝诏令、法定单位和市场核验结合起来，是制度落到计量工具上的直接证据。",
+      "note": "馆藏实测可以换算这件器物，不能据一件铜权推定所有地区器具毫无误差。",
+      "people": [
+        "qin_shihuang",
+        "qin_lisi"
+      ],
+      "sources": [
+        "v48q_nmc_weight"
+      ],
+      "dynasties": [
+        "qin"
+      ]
+    },
+    {
+      "id": "v48q_tiger_tally",
+      "title": "阳陵虎符",
+      "subtitle": "左右验合的调兵凭证",
+      "symbol": "shield.lefthalf.filled",
+      "body": "阳陵虎符为卧虎形青铜符，铭文说明右半在皇帝、左半在阳陵将领，调兵时需要验合。它展示命令授权的物质形式，也说明中央权力必须通过持符者、使者和驻军共同执行。",
+      "note": "虎符制度能减少伪令风险，却不能保证复杂战争中每次调动都只靠同一种凭证。",
+      "people": [
+        "qin_shihuang",
+        "qin_mengtian"
+      ],
+      "sources": [
+        "v48q_nmc_tiger"
+      ],
+      "dynasties": [
+        "qin"
+      ]
+    },
+    {
+      "id": "v48q_double_edict",
+      "title": "秦始皇、秦二世双诏版",
+      "subtitle": "两朝诏文叠刻的制度见证",
+      "symbol": "doc.text",
+      "body": "秦始皇二十六年统一度量衡诏文刻于器物后，二世元年又加刻诏文，要求继续执行。双诏并存让器物跨越两朝，显示继承者试图以重申法令维持制度连续。",
+      "note": "诏文持续存在不等于政局稳定；器物上的连续与二世朝的政治崩解应放在一起观察。",
+      "people": [
+        "qin_shihuang",
+        "qin_er_shi",
+        "qin_lisi"
+      ],
+      "sources": [
+        "v48q_nmc_ancient"
+      ],
+      "dynasties": [
+        "qin"
+      ]
     }
   ],
   "sequence": [
@@ -19632,6 +20798,20 @@
       "years": "1278—1279",
       "transition": "兄终弟及",
       "eraLabel": "祥兴"
+    },
+    {
+      "id": "qin_0",
+      "person": "qin_shihuang",
+      "years": "前221—前210",
+      "transition": "秦王称始皇帝",
+      "eraLabel": "始皇"
+    },
+    {
+      "id": "qin_1",
+      "person": "qin_er_shi",
+      "years": "前210—前207",
+      "transition": "沙丘继位",
+      "eraLabel": "二世"
     }
   ],
   "tombs": [
@@ -20055,6 +21235,21 @@
         "v43t_qianling_site",
         "v43t_jts6",
         "v43t_jts7"
+      ]
+    },
+    {
+      "id": "tomb_qin_shihuang",
+      "person": "qin_shihuang",
+      "title": "秦始皇帝陵",
+      "area": "陕西 · 骊山北麓",
+      "location": "陕西省西安市临潼区",
+      "status": "陵园及陪葬体系持续考古，地宫未主动发掘",
+      "body": "秦始皇帝陵由封土、内外城垣、陪葬墓、陪葬坑和相关工程遗址构成，兵马俑坑位于陵园东侧。考古工作通过勘探和局部发掘不断重建陵园结构；地宫内部仍主要依据物探、环境检测和文献讨论，不能把传说图像当作已经目睹的事实。",
+      "note": "《史记》关于地宫的描述具有重要文献价值，但水银、机关等细节仍需考古证据逐项判断。",
+      "sources": [
+        "v48q_shiji6",
+        "v48q_bmy_collection",
+        "v48q_bmy_research"
       ]
     }
   ],
@@ -21772,6 +22967,46 @@
         "v43t_xts083"
       ],
       "note": "据正史所记真实亲属关系。"
+    },
+    {
+      "from": "qin_shihuang",
+      "to": "qin_zhuangxiang",
+      "kind": "father",
+      "sources": [
+        "v48q_shiji6",
+        "v48q_shiji85"
+      ],
+      "note": "《史记》明确以庄襄王为秦始皇父；吕不韦生父传闻不作定论。"
+    },
+    {
+      "from": "qin_shihuang",
+      "to": "qin_zhaoji",
+      "kind": "mother",
+      "sources": [
+        "v48q_shiji6",
+        "v48q_shiji85"
+      ],
+      "note": "后世常称赵姬。"
+    },
+    {
+      "from": "qin_fusu",
+      "to": "qin_shihuang",
+      "kind": "father",
+      "sources": [
+        "v48q_shiji6",
+        "v48q_shiji88"
+      ],
+      "note": "扶苏为始皇长子。"
+    },
+    {
+      "from": "qin_er_shi",
+      "to": "qin_shihuang",
+      "kind": "father",
+      "sources": [
+        "v48q_shiji6",
+        "v48q_shiji87"
+      ],
+      "note": "胡亥为始皇少子。"
     }
   ],
   "articles": [
@@ -44269,6 +45504,1116 @@
       "sources": [
         "v47s_dpm_qianli"
       ]
+    },
+    {
+      "person": "qin_shihuang",
+      "title": "嬴政：从秦王到始皇帝",
+      "dek": "统一与制度重组塑造长期帝国传统，战争、征发、巡行和思想控制也必须放在同一幅图中。",
+      "sections": [
+        {
+          "id": "v48q_qin_shihuang_1",
+          "title": "从质子之子到秦王",
+          "kind": "史实与解读",
+          "text": "嬴政出生于赵国邯郸，父亲异人当时是秦国在赵的质子。吕不韦帮助异人回秦并取得继承位置，异人成为庄襄王后不久去世，十三岁的嬴政继位为秦王。少年君主并不意味着国家由一人独自运转，太后、相国、宗室、将领与地方官共同构成权力网络。嫪毐事件和吕不韦失势之后，秦王逐步掌握更直接的决策权。关于吕不韦是否为其生父，《史记》叙事本身留下张力，后世又不断放大；现有证据不足以把传闻写成确定血缘。较稳妥的起点，是承认庄襄王父子名分，同时说明宫廷政治怎样影响早年统治。",
+          "sources": [
+            "v48q_shiji6",
+            "v48q_shiji85"
+          ],
+          "events": [],
+          "people": [
+            "qin_zhuangxiang",
+            "qin_zhaoji",
+            "qin_lvbuwei"
+          ]
+        },
+        {
+          "id": "v48q_qin_shihuang_2",
+          "title": "统一不是一场最后决战",
+          "kind": "史实与解读",
+          "text": "从前230年灭韩到前221年灭齐，秦通过连续战争结束六国并立。王翦、王贲、蒙恬等将领承担不同战线，粮食、道路、兵员和既有郡县治理支撑军队推进。李信伐楚受挫后，嬴政重新起用王翦并接受更大兵力方案，说明统一并非命中注定的直线胜利。灭国以后还要处理旧贵族、城邑、武器、户籍和边地，军事终点只是行政整合的开始。把六国覆亡全归于秦王个人雄才，会遮住秦国数代制度积累与众多执行者；只用“暴秦”概括，又无法解释它为何能在战国竞争中持续胜出。",
+          "sources": [
+            "v48q_shiji6",
+            "v48q_shiji73"
+          ],
+          "events": [
+            "v48q_unification",
+            "v48q_chu"
+          ],
+          "people": [
+            "qin_wangjian",
+            "qin_mengtian"
+          ]
+        },
+        {
+          "id": "v48q_qin_shihuang_3",
+          "title": "皇帝、郡县与可计算的帝国",
+          "kind": "史实与解读",
+          "text": "统一后嬴政采用始皇帝称号，朝廷把郡县行政、诏令文书、度量衡、货币和道路规范推向更大区域。这些措施使征税、调兵、司法和运输获得较统一的接口，却不等于各地生活一夜相同。里耶县廷文书显示命令要经过书写、收发、核算与催办才能落地；睡虎地秦简则让法律和官吏操作变得具体。皇帝权威依赖庞大行政劳动，不是仅靠一道诏书就能覆盖帝国。制度标准有长期影响，也伴随身份等级、严密责任和高强度动员。评价“统一”，应同时看连接能力与被连接者承担的成本。",
+          "sources": [
+            "v48q_shiji6",
+            "v48q_nmc_liye",
+            "v48q_hubei_slips"
+          ],
+          "events": [
+            "v48q_commandery",
+            "v48q_weights",
+            "v48q_coin"
+          ],
+          "people": [
+            "qin_lisi",
+            "qin_xi"
+          ]
+        },
+        {
+          "id": "v48q_qin_shihuang_4",
+          "title": "巡行、求仙与控制知识",
+          "kind": "史实与解读",
+          "text": "始皇多次巡行，在东方封禅、刻石并展示新秩序，也寻访方士、海上仙药和不死之术。前213年的焚书令限制部分民间典籍与议论，次年咸阳案件又造成大规模处死。传统常把两事合称“焚书坑儒”，但事件对象包含方士、诸生等不同身份，政策范围与人数应分别表述。扶苏劝谏后被派往上郡，说明皇帝晚年对异议的容忍收缩。巡行既是政治传播，也让继承安排暴露在随行近臣控制之下；求取永生与强化权力并非两条无关线索，而是共同指向对秩序和生命的不安全感。",
+          "sources": [
+            "v48q_shiji6",
+            "v48q_shiji87"
+          ],
+          "events": [
+            "v48q_fengshan",
+            "v48q_burning",
+            "v48q_scholars"
+          ],
+          "people": [
+            "qin_fusu",
+            "qin_lisi"
+          ]
+        },
+        {
+          "id": "v48q_qin_shihuang_5",
+          "title": "地宫未开，结论也应克制",
+          "kind": "史实与解读",
+          "text": "前210年始皇死于巡行途中，死亡消息被暂时封锁，沙丘继承安排改变扶苏、蒙恬和胡亥的命运。他葬于骊山陵园，兵马俑、铜车马、石甲胄和多类陪葬坑显示工程规模、工艺分工及死后世界想象。地宫主体没有主动发掘，今天关于内部宫室、水银和机关的认识仍来自《史记》、物探和环境研究，不能把影视复原当作实景。始皇留下的不是单一“功”或“过”：统一制度被后世继承，秦本身却在数年内崩解。将长期遗产与短期失败并置，才接近其历史位置。",
+          "sources": [
+            "v48q_shiji6",
+            "v48q_bmy_collection",
+            "v48q_bmy_research"
+          ],
+          "events": [
+            "v48q_sand_dune",
+            "v48q_corvee"
+          ],
+          "people": [
+            "qin_er_shi",
+            "qin_zhaogao"
+          ]
+        }
+      ],
+      "sources": [
+        "v48q_shiji6",
+        "v48q_shiji85",
+        "v48q_shiji73",
+        "v48q_nmc_liye",
+        "v48q_hubei_slips",
+        "v48q_shiji87",
+        "v48q_bmy_collection",
+        "v48q_bmy_research"
+      ]
+    },
+    {
+      "person": "qin_er_shi",
+      "title": "胡亥：二世而亡不是一个人的寓言",
+      "dek": "沙丘继位、宫廷清洗、持续征发和关东起事相互推动，秦亡不能压缩成昏君故事。",
+      "sections": [
+        {
+          "id": "v48q_qin_er_shi_1",
+          "title": "沙丘继位与无法公开的开端",
+          "kind": "史实与解读",
+          "text": "胡亥是秦始皇少子，随父巡行。始皇死于沙丘后，赵高、李斯与胡亥压下死讯并改变继承安排，扶苏与蒙恬相继被迫自杀。传世材料主要由胜利者时代整理，密谋对话的逐字真实性难以核验；但扶苏未继位、胡亥成为二世以及相关清洗构成基本事实。新皇帝从一开始便依赖近侍和丞相合作，继承程序又缺乏公开确认，使边军、宗室和官僚之间的信任受损。把二世简单写成被操纵的傀儡，会忽视他接受并执行命令的责任；把一切归于个人恶行，又会遮蔽制度的脆弱。",
+          "sources": [
+            "v48q_shiji6",
+            "v48q_shiji87",
+            "v48q_shiji88"
+          ],
+          "events": [
+            "v48q_sand_dune"
+          ],
+          "people": [
+            "qin_fusu",
+            "qin_lisi",
+            "qin_zhaogao",
+            "qin_mengtian"
+          ]
+        },
+        {
+          "id": "v48q_qin_er_shi_2",
+          "title": "工程没有因换皇帝而停止",
+          "kind": "史实与解读",
+          "text": "二世继续骊山与宫室工程，并重申始皇统一度量衡诏令。双诏版表明新朝试图借前朝制度维持连续，但大规模徭役、戍守和运输压力也没有停止。秦的行政能力曾经把人员与物资送往遥远地区，危机到来时，同一体系又需要在战争、工程和地方治理之间竞争资源。法令严密并不等于信息真实上达；官员为避免罪责可能掩盖损失，地方反抗又会中断交通。二世朝的问题因此不仅是“花费太多”，也是中枢无法根据局势及时降低动员强度。",
+          "sources": [
+            "v48q_shiji6",
+            "v48q_nmc_ancient",
+            "v48q_nmc_liye"
+          ],
+          "events": [
+            "v48q_corvee",
+            "v48q_weights"
+          ],
+          "people": [
+            "qin_zhaogao",
+            "qin_xi"
+          ]
+        },
+        {
+          "id": "v48q_qin_er_shi_3",
+          "title": "大泽乡以后，旧有恐惧迅速失效",
+          "kind": "史实与解读",
+          "text": "前209年陈胜、吴广发动起事，各地旧贵族、地方武装与普通戍卒相继响应。著名的“大雨失期、按法皆斩”叙述来自《史记》，睡虎地秦简所见具体法律责任更复杂，不能把一句故事当作全部秦律原文。但起事能够扩散，说明徭役、战争记忆、地方不满和六国政治资源已汇合。秦军仍有战斗力，章邯曾镇压张楚，却需要从工程劳力中组织军队。危机不是中央突然失去所有能力，而是每次应急都进一步消耗信任和资源，直到军事胜利也无法恢复秩序。",
+          "sources": [
+            "v48q_shiji48",
+            "v48q_hubei_slips",
+            "v48q_shiji6"
+          ],
+          "events": [
+            "v48q_dazexiang",
+            "v48q_julu"
+          ],
+          "people": [
+            "qin_chen_sheng",
+            "qin_wuguang",
+            "qin_xiangyu"
+          ]
+        },
+        {
+          "id": "v48q_qin_er_shi_4",
+          "title": "赵高专权与望夷宫终局",
+          "kind": "史实与解读",
+          "text": "赵高在二世朝由近侍上升为丞相，李斯被处死，宫廷信息和人事日益受其控制。“指鹿为马”的故事用戏剧化场景表现官员恐惧，不能替代对官职变动和清洗过程的核对。前207年，关东军事形势恶化，赵高派人迫使二世在望夷宫自杀。秦廷随后拥立子婴并降称秦王，表明皇帝名号已无法支撑实际权力。二世在位三年，个人判断、近侍政治和始皇时代留下的高强度体制共同促成崩解；任何单因解释都过于轻易。",
+          "sources": [
+            "v48q_shiji6",
+            "v48q_shiji87"
+          ],
+          "events": [
+            "v48q_wangyi"
+          ],
+          "people": [
+            "qin_zhaogao",
+            "qin_lisi",
+            "qin_ziying"
+          ]
+        }
+      ],
+      "sources": [
+        "v48q_shiji6",
+        "v48q_shiji87",
+        "v48q_shiji88",
+        "v48q_nmc_ancient",
+        "v48q_nmc_liye",
+        "v48q_shiji48",
+        "v48q_hubei_slips"
+      ]
+    },
+    {
+      "person": "qin_lisi",
+      "title": "李斯：制度设计与政治选择",
+      "dek": "从郡县、文书规范到焚书和沙丘继承，能力与责任无法分开评价。",
+      "sections": [
+        {
+          "id": "v48q_qin_lisi_1",
+          "title": "从楚吏到秦廷",
+          "kind": "史实与解读",
+          "text": "李斯出身楚地，曾从荀子学习，入秦后先在吕不韦门下，继而向秦王政提出并吞诸侯的建议。逐客令风波中，他以奏议论证外来人才对秦有用，自己也成为政策受益者。传记把“鼠”的寓言放在仕途开端，用环境决定处境解释其功名欲望，这是一种人物塑形，不必当作逐字自白。更可核对的是：李斯熟悉文书与法家政治语言，能把君主目标转成方案，并在统一战争和新帝国建立中持续升迁。能力使他进入决策核心，也意味着后来政策不能只推给皇帝。",
+          "sources": [
+            "v48q_shiji87",
+            "v48q_shiji85"
+          ],
+          "events": [],
+          "people": [
+            "qin_lvbuwei",
+            "qin_shihuang"
+          ]
+        },
+        {
+          "id": "v48q_qin_lisi_2",
+          "title": "把统一写进制度与器物",
+          "kind": "史实与解读",
+          "text": "统一后李斯支持郡县制，并参与文字、度量衡和政令格式的规范。后世常把“书同文”全部归为他发明小篆，但文字演变有长期基础，行政中也存在隶化书体；他的角色更接近中枢整理、推动和署名者。铜权、诏版和地方简牍说明政策必须进入器物、格式、档案和基层操作。统一标准能降低跨区行政成本，也扩大中央核查与追责能力。制度成就与控制力度并非互相排斥，它们常由同一套文书技术同时产生。",
+          "sources": [
+            "v48q_shiji6",
+            "v48q_nmc_weight",
+            "v48q_hubei_slips"
+          ],
+          "events": [
+            "v48q_commandery",
+            "v48q_script",
+            "v48q_weights"
+          ],
+          "people": [
+            "qin_xi"
+          ]
+        },
+        {
+          "id": "v48q_qin_lisi_3",
+          "title": "焚书建议的范围与责任",
+          "kind": "史实与解读",
+          "text": "前213年李斯建议限制民间收藏和讨论部分诗书、诸子及旧国史书，保留博士官藏和医药、卜筮、种树等书。政策并非烧尽所有文字，却明确打击以古非今和私人教学，对知识保存与政治表达造成损害。次年的咸阳处置由方士事件引发，不能简单与焚书合成同一命令。区分两件事不会减轻李斯责任，反而使责任更具体：他把政治异议定义为行政问题，并设计了执行办法。制度才能在这里服务于压制，说明技术能力本身不保证政策正当。",
+          "sources": [
+            "v48q_shiji6",
+            "v48q_shiji87"
+          ],
+          "events": [
+            "v48q_burning",
+            "v48q_scholars"
+          ],
+          "people": [
+            "qin_fusu"
+          ]
+        },
+        {
+          "id": "v48q_qin_lisi_4",
+          "title": "沙丘选择与反噬",
+          "kind": "史实与解读",
+          "text": "始皇死后，李斯与赵高、胡亥共同改变继承安排。李斯或许担心扶苏、蒙恬上台后自身地位不保，但传记中的长篇劝说仍是史家组织的道德戏剧。可确认的是，他参与了不透明继承并继续担任丞相。二世朝赵高逐步控制皇帝，李斯试图进谏又与其斗争，最终被诬陷并处死。一个帮助建立文书、法律和惩罚体系的人，最后被同一政治机器以严酷程序清除，这是后世反复书写的讽刺。理解李斯不能只选“能臣”或“奸相”一个标签，而要追问专业能力在什么选择中被使用。",
+          "sources": [
+            "v48q_shiji87",
+            "v48q_shiji6"
+          ],
+          "events": [
+            "v48q_sand_dune",
+            "v48q_wangyi"
+          ],
+          "people": [
+            "qin_er_shi",
+            "qin_zhaogao"
+          ]
+        }
+      ],
+      "sources": [
+        "v48q_shiji87",
+        "v48q_shiji85",
+        "v48q_shiji6",
+        "v48q_nmc_weight",
+        "v48q_hubei_slips"
+      ]
+    },
+    {
+      "person": "qin_zhaogao",
+      "title": "赵高：近侍怎样控制中枢",
+      "dek": "赵高的权力来自接近皇帝、掌握法律文书和持续清洗，不只是一个成语里的奸臣。",
+      "sections": [
+        {
+          "id": "v48q_qin_zhaogao_1",
+          "title": "近侍与法律知识",
+          "kind": "史实与解读",
+          "text": "赵高在秦廷担任中车府令等职，接近皇帝车驾与宫廷事务，并熟悉法律。传世史料对其出身与受刑情况说法复杂，不能用后世“宦官”概念轻率套定。重要的是，他兼有近身服务、文书知识和影响胡亥的条件。君主高度集中信息时，能控制传递渠道的人便可能放大个人权力；但赵高并非一开始就凌驾所有官僚，而是在继承危机和连续清洗中逐步扩大控制。",
+          "sources": [
+            "v48q_shiji6",
+            "v48q_shiji87"
+          ],
+          "events": [],
+          "people": [
+            "qin_shihuang",
+            "qin_er_shi"
+          ]
+        },
+        {
+          "id": "v48q_qin_zhaogao_2",
+          "title": "沙丘继承把私人通道变成国家决定",
+          "kind": "史实与解读",
+          "text": "始皇死后，赵高游说胡亥并迫使李斯参与，伪造或更改诏令，使扶苏、蒙恬被迫自杀。叙事中的对话细节未必能逐字还原，结果却清楚显示宫廷封闭的危险：死亡消息、玺书和使者都由少数随行者控制，边军和中央官僚无法独立核验。赵高利用的不是制度完全不存在，而是验证权集中在同一圈人。胡亥同意继位、李斯参与操作，也说明责任不能只装进赵高一个人身上。",
+          "sources": [
+            "v48q_shiji6",
+            "v48q_shiji87",
+            "v48q_shiji88"
+          ],
+          "events": [
+            "v48q_sand_dune"
+          ],
+          "people": [
+            "qin_lisi",
+            "qin_fusu",
+            "qin_mengtian"
+          ]
+        },
+        {
+          "id": "v48q_qin_zhaogao_3",
+          "title": "清洗与信息失真",
+          "kind": "史实与解读",
+          "text": "二世即位后宗室和大臣遭到清洗，李斯也最终被处死。赵高以案件和皇帝信任排除对手，官员越来越难把真实军事局势传入宫廷。“指鹿为马”浓缩了这种恐惧政治，是否按故事细节发生并不影响更稳固的结论：不同意见的代价升高，中枢判断质量下降。秦拥有快速道路、严密公文和惩罚规则，却无法保证信息不被权臣筛选。行政技术越强，若问责只向下而没有对近臣的制衡，错误也可能更快扩散。",
+          "sources": [
+            "v48q_shiji6",
+            "v48q_shiji87"
+          ],
+          "events": [
+            "v48q_wangyi"
+          ],
+          "people": [
+            "qin_lisi"
+          ]
+        },
+        {
+          "id": "v48q_qin_zhaogao_4",
+          "title": "子婴的反击已经太迟",
+          "kind": "史实与解读",
+          "text": "关东秦军崩溃后，赵高迫使二世自杀，改立子婴。子婴与近臣设计诛杀赵高，结束其掌权，却无法重新建立军队、财政和地方信任。刘邦不久入关，子婴投降。赵高常被写成秦亡唯一罪人，这能满足道德故事，却不能解释为何一个近侍可以获得如此空间，也不能解释六国战争、徭役、地方反抗等因素。更有解释力的问题是：继承不透明、信息封闭与惩罚政治如何让个人野心转化为国家危机。",
+          "sources": [
+            "v48q_shiji6",
+            "v48q_shiji8"
+          ],
+          "events": [
+            "v48q_wangyi",
+            "v48q_entry_guanzhong"
+          ],
+          "people": [
+            "qin_ziying",
+            "qin_liubang"
+          ]
+        }
+      ],
+      "sources": [
+        "v48q_shiji6",
+        "v48q_shiji87",
+        "v48q_shiji88",
+        "v48q_shiji8"
+      ]
+    },
+    {
+      "person": "qin_mengtian",
+      "title": "蒙恬：北边军功与继承危机",
+      "dek": "蒙恬的边防事业连接战争、道路和劳役，其死亡又暴露军权无法脱离宫廷继承。",
+      "sections": [
+        {
+          "id": "v48q_qin_mengtian_1",
+          "title": "将门与统一战争",
+          "kind": "史实与解读",
+          "text": "蒙氏家族数代在秦任将，蒙恬参加灭齐，统一后获得北边重任。家族背景提供军事资源，却不意味着战功可以简单世袭。秦军行动依靠郡县征发、武器生产、粮运和多级将吏，名将只是组织链条中的关键节点。史书以个人列传保存军事生涯，也会把复杂战争压缩为统帅决断。阅读蒙恬时，需要同时看他的选择和支撑他的国家能力。",
+          "sources": [
+            "v48q_shiji88",
+            "v48q_shiji6"
+          ],
+          "events": [
+            "v48q_unification"
+          ],
+          "people": [
+            "qin_shihuang"
+          ]
+        },
+        {
+          "id": "v48q_qin_mengtian_2",
+          "title": "北击匈奴与边防工程",
+          "kind": "史实与解读",
+          "text": "统一后蒙恬率军北击匈奴，控制黄河河套部分地区，并连接、修筑战国旧防线。秦长城由不同年代墙体和新建工程组成，路线、结构与现存明长城不同。驻军与筑城需要大量粮食、戍卒和运输，军事安全与社会负担同时存在。把它只写成民族冲突会忽视战国以来北方各政治力量的流动边界，也会误把后世固定疆界投射到秦代。",
+          "sources": [
+            "v48q_shiji88",
+            "v48q_shiji6"
+          ],
+          "events": [
+            "v48q_north",
+            "v48q_corvee"
+          ],
+          "people": [
+            "qin_fusu"
+          ]
+        },
+        {
+          "id": "v48q_qin_mengtian_3",
+          "title": "直道与帝国交通",
+          "kind": "史实与解读",
+          "text": "蒙恬相关工程还包括从关中通往北边的直道。道路缩短军队、使者和物资移动时间，但施工、维护和沿线供应都需要持续组织。古道路段的具体走向要依考古判断，不能凭文献一句话在地图上画出绝对精确线路。交通基础设施既能促进区域联系，也首先服务国家调兵和控制；同一条道路在后世可能转为贸易、迁徙和地方往来通道。",
+          "sources": [
+            "v48q_shiji88",
+            "v48q_nmc_ancient"
+          ],
+          "events": [
+            "v48q_roads"
+          ],
+          "people": [
+            "qin_shihuang"
+          ]
+        },
+        {
+          "id": "v48q_qin_mengtian_4",
+          "title": "与扶苏一同被继承安排清除",
+          "kind": "史实与解读",
+          "text": "扶苏因劝谏被派往上郡监蒙恬军。始皇死后，沙丘使者带来令扶苏、蒙恬自杀的诏书。扶苏迅速自尽，蒙恬曾质疑并请求复核，最后仍被迫死亡。边将掌握军队却没有转向公开反抗，可能与秦军命令体系、家族处境和政治判断有关。史书将蒙恬之死写成忠而见疑的悲剧，也提醒人们：高度集中的军权最终仍依赖继承合法性，一旦诏令验证被少数人控制，强大的边军无法自动保护统帅。",
+          "sources": [
+            "v48q_shiji88",
+            "v48q_shiji6"
+          ],
+          "events": [
+            "v48q_sand_dune"
+          ],
+          "people": [
+            "qin_fusu",
+            "qin_er_shi",
+            "qin_zhaogao"
+          ]
+        }
+      ],
+      "sources": [
+        "v48q_shiji88",
+        "v48q_shiji6",
+        "v48q_nmc_ancient"
+      ]
+    },
+    {
+      "person": "qin_wangjian",
+      "title": "王翦：统一战争中的谨慎统帅",
+      "dek": "王翦的胜利来自判断、资源和国家动员，也被史家写成善于自保的名将范型。",
+      "sections": [
+        {
+          "id": "v48q_qin_wangjian_1",
+          "title": "灭赵与攻燕",
+          "kind": "史实与解读",
+          "text": "王翦长期事秦，参与攻赵并最终进入邯郸，随后又在荆轲刺秦失败后攻燕。列传把战役集中在统帅身上，但每场战争都依赖多年边境冲突、情报、粮运和其他将领协同。赵王被俘后代地仍有抵抗，燕王也退往辽东，灭国不是都城陷落后全部问题立即结束。王翦的军功应放在秦国持续扩张的制度基础上理解。",
+          "sources": [
+            "v48q_shiji73",
+            "v48q_shiji6"
+          ],
+          "events": [
+            "v48q_zhao"
+          ],
+          "people": [
+            "qin_shihuang"
+          ]
+        },
+        {
+          "id": "v48q_qin_wangjian_2",
+          "title": "二十万与六十万的故事",
+          "kind": "史实与解读",
+          "text": "伐楚前，李信认为二十万人足够，王翦坚持六十万。秦王先用李信，战败后亲自向王翦道歉并按其方案出兵。数字是否完全精确难以验证，但故事保存了重要判断：楚地广阔、军力尚强，远征需要更大兵力和稳定补给。它也塑造王翦老成、李信轻进的对照。读者可以接受秦先败后胜和统帅更替的基本过程，同时对戏剧化对话与整齐兵数保留距离。",
+          "sources": [
+            "v48q_shiji73"
+          ],
+          "events": [
+            "v48q_chu"
+          ],
+          "people": [
+            "qin_mengtian"
+          ]
+        },
+        {
+          "id": "v48q_qin_wangjian_3",
+          "title": "请求田宅的政治计算",
+          "kind": "史实与解读",
+          "text": "王翦统率重兵离开关中时反复请求田宅，列传解释为向秦王表明自己只图家产、无意拥兵自立。这一情节显示名将拥有六十万军队也会担忧君主猜忌，军功和政治安全不是同一回事。它可能经过史家加工，却符合战国末统帅与君主之间的结构性紧张。王翦在灭楚后逐渐退出，未像白起、蒙恬那样死于君命，后世因而把“知止”纳入其形象。",
+          "sources": [
+            "v48q_shiji73"
+          ],
+          "events": [
+            "v48q_chu"
+          ],
+          "people": [
+            "qin_shihuang"
+          ]
+        },
+        {
+          "id": "v48q_qin_wangjian_4",
+          "title": "家族军功不能取代战争代价",
+          "kind": "史实与解读",
+          "text": "王翦之子王贲参与灭魏、燕余部和齐，父子军功覆盖统一战争多条战线。大梁水攻等胜利对秦有战略意义，却也意味着城市淹没、人口迁徙和地方秩序破坏。传记通常记录谁攻取何地，很少保存普通居民的损失。将王氏视为名将家族时，既要承认军事组织能力，也要把被征服者和士卒的处境放回叙述。统一的制度结果不能倒过来证明每种战争手段都没有代价。",
+          "sources": [
+            "v48q_shiji73",
+            "v48q_shiji6"
+          ],
+          "events": [
+            "v48q_wei",
+            "v48q_unification"
+          ],
+          "people": []
+        }
+      ],
+      "sources": [
+        "v48q_shiji73",
+        "v48q_shiji6"
+      ]
+    },
+    {
+      "person": "qin_lvbuwei",
+      "title": "吕不韦：商人与相国之间",
+      "dek": "吕不韦的政治经营真实改变秦国继承，但奇货故事和血缘传闻需要谨慎阅读。",
+      "sections": [
+        {
+          "id": "v48q_qin_lvbuwei_1",
+          "title": "邯郸经营与“奇货”叙事",
+          "kind": "史实与解读",
+          "text": "吕不韦原以贸易活动往来各地，在邯郸结识作为秦质子的异人，并判断其具有政治价值。他资助异人、联络华阳夫人等秦廷关系，使异人获得子楚名号并进入继承位置。《史记》以“奇货可居”的商业比喻组织这段故事，生动说明投资式政治，也可能把漫长交涉压缩为个人谋算。可确认的是，吕不韦把财富、跨国关系和宫廷信息转成政治资本，战国商业网络与贵族政治并非完全分离。",
+          "sources": [
+            "v48q_shiji85"
+          ],
+          "events": [],
+          "people": [
+            "qin_zhuangxiang",
+            "qin_zhaoji"
+          ]
+        },
+        {
+          "id": "v48q_qin_lvbuwei_2",
+          "title": "庄襄王与秦王政早年的相国",
+          "kind": "史实与解读",
+          "text": "异人继位为庄襄王后，吕不韦任相国并封文信侯。庄襄王在位不久去世，少年秦王政继位，吕不韦继续掌握重要权力。后世常把这一时期写成相国独揽朝政，但秦国既有官僚、宗室与军队体系，不能只看一个门客集团。他的地位来自扶立之功、封地、宾客和太后关系，同时也因此容易被宫廷丑闻牵连。所谓“仲父”称谓显示尊崇，也显示少年君主与资深相国之间不平衡的关系。",
+          "sources": [
+            "v48q_shiji85",
+            "v48q_shiji6"
+          ],
+          "events": [],
+          "people": [
+            "qin_shihuang",
+            "qin_zhaoji"
+          ]
+        },
+        {
+          "id": "v48q_qin_lvbuwei_3",
+          "title": "《吕氏春秋》不是一个人的独著",
+          "kind": "史实与解读",
+          "text": "吕不韦招致宾客，组织编纂《吕氏春秋》，试图汇集不同学派知识并提出治理秩序。门客集体写作意味着内容不能都当作吕不韦个人观点，成书和修订也有过程。传说将书悬于咸阳市门并悬赏能改一字者，表现其自信与政治传播，具体场景仍有文学色彩。相国主持知识工程，说明战国末的思想竞争与权力中心紧密相连；秦后来采取更严格的知识控制，也不等于秦文化从来只有单一路线。",
+          "sources": [
+            "v48q_shiji85"
+          ],
+          "events": [
+            "v48q_script"
+          ],
+          "people": [
+            "qin_lisi"
+          ]
+        },
+        {
+          "id": "v48q_qin_lvbuwei_4",
+          "title": "嫪毐案、迁徙与死亡",
+          "kind": "史实与解读",
+          "text": "嫪毐事件败露后，太后受到处置，吕不韦被免相并迁出都城，后来又被要求进一步迁往蜀地。他担心获罪而自杀。关于他与赵姬、嫪毐关系的细节主要来自史家叙事，不能把宫廷传闻全部当作已证事实；但政治失势、迁徙命令和死亡构成清楚的结局。吕不韦帮助建立的继承安排最终让嬴政成为秦王，而成年君主又必须摆脱“仲父”的权力阴影。个人经营能改变历史机会，却无法永久控制继承者。",
+          "sources": [
+            "v48q_shiji85",
+            "v48q_shiji6"
+          ],
+          "events": [],
+          "people": [
+            "qin_zhaoji",
+            "qin_shihuang"
+          ]
+        }
+      ],
+      "sources": [
+        "v48q_shiji85",
+        "v48q_shiji6"
+      ]
+    },
+    {
+      "person": "qin_fusu",
+      "title": "扶苏：未继位的长子",
+      "dek": "扶苏的温和形象来自劝谏与悲剧死亡，但不能由结局虚构一套从未实行的理想政策。",
+      "sections": [
+        {
+          "id": "v48q_qin_fusu_1",
+          "title": "长子身份与有限材料",
+          "kind": "史实与解读",
+          "text": "扶苏是秦始皇长子，却没有被正式册立为太子的明确记录。秦帝国新建，皇帝称号和继承礼制仍在形成，长子身份提供优势但不等于法律上必然继位。传世史料对扶苏日常行政活动记录很少，后人多从两件事理解他：劝谏咸阳坑杀，以及在上郡与蒙恬军共处。材料稀少使温厚贤明的形象容易被放大。历史上可以确认他与父亲意见不合、接触边军并在始皇死后被排除，却不能详细复原一套“扶苏若即位”的政策。",
+          "sources": [
+            "v48q_shiji6",
+            "v48q_shiji88"
+          ],
+          "events": [],
+          "people": [
+            "qin_shihuang"
+          ]
+        },
+        {
+          "id": "v48q_qin_fusu_2",
+          "title": "劝谏以后被派往上郡",
+          "kind": "史实与解读",
+          "text": "前212年咸阳方士案件后，扶苏劝始皇不要以重法处置诸生，担心天下不安。始皇令他前往上郡监督蒙恬军。这个安排既可视为惩罚，也让皇长子接触重要边军；史料没有留下双方对安排意义的完整说明。扶苏的劝谏说明秦廷内部并非无人反对严酷处置，但一次进言不能证明他在所有政策上都与父亲相反。后世把他塑造成秦可能的温和道路，反映人们对王朝迅速覆亡的反事实想象。",
+          "sources": [
+            "v48q_shiji6",
+            "v48q_shiji88"
+          ],
+          "events": [
+            "v48q_scholars",
+            "v48q_north"
+          ],
+          "people": [
+            "qin_mengtian"
+          ]
+        },
+        {
+          "id": "v48q_qin_fusu_3",
+          "title": "一道诏书为何足以致命",
+          "kind": "史实与解读",
+          "text": "始皇死后，赵高等人以诏书命扶苏、蒙恬自杀。蒙恬提出复核，扶苏却认为父亲命令不可违，迅速自尽。对话或经史家加工，结局仍显示父子伦理、皇帝诏令与边军服从如何结合。扶苏身在军中却没有起兵争位，可能是信息不足、对诏书真实性判断失误，也可能是政治合法性不允许他承担反叛风险。不能简单把死亡解释为懦弱，也不能把服从美化为唯一道德选择。",
+          "sources": [
+            "v48q_shiji6",
+            "v48q_shiji88"
+          ],
+          "events": [
+            "v48q_sand_dune"
+          ],
+          "people": [
+            "qin_zhaogao",
+            "qin_er_shi"
+          ]
+        },
+        {
+          "id": "v48q_qin_fusu_4",
+          "title": "悲剧形象与秦亡解释",
+          "kind": "史实与解读",
+          "text": "秦亡以后，扶苏常被当作本可挽救王朝的继承人。陈胜、吴广起事时甚至借扶苏与项燕名号号召众人，说明他的声望已成为政治资源。声望并不等于真实治理能力，假名号也反映信息不透明和地方对秦廷的疏离。扶苏的重要性在于揭示继承制度尚未稳定、皇帝命令缺乏独立验证以及反对意见难以形成制度保障。历史不能证明他即位必能避免秦亡，却能说明排除他如何加深二世政权危机。",
+          "sources": [
+            "v48q_shiji48",
+            "v48q_shiji6"
+          ],
+          "events": [
+            "v48q_dazexiang"
+          ],
+          "people": [
+            "qin_chen_sheng"
+          ]
+        }
+      ],
+      "sources": [
+        "v48q_shiji6",
+        "v48q_shiji88",
+        "v48q_shiji48"
+      ]
+    },
+    {
+      "person": "qin_ziying",
+      "title": "子婴：四十余日的秦王",
+      "dek": "子婴诛赵高、向刘邦投降，却没有时间修复已经崩溃的军政网络。",
+      "sections": [
+        {
+          "id": "v48q_qin_ziying_1",
+          "title": "世系本身就是史料问题",
+          "kind": "史实与解读",
+          "text": "《史记》不同篇章对子婴身份有不同表述，后世提出始皇弟、扶苏子或宗室其他支系等解释。现有材料不足以选定唯一谱系，因此产品不把他强行接入确定父子线。可以确认的是，二世死后赵高拥立他，并且称号降为秦王而非三世皇帝。名称变化反映秦廷实际控制已经退回关中核心，始皇创建的普遍皇帝权威在政治上失效。",
+          "sources": [
+            "v48q_shiji6"
+          ],
+          "events": [
+            "v48q_wangyi"
+          ],
+          "people": [
+            "qin_er_shi",
+            "qin_zhaogao"
+          ]
+        },
+        {
+          "id": "v48q_qin_ziying_2",
+          "title": "诛赵高不是一次王朝复兴",
+          "kind": "史实与解读",
+          "text": "子婴察觉赵高意图，借称病不赴宗庙等方式诱其入宫并诛杀。故事细节来自史家叙述，但赵高死亡和子婴短暂掌权是秦末中枢的关键转折。清除权臣能够改变宫廷人事，却不能立刻恢复已经投降或战败的军队，县廷交通与财政也在起义和战争中断裂。历史常偏爱一场果断行动带来逆转，子婴经历恰好说明结构性崩溃不会被一次宫廷胜利自动修复。",
+          "sources": [
+            "v48q_shiji6"
+          ],
+          "events": [
+            "v48q_wangyi"
+          ],
+          "people": [
+            "qin_zhaogao"
+          ]
+        },
+        {
+          "id": "v48q_qin_ziying_3",
+          "title": "向刘邦投降",
+          "kind": "史实与解读",
+          "text": "前207年刘邦军进入关中，子婴以素车白马等投降仪式交出符玺。刘邦没有立即杀他，并约束入城军队，以较简明的法令争取关中支持。投降意味着秦王朝终结，但地方生活需要在新的军事占领和行政安排中继续。子婴的选择可以理解为避免无望抵抗造成更多伤亡，也可能是权力已经没有其他选项；史料不足以复原其内心。",
+          "sources": [
+            "v48q_shiji8",
+            "v48q_shiji6"
+          ],
+          "events": [
+            "v48q_entry_guanzhong"
+          ],
+          "people": [
+            "qin_liubang"
+          ]
+        },
+        {
+          "id": "v48q_qin_ziying_4",
+          "title": "项羽入关后的死亡",
+          "kind": "史实与解读",
+          "text": "项羽随后率诸侯军入关，子婴被杀，秦宫室遭焚掠的叙述成为王朝毁灭象征。刘邦与项羽对关中的不同处置又被汉代史家用来解释谁更适合取得天下，其中包含明显的胜者视角。子婴既不是正式皇帝，也不是无关紧要的尾声。他短暂统治连接二世宫廷政变、秦向地方武装投降和楚汉竞争开端，提醒帝序无法容纳所有实际掌权者，因此需要在人物与事件中单独说明。",
+          "sources": [
+            "v48q_shiji7",
+            "v48q_shiji8"
+          ],
+          "events": [
+            "v48q_entry_guanzhong"
+          ],
+          "people": [
+            "qin_xiangyu"
+          ]
+        }
+      ],
+      "sources": [
+        "v48q_shiji6",
+        "v48q_shiji8",
+        "v48q_shiji7"
+      ]
+    },
+    {
+      "person": "qin_chen_sheng",
+      "title": "陈胜：大泽乡之后",
+      "dek": "陈胜把戍卒反抗变成张楚政权，短暂成败不能抹去它对秦帝国瓦解的推动。",
+      "sections": [
+        {
+          "id": "v48q_qin_chen_sheng_1",
+          "title": "戍卒、误期与史料边界",
+          "kind": "史实与解读",
+          "text": "陈胜出身雇农或贫民阶层，曾留下“苟富贵，无相忘”等著名叙事。前209年，他与吴广等被征发戍守渔阳，行至大泽乡遇雨受阻。《史记》称失期按法皆斩，出土秦律显示不同失期情形责任更复杂，学界因此不能把传记句子直接当成完整法条。即便具体法律后果需重审，戍役压力、长途迁徙和军官控制仍是起事环境。区分史料不会削弱反抗意义，而是避免用一个过度整齐的原因解释大规模危机。",
+          "sources": [
+            "v48q_shiji48",
+            "v48q_hubei_slips"
+          ],
+          "events": [
+            "v48q_dazexiang"
+          ],
+          "people": [
+            "qin_wuguang"
+          ]
+        },
+        {
+          "id": "v48q_qin_chen_sheng_2",
+          "title": "借扶苏与项燕之名",
+          "kind": "史实与解读",
+          "text": "陈胜、吴广借已死的扶苏和楚将项燕名号号召众人，利用地方对秦廷信息不足以及楚地政治记忆。假托名义说明反秦不只是反对赋役，也需要可理解的合法性语言。扶苏代表被排除的秦继承者，项燕代表旧楚抵抗，两种符号能暂时汇合不同不满。起事者并非天然拥有共同政治目标，名号帮助他们跨过最初组织门槛，随后各地力量仍会走向不同方向。",
+          "sources": [
+            "v48q_shiji48",
+            "v48q_shiji6"
+          ],
+          "events": [
+            "v48q_dazexiang"
+          ],
+          "people": [
+            "qin_fusu"
+          ]
+        },
+        {
+          "id": "v48q_qin_chen_sheng_3",
+          "title": "张楚政权与快速扩散",
+          "kind": "史实与解读",
+          "text": "陈胜称王并建立张楚，派出多路军队，起事在短时间内扩展。六国旧贵族、地方豪杰、县吏和普通民众以不同理由加入，秦帝国压制已久的政治空间突然打开。张楚也面临将领不受控制、补给不足与内部猜疑，不能只靠首倡声望维持。章邯组织军队反击，张楚很快失败，陈胜被车夫杀害。短命并不等于影响轻微，它让秦廷必须同时面对多个方向的战争。",
+          "sources": [
+            "v48q_shiji48",
+            "v48q_shiji6"
+          ],
+          "events": [
+            "v48q_dazexiang"
+          ],
+          "people": [
+            "qin_er_shi"
+          ]
+        },
+        {
+          "id": "v48q_qin_chen_sheng_4",
+          "title": "“王侯将相宁有种乎”的后世生命",
+          "kind": "史实与解读",
+          "text": "《史记》把陈胜置于世家，承认其首倡反秦的政治作用。名言在后世不断被引用，成为挑战世袭等级的象征，但不能因此把张楚描写成现代平等运动。陈胜称王、建立官职并处置故人，仍在当时权力语言中行动。历史意义来自社会出身较低者能够公开争夺天下并改变局势，也来自起事暴露秦帝国看似严密却缺乏缓冲的统治结构。阅读英雄口号时，同时保留政权实践，人物才不会只剩一句标语。",
+          "sources": [
+            "v48q_shiji48"
+          ],
+          "events": [
+            "v48q_dazexiang"
+          ],
+          "people": [
+            "qin_wuguang"
+          ]
+        }
+      ],
+      "sources": [
+        "v48q_shiji48",
+        "v48q_hubei_slips",
+        "v48q_shiji6"
+      ]
+    },
+    {
+      "person": "qin_xiangyu",
+      "title": "项羽：巨鹿胜利与入关暴力",
+      "dek": "项羽击破秦军主力，也以杀降、焚掠和分封选择塑造秦亡后的新冲突。",
+      "sections": [
+        {
+          "id": "v48q_qin_xiangyu_1",
+          "title": "楚将家族与起兵",
+          "kind": "史实与解读",
+          "text": "项羽出身楚国将门，是项梁之侄。秦末会稽起兵后，他凭个人勇力与军事行动迅速获得名声。史家常以少年逸事和夸张力量塑造英雄气质，这些故事不必逐字相信；更重要的是楚地反秦网络、项氏家族威望和地方兵员为他提供组织基础。陈胜失败后，楚地力量重新组合，拥立楚怀王后裔为政治旗号，反秦战争由零散起事转向多支诸侯军竞争。",
+          "sources": [
+            "v48q_shiji7",
+            "v48q_shiji48"
+          ],
+          "events": [
+            "v48q_dazexiang"
+          ],
+          "people": [
+            "qin_chen_sheng"
+          ]
+        },
+        {
+          "id": "v48q_qin_xiangyu_2",
+          "title": "巨鹿破秦",
+          "kind": "史实与解读",
+          "text": "前207年，项羽率楚军救赵，在巨鹿与秦军作战。“破釜沉舟”成为决绝用兵的象征，具体过程经过文学化，但楚军击败王离部、迫使章邯后来投降是秦亡关键。秦廷已在多线战争和宫廷危机中失去协调，巨鹿进一步摧毁关东主力。胜利让项羽成为诸侯军事实力最强的统帅，也使如何处理降军和战后秩序成为新的考验。",
+          "sources": [
+            "v48q_shiji7",
+            "v48q_shiji6"
+          ],
+          "events": [
+            "v48q_julu"
+          ],
+          "people": [
+            "qin_er_shi"
+          ]
+        },
+        {
+          "id": "v48q_qin_xiangyu_3",
+          "title": "杀降与入关",
+          "kind": "史实与解读",
+          "text": "章邯率大批秦军投降后，项羽军在新安杀降的记载构成其军事生涯最沉重的暴力之一。随后入关，子婴被杀，秦宫室遭焚掠。数字与具体规模需谨慎，但杀戮和破坏不能被英雄叙事掩盖。项羽以报楚仇、消除威胁和控制军队为理由行动，短期可能降低降军反叛风险，长期却加深关中敌意并破坏接管资源。军事胜利不自动转化为稳定治理。",
+          "sources": [
+            "v48q_shiji7"
+          ],
+          "events": [
+            "v48q_entry_guanzhong"
+          ],
+          "people": [
+            "qin_ziying"
+          ]
+        },
+        {
+          "id": "v48q_qin_xiangyu_4",
+          "title": "秦亡之后转入楚汉竞争",
+          "kind": "史实与解读",
+          "text": "刘邦先入关并取得关中民众一定支持，项羽凭军事实力主导分封，把刘邦置于汉中。分封试图恢复多王格局，却同时打乱起义功劳、旧国名分和实际控制之间的关系。项羽与刘邦的竞争由此展开，已超出秦朝本身。把项羽只看作推翻暴秦的英雄，会忽略他也是新秩序的设计者和暴力承担者；把他只看作失败者，又无法解释巨鹿后诸侯为何一度服从。",
+          "sources": [
+            "v48q_shiji7",
+            "v48q_shiji8"
+          ],
+          "events": [
+            "v48q_entry_guanzhong"
+          ],
+          "people": [
+            "qin_liubang"
+          ]
+        }
+      ],
+      "sources": [
+        "v48q_shiji7",
+        "v48q_shiji48",
+        "v48q_shiji6",
+        "v48q_shiji8"
+      ]
+    },
+    {
+      "person": "qin_liubang",
+      "title": "刘邦：先入关者",
+      "dek": "刘邦在秦末形成县吏、乡里与流动军队的联盟，入关策略为后来争夺天下积累政治资源。",
+      "sections": [
+        {
+          "id": "v48q_qin_liubang_1",
+          "title": "从亭长到沛公",
+          "kind": "史实与解读",
+          "text": "刘邦出身沛县，曾任秦基层亭长。传记保存许多预兆和豪侠故事，它们服务汉高祖正统形象，不能与可核对经历等量齐观。秦末征发和起事扩散时，沛县地方人物拥立他为沛公，萧何、曹参等县吏与乡里力量加入。这个团队兼有秦制行政经验和反秦军事身份，说明帝国基层人员并非在王朝崩溃时全部消失，而会把文书、组织和地方关系带进新政权。",
+          "sources": [
+            "v48q_shiji8"
+          ],
+          "events": [
+            "v48q_dazexiang"
+          ],
+          "people": [
+            "qin_chen_sheng"
+          ]
+        },
+        {
+          "id": "v48q_qin_liubang_2",
+          "title": "向关中推进",
+          "kind": "史实与解读",
+          "text": "楚怀王阵营约定先入关中者王之，刘邦选择从相对薄弱路线西进，沿途招降、战斗并吸收兵员。军事进展不仅来自宽厚形象，也与秦主力被项羽牵制、地方官员判断形势有关。传记倾向把刘邦与项羽对照为能纳谏和只恃勇力，两人确有不同策略，二分法仍受汉代胜者叙事影响。理解入关，需要看机会、盟军牵制与政治宣传共同作用。",
+          "sources": [
+            "v48q_shiji8",
+            "v48q_shiji7"
+          ],
+          "events": [
+            "v48q_julu"
+          ],
+          "people": [
+            "qin_xiangyu"
+          ]
+        },
+        {
+          "id": "v48q_qin_liubang_3",
+          "title": "接受子婴投降",
+          "kind": "史实与解读",
+          "text": "刘邦军抵达关中后，子婴出降，秦朝正式终结。刘邦没有立即杀子婴，并封存宫室府库，试图约束军队。后来“约法三章”的叙述强调废除繁苛秦法、保留杀人伤人盗窃等基本禁令，它更像政治承诺，不等于庞大行政法律可在一天内完全废止。关中居民关心的是军队是否抢掠、赋役是否继续和地方秩序能否恢复，政策姿态因此具有现实意义。",
+          "sources": [
+            "v48q_shiji8",
+            "v48q_shiji6"
+          ],
+          "events": [
+            "v48q_entry_guanzhong"
+          ],
+          "people": [
+            "qin_ziying"
+          ]
+        },
+        {
+          "id": "v48q_qin_liubang_4",
+          "title": "秦吏经验进入汉帝国",
+          "kind": "史实与解读",
+          "text": "项羽入关后重新分封，刘邦被置于汉中，随后楚汉战争展开。后来汉朝在批判秦严酷的同时，仍继承郡县、文书、律令和基层行政的许多做法。刘邦集团中多名沛县吏员熟悉秦制，接收秦档案又为治理提供条件。王朝更替不是旧制度全部清零，而是人员、技术与政治目标重新组合。这里也解释刘邦为何既能以“除秦苛法”争取支持，又能建立一个仍具强大动员能力的帝国。",
+          "sources": [
+            "v48q_shiji8",
+            "v48q_nmc_liye",
+            "v48q_hubei_slips"
+          ],
+          "events": [
+            "v48q_entry_guanzhong"
+          ],
+          "people": [
+            "qin_lisi",
+            "qin_xi"
+          ]
+        }
+      ],
+      "sources": [
+        "v48q_shiji8",
+        "v48q_shiji7",
+        "v48q_shiji6",
+        "v48q_nmc_liye",
+        "v48q_hubei_slips"
+      ]
+    },
+    {
+      "person": "qin_xi",
+      "title": "喜：简牍里的秦代基层官吏",
+      "dek": "睡虎地墓主人让法律和帝国不再只有皇帝、丞相与名将，也能从一名书写者的工作观察。",
+      "sections": [
+        {
+          "id": "v48q_qin_xi_1",
+          "title": "墓葬与名字如何相遇",
+          "kind": "史实与解读",
+          "text": "1975年云梦睡虎地十一号墓出土大量竹简，墓主人通常称为“喜”。简牍中的编年记录其出生、任职和经历，墓葬人骨与随葬品又提供身体和生活线索。把文本与墓主人联系起来有坚实考古背景，但任何生平复原都仍受残简、释读和研究方法限制。喜之所以重要，不在于他曾改变帝国大政，而在于普通官吏第一次以较连续的个人时间进入秦史。",
+          "sources": [
+            "v48q_hubei_slips"
+          ],
+          "events": [
+            "v48q_slip_archive"
+          ],
+          "people": []
+        },
+        {
+          "id": "v48q_qin_xi_2",
+          "title": "法律不是墙上一张告示",
+          "kind": "史实与解读",
+          "text": "睡虎地简包括秦律十八种、法律答问、封诊式、为吏之道等材料。它们涉及农业、市场、徭役、官吏责任、案件勘验和书写程序。基层官吏要记忆条文、核对身份、计算财物并制作文书，法律因此是一套劳动和知识体系。文本细密并不代表司法天然公正，也不代表每个地方完全照章执行；它首先证明国家试图把复杂事务转成可记录、可追责的格式。",
+          "sources": [
+            "v48q_hubei_slips"
+          ],
+          "events": [
+            "v48q_households",
+            "v48q_commandery"
+          ],
+          "people": [
+            "qin_lisi"
+          ]
+        },
+        {
+          "id": "v48q_qin_xi_3",
+          "title": "个人编年与帝国大事",
+          "kind": "史实与解读",
+          "text": "喜的编年把个人年龄、任职与秦统一战争等年代并置。宏大的灭国和称帝，在一个基层家庭那里表现为服役、迁动、官职和纪年变化。这样的材料能纠正只沿皇帝年表阅读历史的习惯，却也不能把喜当作所有秦人的平均样本：他识字、任吏并以简牍随葬，本身具有特定身份。个案价值来自具体，而不是代表所有人。",
+          "sources": [
+            "v48q_hubei_slips"
+          ],
+          "events": [
+            "v48q_unification",
+            "v48q_slip_archive"
+          ],
+          "people": [
+            "qin_shihuang"
+          ]
+        },
+        {
+          "id": "v48q_qin_xi_4",
+          "title": "从规定追问实际生活",
+          "kind": "史实与解读",
+          "text": "睡虎地简使研究者能够讨论薪俸、差役、办案、疾病与择日，但从规范条文推到社会现实必须谨慎。规定某种处罚说明国家希望如此处理，不保证每次案件都执行一致；《日书》与法律同墓，又提醒官吏的生活并非只有理性行政。帝国制度、地方经验和个人信仰可以同时存在。通过喜阅读秦史，重点不是寻找现代意义上的普通人代言，而是学习怎样从一组有限材料恢复工作世界并标明推论边界。",
+          "sources": [
+            "v48q_hubei_slips"
+          ],
+          "events": [
+            "v48q_slip_archive"
+          ],
+          "people": []
+        }
+      ],
+      "sources": [
+        "v48q_hubei_slips"
+      ]
+    },
+    {
+      "person": "qin_wuguang",
+      "title": "吴广：共同起事者不是陪衬",
+      "dek": "吴广与陈胜共同发动大泽乡起事，又在围攻荥阳期间死于内部冲突；有限史料更需要区分可知与不可知。",
+      "sections": [
+        {
+          "id": "v48q_qin_wuguang_1",
+          "title": "戍卒队伍中的共同谋划",
+          "kind": "史实与解读",
+          "text": "吴广与陈胜同为被征发前往渔阳戍守的戍卒屯长。《史记》把大雨、失期与秦法威胁连成起事直接背景，又写两人借扶苏、项燕的声望动员同伴。睡虎地等秦简使研究者重新讨论失期处罚是否必然为死刑，因此不能把传记中的因果链当作完整秦律复述。可以确认的是，戍役压力、队伍处境和帝国危机给了集体反抗迅速发生的条件；吴广从一开始就是共同决策者。",
+          "sources": [
+            "v48q_shiji48",
+            "v48q_hubei_slips"
+          ],
+          "events": [
+            "v48q_dazexiang",
+            "v48q_corvee"
+          ],
+          "people": [
+            "qin_chen_sheng"
+          ]
+        },
+        {
+          "id": "v48q_qin_wuguang_2",
+          "title": "“假王”是一项军事授权",
+          "kind": "史实与解读",
+          "text": "起事扩展后，陈胜建立张楚政权并称王，吴广被任为假王，率军向西围攻荥阳。“假王”在这里不是讥讽，而是带有代理和统兵意味的权力安排。荥阳连接关东与关中，守军抵抗使反秦军难以直接向咸阳推进。吴广的任务说明张楚已经从戍卒兵变转为需要分兵、任命和补给的政治军事组织，也显示反抗力量并不会因为共同敌人存在就自动形成稳定指挥。",
+          "sources": [
+            "v48q_shiji48"
+          ],
+          "events": [
+            "v48q_dazexiang"
+          ],
+          "people": [
+            "qin_chen_sheng",
+            "qin_er_shi"
+          ]
+        },
+        {
+          "id": "v48q_qin_wuguang_3",
+          "title": "死于内部冲突",
+          "kind": "史实与解读",
+          "text": "围攻荥阳久攻不下时，将领田臧认为吴广不懂兵事，并担心他阻碍行动，便假借陈胜命令杀死吴广，再上报首级。陈胜随后赐田臧楚令尹印，使这一既成事实获得承认。传记对动机的解释来自事后叙述，无法让吴广本人申辩；但内部处决及其被政权接受，清楚暴露新组织中的授权模糊、军事压力与派系竞争。吴广没有死于秦军，而死于反秦阵营自身。",
+          "sources": [
+            "v48q_shiji48"
+          ],
+          "events": [
+            "v48q_dazexiang"
+          ],
+          "people": [
+            "qin_chen_sheng"
+          ]
+        },
+        {
+          "id": "v48q_qin_wuguang_4",
+          "title": "怎样从陈胜的传记里读吴广",
+          "kind": "史实与解读",
+          "text": "吴广没有独立列传，生平几乎全部嵌在《陈涉世家》中。后世常用“陈胜吴广起义”并称二人，却又把叙事重心集中于陈胜的称王、成败和名言。阅读吴广需要接受材料不对称：不知道其出生家庭、此前职业和个人主张，也不应凭空填补。仍可从共同谋划、假王任命和被杀经过，看见基层起事中的协商、代表权与暴力。把他从口号中还原，并不是虚构更多细节，而是明确指出史料能说到哪里。",
+          "sources": [
+            "v48q_shiji48"
+          ],
+          "events": [
+            "v48q_dazexiang"
+          ],
+          "people": [
+            "qin_chen_sheng"
+          ]
+        }
+      ],
+      "sources": [
+        "v48q_shiji48",
+        "v48q_hubei_slips"
+      ]
     }
   ],
   "portraits": [
@@ -50117,6 +52462,212 @@
       "sources": [
         "v47s_dpm_qianli"
       ]
+    },
+    {
+      "from": "qin_shihuang",
+      "to": "qin_lvbuwei",
+      "role": "早年相国",
+      "inverse": "所辅秦王",
+      "period": "秦王政早期",
+      "note": "吕不韦在庄襄王及秦王政早年掌握重要政治资源，后因嫪毐案牵连失势。",
+      "sources": [
+        "v48q_shiji85",
+        "v48q_shiji6"
+      ]
+    },
+    {
+      "from": "qin_shihuang",
+      "to": "qin_lisi",
+      "role": "廷尉与丞相",
+      "inverse": "所事皇帝",
+      "period": "秦王政与始皇帝时期",
+      "note": "李斯参与统一后制度与文书政策，也提出焚书建议。",
+      "sources": [
+        "v48q_shiji87",
+        "v48q_shiji6"
+      ]
+    },
+    {
+      "from": "qin_shihuang",
+      "to": "qin_wangjian",
+      "role": "灭国主将",
+      "inverse": "所事秦王",
+      "period": "统一战争",
+      "note": "王翦参与灭赵、燕、楚，王贲继续灭魏、齐等战事。",
+      "sources": [
+        "v48q_shiji73"
+      ]
+    },
+    {
+      "from": "qin_shihuang",
+      "to": "qin_mengtian",
+      "role": "北边统军者",
+      "inverse": "所事皇帝",
+      "period": "始皇帝时期",
+      "note": "蒙恬参与灭齐后经营北边，并与扶苏同在上郡。",
+      "sources": [
+        "v48q_shiji88"
+      ]
+    },
+    {
+      "from": "qin_er_shi",
+      "to": "qin_zhaogao",
+      "role": "近侍与权臣",
+      "inverse": "所立又所逼迫的皇帝",
+      "period": "二世时期",
+      "note": "赵高参与其继位，后控制中枢并迫使二世自杀。",
+      "sources": [
+        "v48q_shiji6",
+        "v48q_shiji87"
+      ]
+    },
+    {
+      "from": "qin_er_shi",
+      "to": "qin_lisi",
+      "role": "丞相",
+      "inverse": "所事皇帝",
+      "period": "二世时期",
+      "note": "李斯参与继位安排，后在政治斗争中被赵高构陷处死。",
+      "sources": [
+        "v48q_shiji87"
+      ]
+    },
+    {
+      "from": "qin_fusu",
+      "to": "qin_mengtian",
+      "role": "上郡监军与主将",
+      "inverse": "监军皇子",
+      "period": "始皇帝晚期",
+      "note": "扶苏在蒙恬军中监军，二人均在沙丘继承安排后死亡。",
+      "sources": [
+        "v48q_shiji88"
+      ]
+    },
+    {
+      "from": "qin_ziying",
+      "to": "qin_zhaogao",
+      "role": "诛杀权臣",
+      "inverse": "被诛权臣",
+      "period": "前207",
+      "note": "子婴与近臣设计诛杀赵高，但已无法挽回关东局势。",
+      "sources": [
+        "v48q_shiji6"
+      ]
+    },
+    {
+      "from": "qin_chen_sheng",
+      "to": "qin_wuguang",
+      "role": "共同起事者",
+      "inverse": "共同起事者",
+      "period": "前209—前208",
+      "note": "二人在大泽乡发动戍卒起事，随后分兵扩展。",
+      "sources": [
+        "v48q_shiji48"
+      ]
+    },
+    {
+      "from": "qin_ziying",
+      "to": "qin_liubang",
+      "role": "出降与受降",
+      "inverse": "受降者",
+      "period": "前207",
+      "note": "子婴向先入关的刘邦投降。",
+      "sources": [
+        "v48q_shiji8",
+        "v48q_shiji6"
+      ]
+    },
+    {
+      "from": "qin_ziying",
+      "to": "qin_xiangyu",
+      "role": "被杀的秦王",
+      "inverse": "入关后杀秦王者",
+      "period": "前207—前206",
+      "note": "项羽入关后杀子婴并焚毁秦宫室的叙述见《史记》。",
+      "sources": [
+        "v48q_shiji7"
+      ]
+    },
+    {
+      "from": "qin_xiangyu",
+      "to": "qin_liubang",
+      "role": "反秦盟友与入关竞争者",
+      "inverse": "反秦盟友与入关竞争者",
+      "period": "秦末",
+      "note": "二人均参与反秦，先入关与随后分封使竞争转向楚汉战争。",
+      "sources": [
+        "v48q_shiji7",
+        "v48q_shiji8"
+      ]
+    },
+    {
+      "from": "qin_shihuang",
+      "to": "qin_fusu",
+      "role": "皇子与劝谏者",
+      "inverse": "父皇",
+      "period": "始皇帝晚期",
+      "note": "扶苏因劝谏被派至上郡，后在继承政变中被迫自杀。",
+      "sources": [
+        "v48q_shiji6",
+        "v48q_shiji88"
+      ]
+    },
+    {
+      "from": "qin_shihuang",
+      "to": "qin_xi",
+      "role": "治下基层官吏代表",
+      "inverse": "在位皇帝",
+      "period": "秦统一前后",
+      "note": "喜的简牍把帝国制度与基层工作连接起来，不表示二人有直接接触。",
+      "sources": [
+        "v48q_hubei_slips"
+      ]
+    },
+    {
+      "from": "qin_er_shi",
+      "to": "qin_chen_sheng",
+      "role": "反秦起事领袖",
+      "inverse": "所反抗的皇帝",
+      "period": "前209—前208",
+      "note": "大泽乡起事在二世统治期间迅速扩展。",
+      "sources": [
+        "v48q_shiji48",
+        "v48q_shiji6"
+      ]
+    },
+    {
+      "from": "qin_er_shi",
+      "to": "qin_wuguang",
+      "role": "反秦起事领袖",
+      "inverse": "所反抗的皇帝",
+      "period": "前209—前208",
+      "note": "吴广与陈胜共同起事，后率军围荥阳。",
+      "sources": [
+        "v48q_shiji48"
+      ]
+    },
+    {
+      "from": "qin_er_shi",
+      "to": "qin_xiangyu",
+      "role": "击溃秦军主力的楚将",
+      "inverse": "所反抗的皇帝",
+      "period": "前208—前207",
+      "note": "项羽在巨鹿击败秦军主力，二世朝随后失去关东军事支柱。",
+      "sources": [
+        "v48q_shiji7",
+        "v48q_shiji6"
+      ]
+    },
+    {
+      "from": "qin_er_shi",
+      "to": "qin_ziying",
+      "role": "继位的秦王",
+      "inverse": "前任皇帝",
+      "period": "前207",
+      "note": "二世被迫自杀后，子婴降称秦王即位。",
+      "sources": [
+        "v48q_shiji6"
+      ]
     }
   ],
   "dynasties": [
@@ -50168,10 +52719,13 @@
       "id": "qin",
       "name": "秦",
       "years": "前221—前207",
-      "selectable": false,
+      "selectable": true,
       "note": "完成统一并建立皇帝制度，短暂王朝留下长久制度遗产。",
       "sources": [
-        "v5d_nmc_ancient"
+        "v5d_nmc_ancient",
+        "v48q_shiji6",
+        "v48q_hubei_slips",
+        "v48q_nmc_liye"
       ]
     },
     {
@@ -50417,7 +52971,11 @@
         }
       ],
       "sources": [
-        "v5d_nmc_ancient"
+        "v5d_nmc_ancient",
+        "v48q_shiji6",
+        "v48q_hubei_slips",
+        "v48q_nmc_liye",
+        "v48q_bmy_collection"
       ]
     },
     {
@@ -54755,6 +57313,67 @@
         "v43s_ss047",
         "v43s_ss451",
         "v43s_ss418"
+      ],
+      "note": ""
+    },
+    {
+      "person": "qin_shihuang",
+      "periods": [
+        {
+          "label": "前221—前210",
+          "start": 221,
+          "end": 210
+        }
+      ],
+      "people": [
+        "qin_lisi",
+        "qin_wangjian",
+        "qin_mengtian",
+        "qin_fusu",
+        "qin_xi"
+      ],
+      "events": [
+        "v48q_unification",
+        "v48q_commandery",
+        "v48q_weights",
+        "v48q_burning",
+        "v48q_north",
+        "v48q_sand_dune"
+      ],
+      "sources": [
+        "v48q_shiji6",
+        "v48q_shiji73",
+        "v48q_shiji87",
+        "v48q_shiji88"
+      ],
+      "note": "前247年即秦王位；此处在位段按前221年采用皇帝称号后列示。"
+    },
+    {
+      "person": "qin_er_shi",
+      "periods": [
+        {
+          "label": "前210—前207",
+          "start": 210,
+          "end": 207
+        }
+      ],
+      "people": [
+        "qin_zhaogao",
+        "qin_lisi",
+        "qin_chen_sheng",
+        "qin_wuguang",
+        "qin_xiangyu",
+        "qin_ziying"
+      ],
+      "events": [
+        "v48q_dazexiang",
+        "v48q_julu",
+        "v48q_wangyi"
+      ],
+      "sources": [
+        "v48q_shiji6",
+        "v48q_shiji48",
+        "v48q_shiji7"
       ],
       "note": ""
     }
