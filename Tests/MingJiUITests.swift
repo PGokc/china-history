@@ -1394,4 +1394,56 @@ final class MingJiUITests: XCTestCase {
         }
     }
 
+    @MainActor func testV47SocialHistoryAndMaterialCulturePaths() throws {
+        let song = XCUIApplication()
+        song.launchArguments = ["--uitesting", "--ui-dynasty", "song_liao_xia_jin"]
+        song.launch()
+        XCTAssertTrue(song.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        song.tabBars.buttons["遗珍"].tap()
+        song.buttons["collectionCategory_texts"].tap()
+        let yingzao = song.buttons["artifact_v47s_yingzao_book"]
+        reachReadingLink(yingzao, in: song); yingzao.tap()
+        let lijie = song.buttons["explore_s_lijie"]
+        reachReadingLink(lijie, in: song); lijie.tap()
+        openArticle(in: song)
+        song.buttons["articleContents"].tap()
+        let evidence = song.buttons["规范文本与真实建筑之间，仍要保留距离"]
+        reachReadingLink(evidence, in: song); evidence.tap()
+        XCTAssertEqual(song.buttons["articleContents"].value as? String, "规范文本与真实建筑之间，仍要保留距离")
+        shot("v47-lijie-reader", song)
+        song.terminate()
+
+        let society = XCUIApplication()
+        society.launchArguments = ["--uitesting", "--ui-dynasty", "song_liao_xia_jin"]
+        society.launch()
+        XCTAssertTrue(society.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        openEmperor("s_3", in: society)
+        society.buttons["personHero"].tap()
+        openArticle(in: society)
+        society.buttons["articleContents"].tap()
+        let river = society.buttons["河患与救济，检验的是长期治理"]
+        reachReadingLink(river, in: society); river.tap()
+        XCTAssertEqual(society.buttons["articleContents"].value as? String, "河患与救济，检验的是长期治理")
+        shot("v47-song-social-history", society)
+        society.terminate()
+
+        let yuan = XCUIApplication()
+        yuan.launchArguments = ["--uitesting", "--ui-dynasty", "yuan"]
+        yuan.launch()
+        XCTAssertTrue(yuan.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        yuan.tabBars.buttons["遗珍"].tap()
+        yuan.buttons["collectionCategory_objects"].tap()
+        let blueWhite = yuan.buttons["artifact_v47y_bluewhite"]
+        reachReadingLink(blueWhite, in: yuan); blueWhite.tap()
+        XCTAssertTrue(yuan.staticTexts["观看提示"].waitForExistence(timeout: 5))
+        shot("v47-yuan-blue-white", yuan)
+        let sources = yuan.buttons["资料与出处"]
+        reach(sources, in: yuan, attempts: 12); sources.tap()
+        let blueWhiteSource = yuan.buttons["source_v47y_dpm_bluewhite"]
+        reach(blueWhiteSource, in: yuan, attempts: 8)
+        XCTAssertTrue(blueWhiteSource.isHittable)
+        yuan.swipeUp()
+        shot("v47-yuan-source-bottom", yuan)
+    }
+
 }

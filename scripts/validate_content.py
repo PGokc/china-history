@@ -566,4 +566,28 @@ if d['version'] >= 28:
   chars=sum(len(re.findall(r'[\u4e00-\u9fff]',x['text'])) for x in article['sections'])
   assert chars>=850,(pid,'expanded article is still thin',chars)
  assert all(not re.search(r'本轮|补充内容|数据缺口|页面需要',json.dumps(articles[pid],ensure_ascii=False)) for pid in expanded), 'editorial language leaked into product copy'
- print('V28 PASS: 23 Tang, Song and Yuan imperial readings exceed the depth floor; all 331 people have explicit dynasty ownership')
+ print(f'V28 PASS: 23 Tang, Song and Yuan imperial readings exceed the depth floor; all {len(people)} people have explicit dynasty ownership')
+
+if d['version'] >= 29:
+ target_dynasties={'tang','song_liao_xia_jin','yuan'}
+ categories={'政治','军事','文化','经济','社会'}
+ def item_dynasties(item):
+  return set(item.get('dynasties') or [])|{people[pid]['dynasty'] for pid in item.get('people',[]) if pid in people}
+ for dynasty in target_dynasties:
+  counts=Counter(e['category'] for e in d['events'] if dynasty in item_dynasties(e))
+  assert all(counts[category]>=5 for category in categories),(dynasty,'category floor',counts)
+  assert sum(dynasty in item_dynasties(obj) for obj in d['objects'])>=8,(dynasty,'heritage floor')
+ additions={'v47t_bingtian','v47t_war_displacement','v47t_famine_rebellion','v47s_yellow_river','v47s_futian','v47s_yingzao','v47s_qianli'}
+ events={e['id']:e for e in d['events']}
+ assert additions<=events.keys()
+ assert all(events[eid]['sources'] and events[eid].get('peopleRoles') for eid in additions)
+ for pid in {'s_lijie','s_wangximeng'}:
+  assert pid in articles and len(articles[pid]['sections'])>=4
+  chars=sum(len(re.findall(r'[\u4e00-\u9fff]',section['text'])) for section in articles[pid]['sections'])
+  assert chars>=850,(pid,'new full reading below depth floor',chars)
+  assert all(section['sources'] for section in articles[pid]['sections'])
+ for pid in {'t_xuanzong','t_xizong','s_renzong','s_huizong'}:
+  section=next((x for x in articles[pid]['sections'] if x['id'].startswith('v47-')),None)
+  assert section and section.get('events') and section.get('people') and section.get('sources'),(pid,'missing contextual chapter')
+ assert not re.search(r'本轮(?:新增|补充|修改|开发)|补充内容|数据缺口|高标准|验收线',json.dumps(d['articles'],ensure_ascii=False)), 'editorial language leaked into product copy'
+ print('V29 PASS: Tang, Song and Yuan each have five event lenses and eight heritage entries; Li Jie and Wang Ximeng have sourced full readings')

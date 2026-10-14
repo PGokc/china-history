@@ -60,7 +60,7 @@ struct ArticleReader: View {
                             }
                         }
                         SourcesView(store: store, ids: article.sources)
-                    }.padding(24).padding(.bottom, 28)
+                    }.padding(24).padding(.bottom, 120)
                 }.coordinateSpace(name: "reading").background(Theme.paper).foregroundStyle(Theme.text)
                     .onPreferenceChange(ReadingPositions.self) { value in
                         positions = value
