@@ -4,6 +4,38 @@ private struct ReadingPositions: PreferenceKey {
     static let defaultValue: [String: CGFloat] = [:]
     static func reduce(value: inout [String: CGFloat], nextValue: () -> [String: CGFloat]) { value.merge(nextValue(), uniquingKeysWith: { _, new in new }) }
 }
+private struct EditorialDisclosure<Content: View>: View {
+    let title: String
+    let content: () -> Content
+    @State private var expanded = false
+
+    init(_ title: String, @ViewBuilder content: @escaping () -> Content) {
+        self.title = title
+        self.content = content
+    }
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Button {
+                withAnimation(.easeOut(duration: 0.2)) { expanded.toggle() }
+            } label: {
+                HStack(alignment: .firstTextBaseline) {
+                    Text(title)
+                    Spacer()
+                    Text(expanded ? "收起" : "展开")
+                        .font(.caption)
+                        .foregroundStyle(Theme.cinnabar)
+                }
+                .frame(minHeight: 36)
+                .contentShape(Rectangle())
+            }
+            .buttonStyle(.plain)
+            .accessibilityLabel(title)
+
+            if expanded { content() }
+        }
+    }
+}
 struct ArticleReader: View {
     let store: HistoryStore
     let personID: String
@@ -35,11 +67,11 @@ struct ArticleReader: View {
                                 }
                                 Text(section.text).font(.body).lineSpacing(7).fixedSize(horizontal: false, vertical: true).textSelection(.enabled)
                                 if !(section.people ?? []).isEmpty || !(section.events ?? []).isEmpty {
-                                    DisclosureGroup("相关人物与事件") { chapterLinks(section).padding(.top, 8) }
-                                        .font(.subheadline).tint(Theme.muted)
+                                    EditorialDisclosure("相关人物与事件") { chapterLinks(section) }
+                                        .font(.subheadline)
                                         .accessibilityIdentifier("chapterLinks_\(section.id)")
                                 }
-                                DisclosureGroup("本节依据") { SourcesView(store: store, ids: section.sources, compact: true).padding(.top, 10) }
+                                EditorialDisclosure("本节依据") { SourcesView(store: store, ids: section.sources, compact: true) }
                                     .font(.caption).foregroundStyle(Theme.muted)
                             }.id(section.id)
                                 .background(GeometryReader { g in Color.clear.preference(key: ReadingPositions.self, value: [section.id: g.frame(in: .named("reading")).minY]) })

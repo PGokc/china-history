@@ -471,6 +471,8 @@ struct SuccessionPage: View {
         switch dynastyID {
         case "qin":
             return "秦始皇称帝前已为秦王；子婴在前207年即位后使用秦王称号，未列入皇帝序列。公元前年份由数值较大者向较小者推进。"
+        case "han":
+            return "前、后少帝确曾即位，但通行名讳见于较晚材料；这里采用称号。公元9—25年的新朝与群雄战争使汉统中断，不用一条连续帝序掩盖。"
         case "qing":
             return "努尔哈赤生前为后金大汗；1636年皇太极改国号为清。公历年概括实际统治，摄政与太上皇掌权另在人物和事件中说明。"
         default:
@@ -503,7 +505,7 @@ private struct SuccessionRow: View {
                     .fixedSize(horizontal: false, vertical: true)
 
                 HStack(alignment: .firstTextBaseline, spacing: 12) {
-                    Text("年号 \(eraName)")
+                    Text(eraName == "无年号" ? "未使用年号" : "年号 \(eraName)")
                         .font(.subheadline.weight(.medium))
                         .foregroundStyle(Theme.cinnabar)
                         .accessibilityIdentifier("successionEra_\(item.id)")

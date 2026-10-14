@@ -1503,4 +1503,66 @@ final class MingJiUITests: XCTestCase {
         shot("v48-qin-tomb-sources", tomb)
     }
 
+    @MainActor func testV49HanCompleteHistoryPaths() throws {
+        let sequence = XCUIApplication()
+        sequence.launchArguments = ["--uitesting", "--ui-dynasty", "han"]
+        sequence.launch()
+        XCTAssertTrue(sequence.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        XCTAssertEqual(sequence.tabBars.buttons.allElementsBoundByIndex.map(\.label), ["朝代", "帝序", "家族", "遗珍"])
+        sequence.tabBars.buttons["帝序"].tap()
+        XCTAssertTrue(sequence.descendants(matching: .any)["successionPage_han"].waitForExistence(timeout: 5))
+        XCTAssertTrue(sequence.staticTexts["这里列出实际即位的西汉与东汉皇帝。西汉前、后少帝保留称号并标明名讳争议；孺子婴未称帝，王莽所建新朝及新莽末年诸政权另见人物与事件。"].exists)
+        XCTAssertTrue(sequence.buttons["succession_han_00"].exists)
+        let formerShao = sequence.buttons["succession_han_02"]
+        reachReadingLink(formerShao, in: sequence); XCTAssertTrue(formerShao.exists)
+        let latterShao = sequence.buttons["succession_han_03"]
+        reachReadingLink(latterShao, in: sequence); XCTAssertTrue(latterShao.exists)
+        XCTAssertFalse(sequence.staticTexts["王莽"].exists)
+        shot("v49-han-sequence-boundary", sequence)
+        sequence.terminate()
+
+        let person = XCUIApplication()
+        person.launchArguments = ["--uitesting", "--ui-dynasty", "han"]
+        person.launch()
+        XCTAssertTrue(person.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        person.tabBars.buttons["帝序"].tap()
+        person.buttons["succession_han_00"].tap()
+        person.buttons["personHero"].tap()
+        for category in ["政治", "军事", "文化", "经济", "社会"] {
+            XCTAssertTrue(person.buttons["eventCategory_" + category].exists, category)
+        }
+        openArticle(in: person)
+        person.buttons["articleContents"].tap()
+        let chapter = person.buttons["楚汉战争后的国家重建"]
+        reachReadingLink(chapter, in: person); chapter.tap()
+        XCTAssertEqual(person.buttons["articleContents"].value as? String, "楚汉战争后的国家重建")
+        shot("v49-han-gaozu-reader", person)
+        person.terminate()
+
+        let heritage = XCUIApplication()
+        heritage.launchArguments = ["--uitesting", "--ui-dynasty", "han"]
+        heritage.launch()
+        XCTAssertTrue(heritage.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        heritage.tabBars.buttons["遗珍"].tap()
+        heritage.buttons["collectionCategory_texts"].tap()
+        let slips = heritage.buttons["artifact_v49h_juyan_slips"]
+        reachReadingLink(slips, in: heritage); slips.tap()
+        XCTAssertTrue(heritage.staticTexts["观看提示"].waitForExistence(timeout: 5))
+        shot("v49-han-juyan-slips", heritage)
+        heritage.terminate()
+
+        let tomb = XCUIApplication()
+        tomb.launchArguments = ["--uitesting", "--ui-dynasty", "han"]
+        tomb.launch()
+        XCTAssertTrue(tomb.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        tomb.tabBars.buttons["遗珍"].tap()
+        tomb.buttons["collectionCategory_tombs"].tap()
+        let baling = tomb.buttons["tomb_han_wen"]
+        reachReadingLink(baling, in: tomb); baling.tap()
+        let sources = tomb.buttons["资料与出处"]
+        reach(sources, in: tomb, attempts: 12); sources.tap()
+        XCTAssertTrue(tomb.buttons["source_v49h_ncha_baling"].waitForExistence(timeout: 5))
+        shot("v49-han-baling-source", tomb)
+    }
+
 }
