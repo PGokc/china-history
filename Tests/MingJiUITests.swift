@@ -1877,4 +1877,41 @@ final class MingJiUITests: XCTestCase {
         shot("v56-great-liang-regent", xia)
     }
 
+    @MainActor func testV57ShangEvidenceBoundedLearningPath() throws {
+        let sequence = XCUIApplication()
+        sequence.launchArguments = ["--uitesting", "--ui-dynasty", "shang"]
+        sequence.launch()
+        XCTAssertTrue(sequence.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        XCTAssertEqual(sequence.tabBars.buttons.allElementsBoundByIndex.map(\.label), ["朝代", "帝序", "家族", "遗珍"])
+        sequence.tabBars.buttons["帝序"].tap()
+        XCTAssertTrue(sequence.descendants(matching: .any)["successionPage_shang"].waitForExistence(timeout: 5))
+        XCTAssertTrue(sequence.buttons["succession_v57_shang_seq_01"].exists)
+        XCTAssertTrue(sequence.staticTexts.matching(NSPredicate(format: "label CONTAINS %@", "个人在位年待考")).firstMatch.exists)
+        shot("v57-shang-sequence", sequence)
+        sequence.buttons["succession_v57_shang_seq_01"].tap()
+        sequence.buttons["personHero"].tap()
+        for category in ["政治", "军事", "文化", "经济", "社会"] {
+            XCTAssertTrue(sequence.buttons["eventCategory_" + category].exists, category)
+        }
+        openArticle(in: sequence)
+        XCTAssertTrue(sequence.buttons["articleContents"].waitForExistence(timeout: 5))
+        XCTAssertTrue(sequence.staticTexts["史料边界"].exists)
+        shot("v57-shang-tang-reader", sequence)
+        sequence.terminate()
+
+        let heritage = XCUIApplication()
+        heritage.launchArguments = ["--uitesting", "--ui-dynasty", "shang"]
+        heritage.launch()
+        XCTAssertTrue(heritage.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        heritage.tabBars.buttons["遗珍"].tap()
+        heritage.buttons["collectionCategory_texts"].tap()
+        let oracle = heritage.buttons["artifact_v57_obj_oracle"]
+        reachReadingLink(oracle, in: heritage); oracle.tap()
+        XCTAssertTrue(heritage.staticTexts["晚商王室占卜与记事材料群"].waitForExistence(timeout: 5))
+        let sources = heritage.buttons["资料与出处"]
+        reach(sources, in: heritage, attempts: 12); sources.tap()
+        XCTAssertTrue(heritage.buttons["source_v57_oracle"].waitForExistence(timeout: 5))
+        shot("v57-oracle-sources", heritage)
+    }
+
 }

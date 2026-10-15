@@ -20,7 +20,7 @@ qing_emperors={pid for pid in emperors if pid.startswith('q_')}
 assert len(ming_emperors)==16
 assert len(qing_emperors)==(12 if d['version']>=5 else 0)
 legacy_emperors=ming_emperors|qing_emperors
-expected_sequence_count = 283 if d['version']>=37 else 254 if d['version']>=36 else 198 if d['version']>=35 else 142 if d['version']>=34 else 127 if d['version']>=33 else 116 if d['version']>=32 else 111 if d['version']>=31 else 85 if d['version']>=30 else 83 if d['version']>=25 else 29 if d['version']>=5 else 17
+expected_sequence_count = 313 if d['version']>=39 else 283 if d['version']>=37 else 254 if d['version']>=36 else 198 if d['version']>=35 else 142 if d['version']>=34 else 127 if d['version']>=33 else 116 if d['version']>=32 else 111 if d['version']>=31 else 85 if d['version']>=30 else 83 if d['version']>=25 else 29 if d['version']>=5 else 17
 assert len(d['sequence'])==expected_sequence_count and {s['person'] for s in d['sequence']}==emperors
 counts=Counter(s['person'] for s in d['sequence'])
 repeated={'qizhen','t_zhongzong','t_ruizong','y_tugh_temur'} if d['version']>=25 else {'qizhen'}
@@ -116,7 +116,7 @@ if d['version'] >= 4:
  print('V4 PASS: five selected princes have sourced father/order, full biographies and linked events; later portraits have visible qualification labels')
 
 if d['version'] >= 5:
- expected_selectable = ['qin','han','three_kingdoms','jin','northern_southern','sui','tang','five_dynasties','song_liao_xia_jin','yuan','ming','qing'] if d['version']>=36 else ['qin','han','three_kingdoms','jin','northern_southern','sui','tang','song_liao_xia_jin','yuan','ming','qing'] if d['version']>=35 else ['qin','han','three_kingdoms','jin','sui','tang','song_liao_xia_jin','yuan','ming','qing'] if d['version']>=34 else ['qin','han','three_kingdoms','sui','tang','song_liao_xia_jin','yuan','ming','qing'] if d['version']>=33 else ['qin','han','sui','tang','song_liao_xia_jin','yuan','ming','qing'] if d['version']>=32 else ['qin','han','tang','song_liao_xia_jin','yuan','ming','qing'] if d['version']>=31 else ['qin','tang','song_liao_xia_jin','yuan','ming','qing'] if d['version']>=30 else ['tang','song_liao_xia_jin','yuan','ming','qing'] if d['version']>=25 else ['ming','qing']
+ expected_selectable = ['shang','qin','han','three_kingdoms','jin','northern_southern','sui','tang','five_dynasties','song_liao_xia_jin','yuan','ming','qing'] if d['version']>=39 else ['qin','han','three_kingdoms','jin','northern_southern','sui','tang','five_dynasties','song_liao_xia_jin','yuan','ming','qing'] if d['version']>=36 else ['qin','han','three_kingdoms','jin','northern_southern','sui','tang','song_liao_xia_jin','yuan','ming','qing'] if d['version']>=35 else ['qin','han','three_kingdoms','jin','sui','tang','song_liao_xia_jin','yuan','ming','qing'] if d['version']>=34 else ['qin','han','three_kingdoms','sui','tang','song_liao_xia_jin','yuan','ming','qing'] if d['version']>=33 else ['qin','han','sui','tang','song_liao_xia_jin','yuan','ming','qing'] if d['version']>=32 else ['qin','han','tang','song_liao_xia_jin','yuan','ming','qing'] if d['version']>=31 else ['qin','tang','song_liao_xia_jin','yuan','ming','qing'] if d['version']>=30 else ['tang','song_liao_xia_jin','yuan','ming','qing'] if d['version']>=25 else ['ming','qing']
  assert [x['id'] for x in d['dynasties'] if x['selectable']]==expected_selectable
  assert len(d['dynasties'])>=15 and all(x['sources'] and set(x['sources'])<=sources.keys() for x in d['dynasties'])
  assert [s['person'] for s in d['sequence'] if s['person'].startswith('q_')]==[
@@ -535,7 +535,7 @@ if d['version'] >= 26:
   placement = event.get('sortYear')
   assert explicit or placement is not None, (event['id'], 'period label needs chronology placement')
   if placement is not None:
-   minimum_year = -230 if d['version'] >= 30 else 600
+   minimum_year = -2000 if d['version'] >= 39 else -230 if d['version'] >= 30 else 600
    assert type(placement) is int and minimum_year <= placement <= 2000, (event['id'], 'invalid chronology placement')
    century = re.match(r'^(\d+)世纪', event['year'])
    if century:
@@ -842,3 +842,33 @@ if d['version'] >= 38:
   assert figures<=set(context['people']),(ruler,'missing newly surfaced court figures')
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成',json.dumps([people[p] for p in added]+events+[articles[p] for p in curated],ensure_ascii=False))
  print('V38 PASS: nineteen key Liao-Xia-Jin figures, two distinct Liang regencies, thirty-five balanced events and twenty-five curated readings verified')
+
+
+if d['version'] >= 39:
+ shang={p['id'] for p in d['people'] if p.get('dynasty')=='shang'}
+ kings={p for p in shang if people[p]['kind']=='皇帝'}
+ assert len(kings)==30 and len(shang-kings)==16,(len(kings),len(shang-kings))
+ seq=[x for x in d['sequence'] if x['person'] in shang]
+ assert len(seq)==30 and {x['person'] for x in seq}==kings
+ assert seq[0]['person']=='sh_tang' and seq[-1]['person']=='sh_dixin'
+ assert all('个人在位年待考' in x['years'] for x in seq)
+ assert people['sh_taiding']['kind']!='皇帝' and '未即位' in people['sh_taiding']['summary']
+ events=[e for e in d['events'] if e['id'].startswith('v57_')]
+ thematic=[e for e in events if re.fullmatch(r'v57_[pmces]\d{2}',e['id'])]
+ assert len(thematic)==50 and Counter(e['category'] for e in thematic)=={'政治':10,'军事':10,'文化':10,'经济':10,'社会':10}
+ assert all(e['sources'] and e.get('peopleRoles') and e.get('impact') for e in events)
+ objects=[o for o in d['objects'] if o['id'].startswith('v57_obj_')]
+ assert len(objects)==14 and all(o['sources'] and o['people'] and 'shang' in o.get('dynasties',[]) for o in objects)
+ assert all(len(re.findall(r'[\u4e00-\u9fff]',o['body']))>=80 for o in objects)
+ assert next(x for x in d['dynasties'] if x['id']=='shang')['selectable'] is True
+ for pid in shang:
+  assert pid in articles,(pid,'missing Shang reading')
+  article=articles[pid]
+  chars=sum(len(re.findall(r'[\u4e00-\u9fff]',x['text'])) for x in article['sections'])
+  assert chars>=700,(pid,'Shang reading depth',chars)
+  assert len(article['sections'])==5 and all(x['sources'] and x.get('events') and len(x.get('people',[]))>=3 for x in article['sections'])
+ contexts={c['person']:c for c in d['reignContexts'] if c['person'] in shang}
+ assert set(contexts)==kings and all(len(c['people'])>=3 and len(c['events'])>=2 for c in contexts.values())
+ assert all('商王' in people[p]['call'] or p=='sh_tang' for p in kings)
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成',json.dumps([people[p] for p in shang]+events+objects+[articles[p] for p in shang],ensure_ascii=False))
+ print('V39 PASS: Shang has thirty bounded kings, sixteen linked figures, five event lenses, fourteen heritage entries and evidence-qualified full readings')

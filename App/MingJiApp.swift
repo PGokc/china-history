@@ -500,6 +500,8 @@ struct SuccessionPage: View {
 
     private var successionNote: String {
         switch dynastyID {
+        case "shang":
+            return "帝序采用商王称谓；列表中的“年代待考”表示现有证据不足以给出个人精确公历，并非内容缺失。盘庚以后可由殷墟甲骨和考古分期提供更多同时代证据，仍不把学术推算写成确定纪年。"
         case "qin":
             return "秦始皇称帝前已为秦王；子婴在前207年即位后使用秦王称号，未列入皇帝序列。公元前年份由数值较大者向较小者推进。"
         case "han":
