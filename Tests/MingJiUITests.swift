@@ -2119,4 +2119,47 @@ final class MingJiUITests: XCTestCase {
         shot("v62-song-six-tombs-source", heritage)
     }
 
+
+    @MainActor func testV63LiaoXiaJinAndYuanBurialEvidence() throws {
+        let frontier = XCUIApplication()
+        frontier.launchArguments = ["--uitesting", "--ui-dynasty", "song_liao_xia_jin"]
+        frontier.launch()
+        XCTAssertTrue(frontier.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        XCTAssertEqual(frontier.tabBars.buttons.allElementsBoundByIndex.map(\.label), ["朝代", "帝序", "家族", "遗珍"])
+        frontier.tabBars.buttons["遗珍"].tap()
+        XCTAssertTrue(frontier.buttons["collectionCategory_tombs"].waitForExistence(timeout: 5))
+        frontier.buttons["collectionCategory_tombs"].tap()
+        let xixia = frontier.buttons["v63_tomb_xixia_no3"]
+        reachReadingLink(xixia, in: frontier); xixia.tap()
+        XCTAssertTrue(frontier.staticTexts["陵寝与历史"].waitForExistence(timeout: 5))
+        XCTAssertTrue(frontier.staticTexts.matching(NSPredicate(format: "label CONTAINS %@", "传统推测")).firstMatch.exists)
+        let sourceToggle = frontier.buttons["资料与出处"]
+        reach(sourceToggle, in: frontier, attempts: 12); sourceToggle.tap()
+        XCTAssertTrue(frontier.buttons["source_v63_xixia_neac"].waitForExistence(timeout: 5))
+        let lastFrontierSource = frontier.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "source_")).allElementsBoundByIndex.last!
+        reachReadingLink(lastFrontierSource, in: frontier); frontier.swipeUp()
+        XCTAssertLessThanOrEqual(lastFrontierSource.frame.maxY, frontier.tabBars.firstMatch.frame.minY)
+        shot("v63-xixia-numbered-tomb-source", frontier)
+        frontier.terminate()
+
+        let yuan = XCUIApplication()
+        yuan.launchArguments = ["--uitesting", "--ui-dynasty", "yuan"]
+        yuan.launch()
+        XCTAssertTrue(yuan.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        yuan.tabBars.buttons["遗珍"].tap()
+        XCTAssertFalse(yuan.buttons["collectionCategory_tombs"].exists)
+        yuan.buttons["collectionCategory_objects"].tap()
+        let secretBurial = yuan.buttons["artifact_v63_obj_yuan_secret"]
+        reachReadingLink(secretBurial, in: yuan); secretBurial.tap()
+        XCTAssertTrue(yuan.staticTexts["没有确定遗址，也是一项历史结论"].waitForExistence(timeout: 5))
+        XCTAssertTrue(yuan.staticTexts.matching(NSPredicate(format: "label CONTAINS %@", "不虚构忽必烈")).firstMatch.exists)
+        let yuanSources = yuan.buttons["资料与出处"]
+        reach(yuanSources, in: yuan, attempts: 12); yuanSources.tap()
+        XCTAssertTrue(yuan.buttons["source_v63_yuan_research"].waitForExistence(timeout: 5))
+        let lastYuanSource = yuan.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "source_")).allElementsBoundByIndex.last!
+        reachReadingLink(lastYuanSource, in: yuan); yuan.swipeUp()
+        XCTAssertLessThanOrEqual(lastYuanSource.frame.maxY, yuan.tabBars.firstMatch.frame.minY)
+        shot("v63-yuan-secret-burial-source", yuan)
+    }
+
 }

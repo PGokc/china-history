@@ -1016,3 +1016,24 @@ if d['version'] >= 44:
  assert '各陵绝对位置仍存在推测' in sources['v62_shaoxing_six']['note']
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成',corpus)
  print('V44 PASS: fourteen evidence-bounded Song imperial tombs, ten mausoleum-system topics and twenty balanced events distinguish Gongyi imperial tombs from Shaoxing temporary mausoleums')
+
+if d['version'] >= 45:
+ v63_sources={s['id']:s for s in d['sources'] if s['id'].startswith('v63_')}
+ assert len(v63_sources)==11 and all(s['url'].startswith('https://') and len(s['note'])>=25 for s in v63_sources.values())
+ tombs=[t for t in d['tombs'] if t['id'].startswith('v63_tomb_')]
+ assert len(tombs)==11 and len({t['person'] for t in tombs})==11
+ assert Counter('liao' if t['person'].startswith('s_liao_') else 'xia' if t['person'].startswith('s_xia_') else 'jin' for t in tombs)=={'liao':9,'xia':1,'jin':1}
+ assert all(t['sources'] and t['note'] and len(re.findall(r'[\u4e00-\u9fff]',t['body']+t['note']))>=90 for t in tombs)
+ assert all(any(term in t['body']+t['note']+t['status'] for term in ['不能','不应','不表示','不提供','不展示','尚不','尚缺','仍须','仍需','有待','推测','并非']) for t in tombs)
+ assert next(t for t in tombs if t['id']=='v63_tomb_jin_ruiling')['title']=='睿陵'
+ assert '传统推测' in next(t for t in tombs if t['id']=='v63_tomb_xixia_no3')['title']
+ objects=[o for o in d['objects'] if o['id'].startswith('v63_obj_')]
+ assert len(objects)==15 and all(o['sources'] and o['people'] and o.get('dynasties') for o in objects)
+ assert all(len(re.findall(r'[\u4e00-\u9fff]',o['body']+o['note']))>=95 for o in objects)
+ assert Counter(x for o in objects for x in o['dynasties'])=={'song_liao_xia_jin':13,'yuan':3}
+ corpus=json.dumps(tombs+objects,ensure_ascii=False)
+ assert all(term in corpus for term in ['九帝五陵','祖州','医巫闾山','九座帝陵','防洪','睿陵','数字编号','秘密归葬','起辇谷'])
+ assert '目前仅太祖睿陵经考古确认' in v63_sources['v63_jinling_boundary']['note']
+ assert '只是研究判断' in v63_sources['v63_yuan_research']['note']
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成',corpus)
+ print('V45 PASS: eleven evidence-graded Liao, Xixia and Jin tomb links plus fifteen burial-system topics preserve numbered sites, confirmed tombs and unresolved Yuan locations')

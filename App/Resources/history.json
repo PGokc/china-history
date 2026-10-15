@@ -1,5 +1,5 @@
 {
-  "version": 44,
+  "version": 45,
   "reviewed": "2026-10-15",
   "people": [
     {
@@ -20253,6 +20253,72 @@
       "title": "浙江省地方志·绍兴县志宋六陵资料",
       "url": "https://dfz.zj.gov.cn/zlyz/ossfs/h5/ZS-K-330603-2013-001-0401/files/basic-html/page26.html",
       "note": "政府方志平台；提供地方文献脉络。具体陵名、盗毁与修葺年代须同考古材料和早期文献互证。"
+    },
+    {
+      "id": "v63_liao_overview",
+      "title": "北京市文物局·草原丝绸之路视角下辽代玉器整理与研究",
+      "url": "https://wwj.beijing.gov.cn/bjww/wwjzzcslm/1737418/1738090/wwgs/326075177/index.html",
+      "note": "北京市文物局研究文章；概述辽代九帝五陵的文献对应，并明确显陵、乾陵具体位置仍需考古辨识。"
+    },
+    {
+      "id": "v63_liao_zuling",
+      "title": "赤峰市文化和旅游局·辽祖陵与守陵石墙",
+      "url": "https://wlj.chifeng.gov.cn/ggfw/lygl/202006/t20200617_1334723.html",
+      "note": "地方文物主管部门资料；用于核对辽祖陵地理环境、山口石墙和辽太祖归葬关系。"
+    },
+    {
+      "id": "v63_liao_yiwulushan",
+      "title": "辽宁省文化和旅游厅·医巫闾山辽陵",
+      "url": "https://whly.ln.gov.cn/whly/wlzt/lnww/zdwwbhdw/D8920AD1B7A94CE995F8ED651A0B7BAA/index.shtml",
+      "note": "辽宁省文物保护单位资料；列出显陵、乾陵及其陵前建筑、陪葬墓群与墓志材料。"
+    },
+    {
+      "id": "v63_liao_exhibit",
+      "title": "辽宁省文化和旅游厅·医巫闾山辽代帝陵珍宝展",
+      "url": "https://whly.ln.gov.cn/whly/mtjj/2026051511002192580/index.shtml",
+      "note": "辽代帝陵考古成果展资料；说明显陵、乾陵的文献归葬对象以及建筑遗址与陪葬墓证据。"
+    },
+    {
+      "id": "v63_xixia_unesco",
+      "title": "联合国教科文组织世界遗产中心·西夏陵",
+      "url": "https://whc.unesco.org/en/list/1736",
+      "note": "世界遗产中心资料；核对九座帝陵、二百七十一座陪葬墓、北端建筑群和三十二处防洪设施。"
+    },
+    {
+      "id": "v63_xixia_ningxia",
+      "title": "宁夏回族自治区文化和旅游厅·西夏陵考古",
+      "url": "https://whhlyt.nx.gov.cn/xxfb/wlyw/202311/t20231113_4347356_zzb.html",
+      "note": "宁夏文物考古资料；三号陵完成地面建筑清理，六号陵据碑文推断墓主，个体对应仍须区分证据等级。"
+    },
+    {
+      "id": "v63_xixia_neac",
+      "title": "国家民委·神秘西夏陵何以成为西夏绝唱",
+      "url": "https://www.neac.gov.cn/seac/c103391/202301/1159980.shtml",
+      "note": "国家民委文化资料；记录九陵传统陵号，并明确三号陵为元昊泰陵的说法属于考古推测。"
+    },
+    {
+      "id": "v63_jinling_bj",
+      "title": "北京市文物局·金陵",
+      "url": "https://wwj.beijing.gov.cn/bjww/362771/362779/dlpqgzdwwbhdw/523439/index.html",
+      "note": "全国重点文物保护单位资料；确认房山金陵范围及太祖睿陵已经发掘。"
+    },
+    {
+      "id": "v63_jinling_fangshan",
+      "title": "北京市房山区人民政府·金陵",
+      "url": "https://www.bjfsh.gov.cn/zjfs/lswh/wwbh/201905/t20190515_39963135_fs.shtml",
+      "note": "房山区文物资料；概述金陵迁葬、帝陵与诸王兆域，但具体陵位仍应以考古确认结果为准。"
+    },
+    {
+      "id": "v63_jinling_boundary",
+      "title": "北京市文物局·金陵主陵区环境整治与展示项目核准意见",
+      "url": "https://wwj.beijing.gov.cn/bjww/362679/362680/482911/743882940/index.html",
+      "note": "2025年文物项目核准意见；明确目前仅太祖睿陵经考古确认，其余陵寝位置应以数字编号展示。"
+    },
+    {
+      "id": "v63_yuan_research",
+      "title": "全国哲学社会科学工作办公室·蒙古族源与元朝帝陵综合研究阶段成果",
+      "url": "https://www.nopss.gov.cn/n1/2017/0621/c351660-29353749.html",
+      "note": "国家社科基金重大项目阶段成果；“起辇谷”可能位于克鲁伦河上游只是研究判断，元朝帝陵仍缺少决定性考古证据。"
     }
   ],
   "relations": [
@@ -59324,6 +59390,295 @@
       "dynasties": [
         "song_liao_xia_jin"
       ]
+    },
+    {
+      "id": "v63_obj_liao_five",
+      "title": "辽代九帝五陵",
+      "subtitle": "同一陵区不等于同一墓室",
+      "symbol": "building.columns",
+      "body": "辽代九位皇帝分属祖陵、怀陵、显陵、乾陵和庆陵五个陵区。陵区可以包含多位帝王、后妃、宗室陪葬墓和陵前建筑，因此“九帝五陵”是一种空间与制度概括，不能据此把五个名称各理解为一座孤立墓穴。",
+      "note": "人物与陵区关系主要由文献、墓志和遗址调查共同建立，具体玄宫位置的证据强弱并不相同。",
+      "people": [
+        "s_liao_taizu",
+        "s_liao_taizong",
+        "s_liao_shengzong",
+        "s_liao_daozong"
+      ],
+      "sources": [
+        "v63_liao_overview",
+        "v63_liao_yiwulushan"
+      ],
+      "dynasties": [
+        "song_liao_xia_jin"
+      ]
+    },
+    {
+      "id": "v63_obj_zuzhou",
+      "title": "祖陵与祖州",
+      "subtitle": "陵寝、奉陵邑与山地边界",
+      "symbol": "building.columns",
+      "body": "辽祖陵位于群山环抱的谷地，山口石墙控制出入，附近祖州承担奉陵、祭祀与人员组织。帝陵不只是地下埋葬设施，也是一套持续运转的空间秩序；早期辽国家把契丹山地传统与都城、州城制度连接在一起。",
+      "note": "石墙、城址和陵寝之间的功能需要依据考古层位判断，不能把现存每一道墙都称作军事防线。",
+      "people": [
+        "s_liao_taizu",
+        "s_liao_shulu"
+      ],
+      "sources": [
+        "v63_liao_zuling"
+      ],
+      "dynasties": [
+        "song_liao_xia_jin"
+      ]
+    },
+    {
+      "id": "v63_obj_huailing",
+      "title": "怀陵的两位皇帝",
+      "subtitle": "共享陵区与分立玄宫",
+      "symbol": "building.columns",
+      "body": "辽太宗、辽穆宗都被归入怀陵，反映同一兆域跨世代使用。阅读时应把陵区、陵号和墓室分成三个层次：共享陵区不表示合葬，同一名称也不保证现代调查已经找到全部地下遗存。",
+      "note": "目前以历史关联和陵区尺度呈现，不制作太宗、穆宗玄宫位置示意图。",
+      "people": [
+        "s_liao_taizong",
+        "s_liao_muzong"
+      ],
+      "sources": [
+        "v63_liao_overview"
+      ],
+      "dynasties": [
+        "song_liao_xia_jin"
+      ]
+    },
+    {
+      "id": "v63_obj_yiwulushan",
+      "title": "医巫闾山显陵与乾陵",
+      "subtitle": "陵前建筑和陪葬墓构成的山地遗址",
+      "symbol": "building.columns",
+      "body": "医巫闾山辽陵包含显陵、乾陵及廊院建筑、道路、瞭望设施和多处贵族墓群。墓志可以确认部分陪葬家族，建筑遗址可以恢复礼仪空间，但两类证据都不能单独解决所有帝陵玄宫的精确定位。",
+      "note": "遗址群边界与文献归葬对象可以并列说明，具体单体对应仍保留考古不确定性。",
+      "people": [
+        "s_liao_shizong",
+        "s_liao_jingzong",
+        "s_liao_xiaochuo",
+        "s_liao_tianzuo"
+      ],
+      "sources": [
+        "v63_liao_yiwulushan",
+        "v63_liao_exhibit"
+      ],
+      "dynasties": [
+        "song_liao_xia_jin"
+      ]
+    },
+    {
+      "id": "v63_obj_qingling",
+      "title": "庆陵三帝组群",
+      "subtitle": "壁画、文字与王朝中后期",
+      "symbol": "building.columns",
+      "body": "圣宗、兴宗、道宗三代帝陵集中于庆陵，形成连续使用的皇室墓地。壁画与契丹、汉文材料保存了仪仗、生活和信仰信息，但图像是墓葬语境中的选择性表达，不能直接当作辽代社会全景。",
+      "note": "陵区曾遭扰动和盗掘；脱离出土位置的材料应降低解释强度。",
+      "people": [
+        "s_liao_shengzong",
+        "s_liao_xingzong",
+        "s_liao_daozong"
+      ],
+      "sources": [
+        "v63_liao_overview"
+      ],
+      "dynasties": [
+        "song_liao_xia_jin"
+      ]
+    },
+    {
+      "id": "v63_obj_xixia_necropolis",
+      "title": "西夏陵九座帝陵",
+      "subtitle": "编号遗址与历史陵号之间",
+      "symbol": "building.columns",
+      "body": "贺兰山东麓西夏陵保存九座帝陵、二百七十一座陪葬墓、北端建筑群和防洪设施。遗址整体可以确认是西夏皇家墓地，但多数编号陵墓尚不能与史书所载裕陵、嘉陵、泰陵等名称逐一可靠对应。",
+      "note": "产品优先使用考古编号；传统陵号只在来源明确时作为推测附注。",
+      "people": [
+        "s_xia_jingzong",
+        "s_xia_yizong",
+        "s_xia_renzong"
+      ],
+      "sources": [
+        "v63_xixia_unesco",
+        "v63_xixia_ningxia",
+        "v63_xixia_neac"
+      ],
+      "dynasties": [
+        "song_liao_xia_jin"
+      ]
+    },
+    {
+      "id": "v63_obj_xixia_no3",
+      "title": "西夏陵3号陵",
+      "subtitle": "最大陵园与元昊归属推测",
+      "symbol": "building.columns",
+      "body": "三号陵占地规模突出，地面建筑清理揭示陵城、门址、献殿和塔式陵台的营造关系。它常被称为元昊泰陵，却没有出土能够最终锁定墓主的文字材料；规模判断与墓主确认是两种不同证据。",
+      "note": "页面保留“传统推测”措辞，不使用肯定式“元昊陵”标题。",
+      "people": [
+        "s_xia_jingzong"
+      ],
+      "sources": [
+        "v63_xixia_ningxia",
+        "v63_xixia_neac"
+      ],
+      "dynasties": [
+        "song_liao_xia_jin"
+      ]
+    },
+    {
+      "id": "v63_obj_xixia_no6",
+      "title": "西夏陵6号陵",
+      "subtitle": "碑文线索与李德明推断",
+      "symbol": "building.columns",
+      "body": "六号陵经过两次考古发掘，结构布局和构筑方式较为清楚，出土碑文使研究者推断墓主可能是李德明。这里的价值正在于证据链：编号遗址、建筑形制、文字残片与历史人物需要逐层连接。",
+      "note": "“推断为李德明”仍是研究结论，不等同于发现完整墓志或无争议身份铭文。",
+      "people": [
+        "s_xia_jingzong"
+      ],
+      "sources": [
+        "v63_xixia_ningxia"
+      ],
+      "dynasties": [
+        "song_liao_xia_jin"
+      ]
+    },
+    {
+      "id": "v63_obj_xixia_water",
+      "title": "西夏陵防洪体系",
+      "subtitle": "帝陵也是山前水土工程",
+      "symbol": "drop.triangle",
+      "body": "西夏陵世界遗产范围内确认三十二处防洪设施。陵园处在贺兰山洪积扇环境，选址、排水和导洪共同维护陵城与陪葬墓群；这些工程说明皇家墓地的长期运行不仅依赖礼制建筑，也依赖对山前水系的持续管理。",
+      "note": "现存沟渠包含不同年代变化，不能把现代治理设施全部归入西夏原始营建。",
+      "people": [
+        "s_xia_jingzong",
+        "s_xia_renzong"
+      ],
+      "sources": [
+        "v63_xixia_unesco"
+      ],
+      "dynasties": [
+        "song_liao_xia_jin"
+      ]
+    },
+    {
+      "id": "v63_obj_jinling",
+      "title": "大房山金陵",
+      "subtitle": "迁陵、帝陵与诸王兆域",
+      "symbol": "building.columns",
+      "body": "海陵王迁都中都后营建大房山金陵，并迁葬太祖、太宗及早期先祖。陵区还包括后妃陵和诸王兆域，形成大尺度皇家墓地。明代破坏和后世改建使地表格局发生显著变化，文献名称不能直接套在现存台地上。",
+      "note": "约六十平方公里是陵区尺度描述，不表示范围内每处遗迹都已完成考古定名。",
+      "people": [
+        "s_jin_hailing",
+        "s_jin_taizu",
+        "s_jin_taizong"
+      ],
+      "sources": [
+        "v63_jinling_bj",
+        "v63_jinling_fangshan"
+      ],
+      "dynasties": [
+        "song_liao_xia_jin"
+      ]
+    },
+    {
+      "id": "v63_obj_ruiling",
+      "title": "太祖睿陵考古",
+      "subtitle": "房山金陵唯一确认到帝王的陵寝",
+      "symbol": "building.columns",
+      "body": "二〇〇一年房山金陵主陵区进行抢救性发掘，太祖睿陵的确认使迁陵文献与考古遗迹相互印证。它同时建立了一条严格边界：睿陵的确认不能自动外推到道陵、裕陵等其他传统名称。",
+      "note": "北京市文物局明确要求未发掘确认陵寝采用数字编号，避免展示先于证据。",
+      "people": [
+        "s_jin_taizu"
+      ],
+      "sources": [
+        "v63_jinling_bj",
+        "v63_jinling_boundary"
+      ],
+      "dynasties": [
+        "song_liao_xia_jin"
+      ]
+    },
+    {
+      "id": "v63_obj_jin_numbering",
+      "title": "金陵数字编号原则",
+      "subtitle": "让展示服从考古证据",
+      "symbol": "number.square",
+      "body": "金陵保护展示方案曾把若干遗迹直接冠以传统陵名，北京市文物局要求修正：除太祖睿陵外，其他位置缺少考古依据，应先用数字编号。这一原则把“史书记有此陵”和“现场已确认此处”明确分开。",
+      "note": "数字编号不是降低历史价值，而是给未来发掘与研究保留修正空间。",
+      "people": [
+        "s_jin_taizu",
+        "s_jin_zhangzong"
+      ],
+      "sources": [
+        "v63_jinling_boundary"
+      ],
+      "dynasties": [
+        "song_liao_xia_jin"
+      ]
+    },
+    {
+      "id": "v63_obj_yuan_secret",
+      "title": "元代帝陵的秘密归葬",
+      "subtitle": "没有确定遗址，也是一项历史结论",
+      "symbol": "map",
+      "body": "蒙元帝王多被记为归葬祖茔，缺少唐宋式可见陵园和能够逐帝确认的地面标识。现阶段没有一处考古遗址可以稳妥制作成元代皇帝陵寝列表，因此产品以制度专题呈现，不虚构忽必烈等人的具体墓址。",
+      "note": "史书中的归葬记载可以确认葬俗框架，无法单独给出今天地图上的准确坐标。",
+      "people": [
+        "y_genghis",
+        "y_kublai",
+        "y_temur"
+      ],
+      "sources": [
+        "v63_yuan_research"
+      ],
+      "dynasties": [
+        "yuan"
+      ]
+    },
+    {
+      "id": "v63_obj_qiniangu",
+      "title": "起辇谷在哪里",
+      "subtitle": "文献地名与考古地点尚未闭合",
+      "symbol": "map",
+      "body": "“起辇谷”长期被用来概括蒙元帝陵所在。重大研究项目综合中外文献后提出克鲁伦河上游可能性，并建议继续排查克鲁伦河下游至呼伦湖一带；这仍是研究路径，不是已经发现元朝帝陵。",
+      "note": "地图页不落单一坐标，也不把现代纪念设施当作成吉思汗或元帝真实墓葬。",
+      "people": [
+        "y_genghis",
+        "y_ogedei",
+        "y_kublai"
+      ],
+      "sources": [
+        "v63_yuan_research"
+      ],
+      "dynasties": [
+        "yuan"
+      ]
+    },
+    {
+      "id": "v63_obj_four_systems",
+      "title": "辽夏金元陵寝证据对照",
+      "subtitle": "可见遗址、传统陵号与未发现墓址",
+      "symbol": "square.grid.2x2",
+      "body": "辽代可用五陵组群连接九帝，但单墓定位强弱不一；西夏陵整体保存完整，多数编号陵墓尚难对应墓主；金陵仅睿陵确认到帝王；元代帝陵没有确定遗址。四种状态必须分别表达，不能为了页面整齐强行补齐。",
+      "note": "“没有可确认墓址”本身就是重要知识，不应用传说、纪念建筑或旅游名称填空。",
+      "people": [
+        "s_liao_taizu",
+        "s_xia_jingzong",
+        "s_jin_taizu",
+        "y_kublai"
+      ],
+      "sources": [
+        "v63_liao_overview",
+        "v63_xixia_unesco",
+        "v63_jinling_boundary",
+        "v63_yuan_research"
+      ],
+      "dynasties": [
+        "song_liao_xia_jin",
+        "yuan"
+      ]
     }
   ],
   "sequence": [
@@ -63144,6 +63499,157 @@
         "v62_shaoxing_six",
         "v62_shaoxing_gazetteer",
         "v43s_ss046"
+      ]
+    },
+    {
+      "id": "v63_tomb_liao_zuling",
+      "person": "s_liao_taizu",
+      "title": "辽祖陵",
+      "area": "内蒙古 · 巴林左旗辽祖陵",
+      "location": "内蒙古赤峰市巴林左旗祖州附近山谷",
+      "status": "辽太祖耶律阿保机陵寝。",
+      "body": "辽祖陵利用封闭山谷营建，山口和缓坡处保存人工石墙，附近祖州承担奉陵与守护职能。陵寝、奉陵邑和山地防御共同构成早期辽帝陵空间，也显示契丹传统与国家礼制逐渐结合的过程。",
+      "note": "可确认陵区与辽太祖的关联，但地表遗迹功能和地下结构仍须依赖持续考古，不能凭旅游展示复原玄宫。",
+      "sources": [
+        "v63_liao_zuling",
+        "v63_liao_overview"
+      ]
+    },
+    {
+      "id": "v63_tomb_liao_huai_taizong",
+      "person": "s_liao_taizong",
+      "title": "怀陵·太宗陵区",
+      "area": "内蒙古 · 巴林右旗辽怀陵",
+      "location": "内蒙古赤峰市巴林右旗岗根苏木一带",
+      "status": "辽太宗耶律德光所在怀陵组群。",
+      "body": "文献把辽太宗与辽穆宗都归入怀陵。它不是两位皇帝共用同一墓室的同义词，而是同一陵区内的帝陵组合；现存遗迹、文献陵号和具体玄宫之间仍需逐项对应。",
+      "note": "页面按皇帝建立学习关联，不表示太宗、穆宗墓室的精确坐标和边界已经完成考古确认。",
+      "sources": [
+        "v63_liao_overview"
+      ]
+    },
+    {
+      "id": "v63_tomb_liao_xianling",
+      "person": "s_liao_shizong",
+      "title": "显陵·世宗陵区",
+      "area": "辽宁 · 医巫闾山辽陵",
+      "location": "辽宁北镇医巫闾山二道沟一带",
+      "status": "辽世宗耶律阮所在显陵组群。",
+      "body": "显陵位于医巫闾山辽陵体系，文献记载东丹王耶律倍与其子辽世宗归葬于此。陵前建筑、道路、瞭望设施和陪葬墓群构成复合遗址，不能把单座地面建筑直接等同于帝王玄宫。",
+      "note": "显陵的整体归属有文献与遗址支持，组群内部各建筑、墓葬的具体对应仍有待考古辨识。",
+      "sources": [
+        "v63_liao_yiwulushan",
+        "v63_liao_exhibit"
+      ]
+    },
+    {
+      "id": "v63_tomb_liao_huai_muzong",
+      "person": "s_liao_muzong",
+      "title": "怀陵·穆宗陵区",
+      "area": "内蒙古 · 巴林右旗辽怀陵",
+      "location": "内蒙古赤峰市巴林右旗岗根苏木一带",
+      "status": "辽穆宗耶律璟所在怀陵组群。",
+      "body": "辽穆宗与太宗同属怀陵陵区。以陵区为单位理解，可以避免把“怀陵”误读为一座单体墓，也能看到同一山地兆域在不同世代继续使用的特点。",
+      "note": "现有页面依据九帝五陵的文献框架建立关联，不提供未经考古确认的穆宗玄宫定位。",
+      "sources": [
+        "v63_liao_overview"
+      ]
+    },
+    {
+      "id": "v63_tomb_liao_qian_jingzong",
+      "person": "s_liao_jingzong",
+      "title": "乾陵·景宗陵区",
+      "area": "辽宁 · 医巫闾山辽陵",
+      "location": "辽宁北镇医巫闾山三道沟一带",
+      "status": "辽景宗耶律贤与睿智皇后萧绰所在乾陵组群。",
+      "body": "乾陵所在区域保存陵前廊院建筑、排水设施、石板道路和贵族陪葬墓群。景宗与萧绰合葬关系来自文献，考古遗址帮助恢复陵区尺度，却不能自动确认每一处遗迹的主人。",
+      "note": "乾陵组群还关联天祚帝；页面所示为历史归葬关系，并非公开地下墓室坐标。",
+      "sources": [
+        "v63_liao_yiwulushan",
+        "v63_liao_exhibit"
+      ]
+    },
+    {
+      "id": "v63_tomb_liao_qing_shengzong",
+      "person": "s_liao_shengzong",
+      "title": "庆陵·圣宗陵区",
+      "area": "内蒙古 · 巴林右旗辽庆陵",
+      "location": "内蒙古赤峰市巴林右旗索博日嘎一带",
+      "status": "辽圣宗耶律隆绪所在庆陵组群。",
+      "body": "庆陵集中安葬辽圣宗、兴宗和道宗，是理解辽代中后期皇权、后族与佛教信仰的重要遗址群。墓室壁画和契丹、汉文材料提供了制度证据，但陵区通称不能替代单墓考古编号。",
+      "note": "采用“圣宗陵区”保持人物入口清楚，不把未充分公开的具体墓室位置写成确定坐标。",
+      "sources": [
+        "v63_liao_overview"
+      ]
+    },
+    {
+      "id": "v63_tomb_liao_qing_xingzong",
+      "person": "s_liao_xingzong",
+      "title": "庆陵·兴宗陵区",
+      "area": "内蒙古 · 巴林右旗辽庆陵",
+      "location": "内蒙古赤峰市巴林右旗索博日嘎一带",
+      "status": "辽兴宗耶律宗真所在庆陵组群。",
+      "body": "兴宗陵与圣宗、道宗陵共同组成庆陵。三代帝陵连续营建，使同一陵区保存了王朝中后期制度、图像和文字材料，也提醒读者区分整组遗址与具体墓葬。",
+      "note": "传统陵号和学术对应可以说明历史关系，地表可见遗迹不应在没有发掘证据时逐一指定墓主。",
+      "sources": [
+        "v63_liao_overview"
+      ]
+    },
+    {
+      "id": "v63_tomb_liao_qing_daozong",
+      "person": "s_liao_daozong",
+      "title": "庆陵·道宗陵区",
+      "area": "内蒙古 · 巴林右旗辽庆陵",
+      "location": "内蒙古赤峰市巴林右旗索博日嘎一带",
+      "status": "辽道宗耶律洪基所在庆陵组群。",
+      "body": "道宗陵是庆陵三帝体系的一部分。其材料常被用于讨论辽代宫廷、佛教与多文字社会，但壁画、墓志和后世调查记录应分别注明出处，不能互相补写缺失细节。",
+      "note": "页面不展示想象性地宫复原，也不把辽代文献中的陵号直接等同于现代测绘边界。",
+      "sources": [
+        "v63_liao_overview"
+      ]
+    },
+    {
+      "id": "v63_tomb_liao_qian_tianzuo",
+      "person": "s_liao_tianzuo",
+      "title": "乾陵·天祚帝归葬",
+      "area": "辽宁 · 医巫闾山辽陵",
+      "location": "辽宁北镇医巫闾山乾陵组群",
+      "status": "文献记载辽天祚帝耶律延禧归葬乾陵。",
+      "body": "辽亡后，天祚帝最终被记为葬入乾陵，使这处景宗、萧绰陵区又承载王朝终结的记忆。该归葬关系主要依靠文献，不能由某处尚未定名的地面遗址反推具体墓室。",
+      "note": "乾陵所在地得到遗址群支持；天祚帝在陵区内的精确葬位尚不作为考古定论展示。",
+      "sources": [
+        "v63_liao_yiwulushan",
+        "v63_liao_exhibit"
+      ]
+    },
+    {
+      "id": "v63_tomb_xixia_no3",
+      "person": "s_xia_jingzong",
+      "title": "西夏陵3号陵（传统推测为泰陵）",
+      "area": "宁夏 · 贺兰山东麓西夏陵",
+      "location": "宁夏银川西夏陵3号陵园",
+      "status": "常被推测为西夏景宗李元昊陵寝。",
+      "body": "三号陵是西夏陵中规模较大、保存较好的帝陵，地面建筑已经考古清理。传统陵号与年代、规模使研究者常把它联系到元昊泰陵，但尚缺少能最终确认墓主的出土文字证据。",
+      "note": "“元昊墓”只作为有依据的传统推测呈现，编号陵墓与历史陵号不能直接画等号。",
+      "sources": [
+        "v63_xixia_ningxia",
+        "v63_xixia_neac",
+        "v63_xixia_unesco"
+      ]
+    },
+    {
+      "id": "v63_tomb_jin_ruiling",
+      "person": "s_jin_taizu",
+      "title": "睿陵",
+      "area": "北京 · 房山金陵",
+      "location": "北京市房山区大房山金陵主陵区",
+      "status": "金太祖完颜阿骨打陵寝。",
+      "body": "金太祖最初葬于上京地区，海陵王营建大房山陵区后迁葬，仍号睿陵。二〇〇一年主陵区抢救性发掘使睿陵成为目前房山金陵中唯一经考古确认到具体帝王的陵寝。",
+      "note": "金陵其他传统陵名和位置多依赖文献或推测；本页的“确认”只适用于太祖睿陵。",
+      "sources": [
+        "v63_jinling_bj",
+        "v63_jinling_fangshan",
+        "v63_jinling_boundary"
       ]
     }
   ],
