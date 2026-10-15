@@ -1914,4 +1914,52 @@ final class MingJiUITests: XCTestCase {
         shot("v57-oracle-sources", heritage)
     }
 
+    @MainActor func testV58ZhouKingsIdeasAndMaterialEvidence() throws {
+        let sequence = XCUIApplication()
+        sequence.launchArguments = ["--uitesting", "--ui-dynasty", "zhou"]
+        sequence.launch()
+        XCTAssertTrue(sequence.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        XCTAssertEqual(sequence.tabBars.buttons.allElementsBoundByIndex.map(\.label), ["朝代", "帝序", "家族", "遗珍"])
+        sequence.tabBars.buttons["帝序"].tap()
+        XCTAssertTrue(sequence.descendants(matching: .any)["successionPage_zhou"].waitForExistence(timeout: 5))
+        XCTAssertTrue(sequence.descendants(matching: .any)["successionGroup_西周"].exists)
+        XCTAssertTrue(sequence.buttons["succession_v58_zhou_seq_w_01"].exists)
+        XCTAssertTrue(sequence.staticTexts.matching(NSPredicate(format: "label CONTAINS %@", "断代方案")).firstMatch.exists)
+        let eastern = sequence.descendants(matching: .any)["successionGroup_东周"]
+        reach(eastern, in: sequence, attempts: 18)
+        XCTAssertTrue(eastern.exists)
+        shot("v58-zhou-two-period-sequence", sequence)
+        sequence.terminate()
+
+        let person = XCUIApplication()
+        person.launchArguments = ["--uitesting", "--ui-dynasty", "zhou"]
+        person.launch()
+        XCTAssertTrue(person.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        person.tabBars.buttons["帝序"].tap()
+        person.buttons["succession_v58_zhou_seq_w_01"].tap()
+        person.buttons["personHero"].tap()
+        for category in ["政治", "军事", "文化", "经济", "社会"] {
+            XCTAssertTrue(person.buttons["eventCategory_" + category].exists, category)
+        }
+        openArticle(in: person)
+        XCTAssertTrue(person.buttons["articleContents"].waitForExistence(timeout: 5))
+        XCTAssertTrue(person.staticTexts["史料边界"].exists)
+        shot("v58-zhou-wuwang-reader", person)
+        person.terminate()
+
+        let heritage = XCUIApplication()
+        heritage.launchArguments = ["--uitesting", "--ui-dynasty", "zhou"]
+        heritage.launch()
+        XCTAssertTrue(heritage.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        heritage.tabBars.buttons["遗珍"].tap()
+        heritage.buttons["collectionCategory_objects"].tap()
+        let hezun = heritage.buttons["artifact_v58_obj_hezun"]
+        reachReadingLink(hezun, in: heritage); hezun.tap()
+        XCTAssertTrue(heritage.staticTexts["成王时期“宅兹中国”铭文"].waitForExistence(timeout: 5))
+        let sources = heritage.buttons["资料与出处"]
+        reach(sources, in: heritage, attempts: 12); sources.tap()
+        XCTAssertTrue(heritage.buttons["source_v58_nmc_zzzg"].waitForExistence(timeout: 5))
+        shot("v58-hezun-sources", heritage)
+    }
+
 }

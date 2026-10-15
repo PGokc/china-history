@@ -443,11 +443,13 @@ struct SuccessionPage: View {
     @Environment(\.dynamicTypeSize) private var typeSize
     var items: [Succession] { store.sequence(in: dynastyID) }
     private var groups: [SuccessionGroup] {
-        guard dynastyID == "three_kingdoms" || dynastyID == "jin" || dynastyID == "northern_southern" || dynastyID == "five_dynasties" || dynastyID == "song_liao_xia_jin" else {
+        guard dynastyID == "zhou" || dynastyID == "three_kingdoms" || dynastyID == "jin" || dynastyID == "northern_southern" || dynastyID == "five_dynasties" || dynastyID == "song_liao_xia_jin" else {
             return [SuccessionGroup(id: dynastyID, title: nil, items: items)]
         }
         let order: [String]
-        if dynastyID == "jin" {
+        if dynastyID == "zhou" {
+            order = ["西周", "东周"]
+        } else if dynastyID == "jin" {
             order = ["西晋", "东晋"]
         } else if dynastyID == "northern_southern" {
             order = ["南朝宋", "南齐", "梁", "陈", "北魏", "东魏", "西魏", "北齐", "北周"]
@@ -502,6 +504,8 @@ struct SuccessionPage: View {
         switch dynastyID {
         case "shang":
             return "帝序采用商王称谓；列表中的“年代待考”表示现有证据不足以给出个人精确公历，并非内容缺失。盘庚以后可由殷墟甲骨和考古分期提供更多同时代证据，仍不把学术推算写成确定纪年。"
+        case "zhou":
+            return "周代君主称王，当时没有后世皇帝、庙号和年号制度。西周前期王年依据断代研究重建；共和行政另列为政治事件，不虚构为周王。东周帝序表示王室名位，不代表周王持续控制列国。"
         case "qin":
             return "秦始皇称帝前已为秦王；子婴在前207年即位后使用秦王称号，未列入皇帝序列。公元前年份由数值较大者向较小者推进。"
         case "han":
@@ -558,7 +562,7 @@ private struct SuccessionRow: View {
                 if !eraName.isEmpty || !person.temple.isEmpty {
                     HStack(alignment: .firstTextBaseline, spacing: 12) {
                         if !eraName.isEmpty {
-                            Text(eraName == "无年号" ? "未使用年号" : "年号 \(eraName)")
+                            Text(["西周", "东周"].contains(item.polity) ? eraName : (eraName == "无年号" ? "未使用年号" : "年号 \(eraName)"))
                                 .font(.subheadline.weight(.medium))
                                 .foregroundStyle(Theme.cinnabar)
                                 .accessibilityIdentifier("successionEra_\(item.id)")
