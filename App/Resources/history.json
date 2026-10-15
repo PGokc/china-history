@@ -1,5 +1,5 @@
 {
-  "version": 45,
+  "version": 46,
   "reviewed": "2026-10-15",
   "people": [
     {
@@ -20319,6 +20319,102 @@
       "title": "全国哲学社会科学工作办公室·蒙古族源与元朝帝陵综合研究阶段成果",
       "url": "https://www.nopss.gov.cn/n1/2017/0621/c351660-29353749.html",
       "note": "国家社科基金重大项目阶段成果；“起辇谷”可能位于克鲁伦河上游只是研究判断，元朝帝陵仍缺少决定性考古证据。"
+    },
+    {
+      "id": "v64_forbidden",
+      "title": "联合国教科文组织世界遗产中心·明清故宫",
+      "url": "https://whc.unesco.org/en/list/439/",
+      "note": "世界遗产资料；核对北京紫禁城的营建、明清使用历史，以及沈阳故宫的八旗布局和多文化建筑特征。"
+    },
+    {
+      "id": "v64_forbidden_dpm",
+      "title": "故宫博物院·紫禁城建成六百年",
+      "url": "https://www.dpm.org.cn/subject_600/index.html",
+      "note": "故宫博物院专题；核对永乐营建、清代太和殿重建、坤宁宫改造与养心殿功能变化。"
+    },
+    {
+      "id": "v64_tiantan",
+      "title": "联合国教科文组织世界遗产中心·天坛",
+      "url": "https://whc.unesco.org/en/list/881",
+      "note": "世界遗产资料；核对永乐创建、嘉靖分祀天地、清代重修改建与现存祭祀建筑格局。"
+    },
+    {
+      "id": "v64_citywalls",
+      "title": "国家文物局申报资料·明清城墙",
+      "url": "https://whc.unesco.org/en/tentativelists/5324",
+      "note": "世界遗产预备名单资料，不代表已经列入名录；用于核对南京城墙长度、城砖铭文和明代都城防御价值。"
+    },
+    {
+      "id": "v64_greatwall",
+      "title": "联合国教科文组织世界遗产中心·长城",
+      "url": "https://whc.unesco.org/en/list/438",
+      "note": "世界遗产资料；长城跨越多个时代，现存著名砖石段多属明代，不能统称为秦始皇所建。"
+    },
+    {
+      "id": "v64_wudang",
+      "title": "联合国教科文组织世界遗产中心·武当山古建筑群",
+      "url": "https://whc.unesco.org/en/list/705",
+      "note": "世界遗产资料；核对永乐时期大规模营建、嘉靖时期建筑和现存建筑遗址数量。"
+    },
+    {
+      "id": "v64_mingkiln",
+      "title": "故宫博物院·明代洪武永乐御窑瓷器",
+      "url": "https://www.dpm.org.cn/journal_detail/248499.html",
+      "note": "故宫博物院研究与展览资料；考古出土瓷片和传世品对比用于恢复景德镇明代官窑生产。"
+    },
+    {
+      "id": "v64_yongxuan",
+      "title": "故宫博物院·明永乐宣德景德镇御窑瓷器概述",
+      "url": "https://www.dpm.org.cn/study_detail/100149.html",
+      "note": "故宫博物院陶瓷研究；说明永宣御窑胎釉、纹样、器形与外销交流特征。"
+    },
+    {
+      "id": "v64_xuande",
+      "title": "故宫博物院·明永乐宣德文物特展",
+      "url": "https://www.dpm.org.cn/show/226158.html",
+      "note": "故宫博物院展览资料；涵盖瓷器、漆器、造像、金玉、珐琅和宣德炉，个别传世器真伪仍需逐件判断。"
+    },
+    {
+      "id": "v64_yuanmingyuan",
+      "title": "北京市文物局·公众考古圆明园",
+      "url": "https://wwj.beijing.gov.cn/bjww/362679/362680/482911/597860/index.html",
+      "note": "北京市文物局考古资料；遗址调查用于恢复山形水系和建筑布局，样式雷图档不能替代现场考古。"
+    },
+    {
+      "id": "v64_chengde",
+      "title": "联合国教科文组织世界遗产中心·承德避暑山庄及周围寺庙",
+      "url": "https://whc.unesco.org/en/list/703",
+      "note": "世界遗产资料；核对1703至1792年营建、宫苑寺庙格局及其边疆政治功能。"
+    },
+    {
+      "id": "v64_yangshilei",
+      "title": "故宫博物院·清代样式雷建筑图档",
+      "url": "https://www.dpm.org.cn/journal/257905.html",
+      "note": "故宫博物院研究；现存约两万件画样、烫样、说帖和工程记录，国图藏部分入选世界记忆名录。"
+    },
+    {
+      "id": "v64_jinou",
+      "title": "故宫博物院·金瓯永固杯",
+      "url": "https://www.dpm.org.cn/collection/tinware/234538.html",
+      "note": "故宫博物院藏品资料；核对乾隆款金杯的尺寸、金工、宝石镶嵌和宫廷使用属性。"
+    },
+    {
+      "id": "v64_dayu",
+      "title": "故宫博物院·青玉大禹治水图山子",
+      "url": "https://www.dpm.org.cn/collection/jade/228206.html",
+      "note": "故宫博物院藏品资料；核对乾隆时期大型玉山的尺寸、重量、图像来源与御制题刻。"
+    },
+    {
+      "id": "v64_enamel",
+      "title": "故宫博物院·珐琅彩梅花牡丹纹碗",
+      "url": "https://www.dpm.org.cn/collection/ceramic/227499.html",
+      "note": "故宫博物院藏品资料；说明瓷胎画珐琅从康熙晚期创烧，雍正、乾隆时期发展成熟。"
+    },
+    {
+      "id": "v64_battleprints",
+      "title": "故宫博物院·清代宫廷战图研究",
+      "url": "https://img.dpm.org.cn/Uploads/File/2022/09/20/u6329730739b33.pdf",
+      "note": "故宫博物院研究资料；平定准噶尔战事被转化为绘画、铜版组画和功臣像，图像具有宫廷纪功立场。"
     }
   ],
   "relations": [
@@ -59678,6 +59774,309 @@
       "dynasties": [
         "song_liao_xia_jin",
         "yuan"
+      ]
+    },
+    {
+      "id": "v64_obj_forbidden",
+      "title": "北京紫禁城",
+      "subtitle": "明代营建与清代持续改造的权力空间",
+      "symbol": "building.columns",
+      "body": "朱棣于永乐四年下诏营建北京宫殿，永乐十八年紫禁城建成。它以中轴、前朝后寝和院落等级组织国家礼仪；清代继续使用并改建坤宁宫、太和殿、养心殿等空间。今天所见建筑并非全部保持一四二〇年原状。",
+      "note": "应区分明初总体格局、清代重建构件和现代保护工程，不能把现状每一处都标成永乐原物。",
+      "people": [
+        "di",
+        "q_shunzhi",
+        "q_kangxi",
+        "q_yongzheng"
+      ],
+      "sources": [
+        "v64_forbidden",
+        "v64_forbidden_dpm"
+      ],
+      "dynasties": [
+        "ming",
+        "qing"
+      ]
+    },
+    {
+      "id": "v64_obj_tiantan",
+      "title": "北京天坛",
+      "subtitle": "祭天礼制在明清两代的空间变化",
+      "symbol": "building.columns",
+      "body": "天坛前身天地坛与紫禁城同在永乐十八年建成。嘉靖朝实行天地分祀，增建圜丘并重新组织祭祀空间；乾隆、光绪时期又有重修，现存格局由多个时代叠加形成。建筑轴线把天、地、皇权与礼仪秩序转化为空间体验。",
+      "note": "祈年殿等建筑经历灾毁和重建，世界遗产的真实性不等于全部构件从明初未经更换。",
+      "people": [
+        "di",
+        "houcong",
+        "q_qianlong",
+        "q_guangxu"
+      ],
+      "sources": [
+        "v64_tiantan"
+      ],
+      "dynasties": [
+        "ming",
+        "qing"
+      ]
+    },
+    {
+      "id": "v64_obj_nanjingwall",
+      "title": "南京明城墙",
+      "subtitle": "都城防御、城砖铭文与跨地区征造",
+      "symbol": "building.columns",
+      "body": "南京城墙依山川地形形成不规则都城防御体系，城砖铭文记录烧造地区、官员和工匠，留下大规模工程组织的物证。它对后来的砖石城防产生影响，也是理解洪武建都、徭役征调和质量追责的重要遗存。",
+      "note": "该项目处于世界遗产预备名单，不应写成已经正式列入世界遗产名录。",
+      "people": [
+        "yuanzhang",
+        "biao"
+      ],
+      "sources": [
+        "v64_citywalls"
+      ],
+      "dynasties": [
+        "ming"
+      ]
+    },
+    {
+      "id": "v64_obj_mingwall",
+      "title": "明长城防御体系",
+      "subtitle": "边墙、关堡、烽燧和军镇的整体网络",
+      "symbol": "building.columns",
+      "body": "长城是跨时代遗产，现存大量砖石墙体、敌台、关堡和军镇属于明代长期修筑。它不是一条连续且形制相同的墙，而是因地制宜的军事交通与预警网络，也连接屯田、商贸、人口迁移和北部边疆关系。",
+      "note": "“万里长城”不能全部归给秦始皇；具体段落的年代必须以调查、铭文和修缮记录判断。",
+      "people": [
+        "yuanzhang",
+        "di",
+        "qizhen",
+        "houzhao"
+      ],
+      "sources": [
+        "v64_greatwall"
+      ],
+      "dynasties": [
+        "ming"
+      ]
+    },
+    {
+      "id": "v64_obj_wudang",
+      "title": "武当山明代宫观",
+      "subtitle": "国家工程、道教礼仪与山岳景观",
+      "symbol": "building.columns",
+      "body": "永乐朝在武当山展开大规模营建，把宫观、道路和山体节点组成礼仪网络；嘉靖时期仍有重要修建。现存建筑和遗址呈现中央政权、地方工役与道教信仰的结合，也与朱棣塑造政治合法性的时代背景相连。",
+      "note": "今天的建筑群包含元、明、清多期遗存，不应把全部建筑统一标为永乐原建。",
+      "people": [
+        "di",
+        "houcong"
+      ],
+      "sources": [
+        "v64_wudang"
+      ],
+      "dynasties": [
+        "ming"
+      ]
+    },
+    {
+      "id": "v64_obj_mingkiln",
+      "title": "景德镇明代御窑厂",
+      "subtitle": "落选瓷片也能恢复宫廷生产",
+      "symbol": "building.columns",
+      "body": "景德镇御窑遗址出土大量破碎、淘汰和集中掩埋的官窑瓷片，经拼对修复可与故宫传世品相互校验。它让御用瓷不再只是名品欣赏，也能讨论原料、分工、质量筛选、废品处置与朝廷订烧制度。",
+      "note": "出土瓷片的地层和器形可以帮助断代，但不能仅凭纹样相似就确定传世器真伪。",
+      "people": [
+        "yuanzhang",
+        "di",
+        "zhanji",
+        "jianshen"
+      ],
+      "sources": [
+        "v64_mingkiln",
+        "v64_yongxuan"
+      ],
+      "dynasties": [
+        "ming"
+      ]
+    },
+    {
+      "id": "v64_obj_yongxuanblue",
+      "title": "永宣青花瓷",
+      "subtitle": "宫廷审美与跨海原料、器形交流",
+      "symbol": "circle.hexagongrid",
+      "body": "永乐、宣德御窑青花以胎釉、疏朗纹样和多样器形著称，部分器形和装饰反映西亚交流背景。考古出土残片与清宫传世品对比，使断代从款识判断扩展到地层、工艺和器物组合。",
+      "note": "“苏麻离青”等原料名称和产地仍有讨论，不把单一呈色特征当作真伪判据。",
+      "people": [
+        "di",
+        "zhanji"
+      ],
+      "sources": [
+        "v64_yongxuan",
+        "v64_mingkiln"
+      ],
+      "dynasties": [
+        "ming"
+      ]
+    },
+    {
+      "id": "v64_obj_xuandebronze",
+      "title": "宣德炉与传世铜炉",
+      "subtitle": "宫廷铸造传统中的真伪边界",
+      "symbol": "seal",
+      "body": "宣德年间宫廷铜炉在后世收藏史上影响巨大，“宣德炉”也逐渐成为一类器物和审美范式。大量后仿、寄托款与再铸作品使单件鉴定复杂，研究需要结合合金、铸造、款识、流传和可靠考古材料。",
+      "note": "故宫展览设置宣德炉门类，不表示市场或旧藏中所有“宣德年制”铜炉都是真正宣德原铸。",
+      "people": [
+        "zhanji"
+      ],
+      "sources": [
+        "v64_xuande"
+      ],
+      "dynasties": [
+        "ming"
+      ]
+    },
+    {
+      "id": "v64_obj_shenyangpalace",
+      "title": "沈阳故宫",
+      "subtitle": "八旗秩序与入关前的宫廷空间",
+      "symbol": "building.columns",
+      "body": "沈阳故宫始建于努尔哈赤、皇太极时期，大政殿与十王亭呈现八旗议政和军事组织，内廷建筑又保留满族居住与祭祀特点。入关后它成为陪都宫殿，并在乾隆时期继续扩建收藏空间。",
+      "note": "沈阳故宫不同区域年代和功能各异，不能只按北京紫禁城的前朝后寝模式解释。",
+      "people": [
+        "q_nurhaci",
+        "q_hongtaiji",
+        "q_qianlong"
+      ],
+      "sources": [
+        "v64_forbidden"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v64_obj_yuanmingyuan",
+      "title": "圆明园遗址",
+      "subtitle": "图档、考古与焚毁后的多重历史",
+      "symbol": "building.columns",
+      "body": "圆明园经康熙、雍正、乾隆等朝持续营建，既有宫廷政务与居住空间，也汇集多种园林、宗教和西洋楼景观。焚毁、拆取和长期扰动改变了遗址，考古调查正在恢复山形水系、道路和建筑基址。",
+      "note": "样式雷图、四十景图和老照片都只能提供部分时段信息，数字复原必须与现场考古分层对应。",
+      "people": [
+        "q_kangxi",
+        "q_yongzheng",
+        "q_qianlong",
+        "q_xianfeng"
+      ],
+      "sources": [
+        "v64_yuanmingyuan"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v64_obj_chengde",
+      "title": "避暑山庄与周围寺庙",
+      "subtitle": "夏季政务、边疆交往与多样建筑传统",
+      "symbol": "building.columns",
+      "body": "避暑山庄从康熙四十二年至乾隆五十七年持续营建，宫殿、园林、草原山地与周围寺庙形成复合空间。皇帝在此处理政务、接见边疆首领和使节，建筑布局因而具有政治、礼仪和景观三重功能。",
+      "note": "“外八庙”是历史通称，并不等于周围恰好只有八座寺庙，也不表示建筑形制完全相同。",
+      "people": [
+        "q_kangxi",
+        "q_qianlong",
+        "q_jiaqing"
+      ],
+      "sources": [
+        "v64_chengde"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v64_obj_yangshilei",
+      "title": "样式雷建筑图档",
+      "subtitle": "从地盘样、立样到烫样的工程知识",
+      "symbol": "building.columns",
+      "body": "雷氏家族长期供职清代样式房，传世图档包括平面地盘样、立面与结构图、烫样、说帖和随工记录，涉及宫苑、坛庙、陵寝与府邸。图档把设计、核算、奏准和施工连接起来，是理解清代皇家工程组织的关键材料。",
+      "note": "约两万件为海内外相关机构收藏总量，不能全部写成故宫或国家图书馆单一馆藏。",
+      "people": [
+        "q_kangxi",
+        "q_qianlong",
+        "q_guangxu"
+      ],
+      "sources": [
+        "v64_yangshilei"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v64_obj_jinou",
+      "title": "金瓯永固杯",
+      "subtitle": "元旦开笔仪式中的金工与政治象征",
+      "symbol": "crown",
+      "body": "乾隆款金瓯永固杯以黄金制成，錾刻宝相花，镶嵌珍珠与红蓝宝石，龙耳和象首足强化宫廷气息。它用于清宫元旦开笔相关仪式，器名表达疆土巩固、政权长久的政治愿望。",
+      "note": "故宫藏品资料可以确认器物形制和款识；具体历年使用情况仍需结合宫廷档案，不能由名称自行扩写。",
+      "people": [
+        "q_qianlong"
+      ],
+      "sources": [
+        "v64_jinou"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v64_obj_dayujade",
+      "title": "青玉大禹治水图山子",
+      "subtitle": "大型玉料、宫廷设计与长距离运输",
+      "symbol": "mountain.2",
+      "body": "乾隆时期大禹治水玉山高二百二十四厘米、重约五吨，以巨型玉料雕成治水群像，并刻御制诗和玺文。它连接新疆玉料取得、运输、内府画样和扬州工匠制作，也是盛世叙事与劳动图像的结合。",
+      "note": "器物表现的是宫廷设计的大禹故事，不能当作夏代治水场景的考古复原。",
+      "people": [
+        "q_qianlong"
+      ],
+      "sources": [
+        "v64_dayu"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v64_obj_enamel",
+      "title": "清宫瓷胎画珐琅",
+      "subtitle": "外来材料知识与宫廷作坊试验",
+      "symbol": "paintpalette",
+      "body": "瓷胎画珐琅在康熙晚期由铜胎画珐琅技术移植到瓷胎，雍正、乾隆时期发展出诗、书、画、印结合的宫廷样式。其制作涉及景德镇白瓷、宫廷画样和内廷施彩烧成，体现跨工种协作。",
+      "note": "“珐琅彩”是后世常用名称，清宫档案多称瓷胎画珐琅；不能把所有粉彩瓷都归入这一门类。",
+      "people": [
+        "q_kangxi",
+        "q_yongzheng",
+        "q_qianlong"
+      ],
+      "sources": [
+        "v64_enamel"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v64_obj_battleprints",
+      "title": "乾隆宫廷铜版战图",
+      "subtitle": "纪功图像、欧洲技法与国家叙事",
+      "symbol": "photo",
+      "body": "平定准噶尔等战事后，清宫组织中外画家绘制战场图像，并将部分画稿制成铜版组画，同时制作紫光阁功臣像。铜版技术拓展了宫廷图像传播，但画面服务于胜利纪念和皇权叙事。",
+      "note": "战图能够研究武器、服饰与图像制度，却不是中立的战场摄影，人物与过程仍须和档案互证。",
+      "people": [
+        "q_qianlong"
+      ],
+      "sources": [
+        "v64_battleprints"
+      ],
+      "dynasties": [
+        "qing"
       ]
     }
   ],

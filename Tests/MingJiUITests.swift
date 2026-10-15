@@ -2162,4 +2162,49 @@ final class MingJiUITests: XCTestCase {
         shot("v63-yuan-secret-burial-source", yuan)
     }
 
+
+    @MainActor func testV64MingQingMaterialHeritageCategories() throws {
+        let ming = XCUIApplication()
+        ming.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]
+        ming.launch()
+        XCTAssertTrue(ming.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        XCTAssertEqual(ming.tabBars.buttons.allElementsBoundByIndex.map(\.label), ["朝代", "帝序", "家族", "遗珍"])
+        ming.tabBars.buttons["遗珍"].tap()
+        XCTAssertTrue(ming.buttons["collectionCategory_objects"].waitForExistence(timeout: 5))
+        XCTAssertTrue(ming.buttons["collectionCategory_architecture"].exists)
+        ming.buttons["collectionCategory_architecture"].tap()
+        let forbiddenCity = ming.buttons["artifact_v64_obj_forbidden"]
+        reachReadingLink(forbiddenCity, in: ming); forbiddenCity.tap()
+        XCTAssertTrue(ming.staticTexts["明代营建与清代持续改造的权力空间"].waitForExistence(timeout: 5))
+        XCTAssertTrue(ming.staticTexts.matching(NSPredicate(format: "label CONTAINS %@", "并非全部保持一四二〇年原状")).firstMatch.exists)
+        let mingSources = ming.buttons["资料与出处"]
+        reach(mingSources, in: ming, attempts: 12); mingSources.tap()
+        XCTAssertTrue(ming.buttons["source_v64_forbidden"].waitForExistence(timeout: 5))
+        let lastMingSource = ming.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "source_")).allElementsBoundByIndex.last!
+        reachReadingLink(lastMingSource, in: ming); ming.swipeUp()
+        XCTAssertLessThanOrEqual(lastMingSource.frame.maxY, ming.tabBars.firstMatch.frame.minY)
+        shot("v64-ming-forbidden-city-source", ming)
+        ming.terminate()
+
+        let qing = XCUIApplication()
+        qing.launchArguments = ["--uitesting", "--ui-dynasty", "qing"]
+        qing.launch()
+        XCTAssertTrue(qing.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        qing.tabBars.buttons["遗珍"].tap()
+        XCTAssertTrue(qing.buttons["collectionCategory_objects"].waitForExistence(timeout: 5))
+        XCTAssertTrue(qing.buttons["collectionCategory_architecture"].exists)
+        qing.buttons["collectionCategory_objects"].tap()
+        let enamel = qing.buttons["artifact_v64_obj_enamel"]
+        reachReadingLink(enamel, in: qing); enamel.tap()
+        XCTAssertTrue(qing.staticTexts["外来材料知识与宫廷作坊试验"].waitForExistence(timeout: 5))
+        XCTAssertTrue(qing.staticTexts.matching(NSPredicate(format: "label CONTAINS %@", "不能把所有粉彩瓷")).firstMatch.exists)
+        let qingSources = qing.buttons["资料与出处"]
+        reach(qingSources, in: qing, attempts: 12); qingSources.tap()
+        XCTAssertTrue(qing.buttons["source_v64_enamel"].waitForExistence(timeout: 5))
+        let lastQingSource = qing.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "source_")).allElementsBoundByIndex.last!
+        reachReadingLink(lastQingSource, in: qing); qing.swipeUp()
+        XCTAssertLessThanOrEqual(lastQingSource.frame.maxY, qing.tabBars.firstMatch.frame.minY)
+        shot("v64-qing-enamel-source", qing)
+    }
+
 }

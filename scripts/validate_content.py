@@ -1037,3 +1037,26 @@ if d['version'] >= 45:
  assert '只是研究判断' in v63_sources['v63_yuan_research']['note']
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成',corpus)
  print('V45 PASS: eleven evidence-graded Liao, Xixia and Jin tomb links plus fifteen burial-system topics preserve numbered sites, confirmed tombs and unresolved Yuan locations')
+
+if d['version'] >= 46:
+ v64_sources={s['id']:s for s in d['sources'] if s['id'].startswith('v64_')}
+ assert len(v64_sources)==16 and all(s['url'].startswith('https://') and len(s['note'])>=25 for s in v64_sources.values())
+ objects=[o for o in d['objects'] if o['id'].startswith('v64_obj_')]
+ assert len(objects)==16 and all(o['sources'] and o['people'] and o.get('dynasties') for o in objects)
+ assert all(len(re.findall(r'[\u4e00-\u9fff]',o['body']+o['note']))>=100 for o in objects)
+ assert Counter(x for o in objects for x in o['dynasties'])=={'qing':10,'ming':8}
+ def object_category(o):
+  if o['symbol']=='brain.head.profile': return 'ideas'
+  if o['symbol'] in ['book.closed','music.note','doc.text']: return 'texts'
+  if o['symbol'].startswith('building.columns'): return 'architecture'
+  return 'objects'
+ for dynasty,minimum in [('ming',{'architecture':6,'objects':2}),('qing',{'architecture':6,'objects':4})]:
+  current=Counter(object_category(o) for o in d['objects'] if dynasty in (o.get('dynasties') or []))
+  assert all(current[k]>=v for k,v in minimum.items())
+ corpus=json.dumps(objects,ensure_ascii=False)
+ assert all(term in corpus for term in ['紫禁城','天坛','南京明城墙','明长城','武当山','御窑','永宣青花','宣德炉','沈阳故宫','圆明园','避暑山庄','样式雷','金瓯永固杯','大禹治水','瓷胎画珐琅','铜版战图'])
+ assert '不应写成已经正式列入世界遗产名录' in corpus
+ assert '不能把所有粉彩瓷都归入这一门类' in corpus
+ assert '不是中立的战场摄影' in corpus
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成',corpus)
+ print('V46 PASS: sixteen sourced Ming-Qing architecture and object topics fill both empty collection categories while preserving reconstruction, attribution and image-bias boundaries')
