@@ -945,3 +945,30 @@ if d['version'] >= 41:
  assert any(e['title']=='女性人物的文本可见度' and {'xia_tushan','xia_houmin','xia_nuai','xia_meixi'}<=set(e['people']) for e in thematic)
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成',json.dumps([people[p] for p in xia]+events+objects+[articles[p] for p in xia],ensure_ascii=False))
  print('V41 PASS: Xia has seventeen explicitly received kings, eleven bounded figures, five balanced evidence lenses and sixteen archaeology topics without invented personal reign dates')
+
+if d['version'] >= 42:
+ tang_v60={
+  't_changsun_empress','t_wencheng_princess','t_shangguan_waner','t_yang_guifei',
+  't_gaolishi','t_yangguozhong','t_libi','t_yanzhenqing','t_duyou','t_liuzongyuan',
+  't_baijuyi','t_luyu','t_jianzhen','t_sunsimiao','t_yanliben','t_liugongquan'
+ }
+ assert tang_v60<={p['id'] for p in d['people'] if p.get('dynasty')=='tang'}
+ events=[e for e in d['events'] if e['id'].startswith('v60t_')]
+ assert len(events)==30 and Counter(e['category'] for e in events)=={'政治':6,'军事':6,'文化':6,'经济':6,'社会':6}
+ assert all(e['sources'] and e.get('impact') and e.get('peopleRoles') for e in events)
+ objects=[o for o in d['objects'] if o['id'].startswith('v60_obj_')]
+ assert len(objects)==12 and all(o['sources'] and o.get('dynasties')==['tang'] for o in objects)
+ assert all(len(re.findall(r'[\u4e00-\u9fff]',o['body']))>=150 for o in objects)
+ for pid in tang_v60:
+  assert pid in articles and any(pid in e['people'] for e in events),(pid,'missing article or event')
+  article=articles[pid]
+  chars=sum(len(re.findall(r'[\u4e00-\u9fff]',x['text'])) for x in article['sections'])
+  assert chars>=650,(pid,'Tang figure reading depth',chars)
+  assert len(article['sections'])==5 and all(x['sources'] and x.get('events') and len(x.get('people',[]))>=2 for x in article['sections'])
+  assert any(pid in c['people'] for c in d['reignContexts']),(pid,'missing imperial context')
+ open_texts={'v60_jts51','v60_xts76','v60_jts106','v60_jts184','v60_jts130','v60_jts128','v60_jts147','v60_jts160','v60_jts166','v60_xts196','v60_jts191','v60_jts77','v60_jts165'}
+ assert all('非官方' in sources[s]['note'] for s in open_texts)
+ assert '未找到稳定的考古院原始网页' in next(o for o in objects if o['id']=='v60_obj_shangguan')['note']
+ assert any(o['id']=='v60_obj_bunian' and '学术分歧' in o['note'] for o in objects)
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成',json.dumps([people[p] for p in tang_v60]+events+objects+[articles[p] for p in tang_v60],ensure_ascii=False))
+ print('V42 PASS: sixteen Tang figures, thirty balanced events, twelve evidence-bounded heritage topics and sourced five-part readings deepen court, social and material history')

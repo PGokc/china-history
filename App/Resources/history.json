@@ -1,5 +1,5 @@
 {
-  "version": 41,
+  "version": 42,
   "reviewed": "2026-10-15",
   "people": [
     {
@@ -15141,6 +15141,262 @@
       "kind": "夏亡文学传统人物",
       "note": "传世人物；缺少同时代文字直接验证处已在正文说明。",
       "dynasty": "xia"
+    },
+    {
+      "id": "t_changsun_empress",
+      "name": "长孙皇后",
+      "call": "文德皇后",
+      "temple": "",
+      "era": "贞观内廷与皇后",
+      "reign": "唐太宗时期",
+      "summary": "参与内廷礼法与皇室生活，后世以谨慎进谏和《女则》著称。",
+      "kind": "人物",
+      "note": "正史保存的言行带有后妃典范书写，具体话语不能都视为现场实录。",
+      "parent": null,
+      "sources": [
+        "v60_jts51"
+      ],
+      "dynasty": "tang"
+    },
+    {
+      "id": "t_wencheng_princess",
+      "name": "文成公主",
+      "call": "唐宗室女",
+      "temple": "",
+      "era": "唐蕃婚盟",
+      "reign": "唐太宗、高宗时期",
+      "summary": "641年入吐蕃，与松赞干布婚姻成为唐蕃关系的重要节点。",
+      "kind": "人物",
+      "note": "家世名讳材料有限；后世传说、寺院记忆与七世纪政治事实分层呈现。",
+      "parent": null,
+      "sources": [
+        "v60_dpm_bunian"
+      ],
+      "dynasty": "tang"
+    },
+    {
+      "id": "t_shangguan_waner",
+      "name": "上官婉儿",
+      "call": "上官昭容",
+      "temple": "",
+      "era": "武周与中宗内廷",
+      "reign": "唐高宗至中宗时期",
+      "summary": "长期参与宫廷制诰与文学活动，身处武周到唐中宗的权力转换。",
+      "kind": "人物",
+      "note": "正史批评、墓志叙述和后世才女形象并不完全一致，争议处保留。",
+      "parent": null,
+      "sources": [
+        "v60_xts76"
+      ],
+      "dynasty": "tang"
+    },
+    {
+      "id": "t_yang_guifei",
+      "name": "杨贵妃",
+      "call": "杨玉环",
+      "temple": "",
+      "era": "天宝后宫",
+      "reign": "唐玄宗时期",
+      "summary": "玄宗贵妃，杨氏家族显贵与天宝政治的重要象征，756年死于马嵬。",
+      "kind": "人物",
+      "note": "美貌、爱情和亡国叙事长期层累；政治结构不能归因于一名后宫女性。",
+      "parent": null,
+      "sources": [
+        "v60_jts51"
+      ],
+      "dynasty": "tang"
+    },
+    {
+      "id": "t_gaolishi",
+      "name": "高力士",
+      "call": "内侍监",
+      "temple": "",
+      "era": "开元天宝内廷",
+      "reign": "武周至唐肃宗时期",
+      "summary": "长期侍奉玄宗，在奏章传递、人事沟通和宫廷秩序中拥有影响。",
+      "kind": "人物",
+      "note": "脱靴等名人轶事来源较晚；此处以可核职掌与政治行动为主。",
+      "parent": null,
+      "sources": [
+        "v60_jts184"
+      ],
+      "dynasty": "tang"
+    },
+    {
+      "id": "t_yangguozhong",
+      "name": "杨国忠",
+      "call": "原名杨钊",
+      "temple": "",
+      "era": "天宝宰相与外戚",
+      "reign": "唐玄宗时期",
+      "summary": "兼领多项财政与行政职务，安史战争爆发后随玄宗西行并死于马嵬。",
+      "kind": "人物",
+      "note": "正史强烈道德化评价需与制度、人事和战争决策分别分析。",
+      "parent": null,
+      "sources": [
+        "v60_jts106"
+      ],
+      "dynasty": "tang"
+    },
+    {
+      "id": "t_libi",
+      "name": "李泌",
+      "call": "字长源",
+      "temple": "",
+      "era": "肃代德三朝顾问",
+      "reign": "唐玄宗至德宗时期",
+      "summary": "安史战争中参与军政筹划，数度退居又入朝，晚年拜相。",
+      "kind": "人物",
+      "note": "传记中的神童、隐逸和方术色彩不等于全部可验证履历。",
+      "parent": null,
+      "sources": [
+        "v60_jts130"
+      ],
+      "dynasty": "tang"
+    },
+    {
+      "id": "t_yanzhenqing",
+      "name": "颜真卿",
+      "call": "字清臣",
+      "temple": "",
+      "era": "忠义官员与书家",
+      "reign": "唐玄宗至德宗时期",
+      "summary": "安史战争中守河北，后历任朝官；书法与政治生命都影响深远。",
+      "kind": "人物",
+      "note": "书法史评价、碑刻实物与忠臣传记相互关联，但不能互相替代。",
+      "parent": null,
+      "sources": [
+        "v60_jts128"
+      ],
+      "dynasty": "tang"
+    },
+    {
+      "id": "t_duyou",
+      "name": "杜佑",
+      "call": "字君卿",
+      "temple": "",
+      "era": "财政官员与制度史家",
+      "reign": "唐玄宗至宪宗时期",
+      "summary": "长期参与地方与中央行政，编纂《通典》讨论历代制度沿革。",
+      "kind": "人物",
+      "note": "《通典》是带有作者问题意识的制度史著作，不是中性数据库。",
+      "parent": null,
+      "sources": [
+        "v60_jts147"
+      ],
+      "dynasty": "tang"
+    },
+    {
+      "id": "t_liuzongyuan",
+      "name": "柳宗元",
+      "call": "字子厚",
+      "temple": "",
+      "era": "永贞革新与古文",
+      "reign": "唐德宗至宪宗时期",
+      "summary": "参与永贞时期政治改革，贬谪永州、柳州后形成重要文学与思想作品。",
+      "kind": "人物",
+      "note": "文学中的孤独与山水经验可参照处境，不能逐句当作履历。",
+      "parent": null,
+      "sources": [
+        "v60_jts160"
+      ],
+      "dynasty": "tang"
+    },
+    {
+      "id": "t_baijuyi",
+      "name": "白居易",
+      "call": "字乐天",
+      "temple": "",
+      "era": "新乐府与地方治理",
+      "reign": "唐德宗至武宗时期",
+      "summary": "以诗歌关切政事与民生，历任中央和地方官，晚年居洛阳。",
+      "kind": "人物",
+      "note": "作品中的讽谕对象和作者实际施政需分别核对。",
+      "parent": null,
+      "sources": [
+        "v60_jts166"
+      ],
+      "dynasty": "tang"
+    },
+    {
+      "id": "t_luyu",
+      "name": "陆羽",
+      "call": "字鸿渐",
+      "temple": "",
+      "era": "茶学与写作",
+      "reign": "唐玄宗至德宗时期",
+      "summary": "《茶经》系统讨论茶的制作、器具与饮用，推动茶文化知识化。",
+      "kind": "人物",
+      "note": "生平早年材料少，茶神化传说不作事实；重点放在文本与产业链。",
+      "parent": null,
+      "sources": [
+        "v60_xts196"
+      ],
+      "dynasty": "tang"
+    },
+    {
+      "id": "t_jianzhen",
+      "name": "鉴真",
+      "call": "律宗僧人",
+      "temple": "",
+      "era": "东渡传戒",
+      "reign": "唐玄宗时期",
+      "summary": "多次尝试渡海，753年抵达日本，在奈良传戒并参与寺院文化建设。",
+      "kind": "人物",
+      "note": "航行细节主要见僧传；宗教颂扬与可核时间、地点分开呈现。",
+      "parent": null,
+      "sources": [
+        "v60_jianzhen_nmc"
+      ],
+      "dynasty": "tang"
+    },
+    {
+      "id": "t_sunsimiao",
+      "name": "孙思邈",
+      "call": "后世尊称药王",
+      "temple": "",
+      "era": "隋唐医药",
+      "reign": "隋至唐高宗时期",
+      "summary": "编纂《千金要方》《千金翼方》，重视诊疗经验、医德与养生。",
+      "kind": "人物",
+      "note": "出生年份与寿数说法不一，神仙化故事不作确定事实。",
+      "parent": null,
+      "sources": [
+        "v60_jts191"
+      ],
+      "dynasty": "tang"
+    },
+    {
+      "id": "t_yanliben",
+      "name": "阎立本",
+      "call": "画家、宰相",
+      "temple": "",
+      "era": "贞观宫廷艺术",
+      "reign": "唐太宗、高宗时期",
+      "summary": "兼具官员与宫廷画家身份，参与政治图像和人物画传统。",
+      "kind": "人物",
+      "note": "《步辇图》等传世作品的年代与作者归属存在学术分歧。",
+      "parent": null,
+      "sources": [
+        "v60_jts77"
+      ],
+      "dynasty": "tang"
+    },
+    {
+      "id": "t_liugongquan",
+      "name": "柳公权",
+      "call": "字诚悬",
+      "temple": "",
+      "era": "中晚唐书法与侍书",
+      "reign": "唐宪宗至懿宗时期",
+      "summary": "历仕多朝，以楷书法度和宫廷侍书活动著称。",
+      "kind": "人物",
+      "note": "“心正则笔正”等故事体现后世人格化理解，需与早期记载区分。",
+      "parent": null,
+      "sources": [
+        "v60_jts165"
+      ],
+      "dynasty": "tang"
     }
   ],
   "sources": [
@@ -19739,6 +19995,168 @@
       "title": "《尚书·甘誓》开放电子本",
       "url": "https://ctext.org/shang-shu/speech-at-gan/zh",
       "note": "非官方开放古籍数据库中的传世文本；篇章形成、流传和历史层累需与考古材料分开判断。"
+    },
+    {
+      "id": "v60_jts51",
+      "title": "《旧唐书》卷51·后妃列传开放电子本",
+      "url": "https://zh.wikisource.org/zh-hans/舊唐書/卷51",
+      "note": "非官方古籍电子平台所收五代官修正史文本；用于核对长孙皇后、杨贵妃等传记框架，褒贬、轶闻及因果判断需与同时代文书和考古材料互证。"
+    },
+    {
+      "id": "v60_xts76",
+      "title": "《新唐书》卷76·后妃上开放电子本",
+      "url": "https://zh.wikisource.org/zh-hans/新唐書/卷076",
+      "note": "非官方古籍电子平台所收北宋官修正史文本；用于核对上官婉儿及唐代后妃记载，不把后出评价直接当作当事人的原始记录。"
+    },
+    {
+      "id": "v60_jts106",
+      "title": "《旧唐书》卷106·杨国忠传开放电子本",
+      "url": "https://zh.wikisource.org/zh-hans/舊唐書/卷106",
+      "note": "非官方古籍电子平台所收官修正史数字文本；用于核对任官、财政兼领与马嵬结局，史臣的道德归因另作辨析。"
+    },
+    {
+      "id": "v60_jts184",
+      "title": "《旧唐书》卷184·宦官列传开放电子本",
+      "url": "https://zh.wikisource.org/zh-hans/舊唐書/卷184",
+      "note": "非官方古籍电子平台所收官修正史数字文本；用于核对高力士的内廷职掌与流放结局，传说性细节不作定论。"
+    },
+    {
+      "id": "v60_jts130",
+      "title": "《旧唐书》卷130·李泌传开放电子本",
+      "url": "https://zh.wikisource.org/zh-hans/舊唐書/卷130",
+      "note": "非官方古籍电子平台所收官修正史数字文本；用于核对李泌在肃宗、代宗、德宗时期的任事，隐逸叙事与政治履历分开阅读。"
+    },
+    {
+      "id": "v60_jts128",
+      "title": "《旧唐书》卷128·颜真卿传开放电子本",
+      "url": "https://zh.wikisource.org/zh-hans/舊唐書/卷128",
+      "note": "非官方古籍电子平台所收官修正史数字文本；与碑刻资料合用，区分颜真卿的官员、战时守臣与书法家身份。"
+    },
+    {
+      "id": "v60_jts147",
+      "title": "《旧唐书》卷147·杜佑传开放电子本",
+      "url": "https://zh.wikisource.org/zh-hans/舊唐書/卷147",
+      "note": "非官方古籍电子平台所收官修正史数字文本；用于核对杜佑仕履与《通典》编纂，不以传记赞语代替制度史分析。"
+    },
+    {
+      "id": "v60_jts160",
+      "title": "《旧唐书》卷160·柳宗元传开放电子本",
+      "url": "https://zh.wikisource.org/zh-hans/舊唐書/卷160",
+      "note": "非官方古籍电子平台所收官修正史数字文本；用于核对永贞时期及贬谪经历，文学作品中的第一人称不直接等同履历。"
+    },
+    {
+      "id": "v60_jts166",
+      "title": "《旧唐书》卷166·白居易传开放电子本",
+      "url": "https://zh.wikisource.org/zh-hans/舊唐書/卷166",
+      "note": "非官方古籍电子平台所收官修正史数字文本；用于核对科举、官职与诗文活动，流行故事需另行辨别。"
+    },
+    {
+      "id": "v60_xts196",
+      "title": "《新唐书》卷196·隐逸列传开放电子本",
+      "url": "https://zh.wikisource.org/zh-hans/新唐書/卷196",
+      "note": "非官方古籍电子平台所收官修正史数字文本；用于核对陆羽生平线索。早年细节材料有限，不扩写成确定年表。"
+    },
+    {
+      "id": "v60_jianzhen_nmc",
+      "title": "中国国家博物馆·鉴真东渡",
+      "url": "https://en.chnmuseum.cn/Portals/0/web/exhibition/exhibitions/161120Chines-Epic/",
+      "note": "国家级博物馆专题资料；用于核对东渡时间、传戒与文化交流。六次航行的细节仍主要来自后世僧传。"
+    },
+    {
+      "id": "v60_jts191",
+      "title": "《旧唐书》卷191·孙思邈传开放电子本",
+      "url": "https://zh.wikisource.org/zh-hans/舊唐書/卷191",
+      "note": "非官方古籍电子平台所收官修正史数字文本；用于核对孙思邈著述与医学思想，寿数及神异故事不作确定事实。"
+    },
+    {
+      "id": "v60_jts77",
+      "title": "《旧唐书》卷77·阎立德、阎立本传开放电子本",
+      "url": "https://zh.wikisource.org/zh-hans/舊唐書/卷77",
+      "note": "非官方古籍电子平台所收官修正史数字文本；用于核对阎立本的官职与绘画活动，传世画作真伪另据博物馆研究说明。"
+    },
+    {
+      "id": "v60_jts165",
+      "title": "《旧唐书》卷165·柳公绰、柳公权传开放电子本",
+      "url": "https://zh.wikisource.org/zh-hans/舊唐書/卷165",
+      "note": "非官方古籍电子平台所收官修正史数字文本；用于核对柳公权仕履与书名，后世书法评价与生平事实分开呈现。"
+    },
+    {
+      "id": "v60_tang_overview",
+      "title": "中国国家博物馆·古代中国唐代概览",
+      "url": "https://www.chnmuseum.cn/portals/0/web/zt/gudai/detail6.html",
+      "note": "国家级博物馆通史陈列资料；用于校核唐代文学、书法、医药、印刷与中外交流的总体位置。"
+    },
+    {
+      "id": "v60_nopss_tax",
+      "title": "全国哲学社会科学工作办公室·中晚唐至北宋前期赋役立法",
+      "url": "https://www.nopss.gov.cn/n1/2016/1014/c373410-28779926.html",
+      "note": "国家社科工作机构刊载的学术成果介绍；用于说明两税、色役与禁榷制度的变化，不替代具体法令原文。"
+    },
+    {
+      "id": "v60_nopss_labor",
+      "title": "全国哲学社会科学工作办公室·唐代色役与役制变迁",
+      "url": "https://www.nopss.gov.cn/n1/2022/0802/c441752-32492155.html",
+      "note": "国家社科工作机构刊载的学术成果；用于解释普通民户承担的差役变化及其制度延续。"
+    },
+    {
+      "id": "v60_nlc_dunhuang",
+      "title": "国家图书馆·敦煌遗书",
+      "url": "https://www.nlc.cn/nmcb/gcjpdz/dhys/index.htm",
+      "note": "国家图书馆馆藏专题；用于说明敦煌写本、印本和世俗文书的材料性质。个别文书所见不能直接概括全唐社会。"
+    },
+    {
+      "id": "v60_nmc_print",
+      "title": "中国国家博物馆·最早的雕版印刷品",
+      "url": "https://www.chnmuseum.cn/yj/xscg/xslw/201812/t20181224_33179.shtml",
+      "note": "国家级博物馆研究资料；用于说明唐代雕版印刷与咸通九年《金刚经》，不把存世最早等同于技术最初发明时点。"
+    },
+    {
+      "id": "v60_nmc_camel",
+      "title": "中国国家博物馆·三彩釉陶载乐骆驼",
+      "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202008/t20200824_247230.shtml",
+      "note": "国家级博物馆藏品资料；用于核对出土背景、器物形制与胡汉乐舞表现。器物是墓葬明器，不是街市现场照片。"
+    },
+    {
+      "id": "v60_sxhm_horse",
+      "title": "陕西历史博物馆·鎏金舞马衔杯纹银壶",
+      "url": "https://www.sxhm.com/en/detail/469.html",
+      "note": "省级博物馆藏品资料；用于核对何家村窖藏来源、银壶工艺及舞马图像。有关宫廷表演的复原以文献解释为依据。"
+    },
+    {
+      "id": "v60_sxhm_hejiacun",
+      "title": "陕西历史博物馆·何家村窖藏出土文物展",
+      "url": "https://www.sxhm.com/Hejia_village.html?_isa=1",
+      "note": "省级博物馆常设展资料；用于核对窖藏出土、器类与考古价值。窖藏主人和埋藏原因尚有讨论，不写成定论。"
+    },
+    {
+      "id": "v60_famen",
+      "title": "中国政协文史馆·法门寺地宫考古记",
+      "url": "https://www.cppcc.gov.cn/zxww/2018/09/18/ARTI1537239030967633.shtml",
+      "note": "国家机构文史资料；用于核对地宫发现和咸通十四年纪年。宗教信仰解释与考古事实分层呈现。"
+    },
+    {
+      "id": "v60_dpm_bunian",
+      "title": "故宫博物院·阎立本《步辇图》卷",
+      "url": "https://www.dpm.org.cn/collection/paint/234620.html",
+      "note": "故宫博物院藏品资料；用于介绍画面题材与传阎立本归属。画卷年代和是否原迹存在学术分歧，产品明确说明。"
+    },
+    {
+      "id": "v60_dpm_bunian_debate",
+      "title": "故宫博物院·《步辇图》真迹问题研究",
+      "url": "https://www.dpm.org.cn/journal/247152.html",
+      "note": "故宫博物院学术论文，代表真迹说的一种论证；院内外另有北宋摹本等判断，因此不把作者归属写成无争议结论。"
+    },
+    {
+      "id": "v60_dpm_yan",
+      "title": "故宫博物院·《颜勤礼碑》拓本",
+      "url": "https://www.dpm.org.cn/collection/impres/234175.html",
+      "note": "故宫博物院藏拓本资料；碑石现藏西安碑林。拓本形成于近代，不等于唐代纸本原件。"
+    },
+    {
+      "id": "v60_daming",
+      "title": "西安曲江新区管理委员会·大明宫遗址公园",
+      "url": "https://qjxq.xa.gov.cn/zjqj/gyqj/tsqj/5df21c62fd8508098d284f14.html",
+      "note": "地方政府公布的遗址保护介绍；用于核对宫城中轴和主要遗址。今天看到的是考古遗址与保护展示，不是完整唐代宫殿。"
     }
   ],
   "relations": [
@@ -52833,6 +53251,721 @@
       ],
       "kind": "王序记录",
       "category": "政治"
+    },
+    {
+      "id": "v60t_p01",
+      "year": "626—636年",
+      "sortYear": 626,
+      "title": "长孙皇后与贞观内廷",
+      "body": "长孙皇后既是太宗皇室生活中的核心成员，也被正史塑造成节制外戚、谨慎议政的后妃典范。她的亲属长孙无忌位居中枢，使内廷、亲族与朝廷人事彼此相连。",
+      "impact": "后妃影响政治不只依靠正式官职；同时，史书常用理想化语言规定女性应有的行为，阅读时须辨别事实与范型。",
+      "people": [
+        "t_taizong",
+        "t_changsun_empress",
+        "t_zhangsunwuji"
+      ],
+      "sources": [
+        "v60_jts51",
+        "v43t_jts2"
+      ],
+      "kind": "内廷与亲族",
+      "category": "政治",
+      "peopleRoles": {
+        "t_taizong": "在位皇帝",
+        "t_changsun_empress": "相关人物",
+        "t_zhangsunwuji": "相关人物"
+      }
+    },
+    {
+      "id": "v60t_p02",
+      "year": "664—710年",
+      "sortYear": 664,
+      "title": "上官婉儿参与宫廷制诰",
+      "body": "上官婉儿由掖庭身份进入武则天内廷，长期参与诏命文书；中宗复位后被封为昭容，并在宫廷文学活动中拥有评定与组织作用。她经历的身份变化与武周、唐两套政治秩序密切相关。",
+      "impact": "“代掌文诰”显示宫廷女性可能进入权力运行环节，但不能据后世称号把她等同于制度上的宰相。",
+      "people": [
+        "t_wuzetian",
+        "t_zhongzong",
+        "t_shangguan_waner"
+      ],
+      "sources": [
+        "v60_xts76",
+        "v43t_jts6",
+        "v43t_jts7"
+      ],
+      "kind": "宫廷文书",
+      "category": "政治",
+      "peopleRoles": {
+        "t_wuzetian": "在位皇帝",
+        "t_zhongzong": "相关人物",
+        "t_shangguan_waner": "相关人物"
+      }
+    },
+    {
+      "id": "v60t_p03",
+      "year": "742—756年",
+      "sortYear": 742,
+      "title": "杨国忠兼领财政与宰相职务",
+      "body": "杨国忠因杨氏外戚关系上升，又凭借度支、仓部等财政事务进入中枢，后来取代李林甫成为宰相。他的权力来自皇帝信任、兼官体系和家族网络的共同作用。",
+      "impact": "把天宝危机全部归咎一名宰相会遮蔽边镇军权、财政负担和玄宗决策；个人责任仍须放回制度结构判断。",
+      "people": [
+        "t_xuanzong",
+        "t_yangguozhong",
+        "t_yang_guifei"
+      ],
+      "sources": [
+        "v60_jts106",
+        "v60_jts51",
+        "v43t_jts9"
+      ],
+      "kind": "宰相与外戚",
+      "category": "政治",
+      "peopleRoles": {
+        "t_xuanzong": "在位皇帝",
+        "t_yangguozhong": "相关人物",
+        "t_yang_guifei": "相关人物"
+      }
+    },
+    {
+      "id": "v60t_p04",
+      "year": "713—756年",
+      "sortYear": 713,
+      "title": "高力士与内廷信息通道",
+      "body": "高力士长期接近玄宗，参与传递奏章、宣达旨意和宫廷人事沟通。内侍并非普通私人仆从，其接近皇帝的职位能够影响哪些信息先被看见、哪些请求得到转达。",
+      "impact": "理解高力士应关注制度位置及具体行动，不用李白脱靴等文学轶事替代政治史。",
+      "people": [
+        "t_xuanzong",
+        "t_gaolishi",
+        "t_yang_guifei"
+      ],
+      "sources": [
+        "v60_jts184",
+        "v43t_jts8",
+        "v43t_jts9"
+      ],
+      "kind": "内廷制度",
+      "category": "政治",
+      "peopleRoles": {
+        "t_xuanzong": "在位皇帝",
+        "t_gaolishi": "相关人物",
+        "t_yang_guifei": "相关人物"
+      }
+    },
+    {
+      "id": "v60t_p05",
+      "year": "756—789年",
+      "sortYear": 756,
+      "title": "李泌往返朝野与多朝咨询",
+      "body": "李泌在肃宗灵武政权中参与军政讨论，此后多次离开中枢又被召回，德宗时最终入相。他并非每项建议都被采纳，其影响依赖皇帝信任和具体时局。",
+      "impact": "“山人入相”的叙事很醒目，但真正值得追踪的是非正式顾问如何转化为正式责任，以及建议与执行之间的距离。",
+      "people": [
+        "t_suzong",
+        "t_daizong",
+        "t_dezong",
+        "t_libi"
+      ],
+      "sources": [
+        "v60_jts130",
+        "v43t_jts10",
+        "v43t_jts11",
+        "v43t_jts12"
+      ],
+      "kind": "顾问与宰相",
+      "category": "政治",
+      "peopleRoles": {
+        "t_suzong": "在位皇帝",
+        "t_daizong": "相关人物",
+        "t_dezong": "相关人物",
+        "t_libi": "相关人物"
+      }
+    },
+    {
+      "id": "v60t_p06",
+      "year": "766—812年",
+      "sortYear": 766,
+      "title": "杜佑从地方财政进入中枢",
+      "body": "杜佑长期任地方与财政职务，经历安史战争后的税役重建，晚年官至宰相。他把行政经验带入《通典》的制度比较，也在现实政治中面对军费、盐粮与地方治理问题。",
+      "impact": "制度史写作与实际任官相互启发，却不能把《通典》每条论断直接视为朝廷已经实行的政策。",
+      "people": [
+        "t_daizong",
+        "t_dezong",
+        "t_xianzong",
+        "t_duyou"
+      ],
+      "sources": [
+        "v60_jts147",
+        "v60_nopss_tax"
+      ],
+      "kind": "行政与制度史",
+      "category": "政治",
+      "peopleRoles": {
+        "t_daizong": "在位皇帝",
+        "t_dezong": "相关人物",
+        "t_xianzong": "相关人物",
+        "t_duyou": "相关人物"
+      }
+    },
+    {
+      "id": "v60t_m01",
+      "year": "640—641年",
+      "sortYear": 640,
+      "title": "唐蕃婚盟与文成公主入藏",
+      "body": "吐蕃遣使求婚后，唐廷决定以宗室女文成公主入藏，礼部尚书李道宗护送。婚姻发生在边疆竞争、使节往来和政治承认的背景中，不能只写成一段私人爱情。",
+      "impact": "婚盟能建立沟通渠道，却没有永久消除唐蕃冲突；后世关于陪嫁物品与个人功绩的具体清单需要逐项核实。",
+      "people": [
+        "t_taizong",
+        "t_wencheng_princess",
+        "t_yanliben"
+      ],
+      "sources": [
+        "v60_dpm_bunian",
+        "v60_dpm_bunian_debate",
+        "v43t_jts2"
+      ],
+      "kind": "边疆与外交",
+      "category": "军事",
+      "peopleRoles": {
+        "t_taizong": "在位皇帝",
+        "t_wencheng_princess": "相关人物",
+        "t_yanliben": "相关人物"
+      }
+    },
+    {
+      "id": "v60t_m02",
+      "year": "755—756年",
+      "sortYear": 755,
+      "title": "颜真卿在河北组织抵抗",
+      "body": "安禄山起兵后，平原太守颜真卿联络河北郡县组织防守，其兄颜杲卿也在常山响应。地方官、城防与交通网络成为朝廷正规军之外的重要抵抗力量。",
+      "impact": "河北抵抗没有立即扭转战争，却牵制叛军并留下地方动员经验；忠义叙事不能抹去军民承受的围城与杀戮。",
+      "people": [
+        "t_xuanzong",
+        "t_yanzhenqing",
+        "t_anlushan"
+      ],
+      "sources": [
+        "v60_jts128",
+        "v43t_jts9"
+      ],
+      "kind": "地方抵抗",
+      "category": "军事",
+      "peopleRoles": {
+        "t_xuanzong": "在位皇帝",
+        "t_yanzhenqing": "相关人物",
+        "t_anlushan": "相关人物"
+      }
+    },
+    {
+      "id": "v60t_m03",
+      "year": "756—757年",
+      "sortYear": 756,
+      "title": "李泌参与收复两京筹划",
+      "body": "肃宗在灵武即位后，李泌参与讨论用兵次序、皇室协调和收复两京方案。实际战事由郭子仪、李光弼等将领及回纥援军推进，谋划者与执行者必须区分。",
+      "impact": "传记常把复杂战争浓缩为一条被采纳或未被采纳的妙策；更可靠的理解是比较建议、兵力、补给和战场结果。",
+      "people": [
+        "t_suzong",
+        "t_libi",
+        "t_guoziyi"
+      ],
+      "sources": [
+        "v60_jts130",
+        "v43t_jts10"
+      ],
+      "kind": "战时筹划",
+      "category": "军事",
+      "peopleRoles": {
+        "t_suzong": "在位皇帝",
+        "t_libi": "相关人物",
+        "t_guoziyi": "相关人物"
+      }
+    },
+    {
+      "id": "v60t_m04",
+      "year": "756年",
+      "sortYear": 756,
+      "title": "马嵬兵变中的军令崩解",
+      "body": "玄宗西行途中，禁军在马嵬发生兵变，杨国忠被杀，杨贵妃随后被赐死。高力士处在皇帝、军队与后宫之间，具体执行了危机中的宫廷命令。",
+      "impact": "这一事件是战争压力、护驾军队不满与政治归责共同作用的结果；“红颜祸国”会把结构危机转嫁给一名女性。",
+      "people": [
+        "t_xuanzong",
+        "t_yangguozhong",
+        "t_yang_guifei",
+        "t_gaolishi"
+      ],
+      "sources": [
+        "v43t_jts9",
+        "v60_jts51",
+        "v60_jts106",
+        "v60_jts184"
+      ],
+      "kind": "兵变与宫廷",
+      "category": "军事",
+      "peopleRoles": {
+        "t_xuanzong": "在位皇帝",
+        "t_yangguozhong": "相关人物",
+        "t_yang_guifei": "相关人物",
+        "t_gaolishi": "相关人物"
+      }
+    },
+    {
+      "id": "v60t_m05",
+      "year": "783—784年",
+      "sortYear": 783,
+      "title": "泾原兵变与奉天防守",
+      "body": "泾原军经过长安时发生兵变，德宗出奔奉天。朝廷在围困中组织防守、发布罪己与赦令，再借各路军队恢复长安；李泌后来参与重建阶段的中枢讨论。",
+      "impact": "兵变反映军饷、调度和中央信用问题。把平乱只归结为皇帝悔悟或单一将领勤王，会遗漏士兵利益与财政条件。",
+      "people": [
+        "t_dezong",
+        "t_libi",
+        "t_guoziyi"
+      ],
+      "sources": [
+        "v43t_jts12",
+        "v43t_jts13",
+        "v60_jts130"
+      ],
+      "kind": "兵变与防守",
+      "category": "军事",
+      "peopleRoles": {
+        "t_dezong": "在位皇帝",
+        "t_libi": "相关人物",
+        "t_guoziyi": "相关人物"
+      }
+    },
+    {
+      "id": "v60t_m06",
+      "year": "787年",
+      "sortYear": 787,
+      "title": "平凉会盟失败与边防互信",
+      "body": "唐蕃在平凉会盟时发生冲突，唐方人员被俘杀，边境互信进一步受损。德宗朝随后仍需在战争、结盟和财政承受力之间选择。",
+      "impact": "边疆关系既有和亲、会盟，也有反复战争；一次失败不能证明所有外交无效，却显示仪式缺少可靠安全机制时的风险。",
+      "people": [
+        "t_dezong",
+        "t_libi"
+      ],
+      "sources": [
+        "v43t_jts13",
+        "v60_jts130"
+      ],
+      "kind": "边疆会盟",
+      "category": "军事",
+      "peopleRoles": {
+        "t_dezong": "在位皇帝",
+        "t_libi": "相关人物"
+      }
+    },
+    {
+      "id": "v60t_c01",
+      "year": "779年",
+      "sortYear": 779,
+      "title": "《颜勤礼碑》书成",
+      "body": "颜真卿为曾祖颜勤礼撰写并书丹神道碑，楷书结构宽博、用笔厚重。碑文同时是家族纪念文字与书法作品，今天所见又经过碑石保存、拓印和收藏传播。",
+      "impact": "书法名作不是脱离历史的字形样本；碑文内容、立碑目的、原石与不同年代拓本需要分别辨识。",
+      "people": [
+        "t_daizong",
+        "t_yanzhenqing"
+      ],
+      "sources": [
+        "v60_dpm_yan",
+        "v60_jts128"
+      ],
+      "kind": "碑刻与书法",
+      "category": "文化",
+      "peopleRoles": {
+        "t_daizong": "在位皇帝",
+        "t_yanzhenqing": "相关人物"
+      }
+    },
+    {
+      "id": "v60t_c02",
+      "year": "805—819年",
+      "sortYear": 805,
+      "title": "柳宗元的古文、思想与地方书写",
+      "body": "柳宗元参与永贞时期政务后被贬永州，后来任柳州刺史。寓言、山水记和政论在不同处境中形成，既回应个人遭遇，也讨论权力、民生与历史。",
+      "impact": "文学作品可以保存经验和观点，却不能把每个叙述者都当成作者本人；政治改革也不能只以成败给参与者定性。",
+      "people": [
+        "t_shunzong",
+        "t_xianzong",
+        "t_liuzongyuan",
+        "t_hanyu"
+      ],
+      "sources": [
+        "v60_jts160",
+        "v43t_jts160"
+      ],
+      "kind": "古文与思想",
+      "category": "文化",
+      "peopleRoles": {
+        "t_shunzong": "在位皇帝",
+        "t_xianzong": "相关人物",
+        "t_liuzongyuan": "相关人物",
+        "t_hanyu": "相关人物"
+      }
+    },
+    {
+      "id": "v60t_c03",
+      "year": "809—845年",
+      "sortYear": 809,
+      "title": "白居易以诗歌介入公共议题",
+      "body": "白居易把讽谕诗、奏状和地方任官结合，关注赋役、战争、宫廷消费与普通人的生活。他的作品广泛流传，也在晚年呈现出与早期不同的生活选择。",
+      "impact": "“诗歌反映现实”并不意味着诗句就是统计记录；需把文学修辞、作者立场和可核制度背景放在一起。",
+      "people": [
+        "t_xianzong",
+        "t_muzong",
+        "t_baijuyi"
+      ],
+      "sources": [
+        "v60_jts166",
+        "v60_nopss_tax"
+      ],
+      "kind": "诗歌与公共表达",
+      "category": "文化",
+      "peopleRoles": {
+        "t_xianzong": "在位皇帝",
+        "t_muzong": "相关人物",
+        "t_baijuyi": "相关人物"
+      }
+    },
+    {
+      "id": "v60t_c04",
+      "year": "801年",
+      "sortYear": 801,
+      "title": "《通典》完成制度分类",
+      "body": "杜佑用数十年编成《通典》，以食货、选举、职官、礼、兵、刑、州郡、边防等门类贯通历代制度。他关心制度怎样运行和变迁，而不只按帝王年代排列史事。",
+      "impact": "分类本身体现作者判断；《通典》保存大量材料，也可能节录、重组前代文献，引用时仍需核对上下文。",
+      "people": [
+        "t_dezong",
+        "t_duyou"
+      ],
+      "sources": [
+        "v60_jts147",
+        "v60_nopss_tax"
+      ],
+      "kind": "制度史著作",
+      "category": "文化",
+      "peopleRoles": {
+        "t_dezong": "在位皇帝",
+        "t_duyou": "相关人物"
+      }
+    },
+    {
+      "id": "v60t_c05",
+      "year": "8世纪中后期",
+      "sortYear": 760,
+      "title": "《茶经》整理茶事知识",
+      "body": "陆羽在《茶经》中讨论茶的产地、采制、煎饮、器具和相关文献，使分散的生产与消费经验形成可传授的知识体系。文本也显示茶饮已连接山地农业、城市消费和文人交往。",
+      "impact": "《茶经》具有规范性，不代表每个地区都按同一方法饮茶；后世茶圣崇拜也不能反推全部生平。",
+      "people": [
+        "t_daizong",
+        "t_dezong",
+        "t_luyu"
+      ],
+      "sources": [
+        "v60_xts196",
+        "v60_tang_overview"
+      ],
+      "kind": "茶学典籍",
+      "category": "文化",
+      "peopleRoles": {
+        "t_daizong": "在位皇帝",
+        "t_dezong": "相关人物",
+        "t_luyu": "相关人物"
+      }
+    },
+    {
+      "id": "v60t_c06",
+      "year": "742—754年",
+      "sortYear": 742,
+      "title": "鉴真多次渡海与日本传戒",
+      "body": "鉴真应日本僧人邀请尝试东渡，经历多次失败后于753年抵达日本，次年在奈良东大寺传戒。他带去的戒律知识、僧团组织经验与工艺文化在当地继续发展。",
+      "impact": "交流由鉴真、弟子、遣唐使与海路网络共同完成；“一人传播全部唐文化”的说法会夸大个人并忽略接受方。",
+      "people": [
+        "t_xuanzong",
+        "t_jianzhen"
+      ],
+      "sources": [
+        "v60_jianzhen_nmc"
+      ],
+      "kind": "宗教与东亚交流",
+      "category": "文化",
+      "peopleRoles": {
+        "t_xuanzong": "在位皇帝",
+        "t_jianzhen": "相关人物"
+      }
+    },
+    {
+      "id": "v60t_e01",
+      "year": "8世纪",
+      "sortYear": 730,
+      "title": "茶叶生产连接山地与城市",
+      "body": "唐代茶饮扩展，使种植、采摘、蒸焙、运输、器具制作与城市销售形成较长链条。《茶经》记录的技术和产区，帮助观察消费风尚背后的劳动与区域交换。",
+      "impact": "名士饮茶只是消费的一端；理解茶史还应看到茶户、工匠、运输者和市场。",
+      "people": [
+        "t_luyu",
+        "t_daizong",
+        "t_dezong"
+      ],
+      "sources": [
+        "v60_xts196",
+        "v60_nopss_tax"
+      ],
+      "kind": "茶业与市场",
+      "category": "经济",
+      "peopleRoles": {
+        "t_luyu": "在位皇帝",
+        "t_daizong": "相关人物",
+        "t_dezong": "相关人物"
+      }
+    },
+    {
+      "id": "v60t_e02",
+      "year": "793年以后",
+      "sortYear": 793,
+      "title": "茶税进入国家财政",
+      "body": "德宗时期朝廷开始征收茶税，此后茶逐渐成为重要专卖与税收对象。财政危机推动国家寻找户税、地税以外的商品收入，也改变生产者和商人的经营环境。",
+      "impact": "开征年份不等于全国立即执行一致；税额、专卖程度和地方实践在不同时期会变化。",
+      "people": [
+        "t_dezong",
+        "t_luyu"
+      ],
+      "sources": [
+        "v60_nopss_tax",
+        "v43t_jts12",
+        "v43t_jts13"
+      ],
+      "kind": "茶税与禁榷",
+      "category": "经济",
+      "peopleRoles": {
+        "t_dezong": "在位皇帝",
+        "t_luyu": "相关人物"
+      }
+    },
+    {
+      "id": "v60t_e03",
+      "year": "中晚唐",
+      "sortYear": 780,
+      "title": "飞钱与异地结算",
+      "body": "商人和官员可在一地交付钱款、凭凭券到另一地领取，以降低长途携带铜钱的风险。飞钱依托官府机构或商人网络，是贸易扩大和货币运输困难共同催生的结算办法。",
+      "impact": "飞钱具有汇兑功能，但不是现代银行纸币；其适用范围、发行主体与信用条件均受时代限制。",
+      "people": [
+        "t_dezong",
+        "t_duyou"
+      ],
+      "sources": [
+        "v60_nopss_tax",
+        "v60_jts147"
+      ],
+      "kind": "商业与金融",
+      "category": "经济",
+      "peopleRoles": {
+        "t_dezong": "在位皇帝",
+        "t_duyou": "相关人物"
+      }
+    },
+    {
+      "id": "v60t_e04",
+      "year": "8世纪前期",
+      "sortYear": 720,
+      "title": "何家村窖藏中的货币与贵金属",
+      "body": "何家村窖藏包含金银器、钱币、宝石和药材等多类物品，显示长安上层社会财富储藏、跨区域物资和精细工艺的结合。部分器物带有称量、进奉或宫廷使用线索。",
+      "impact": "窖藏形成原因与主人身份仍有争论；器物集中出土不等于它们在同一时间或同一场合使用。",
+      "people": [
+        "t_xuanzong",
+        "t_gaolishi"
+      ],
+      "sources": [
+        "v60_sxhm_hejiacun",
+        "v60_sxhm_horse"
+      ],
+      "kind": "财富与工艺",
+      "category": "经济",
+      "peopleRoles": {
+        "t_xuanzong": "在位皇帝",
+        "t_gaolishi": "相关人物"
+      }
+    },
+    {
+      "id": "v60t_e05",
+      "year": "7—9世纪",
+      "sortYear": 650,
+      "title": "扬州、广州与海路贸易",
+      "body": "唐代海上交通连接东南沿海、东南亚、南亚与西亚，扬州和广州等城市聚集商人、船舶和外来物产。鉴真东渡也依赖成熟但风险很高的航路与港口网络。",
+      "impact": "海上交流带来财富和知识，也伴随风浪、沉船、管理冲突与对外来商人的制度约束。",
+      "people": [
+        "t_jianzhen",
+        "t_xuanzong"
+      ],
+      "sources": [
+        "v60_jianzhen_nmc",
+        "v60_tang_overview"
+      ],
+      "kind": "海上贸易",
+      "category": "经济",
+      "peopleRoles": {
+        "t_jianzhen": "在位皇帝",
+        "t_xuanzong": "相关人物"
+      }
+    },
+    {
+      "id": "v60t_e06",
+      "year": "7—8世纪",
+      "sortYear": 650,
+      "title": "三彩与金银器背后的手工业",
+      "body": "三彩明器、捶揲银器和鎏金工艺需要原料、窑场、模具、金属加工与稳定订单。宫廷、贵族和墓葬消费推动高水平制作，也让外来纹样和本地工艺发生重组。",
+      "impact": "精美器物代表特定消费层级，不能据此判断所有唐人生活富足；工匠姓名往往没有进入正史。",
+      "people": [
+        "t_xuanzong",
+        "t_yanliben"
+      ],
+      "sources": [
+        "v60_nmc_camel",
+        "v60_sxhm_horse",
+        "v60_tang_overview"
+      ],
+      "kind": "手工业",
+      "category": "经济",
+      "peopleRoles": {
+        "t_xuanzong": "在位皇帝",
+        "t_yanliben": "相关人物"
+      }
+    },
+    {
+      "id": "v60t_s01",
+      "year": "7—8世纪",
+      "sortYear": 650,
+      "title": "唐代后妃与女官的史料可见度",
+      "body": "长孙皇后、上官婉儿、杨贵妃和文成公主进入史书的方式不同：有人被写成道德范型，有人因参与制诰被记录，有人被纳入战争归因，也有人在跨区域记忆中不断重塑。",
+      "impact": "史料篇幅不等于实际影响，宫廷女性也不能代表普通女性；墓志、法典和地方文书可补正单一视角。",
+      "people": [
+        "t_changsun_empress",
+        "t_shangguan_waner",
+        "t_yang_guifei",
+        "t_wencheng_princess"
+      ],
+      "sources": [
+        "v60_jts51",
+        "v60_xts76",
+        "v60_nlc_dunhuang"
+      ],
+      "kind": "女性与史料",
+      "category": "社会",
+      "peopleRoles": {
+        "t_changsun_empress": "在位皇帝",
+        "t_shangguan_waner": "相关人物",
+        "t_yang_guifei": "相关人物",
+        "t_wencheng_princess": "相关人物"
+      }
+    },
+    {
+      "id": "v60t_s02",
+      "year": "7世纪",
+      "sortYear": 650,
+      "title": "孙思邈讨论医德与诊疗",
+      "body": "《千金要方》把临床方药、妇儿疾病、急救和养生汇入大型医学著作，并以“大医精诚”等篇讨论医者面对患者时的责任。它反映知识整理，也包含当时的身体观和局限。",
+      "impact": "历史医书具有知识史价值，不能直接替代现代诊疗；方药需要现代医学和药学评估。",
+      "people": [
+        "t_taizong",
+        "t_gaozong",
+        "t_sunsimiao"
+      ],
+      "sources": [
+        "v60_jts191",
+        "v60_tang_overview"
+      ],
+      "kind": "医学与伦理",
+      "category": "社会",
+      "peopleRoles": {
+        "t_taizong": "在位皇帝",
+        "t_gaozong": "相关人物",
+        "t_sunsimiao": "相关人物"
+      }
+    },
+    {
+      "id": "v60t_s03",
+      "year": "8—9世纪",
+      "sortYear": 750,
+      "title": "进士文化与诗文传播",
+      "body": "科举尤其进士科使诗赋、策论和人际荐举相互结合。柳宗元、白居易等人的入仕路径与文名相关，但考试成功仍受教育资源、家庭网络和政治环境影响。",
+      "impact": "科举扩大了进入官僚体系的途径，却没有形成现代意义的普遍平等竞争。",
+      "people": [
+        "t_dezong",
+        "t_liuzongyuan",
+        "t_baijuyi"
+      ],
+      "sources": [
+        "v60_jts160",
+        "v60_jts166"
+      ],
+      "kind": "科举与士人",
+      "category": "社会",
+      "peopleRoles": {
+        "t_dezong": "在位皇帝",
+        "t_liuzongyuan": "相关人物",
+        "t_baijuyi": "相关人物"
+      }
+    },
+    {
+      "id": "v60t_s04",
+      "year": "7—10世纪",
+      "sortYear": 650,
+      "title": "敦煌文书留下普通人的契约与账目",
+      "body": "敦煌遗书除佛经外，还保存官文书、书信、契约、历日和学习材料。它们让家庭财产、借贷、寺院经营、基层行政和书写习惯进入历史观察。",
+      "impact": "敦煌材料来自特定区域和保存环境，不能无条件代表长安或全唐；残卷释读也可能调整。",
+      "people": [
+        "t_xuanzong",
+        "t_dezong"
+      ],
+      "sources": [
+        "v60_nlc_dunhuang"
+      ],
+      "kind": "文书与日常生活",
+      "category": "社会",
+      "peopleRoles": {
+        "t_xuanzong": "在位皇帝",
+        "t_dezong": "相关人物"
+      }
+    },
+    {
+      "id": "v60t_s05",
+      "year": "723年前后",
+      "sortYear": 723,
+      "title": "载乐骆驼与长安百戏",
+      "body": "鲜于庭诲墓出土的三彩载乐骆驼把胡汉乐手、骆驼和表演组合在一件明器上。它连接长安的乐舞想象、丝路人口流动和墓葬消费。",
+      "impact": "陶俑是经过艺术夸张的随葬品，能提示文化接触，却不能证明街市中曾按同样比例真实演出。",
+      "people": [
+        "t_xuanzong",
+        "t_gaolishi"
+      ],
+      "sources": [
+        "v60_nmc_camel"
+      ],
+      "kind": "娱乐与交流",
+      "category": "社会",
+      "peopleRoles": {
+        "t_xuanzong": "在位皇帝",
+        "t_gaolishi": "相关人物"
+      }
+    },
+    {
+      "id": "v60t_s06",
+      "year": "9世纪",
+      "sortYear": 850,
+      "title": "雕版印刷扩大文本复制",
+      "body": "唐代后期已有佛经、历书和实用读物的雕版印刷。咸通九年《金刚经》保留明确纪年，卷首图像和正文显示刻印、刷墨、纸张与装潢的协作。",
+      "impact": "现存最早有纪年的完整印本不等于印刷技术恰在868年发明；纸本文物的保存具有偶然性。",
+      "people": [
+        "t_yizong",
+        "t_liugongquan"
+      ],
+      "sources": [
+        "v60_nmc_print",
+        "v60_nlc_dunhuang"
+      ],
+      "kind": "印刷与传播",
+      "category": "社会",
+      "peopleRoles": {
+        "t_yizong": "在位皇帝",
+        "t_liugongquan": "相关人物"
+      }
     }
   ],
   "objects": [
@@ -56378,6 +57511,231 @@
       ],
       "dynasties": [
         "xia"
+      ]
+    },
+    {
+      "id": "v60_obj_camel",
+      "title": "三彩釉陶载乐骆驼",
+      "subtitle": "墓葬明器中的胡汉乐舞",
+      "symbol": "music.note",
+      "body": "1957年陕西西安唐墓出土的载乐骆驼，以三彩釉陶塑出昂首骆驼和五名乐舞者。人物与骆驼比例经过夸张，乐器、衣着和表演组合却提供了观察盛唐乐舞想象的线索。\n\n器物出自墓葬，服务于随葬与身份表达。它所呈现的“国际乐队”连接丝路交通、长安百戏和工匠造型能力，但不能当作街市演出的直接摄影式记录。\n\n进一步观察还包括釉色流动、人物服装与残存乐器。它们有助于讨论工艺和跨文化表演，却不足以确定每名乐手的族属。",
+      "note": "国家博物馆藏考古出土品；图像含艺术夸张，解读不等于复原一次具体演出。",
+      "people": [
+        "t_xuanzong",
+        "t_gaolishi"
+      ],
+      "sources": [
+        "v60_nmc_camel"
+      ],
+      "dynasties": [
+        "tang"
+      ]
+    },
+    {
+      "id": "v60_obj_horse",
+      "title": "鎏金舞马衔杯纹银壶",
+      "subtitle": "何家村窖藏与宫廷舞马",
+      "symbol": "sparkles",
+      "body": "银壶以捶揲、模压、焊接和鎏金制成皮囊式器形，腹部两面各有衔杯舞马。器形吸收北方游牧皮囊壶特点，舞马图像又与玄宗时期宫廷祝寿表演的文献记载相互参照。\n\n它既是金银工艺精品，也显示唐代工匠怎样重新组合不同文化元素。图像能够说明宫廷审美，却不等于银壶本身一定在某次千秋节宴会上使用。\n\n银壶的皮囊式造型、舞马纹样与金属工艺可分别进入器物交流、宫廷娱乐和手工业史，不能只剩一则玄宗逸闻。",
+      "note": "陕西历史博物馆藏何家村窖藏出土品；具体原主人和使用场景仍不可确定。",
+      "people": [
+        "t_xuanzong",
+        "t_yang_guifei"
+      ],
+      "sources": [
+        "v60_sxhm_horse"
+      ],
+      "dynasties": [
+        "tang"
+      ]
+    },
+    {
+      "id": "v60_obj_hejiacun",
+      "title": "何家村唐代窖藏",
+      "subtitle": "金银、货币与未解的埋藏原因",
+      "symbol": "shippingbox",
+      "body": "1970年西安何家村发现的窖藏包括金银器、钱币、玉石、宝石和药材等众多物品。不同器类跨越时间和地域，能同时进入工艺史、财政史、医药史与中外交流研究。\n\n窖藏为何埋下、属于谁，学界提出过多种解释。产品把出土地点、器物组合与可核铭文列为事实，把主人身份保留为讨论，不用一个传奇故事封闭证据。\n\n钱币年代、器物铭文和容器组合为埋藏时间提供界限；没有铭文支持的主人姓名仍保持开放。",
+      "note": "考古出土和馆藏清单可靠；埋藏者、埋藏动机及部分器物用途存在讨论。",
+      "people": [
+        "t_xuanzong",
+        "t_gaolishi",
+        "t_yangguozhong"
+      ],
+      "sources": [
+        "v60_sxhm_hejiacun",
+        "v60_sxhm_horse"
+      ],
+      "dynasties": [
+        "tang"
+      ]
+    },
+    {
+      "id": "v60_obj_famen",
+      "title": "法门寺唐代地宫",
+      "subtitle": "咸通十四年的供奉与封藏",
+      "symbol": "building.columns",
+      "body": "法门寺塔基地宫在1987年考古清理中发现，地宫结构、石刻文字和成组供养器物保存了晚唐皇家佛教活动的重要现场。咸通十四年纪年把器物、仪式和懿宗时期联系起来。\n\n考古可以说明封藏次序、器物组合与铭文内容；佛指舍利的宗教意义属于信仰传统。两种叙述可以并列，但不能用信仰判断替代物质证据。\n\n地宫物账碑与器物可以相互校验名称、数量和供奉者，是文本和考古材料在同一遗址中相遇的少见案例。",
+      "note": "考古发现与纪年有机构资料支持；宗教圣物身份按信仰传统表述。",
+      "people": [
+        "t_yizong"
+      ],
+      "sources": [
+        "v60_famen"
+      ],
+      "dynasties": [
+        "tang"
+      ]
+    },
+    {
+      "id": "v60_obj_dunhuang",
+      "title": "敦煌唐代写本文书",
+      "subtitle": "经卷之外的契约、书信与官文书",
+      "symbol": "doc.text",
+      "body": "敦煌遗书主体为四至十一世纪写本、印本与拓本，其中大量唐代材料保存佛经、官文书、契约、书信、教材和历日。纸面上的笔迹、改写、印记和残损，也是文本内容之外的历史信息。\n\n这些材料使基层行政、家庭经济与日常书写可见，却来自河西特定区域。用它说明唐代社会时，必须避免把敦煌一地的做法直接扩大为全国常态。\n\n卷子背面、改写和废纸再利用还提示纸张昂贵与基层书写实践，残片价值并不只取决于是否名家手迹。",
+      "note": "国家图书馆馆藏专题提供总体信息；单件文书的年代、缀合和释读应依专业整理。",
+      "people": [
+        "t_xuanzong",
+        "t_dezong"
+      ],
+      "sources": [
+        "v60_nlc_dunhuang"
+      ],
+      "dynasties": [
+        "tang"
+      ]
+    },
+    {
+      "id": "v60_obj_diamond",
+      "title": "咸通九年雕版《金刚经》",
+      "subtitle": "有明确纪年的早期完整印本",
+      "symbol": "text.book.closed",
+      "body": "敦煌发现的《金刚经》卷尾题有咸通九年，即868年，是现存有明确纪年的早期完整雕版印刷品。卷首说法图与正文由多个印页连接，显示刻版、刷印和装潢已经形成成熟流程。\n\n“现存最早”受保存条件影响，不是技术发明日期。九世纪印本与同时代大量手抄本并存，文本传播方式并未在一夜之间被替换。\n\n印刷需要刻工、刷印者、纸墨和施主共同参与，卷尾题记使无名劳动与具体供养行为进入可考历史。",
+      "note": "实物现藏英国图书馆；此处依据国家博物馆研究介绍，不提供无授权图像。",
+      "people": [
+        "t_yizong"
+      ],
+      "sources": [
+        "v60_nmc_print"
+      ],
+      "dynasties": [
+        "tang"
+      ]
+    },
+    {
+      "id": "v60_obj_bunian",
+      "title": "传阎立本《步辇图》",
+      "subtitle": "唐蕃使节图像与作者争议",
+      "symbol": "photo.artframe",
+      "body": "画卷描绘唐太宗接见吐蕃使者禄东赞的场景，长期与文成公主入藏事件及阎立本相联系。人物服饰、仪仗和构图使它成为理解后世如何表现唐蕃关系的重要作品。\n\n关于现存卷是否阎立本原迹、唐画旧本还是北宋摹本，鉴定意见并不一致。产品保留“传阎立本”称谓，并把画面题材与作品年代分开说明。\n\n画中唐太宗形象属于历史画的构图表达；即便接受唐代底本，也不能据此恢复皇帝面貌或会见细节。",
+      "note": "故宫博物院藏品；作者归属和年代存在学术分歧，不能当作太宗真实容貌的无争议证据。",
+      "people": [
+        "t_taizong",
+        "t_wencheng_princess",
+        "t_yanliben"
+      ],
+      "sources": [
+        "v60_dpm_bunian",
+        "v60_dpm_bunian_debate"
+      ],
+      "dynasties": [
+        "tang"
+      ]
+    },
+    {
+      "id": "v60_obj_yanqinli",
+      "title": "颜勤礼碑",
+      "subtitle": "家族纪念、原石与拓本",
+      "symbol": "character.book.closed",
+      "body": "颜真卿在大历十四年为曾祖颜勤礼撰文并书写神道碑。碑文记录家族仕履，书法则体现其晚年楷书宽博厚重的面貌。石碑1922年重新出土，现藏西安碑林。\n\n今天传播的图像多来自不同年代拓本。原石、拓片和数字图像属于不同层次的载体，文字缺损、捶拓时间和收藏经历都会影响观看。\n\n碑文字迹还可与颜真卿其他时期作品比较，观察同一书家的变化，避免用一个固定“颜体”概括全部创作。",
+      "note": "碑石为唐代，故宫页面介绍的是近代拓本；两者不应混称为同一件纸本文物。",
+      "people": [
+        "t_daizong",
+        "t_yanzhenqing"
+      ],
+      "sources": [
+        "v60_dpm_yan"
+      ],
+      "dynasties": [
+        "tang"
+      ]
+    },
+    {
+      "id": "v60_obj_shangguan",
+      "title": "上官婉儿墓志",
+      "subtitle": "墓志与正史之间的另一组证词",
+      "symbol": "rectangle.and.text.magnifyingglass",
+      "body": "2013年考古发现的墓志确认墓主人身份、卒葬时间与封号，为上官婉儿生平提供接近其时代的文字材料。墓葬本身遭到大规模破坏，遗迹和墓志又提出礼葬、毁墓与政治记忆的新问题。\n\n墓志有纪念和礼仪目的，同样不是完全中立的自传。它能够校正正史部分叙述，却不能因为年代更早就自动推翻一切传世材料。\n\n墓志与墓葬形制提供制度和身份线索，正史则保存更长政治叙事；两者互证比选择其一更可靠。",
+      "note": "考古发现已有机构公布；墓葬破坏原因及墓志与正史冲突处仍需学术研究，未找到稳定的考古院原始网页时明确使用公开研究转述。",
+      "people": [
+        "t_shangguan_waner",
+        "t_zhongzong",
+        "t_taiping"
+      ],
+      "sources": [
+        "v60_xts76"
+      ],
+      "dynasties": [
+        "tang"
+      ]
+    },
+    {
+      "id": "v60_obj_daming",
+      "title": "大明宫遗址",
+      "subtitle": "宫城中轴与朝政空间",
+      "symbol": "building.2",
+      "body": "大明宫遗址以丹凤门、含元殿、宣政殿、紫宸殿等构成中轴，宫殿、宫苑、道路和水系遗迹呈现唐代皇城空间组织。高宗以后，多位皇帝在这里处理朝政与举行礼仪。\n\n遗址公园通过台基、遗迹和保护工程展示历史格局。今日地面景观包含现代复原和解释设施，不能把它当成保存完整的唐代宫殿群。\n\n含元殿等台基、宫门与道路关系能说明礼仪动线，建筑尺度和功能仍需结合发掘报告与文献判断。",
+      "note": "政府遗址保护资料用于核对格局；具体建筑复原仍依考古研究，不以效果图代替遗迹。",
+      "people": [
+        "t_gaozong",
+        "t_wuzetian",
+        "t_xuanzong",
+        "t_gaolishi"
+      ],
+      "sources": [
+        "v60_daming"
+      ],
+      "dynasties": [
+        "tang"
+      ]
+    },
+    {
+      "id": "v60_obj_chajing",
+      "title": "《茶经》",
+      "subtitle": "从山地生产到煎饮器具",
+      "symbol": "cup.and.saucer",
+      "body": "《茶经》按茶的源流、工具、制作、器具、煮饮、产区和文献组织知识，使茶不再只是诗文中的雅趣，也成为可以观察农业、手工业、运输与消费的系统文本。\n\n现存版本经过长期传抄刊刻，不能视为陆羽手稿。书中规范体现作者选择，也不代表唐代各地只有一种制茶和饮茶方法。\n\n把文本与茶税、运输和茶具并读，可以同时看到知识规范与现实产业，而不把茶史局限为文人雅事。 产区排序也反映作者所能接触的地域知识边界。",
+      "note": "陆羽生平主要依赖后出传记；作品版本史和后世茶圣形象需分别处理。",
+      "people": [
+        "t_luyu",
+        "t_daizong",
+        "t_dezong"
+      ],
+      "sources": [
+        "v60_xts196",
+        "v60_tang_overview"
+      ],
+      "dynasties": [
+        "tang"
+      ]
+    },
+    {
+      "id": "v60_obj_qianjin",
+      "title": "《千金要方》",
+      "subtitle": "诊疗经验与“大医精诚”",
+      "symbol": "cross.case",
+      "body": "孙思邈编纂的《千金要方》汇集方药、诊疗、妇儿疾病、急救与养生知识，并用“大医精诚”等篇讨论医者品格。它既保存前代医学材料，也反映七世纪重新分类和组织知识的努力。\n\n历史医书中的病名、药量和身体理论与现代医学体系不同。阅读它可理解医学史和伦理史，现实疾病仍应依据现代专业诊疗。\n\n不同版本的篇目和文字可能有变化；引用具体方剂或名句时，需要说明所据版本和现代整理来源。",
+      "note": "传世本经过后世整理；孙思邈寿数和部分方术故事存在争议。",
+      "people": [
+        "t_sunsimiao",
+        "t_taizong",
+        "t_gaozong"
+      ],
+      "sources": [
+        "v60_jts191",
+        "v60_tang_overview"
+      ],
+      "dynasties": [
+        "tang"
       ]
     }
   ],
@@ -62504,6 +63862,24 @@
         "v59_shiji_xia",
         "v59_zhushu"
       ]
+    },
+    {
+      "from": "t_changsun_empress",
+      "to": "t_taizong",
+      "kind": "spouse",
+      "sources": [
+        "v60_jts51"
+      ],
+      "note": "正史所载帝后婚姻。"
+    },
+    {
+      "from": "t_yang_guifei",
+      "to": "t_xuanzong",
+      "kind": "spouse",
+      "sources": [
+        "v60_jts51"
+      ],
+      "note": "以贵妃与皇帝关系呈现；不把后世爱情叙事写入亲属事实。"
     }
   ],
   "articles": [
@@ -141847,6 +143223,1677 @@
         "v59_oxford_xia",
         "v59_cambridge_debate"
       ]
+    },
+    {
+      "person": "t_changsun_empress",
+      "title": "长孙皇后：内廷、亲族与后妃典范",
+      "dek": "从秦王妃到贞观皇后，她的历史形象连接皇室家庭、外戚约束和后世女性典范。",
+      "sections": [
+        {
+          "id": "v60-t_changsun_empress-s1",
+          "title": "皇后身份与秦王府网络",
+          "text": "长孙氏在李世民即位前已是秦王妃，626年成为皇后。她与长孙无忌的兄妹关系把后宫、功臣集团和皇室婚姻联在一起。正史强调她不愿亲族凭外戚身份过度进取，这既可能保存实际态度，也符合官修史书赞扬“贤后”的书写模式。理解她的影响，不能只问是否正式上朝，更要看婚姻、亲族任用、东宫教育和宫廷礼法怎样作用于政治。",
+          "kind": "史实与解读",
+          "sources": [
+            "v60_jts51",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_p01",
+            "v60t_s01"
+          ],
+          "people": [
+            "t_taizong",
+            "t_zhangsunwuji"
+          ]
+        },
+        {
+          "id": "v60-t_changsun_empress-s2",
+          "title": "规谏故事怎样被保存",
+          "text": "传记记录她劝太宗容纳魏徵、节制游猎和慎待刑罚等故事。这些叙述塑造了能以柔顺方式纠正皇帝的皇后典范。由于话语经过史臣整理，不能把每句对话当作逐字实录；但故事反复出现，也说明后世期待内廷成员承担缓冲皇权的道德角色。她的行动空间来自夫妻关系和皇后身份，与宰相通过奏议承担的责任不同。",
+          "kind": "史实与解读",
+          "sources": [
+            "v60_jts51",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_p01",
+            "v60t_s01"
+          ],
+          "people": [
+            "t_taizong",
+            "t_zhangsunwuji"
+          ]
+        },
+        {
+          "id": "v60-t_changsun_empress-s3",
+          "title": "《女则》与女性规范",
+          "text": "正史称长孙皇后采集古代妇女事迹编成《女则》，原书今已不存。仅凭书名和传记摘要，无法恢复完整内容。它更适合用来观察宫廷如何组织女性教育，而不是证明唐代所有女性都接受同一规范。与上官婉儿、杨贵妃等不同历史形象对读，可以看到官修史书对后妃才德、政治参与和家族影响采用了不同评价尺度。",
+          "kind": "史实与解读",
+          "sources": [
+            "v60_jts51",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_p01",
+            "v60t_s01"
+          ],
+          "people": [
+            "t_taizong",
+            "t_zhangsunwuji"
+          ]
+        },
+        {
+          "id": "v60-t_changsun_empress-s4",
+          "title": "资料边界与继续阅读",
+          "text": "正史保存的言行带有后妃典范书写，具体话语不能都视为现场实录。 本文优先使用博物馆、国家图书馆、国家社科机构资料和官修正史；正史目前通过非官方开放古籍平台核对，页面已明确标注平台性质。人物评价与事件事实分开，诗歌、墓志、碑刻和后世传说各按材料用途阅读。可继续进入相关事件与人物，比较同一时期不同立场留下的证据。 阅读时还应比较材料成书年代、作者位置和保存过程：接近事件的材料未必没有立场，后出的研究也可能利用新出土证据纠正旧说。页面只在资料能够支持的范围内作结论。 资料不足之处直接保留为空白或争议。 不用传奇填满证据之间的间隙。",
+          "kind": "证据边界",
+          "sources": [
+            "v60_jts51",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_p01",
+            "v60t_s01"
+          ],
+          "people": [
+            "t_taizong",
+            "t_zhangsunwuji"
+          ]
+        },
+        {
+          "id": "v60-t_changsun_empress-s5",
+          "title": "放回同时代观察",
+          "text": "把长孙皇后放回时代坐标，可以继续比较“长孙皇后与贞观内廷”、“唐代后妃与女官的史料可见度”，并与李世民、长孙无忌的经历对读。这些线索分别指向制度位置、事件结果和后世记忆，能够检验单一传记的取舍。同一人物在正史、作品、碑志或器物中留下的形象并不完全重合，差异本身也是理解唐代知识生产和历史评价的重要证据。",
+          "kind": "关联阅读",
+          "sources": [
+            "v60_jts51",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_p01",
+            "v60t_s01"
+          ],
+          "people": [
+            "t_taizong",
+            "t_zhangsunwuji"
+          ]
+        }
+      ],
+      "sources": [
+        "v60_jts51",
+        "v60_tang_overview"
+      ]
+    },
+    {
+      "person": "t_wencheng_princess",
+      "title": "文成公主：婚盟、入藏与历史记忆",
+      "dek": "把641年的政治婚姻放回唐蕃往来，也辨别后世传说不断增加的文化清单。",
+      "sections": [
+        {
+          "id": "v60-t_wencheng_princess-s1",
+          "title": "641年的婚姻政治",
+          "text": "文成公主是唐宗室女，具体父母和本名没有可靠记录。贞观十五年，她在李道宗护送下前往吐蕃与松赞干布成婚。婚姻发生在吐蕃崛起、使节往返和边疆军事压力背景中，是双方建立关系的一种政治安排。称她为“太宗亲生女儿”缺乏依据；称婚盟从此永久带来和平，也不符合此后唐蕃关系反复变化的事实。",
+          "kind": "史实与解读",
+          "sources": [
+            "v60_dpm_bunian",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_m01"
+          ],
+          "people": [
+            "t_taizong",
+            "t_yanliben"
+          ]
+        },
+        {
+          "id": "v60-t_wencheng_princess-s2",
+          "title": "随行人员与文化清单",
+          "text": "后世叙述常列出大量陪嫁工匠、种子、经典和技术，有些能在传世文献或吐蕃社会变化中找到线索，有些则不断扩充。稳妥的写法是确认婚姻带来人员、礼物与知识交流，同时不把每一种物品都归为公主个人传播。文化变化通常由长期使节、僧侣、商旅和地方社会共同推动。",
+          "kind": "史实与解读",
+          "sources": [
+            "v60_dpm_bunian",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_m01"
+          ],
+          "people": [
+            "t_taizong",
+            "t_yanliben"
+          ]
+        },
+        {
+          "id": "v60-t_wencheng_princess-s3",
+          "title": "从人物到历史记忆",
+          "text": "文成公主在汉文史书、藏文传统、寺院图像和民间故事中拥有不同面貌。她本人留下的声音极少，今天所知主要来自他者记录。阅读这些材料既要尊重不同记忆传统，也要区分七世纪事件和后世象征。《步辇图》表现的是太宗接见使者的历史题材，现存画卷年代又有争议，不能把它当作公主肖像。",
+          "kind": "史实与解读",
+          "sources": [
+            "v60_dpm_bunian",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_m01"
+          ],
+          "people": [
+            "t_taizong",
+            "t_yanliben"
+          ]
+        },
+        {
+          "id": "v60-t_wencheng_princess-s4",
+          "title": "资料边界与继续阅读",
+          "text": "家世名讳材料有限；后世传说、寺院记忆与七世纪政治事实分层呈现。 本文优先使用博物馆、国家图书馆、国家社科机构资料和官修正史；正史目前通过非官方开放古籍平台核对，页面已明确标注平台性质。人物评价与事件事实分开，诗歌、墓志、碑刻和后世传说各按材料用途阅读。可继续进入相关事件与人物，比较同一时期不同立场留下的证据。 阅读时还应比较材料成书年代、作者位置和保存过程：接近事件的材料未必没有立场，后出的研究也可能利用新出土证据纠正旧说。页面只在资料能够支持的范围内作结论。 资料不足之处直接保留为空白或争议。 不用传奇填满证据之间的间隙。",
+          "kind": "证据边界",
+          "sources": [
+            "v60_dpm_bunian",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_m01"
+          ],
+          "people": [
+            "t_taizong",
+            "t_yanliben"
+          ]
+        },
+        {
+          "id": "v60-t_wencheng_princess-s5",
+          "title": "放回同时代观察",
+          "text": "把文成公主放回时代坐标，可以继续比较“唐蕃婚盟与文成公主入藏”，并与李世民、阎立本的经历对读。这些线索分别指向制度位置、事件结果和后世记忆，能够检验单一传记的取舍。同一人物在正史、作品、碑志或器物中留下的形象并不完全重合，差异本身也是理解唐代知识生产和历史评价的重要证据。",
+          "kind": "关联阅读",
+          "sources": [
+            "v60_dpm_bunian",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_m01"
+          ],
+          "people": [
+            "t_taizong",
+            "t_yanliben"
+          ]
+        }
+      ],
+      "sources": [
+        "v60_dpm_bunian",
+        "v60_tang_overview"
+      ]
+    },
+    {
+      "person": "t_shangguan_waner",
+      "title": "上官婉儿：制诰、文学与权力转换",
+      "dek": "从掖庭女官到昭容，观察宫廷文书如何连接武周、中宗朝和女性政治能见度。",
+      "sections": [
+        {
+          "id": "v60-t_shangguan_waner-s1",
+          "title": "从获罪家属到内廷文书者",
+          "text": "上官婉儿的祖父上官仪获罪后，她与母亲郑氏进入掖庭。她后来因文才进入武则天的文书体系，参与诏命起草。这个转折显示宫廷罪籍女性仍可能凭教育和技能获得特殊位置，却不能据此推论掖庭女性普遍拥有上升通道。她工作的核心是文字与内廷信任，其正式名位和实际影响在不同时期并不相同。",
+          "kind": "史实与解读",
+          "sources": [
+            "v60_xts76",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_p02",
+            "v60t_s01"
+          ],
+          "people": [
+            "t_wuzetian",
+            "t_zhongzong",
+            "t_taiping"
+          ]
+        },
+        {
+          "id": "v60-t_shangguan_waner-s2",
+          "title": "中宗朝的昭容与文学场",
+          "text": "中宗复位后，上官婉儿被封昭容，继续参与制诰，并组织、评定宫廷诗歌。她与韦后、安乐公主、武三思及太平公主之间的关系，在正史与墓志中呈现不同侧面。把她称为“女宰相”便于说明影响，却不是唐代正式官名。她能影响文书和文化活动，并不等于独自决定朝政。",
+          "kind": "史实与解读",
+          "sources": [
+            "v60_xts76",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_p02",
+            "v60t_s01"
+          ],
+          "people": [
+            "t_wuzetian",
+            "t_zhongzong",
+            "t_taiping"
+          ]
+        },
+        {
+          "id": "v60-t_shangguan_waner-s3",
+          "title": "政变、死亡与墓志新证",
+          "text": "710年唐隆政变中，上官婉儿被杀。出土墓志提供了卒葬、封号和部分政治行动的新材料，也使正史关于她的单一道德评价受到重新检视。墓志同样服务于礼葬和纪念，并非完全中立。较好的方法是把墓志与新旧唐书并列，确认一致部分，对冲突部分注明来源，而不是简单宣布一种材料彻底推翻另一种。",
+          "kind": "史实与解读",
+          "sources": [
+            "v60_xts76",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_p02",
+            "v60t_s01"
+          ],
+          "people": [
+            "t_wuzetian",
+            "t_zhongzong",
+            "t_taiping"
+          ]
+        },
+        {
+          "id": "v60-t_shangguan_waner-s4",
+          "title": "资料边界与继续阅读",
+          "text": "正史批评、墓志叙述和后世才女形象并不完全一致，争议处保留。 本文优先使用博物馆、国家图书馆、国家社科机构资料和官修正史；正史目前通过非官方开放古籍平台核对，页面已明确标注平台性质。人物评价与事件事实分开，诗歌、墓志、碑刻和后世传说各按材料用途阅读。可继续进入相关事件与人物，比较同一时期不同立场留下的证据。 阅读时还应比较材料成书年代、作者位置和保存过程：接近事件的材料未必没有立场，后出的研究也可能利用新出土证据纠正旧说。页面只在资料能够支持的范围内作结论。 资料不足之处直接保留为空白或争议。 不用传奇填满证据之间的间隙。",
+          "kind": "证据边界",
+          "sources": [
+            "v60_xts76",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_p02",
+            "v60t_s01"
+          ],
+          "people": [
+            "t_wuzetian",
+            "t_zhongzong",
+            "t_taiping"
+          ]
+        },
+        {
+          "id": "v60-t_shangguan_waner-s5",
+          "title": "放回同时代观察",
+          "text": "把上官婉儿放回时代坐标，可以继续比较“上官婉儿参与宫廷制诰”、“唐代后妃与女官的史料可见度”，并与武曌、李显、太平公主的经历对读。这些线索分别指向制度位置、事件结果和后世记忆，能够检验单一传记的取舍。同一人物在正史、作品、碑志或器物中留下的形象并不完全重合，差异本身也是理解唐代知识生产和历史评价的重要证据。",
+          "kind": "关联阅读",
+          "sources": [
+            "v60_xts76",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_p02",
+            "v60t_s01"
+          ],
+          "people": [
+            "t_wuzetian",
+            "t_zhongzong",
+            "t_taiping"
+          ]
+        }
+      ],
+      "sources": [
+        "v60_xts76",
+        "v60_tang_overview"
+      ]
+    },
+    {
+      "person": "t_yang_guifei",
+      "title": "杨贵妃：后宫、外戚与马嵬叙事",
+      "dek": "离开爱情传奇，考察贵妃身份、杨氏家族上升和战争中女性承担的政治归责。",
+      "sections": [
+        {
+          "id": "v60-t_yang_guifei-s1",
+          "title": "从寿王妃到玄宗贵妃",
+          "text": "杨玉环最初与寿王李瑁成婚，后来入道，再被册为玄宗贵妃。身份转换涉及皇权、宫廷礼制和后世讳饰，不能只按浪漫叙事理解。她成为贵妃后受到玄宗宠爱，杨氏亲族随之显贵；家族政治上升是真实背景，但每一项任命仍应考察皇帝决策和官僚程序。",
+          "kind": "史实与解读",
+          "sources": [
+            "v60_jts51",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_p03",
+            "v60t_m04"
+          ],
+          "people": [
+            "t_xuanzong",
+            "t_yangguozhong",
+            "t_gaolishi"
+          ]
+        },
+        {
+          "id": "v60-t_yang_guifei-s2",
+          "title": "音乐、宴游与天宝宫廷",
+          "text": "杨贵妃常与梨园音乐、舞蹈、温泉和宫廷宴游相连。诗歌与绘画强化了这种形象，何家村银壶上的舞马等器物则提供同时代物质文化背景。器物不能证明她亲自使用，文学也不等于生活记录。她的历史意义在于帮助观察玄宗晚年宫廷消费、审美与亲族网络，而不是用美貌解释国家兴衰。",
+          "kind": "史实与解读",
+          "sources": [
+            "v60_jts51",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_p03",
+            "v60t_m04"
+          ],
+          "people": [
+            "t_xuanzong",
+            "t_yangguozhong",
+            "t_gaolishi"
+          ]
+        },
+        {
+          "id": "v60-t_yang_guifei-s3",
+          "title": "马嵬死亡与替罪叙事",
+          "text": "756年玄宗西逃，禁军在马嵬杀杨国忠，并要求处置杨贵妃。她在缺乏正式审判的军事危机中被赐死。后世“红颜祸水”叙事把边镇失控、决策失误和军队不满集中到一名女性身上。承认杨氏家族受宠与政治问题相关，不等于让贵妃承担安史战争的主要责任。",
+          "kind": "史实与解读",
+          "sources": [
+            "v60_jts51",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_p03",
+            "v60t_m04"
+          ],
+          "people": [
+            "t_xuanzong",
+            "t_yangguozhong",
+            "t_gaolishi"
+          ]
+        },
+        {
+          "id": "v60-t_yang_guifei-s4",
+          "title": "资料边界与继续阅读",
+          "text": "美貌、爱情和亡国叙事长期层累；政治结构不能归因于一名后宫女性。 本文优先使用博物馆、国家图书馆、国家社科机构资料和官修正史；正史目前通过非官方开放古籍平台核对，页面已明确标注平台性质。人物评价与事件事实分开，诗歌、墓志、碑刻和后世传说各按材料用途阅读。可继续进入相关事件与人物，比较同一时期不同立场留下的证据。 阅读时还应比较材料成书年代、作者位置和保存过程：接近事件的材料未必没有立场，后出的研究也可能利用新出土证据纠正旧说。页面只在资料能够支持的范围内作结论。 资料不足之处直接保留为空白或争议。 不用传奇填满证据之间的间隙。",
+          "kind": "证据边界",
+          "sources": [
+            "v60_jts51",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_p03",
+            "v60t_m04",
+            "v60t_s01"
+          ],
+          "people": [
+            "t_xuanzong",
+            "t_yangguozhong",
+            "t_gaolishi"
+          ]
+        },
+        {
+          "id": "v60-t_yang_guifei-s5",
+          "title": "放回同时代观察",
+          "text": "把杨贵妃放回时代坐标，可以继续比较“杨国忠兼领财政与宰相职务”、“马嵬兵变中的军令崩解”、“唐代后妃与女官的史料可见度”，并与李隆基、杨国忠、高力士的经历对读。这些线索分别指向制度位置、事件结果和后世记忆，能够检验单一传记的取舍。同一人物在正史、作品、碑志或器物中留下的形象并不完全重合，差异本身也是理解唐代知识生产和历史评价的重要证据。",
+          "kind": "关联阅读",
+          "sources": [
+            "v60_jts51",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_p03",
+            "v60t_m04",
+            "v60t_s01"
+          ],
+          "people": [
+            "t_xuanzong",
+            "t_yangguozhong",
+            "t_gaolishi"
+          ]
+        }
+      ],
+      "sources": [
+        "v60_jts51",
+        "v60_tang_overview"
+      ]
+    },
+    {
+      "person": "t_gaolishi",
+      "title": "高力士：玄宗内廷的信息与权力",
+      "dek": "通过内侍职掌、奏章通道和马嵬危机，理解接近皇帝如何形成制度性影响。",
+      "sections": [
+        {
+          "id": "v60-t_gaolishi-s1",
+          "title": "接近皇帝是一种制度位置",
+          "text": "高力士在武周后期进入宫廷，玄宗即位过程中获得信任，后来长期掌握内侍系统的重要职位。他能够接触奏章、转达请求、安排召见，这种信息通道使他在没有宰相名位的情况下产生影响。把他仅写作忠仆会忽略制度权力，把所有政令都归于他又会夸大内侍对皇帝的控制。",
+          "kind": "史实与解读",
+          "sources": [
+            "v60_jts184",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_p04",
+            "v60t_m04"
+          ],
+          "people": [
+            "t_xuanzong",
+            "t_yang_guifei",
+            "t_yangguozhong"
+          ]
+        },
+        {
+          "id": "v60-t_gaolishi-s2",
+          "title": "开元天宝的人事沟通",
+          "text": "玄宗朝官员可能通过高力士传递意见，高力士也参与太子、后妃和大臣之间的宫廷事务。传记保存他对李林甫、杨国忠和边将的判断，但许多话语经过事后整理。更可靠的观察是：当皇帝减少公开朝议、更多依赖近侍时，掌握传达环节的人自然获得更大空间。",
+          "kind": "史实与解读",
+          "sources": [
+            "v60_jts184",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_p04",
+            "v60t_m04"
+          ],
+          "people": [
+            "t_xuanzong",
+            "t_yang_guifei",
+            "t_yangguozhong"
+          ]
+        },
+        {
+          "id": "v60-t_gaolishi-s3",
+          "title": "马嵬、流放与身后形象",
+          "text": "马嵬危机中，高力士执行涉及杨贵妃的命令，之后仍随玄宗入蜀。肃宗、代宗交替时，他被流放，遇赦北返途中去世。李白脱靴等故事广为流传，却来源复杂。评价高力士，应把可核任职、内廷结构和危机行动放在中心，再把忠诚或权宦等后世标签作为历史记忆研究。",
+          "kind": "史实与解读",
+          "sources": [
+            "v60_jts184",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_p04",
+            "v60t_m04"
+          ],
+          "people": [
+            "t_xuanzong",
+            "t_yang_guifei",
+            "t_yangguozhong"
+          ]
+        },
+        {
+          "id": "v60-t_gaolishi-s4",
+          "title": "资料边界与继续阅读",
+          "text": "脱靴等名人轶事来源较晚；此处以可核职掌与政治行动为主。 本文优先使用博物馆、国家图书馆、国家社科机构资料和官修正史；正史目前通过非官方开放古籍平台核对，页面已明确标注平台性质。人物评价与事件事实分开，诗歌、墓志、碑刻和后世传说各按材料用途阅读。可继续进入相关事件与人物，比较同一时期不同立场留下的证据。 阅读时还应比较材料成书年代、作者位置和保存过程：接近事件的材料未必没有立场，后出的研究也可能利用新出土证据纠正旧说。页面只在资料能够支持的范围内作结论。 资料不足之处直接保留为空白或争议。 不用传奇填满证据之间的间隙。",
+          "kind": "证据边界",
+          "sources": [
+            "v60_jts184",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_p04",
+            "v60t_m04"
+          ],
+          "people": [
+            "t_xuanzong",
+            "t_yang_guifei",
+            "t_yangguozhong"
+          ]
+        },
+        {
+          "id": "v60-t_gaolishi-s5",
+          "title": "放回同时代观察",
+          "text": "把高力士放回时代坐标，可以继续比较“高力士与内廷信息通道”、“马嵬兵变中的军令崩解”，并与李隆基、杨贵妃、杨国忠的经历对读。这些线索分别指向制度位置、事件结果和后世记忆，能够检验单一传记的取舍。同一人物在正史、作品、碑志或器物中留下的形象并不完全重合，差异本身也是理解唐代知识生产和历史评价的重要证据。",
+          "kind": "关联阅读",
+          "sources": [
+            "v60_jts184",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_p04",
+            "v60t_m04"
+          ],
+          "people": [
+            "t_xuanzong",
+            "t_yang_guifei",
+            "t_yangguozhong"
+          ]
+        }
+      ],
+      "sources": [
+        "v60_jts184",
+        "v60_tang_overview"
+      ]
+    },
+    {
+      "person": "t_yangguozhong",
+      "title": "杨国忠：财政兼官与天宝危机",
+      "dek": "追踪一名外戚宰相怎样依靠财政事务上升，并在战争与马嵬兵变中走向终局。",
+      "sections": [
+        {
+          "id": "v60-t_yangguozhong-s1",
+          "title": "从地方经历到财政中枢",
+          "text": "杨国忠原名杨钊，早年仕途并不显赫，杨贵妃家族受宠后获得更快上升。他进入度支、仓部等财政职位，说明其权力不只来自外戚称号，也来自处理钱粮、运输和官员任免的具体职掌。兼领多职使信息与资源集中，却也降低相互制衡。",
+          "kind": "史实与解读",
+          "sources": [
+            "v60_jts106",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_p03",
+            "v60t_m04"
+          ],
+          "people": [
+            "t_xuanzong",
+            "t_yang_guifei",
+            "t_gaolishi"
+          ]
+        },
+        {
+          "id": "v60-t_yangguozhong-s2",
+          "title": "宰相与边镇之间",
+          "text": "李林甫死后，杨国忠成为宰相，与安禄山的冲突不断加深。安禄山以诛杨国忠为起兵口号，但战争根源包括节度使兵权、河北军事格局、中央猜忌和财政社会压力。杨国忠对形势判断和人事斗争负有责任，仍不能把战争简化成两名权臣的私人矛盾。",
+          "kind": "史实与解读",
+          "sources": [
+            "v60_jts106",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_p03",
+            "v60t_m04"
+          ],
+          "people": [
+            "t_xuanzong",
+            "t_yang_guifei",
+            "t_gaolishi"
+          ]
+        },
+        {
+          "id": "v60-t_yangguozhong-s3",
+          "title": "马嵬结局与史臣评价",
+          "text": "潼关失守后，杨国忠随玄宗向蜀地撤退，在马嵬被禁军杀死。正史用强烈负面语言组织其传记，后世又常把杨氏家族作为盛世转衰的道德象征。阅读时应分别核对任官、政策和事件，再判断责任；道德评价可以说明史臣立场，却不能替代因果分析。",
+          "kind": "史实与解读",
+          "sources": [
+            "v60_jts106",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_p03",
+            "v60t_m04"
+          ],
+          "people": [
+            "t_xuanzong",
+            "t_yang_guifei",
+            "t_gaolishi"
+          ]
+        },
+        {
+          "id": "v60-t_yangguozhong-s4",
+          "title": "资料边界与继续阅读",
+          "text": "正史强烈道德化评价需与制度、人事和战争决策分别分析。 本文优先使用博物馆、国家图书馆、国家社科机构资料和官修正史；正史目前通过非官方开放古籍平台核对，页面已明确标注平台性质。人物评价与事件事实分开，诗歌、墓志、碑刻和后世传说各按材料用途阅读。可继续进入相关事件与人物，比较同一时期不同立场留下的证据。 阅读时还应比较材料成书年代、作者位置和保存过程：接近事件的材料未必没有立场，后出的研究也可能利用新出土证据纠正旧说。页面只在资料能够支持的范围内作结论。 资料不足之处直接保留为空白或争议。 不用传奇填满证据之间的间隙。",
+          "kind": "证据边界",
+          "sources": [
+            "v60_jts106",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_p03",
+            "v60t_m04"
+          ],
+          "people": [
+            "t_xuanzong",
+            "t_yang_guifei",
+            "t_gaolishi"
+          ]
+        },
+        {
+          "id": "v60-t_yangguozhong-s5",
+          "title": "放回同时代观察",
+          "text": "把杨国忠放回时代坐标，可以继续比较“杨国忠兼领财政与宰相职务”、“马嵬兵变中的军令崩解”，并与李隆基、杨贵妃、高力士的经历对读。这些线索分别指向制度位置、事件结果和后世记忆，能够检验单一传记的取舍。同一人物在正史、作品、碑志或器物中留下的形象并不完全重合，差异本身也是理解唐代知识生产和历史评价的重要证据。",
+          "kind": "关联阅读",
+          "sources": [
+            "v60_jts106",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_p03",
+            "v60t_m04"
+          ],
+          "people": [
+            "t_xuanzong",
+            "t_yang_guifei",
+            "t_gaolishi"
+          ]
+        }
+      ],
+      "sources": [
+        "v60_jts106",
+        "v60_tang_overview"
+      ]
+    },
+    {
+      "person": "t_libi",
+      "title": "李泌：隐逸形象与多朝政治",
+      "dek": "在肃宗至德宗的战时筹划和反复进退中，辨别顾问声望、实际职权与传记神化。",
+      "sections": [
+        {
+          "id": "v60-t_libi-s1",
+          "title": "少年声名与隐逸形象",
+          "text": "李泌早年以聪敏和学问受到注意，传记又写入神童、方术和山林生活。玄宗、肃宗时期，他在朝野之间往返，没有始终占据固定官职。隐逸并非完全离开政治，也可能成为保持声望、避开冲突和等待召用的方式；但传记中的奇异预言不宜作为履历事实。",
+          "kind": "史实与解读",
+          "sources": [
+            "v60_jts130",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_p05",
+            "v60t_m03"
+          ],
+          "people": [
+            "t_suzong",
+            "t_daizong",
+            "t_dezong",
+            "t_guoziyi"
+          ]
+        },
+        {
+          "id": "v60-t_libi-s2",
+          "title": "灵武政权中的军政讨论",
+          "text": "安史战争爆发后，李泌进入肃宗幕府，参与收复两京、皇室关系和战略次序的讨论。郭子仪等将领负责实际军事行动，回纥援军、财政补给和地方响应同样关键。后世常以“肃宗不尽用其策”解释战局，这种写法突出谋臣，却可能把复杂决策压缩成一个未被采纳的完美方案。",
+          "kind": "史实与解读",
+          "sources": [
+            "v60_jts130",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_p05",
+            "v60t_m03"
+          ],
+          "people": [
+            "t_suzong",
+            "t_daizong",
+            "t_dezong",
+            "t_guoziyi"
+          ]
+        },
+        {
+          "id": "v60-t_libi-s3",
+          "title": "德宗朝入相与现实责任",
+          "text": "经历代宗时期的进退后，李泌在德宗朝拜相，参与边疆联盟、人事和财政议论。成为宰相意味着他不再只是自由进言的山人，也需为政策可行性和结果承担责任。把李泌放入肃宗、代宗、德宗三朝比较，可以观察皇帝信任、非正式顾问和正式官僚角色怎样转换。",
+          "kind": "史实与解读",
+          "sources": [
+            "v60_jts130",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_p05",
+            "v60t_m03"
+          ],
+          "people": [
+            "t_suzong",
+            "t_daizong",
+            "t_dezong",
+            "t_guoziyi"
+          ]
+        },
+        {
+          "id": "v60-t_libi-s4",
+          "title": "资料边界与继续阅读",
+          "text": "传记中的神童、隐逸和方术色彩不等于全部可验证履历。 本文优先使用博物馆、国家图书馆、国家社科机构资料和官修正史；正史目前通过非官方开放古籍平台核对，页面已明确标注平台性质。人物评价与事件事实分开，诗歌、墓志、碑刻和后世传说各按材料用途阅读。可继续进入相关事件与人物，比较同一时期不同立场留下的证据。 阅读时还应比较材料成书年代、作者位置和保存过程：接近事件的材料未必没有立场，后出的研究也可能利用新出土证据纠正旧说。页面只在资料能够支持的范围内作结论。 资料不足之处直接保留为空白或争议。 不用传奇填满证据之间的间隙。",
+          "kind": "证据边界",
+          "sources": [
+            "v60_jts130",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_p05",
+            "v60t_m03",
+            "v60t_m05",
+            "v60t_m06"
+          ],
+          "people": [
+            "t_suzong",
+            "t_daizong",
+            "t_dezong",
+            "t_guoziyi"
+          ]
+        },
+        {
+          "id": "v60-t_libi-s5",
+          "title": "放回同时代观察",
+          "text": "把李泌放回时代坐标，可以继续比较“李泌往返朝野与多朝咨询”、“李泌参与收复两京筹划”、“泾原兵变与奉天防守”，并与李亨、李豫、李适、郭子仪的经历对读。这些线索分别指向制度位置、事件结果和后世记忆，能够检验单一传记的取舍。同一人物在正史、作品、碑志或器物中留下的形象并不完全重合，差异本身也是理解唐代知识生产和历史评价的重要证据。",
+          "kind": "关联阅读",
+          "sources": [
+            "v60_jts130",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_p05",
+            "v60t_m03",
+            "v60t_m05",
+            "v60t_m06"
+          ],
+          "people": [
+            "t_suzong",
+            "t_daizong",
+            "t_dezong",
+            "t_guoziyi"
+          ]
+        }
+      ],
+      "sources": [
+        "v60_jts130",
+        "v60_tang_overview"
+      ]
+    },
+    {
+      "person": "t_yanzhenqing",
+      "title": "颜真卿：河北守臣与书法大家",
+      "dek": "一条线索通向安史战争中的地方抵抗，另一条线索通向碑刻、书法和后世忠义记忆。",
+      "sections": [
+        {
+          "id": "v60-t_yanzhenqing-s1",
+          "title": "河北守臣的战时选择",
+          "text": "安禄山起兵时，颜真卿任平原太守，提前修城、储粮，并联络河北郡县响应朝廷。其兄颜杲卿在常山的抵抗以惨烈失败告终。后世忠义传记强调家族牺牲，有事实基础，也会压缩地方军民、官吏和交通网络的共同作用。颜真卿首先是一名承担地方防守责任的官员。",
+          "kind": "史实与解读",
+          "sources": [
+            "v60_jts128",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_m02",
+            "v60t_c01"
+          ],
+          "people": [
+            "t_xuanzong",
+            "t_daizong",
+            "t_anlushan"
+          ]
+        },
+        {
+          "id": "v60-t_yanzhenqing-s2",
+          "title": "朝廷仕履并不平顺",
+          "text": "战后颜真卿历任中央和地方职务，多次因直言或政治冲突被外放。他不是始终站在权力中心的道德雕像，而是在派系、人事和制度约束中反复进退的官员。德宗时奉命劝谕叛将李希烈，最终遇害，这一结局强化了忠臣形象，也需要放回朝廷用人和军事危机分析。",
+          "kind": "史实与解读",
+          "sources": [
+            "v60_jts128",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_m02",
+            "v60t_c01"
+          ],
+          "people": [
+            "t_xuanzong",
+            "t_daizong",
+            "t_anlushan"
+          ]
+        },
+        {
+          "id": "v60-t_yanzhenqing-s3",
+          "title": "碑刻中的书法与家族",
+          "text": "《颜勤礼碑》等作品让颜真卿的书法可以通过原石和拓本研究。碑文往往服务家族纪念、寺院或政治仪式，书法价值与文本功能同时存在。所谓“颜筋”是后世概括，不应遮蔽作品在不同时期的变化。区分唐代碑石、后世拓本和数字图像，也能避免把传播载体误认成原作。",
+          "kind": "史实与解读",
+          "sources": [
+            "v60_jts128",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_m02",
+            "v60t_c01"
+          ],
+          "people": [
+            "t_xuanzong",
+            "t_daizong",
+            "t_anlushan"
+          ]
+        },
+        {
+          "id": "v60-t_yanzhenqing-s4",
+          "title": "资料边界与继续阅读",
+          "text": "书法史评价、碑刻实物与忠臣传记相互关联，但不能互相替代。 本文优先使用博物馆、国家图书馆、国家社科机构资料和官修正史；正史目前通过非官方开放古籍平台核对，页面已明确标注平台性质。人物评价与事件事实分开，诗歌、墓志、碑刻和后世传说各按材料用途阅读。可继续进入相关事件与人物，比较同一时期不同立场留下的证据。 阅读时还应比较材料成书年代、作者位置和保存过程：接近事件的材料未必没有立场，后出的研究也可能利用新出土证据纠正旧说。页面只在资料能够支持的范围内作结论。 资料不足之处直接保留为空白或争议。 不用传奇填满证据之间的间隙。",
+          "kind": "证据边界",
+          "sources": [
+            "v60_jts128",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_m02",
+            "v60t_c01"
+          ],
+          "people": [
+            "t_xuanzong",
+            "t_daizong",
+            "t_anlushan"
+          ]
+        },
+        {
+          "id": "v60-t_yanzhenqing-s5",
+          "title": "放回同时代观察",
+          "text": "把颜真卿放回时代坐标，可以继续比较“颜真卿在河北组织抵抗”、“《颜勤礼碑》书成”，并与李隆基、李豫、安禄山的经历对读。这些线索分别指向制度位置、事件结果和后世记忆，能够检验单一传记的取舍。同一人物在正史、作品、碑志或器物中留下的形象并不完全重合，差异本身也是理解唐代知识生产和历史评价的重要证据。",
+          "kind": "关联阅读",
+          "sources": [
+            "v60_jts128",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_m02",
+            "v60t_c01"
+          ],
+          "people": [
+            "t_xuanzong",
+            "t_daizong",
+            "t_anlushan"
+          ]
+        }
+      ],
+      "sources": [
+        "v60_jts128",
+        "v60_tang_overview"
+      ]
+    },
+    {
+      "person": "t_duyou",
+      "title": "杜佑：行政经验与《通典》",
+      "dek": "从地方财政、中央任职到制度史编纂，理解中唐官员如何比较历代治理。",
+      "sections": [
+        {
+          "id": "v60-t_duyou-s1",
+          "title": "安史以后成长的行政官",
+          "text": "杜佑的仕途跨越地方幕府、州郡和中央财政职位。他面对的是战争后户籍松动、漕运重建、盐税扩张和藩镇并存的现实。长期行政经验使他关注制度怎样落地，而不仅是诏令如何写成。评价一名财政官，既要看增加收入，也要看税役如何分配给不同人群。",
+          "kind": "史实与解读",
+          "sources": [
+            "v60_jts147",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_p06",
+            "v60t_c04"
+          ],
+          "people": [
+            "t_daizong",
+            "t_dezong",
+            "t_xianzong"
+          ]
+        },
+        {
+          "id": "v60-t_duyou-s2",
+          "title": "《通典》的分类方法",
+          "text": "杜佑编纂《通典》数十年，把历代材料按食货、选举、职官、礼、兵、刑、州郡和边防分类。这样能纵向比较制度变化，也会由作者决定哪些问题更重要、哪些材料被节录。它不是把史书剪贴在一起，而是一种带有中唐治理关切的历史解释。",
+          "kind": "史实与解读",
+          "sources": [
+            "v60_jts147",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_p06",
+            "v60t_c04"
+          ],
+          "people": [
+            "t_daizong",
+            "t_dezong",
+            "t_xianzong"
+          ]
+        },
+        {
+          "id": "v60-t_duyou-s3",
+          "title": "从知识到政策的距离",
+          "text": "《通典》讨论前代得失，杜佑本人又参与德宗、顺宗、宪宗时期政务。著作中的主张可能影响现实判断，却不等于朝廷逐项采用。将他与杨炎、刘晏等人并读，可以看到中唐财政改革没有单一方案，盐利、两税、地方权力和军费之间始终存在拉扯。",
+          "kind": "史实与解读",
+          "sources": [
+            "v60_jts147",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_p06",
+            "v60t_c04"
+          ],
+          "people": [
+            "t_daizong",
+            "t_dezong",
+            "t_xianzong"
+          ]
+        },
+        {
+          "id": "v60-t_duyou-s4",
+          "title": "资料边界与继续阅读",
+          "text": "《通典》是带有作者问题意识的制度史著作，不是中性数据库。 本文优先使用博物馆、国家图书馆、国家社科机构资料和官修正史；正史目前通过非官方开放古籍平台核对，页面已明确标注平台性质。人物评价与事件事实分开，诗歌、墓志、碑刻和后世传说各按材料用途阅读。可继续进入相关事件与人物，比较同一时期不同立场留下的证据。 阅读时还应比较材料成书年代、作者位置和保存过程：接近事件的材料未必没有立场，后出的研究也可能利用新出土证据纠正旧说。页面只在资料能够支持的范围内作结论。 资料不足之处直接保留为空白或争议。 不用传奇填满证据之间的间隙。",
+          "kind": "证据边界",
+          "sources": [
+            "v60_jts147",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_p06",
+            "v60t_c04",
+            "v60t_e03"
+          ],
+          "people": [
+            "t_daizong",
+            "t_dezong",
+            "t_xianzong"
+          ]
+        },
+        {
+          "id": "v60-t_duyou-s5",
+          "title": "放回同时代观察",
+          "text": "把杜佑放回时代坐标，可以继续比较“杜佑从地方财政进入中枢”、“《通典》完成制度分类”、“飞钱与异地结算”，并与李豫、李适、李纯的经历对读。这些线索分别指向制度位置、事件结果和后世记忆，能够检验单一传记的取舍。同一人物在正史、作品、碑志或器物中留下的形象并不完全重合，差异本身也是理解唐代知识生产和历史评价的重要证据。",
+          "kind": "关联阅读",
+          "sources": [
+            "v60_jts147",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_p06",
+            "v60t_c04",
+            "v60t_e03"
+          ],
+          "people": [
+            "t_daizong",
+            "t_dezong",
+            "t_xianzong"
+          ]
+        }
+      ],
+      "sources": [
+        "v60_jts147",
+        "v60_tang_overview"
+      ]
+    },
+    {
+      "person": "t_liuzongyuan",
+      "title": "柳宗元：革新、贬谪与地方经验",
+      "dek": "把永贞政治、永州写作和柳州治理连在一起，避免只剩孤独山水的文学标签。",
+      "sections": [
+        {
+          "id": "v60-t_liuzongyuan-s1",
+          "title": "永贞时期的政治选择",
+          "text": "柳宗元进士入仕后进入王叔文等人的政治网络。顺宗即位时，这一集团试图调整财政、宦官和用人问题，时间短促，随顺宗退位迅速失败。后世“永贞革新”概括多项行动，但参与者目标未必完全一致。柳宗元的贬谪是具体政治选择的结果，不只是文人无辜受难的故事。",
+          "kind": "史实与解读",
+          "sources": [
+            "v60_jts160",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_c02",
+            "v60t_s03"
+          ],
+          "people": [
+            "t_shunzong",
+            "t_xianzong",
+            "t_hanyu"
+          ]
+        },
+        {
+          "id": "v60-t_liuzongyuan-s2",
+          "title": "永州写作与地方观察",
+          "text": "被贬永州后，柳宗元写下山水记、寓言、传记和政论。作品把个人处境、地方社会与自然经验交织起来。《捕蛇者说》等文章关注赋役压力，却经过文学组织，不能当作无修辞的调查报告。正因为文学和现实之间有距离，这些文本才需要与税役制度和地方材料相互参照。",
+          "kind": "史实与解读",
+          "sources": [
+            "v60_jts160",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_c02",
+            "v60t_s03"
+          ],
+          "people": [
+            "t_shunzong",
+            "t_xianzong",
+            "t_hanyu"
+          ]
+        },
+        {
+          "id": "v60-t_liuzongyuan-s3",
+          "title": "柳州任事与身后影响",
+          "text": "柳宗元后来任柳州刺史，在地方行政中处理教育、风俗和人口事务，819年卒于任所。关于释放奴婢、开井办学等功绩，需按早期材料逐项判断。他与韩愈共同推动古文表达，却在思想和人生道路上并不相同。后世把两人并称，说明文学史的归类形成于长期接受。",
+          "kind": "史实与解读",
+          "sources": [
+            "v60_jts160",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_c02",
+            "v60t_s03"
+          ],
+          "people": [
+            "t_shunzong",
+            "t_xianzong",
+            "t_hanyu"
+          ]
+        },
+        {
+          "id": "v60-t_liuzongyuan-s4",
+          "title": "资料边界与继续阅读",
+          "text": "文学中的孤独与山水经验可参照处境，不能逐句当作履历。 本文优先使用博物馆、国家图书馆、国家社科机构资料和官修正史；正史目前通过非官方开放古籍平台核对，页面已明确标注平台性质。人物评价与事件事实分开，诗歌、墓志、碑刻和后世传说各按材料用途阅读。可继续进入相关事件与人物，比较同一时期不同立场留下的证据。 阅读时还应比较材料成书年代、作者位置和保存过程：接近事件的材料未必没有立场，后出的研究也可能利用新出土证据纠正旧说。页面只在资料能够支持的范围内作结论。 资料不足之处直接保留为空白或争议。 不用传奇填满证据之间的间隙。",
+          "kind": "证据边界",
+          "sources": [
+            "v60_jts160",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_c02",
+            "v60t_s03"
+          ],
+          "people": [
+            "t_shunzong",
+            "t_xianzong",
+            "t_hanyu"
+          ]
+        },
+        {
+          "id": "v60-t_liuzongyuan-s5",
+          "title": "放回同时代观察",
+          "text": "把柳宗元放回时代坐标，可以继续比较“柳宗元的古文、思想与地方书写”、“进士文化与诗文传播”，并与李诵、李纯、韩愈的经历对读。这些线索分别指向制度位置、事件结果和后世记忆，能够检验单一传记的取舍。同一人物在正史、作品、碑志或器物中留下的形象并不完全重合，差异本身也是理解唐代知识生产和历史评价的重要证据。",
+          "kind": "关联阅读",
+          "sources": [
+            "v60_jts160",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_c02",
+            "v60t_s03"
+          ],
+          "people": [
+            "t_shunzong",
+            "t_xianzong",
+            "t_hanyu"
+          ]
+        }
+      ],
+      "sources": [
+        "v60_jts160",
+        "v60_tang_overview"
+      ]
+    },
+    {
+      "person": "t_baijuyi",
+      "title": "白居易：诗歌、民生与地方任官",
+      "dek": "从讽谕诗到杭州、苏州任事，检视文学表达如何靠近又不等同社会事实。",
+      "sections": [
+        {
+          "id": "v60-t_baijuyi-s1",
+          "title": "科举、谏官与讽谕诗",
+          "text": "白居易通过科举进入官僚体系，任左拾遗等职时写奏状，也创作大量讽谕诗。他主张诗歌应回应政事和民生，但作品中的典型人物、对白和场景仍经过艺术安排。《卖炭翁》等诗能揭示权力关系和作者立场，不能据单篇计算整个社会的比例与规模。",
+          "kind": "史实与解读",
+          "sources": [
+            "v60_jts166",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_c03",
+            "v60t_s03"
+          ],
+          "people": [
+            "t_xianzong",
+            "t_muzong",
+            "t_liuzongyuan"
+          ]
+        },
+        {
+          "id": "v60-t_baijuyi-s2",
+          "title": "江州之后的地方任官",
+          "text": "政治挫折后，白居易经历江州司马等职位，后来出任杭州、苏州刺史。地方任官让水利、赋役和城市生活进入其作品与履历。后世常把堤防全部归名于他，具体工程范围与后代附会需要区别。文学声望与行政能力是两条相关却不能互证的线索。",
+          "kind": "史实与解读",
+          "sources": [
+            "v60_jts166",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_c03",
+            "v60t_s03"
+          ],
+          "people": [
+            "t_xianzong",
+            "t_muzong",
+            "t_liuzongyuan"
+          ]
+        },
+        {
+          "id": "v60-t_baijuyi-s3",
+          "title": "流传、唱和与晚年选择",
+          "text": "白居易作品在生前已经广泛传播，并进入东亚交流。他与元稹唱和，形成醒目的文学共同体；晚年居洛阳，又呈现闲适、佛教和自我整理的一面。不能用早期讽谕诗固定他的一生，也不能因晚年退居而抹去公共关怀。完整人物应包含立场变化和生活策略。",
+          "kind": "史实与解读",
+          "sources": [
+            "v60_jts166",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_c03",
+            "v60t_s03"
+          ],
+          "people": [
+            "t_xianzong",
+            "t_muzong",
+            "t_liuzongyuan"
+          ]
+        },
+        {
+          "id": "v60-t_baijuyi-s4",
+          "title": "资料边界与继续阅读",
+          "text": "作品中的讽谕对象和作者实际施政需分别核对。 本文优先使用博物馆、国家图书馆、国家社科机构资料和官修正史；正史目前通过非官方开放古籍平台核对，页面已明确标注平台性质。人物评价与事件事实分开，诗歌、墓志、碑刻和后世传说各按材料用途阅读。可继续进入相关事件与人物，比较同一时期不同立场留下的证据。 阅读时还应比较材料成书年代、作者位置和保存过程：接近事件的材料未必没有立场，后出的研究也可能利用新出土证据纠正旧说。页面只在资料能够支持的范围内作结论。 资料不足之处直接保留为空白或争议。 不用传奇填满证据之间的间隙。",
+          "kind": "证据边界",
+          "sources": [
+            "v60_jts166",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_c03",
+            "v60t_s03"
+          ],
+          "people": [
+            "t_xianzong",
+            "t_muzong",
+            "t_liuzongyuan"
+          ]
+        },
+        {
+          "id": "v60-t_baijuyi-s5",
+          "title": "放回同时代观察",
+          "text": "把白居易放回时代坐标，可以继续比较“白居易以诗歌介入公共议题”、“进士文化与诗文传播”，并与李纯、李恒、柳宗元的经历对读。这些线索分别指向制度位置、事件结果和后世记忆，能够检验单一传记的取舍。同一人物在正史、作品、碑志或器物中留下的形象并不完全重合，差异本身也是理解唐代知识生产和历史评价的重要证据。",
+          "kind": "关联阅读",
+          "sources": [
+            "v60_jts166",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_c03",
+            "v60t_s03"
+          ],
+          "people": [
+            "t_xianzong",
+            "t_muzong",
+            "t_liuzongyuan"
+          ]
+        }
+      ],
+      "sources": [
+        "v60_jts166",
+        "v60_tang_overview"
+      ]
+    },
+    {
+      "person": "t_luyu",
+      "title": "陆羽：一部《茶经》连接的世界",
+      "dek": "从茶的制作、器具与产区，进入中唐消费、市场、知识分类和后世茶圣记忆。",
+      "sections": [
+        {
+          "id": "v60-t_luyu-s1",
+          "title": "有限的生平线索",
+          "text": "陆羽的早年经历主要依赖后出传记，弃儿、寺院成长和不愿为僧等细节带有强烈故事性。较稳妥的事实是，他活跃于八世纪，长期观察茶叶生产与饮用，并与文人、僧侣交往。与其填补每年行踪，不如承认材料空白，把重点放在《茶经》可见的知识工作。",
+          "kind": "史实与解读",
+          "sources": [
+            "v60_xts196",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_c05",
+            "v60t_e01"
+          ],
+          "people": [
+            "t_daizong",
+            "t_dezong",
+            "t_duyou"
+          ]
+        },
+        {
+          "id": "v60-t_luyu-s2",
+          "title": "把茶写成一套知识",
+          "text": "《茶经》从茶树、工具、制作、器具、煮饮、产区到旧闻进行分类。它把劳动技术、地域差异和审美规范写进同一部书。陆羽不只是“会喝茶的人”，更是采集、比较、命名和组织信息的作者。书中的理想方法具有选择性，不能代表每个茶区和家庭的实践。",
+          "kind": "史实与解读",
+          "sources": [
+            "v60_xts196",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_c05",
+            "v60t_e01"
+          ],
+          "people": [
+            "t_daizong",
+            "t_dezong",
+            "t_duyou"
+          ]
+        },
+        {
+          "id": "v60-t_luyu-s3",
+          "title": "茶税、市场与茶圣形象",
+          "text": "陆羽之后，茶叶消费继续扩大，德宗时茶税进入国家财政。茶文化的形成依赖茶农、工匠、商人、运输和城市消费者，而非一人创造。后世尊陆羽为茶圣，使他成为行业祖师和文化符号；这种纪念说明影响深远，却也容易把复杂产业史变成个人传奇。",
+          "kind": "史实与解读",
+          "sources": [
+            "v60_xts196",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_c05",
+            "v60t_e01"
+          ],
+          "people": [
+            "t_daizong",
+            "t_dezong",
+            "t_duyou"
+          ]
+        },
+        {
+          "id": "v60-t_luyu-s4",
+          "title": "资料边界与继续阅读",
+          "text": "生平早年材料少，茶神化传说不作事实；重点放在文本与产业链。 本文优先使用博物馆、国家图书馆、国家社科机构资料和官修正史；正史目前通过非官方开放古籍平台核对，页面已明确标注平台性质。人物评价与事件事实分开，诗歌、墓志、碑刻和后世传说各按材料用途阅读。可继续进入相关事件与人物，比较同一时期不同立场留下的证据。 阅读时还应比较材料成书年代、作者位置和保存过程：接近事件的材料未必没有立场，后出的研究也可能利用新出土证据纠正旧说。页面只在资料能够支持的范围内作结论。 资料不足之处直接保留为空白或争议。 不用传奇填满证据之间的间隙。",
+          "kind": "证据边界",
+          "sources": [
+            "v60_xts196",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_c05",
+            "v60t_e01",
+            "v60t_e02"
+          ],
+          "people": [
+            "t_daizong",
+            "t_dezong",
+            "t_duyou"
+          ]
+        },
+        {
+          "id": "v60-t_luyu-s5",
+          "title": "放回同时代观察",
+          "text": "把陆羽放回时代坐标，可以继续比较“《茶经》整理茶事知识”、“茶叶生产连接山地与城市”、“茶税进入国家财政”，并与李豫、李适、杜佑的经历对读。这些线索分别指向制度位置、事件结果和后世记忆，能够检验单一传记的取舍。同一人物在正史、作品、碑志或器物中留下的形象并不完全重合，差异本身也是理解唐代知识生产和历史评价的重要证据。",
+          "kind": "关联阅读",
+          "sources": [
+            "v60_xts196",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_c05",
+            "v60t_e01",
+            "v60t_e02"
+          ],
+          "people": [
+            "t_daizong",
+            "t_dezong",
+            "t_duyou"
+          ]
+        }
+      ],
+      "sources": [
+        "v60_xts196",
+        "v60_tang_overview"
+      ]
+    },
+    {
+      "person": "t_jianzhen",
+      "title": "鉴真：航海、传戒与东亚交流",
+      "dek": "六次航行背后是僧团、遣唐使、港口和海路网络，不是一名高僧独自完成的文化迁移。",
+      "sections": [
+        {
+          "id": "v60-t_jianzhen-s1",
+          "title": "扬州律学与赴日邀请",
+          "text": "鉴真在扬州从事佛教戒律讲授。日本僧人荣叡、普照等来唐求师，邀请能够主持传戒的高僧赴日。这个开端连接中日僧团、遣唐使和唐代东南交通。东渡不是朝廷正式国使任务，也不是孤身冒险，而是多人参与、需要船只和物资的宗教交流行动。",
+          "kind": "史实与解读",
+          "sources": [
+            "v60_jianzhen_nmc",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_c06",
+            "v60t_e05"
+          ],
+          "people": [
+            "t_xuanzong",
+            "t_luyu"
+          ]
+        },
+        {
+          "id": "v60-t_jianzhen-s2",
+          "title": "多次失败与海路风险",
+          "text": "从742年前后起，鉴真一行多次尝试渡海，受到告发、阻拦、风浪和漂流影响。第五次航行远漂至海南，归途中又经历疾病，传记称其失明。航次细节主要来自《唐大和上东征传》，含有高僧传记的叙事目的；基本时间线可信，具体情节仍应标明材料来源。",
+          "kind": "史实与解读",
+          "sources": [
+            "v60_jianzhen_nmc",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_c06",
+            "v60t_e05"
+          ],
+          "people": [
+            "t_xuanzong",
+            "t_luyu"
+          ]
+        },
+        {
+          "id": "v60-t_jianzhen-s3",
+          "title": "奈良传戒与共同创造",
+          "text": "753年鉴真随遣唐使船抵达日本，次年在东大寺传戒，后来建立唐招提寺。他带来的戒律、经典、工艺与医药知识由弟子、工匠和日本社会继续吸收。把影响全归一人会忽略共同体，也会把文化交流写成单向输入。鉴真的贡献在于长期组织和跨海行动的关键节点。",
+          "kind": "史实与解读",
+          "sources": [
+            "v60_jianzhen_nmc",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_c06",
+            "v60t_e05"
+          ],
+          "people": [
+            "t_xuanzong",
+            "t_luyu"
+          ]
+        },
+        {
+          "id": "v60-t_jianzhen-s4",
+          "title": "资料边界与继续阅读",
+          "text": "航行细节主要见僧传；宗教颂扬与可核时间、地点分开呈现。 本文优先使用博物馆、国家图书馆、国家社科机构资料和官修正史；正史目前通过非官方开放古籍平台核对，页面已明确标注平台性质。人物评价与事件事实分开，诗歌、墓志、碑刻和后世传说各按材料用途阅读。可继续进入相关事件与人物，比较同一时期不同立场留下的证据。 阅读时还应比较材料成书年代、作者位置和保存过程：接近事件的材料未必没有立场，后出的研究也可能利用新出土证据纠正旧说。页面只在资料能够支持的范围内作结论。 资料不足之处直接保留为空白或争议。 不用传奇填满证据之间的间隙。",
+          "kind": "证据边界",
+          "sources": [
+            "v60_jianzhen_nmc",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_c06",
+            "v60t_e05"
+          ],
+          "people": [
+            "t_xuanzong",
+            "t_luyu"
+          ]
+        },
+        {
+          "id": "v60-t_jianzhen-s5",
+          "title": "放回同时代观察",
+          "text": "把鉴真放回时代坐标，可以继续比较“鉴真多次渡海与日本传戒”、“扬州、广州与海路贸易”，并与李隆基、陆羽的经历对读。这些线索分别指向制度位置、事件结果和后世记忆，能够检验单一传记的取舍。同一人物在正史、作品、碑志或器物中留下的形象并不完全重合，差异本身也是理解唐代知识生产和历史评价的重要证据。",
+          "kind": "关联阅读",
+          "sources": [
+            "v60_jianzhen_nmc",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_c06",
+            "v60t_e05"
+          ],
+          "people": [
+            "t_xuanzong",
+            "t_luyu"
+          ]
+        }
+      ],
+      "sources": [
+        "v60_jianzhen_nmc",
+        "v60_tang_overview"
+      ]
+    },
+    {
+      "person": "t_sunsimiao",
+      "title": "孙思邈：医方、医德与传说边界",
+      "dek": "阅读《千金要方》的知识组织与医疗伦理，也辨别寿数、隐逸和药王神化。",
+      "sections": [
+        {
+          "id": "v60-t_sunsimiao-s1",
+          "title": "年代不明的医者生平",
+          "text": "孙思邈活动跨越隋唐，正史记录他多次被征召与隐居，但出生年份、寿数和具体行踪存在不同说法。后世尊称药王，并加入预言、神仙等故事。可靠叙述应承认年代边界，把重点放在著作、医学实践和同时代人对其学识的记载。",
+          "kind": "史实与解读",
+          "sources": [
+            "v60_jts191",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_s02"
+          ],
+          "people": [
+            "t_taizong",
+            "t_gaozong"
+          ]
+        },
+        {
+          "id": "v60-t_sunsimiao-s2",
+          "title": "《千金方》的知识规模",
+          "text": "《千金要方》与《千金翼方》汇集诊断、方药、妇儿疾病、针灸、急救和养生内容，保存大量前代经验，也有作者整理判断。书名强调人命贵于千金。古代病名和药量处在当时知识体系中，不能不经现代评估直接用于治疗。",
+          "kind": "史实与解读",
+          "sources": [
+            "v60_jts191",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_s02"
+          ],
+          "people": [
+            "t_taizong",
+            "t_gaozong"
+          ]
+        },
+        {
+          "id": "v60-t_sunsimiao-s3",
+          "title": "大医精诚与历史局限",
+          "text": "“大医精诚”讨论医者应平等看待患者、专心诊治并约束逐利之心，是中国医学伦理史的重要文本。同时，书中也包含时代性的身体观、禁忌和方术。尊重历史贡献并不要求接受所有结论；区分伦理理念、经验知识和现代临床证据，才能避免把经典神化。",
+          "kind": "史实与解读",
+          "sources": [
+            "v60_jts191",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_s02"
+          ],
+          "people": [
+            "t_taizong",
+            "t_gaozong"
+          ]
+        },
+        {
+          "id": "v60-t_sunsimiao-s4",
+          "title": "资料边界与继续阅读",
+          "text": "出生年份与寿数说法不一，神仙化故事不作确定事实。 本文优先使用博物馆、国家图书馆、国家社科机构资料和官修正史；正史目前通过非官方开放古籍平台核对，页面已明确标注平台性质。人物评价与事件事实分开，诗歌、墓志、碑刻和后世传说各按材料用途阅读。可继续进入相关事件与人物，比较同一时期不同立场留下的证据。 阅读时还应比较材料成书年代、作者位置和保存过程：接近事件的材料未必没有立场，后出的研究也可能利用新出土证据纠正旧说。页面只在资料能够支持的范围内作结论。 资料不足之处直接保留为空白或争议。 不用传奇填满证据之间的间隙。",
+          "kind": "证据边界",
+          "sources": [
+            "v60_jts191",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_s02"
+          ],
+          "people": [
+            "t_taizong",
+            "t_gaozong"
+          ]
+        },
+        {
+          "id": "v60-t_sunsimiao-s5",
+          "title": "放回同时代观察",
+          "text": "把孙思邈放回时代坐标，可以继续比较“孙思邈讨论医德与诊疗”，并与李世民、李治的经历对读。这些线索分别指向制度位置、事件结果和后世记忆，能够检验单一传记的取舍。同一人物在正史、作品、碑志或器物中留下的形象并不完全重合，差异本身也是理解唐代知识生产和历史评价的重要证据。 将医者传记与医书版本史并读，也能避免用后世庙祀和尊号倒推七世纪的全部生活细节。",
+          "kind": "关联阅读",
+          "sources": [
+            "v60_jts191",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_s02"
+          ],
+          "people": [
+            "t_taizong",
+            "t_gaozong"
+          ]
+        }
+      ],
+      "sources": [
+        "v60_jts191",
+        "v60_tang_overview"
+      ]
+    },
+    {
+      "person": "t_yanliben",
+      "title": "阎立本：画家身份之外的唐代官员",
+      "dek": "在宫廷图像、唐蕃题材和宰相仕履之间，保留《步辇图》作者归属的学术争论。",
+      "sections": [
+        {
+          "id": "v60-t_yanliben-s1",
+          "title": "家学、工程与官员身份",
+          "text": "阎立本出身以工程和艺术见长的家庭，兄长阎立德也参与宫殿、陵墓等营建。阎立本在太宗、高宗朝历任官职，最终进入宰相行列。后世一句“右相驰誉丹青”常被用来感叹画名盖过政治能力，却也提醒我们：唐代技术、艺术和行政身份并非截然分开。",
+          "kind": "史实与解读",
+          "sources": [
+            "v60_jts77",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_m01"
+          ],
+          "people": [
+            "t_taizong",
+            "t_gaozong",
+            "t_wencheng_princess"
+          ]
+        },
+        {
+          "id": "v60-t_yanliben-s2",
+          "title": "宫廷绘画与政治图像",
+          "text": "史书记载阎立本绘制人物、功臣和历史题材。宫廷绘画可以纪念功业、编排君臣秩序，也可能服务外交叙事。《步辇图》所表现的吐蕃使节主题符合这种功能，但现存卷的年代与作者归属仍有不同鉴定意见。使用“传阎立本”比直接称真迹更符合证据。",
+          "kind": "史实与解读",
+          "sources": [
+            "v60_jts77",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_m01"
+          ],
+          "people": [
+            "t_taizong",
+            "t_gaozong",
+            "t_wencheng_princess"
+          ]
+        },
+        {
+          "id": "v60-t_yanliben-s3",
+          "title": "画面不是历史现场",
+          "text": "即使作品题材对应真实事件，画家仍会安排人物位置、服饰和姿态，后世摹写又可能改变细节。画卷能够研究政治视觉和服饰图像，却不能证明人物真实容貌或会见现场的每个动作。把博物馆藏品说明与学术争论并列，能保留作品价值，也避免把名画当作无误差纪录。",
+          "kind": "史实与解读",
+          "sources": [
+            "v60_jts77",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_m01"
+          ],
+          "people": [
+            "t_taizong",
+            "t_gaozong",
+            "t_wencheng_princess"
+          ]
+        },
+        {
+          "id": "v60-t_yanliben-s4",
+          "title": "资料边界与继续阅读",
+          "text": "《步辇图》等传世作品的年代与作者归属存在学术分歧。 本文优先使用博物馆、国家图书馆、国家社科机构资料和官修正史；正史目前通过非官方开放古籍平台核对，页面已明确标注平台性质。人物评价与事件事实分开，诗歌、墓志、碑刻和后世传说各按材料用途阅读。可继续进入相关事件与人物，比较同一时期不同立场留下的证据。 阅读时还应比较材料成书年代、作者位置和保存过程：接近事件的材料未必没有立场，后出的研究也可能利用新出土证据纠正旧说。页面只在资料能够支持的范围内作结论。 资料不足之处直接保留为空白或争议。 不用传奇填满证据之间的间隙。",
+          "kind": "证据边界",
+          "sources": [
+            "v60_jts77",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_m01"
+          ],
+          "people": [
+            "t_taizong",
+            "t_gaozong",
+            "t_wencheng_princess"
+          ]
+        },
+        {
+          "id": "v60-t_yanliben-s5",
+          "title": "放回同时代观察",
+          "text": "把阎立本放回时代坐标，可以继续比较“唐蕃婚盟与文成公主入藏”，并与李世民、李治、文成公主的经历对读。这些线索分别指向制度位置、事件结果和后世记忆，能够检验单一传记的取舍。同一人物在正史、作品、碑志或器物中留下的形象并不完全重合，差异本身也是理解唐代知识生产和历史评价的重要证据。",
+          "kind": "关联阅读",
+          "sources": [
+            "v60_jts77",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_m01"
+          ],
+          "people": [
+            "t_taizong",
+            "t_gaozong",
+            "t_wencheng_princess"
+          ]
+        }
+      ],
+      "sources": [
+        "v60_jts77",
+        "v60_tang_overview"
+      ]
+    },
+    {
+      "person": "t_liugongquan",
+      "title": "柳公权：法度、侍书与中晚唐宫廷",
+      "dek": "从多朝侍书、碑刻与人格化书论，理解“柳骨”怎样在作品传播中形成。",
+      "sections": [
+        {
+          "id": "v60-t_liugongquan-s1",
+          "title": "多朝侍书与官僚生涯",
+          "text": "柳公权生活在中晚唐，历仕宪宗以后多朝，因书法受到皇帝重视，也承担正式官职。宫廷侍书使书家接近权力中心，却不等于掌握政务。传记中的机智应答和劝谏故事塑造了能以书法表达品格的臣子形象，需要与可核任官分别阅读。",
+          "kind": "史实与解读",
+          "sources": [
+            "v60_jts165",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_s06"
+          ],
+          "people": [
+            "t_xianzong",
+            "t_muzong",
+            "t_wenzong"
+          ]
+        },
+        {
+          "id": "v60-t_liugongquan-s2",
+          "title": "楷书法度与碑刻传播",
+          "text": "柳公权楷书后来与颜真卿并称，所谓“颜筋柳骨”是后世对风格的高度概括。《玄秘塔碑》等刻石及历代拓本，使其字形成为学习范本。原碑、不同拓本与现代字帖的清晰度和缺损不同，临习传统也会不断重塑人们心中的“柳体”。",
+          "kind": "史实与解读",
+          "sources": [
+            "v60_jts165",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_s06"
+          ],
+          "people": [
+            "t_xianzong",
+            "t_muzong",
+            "t_wenzong"
+          ]
+        },
+        {
+          "id": "v60-t_liugongquan-s3",
+          "title": "心正笔正的历史含义",
+          "text": "“用笔在心，心正则笔正”广为流传，把书法形式与政治品格联系起来。无论具体对话怎样形成，这种解释影响了后世评价书家的方式。书法不能证明一个人所有政治选择都正确，人物品德也不能代替作品分析。保留两者距离，反而更能理解人格化书论为何持久。",
+          "kind": "史实与解读",
+          "sources": [
+            "v60_jts165",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_s06"
+          ],
+          "people": [
+            "t_xianzong",
+            "t_muzong",
+            "t_wenzong"
+          ]
+        },
+        {
+          "id": "v60-t_liugongquan-s4",
+          "title": "资料边界与继续阅读",
+          "text": "“心正则笔正”等故事体现后世人格化理解，需与早期记载区分。 本文优先使用博物馆、国家图书馆、国家社科机构资料和官修正史；正史目前通过非官方开放古籍平台核对，页面已明确标注平台性质。人物评价与事件事实分开，诗歌、墓志、碑刻和后世传说各按材料用途阅读。可继续进入相关事件与人物，比较同一时期不同立场留下的证据。 阅读时还应比较材料成书年代、作者位置和保存过程：接近事件的材料未必没有立场，后出的研究也可能利用新出土证据纠正旧说。页面只在资料能够支持的范围内作结论。 资料不足之处直接保留为空白或争议。 不用传奇填满证据之间的间隙。",
+          "kind": "证据边界",
+          "sources": [
+            "v60_jts165",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_s06"
+          ],
+          "people": [
+            "t_xianzong",
+            "t_muzong",
+            "t_wenzong"
+          ]
+        },
+        {
+          "id": "v60-t_liugongquan-s5",
+          "title": "放回同时代观察",
+          "text": "把柳公权放回时代坐标，可以继续比较“雕版印刷扩大文本复制”，并与李纯、李恒、李昂的经历对读。这些线索分别指向制度位置、事件结果和后世记忆，能够检验单一传记的取舍。同一人物在正史、作品、碑志或器物中留下的形象并不完全重合，差异本身也是理解唐代知识生产和历史评价的重要证据。 同时比较碑石、拓本与后世临写，才能看见作品传播中的变化。",
+          "kind": "关联阅读",
+          "sources": [
+            "v60_jts165",
+            "v60_tang_overview"
+          ],
+          "events": [
+            "v60t_s06"
+          ],
+          "people": [
+            "t_xianzong",
+            "t_muzong",
+            "t_wenzong"
+          ]
+        }
+      ],
+      "sources": [
+        "v60_jts165",
+        "v60_tang_overview"
+      ]
     }
   ],
   "portraits": [
@@ -162338,6 +165385,578 @@
         "v59_shiji_xia",
         "v59_oxford_xia"
       ]
+    },
+    {
+      "from": "t_changsun_empress",
+      "to": "t_taizong",
+      "role": "同一历史议题中的关联人物",
+      "inverse": "同一历史议题中的关联人物",
+      "period": "唐代",
+      "note": "用于连接共同事件、制度或作品，不推定史料未记载的私人交往。",
+      "sources": [
+        "v60_jts51"
+      ]
+    },
+    {
+      "from": "t_changsun_empress",
+      "to": "t_zhangsunwuji",
+      "role": "同一历史议题中的关联人物",
+      "inverse": "同一历史议题中的关联人物",
+      "period": "唐代",
+      "note": "用于连接共同事件、制度或作品，不推定史料未记载的私人交往。",
+      "sources": [
+        "v60_jts51"
+      ]
+    },
+    {
+      "from": "t_wencheng_princess",
+      "to": "t_taizong",
+      "role": "同一历史议题中的关联人物",
+      "inverse": "同一历史议题中的关联人物",
+      "period": "唐代",
+      "note": "用于连接共同事件、制度或作品，不推定史料未记载的私人交往。",
+      "sources": [
+        "v60_dpm_bunian"
+      ]
+    },
+    {
+      "from": "t_wencheng_princess",
+      "to": "t_yanliben",
+      "role": "同一历史议题中的关联人物",
+      "inverse": "同一历史议题中的关联人物",
+      "period": "唐代",
+      "note": "用于连接共同事件、制度或作品，不推定史料未记载的私人交往。",
+      "sources": [
+        "v60_dpm_bunian"
+      ]
+    },
+    {
+      "from": "t_shangguan_waner",
+      "to": "t_wuzetian",
+      "role": "同一历史议题中的关联人物",
+      "inverse": "同一历史议题中的关联人物",
+      "period": "唐代",
+      "note": "用于连接共同事件、制度或作品，不推定史料未记载的私人交往。",
+      "sources": [
+        "v60_xts76"
+      ]
+    },
+    {
+      "from": "t_shangguan_waner",
+      "to": "t_zhongzong",
+      "role": "同一历史议题中的关联人物",
+      "inverse": "同一历史议题中的关联人物",
+      "period": "唐代",
+      "note": "用于连接共同事件、制度或作品，不推定史料未记载的私人交往。",
+      "sources": [
+        "v60_xts76"
+      ]
+    },
+    {
+      "from": "t_shangguan_waner",
+      "to": "t_taiping",
+      "role": "同一历史议题中的关联人物",
+      "inverse": "同一历史议题中的关联人物",
+      "period": "唐代",
+      "note": "用于连接共同事件、制度或作品，不推定史料未记载的私人交往。",
+      "sources": [
+        "v60_xts76"
+      ]
+    },
+    {
+      "from": "t_yang_guifei",
+      "to": "t_xuanzong",
+      "role": "同一历史议题中的关联人物",
+      "inverse": "同一历史议题中的关联人物",
+      "period": "唐代",
+      "note": "用于连接共同事件、制度或作品，不推定史料未记载的私人交往。",
+      "sources": [
+        "v60_jts51"
+      ]
+    },
+    {
+      "from": "t_yang_guifei",
+      "to": "t_yangguozhong",
+      "role": "同一历史议题中的关联人物",
+      "inverse": "同一历史议题中的关联人物",
+      "period": "唐代",
+      "note": "用于连接共同事件、制度或作品，不推定史料未记载的私人交往。",
+      "sources": [
+        "v60_jts51"
+      ]
+    },
+    {
+      "from": "t_yang_guifei",
+      "to": "t_gaolishi",
+      "role": "同一历史议题中的关联人物",
+      "inverse": "同一历史议题中的关联人物",
+      "period": "唐代",
+      "note": "用于连接共同事件、制度或作品，不推定史料未记载的私人交往。",
+      "sources": [
+        "v60_jts51"
+      ]
+    },
+    {
+      "from": "t_gaolishi",
+      "to": "t_xuanzong",
+      "role": "同一历史议题中的关联人物",
+      "inverse": "同一历史议题中的关联人物",
+      "period": "唐代",
+      "note": "用于连接共同事件、制度或作品，不推定史料未记载的私人交往。",
+      "sources": [
+        "v60_jts184"
+      ]
+    },
+    {
+      "from": "t_gaolishi",
+      "to": "t_yang_guifei",
+      "role": "同一历史议题中的关联人物",
+      "inverse": "同一历史议题中的关联人物",
+      "period": "唐代",
+      "note": "用于连接共同事件、制度或作品，不推定史料未记载的私人交往。",
+      "sources": [
+        "v60_jts184"
+      ]
+    },
+    {
+      "from": "t_gaolishi",
+      "to": "t_yangguozhong",
+      "role": "同一历史议题中的关联人物",
+      "inverse": "同一历史议题中的关联人物",
+      "period": "唐代",
+      "note": "用于连接共同事件、制度或作品，不推定史料未记载的私人交往。",
+      "sources": [
+        "v60_jts184"
+      ]
+    },
+    {
+      "from": "t_yangguozhong",
+      "to": "t_xuanzong",
+      "role": "同一历史议题中的关联人物",
+      "inverse": "同一历史议题中的关联人物",
+      "period": "唐代",
+      "note": "用于连接共同事件、制度或作品，不推定史料未记载的私人交往。",
+      "sources": [
+        "v60_jts106"
+      ]
+    },
+    {
+      "from": "t_yangguozhong",
+      "to": "t_yang_guifei",
+      "role": "同一历史议题中的关联人物",
+      "inverse": "同一历史议题中的关联人物",
+      "period": "唐代",
+      "note": "用于连接共同事件、制度或作品，不推定史料未记载的私人交往。",
+      "sources": [
+        "v60_jts106"
+      ]
+    },
+    {
+      "from": "t_yangguozhong",
+      "to": "t_gaolishi",
+      "role": "同一历史议题中的关联人物",
+      "inverse": "同一历史议题中的关联人物",
+      "period": "唐代",
+      "note": "用于连接共同事件、制度或作品，不推定史料未记载的私人交往。",
+      "sources": [
+        "v60_jts106"
+      ]
+    },
+    {
+      "from": "t_libi",
+      "to": "t_suzong",
+      "role": "同一历史议题中的关联人物",
+      "inverse": "同一历史议题中的关联人物",
+      "period": "唐代",
+      "note": "用于连接共同事件、制度或作品，不推定史料未记载的私人交往。",
+      "sources": [
+        "v60_jts130"
+      ]
+    },
+    {
+      "from": "t_libi",
+      "to": "t_daizong",
+      "role": "同一历史议题中的关联人物",
+      "inverse": "同一历史议题中的关联人物",
+      "period": "唐代",
+      "note": "用于连接共同事件、制度或作品，不推定史料未记载的私人交往。",
+      "sources": [
+        "v60_jts130"
+      ]
+    },
+    {
+      "from": "t_libi",
+      "to": "t_dezong",
+      "role": "同一历史议题中的关联人物",
+      "inverse": "同一历史议题中的关联人物",
+      "period": "唐代",
+      "note": "用于连接共同事件、制度或作品，不推定史料未记载的私人交往。",
+      "sources": [
+        "v60_jts130"
+      ]
+    },
+    {
+      "from": "t_libi",
+      "to": "t_guoziyi",
+      "role": "同一历史议题中的关联人物",
+      "inverse": "同一历史议题中的关联人物",
+      "period": "唐代",
+      "note": "用于连接共同事件、制度或作品，不推定史料未记载的私人交往。",
+      "sources": [
+        "v60_jts130"
+      ]
+    },
+    {
+      "from": "t_yanzhenqing",
+      "to": "t_xuanzong",
+      "role": "同一历史议题中的关联人物",
+      "inverse": "同一历史议题中的关联人物",
+      "period": "唐代",
+      "note": "用于连接共同事件、制度或作品，不推定史料未记载的私人交往。",
+      "sources": [
+        "v60_jts128"
+      ]
+    },
+    {
+      "from": "t_yanzhenqing",
+      "to": "t_daizong",
+      "role": "同一历史议题中的关联人物",
+      "inverse": "同一历史议题中的关联人物",
+      "period": "唐代",
+      "note": "用于连接共同事件、制度或作品，不推定史料未记载的私人交往。",
+      "sources": [
+        "v60_jts128"
+      ]
+    },
+    {
+      "from": "t_yanzhenqing",
+      "to": "t_anlushan",
+      "role": "同一历史议题中的关联人物",
+      "inverse": "同一历史议题中的关联人物",
+      "period": "唐代",
+      "note": "用于连接共同事件、制度或作品，不推定史料未记载的私人交往。",
+      "sources": [
+        "v60_jts128"
+      ]
+    },
+    {
+      "from": "t_duyou",
+      "to": "t_daizong",
+      "role": "同一历史议题中的关联人物",
+      "inverse": "同一历史议题中的关联人物",
+      "period": "唐代",
+      "note": "用于连接共同事件、制度或作品，不推定史料未记载的私人交往。",
+      "sources": [
+        "v60_jts147"
+      ]
+    },
+    {
+      "from": "t_duyou",
+      "to": "t_dezong",
+      "role": "同一历史议题中的关联人物",
+      "inverse": "同一历史议题中的关联人物",
+      "period": "唐代",
+      "note": "用于连接共同事件、制度或作品，不推定史料未记载的私人交往。",
+      "sources": [
+        "v60_jts147"
+      ]
+    },
+    {
+      "from": "t_duyou",
+      "to": "t_xianzong",
+      "role": "同一历史议题中的关联人物",
+      "inverse": "同一历史议题中的关联人物",
+      "period": "唐代",
+      "note": "用于连接共同事件、制度或作品，不推定史料未记载的私人交往。",
+      "sources": [
+        "v60_jts147"
+      ]
+    },
+    {
+      "from": "t_liuzongyuan",
+      "to": "t_shunzong",
+      "role": "同一历史议题中的关联人物",
+      "inverse": "同一历史议题中的关联人物",
+      "period": "唐代",
+      "note": "用于连接共同事件、制度或作品，不推定史料未记载的私人交往。",
+      "sources": [
+        "v60_jts160"
+      ]
+    },
+    {
+      "from": "t_liuzongyuan",
+      "to": "t_xianzong",
+      "role": "同一历史议题中的关联人物",
+      "inverse": "同一历史议题中的关联人物",
+      "period": "唐代",
+      "note": "用于连接共同事件、制度或作品，不推定史料未记载的私人交往。",
+      "sources": [
+        "v60_jts160"
+      ]
+    },
+    {
+      "from": "t_liuzongyuan",
+      "to": "t_hanyu",
+      "role": "同一历史议题中的关联人物",
+      "inverse": "同一历史议题中的关联人物",
+      "period": "唐代",
+      "note": "用于连接共同事件、制度或作品，不推定史料未记载的私人交往。",
+      "sources": [
+        "v60_jts160"
+      ]
+    },
+    {
+      "from": "t_baijuyi",
+      "to": "t_xianzong",
+      "role": "同一历史议题中的关联人物",
+      "inverse": "同一历史议题中的关联人物",
+      "period": "唐代",
+      "note": "用于连接共同事件、制度或作品，不推定史料未记载的私人交往。",
+      "sources": [
+        "v60_jts166"
+      ]
+    },
+    {
+      "from": "t_baijuyi",
+      "to": "t_muzong",
+      "role": "同一历史议题中的关联人物",
+      "inverse": "同一历史议题中的关联人物",
+      "period": "唐代",
+      "note": "用于连接共同事件、制度或作品，不推定史料未记载的私人交往。",
+      "sources": [
+        "v60_jts166"
+      ]
+    },
+    {
+      "from": "t_baijuyi",
+      "to": "t_liuzongyuan",
+      "role": "同一历史议题中的关联人物",
+      "inverse": "同一历史议题中的关联人物",
+      "period": "唐代",
+      "note": "用于连接共同事件、制度或作品，不推定史料未记载的私人交往。",
+      "sources": [
+        "v60_jts166"
+      ]
+    },
+    {
+      "from": "t_luyu",
+      "to": "t_daizong",
+      "role": "同一历史议题中的关联人物",
+      "inverse": "同一历史议题中的关联人物",
+      "period": "唐代",
+      "note": "用于连接共同事件、制度或作品，不推定史料未记载的私人交往。",
+      "sources": [
+        "v60_xts196"
+      ]
+    },
+    {
+      "from": "t_luyu",
+      "to": "t_dezong",
+      "role": "同一历史议题中的关联人物",
+      "inverse": "同一历史议题中的关联人物",
+      "period": "唐代",
+      "note": "用于连接共同事件、制度或作品，不推定史料未记载的私人交往。",
+      "sources": [
+        "v60_xts196"
+      ]
+    },
+    {
+      "from": "t_luyu",
+      "to": "t_duyou",
+      "role": "同一历史议题中的关联人物",
+      "inverse": "同一历史议题中的关联人物",
+      "period": "唐代",
+      "note": "用于连接共同事件、制度或作品，不推定史料未记载的私人交往。",
+      "sources": [
+        "v60_xts196"
+      ]
+    },
+    {
+      "from": "t_jianzhen",
+      "to": "t_xuanzong",
+      "role": "同一历史议题中的关联人物",
+      "inverse": "同一历史议题中的关联人物",
+      "period": "唐代",
+      "note": "用于连接共同事件、制度或作品，不推定史料未记载的私人交往。",
+      "sources": [
+        "v60_jianzhen_nmc"
+      ]
+    },
+    {
+      "from": "t_jianzhen",
+      "to": "t_luyu",
+      "role": "同一历史议题中的关联人物",
+      "inverse": "同一历史议题中的关联人物",
+      "period": "唐代",
+      "note": "用于连接共同事件、制度或作品，不推定史料未记载的私人交往。",
+      "sources": [
+        "v60_jianzhen_nmc"
+      ]
+    },
+    {
+      "from": "t_sunsimiao",
+      "to": "t_taizong",
+      "role": "同一历史议题中的关联人物",
+      "inverse": "同一历史议题中的关联人物",
+      "period": "唐代",
+      "note": "用于连接共同事件、制度或作品，不推定史料未记载的私人交往。",
+      "sources": [
+        "v60_jts191"
+      ]
+    },
+    {
+      "from": "t_sunsimiao",
+      "to": "t_gaozong",
+      "role": "同一历史议题中的关联人物",
+      "inverse": "同一历史议题中的关联人物",
+      "period": "唐代",
+      "note": "用于连接共同事件、制度或作品，不推定史料未记载的私人交往。",
+      "sources": [
+        "v60_jts191"
+      ]
+    },
+    {
+      "from": "t_yanliben",
+      "to": "t_taizong",
+      "role": "同一历史议题中的关联人物",
+      "inverse": "同一历史议题中的关联人物",
+      "period": "唐代",
+      "note": "用于连接共同事件、制度或作品，不推定史料未记载的私人交往。",
+      "sources": [
+        "v60_jts77"
+      ]
+    },
+    {
+      "from": "t_yanliben",
+      "to": "t_gaozong",
+      "role": "同一历史议题中的关联人物",
+      "inverse": "同一历史议题中的关联人物",
+      "period": "唐代",
+      "note": "用于连接共同事件、制度或作品，不推定史料未记载的私人交往。",
+      "sources": [
+        "v60_jts77"
+      ]
+    },
+    {
+      "from": "t_yanliben",
+      "to": "t_wencheng_princess",
+      "role": "同一历史议题中的关联人物",
+      "inverse": "同一历史议题中的关联人物",
+      "period": "唐代",
+      "note": "用于连接共同事件、制度或作品，不推定史料未记载的私人交往。",
+      "sources": [
+        "v60_jts77"
+      ]
+    },
+    {
+      "from": "t_liugongquan",
+      "to": "t_xianzong",
+      "role": "同一历史议题中的关联人物",
+      "inverse": "同一历史议题中的关联人物",
+      "period": "唐代",
+      "note": "用于连接共同事件、制度或作品，不推定史料未记载的私人交往。",
+      "sources": [
+        "v60_jts165"
+      ]
+    },
+    {
+      "from": "t_liugongquan",
+      "to": "t_muzong",
+      "role": "同一历史议题中的关联人物",
+      "inverse": "同一历史议题中的关联人物",
+      "period": "唐代",
+      "note": "用于连接共同事件、制度或作品，不推定史料未记载的私人交往。",
+      "sources": [
+        "v60_jts165"
+      ]
+    },
+    {
+      "from": "t_liugongquan",
+      "to": "t_wenzong",
+      "role": "同一历史议题中的关联人物",
+      "inverse": "同一历史议题中的关联人物",
+      "period": "唐代",
+      "note": "用于连接共同事件、制度或作品，不推定史料未记载的私人交往。",
+      "sources": [
+        "v60_jts165"
+      ]
+    },
+    {
+      "from": "t_shangguan_waner",
+      "to": "t_gaozong",
+      "role": "在其统治时期活动的重要人物",
+      "inverse": "统治时期关联人物",
+      "period": "唐高宗至中宗时期",
+      "note": "依据任职、宫廷关系、共同事件或同时代活动建立的阅读关联。",
+      "sources": [
+        "v60_xts76"
+      ]
+    },
+    {
+      "from": "t_libi",
+      "to": "t_xuanzong",
+      "role": "在其统治时期活动的重要人物",
+      "inverse": "统治时期关联人物",
+      "period": "唐玄宗至德宗时期",
+      "note": "依据任职、宫廷关系、共同事件或同时代活动建立的阅读关联。",
+      "sources": [
+        "v60_jts130"
+      ]
+    },
+    {
+      "from": "t_luyu",
+      "to": "t_xuanzong",
+      "role": "在其统治时期活动的重要人物",
+      "inverse": "统治时期关联人物",
+      "period": "唐玄宗至德宗时期",
+      "note": "依据任职、宫廷关系、共同事件或同时代活动建立的阅读关联。",
+      "sources": [
+        "v60_xts196"
+      ]
+    },
+    {
+      "from": "t_yanzhenqing",
+      "to": "t_suzong",
+      "role": "在其统治时期活动的重要人物",
+      "inverse": "统治时期关联人物",
+      "period": "唐玄宗至德宗时期",
+      "note": "依据任职、宫廷关系、共同事件或同时代活动建立的阅读关联。",
+      "sources": [
+        "v60_jts128"
+      ]
+    },
+    {
+      "from": "t_liuzongyuan",
+      "to": "t_dezong",
+      "role": "在其统治时期活动的重要人物",
+      "inverse": "统治时期关联人物",
+      "period": "唐德宗至宪宗时期",
+      "note": "依据任职、宫廷关系、共同事件或同时代活动建立的阅读关联。",
+      "sources": [
+        "v60_jts160"
+      ]
+    },
+    {
+      "from": "t_baijuyi",
+      "to": "t_dezong",
+      "role": "在其统治时期活动的重要人物",
+      "inverse": "统治时期关联人物",
+      "period": "唐德宗至武宗时期",
+      "note": "依据任职、宫廷关系、共同事件或同时代活动建立的阅读关联。",
+      "sources": [
+        "v60_jts166"
+      ]
+    },
+    {
+      "from": "t_liugongquan",
+      "to": "t_yizong",
+      "role": "在其统治时期活动的重要人物",
+      "inverse": "统治时期关联人物",
+      "period": "唐宪宗至懿宗时期",
+      "note": "依据任职、宫廷关系、共同事件或同时代活动建立的阅读关联。",
+      "sources": [
+        "v60_jts165"
+      ]
     }
   ],
   "dynasties": [
@@ -165647,7 +169266,11 @@
         "t_fangxuanling",
         "t_weizheng",
         "t_zhangsunwuji",
-        "t_xuanzang"
+        "t_xuanzang",
+        "t_changsun_empress",
+        "t_wencheng_princess",
+        "t_sunsimiao",
+        "t_yanliben"
       ],
       "events": [
         "v43t_eastturk",
@@ -165661,7 +169284,11 @@
         "v43t_jts2",
         "v43t_jts3",
         "v43t_cien1",
-        "v43t_cien6"
+        "v43t_cien6",
+        "v60_jts51",
+        "v60_dpm_bunian",
+        "v60_jts191",
+        "v60_jts77"
       ],
       "note": ""
     },
@@ -165677,7 +169304,10 @@
       "people": [
         "t_wuzetian",
         "t_zhangsunwuji",
-        "t_xuanzang"
+        "t_xuanzang",
+        "t_sunsimiao",
+        "t_yanliben",
+        "t_shangguan_waner"
       ],
       "events": [
         "v43t_yonghui_shuyi",
@@ -165689,7 +169319,10 @@
       "sources": [
         "v43t_jts4",
         "v43t_jts5",
-        "v43t_cien10"
+        "v43t_cien10",
+        "v60_jts191",
+        "v60_jts77",
+        "v60_xts76"
       ],
       "note": ""
     },
@@ -165710,7 +169343,8 @@
       "people": [
         "t_wuzetian",
         "t_empresswei",
-        "t_taiping"
+        "t_taiping",
+        "t_shangguan_waner"
       ],
       "events": [
         "v43t_zhongzong_deposed",
@@ -165720,7 +169354,8 @@
       ],
       "sources": [
         "v43t_jts7",
-        "v43t_xts083"
+        "v43t_xts083",
+        "v60_xts76"
       ],
       "note": "分列684年与705—710年两段在位，武周阶段不计入中宗在位。"
     },
@@ -165771,7 +169406,8 @@
       "people": [
         "t_direnjie",
         "t_yaochong",
-        "t_taiping"
+        "t_taiping",
+        "t_shangguan_waner"
       ],
       "events": [
         "v43t_wuzhou",
@@ -165783,7 +169419,8 @@
       "sources": [
         "v43t_jts6",
         "v43t_jts7",
-        "v43t_xts083"
+        "v43t_xts083",
+        "v60_xts76"
       ],
       "note": "武周690—705年单列；此前皇后与临朝太后活动另见生平相关事件。"
     },
@@ -165825,7 +169462,14 @@
         "t_anlushan",
         "t_dufu",
         "t_taiping",
-        "t_libai"
+        "t_libai",
+        "t_yang_guifei",
+        "t_gaolishi",
+        "t_yangguozhong",
+        "t_libi",
+        "t_yanzhenqing",
+        "t_luyu",
+        "t_jianzhen"
       ],
       "events": [
         "v43t_ruizong_abdication",
@@ -165841,7 +169485,14 @@
         "v43t_jts9",
         "v43t_xts083",
         "v43t_jts190b",
-        "v43t_xts202"
+        "v43t_xts202",
+        "v60_jts51",
+        "v60_jts184",
+        "v60_jts106",
+        "v60_jts130",
+        "v60_jts128",
+        "v60_xts196",
+        "v60_jianzhen_nmc"
       ],
       "note": ""
     },
@@ -165859,7 +169510,9 @@
         "t_daizong",
         "t_dufu",
         "t_liuyan",
-        "t_libai"
+        "t_libai",
+        "t_libi",
+        "t_yanzhenqing"
       ],
       "events": [
         "v43t_mawei_lingwu",
@@ -165871,7 +169524,9 @@
       "sources": [
         "v43t_jts10",
         "v43t_jts190b",
-        "v43t_xts202"
+        "v43t_xts202",
+        "v60_jts130",
+        "v60_jts128"
       ],
       "note": ""
     },
@@ -165887,7 +169542,11 @@
       "people": [
         "t_guoziyi",
         "t_liuyan",
-        "t_dezong"
+        "t_dezong",
+        "t_libi",
+        "t_yanzhenqing",
+        "t_duyou",
+        "t_luyu"
       ],
       "events": [
         "v43t_rebellion_end",
@@ -165895,7 +169554,11 @@
         "v43t_grain_transport"
       ],
       "sources": [
-        "v43t_jts11"
+        "v43t_jts11",
+        "v60_jts130",
+        "v60_jts128",
+        "v60_jts147",
+        "v60_xts196"
       ],
       "note": ""
     },
@@ -165912,7 +169575,12 @@
         "t_yangyan",
         "t_liuyan",
         "t_hanyu",
-        "t_shunzong"
+        "t_shunzong",
+        "t_libi",
+        "t_duyou",
+        "t_liuzongyuan",
+        "t_baijuyi",
+        "t_luyu"
       ],
       "events": [
         "v43t_two_tax",
@@ -165922,7 +169590,12 @@
       ],
       "sources": [
         "v43t_jts12",
-        "v43t_jts13"
+        "v43t_jts13",
+        "v60_jts130",
+        "v60_jts147",
+        "v60_jts160",
+        "v60_jts166",
+        "v60_xts196"
       ],
       "note": ""
     },
@@ -165937,14 +169610,16 @@
       ],
       "people": [
         "t_wangshuwen",
-        "t_xianzong"
+        "t_xianzong",
+        "t_liuzongyuan"
       ],
       "events": [
         "v43t_yongzhen",
         "v43t_shunzong_transfer"
       ],
       "sources": [
-        "v43t_jts14"
+        "v43t_jts14",
+        "v60_jts160"
       ],
       "note": "在位时间短，现存记载主要反映宫廷权力转移，不能据此虚构个人治绩。"
     },
@@ -165959,7 +169634,11 @@
       ],
       "people": [
         "t_peidu",
-        "t_hanyu"
+        "t_hanyu",
+        "t_duyou",
+        "t_liuzongyuan",
+        "t_baijuyi",
+        "t_liugongquan"
       ],
       "events": [
         "v43t_shunzong_transfer",
@@ -165969,7 +169648,11 @@
       ],
       "sources": [
         "v43t_jts14",
-        "v43t_jts15"
+        "v43t_jts15",
+        "v60_jts147",
+        "v60_jts160",
+        "v60_jts166",
+        "v60_jts165"
       ],
       "note": ""
     },
@@ -165984,14 +169667,18 @@
       ],
       "people": [
         "t_peidu",
-        "t_lideyu"
+        "t_lideyu",
+        "t_baijuyi",
+        "t_liugongquan"
       ],
       "events": [
         "v43t_hebei_reversal",
         "v43t_changqing_peace"
       ],
       "sources": [
-        "v43t_jts16"
+        "v43t_jts16",
+        "v60_jts166",
+        "v60_jts165"
       ],
       "note": ""
     },
@@ -166029,7 +169716,8 @@
       "people": [
         "t_qiushiliang",
         "t_peidu",
-        "t_lideyu"
+        "t_lideyu",
+        "t_liugongquan"
       ],
       "events": [
         "v43t_jingzong_killed",
@@ -166040,7 +169728,8 @@
       "sources": [
         "v43t_jts17a",
         "v43t_jts17b",
-        "v43t_beilin_stone"
+        "v43t_beilin_stone",
+        "v60_jts165"
       ],
       "note": ""
     },
@@ -166099,14 +169788,16 @@
       ],
       "people": [
         "t_kangchengxun",
-        "t_baiminzhong"
+        "t_baiminzhong",
+        "t_liugongquan"
       ],
       "events": [
         "v43t_pangxun",
         "v43t_yizong_bone"
       ],
       "sources": [
-        "v43t_jts19a"
+        "v43t_jts19a",
+        "v60_jts165"
       ],
       "note": "白敏中仅关联859—861年初期任事，不参与后来庞勋之乱及迎佛骨。"
     },

@@ -2001,4 +2001,41 @@ final class MingJiUITests: XCTestCase {
         shot("v59-bronze-jue-source", heritage)
     }
 
+    @MainActor func testV60TangCourtPeopleAndMaterialHistory() throws {
+        let person = XCUIApplication()
+        person.launchArguments = ["--uitesting", "--ui-dynasty", "tang"]
+        person.launch()
+        XCTAssertTrue(person.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        XCTAssertEqual(person.tabBars.buttons.allElementsBoundByIndex.map(\.label), ["朝代", "帝序", "家族", "遗珍"])
+        person.tabBars.buttons["帝序"].tap()
+        let xuanzong = person.buttons["succession_t_9"]
+        reach(xuanzong, in: person, attempts: 20); xuanzong.tap()
+        person.buttons["personHero"].tap()
+        person.buttons["category_court"].tap()
+        let guifei = person.buttons["court_t_yang_guifei"]
+        reach(guifei, in: person, attempts: 18)
+        XCTAssertTrue(guifei.exists)
+        guifei.tap()
+        XCTAssertTrue(person.staticTexts["杨贵妃"].waitForExistence(timeout: 5))
+        openArticle(in: person)
+        XCTAssertTrue(person.buttons["articleContents"].waitForExistence(timeout: 5))
+        XCTAssertTrue(person.staticTexts["资料边界与继续阅读"].exists)
+        shot("v60-yang-guifei-reader", person)
+        person.terminate()
+
+        let heritage = XCUIApplication()
+        heritage.launchArguments = ["--uitesting", "--ui-dynasty", "tang"]
+        heritage.launch()
+        XCTAssertTrue(heritage.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        heritage.tabBars.buttons["遗珍"].tap()
+        heritage.buttons["collectionCategory_objects"].tap()
+        let horse = heritage.buttons["artifact_v60_obj_horse"]
+        reachReadingLink(horse, in: heritage); horse.tap()
+        XCTAssertTrue(heritage.staticTexts["何家村窖藏与宫廷舞马"].waitForExistence(timeout: 5))
+        let sources = heritage.buttons["资料与出处"]
+        reach(sources, in: heritage, attempts: 12); sources.tap()
+        XCTAssertTrue(heritage.buttons["source_v60_sxhm_horse"].waitForExistence(timeout: 5))
+        shot("v60-dancing-horse-source", heritage)
+    }
+
 }
