@@ -1746,4 +1746,50 @@ final class MingJiUITests: XCTestCase {
         shot("v53-yungang-source", heritage)
     }
 
+    @MainActor func testV54FiveDynastiesParallelHistoryPaths() throws {
+        let sequence = XCUIApplication()
+        sequence.launchArguments = ["--uitesting", "--ui-dynasty", "five_dynasties"]
+        sequence.launch()
+        XCTAssertTrue(sequence.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        XCTAssertEqual(sequence.tabBars.buttons.allElementsBoundByIndex.map(\.label), ["朝代", "帝序", "家族", "遗珍"])
+        sequence.tabBars.buttons["帝序"].tap()
+        XCTAssertTrue(sequence.descendants(matching: .any)["successionPage_five_dynasties"].waitForExistence(timeout: 5))
+        XCTAssertTrue(sequence.descendants(matching: .any)["successionGroup_中原五代"].exists)
+        XCTAssertTrue(sequence.buttons["succession_v54_seq_1_01"].exists)
+        let southernTang = sequence.descendants(matching: .any)["successionGroup_南唐"]
+        reach(southernTang, in: sequence, attempts: 26)
+        XCTAssertTrue(southernTang.exists)
+        shot("v54-five-dynasties-parallel-sequence", sequence)
+        sequence.terminate()
+
+        let person = XCUIApplication()
+        person.launchArguments = ["--uitesting", "--ui-dynasty", "five_dynasties"]
+        person.launch()
+        XCTAssertTrue(person.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        person.tabBars.buttons["帝序"].tap()
+        person.buttons["succession_v54_seq_1_01"].tap()
+        person.buttons["personHero"].tap()
+        for category in ["政治", "军事", "文化", "经济", "社会"] {
+            XCTAssertTrue(person.buttons["eventCategory_" + category].exists, category)
+        }
+        openArticle(in: person)
+        XCTAssertTrue(person.buttons["articleContents"].waitForExistence(timeout: 5))
+        shot("v54-zhuwen-reader", person)
+        person.terminate()
+
+        let heritage = XCUIApplication()
+        heritage.launchArguments = ["--uitesting", "--ui-dynasty", "five_dynasties"]
+        heritage.launch()
+        XCTAssertTrue(heritage.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        heritage.tabBars.buttons["遗珍"].tap()
+        heritage.buttons["collectionCategory_objects"].tap()
+        let painting = heritage.buttons["artifact_v54_obj_night"]
+        reachReadingLink(painting, in: heritage); painting.tap()
+        XCTAssertTrue(heritage.staticTexts["现存宋摹本，不能直接当作现场记录"].waitForExistence(timeout: 5))
+        let sources = heritage.buttons["资料与出处"]
+        reach(sources, in: heritage, attempts: 12); sources.tap()
+        XCTAssertTrue(heritage.buttons["source_v54_night"].waitForExistence(timeout: 5))
+        shot("v54-night-revels-source", heritage)
+    }
+
 }

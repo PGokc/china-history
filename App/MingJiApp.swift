@@ -443,7 +443,7 @@ struct SuccessionPage: View {
     @Environment(\.dynamicTypeSize) private var typeSize
     var items: [Succession] { store.sequence(in: dynastyID) }
     private var groups: [SuccessionGroup] {
-        guard dynastyID == "three_kingdoms" || dynastyID == "jin" || dynastyID == "northern_southern" else {
+        guard dynastyID == "three_kingdoms" || dynastyID == "jin" || dynastyID == "northern_southern" || dynastyID == "five_dynasties" else {
             return [SuccessionGroup(id: dynastyID, title: nil, items: items)]
         }
         let order: [String]
@@ -451,6 +451,8 @@ struct SuccessionPage: View {
             order = ["西晋", "东晋"]
         } else if dynastyID == "northern_southern" {
             order = ["南朝宋", "南齐", "梁", "陈", "北魏", "东魏", "西魏", "北齐", "北周"]
+        } else if dynastyID == "five_dynasties" {
+            order = ["中原五代", "吴", "南唐", "荆南", "闽", "楚", "前蜀", "后蜀", "吴越", "南汉", "北汉"]
         } else {
             order = ["曹魏", "蜀汉", "孙吴"]
         }
@@ -508,6 +510,8 @@ struct SuccessionPage: View {
             return "西晋帝序止于316年长安陷落；司马睿317年在建康称晋王、318年称帝。东晋与北方十六国并存，帝序只表示晋廷内部继承，不代表全国统一。"
         case "northern_southern":
             return "南朝四代与北朝各政权长期并行。梁末萧栋、萧渊明等短期在位者，以及北魏末元恭、元朗等并立者均按史料列出；元氏女婴的帝号存在争议，另见人物与河阴之变。"
+        case "five_dynasties":
+            return "五代只指中原先后更替的后梁、后唐、后晋、后汉、后周；同一时期各地政权并非附属年表。闽国王延政与福州政权一度并立，相关短期统治者也保留。"
         case "qing":
             return "努尔哈赤生前为后金大汗；1636年皇太极改国号为清。公历年概括实际统治，摄政与太上皇掌权另在人物和事件中说明。"
         default:
@@ -545,21 +549,25 @@ private struct SuccessionRow: View {
                     .foregroundStyle(Theme.ink)
                     .fixedSize(horizontal: false, vertical: true)
 
-                HStack(alignment: .firstTextBaseline, spacing: 12) {
-                    Text(eraName == "无年号" ? "未使用年号" : "年号 \(eraName)")
-                        .font(.subheadline.weight(.medium))
-                        .foregroundStyle(Theme.cinnabar)
-                        .accessibilityIdentifier("successionEra_\(item.id)")
-                    Spacer(minLength: 8)
-                    if !person.temple.isEmpty {
-                        Text(["无", "无庙号"].contains(person.temple) ? "无庙号" : "庙号 \(person.temple)")
-                            .font(.caption)
-                            .foregroundStyle(Theme.muted)
-                            .multilineTextAlignment(.trailing)
-                            .accessibilityIdentifier("successionTemple_\(item.id)")
+                if !eraName.isEmpty || !person.temple.isEmpty {
+                    HStack(alignment: .firstTextBaseline, spacing: 12) {
+                        if !eraName.isEmpty {
+                            Text(eraName == "无年号" ? "未使用年号" : "年号 \(eraName)")
+                                .font(.subheadline.weight(.medium))
+                                .foregroundStyle(Theme.cinnabar)
+                                .accessibilityIdentifier("successionEra_\(item.id)")
+                        }
+                        Spacer(minLength: 8)
+                        if !person.temple.isEmpty {
+                            Text(["无", "无庙号"].contains(person.temple) ? "无庙号" : "庙号 \(person.temple)")
+                                .font(.caption)
+                                .foregroundStyle(Theme.muted)
+                                .multilineTextAlignment(.trailing)
+                                .accessibilityIdentifier("successionTemple_\(item.id)")
+                        }
                     }
-                }
                     .padding(.top, 7)
+                }
 
                 HStack(alignment: .firstTextBaseline, spacing: 12) {
                     Text("在位 \(item.years)")
