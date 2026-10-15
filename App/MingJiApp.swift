@@ -502,6 +502,8 @@ struct SuccessionPage: View {
 
     private var successionNote: String {
         switch dynastyID {
+        case "xia":
+            return "夏代十七王来自传世王表，不表示每位王都已由考古逐一证实。二里头遗址展现了早期国家和都邑，但尚无可直接对应禹、启、少康、桀等王名的同时代文字；列表不配置未经证实的个人公历年。"
         case "shang":
             return "帝序采用商王称谓；列表中的“年代待考”表示现有证据不足以给出个人精确公历，并非内容缺失。盘庚以后可由殷墟甲骨和考古分期提供更多同时代证据，仍不把学术推算写成确定纪年。"
         case "zhou":
@@ -562,7 +564,7 @@ private struct SuccessionRow: View {
                 if !eraName.isEmpty || !person.temple.isEmpty {
                     HStack(alignment: .firstTextBaseline, spacing: 12) {
                         if !eraName.isEmpty {
-                            Text(["西周", "东周"].contains(item.polity) ? eraName : (eraName == "无年号" ? "未使用年号" : "年号 \(eraName)"))
+                            Text(["夏后氏传统王序", "西周", "东周"].contains(item.polity) ? eraName : (eraName == "无年号" ? "未使用年号" : "年号 \(eraName)"))
                                 .font(.subheadline.weight(.medium))
                                 .foregroundStyle(Theme.cinnabar)
                                 .accessibilityIdentifier("successionEra_\(item.id)")
@@ -580,7 +582,7 @@ private struct SuccessionRow: View {
                 }
 
                 HStack(alignment: .firstTextBaseline, spacing: 12) {
-                    Text("在位 \(item.years)")
+                    Text(item.polity == "夏后氏传统王序" ? "个人王年不详" : "在位 \(item.years)")
                         .font(.caption.monospacedDigit())
                         .foregroundStyle(Theme.muted)
                         .accessibilityIdentifier("successionReign_\(item.id)")

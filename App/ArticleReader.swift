@@ -56,7 +56,7 @@ struct ArticleReader: View {
                 ScrollView {
                     VStack(alignment: .leading, spacing: 32) {
                         VStack(alignment: .leading, spacing: 14) {
-                            Text(store.person(personID).kind == "皇帝" ? "读懂这位皇帝" : "人物长读").font(.caption).foregroundStyle(Theme.cinnabar)
+                            Text(store.dynastyID(for: personID) == "xia" && store.person(personID).kind == "皇帝" ? "阅读传世夏王" : (store.person(personID).kind == "皇帝" ? "读懂这位皇帝" : "人物长读")).font(.caption).foregroundStyle(Theme.cinnabar)
                             Text(article.title).font(.system(.largeTitle, design: .serif)).foregroundStyle(Theme.ink).fixedSize(horizontal: false, vertical: true)
                             Text(article.dek).font(.body).foregroundStyle(Theme.muted).lineSpacing(5)
                         }.id("opening")

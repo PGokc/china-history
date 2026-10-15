@@ -1962,4 +1962,43 @@ final class MingJiUITests: XCTestCase {
         shot("v58-hezun-sources", heritage)
     }
 
+    @MainActor func testV59XiaReceivedKingsAndArchaeologyBoundaries() throws {
+        let sequence = XCUIApplication()
+        sequence.launchArguments = ["--uitesting", "--ui-dynasty", "xia"]
+        sequence.launch()
+        XCTAssertTrue(sequence.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        XCTAssertEqual(sequence.tabBars.buttons.allElementsBoundByIndex.map(\.label), ["朝代", "帝序", "家族", "遗珍"])
+        sequence.tabBars.buttons["帝序"].tap()
+        XCTAssertTrue(sequence.descendants(matching: .any)["successionPage_xia"].waitForExistence(timeout: 5))
+        XCTAssertTrue(sequence.buttons["succession_v59_xia_seq_01"].exists)
+        XCTAssertTrue(sequence.staticTexts["传统王名 · 无可核年号"].exists)
+        XCTAssertTrue(sequence.staticTexts.matching(NSPredicate(format: "label CONTAINS %@", "不能平均拆成个人王年")).firstMatch.exists)
+        shot("v59-xia-received-sequence", sequence)
+        sequence.buttons["succession_v59_xia_seq_01"].tap()
+        sequence.buttons["personHero"].tap()
+        for category in ["政治", "军事", "文化", "经济", "社会"] {
+            XCTAssertTrue(sequence.buttons["eventCategory_" + category].exists, category)
+        }
+        openArticle(in: sequence)
+        XCTAssertTrue(sequence.buttons["articleContents"].waitForExistence(timeout: 5))
+        XCTAssertTrue(sequence.staticTexts["阅读传世夏王"].exists)
+        XCTAssertTrue(sequence.staticTexts["结论与证据边界"].exists)
+        shot("v59-yu-evidence-reader", sequence)
+        sequence.terminate()
+
+        let heritage = XCUIApplication()
+        heritage.launchArguments = ["--uitesting", "--ui-dynasty", "xia"]
+        heritage.launch()
+        XCTAssertTrue(heritage.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        heritage.tabBars.buttons["遗珍"].tap()
+        heritage.buttons["collectionCategory_objects"].tap()
+        let bronze = heritage.buttons["artifact_v59_obj_bronze_jue"]
+        reachReadingLink(bronze, in: heritage); bronze.tap()
+        XCTAssertTrue(heritage.staticTexts["目前所知很早的青铜容器"].waitForExistence(timeout: 5))
+        let sources = heritage.buttons["资料与出处"]
+        reach(sources, in: heritage, attempts: 12); sources.tap()
+        XCTAssertTrue(heritage.buttons["source_v59_nmc_jue"].waitForExistence(timeout: 5))
+        shot("v59-bronze-jue-source", heritage)
+    }
+
 }
