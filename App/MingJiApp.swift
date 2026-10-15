@@ -443,7 +443,7 @@ struct SuccessionPage: View {
     @Environment(\.dynamicTypeSize) private var typeSize
     var items: [Succession] { store.sequence(in: dynastyID) }
     private var groups: [SuccessionGroup] {
-        guard dynastyID == "three_kingdoms" || dynastyID == "jin" || dynastyID == "northern_southern" || dynastyID == "five_dynasties" else {
+        guard dynastyID == "three_kingdoms" || dynastyID == "jin" || dynastyID == "northern_southern" || dynastyID == "five_dynasties" || dynastyID == "song_liao_xia_jin" else {
             return [SuccessionGroup(id: dynastyID, title: nil, items: items)]
         }
         let order: [String]
@@ -453,6 +453,8 @@ struct SuccessionPage: View {
             order = ["南朝宋", "南齐", "梁", "陈", "北魏", "东魏", "西魏", "北齐", "北周"]
         } else if dynastyID == "five_dynasties" {
             order = ["中原五代", "吴", "南唐", "荆南", "闽", "楚", "前蜀", "后蜀", "吴越", "南汉", "北汉"]
+        } else if dynastyID == "song_liao_xia_jin" {
+            order = ["北宋", "南宋", "辽", "西夏", "金"]
         } else {
             order = ["曹魏", "蜀汉", "孙吴"]
         }
@@ -512,6 +514,8 @@ struct SuccessionPage: View {
             return "南朝四代与北朝各政权长期并行。梁末萧栋、萧渊明等短期在位者，以及北魏末元恭、元朗等并立者均按史料列出；元氏女婴的帝号存在争议，另见人物与河阴之变。"
         case "five_dynasties":
             return "五代只指中原先后更替的后梁、后唐、后晋、后汉、后周；同一时期各地政权并非附属年表。闽国王延政与福州政权一度并立，相关短期统治者也保留。"
+        case "song_liao_xia_jin":
+            return "五条帝序在时间上长期重叠。辽、西夏与金各有自身的继承、官制和社会历史；宋辽、宋夏、宋金关系中的岁币、岁赐、战争和称谓按具体条约分别说明。"
         case "qing":
             return "努尔哈赤生前为后金大汗；1636年皇太极改国号为清。公历年概括实际统治，摄政与太上皇掌权另在人物和事件中说明。"
         default:

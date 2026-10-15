@@ -1792,4 +1792,51 @@ final class MingJiUITests: XCTestCase {
         shot("v54-night-revels-source", heritage)
     }
 
+    @MainActor func testV55SongLiaoXiaJinParallelHistoryPaths() throws {
+        let sequence = XCUIApplication()
+        sequence.launchArguments = ["--uitesting", "--ui-dynasty", "song_liao_xia_jin"]
+        sequence.launch()
+        XCTAssertTrue(sequence.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        XCTAssertEqual(sequence.tabBars.buttons.allElementsBoundByIndex.map(\.label), ["朝代", "帝序", "家族", "遗珍"])
+        sequence.tabBars.buttons["帝序"].tap()
+        XCTAssertTrue(sequence.descendants(matching: .any)["successionPage_song_liao_xia_jin"].waitForExistence(timeout: 5))
+        XCTAssertTrue(sequence.descendants(matching: .any)["successionGroup_北宋"].exists)
+        let liao = sequence.descendants(matching: .any)["successionGroup_辽"]
+        reach(liao, in: sequence, attempts: 34)
+        XCTAssertTrue(liao.exists)
+        XCTAssertTrue(sequence.buttons["succession_v55_seq_辽_01"].exists)
+        shot("v55-song-liao-xia-jin-sequence", sequence)
+        sequence.terminate()
+
+        let person = XCUIApplication()
+        person.launchArguments = ["--uitesting", "--ui-dynasty", "song_liao_xia_jin"]
+        person.launch()
+        XCTAssertTrue(person.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        person.tabBars.buttons["帝序"].tap()
+        let target = person.buttons["succession_v55_seq_辽_01"]
+        reach(target, in: person, attempts: 34); target.tap()
+        person.buttons["personHero"].tap()
+        for category in ["政治", "军事", "文化", "经济", "社会"] {
+            XCTAssertTrue(person.buttons["eventCategory_" + category].exists, category)
+        }
+        openArticle(in: person)
+        XCTAssertTrue(person.buttons["articleContents"].waitForExistence(timeout: 5))
+        shot("v55-liao-taizu-reader", person)
+        person.terminate()
+
+        let heritage = XCUIApplication()
+        heritage.launchArguments = ["--uitesting", "--ui-dynasty", "song_liao_xia_jin"]
+        heritage.launch()
+        XCTAssertTrue(heritage.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        heritage.tabBars.buttons["遗珍"].tap()
+        heritage.buttons["collectionCategory_architecture"].tap()
+        let mausoleums = heritage.buttons["artifact_v55_obj_xixialing"]
+        reachReadingLink(mausoleums, in: heritage); mausoleums.tap()
+        XCTAssertTrue(heritage.staticTexts["帝陵群归属与考古边界"].waitForExistence(timeout: 5))
+        let sources = heritage.buttons["资料与出处"]
+        reach(sources, in: heritage, attempts: 12); sources.tap()
+        XCTAssertTrue(heritage.buttons["source_v55_xixialing"].waitForExistence(timeout: 5))
+        shot("v55-western-xia-mausoleums-source", heritage)
+    }
+
 }

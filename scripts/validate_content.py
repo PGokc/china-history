@@ -20,7 +20,7 @@ qing_emperors={pid for pid in emperors if pid.startswith('q_')}
 assert len(ming_emperors)==16
 assert len(qing_emperors)==(12 if d['version']>=5 else 0)
 legacy_emperors=ming_emperors|qing_emperors
-expected_sequence_count = 254 if d['version']>=36 else 198 if d['version']>=35 else 142 if d['version']>=34 else 127 if d['version']>=33 else 116 if d['version']>=32 else 111 if d['version']>=31 else 85 if d['version']>=30 else 83 if d['version']>=25 else 29 if d['version']>=5 else 17
+expected_sequence_count = 283 if d['version']>=37 else 254 if d['version']>=36 else 198 if d['version']>=35 else 142 if d['version']>=34 else 127 if d['version']>=33 else 116 if d['version']>=32 else 111 if d['version']>=31 else 85 if d['version']>=30 else 83 if d['version']>=25 else 29 if d['version']>=5 else 17
 assert len(d['sequence'])==expected_sequence_count and {s['person'] for s in d['sequence']}==emperors
 counts=Counter(s['person'] for s in d['sequence'])
 repeated={'qizhen','t_zhongzong','t_ruizong','y_tugh_temur'} if d['version']>=25 else {'qizhen'}
@@ -481,7 +481,7 @@ if d['version'] >= 24:
 
 if d['version'] >= 25:
  dynasty_ids={x['id'] for x in d['dynasties']}
- required={'tang':(22,24,45,10),'song_liao_xia_jin':(18,18,40,13),'yuan':(11,12,30,12)}
+ required={'tang':(22,24,45,10),'song_liao_xia_jin':((47,47,120,30) if d['version']>=37 else (18,18,40,13)),'yuan':(11,12,30,12)}
  for dynasty,(emperor_count,segment_count,event_count,other_count) in required.items():
   members={p['id'] for p in d['people'] if p.get('dynasty')==dynasty}
   rulers=members&emperors
@@ -502,8 +502,12 @@ if d['version'] >= 25:
  for pid in core:
   chars=sum(len(re.findall(r'[\u4e00-\u9fff]',x['text'])) for x in articles[pid]['sections'])
   assert chars>=1200,(pid,'core biography depth',chars)
- for pid in ['s_liao_shengzong','s_xia_jingzong','s_jin_taizu','y_genghis','y_ogedei','y_guyuk','y_mongke']:
-  assert pid in people and pid in articles and pid not in emperors,(pid,'parallel ruler or Mongol forehistory')
+ for pid in ['y_genghis','y_ogedei','y_guyuk','y_mongke']:
+  assert pid in people and pid in articles and pid not in emperors,(pid,'Mongol forehistory')
+ if d['version']>=37:
+  assert {'s_liao_shengzong','s_xia_jingzong','s_jin_taizu'}<=emperors
+ else:
+  assert all(pid not in emperors for pid in ['s_liao_shengzong','s_xia_jingzong','s_jin_taizu'])
  for pid in ['m_zhengchenggong','q_wusangui','q_huangzongxi','q_guyanwu','q_wangfuzhi']:
   assert pid in people and pid in articles,(pid,'Ming Qing transition expansion')
   assert any(pid in c['people'] for c in d['reignContexts']),(pid,'reign entry missing')
@@ -779,3 +783,29 @@ if d['version'] >= 36:
  assert all(len(c['people'])>=3 and len(c['events'])>=2 for c in d['reignContexts'] if c['person'] in fd_rulers)
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成',json.dumps([people[p] for p in fd_people]+ev+obj+[articles[p] for p in fd_people],ensure_ascii=False))
  print('V36 PASS: Five Dynasties and Ten Kingdoms has fifty-six rulers in eleven parallel sequences, linked biographies, five event lenses and twelve heritage entries')
+
+
+if d['version'] >= 37:
+ stage={p['id'] for p in d['people'] if p.get('dynasty')=='song_liao_xia_jin'}
+ rulers={p['id'] for p in d['people'] if p.get('dynasty')=='song_liao_xia_jin' and p['kind']=='皇帝'}
+ assert len(rulers)==47 and len(stage-rulers)>=60,(len(rulers),len(stage-rulers))
+ seq=[x for x in d['sequence'] if x['person'] in rulers]
+ assert len(seq)==47 and Counter(x.get('polity') for x in seq)=={'北宋':9,'南宋':9,'辽':9,'西夏':10,'金':10}
+ parallel={p for p in rulers if p.startswith(('s_liao_','s_xia_','s_jin_'))}
+ assert len(parallel)==29
+ ev=[e for e in d['events'] if e['id'].startswith('v55_')]
+ thematic=[e for e in ev if re.fullmatch(r'v55_[pmces]\d{2}',e['id'])]
+ assert len(thematic)==50 and Counter(e['category'] for e in thematic)=={'政治':10,'军事':10,'文化':10,'经济':10,'社会':10}
+ assert all(e['sources'] and e.get('peopleRoles') and e.get('impact') for e in ev)
+ obj=[o for o in d['objects'] if o['id'].startswith('v55_obj_')]
+ assert len(obj)==12 and all(len(re.findall(r'[\u4e00-\u9fff]',o['body']))>=55 for o in obj)
+ for pid in parallel|{p['id'] for p in d['people'] if p['id'].startswith(('s_liao_','s_xia_','s_jin_')) and p['id'] not in articles}:
+  assert pid in articles,(pid,'missing Liao-Xia-Jin reading')
+ for pid in parallel:
+  chars=sum(len(re.findall(r'[\u4e00-\u9fff]',x['text'])) for x in articles[pid]['sections'])
+  assert chars>=700,(pid,'parallel ruler reading depth',chars)
+  assert len(articles[pid]['sections'])>=5 and all(x['sources'] and x.get('events') and x.get('people') for x in articles[pid]['sections'])
+ contexts={c['person']:c for c in d['reignContexts'] if c['person'] in parallel}
+ assert set(contexts)==parallel and all(len(c['people'])>=3 and len(c['events'])>=2 for c in contexts.values())
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成',json.dumps([people[p] for p in stage]+ev+obj,ensure_ascii=False))
+ print('V37 PASS: Song, Liao, Western Xia and Jin has forty-seven rulers in five parallel sequences, twenty-nine non-Song rulers, five event lenses and twelve new heritage entries')

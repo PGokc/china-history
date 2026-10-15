@@ -272,7 +272,7 @@ struct Content: Codable {
         return "ming"
     }
     func dynastyName(_ id: String) -> String {
-        if id == "song_liao_xia_jin" { return "宋代" }
+        if id == "song_liao_xia_jin" { return "宋辽夏金" }
         if id == "three_kingdoms" { return "三国" }
         if id == "jin" { return "两晋" }
         if id == "northern_southern" { return "南北朝" }
@@ -289,7 +289,7 @@ struct Content: Codable {
         case "five_dynasties": return "907至979年间，中原五代与十个主要区域政权交错并立。这里把后梁至后周列为一条中原序列，再分别呈现吴、南唐、荆南、闽、楚、前蜀、后蜀、吴越、南汉与北汉；称帝、称王和藩镇名义均按当时材料区分。"
         case "sui": return "隋末并非一条整齐交接的帝序。杨侑在长安、杨浩在江都、杨侗在洛阳先后或同时被拥立；这里全部列出，并分别说明实际控制者、年号与统治范围。"
         case "tang": return "李唐皇位经历复位、武周改国与多次宫廷政变。武则天统治的武周单列，中宗与睿宗两次在位分别呈现。"
-        case "song_liao_xia_jin": return "这里列出北宋与南宋皇帝。宋与辽、西夏、金长期并立；各国君主与交往见人物和事件，疆域并不由一条帝序概括。"
+        case "song_liao_xia_jin": return "北宋、南宋与辽、西夏、金在很长时段内并立。这里按五条政权序列呈现实际即位者；条约、战争、互市、迁都与摄政另在人物和事件中展开，不把其他王朝降为宋史背景。"
         case "yuan": return "1271年忽必烈建国号元，此前已于1260年即蒙古大汗位。两都之战出现争位，文宗两次在位分列；1368年退出大都以后的北元另在生平中说明。"
         case "qing": return "从后金兴起到帝制终结，皇位传承始终与宗室、摄政和时代转折相连。努尔哈赤与皇太极属于入关前的两代统治者。"
         default: return "从洪武开国到崇祯亡国，明代皇位大体沿朱元璋一系传承，也经历靖难、土木堡之变与复辟等重要转折。朱祁镇两度在位，在序列中分段呈现。"
