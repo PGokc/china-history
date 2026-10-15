@@ -2078,4 +2078,45 @@ final class MingJiUITests: XCTestCase {
         shot("v61-dunhuang-seal-calendar-source", evidence)
     }
 
+    @MainActor func testV62SongImperialTombsAndEvidenceBoundaries() throws {
+        let tombs = XCUIApplication()
+        tombs.launchArguments = ["--uitesting", "--ui-dynasty", "song_liao_xia_jin"]
+        tombs.launch()
+        XCTAssertTrue(tombs.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        XCTAssertEqual(tombs.tabBars.buttons.allElementsBoundByIndex.map(\.label), ["朝代", "帝序", "家族", "遗珍"])
+        tombs.tabBars.buttons["遗珍"].tap()
+        XCTAssertTrue(tombs.buttons["collectionCategory_tombs"].waitForExistence(timeout: 5))
+        tombs.buttons["collectionCategory_tombs"].tap()
+        let yongzhao = tombs.buttons["v62_tomb_yongzhao"]
+        reachReadingLink(yongzhao, in: tombs); yongzhao.tap()
+        XCTAssertTrue(tombs.staticTexts["陵寝与历史"].waitForExistence(timeout: 5))
+        XCTAssertTrue(tombs.staticTexts.matching(NSPredicate(format: "label CONTAINS %@", "现代复原构件")).firstMatch.exists)
+        let sourceToggle = tombs.buttons["资料与出处"]
+        reach(sourceToggle, in: tombs, attempts: 12); sourceToggle.tap()
+        XCTAssertTrue(tombs.buttons["source_v62_gongyi_plan"].waitForExistence(timeout: 5))
+        let lastTombSource = tombs.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "source_")).allElementsBoundByIndex.last!
+        reachReadingLink(lastTombSource, in: tombs); tombs.swipeUp()
+        XCTAssertLessThanOrEqual(lastTombSource.frame.maxY, tombs.tabBars.firstMatch.frame.minY)
+        shot("v62-song-yongzhao-source", tombs)
+        tombs.terminate()
+
+        let heritage = XCUIApplication()
+        heritage.launchArguments = ["--uitesting", "--ui-dynasty", "song_liao_xia_jin"]
+        heritage.launch()
+        XCTAssertTrue(heritage.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        heritage.tabBars.buttons["遗珍"].tap()
+        heritage.buttons["collectionCategory_architecture"].tap()
+        let sixTombs = heritage.buttons["artifact_v62_obj_shaoxing_group"]
+        reachReadingLink(sixTombs, in: heritage); sixTombs.tap()
+        XCTAssertTrue(heritage.staticTexts["攒宫与无法实现的北归"].waitForExistence(timeout: 5))
+        XCTAssertTrue(heritage.staticTexts.matching(NSPredicate(format: "label CONTAINS %@", "不表示现场只有六座墓")).firstMatch.exists)
+        let heritageSources = heritage.buttons["资料与出处"]
+        reach(heritageSources, in: heritage, attempts: 12); heritageSources.tap()
+        XCTAssertTrue(heritage.buttons["source_v62_shaoxing_six"].waitForExistence(timeout: 5))
+        let lastHeritageSource = heritage.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "source_")).allElementsBoundByIndex.last!
+        reachReadingLink(lastHeritageSource, in: heritage); heritage.swipeUp()
+        XCTAssertLessThanOrEqual(lastHeritageSource.frame.maxY, heritage.tabBars.firstMatch.frame.minY)
+        shot("v62-song-six-tombs-source", heritage)
+    }
+
 }

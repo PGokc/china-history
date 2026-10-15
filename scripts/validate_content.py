@@ -993,3 +993,26 @@ if d['version'] >= 43:
  assert all(term in corpus for term in ['唐十八陵','里坊','胥吏','敦煌','吐鲁番','粟特','驿传','墓志'])
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成',corpus)
  print('V43 PASS: ten evidence-bounded Tang imperial tombs, twelve urban and documentary topics, and twenty-five balanced events connect court history with local administration and ordinary life')
+
+if d['version'] >= 44:
+ song={p['id'] for p in d['people'] if p.get('dynasty')=='song_liao_xia_jin'}
+ tombs=[t for t in d['tombs'] if t['id'].startswith('v62_tomb_')]
+ assert len(tombs)==14 and len({t['person'] for t in tombs})==14
+ assert all(t['person'] in song and t['sources'] and t['note'] for t in tombs)
+ assert Counter(t['area'] for t in tombs)=={'河南 · 巩义北宋皇陵':7,'浙江 · 绍兴宋六陵':7}
+ assert {'永昌陵','永熙陵','永定陵','永昭陵','永厚陵','永裕陵','永泰陵'}=={t['title'] for t in tombs if t['area'].startswith('河南')}
+ assert {'永祐陵','永思陵','永阜陵','永崇陵','永茂陵','永穆陵','永绍陵'}=={t['title'] for t in tombs if t['area'].startswith('浙江')}
+ assert all(any(x in t['body']+t['note'] for x in ['不能','不可','不作','不把','不得','仍需']) for t in tombs)
+ objects=[o for o in d['objects'] if o['id'].startswith('v62_obj_')]
+ assert len(objects)==10 and all(o['sources'] and o['people'] and o.get('dynasties')==['song_liao_xia_jin'] for o in objects)
+ assert all(len(re.findall(r'[\u4e00-\u9fff]',o['body']+o['note']))>=110 for o in objects)
+ events=[e for e in d['events'] if e['id'].startswith('v62s_')]
+ assert len(events)==20 and Counter(e['category'] for e in events)=={'政治':4,'军事':4,'文化':4,'经济':4,'社会':4}
+ assert all(e['sources'] and e.get('impact') and e.get('peopleRoles') for e in events)
+ required={'v62_zzww_songling','v62_gongyi_plan','v62_zzww_archaeology','v62_henan_museum','v62_shaoxing_six','v62_shaoxing_exhibit','v62_shaoxing_gazetteer'}
+ assert required<=sources.keys()
+ corpus=json.dumps(tombs+objects+events,ensure_ascii=False)
+ assert all(x in corpus for x in ['巩义','宋六陵','上宫','下宫','攒宫','梓宫','石刻','盗毁','复原'])
+ assert '各陵绝对位置仍存在推测' in sources['v62_shaoxing_six']['note']
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成',corpus)
+ print('V44 PASS: fourteen evidence-bounded Song imperial tombs, ten mausoleum-system topics and twenty balanced events distinguish Gongyi imperial tombs from Shaoxing temporary mausoleums')

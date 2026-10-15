@@ -1,5 +1,5 @@
 {
-  "version": 43,
+  "version": 44,
   "reviewed": "2026-10-15",
   "people": [
     {
@@ -20211,6 +20211,48 @@
       "title": "中国国家博物馆·丝绸之路展览",
       "url": "https://www.chnmuseum.cn/zl/zlhg/201812/t20181220_32385.shtml",
       "note": "国家博物馆展览资料；用于呈现来华使者、僧人、商人、学生及墓葬俑像。展览叙事是综合概述，具体身份仍需墓志和出土语境支持。"
+    },
+    {
+      "id": "v62_zzww_songling",
+      "title": "郑州市文物局·巩义宋陵",
+      "url": "https://wwj.zhengzhou.gov.cn/country/3177034.jhtml",
+      "note": "地方文物主管部门资料；用于核对北宋皇家陵园的分布、附属茔域与研究价值。页面是综合介绍，不替代逐陵考古报告。"
+    },
+    {
+      "id": "v62_gongyi_plan",
+      "title": "巩义市人民政府·巩义市文物保护总体规划",
+      "url": "https://public.gongyishi.gov.cn/attachment/%E5%B7%A9%E4%B9%89%E5%B8%82%E6%96%87%E7%89%A9%E4%BF%9D%E6%8A%A4%E6%80%BB%E4%BD%93%E8%A7%84%E5%88%92.pdf",
+      "note": "地方政府公开的文物保护规划；列出永昌、永熙、永定、永昭、永厚、永裕、永泰等陵区和保护边界。现行保护范围不等同北宋初建范围。"
+    },
+    {
+      "id": "v62_zzww_archaeology",
+      "title": "郑州市文物局·巩义北宋皇陵考古新突破",
+      "url": "https://wwj.zhengzhou.gov.cn/xqdt/9995939.jhtml",
+      "note": "文物主管部门发布的阶段性考古成果；用于说明献殿、下宫布局与永裕陵《封山记》碑发现。阶段性判断仍可能随整理研究调整。"
+    },
+    {
+      "id": "v62_henan_museum",
+      "title": "河南博物院·北宋皇陵",
+      "url": "https://www.chnmus.net/sitesources/hnsbwy/page_pc/clzl/jbcl/dxzy-hngdwmgbz/jy/article6bcf233b749a4333b566d975b496d4c4.html",
+      "note": "省级博物馆资料；确认徽、钦二帝之外北宋七帝葬于巩义，并展示陵区出土遗物。馆藏说明不能替代墓主人个案研究。"
+    },
+    {
+      "id": "v62_shaoxing_six",
+      "title": "绍兴市文物考古研究所·宋六陵一号陵园遗址性质及诸陵位置蠡测",
+      "url": "https://zjjcmspublic.oss-cn-hangzhou-zwynet-d01-a.internet.cloud.zj.gov.cn/jcms_files/jcms1/web3000/site/attach/0/f3ee2b8a49014b56acd2ec3f6abc49a0.pdf",
+      "note": "绍兴市文物考古研究所论文；核对宋六陵六座南宋帝陵、徽宗永祐陵和皇后陵，并明确各陵绝对位置仍存在推测。"
+    },
+    {
+      "id": "v62_shaoxing_exhibit",
+      "title": "绍兴博物馆·“守望——两宋皇陵考古成果展”策展记",
+      "url": "https://zjjcmspublic.oss-cn-hangzhou-zwynet-d01-a.internet.cloud.zj.gov.cn/jcms_files/jcms1/web3000/site/attach/0/0609940df2354d81ab3af9f6dc265573.pdf",
+      "note": "地方博物馆两宋皇陵考古展览资料；用于比较巩义北宋帝陵与绍兴南宋攒宫。展览概述中的制度比较仍需结合正式发掘报告。"
+    },
+    {
+      "id": "v62_shaoxing_gazetteer",
+      "title": "浙江省地方志·绍兴县志宋六陵资料",
+      "url": "https://dfz.zj.gov.cn/zlyz/ossfs/h5/ZS-K-330603-2013-001-0401/files/basic-html/page26.html",
+      "note": "政府方志平台；提供地方文献脉络。具体陵名、盗毁与修葺年代须同考古材料和早期文献互证。"
     }
   ],
   "relations": [
@@ -54607,6 +54649,470 @@
         "t_shangguan_waner": "相关人物",
         "t_yang_guifei": "相关人物"
       }
+    },
+    {
+      "id": "v62s_p01",
+      "year": "960—976",
+      "sortYear": 1100,
+      "title": "开国皇陵确立巩洛祖茔",
+      "body": "宋太祖与追尊祖陵在巩义形成开国陵区，皇位与祖先祭祀被纳入新的王朝地景。",
+      "impact": "祖陵布局表达正统，不足以裁决所有继承争议。",
+      "people": [
+        "s_taizu",
+        "s_taizong"
+      ],
+      "sources": [
+        "v62_zzww_songling",
+        "v62_gongyi_plan"
+      ],
+      "kind": "陵寝与社会",
+      "category": "政治",
+      "peopleRoles": {
+        "s_taizu": "在位皇帝",
+        "s_taizong": "在位皇帝"
+      }
+    },
+    {
+      "id": "v62s_p02",
+      "year": "1007",
+      "sortYear": 1007,
+      "title": "设置永安县护卫宋陵",
+      "body": "北宋划置永安县，加强皇陵祭祀、守护与周边行政管理。",
+      "impact": "行政设置说明陵区重要，也会改变附近居民的赋役与空间使用。",
+      "people": [
+        "s_zhenzong",
+        "s_wangqinruo"
+      ],
+      "sources": [
+        "v62_gongyi_plan"
+      ],
+      "kind": "陵寝与社会",
+      "category": "政治",
+      "peopleRoles": {
+        "s_zhenzong": "在位皇帝",
+        "s_wangqinruo": "相关人物"
+      }
+    },
+    {
+      "id": "v62s_p03",
+      "year": "1127—1142",
+      "sortYear": 1127,
+      "title": "南宋以梓宫归返重建正统",
+      "body": "靖康后南宋围绕徽宗梓宫返还、祖陵祭祀和和议安排重建王朝礼仪。",
+      "impact": "礼仪成功不等于北方领土恢复，也不能确认棺内遗骸细节。",
+      "people": [
+        "s_huizong",
+        "s_qinzong",
+        "s_gaozong",
+        "s_qinhui"
+      ],
+      "sources": [
+        "v62_shaoxing_six",
+        "v62_shaoxing_exhibit"
+      ],
+      "kind": "陵寝与社会",
+      "category": "政治",
+      "peopleRoles": {
+        "s_huizong": "在位皇帝",
+        "s_qinzong": "在位皇帝",
+        "s_gaozong": "在位皇帝",
+        "s_qinhui": "相关人物"
+      }
+    },
+    {
+      "id": "v62s_p04",
+      "year": "12—13世纪",
+      "sortYear": 1100,
+      "title": "绍兴攒宫延续南宋皇统",
+      "body": "六位南宋皇帝相继安葬绍兴陵区，原本指向未来北归的权厝安排成为长期制度。",
+      "impact": "临时性是礼制设想，长期使用是历史结果，两者并不矛盾。",
+      "people": [
+        "s_gaozong",
+        "s_xiaozong",
+        "s_ningzong",
+        "s_lizong"
+      ],
+      "sources": [
+        "v62_shaoxing_six"
+      ],
+      "kind": "陵寝与社会",
+      "category": "政治",
+      "peopleRoles": {
+        "s_gaozong": "在位皇帝",
+        "s_xiaozong": "在位皇帝",
+        "s_ningzong": "在位皇帝",
+        "s_lizong": "在位皇帝"
+      }
+    },
+    {
+      "id": "v62s_m01",
+      "year": "1127",
+      "sortYear": 1127,
+      "title": "靖康之变切断巩义帝陵营建",
+      "body": "徽、钦二帝被俘，北宋灭亡，后续皇帝不再进入巩义既有帝陵序列。",
+      "impact": "政治军事断裂改变陵制，但巩义陵区仍保留前朝祭祀与记忆。",
+      "people": [
+        "s_huizong",
+        "s_qinzong",
+        "s_gaozong"
+      ],
+      "sources": [
+        "v62_henan_museum",
+        "v62_shaoxing_exhibit"
+      ],
+      "kind": "陵寝与社会",
+      "category": "军事",
+      "peopleRoles": {
+        "s_huizong": "在位皇帝",
+        "s_qinzong": "在位皇帝",
+        "s_gaozong": "在位皇帝"
+      }
+    },
+    {
+      "id": "v62s_m02",
+      "year": "1130年代",
+      "sortYear": 1130,
+      "title": "战乱迫使皇室陵寝南迁",
+      "body": "南宋立足江南后选择绍兴营建攒宫，安全、交通和北归期待共同影响选址。",
+      "impact": "选址不能只归因于单一风水说法，战争与政权空间同样关键。",
+      "people": [
+        "s_gaozong",
+        "s_zhangjun",
+        "s_hanshizhong"
+      ],
+      "sources": [
+        "v62_shaoxing_six",
+        "v62_shaoxing_exhibit"
+      ],
+      "kind": "陵寝与社会",
+      "category": "军事",
+      "peopleRoles": {
+        "s_gaozong": "在位皇帝",
+        "s_zhangjun": "相关人物",
+        "s_hanshizhong": "相关人物"
+      }
+    },
+    {
+      "id": "v62s_m03",
+      "year": "1276—1279",
+      "sortYear": 1276,
+      "title": "南宋覆亡使陵区失去国家守护",
+      "body": "临安陷落和海上政权覆亡后，绍兴皇陵的祭祀与保护体系迅速瓦解。",
+      "impact": "国家崩溃增加盗扰风险，但具体破坏仍需逐条证据。",
+      "people": [
+        "s_gongdi",
+        "s_duanzong",
+        "s_zhaobing",
+        "s_zhangshijie"
+      ],
+      "sources": [
+        "v62_shaoxing_six"
+      ],
+      "kind": "陵寝与社会",
+      "category": "军事",
+      "peopleRoles": {
+        "s_gongdi": "在位皇帝",
+        "s_duanzong": "在位皇帝",
+        "s_zhaobing": "在位皇帝",
+        "s_zhangshijie": "相关人物"
+      }
+    },
+    {
+      "id": "v62s_m04",
+      "year": "1278前后",
+      "sortYear": 1278,
+      "title": "宋六陵遭到系统性盗毁",
+      "body": "南宋灭亡前后，宋六陵遭严重破坏，陵园器物、遗骸与建筑均受影响。",
+      "impact": "盗毁事实明确，参与者和个别遗物流转的后世故事需谨慎核验。",
+      "people": [
+        "s_lizong",
+        "s_duzong",
+        "s_zhaobing"
+      ],
+      "sources": [
+        "v62_shaoxing_six",
+        "v62_shaoxing_gazetteer"
+      ],
+      "kind": "陵寝与社会",
+      "category": "军事",
+      "peopleRoles": {
+        "s_lizong": "在位皇帝",
+        "s_duzong": "在位皇帝",
+        "s_zhaobing": "在位皇帝"
+      }
+    },
+    {
+      "id": "v62s_c01",
+      "year": "北宋",
+      "sortYear": 1020,
+      "title": "神道石刻形成宋陵视觉秩序",
+      "body": "文武官、瑞兽与仪仗石刻沿神道排列，将朝廷等级转化为可见空间。",
+      "impact": "石像是礼制类型，不是某位大臣的写实肖像。",
+      "people": [
+        "s_taizu",
+        "s_zhenzong",
+        "s_renzong"
+      ],
+      "sources": [
+        "v62_zzww_songling",
+        "v62_henan_museum"
+      ],
+      "kind": "陵寝与社会",
+      "category": "文化",
+      "peopleRoles": {
+        "s_taizu": "在位皇帝",
+        "s_zhenzong": "在位皇帝",
+        "s_renzong": "在位皇帝"
+      }
+    },
+    {
+      "id": "v62s_c02",
+      "year": "北宋",
+      "sortYear": 1020,
+      "title": "陵园礼制吸收堪舆观念",
+      "body": "巩义帝陵选址与朝向结合地形及“五音姓利”等观念，形成不同于唐陵的空间组织。",
+      "impact": "观念解释需与实际地形和考古布局互证，不能简化成神秘规则。",
+      "people": [
+        "s_taizu",
+        "s_taizong",
+        "s_shenzong"
+      ],
+      "sources": [
+        "v62_shaoxing_exhibit",
+        "v62_gongyi_plan"
+      ],
+      "kind": "陵寝与社会",
+      "category": "文化",
+      "peopleRoles": {
+        "s_taizu": "在位皇帝",
+        "s_taizong": "在位皇帝",
+        "s_shenzong": "在位皇帝"
+      }
+    },
+    {
+      "id": "v62s_c03",
+      "year": "南宋",
+      "sortYear": 1180,
+      "title": "攒宫表达未来归葬愿望",
+      "body": "绍兴皇陵的权厝语言持续指向巩洛祖茔，成为南宋正统与故土记忆的一部分。",
+      "impact": "政治象征不能证明朝廷始终有可行的迁葬计划。",
+      "people": [
+        "s_gaozong",
+        "s_xiaozong",
+        "s_lizong"
+      ],
+      "sources": [
+        "v62_shaoxing_six"
+      ],
+      "kind": "陵寝与社会",
+      "category": "文化",
+      "peopleRoles": {
+        "s_gaozong": "在位皇帝",
+        "s_xiaozong": "在位皇帝",
+        "s_lizong": "在位皇帝"
+      }
+    },
+    {
+      "id": "v62s_c04",
+      "year": "明清以来",
+      "sortYear": 1500,
+      "title": "残碑与地方祭扫保存陵名",
+      "body": "后世修葺、碑刻和方志使永茂、永绍等陵名继续可见。",
+      "impact": "后立碑不等于南宋原碑，也不能单独确定原陵中心。",
+      "people": [
+        "s_ningzong",
+        "s_duzong"
+      ],
+      "sources": [
+        "v62_shaoxing_gazetteer",
+        "v62_shaoxing_six"
+      ],
+      "kind": "陵寝与社会",
+      "category": "文化",
+      "peopleRoles": {
+        "s_ningzong": "在位皇帝",
+        "s_duzong": "在位皇帝"
+      }
+    },
+    {
+      "id": "v62s_e01",
+      "year": "北宋",
+      "sortYear": 1020,
+      "title": "皇陵营建调动长期物资与劳役",
+      "body": "石材、砖瓦、运输、工匠和守陵人员共同维持跨代陵区建设。",
+      "impact": "缺少完整账册时，不给出未经核实的总耗费数字。",
+      "people": [
+        "s_taizu",
+        "s_taizong",
+        "s_zhenzong"
+      ],
+      "sources": [
+        "v62_zzww_songling",
+        "v62_gongyi_plan"
+      ],
+      "kind": "陵寝与社会",
+      "category": "经济",
+      "peopleRoles": {
+        "s_taizu": "在位皇帝",
+        "s_taizong": "在位皇帝",
+        "s_zhenzong": "在位皇帝"
+      }
+    },
+    {
+      "id": "v62s_e02",
+      "year": "北宋",
+      "sortYear": 1020,
+      "title": "守陵行政改变地方资源分配",
+      "body": "永安县和陵区守护设施把祭祀、治安与地方行政联系起来。",
+      "impact": "皇陵保护也可能给周边社会带来土地和劳役约束。",
+      "people": [
+        "s_zhenzong",
+        "s_renzong"
+      ],
+      "sources": [
+        "v62_gongyi_plan"
+      ],
+      "kind": "陵寝与社会",
+      "category": "经济",
+      "peopleRoles": {
+        "s_zhenzong": "在位皇帝",
+        "s_renzong": "在位皇帝"
+      }
+    },
+    {
+      "id": "v62s_e03",
+      "year": "南宋",
+      "sortYear": 1180,
+      "title": "攒宫简约形制回应迁葬设想",
+      "body": "相较永久性大陵，绍兴攒宫强调权厝和未来迁移，也减少部分地上营建。",
+      "impact": "“简约”不等于没有祭祀建筑和长期维护成本。",
+      "people": [
+        "s_gaozong",
+        "s_xiaozong",
+        "s_guangzong"
+      ],
+      "sources": [
+        "v62_shaoxing_six",
+        "v62_shaoxing_exhibit"
+      ],
+      "kind": "陵寝与社会",
+      "category": "经济",
+      "peopleRoles": {
+        "s_gaozong": "在位皇帝",
+        "s_xiaozong": "在位皇帝",
+        "s_guangzong": "在位皇帝"
+      }
+    },
+    {
+      "id": "v62s_e04",
+      "year": "现代",
+      "sortYear": 2000,
+      "title": "大遗址保护协调村镇与公共空间",
+      "body": "巩义、绍兴的陵区保护涉及农田、道路、居民点、展示和文物安全。",
+      "impact": "旅游开发不能代替遗址本体保护，现代边界也不同于古代陵域。",
+      "people": [
+        "s_taizu",
+        "s_gaozong"
+      ],
+      "sources": [
+        "v62_gongyi_plan",
+        "v62_zzww_archaeology"
+      ],
+      "kind": "陵寝与社会",
+      "category": "经济",
+      "peopleRoles": {
+        "s_taizu": "在位皇帝",
+        "s_gaozong": "在位皇帝"
+      }
+    },
+    {
+      "id": "v62s_s01",
+      "year": "北宋",
+      "sortYear": 1020,
+      "title": "陵区包含守陵人与附属聚落",
+      "body": "皇陵周边除墓葬外，还有禅院、行宫、看守住宅及服务祭祀的人员空间。",
+      "impact": "现有资料更易记录制度设施，普通守陵家庭的生活仍较难复原。",
+      "people": [
+        "s_taizu",
+        "s_renzong"
+      ],
+      "sources": [
+        "v62_zzww_songling"
+      ],
+      "kind": "陵寝与社会",
+      "category": "社会",
+      "peopleRoles": {
+        "s_taizu": "在位皇帝",
+        "s_renzong": "在位皇帝"
+      }
+    },
+    {
+      "id": "v62s_s02",
+      "year": "北宋",
+      "sortYear": 1020,
+      "title": "皇后陵与帝陵组成共同祭祀网络",
+      "body": "多座后陵靠近帝陵并有独立宫城、门阙和祭祀设施，女性墓主不应只作为帝陵附注。",
+      "impact": "后妃政治地位与墓葬等级相关，却不能仅由距离远近推断亲疏。",
+      "people": [
+        "s_zhenzong",
+        "s_renzong",
+        "s_yingzong"
+      ],
+      "sources": [
+        "v62_gongyi_plan"
+      ],
+      "kind": "陵寝与社会",
+      "category": "社会",
+      "peopleRoles": {
+        "s_zhenzong": "在位皇帝",
+        "s_renzong": "在位皇帝",
+        "s_yingzong": "在位皇帝"
+      }
+    },
+    {
+      "id": "v62s_s03",
+      "year": "南宋",
+      "sortYear": 1180,
+      "title": "梓宫迎返形成公共哀悼与政治仪式",
+      "body": "徽宗梓宫返还、帝后安葬和持续祭祀将战争创伤转化为王朝公共记忆。",
+      "impact": "仪式记录主要代表朝廷视角，普通人的反应并不完整。",
+      "people": [
+        "s_huizong",
+        "s_gaozong",
+        "s_xietaihou"
+      ],
+      "sources": [
+        "v62_shaoxing_six"
+      ],
+      "kind": "陵寝与社会",
+      "category": "社会",
+      "peopleRoles": {
+        "s_huizong": "在位皇帝",
+        "s_gaozong": "在位皇帝",
+        "s_xietaihou": "相关人物"
+      }
+    },
+    {
+      "id": "v62s_s04",
+      "year": "现代",
+      "sortYear": 2000,
+      "title": "考古重新辨识被抹平的陵园",
+      "body": "调查、勘探和发掘通过基址、地形与残存构件重建陵区关系，并公开不确定结论。",
+      "impact": "考古复原是可修正的研究过程，不是把所有空白填成确定答案。",
+      "people": [
+        "s_gaozong",
+        "s_lizong"
+      ],
+      "sources": [
+        "v62_zzww_archaeology",
+        "v62_shaoxing_six"
+      ],
+      "kind": "陵寝与社会",
+      "category": "社会",
+      "peopleRoles": {
+        "s_gaozong": "在位皇帝",
+        "s_lizong": "在位皇帝"
+      }
     }
   ],
   "objects": [
@@ -58617,6 +59123,207 @@
       "dynasties": [
         "tang"
       ]
+    },
+    {
+      "id": "v62_obj_gongyi_group",
+      "title": "巩义北宋皇陵",
+      "subtitle": "七帝陵、后陵与陪葬茔域",
+      "symbol": "building.columns",
+      "body": "巩义北宋皇陵跨越多个陵区，包含七座北宋帝陵、追尊祖陵、皇后陵、宗室与大臣陪葬墓，以及行宫、禅院和守陵设施。把它视为一座墓会遮蔽其长期扩展和空间层级。现存陵台、石刻、建筑基址和保护区共同记录王朝礼制，也叠加了后世盗扰与现代城乡变化。",
+      "note": "“八帝十陵”等称法会计入追尊祖陵；本页按实际皇帝墓主、祖陵和附属墓分别理解。",
+      "people": [
+        "s_taizu",
+        "s_taizong",
+        "s_renzong",
+        "s_shenzong"
+      ],
+      "sources": [
+        "v62_zzww_songling",
+        "v62_gongyi_plan"
+      ],
+      "dynasties": [
+        "song_liao_xia_jin"
+      ]
+    },
+    {
+      "id": "v62_obj_song_sculptures",
+      "title": "宋陵神道石刻",
+      "subtitle": "仪仗秩序与写实雕刻",
+      "symbol": "photo.artframe",
+      "body": "北宋陵园神道排列文臣、武将、瑞禽、驯象人等石刻，既表现皇权仪仗，也保存服饰、动物和雕刻技术线索。石像并非具体人物肖像，排列与数量也会因陵墓、保存和迁移而变化。今天的观看路线受到道路、村落和保护工程影响，不能自动还原北宋送葬过程。",
+      "note": "风化、倒伏、搬移和修复都会改变石刻状态；单件造型不能脱离原陵区序列解释。",
+      "people": [
+        "s_taizu",
+        "s_zhenzong",
+        "s_renzong"
+      ],
+      "sources": [
+        "v62_zzww_songling",
+        "v62_henan_museum"
+      ],
+      "dynasties": [
+        "song_liao_xia_jin"
+      ]
+    },
+    {
+      "id": "v62_obj_upper_lower_palace",
+      "title": "上宫、下宫与后陵",
+      "subtitle": "陵寝不是一座封土",
+      "symbol": "building.columns",
+      "body": "北宋帝陵通常包含以上宫为核心的陵台与祭祀空间，下宫则承担日常奉祀、管理等功能，皇后陵和陪葬墓形成更大的礼制网络。新考古发现继续修正献殿与下宫布局。理解这些组成部分，可以避免把现代地图上的单一标记误当完整陵园。",
+      "note": "不同陵区布局并不完全相同；制度文献中的标准与考古所见需要相互校正。",
+      "people": [
+        "s_zhenzong",
+        "s_renzong",
+        "s_shenzong"
+      ],
+      "sources": [
+        "v62_zzww_archaeology",
+        "v62_gongyi_plan"
+      ],
+      "dynasties": [
+        "song_liao_xia_jin"
+      ]
+    },
+    {
+      "id": "v62_obj_yongyu_sealing",
+      "title": "永裕陵《封山记》碑",
+      "subtitle": "选址、保护与历史地理",
+      "symbol": "doc.text",
+      "body": "永裕陵新发现的《封山记》碑记录陵区选址、封禁和历史地理信息，为神宗陵寝研究提供直接材料。碑刻处于特定营建与管理语境，不是皇帝生平传记；释读还需结合石刻原位、字体、残损和周边建筑基址。",
+      "note": "阶段性公布尚不能代替完整考古报告，碑文解释可能随整理成果调整。",
+      "people": [
+        "s_shenzong",
+        "s_zhezong",
+        "s_wanganshi"
+      ],
+      "sources": [
+        "v62_zzww_archaeology"
+      ],
+      "dynasties": [
+        "song_liao_xia_jin"
+      ]
+    },
+    {
+      "id": "v62_obj_yongzhao_display",
+      "title": "永昭陵保护展示",
+      "subtitle": "原存遗迹与现代复原",
+      "symbol": "building.columns",
+      "body": "永昭陵经过抢救保护并成为城市公共空间。陵台、神道和石刻让礼制空间更易理解，但环境整治、复建构件与原存文物必须清楚区分。公开展示的价值在于教育和持续保护，不是把所有缺失部分补成看似完整的“古建筑”。",
+      "note": "页面讨论保护方法，不把复原外观当作北宋原貌的无争议证据。",
+      "people": [
+        "s_renzong",
+        "s_caobin",
+        "s_fanzhongyan"
+      ],
+      "sources": [
+        "v62_gongyi_plan",
+        "v62_zzww_songling"
+      ],
+      "dynasties": [
+        "song_liao_xia_jin"
+      ]
+    },
+    {
+      "id": "v62_obj_shaoxing_group",
+      "title": "绍兴宋六陵",
+      "subtitle": "攒宫与无法实现的北归",
+      "symbol": "building.columns",
+      "body": "绍兴宋六陵包含高宗、孝宗、光宗、宁宗、理宗、度宗六座帝陵，并有徽宗永祐陵和多座皇后陵。南宋以攒宫表达暂厝、等待归葬巩洛的制度设想，长期政治现实却使它成为稳定陵区。临时形式与长期使用并存，是理解南宋正统观的重要切口。",
+      "note": "“宋六陵”是陵区通称，不表示现场只有六座墓，也不说明每座绝对位置均已确认。",
+      "people": [
+        "s_huizong",
+        "s_gaozong",
+        "s_xiaozong",
+        "s_lizong"
+      ],
+      "sources": [
+        "v62_shaoxing_six",
+        "v62_shaoxing_exhibit"
+      ],
+      "dynasties": [
+        "song_liao_xia_jin"
+      ]
+    },
+    {
+      "id": "v62_obj_casket_return",
+      "title": "徽宗梓宫迁返",
+      "subtitle": "外交、礼仪与遗骸证据",
+      "symbol": "shippingbox",
+      "body": "徽宗死于金境后，南宋通过和议迎回梓宫，并在绍兴营建永祐陵。这一过程同时涉及外交、皇室礼仪和政权记忆。传世记载能确认仪式政治，却不能仅凭“梓宫归来”四字确定棺内遗骸身份和保存状况；相关争议需要把文献目的与考古证据分开。",
+      "note": "“梓宫”首先是帝后棺椁的礼制称谓，不能直接作为现代身份鉴定结论。",
+      "people": [
+        "s_huizong",
+        "s_qinzong",
+        "s_gaozong",
+        "s_qinhui"
+      ],
+      "sources": [
+        "v62_shaoxing_six",
+        "v62_shaoxing_exhibit"
+      ],
+      "dynasties": [
+        "song_liao_xia_jin"
+      ]
+    },
+    {
+      "id": "v62_obj_temporary_mausoleum",
+      "title": "攒宫制度",
+      "subtitle": "薄葬、权厝与礼制延续",
+      "symbol": "building.columns",
+      "body": "南宋攒宫采用相对简约、便于未来迁葬的安排，同时保留上宫、下宫和祭祀秩序。它既回应北归祖陵的政治理想，也受财政、地理和现实安全制约。把“暂厝”理解为草率埋葬，会忽略持续奉祀和多代营建形成的完整制度。",
+      "note": "制度意图与实际结果不同；南宋诸陵规模、方位和保存状况不能一概而论。",
+      "people": [
+        "s_gaozong",
+        "s_xiaozong",
+        "s_ningzong"
+      ],
+      "sources": [
+        "v62_shaoxing_six",
+        "v62_shaoxing_exhibit"
+      ],
+      "dynasties": [
+        "song_liao_xia_jin"
+      ]
+    },
+    {
+      "id": "v62_obj_six_tombs_archaeology",
+      "title": "宋六陵一号陵园",
+      "subtitle": "从基址推测墓主人",
+      "symbol": "rectangle.and.text.magnifyingglass",
+      "body": "宋六陵一号陵园的考古辨识依靠轴线、建筑基址、遗物、地形和文献位置关系。研究者可提出它与高宗皇后陵等对象的对应方案，但从“陵园遗址”到“某一墓主”的认定仍有推理环节。把推测过程公开，比给出没有依据的精确地图更可靠。",
+      "note": "论文题名使用“蠡测”，明确表示探索性判断；产品保留这一不确定等级。",
+      "people": [
+        "s_gaozong",
+        "s_xiaozong",
+        "s_xietaihou"
+      ],
+      "sources": [
+        "v62_shaoxing_six"
+      ],
+      "dynasties": [
+        "song_liao_xia_jin"
+      ]
+    },
+    {
+      "id": "v62_obj_destruction_memory",
+      "title": "宋陵盗毁与后世重修",
+      "subtitle": "破坏、碑记与历史记忆",
+      "symbol": "doc.text",
+      "body": "两宋皇陵都经历不同程度的盗扰、破坏和地貌改变。绍兴宋六陵在南宋灭亡后遭严重盗毁，明代及以后又有修葺、立碑和地方祭扫。后世碑石能证明记忆延续，却未必处于南宋原位；惨烈故事也需要核对成书时间和叙述目的。",
+      "note": "区分已证实的盗毁、后世重修和传奇细节，避免用耸动情节替代考古记录。",
+      "people": [
+        "s_lizong",
+        "s_duzong",
+        "s_zhaobing"
+      ],
+      "sources": [
+        "v62_shaoxing_six",
+        "v62_shaoxing_gazetteer"
+      ],
+      "dynasties": [
+        "song_liao_xia_jin"
+      ]
     }
   ],
   "sequence": [
@@ -62227,6 +62934,216 @@
       "sources": [
         "v61_shaanxi_tombs",
         "v43t_jts18b"
+      ]
+    },
+    {
+      "id": "v62_tomb_yongchang",
+      "person": "s_taizu",
+      "title": "永昌陵",
+      "area": "河南 · 巩义北宋皇陵",
+      "location": "河南巩义西村陵区",
+      "status": "宋太祖赵匡胤陵寝。",
+      "body": "永昌陵处于北宋开国皇室陵区，与追尊宣祖永安陵及太宗永熙陵共同构成西村片区。陵台、神道和石刻保存王朝建立后的礼制表达；现存地表状态经历盗扰、风化与现代保护，不能直接等同初建原貌。",
+      "note": "墓主与陵号明确；未完整发掘的地宫结构和随葬品不按传说复原。",
+      "sources": [
+        "v62_zzww_songling",
+        "v62_gongyi_plan",
+        "v43s_ss003"
+      ]
+    },
+    {
+      "id": "v62_tomb_yongxi",
+      "person": "s_taizong",
+      "title": "永熙陵",
+      "area": "河南 · 巩义北宋皇陵",
+      "location": "河南巩义西村陵区",
+      "status": "宋太宗赵炅陵寝。",
+      "body": "永熙陵延续北宋早期帝陵的上宫、神道、陵台与附属空间。它可与太宗扩张和继承叙事对读，但陵园本身不能证明皇位继承争议中的某一种说法。石刻位置、后陵和陪葬墓需要按保护规划分别识别。",
+      "note": "陵区可确认；对地下结构、盗扰层次和器物原位保持谨慎。",
+      "sources": [
+        "v62_zzww_songling",
+        "v62_gongyi_plan",
+        "v43s_ss005"
+      ]
+    },
+    {
+      "id": "v62_tomb_yongding",
+      "person": "s_zhenzong",
+      "title": "永定陵",
+      "area": "河南 · 巩义北宋皇陵",
+      "location": "河南巩义芝田蔡庄陵区",
+      "status": "宋真宗赵恒陵寝。",
+      "body": "永定陵陵区包含帝陵上宫、后陵、下宫及陪葬墓。保护规划显示这些组成部分分处不同地块，提醒读者“皇陵”并非只有一座封土。真宗朝政治与封禅评价来自文本，陵园主要提供礼制空间和建筑制度证据。",
+      "note": "现代保护边界用于管理，不可直接换算北宋陵园原始占地。",
+      "sources": [
+        "v62_gongyi_plan",
+        "v62_zzww_songling",
+        "v43s_ss008"
+      ]
+    },
+    {
+      "id": "v62_tomb_yongzhao",
+      "person": "s_renzong",
+      "title": "永昭陵",
+      "area": "河南 · 巩义北宋皇陵",
+      "location": "河南巩义孝义陵区",
+      "status": "宋仁宗赵祯陵寝。",
+      "body": "永昭陵经过抢救保护并向公众开放，地表展示帮助理解陵台、门阙、神道和石刻序列。复建或环境整治部分必须与原存遗迹区分；开放性也不意味着所有地下信息已经明确。",
+      "note": "可见展示含保护工程成果，不能把现代复原构件全部当作北宋原物。",
+      "sources": [
+        "v62_gongyi_plan",
+        "v62_zzww_songling",
+        "v43s_ss012"
+      ]
+    },
+    {
+      "id": "v62_tomb_yonghou",
+      "person": "s_yingzong",
+      "title": "永厚陵",
+      "area": "河南 · 巩义北宋皇陵",
+      "location": "河南巩义孝义陵区",
+      "status": "宋英宗赵曙陵寝。",
+      "body": "永厚陵与永昭陵邻近，帝陵上宫、后陵和下宫共同组成陵区。英宗在位短暂，但陵寝营建仍遵循王朝制度；濮议等政治冲突不能仅凭陵号或埋葬位置判断。",
+      "note": "陵区位置有文保依据；未公布的地下细节不作想象性描述。",
+      "sources": [
+        "v62_gongyi_plan",
+        "v62_zzww_songling",
+        "v43s_ss013"
+      ]
+    },
+    {
+      "id": "v62_tomb_yongyu",
+      "person": "s_shenzong",
+      "title": "永裕陵",
+      "area": "河南 · 巩义北宋皇陵",
+      "location": "河南巩义芝田八陵片区",
+      "status": "宋神宗赵顼陵寝。",
+      "body": "永裕陵《封山记》碑等新发现，为陵区选址、保护和历史地理提供材料。阶段性考古还辨识献殿、下宫等建筑线索，使神宗朝之后的陵寝制度不再只依赖传世礼书。",
+      "note": "阶段性成果尚在整理；碑文、建筑基址与墓室信息属于不同证据层次，不能相互替代。",
+      "sources": [
+        "v62_zzww_archaeology",
+        "v62_gongyi_plan",
+        "v43s_ss016"
+      ]
+    },
+    {
+      "id": "v62_tomb_yongtai",
+      "person": "s_zhezong",
+      "title": "永泰陵",
+      "area": "河南 · 巩义北宋皇陵",
+      "location": "河南巩义芝田八陵片区",
+      "status": "宋哲宗赵煦陵寝。",
+      "body": "永泰陵是巩义北宋七帝陵之一，处在新旧党争反复后的政治背景中。陵园石刻和空间秩序能说明国家礼制延续，却不能把某一政治派别的评价刻进墓主结论。",
+      "note": "地表遗存与保护区可核；地下保存状态和随葬内容不作确定判断。",
+      "sources": [
+        "v62_gongyi_plan",
+        "v62_henan_museum",
+        "v43s_ss018"
+      ]
+    },
+    {
+      "id": "v62_tomb_yongyou",
+      "person": "s_huizong",
+      "title": "永祐陵",
+      "area": "浙江 · 绍兴宋六陵",
+      "location": "浙江绍兴富盛宋六陵陵区",
+      "status": "宋徽宗赵佶归葬陵寝。",
+      "body": "徽宗死于金境，南宋迎回梓宫后在绍兴陵区营建永祐陵。梓宫迁返具有强烈的王朝记忆和外交意义，但“归葬”不等于现存遗骸状况已经得到考古确认；相关记载、陵址和后世破坏需分层阅读。",
+      "note": "不把梓宫礼仪、遗骸认定和陵址定位混为一事。",
+      "sources": [
+        "v62_shaoxing_six",
+        "v62_shaoxing_exhibit",
+        "v43s_ss022"
+      ]
+    },
+    {
+      "id": "v62_tomb_yongsi",
+      "person": "s_gaozong",
+      "title": "永思陵",
+      "area": "浙江 · 绍兴宋六陵",
+      "location": "浙江绍兴富盛宋六陵陵区",
+      "status": "宋高宗赵构陵寝。",
+      "body": "永思陵采用“攒宫”形式，带有权厝并期待将来归葬巩洛祖茔的制度含义。南宋长期未能恢复中原，使临时性安排成为实际的皇陵传统。考古辨识的一号陵园性质仍需结合布局、文献与后妃陵关系推定。",
+      "note": "宋六陵各陵绝对位置仍有讨论；不把推测方位写成定论。",
+      "sources": [
+        "v62_shaoxing_six",
+        "v62_shaoxing_exhibit",
+        "v43s_ss030"
+      ]
+    },
+    {
+      "id": "v62_tomb_yongfu",
+      "person": "s_xiaozong",
+      "title": "永阜陵",
+      "area": "浙江 · 绍兴宋六陵",
+      "location": "浙江绍兴富盛宋六陵陵区",
+      "status": "宋孝宗赵昚陵寝。",
+      "body": "永阜陵属于绍兴宋六陵。孝宗对高宗的继承既有宗法安排，也有长期政治共存；陵区相对位置可帮助理解嗣统与祭祀，却不能把谥号或陵名直接解释成完整人格评价。",
+      "note": "陵名可靠；具体陵位主要依文献、旧碑与考古布局综合判断。",
+      "sources": [
+        "v62_shaoxing_six",
+        "v62_shaoxing_exhibit",
+        "v43s_ss035"
+      ]
+    },
+    {
+      "id": "v62_tomb_yongchong",
+      "person": "s_guangzong",
+      "title": "永崇陵",
+      "area": "浙江 · 绍兴宋六陵",
+      "location": "浙江绍兴富盛宋六陵陵区",
+      "status": "宋光宗赵惇陵寝。",
+      "body": "永崇陵是六陵帝陵之一。光宗朝父子关系和退位过程常被道德化叙述，陵寝材料能够说明身后礼制得到延续，却不能独立裁决宫廷疾病、孝道和政治责任。",
+      "note": "明清残碑与近现代定位均属后出证据，不能视作南宋原始标识完整保存。",
+      "sources": [
+        "v62_shaoxing_six",
+        "v62_shaoxing_gazetteer",
+        "v43s_ss036"
+      ]
+    },
+    {
+      "id": "v62_tomb_yongmao",
+      "person": "s_ningzong",
+      "title": "永茂陵",
+      "area": "浙江 · 绍兴宋六陵",
+      "location": "浙江绍兴富盛宋六陵陵区",
+      "status": "宋宁宗赵扩陵寝。",
+      "body": "永茂陵残碑为后世重修和地方记忆提供线索，但并非南宋建陵时原碑。陵区研究需要把帝陵、后陵、攒宫建筑和后代补立碑刻分开，避免用一块晚期碑石确定全部原始布局。",
+      "note": "陵名有文献依据；残碑年代晚于建陵，具体方位仍需考古互证。",
+      "sources": [
+        "v62_shaoxing_six",
+        "v62_shaoxing_gazetteer",
+        "v43s_ss040"
+      ]
+    },
+    {
+      "id": "v62_tomb_yongmu",
+      "person": "s_lizong",
+      "title": "永穆陵",
+      "area": "浙江 · 绍兴宋六陵",
+      "location": "浙江绍兴富盛宋六陵陵区",
+      "status": "宋理宗赵昀陵寝。",
+      "body": "永穆陵经历南宋末元初的严重盗毁，后世叙事常集中于遗骸受辱。考古与文献阅读应同时关注陵园形制、政治暴力和记忆形成，避免把细节传奇当作全部经过的可靠记录。",
+      "note": "盗掘事实有文献和遗址背景，具体参与者、遗物流转细节仍需逐条核对。",
+      "sources": [
+        "v62_shaoxing_six",
+        "v62_shaoxing_exhibit",
+        "v43s_ss045"
+      ]
+    },
+    {
+      "id": "v62_tomb_yongshao",
+      "person": "s_duzong",
+      "title": "永绍陵",
+      "area": "浙江 · 绍兴宋六陵",
+      "location": "浙江绍兴富盛宋六陵陵区",
+      "status": "宋度宗赵禥陵寝。",
+      "body": "永绍陵是宋六陵中最晚的帝陵之一。残碑和地方记录保存陵名，王朝随后迅速进入末年战争；陵墓不能替代对财政、军事与宫廷政治的分析，但能显示危局中礼制营建仍在继续。",
+      "note": "现存残碑可能是后世重修所立；不得据碑石位置直接认定原陵中心。",
+      "sources": [
+        "v62_shaoxing_six",
+        "v62_shaoxing_gazetteer",
+        "v43s_ss046"
       ]
     }
   ],
