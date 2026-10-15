@@ -809,3 +809,36 @@ if d['version'] >= 37:
  assert set(contexts)==parallel and all(len(c['people'])>=3 and len(c['events'])>=2 for c in contexts.values())
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成',json.dumps([people[p] for p in stage]+ev+obj,ensure_ascii=False))
  print('V37 PASS: Song, Liao, Western Xia and Jin has forty-seven rulers in five parallel sequences, twenty-nine non-Song rulers, five event lenses and twelve new heritage entries')
+
+
+if d['version'] >= 38:
+ added={
+  's_liao_yelubei','s_liao_xiaotalin','s_liao_xiaoguanyin','s_liao_yeluyixin','s_liao_liuliufu','s_liao_zhangjian',
+  's_xia_mozangtaihou','s_xia_mozange','s_xia_xiaoliangtaihou','s_xia_liangyimai','s_xia_liangyibu','s_xia_renduobaozhong','s_xia_wodaochong',
+  's_jin_wanyanxiyin','s_jin_wanyanzonggan','s_jin_hanqixian','s_jin_wanyanhada','s_jin_yilapua','s_jin_puxianwannu'
+ }
+ assert added<=people.keys() and added<=articles.keys()
+ assert 's_xia_weiminganquan' not in people
+ assert all('s_xia_weiminganquan' not in json.dumps(x,ensure_ascii=False) for k in ['events','articles','associations','reignContexts'] for x in d[k])
+ assert people['s_xia_liangtaihou']['name']=='大梁太后'
+ assert people['s_xia_xiaoliangtaihou']['name']=='小梁太后'
+ assert '惠宗生母' in people['s_xia_liangtaihou']['summary'] and '崇宗生母' in people['s_xia_xiaoliangtaihou']['summary']
+ events=[e for e in d['events'] if e['id'].startswith('v56_')]
+ assert len(events)==35 and Counter(e['category'] for e in events)=={'政治':7,'军事':7,'文化':7,'经济':7,'社会':7}
+ assert all(e['sources'] and e.get('peopleRoles') and e.get('impact') for e in events)
+ curated=added|{'s_liao_xiaochuo','s_liao_shengzong','s_xia_renzong','s_jin_shizong','s_jin_zhangzong','s_xia_liangtaihou'}
+ for pid in curated:
+  article=articles[pid]
+  chars=sum(len(re.findall(r'[\u4e00-\u9fff]',x['text'])) for x in article['sections'])
+  assert chars>=700,(pid,'V38 curated reading depth',chars)
+  assert len(article['sections'])==5 and all(x['sources'] and x.get('events') and x.get('people') for x in article['sections'])
+ for ruler,figures in {
+  's_liao_daozong':{'s_liao_xiaoguanyin','s_liao_yeluyixin'},
+  's_xia_huizong':{'s_xia_liangtaihou','s_xia_liangyimai'},
+  's_xia_chongzong':{'s_xia_xiaoliangtaihou','s_xia_liangyibu'},
+  's_jin_aizong':{'s_jin_wanyanhada','s_jin_yilapua'},
+ }.items():
+  context=next(c for c in d['reignContexts'] if c['person']==ruler)
+  assert figures<=set(context['people']),(ruler,'missing newly surfaced court figures')
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成',json.dumps([people[p] for p in added]+events+[articles[p] for p in curated],ensure_ascii=False))
+ print('V38 PASS: nineteen key Liao-Xia-Jin figures, two distinct Liang regencies, thirty-five balanced events and twenty-five curated readings verified')

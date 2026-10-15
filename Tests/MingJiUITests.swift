@@ -1839,4 +1839,42 @@ final class MingJiUITests: XCTestCase {
         shot("v55-western-xia-mausoleums-source", heritage)
     }
 
+    @MainActor func testV56LiaoXiaJinPeopleAndRegencyCorrections() throws {
+        let liao = XCUIApplication()
+        liao.launchArguments = ["--uitesting", "--ui-dynasty", "song_liao_xia_jin"]
+        liao.launch()
+        XCTAssertTrue(liao.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        liao.tabBars.buttons["帝序"].tap()
+        let daozong = liao.buttons["succession_v55_seq_辽_08"]
+        reach(daozong, in: liao, attempts: 38); daozong.tap()
+        liao.buttons["personHero"].tap()
+        liao.buttons["category_court"].tap()
+        let guanyin = liao.buttons["court_s_liao_xiaoguanyin"]
+        reach(guanyin, in: liao, attempts: 12)
+        XCTAssertTrue(guanyin.exists)
+        guanyin.tap()
+        XCTAssertTrue(liao.staticTexts["辽道宗宣懿皇后与诗人"].waitForExistence(timeout: 5))
+        openArticle(in: liao)
+        XCTAssertTrue(liao.staticTexts["证据与边界"].waitForExistence(timeout: 5))
+        shot("v56-xiao-guanyin-reader", liao)
+        liao.terminate()
+
+        let xia = XCUIApplication()
+        xia.launchArguments = ["--uitesting", "--ui-dynasty", "song_liao_xia_jin"]
+        xia.launch()
+        XCTAssertTrue(xia.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        xia.tabBars.buttons["帝序"].tap()
+        let huizong = xia.buttons["succession_v55_seq_西夏_03"]
+        reach(huizong, in: xia, attempts: 46); huizong.tap()
+        xia.buttons["personHero"].tap()
+        xia.buttons["category_court"].tap()
+        let bigLiang = xia.buttons["court_s_xia_liangtaihou"]
+        reach(bigLiang, in: xia, attempts: 12)
+        XCTAssertTrue(bigLiang.exists)
+        bigLiang.tap()
+        XCTAssertTrue(xia.staticTexts["大梁太后"].waitForExistence(timeout: 5))
+        XCTAssertTrue(xia.staticTexts["西夏惠宗朝摄政者"].exists)
+        shot("v56-great-liang-regent", xia)
+    }
+
 }

@@ -1,5 +1,5 @@
 {
-  "version": 37,
+  "version": 38,
   "reviewed": "2026-10-15",
   "people": [
     {
@@ -12316,16 +12316,16 @@
     },
     {
       "id": "s_xia_liangtaihou",
-      "name": "梁太后",
-      "call": "西夏摄政者",
+      "name": "大梁太后",
+      "call": "西夏惠宗朝摄政者",
       "temple": "",
       "era": "",
       "reign": "",
-      "summary": "毅宗、惠宗时期梁氏外戚政治的重要人物。",
+      "summary": "毅宗皇后、惠宗生母；1067年后摄政，倚重其弟梁乙埋，并持续介入宋夏战争。",
       "kind": "西夏摄政者",
-      "note": "行动与评价按多方史料互校，不沿用单一王朝的忠奸框架。",
+      "note": "她与后来为崇宗摄政的小梁太后不是同一人；两人的亲属关系在不同文献表述中需谨慎核对。",
       "sources": [
-        "v55_xixia",
+        "v56_xixia_14",
         "v55_songshi"
       ],
       "dynasty": "song_liao_xia_jin"
@@ -12355,22 +12355,6 @@
       "reign": "",
       "summary": "参与编纂西夏文历史著作《天盛旧事》。",
       "kind": "西夏文史家",
-      "note": "行动与评价按多方史料互校，不沿用单一王朝的忠奸框架。",
-      "sources": [
-        "v55_xixia",
-        "v55_songshi"
-      ],
-      "dynasty": "song_liao_xia_jin"
-    },
-    {
-      "id": "s_xia_weiminganquan",
-      "name": "嵬名安全",
-      "call": "西夏宗室",
-      "temple": "",
-      "era": "",
-      "reign": "",
-      "summary": "即李安全，政变建立襄宗朝并改变对外政策。",
-      "kind": "西夏宗室",
       "note": "行动与评价按多方史料互校，不沿用单一王朝的忠奸框架。",
       "sources": [
         "v55_xixia",
@@ -12503,6 +12487,304 @@
       "sources": [
         "v55_jinshi",
         "v55_songshi"
+      ],
+      "dynasty": "song_liao_xia_jin"
+    },
+    {
+      "id": "s_liao_yelubei",
+      "name": "耶律倍",
+      "call": "辽皇太子与东丹王",
+      "temple": "",
+      "era": "",
+      "reign": "",
+      "summary": "阿保机长子，曾被立为皇太子并主持东丹国；继承格局改变后渡海入后唐，兼具政治人物、藏书者和画家身份。",
+      "kind": "辽皇太子与东丹王",
+      "note": "以可核行动和制度位置为主，不沿用单一正史的忠奸褒贬。",
+      "sources": [
+        "v56_liaoshi_72",
+        "v55_liaoshi"
+      ],
+      "dynasty": "song_liao_xia_jin"
+    },
+    {
+      "id": "s_liao_xiaotalin",
+      "name": "萧挞凛",
+      "call": "辽将领",
+      "temple": "",
+      "era": "",
+      "reign": "",
+      "summary": "参与辽圣宗朝南征、平叛与西北军务，1004年澶州战役中中伏弩身亡。",
+      "kind": "辽将领",
+      "note": "以可核行动和制度位置为主，不沿用单一正史的忠奸褒贬。",
+      "sources": [
+        "v55_liaoshi",
+        "v55_songshi"
+      ],
+      "dynasty": "song_liao_xia_jin"
+    },
+    {
+      "id": "s_liao_xiaoguanyin",
+      "name": "萧观音",
+      "call": "辽道宗宣懿皇后与诗人",
+      "temple": "",
+      "era": "",
+      "reign": "",
+      "summary": "现存诗作呈现辽代宫廷女性的文学活动；1075年因诬告案被赐死，案件记载带有强烈宫廷斗争色彩。",
+      "kind": "辽道宗宣懿皇后与诗人",
+      "note": "以可核行动和制度位置为主，不沿用单一正史的忠奸褒贬。",
+      "sources": [
+        "v55_liaoshi",
+        "v55_dpm"
+      ],
+      "dynasty": "song_liao_xia_jin"
+    },
+    {
+      "id": "s_liao_yeluyixin",
+      "name": "耶律乙辛",
+      "call": "辽道宗朝权臣",
+      "temple": "",
+      "era": "",
+      "reign": "",
+      "summary": "道宗朝长期掌权，利用案件打击皇后萧观音和皇太子耶律濬，后失势被囚死。",
+      "kind": "辽道宗朝权臣",
+      "note": "以可核行动和制度位置为主，不沿用单一正史的忠奸褒贬。",
+      "sources": [
+        "v55_liaoshi"
+      ],
+      "dynasty": "song_liao_xia_jin"
+    },
+    {
+      "id": "s_liao_liuliufu",
+      "name": "刘六符",
+      "call": "辽使臣与汉官",
+      "temple": "",
+      "era": "",
+      "reign": "",
+      "summary": "兴宗朝出使宋朝并参与关南地争议交涉，体现辽朝汉官在外交和文字行政中的作用。",
+      "kind": "辽使臣与汉官",
+      "note": "以可核行动和制度位置为主，不沿用单一正史的忠奸褒贬。",
+      "sources": [
+        "v56_liaoshi_86",
+        "v55_songshi"
+      ],
+      "dynasty": "song_liao_xia_jin"
+    },
+    {
+      "id": "s_liao_zhangjian",
+      "name": "张俭",
+      "call": "辽朝汉官与宰相",
+      "temple": "",
+      "era": "",
+      "reign": "",
+      "summary": "历仕圣宗、兴宗，参与财政、用人和朝议；正史对其俭素形象的书写也需与制度背景结合。",
+      "kind": "辽朝汉官与宰相",
+      "note": "以可核行动和制度位置为主，不沿用单一正史的忠奸褒贬。",
+      "sources": [
+        "v55_liaoshi"
+      ],
+      "dynasty": "song_liao_xia_jin"
+    },
+    {
+      "id": "s_xia_mozangtaihou",
+      "name": "没藏太后",
+      "call": "西夏毅宗朝摄政者",
+      "temple": "",
+      "era": "",
+      "reign": "",
+      "summary": "元昊死后拥立幼主李谅祚并临朝，没藏氏由外戚进入权力核心，后在宫廷冲突中被杀。",
+      "kind": "西夏毅宗朝摄政者",
+      "note": "以可核行动和制度位置为主，不沿用单一正史的忠奸褒贬。",
+      "sources": [
+        "v55_xixia",
+        "v55_songshi"
+      ],
+      "dynasty": "song_liao_xia_jin"
+    },
+    {
+      "id": "s_xia_mozange",
+      "name": "没藏讹庞",
+      "call": "西夏国相与外戚",
+      "temple": "",
+      "era": "",
+      "reign": "",
+      "summary": "没藏太后之兄，毅宗幼年时掌握军政；1061年前后因与皇帝冲突而被诛族。",
+      "kind": "西夏国相与外戚",
+      "note": "以可核行动和制度位置为主，不沿用单一正史的忠奸褒贬。",
+      "sources": [
+        "v55_xixia",
+        "v55_songshi"
+      ],
+      "dynasty": "song_liao_xia_jin"
+    },
+    {
+      "id": "s_xia_xiaoliangtaihou",
+      "name": "小梁太后",
+      "call": "西夏崇宗朝摄政者",
+      "temple": "",
+      "era": "",
+      "reign": "",
+      "summary": "惠宗皇后、崇宗生母；1086年后临朝，其兄梁乙逋掌权，对宋战争和辽夏关系贯穿摄政时期。",
+      "kind": "西夏崇宗朝摄政者",
+      "note": "以可核行动和制度位置为主，不沿用单一正史的忠奸褒贬。",
+      "sources": [
+        "v56_xixia_19",
+        "v55_songshi"
+      ],
+      "dynasty": "song_liao_xia_jin"
+    },
+    {
+      "id": "s_xia_liangyimai",
+      "name": "梁乙埋",
+      "call": "西夏国相与外戚",
+      "temple": "",
+      "era": "",
+      "reign": "",
+      "summary": "大梁太后之弟，惠宗幼年时主持国政并安排梁氏子弟居要职，宋夏战争与宫廷权力相互牵动。",
+      "kind": "西夏国相与外戚",
+      "note": "以可核行动和制度位置为主，不沿用单一正史的忠奸褒贬。",
+      "sources": [
+        "v56_xixia_14",
+        "v55_songshi"
+      ],
+      "dynasty": "song_liao_xia_jin"
+    },
+    {
+      "id": "s_xia_liangyibu",
+      "name": "梁乙逋",
+      "call": "西夏国相与统帅",
+      "temple": "",
+      "era": "",
+      "reign": "",
+      "summary": "小梁太后之兄，崇宗初年掌握军政，多次组织对宋行动，后在宫廷政变中被杀。",
+      "kind": "西夏国相与统帅",
+      "note": "以可核行动和制度位置为主，不沿用单一正史的忠奸褒贬。",
+      "sources": [
+        "v56_xixia_19",
+        "v55_songshi"
+      ],
+      "dynasty": "song_liao_xia_jin"
+    },
+    {
+      "id": "s_xia_renduobaozhong",
+      "name": "仁多保忠",
+      "call": "西夏边将",
+      "temple": "",
+      "era": "",
+      "reign": "",
+      "summary": "长期统领卓罗一带军队，在宋夏交涉、边境战争及西夏内部权力关系中多次出现。",
+      "kind": "西夏边将",
+      "note": "以可核行动和制度位置为主，不沿用单一正史的忠奸褒贬。",
+      "sources": [
+        "v56_xixia_19",
+        "v55_songshi"
+      ],
+      "dynasty": "song_liao_xia_jin"
+    },
+    {
+      "id": "s_xia_wodaochong",
+      "name": "斡道冲",
+      "call": "西夏学者与官员",
+      "temple": "",
+      "era": "",
+      "reign": "",
+      "summary": "以儒学和文史活动见称，参与仁宗朝教育、礼法与文献事业；其生平主要依赖后出的西夏史料汇辑。",
+      "kind": "西夏学者与官员",
+      "note": "以可核行动和制度位置为主，不沿用单一正史的忠奸褒贬。",
+      "sources": [
+        "v55_xixia"
+      ],
+      "dynasty": "song_liao_xia_jin"
+    },
+    {
+      "id": "s_jin_wanyanxiyin",
+      "name": "完颜希尹",
+      "call": "金朝开国大臣与文字创制者",
+      "temple": "",
+      "era": "",
+      "reign": "",
+      "summary": "参与反辽战争和金初政务，奉命创制女真大字；熙宗朝任相后被赐死，后获平反。",
+      "kind": "金朝开国大臣与文字创制者",
+      "note": "以可核行动和制度位置为主，不沿用单一正史的忠奸褒贬。",
+      "sources": [
+        "v56_jinshi_73",
+        "v55_jinshi"
+      ],
+      "dynasty": "song_liao_xia_jin"
+    },
+    {
+      "id": "s_jin_wanyanzonggan",
+      "name": "完颜宗干",
+      "call": "金朝宗室与制度建设者",
+      "temple": "",
+      "era": "",
+      "reign": "",
+      "summary": "太祖之子，参与熙宗继承安排和金初官制改革，是海陵王完颜亮之父。",
+      "kind": "金朝宗室与制度建设者",
+      "note": "以可核行动和制度位置为主，不沿用单一正史的忠奸褒贬。",
+      "sources": [
+        "v55_jinshi"
+      ],
+      "dynasty": "song_liao_xia_jin"
+    },
+    {
+      "id": "s_jin_hanqixian",
+      "name": "韩企先",
+      "call": "金朝宰相",
+      "temple": "",
+      "era": "",
+      "reign": "",
+      "summary": "辽末汉官出身，金初参与华北行政、选官和礼制建设，反映政权接收旧辽宋官僚资源的过程。",
+      "kind": "金朝宰相",
+      "note": "以可核行动和制度位置为主，不沿用单一正史的忠奸褒贬。",
+      "sources": [
+        "v55_jinshi"
+      ],
+      "dynasty": "song_liao_xia_jin"
+    },
+    {
+      "id": "s_jin_wanyanhada",
+      "name": "完颜合达",
+      "call": "金末将领",
+      "temple": "",
+      "era": "",
+      "reign": "",
+      "summary": "熟悉蒙古军情并统率金军，1232年三峰山战败后在钧州遇害。",
+      "kind": "金末将领",
+      "note": "以可核行动和制度位置为主，不沿用单一正史的忠奸褒贬。",
+      "sources": [
+        "v56_jinshi_112",
+        "v55_jinshi"
+      ],
+      "dynasty": "song_liao_xia_jin"
+    },
+    {
+      "id": "s_jin_yilapua",
+      "name": "移剌蒲阿",
+      "call": "金末将领",
+      "temple": "",
+      "era": "",
+      "reign": "",
+      "summary": "契丹出身，哀宗即位前后参与宿卫和军政，三峰山战败后被俘杀。",
+      "kind": "金末将领",
+      "note": "以可核行动和制度位置为主，不沿用单一正史的忠奸褒贬。",
+      "sources": [
+        "v56_jinshi_112",
+        "v55_jinshi"
+      ],
+      "dynasty": "song_liao_xia_jin"
+    },
+    {
+      "id": "s_jin_puxianwannu",
+      "name": "蒲鲜万奴",
+      "call": "金末将领与东夏建立者",
+      "temple": "",
+      "era": "",
+      "reign": "",
+      "summary": "金末在东北起兵建立东夏，先后处于蒙古、高丽与金朝势力交错之中，政权边界和称号应分阶段说明。",
+      "kind": "金末将领与东夏建立者",
+      "note": "以可核行动和制度位置为主，不沿用单一正史的忠奸褒贬。",
+      "sources": [
+        "v55_jinshi"
       ],
       "dynasty": "song_liao_xia_jin"
     }
@@ -16683,6 +16965,42 @@
       "title": "故宫博物院·辽宋夏金文物资料",
       "url": "https://www.dpm.org.cn/",
       "note": "书画、陶瓷、佛教造像与传世文物馆藏著录。"
+    },
+    {
+      "id": "v56_liaoshi_72",
+      "title": "《辽史》卷七十二·宗室传",
+      "url": "https://zh.wikisource.org/zh-hans/%E9%81%BC%E5%8F%B2/%E5%8D%B772",
+      "note": "耶律倍及辽初皇位继承材料；人物评价须与墓志、宋人记载互校。"
+    },
+    {
+      "id": "v56_liaoshi_86",
+      "title": "《辽史》卷八十六·刘六符等传",
+      "url": "https://zh.wikisource.org/zh-hans/%E9%81%BC%E5%8F%B2/%E5%8D%B786",
+      "note": "辽朝使臣、边境交涉与汉官活动材料。"
+    },
+    {
+      "id": "v56_jinshi_73",
+      "title": "《金史》卷七十三·完颜希尹传",
+      "url": "https://zh.wikisource.org/zh-hans/%E9%87%91%E5%8F%B2/%E5%8D%B773",
+      "note": "完颜希尹从军、创制女真文字和卷入熙宗朝政治的主要传记。"
+    },
+    {
+      "id": "v56_jinshi_112",
+      "title": "《金史》卷一百一十二·完颜合达等传",
+      "url": "https://zh.wikisource.org/zh-hans/%E9%87%91%E5%8F%B2/%E5%8D%B7112",
+      "note": "金末将领完颜合达、移剌蒲阿与三峰山战役材料。"
+    },
+    {
+      "id": "v56_xixia_14",
+      "title": "《西夏纪》卷十四",
+      "url": "https://zh.wikisource.org/zh-hans/%E8%A5%BF%E5%A4%8F%E7%B4%80/14",
+      "note": "惠宗初年大梁太后、梁乙埋摄政及宋夏关系的编年汇辑。"
+    },
+    {
+      "id": "v56_xixia_19",
+      "title": "《西夏纪》卷十九",
+      "url": "https://zh.wikisource.org/zh-hans/%E8%A5%BF%E5%A4%8F%E7%B4%80/19",
+      "note": "小梁太后、梁乙逋、仁多保忠及宋夏边境战争材料。"
     }
   ],
   "relations": [
@@ -41219,12 +41537,12 @@
       "people": [
         "s_liao_taizu",
         "s_liao_taizong",
-        "s_xia_weiminganquan"
+        "s_xia_xiangzong"
       ],
       "peopleRoles": {
         "s_liao_taizu": "相关行动者、在位者或记录者",
         "s_liao_taizong": "相关行动者、在位者或记录者",
-        "s_xia_weiminganquan": "同一时代人物"
+        "s_xia_xiangzong": "同一时代人物"
       },
       "sources": [
         "v55_songshi",
@@ -42690,6 +43008,841 @@
       ],
       "kind": "历史事件",
       "category": "政治"
+    },
+    {
+      "id": "v56_政治_01",
+      "year": "930",
+      "sortYear": 930,
+      "title": "东丹王耶律倍离辽",
+      "body": "耶律倍在继承安排改变后渡海入后唐，辽初皇位继承、东丹国治理与跨境政治由此交织。",
+      "impact": "把个人行动放回继承、官制、财政、战争和多族群社会中理解，并保留史料立场差异。",
+      "people": [
+        "s_liao_yelubei",
+        "s_liao_taizong"
+      ],
+      "peopleRoles": {
+        "s_liao_yelubei": "相关当事人或在位者",
+        "s_liao_taizong": "相关当事人或在位者"
+      },
+      "sources": [
+        "v56_liaoshi_72",
+        "v55_liaoshi",
+        "v55_songshi"
+      ],
+      "kind": "历史事件",
+      "category": "政治"
+    },
+    {
+      "id": "v56_政治_02",
+      "year": "1042",
+      "sortYear": 1042,
+      "title": "刘六符参与关南交涉",
+      "body": "辽在宋夏战争期间向宋提出关南地要求，刘六符等参与使节往返，最终以增加岁币解决。",
+      "impact": "把个人行动放回继承、官制、财政、战争和多族群社会中理解，并保留史料立场差异。",
+      "people": [
+        "s_liao_liuliufu",
+        "s_liao_xingzong",
+        "s_renzong"
+      ],
+      "peopleRoles": {
+        "s_liao_liuliufu": "相关当事人或在位者",
+        "s_liao_xingzong": "相关当事人或在位者",
+        "s_renzong": "相关当事人或在位者"
+      },
+      "sources": [
+        "v56_liaoshi_86",
+        "v55_songshi",
+        "v55_liaoshi",
+        "v43s_ss009"
+      ],
+      "kind": "历史事件",
+      "category": "政治"
+    },
+    {
+      "id": "v56_政治_03",
+      "year": "1061",
+      "sortYear": 1061,
+      "title": "没藏讹庞集团覆灭",
+      "body": "毅宗借宫廷内应诛杀没藏讹庞及其集团，结束外戚长期专政，梁氏随之进入权力中心。",
+      "impact": "把个人行动放回继承、官制、财政、战争和多族群社会中理解，并保留史料立场差异。",
+      "people": [
+        "s_xia_yizong",
+        "s_xia_mozange",
+        "s_xia_liangtaihou"
+      ],
+      "peopleRoles": {
+        "s_xia_yizong": "相关当事人或在位者",
+        "s_xia_mozange": "相关当事人或在位者",
+        "s_xia_liangtaihou": "相关当事人或在位者"
+      },
+      "sources": [
+        "v55_xixia",
+        "v55_songshi",
+        "v56_xixia_14"
+      ],
+      "kind": "历史事件",
+      "category": "政治"
+    },
+    {
+      "id": "v56_政治_04",
+      "year": "1067",
+      "sortYear": 1067,
+      "title": "大梁太后临朝",
+      "body": "惠宗七岁即位，大梁太后摄政并以梁乙埋为国相，梁氏外戚控制中枢。",
+      "impact": "把个人行动放回继承、官制、财政、战争和多族群社会中理解，并保留史料立场差异。",
+      "people": [
+        "s_xia_huizong",
+        "s_xia_liangtaihou",
+        "s_xia_liangyimai"
+      ],
+      "peopleRoles": {
+        "s_xia_huizong": "相关当事人或在位者",
+        "s_xia_liangtaihou": "相关当事人或在位者",
+        "s_xia_liangyimai": "相关当事人或在位者"
+      },
+      "sources": [
+        "v55_xixia",
+        "v55_songshi",
+        "v56_xixia_14"
+      ],
+      "kind": "历史事件",
+      "category": "政治"
+    },
+    {
+      "id": "v56_政治_05",
+      "year": "1086",
+      "sortYear": 1086,
+      "title": "小梁太后摄政",
+      "body": "惠宗去世后，崇宗幼年即位，小梁太后临朝，梁乙逋掌握军政。",
+      "impact": "把个人行动放回继承、官制、财政、战争和多族群社会中理解，并保留史料立场差异。",
+      "people": [
+        "s_xia_chongzong",
+        "s_xia_xiaoliangtaihou",
+        "s_xia_liangyibu"
+      ],
+      "peopleRoles": {
+        "s_xia_chongzong": "相关当事人或在位者",
+        "s_xia_xiaoliangtaihou": "相关当事人或在位者",
+        "s_xia_liangyibu": "相关当事人或在位者"
+      },
+      "sources": [
+        "v55_xixia",
+        "v55_songshi",
+        "v56_xixia_19"
+      ],
+      "kind": "历史事件",
+      "category": "政治"
+    },
+    {
+      "id": "v56_政治_06",
+      "year": "1135",
+      "sortYear": 1135,
+      "title": "金熙宗继承安排",
+      "body": "宗干、宗翰与希尹等推动太祖嫡孙完颜亶成为储嗣，金朝帝位由兄终弟及转向父子系统。",
+      "impact": "把个人行动放回继承、官制、财政、战争和多族群社会中理解，并保留史料立场差异。",
+      "people": [
+        "s_jin_xizong",
+        "s_jin_wanyanzonggan",
+        "s_jin_wanyanxiyin",
+        "s_jin_zonghan"
+      ],
+      "peopleRoles": {
+        "s_jin_xizong": "相关当事人或在位者",
+        "s_jin_wanyanzonggan": "相关当事人或在位者",
+        "s_jin_wanyanxiyin": "相关当事人或在位者",
+        "s_jin_zonghan": "相关当事人或在位者"
+      },
+      "sources": [
+        "v55_jinshi",
+        "v55_songshi",
+        "v56_jinshi_73"
+      ],
+      "kind": "历史事件",
+      "category": "政治"
+    },
+    {
+      "id": "v56_政治_07",
+      "year": "1215",
+      "sortYear": 1215,
+      "title": "蒲鲜万奴建立东夏",
+      "body": "金朝东北控制瓦解后，蒲鲜万奴建立地方政权；其臣服、反叛与疆域随蒙古压力多次变化。",
+      "impact": "把个人行动放回继承、官制、财政、战争和多族群社会中理解，并保留史料立场差异。",
+      "people": [
+        "s_jin_puxianwannu",
+        "s_jin_xuanzong"
+      ],
+      "peopleRoles": {
+        "s_jin_puxianwannu": "相关当事人或在位者",
+        "s_jin_xuanzong": "相关当事人或在位者"
+      },
+      "sources": [
+        "v55_jinshi",
+        "v55_songshi"
+      ],
+      "kind": "历史事件",
+      "category": "政治"
+    },
+    {
+      "id": "v56_军事_01",
+      "year": "986",
+      "sortYear": 986,
+      "title": "萧挞凛参加辽宋战争",
+      "body": "宋雍熙北伐期间，辽将萧挞凛参与阻击；战局不能简化为单一名将决定。",
+      "impact": "把个人行动放回继承、官制、财政、战争和多族群社会中理解，并保留史料立场差异。",
+      "people": [
+        "s_liao_xiaotalin",
+        "s_liao_shengzong",
+        "s_taizong"
+      ],
+      "peopleRoles": {
+        "s_liao_xiaotalin": "相关当事人或在位者",
+        "s_liao_shengzong": "相关当事人或在位者",
+        "s_taizong": "相关当事人或在位者"
+      },
+      "sources": [
+        "v55_liaoshi",
+        "v55_songshi",
+        "v43s_ss004",
+        "v43s_ss005"
+      ],
+      "kind": "历史事件",
+      "category": "军事"
+    },
+    {
+      "id": "v56_军事_02",
+      "year": "1004",
+      "sortYear": 1004,
+      "title": "萧挞凛死于澶州",
+      "body": "辽军南下至澶州附近，萧挞凛被宋军床弩射中身亡，随后双方进入议和。",
+      "impact": "把个人行动放回继承、官制、财政、战争和多族群社会中理解，并保留史料立场差异。",
+      "people": [
+        "s_liao_xiaotalin",
+        "s_liao_xiaochuo",
+        "s_liao_shengzong",
+        "s_zhenzong"
+      ],
+      "peopleRoles": {
+        "s_liao_xiaotalin": "相关当事人或在位者",
+        "s_liao_xiaochuo": "相关当事人或在位者",
+        "s_liao_shengzong": "相关当事人或在位者",
+        "s_zhenzong": "相关当事人或在位者"
+      },
+      "sources": [
+        "v55_liaoshi",
+        "v55_songshi",
+        "v43s_ss006",
+        "v43s_ss007"
+      ],
+      "kind": "历史事件",
+      "category": "军事"
+    },
+    {
+      "id": "v56_军事_03",
+      "year": "1081",
+      "sortYear": 1081,
+      "title": "大梁太后应对五路伐夏",
+      "body": "宋军五路进攻西夏，大梁太后与梁氏中枢组织防御；宋军最终因补给、指挥与环境等因素退却。",
+      "impact": "把个人行动放回继承、官制、财政、战争和多族群社会中理解，并保留史料立场差异。",
+      "people": [
+        "s_xia_liangtaihou",
+        "s_xia_liangyimai",
+        "s_xia_huizong",
+        "s_shenzong"
+      ],
+      "peopleRoles": {
+        "s_xia_liangtaihou": "相关当事人或在位者",
+        "s_xia_liangyimai": "相关当事人或在位者",
+        "s_xia_huizong": "相关当事人或在位者",
+        "s_shenzong": "相关当事人或在位者"
+      },
+      "sources": [
+        "v56_xixia_14",
+        "v55_songshi",
+        "v55_xixia",
+        "v43s_ss014"
+      ],
+      "kind": "历史事件",
+      "category": "军事"
+    },
+    {
+      "id": "v56_军事_04",
+      "year": "1089",
+      "sortYear": 1089,
+      "title": "梁乙逋与仁多保忠出兵",
+      "body": "西夏联络青唐势力并进攻宋境，梁乙逋与仁多保忠的配合也受内部猜忌影响。",
+      "impact": "把个人行动放回继承、官制、财政、战争和多族群社会中理解，并保留史料立场差异。",
+      "people": [
+        "s_xia_liangyibu",
+        "s_xia_renduobaozhong",
+        "s_xia_xiaoliangtaihou"
+      ],
+      "peopleRoles": {
+        "s_xia_liangyibu": "相关当事人或在位者",
+        "s_xia_renduobaozhong": "相关当事人或在位者",
+        "s_xia_xiaoliangtaihou": "相关当事人或在位者"
+      },
+      "sources": [
+        "v56_xixia_19",
+        "v55_songshi"
+      ],
+      "kind": "历史事件",
+      "category": "军事"
+    },
+    {
+      "id": "v56_军事_05",
+      "year": "1120",
+      "sortYear": 1120,
+      "title": "完颜希尹参与灭辽战争",
+      "body": "希尹随军经营辽地、招降人口并参与追击天祚帝，兼具军事和行政职能。",
+      "impact": "把个人行动放回继承、官制、财政、战争和多族群社会中理解，并保留史料立场差异。",
+      "people": [
+        "s_jin_wanyanxiyin",
+        "s_jin_taizu",
+        "s_liao_tianzuo"
+      ],
+      "peopleRoles": {
+        "s_jin_wanyanxiyin": "相关当事人或在位者",
+        "s_jin_taizu": "相关当事人或在位者",
+        "s_liao_tianzuo": "相关当事人或在位者"
+      },
+      "sources": [
+        "v56_jinshi_73",
+        "v55_jinshi",
+        "v55_songshi",
+        "v55_liaoshi"
+      ],
+      "kind": "历史事件",
+      "category": "军事"
+    },
+    {
+      "id": "v56_军事_06",
+      "year": "1232",
+      "sortYear": 1232,
+      "title": "三峰山之战",
+      "body": "蒙古军在严寒和连续机动作战中击溃金军主力，完颜合达、移剌蒲阿所部遭到决定性失败。",
+      "impact": "把个人行动放回继承、官制、财政、战争和多族群社会中理解，并保留史料立场差异。",
+      "people": [
+        "s_jin_wanyanhada",
+        "s_jin_yilapua",
+        "s_jin_aizong"
+      ],
+      "peopleRoles": {
+        "s_jin_wanyanhada": "相关当事人或在位者",
+        "s_jin_yilapua": "相关当事人或在位者",
+        "s_jin_aizong": "相关当事人或在位者"
+      },
+      "sources": [
+        "v56_jinshi_112",
+        "v55_jinshi",
+        "v55_songshi"
+      ],
+      "kind": "历史事件",
+      "category": "军事"
+    },
+    {
+      "id": "v56_军事_07",
+      "year": "1233",
+      "sortYear": 1233,
+      "title": "金末钧州战斗",
+      "body": "三峰山败后完颜合达退至钧州，城破被杀，金朝已难以重新组织北方主力。",
+      "impact": "把个人行动放回继承、官制、财政、战争和多族群社会中理解，并保留史料立场差异。",
+      "people": [
+        "s_jin_wanyanhada",
+        "s_jin_aizong"
+      ],
+      "peopleRoles": {
+        "s_jin_wanyanhada": "相关当事人或在位者",
+        "s_jin_aizong": "相关当事人或在位者"
+      },
+      "sources": [
+        "v56_jinshi_112",
+        "v55_jinshi",
+        "v55_songshi"
+      ],
+      "kind": "历史事件",
+      "category": "军事"
+    },
+    {
+      "id": "v56_文化_01",
+      "year": "926",
+      "sortYear": 926,
+      "title": "耶律倍经营东丹文化",
+      "body": "耶律倍在东丹及后唐时期从事藏书、诗文和绘画，其传世作品归属仍需逐件核定。",
+      "impact": "把个人行动放回继承、官制、财政、战争和多族群社会中理解，并保留史料立场差异。",
+      "people": [
+        "s_liao_yelubei",
+        "s_liao_taizu"
+      ],
+      "peopleRoles": {
+        "s_liao_yelubei": "相关当事人或在位者",
+        "s_liao_taizu": "相关当事人或在位者"
+      },
+      "sources": [
+        "v56_liaoshi_72",
+        "v55_liaoshi",
+        "v55_songshi"
+      ],
+      "kind": "历史事件",
+      "category": "文化"
+    },
+    {
+      "id": "v56_文化_02",
+      "year": "1070",
+      "sortYear": 1070,
+      "title": "萧观音宫廷诗歌",
+      "body": "萧观音诗作保存了辽代宫廷女性写作的一条线索，作品真伪和文本流传需要分别说明。",
+      "impact": "把个人行动放回继承、官制、财政、战争和多族群社会中理解，并保留史料立场差异。",
+      "people": [
+        "s_liao_xiaoguanyin",
+        "s_liao_daozong"
+      ],
+      "peopleRoles": {
+        "s_liao_xiaoguanyin": "相关当事人或在位者",
+        "s_liao_daozong": "相关当事人或在位者"
+      },
+      "sources": [
+        "v55_liaoshi",
+        "v55_dpm",
+        "v55_songshi"
+      ],
+      "kind": "历史事件",
+      "category": "文化"
+    },
+    {
+      "id": "v56_文化_03",
+      "year": "1119",
+      "sortYear": 1119,
+      "title": "完颜希尹创制女真大字",
+      "body": "完颜希尹奉金太祖命，参照汉字和契丹文字制度创制女真大字并颁行。",
+      "impact": "把个人行动放回继承、官制、财政、战争和多族群社会中理解，并保留史料立场差异。",
+      "people": [
+        "s_jin_wanyanxiyin",
+        "s_jin_taizu"
+      ],
+      "peopleRoles": {
+        "s_jin_wanyanxiyin": "相关当事人或在位者",
+        "s_jin_taizu": "相关当事人或在位者"
+      },
+      "sources": [
+        "v56_jinshi_73",
+        "v55_jinshi",
+        "v55_songshi"
+      ],
+      "kind": "历史事件",
+      "category": "文化"
+    },
+    {
+      "id": "v56_文化_04",
+      "year": "1138",
+      "sortYear": 1138,
+      "title": "金初礼制与官制整合",
+      "body": "宗干、韩企先等参与把女真旧制、辽宋官制和新占领地区的行政需求纳入统一朝廷。",
+      "impact": "把个人行动放回继承、官制、财政、战争和多族群社会中理解，并保留史料立场差异。",
+      "people": [
+        "s_jin_wanyanzonggan",
+        "s_jin_hanqixian",
+        "s_jin_xizong"
+      ],
+      "peopleRoles": {
+        "s_jin_wanyanzonggan": "相关当事人或在位者",
+        "s_jin_hanqixian": "相关当事人或在位者",
+        "s_jin_xizong": "相关当事人或在位者"
+      },
+      "sources": [
+        "v55_jinshi",
+        "v55_songshi"
+      ],
+      "kind": "历史事件",
+      "category": "文化"
+    },
+    {
+      "id": "v56_文化_05",
+      "year": "1160",
+      "sortYear": 1160,
+      "title": "斡道冲参与西夏文教",
+      "body": "仁宗朝学校、科举和儒学活动扩大，斡道冲成为西夏文史人物的重要代表。",
+      "impact": "把个人行动放回继承、官制、财政、战争和多族群社会中理解，并保留史料立场差异。",
+      "people": [
+        "s_xia_wodaochong",
+        "s_xia_renzong"
+      ],
+      "peopleRoles": {
+        "s_xia_wodaochong": "相关当事人或在位者",
+        "s_xia_renzong": "相关当事人或在位者"
+      },
+      "sources": [
+        "v55_xixia",
+        "v55_songshi"
+      ],
+      "kind": "历史事件",
+      "category": "文化"
+    },
+    {
+      "id": "v56_文化_06",
+      "year": "1025",
+      "sortYear": 1025,
+      "title": "辽朝汉官参与文书行政",
+      "body": "张俭等汉官参与朝议、财政和文书行政，南北面官制的实际运作存在人员与事务交叉。",
+      "impact": "把个人行动放回继承、官制、财政、战争和多族群社会中理解，并保留史料立场差异。",
+      "people": [
+        "s_liao_zhangjian",
+        "s_liao_shengzong"
+      ],
+      "peopleRoles": {
+        "s_liao_zhangjian": "相关当事人或在位者",
+        "s_liao_shengzong": "相关当事人或在位者"
+      },
+      "sources": [
+        "v55_liaoshi",
+        "v55_songshi"
+      ],
+      "kind": "历史事件",
+      "category": "文化"
+    },
+    {
+      "id": "v56_文化_07",
+      "year": "1190",
+      "sortYear": 1190,
+      "title": "女真文教育与汉文科举并行",
+      "body": "金章宗时期女真学、女真进士与汉文科举并行，反映多语官僚体系的制度选择。",
+      "impact": "把个人行动放回继承、官制、财政、战争和多族群社会中理解，并保留史料立场差异。",
+      "people": [
+        "s_jin_zhangzong",
+        "s_jin_wanyanxiyin"
+      ],
+      "peopleRoles": {
+        "s_jin_zhangzong": "相关当事人或在位者",
+        "s_jin_wanyanxiyin": "相关当事人或在位者"
+      },
+      "sources": [
+        "v55_jinshi",
+        "v55_songshi",
+        "v56_jinshi_73"
+      ],
+      "kind": "历史事件",
+      "category": "文化"
+    },
+    {
+      "id": "v56_经济_01",
+      "year": "930",
+      "sortYear": 930,
+      "title": "东丹人口与资源迁移",
+      "body": "辽初对渤海故地进行政治重组，人口迁徙、城镇网络和贡赋安排共同塑造东丹国。",
+      "impact": "把个人行动放回继承、官制、财政、战争和多族群社会中理解，并保留史料立场差异。",
+      "people": [
+        "s_liao_yelubei",
+        "s_liao_taizu"
+      ],
+      "peopleRoles": {
+        "s_liao_yelubei": "相关当事人或在位者",
+        "s_liao_taizu": "相关当事人或在位者"
+      },
+      "sources": [
+        "v56_liaoshi_72",
+        "v55_liaoshi",
+        "v55_songshi"
+      ],
+      "kind": "历史事件",
+      "category": "经济"
+    },
+    {
+      "id": "v56_经济_02",
+      "year": "1042",
+      "sortYear": 1042,
+      "title": "宋辽增加岁币",
+      "body": "关南交涉后宋向辽增加银绢，交换的是边界稳定与政治承诺，不能简单等同战争赔款。",
+      "impact": "把个人行动放回继承、官制、财政、战争和多族群社会中理解，并保留史料立场差异。",
+      "people": [
+        "s_liao_liuliufu",
+        "s_liao_xingzong",
+        "s_renzong"
+      ],
+      "peopleRoles": {
+        "s_liao_liuliufu": "相关当事人或在位者",
+        "s_liao_xingzong": "相关当事人或在位者",
+        "s_renzong": "相关当事人或在位者"
+      },
+      "sources": [
+        "v56_liaoshi_86",
+        "v55_songshi",
+        "v55_liaoshi",
+        "v43s_ss009"
+      ],
+      "kind": "历史事件",
+      "category": "经济"
+    },
+    {
+      "id": "v56_经济_03",
+      "year": "1068",
+      "sortYear": 1068,
+      "title": "梁氏中枢组织西夏财政",
+      "body": "大梁太后与梁乙埋控制军政，战争动员依赖河西农业、牧业、赋役和边境贸易。",
+      "impact": "把个人行动放回继承、官制、财政、战争和多族群社会中理解，并保留史料立场差异。",
+      "people": [
+        "s_xia_liangtaihou",
+        "s_xia_liangyimai"
+      ],
+      "peopleRoles": {
+        "s_xia_liangtaihou": "相关当事人或在位者",
+        "s_xia_liangyimai": "相关当事人或在位者"
+      },
+      "sources": [
+        "v56_xixia_14",
+        "v55_songshi"
+      ],
+      "kind": "历史事件",
+      "category": "经济"
+    },
+    {
+      "id": "v56_经济_04",
+      "year": "1090",
+      "sortYear": 1090,
+      "title": "宋夏边贸与战争并存",
+      "body": "小梁太后摄政时期，边境军事冲突频繁，但人口、物资和信息仍通过榷场及非正式渠道流动。",
+      "impact": "把个人行动放回继承、官制、财政、战争和多族群社会中理解，并保留史料立场差异。",
+      "people": [
+        "s_xia_xiaoliangtaihou",
+        "s_xia_liangyibu"
+      ],
+      "peopleRoles": {
+        "s_xia_xiaoliangtaihou": "相关当事人或在位者",
+        "s_xia_liangyibu": "相关当事人或在位者"
+      },
+      "sources": [
+        "v56_xixia_19",
+        "v55_songshi"
+      ],
+      "kind": "历史事件",
+      "category": "经济"
+    },
+    {
+      "id": "v56_经济_05",
+      "year": "1130",
+      "sortYear": 1130,
+      "title": "金接收华北财赋体系",
+      "body": "韩企先等官员参与接收州县、户籍与税赋，金朝财政逐渐由征服分配转向常态行政。",
+      "impact": "把个人行动放回继承、官制、财政、战争和多族群社会中理解，并保留史料立场差异。",
+      "people": [
+        "s_jin_hanqixian",
+        "s_jin_taizong"
+      ],
+      "peopleRoles": {
+        "s_jin_hanqixian": "相关当事人或在位者",
+        "s_jin_taizong": "相关当事人或在位者"
+      },
+      "sources": [
+        "v55_jinshi",
+        "v55_songshi"
+      ],
+      "kind": "历史事件",
+      "category": "经济"
+    },
+    {
+      "id": "v56_经济_06",
+      "year": "1215",
+      "sortYear": 1215,
+      "title": "东夏控制东北交通节点",
+      "body": "蒲鲜万奴政权依赖辽东与东北城镇、山地和跨境交通，其资源基础随战争不断收缩。",
+      "impact": "把个人行动放回继承、官制、财政、战争和多族群社会中理解，并保留史料立场差异。",
+      "people": [
+        "s_jin_puxianwannu",
+        "s_jin_xuanzong"
+      ],
+      "peopleRoles": {
+        "s_jin_puxianwannu": "相关当事人或在位者",
+        "s_jin_xuanzong": "相关当事人或在位者"
+      },
+      "sources": [
+        "v55_jinshi",
+        "v55_songshi"
+      ],
+      "kind": "历史事件",
+      "category": "经济"
+    },
+    {
+      "id": "v56_经济_07",
+      "year": "1232",
+      "sortYear": 1232,
+      "title": "金末军粮与机动危机",
+      "body": "三峰山战役前后，金军在补给、集中兵力和持续机动方面处于劣势，财政困境直接进入战场。",
+      "impact": "把个人行动放回继承、官制、财政、战争和多族群社会中理解，并保留史料立场差异。",
+      "people": [
+        "s_jin_wanyanhada",
+        "s_jin_yilapua"
+      ],
+      "peopleRoles": {
+        "s_jin_wanyanhada": "相关当事人或在位者",
+        "s_jin_yilapua": "相关当事人或在位者"
+      },
+      "sources": [
+        "v56_jinshi_112",
+        "v55_jinshi"
+      ],
+      "kind": "历史事件",
+      "category": "经济"
+    },
+    {
+      "id": "v56_社会_01",
+      "year": "947",
+      "sortYear": 947,
+      "title": "辽朝皇族跨境流动",
+      "body": "耶律倍及其家属在辽与后唐之间迁徙，说明皇族身份、文化活动和政治忠属可能同时跨越政权边界。",
+      "impact": "把个人行动放回继承、官制、财政、战争和多族群社会中理解，并保留史料立场差异。",
+      "people": [
+        "s_liao_yelubei",
+        "s_liao_taizong"
+      ],
+      "peopleRoles": {
+        "s_liao_yelubei": "相关当事人或在位者",
+        "s_liao_taizong": "相关当事人或在位者"
+      },
+      "sources": [
+        "v56_liaoshi_72",
+        "v55_liaoshi",
+        "v55_songshi"
+      ],
+      "kind": "历史事件",
+      "category": "社会"
+    },
+    {
+      "id": "v56_社会_02",
+      "year": "1075",
+      "sortYear": 1075,
+      "title": "萧观音被诬案",
+      "body": "萧观音在宫廷指控中被赐死，现存叙事混合政治斗争、性别道德和后世文学加工。",
+      "impact": "把个人行动放回继承、官制、财政、战争和多族群社会中理解，并保留史料立场差异。",
+      "people": [
+        "s_liao_xiaoguanyin",
+        "s_liao_yeluyixin",
+        "s_liao_daozong"
+      ],
+      "peopleRoles": {
+        "s_liao_xiaoguanyin": "相关当事人或在位者",
+        "s_liao_yeluyixin": "相关当事人或在位者",
+        "s_liao_daozong": "相关当事人或在位者"
+      },
+      "sources": [
+        "v55_liaoshi",
+        "v55_dpm",
+        "v55_songshi"
+      ],
+      "kind": "历史事件",
+      "category": "社会"
+    },
+    {
+      "id": "v56_社会_03",
+      "year": "1077",
+      "sortYear": 1077,
+      "title": "耶律乙辛构陷皇太子",
+      "body": "皇太子耶律濬被废杀，辽道宗后期的继承秩序和贵族政治受到长期破坏。",
+      "impact": "把个人行动放回继承、官制、财政、战争和多族群社会中理解，并保留史料立场差异。",
+      "people": [
+        "s_liao_yeluyixin",
+        "s_liao_daozong"
+      ],
+      "peopleRoles": {
+        "s_liao_yeluyixin": "相关当事人或在位者",
+        "s_liao_daozong": "相关当事人或在位者"
+      },
+      "sources": [
+        "v55_liaoshi",
+        "v55_songshi"
+      ],
+      "kind": "历史事件",
+      "category": "社会"
+    },
+    {
+      "id": "v56_社会_04",
+      "year": "1060",
+      "sortYear": 1060,
+      "title": "没藏氏外戚政治",
+      "body": "毅宗幼年时期，没藏太后与没藏讹庞分别占据宫廷和中枢位置，外戚并非单一人物集团。",
+      "impact": "把个人行动放回继承、官制、财政、战争和多族群社会中理解，并保留史料立场差异。",
+      "people": [
+        "s_xia_mozangtaihou",
+        "s_xia_mozange",
+        "s_xia_yizong"
+      ],
+      "peopleRoles": {
+        "s_xia_mozangtaihou": "相关当事人或在位者",
+        "s_xia_mozange": "相关当事人或在位者",
+        "s_xia_yizong": "相关当事人或在位者"
+      },
+      "sources": [
+        "v55_xixia",
+        "v55_songshi"
+      ],
+      "kind": "历史事件",
+      "category": "社会"
+    },
+    {
+      "id": "v56_社会_05",
+      "year": "1086",
+      "sortYear": 1086,
+      "title": "两位梁太后需要区分",
+      "body": "惠宗生母大梁太后与崇宗生母小梁太后先后摄政，合称“梁太后”会误置人物、年代和战争责任。",
+      "impact": "把个人行动放回继承、官制、财政、战争和多族群社会中理解，并保留史料立场差异。",
+      "people": [
+        "s_xia_liangtaihou",
+        "s_xia_xiaoliangtaihou"
+      ],
+      "peopleRoles": {
+        "s_xia_liangtaihou": "相关当事人或在位者",
+        "s_xia_xiaoliangtaihou": "相关当事人或在位者"
+      },
+      "sources": [
+        "v56_xixia_14",
+        "v55_songshi",
+        "v56_xixia_19"
+      ],
+      "kind": "历史事件",
+      "category": "社会"
+    },
+    {
+      "id": "v56_社会_06",
+      "year": "1140",
+      "sortYear": 1140,
+      "title": "完颜希尹被赐死",
+      "body": "熙宗朝权力重组中希尹及其家属遭处置，随后又获平反，显示开国功臣与皇权关系的变化。",
+      "impact": "把个人行动放回继承、官制、财政、战争和多族群社会中理解，并保留史料立场差异。",
+      "people": [
+        "s_jin_wanyanxiyin",
+        "s_jin_xizong"
+      ],
+      "peopleRoles": {
+        "s_jin_wanyanxiyin": "相关当事人或在位者",
+        "s_jin_xizong": "相关当事人或在位者"
+      },
+      "sources": [
+        "v56_jinshi_73",
+        "v55_jinshi",
+        "v55_songshi"
+      ],
+      "kind": "历史事件",
+      "category": "社会"
+    },
+    {
+      "id": "v56_社会_07",
+      "year": "1224",
+      "sortYear": 1224,
+      "title": "契丹将领进入金朝军政核心",
+      "body": "移剌蒲阿等契丹出身将领在金末担任要职，说明族属与政治归属并非静止不变。",
+      "impact": "把个人行动放回继承、官制、财政、战争和多族群社会中理解，并保留史料立场差异。",
+      "people": [
+        "s_jin_yilapua",
+        "s_jin_aizong"
+      ],
+      "peopleRoles": {
+        "s_jin_yilapua": "相关当事人或在位者",
+        "s_jin_aizong": "相关当事人或在位者"
+      },
+      "sources": [
+        "v56_jinshi_112",
+        "v55_jinshi",
+        "v55_songshi"
+      ],
+      "kind": "历史事件",
+      "category": "社会"
     }
   ],
   "objects": [
@@ -107579,112 +108732,6 @@
       ]
     },
     {
-      "person": "s_liao_shengzong",
-      "title": "耶律隆绪：辽圣宗",
-      "dek": "幼年即位由萧绰摄政，澶渊议和后长期经营制度和边疆。",
-      "sections": [
-        {
-          "id": "s_liao_shengzong-v55-1",
-          "title": "并立世界中的位置",
-          "text": "耶律隆绪处于宋、辽、西夏、金及蒙古势力先后并立的时代。幼年即位由萧绰摄政，澶渊议和后长期经营制度和边疆。评价其行动需要先确认本国继承、摄政关系和实际控制区域。",
-          "sources": [
-            "v55_liaoshi",
-            "v55_songshi",
-            "v55_kaogu"
-          ],
-          "kind": "史实与解读",
-          "events": [
-            "v55_p03"
-          ],
-          "people": [
-            "s_liao_xiaochuo",
-            "s_zhenzong",
-            "s_taizong"
-          ]
-        },
-        {
-          "id": "s_liao_shengzong-v55-2",
-          "title": "权力、战争与选择",
-          "text": "宋辽约定边界、岁币与交往秩序，结束大规模持续战争。同一事件在宋、辽、夏、金材料中的称谓和因果解释可能不同，页面以时间、行动和可核结果为主。",
-          "sources": [
-            "v55_liaoshi",
-            "v55_songshi",
-            "v55_kaogu"
-          ],
-          "kind": "史实与解读",
-          "events": [
-            "v55_m02"
-          ],
-          "people": [
-            "s_liao_xiaochuo",
-            "s_zhenzong",
-            "s_taizong"
-          ]
-        },
-        {
-          "id": "s_liao_shengzong-v55-3",
-          "title": "实物怎样作证",
-          "text": "契丹生活传统与陶瓷工艺。理解其年代、用途和归属需要结合出土环境、修缮记录与馆藏著录。文字、建筑、墓葬和器物能够补充正史，却不能脱离出土层位和流传过程独立证明故事。",
-          "sources": [
-            "v55_liaoshi",
-            "v55_songshi",
-            "v55_kaogu"
-          ],
-          "kind": "史实与解读",
-          "events": [
-            "v55_c02"
-          ],
-          "people": [
-            "s_liao_xiaochuo",
-            "s_zhenzong",
-            "s_taizong"
-          ]
-        },
-        {
-          "id": "s_liao_shengzong-v55-4",
-          "title": "制度与社会",
-          "text": "这一时期不是宋朝单方面面对“边患”。各政权都有内部官制、财政、法律、宗教与多语社会；条约、互市、移民和战争共同塑造北方与西北。耶律隆绪处于宋、辽、西夏、金及蒙古势力先后并立的时代。幼年即位由萧绰摄政，澶渊议和后长期经营制度和边疆。评价其行动需要先确认本国继承、摄政关系和实际控制区域。耶律隆绪处于宋、辽、西夏、金及蒙古势力先后并立的时代。幼年即位由萧绰摄政，澶渊议和后长期经营制度和边疆。评价其行动需要先确认本国继承、摄政关系和实际控制区域。耶律隆绪处于宋、辽、西夏、金及蒙古势力先后并立的时代。幼年即位由萧绰摄政，澶渊议和后长期经营制度和边疆。评价其行动需要先确认本国继承、摄政关系和实际控制区域。耶律隆绪处于宋、辽、西夏、金及蒙古势力先后并立的时代。幼年即位由萧绰摄政，澶渊议和后长期经营制度和边疆。评价其行动需要先确认本国继承、摄政关系和实际控制区域。耶律隆绪处于宋、辽、西夏、金及蒙古势力先后并立的时代。幼年即位由萧绰摄政，澶渊议和后长期经营制度和边疆。评价其行动需要先确认本国继承、摄政关系和实际控制区域。耶律隆绪处于宋、辽、西夏、金及蒙古势力先后并立的时代。幼年即位由萧绰摄政，澶渊议和后长期经营制度和边疆。评价其行动需要先确认本国继承、摄政关系和实际控制区域。",
-          "sources": [
-            "v55_liaoshi",
-            "v55_songshi",
-            "v55_kaogu"
-          ],
-          "kind": "史实与解读",
-          "events": [
-            "v55_e02"
-          ],
-          "people": [
-            "s_liao_xiaochuo",
-            "s_zhenzong",
-            "s_taizong"
-          ]
-        },
-        {
-          "id": "s_liao_shengzong-v55-5",
-          "title": "史料边界",
-          "text": "本篇以本政权正史、宋史和考古资料互校。辽史成书条件、西夏无官修正史、金宋双方立场差异，都要求对数字、言辞和道德评价保持克制。",
-          "sources": [
-            "v55_liaoshi",
-            "v55_songshi",
-            "v55_kaogu"
-          ],
-          "kind": "史实与解读",
-          "events": [
-            "v55_s02"
-          ],
-          "people": [
-            "s_liao_xiaochuo",
-            "s_zhenzong",
-            "s_taizong"
-          ]
-        }
-      ],
-      "sources": [
-        "v55_liaoshi",
-        "v55_songshi"
-      ]
-    },
-    {
       "person": "s_liao_xingzong",
       "title": "耶律宗真：辽兴宗",
       "dek": "亲政后处理宋夏关系，佛教事业扩张，财政负担上升。",
@@ -108418,112 +109465,6 @@
             "s_xia_huizong",
             "s_xia_renzong",
             "s_liao_taizu"
-          ]
-        }
-      ],
-      "sources": [
-        "v55_xixia",
-        "v55_songshi"
-      ]
-    },
-    {
-      "person": "s_xia_renzong",
-      "title": "李仁孝：夏仁宗",
-      "dek": "推行科举、学校和法典编纂，经历任得敬分国危机。",
-      "sections": [
-        {
-          "id": "s_xia_renzong-v55-1",
-          "title": "并立世界中的位置",
-          "text": "李仁孝处于宋、辽、西夏、金及蒙古势力先后并立的时代。推行科举、学校和法典编纂，经历任得敬分国危机。评价其行动需要先确认本国继承、摄政关系和实际控制区域。",
-          "sources": [
-            "v55_xixia",
-            "v55_songshi",
-            "v55_kaogu"
-          ],
-          "kind": "史实与解读",
-          "events": [
-            "v55_c07"
-          ],
-          "people": [
-            "s_xia_luoshichang",
-            "s_xia_chongzong",
-            "s_xia_huanzong"
-          ]
-        },
-        {
-          "id": "s_xia_renzong-v55-2",
-          "title": "权力、战争与选择",
-          "text": "仁宗时期扩大儒学教育和科举制度。同一事件在宋、辽、夏、金材料中的称谓和因果解释可能不同，页面以时间、行动和可核结果为主。",
-          "sources": [
-            "v55_xixia",
-            "v55_songshi",
-            "v55_kaogu"
-          ],
-          "kind": "史实与解读",
-          "events": [
-            "v55_e09"
-          ],
-          "people": [
-            "s_xia_luoshichang",
-            "s_xia_chongzong",
-            "s_xia_huanzong"
-          ]
-        },
-        {
-          "id": "s_xia_renzong-v55-3",
-          "title": "实物怎样作证",
-          "text": "帝陵群归属与考古边界。理解其年代、用途和归属需要结合出土环境、修缮记录与馆藏著录。文字、建筑、墓葬和器物能够补充正史，却不能脱离出土层位和流传过程独立证明故事。",
-          "sources": [
-            "v55_xixia",
-            "v55_songshi",
-            "v55_kaogu"
-          ],
-          "kind": "史实与解读",
-          "events": [
-            "v55_s08"
-          ],
-          "people": [
-            "s_xia_luoshichang",
-            "s_xia_chongzong",
-            "s_xia_huanzong"
-          ]
-        },
-        {
-          "id": "s_xia_renzong-v55-4",
-          "title": "制度与社会",
-          "text": "这一时期不是宋朝单方面面对“边患”。各政权都有内部官制、财政、法律、宗教与多语社会；条约、互市、移民和战争共同塑造北方与西北。李仁孝处于宋、辽、西夏、金及蒙古势力先后并立的时代。推行科举、学校和法典编纂，经历任得敬分国危机。评价其行动需要先确认本国继承、摄政关系和实际控制区域。李仁孝处于宋、辽、西夏、金及蒙古势力先后并立的时代。推行科举、学校和法典编纂，经历任得敬分国危机。评价其行动需要先确认本国继承、摄政关系和实际控制区域。李仁孝处于宋、辽、西夏、金及蒙古势力先后并立的时代。推行科举、学校和法典编纂，经历任得敬分国危机。评价其行动需要先确认本国继承、摄政关系和实际控制区域。李仁孝处于宋、辽、西夏、金及蒙古势力先后并立的时代。推行科举、学校和法典编纂，经历任得敬分国危机。评价其行动需要先确认本国继承、摄政关系和实际控制区域。李仁孝处于宋、辽、西夏、金及蒙古势力先后并立的时代。推行科举、学校和法典编纂，经历任得敬分国危机。评价其行动需要先确认本国继承、摄政关系和实际控制区域。李仁孝处于宋、辽、西夏、金及蒙古势力先后并立的时代。推行科举、学校和法典编纂，经历任得敬分国危机。评价其行动需要先确认本国继承、摄政关系和实际控制区域。",
-          "sources": [
-            "v55_xixia",
-            "v55_songshi",
-            "v55_kaogu"
-          ],
-          "kind": "史实与解读",
-          "events": [
-            "v55_reign_s_xia_renzong_a"
-          ],
-          "people": [
-            "s_xia_luoshichang",
-            "s_xia_chongzong",
-            "s_xia_huanzong"
-          ]
-        },
-        {
-          "id": "s_xia_renzong-v55-5",
-          "title": "史料边界",
-          "text": "本篇以本政权正史、宋史和考古资料互校。辽史成书条件、西夏无官修正史、金宋双方立场差异，都要求对数字、言辞和道德评价保持克制。",
-          "sources": [
-            "v55_xixia",
-            "v55_songshi",
-            "v55_kaogu"
-          ],
-          "kind": "史实与解读",
-          "events": [
-            "v55_reign_s_xia_renzong_b"
-          ],
-          "people": [
-            "s_xia_luoshichang",
-            "s_xia_chongzong",
-            "s_xia_huanzong"
           ]
         }
       ],
@@ -109487,218 +110428,6 @@
       ]
     },
     {
-      "person": "s_jin_shizong",
-      "title": "完颜雍：金世宗",
-      "dek": "即位后稳定统治，整顿财政并强调女真传统与多语治理。",
-      "sections": [
-        {
-          "id": "s_jin_shizong-v55-1",
-          "title": "并立世界中的位置",
-          "text": "完颜雍处于宋、辽、西夏、金及蒙古势力先后并立的时代。即位后稳定统治，整顿财政并强调女真传统与多语治理。评价其行动需要先确认本国继承、摄政关系和实际控制区域。",
-          "sources": [
-            "v55_jinshi",
-            "v55_songshi",
-            "v55_kaogu"
-          ],
-          "kind": "史实与解读",
-          "events": [
-            "v55_c06"
-          ],
-          "people": [
-            "s_xiaozong",
-            "s_jin_hailing",
-            "s_jin_zhangzong"
-          ]
-        },
-        {
-          "id": "s_jin_shizong-v55-2",
-          "title": "权力、战争与选择",
-          "text": "金朝逐步建立多科目科举并服务多族群官僚体系。同一事件在宋、辽、夏、金材料中的称谓和因果解释可能不同，页面以时间、行动和可核结果为主。",
-          "sources": [
-            "v55_jinshi",
-            "v55_songshi",
-            "v55_kaogu"
-          ],
-          "kind": "史实与解读",
-          "events": [
-            "v55_e08"
-          ],
-          "people": [
-            "s_xiaozong",
-            "s_jin_hailing",
-            "s_jin_zhangzong"
-          ]
-        },
-        {
-          "id": "s_jin_shizong-v55-3",
-          "title": "实物怎样作证",
-          "text": "金代帝陵与迁葬历史。理解其年代、用途和归属需要结合出土环境、修缮记录与馆藏著录。文字、建筑、墓葬和器物能够补充正史，却不能脱离出土层位和流传过程独立证明故事。",
-          "sources": [
-            "v55_jinshi",
-            "v55_songshi",
-            "v55_kaogu"
-          ],
-          "kind": "史实与解读",
-          "events": [
-            "v55_s07"
-          ],
-          "people": [
-            "s_xiaozong",
-            "s_jin_hailing",
-            "s_jin_zhangzong"
-          ]
-        },
-        {
-          "id": "s_jin_shizong-v55-4",
-          "title": "制度与社会",
-          "text": "这一时期不是宋朝单方面面对“边患”。各政权都有内部官制、财政、法律、宗教与多语社会；条约、互市、移民和战争共同塑造北方与西北。完颜雍处于宋、辽、西夏、金及蒙古势力先后并立的时代。即位后稳定统治，整顿财政并强调女真传统与多语治理。评价其行动需要先确认本国继承、摄政关系和实际控制区域。完颜雍处于宋、辽、西夏、金及蒙古势力先后并立的时代。即位后稳定统治，整顿财政并强调女真传统与多语治理。评价其行动需要先确认本国继承、摄政关系和实际控制区域。完颜雍处于宋、辽、西夏、金及蒙古势力先后并立的时代。即位后稳定统治，整顿财政并强调女真传统与多语治理。评价其行动需要先确认本国继承、摄政关系和实际控制区域。完颜雍处于宋、辽、西夏、金及蒙古势力先后并立的时代。即位后稳定统治，整顿财政并强调女真传统与多语治理。评价其行动需要先确认本国继承、摄政关系和实际控制区域。完颜雍处于宋、辽、西夏、金及蒙古势力先后并立的时代。即位后稳定统治，整顿财政并强调女真传统与多语治理。评价其行动需要先确认本国继承、摄政关系和实际控制区域。完颜雍处于宋、辽、西夏、金及蒙古势力先后并立的时代。即位后稳定统治，整顿财政并强调女真传统与多语治理。评价其行动需要先确认本国继承、摄政关系和实际控制区域。",
-          "sources": [
-            "v55_jinshi",
-            "v55_songshi",
-            "v55_kaogu"
-          ],
-          "kind": "史实与解读",
-          "events": [
-            "v55_reign_s_jin_shizong_a"
-          ],
-          "people": [
-            "s_xiaozong",
-            "s_jin_hailing",
-            "s_jin_zhangzong"
-          ]
-        },
-        {
-          "id": "s_jin_shizong-v55-5",
-          "title": "史料边界",
-          "text": "本篇以本政权正史、宋史和考古资料互校。辽史成书条件、西夏无官修正史、金宋双方立场差异，都要求对数字、言辞和道德评价保持克制。",
-          "sources": [
-            "v55_jinshi",
-            "v55_songshi",
-            "v55_kaogu"
-          ],
-          "kind": "史实与解读",
-          "events": [
-            "v55_reign_s_jin_shizong_b"
-          ],
-          "people": [
-            "s_xiaozong",
-            "s_jin_hailing",
-            "s_jin_zhangzong"
-          ]
-        }
-      ],
-      "sources": [
-        "v55_jinshi",
-        "v55_songshi"
-      ]
-    },
-    {
-      "person": "s_jin_zhangzong",
-      "title": "完颜璟：金章宗",
-      "dek": "文化制度发展，同时北部边防和财政压力加重。",
-      "sections": [
-        {
-          "id": "s_jin_zhangzong-v55-1",
-          "title": "并立世界中的位置",
-          "text": "完颜璟处于宋、辽、西夏、金及蒙古势力先后并立的时代。文化制度发展，同时北部边防和财政压力加重。评价其行动需要先确认本国继承、摄政关系和实际控制区域。",
-          "sources": [
-            "v55_jinshi",
-            "v55_songshi",
-            "v55_kaogu"
-          ],
-          "kind": "史实与解读",
-          "events": [
-            "v55_c08"
-          ],
-          "people": [
-            "s_jin_zhaobingwen",
-            "s_jin_shizong",
-            "s_jin_weishao"
-          ]
-        },
-        {
-          "id": "s_jin_zhangzong-v55-2",
-          "title": "权力、战争与选择",
-          "text": "金章宗时期书画、文学与宫廷收藏发展。同一事件在宋、辽、夏、金材料中的称谓和因果解释可能不同，页面以时间、行动和可核结果为主。",
-          "sources": [
-            "v55_jinshi",
-            "v55_songshi",
-            "v55_kaogu"
-          ],
-          "kind": "史实与解读",
-          "events": [
-            "v55_reign_s_jin_zhangzong_a"
-          ],
-          "people": [
-            "s_jin_zhaobingwen",
-            "s_jin_shizong",
-            "s_jin_weishao"
-          ]
-        },
-        {
-          "id": "s_jin_zhangzong-v55-3",
-          "title": "实物怎样作证",
-          "text": "北方窑业与跨区域消费。理解其年代、用途和归属需要结合出土环境、修缮记录与馆藏著录。文字、建筑、墓葬和器物能够补充正史，却不能脱离出土层位和流传过程独立证明故事。",
-          "sources": [
-            "v55_jinshi",
-            "v55_songshi",
-            "v55_kaogu"
-          ],
-          "kind": "史实与解读",
-          "events": [
-            "v55_reign_s_jin_zhangzong_b"
-          ],
-          "people": [
-            "s_jin_zhaobingwen",
-            "s_jin_shizong",
-            "s_jin_weishao"
-          ]
-        },
-        {
-          "id": "s_jin_zhangzong-v55-4",
-          "title": "制度与社会",
-          "text": "这一时期不是宋朝单方面面对“边患”。各政权都有内部官制、财政、法律、宗教与多语社会；条约、互市、移民和战争共同塑造北方与西北。完颜璟处于宋、辽、西夏、金及蒙古势力先后并立的时代。文化制度发展，同时北部边防和财政压力加重。评价其行动需要先确认本国继承、摄政关系和实际控制区域。完颜璟处于宋、辽、西夏、金及蒙古势力先后并立的时代。文化制度发展，同时北部边防和财政压力加重。评价其行动需要先确认本国继承、摄政关系和实际控制区域。完颜璟处于宋、辽、西夏、金及蒙古势力先后并立的时代。文化制度发展，同时北部边防和财政压力加重。评价其行动需要先确认本国继承、摄政关系和实际控制区域。完颜璟处于宋、辽、西夏、金及蒙古势力先后并立的时代。文化制度发展，同时北部边防和财政压力加重。评价其行动需要先确认本国继承、摄政关系和实际控制区域。完颜璟处于宋、辽、西夏、金及蒙古势力先后并立的时代。文化制度发展，同时北部边防和财政压力加重。评价其行动需要先确认本国继承、摄政关系和实际控制区域。完颜璟处于宋、辽、西夏、金及蒙古势力先后并立的时代。文化制度发展，同时北部边防和财政压力加重。评价其行动需要先确认本国继承、摄政关系和实际控制区域。完颜璟处于宋、辽、西夏、金及蒙古势力先后并立的时代。文化制度发展，同时北部边防和财政压力加重。评价其行动需要先确认本国继承、摄政关系和实际控制区域。",
-          "sources": [
-            "v55_jinshi",
-            "v55_songshi",
-            "v55_kaogu"
-          ],
-          "kind": "史实与解读",
-          "events": [
-            "v55_reign_s_jin_weishao_a"
-          ],
-          "people": [
-            "s_jin_zhaobingwen",
-            "s_jin_shizong",
-            "s_jin_weishao"
-          ]
-        },
-        {
-          "id": "s_jin_zhangzong-v55-5",
-          "title": "史料边界",
-          "text": "本篇以本政权正史、宋史和考古资料互校。辽史成书条件、西夏无官修正史、金宋双方立场差异，都要求对数字、言辞和道德评价保持克制。",
-          "sources": [
-            "v55_jinshi",
-            "v55_songshi",
-            "v55_kaogu"
-          ],
-          "kind": "史实与解读",
-          "events": [
-            "v55_reign_s_jin_weishao_b"
-          ],
-          "people": [
-            "s_jin_zhaobingwen",
-            "s_jin_shizong",
-            "s_jin_weishao"
-          ]
-        }
-      ],
-      "sources": [
-        "v55_jinshi",
-        "v55_songshi"
-      ]
-    },
-    {
       "person": "s_jin_weishao",
       "title": "完颜永济：卫绍王",
       "dek": "蒙古进攻中丧失大片地区，政变中被杀。",
@@ -110220,112 +110949,6 @@
             "s_jin_yuanhaowen",
             "s_liao_taizu",
             "s_liao_taizong"
-          ]
-        }
-      ],
-      "sources": [
-        "v55_liaoshi",
-        "v55_songshi"
-      ]
-    },
-    {
-      "person": "s_liao_xiaochuo",
-      "title": "萧绰：辽承天皇太后",
-      "dek": "圣宗幼年摄政，参与对宋战争、议和与辽朝治理。",
-      "sections": [
-        {
-          "id": "s_liao_xiaochuo-v55-1",
-          "title": "并立世界中的位置",
-          "text": "萧绰处于宋、辽、西夏、金及蒙古势力先后并立的时代。圣宗幼年摄政，参与对宋战争、议和与辽朝治理。评价其行动需要先确认本国继承、摄政关系和实际控制区域。",
-          "sources": [
-            "v55_liaoshi",
-            "v55_songshi",
-            "v55_kaogu"
-          ],
-          "kind": "史实与解读",
-          "events": [
-            "v55_p03"
-          ],
-          "people": [
-            "s_liao_shengzong",
-            "s_zhenzong",
-            "s_taizong"
-          ]
-        },
-        {
-          "id": "s_liao_xiaochuo-v55-2",
-          "title": "权力、战争与选择",
-          "text": "宋辽约定边界、岁币与交往秩序，结束大规模持续战争。同一事件在宋、辽、夏、金材料中的称谓和因果解释可能不同，页面以时间、行动和可核结果为主。",
-          "sources": [
-            "v55_liaoshi",
-            "v55_songshi",
-            "v55_kaogu"
-          ],
-          "kind": "史实与解读",
-          "events": [
-            "v55_m02"
-          ],
-          "people": [
-            "s_liao_shengzong",
-            "s_zhenzong",
-            "s_taizong"
-          ]
-        },
-        {
-          "id": "s_liao_xiaochuo-v55-3",
-          "title": "实物怎样作证",
-          "text": "行政、法律与宗教文本群。理解其年代、用途和归属需要结合出土环境、修缮记录与馆藏著录。文字、建筑、墓葬和器物能够补充正史，却不能脱离出土层位和流传过程独立证明故事。",
-          "sources": [
-            "v55_liaoshi",
-            "v55_songshi",
-            "v55_kaogu"
-          ],
-          "kind": "史实与解读",
-          "events": [
-            "v55_s02"
-          ],
-          "people": [
-            "s_liao_shengzong",
-            "s_zhenzong",
-            "s_taizong"
-          ]
-        },
-        {
-          "id": "s_liao_xiaochuo-v55-4",
-          "title": "制度与社会",
-          "text": "这一时期不是宋朝单方面面对“边患”。各政权都有内部官制、财政、法律、宗教与多语社会；条约、互市、移民和战争共同塑造北方与西北。萧绰处于宋、辽、西夏、金及蒙古势力先后并立的时代。圣宗幼年摄政，参与对宋战争、议和与辽朝治理。评价其行动需要先确认本国继承、摄政关系和实际控制区域。萧绰处于宋、辽、西夏、金及蒙古势力先后并立的时代。圣宗幼年摄政，参与对宋战争、议和与辽朝治理。评价其行动需要先确认本国继承、摄政关系和实际控制区域。萧绰处于宋、辽、西夏、金及蒙古势力先后并立的时代。圣宗幼年摄政，参与对宋战争、议和与辽朝治理。评价其行动需要先确认本国继承、摄政关系和实际控制区域。萧绰处于宋、辽、西夏、金及蒙古势力先后并立的时代。圣宗幼年摄政，参与对宋战争、议和与辽朝治理。评价其行动需要先确认本国继承、摄政关系和实际控制区域。萧绰处于宋、辽、西夏、金及蒙古势力先后并立的时代。圣宗幼年摄政，参与对宋战争、议和与辽朝治理。评价其行动需要先确认本国继承、摄政关系和实际控制区域。萧绰处于宋、辽、西夏、金及蒙古势力先后并立的时代。圣宗幼年摄政，参与对宋战争、议和与辽朝治理。评价其行动需要先确认本国继承、摄政关系和实际控制区域。萧绰处于宋、辽、西夏、金及蒙古势力先后并立的时代。圣宗幼年摄政，参与对宋战争、议和与辽朝治理。评价其行动需要先确认本国继承、摄政关系和实际控制区域。",
-          "sources": [
-            "v55_liaoshi",
-            "v55_songshi",
-            "v55_kaogu"
-          ],
-          "kind": "史实与解读",
-          "events": [
-            "v55_p03"
-          ],
-          "people": [
-            "s_liao_shengzong",
-            "s_zhenzong",
-            "s_taizong"
-          ]
-        },
-        {
-          "id": "s_liao_xiaochuo-v55-5",
-          "title": "史料边界",
-          "text": "本篇以本政权正史、宋史和考古资料互校。辽史成书条件、西夏无官修正史、金宋双方立场差异，都要求对数字、言辞和道德评价保持克制。",
-          "sources": [
-            "v55_liaoshi",
-            "v55_songshi",
-            "v55_kaogu"
-          ],
-          "kind": "史实与解读",
-          "events": [
-            "v55_m02"
-          ],
-          "people": [
-            "s_liao_shengzong",
-            "s_zhenzong",
-            "s_taizong"
           ]
         }
       ],
@@ -110971,112 +111594,6 @@
       ]
     },
     {
-      "person": "s_xia_liangtaihou",
-      "title": "梁太后：西夏摄政者",
-      "dek": "毅宗、惠宗时期梁氏外戚政治的重要人物。",
-      "sections": [
-        {
-          "id": "s_xia_liangtaihou-v55-1",
-          "title": "并立世界中的位置",
-          "text": "梁太后处于宋、辽、西夏、金及蒙古势力先后并立的时代。毅宗、惠宗时期梁氏外戚政治的重要人物。评价其行动需要先确认本国继承、摄政关系和实际控制区域。",
-          "sources": [
-            "v55_xixia",
-            "v55_songshi",
-            "v55_kaogu"
-          ],
-          "kind": "史实与解读",
-          "events": [
-            "v55_s04"
-          ],
-          "people": [
-            "s_xia_huizong",
-            "s_liao_taizu",
-            "s_liao_taizong"
-          ]
-        },
-        {
-          "id": "s_xia_liangtaihou-v55-2",
-          "title": "权力、战争与选择",
-          "text": "幼主时期梁氏外戚掌权，宫廷政治与对宋战争相互影响。同一事件在宋、辽、夏、金材料中的称谓和因果解释可能不同，页面以时间、行动和可核结果为主。",
-          "sources": [
-            "v55_xixia",
-            "v55_songshi",
-            "v55_kaogu"
-          ],
-          "kind": "史实与解读",
-          "events": [
-            "v55_s04"
-          ],
-          "people": [
-            "s_xia_huizong",
-            "s_liao_taizu",
-            "s_liao_taizong"
-          ]
-        },
-        {
-          "id": "s_xia_liangtaihou-v55-3",
-          "title": "实物怎样作证",
-          "text": "契丹生活传统与陶瓷工艺。理解其年代、用途和归属需要结合出土环境、修缮记录与馆藏著录。文字、建筑、墓葬和器物能够补充正史，却不能脱离出土层位和流传过程独立证明故事。",
-          "sources": [
-            "v55_xixia",
-            "v55_songshi",
-            "v55_kaogu"
-          ],
-          "kind": "史实与解读",
-          "events": [
-            "v55_s04"
-          ],
-          "people": [
-            "s_xia_huizong",
-            "s_liao_taizu",
-            "s_liao_taizong"
-          ]
-        },
-        {
-          "id": "s_xia_liangtaihou-v55-4",
-          "title": "制度与社会",
-          "text": "这一时期不是宋朝单方面面对“边患”。各政权都有内部官制、财政、法律、宗教与多语社会；条约、互市、移民和战争共同塑造北方与西北。梁太后处于宋、辽、西夏、金及蒙古势力先后并立的时代。毅宗、惠宗时期梁氏外戚政治的重要人物。评价其行动需要先确认本国继承、摄政关系和实际控制区域。梁太后处于宋、辽、西夏、金及蒙古势力先后并立的时代。毅宗、惠宗时期梁氏外戚政治的重要人物。评价其行动需要先确认本国继承、摄政关系和实际控制区域。梁太后处于宋、辽、西夏、金及蒙古势力先后并立的时代。毅宗、惠宗时期梁氏外戚政治的重要人物。评价其行动需要先确认本国继承、摄政关系和实际控制区域。梁太后处于宋、辽、西夏、金及蒙古势力先后并立的时代。毅宗、惠宗时期梁氏外戚政治的重要人物。评价其行动需要先确认本国继承、摄政关系和实际控制区域。梁太后处于宋、辽、西夏、金及蒙古势力先后并立的时代。毅宗、惠宗时期梁氏外戚政治的重要人物。评价其行动需要先确认本国继承、摄政关系和实际控制区域。梁太后处于宋、辽、西夏、金及蒙古势力先后并立的时代。毅宗、惠宗时期梁氏外戚政治的重要人物。评价其行动需要先确认本国继承、摄政关系和实际控制区域。梁太后处于宋、辽、西夏、金及蒙古势力先后并立的时代。毅宗、惠宗时期梁氏外戚政治的重要人物。评价其行动需要先确认本国继承、摄政关系和实际控制区域。",
-          "sources": [
-            "v55_xixia",
-            "v55_songshi",
-            "v55_kaogu"
-          ],
-          "kind": "史实与解读",
-          "events": [
-            "v55_s04"
-          ],
-          "people": [
-            "s_xia_huizong",
-            "s_liao_taizu",
-            "s_liao_taizong"
-          ]
-        },
-        {
-          "id": "s_xia_liangtaihou-v55-5",
-          "title": "史料边界",
-          "text": "本篇以本政权正史、宋史和考古资料互校。辽史成书条件、西夏无官修正史、金宋双方立场差异，都要求对数字、言辞和道德评价保持克制。",
-          "sources": [
-            "v55_xixia",
-            "v55_songshi",
-            "v55_kaogu"
-          ],
-          "kind": "史实与解读",
-          "events": [
-            "v55_s04"
-          ],
-          "people": [
-            "s_xia_huizong",
-            "s_liao_taizu",
-            "s_liao_taizong"
-          ]
-        }
-      ],
-      "sources": [
-        "v55_xixia",
-        "v55_songshi"
-      ]
-    },
-    {
       "person": "s_xia_rendejing",
       "title": "任得敬：西夏权臣",
       "dek": "仁宗朝掌权并企图分国，后被诛。",
@@ -111280,112 +111797,6 @@
             "s_xia_renzong",
             "s_xia_rendejing",
             "s_liao_taizu"
-          ]
-        }
-      ],
-      "sources": [
-        "v55_xixia",
-        "v55_songshi"
-      ]
-    },
-    {
-      "person": "s_xia_weiminganquan",
-      "title": "嵬名安全：西夏宗室",
-      "dek": "即李安全，政变建立襄宗朝并改变对外政策。",
-      "sections": [
-        {
-          "id": "s_xia_weiminganquan-v55-1",
-          "title": "并立世界中的位置",
-          "text": "嵬名安全处于宋、辽、西夏、金及蒙古势力先后并立的时代。即李安全，政变建立襄宗朝并改变对外政策。评价其行动需要先确认本国继承、摄政关系和实际控制区域。",
-          "sources": [
-            "v55_xixia",
-            "v55_songshi",
-            "v55_kaogu"
-          ],
-          "kind": "史实与解读",
-          "events": [
-            "v55_s01"
-          ],
-          "people": [
-            "s_liao_taizu",
-            "s_liao_taizong",
-            "s_liao_shizong"
-          ]
-        },
-        {
-          "id": "s_xia_weiminganquan-v55-2",
-          "title": "权力、战争与选择",
-          "text": "辽对不同地区采用相异官制，实际运作又存在人员与制度交叉。同一事件在宋、辽、夏、金材料中的称谓和因果解释可能不同，页面以时间、行动和可核结果为主。",
-          "sources": [
-            "v55_xixia",
-            "v55_songshi",
-            "v55_kaogu"
-          ],
-          "kind": "史实与解读",
-          "events": [
-            "v55_s01"
-          ],
-          "people": [
-            "s_liao_taizu",
-            "s_liao_taizong",
-            "s_liao_shizong"
-          ]
-        },
-        {
-          "id": "s_xia_weiminganquan-v55-3",
-          "title": "实物怎样作证",
-          "text": "帝陵群归属与考古边界。理解其年代、用途和归属需要结合出土环境、修缮记录与馆藏著录。文字、建筑、墓葬和器物能够补充正史，却不能脱离出土层位和流传过程独立证明故事。",
-          "sources": [
-            "v55_xixia",
-            "v55_songshi",
-            "v55_kaogu"
-          ],
-          "kind": "史实与解读",
-          "events": [
-            "v55_s01"
-          ],
-          "people": [
-            "s_liao_taizu",
-            "s_liao_taizong",
-            "s_liao_shizong"
-          ]
-        },
-        {
-          "id": "s_xia_weiminganquan-v55-4",
-          "title": "制度与社会",
-          "text": "这一时期不是宋朝单方面面对“边患”。各政权都有内部官制、财政、法律、宗教与多语社会；条约、互市、移民和战争共同塑造北方与西北。嵬名安全处于宋、辽、西夏、金及蒙古势力先后并立的时代。即李安全，政变建立襄宗朝并改变对外政策。评价其行动需要先确认本国继承、摄政关系和实际控制区域。嵬名安全处于宋、辽、西夏、金及蒙古势力先后并立的时代。即李安全，政变建立襄宗朝并改变对外政策。评价其行动需要先确认本国继承、摄政关系和实际控制区域。嵬名安全处于宋、辽、西夏、金及蒙古势力先后并立的时代。即李安全，政变建立襄宗朝并改变对外政策。评价其行动需要先确认本国继承、摄政关系和实际控制区域。嵬名安全处于宋、辽、西夏、金及蒙古势力先后并立的时代。即李安全，政变建立襄宗朝并改变对外政策。评价其行动需要先确认本国继承、摄政关系和实际控制区域。嵬名安全处于宋、辽、西夏、金及蒙古势力先后并立的时代。即李安全，政变建立襄宗朝并改变对外政策。评价其行动需要先确认本国继承、摄政关系和实际控制区域。嵬名安全处于宋、辽、西夏、金及蒙古势力先后并立的时代。即李安全，政变建立襄宗朝并改变对外政策。评价其行动需要先确认本国继承、摄政关系和实际控制区域。",
-          "sources": [
-            "v55_xixia",
-            "v55_songshi",
-            "v55_kaogu"
-          ],
-          "kind": "史实与解读",
-          "events": [
-            "v55_s01"
-          ],
-          "people": [
-            "s_liao_taizu",
-            "s_liao_taizong",
-            "s_liao_shizong"
-          ]
-        },
-        {
-          "id": "s_xia_weiminganquan-v55-5",
-          "title": "史料边界",
-          "text": "本篇以本政权正史、宋史和考古资料互校。辽史成书条件、西夏无官修正史、金宋双方立场差异，都要求对数字、言辞和道德评价保持克制。",
-          "sources": [
-            "v55_xixia",
-            "v55_songshi",
-            "v55_kaogu"
-          ],
-          "kind": "史实与解读",
-          "events": [
-            "v55_s01"
-          ],
-          "people": [
-            "s_liao_taizu",
-            "s_liao_taizong",
-            "s_liao_shizong"
           ]
         }
       ],
@@ -112240,6 +112651,2641 @@
       "sources": [
         "v55_jinshi",
         "v55_songshi"
+      ]
+    },
+    {
+      "person": "s_liao_yelubei",
+      "title": "耶律倍：辽皇太子与东丹王",
+      "dek": "阿保机长子，曾被立为皇太子并主持东丹国；继承格局改变后渡海入后唐，兼具政治人物、藏书者和画家身份。",
+      "sections": [
+        {
+          "id": "s_liao_yelubei-v56-1",
+          "title": "位置与时代",
+          "text": "皇太子、东丹王与流亡者三种身份叠在耶律倍身上。他不是简单的失败储君：东丹安排是辽整合渤海故地的一次制度实验，渡海又使其进入后唐政治。阅读这一人物时，应把个人行动与同时期的继承秩序、边境形势和国家资源联系起来。事件结果往往来自多人、多地和长期制度积累，不能用后来成败倒推当时只有一种选择。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v56_liaoshi_72",
+            "v55_liaoshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_政治_01"
+          ],
+          "people": [
+            "s_liao_taizong",
+            "s_liao_taizu"
+          ]
+        },
+        {
+          "id": "s_liao_yelubei-v56-2",
+          "title": "权力与抉择",
+          "text": "阿保机死后，述律平支持耶律德光，耶律倍的名义储位没有转化为实际军政力量。继承结果来自宫廷、军队和母族支持的组合。现存记载由不同政权、不同年代的作者保存，名称、日期和评价可能不一致。页面优先采用能够交叉确认的时间、职位和行动，并把传记作者的道德判断留在证据层说明。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v56_liaoshi_72",
+            "v55_liaoshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_文化_01"
+          ],
+          "people": [
+            "s_liao_taizong",
+            "s_liao_taizu"
+          ]
+        },
+        {
+          "id": "s_liao_yelubei-v56-3",
+          "title": "制度与文化",
+          "text": "他与藏书、诗文、绘画的联系，使辽初政治史与艺术史相接。具体作品题名和归属必须依馆藏著录逐件判断。人物关系表示共同参与事件或处于同一政治网络，并不自动证明私人交往、思想影响或后世附会的故事。亲属、同僚、对手和使臣也必须根据具体年份区分。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v56_liaoshi_72",
+            "v55_liaoshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_经济_01"
+          ],
+          "people": [
+            "s_liao_taizong",
+            "s_liao_taizu"
+          ]
+        },
+        {
+          "id": "s_liao_yelubei-v56-4",
+          "title": "关系与社会",
+          "text": "东丹国涉及渤海旧民、契丹贵族、城镇与贡赋重组。耶律倍的经历说明辽的多中心统治也会制造新的继承张力。战争和朝廷决策之外，普通人的迁徙、赋役、语言与信仰也构成这一时代，只是材料远比帝王将相零散。制度变化在不同地区落地的速度和代价并不相同。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v56_liaoshi_72",
+            "v55_liaoshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_社会_01"
+          ],
+          "people": [
+            "s_liao_taizong",
+            "s_liao_taizu"
+          ]
+        },
+        {
+          "id": "s_liao_yelubei-v56-5",
+          "title": "证据与边界",
+          "text": "《辽史》为主要线索，但“让国”式道德叙事会整理复杂冲突；阅读时应区分后来谥号、传记评价和当时可见行动。对有争议的动机和言辞，本篇不替史料补写心理活动；新出土材料若改变认识，应以新的证据关系更新结论。无法确认的数字、传闻和作品归属会继续保留边界。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v56_liaoshi_72",
+            "v55_liaoshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_政治_01"
+          ],
+          "people": [
+            "s_liao_taizong",
+            "s_liao_taizu"
+          ]
+        }
+      ],
+      "sources": [
+        "v56_liaoshi_72",
+        "v55_liaoshi",
+        "v55_songshi",
+        "v55_kaogu"
+      ]
+    },
+    {
+      "person": "s_liao_xiaotalin",
+      "title": "萧挞凛：辽将领",
+      "dek": "参与辽圣宗朝南征、平叛与西北军务，1004年澶州战役中中伏弩身亡。",
+      "sections": [
+        {
+          "id": "s_liao_xiaotalin-v56-1",
+          "title": "位置与时代",
+          "text": "萧挞凛是辽圣宗前期重要统帅，活动范围并不限于宋辽战场。他参与平定、边防和远征，体现后族将领在辽军政中的位置。阅读这一人物时，应把个人行动与同时期的继承秩序、边境形势和国家资源联系起来。事件结果往往来自多人、多地和长期制度积累，不能用后来成败倒推当时只有一种选择。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_liaoshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_军事_01"
+          ],
+          "people": [
+            "s_liao_shengzong",
+            "s_taizong",
+            "s_liao_xiaochuo"
+          ]
+        },
+        {
+          "id": "s_liao_xiaotalin-v56-2",
+          "title": "权力与抉择",
+          "text": "1004年辽军南下时，他在澶州附近被宋军床弩击中。其死亡影响军心，却不能被写成议和的唯一原因；两国都面临补给和风险。现存记载由不同政权、不同年代的作者保存，名称、日期和评价可能不一致。页面优先采用能够交叉确认的时间、职位和行动，并把传记作者的道德判断留在证据层说明。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_liaoshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_军事_02"
+          ],
+          "people": [
+            "s_liao_shengzong",
+            "s_taizong",
+            "s_liao_xiaochuo"
+          ]
+        },
+        {
+          "id": "s_liao_xiaotalin-v56-3",
+          "title": "制度与文化",
+          "text": "辽军由宫卫、部族和属国力量构成，统帅必须协调不同单位。将领传记中的连续战功需要与本纪日期和对方记录互校。人物关系表示共同参与事件或处于同一政治网络，并不自动证明私人交往、思想影响或后世附会的故事。亲属、同僚、对手和使臣也必须根据具体年份区分。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_liaoshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_军事_01"
+          ],
+          "people": [
+            "s_liao_shengzong",
+            "s_taizong",
+            "s_liao_xiaochuo"
+          ]
+        },
+        {
+          "id": "s_liao_xiaotalin-v56-4",
+          "title": "关系与社会",
+          "text": "萧氏后族与耶律皇族长期通婚，但后族并非固定一致的政治集团。个人军功、婚姻网络和皇帝信任共同决定位置。战争和朝廷决策之外，普通人的迁徙、赋役、语言与信仰也构成这一时代，只是材料远比帝王将相零散。制度变化在不同地区落地的速度和代价并不相同。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_liaoshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_军事_02"
+          ],
+          "people": [
+            "s_liao_shengzong",
+            "s_taizong",
+            "s_liao_xiaochuo"
+          ]
+        },
+        {
+          "id": "s_liao_xiaotalin-v56-5",
+          "title": "证据与边界",
+          "text": "宋辽双方都用战果塑造正当性。页面采用可核地点、行动和结局，不复述夸张杀伤数字，也不把中箭故事扩写成传奇。对有争议的动机和言辞，本篇不替史料补写心理活动；新出土材料若改变认识，应以新的证据关系更新结论。无法确认的数字、传闻和作品归属会继续保留边界。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_liaoshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_军事_01"
+          ],
+          "people": [
+            "s_liao_shengzong",
+            "s_taizong",
+            "s_liao_xiaochuo"
+          ]
+        }
+      ],
+      "sources": [
+        "v55_liaoshi",
+        "v55_songshi",
+        "v55_kaogu"
+      ]
+    },
+    {
+      "person": "s_liao_xiaoguanyin",
+      "title": "萧观音：辽道宗宣懿皇后与诗人",
+      "dek": "现存诗作呈现辽代宫廷女性的文学活动；1075年因诬告案被赐死，案件记载带有强烈宫廷斗争色彩。",
+      "sections": [
+        {
+          "id": "s_liao_xiaoguanyin-v56-1",
+          "title": "位置与时代",
+          "text": "萧观音既是辽道宗皇后，也是有作品传世的宫廷女性。她的诗歌不应只作为悲剧结局的序幕，而是观察辽代汉文写作和宫廷文化的材料。阅读这一人物时，应把个人行动与同时期的继承秩序、边境形势和国家资源联系起来。事件结果往往来自多人、多地和长期制度积累，不能用后来成败倒推当时只有一种选择。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_liaoshi",
+            "v55_dpm",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_文化_02"
+          ],
+          "people": [
+            "s_liao_daozong",
+            "s_liao_yeluyixin"
+          ]
+        },
+        {
+          "id": "s_liao_xiaoguanyin-v56-2",
+          "title": "权力与抉择",
+          "text": "1075年的案件由宫廷告发、权臣操作与皇帝裁决构成。现存记载称她遭诬，但细节经过正史和后世文学重写，不能把所有对白当作现场实录。现存记载由不同政权、不同年代的作者保存，名称、日期和评价可能不一致。页面优先采用能够交叉确认的时间、职位和行动，并把传记作者的道德判断留在证据层说明。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_liaoshi",
+            "v55_dpm",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_社会_02"
+          ],
+          "people": [
+            "s_liao_daozong",
+            "s_liao_yeluyixin"
+          ]
+        },
+        {
+          "id": "s_liao_xiaoguanyin-v56-3",
+          "title": "制度与文化",
+          "text": "她与乐舞、诗歌和书写的联系显示辽宫廷并非只有骑射叙事。作品题目、作者归属和文本流传需分别核查。人物关系表示共同参与事件或处于同一政治网络，并不自动证明私人交往、思想影响或后世附会的故事。亲属、同僚、对手和使臣也必须根据具体年份区分。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_liaoshi",
+            "v55_dpm",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_文化_02"
+          ],
+          "people": [
+            "s_liao_daozong",
+            "s_liao_yeluyixin"
+          ]
+        },
+        {
+          "id": "s_liao_xiaoguanyin-v56-4",
+          "title": "关系与社会",
+          "text": "案件以女性贞节话语组织政治指控，并牵连皇太子继承。个人名誉、后族关系和储位斗争因此连成一体。战争和朝廷决策之外，普通人的迁徙、赋役、语言与信仰也构成这一时代，只是材料远比帝王将相零散。制度变化在不同地区落地的速度和代价并不相同。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_liaoshi",
+            "v55_dpm",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_社会_02"
+          ],
+          "people": [
+            "s_liao_daozong",
+            "s_liao_yeluyixin"
+          ]
+        },
+        {
+          "id": "s_liao_xiaoguanyin-v56-5",
+          "title": "证据与边界",
+          "text": "可靠结论是她被赐死及案件的政治后果；关于私生活的指控、艳情化细节和后出的戏剧性叙述均不作为定论。对有争议的动机和言辞，本篇不替史料补写心理活动；新出土材料若改变认识，应以新的证据关系更新结论。无法确认的数字、传闻和作品归属会继续保留边界。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_liaoshi",
+            "v55_dpm",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_文化_02"
+          ],
+          "people": [
+            "s_liao_daozong",
+            "s_liao_yeluyixin"
+          ]
+        }
+      ],
+      "sources": [
+        "v55_liaoshi",
+        "v55_dpm",
+        "v55_songshi",
+        "v55_kaogu"
+      ]
+    },
+    {
+      "person": "s_liao_yeluyixin",
+      "title": "耶律乙辛：辽道宗朝权臣",
+      "dek": "道宗朝长期掌权，利用案件打击皇后萧观音和皇太子耶律濬，后失势被囚死。",
+      "sections": [
+        {
+          "id": "s_liao_yeluyixin-v56-1",
+          "title": "位置与时代",
+          "text": "耶律乙辛在道宗朝由受信任近臣上升为权力核心，控制奏报和人事。他的作用应通过具体案件和制度位置说明，而非只贴“奸臣”标签。阅读这一人物时，应把个人行动与同时期的继承秩序、边境形势和国家资源联系起来。事件结果往往来自多人、多地和长期制度积累，不能用后来成败倒推当时只有一种选择。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_liaoshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_社会_02"
+          ],
+          "people": [
+            "s_liao_xiaoguanyin",
+            "s_liao_daozong"
+          ]
+        },
+        {
+          "id": "s_liao_yeluyixin-v56-2",
+          "title": "权力与抉择",
+          "text": "萧观音案与皇太子耶律濬案先后发生，乙辛利用皇帝疑虑排除对手。储位受损也削弱了辽末政治整合。现存记载由不同政权、不同年代的作者保存，名称、日期和评价可能不一致。页面优先采用能够交叉确认的时间、职位和行动，并把传记作者的道德判断留在证据层说明。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_liaoshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_社会_03"
+          ],
+          "people": [
+            "s_liao_xiaoguanyin",
+            "s_liao_daozong"
+          ]
+        },
+        {
+          "id": "s_liao_yeluyixin-v56-3",
+          "title": "制度与文化",
+          "text": "权臣能够运作并不意味着官制完全失效，而是信息渠道、宿卫、审讯和任官权被集中使用。理解这些环节比复述阴谋细节更重要。人物关系表示共同参与事件或处于同一政治网络，并不自动证明私人交往、思想影响或后世附会的故事。亲属、同僚、对手和使臣也必须根据具体年份区分。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_liaoshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_社会_02"
+          ],
+          "people": [
+            "s_liao_xiaoguanyin",
+            "s_liao_daozong"
+          ]
+        },
+        {
+          "id": "s_liao_yeluyixin-v56-4",
+          "title": "关系与社会",
+          "text": "乙辛依靠亲族与党附网络，反对者也来自不同贵族和官僚群体。道宗后期政治不能归因于单一个人。战争和朝廷决策之外，普通人的迁徙、赋役、语言与信仰也构成这一时代，只是材料远比帝王将相零散。制度变化在不同地区落地的速度和代价并不相同。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_liaoshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_社会_03"
+          ],
+          "people": [
+            "s_liao_xiaoguanyin",
+            "s_liao_daozong"
+          ]
+        },
+        {
+          "id": "s_liao_yeluyixin-v56-5",
+          "title": "证据与边界",
+          "text": "《辽史》对乙辛持鲜明贬斥立场。其制造案件的基本脉络可确认，动机揣测、秘密对白和因果链仍需谨慎。对有争议的动机和言辞，本篇不替史料补写心理活动；新出土材料若改变认识，应以新的证据关系更新结论。无法确认的数字、传闻和作品归属会继续保留边界。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_liaoshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_社会_02"
+          ],
+          "people": [
+            "s_liao_xiaoguanyin",
+            "s_liao_daozong"
+          ]
+        }
+      ],
+      "sources": [
+        "v55_liaoshi",
+        "v55_songshi",
+        "v55_kaogu"
+      ]
+    },
+    {
+      "person": "s_liao_liuliufu",
+      "title": "刘六符：辽使臣与汉官",
+      "dek": "兴宗朝出使宋朝并参与关南地争议交涉，体现辽朝汉官在外交和文字行政中的作用。",
+      "sections": [
+        {
+          "id": "s_liao_liuliufu-v56-1",
+          "title": "位置与时代",
+          "text": "刘六符是辽朝汉官与使臣。1042年关南交涉让他进入宋代记录，也让人看到辽朝并非只靠武将处理边界。阅读这一人物时，应把个人行动与同时期的继承秩序、边境形势和国家资源联系起来。事件结果往往来自多人、多地和长期制度积累，不能用后来成败倒推当时只有一种选择。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v56_liaoshi_86",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_政治_02"
+          ],
+          "people": [
+            "s_liao_xingzong",
+            "s_renzong"
+          ]
+        },
+        {
+          "id": "s_liao_liuliufu-v56-2",
+          "title": "权力与抉择",
+          "text": "辽利用宋夏战争压力提出领土要求，双方最终以增加岁币而非割地收束。使臣传递条件、礼仪和威慑，但最终决定来自两国中枢。现存记载由不同政权、不同年代的作者保存，名称、日期和评价可能不一致。页面优先采用能够交叉确认的时间、职位和行动，并把传记作者的道德判断留在证据层说明。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v56_liaoshi_86",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_经济_02"
+          ],
+          "people": [
+            "s_liao_xingzong",
+            "s_renzong"
+          ]
+        },
+        {
+          "id": "s_liao_liuliufu-v56-3",
+          "title": "制度与文化",
+          "text": "书写、翻译、熟悉典章和判断对方朝议，是汉官在辽外交中的重要能力。其身份不能被简化为代表某个固定族群。人物关系表示共同参与事件或处于同一政治网络，并不自动证明私人交往、思想影响或后世附会的故事。亲属、同僚、对手和使臣也必须根据具体年份区分。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v56_liaoshi_86",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_政治_02"
+          ],
+          "people": [
+            "s_liao_xingzong",
+            "s_renzong"
+          ]
+        },
+        {
+          "id": "s_liao_liuliufu-v56-4",
+          "title": "关系与社会",
+          "text": "岁币与榷场、使节和边界承诺相连，既有财政成本，也维持了长期低烈度边境秩序。战争和朝廷决策之外，普通人的迁徙、赋役、语言与信仰也构成这一时代，只是材料远比帝王将相零散。制度变化在不同地区落地的速度和代价并不相同。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v56_liaoshi_86",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_经济_02"
+          ],
+          "people": [
+            "s_liao_xingzong",
+            "s_renzong"
+          ]
+        },
+        {
+          "id": "s_liao_liuliufu-v56-5",
+          "title": "证据与边界",
+          "text": "宋人文集保留较多交涉细节，却常以本朝立场刻画使者；应与《辽史》本纪和使臣传对读。对有争议的动机和言辞，本篇不替史料补写心理活动；新出土材料若改变认识，应以新的证据关系更新结论。无法确认的数字、传闻和作品归属会继续保留边界。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v56_liaoshi_86",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_政治_02"
+          ],
+          "people": [
+            "s_liao_xingzong",
+            "s_renzong"
+          ]
+        }
+      ],
+      "sources": [
+        "v56_liaoshi_86",
+        "v55_songshi",
+        "v55_kaogu"
+      ]
+    },
+    {
+      "person": "s_liao_zhangjian",
+      "title": "张俭：辽朝汉官与宰相",
+      "dek": "历仕圣宗、兴宗，参与财政、用人和朝议；正史对其俭素形象的书写也需与制度背景结合。",
+      "sections": [
+        {
+          "id": "s_liao_zhangjian-v56-1",
+          "title": "位置与时代",
+          "text": "张俭是辽圣宗、兴宗时期的汉官，长期参与中枢政务。他的仕途说明辽朝治理农业州县和文书行政需要稳定的官僚经验。阅读这一人物时，应把个人行动与同时期的继承秩序、边境形势和国家资源联系起来。事件结果往往来自多人、多地和长期制度积累，不能用后来成败倒推当时只有一种选择。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_liaoshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_文化_06"
+          ],
+          "people": [
+            "s_liao_shengzong"
+          ]
+        },
+        {
+          "id": "s_liao_zhangjian-v56-2",
+          "title": "权力与抉择",
+          "text": "正史突出他的俭素和直言，但个人品德叙事不能替代对任官、财政与朝议的考察。皇帝信任也会随继承和派系变化。现存记载由不同政权、不同年代的作者保存，名称、日期和评价可能不一致。页面优先采用能够交叉确认的时间、职位和行动，并把传记作者的道德判断留在证据层说明。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_liaoshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_文化_06"
+          ],
+          "people": [
+            "s_liao_shengzong"
+          ]
+        },
+        {
+          "id": "s_liao_zhangjian-v56-3",
+          "title": "制度与文化",
+          "text": "辽朝汉官并非只处理所谓汉地事务，他们也参与外交、礼制和整体财政。南北面制度是治理框架，实际职责存在交叉。人物关系表示共同参与事件或处于同一政治网络，并不自动证明私人交往、思想影响或后世附会的故事。亲属、同僚、对手和使臣也必须根据具体年份区分。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_liaoshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_文化_06"
+          ],
+          "people": [
+            "s_liao_shengzong"
+          ]
+        },
+        {
+          "id": "s_liao_zhangjian-v56-4",
+          "title": "关系与社会",
+          "text": "张俭与皇帝、同僚和使臣构成政治网络；族属标签不能预设其政策立场，更不能把不同群体写成彼此隔绝。战争和朝廷决策之外，普通人的迁徙、赋役、语言与信仰也构成这一时代，只是材料远比帝王将相零散。制度变化在不同地区落地的速度和代价并不相同。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_liaoshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_文化_06"
+          ],
+          "people": [
+            "s_liao_shengzong"
+          ]
+        },
+        {
+          "id": "s_liao_zhangjian-v56-5",
+          "title": "证据与边界",
+          "text": "《辽史》的简约传记保存了基本线索，也通过清官范型整理人物。页面采用可核任职和事件，对轶事保留文献性质。对有争议的动机和言辞，本篇不替史料补写心理活动；新出土材料若改变认识，应以新的证据关系更新结论。无法确认的数字、传闻和作品归属会继续保留边界。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_liaoshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_文化_06"
+          ],
+          "people": [
+            "s_liao_shengzong"
+          ]
+        }
+      ],
+      "sources": [
+        "v55_liaoshi",
+        "v55_songshi",
+        "v55_kaogu"
+      ]
+    },
+    {
+      "person": "s_xia_mozangtaihou",
+      "title": "没藏太后：西夏毅宗朝摄政者",
+      "dek": "元昊死后拥立幼主李谅祚并临朝，没藏氏由外戚进入权力核心，后在宫廷冲突中被杀。",
+      "sections": [
+        {
+          "id": "s_xia_mozangtaihou-v56-1",
+          "title": "位置与时代",
+          "text": "没藏太后在元昊遇刺后参与拥立幼主李谅祚，西夏由开国皇帝的个人权威转入外戚摄政。阅读这一人物时，应把个人行动与同时期的继承秩序、边境形势和国家资源联系起来。事件结果往往来自多人、多地和长期制度积累，不能用后来成败倒推当时只有一种选择。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_xixia",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_社会_04"
+          ],
+          "people": [
+            "s_xia_mozange",
+            "s_xia_yizong"
+          ]
+        },
+        {
+          "id": "s_xia_mozangtaihou-v56-2",
+          "title": "权力与抉择",
+          "text": "她与兄长没藏讹庞分别占据宫廷与中枢，二者合作又各有利益。把幼主时期统治只写成讹庞专权，会遮蔽太后的政治位置。现存记载由不同政权、不同年代的作者保存，名称、日期和评价可能不一致。页面优先采用能够交叉确认的时间、职位和行动，并把传记作者的道德判断留在证据层说明。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_xixia",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_社会_04"
+          ],
+          "people": [
+            "s_xia_mozange",
+            "s_xia_yizong"
+          ]
+        },
+        {
+          "id": "s_xia_mozangtaihou-v56-3",
+          "title": "制度与文化",
+          "text": "摄政政府仍需处理辽、宋关系、边防和内部部族网络，外戚权力依附于国家机构而非取代所有机构。人物关系表示共同参与事件或处于同一政治网络，并不自动证明私人交往、思想影响或后世附会的故事。亲属、同僚、对手和使臣也必须根据具体年份区分。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_xixia",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_社会_04"
+          ],
+          "people": [
+            "s_xia_mozange",
+            "s_xia_yizong"
+          ]
+        },
+        {
+          "id": "s_xia_mozangtaihou-v56-4",
+          "title": "关系与社会",
+          "text": "有关其死亡的记载带有宫闱叙事色彩。可确认的是没藏集团内部冲突加深，随后梁氏势力兴起。战争和朝廷决策之外，普通人的迁徙、赋役、语言与信仰也构成这一时代，只是材料远比帝王将相零散。制度变化在不同地区落地的速度和代价并不相同。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_xixia",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_社会_04"
+          ],
+          "people": [
+            "s_xia_mozange",
+            "s_xia_yizong"
+          ]
+        },
+        {
+          "id": "s_xia_mozangtaihou-v56-5",
+          "title": "证据与边界",
+          "text": "西夏缺少完整官修正史，人物主要由宋辽记录和后世汇辑拼合。页面避免补写无从核实的性格和私生活。对有争议的动机和言辞，本篇不替史料补写心理活动；新出土材料若改变认识，应以新的证据关系更新结论。无法确认的数字、传闻和作品归属会继续保留边界。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_xixia",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_社会_04"
+          ],
+          "people": [
+            "s_xia_mozange",
+            "s_xia_yizong"
+          ]
+        }
+      ],
+      "sources": [
+        "v55_xixia",
+        "v55_songshi",
+        "v55_kaogu"
+      ]
+    },
+    {
+      "person": "s_xia_mozange",
+      "title": "没藏讹庞：西夏国相与外戚",
+      "dek": "没藏太后之兄，毅宗幼年时掌握军政；1061年前后因与皇帝冲突而被诛族。",
+      "sections": [
+        {
+          "id": "s_xia_mozange-v56-1",
+          "title": "位置与时代",
+          "text": "没藏讹庞是毅宗幼年时最有权势的国相和外戚。他的上升依托妹妹为太后、幼主继位以及对军政职位的控制。阅读这一人物时，应把个人行动与同时期的继承秩序、边境形势和国家资源联系起来。事件结果往往来自多人、多地和长期制度积累，不能用后来成败倒推当时只有一种选择。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_xixia",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_政治_03"
+          ],
+          "people": [
+            "s_xia_yizong",
+            "s_xia_liangtaihou",
+            "s_xia_mozangtaihou"
+          ]
+        },
+        {
+          "id": "s_xia_mozange-v56-2",
+          "title": "权力与抉择",
+          "text": "1061年前后，李谅祚联合宫廷内应清除没藏集团。事件标志皇帝试图亲政，也为梁氏进入宫廷创造条件。现存记载由不同政权、不同年代的作者保存，名称、日期和评价可能不一致。页面优先采用能够交叉确认的时间、职位和行动，并把传记作者的道德判断留在证据层说明。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_xixia",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_社会_04"
+          ],
+          "people": [
+            "s_xia_yizong",
+            "s_xia_liangtaihou",
+            "s_xia_mozangtaihou"
+          ]
+        },
+        {
+          "id": "s_xia_mozange-v56-3",
+          "title": "制度与文化",
+          "text": "没藏讹庞面对的不只是宫廷斗争，还包括宋夏边界、辽夏关系和开国后制度稳定。权臣并不能自由支配全部地方力量。人物关系表示共同参与事件或处于同一政治网络，并不自动证明私人交往、思想影响或后世附会的故事。亲属、同僚、对手和使臣也必须根据具体年份区分。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_xixia",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_政治_03"
+          ],
+          "people": [
+            "s_xia_yizong",
+            "s_xia_liangtaihou",
+            "s_xia_mozangtaihou"
+          ]
+        },
+        {
+          "id": "s_xia_mozange-v56-4",
+          "title": "关系与社会",
+          "text": "正史常用专权和谋逆解释其覆亡，这种结论需要与具体任官、军事行动和清洗结果分开阅读。战争和朝廷决策之外，普通人的迁徙、赋役、语言与信仰也构成这一时代，只是材料远比帝王将相零散。制度变化在不同地区落地的速度和代价并不相同。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_xixia",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_社会_04"
+          ],
+          "people": [
+            "s_xia_yizong",
+            "s_xia_liangtaihou",
+            "s_xia_mozangtaihou"
+          ]
+        },
+        {
+          "id": "s_xia_mozange-v56-5",
+          "title": "证据与边界",
+          "text": "关于阴谋细节主要来自外部王朝记录和后世编年，可靠层次不一；本页只采用多种材料可互相支持的骨架。对有争议的动机和言辞，本篇不替史料补写心理活动；新出土材料若改变认识，应以新的证据关系更新结论。无法确认的数字、传闻和作品归属会继续保留边界。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_xixia",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_政治_03"
+          ],
+          "people": [
+            "s_xia_yizong",
+            "s_xia_liangtaihou",
+            "s_xia_mozangtaihou"
+          ]
+        }
+      ],
+      "sources": [
+        "v55_xixia",
+        "v55_songshi",
+        "v55_kaogu"
+      ]
+    },
+    {
+      "person": "s_xia_liangtaihou",
+      "title": "大梁太后：西夏惠宗朝摄政者",
+      "dek": "毅宗皇后、惠宗生母；1067年后摄政，倚重其弟梁乙埋，并持续介入宋夏战争。",
+      "sections": [
+        {
+          "id": "s_xia_liangtaihou-v56-1",
+          "title": "位置与时代",
+          "text": "大梁太后是毅宗皇后、惠宗生母。1067年惠宗七岁即位后，她临朝并让弟弟梁乙埋主持国政。阅读这一人物时，应把个人行动与同时期的继承秩序、边境形势和国家资源联系起来。事件结果往往来自多人、多地和长期制度积累，不能用后来成败倒推当时只有一种选择。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v56_xixia_14",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v55_s04"
+          ],
+          "people": [
+            "s_xia_huizong",
+            "s_xia_yizong",
+            "s_xia_mozange"
+          ]
+        },
+        {
+          "id": "s_xia_liangtaihou-v56-2",
+          "title": "权力与抉择",
+          "text": "她的摄政处于宋神宗积极经营西北的时期。五路伐夏、灵州方向战事与西夏内部权力斗争彼此交织。现存记载由不同政权、不同年代的作者保存，名称、日期和评价可能不一致。页面优先采用能够交叉确认的时间、职位和行动，并把传记作者的道德判断留在证据层说明。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v56_xixia_14",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_政治_03"
+          ],
+          "people": [
+            "s_xia_huizong",
+            "s_xia_yizong",
+            "s_xia_mozange"
+          ]
+        },
+        {
+          "id": "s_xia_liangtaihou-v56-3",
+          "title": "制度与文化",
+          "text": "战争并非宫廷好战一项因素造成，还涉及横山防线、青唐势力、补给和宋朝新法财政。她负有决策责任，但不能替代结构解释。人物关系表示共同参与事件或处于同一政治网络，并不自动证明私人交往、思想影响或后世附会的故事。亲属、同僚、对手和使臣也必须根据具体年份区分。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v56_xixia_14",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_政治_04"
+          ],
+          "people": [
+            "s_xia_huizong",
+            "s_xia_yizong",
+            "s_xia_mozange"
+          ]
+        },
+        {
+          "id": "s_xia_liangtaihou-v56-4",
+          "title": "关系与社会",
+          "text": "大梁太后与小梁太后是两位人物。前者是惠宗之母，后者是崇宗之母；两人又分别倚重梁乙埋、梁乙逋。战争和朝廷决策之外，普通人的迁徙、赋役、语言与信仰也构成这一时代，只是材料远比帝王将相零散。制度变化在不同地区落地的速度和代价并不相同。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v56_xixia_14",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_军事_03"
+          ],
+          "people": [
+            "s_xia_huizong",
+            "s_xia_yizong",
+            "s_xia_mozange"
+          ]
+        },
+        {
+          "id": "s_xia_liangtaihou-v56-5",
+          "title": "证据与边界",
+          "text": "宋朝材料多以敌国和外戚框架书写梁氏，西夏本土材料有限。因此页面明确亲属、年份和行动，不复述侮辱性称谓。对有争议的动机和言辞，本篇不替史料补写心理活动；新出土材料若改变认识，应以新的证据关系更新结论。无法确认的数字、传闻和作品归属会继续保留边界。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v56_xixia_14",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_经济_03"
+          ],
+          "people": [
+            "s_xia_huizong",
+            "s_xia_yizong",
+            "s_xia_mozange"
+          ]
+        }
+      ],
+      "sources": [
+        "v56_xixia_14",
+        "v55_songshi",
+        "v55_kaogu"
+      ]
+    },
+    {
+      "person": "s_xia_xiaoliangtaihou",
+      "title": "小梁太后：西夏崇宗朝摄政者",
+      "dek": "惠宗皇后、崇宗生母；1086年后临朝，其兄梁乙逋掌权，对宋战争和辽夏关系贯穿摄政时期。",
+      "sections": [
+        {
+          "id": "s_xia_xiaoliangtaihou-v56-1",
+          "title": "位置与时代",
+          "text": "小梁太后是惠宗皇后、崇宗生母。1086年幼主即位后，她成为第二位梁氏摄政者。阅读这一人物时，应把个人行动与同时期的继承秩序、边境形势和国家资源联系起来。事件结果往往来自多人、多地和长期制度积累，不能用后来成败倒推当时只有一种选择。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v56_xixia_19",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_政治_05"
+          ],
+          "people": [
+            "s_xia_chongzong",
+            "s_xia_liangyibu",
+            "s_xia_renduobaozhong"
+          ]
+        },
+        {
+          "id": "s_xia_xiaoliangtaihou-v56-2",
+          "title": "权力与抉择",
+          "text": "她依靠兄长梁乙逋控制中枢，并在宋夏边境持续用兵。仁多保忠等边将既服从朝廷，也有自身部族和区域网络。现存记载由不同政权、不同年代的作者保存，名称、日期和评价可能不一致。页面优先采用能够交叉确认的时间、职位和行动，并把传记作者的道德判断留在证据层说明。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v56_xixia_19",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_军事_04"
+          ],
+          "people": [
+            "s_xia_chongzong",
+            "s_xia_liangyibu",
+            "s_xia_renduobaozhong"
+          ]
+        },
+        {
+          "id": "s_xia_xiaoliangtaihou-v56-3",
+          "title": "制度与文化",
+          "text": "对宋战争、向辽求援和宫廷权力互相牵动。1099年前后梁氏集团覆灭，崇宗开始亲政。人物关系表示共同参与事件或处于同一政治网络，并不自动证明私人交往、思想影响或后世附会的故事。亲属、同僚、对手和使臣也必须根据具体年份区分。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v56_xixia_19",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_经济_04"
+          ],
+          "people": [
+            "s_xia_chongzong",
+            "s_xia_liangyibu",
+            "s_xia_renduobaozhong"
+          ]
+        },
+        {
+          "id": "s_xia_xiaoliangtaihou-v56-4",
+          "title": "关系与社会",
+          "text": "连续两代女性摄政说明西夏幼主继位时母族是重要稳定力量，同时也会造成皇权与外戚重新分配。战争和朝廷决策之外，普通人的迁徙、赋役、语言与信仰也构成这一时代，只是材料远比帝王将相零散。制度变化在不同地区落地的速度和代价并不相同。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v56_xixia_19",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_社会_05"
+          ],
+          "people": [
+            "s_xia_chongzong",
+            "s_xia_liangyibu",
+            "s_xia_renduobaozhong"
+          ]
+        },
+        {
+          "id": "s_xia_xiaoliangtaihou-v56-5",
+          "title": "证据与边界",
+          "text": "她常与大梁太后合称，导致战争和年份错置。本页以惠宗皇后、崇宗生母这条身份链作为辨认基准。对有争议的动机和言辞，本篇不替史料补写心理活动；新出土材料若改变认识，应以新的证据关系更新结论。无法确认的数字、传闻和作品归属会继续保留边界。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v56_xixia_19",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_政治_05"
+          ],
+          "people": [
+            "s_xia_chongzong",
+            "s_xia_liangyibu",
+            "s_xia_renduobaozhong"
+          ]
+        }
+      ],
+      "sources": [
+        "v56_xixia_19",
+        "v55_songshi",
+        "v55_kaogu"
+      ]
+    },
+    {
+      "person": "s_xia_liangyimai",
+      "title": "梁乙埋：西夏国相与外戚",
+      "dek": "大梁太后之弟，惠宗幼年时主持国政并安排梁氏子弟居要职，宋夏战争与宫廷权力相互牵动。",
+      "sections": [
+        {
+          "id": "s_xia_liangyimai-v56-1",
+          "title": "位置与时代",
+          "text": "梁乙埋是大梁太后之弟、惠宗初年的国相。他安排梁氏子弟进入要职，使母族权力制度化。阅读这一人物时，应把个人行动与同时期的继承秩序、边境形势和国家资源联系起来。事件结果往往来自多人、多地和长期制度积累，不能用后来成败倒推当时只有一种选择。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v56_xixia_14",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_政治_04"
+          ],
+          "people": [
+            "s_xia_huizong",
+            "s_xia_liangtaihou",
+            "s_shenzong"
+          ]
+        },
+        {
+          "id": "s_xia_liangyimai-v56-2",
+          "title": "权力与抉择",
+          "text": "宋夏战争扩大时，他参与中枢动员和边防决策。具体战役由多路将领执行，不能把所有胜负都归为个人指挥。现存记载由不同政权、不同年代的作者保存，名称、日期和评价可能不一致。页面优先采用能够交叉确认的时间、职位和行动，并把传记作者的道德判断留在证据层说明。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v56_xixia_14",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_军事_03"
+          ],
+          "people": [
+            "s_xia_huizong",
+            "s_xia_liangtaihou",
+            "s_shenzong"
+          ]
+        },
+        {
+          "id": "s_xia_liangyimai-v56-3",
+          "title": "制度与文化",
+          "text": "外戚掌权依赖任官、宿卫、军队和财政资源。梁氏扩张也引发皇帝亲政与其他集团的反弹。人物关系表示共同参与事件或处于同一政治网络，并不自动证明私人交往、思想影响或后世附会的故事。亲属、同僚、对手和使臣也必须根据具体年份区分。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v56_xixia_14",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_经济_03"
+          ],
+          "people": [
+            "s_xia_huizong",
+            "s_xia_liangtaihou",
+            "s_shenzong"
+          ]
+        },
+        {
+          "id": "s_xia_liangyimai-v56-4",
+          "title": "关系与社会",
+          "text": "他与梁乙逋并非同一人。前者服务大梁太后和惠宗初年，后者在小梁太后、崇宗初年掌权。战争和朝廷决策之外，普通人的迁徙、赋役、语言与信仰也构成这一时代，只是材料远比帝王将相零散。制度变化在不同地区落地的速度和代价并不相同。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v56_xixia_14",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_政治_04"
+          ],
+          "people": [
+            "s_xia_huizong",
+            "s_xia_liangtaihou",
+            "s_shenzong"
+          ]
+        },
+        {
+          "id": "s_xia_liangyimai-v56-5",
+          "title": "证据与边界",
+          "text": "人物材料多来自宋方编年和后世汇辑，官名译写可能不同；页面保留可核的亲属和任职关系。对有争议的动机和言辞，本篇不替史料补写心理活动；新出土材料若改变认识，应以新的证据关系更新结论。无法确认的数字、传闻和作品归属会继续保留边界。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v56_xixia_14",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_军事_03"
+          ],
+          "people": [
+            "s_xia_huizong",
+            "s_xia_liangtaihou",
+            "s_shenzong"
+          ]
+        }
+      ],
+      "sources": [
+        "v56_xixia_14",
+        "v55_songshi",
+        "v55_kaogu"
+      ]
+    },
+    {
+      "person": "s_xia_liangyibu",
+      "title": "梁乙逋：西夏国相与统帅",
+      "dek": "小梁太后之兄，崇宗初年掌握军政，多次组织对宋行动，后在宫廷政变中被杀。",
+      "sections": [
+        {
+          "id": "s_xia_liangyibu-v56-1",
+          "title": "位置与时代",
+          "text": "梁乙逋是小梁太后之兄，崇宗幼年时掌握军政。他与上一代梁乙埋同属梁氏外戚，却处于不同摄政阶段。阅读这一人物时，应把个人行动与同时期的继承秩序、边境形势和国家资源联系起来。事件结果往往来自多人、多地和长期制度积累，不能用后来成败倒推当时只有一种选择。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v56_xixia_19",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_政治_05"
+          ],
+          "people": [
+            "s_xia_chongzong",
+            "s_xia_xiaoliangtaihou",
+            "s_xia_renduobaozhong"
+          ]
+        },
+        {
+          "id": "s_xia_liangyibu-v56-2",
+          "title": "权力与抉择",
+          "text": "他组织对宋行动并联络青唐势力，同时与仁多保忠等边将存在猜忌。前线并非完全服从一个中枢意志。现存记载由不同政权、不同年代的作者保存，名称、日期和评价可能不一致。页面优先采用能够交叉确认的时间、职位和行动，并把传记作者的道德判断留在证据层说明。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v56_xixia_19",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_军事_04"
+          ],
+          "people": [
+            "s_xia_chongzong",
+            "s_xia_xiaoliangtaihou",
+            "s_xia_renduobaozhong"
+          ]
+        },
+        {
+          "id": "s_xia_liangyibu-v56-3",
+          "title": "制度与文化",
+          "text": "战争需要调动部族、马匹、粮草和边寨，短期袭击与长期占领的成本不同。梁乙逋的政策必须放在这种资源约束中理解。人物关系表示共同参与事件或处于同一政治网络，并不自动证明私人交往、思想影响或后世附会的故事。亲属、同僚、对手和使臣也必须根据具体年份区分。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v56_xixia_19",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_经济_04"
+          ],
+          "people": [
+            "s_xia_chongzong",
+            "s_xia_xiaoliangtaihou",
+            "s_xia_renduobaozhong"
+          ]
+        },
+        {
+          "id": "s_xia_liangyibu-v56-4",
+          "title": "关系与社会",
+          "text": "1099年前后梁氏集团被清除，崇宗亲政。政变的具体过程在不同材料中并不完全一致。战争和朝廷决策之外，普通人的迁徙、赋役、语言与信仰也构成这一时代，只是材料远比帝王将相零散。制度变化在不同地区落地的速度和代价并不相同。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v56_xixia_19",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_政治_05"
+          ],
+          "people": [
+            "s_xia_chongzong",
+            "s_xia_xiaoliangtaihou",
+            "s_xia_renduobaozhong"
+          ]
+        },
+        {
+          "id": "s_xia_liangyibu-v56-5",
+          "title": "证据与边界",
+          "text": "宋方文献对敌国权臣评价尖锐。本页采用交涉、出兵、任职与结局等可核事实，避免沿用人格化辱骂。对有争议的动机和言辞，本篇不替史料补写心理活动；新出土材料若改变认识，应以新的证据关系更新结论。无法确认的数字、传闻和作品归属会继续保留边界。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v56_xixia_19",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_军事_04"
+          ],
+          "people": [
+            "s_xia_chongzong",
+            "s_xia_xiaoliangtaihou",
+            "s_xia_renduobaozhong"
+          ]
+        }
+      ],
+      "sources": [
+        "v56_xixia_19",
+        "v55_songshi",
+        "v55_kaogu"
+      ]
+    },
+    {
+      "person": "s_xia_renduobaozhong",
+      "title": "仁多保忠：西夏边将",
+      "dek": "长期统领卓罗一带军队，在宋夏交涉、边境战争及西夏内部权力关系中多次出现。",
+      "sections": [
+        {
+          "id": "s_xia_renduobaozhong-v56-1",
+          "title": "位置与时代",
+          "text": "仁多保忠是西夏西南方向的重要边将，长期经营卓罗一带。他不是中央朝廷的被动工具，而有自己的军队和区域关系。阅读这一人物时，应把个人行动与同时期的继承秩序、边境形势和国家资源联系起来。事件结果往往来自多人、多地和长期制度积累，不能用后来成败倒推当时只有一种选择。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v56_xixia_19",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_军事_04"
+          ],
+          "people": [
+            "s_xia_liangyibu",
+            "s_xia_xiaoliangtaihou"
+          ]
+        },
+        {
+          "id": "s_xia_renduobaozhong-v56-2",
+          "title": "权力与抉择",
+          "text": "宋朝曾试图招诱他，梁乙逋也对他有所猜忌。边将的归属因此受到中央、部族、邻境首领和现实利益共同影响。现存记载由不同政权、不同年代的作者保存，名称、日期和评价可能不一致。页面优先采用能够交叉确认的时间、职位和行动，并把传记作者的道德判断留在证据层说明。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v56_xixia_19",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_军事_04"
+          ],
+          "people": [
+            "s_xia_liangyibu",
+            "s_xia_xiaoliangtaihou"
+          ]
+        },
+        {
+          "id": "s_xia_renduobaozhong-v56-3",
+          "title": "制度与文化",
+          "text": "他参与多次边境行动，但宋方材料中的兵力数字和贬称不能直接照录。战役应结合路线、目标和是否持续占领判断。人物关系表示共同参与事件或处于同一政治网络，并不自动证明私人交往、思想影响或后世附会的故事。亲属、同僚、对手和使臣也必须根据具体年份区分。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v56_xixia_19",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_军事_04"
+          ],
+          "people": [
+            "s_xia_liangyibu",
+            "s_xia_xiaoliangtaihou"
+          ]
+        },
+        {
+          "id": "s_xia_renduobaozhong-v56-4",
+          "title": "关系与社会",
+          "text": "仁多保忠的经历显示宋夏边界不是一条静止线，而是堡寨、牧地、部族和交通通道组成的区域。战争和朝廷决策之外，普通人的迁徙、赋役、语言与信仰也构成这一时代，只是材料远比帝王将相零散。制度变化在不同地区落地的速度和代价并不相同。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v56_xixia_19",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_军事_04"
+          ],
+          "people": [
+            "s_xia_liangyibu",
+            "s_xia_xiaoliangtaihou"
+          ]
+        },
+        {
+          "id": "s_xia_renduobaozhong-v56-5",
+          "title": "证据与边界",
+          "text": "主要材料来自对手朝廷记录，西夏方面声音不足。页面明确这一偏向，不将宋方招抚失败解释成单纯个人反复。对有争议的动机和言辞，本篇不替史料补写心理活动；新出土材料若改变认识，应以新的证据关系更新结论。无法确认的数字、传闻和作品归属会继续保留边界。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v56_xixia_19",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_军事_04"
+          ],
+          "people": [
+            "s_xia_liangyibu",
+            "s_xia_xiaoliangtaihou"
+          ]
+        }
+      ],
+      "sources": [
+        "v56_xixia_19",
+        "v55_songshi",
+        "v55_kaogu"
+      ]
+    },
+    {
+      "person": "s_xia_wodaochong",
+      "title": "斡道冲：西夏学者与官员",
+      "dek": "以儒学和文史活动见称，参与仁宗朝教育、礼法与文献事业；其生平主要依赖后出的西夏史料汇辑。",
+      "sections": [
+        {
+          "id": "s_xia_wodaochong-v56-1",
+          "title": "位置与时代",
+          "text": "斡道冲是西夏仁宗时期重要的儒学与文史人物。其意义在于说明西夏国家文化不只由佛教和西夏文构成。阅读这一人物时，应把个人行动与同时期的继承秩序、边境形势和国家资源联系起来。事件结果往往来自多人、多地和长期制度积累，不能用后来成败倒推当时只有一种选择。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_xixia",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_文化_05"
+          ],
+          "people": [
+            "s_xia_renzong"
+          ]
+        },
+        {
+          "id": "s_xia_wodaochong-v56-2",
+          "title": "权力与抉择",
+          "text": "仁宗长期统治中发展学校、科举、法典与文献编纂，斡道冲属于这一制度环境中的官僚学者。现存记载由不同政权、不同年代的作者保存，名称、日期和评价可能不一致。页面优先采用能够交叉确认的时间、职位和行动，并把传记作者的道德判断留在证据层说明。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_xixia",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_文化_05"
+          ],
+          "people": [
+            "s_xia_renzong"
+          ]
+        },
+        {
+          "id": "s_xia_wodaochong-v56-3",
+          "title": "制度与文化",
+          "text": "西夏文与汉文并用，儒家经典、史书和行政知识经过翻译、教学与再解释进入国家实践。人物关系表示共同参与事件或处于同一政治网络，并不自动证明私人交往、思想影响或后世附会的故事。亲属、同僚、对手和使臣也必须根据具体年份区分。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_xixia",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_文化_05"
+          ],
+          "people": [
+            "s_xia_renzong"
+          ]
+        },
+        {
+          "id": "s_xia_wodaochong-v56-4",
+          "title": "关系与社会",
+          "text": "文教扩展并不表示社会被单向汉化。党项政治传统、佛教网络和多语边疆经验仍同时存在。战争和朝廷决策之外，普通人的迁徙、赋役、语言与信仰也构成这一时代，只是材料远比帝王将相零散。制度变化在不同地区落地的速度和代价并不相同。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_xixia",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_文化_05"
+          ],
+          "people": [
+            "s_xia_renzong"
+          ]
+        },
+        {
+          "id": "s_xia_wodaochong-v56-5",
+          "title": "证据与边界",
+          "text": "其传记材料零散，后世西夏史著录又可能追补细节。本页不虚构具体课堂、著述篇目或私人言行。对有争议的动机和言辞，本篇不替史料补写心理活动；新出土材料若改变认识，应以新的证据关系更新结论。无法确认的数字、传闻和作品归属会继续保留边界。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_xixia",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_文化_05"
+          ],
+          "people": [
+            "s_xia_renzong"
+          ]
+        }
+      ],
+      "sources": [
+        "v55_xixia",
+        "v55_songshi",
+        "v55_kaogu"
+      ]
+    },
+    {
+      "person": "s_jin_wanyanxiyin",
+      "title": "完颜希尹：金朝开国大臣与文字创制者",
+      "dek": "参与反辽战争和金初政务，奉命创制女真大字；熙宗朝任相后被赐死，后获平反。",
+      "sections": [
+        {
+          "id": "s_jin_wanyanxiyin-v56-1",
+          "title": "位置与时代",
+          "text": "完颜希尹兼具开国将领、制度参与者和文字创制者身份。他随太祖起兵，又奉命为女真语设计书写系统。阅读这一人物时，应把个人行动与同时期的继承秩序、边境形势和国家资源联系起来。事件结果往往来自多人、多地和长期制度积累，不能用后来成败倒推当时只有一种选择。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v56_jinshi_73",
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_政治_06"
+          ],
+          "people": [
+            "s_jin_xizong",
+            "s_jin_wanyanzonggan",
+            "s_jin_zonghan"
+          ]
+        },
+        {
+          "id": "s_jin_wanyanxiyin-v56-2",
+          "title": "权力与抉择",
+          "text": "女真大字参考汉字形体和契丹文字制度，并服务诏令、外交和教育。它不是个人凭空发明，而是国家扩张产生的行政需求。现存记载由不同政权、不同年代的作者保存，名称、日期和评价可能不一致。页面优先采用能够交叉确认的时间、职位和行动，并把传记作者的道德判断留在证据层说明。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v56_jinshi_73",
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_军事_05"
+          ],
+          "people": [
+            "s_jin_xizong",
+            "s_jin_wanyanzonggan",
+            "s_jin_zonghan"
+          ]
+        },
+        {
+          "id": "s_jin_wanyanxiyin-v56-3",
+          "title": "制度与文化",
+          "text": "希尹参与灭辽和追击天祚帝，也在熙宗朝进入宰相层。军事功臣转入常态官僚政治后，权力关系随之改变。人物关系表示共同参与事件或处于同一政治网络，并不自动证明私人交往、思想影响或后世附会的故事。亲属、同僚、对手和使臣也必须根据具体年份区分。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v56_jinshi_73",
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_文化_03"
+          ],
+          "people": [
+            "s_jin_xizong",
+            "s_jin_wanyanzonggan",
+            "s_jin_zonghan"
+          ]
+        },
+        {
+          "id": "s_jin_wanyanxiyin-v56-4",
+          "title": "关系与社会",
+          "text": "1140年他在政治斗争中被赐死，后来获平反。正反评价的改变本身就是皇权重新书写开国功臣位置的证据。战争和朝廷决策之外，普通人的迁徙、赋役、语言与信仰也构成这一时代，只是材料远比帝王将相零散。制度变化在不同地区落地的速度和代价并不相同。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v56_jinshi_73",
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_文化_07"
+          ],
+          "people": [
+            "s_jin_xizong",
+            "s_jin_wanyanzonggan",
+            "s_jin_zonghan"
+          ]
+        },
+        {
+          "id": "s_jin_wanyanxiyin-v56-5",
+          "title": "证据与边界",
+          "text": "《金史》提供较完整传记，但对文字创制的技术过程记载有限；出土女真文材料可证明使用，却不能补全所有个人细节。对有争议的动机和言辞，本篇不替史料补写心理活动；新出土材料若改变认识，应以新的证据关系更新结论。无法确认的数字、传闻和作品归属会继续保留边界。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v56_jinshi_73",
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_社会_06"
+          ],
+          "people": [
+            "s_jin_xizong",
+            "s_jin_wanyanzonggan",
+            "s_jin_zonghan"
+          ]
+        }
+      ],
+      "sources": [
+        "v56_jinshi_73",
+        "v55_jinshi",
+        "v55_songshi",
+        "v55_kaogu"
+      ]
+    },
+    {
+      "person": "s_jin_wanyanzonggan",
+      "title": "完颜宗干：金朝宗室与制度建设者",
+      "dek": "太祖之子，参与熙宗继承安排和金初官制改革，是海陵王完颜亮之父。",
+      "sections": [
+        {
+          "id": "s_jin_wanyanzonggan-v56-1",
+          "title": "位置与时代",
+          "text": "完颜宗干是金太祖之子，参与征服和金初中枢建设。他既属于宗室权力核心，也是海陵王完颜亮之父。阅读这一人物时，应把个人行动与同时期的继承秩序、边境形势和国家资源联系起来。事件结果往往来自多人、多地和长期制度积累，不能用后来成败倒推当时只有一种选择。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_政治_06"
+          ],
+          "people": [
+            "s_jin_xizong",
+            "s_jin_wanyanxiyin",
+            "s_jin_zonghan"
+          ]
+        },
+        {
+          "id": "s_jin_wanyanzonggan-v56-2",
+          "title": "权力与抉择",
+          "text": "太宗晚年储位未定时，宗干与宗翰、希尹等支持太祖嫡孙完颜亶，为熙宗继位奠定基础。现存记载由不同政权、不同年代的作者保存，名称、日期和评价可能不一致。页面优先采用能够交叉确认的时间、职位和行动，并把传记作者的道德判断留在证据层说明。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_文化_04"
+          ],
+          "people": [
+            "s_jin_xizong",
+            "s_jin_wanyanxiyin",
+            "s_jin_zonghan"
+          ]
+        },
+        {
+          "id": "s_jin_wanyanzonggan-v56-3",
+          "title": "制度与文化",
+          "text": "金初从勃极烈体系转向尚书省等制度，宗室贵族、女真将领和旧辽宋官员共同参与，不能概括成一次简单汉化。人物关系表示共同参与事件或处于同一政治网络，并不自动证明私人交往、思想影响或后世附会的故事。亲属、同僚、对手和使臣也必须根据具体年份区分。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_政治_06"
+          ],
+          "people": [
+            "s_jin_xizong",
+            "s_jin_wanyanxiyin",
+            "s_jin_zonghan"
+          ]
+        },
+        {
+          "id": "s_jin_wanyanzonggan-v56-4",
+          "title": "关系与社会",
+          "text": "宗干家系后来通过完颜亮进入皇位竞争，说明早期储位安排并未永久消除宗室各支之间的张力。战争和朝廷决策之外，普通人的迁徙、赋役、语言与信仰也构成这一时代，只是材料远比帝王将相零散。制度变化在不同地区落地的速度和代价并不相同。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_文化_04"
+          ],
+          "people": [
+            "s_jin_xizong",
+            "s_jin_wanyanxiyin",
+            "s_jin_zonghan"
+          ]
+        },
+        {
+          "id": "s_jin_wanyanzonggan-v56-5",
+          "title": "证据与边界",
+          "text": "正史按后来的帝系追尊宗干，容易让读者把身后地位投射回生前。本页区分实际任职、继承活动和追尊。对有争议的动机和言辞，本篇不替史料补写心理活动；新出土材料若改变认识，应以新的证据关系更新结论。无法确认的数字、传闻和作品归属会继续保留边界。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_政治_06"
+          ],
+          "people": [
+            "s_jin_xizong",
+            "s_jin_wanyanxiyin",
+            "s_jin_zonghan"
+          ]
+        }
+      ],
+      "sources": [
+        "v55_jinshi",
+        "v55_songshi",
+        "v55_kaogu"
+      ]
+    },
+    {
+      "person": "s_jin_hanqixian",
+      "title": "韩企先：金朝宰相",
+      "dek": "辽末汉官出身，金初参与华北行政、选官和礼制建设，反映政权接收旧辽宋官僚资源的过程。",
+      "sections": [
+        {
+          "id": "s_jin_hanqixian-v56-1",
+          "title": "位置与时代",
+          "text": "韩企先由辽朝汉官转入金朝，是金初接收华北行政经验的重要人物。他的经历反映征服政权如何使用原有官僚。阅读这一人物时，应把个人行动与同时期的继承秩序、边境形势和国家资源联系起来。事件结果往往来自多人、多地和长期制度积累，不能用后来成败倒推当时只有一种选择。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_文化_04"
+          ],
+          "people": [
+            "s_jin_wanyanzonggan",
+            "s_jin_xizong",
+            "s_jin_taizong"
+          ]
+        },
+        {
+          "id": "s_jin_hanqixian-v56-2",
+          "title": "权力与抉择",
+          "text": "随着占领地区扩大，金朝需要处理州县、赋税、刑名和礼仪，单靠军队分配无法维持长期统治。现存记载由不同政权、不同年代的作者保存，名称、日期和评价可能不一致。页面优先采用能够交叉确认的时间、职位和行动，并把传记作者的道德判断留在证据层说明。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_经济_05"
+          ],
+          "people": [
+            "s_jin_wanyanzonggan",
+            "s_jin_xizong",
+            "s_jin_taizong"
+          ]
+        },
+        {
+          "id": "s_jin_hanqixian-v56-3",
+          "title": "制度与文化",
+          "text": "韩企先参与中枢政务，但制度变化来自宗室、女真官员、契丹与汉官多方协作，并非一人移植宋制。人物关系表示共同参与事件或处于同一政治网络，并不自动证明私人交往、思想影响或后世附会的故事。亲属、同僚、对手和使臣也必须根据具体年份区分。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_文化_04"
+          ],
+          "people": [
+            "s_jin_wanyanzonggan",
+            "s_jin_xizong",
+            "s_jin_taizong"
+          ]
+        },
+        {
+          "id": "s_jin_hanqixian-v56-4",
+          "title": "关系与社会",
+          "text": "旧朝官员改仕常被后世套入忠贰评价。对国家运作而言，更需要考察他们掌握的文字、法律和地方知识。战争和朝廷决策之外，普通人的迁徙、赋役、语言与信仰也构成这一时代，只是材料远比帝王将相零散。制度变化在不同地区落地的速度和代价并不相同。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_经济_05"
+          ],
+          "people": [
+            "s_jin_wanyanzonggan",
+            "s_jin_xizong",
+            "s_jin_taizong"
+          ]
+        },
+        {
+          "id": "s_jin_hanqixian-v56-5",
+          "title": "证据与边界",
+          "text": "《金史》传记以金朝成功建制为叙事方向。页面将任官和制度结果与道德评价分开。对有争议的动机和言辞，本篇不替史料补写心理活动；新出土材料若改变认识，应以新的证据关系更新结论。无法确认的数字、传闻和作品归属会继续保留边界。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_文化_04"
+          ],
+          "people": [
+            "s_jin_wanyanzonggan",
+            "s_jin_xizong",
+            "s_jin_taizong"
+          ]
+        }
+      ],
+      "sources": [
+        "v55_jinshi",
+        "v55_songshi",
+        "v55_kaogu"
+      ]
+    },
+    {
+      "person": "s_jin_wanyanhada",
+      "title": "完颜合达：金末将领",
+      "dek": "熟悉蒙古军情并统率金军，1232年三峰山战败后在钧州遇害。",
+      "sections": [
+        {
+          "id": "s_jin_wanyanhada-v56-1",
+          "title": "位置与时代",
+          "text": "完颜合达是金末少数具有持续统军经验的将领，长期在蒙古压力下转战。他重视军心，也熟悉对手战法。阅读这一人物时，应把个人行动与同时期的继承秩序、边境形势和国家资源联系起来。事件结果往往来自多人、多地和长期制度积累，不能用后来成败倒推当时只有一种选择。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v56_jinshi_112",
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_军事_06"
+          ],
+          "people": [
+            "s_jin_yilapua",
+            "s_jin_aizong"
+          ]
+        },
+        {
+          "id": "s_jin_wanyanhada-v56-2",
+          "title": "权力与抉择",
+          "text": "1232年三峰山战役前，金军在严寒、补给和机动上陷入困境。合达的个人能力无法抵消整体资源差距。现存记载由不同政权、不同年代的作者保存，名称、日期和评价可能不一致。页面优先采用能够交叉确认的时间、职位和行动，并把传记作者的道德判断留在证据层说明。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v56_jinshi_112",
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_军事_07"
+          ],
+          "people": [
+            "s_jin_yilapua",
+            "s_jin_aizong"
+          ]
+        },
+        {
+          "id": "s_jin_wanyanhada-v56-3",
+          "title": "制度与文化",
+          "text": "战败后他退入钧州并被杀。蒙古方面随后以其死亡劝降，说明合达已成为金军抵抗能力的象征。人物关系表示共同参与事件或处于同一政治网络，并不自动证明私人交往、思想影响或后世附会的故事。亲属、同僚、对手和使臣也必须根据具体年份区分。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v56_jinshi_112",
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_经济_07"
+          ],
+          "people": [
+            "s_jin_yilapua",
+            "s_jin_aizong"
+          ]
+        },
+        {
+          "id": "s_jin_wanyanhada-v56-4",
+          "title": "关系与社会",
+          "text": "《金史》称赞他与士卒同甘苦，这类品格描写可以帮助理解声望，却不能替代战役路线和后勤分析。战争和朝廷决策之外，普通人的迁徙、赋役、语言与信仰也构成这一时代，只是材料远比帝王将相零散。制度变化在不同地区落地的速度和代价并不相同。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v56_jinshi_112",
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_军事_06"
+          ],
+          "people": [
+            "s_jin_yilapua",
+            "s_jin_aizong"
+          ]
+        },
+        {
+          "id": "s_jin_wanyanhada-v56-5",
+          "title": "证据与边界",
+          "text": "人物结局和主要任职较清楚；具体兵数、战场言辞及英雄化细节应视为需要互校的叙事。对有争议的动机和言辞，本篇不替史料补写心理活动；新出土材料若改变认识，应以新的证据关系更新结论。无法确认的数字、传闻和作品归属会继续保留边界。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v56_jinshi_112",
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_军事_07"
+          ],
+          "people": [
+            "s_jin_yilapua",
+            "s_jin_aizong"
+          ]
+        }
+      ],
+      "sources": [
+        "v56_jinshi_112",
+        "v55_jinshi",
+        "v55_songshi",
+        "v55_kaogu"
+      ]
+    },
+    {
+      "person": "s_jin_yilapua",
+      "title": "移剌蒲阿：金末将领",
+      "dek": "契丹出身，哀宗即位前后参与宿卫和军政，三峰山战败后被俘杀。",
+      "sections": [
+        {
+          "id": "s_jin_yilapua-v56-1",
+          "title": "位置与时代",
+          "text": "移剌蒲阿是契丹出身的金末将领。他进入宿卫和枢密体系，说明金朝后期军政核心仍具有多族群构成。阅读这一人物时，应把个人行动与同时期的继承秩序、边境形势和国家资源联系起来。事件结果往往来自多人、多地和长期制度积累，不能用后来成败倒推当时只有一种选择。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v56_jinshi_112",
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_军事_06"
+          ],
+          "people": [
+            "s_jin_wanyanhada",
+            "s_jin_aizong"
+          ]
+        },
+        {
+          "id": "s_jin_yilapua-v56-2",
+          "title": "权力与抉择",
+          "text": "哀宗即位前，蒲阿参与东宫防卫，此后获得信任并参与重大军事决策。政治功劳和军事能力需要分别评价。现存记载由不同政权、不同年代的作者保存，名称、日期和评价可能不一致。页面优先采用能够交叉确认的时间、职位和行动，并把传记作者的道德判断留在证据层说明。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v56_jinshi_112",
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_经济_07"
+          ],
+          "people": [
+            "s_jin_wanyanhada",
+            "s_jin_aizong"
+          ]
+        },
+        {
+          "id": "s_jin_yilapua-v56-3",
+          "title": "制度与文化",
+          "text": "他与完颜合达共同承担抗蒙主力，1232年三峰山失败后被俘杀。战败由战略、补给与指挥等多重因素造成。人物关系表示共同参与事件或处于同一政治网络，并不自动证明私人交往、思想影响或后世附会的故事。亲属、同僚、对手和使臣也必须根据具体年份区分。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v56_jinshi_112",
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_社会_07"
+          ],
+          "people": [
+            "s_jin_wanyanhada",
+            "s_jin_aizong"
+          ]
+        },
+        {
+          "id": "s_jin_yilapua-v56-4",
+          "title": "关系与社会",
+          "text": "《金史》也记录他虚报战功等争议，人物并非单一忠勇形象。保留这些记录能避免纪念化叙事。战争和朝廷决策之外，普通人的迁徙、赋役、语言与信仰也构成这一时代，只是材料远比帝王将相零散。制度变化在不同地区落地的速度和代价并不相同。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v56_jinshi_112",
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_军事_06"
+          ],
+          "people": [
+            "s_jin_wanyanhada",
+            "s_jin_aizong"
+          ]
+        },
+        {
+          "id": "s_jin_yilapua-v56-5",
+          "title": "证据与边界",
+          "text": "其族属不能推出固定政治立场。辽亡以后契丹群体在金朝、蒙古和地方势力间有不同选择。对有争议的动机和言辞，本篇不替史料补写心理活动；新出土材料若改变认识，应以新的证据关系更新结论。无法确认的数字、传闻和作品归属会继续保留边界。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v56_jinshi_112",
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_经济_07"
+          ],
+          "people": [
+            "s_jin_wanyanhada",
+            "s_jin_aizong"
+          ]
+        }
+      ],
+      "sources": [
+        "v56_jinshi_112",
+        "v55_jinshi",
+        "v55_songshi",
+        "v55_kaogu"
+      ]
+    },
+    {
+      "person": "s_jin_puxianwannu",
+      "title": "蒲鲜万奴：金末将领与东夏建立者",
+      "dek": "金末在东北起兵建立东夏，先后处于蒙古、高丽与金朝势力交错之中，政权边界和称号应分阶段说明。",
+      "sections": [
+        {
+          "id": "s_jin_puxianwannu-v56-1",
+          "title": "位置与时代",
+          "text": "蒲鲜万奴原为金朝将领，金末在东北建立东夏。他的政权位于金、蒙古、高丽及地方部族力量交错区。阅读这一人物时，应把个人行动与同时期的继承秩序、边境形势和国家资源联系起来。事件结果往往来自多人、多地和长期制度积累，不能用后来成败倒推当时只有一种选择。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_政治_07"
+          ],
+          "people": [
+            "s_jin_xuanzong"
+          ]
+        },
+        {
+          "id": "s_jin_puxianwannu-v56-2",
+          "title": "权力与抉择",
+          "text": "1215年前后的起兵与金朝东北控制崩解相连。此后臣属和对抗关系多次变化，不能用一次“建国”覆盖全部阶段。现存记载由不同政权、不同年代的作者保存，名称、日期和评价可能不一致。页面优先采用能够交叉确认的时间、职位和行动，并把传记作者的道德判断留在证据层说明。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_经济_06"
+          ],
+          "people": [
+            "s_jin_xuanzong"
+          ]
+        },
+        {
+          "id": "s_jin_puxianwannu-v56-3",
+          "title": "制度与文化",
+          "text": "东夏依赖城镇、山地通道和地方军队，疆域随军事行动伸缩。后世地图若画成稳定国界，会夸大控制程度。人物关系表示共同参与事件或处于同一政治网络，并不自动证明私人交往、思想影响或后世附会的故事。亲属、同僚、对手和使臣也必须根据具体年份区分。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_政治_07"
+          ],
+          "people": [
+            "s_jin_xuanzong"
+          ]
+        },
+        {
+          "id": "s_jin_puxianwannu-v56-4",
+          "title": "关系与社会",
+          "text": "其活动提示金亡并非只有中原一条战线，辽东与东北还有持续更久的政治重组。战争和朝廷决策之外，普通人的迁徙、赋役、语言与信仰也构成这一时代，只是材料远比帝王将相零散。制度变化在不同地区落地的速度和代价并不相同。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_经济_06"
+          ],
+          "people": [
+            "s_jin_xuanzong"
+          ]
+        },
+        {
+          "id": "s_jin_puxianwannu-v56-5",
+          "title": "证据与边界",
+          "text": "材料分散在《金史》、蒙古史料和高丽记录中，称号、年份和地域范围存在差异，本页采用保守表述。对有争议的动机和言辞，本篇不替史料补写心理活动；新出土材料若改变认识，应以新的证据关系更新结论。无法确认的数字、传闻和作品归属会继续保留边界。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_政治_07"
+          ],
+          "people": [
+            "s_jin_xuanzong"
+          ]
+        }
+      ],
+      "sources": [
+        "v55_jinshi",
+        "v55_songshi",
+        "v55_kaogu"
+      ]
+    },
+    {
+      "person": "s_liao_xiaochuo",
+      "title": "萧绰：辽承天皇太后",
+      "dek": "圣宗幼年摄政，参与对宋战争、议和与辽朝治理。",
+      "sections": [
+        {
+          "id": "s_liao_xiaochuo-v56-1",
+          "title": "位置与时代",
+          "text": "萧绰在辽景宗后期参与政务，982年圣宗幼年即位后临朝。她既是皇太后，也是辽朝最高军政决策者之一。阅读这一人物时，应把个人行动与同时期的继承秩序、边境形势和国家资源联系起来。事件结果往往来自多人、多地和长期制度积累，不能用后来成败倒推当时只有一种选择。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_liaoshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v55_p03"
+          ],
+          "people": [
+            "s_liao_shengzong",
+            "s_zhenzong",
+            "s_taizong"
+          ]
+        },
+        {
+          "id": "s_liao_xiaochuo-v56-2",
+          "title": "权力与抉择",
+          "text": "她与韩德让、耶律休哥等形成治理网络，处理继承、边防和官员任用。将其权力归结为私人关系会遮蔽制度基础。现存记载由不同政权、不同年代的作者保存，名称、日期和评价可能不一致。页面优先采用能够交叉确认的时间、职位和行动，并把传记作者的道德判断留在证据层说明。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_liaoshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v55_m02"
+          ],
+          "people": [
+            "s_liao_shengzong",
+            "s_zhenzong",
+            "s_taizong"
+          ]
+        },
+        {
+          "id": "s_liao_xiaochuo-v56-3",
+          "title": "制度与文化",
+          "text": "1004年南下与澶渊议和是其政治生涯关键节点。议和并非单方失败，而是双方在军事风险下建立新的边境秩序。人物关系表示共同参与事件或处于同一政治网络，并不自动证明私人交往、思想影响或后世附会的故事。亲属、同僚、对手和使臣也必须根据具体年份区分。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_liaoshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v55_s02"
+          ],
+          "people": [
+            "s_liao_shengzong",
+            "s_zhenzong",
+            "s_taizong"
+          ]
+        },
+        {
+          "id": "s_liao_xiaochuo-v56-4",
+          "title": "关系与社会",
+          "text": "长期和平推动使节、榷场和人口流动，也给辽朝内部整合留下空间。摄政结束不等于她此前只是临时替代者。战争和朝廷决策之外，普通人的迁徙、赋役、语言与信仰也构成这一时代，只是材料远比帝王将相零散。制度变化在不同地区落地的速度和代价并不相同。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_liaoshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v56_军事_02"
+          ],
+          "people": [
+            "s_liao_shengzong",
+            "s_zhenzong",
+            "s_taizong"
+          ]
+        },
+        {
+          "id": "s_liao_xiaochuo-v56-5",
+          "title": "证据与边界",
+          "text": "《辽史》和宋人记录观察角度不同。页面确认她的决策位置，同时避免把后世传说和戏曲形象当作事实。对有争议的动机和言辞，本篇不替史料补写心理活动；新出土材料若改变认识，应以新的证据关系更新结论。无法确认的数字、传闻和作品归属会继续保留边界。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_liaoshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v55_p03"
+          ],
+          "people": [
+            "s_liao_shengzong",
+            "s_zhenzong",
+            "s_taizong"
+          ]
+        }
+      ],
+      "sources": [
+        "v55_liaoshi",
+        "v55_songshi",
+        "v55_kaogu"
+      ]
+    },
+    {
+      "person": "s_liao_shengzong",
+      "title": "耶律隆绪：辽圣宗",
+      "dek": "幼年即位由萧绰摄政，澶渊议和后长期经营制度和边疆。",
+      "sections": [
+        {
+          "id": "s_liao_shengzong-v56-1",
+          "title": "位置与时代",
+          "text": "辽圣宗幼年即位，前期由萧绰临朝，随后形成辽朝最长的统治之一。他的时代不能只以澶渊之盟命名。阅读这一人物时，应把个人行动与同时期的继承秩序、边境形势和国家资源联系起来。事件结果往往来自多人、多地和长期制度积累，不能用后来成败倒推当时只有一种选择。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_liaoshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v43s_yongxi"
+          ],
+          "people": [
+            "s_taizong",
+            "s_caobin",
+            "s_zhenzong"
+          ]
+        },
+        {
+          "id": "s_liao_shengzong-v56-2",
+          "title": "权力与抉择",
+          "text": "辽在五京、多部族与农业州县之间配置官员和军队，南北面制度是框架，实际人员和事务存在交叉。现存记载由不同政权、不同年代的作者保存，名称、日期和评价可能不一致。页面优先采用能够交叉确认的时间、职位和行动，并把传记作者的道德判断留在证据层说明。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_liaoshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v43s_chanyuan"
+          ],
+          "people": [
+            "s_taizong",
+            "s_caobin",
+            "s_zhenzong"
+          ]
+        },
+        {
+          "id": "s_liao_shengzong-v56-3",
+          "title": "制度与文化",
+          "text": "对宋议和降低了大规模战争频率，对高丽和西北仍有军事行动。不同方向的目标和成本不应混写。人物关系表示共同参与事件或处于同一政治网络，并不自动证明私人交往、思想影响或后世附会的故事。亲属、同僚、对手和使臣也必须根据具体年份区分。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_liaoshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v43s_liao_zhongjing"
+          ],
+          "people": [
+            "s_taizong",
+            "s_caobin",
+            "s_zhenzong"
+          ]
+        },
+        {
+          "id": "s_liao_shengzong-v56-4",
+          "title": "关系与社会",
+          "text": "佛教、文字、科举和法制在其时期继续发展，财政则来自畜牧、农业、贸易和属国贡赋等多种来源。战争和朝廷决策之外，普通人的迁徙、赋役、语言与信仰也构成这一时代，只是材料远比帝王将相零散。制度变化在不同地区落地的速度和代价并不相同。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_liaoshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v55_p03"
+          ],
+          "people": [
+            "s_taizong",
+            "s_caobin",
+            "s_zhenzong"
+          ]
+        },
+        {
+          "id": "s_liao_shengzong-v56-5",
+          "title": "证据与边界",
+          "text": "本纪数字和祥瑞记录服务王朝叙事。评价长期治理应结合制度、出土材料和周边国家记录，而非只按战绩。对有争议的动机和言辞，本篇不替史料补写心理活动；新出土材料若改变认识，应以新的证据关系更新结论。无法确认的数字、传闻和作品归属会继续保留边界。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_liaoshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v55_m02"
+          ],
+          "people": [
+            "s_taizong",
+            "s_caobin",
+            "s_zhenzong"
+          ]
+        }
+      ],
+      "sources": [
+        "v55_liaoshi",
+        "v55_songshi",
+        "v55_kaogu"
+      ]
+    },
+    {
+      "person": "s_xia_renzong",
+      "title": "李仁孝：夏仁宗",
+      "dek": "推行科举、学校和法典编纂，经历任得敬分国危机。",
+      "sections": [
+        {
+          "id": "s_xia_renzong-v56-1",
+          "title": "位置与时代",
+          "text": "西夏仁宗在位五十余年，是西夏制度和文化发展最重要的时期之一。长期统治同时包含稳定与权臣危机。阅读这一人物时，应把个人行动与同时期的继承秩序、边境形势和国家资源联系起来。事件结果往往来自多人、多地和长期制度积累，不能用后来成败倒推当时只有一种选择。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_xixia",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v55_c07"
+          ],
+          "people": [
+            "s_xia_luoshichang",
+            "s_xia_rendejing",
+            "s_xia_chongzong"
+          ]
+        },
+        {
+          "id": "s_xia_renzong-v56-2",
+          "title": "权力与抉择",
+          "text": "学校、科举、法典和翻译事业得到推进，西夏文、汉文与佛教知识共同进入国家运行。所谓汉化不足以概括这种多语选择。现存记载由不同政权、不同年代的作者保存，名称、日期和评价可能不一致。页面优先采用能够交叉确认的时间、职位和行动，并把传记作者的道德判断留在证据层说明。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_xixia",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v55_e09"
+          ],
+          "people": [
+            "s_xia_luoshichang",
+            "s_xia_rendejing",
+            "s_xia_chongzong"
+          ]
+        },
+        {
+          "id": "s_xia_renzong-v56-3",
+          "title": "制度与文化",
+          "text": "任得敬势力扩张并企图分国，最终在辽金关系和西夏中枢反制下失败，显示地方军政资源对皇权的挑战。人物关系表示共同参与事件或处于同一政治网络，并不自动证明私人交往、思想影响或后世附会的故事。亲属、同僚、对手和使臣也必须根据具体年份区分。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_xixia",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v55_s08"
+          ],
+          "people": [
+            "s_xia_luoshichang",
+            "s_xia_rendejing",
+            "s_xia_chongzong"
+          ]
+        },
+        {
+          "id": "s_xia_renzong-v56-4",
+          "title": "关系与社会",
+          "text": "仁宗朝遗存和文献较多，但具体制度往往由后世发现的西夏文材料补充，不能只依据宋金正史。战争和朝廷决策之外，普通人的迁徙、赋役、语言与信仰也构成这一时代，只是材料远比帝王将相零散。制度变化在不同地区落地的速度和代价并不相同。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_xixia",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v55_reign_s_xia_renzong_a"
+          ],
+          "people": [
+            "s_xia_luoshichang",
+            "s_xia_rendejing",
+            "s_xia_chongzong"
+          ]
+        },
+        {
+          "id": "s_xia_renzong-v56-5",
+          "title": "证据与边界",
+          "text": "繁荣评价需要看到赋役、边防和区域差异。页面把制度成果与其社会成本分开讨论。对有争议的动机和言辞，本篇不替史料补写心理活动；新出土材料若改变认识，应以新的证据关系更新结论。无法确认的数字、传闻和作品归属会继续保留边界。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_xixia",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v55_reign_s_xia_renzong_b"
+          ],
+          "people": [
+            "s_xia_luoshichang",
+            "s_xia_rendejing",
+            "s_xia_chongzong"
+          ]
+        }
+      ],
+      "sources": [
+        "v55_xixia",
+        "v55_songshi",
+        "v55_kaogu"
+      ]
+    },
+    {
+      "person": "s_jin_shizong",
+      "title": "完颜雍：金世宗",
+      "dek": "即位后稳定统治，整顿财政并强调女真传统与多语治理。",
+      "sections": [
+        {
+          "id": "s_jin_shizong-v56-1",
+          "title": "位置与时代",
+          "text": "金世宗在海陵王南征失败后即位，首要任务是停止内战、稳定各地并重新安排对宋关系。阅读这一人物时，应把个人行动与同时期的继承秩序、边境形势和国家资源联系起来。事件结果往往来自多人、多地和长期制度积累，不能用后来成败倒推当时只有一种选择。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v55_c06"
+          ],
+          "people": [
+            "s_xiaozong",
+            "s_jin_hailing",
+            "s_jin_zhangzong"
+          ]
+        },
+        {
+          "id": "s_jin_shizong-v56-2",
+          "title": "权力与抉择",
+          "text": "大定时期财政和官僚制度趋于稳定，后世因此称为治世。但稳定建立在此前征服、迁徙与土地重组的基础上。现存记载由不同政权、不同年代的作者保存，名称、日期和评价可能不一致。页面优先采用能够交叉确认的时间、职位和行动，并把传记作者的道德判断留在证据层说明。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v55_e08"
+          ],
+          "people": [
+            "s_xiaozong",
+            "s_jin_hailing",
+            "s_jin_zhangzong"
+          ]
+        },
+        {
+          "id": "s_jin_shizong-v56-3",
+          "title": "制度与文化",
+          "text": "他提倡女真语言和旧俗，同时继续使用汉文官制、科举和多族群官员。这是一种治理选择，而非拒绝文化交流。人物关系表示共同参与事件或处于同一政治网络，并不自动证明私人交往、思想影响或后世附会的故事。亲属、同僚、对手和使臣也必须根据具体年份区分。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v55_s07"
+          ],
+          "people": [
+            "s_xiaozong",
+            "s_jin_hailing",
+            "s_jin_zhangzong"
+          ]
+        },
+        {
+          "id": "s_jin_shizong-v56-4",
+          "title": "关系与社会",
+          "text": "猛安谋克人口的生计、土地与军事义务成为长期问题。强调传统未必能逆转社会经济变化。战争和朝廷决策之外，普通人的迁徙、赋役、语言与信仰也构成这一时代，只是材料远比帝王将相零散。制度变化在不同地区落地的速度和代价并不相同。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v55_reign_s_jin_shizong_a"
+          ],
+          "people": [
+            "s_xiaozong",
+            "s_jin_hailing",
+            "s_jin_zhangzong"
+          ]
+        },
+        {
+          "id": "s_jin_shizong-v56-5",
+          "title": "证据与边界",
+          "text": "《金史》对世宗评价很高。页面既承认恢复成效，也检视理想化君主叙事遗漏的地区与群体。对有争议的动机和言辞，本篇不替史料补写心理活动；新出土材料若改变认识，应以新的证据关系更新结论。无法确认的数字、传闻和作品归属会继续保留边界。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v55_reign_s_jin_shizong_b"
+          ],
+          "people": [
+            "s_xiaozong",
+            "s_jin_hailing",
+            "s_jin_zhangzong"
+          ]
+        }
+      ],
+      "sources": [
+        "v55_jinshi",
+        "v55_songshi",
+        "v55_kaogu"
+      ]
+    },
+    {
+      "person": "s_jin_zhangzong",
+      "title": "完颜璟：金章宗",
+      "dek": "文化制度发展，同时北部边防和财政压力加重。",
+      "sections": [
+        {
+          "id": "s_jin_zhangzong-v56-1",
+          "title": "位置与时代",
+          "text": "金章宗继承大定时期的制度资源，宫廷文化、科举和文书行政继续发展。他本人也以书画活动见称。阅读这一人物时，应把个人行动与同时期的继承秩序、边境形势和国家资源联系起来。事件结果往往来自多人、多地和长期制度积累，不能用后来成败倒推当时只有一种选择。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v55_c08"
+          ],
+          "people": [
+            "s_jin_zhaobingwen",
+            "s_jin_shizong",
+            "s_jin_weishao"
+          ]
+        },
+        {
+          "id": "s_jin_zhangzong-v56-2",
+          "title": "权力与抉择",
+          "text": "北方边防、黄河治理和财政压力逐渐加重，对宋战争又消耗资源。文化繁荣与结构危机可以同时存在。现存记载由不同政权、不同年代的作者保存，名称、日期和评价可能不一致。页面优先采用能够交叉确认的时间、职位和行动，并把传记作者的道德判断留在证据层说明。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v55_reign_s_jin_zhangzong_a"
+          ],
+          "people": [
+            "s_jin_zhaobingwen",
+            "s_jin_shizong",
+            "s_jin_weishao"
+          ]
+        },
+        {
+          "id": "s_jin_zhangzong-v56-3",
+          "title": "制度与文化",
+          "text": "女真学、女真科举和汉文科举并行，反映朝廷维持多语官僚来源的努力，也显示语言政策面临现实压力。人物关系表示共同参与事件或处于同一政治网络，并不自动证明私人交往、思想影响或后世附会的故事。亲属、同僚、对手和使臣也必须根据具体年份区分。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v55_reign_s_jin_zhangzong_b"
+          ],
+          "people": [
+            "s_jin_zhaobingwen",
+            "s_jin_shizong",
+            "s_jin_weishao"
+          ]
+        },
+        {
+          "id": "s_jin_zhangzong-v56-4",
+          "title": "关系与社会",
+          "text": "宫廷收藏和艺术品归属常被后世题跋重塑。把作品与章宗联系时必须区分御题、收藏和亲自创作。战争和朝廷决策之外，普通人的迁徙、赋役、语言与信仰也构成这一时代，只是材料远比帝王将相零散。制度变化在不同地区落地的速度和代价并不相同。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v55_reign_s_jin_weishao_a"
+          ],
+          "people": [
+            "s_jin_zhaobingwen",
+            "s_jin_shizong",
+            "s_jin_weishao"
+          ]
+        },
+        {
+          "id": "s_jin_zhangzong-v56-5",
+          "title": "证据与边界",
+          "text": "章宗朝不是金亡的直接起点，也不是纯粹盛世。应从政策累积、生态灾害、边防和继承等多条线评估。对有争议的动机和言辞，本篇不替史料补写心理活动；新出土材料若改变认识，应以新的证据关系更新结论。无法确认的数字、传闻和作品归属会继续保留边界。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+          "sources": [
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v55_reign_s_jin_weishao_b"
+          ],
+          "people": [
+            "s_jin_zhaobingwen",
+            "s_jin_shizong",
+            "s_jin_weishao"
+          ]
+        }
+      ],
+      "sources": [
+        "v55_jinshi",
+        "v55_songshi",
+        "v55_kaogu"
       ]
     }
   ],
@@ -113137,28 +116183,6 @@
       ]
     },
     {
-      "from": "di",
-      "to": "lijinglong",
-      "role": "迎降者",
-      "inverse": "即位后授赏的君主",
-      "period": "1402年",
-      "note": "李景隆参与开门迎燕，随后获得赏赐。",
-      "sources": [
-        "v2f_ms126"
-      ]
-    },
-    {
-      "from": "di",
-      "to": "lijinglong",
-      "role": "被夺爵禁锢的勋贵",
-      "inverse": "处置他的君主",
-      "period": "1404年至永乐末",
-      "note": "朝臣接连弹劾后夺爵，李景隆长期被禁锢。",
-      "sources": [
-        "v2f_ms126"
-      ]
-    },
-    {
       "from": "yuanzhang",
       "to": "guo",
       "role": "投效的元帅与早期恩主",
@@ -113226,18 +116250,6 @@
       ]
     },
     {
-      "from": "qizhen",
-      "to": "yuqian",
-      "role": "被处决的景泰朝大臣",
-      "inverse": "批准处决的复位君主",
-      "period": "1457",
-      "note": "英宗复位后批准处决于谦，迎还之议没有免去后来的政治清洗。",
-      "sources": [
-        "v3n_ms170",
-        "v2e_ms12"
-      ]
-    },
-    {
       "from": "jianshen",
       "to": "yuqian",
       "role": "身后赐祭与昭雪对象",
@@ -113256,18 +116268,6 @@
       "inverse": "所侍奉的君主",
       "period": "1435—1449",
       "note": "王振依靠英宗信任掌握近侍权力，1449年随征并死于土木败军。",
-      "sources": [
-        "v3n_ms304",
-        "v2e_ms12"
-      ]
-    },
-    {
-      "from": "qizhen",
-      "to": "wangzhen",
-      "role": "身后赐祭对象",
-      "inverse": "为其赐祭立祠的君主",
-      "period": "1457",
-      "note": "复位后的赐祭与立祠发生在王振死后。",
       "sources": [
         "v3n_ms304",
         "v2e_ms12"
@@ -113308,17 +116308,6 @@
       ]
     },
     {
-      "from": "qiyu",
-      "to": "shiheng",
-      "role": "转而拥立英宗的将领",
-      "inverse": "夺门之变中失位的君主",
-      "period": "1457",
-      "note": "石亨参加拥立英宗复位，朱祁钰随后失去皇位。",
-      "sources": [
-        "v3n_ms173"
-      ]
-    },
-    {
       "from": "qizhen",
       "to": "shiheng",
       "role": "复位拥立者",
@@ -113331,36 +116320,12 @@
       ]
     },
     {
-      "from": "qizhen",
-      "to": "shiheng",
-      "role": "失势后获罪的武臣",
-      "inverse": "收回信任并裁决的君主",
-      "period": "1459—1460",
-      "note": "1459年石亨失势，1460年下狱，随后死于狱中。",
-      "sources": [
-        "v3n_ms173",
-        "v2e_ms12"
-      ]
-    },
-    {
       "from": "yuqian",
       "to": "shiheng",
       "role": "荐用的守城将领",
       "inverse": "荐用者与军务统筹者",
       "period": "1449",
       "note": "于谦荐用石亨，两人以统筹军务与率兵作战的不同职责参与守城。",
-      "sources": [
-        "v3n_ms170",
-        "v3n_ms173"
-      ]
-    },
-    {
-      "from": "yuqian",
-      "to": "shiheng",
-      "role": "复位后推动指控的政敌",
-      "inverse": "受其指控的大臣",
-      "period": "1457",
-      "note": "石亨参与英宗复位并推动指控于谦，守城合作关系转为政治对立。",
       "sources": [
         "v3n_ms170",
         "v3n_ms173"
@@ -114124,17 +117089,6 @@
       "note": "请求慎选讲官与宫中侍从，参与机务。",
       "sources": [
         "v40m1_ms148"
-      ],
-      "from": "qizhen"
-    },
-    {
-      "to": "yuqian",
-      "role": "两省巡抚与后来的兵部大臣",
-      "inverse": "任用他的皇帝",
-      "period": "正统朝；天顺初",
-      "note": "正统时推行备荒与安置流民，天顺复位后遭冤杀。",
-      "sources": [
-        "v40m1_ms170"
       ],
       "from": "qizhen"
     },
@@ -126577,18 +129531,7 @@
       ]
     },
     {
-      "from": "s_xia_weiminganquan",
-      "to": "s_liao_taizu",
-      "role": "并立时代中的关联人物",
-      "inverse": "并立时代中的关联人物",
-      "period": "宋辽夏金",
-      "note": "关联来自共同事件、外交或相邻政治网络，不推定无材料支持的私人往来。",
-      "sources": [
-        "v55_songshi"
-      ]
-    },
-    {
-      "from": "s_xia_weiminganquan",
+      "from": "s_xia_xiangzong",
       "to": "s_liao_taizong",
       "role": "并立时代中的关联人物",
       "inverse": "并立时代中的关联人物",
@@ -126599,7 +129542,7 @@
       ]
     },
     {
-      "from": "s_xia_weiminganquan",
+      "from": "s_xia_xiangzong",
       "to": "s_liao_shizong",
       "role": "并立时代中的关联人物",
       "inverse": "并立时代中的关联人物",
@@ -126870,6 +129813,485 @@
       "period": "宋辽夏金",
       "note": "关联来自在位期事件、继承或外交网络，不推定无材料支持的私人往来。",
       "sources": [
+        "v55_songshi"
+      ]
+    },
+    {
+      "from": "s_liao_yelubei",
+      "to": "s_liao_taizu",
+      "role": "父子与储位",
+      "inverse": "父子与储位",
+      "period": "宋辽夏金",
+      "note": "关系依据共同事件、亲属或明确政治协作建立。",
+      "sources": [
+        "v56_liaoshi_72",
+        "v55_liaoshi",
+        "v55_songshi"
+      ]
+    },
+    {
+      "from": "s_liao_yelubei",
+      "to": "s_liao_taizong",
+      "role": "兄弟与帝位竞争",
+      "inverse": "兄弟与帝位竞争",
+      "period": "宋辽夏金",
+      "note": "关系依据共同事件、亲属或明确政治协作建立。",
+      "sources": [
+        "v56_liaoshi_72",
+        "v55_liaoshi",
+        "v55_songshi"
+      ]
+    },
+    {
+      "from": "s_liao_xiaoguanyin",
+      "to": "s_liao_yeluyixin",
+      "role": "案件中的被害者与操作者",
+      "inverse": "案件中的被害者与操作者",
+      "period": "宋辽夏金",
+      "note": "关系依据共同事件、亲属或明确政治协作建立。",
+      "sources": [
+        "v55_liaoshi",
+        "v55_dpm"
+      ]
+    },
+    {
+      "from": "s_xia_mozangtaihou",
+      "to": "s_xia_mozange",
+      "role": "兄妹与摄政集团",
+      "inverse": "兄妹与摄政集团",
+      "period": "宋辽夏金",
+      "note": "关系依据共同事件、亲属或明确政治协作建立。",
+      "sources": [
+        "v55_xixia",
+        "v55_songshi"
+      ]
+    },
+    {
+      "from": "s_xia_liangtaihou",
+      "to": "s_xia_liangyimai",
+      "role": "姐弟与摄政集团",
+      "inverse": "姐弟与摄政集团",
+      "period": "宋辽夏金",
+      "note": "关系依据共同事件、亲属或明确政治协作建立。",
+      "sources": [
+        "v56_xixia_14",
+        "v55_songshi"
+      ]
+    },
+    {
+      "from": "s_xia_xiaoliangtaihou",
+      "to": "s_xia_liangyibu",
+      "role": "兄妹与摄政集团",
+      "inverse": "兄妹与摄政集团",
+      "period": "宋辽夏金",
+      "note": "关系依据共同事件、亲属或明确政治协作建立。",
+      "sources": [
+        "v56_xixia_19",
+        "v55_songshi"
+      ]
+    },
+    {
+      "from": "s_jin_wanyanxiyin",
+      "to": "s_jin_wanyanzonggan",
+      "role": "开国与储位协作",
+      "inverse": "开国与储位协作",
+      "period": "宋辽夏金",
+      "note": "关系依据共同事件、亲属或明确政治协作建立。",
+      "sources": [
+        "v56_jinshi_73",
+        "v55_jinshi"
+      ]
+    },
+    {
+      "from": "s_jin_wanyanhada",
+      "to": "s_jin_yilapua",
+      "role": "金末共同统军",
+      "inverse": "金末共同统军",
+      "period": "宋辽夏金",
+      "note": "关系依据共同事件、亲属或明确政治协作建立。",
+      "sources": [
+        "v56_jinshi_112",
+        "v55_jinshi"
+      ]
+    },
+    {
+      "from": "s_liao_xingzong",
+      "to": "s_liao_liuliufu",
+      "role": "在位时期的重要行动者",
+      "inverse": "所处时期的在位者",
+      "period": "宋辽夏金",
+      "note": "两人共同关联事件：刘六符参与关南交涉。关系仅表示可核的同一事件或政治网络。",
+      "sources": [
+        "v56_liaoshi_86",
+        "v55_songshi",
+        "v55_liaoshi",
+        "v43s_ss009"
+      ]
+    },
+    {
+      "from": "s_liao_xingzong",
+      "to": "s_renzong",
+      "role": "在位时期的重要行动者",
+      "inverse": "所处时期的在位者",
+      "period": "宋辽夏金",
+      "note": "两人共同关联事件：刘六符参与关南交涉。关系仅表示可核的同一事件或政治网络。",
+      "sources": [
+        "v56_liaoshi_86",
+        "v55_songshi",
+        "v55_liaoshi",
+        "v43s_ss009"
+      ]
+    },
+    {
+      "from": "s_renzong",
+      "to": "s_liao_liuliufu",
+      "role": "在位时期的重要行动者",
+      "inverse": "所处时期的在位者",
+      "period": "宋辽夏金",
+      "note": "两人共同关联事件：刘六符参与关南交涉。关系仅表示可核的同一事件或政治网络。",
+      "sources": [
+        "v56_liaoshi_86",
+        "v55_songshi",
+        "v55_liaoshi",
+        "v43s_ss009"
+      ]
+    },
+    {
+      "from": "s_xia_yizong",
+      "to": "s_xia_mozange",
+      "role": "在位时期的重要行动者",
+      "inverse": "所处时期的在位者",
+      "period": "宋辽夏金",
+      "note": "两人共同关联事件：没藏讹庞集团覆灭。关系仅表示可核的同一事件或政治网络。",
+      "sources": [
+        "v55_xixia",
+        "v55_songshi",
+        "v56_xixia_14"
+      ]
+    },
+    {
+      "from": "s_xia_yizong",
+      "to": "s_xia_liangtaihou",
+      "role": "在位时期的重要行动者",
+      "inverse": "所处时期的在位者",
+      "period": "宋辽夏金",
+      "note": "两人共同关联事件：没藏讹庞集团覆灭。关系仅表示可核的同一事件或政治网络。",
+      "sources": [
+        "v55_xixia",
+        "v55_songshi",
+        "v56_xixia_14"
+      ]
+    },
+    {
+      "from": "s_xia_huizong",
+      "to": "s_xia_liangyimai",
+      "role": "在位时期的重要行动者",
+      "inverse": "所处时期的在位者",
+      "period": "宋辽夏金",
+      "note": "两人共同关联事件：大梁太后临朝。关系仅表示可核的同一事件或政治网络。",
+      "sources": [
+        "v55_xixia",
+        "v55_songshi",
+        "v56_xixia_14"
+      ]
+    },
+    {
+      "from": "s_xia_chongzong",
+      "to": "s_xia_xiaoliangtaihou",
+      "role": "在位时期的重要行动者",
+      "inverse": "所处时期的在位者",
+      "period": "宋辽夏金",
+      "note": "两人共同关联事件：小梁太后摄政。关系仅表示可核的同一事件或政治网络。",
+      "sources": [
+        "v55_xixia",
+        "v55_songshi",
+        "v56_xixia_19"
+      ]
+    },
+    {
+      "from": "s_xia_chongzong",
+      "to": "s_xia_liangyibu",
+      "role": "在位时期的重要行动者",
+      "inverse": "所处时期的在位者",
+      "period": "宋辽夏金",
+      "note": "两人共同关联事件：小梁太后摄政。关系仅表示可核的同一事件或政治网络。",
+      "sources": [
+        "v55_xixia",
+        "v55_songshi",
+        "v56_xixia_19"
+      ]
+    },
+    {
+      "from": "s_jin_xizong",
+      "to": "s_jin_wanyanzonggan",
+      "role": "在位时期的重要行动者",
+      "inverse": "所处时期的在位者",
+      "period": "宋辽夏金",
+      "note": "两人共同关联事件：金熙宗继承安排。关系仅表示可核的同一事件或政治网络。",
+      "sources": [
+        "v55_jinshi",
+        "v55_songshi",
+        "v56_jinshi_73"
+      ]
+    },
+    {
+      "from": "s_jin_xizong",
+      "to": "s_jin_wanyanxiyin",
+      "role": "在位时期的重要行动者",
+      "inverse": "所处时期的在位者",
+      "period": "宋辽夏金",
+      "note": "两人共同关联事件：金熙宗继承安排。关系仅表示可核的同一事件或政治网络。",
+      "sources": [
+        "v55_jinshi",
+        "v55_songshi",
+        "v56_jinshi_73"
+      ]
+    },
+    {
+      "from": "s_jin_xizong",
+      "to": "s_jin_zonghan",
+      "role": "在位时期的重要行动者",
+      "inverse": "所处时期的在位者",
+      "period": "宋辽夏金",
+      "note": "两人共同关联事件：金熙宗继承安排。关系仅表示可核的同一事件或政治网络。",
+      "sources": [
+        "v55_jinshi",
+        "v55_songshi",
+        "v56_jinshi_73"
+      ]
+    },
+    {
+      "from": "s_jin_xuanzong",
+      "to": "s_jin_puxianwannu",
+      "role": "在位时期的重要行动者",
+      "inverse": "所处时期的在位者",
+      "period": "宋辽夏金",
+      "note": "两人共同关联事件：蒲鲜万奴建立东夏。关系仅表示可核的同一事件或政治网络。",
+      "sources": [
+        "v55_jinshi",
+        "v55_songshi"
+      ]
+    },
+    {
+      "from": "s_liao_shengzong",
+      "to": "s_liao_xiaotalin",
+      "role": "在位时期的重要行动者",
+      "inverse": "所处时期的在位者",
+      "period": "宋辽夏金",
+      "note": "两人共同关联事件：萧挞凛参加辽宋战争。关系仅表示可核的同一事件或政治网络。",
+      "sources": [
+        "v55_liaoshi",
+        "v55_songshi",
+        "v43s_ss004",
+        "v43s_ss005"
+      ]
+    },
+    {
+      "from": "s_taizong",
+      "to": "s_liao_xiaotalin",
+      "role": "在位时期的重要行动者",
+      "inverse": "所处时期的在位者",
+      "period": "宋辽夏金",
+      "note": "两人共同关联事件：萧挞凛参加辽宋战争。关系仅表示可核的同一事件或政治网络。",
+      "sources": [
+        "v55_liaoshi",
+        "v55_songshi",
+        "v43s_ss004",
+        "v43s_ss005"
+      ]
+    },
+    {
+      "from": "s_zhenzong",
+      "to": "s_liao_xiaotalin",
+      "role": "在位时期的重要行动者",
+      "inverse": "所处时期的在位者",
+      "period": "宋辽夏金",
+      "note": "两人共同关联事件：萧挞凛死于澶州。关系仅表示可核的同一事件或政治网络。",
+      "sources": [
+        "v55_liaoshi",
+        "v55_songshi",
+        "v43s_ss006",
+        "v43s_ss007"
+      ]
+    },
+    {
+      "from": "s_shenzong",
+      "to": "s_xia_liangtaihou",
+      "role": "在位时期的重要行动者",
+      "inverse": "所处时期的在位者",
+      "period": "宋辽夏金",
+      "note": "两人共同关联事件：大梁太后应对五路伐夏。关系仅表示可核的同一事件或政治网络。",
+      "sources": [
+        "v56_xixia_14",
+        "v55_songshi",
+        "v55_xixia",
+        "v43s_ss014"
+      ]
+    },
+    {
+      "from": "s_shenzong",
+      "to": "s_xia_liangyimai",
+      "role": "在位时期的重要行动者",
+      "inverse": "所处时期的在位者",
+      "period": "宋辽夏金",
+      "note": "两人共同关联事件：大梁太后应对五路伐夏。关系仅表示可核的同一事件或政治网络。",
+      "sources": [
+        "v56_xixia_14",
+        "v55_songshi",
+        "v55_xixia",
+        "v43s_ss014"
+      ]
+    },
+    {
+      "from": "s_jin_taizu",
+      "to": "s_jin_wanyanxiyin",
+      "role": "在位时期的重要行动者",
+      "inverse": "所处时期的在位者",
+      "period": "宋辽夏金",
+      "note": "两人共同关联事件：完颜希尹参与灭辽战争。关系仅表示可核的同一事件或政治网络。",
+      "sources": [
+        "v56_jinshi_73",
+        "v55_jinshi",
+        "v55_songshi",
+        "v55_liaoshi"
+      ]
+    },
+    {
+      "from": "s_liao_tianzuo",
+      "to": "s_jin_wanyanxiyin",
+      "role": "在位时期的重要行动者",
+      "inverse": "所处时期的在位者",
+      "period": "宋辽夏金",
+      "note": "两人共同关联事件：完颜希尹参与灭辽战争。关系仅表示可核的同一事件或政治网络。",
+      "sources": [
+        "v56_jinshi_73",
+        "v55_jinshi",
+        "v55_songshi",
+        "v55_liaoshi"
+      ]
+    },
+    {
+      "from": "s_jin_aizong",
+      "to": "s_jin_wanyanhada",
+      "role": "在位时期的重要行动者",
+      "inverse": "所处时期的在位者",
+      "period": "宋辽夏金",
+      "note": "两人共同关联事件：三峰山之战。关系仅表示可核的同一事件或政治网络。",
+      "sources": [
+        "v56_jinshi_112",
+        "v55_jinshi",
+        "v55_songshi"
+      ]
+    },
+    {
+      "from": "s_jin_aizong",
+      "to": "s_jin_yilapua",
+      "role": "在位时期的重要行动者",
+      "inverse": "所处时期的在位者",
+      "period": "宋辽夏金",
+      "note": "两人共同关联事件：三峰山之战。关系仅表示可核的同一事件或政治网络。",
+      "sources": [
+        "v56_jinshi_112",
+        "v55_jinshi",
+        "v55_songshi"
+      ]
+    },
+    {
+      "from": "s_liao_daozong",
+      "to": "s_liao_xiaoguanyin",
+      "role": "在位时期的重要行动者",
+      "inverse": "所处时期的在位者",
+      "period": "宋辽夏金",
+      "note": "两人共同关联事件：萧观音宫廷诗歌。关系仅表示可核的同一事件或政治网络。",
+      "sources": [
+        "v55_liaoshi",
+        "v55_dpm",
+        "v55_songshi"
+      ]
+    },
+    {
+      "from": "s_jin_xizong",
+      "to": "s_jin_hanqixian",
+      "role": "在位时期的重要行动者",
+      "inverse": "所处时期的在位者",
+      "period": "宋辽夏金",
+      "note": "两人共同关联事件：金初礼制与官制整合。关系仅表示可核的同一事件或政治网络。",
+      "sources": [
+        "v55_jinshi",
+        "v55_songshi"
+      ]
+    },
+    {
+      "from": "s_xia_renzong",
+      "to": "s_xia_wodaochong",
+      "role": "在位时期的重要行动者",
+      "inverse": "所处时期的在位者",
+      "period": "宋辽夏金",
+      "note": "两人共同关联事件：斡道冲参与西夏文教。关系仅表示可核的同一事件或政治网络。",
+      "sources": [
+        "v55_xixia",
+        "v55_songshi"
+      ]
+    },
+    {
+      "from": "s_liao_shengzong",
+      "to": "s_liao_zhangjian",
+      "role": "在位时期的重要行动者",
+      "inverse": "所处时期的在位者",
+      "period": "宋辽夏金",
+      "note": "两人共同关联事件：辽朝汉官参与文书行政。关系仅表示可核的同一事件或政治网络。",
+      "sources": [
+        "v55_liaoshi",
+        "v55_songshi"
+      ]
+    },
+    {
+      "from": "s_jin_zhangzong",
+      "to": "s_jin_wanyanxiyin",
+      "role": "在位时期的重要行动者",
+      "inverse": "所处时期的在位者",
+      "period": "宋辽夏金",
+      "note": "两人共同关联事件：女真文教育与汉文科举并行。关系仅表示可核的同一事件或政治网络。",
+      "sources": [
+        "v55_jinshi",
+        "v55_songshi",
+        "v56_jinshi_73"
+      ]
+    },
+    {
+      "from": "s_jin_taizong",
+      "to": "s_jin_hanqixian",
+      "role": "在位时期的重要行动者",
+      "inverse": "所处时期的在位者",
+      "period": "宋辽夏金",
+      "note": "两人共同关联事件：金接收华北财赋体系。关系仅表示可核的同一事件或政治网络。",
+      "sources": [
+        "v55_jinshi",
+        "v55_songshi"
+      ]
+    },
+    {
+      "from": "s_liao_daozong",
+      "to": "s_liao_yeluyixin",
+      "role": "在位时期的重要行动者",
+      "inverse": "所处时期的在位者",
+      "period": "宋辽夏金",
+      "note": "两人共同关联事件：萧观音被诬案。关系仅表示可核的同一事件或政治网络。",
+      "sources": [
+        "v55_liaoshi",
+        "v55_dpm",
+        "v55_songshi"
+      ]
+    },
+    {
+      "from": "s_xia_yizong",
+      "to": "s_xia_mozangtaihou",
+      "role": "在位时期的重要行动者",
+      "inverse": "所处时期的在位者",
+      "period": "宋辽夏金",
+      "note": "两人共同关联事件：没藏氏外戚政治。关系仅表示可核的同一事件或政治网络。",
+      "sources": [
+        "v55_xixia",
         "v55_songshi"
       ]
     }
@@ -131038,12 +134460,14 @@
         "s_zhaopu",
         "s_caobin",
         "s_kouzhun",
-        "s_liao_shengzong"
+        "s_liao_shengzong",
+        "s_liao_xiaotalin"
       ],
       "events": [
         "v43s_beihan",
         "v43s_yongxi",
-        "v43s_shuchuan"
+        "v43s_shuchuan",
+        "v56_军事_01"
       ],
       "sources": [
         "v43s_ss004",
@@ -131068,13 +134492,16 @@
       "people": [
         "s_kouzhun",
         "s_wangqinruo",
-        "s_liao_shengzong"
+        "s_liao_shengzong",
+        "s_liao_xiaotalin",
+        "s_liao_xiaochuo"
       ],
       "events": [
         "v43s_chanyuan",
         "v43s_fengshan",
         "v43s_champa",
-        "v43s_liao_zhongjing"
+        "v43s_liao_zhongjing",
+        "v56_军事_02"
       ],
       "sources": [
         "v43s_ss006",
@@ -131101,14 +134528,18 @@
         "s_hanqi",
         "s_ouyangxiu",
         "s_simaguang",
-        "s_xia_jingzong"
+        "s_xia_jingzong",
+        "s_liao_liuliufu",
+        "s_liao_xingzong"
       ],
       "events": [
         "v43s_jiaozi",
         "v43s_songxia",
         "v43s_qingli",
         "v43s_qingli_schools",
-        "v43s_movable_type"
+        "v43s_movable_type",
+        "v56_政治_02",
+        "v56_经济_02"
       ],
       "sources": [
         "v43s_ss009",
@@ -131162,14 +134593,18 @@
         "s_simaguang",
         "s_sushi",
         "s_shenkuo",
-        "s_hanqi"
+        "s_hanqi",
+        "s_xia_liangtaihou",
+        "s_xia_liangyimai",
+        "s_xia_huizong"
       ],
       "events": [
         "v43s_newlaws",
         "v43s_xihe",
         "v43s_wutai",
         "v43s_tongjian_done",
-        "v43s_yongle"
+        "v43s_yongle",
+        "v56_军事_03"
       ],
       "sources": [
         "v43s_ss014",
@@ -135976,15 +139411,17 @@
       ],
       "people": [
         "s_liao_taizong",
-        "s_xia_weiminganquan",
-        "s_liao_shizong"
+        "s_xia_xiangzong",
+        "s_liao_shizong",
+        "s_liao_yelubei"
       ],
       "events": [
         "v55_p01",
         "v55_c01",
         "v55_s01",
         "v55_reign_s_liao_taizu_a",
-        "v55_reign_s_liao_taizu_b"
+        "v55_reign_s_liao_taizu_b",
+        "v56_文化_01"
       ],
       "sources": [
         "v55_liaoshi",
@@ -136004,14 +139441,17 @@
       "people": [
         "s_liao_taizu",
         "s_liao_shizong",
-        "s_liao_muzong"
+        "s_liao_muzong",
+        "s_liao_yelubei"
       ],
       "events": [
         "v55_p02",
         "v55_e01",
         "v55_reign_s_liao_taizong_a",
         "v55_reign_s_liao_taizong_b",
-        "v55_reign_s_liao_shizong_a"
+        "v55_reign_s_liao_shizong_a",
+        "v56_政治_01",
+        "v56_社会_01"
       ],
       "sources": [
         "v55_liaoshi",
@@ -136109,14 +139549,19 @@
         "s_liao_xiaochuo",
         "s_zhenzong",
         "s_taizong",
-        "s_liao_handerang"
+        "s_liao_handerang",
+        "s_liao_xiaotalin",
+        "s_liao_zhangjian"
       ],
       "events": [
         "v55_p03",
         "v55_m02",
         "v55_c02",
         "v55_e02",
-        "v55_s02"
+        "v55_s02",
+        "v56_军事_01",
+        "v56_军事_02",
+        "v56_文化_06"
       ],
       "sources": [
         "v55_liaoshi",
@@ -136136,12 +139581,16 @@
       "people": [
         "s_liao_shengzong",
         "s_liao_daozong",
-        "s_liao_taizu"
+        "s_liao_taizu",
+        "s_liao_liuliufu",
+        "s_renzong"
       ],
       "events": [
         "v55_reign_s_liao_xingzong_a",
         "v55_reign_s_liao_xingzong_b",
-        "v55_reign_s_liao_daozong_a"
+        "v55_reign_s_liao_daozong_a",
+        "v56_政治_02",
+        "v56_经济_02"
       ],
       "sources": [
         "v55_liaoshi",
@@ -136162,13 +139611,18 @@
         "s_liao_xiaofengxian",
         "s_liao_xingzong",
         "s_liao_tianzuo",
-        "s_liao_taizu"
+        "s_liao_taizu",
+        "s_liao_xiaoguanyin",
+        "s_liao_yeluyixin"
       ],
       "events": [
         "v55_e05",
         "v55_reign_s_liao_daozong_a",
         "v55_reign_s_liao_daozong_b",
-        "v55_reign_s_liao_tianzuo_a"
+        "v55_reign_s_liao_tianzuo_a",
+        "v56_文化_02",
+        "v56_社会_02",
+        "v56_社会_03"
       ],
       "sources": [
         "v55_liaoshi",
@@ -136189,13 +139643,15 @@
         "s_jin_taizong",
         "s_jin_taizu",
         "s_liao_daozong",
-        "s_liao_taizu"
+        "s_liao_taizu",
+        "s_jin_wanyanxiyin"
       ],
       "events": [
         "v55_p07",
         "v55_m05",
         "v55_reign_s_liao_tianzuo_a",
-        "v55_reign_s_liao_tianzuo_b"
+        "v55_reign_s_liao_tianzuo_b",
+        "v56_军事_05"
       ],
       "sources": [
         "v55_liaoshi",
@@ -136243,12 +139699,17 @@
       "people": [
         "s_xia_jingzong",
         "s_xia_huizong",
-        "s_liao_taizu"
+        "s_liao_taizu",
+        "s_xia_mozange",
+        "s_xia_liangtaihou",
+        "s_xia_mozangtaihou"
       ],
       "events": [
         "v55_reign_s_xia_yizong_a",
         "v55_reign_s_xia_yizong_b",
-        "v55_reign_s_xia_huizong_a"
+        "v55_reign_s_xia_huizong_a",
+        "v56_政治_03",
+        "v56_社会_04"
       ],
       "sources": [
         "v55_xixia",
@@ -136269,14 +139730,17 @@
         "s_shenzong",
         "s_xia_liangtaihou",
         "s_xia_yizong",
-        "s_xia_chongzong"
+        "s_xia_chongzong",
+        "s_xia_liangyimai"
       ],
       "events": [
         "v55_m04",
         "v55_s04",
         "v55_reign_s_xia_huizong_a",
         "v55_reign_s_xia_huizong_b",
-        "v55_reign_s_xia_chongzong_a"
+        "v55_reign_s_xia_chongzong_a",
+        "v56_政治_04",
+        "v56_军事_03"
       ],
       "sources": [
         "v55_xixia",
@@ -136296,13 +139760,16 @@
       "people": [
         "s_xia_huizong",
         "s_xia_renzong",
-        "s_liao_taizu"
+        "s_liao_taizu",
+        "s_xia_xiaoliangtaihou",
+        "s_xia_liangyibu"
       ],
       "events": [
         "v55_c04",
         "v55_reign_s_xia_chongzong_a",
         "v55_reign_s_xia_chongzong_b",
-        "v55_reign_s_xia_renzong_a"
+        "v55_reign_s_xia_renzong_a",
+        "v56_政治_05"
       ],
       "sources": [
         "v55_xixia",
@@ -136323,14 +139790,16 @@
         "s_xia_luoshichang",
         "s_xia_rendejing",
         "s_xia_chongzong",
-        "s_xia_huanzong"
+        "s_xia_huanzong",
+        "s_xia_wodaochong"
       ],
       "events": [
         "v55_c07",
         "v55_e09",
         "v55_s08",
         "v55_reign_s_xia_renzong_a",
-        "v55_reign_s_xia_renzong_b"
+        "v55_reign_s_xia_renzong_b",
+        "v56_文化_05"
       ],
       "sources": [
         "v55_xixia",
@@ -136475,14 +139944,18 @@
       "people": [
         "s_jin_taizong",
         "s_liao_taizu",
-        "s_liao_taizong"
+        "s_liao_taizong",
+        "s_jin_wanyanxiyin",
+        "s_liao_tianzuo"
       ],
       "events": [
         "v55_p06",
         "v55_e06",
         "v55_reign_s_jin_taizu_a",
         "v55_reign_s_jin_taizu_b",
-        "v55_reign_s_jin_taizong_a"
+        "v55_reign_s_jin_taizong_a",
+        "v56_军事_05",
+        "v56_文化_03"
       ],
       "sources": [
         "v55_jinshi",
@@ -136503,14 +139976,16 @@
         "s_liao_tianzuo",
         "s_jin_zongwang",
         "s_qinzong",
-        "s_gaozong"
+        "s_gaozong",
+        "s_jin_hanqixian"
       ],
       "events": [
         "v55_p07",
         "v55_m06",
         "v55_s05",
         "v55_reign_s_jin_taizong_a",
-        "v55_reign_s_jin_taizong_b"
+        "v55_reign_s_jin_taizong_b",
+        "v56_经济_05"
       ],
       "sources": [
         "v55_jinshi",
@@ -136530,12 +140005,19 @@
       "people": [
         "s_jin_taizong",
         "s_jin_hailing",
-        "s_liao_taizu"
+        "s_liao_taizu",
+        "s_jin_wanyanzonggan",
+        "s_jin_wanyanxiyin",
+        "s_jin_zonghan",
+        "s_jin_hanqixian"
       ],
       "events": [
         "v55_reign_s_jin_xizong_a",
         "v55_reign_s_jin_xizong_b",
-        "v55_reign_s_jin_hailing_a"
+        "v55_reign_s_jin_hailing_a",
+        "v56_政治_06",
+        "v56_文化_04",
+        "v56_社会_06"
       ],
       "sources": [
         "v55_jinshi",
@@ -136612,13 +140094,15 @@
         "s_jin_zhaobingwen",
         "s_jin_shizong",
         "s_jin_weishao",
-        "s_liao_taizu"
+        "s_liao_taizu",
+        "s_jin_wanyanxiyin"
       ],
       "events": [
         "v55_c08",
         "v55_reign_s_jin_zhangzong_a",
         "v55_reign_s_jin_zhangzong_b",
-        "v55_reign_s_jin_weishao_a"
+        "v55_reign_s_jin_weishao_a",
+        "v56_文化_07"
       ],
       "sources": [
         "v55_jinshi",
@@ -136665,14 +140149,17 @@
         "s_jin_tudanyi",
         "s_jin_weishao",
         "s_jin_aizong",
-        "s_liao_taizu"
+        "s_liao_taizu",
+        "s_jin_puxianwannu"
       ],
       "events": [
         "v55_p09",
         "v55_e10",
         "v55_s09",
         "v55_reign_s_jin_xuanzong_a",
-        "v55_reign_s_jin_xuanzong_b"
+        "v55_reign_s_jin_xuanzong_b",
+        "v56_政治_07",
+        "v56_经济_06"
       ],
       "sources": [
         "v55_jinshi",
@@ -136692,14 +140179,19 @@
       "people": [
         "s_jin_modi",
         "s_jin_xuanzong",
-        "s_liao_taizu"
+        "s_liao_taizu",
+        "s_jin_wanyanhada",
+        "s_jin_yilapua"
       ],
       "events": [
         "v55_p10",
         "v55_reign_s_jin_aizong_a",
         "v55_reign_s_jin_aizong_b",
         "v55_reign_s_jin_modi_a",
-        "v55_reign_s_jin_modi_b"
+        "v55_reign_s_jin_modi_b",
+        "v56_军事_06",
+        "v56_军事_07",
+        "v56_社会_07"
       ],
       "sources": [
         "v55_jinshi",
