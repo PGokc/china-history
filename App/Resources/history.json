@@ -1,5 +1,5 @@
 {
-  "version": 42,
+  "version": 43,
   "reviewed": "2026-10-15",
   "people": [
     {
@@ -20157,6 +20157,60 @@
       "title": "西安曲江新区管理委员会·大明宫遗址公园",
       "url": "https://qjxq.xa.gov.cn/zjqj/gyqj/tsqj/5df21c62fd8508098d284f14.html",
       "note": "地方政府公布的遗址保护介绍；用于核对宫城中轴和主要遗址。今天看到的是考古遗址与保护展示，不是完整唐代宫殿。"
+    },
+    {
+      "id": "v61_shaanxi_tombs",
+      "title": "陕西省文物局·汉唐帝陵保护与展示",
+      "url": "https://wwj.shaanxi.gov.cn/ztzl/ndzt/2013n/slsy/ycdt_2412/201507/t20150701_2145046.html",
+      "note": "省级文物主管部门资料；确认唐十八陵整体格局及昭陵、乾陵、桥陵、泰陵的开放与保护情况。该页不是逐陵考古报告，不能替代具体陵园的勘探结论。"
+    },
+    {
+      "id": "v61_zhaoling_conservation",
+      "title": "陕西省文物局·昭陵博物馆唐墓壁画保护修复批复",
+      "url": "https://wwj.shaanxi.gov.cn/zfxxgk/fdzdgknr/zcwj/qtgw/swwh/202401/t20240112_2313873.html",
+      "note": "省级文物主管部门公开文件；用于说明昭陵陪葬墓壁画仍处于持续保护修复中。"
+    },
+    {
+      "id": "v61_nopss_changan",
+      "title": "全国哲学社会科学工作办公室·唐朝都城长安社会流动管理特征",
+      "url": "https://www.nopss.gov.cn/n1/2019/1216/c219470-31507572.html",
+      "note": "国家社科机构成果介绍；用于核对里坊、东西市、金吾卫巡警与坊正等城市治理线索。具体坊数和制度仍应结合考古与唐代制度文献阅读。"
+    },
+    {
+      "id": "v61_nopss_county",
+      "title": "全国哲学社会科学工作办公室·唐代县级行政体制与政务运行机制研究",
+      "url": "https://www.nopss.gov.cn/n1/2024/0516/c373410-40237212.html",
+      "note": "国家社科基金成果介绍；用于呈现县司程序、里正和地方社会力量，避免把基层治理简化为县令个人行为。"
+    },
+    {
+      "id": "v61_nopss_clerks",
+      "title": "全国哲学社会科学工作办公室·唐代胥吏与地方治理",
+      "url": "https://www.nopss.gov.cn/GB/219567/219576/16610886.html",
+      "note": "国家社科机构研究文章；用于区分有品官员与承办公文、技术事务和杂役的胥吏群体。"
+    },
+    {
+      "id": "v61_nopss_markets",
+      "title": "全国哲学社会科学工作办公室·唐代区域市场的形成",
+      "url": "https://www.nopss.gov.cn/n1/2022/0509/c219544-32417380.html",
+      "note": "国家社科机构研究文章；用于核对驿传法规、区域市场与交通节点。"
+    },
+    {
+      "id": "v61_nlc_dunhuang_admin",
+      "title": "国家古籍保护中心·国图藏唐天宝年间敦煌县印历研究",
+      "url": "https://www.nlc.cn/pcab/zx/xw/20241118_2642018.shtml",
+      "note": "国家图书馆系统发布的研究摘要；说明敦煌残片可见县级用印和政务运行，也提醒残片性质限制完整复原。"
+    },
+    {
+      "id": "v61_nlc_sogdian",
+      "title": "国家图书馆·粟特文文献专题",
+      "url": "https://memory.nlc.cn/topic/resource/97",
+      "note": "国家图书馆专题；说明敦煌、吐鲁番所见粟特文宗教经典与买卖契约等世俗材料。"
+    },
+    {
+      "id": "v61_nmc_silkroad",
+      "title": "中国国家博物馆·丝绸之路展览",
+      "url": "https://www.chnmuseum.cn/zl/zlhg/201812/t20181220_32385.shtml",
+      "note": "国家博物馆展览资料；用于呈现来华使者、僧人、商人、学生及墓葬俑像。展览叙事是综合概述，具体身份仍需墓志和出土语境支持。"
     }
   ],
   "relations": [
@@ -53966,6 +54020,593 @@
         "t_yizong": "在位皇帝",
         "t_liugongquan": "相关人物"
       }
+    },
+    {
+      "id": "v61t_p01",
+      "year": "7世纪",
+      "sortYear": 650,
+      "title": "唐律令格式进入县级程序",
+      "body": "中央制度通过州县公文、用印和差遣落到地方，但实际运行依赖县佐、胥吏与里正。",
+      "impact": "制度统一不代表各地执行完全一致；残存文书更常保存某次具体办理。",
+      "people": [
+        "t_taizong",
+        "t_fangxuanling",
+        "t_duyou"
+      ],
+      "sources": [
+        "v61_nopss_county",
+        "v61_nopss_clerks"
+      ],
+      "kind": "制度与生活",
+      "category": "政治",
+      "peopleRoles": {
+        "t_taizong": "在位皇帝",
+        "t_fangxuanling": "相关人物",
+        "t_duyou": "相关人物"
+      }
+    },
+    {
+      "id": "v61t_p02",
+      "year": "8世纪",
+      "sortYear": 750,
+      "title": "敦煌县印历记录用印流程",
+      "body": "天宝年间残片保存县司用印痕迹，使地方行政从抽象官制转化为可观察的工作程序。",
+      "impact": "残片只能复原部分环节，不能据此重建整个县衙日常。",
+      "people": [
+        "t_xuanzong",
+        "t_yanzhenqing",
+        "t_duyou"
+      ],
+      "sources": [
+        "v61_nlc_dunhuang_admin"
+      ],
+      "kind": "制度与生活",
+      "category": "政治",
+      "peopleRoles": {
+        "t_xuanzong": "在位皇帝",
+        "t_yanzhenqing": "相关人物",
+        "t_duyou": "相关人物"
+      }
+    },
+    {
+      "id": "v61t_p03",
+      "year": "8—9世纪",
+      "sortYear": 820,
+      "title": "胥吏维持地方行政连续",
+      "body": "无品胥吏承办公文、技术事务和杂役，在官员轮换间维持案牍与程序。",
+      "impact": "熟悉程序既能提高效率，也可能形成舞弊空间，不能一概美化或污名化。",
+      "people": [
+        "t_dezong",
+        "t_xianzong",
+        "t_duyou"
+      ],
+      "sources": [
+        "v61_nopss_clerks"
+      ],
+      "kind": "制度与生活",
+      "category": "政治",
+      "peopleRoles": {
+        "t_dezong": "在位皇帝",
+        "t_xianzong": "在位皇帝",
+        "t_duyou": "相关人物"
+      }
+    },
+    {
+      "id": "v61t_p04",
+      "year": "唐代",
+      "sortYear": 750,
+      "title": "里正连接县司与乡里",
+      "body": "里正承担户籍、赋役和传达等基层事务，经常往来县司但并非固定坐衙官员。",
+      "impact": "里正职责与实际权力随地区和时期变化，不能视为现代意义的基层公务员。",
+      "people": [
+        "t_taizong",
+        "t_dezong",
+        "t_duyou"
+      ],
+      "sources": [
+        "v61_nopss_county"
+      ],
+      "kind": "制度与生活",
+      "category": "政治",
+      "peopleRoles": {
+        "t_taizong": "在位皇帝",
+        "t_dezong": "在位皇帝",
+        "t_duyou": "相关人物"
+      }
+    },
+    {
+      "id": "v61t_p05",
+      "year": "唐代",
+      "sortYear": 750,
+      "title": "墓志参与家族政治记忆",
+      "body": "官员、宗室与女性的墓志整理谱系和官职，既补正史之缺，也塑造有利于家族的身后形象。",
+      "impact": "铭文中的赞誉和谱系主张需要外证，出土材料也不是天然无偏见。",
+      "people": [
+        "t_shangguan_waner",
+        "t_yanzhenqing",
+        "t_liugongquan"
+      ],
+      "sources": [
+        "v61_zhaoling_conservation",
+        "v61_nlc_dunhuang_admin"
+      ],
+      "kind": "制度与生活",
+      "category": "政治",
+      "peopleRoles": {
+        "t_shangguan_waner": "相关人物",
+        "t_yanzhenqing": "相关人物",
+        "t_liugongquan": "相关人物"
+      }
+    },
+    {
+      "id": "v61t_m01",
+      "year": "7世纪",
+      "sortYear": 650,
+      "title": "昭陵陪葬体系纪念开国军功",
+      "body": "功臣与将领陪葬墓把军事功绩纳入皇陵礼制，并以墓志、俑像和壁画保存个体经历。",
+      "impact": "陪葬等级是朝廷与家族的政治表达，不能直接等同真实战功排序。",
+      "people": [
+        "t_taizong",
+        "t_guoziyi",
+        "t_yanliben"
+      ],
+      "sources": [
+        "v61_zhaoling_conservation",
+        "v61_shaanxi_tombs"
+      ],
+      "kind": "制度与生活",
+      "category": "军事",
+      "peopleRoles": {
+        "t_taizong": "在位皇帝",
+        "t_guoziyi": "相关人物",
+        "t_yanliben": "相关人物"
+      }
+    },
+    {
+      "id": "v61t_m02",
+      "year": "唐代",
+      "sortYear": 750,
+      "title": "金吾卫巡警长安六街",
+      "body": "金吾卫及街使负责昼夜巡警、宵禁与重大治安事件，武候铺承担现场抓捕。",
+      "impact": "都城治安组织不等同边防军队，文献中的严厉惩处也不代表日常全靠暴力。",
+      "people": [
+        "t_xuanzong",
+        "t_daizong",
+        "t_dezong"
+      ],
+      "sources": [
+        "v61_nopss_changan"
+      ],
+      "kind": "制度与生活",
+      "category": "军事",
+      "peopleRoles": {
+        "t_xuanzong": "在位皇帝",
+        "t_daizong": "在位皇帝",
+        "t_dezong": "在位皇帝"
+      }
+    },
+    {
+      "id": "v61t_m03",
+      "year": "8世纪",
+      "sortYear": 750,
+      "title": "驿传支撑军情与使者往来",
+      "body": "安史之乱前后，跨区域文书、征调和使者依赖驿路、马匹与地方供应。",
+      "impact": "制度速度受道路、战争和供给影响，不能用固定日行里数概括全部线路。",
+      "people": [
+        "t_xuanzong",
+        "t_suzong",
+        "t_guoziyi"
+      ],
+      "sources": [
+        "v61_nopss_markets"
+      ],
+      "kind": "制度与生活",
+      "category": "军事",
+      "peopleRoles": {
+        "t_xuanzong": "在位皇帝",
+        "t_suzong": "在位皇帝",
+        "t_guoziyi": "相关人物"
+      }
+    },
+    {
+      "id": "v61t_m04",
+      "year": "8—9世纪",
+      "sortYear": 820,
+      "title": "边地文书记录守戍与供给",
+      "body": "敦煌、吐鲁番文书保留军镇、馆驿与物资核算片段，让普通守卒和书吏进入叙事。",
+      "impact": "残纸常缺首尾，军职、人名和年代必须谨慎缀合。",
+      "people": [
+        "t_xuanzong",
+        "t_dezong",
+        "t_yanzhenqing"
+      ],
+      "sources": [
+        "v60_nlc_dunhuang",
+        "v61_nlc_dunhuang_admin"
+      ],
+      "kind": "制度与生活",
+      "category": "军事",
+      "peopleRoles": {
+        "t_xuanzong": "在位皇帝",
+        "t_dezong": "在位皇帝",
+        "t_yanzhenqing": "相关人物"
+      }
+    },
+    {
+      "id": "v61t_m05",
+      "year": "晚唐",
+      "sortYear": 880,
+      "title": "地方交通与军事控制交叠",
+      "body": "藩镇、州县和朝廷都依赖道路、驿站与城门；交通节点既运送军情，也成为资源竞争对象。",
+      "impact": "交通设施的重要性不意味着中央始终能有效控制它们。",
+      "people": [
+        "t_dezong",
+        "t_xizong",
+        "t_zhuwen"
+      ],
+      "sources": [
+        "v61_nopss_markets",
+        "v61_nopss_county"
+      ],
+      "kind": "制度与生活",
+      "category": "军事",
+      "peopleRoles": {
+        "t_dezong": "在位皇帝",
+        "t_xizong": "在位皇帝",
+        "t_zhuwen": "相关人物"
+      }
+    },
+    {
+      "id": "v61t_c01",
+      "year": "唐代",
+      "sortYear": 750,
+      "title": "墓志扩展人物史料",
+      "body": "墓志让许多未进入正史的女性、低阶官员和迁徙者留下姓名与亲属关系。",
+      "impact": "可见度仍受财富与葬礼等级影响，沉默者远多于留名者。",
+      "people": [
+        "t_shangguan_waner",
+        "t_changsun_empress",
+        "t_yanzhenqing"
+      ],
+      "sources": [
+        "v61_zhaoling_conservation"
+      ],
+      "kind": "制度与生活",
+      "category": "文化",
+      "peopleRoles": {
+        "t_shangguan_waner": "相关人物",
+        "t_changsun_empress": "相关人物",
+        "t_yanzhenqing": "相关人物"
+      }
+    },
+    {
+      "id": "v61t_c02",
+      "year": "7—9世纪",
+      "sortYear": 780,
+      "title": "多语文书并存于丝路节点",
+      "body": "汉文、粟特文等文本服务宗教、交易和行政，显示语言选择与身份、用途相互关联。",
+      "impact": "一种文字不能自动等同单一族群或政治归属。",
+      "people": [
+        "t_gaozong",
+        "t_xuanzong",
+        "t_anlushan"
+      ],
+      "sources": [
+        "v61_nlc_sogdian",
+        "v61_nmc_silkroad"
+      ],
+      "kind": "制度与生活",
+      "category": "文化",
+      "peopleRoles": {
+        "t_gaozong": "在位皇帝",
+        "t_xuanzong": "在位皇帝",
+        "t_anlushan": "相关人物"
+      }
+    },
+    {
+      "id": "v61t_c03",
+      "year": "盛唐",
+      "sortYear": 740,
+      "title": "外来形象进入墓葬艺术",
+      "body": "胡人俑、牵驼俑与异域纹样成为唐墓视觉世界的一部分。",
+      "impact": "艺术类型会夸张特征，不能据俑像外貌判定具体个人族属。",
+      "people": [
+        "t_xuanzong",
+        "t_yanliben",
+        "t_anlushan"
+      ],
+      "sources": [
+        "v61_nmc_silkroad"
+      ],
+      "kind": "制度与生活",
+      "category": "文化",
+      "peopleRoles": {
+        "t_xuanzong": "在位皇帝",
+        "t_yanliben": "相关人物",
+        "t_anlushan": "相关人物"
+      }
+    },
+    {
+      "id": "v61t_c04",
+      "year": "唐代",
+      "sortYear": 750,
+      "title": "陵园石刻塑造帝王记忆",
+      "body": "神道石刻、碑刻与陵区布局持续表达王朝秩序，后世修护又改变观看方式。",
+      "impact": "现存状态叠加了损毁、搬移和修复，不能直接当作初建原貌。",
+      "people": [
+        "t_taizong",
+        "t_gaozong",
+        "t_xuanzong"
+      ],
+      "sources": [
+        "v61_shaanxi_tombs"
+      ],
+      "kind": "制度与生活",
+      "category": "文化",
+      "peopleRoles": {
+        "t_taizong": "在位皇帝",
+        "t_gaozong": "在位皇帝",
+        "t_xuanzong": "在位皇帝"
+      }
+    },
+    {
+      "id": "v61t_c05",
+      "year": "近现代",
+      "sortYear": 1950,
+      "title": "唐陵调查转向遗址整体保护",
+      "body": "文物部门把主陵、陪葬墓、石刻和环境作为大遗址系统保护，并推进壁画修复。",
+      "impact": "开放旅游与考古研究目标不同，未开放区域不代表没有价值。",
+      "people": [
+        "t_taizong",
+        "t_gaozong",
+        "t_ruizong"
+      ],
+      "sources": [
+        "v61_shaanxi_tombs",
+        "v61_zhaoling_conservation"
+      ],
+      "kind": "制度与生活",
+      "category": "文化",
+      "peopleRoles": {
+        "t_taizong": "在位皇帝",
+        "t_gaozong": "在位皇帝",
+        "t_ruizong": "在位皇帝"
+      }
+    },
+    {
+      "id": "v61t_e01",
+      "year": "唐代",
+      "sortYear": 750,
+      "title": "东西市接受市署管理",
+      "body": "长安市场有交易管理与治安配置，商人、工匠和顾客在制度空间中活动。",
+      "impact": "市场规则不等于每笔交易都被完整记录，城市商业也不只发生在两市。",
+      "people": [
+        "t_gaozu",
+        "t_xuanzong",
+        "t_baijuyi"
+      ],
+      "sources": [
+        "v61_nopss_changan"
+      ],
+      "kind": "制度与生活",
+      "category": "经济",
+      "peopleRoles": {
+        "t_gaozu": "在位皇帝",
+        "t_xuanzong": "在位皇帝",
+        "t_baijuyi": "相关人物"
+      }
+    },
+    {
+      "id": "v61t_e02",
+      "year": "8—9世纪",
+      "sortYear": 820,
+      "title": "区域市场沿交通节点发展",
+      "body": "长安、洛阳、扬州、广州及交通要冲连接商品流通，私驿和服务业也参与其中。",
+      "impact": "区域网络并非现代统一市场，运输成本和地方壁垒仍然显著。",
+      "people": [
+        "t_xuanzong",
+        "t_dezong",
+        "t_duyou"
+      ],
+      "sources": [
+        "v61_nopss_markets"
+      ],
+      "kind": "制度与生活",
+      "category": "经济",
+      "peopleRoles": {
+        "t_xuanzong": "在位皇帝",
+        "t_dezong": "在位皇帝",
+        "t_duyou": "相关人物"
+      }
+    },
+    {
+      "id": "v61t_e03",
+      "year": "唐代",
+      "sortYear": 750,
+      "title": "契约固定交易责任",
+      "body": "吐鲁番等地契约写明价款、见证与违约责任，使私人交易留下可核文本。",
+      "impact": "单份契约价格受物品、时间和地点影响，不能直接代表全国物价。",
+      "people": [
+        "t_gaozong",
+        "t_wuzetian",
+        "t_xuanzong"
+      ],
+      "sources": [
+        "v61_nlc_sogdian"
+      ],
+      "kind": "制度与生活",
+      "category": "经济",
+      "peopleRoles": {
+        "t_gaozong": "在位皇帝",
+        "t_wuzetian": "在位皇帝",
+        "t_xuanzong": "在位皇帝"
+      }
+    },
+    {
+      "id": "v61t_e04",
+      "year": "唐代",
+      "sortYear": 750,
+      "title": "驿站供给转化为地方负担",
+      "body": "官方交通需要马匹、粮食、住宿与维护，便利政令同时产生征发和核算压力。",
+      "impact": "不同驿站等级、线路和时段负担不同，不宜作单一数字估算。",
+      "people": [
+        "t_taizong",
+        "t_dezong",
+        "t_duyou"
+      ],
+      "sources": [
+        "v61_nopss_markets"
+      ],
+      "kind": "制度与生活",
+      "category": "经济",
+      "peopleRoles": {
+        "t_taizong": "在位皇帝",
+        "t_dezong": "在位皇帝",
+        "t_duyou": "相关人物"
+      }
+    },
+    {
+      "id": "v61t_e05",
+      "year": "中晚唐",
+      "sortYear": 820,
+      "title": "城市服务业随人口流动扩展",
+      "body": "旅舍、饮食、运输与手工业服务流动人口，城市经济功能逐渐增强。",
+      "impact": "笔记小说的繁华场景需要筛选，不能替代人口与税收证据。",
+      "people": [
+        "t_daizong",
+        "t_dezong",
+        "t_baijuyi"
+      ],
+      "sources": [
+        "v61_nopss_markets",
+        "v61_nopss_changan"
+      ],
+      "kind": "制度与生活",
+      "category": "经济",
+      "peopleRoles": {
+        "t_daizong": "在位皇帝",
+        "t_dezong": "在位皇帝",
+        "t_baijuyi": "相关人物"
+      }
+    },
+    {
+      "id": "v61t_s01",
+      "year": "唐代",
+      "sortYear": 750,
+      "title": "坊门晨启暮闭组织城市节律",
+      "body": "鼓声、坊门和巡警共同规范夜间出行，坊正还调解部分轻微纠纷。",
+      "impact": "宵禁执行会随时期和地点变化，不能想象所有居民每天经历相同管制。",
+      "people": [
+        "t_gaozu",
+        "t_xuanzong",
+        "t_daizong"
+      ],
+      "sources": [
+        "v61_nopss_changan"
+      ],
+      "kind": "制度与生活",
+      "category": "社会",
+      "peopleRoles": {
+        "t_gaozu": "在位皇帝",
+        "t_xuanzong": "在位皇帝",
+        "t_daizong": "在位皇帝"
+      }
+    },
+    {
+      "id": "v61t_s02",
+      "year": "唐代",
+      "sortYear": 750,
+      "title": "流动人口改变长安治理",
+      "body": "使者、商人、学生、僧侣与求职者汇聚都城，带来住宿、治安和身份查验问题。",
+      "impact": "文献往往更关注精英或治安事件，普通流动者的经验仍不完整。",
+      "people": [
+        "t_xuanzong",
+        "t_dufu",
+        "t_xuanzang"
+      ],
+      "sources": [
+        "v61_nopss_changan",
+        "v61_nmc_silkroad"
+      ],
+      "kind": "制度与生活",
+      "category": "社会",
+      "peopleRoles": {
+        "t_xuanzong": "在位皇帝",
+        "t_dufu": "相关人物",
+        "t_xuanzang": "相关人物"
+      }
+    },
+    {
+      "id": "v61t_s03",
+      "year": "唐代",
+      "sortYear": 750,
+      "title": "来华人群进入多种职业",
+      "body": "外来者参与贸易、宗教、军政、表演和服务，不能只用“商人”或“胡人”概括。",
+      "impact": "族群称谓来自不同文本语境，个体身份可能跨越语言、籍贯与政治归属。",
+      "people": [
+        "t_gaozong",
+        "t_xuanzong",
+        "t_anlushan"
+      ],
+      "sources": [
+        "v61_nmc_silkroad",
+        "v61_nlc_sogdian"
+      ],
+      "kind": "制度与生活",
+      "category": "社会",
+      "peopleRoles": {
+        "t_gaozong": "在位皇帝",
+        "t_xuanzong": "在位皇帝",
+        "t_anlushan": "相关人物"
+      }
+    },
+    {
+      "id": "v61t_s04",
+      "year": "唐代",
+      "sortYear": 750,
+      "title": "案牍劳动连接官府与百姓",
+      "body": "胥吏抄写、登记和传递文书，普通人接触国家常首先经过这些程序人员。",
+      "impact": "史书中的胥吏多在弊案中出现，不能据此推定整个群体只从事舞弊。",
+      "people": [
+        "t_taizong",
+        "t_dezong",
+        "t_duyou"
+      ],
+      "sources": [
+        "v61_nopss_clerks",
+        "v61_nopss_county"
+      ],
+      "kind": "制度与生活",
+      "category": "社会",
+      "peopleRoles": {
+        "t_taizong": "在位皇帝",
+        "t_dezong": "在位皇帝",
+        "t_duyou": "相关人物"
+      }
+    },
+    {
+      "id": "v61t_s05",
+      "year": "唐代",
+      "sortYear": 750,
+      "title": "墓葬材料呈现家庭与迁徙",
+      "body": "墓志、俑像和随葬物能够追踪婚姻、亲属、迁居与丧葬选择，补充政治史视角。",
+      "impact": "墓葬属于被选择的身后表达，贫困者和无墓志者的生活更难被看见。",
+      "people": [
+        "t_changsun_empress",
+        "t_shangguan_waner",
+        "t_yang_guifei"
+      ],
+      "sources": [
+        "v61_zhaoling_conservation",
+        "v61_nmc_silkroad"
+      ],
+      "kind": "制度与生活",
+      "category": "社会",
+      "peopleRoles": {
+        "t_changsun_empress": "相关人物",
+        "t_shangguan_waner": "相关人物",
+        "t_yang_guifei": "相关人物"
+      }
     }
   ],
   "objects": [
@@ -57737,6 +58378,245 @@
       "dynasties": [
         "tang"
       ]
+    },
+    {
+      "id": "v61_obj_eighteen_tombs",
+      "title": "唐十八陵",
+      "subtitle": "关中北山的王朝礼制地景",
+      "symbol": "building.columns",
+      "body": "唐代十八座主要帝陵分布于关中北部山塬。它们不是排列整齐的一处墓园，而是跨越多个县域、营建近三百年的遗址群。不同陵墓采用积土成冢或因山为陵，陪葬墓、神道、石刻和建筑基址共同构成礼制空间。把十八陵作为整体阅读，能看见开国、盛世、中晚唐在资源与仪式上的变化。",
+      "note": "“十八陵”是关中唐帝陵的传统总称，不包含所有追尊祖陵，也不能据地表残存直接比较原始规模。",
+      "people": [
+        "t_gaozu",
+        "t_taizong",
+        "t_gaozong",
+        "t_xuanzong"
+      ],
+      "sources": [
+        "v61_shaanxi_tombs"
+      ],
+      "dynasties": [
+        "tang"
+      ]
+    },
+    {
+      "id": "v61_obj_zhaoling_necrop",
+      "title": "昭陵陪葬墓群",
+      "subtitle": "功臣、宗室与跨族群人生",
+      "symbol": "building.columns",
+      "body": "昭陵周围分布众多陪葬墓。墓志记录姓名、籍贯、婚姻和仕宦，壁画、俑像与器物呈现仪仗、出行、服饰和生活空间。它们让初唐历史不再只有皇帝诏令，也可追踪女性、将领、入唐外族和工匠留下的痕迹。材料仍受墓主等级和葬礼表达限制，不能代表所有社会群体。",
+      "note": "陪葬制度表现政治关系；墓志是丧葬文本，赞美用语不能无条件当作生平实录。",
+      "people": [
+        "t_taizong",
+        "t_changsun_empress",
+        "t_guoziyi"
+      ],
+      "sources": [
+        "v61_zhaoling_conservation",
+        "v61_shaanxi_tombs"
+      ],
+      "dynasties": [
+        "tang"
+      ]
+    },
+    {
+      "id": "v61_obj_qianling_landscape",
+      "title": "乾陵陵园与陪葬墓",
+      "subtitle": "双帝合葬、石刻与墓志",
+      "symbol": "building.columns",
+      "body": "乾陵主墓合葬高宗与武则天，周边陪葬墓出土壁画、墓志和随葬器。陵园空间既表达皇权，也保存上官婉儿等人物所处时代的制度线索。无字碑、六十一蕃臣像等遗存长期引发解释，但图像缺损、题名失传与后世改刻都会限制确定结论。",
+      "note": "主墓没有主动发掘；所谓地宫内部景象、藏宝数量和无字碑唯一含义均无充分证据。",
+      "people": [
+        "t_gaozong",
+        "t_wuzetian",
+        "t_shangguan_waner"
+      ],
+      "sources": [
+        "v43t_qianling_site",
+        "v61_shaanxi_tombs"
+      ],
+      "dynasties": [
+        "tang"
+      ]
+    },
+    {
+      "id": "v61_obj_ward_system",
+      "title": "长安里坊与坊门",
+      "subtitle": "居住空间、夜禁与基层调解",
+      "symbol": "building.columns",
+      "body": "唐长安以街道、里坊和市场组织城市空间。坊门按时启闭，坊正掌管钥匙并处理部分轻微纠纷，金吾卫与街使承担巡警。制度条文展现治理理想，实际执行会随时期、地段和人口流动改变；贵族宅第、寺院、旅舍与普通居民也处于不同生活条件中。",
+      "note": "坊数、边界和开放程度随时期变化；“整齐封闭”不能概括整个唐代城市日常。",
+      "people": [
+        "t_gaozu",
+        "t_xuanzong",
+        "t_daizong"
+      ],
+      "sources": [
+        "v61_nopss_changan",
+        "v60_daming"
+      ],
+      "dynasties": [
+        "tang"
+      ]
+    },
+    {
+      "id": "v61_obj_east_west_markets",
+      "title": "长安东市与西市",
+      "subtitle": "交易、治安与外来人口",
+      "symbol": "building.columns",
+      "body": "东、西市由市署管理交易，周边聚集店铺、手工业和往来人口。西市与丝路交流联系密切，但不能把所有外来商人都固定在一个市场，也不能把繁华描写当作人口统计。市场规则、治安机构和商品遗存共同显示国家管理与民间经营的交错。",
+      "note": "文学中的胡姬、珠宝与酒肆提供城市想象，具体行业分布需以考古和制度材料核对。",
+      "people": [
+        "t_xuanzong",
+        "t_dufu",
+        "t_baijuyi"
+      ],
+      "sources": [
+        "v61_nopss_changan",
+        "v61_nmc_silkroad"
+      ],
+      "dynasties": [
+        "tang"
+      ]
+    },
+    {
+      "id": "v61_obj_dunhuang_seal_calendar",
+      "title": "敦煌县印历残片",
+      "subtitle": "县级用印与日常政务",
+      "symbol": "doc.text",
+      "body": "国家图书馆藏天宝年间敦煌县印历残片记录县级文书用印。它没有宏大叙事，却让人看到一份公文如何流转、哪些事务需要盖印，以及书吏怎样维持行政程序。残片不完整，研究者需要缀合、释读并与同类文书比较，结论会随新材料调整。",
+      "note": "“印历”是行政记录，不是完整县志；残片能证明程序存在，却不能复原全部县政。",
+      "people": [
+        "t_xuanzong",
+        "t_duyou",
+        "t_yanzhenqing"
+      ],
+      "sources": [
+        "v61_nlc_dunhuang_admin",
+        "v60_nlc_dunhuang"
+      ],
+      "dynasties": [
+        "tang"
+      ]
+    },
+    {
+      "id": "v61_obj_turfan_contracts",
+      "title": "吐鲁番买卖契约",
+      "subtitle": "价格、担保与多语社会",
+      "symbol": "doc.text",
+      "body": "吐鲁番出土契约保存田地、牲畜、借贷和交易线索，常包含当事人、见证人、价款与责任条款。它们让普通人的经济选择进入历史，也显示边地居民使用汉文及其他文字处理现实事务。契约反映具体个案，不能直接换算整个帝国的平均价格和生活水平。",
+      "note": "出土地、年代、文书真伪与释读必须逐件核对；不同契约不能拼成一个虚构家庭。",
+      "people": [
+        "t_gaozong",
+        "t_wuzetian",
+        "t_xuanzong"
+      ],
+      "sources": [
+        "v61_nlc_sogdian",
+        "v60_nlc_dunhuang"
+      ],
+      "dynasties": [
+        "tang"
+      ]
+    },
+    {
+      "id": "v61_obj_sogdian_docs",
+      "title": "粟特文世俗文书",
+      "subtitle": "商贸网络与语言证据",
+      "symbol": "doc.text",
+      "body": "敦煌、吐鲁番等地保存粟特文宗教和世俗文书，其中买卖契约等材料说明粟特语使用者并非只存在于艺术中的“胡人”形象。他们参与贸易、迁徙、宗教与地方生活。语言、籍贯和族群身份并非完全重合，不能仅凭服饰或姓名把每个人固定归类。",
+      "note": "文书年代跨越多个政权；本页只取与唐代交流相关的部分，不把所有粟特文献都标成唐朝档案。",
+      "people": [
+        "t_gaozong",
+        "t_xuanzong",
+        "t_anlushan"
+      ],
+      "sources": [
+        "v61_nlc_sogdian",
+        "v61_nmc_silkroad"
+      ],
+      "dynasties": [
+        "tang"
+      ]
+    },
+    {
+      "id": "v61_obj_postal_docs",
+      "title": "驿传与馆驿文书",
+      "subtitle": "公使、交通与资源负担",
+      "symbol": "doc.text",
+      "body": "驿站为官方文书、使者和军政交通提供马匹、食宿与换乘。法律条文规定使用资格和责任，出土文书则保留具体供给与核算。驿传提高跨区域联系，也会把征发、养马和供应压力转移到地方，不能只用“交通便利”概括。",
+      "note": "官方驿传、民间旅店和外商经营的私驿性质不同，页面不将它们合并成同一制度。",
+      "people": [
+        "t_taizong",
+        "t_dezong",
+        "t_duyou"
+      ],
+      "sources": [
+        "v61_nopss_markets",
+        "v60_nlc_dunhuang"
+      ],
+      "dynasties": [
+        "tang"
+      ]
+    },
+    {
+      "id": "v61_obj_epitaph_method",
+      "title": "唐代墓志",
+      "subtitle": "生平记录与丧葬修辞",
+      "symbol": "rectangle.and.text.magnifyingglass",
+      "body": "墓志常记录墓主名讳、家世、婚姻、官职、卒葬时间，是补充正史的重要材料。它也服务于家族记忆和礼仪，可能省略失败、放大德行或重构谱系。把墓志与正史、诏令、地券和考古位置对读，才能区分可核事实与赞颂表达。",
+      "note": "出土不等于全部真实，录文、断句、异体字和墓志撰写目的都会影响解释。",
+      "people": [
+        "t_shangguan_waner",
+        "t_yanzhenqing",
+        "t_liugongquan"
+      ],
+      "sources": [
+        "v61_zhaoling_conservation",
+        "v61_nlc_dunhuang_admin"
+      ],
+      "dynasties": [
+        "tang"
+      ]
+    },
+    {
+      "id": "v61_obj_foreigner_figures",
+      "title": "唐墓胡人俑",
+      "subtitle": "形象、职业与身份边界",
+      "symbol": "shippingbox",
+      "body": "唐墓所见胡人俑常表现深目、高鼻、胡服或牵驼等形象，说明异域风格进入丧葬艺术。俑像既可能指向真实来华人群，也可能是工匠使用的类型化图像。它能讨论交通、审美和身份想象，却不能替墓主或具体俑像自动确定族属、姓名和职业。",
+      "note": "外貌特征是艺术表达的一部分；族群认定需结合墓志、出土组合和历史语境。",
+      "people": [
+        "t_xuanzong",
+        "t_anlushan",
+        "t_yanliben"
+      ],
+      "sources": [
+        "v61_nmc_silkroad"
+      ],
+      "dynasties": [
+        "tang"
+      ]
+    },
+    {
+      "id": "v61_obj_county_desk",
+      "title": "县司案牍与胥吏",
+      "subtitle": "官民之间的程序劳动",
+      "symbol": "doc.text",
+      "body": "县令和县佐之外，大量胥吏负责抄写、登记、计算、传递和具体杂务。他们没有高品官员的政治地位，却熟悉程序，是官府与百姓接触的重要环节。胥吏可能保证行政连续，也可能利用信息和手续牟利；评价地方治理不能只看知名官员。",
+      "note": "胥吏类别、称谓和职责随地区、时期变化，研究多依制度文献与出土案牍互证。",
+      "people": [
+        "t_taizong",
+        "t_dezong",
+        "t_duyou"
+      ],
+      "sources": [
+        "v61_nopss_clerks",
+        "v61_nopss_county"
+      ],
+      "dynasties": [
+        "tang"
+      ]
     }
   ],
   "sequence": [
@@ -61206,6 +62086,147 @@
         "v53ns_chenshu",
         "v53ns_njm",
         "v53ns_kaogu"
+      ]
+    },
+    {
+      "id": "v61_tomb_xianling",
+      "person": "t_gaozu",
+      "title": "献陵",
+      "area": "陕西 · 唐十八陵",
+      "location": "陕西三原县徐木塬一带",
+      "status": "唐高祖李渊陵号为献陵。",
+      "body": "献陵采用封土为陵，是唐代开国阶段帝陵制度的重要遗存。现存地表遗迹、石刻与文献记录需要结合保护调查阅读，页面不据传说描述未发掘地宫。",
+      "note": "陵号与墓主有文献依据；地下结构和随葬情况未获完整考古证实时不作推断。",
+      "sources": [
+        "v61_shaanxi_tombs",
+        "v43t_jts1"
+      ]
+    },
+    {
+      "id": "v61_tomb_zhaoling",
+      "person": "t_taizong",
+      "title": "昭陵",
+      "area": "陕西 · 唐十八陵",
+      "location": "陕西礼泉县九嵕山",
+      "status": "唐太宗李世民与文德皇后长孙氏合葬陵园。",
+      "body": "昭陵因山为陵，陵区分布大量功臣、宗室陪葬墓。陪葬墓出土壁画、墓志和俑像，使政治秩序、族群往来与日常生活获得实物证据；这些材料属于不同墓主，不能全部直接等同于太宗本人生活。",
+      "note": "主陵地宫未主动发掘；今天可见的博物馆藏品多来自陪葬墓和地表石刻。",
+      "sources": [
+        "v61_shaanxi_tombs",
+        "v61_zhaoling_conservation",
+        "v43t_jts3"
+      ]
+    },
+    {
+      "id": "v61_tomb_jingling",
+      "person": "t_xianzong",
+      "title": "景陵",
+      "area": "陕西 · 唐十八陵",
+      "location": "陕西蒲城县金帜山一带",
+      "status": "唐宪宗李纯陵号为景陵。",
+      "body": "景陵属于中唐帝陵序列。宪宗朝削藩、宦官权力和元和政治常构成历史评价中心，陵寝材料主要说明礼制、营建和地望，不能单独证明政治成败或死亡原因。",
+      "note": "晚唐以来陵区多有扰动；墓主、陵号有文献依据，具体遗迹边界以文保调查为准。",
+      "sources": [
+        "v61_shaanxi_tombs",
+        "v43t_jts15"
+      ]
+    },
+    {
+      "id": "v61_tomb_dingling",
+      "person": "t_zhongzong",
+      "title": "定陵",
+      "area": "陕西 · 唐十八陵",
+      "location": "陕西富平县凤凰山一带",
+      "status": "唐中宗李显陵号为定陵。",
+      "body": "定陵处在武周之后皇位反复与复唐重建的历史背景中。陵号、地望与地表遗存可以互证墓主归属，具体陵园布局和遭扰动程度仍以文保、考古公布为准。",
+      "note": "不把同名陵墓混同；页面所指为唐中宗定陵。",
+      "sources": [
+        "v61_shaanxi_tombs",
+        "v43t_jts7"
+      ]
+    },
+    {
+      "id": "v61_tomb_qiaoling",
+      "person": "t_ruizong",
+      "title": "桥陵",
+      "area": "陕西 · 唐十八陵",
+      "location": "陕西蒲城县丰山",
+      "status": "唐睿宗李旦陵寝。",
+      "body": "桥陵营建于开元前期，地表石刻与山陵布局体现盛唐皇陵形制。它也提示睿宗虽两度在位、政治形象常被太平公主和玄宗叙事遮蔽，死后礼制仍是王朝秩序的一部分。",
+      "note": "桥陵已开放保护；现存地表状态不能直接当作初建原貌，石刻年代和原位关系仍以文物部门记录为准。",
+      "sources": [
+        "v61_shaanxi_tombs",
+        "v43t_jts7"
+      ]
+    },
+    {
+      "id": "v61_tomb_tailing",
+      "person": "t_xuanzong",
+      "title": "泰陵",
+      "area": "陕西 · 唐十八陵",
+      "location": "陕西蒲城县金粟山",
+      "status": "唐玄宗李隆基陵寝。",
+      "body": "泰陵将开元盛世与安史之乱后的帝王记忆连接起来。山陵、神道与石刻是礼制空间，不应被处理成玄宗一生的单一纪念碑；陵墓建造和后世修护也反映不同时期如何重述盛衰。",
+      "note": "不要与隋文帝泰陵混淆；同名陵号须以朝代、墓主和地点共同辨识。",
+      "sources": [
+        "v61_shaanxi_tombs",
+        "v43t_jts9"
+      ]
+    },
+    {
+      "id": "v61_tomb_jianling",
+      "person": "t_suzong",
+      "title": "建陵",
+      "area": "陕西 · 唐十八陵",
+      "location": "陕西礼泉县武将山",
+      "status": "唐肃宗李亨陵号为建陵。",
+      "body": "建陵属于安史之乱后连续营建的关中唐陵。肃宗在灵武即位、收复两京与晚年宫廷权力变化，都应由文献解释；陵区本身主要提供礼制、地望与物质保存证据。",
+      "note": "公开资料对部分陵区细节不一致，本页只保留墓主、陵号与大致地望。",
+      "sources": [
+        "v61_shaanxi_tombs",
+        "v43t_jts10"
+      ]
+    },
+    {
+      "id": "v61_tomb_yuanling",
+      "person": "t_daizong",
+      "title": "元陵",
+      "area": "陕西 · 唐十八陵",
+      "location": "陕西富平县檀山一带",
+      "status": "唐代宗李豫陵号为元陵。",
+      "body": "元陵所在的中唐帝陵序列，见证财政、藩镇和宦官政治改变后的王朝礼制延续。地表遗迹的残损不能直接推断当年陵园规模，需区分初建、历代破坏与现代保护。",
+      "note": "精确边界、附属遗址和石刻归属以持续调查成果为准。",
+      "sources": [
+        "v61_shaanxi_tombs",
+        "v43t_jts11"
+      ]
+    },
+    {
+      "id": "v61_tomb_chongling",
+      "person": "t_dezong",
+      "title": "崇陵",
+      "area": "陕西 · 唐十八陵",
+      "location": "陕西泾阳县嵯峨山",
+      "status": "唐德宗李适陵号为崇陵。",
+      "body": "崇陵把德宗时期的财政改革、奉天之难与晚年政治放回关中礼制地景。墓葬不能证明政策评价，但可与碑刻、神道和史书记载共同观察中唐皇权如何维持连续性。",
+      "note": "主陵未作完整发掘，不描述传闻中的地宫规模或随葬品。",
+      "sources": [
+        "v61_shaanxi_tombs",
+        "v43t_jts13"
+      ]
+    },
+    {
+      "id": "v61_tomb_zhenling",
+      "person": "t_xuanzong_late",
+      "title": "贞陵",
+      "area": "陕西 · 唐十八陵",
+      "location": "陕西泾阳县仲山",
+      "status": "唐宣宗李忱陵号为贞陵。",
+      "body": "贞陵属于晚唐仍持续营建的帝陵。宣宗朝常被后世概括为短暂振作，陵寝材料只能说明礼制与营建的延续，不能单独证明政治已经恢复到盛唐状态。",
+      "note": "晚唐诸陵保存和调查程度不一；地点采用文保通行归属，细部不作过度复原。",
+      "sources": [
+        "v61_shaanxi_tombs",
+        "v43t_jts18b"
       ]
     }
   ],

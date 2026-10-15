@@ -2038,4 +2038,44 @@ final class MingJiUITests: XCTestCase {
         shot("v60-dancing-horse-source", heritage)
     }
 
+    @MainActor func testV61TangTombsAndGrassrootsEvidence() throws {
+        let tombs = XCUIApplication()
+        tombs.launchArguments = ["--uitesting", "--ui-dynasty", "tang"]
+        tombs.launch()
+        XCTAssertTrue(tombs.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        XCTAssertEqual(tombs.tabBars.buttons.allElementsBoundByIndex.map(\.label), ["朝代", "帝序", "家族", "遗珍"])
+        tombs.tabBars.buttons["遗珍"].tap()
+        XCTAssertTrue(tombs.buttons["collectionCategory_tombs"].waitForExistence(timeout: 5))
+        tombs.buttons["collectionCategory_tombs"].tap()
+        let zhaoling = tombs.buttons["v61_tomb_zhaoling"]
+        reachReadingLink(zhaoling, in: tombs); zhaoling.tap()
+        XCTAssertTrue(tombs.staticTexts["陵寝与历史"].waitForExistence(timeout: 5))
+        XCTAssertTrue(tombs.staticTexts.matching(NSPredicate(format: "label CONTAINS %@", "主陵地宫未主动发掘")).firstMatch.exists)
+        let sources = tombs.buttons["资料与出处"]
+        reach(sources, in: tombs, attempts: 12); sources.tap()
+        XCTAssertTrue(tombs.buttons["source_v61_shaanxi_tombs"].waitForExistence(timeout: 5))
+        let lastTombSource = tombs.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "source_")).allElementsBoundByIndex.last!
+        reachReadingLink(lastTombSource, in: tombs); tombs.swipeUp()
+        XCTAssertLessThanOrEqual(lastTombSource.frame.maxY, tombs.tabBars.firstMatch.frame.minY)
+        shot("v61-tang-zhaoling-source", tombs)
+        tombs.terminate()
+
+        let evidence = XCUIApplication()
+        evidence.launchArguments = ["--uitesting", "--ui-dynasty", "tang"]
+        evidence.launch()
+        XCTAssertTrue(evidence.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        evidence.tabBars.buttons["遗珍"].tap()
+        evidence.buttons["collectionCategory_texts"].tap()
+        let seal = evidence.buttons["artifact_v61_obj_dunhuang_seal_calendar"]
+        reachReadingLink(seal, in: evidence); seal.tap()
+        XCTAssertTrue(evidence.staticTexts["县级用印与日常政务"].waitForExistence(timeout: 5))
+        let evidenceSources = evidence.buttons["资料与出处"]
+        reach(evidenceSources, in: evidence, attempts: 12); evidenceSources.tap()
+        XCTAssertTrue(evidence.buttons["source_v61_nlc_dunhuang_admin"].waitForExistence(timeout: 5))
+        let lastEvidenceSource = evidence.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "source_")).allElementsBoundByIndex.last!
+        reachReadingLink(lastEvidenceSource, in: evidence); evidence.swipeUp()
+        XCTAssertLessThanOrEqual(lastEvidenceSource.frame.maxY, evidence.tabBars.firstMatch.frame.minY)
+        shot("v61-dunhuang-seal-calendar-source", evidence)
+    }
+
 }

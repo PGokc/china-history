@@ -972,3 +972,24 @@ if d['version'] >= 42:
  assert any(o['id']=='v60_obj_bunian' and '学术分歧' in o['note'] for o in objects)
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成',json.dumps([people[p] for p in tang_v60]+events+objects+[articles[p] for p in tang_v60],ensure_ascii=False))
  print('V42 PASS: sixteen Tang figures, thirty balanced events, twelve evidence-bounded heritage topics and sourced five-part readings deepen court, social and material history')
+
+if d['version'] >= 43:
+ tang_emperors={p['id'] for p in d['people'] if p.get('dynasty')=='tang' and p['kind']=='皇帝'}
+ tombs=[t for t in d['tombs'] if t['id'].startswith('v61_tomb_')]
+ assert len(tombs)==10 and all(t['person'] in tang_emperors and t['sources'] for t in tombs)
+ assert {'昭陵','桥陵','泰陵','景陵'}<={t['title'] for t in tombs}
+ assert any(t['title']=='乾陵' and t['person']=='t_gaozong' for t in d['tombs'])
+ assert all('未' in (t['body']+t['note']) or '不' in (t['body']+t['note']) for t in tombs), 'tomb evidence limits required'
+ objects=[o for o in d['objects'] if o['id'].startswith('v61_obj_')]
+ assert len(objects)==12 and all(o['sources'] and o['people'] and o.get('dynasties')==['tang'] for o in objects)
+ assert all(len(re.findall(r'[\u4e00-\u9fff]',o['body']+o['note']))>=110 for o in objects)
+ events=[e for e in d['events'] if e['id'].startswith('v61t_')]
+ assert len(events)==25 and Counter(e['category'] for e in events)=={'政治':5,'军事':5,'文化':5,'经济':5,'社会':5}
+ assert all(e['sources'] and e.get('impact') and e.get('peopleRoles') for e in events)
+ required={'v61_shaanxi_tombs','v61_zhaoling_conservation','v61_nopss_changan','v61_nopss_county','v61_nopss_clerks','v61_nopss_markets','v61_nlc_dunhuang_admin','v61_nlc_sogdian','v61_nmc_silkroad'}
+ assert required<=sources.keys()
+ assert '不是逐陵考古报告' in sources['v61_shaanxi_tombs']['note']
+ corpus=json.dumps(tombs+objects+events,ensure_ascii=False)
+ assert all(term in corpus for term in ['唐十八陵','里坊','胥吏','敦煌','吐鲁番','粟特','驿传','墓志'])
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成',corpus)
+ print('V43 PASS: ten evidence-bounded Tang imperial tombs, twelve urban and documentary topics, and twenty-five balanced events connect court history with local administration and ordinary life')
