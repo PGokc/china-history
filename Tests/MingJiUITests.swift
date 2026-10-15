@@ -1700,4 +1700,50 @@ final class MingJiUITests: XCTestCase {
         shot("v52-jin-document", heritage)
     }
 
+    @MainActor func testV53NorthernSouthernParallelHistoryPaths() throws {
+        let sequence = XCUIApplication()
+        sequence.launchArguments = ["--uitesting", "--ui-dynasty", "northern_southern"]
+        sequence.launch()
+        XCTAssertTrue(sequence.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        XCTAssertEqual(sequence.tabBars.buttons.allElementsBoundByIndex.map(\.label), ["朝代", "帝序", "家族", "遗珍"])
+        sequence.tabBars.buttons["帝序"].tap()
+        XCTAssertTrue(sequence.descendants(matching: .any)["successionPage_northern_southern"].waitForExistence(timeout: 5))
+        XCTAssertTrue(sequence.descendants(matching: .any)["successionGroup_南朝宋"].exists)
+        XCTAssertTrue(sequence.buttons["succession_v53ns_seq_1_01"].exists)
+        let northernWei = sequence.descendants(matching: .any)["successionGroup_北魏"]
+        reach(northernWei, in: sequence, attempts: 28)
+        XCTAssertTrue(northernWei.exists)
+        shot("v53-northern-southern-sequence", sequence)
+        sequence.terminate()
+
+        let person = XCUIApplication()
+        person.launchArguments = ["--uitesting", "--ui-dynasty", "northern_southern"]
+        person.launch()
+        XCTAssertTrue(person.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        person.tabBars.buttons["帝序"].tap()
+        person.buttons["succession_v53ns_seq_1_01"].tap()
+        person.buttons["personHero"].tap()
+        for category in ["政治", "军事", "文化", "经济", "社会"] {
+            XCTAssertTrue(person.buttons["eventCategory_" + category].exists, category)
+        }
+        openArticle(in: person)
+        XCTAssertTrue(person.buttons["articleContents"].waitForExistence(timeout: 5))
+        shot("v53-liuyu-reader", person)
+        person.terminate()
+
+        let heritage = XCUIApplication()
+        heritage.launchArguments = ["--uitesting", "--ui-dynasty", "northern_southern"]
+        heritage.launch()
+        XCTAssertTrue(heritage.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        heritage.tabBars.buttons["遗珍"].tap()
+        heritage.buttons["collectionCategory_architecture"].tap()
+        let caves = heritage.buttons["artifact_v53ns_obj_yungang"]
+        reachReadingLink(caves, in: heritage); caves.tap()
+        XCTAssertTrue(heritage.staticTexts["国家佛教与平城时代"].waitForExistence(timeout: 5))
+        let sources = heritage.buttons["资料与出处"]
+        reach(sources, in: heritage, attempts: 12); sources.tap()
+        XCTAssertTrue(heritage.buttons["source_v53ns_yungang"].waitForExistence(timeout: 5))
+        shot("v53-yungang-source", heritage)
+    }
+
 }

@@ -443,10 +443,17 @@ struct SuccessionPage: View {
     @Environment(\.dynamicTypeSize) private var typeSize
     var items: [Succession] { store.sequence(in: dynastyID) }
     private var groups: [SuccessionGroup] {
-        guard dynastyID == "three_kingdoms" || dynastyID == "jin" else {
+        guard dynastyID == "three_kingdoms" || dynastyID == "jin" || dynastyID == "northern_southern" else {
             return [SuccessionGroup(id: dynastyID, title: nil, items: items)]
         }
-        let order = dynastyID == "jin" ? ["西晋", "东晋"] : ["曹魏", "蜀汉", "孙吴"]
+        let order: [String]
+        if dynastyID == "jin" {
+            order = ["西晋", "东晋"]
+        } else if dynastyID == "northern_southern" {
+            order = ["南朝宋", "南齐", "梁", "陈", "北魏", "东魏", "西魏", "北齐", "北周"]
+        } else {
+            order = ["曹魏", "蜀汉", "孙吴"]
+        }
         return order.compactMap { polity in
             let members = items.filter { $0.polity == polity }
             return members.isEmpty ? nil : SuccessionGroup(id: polity, title: polity, items: members)
@@ -499,6 +506,8 @@ struct SuccessionPage: View {
             return "曹魏帝序始于220年，蜀汉始于221年，孙吴从229年称帝算起。三个分组互相重叠；曹魏于265年末禅晋，蜀汉263年灭亡，孙吴280年降晋。"
         case "jin":
             return "西晋帝序止于316年长安陷落；司马睿317年在建康称晋王、318年称帝。东晋与北方十六国并存，帝序只表示晋廷内部继承，不代表全国统一。"
+        case "northern_southern":
+            return "南朝四代与北朝各政权长期并行。梁末萧栋、萧渊明等短期在位者，以及北魏末元恭、元朗等并立者均按史料列出；元氏女婴的帝号存在争议，另见人物与河阴之变。"
         case "qing":
             return "努尔哈赤生前为后金大汗；1636年皇太极改国号为清。公历年概括实际统治，摄政与太上皇掌权另在人物和事件中说明。"
         default:
