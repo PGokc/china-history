@@ -1657,4 +1657,47 @@ final class MingJiUITests: XCTestCase {
         shot("v51-wujian-source", heritage)
     }
 
+    @MainActor func testV52JinParallelHistoryPaths() throws {
+        let sequence = XCUIApplication()
+        sequence.launchArguments = ["--uitesting", "--ui-dynasty", "jin"]
+        sequence.launch()
+        XCTAssertTrue(sequence.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        XCTAssertEqual(sequence.tabBars.buttons.allElementsBoundByIndex.map(\.label), ["朝代", "帝序", "家族", "遗珍"])
+        sequence.tabBars.buttons["帝序"].tap()
+        XCTAssertTrue(sequence.descendants(matching: .any)["successionPage_jin"].waitForExistence(timeout: 5))
+        XCTAssertTrue(sequence.descendants(matching: .any)["successionGroup_西晋"].exists)
+        XCTAssertTrue(sequence.buttons["succession_v52j_west01"].exists)
+        let eastern = sequence.descendants(matching: .any)["successionGroup_东晋"]
+        reach(eastern, in: sequence, attempts: 10)
+        XCTAssertTrue(eastern.exists)
+        shot("v52-jin-parallel-sequence", sequence)
+        sequence.terminate()
+
+        let person = XCUIApplication()
+        person.launchArguments = ["--uitesting", "--ui-dynasty", "jin"]
+        person.launch()
+        XCTAssertTrue(person.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        person.tabBars.buttons["帝序"].tap()
+        person.buttons["succession_v52j_west01"].tap()
+        person.buttons["personHero"].tap()
+        for category in ["政治", "军事", "文化", "经济", "社会"] {
+            XCTAssertTrue(person.buttons["eventCategory_" + category].exists, category)
+        }
+        openArticle(in: person)
+        XCTAssertTrue(person.buttons["articleContents"].waitForExistence(timeout: 5))
+        shot("v52-jin-wudi-reader", person)
+        person.terminate()
+
+        let heritage = XCUIApplication()
+        heritage.launchArguments = ["--uitesting", "--ui-dynasty", "jin"]
+        heritage.launch()
+        XCTAssertTrue(heritage.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        heritage.tabBars.buttons["遗珍"].tap()
+        heritage.buttons["collectionCategory_texts"].tap()
+        let slips = heritage.buttons["artifact_v52j_obj_wujian"]
+        reachReadingLink(slips, in: heritage); slips.tap()
+        XCTAssertTrue(heritage.staticTexts["纸面制度之外的基层记录"].waitForExistence(timeout: 5))
+        shot("v52-jin-document", heritage)
+    }
+
 }

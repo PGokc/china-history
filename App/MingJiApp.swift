@@ -443,10 +443,11 @@ struct SuccessionPage: View {
     @Environment(\.dynamicTypeSize) private var typeSize
     var items: [Succession] { store.sequence(in: dynastyID) }
     private var groups: [SuccessionGroup] {
-        guard dynastyID == "three_kingdoms" else {
+        guard dynastyID == "three_kingdoms" || dynastyID == "jin" else {
             return [SuccessionGroup(id: dynastyID, title: nil, items: items)]
         }
-        return ["曹魏", "蜀汉", "孙吴"].compactMap { polity in
+        let order = dynastyID == "jin" ? ["西晋", "东晋"] : ["曹魏", "蜀汉", "孙吴"]
+        return order.compactMap { polity in
             let members = items.filter { $0.polity == polity }
             return members.isEmpty ? nil : SuccessionGroup(id: polity, title: polity, items: members)
         }
@@ -496,6 +497,8 @@ struct SuccessionPage: View {
             return "617年以后长安、江都与洛阳的隋室名义相互重叠。618年是唐朝建立的常用断代点；杨侗的洛阳政权延续至619年，不据此把各地政权误写成全国同步交接。"
         case "three_kingdoms":
             return "曹魏帝序始于220年，蜀汉始于221年，孙吴从229年称帝算起。三个分组互相重叠；曹魏于265年末禅晋，蜀汉263年灭亡，孙吴280年降晋。"
+        case "jin":
+            return "西晋帝序止于316年长安陷落；司马睿317年在建康称晋王、318年称帝。东晋与北方十六国并存，帝序只表示晋廷内部继承，不代表全国统一。"
         case "qing":
             return "努尔哈赤生前为后金大汗；1636年皇太极改国号为清。公历年概括实际统治，摄政与太上皇掌权另在人物和事件中说明。"
         default:
