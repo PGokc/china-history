@@ -442,22 +442,41 @@ struct SuccessionPage: View {
     let dynastyID: String
     @Environment(\.dynamicTypeSize) private var typeSize
     var items: [Succession] { store.sequence(in: dynastyID) }
+    private var groups: [SuccessionGroup] {
+        guard dynastyID == "three_kingdoms" else {
+            return [SuccessionGroup(id: dynastyID, title: nil, items: items)]
+        }
+        return ["曹魏", "蜀汉", "孙吴"].compactMap { polity in
+            let members = items.filter { $0.polity == polity }
+            return members.isEmpty ? nil : SuccessionGroup(id: polity, title: polity, items: members)
+        }
+    }
     var body: some View {
         ScrollView {
             LazyVStack(alignment: .leading, spacing: 0) {
                 Text(store.sequenceIntroduction(dynastyID))
                     .font(.subheadline).foregroundStyle(Theme.muted).padding(.bottom, 20).fixedSize(horizontal: false, vertical: true)
-                ForEach(items) { item in
-                    let p = store.person(item.person)
-                    NavigationLink(value: DetailRoute.family(p.id)) {
-                        SuccessionRow(
-                            person: p,
-                            item: item,
-                            imageName: store.image(p.id),
-                            hidesPortrait: typeSize.isAccessibilitySize || store.image(p.id) == nil
-                        )
-                    }.buttonStyle(QuietRowStyle()).accessibilityIdentifier("succession_\(item.id)")
-                    Rectangle().fill(Theme.line.opacity(0.46)).frame(height: 0.5).padding(.leading, typeSize.isAccessibilitySize || store.image(p.id) == nil ? 0 : 78)
+                ForEach(groups) { group in
+                    if let title = group.title {
+                        Text(title)
+                            .font(.system(.title2, design: .serif).weight(.semibold))
+                            .foregroundStyle(Theme.ink)
+                            .padding(.top, group.id == groups.first?.id ? 2 : 30)
+                            .padding(.bottom, 6)
+                            .accessibilityIdentifier("successionGroup_\(group.id)")
+                    }
+                    ForEach(group.items) { item in
+                        let p = store.person(item.person)
+                        NavigationLink(value: DetailRoute.family(p.id)) {
+                            SuccessionRow(
+                                person: p,
+                                item: item,
+                                imageName: store.image(p.id),
+                                hidesPortrait: typeSize.isAccessibilitySize || store.image(p.id) == nil
+                            )
+                        }.buttonStyle(QuietRowStyle()).accessibilityIdentifier("succession_\(item.id)")
+                        Rectangle().fill(Theme.line.opacity(0.46)).frame(height: 0.5).padding(.leading, typeSize.isAccessibilitySize || store.image(p.id) == nil ? 0 : 78)
+                    }
                 }
                 Text(successionNote)
                     .font(.caption).foregroundStyle(Theme.muted).padding(.top, 22).fixedSize(horizontal: false, vertical: true)
@@ -475,12 +494,20 @@ struct SuccessionPage: View {
             return "前、后少帝确曾即位，但通行名讳见于较晚材料；这里采用称号。公元9—25年的新朝与群雄战争使汉统中断，不用一条连续帝序掩盖。"
         case "sui":
             return "617年以后长安、江都与洛阳的隋室名义相互重叠。618年是唐朝建立的常用断代点；杨侗的洛阳政权延续至619年，不据此把各地政权误写成全国同步交接。"
+        case "three_kingdoms":
+            return "曹魏帝序始于220年，蜀汉始于221年，孙吴从229年称帝算起。三个分组互相重叠；曹魏于265年末禅晋，蜀汉263年灭亡，孙吴280年降晋。"
         case "qing":
             return "努尔哈赤生前为后金大汗；1636年皇太极改国号为清。公历年概括实际统治，摄政与太上皇掌权另在人物和事件中说明。"
         default:
             return "公历年概括实际在位；同年交接不表示全年同时在位。年号起讫与实际在位年份分别列示。"
         }
     }
+}
+
+private struct SuccessionGroup: Identifiable {
+    let id: String
+    let title: String?
+    let items: [Succession]
 }
 
 private struct SuccessionRow: View {

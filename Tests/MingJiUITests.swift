@@ -1608,4 +1608,53 @@ final class MingJiUITests: XCTestCase {
         shot("v50-sui-lijingxun-object", heritage)
     }
 
+    @MainActor func testV51ThreeKingdomsParallelHistoryPaths() throws {
+        let sequence = XCUIApplication()
+        sequence.launchArguments = ["--uitesting", "--ui-dynasty", "three_kingdoms"]
+        sequence.launch()
+        XCTAssertTrue(sequence.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        XCTAssertEqual(sequence.tabBars.buttons.allElementsBoundByIndex.map(\.label), ["朝代", "帝序", "家族", "遗珍"])
+        sequence.tabBars.buttons["帝序"].tap()
+        XCTAssertTrue(sequence.descendants(matching: .any)["successionPage_three_kingdoms"].waitForExistence(timeout: 5))
+        XCTAssertTrue(sequence.descendants(matching: .any)["successionGroup_曹魏"].exists)
+        XCTAssertTrue(sequence.buttons["succession_v51tk_wei01"].exists)
+        let shu = sequence.descendants(matching: .any)["successionGroup_蜀汉"]
+        reach(shu, in: sequence, attempts: 10)
+        XCTAssertTrue(shu.exists)
+        let wu = sequence.descendants(matching: .any)["successionGroup_孙吴"]
+        reach(wu, in: sequence, attempts: 12)
+        XCTAssertTrue(wu.exists)
+        shot("v51-three-kingdoms-parallel-sequence", sequence)
+        sequence.terminate()
+
+        let person = XCUIApplication()
+        person.launchArguments = ["--uitesting", "--ui-dynasty", "three_kingdoms"]
+        person.launch()
+        XCTAssertTrue(person.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        person.tabBars.buttons["帝序"].tap()
+        person.buttons["succession_v51tk_wei01"].tap()
+        person.buttons["personHero"].tap()
+        for category in ["政治", "军事", "文化", "经济", "社会"] {
+            XCTAssertTrue(person.buttons["eventCategory_" + category].exists, category)
+        }
+        openArticle(in: person)
+        XCTAssertTrue(person.buttons["articleContents"].waitForExistence(timeout: 5))
+        shot("v51-caopi-reader", person)
+        person.terminate()
+
+        let heritage = XCUIApplication()
+        heritage.launchArguments = ["--uitesting", "--ui-dynasty", "three_kingdoms"]
+        heritage.launch()
+        XCTAssertTrue(heritage.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        heritage.tabBars.buttons["遗珍"].tap()
+        heritage.buttons["collectionCategory_texts"].tap()
+        let slips = heritage.buttons["artifact_v51tk_obj_wujian"]
+        reachReadingLink(slips, in: heritage); slips.tap()
+        XCTAssertTrue(heritage.staticTexts["十万余枚基层行政档案"].waitForExistence(timeout: 5))
+        let sources = heritage.buttons["资料与出处"]
+        reach(sources, in: heritage, attempts: 12); sources.tap()
+        XCTAssertTrue(heritage.buttons["source_v51tk_wujian"].waitForExistence(timeout: 5))
+        shot("v51-wujian-source", heritage)
+    }
+
 }

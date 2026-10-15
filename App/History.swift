@@ -60,7 +60,10 @@ struct Artifact: Codable, Identifiable {
         return .objects
     }
 }
-struct Succession: Codable, Identifiable { let id, person, years, transition: String; let eraLabel: String? }
+struct Succession: Codable, Identifiable {
+    let id, person, years, transition: String
+    let eraLabel, polity: String?
+}
 struct Tomb: Codable, Identifiable { let id, person, title, area, location, status, body, note: String; let sources: [String] }
 struct ArticleSection: Codable, Identifiable {
     let id, title, text, kind: String
@@ -269,12 +272,15 @@ struct Content: Codable {
         return "ming"
     }
     func dynastyName(_ id: String) -> String {
-        id == "song_liao_xia_jin" ? "宋代" : (dynasty(id)?.name ?? "") + "朝"
+        if id == "song_liao_xia_jin" { return "宋代" }
+        if id == "three_kingdoms" { return "三国" }
+        return (dynasty(id)?.name ?? "") + "朝"
     }
     func sequenceIntroduction(_ id: String) -> String {
         switch id {
         case "qin": return "前221年，秦王政采用“皇帝”称号。这里列出秦帝国使用皇帝称号的始皇帝与二世；子婴即位后降称秦王，另见人物与秦亡事件。"
         case "han": return "这里列出实际即位的西汉与东汉皇帝。西汉前、后少帝保留称号并标明名讳争议；孺子婴未称帝，王莽所建新朝及新莽末年诸政权另见人物与事件。"
+        case "three_kingdoms": return "曹魏、蜀汉、孙吴在时间上并行，各有自己的继承次序。这里按政权分组列出实际称帝者；曹操、孙坚等追尊君主，以及孙策等未称帝的奠基人物另见人物与事件。"
         case "sui": return "隋末并非一条整齐交接的帝序。杨侑在长安、杨浩在江都、杨侗在洛阳先后或同时被拥立；这里全部列出，并分别说明实际控制者、年号与统治范围。"
         case "tang": return "李唐皇位经历复位、武周改国与多次宫廷政变。武则天统治的武周单列，中宗与睿宗两次在位分别呈现。"
         case "song_liao_xia_jin": return "这里列出北宋与南宋皇帝。宋与辽、西夏、金长期并立；各国君主与交往见人物和事件，疆域并不由一条帝序概括。"
