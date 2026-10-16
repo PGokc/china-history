@@ -2252,4 +2252,56 @@ final class MingJiUITests: XCTestCase {
         shot("v65-wu-liande-reader", qing)
     }
 
+    @MainActor func testV66WomenKnowledgeEducationAndJustice() throws {
+        let ming = XCUIApplication()
+        ming.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]
+        ming.launch()
+        XCTAssertTrue(ming.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        ming.tabBars.buttons["帝序"].tap()
+        let zhengde = ming.buttons["succession_10"]
+        reach(zhengde, in: ming, attempts: 18); zhengde.tap()
+        ming.buttons["personHero"].tap()
+        ming.buttons["eventCategory_文化"].tap()
+        let cases = ming.buttons["event_v66m_tan_cases"]
+        reachReadingLink(cases, in: ming); cases.tap()
+        XCTAssertTrue(ming.staticTexts["《女医杂言》刊行并保存女性诊疗经验"].waitForExistence(timeout: 5))
+        XCTAssertTrue(ming.staticTexts.matching(NSPredicate(format: "label CONTAINS %@", "不能证明谈允贤曾任宫廷女医")).firstMatch.exists)
+        let tan = ming.buttons["explore_m_tanyunxian"]
+        reachReadingLink(tan, in: ming); tan.tap()
+        XCTAssertTrue(ming.staticTexts["谈允贤"].waitForExistence(timeout: 5))
+        openArticle(in: ming)
+        XCTAssertTrue(ming.staticTexts["家传医学与女性求医处境"].waitForExistence(timeout: 5))
+        XCTAssertTrue(ming.buttons["articleContents"].exists)
+        shot("v66-tan-yunxian-reader", ming)
+        ming.terminate()
+
+        let qing = XCUIApplication()
+        qing.launchArguments = ["--uitesting", "--ui-dynasty", "qing"]
+        qing.launch()
+        XCTAssertTrue(qing.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        qing.tabBars.buttons["帝序"].tap()
+        let guangxu = qing.buttons["succession_q_10"]
+        reach(guangxu, in: qing, attempts: 20); guangxu.tap()
+        qing.buttons["personHero"].tap()
+        qing.buttons["eventCategory_文化"].tap()
+        let allCulture = qing.buttons["category_events"]
+        reach(allCulture, in: qing, attempts: 12); allCulture.tap()
+        let newspaper = qing.buttons["event_v66q_womens_journal"]
+        reachReadingLink(newspaper, in: qing); newspaper.tap()
+        XCTAssertTrue(qing.staticTexts["秋瑾创办《中国女报》"].waitForExistence(timeout: 5))
+        XCTAssertTrue(qing.staticTexts.matching(NSPredicate(format: "label CONTAINS %@", "只出版两期")).firstMatch.exists)
+        let qiu = qing.buttons["explore_q_qiujin"]
+        reachReadingLink(qiu, in: qing); qiu.tap()
+        XCTAssertTrue(qing.staticTexts["秋瑾"].waitForExistence(timeout: 5))
+        openArticle(in: qing)
+        XCTAssertTrue(qing.staticTexts["《中国女报》向谁发言"].waitForExistence(timeout: 5))
+        let sources = qing.buttons["资料与出处"]
+        reach(sources, in: qing, attempts: 14); sources.tap()
+        let lastSource = qing.buttons["source_v66_zs_women_school"]
+        reachReadingLink(lastSource, in: qing); qing.swipeUp()
+        XCTAssertTrue(lastSource.exists)
+        XCTAssertLessThanOrEqual(lastSource.frame.maxY, qing.tabBars.firstMatch.frame.minY)
+        shot("v66-qiu-jin-sources", qing)
+    }
+
 }

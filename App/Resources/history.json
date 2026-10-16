@@ -1,6 +1,6 @@
 {
-  "version": 47,
-  "reviewed": "2026-10-15",
+  "version": 48,
+  "reviewed": "2026-10-16",
   "people": [
     {
       "id": "yuanzhang",
@@ -15432,6 +15432,56 @@
       "kind": "重要人物",
       "note": "伍连德是傅家甸防疫和国际会议的关键人物，但东北各地防疫还依赖地方官员、中外医务人员、警察与居民协作。",
       "dynasty": "qing"
+    },
+    {
+      "id": "m_tanyunxian",
+      "name": "谈允贤",
+      "call": "女医与医案作者",
+      "temple": "",
+      "era": "",
+      "reign": "明代中期（1461—1556）",
+      "summary": "在女性求医多受礼俗限制的环境中行医，并以《女医杂言》留下妇科、产科及日常疾病的诊疗记录。",
+      "parent": null,
+      "sources": [
+        "v66_pku_tan",
+        "v66_dmu_tan"
+      ],
+      "kind": "重要人物",
+      "note": "历史上的谈允贤不是宫廷女官，也没有可靠证据支持影视作品中的宫廷经历；她的价值在于民间行医与医案书写。",
+      "dynasty": "ming"
+    },
+    {
+      "id": "q_wangzhenyi",
+      "name": "王贞仪",
+      "call": "天文、算学研究者",
+      "temple": "",
+      "era": "",
+      "reign": "乾隆时期（1768—1797）",
+      "summary": "通过阅读、计算与写作解释天文和算学问题，也以诗文记录旅行、社会观察及女性求知处境。",
+      "parent": null,
+      "sources": [
+        "v66_njdfz_wang"
+      ],
+      "kind": "重要人物",
+      "note": "王贞仪的著述有些仅见目录或后人辑录；评价其科学活动应依据可考书目与文本，不套用未经核实的现代标签。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q_qiujin",
+      "name": "秋瑾",
+      "call": "革命者与妇女报刊作者",
+      "temple": "",
+      "era": "",
+      "reign": "光绪时期（1875—1907）",
+      "summary": "以演说、办学和《中国女报》讨论女子教育、经济自立与权利，并投身反清革命活动。",
+      "parent": null,
+      "sources": [
+        "v66_zjut_qiujin",
+        "v66_ruc_women_press"
+      ],
+      "kind": "重要人物",
+      "note": "《中国女报》实际只出版两期；它的历史意义在公开论述与组织动员，不能写成已形成长期稳定发行的全国性报刊。",
+      "dynasty": "qing"
     }
   ],
   "sources": [
@@ -20516,6 +20566,72 @@
       "title": "广东省政协文史资料·爱国铁路工程师詹天佑",
       "url": "https://www.gdwsw.gov.cn/rwcq/content/post_22371.html",
       "note": "地方政协文史资料；用于核对詹天佑主持京张铁路的经历，与国家铁路局资料相互参照。"
+    },
+    {
+      "id": "v66_pku_tan",
+      "title": "北京大学中国古代史研究中心·谈允贤与《女医杂言》",
+      "url": "https://ccj.pku.edu.cn/Article/info?aid=210086616",
+      "note": "高校学术期刊页面；用于核对谈允贤生平、医案集传本与研究边界，并明确影视人物不等于历史上的谈允贤。"
+    },
+    {
+      "id": "v66_dmu_tan",
+      "title": "大连医科大学《医学与哲学》·明代女医谈允贤研究",
+      "url": "https://yizhe.dmu.edu.cn/data/article/yxyzx/preview/pdf/2009-5A-24.pdf",
+      "note": "医学史论文；讨论明代女性就医限制、家传医学和谈允贤诊疗实践，具体病例仍以《女医杂言》文本为基础。"
+    },
+    {
+      "id": "v66_ruc_women_work",
+      "title": "中国人民大学清史研究所·明代三姑六婆研究述评",
+      "url": "https://iqh.ruc.edu.cn/old/qdshsyj/xbyfn/c79ec707c1934e93ab68d72abbf77ba0.htm",
+      "note": "学术研究述评；说明稳婆、药婆等女性职业及其社会服务，提醒男性士人笔下的贬义标签不能直接当作职业群体全貌。"
+    },
+    {
+      "id": "v66_njdfz_wang",
+      "title": "南京市地方志办公室·清代女科学家王贞仪",
+      "url": "https://dfz.nanjing.gov.cn/gzdt/202606/t20260610_5855308.html",
+      "note": "地方志机构资料；核对王贞仪生卒、天文算学著述和诗文活动。部分作品仅见书目或后人辑录，不能假定完整原稿都保存至今。"
+    },
+    {
+      "id": "v66_saac_xingke",
+      "title": "国家档案局·清代内阁刑科题本档案",
+      "url": "https://www.saac.gov.cn/daj/c100166/202001/20129f92d7e24111a4596d9fd3457595.shtml",
+      "note": "国家档案主管部门资料；介绍1727至1889年内阁刑科题本的数量、案件类型和中央覆核用途，题本是制度化呈报档案而非所有纠纷的完整记录。"
+    },
+    {
+      "id": "v66_fhac_xingke",
+      "title": "中国第一历史档案馆·刑科题本与清代地方社会",
+      "url": "https://fhac.com.cn/detail/8020.html",
+      "note": "国家级历史档案馆学术讲座资料；说明刑科题本可用于观察命案、盗案、监狱、治安与基层社会，同时需要辨析司法文书的程序性表达。"
+    },
+    {
+      "id": "v66_zjut_qiujin",
+      "title": "浙江工业大学图书馆·秋瑾与《中国女报》",
+      "url": "https://www.lib.zjut.edu.cn/2020/0408/c6188a107812/page.psp",
+      "note": "高校图书馆专题资料；核对《中国女报》1907年在上海创刊及秋瑾倡导女子教育、婚姻自主和男女平等的主要内容。"
+    },
+    {
+      "id": "v66_ruc_women_press",
+      "title": "中国人民大学清史研究所·清末妇女报刊与女性公共表达",
+      "url": "https://iqh.ruc.edu.cn/old/qdshsyj/sh_xsqy/xrjj2/fa8a11764447430fab40af7f32461fe9.htm",
+      "note": "学术研究资料；把《中国女报》放入晚清妇女报刊从教育启蒙走向权利与革命论述的脉络，不能以一份报纸代表所有女性。"
+    },
+    {
+      "id": "v66_zs_women_school",
+      "title": "中山市人民政府·晚清女子教育进入国家学制",
+      "url": "https://www.zs.gov.cn/zjzs/zsgs/content/post_219576.html",
+      "note": "地方政府历史资料；核对1907年女子师范学堂和女子小学堂章程颁行，正式制度化不等于各地立即普及。"
+    },
+    {
+      "id": "v66_bjww_normal",
+      "title": "北京市文物局·京师女子师范学堂旧址",
+      "url": "https://wwj.beijing.gov.cn/bjww/wwjzzcslm/1737418/1738088/1742737/523448/index.html",
+      "note": "文物主管部门资料；核对学堂1908年筹建、1909年建成及现存建筑信息，用物证补充制度文本。"
+    },
+    {
+      "id": "v66_ningbo_charity",
+      "title": "宁波市档案馆·近代宁波慈善事业",
+      "url": "https://www.nbdaj.gov.cn/art/2023/10/19/art_1229826571_20736.html",
+      "note": "地方档案机构资料；说明晚清宁波育婴、济贫、施医、义学等慈善实践。这是区域个案，不直接推论全国慈善运行一致。"
     }
   ],
   "relations": [
@@ -55558,6 +55674,190 @@
         "q_wuliande": "傅家甸防疫负责人及奉天会议主席"
       },
       "category": "社会"
+    },
+    {
+      "id": "v66m_tan_cases",
+      "year": "1511",
+      "sortYear": 1511,
+      "title": "《女医杂言》刊行并保存女性诊疗经验",
+      "body": "谈允贤把自己行医所见整理为《女医杂言》，现存文本记录三十一则医案，涉及月经、妊娠、产后疾病及女性日常病痛。礼俗使部分女性不便向男性医者详述身体状况，女性医者因此形成特殊的诊疗空间；医案也呈现家传医学、问诊与用药如何落实到具体病人。",
+      "impact": "这部篇幅不大的医案集使明代女性既作为病人也作为知识生产者被看见。它不能代表全部明代医疗，更不能证明谈允贤曾任宫廷女医；现存版本、病例叙述和后世刊刻都需文献考证。其意义来自可核查的民间诊疗记录，而不是影视传奇。",
+      "kind": "历史事件",
+      "people": [
+        "houzhao",
+        "m_tanyunxian"
+      ],
+      "sources": [
+        "v66_pku_tan",
+        "v66_dmu_tan"
+      ],
+      "peopleRoles": {
+        "houzhao": "正德六年刊行时的在位皇帝",
+        "m_tanyunxian": "医案作者与诊疗者"
+      },
+      "category": "文化"
+    },
+    {
+      "id": "v66m_women_work",
+      "year": "16世纪",
+      "sortYear": 1550,
+      "title": "稳婆、药婆等女性职业服务城市与家庭",
+      "body": "明代城市和乡里中，稳婆参与接生，药婆提供部分疾病与生育照料，尼姑、媒婆、牙婆等女性也在宗教、婚姻和交易中承担中介工作。士人常以“三姑六婆”合称并加以贬斥，但这类文字同时反映女性通过经验、技术和人际网络进入家庭之外的社会服务。",
+      "impact": "这些职业补充了官府和男性专业者难以覆盖的生活需求，为普通女性提供有限的收入与行动空间，也伴随资质难辨、纠纷和污名。研究不能把士人警戒文字当作所有从业者的真实面貌，也不能把零散职业浪漫化为普遍独立；区域、阶层和家庭约束始终存在。",
+      "kind": "历史事件",
+      "people": [
+        "houcong",
+        "m_tanyunxian"
+      ],
+      "sources": [
+        "v66_ruc_women_work",
+        "v66_dmu_tan"
+      ],
+      "peopleRoles": {
+        "houcong": "相关城市社会材料集中的在位时期皇帝",
+        "m_tanyunxian": "以医案显示女性医疗实践的代表人物"
+      },
+      "category": "社会"
+    },
+    {
+      "id": "v66q_wang_science",
+      "year": "约1780—1797",
+      "sortYear": 1788,
+      "title": "王贞仪整理天文与算学问题",
+      "body": "王贞仪在乾隆后期研读天文、历算和数学，撰写《星象图释》《岁差日至辨疑》《西洋筹算增删》《勾股三角解》等著述。她尝试用清楚的文字解释历法、日月食、勾股和筹算问题，也在旅行与家庭藏书条件下持续求学，而非依靠正式官学职位。",
+      "impact": "她的经历显示清代知识活动并非只发生在男性士大夫和官方机构中，也呈现传统历算与外来数学知识相遇的环境。部分著述只见书目或辑录，保存状况不一，因此不宜把后世概括的实验故事或现代科学立场都当作已有原稿直接证明的事实。",
+      "kind": "历史事件",
+      "people": [
+        "q_qianlong",
+        "q_wangzhenyi"
+      ],
+      "sources": [
+        "v66_njdfz_wang"
+      ],
+      "peopleRoles": {
+        "q_qianlong": "王贞仪主要学术活动时期的在位皇帝",
+        "q_wangzhenyi": "天文与算学著述者"
+      },
+      "category": "文化"
+    },
+    {
+      "id": "v66q_xingke_records",
+      "year": "1727—1889",
+      "sortYear": 1727,
+      "title": "刑科题本汇集案件覆核与地方社会记录",
+      "body": "各地将命案、盗案、监狱和治安等案件按程序逐级审理后，重要材料以题本送达中央，由内阁刑科等机构办理。现存1727至1889年的大批档案保存人物身份、亲属邻里、冲突经过、尸伤检验和官员意见，使司法运作与普通人的生活同时留下记录。",
+      "impact": "刑科题本让研究者观察法律条文如何进入县级审讯、复核和中央决策，也揭示家庭、土地、债务与地方治安的复杂关系。但它是官府为定罪和覆核形成的程序文书，会筛选口供并使用固定格式；不能把卷宗当作完整透明的日常生活实录，更不能由单案推断整个清代社会。",
+      "kind": "历史事件",
+      "people": [
+        "q_yongzheng",
+        "q_qianlong",
+        "q_jiaqing",
+        "q_daoguang",
+        "q_xianfeng",
+        "q_tongzhi",
+        "q_guangxu"
+      ],
+      "sources": [
+        "v66_saac_xingke",
+        "v66_fhac_xingke"
+      ],
+      "peopleRoles": {
+        "q_yongzheng": "现存系统档案起始时期的在位皇帝",
+        "q_qianlong": "题本制度长期运行时期的在位皇帝",
+        "q_jiaqing": "题本制度长期运行时期的在位皇帝",
+        "q_daoguang": "题本制度长期运行时期的在位皇帝",
+        "q_xianfeng": "题本制度长期运行时期的在位皇帝",
+        "q_tongzhi": "题本制度长期运行时期的在位皇帝",
+        "q_guangxu": "现存这一档案序列延续至其在位前期"
+      },
+      "category": "社会"
+    },
+    {
+      "id": "v66q_women_schools",
+      "year": "1907",
+      "sortYear": 1907,
+      "title": "女子教育正式纳入清末学制",
+      "body": "清廷颁行女子师范学堂和女子小学堂章程，使女子学校获得国家学制中的正式位置，并规定课程、修业年限和管理方式。此前民间、教会和改革者已经创办不同女子学校；1907年的制度改变把分散实践转为可以由地方兴办、检查和培养师资的官方教育门类。",
+      "impact": "制度化扩大了女子识字、任教和进入公共空间的可能，也为后来的女性职业与社会参与提供条件。但章程仍带有贤妻良母等性别期待，学费、地域和家庭观念限制入学；“正式纳入”不能等同于全国女孩立即普遍受教育，实际办学速度和课程取向各地差异明显。",
+      "kind": "历史事件",
+      "people": [
+        "q_guangxu",
+        "q_qiujin"
+      ],
+      "sources": [
+        "v66_zs_women_school",
+        "v66_ruc_women_press"
+      ],
+      "peopleRoles": {
+        "q_guangxu": "章程颁行时的在位皇帝；主要决策权仍在慈禧太后与朝廷机构",
+        "q_qiujin": "此前持续倡导女子教育和经济自立的公共人物"
+      },
+      "category": "社会"
+    },
+    {
+      "id": "v66q_womens_journal",
+      "year": "1907",
+      "sortYear": 1907,
+      "title": "秋瑾创办《中国女报》",
+      "body": "秋瑾于1907年在上海创办《中国女报》，通过论说、译述和倡议讨论女子教育、经济自立、婚姻自由与男女平等，并把女性解放同国家危机和革命动员联系起来。报刊面向能够阅读和参与新式社团的女性，承接晚清妇女报刊已形成的公共表达空间。",
+      "impact": "《中国女报》只出版两期，传播规模和持续时间有限，却集中呈现一位女性作者如何直接向女性读者发言。它不能代表所有阶层妇女的意见，也不应与秋瑾的全部革命组织活动混为一事；报刊文本、办学实践和武装革命既相互连接，也有各自的证据和行动范围。",
+      "kind": "历史事件",
+      "people": [
+        "q_guangxu",
+        "q_qiujin"
+      ],
+      "sources": [
+        "v66_zjut_qiujin",
+        "v66_ruc_women_press"
+      ],
+      "peopleRoles": {
+        "q_guangxu": "报刊创办时的在位皇帝",
+        "q_qiujin": "创办者、主要作者与倡议者"
+      },
+      "category": "文化"
+    },
+    {
+      "id": "v66q_women_normal",
+      "year": "1908—1909",
+      "sortYear": 1908,
+      "title": "京师女子师范学堂筹建并落成",
+      "body": "清廷在北京筹建京师女子师范学堂，1908年开始规划，1909年校舍建成。学堂以培养女子小学师资为重要目标，把课程、寄宿生活和教师训练集中在专门校园内。现存旧址建筑使清末女子教育不只停留在章程文字，也留下可以核对的制度空间和物质证据。",
+      "impact": "师范教育使受教育女性可能进一步成为教师，把识字和新式课程带入更多学校；校园也形成女性共同学习与公共生活的新环境。它仍是一所首都学校，招生规模、家庭背景和政治环境都有局限，不能据此推定全国女子教育已经成熟，更不能忽略此前地方和民间学校的探索。",
+      "kind": "历史事件",
+      "people": [
+        "q_guangxu",
+        "q_xuantong"
+      ],
+      "sources": [
+        "v66_bjww_normal",
+        "v66_zs_women_school"
+      ],
+      "peopleRoles": {
+        "q_guangxu": "学堂筹建开始时的在位皇帝",
+        "q_xuantong": "校舍落成时的在位皇帝"
+      },
+      "category": "文化"
+    },
+    {
+      "id": "v66q_ningbo_charity",
+      "year": "1875—1908",
+      "sortYear": 1880,
+      "title": "宁波地方慈善网络扩展育婴与济贫服务",
+      "body": "晚清宁波的地方善堂、育婴机构及绅商慈善网络开展收养弃婴、济贫、施医、义学和助葬等活动，资金与管理来自官府倡导、地方士绅、商人及社会捐助的不同组合。1908年当地育婴机构的一部分又转作幼稚园，反映传统救济与近代教育实践发生连接。",
+      "impact": "这一地区个案说明社会救济并非只有灾年临时赈粮，也包括妇幼照料、医疗和日常贫困支持；地方组织能够补充国家资源，却会受到经费、资格判断和管理能力限制。宁波商业与自治传统具有区域特点，不能把其机构数量和运作方式直接当作全国统一模式。",
+      "kind": "历史事件",
+      "people": [
+        "q_guangxu",
+        "q_xuantong"
+      ],
+      "sources": [
+        "v66_ningbo_charity"
+      ],
+      "peopleRoles": {
+        "q_guangxu": "地方慈善网络扩展的主要在位时期皇帝",
+        "q_xuantong": "1908年后机构转型时期的在位皇帝"
+      },
+      "category": "社会"
     }
   ],
   "objects": [
@@ -68215,7 +68515,13 @@
           "sources": [
             "v2l_ms16"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "people": [
+            "m_tanyunxian"
+          ],
+          "events": [
+            "v66m_tan_cases"
+          ]
         }
       ],
       "sources": [
@@ -68345,8 +68651,10 @@
             "v65m_silver",
             "v65m_customs",
             "v65m_shecang",
-            "v65m_urban"
-          ]
+            "v65m_urban",
+            "v66m_women_work"
+          ],
+          "people": []
         }
       ],
       "sources": [
@@ -70912,7 +71220,8 @@
           "events": [
             "v13_yongzheng_tushu",
             "v39_nian_punishment",
-            "v39_longkodo_confinement"
+            "v39_longkodo_confinement",
+            "v66q_xingke_records"
           ],
           "people": [
             "q_niangengyao",
@@ -70992,7 +71301,12 @@
           ],
           "kind": "史实与解读",
           "events": [
-            "v12_qianlong_siku"
+            "v12_qianlong_siku",
+            "v66q_wang_science",
+            "v66q_xingke_records"
+          ],
+          "people": [
+            "q_wangzhenyi"
           ]
         },
         {
@@ -71624,7 +71938,11 @@
             "v40q_xinjiang_campaign",
             "v40q_new_policy_memorial",
             "v40q_tongmenghui",
-            "v65q_jingzhang"
+            "v65q_jingzhang",
+            "v66q_women_schools",
+            "v66q_womens_journal",
+            "v66q_women_normal",
+            "v66q_ningbo_charity"
           ],
           "people": [
             "q_lihongzhang",
@@ -71632,7 +71950,8 @@
             "q_zhangzhidong",
             "q_kangyouwei",
             "q_yuanshikai",
-            "q_sunyatsen"
+            "q_sunyatsen",
+            "q_qiujin"
           ]
         },
         {
@@ -71686,7 +72005,11 @@
             "v5qe_qsg25"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [
+            "v66q_women_normal",
+            "v66q_ningbo_charity"
+          ],
+          "people": []
         },
         {
           "id": "q-xuantong-3",
@@ -148196,6 +148519,230 @@
         "v65_nopss_plague",
         "v65_hrbmu_wu"
       ]
+    },
+    {
+      "person": "m_tanyunxian",
+      "title": "谈允贤：在闺门内外留下诊疗记录",
+      "dek": "《女医杂言》的珍贵之处，在于让明代女性的身体经验、就医限制和一位女医的判断同时进入文字。",
+      "sections": [
+        {
+          "id": "v66_tan_1",
+          "title": "家传医学与女性求医处境",
+          "text": "谈允贤生于明代中期，家中有医学学习条件，并从长辈处接触诊疗知识。她所面对的患者多为女性。礼俗强调男女之防，病人往往不便让男性医者直接观察或详述月经、妊娠和产后症状，转述又可能损失信息。女性医者因此并非宫廷传奇中的特殊装饰，而是在具体社会约束下回应真实需求。她能够行医也与家庭资源有关，不能据一个人物推定普通女性普遍拥有学习医学的机会。",
+          "kind": "史实与解读",
+          "sources": [
+            "v66_pku_tan",
+            "v66_dmu_tan"
+          ],
+          "people": [
+            "houzhao"
+          ],
+          "events": [
+            "v66m_tan_cases",
+            "v66m_women_work"
+          ]
+        },
+        {
+          "id": "v66_tan_2",
+          "title": "三十一则医案怎样写病人",
+          "text": "《女医杂言》现存三十一则医案，以相对简短的方式记录病人的症状、既往处置、自己的判断和用药结果。内容涉及月经、妊娠、产后调理及其他疾病，也能看到饮食、情绪和家庭环境如何进入问诊。医案不是现代病历，作者会选择成功或值得说明的病例，药名和病名也属于当时知识体系；今天阅读时，适合把它作为医疗史和女性生活史材料，而不能直接照方使用。",
+          "kind": "史实与解读",
+          "sources": [
+            "v66_pku_tan",
+            "v66_dmu_tan"
+          ],
+          "people": [
+            "houzhao"
+          ],
+          "events": [
+            "v66m_tan_cases"
+          ]
+        },
+        {
+          "id": "v66_tan_3",
+          "title": "女医并不只有一种身份",
+          "text": "明代还存在稳婆、药婆等依靠经验服务于生育和疾病的人群。士人文本常把她们与媒婆、牙婆等合称为“三姑六婆”，并用道德警戒塑造负面印象；这种命名反映男性精英的秩序焦虑，不等于每位从业者的真实面貌。谈允贤有家传学问并留下著作，与多数依靠口传和实践谋生的女性不同。把两者放在一起，可以理解女性医疗工作的层次，也应避免将一个精英个案覆盖整个职业群体。",
+          "kind": "史实与解读",
+          "sources": [
+            "v66_ruc_women_work",
+            "v66_dmu_tan"
+          ],
+          "people": [
+            "houcong"
+          ],
+          "events": [
+            "v66m_women_work"
+          ]
+        },
+        {
+          "id": "v66_tan_4",
+          "title": "历史人物与影视角色的边界",
+          "text": "后世因谈允贤是少数留下姓名与著作的女医，常把她改编成进入宫廷、卷入政治的传奇人物。现有可靠材料不能证明她担任宫廷女官，也不能把电视剧人物的经历回填到历史传记。真正可确认的贡献已经足够重要：一位明代女性把诊疗经验整理出版，使女性患者的声音和女医的判断在文本中留存。承认证据边界不会让人物变得单薄，反而能把注意力从虚构恋情移回医疗、家庭与知识传承。",
+          "kind": "证据边界",
+          "sources": [
+            "v66_pku_tan"
+          ],
+          "people": [
+            "houzhao"
+          ],
+          "events": [
+            "v66m_tan_cases"
+          ]
+        }
+      ],
+      "sources": [
+        "v66_pku_tan",
+        "v66_dmu_tan",
+        "v66_ruc_women_work"
+      ]
+    },
+    {
+      "person": "q_wangzhenyi",
+      "title": "王贞仪：在书本、计算与远行之间求知",
+      "dek": "她的价值不在被包装成孤立的天才，而在清代知识条件中持续解释天文、算学并留下女性学习者的声音。",
+      "sections": [
+        {
+          "id": "v66_wang_1",
+          "title": "家庭藏书、旅行与自学",
+          "text": "王贞仪生于1768年，成长环境使她能够接触家中藏书，也随家庭迁徙和旅行见识不同地区。清代女性很难循科举和官学取得制度身份，她主要依靠阅读、请益、计算与写作建立知识路径。这样的条件仍然稀有，既显示家庭文化资源的重要，也说明她的学习需要突破性别角色对时间和活动空间的限制。把她简单称作“古代女科学家”便结束叙述，会漏掉知识如何获得的社会条件。",
+          "kind": "史实与解读",
+          "sources": [
+            "v66_njdfz_wang"
+          ],
+          "people": [
+            "q_qianlong"
+          ],
+          "events": [
+            "v66q_wang_science"
+          ]
+        },
+        {
+          "id": "v66_wang_2",
+          "title": "把天文现象写得可以理解",
+          "text": "地方志和著述目录记载她讨论星象、岁差、日至和日月食等问题。她关心的不只是列出结论，也希望把复杂现象转成读者能够理解的说明。相关叙述常提到她用简单器物演示天象原理，但今天能够核对的作品保存并不完整，具体实验过程应区分原文、传记和后世转述。可以确认的是，她主动参与了历算知识的解释，而不是只以诗人的身份旁观。",
+          "kind": "史实与解读",
+          "sources": [
+            "v66_njdfz_wang"
+          ],
+          "people": [
+            "q_qianlong"
+          ],
+          "events": [
+            "v66q_wang_science"
+          ]
+        },
+        {
+          "id": "v66_wang_3",
+          "title": "算学写作与知识转换",
+          "text": "《西洋筹算增删》《勾股三角解》等书名显示她处理筹算、勾股及外来计算方法。清代天文算学本就处于传统术数、历法实践与西学输入长期交汇的环境，她的工作适合放在这一知识网络中观察。她不是朝廷历算官，也没有现代实验室；成就来自阅读、演算和讲解。用现代学科边界替她贴标签很方便，却可能抹去当时天文、历法、数学彼此相连的实际形态。",
+          "kind": "史实与解读",
+          "sources": [
+            "v66_njdfz_wang"
+          ],
+          "people": [
+            "q_qianlong"
+          ],
+          "events": [
+            "v66q_wang_science"
+          ]
+        },
+        {
+          "id": "v66_wang_4",
+          "title": "短暂生涯与保存限度",
+          "text": "王贞仪1797年去世，年仅二十九岁。她同时写诗，关注旅行见闻、贫困与女性处境，使知识活动和社会观察并行。部分著述后来散佚，有些名称通过目录、传记或辑本保存；这意味着我们可以确认其研究范围，却不宜假定每部原稿完整可见，更不应把“支持某种现代宇宙观”等流行概括当成无争议原文结论。谨慎说明保存限度，才能看清她实际留下的知识位置。",
+          "kind": "证据边界",
+          "sources": [
+            "v66_njdfz_wang"
+          ],
+          "people": [
+            "q_qianlong"
+          ],
+          "events": [
+            "v66q_wang_science"
+          ]
+        }
+      ],
+      "sources": [
+        "v66_njdfz_wang"
+      ]
+    },
+    {
+      "person": "q_qiujin",
+      "title": "秋瑾：把女性权利写入晚清公共讨论",
+      "dek": "办学、报刊和革命行动彼此相连，但每一种行动都应按自身材料理解，而不是压缩成单一英雄故事。",
+      "sections": [
+        {
+          "id": "v66_qiu_1",
+          "title": "从家庭角色走向公共行动",
+          "text": "秋瑾生于1875年，早年接受传统教育，也经历婚姻和家庭生活。晚清战败、留学和新式社团扩展了她理解国家与个人处境的方式。她赴日本学习，参与革命组织，回国后办学、演说并组织活动。她关于女性的论述来自切身约束，也处在当时报刊、女学和革命网络共同生长的环境。把转变写成突然觉醒会过度简化；教育资源、同人关系和政治危机都参与了选择。",
+          "kind": "史实与解读",
+          "sources": [
+            "v66_zjut_qiujin",
+            "v66_ruc_women_press"
+          ],
+          "people": [
+            "q_guangxu"
+          ],
+          "events": [
+            "v66q_women_schools",
+            "v66q_womens_journal"
+          ]
+        },
+        {
+          "id": "v66_qiu_2",
+          "title": "《中国女报》向谁发言",
+          "text": "1907年，秋瑾在上海创办《中国女报》，以文章讨论女子教育、经济自立、婚姻自主和男女平等，也呼吁女性承担救国责任。报刊使女性能够以作者和读者身份进入公共讨论，但主要触及识字、接近城市学校和社团的人群。其语言同时包含权利诉求、民族危机与革命动员，不能只摘取符合今天观念的句子，也不能据此认定所有女性已有相同政治主张。",
+          "kind": "史实与解读",
+          "sources": [
+            "v66_zjut_qiujin",
+            "v66_ruc_women_press"
+          ],
+          "people": [
+            "q_guangxu"
+          ],
+          "events": [
+            "v66q_womens_journal"
+          ]
+        },
+        {
+          "id": "v66_qiu_3",
+          "title": "女学制度与现实门槛",
+          "text": "清末民间和改革者办女学在前，1907年朝廷章程又让女子师范和女子小学正式进入学制。秋瑾持续倡导教育和自立，推动的是女性获得行动能力；官方章程则同时保留家庭伦理和性别分工期待。两者发生在同一年，却不是同一项政策，也没有证据表明秋瑾直接制定章程。女学带来教师、学生和公共空间，学费、地域、家庭态度仍决定谁真正能够入学。",
+          "kind": "史实与解读",
+          "sources": [
+            "v66_zs_women_school",
+            "v66_zjut_qiujin"
+          ],
+          "people": [
+            "q_guangxu"
+          ],
+          "events": [
+            "v66q_women_schools",
+            "v66q_women_normal"
+          ]
+        },
+        {
+          "id": "v66_qiu_4",
+          "title": "两期报纸与一生的边界",
+          "text": "《中国女报》实际只出版两期，不能写成长期稳定发行并覆盖全国的成熟报纸。秋瑾同年因革命案件被捕遇害，她的办学、写作和革命组织因生命中断而停止。后来纪念常把她塑造成唯一的女性先驱，但晚清已有不同立场的女学倡导者、作者、学生和办学者。准确评价她，既要承认其以女性身份承担政治风险，也要把个人放回更广阔的妇女报刊和教育网络。",
+          "kind": "证据边界",
+          "sources": [
+            "v66_zjut_qiujin",
+            "v66_ruc_women_press"
+          ],
+          "people": [
+            "q_guangxu"
+          ],
+          "events": [
+            "v66q_womens_journal"
+          ]
+        }
+      ],
+      "sources": [
+        "v66_zjut_qiujin",
+        "v66_ruc_women_press",
+        "v66_zs_women_school"
+      ]
     }
   ],
   "portraits": [
@@ -169282,6 +169829,40 @@
         "v65_nopss_plague",
         "v65_hrbmu_wu"
       ]
+    },
+    {
+      "from": "houzhao",
+      "to": "m_tanyunxian",
+      "role": "其在位时期《女医杂言》刊行",
+      "inverse": "正德时期刊行医案集的民间女医",
+      "period": "正德六年（1511）",
+      "note": "仅表示作品刊行年代关联，没有可靠证据证明谈允贤任职宫廷或与皇帝本人交往。",
+      "sources": [
+        "v66_pku_tan"
+      ]
+    },
+    {
+      "from": "q_qianlong",
+      "to": "q_wangzhenyi",
+      "role": "其在位时期活动的天文算学研究者",
+      "inverse": "乾隆后期从事天文算学写作的民间学者",
+      "period": "乾隆后期",
+      "note": "同时代关联，不表示王贞仪在宫廷任职或与乾隆皇帝有个人交往。",
+      "sources": [
+        "v66_njdfz_wang"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q_qiujin",
+      "role": "其在位时期的反清革命者与妇女报刊作者",
+      "inverse": "反对清朝统治并倡导妇女权利",
+      "period": "光绪后期",
+      "note": "政治时代与对立关系，不表示两人有直接会面或私人交往。",
+      "sources": [
+        "v66_zjut_qiujin",
+        "v66_ruc_women_press"
+      ]
     }
   ],
   "dynasties": [
@@ -171711,21 +172292,25 @@
         "m40_lidongyang",
         "m40_liujian",
         "m40_xieqian",
-        "m42_mawensheng"
+        "m42_mawensheng",
+        "m_tanyunxian"
       ],
       "events": [
         "v2l_liujin",
         "v2l_yingzhou",
         "v2l_ningwang",
         "v40m2_liujin_power_1506",
-        "v42m_chuanfeng"
+        "v42m_chuanfeng",
+        "v66m_tan_cases"
       ],
       "sources": [
         "v2l_ms16",
         "v40m2_ms304",
         "v40m2_ms181",
         "v40m2_ms195",
-        "v42m_ms182"
+        "v42m_ms182",
+        "v66_pku_tan",
+        "v66_dmu_tan"
       ],
       "note": ""
     },
@@ -171763,7 +172348,8 @@
         "v65m_silver",
         "v65m_customs",
         "v65m_shecang",
-        "v65m_urban"
+        "v65m_urban",
+        "v66m_women_work"
       ],
       "sources": [
         "v2l_ms17",
@@ -171774,7 +172360,8 @@
         "v13_dpm_jiajing_books",
         "v40m2_ms226",
         "v41m_ms222",
-        "v41m_ms205"
+        "v41m_ms205",
+        "v66_ruc_women_work"
       ],
       "note": ""
     },
@@ -172210,7 +172797,8 @@
         "v39_wumeng",
         "v40q_zhejiang_water",
         "qev_gaitu_guiliu_1726",
-        "v12_yongzheng_tax"
+        "v12_yongzheng_tax",
+        "v66q_xingke_records"
       ],
       "sources": [
         "v5qn_qsg220",
@@ -172224,7 +172812,9 @@
         "v39_dpm_princes",
         "v5qe_dpm_yongzheng",
         "v40q_qsg294",
-        "v39_dpm_zhang"
+        "v39_dpm_zhang",
+        "v66_saac_xingke",
+        "v66_fhac_xingke"
       ],
       "note": ""
     },
@@ -172243,7 +172833,8 @@
         "q_liuyong",
         "q_zhangtingyu",
         "q_agui",
-        "q_songyun"
+        "q_songyun",
+        "q_wangzhenyi"
       ],
       "events": [
         "qev_qianlong_accession_1735",
@@ -172260,7 +172851,9 @@
         "v42q_ili_tun",
         "v42q_second_jinchuan",
         "v42q_gansu_relief_fraud",
-        "v42q_kyakhta_negotiation"
+        "v42q_kyakhta_negotiation",
+        "v66q_wang_science",
+        "v66q_xingke_records"
       ],
       "sources": [
         "v5qn_qing_annals",
@@ -172280,7 +172873,9 @@
         "v39_dpm_zhang",
         "v42q_qsg318",
         "v42q_qsg342",
-        "v42q_xinjiang_tun"
+        "v42q_xinjiang_tun",
+        "v66_njdfz_wang",
+        "v66_saac_xingke"
       ],
       "note": "聚焦1735—1796年在位时期，禅位后的太上皇经历另见生平相关事件。"
     },
@@ -172307,7 +172902,8 @@
         "v12_jiaqing_palace_attack",
         "v40q_jiaqing_grain",
         "v42q_ili_canals",
-        "v42q_xinjiang_budget"
+        "v42q_xinjiang_budget",
+        "v66q_xingke_records"
       ],
       "sources": [
         "v5qn_qsg221",
@@ -172319,7 +172915,9 @@
         "v40q_qsg319",
         "v40q_qsg320",
         "v42q_qsg342",
-        "v42q_xinjiang_tun"
+        "v42q_xinjiang_tun",
+        "v66_saac_xingke",
+        "v66_fhac_xingke"
       ],
       "note": "1796年即位，1799年起实际亲政；此前仍受太上皇乾隆控制。"
     },
@@ -172347,7 +172945,8 @@
         "v40q_haiguo",
         "v41q_river_audit",
         "v41q_kaifeng_flood",
-        "v41q_chuanbi"
+        "v41q_chuanbi",
+        "v66q_xingke_records"
       ],
       "sources": [
         "v5qn_qing_annals",
@@ -172361,7 +172960,9 @@
         "v41q_chuanbi_letter",
         "v41q_hk_yearbook",
         "v42q_qsg342",
-        "v42q_xinjiang_tun"
+        "v42q_xinjiang_tun",
+        "v66_saac_xingke",
+        "v66_fhac_xingke"
       ],
       "note": ""
     },
@@ -172387,7 +172988,8 @@
         "v12_xianfeng_lijin",
         "v13_xianfeng_zongli",
         "v40q_tianjing_capital",
-        "v40q_xiang_army"
+        "v40q_xiang_army",
+        "v66q_xingke_records"
       ],
       "sources": [
         "v5qn_qing_annals",
@@ -172400,7 +173002,9 @@
         "v40q_qsg412",
         "v40q_qsg411",
         "v5qn_qsg221",
-        "v40q_tianchao"
+        "v40q_tianchao",
+        "v66_saac_xingke",
+        "v66_fhac_xingke"
       ],
       "note": ""
     },
@@ -172428,7 +173032,8 @@
         "v40q_fuzhou_shipyard",
         "v40q_overseas_students",
         "qev_self_strengthening_1860s",
-        "v65q_shipping"
+        "v65q_shipping",
+        "v66q_xingke_records"
       ],
       "sources": [
         "v5qn_qsg221",
@@ -172441,7 +173046,9 @@
         "v40q_qsg412",
         "v40q_qsg411",
         "v40q_hong_army",
-        "v40q_tianchao"
+        "v40q_tianchao",
+        "v66_saac_xingke",
+        "v66_fhac_xingke"
       ],
       "note": "同治初年由两宫皇太后垂帘，奕訢等参与主持政务，不宜把所有决策直接归于幼帝。"
     },
@@ -172466,7 +173073,8 @@
         "q_zengjize",
         "q_liangqichao",
         "q_yanfu",
-        "q_huangxing"
+        "q_huangxing",
+        "q_qiujin"
       ],
       "events": [
         "qev_guangxu_accession_1875",
@@ -172485,7 +173093,12 @@
         "v41q_xinmin",
         "v41q_tianyan",
         "v65q_famine",
-        "v65q_jingzhang"
+        "v65q_jingzhang",
+        "v66q_xingke_records",
+        "v66q_women_schools",
+        "v66q_womens_journal",
+        "v66q_women_normal",
+        "v66q_ningbo_charity"
       ],
       "sources": [
         "v5qn_qsg221",
@@ -172513,7 +173126,12 @@
         "v40q_sun_declaration",
         "v41q_yan_bio",
         "v41q_yan_manuscript",
-        "v41q_huanghuagang"
+        "v41q_huanghuagang",
+        "v66_saac_xingke",
+        "v66_zjut_qiujin",
+        "v66_zs_women_school",
+        "v66_bjww_normal",
+        "v66_ningbo_charity"
       ],
       "note": ""
     },
@@ -172545,7 +173163,9 @@
         "v41q_huanghuagang",
         "v41q_yangxia",
         "v65q_jingzhang",
-        "v65q_plague"
+        "v65q_plague",
+        "v66q_women_normal",
+        "v66q_ningbo_charity"
       ],
       "sources": [
         "v5qn_qsg221",
@@ -172563,7 +173183,9 @@
         "v41q_yan_bio",
         "v41q_yan_books",
         "v41q_tianyan",
-        "v41q_yan_manuscript"
+        "v41q_yan_manuscript",
+        "v66_bjww_normal",
+        "v66_ningbo_charity"
       ],
       "note": "清朝宣统时期为1908—1912年，载沣摄政，隆裕参与退位决策。溥仪后来的个人经历另见生平相关事件。"
     },

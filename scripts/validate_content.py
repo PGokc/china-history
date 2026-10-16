@@ -1099,3 +1099,40 @@ if d['version'] >= 47:
  assert '不是中国境内第一条铁路' in corpus and '不能写成一人独自指挥整个东北' in corpus
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成',corpus)
  print('V47 PASS: eight sourced Ming-Qing economic and social events plus Zhan Tianyou and Wu Lien-teh readings deepen markets, relief, infrastructure and public health')
+
+if d['version'] >= 48:
+ v66_sources={s['id']:s for s in d['sources'] if s['id'].startswith('v66_')}
+ assert len(v66_sources)==11 and all(s['url'].startswith('https://') and len(s['note'])>=25 for s in v66_sources.values())
+ events=[e for e in d['events'] if e['id'].startswith('v66')]
+ assert len(events)==8 and Counter(e['category'] for e in events)=={'文化':4,'社会':4}
+ assert all(e['sources'] and e.get('impact') and e.get('peopleRoles') and len(re.findall(r'[\u4e00-\u9fff]',e['body']+e['impact']))>=180 for e in events)
+ for pid in ['m_tanyunxian','q_wangzhenyi','q_qiujin']:
+  assert pid in people
+  article=articles[pid]
+  assert len(article['sections'])==4 and all(s['sources'] and s.get('events') and s.get('people') for s in article['sections'])
+  assert sum(len(re.findall(r'[\u4e00-\u9fff]',s['text'])) for s in article['sections'])>=550
+  assert any(pid in e['people'] for e in events)
+ required_reign_people={'houzhao':{'m_tanyunxian'},'q_qianlong':{'q_wangzhenyi'},'q_guangxu':{'q_qiujin'}}
+ required_reign_events={
+  'houzhao':{'v66m_tan_cases'},'houcong':{'v66m_women_work'},
+  'q_yongzheng':{'v66q_xingke_records'},'q_qianlong':{'v66q_wang_science','v66q_xingke_records'},
+  'q_jiaqing':{'v66q_xingke_records'},'q_daoguang':{'v66q_xingke_records'},
+  'q_xianfeng':{'v66q_xingke_records'},'q_tongzhi':{'v66q_xingke_records'},
+  'q_guangxu':{'v66q_xingke_records','v66q_women_schools','v66q_womens_journal','v66q_women_normal','v66q_ningbo_charity'},
+  'q_xuantong':{'v66q_women_normal','v66q_ningbo_charity'}
+ }
+ contexts={x['person']:x for x in d['reignContexts']}
+ assert all(ids<=set(contexts[pid]['people']) for pid,ids in required_reign_people.items())
+ assert all(ids<=set(contexts[pid]['events']) for pid,ids in required_reign_events.items())
+ required_links={
+  'houzhao-8':'v66m_tan_cases','houcong-8':'v66m_women_work','q-yongzheng-7':'v66q_xingke_records',
+  'q-qianlong-4':'v66q_wang_science','q-guangxu-6':'v66q_women_schools','q-xuantong-2':'v66q_women_normal'
+ }
+ for section_id,event_id in required_links.items():
+  section=next(s for a in d['articles'] for s in a['sections'] if s['id']==section_id)
+  assert event_id in (section.get('events') or []),(section_id,'missing V48 event link')
+ corpus=json.dumps(events+[people[x] for x in ['m_tanyunxian','q_wangzhenyi','q_qiujin']]+[articles[x] for x in ['m_tanyunxian','q_wangzhenyi','q_qiujin']],ensure_ascii=False)
+ assert all(term in corpus for term in ['女医杂言','三十一则','稳婆','王贞仪','刑科题本','女子教育','中国女报','京师女子师范','宁波'])
+ assert '不是宫廷女官' in corpus and '只出版两期' in corpus and '不能把卷宗当作完整透明的日常生活实录' in corpus
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成',corpus)
+ print('V48 PASS: eight sourced Ming-Qing topics and three full readings add women physicians, science, education, press, justice records and local charity with explicit evidence boundaries')
