@@ -1,5 +1,5 @@
 {
-  "version": 46,
+  "version": 47,
   "reviewed": "2026-10-15",
   "people": [
     {
@@ -15397,6 +15397,41 @@
         "v60_jts165"
       ],
       "dynasty": "tang"
+    },
+    {
+      "id": "q_zhantianyou",
+      "name": "詹天佑",
+      "call": "铁路工程师",
+      "temple": "",
+      "era": "",
+      "reign": "同治至宣统时期",
+      "summary": "主持京张铁路勘测、设计与施工，把工程训练、线路运营和国家自主办路连接起来。",
+      "parent": null,
+      "sources": [
+        "v65_nra_jingzhang",
+        "v65_gdws_zhan"
+      ],
+      "kind": "重要人物",
+      "note": "京张铁路的“第一”有严格限定：它不是中国境内第一段铁路，而是中国人自行勘测、设计、施工和管理的第一条国有干线铁路。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q_wuliande",
+      "name": "伍连德",
+      "call": "医生与公共卫生先驱",
+      "temple": "",
+      "era": "",
+      "reign": "光绪至民国时期",
+      "summary": "1910年受命赴东北调查肺鼠疫，在傅家甸组织隔离、交通检疫与遗体处置，并主持奉天万国鼠疫研究会。",
+      "parent": null,
+      "sources": [
+        "v65_cas_plague",
+        "v65_nopss_plague",
+        "v65_hrbmu_wu"
+      ],
+      "kind": "重要人物",
+      "note": "伍连德是傅家甸防疫和国际会议的关键人物，但东北各地防疫还依赖地方官员、中外医务人员、警察与居民协作。",
+      "dynasty": "qing"
     }
   ],
   "sources": [
@@ -20415,6 +20450,72 @@
       "title": "故宫博物院·清代宫廷战图研究",
       "url": "https://img.dpm.org.cn/Uploads/File/2022/09/20/u6329730739b33.pdf",
       "note": "故宫博物院研究资料；平定准噶尔战事被转化为绘画、铜版组画和功臣像，图像具有宫廷纪功立场。"
+    },
+    {
+      "id": "v65_cssn_silver",
+      "title": "中国社会科学网·全球史视野下的明代白银货币化",
+      "url": "https://www.cssn.cn/zkzg/zkzg_skyskl/zkzg_skyskl_yc/202207/t20220727_5421739.shtml",
+      "note": "中国社会科学院主管学术平台转载研究文章；用于核对成化弘治以后白银由市场崛起、赋役折银与海外白银流入，具体流入比例仍是研究估算。"
+    },
+    {
+      "id": "v65_cssn_customs",
+      "title": "中国社会科学网·嘉靖初年扬州钞关征税程序",
+      "url": "https://cssn.cn/zjzg/fzyj/xstt/202502/t20250225_5849107.shtml",
+      "note": "法制史研究成果；以《维扬关志》说明钞关征税、单票与商品流通管理，不把一个关口的材料直接等同于全国情况。"
+    },
+    {
+      "id": "v65_dpm_shecang",
+      "title": "故宫博物院·明后期社仓制度研究",
+      "url": "https://www.dpm.org.cn/Uploads/File/2019/11/14/u5dcd39462cbe7.pdf",
+      "note": "故宫学刊论文；梳理成化弘治倡议、嘉靖推广与明后期社仓运行困境，制度规定与地方实际执行需要区分。"
+    },
+    {
+      "id": "v65_cssn_silver_social",
+      "title": "中国社会科学网·明代白银流通与社会变革",
+      "url": "https://www.cssn.cn/shx/zhyj/202609/t20260907_6066209.shtml",
+      "note": "中国社会科学报研究文章；讨论白银流通、城市就业和消费变化，所谓“消费社会”是学术解释，不作为覆盖所有地区的定论。"
+    },
+    {
+      "id": "v65_jdsyj_famine",
+      "title": "《近代史研究》·清季丁戊奇荒的赈济",
+      "url": "https://jds.cssn.cn/webpic/web/jdsww/UploadFiles/zyqk/2010/12/jdsyj199302.pdf",
+      "note": "中国社会科学院近代史研究所期刊论文；核对1876至1879年北方旱荒、官赈与民间义赈，死亡数字因史料口径而异。"
+    },
+    {
+      "id": "v65_chnmuseum_shipping",
+      "title": "中国国家博物馆·清末轮船招商局仓库",
+      "url": "https://www.chnmuseum.cn/zp/zpml/201812/t20181218_24372.shtml",
+      "note": "国家博物馆藏品资料；确认1872年李鸿章在上海创办轮船招商局及其官督商办属性，不以单一企业代表全部洋务成效。"
+    },
+    {
+      "id": "v65_nra_jingzhang",
+      "title": "国家铁路局·百年京张 世纪经典",
+      "url": "https://source.nra.gov.cn/tlfc/tpsy/202204/t20220405_293018.shtml",
+      "note": "国家铁路主管部门史料专题；核对1905至1909年建设、詹天佑主持及国有干线性质，“第一”限定为中国人自行勘测设计施工管理的国有干线。"
+    },
+    {
+      "id": "v65_cas_plague",
+      "title": "中国科学院自然科学史研究所·东北鼠疫与万国鼠疫研究会",
+      "url": "https://www.ihns.cas.cn/sourcedb/cn/ihnsthesis/202105/t20210512_6012724.html",
+      "note": "科技史研究论文摘要；确认1910至1911年东北肺鼠疫、奉天国际会议与伍连德的重要作用，同时提示个人作用仍有可讨论边界。"
+    },
+    {
+      "id": "v65_nopss_plague",
+      "title": "全国哲学社会科学工作办公室·东北鼠疫中的全权总医官",
+      "url": "https://www.nopss.gov.cn/n1/2019/1212/c417352-31503271.html",
+      "note": "国家社科基金项目成果；指出伍连德主要负责傅家甸防疫及奉天会议筹备，不能笼统写成其一人指挥整个东北。"
+    },
+    {
+      "id": "v65_hrbmu_wu",
+      "title": "哈尔滨医科大学·伍连德年谱",
+      "url": "https://www.hrbmu.edu.cn/info/1041/1486.htm",
+      "note": "医学高校校史资料；核对清政府委派、傅家甸防疫、奉天万国鼠疫研究会及其后公共卫生工作。"
+    },
+    {
+      "id": "v65_gdws_zhan",
+      "title": "广东省政协文史资料·爱国铁路工程师詹天佑",
+      "url": "https://www.gdwsw.gov.cn/rwcq/content/post_22371.html",
+      "note": "地方政协文史资料；用于核对詹天佑主持京张铁路的经历，与国家铁路局资料相互参照。"
     }
   ],
   "relations": [
@@ -55275,6 +55376,188 @@
         "s_gaozong": "在位皇帝",
         "s_lizong": "在位皇帝"
       }
+    },
+    {
+      "id": "v65m_silver",
+      "year": "约1465—1620",
+      "sortYear": 1470,
+      "title": "白银进入赋税与日常市场",
+      "body": "成化、弘治以后，称量白银在民间交易中日益重要，朝廷也逐步以折银方式征收赋役。嘉靖以后银两成为财政计量和大额支付的重要工具，隆庆、万历时期海外白银又通过贸易进入中国。这个过程不是一道诏令造成，而是市场使用、财政需求与国际贸易长期汇合的结果。",
+      "impact": "农户需要把部分产品换成白银纳税，商人、城镇和跨区域市场因此更紧密相连；白银供应的地区差异和波动也会把金融压力传到普通家庭。海外白银流入量存在不同估算，不能把明代经济简单写成单一的“白银繁荣”。",
+      "kind": "历史事件",
+      "people": [
+        "jianshen",
+        "youtang",
+        "houcong",
+        "zaihou",
+        "yijun",
+        "m42_qiujun"
+      ],
+      "sources": [
+        "v65_cssn_silver",
+        "v65_cssn_silver_social"
+      ],
+      "peopleRoles": {
+        "jianshen": "在位时期出现白银市场崛起的分水岭",
+        "youtang": "在位时期白银使用继续扩展",
+        "houcong": "在位时期银两制度与财政使用趋于明确",
+        "zaihou": "在位时期海上贸易环境变化",
+        "yijun": "在位时期赋役折银与海外白银联系加深",
+        "m42_qiujun": "注意白银流通并提出货币制度主张"
+      },
+      "category": "经济"
+    },
+    {
+      "id": "v65m_customs",
+      "year": "嘉靖初年（1522—1530年代）",
+      "sortYear": 1525,
+      "title": "钞关管理运河商品流通",
+      "body": "明代在运河和交通要道设置钞关，对经过的船只、货物征税。嘉靖初年的扬州材料显示，征税需要查验、登记并使用票据，关口既是财政节点，也是商人、船户与胥吏频繁接触的行政空间。各关做法及执行强度并不完全相同。",
+      "impact": "钞关把商品流通纳入国家财政，但层层查验也增加运输时间和交易成本。它提示明代经济不能只从土地税理解：运河、城市和跨区域商品已经成为治理对象。扬州个案可以解释制度运作，却不能直接替代全国各钞关的地方材料。",
+      "kind": "历史事件",
+      "people": [
+        "houcong"
+      ],
+      "sources": [
+        "v65_cssn_customs"
+      ],
+      "peopleRoles": {
+        "houcong": "嘉靖初年扬州钞关材料所处在位皇帝"
+      },
+      "category": "经济"
+    },
+    {
+      "id": "v65m_shecang",
+      "year": "约1480—1644",
+      "sortYear": 1490,
+      "title": "社仓推广与地方救荒困境",
+      "body": "成化、弘治时期已有推广社仓的倡议，嘉靖初年朝廷要求各地推行。社仓希望在乡里储粮，于青黄不接或灾荒时借贷、赈济。制度落地依赖地方官、乡绅和粮食征集，账目、保管与贫富负担都可能引发矛盾。",
+      "impact": "社仓把救荒责任部分下沉到乡里，为基层储粮提供制度工具；但官府侵耗、强制摊派和仓储空虚常使其难以持久。不能因为制度写入政令，就推定每个地方都长期有效运行；明末“仓空”记载也应结合具体区域判断。",
+      "kind": "历史事件",
+      "people": [
+        "jianshen",
+        "youtang",
+        "houcong"
+      ],
+      "sources": [
+        "v65_dpm_shecang"
+      ],
+      "peopleRoles": {
+        "jianshen": "在位时期社仓倡议逐渐出现",
+        "youtang": "在位时期继续讨论乡里储粮",
+        "houcong": "在位初期下令各地推广"
+      },
+      "category": "社会"
+    },
+    {
+      "id": "v65m_urban",
+      "year": "16世纪至17世纪前期",
+      "sortYear": 1575,
+      "title": "城市就业、消费与社会交往扩展",
+      "body": "白银流通和商品生产扩展后，江南等地城镇吸引手工业者、商人和服务人口。茶馆、酒楼、书坊既提供消费，也形成新的交往空间；服饰、家具、出版和休闲支出更受时人关注。变化在商业较发达地区尤为明显，并非所有地区和家庭同步进入富裕生活。",
+      "impact": "城市生活扩大职业选择和文化消费，也加深城乡、区域与阶层差异。把晚明概括成“消费社会”是一种学术解释，适合说明部分城市的新现象，不能遮蔽赋役负担、灾荒与贫困仍广泛存在。",
+      "kind": "历史事件",
+      "people": [
+        "houcong",
+        "zaihou",
+        "yijun"
+      ],
+      "sources": [
+        "v65_cssn_silver_social"
+      ],
+      "peopleRoles": {
+        "houcong": "在位时期白银流通与城市市场继续扩展",
+        "zaihou": "在位时期贸易环境变化推动市场联系",
+        "yijun": "在位时期江南城市消费与出版更加活跃"
+      },
+      "category": "社会"
+    },
+    {
+      "id": "v65q_famine",
+      "year": "1876—1879",
+      "sortYear": 1876,
+      "title": "丁戊奇荒与官赈、义赈",
+      "body": "光绪初年，严重旱荒持续影响山西、河南、陕西、直隶、山东等地，并波及更多区域。粮价、运输、地方财政和人口流动共同放大灾害。清廷与地方推行官赈，江南绅商等组织的义赈也跨区域募捐运粮，形成近代慈善网络的重要实践。",
+      "impact": "灾荒造成大规模死亡与离散，具体死亡数字因统计范围和史料口径差异很大，不宜写成毫无争议的精确数字。官赈与义赈并行显示国家救荒能力的限制，也推动报刊、商人网络和民间慈善进入公共事务。",
+      "kind": "历史事件",
+      "people": [
+        "q_guangxu"
+      ],
+      "sources": [
+        "v65_jdsyj_famine"
+      ],
+      "peopleRoles": {
+        "q_guangxu": "在位初期发生北方特大旱荒；实际朝政由慈禧太后主导"
+      },
+      "category": "社会"
+    },
+    {
+      "id": "v65q_shipping",
+      "year": "1872",
+      "sortYear": 1872,
+      "title": "轮船招商局在上海创办",
+      "body": "李鸿章推动在上海招商集股创办轮船招商局，以官府控制和商股经营结合的方式发展近代航运。企业购置轮船、经营沿海与长江航线，也承担漕粮运输等任务。它连接洋务军政目标、商业资本和新式企业管理，却始终带有官商关系复杂的结构。",
+      "impact": "轮船招商局是洋务派早期官督商办企业的重要代表，推动航运、保险、码头和技术人才积累；同时，行政干预、经营利益和市场竞争限制了制度成效。创办一家企业不等于完成工业化，更不能掩盖航运劳动和区域利益的差异。",
+      "kind": "历史事件",
+      "people": [
+        "q_tongzhi",
+        "q_lihongzhang"
+      ],
+      "sources": [
+        "v65_chnmuseum_shipping"
+      ],
+      "peopleRoles": {
+        "q_tongzhi": "在位时期洋务企业创办",
+        "q_lihongzhang": "推动招商集股并长期影响企业经营"
+      },
+      "category": "经济"
+    },
+    {
+      "id": "v65q_jingzhang",
+      "year": "1905—1909",
+      "sortYear": 1905,
+      "title": "京张铁路自行勘测设计并通车",
+      "body": "清政府筹办北京至张家口铁路，詹天佑主持勘测、设计、施工和管理。线路穿越关沟等复杂地形，1905年开工，1909年全线通车。工程培养中国技术人员，也留下车站、桥隧与施工影像等工业遗产。",
+      "impact": "京张铁路证明中国工程团队能够主持重要国有干线，增强自主办路的社会信心，并改善北京与西北方向的交通。它不是中国境内第一条铁路；其历史“第一”应限定为中国人自行勘测、设计、施工和管理的第一条国有干线。",
+      "kind": "历史事件",
+      "people": [
+        "q_guangxu",
+        "q_xuantong",
+        "q_zhantianyou"
+      ],
+      "sources": [
+        "v65_nra_jingzhang",
+        "v65_gdws_zhan"
+      ],
+      "peopleRoles": {
+        "q_guangxu": "在位后期批准并启动工程",
+        "q_xuantong": "在位初年全线通车",
+        "q_zhantianyou": "主持勘测、设计、施工与管理"
+      },
+      "category": "经济"
+    },
+    {
+      "id": "v65q_plague",
+      "year": "1910—1911",
+      "sortYear": 1910,
+      "title": "东北肺鼠疫与近代防疫实践",
+      "body": "肺鼠疫由满洲里方向沿交通线扩散，哈尔滨傅家甸成为严重疫区。清政府委派伍连德调查组织防疫；隔离、交通检疫、病亡者处置和社区管控共同实施。1911年奉天召开万国鼠疫研究会，讨论病原、传播与防治，也是中国主办的重要国际医学会议。",
+      "impact": "疫情推动常设防疫机构、跨区域检疫和公共卫生知识发展，也暴露主权交涉、行政协调及强制措施对居民生活的影响。伍连德作用关键，但其主要工作集中于傅家甸和会议筹备，不能写成一人独自指挥整个东北。",
+      "kind": "历史事件",
+      "people": [
+        "q_xuantong",
+        "q_wuliande"
+      ],
+      "sources": [
+        "v65_cas_plague",
+        "v65_nopss_plague",
+        "v65_hrbmu_wu"
+      ],
+      "peopleRoles": {
+        "q_xuantong": "在位时期清政府组织东北防疫与国际会议",
+        "q_wuliande": "傅家甸防疫负责人及奉天会议主席"
+      },
+      "category": "社会"
     }
   ],
   "objects": [
@@ -67688,7 +67971,9 @@
           ],
           "kind": "史实与解读",
           "events": [
-            "v14_chenghua_doucai"
+            "v14_chenghua_doucai",
+            "v65m_silver",
+            "v65m_shecang"
           ]
         }
       ],
@@ -67812,7 +68097,11 @@
             "v2l_ms15",
             "v2l_ms78"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": [
+            "v65m_silver",
+            "v65m_shecang"
+          ]
         }
       ],
       "sources": [
@@ -68051,7 +68340,13 @@
             "v2l_ms18",
             "v2l_ms78"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": [
+            "v65m_silver",
+            "v65m_customs",
+            "v65m_shecang",
+            "v65m_urban"
+          ]
         }
       ],
       "sources": [
@@ -68156,7 +68451,11 @@
             "v2l_ms81",
             "v2l_ms19"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": [
+            "v65m_silver",
+            "v65m_urban"
+          ]
         },
         {
           "id": "zaihou-7",
@@ -68324,7 +68623,9 @@
           "kind": "史实与解读",
           "events": [
             "v14_wanli_worldmap",
-            "v40m2_geometry_1607"
+            "v40m2_geometry_1607",
+            "v65m_silver",
+            "v65m_urban"
           ],
           "people": [
             "m40_xuguangqi",
@@ -71159,7 +71460,8 @@
             "qev_self_strengthening_1860s",
             "v40q_tianjing_fall",
             "v40q_fuzhou_shipyard",
-            "v40q_overseas_students"
+            "v40q_overseas_students",
+            "v65q_shipping"
           ],
           "people": [
             "q_zengguofan",
@@ -71252,7 +71554,9 @@
             "v5qe_dpm_reader"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [
+            "v65q_famine"
+          ]
         },
         {
           "id": "q-guangxu-3",
@@ -71319,7 +71623,8 @@
             "v26_boxer_protocol",
             "v40q_xinjiang_campaign",
             "v40q_new_policy_memorial",
-            "v40q_tongmenghui"
+            "v40q_tongmenghui",
+            "v65q_jingzhang"
           ],
           "people": [
             "q_lihongzhang",
@@ -71392,7 +71697,9 @@
           ],
           "kind": "史实与解读",
           "events": [
-            "v12_xuantong_railway"
+            "v12_xuantong_railway",
+            "v65q_jingzhang",
+            "v65q_plague"
           ]
         },
         {
@@ -76252,7 +76559,8 @@
           "events": [
             "qev_self_strengthening_1860s",
             "v40q_overseas_students",
-            "v41q_beiyang"
+            "v41q_beiyang",
+            "v65q_shipping"
           ]
         },
         {
@@ -147737,6 +148045,157 @@
         "v60_jts165",
         "v60_tang_overview"
       ]
+    },
+    {
+      "person": "q_zhantianyou",
+      "title": "詹天佑：把铁路工程变成自主能力",
+      "dek": "京张铁路的意义不只在一条线路，而在勘测、设计、施工、管理和人才训练形成完整工程能力。",
+      "sections": [
+        {
+          "id": "v65_zhan_1",
+          "title": "工程教育与铁路经验",
+          "text": "詹天佑幼年赴美留学，学习工程，回国后进入铁路建设领域。晚清铁路已经在中国出现，但资金、技术与管理往往受外国力量影响，中国工程人员需要在实际线路中积累测量、桥梁、机车和运营经验。他的经历说明所谓“自主修路”不是忽然出现的个人奇迹，而是教育、工作团队和既有工程经验逐步累积的结果。评价其成就时，应同时看到技术人员、工人和行政协调共同构成工程。",
+          "kind": "史实与解读",
+          "sources": [
+            "v65_gdws_zhan",
+            "v65_nra_jingzhang"
+          ],
+          "people": [
+            "q_guangxu"
+          ],
+          "events": [
+            "v65q_jingzhang"
+          ]
+        },
+        {
+          "id": "v65_zhan_2",
+          "title": "关沟线路的技术选择",
+          "text": "京张铁路穿越关沟等复杂地形，需要在坡度、隧道、桥梁和成本之间选择方案。詹天佑主持勘测设计，并组织中国工程人员和工人施工。工程叙事常把“人字形线路”当作唯一象征，但一条铁路的完成还依赖分段测量、材料供应、工地管理和事故风险控制。把所有成果归于一人会遮蔽团队劳动，把它仅当民族口号又会忽略具体工程判断。",
+          "kind": "史实与解读",
+          "sources": [
+            "v65_nra_jingzhang",
+            "v65_gdws_zhan"
+          ],
+          "people": [
+            "q_guangxu"
+          ],
+          "events": [
+            "v65q_jingzhang"
+          ]
+        },
+        {
+          "id": "v65_zhan_3",
+          "title": "“第一条”的准确边界",
+          "text": "京张铁路于1905年开工，1909年全线通车。中国境内此前已有铁路，因此它并不是“中国第一条铁路”。较准确的表述是：中国人自行勘测、设计、施工和管理的第一条国有干线铁路。限定语看似削弱传奇，实际更能说明成就：在外国资本和工程师广泛参与中国铁路的时代，中国团队完成了一套规模较大的干线工程，并形成可以继续使用的专业能力。",
+          "kind": "证据边界",
+          "sources": [
+            "v65_nra_jingzhang"
+          ],
+          "people": [
+            "q_guangxu",
+            "q_xuantong"
+          ],
+          "events": [
+            "v65q_jingzhang"
+          ]
+        },
+        {
+          "id": "v65_zhan_4",
+          "title": "铁路、国家与地方社会",
+          "text": "铁路缩短运输时间，改变沿线货物流向和城镇联系，也涉及土地、工费、煤炭运输与运营收益。京张铁路后来成为重要工业遗产，保存的车站、桥隧和影像让工程史不只剩下名人传记。詹天佑的历史位置，应放在晚清国家尝试掌握基础设施、培养工程共同体的过程中理解；自主技术带来信心，却不能自动解决清末财政和政治危机。",
+          "kind": "历史影响",
+          "sources": [
+            "v65_nra_jingzhang"
+          ],
+          "people": [
+            "q_xuantong"
+          ],
+          "events": [
+            "v65q_jingzhang"
+          ]
+        }
+      ],
+      "sources": [
+        "v65_nra_jingzhang",
+        "v65_gdws_zhan"
+      ]
+    },
+    {
+      "person": "q_wuliande",
+      "title": "伍连德：肺鼠疫中的医学、行政与社会",
+      "dek": "1910年的防疫既是医学判断，也是交通管制、社区协作、国际交涉和国家能力的共同考验。",
+      "sections": [
+        {
+          "id": "v65_wu_1",
+          "title": "从医师到全权总医官",
+          "text": "1910年东北发生严重肺鼠疫后，清政府委派伍连德赴当地调查并组织防疫。他接受近代医学训练，面对的却不仅是诊断问题：铁路把人员流动和疫情扩散连接起来，地方行政、中俄日势力和不同医学意见相互交织。其“全权总医官”地位也是在实际协调中逐步形成，不能理解成一道任命便能自动调动整个东北的所有资源。",
+          "kind": "史实与解读",
+          "sources": [
+            "v65_nopss_plague",
+            "v65_hrbmu_wu"
+          ],
+          "people": [
+            "q_xuantong"
+          ],
+          "events": [
+            "v65q_plague"
+          ]
+        },
+        {
+          "id": "v65_wu_2",
+          "title": "傅家甸的隔离与检疫",
+          "text": "伍连德在哈尔滨傅家甸推动隔离、交通检疫和病亡者处置，并依据肺鼠疫的人际飞沫传播风险组织防护。措施需要医务人员、警察、地方官员和居民执行，也会限制出行、营业与丧葬习惯。防疫成效不能只写成英雄战胜疾病，它同时包含对社区生活的强力干预，以及在紧急状态下如何解释、协调和维持信任的问题。",
+          "kind": "史实与解读",
+          "sources": [
+            "v65_cas_plague",
+            "v65_nopss_plague",
+            "v65_hrbmu_wu"
+          ],
+          "people": [
+            "q_xuantong"
+          ],
+          "events": [
+            "v65q_plague"
+          ]
+        },
+        {
+          "id": "v65_wu_3",
+          "title": "奉天的国际会议",
+          "text": "1911年奉天召开万国鼠疫研究会，多国专家讨论东北疫情、肺鼠疫传播和防治经验，伍连德担任会议主席。会议具有医学交流意义，也牵涉列强在东北的政治利益与卫生管辖。把会议仅写成个人荣誉，会漏掉清政府借国际学术场合维护治理能力的努力；把它只写成外交事件，又会忽略临床观察和疫情记录对公共卫生知识的推动。",
+          "kind": "史实与解读",
+          "sources": [
+            "v65_cas_plague",
+            "v65_nopss_plague"
+          ],
+          "people": [
+            "q_xuantong"
+          ],
+          "events": [
+            "v65q_plague"
+          ]
+        },
+        {
+          "id": "v65_wu_4",
+          "title": "关键人物与集体防疫",
+          "text": "伍连德是傅家甸防疫和奉天会议的关键人物，后来继续参与防疫机构与医学建设。但研究指出，他并未直接负责东北所有地区的每一项措施。地方官员、中外医生、铁路与警务系统以及居民共同影响结果。保留这一边界不会削弱其贡献，反而能更准确地理解现代公共卫生：它依靠专业知识，也依靠制度、组织和社会配合。",
+          "kind": "证据边界",
+          "sources": [
+            "v65_nopss_plague",
+            "v65_hrbmu_wu"
+          ],
+          "people": [
+            "q_xuantong"
+          ],
+          "events": [
+            "v65q_plague"
+          ]
+        }
+      ],
+      "sources": [
+        "v65_cas_plague",
+        "v65_nopss_plague",
+        "v65_hrbmu_wu"
+      ]
     }
   ],
   "portraits": [
@@ -168800,6 +169259,29 @@
       "sources": [
         "v60_jts165"
       ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q_zhantianyou",
+      "role": "批准并启动京张铁路的在位皇帝",
+      "inverse": "主持京张铁路工程的技术负责人",
+      "period": "光绪末年",
+      "note": "工程始于光绪朝；批准项目不等于皇帝本人进行技术设计。",
+      "sources": [
+        "v65_nra_jingzhang"
+      ]
+    },
+    {
+      "from": "q_xuantong",
+      "to": "q_wuliande",
+      "role": "在位时期清政府组织东北防疫",
+      "inverse": "受命赴东北调查并主持傅家甸防疫",
+      "period": "宣统时期",
+      "note": "伍连德主要负责傅家甸并主持奉天会议，东北各地另有不同防疫组织。",
+      "sources": [
+        "v65_nopss_plague",
+        "v65_hrbmu_wu"
+      ]
     }
   ],
   "dynasties": [
@@ -171154,7 +171636,9 @@
         "v42m_datengxia",
         "v42m_liangguang",
         "v42m_yansui_wall",
-        "v42m_yulin_move"
+        "v42m_yulin_move",
+        "v65m_silver",
+        "v65m_shecang"
       ],
       "sources": [
         "v2e_ms13",
@@ -171197,7 +171681,9 @@
         "v40m2_hongzhi_review_1488",
         "v40m2_hongzhi_fiscal_1501",
         "v42m_daxue_present",
-        "v42m_ma_army"
+        "v42m_ma_army",
+        "v65m_silver",
+        "v65m_shecang"
       ],
       "sources": [
         "v2l_ms15",
@@ -171273,7 +171759,11 @@
         "v41m_wangjiangjing",
         "v41m_xuhai",
         "v41m_cengang",
-        "v41m_pinghaiwei"
+        "v41m_pinghaiwei",
+        "v65m_silver",
+        "v65m_customs",
+        "v65m_shecang",
+        "v65m_urban"
       ],
       "sources": [
         "v2l_ms17",
@@ -171312,7 +171802,9 @@
         "v2l_sea",
         "v2l_altan",
         "v40m2_jizhen_training_1568",
-        "v40m2_hairui_land_1569"
+        "v40m2_hairui_land_1569",
+        "v65m_silver",
+        "v65m_urban"
       ],
       "sources": [
         "v2l_ms19",
@@ -171364,7 +171856,9 @@
         "v40m2_bozhou_1600",
         "v40_shen_resignation_1591",
         "v41m_bencao_draft",
-        "v41m_bencao_print"
+        "v41m_bencao_print",
+        "v65m_silver",
+        "v65m_urban"
       ],
       "sources": [
         "v2l_ms78",
@@ -171933,7 +172427,8 @@
         "v40q_tianjing_fall",
         "v40q_fuzhou_shipyard",
         "v40q_overseas_students",
-        "qev_self_strengthening_1860s"
+        "qev_self_strengthening_1860s",
+        "v65q_shipping"
       ],
       "sources": [
         "v5qn_qsg221",
@@ -171988,7 +172483,9 @@
         "v41q_ili_treaty",
         "v41q_shiwu",
         "v41q_xinmin",
-        "v41q_tianyan"
+        "v41q_tianyan",
+        "v65q_famine",
+        "v65q_jingzhang"
       ],
       "sources": [
         "v5qn_qsg221",
@@ -172046,7 +172543,9 @@
         "v40q_yuan_return",
         "v40q_nanjing_republic",
         "v41q_huanghuagang",
-        "v41q_yangxia"
+        "v41q_yangxia",
+        "v65q_jingzhang",
+        "v65q_plague"
       ],
       "sources": [
         "v5qn_qsg221",

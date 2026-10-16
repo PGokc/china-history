@@ -1060,3 +1060,42 @@ if d['version'] >= 46:
  assert '不是中立的战场摄影' in corpus
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成',corpus)
  print('V46 PASS: sixteen sourced Ming-Qing architecture and object topics fill both empty collection categories while preserving reconstruction, attribution and image-bias boundaries')
+
+if d['version'] >= 47:
+ v65_sources={s['id']:s for s in d['sources'] if s['id'].startswith('v65_')}
+ assert len(v65_sources)==11 and all(s['url'].startswith('https://') and len(s['note'])>=25 for s in v65_sources.values())
+ events=[e for e in d['events'] if e['id'].startswith('v65')]
+ assert len(events)==8 and Counter(e['category'] for e in events)=={'经济':4,'社会':4}
+ assert all(e['sources'] and e.get('impact') and e.get('peopleRoles') and len(re.findall(r'[\u4e00-\u9fff]',e['body']+e['impact']))>=120 for e in events)
+ assert {'q_zhantianyou','q_wuliande'}<=people.keys()
+ for pid in ['q_zhantianyou','q_wuliande']:
+  article=articles[pid]
+  assert len(article['sections'])==4 and all(s['sources'] and s.get('events') and s.get('people') for s in article['sections'])
+  assert sum(len(re.findall(r'[\u4e00-\u9fff]',s['text'])) for s in article['sections'])>=500
+  assert any(pid in e['people'] for e in events)
+ ming={p['id'] for p in d['people'] if p.get('dynasty')=='ming'}
+ qing={p['id'] for p in d['people'] if p.get('dynasty')=='qing'}
+ for dynasty_people in [ming,qing]:
+  counts=Counter(e['category'] for e in d['events'] if dynasty_people.intersection(e['people']))
+  assert counts['经济']>=15 and counts['社会']>=10
+ required_links={
+  'jianshen-7':'v65m_silver','houcong-8':'v65m_customs','yijun-8':'v65m_urban',
+  'q-tongzhi-3':'v65q_shipping','q-guangxu-2':'v65q_famine','q-xuantong-3':'v65q_plague'
+ }
+ for section_id,event_id in required_links.items():
+  section=next(s for a in d['articles'] for s in a['sections'] if s['id']==section_id)
+  assert event_id in (section.get('events') or []),(section_id,'missing V47 event link')
+ required_reign_events={
+  'jianshen':{'v65m_silver','v65m_shecang'},'youtang':{'v65m_silver','v65m_shecang'},
+  'houcong':{'v65m_silver','v65m_customs','v65m_shecang','v65m_urban'},
+  'zaihou':{'v65m_silver','v65m_urban'},'yijun':{'v65m_silver','v65m_urban'},
+  'q_tongzhi':{'v65q_shipping'},'q_guangxu':{'v65q_famine','v65q_jingzhang'},
+  'q_xuantong':{'v65q_jingzhang','v65q_plague'}
+ }
+ contexts={x['person']:x for x in d['reignContexts']}
+ assert all(ids<=set(contexts[pid]['events']) for pid,ids in required_reign_events.items())
+ corpus=json.dumps(events+[people['q_zhantianyou'],people['q_wuliande'],articles['q_zhantianyou'],articles['q_wuliande']],ensure_ascii=False)
+ assert all(term in corpus for term in ['白银','钞关','社仓','城市','丁戊奇荒','轮船招商局','京张铁路','肺鼠疫'])
+ assert '不是中国境内第一条铁路' in corpus and '不能写成一人独自指挥整个东北' in corpus
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成',corpus)
+ print('V47 PASS: eight sourced Ming-Qing economic and social events plus Zhan Tianyou and Wu Lien-teh readings deepen markets, relief, infrastructure and public health')

@@ -2207,4 +2207,49 @@ final class MingJiUITests: XCTestCase {
         shot("v64-qing-enamel-source", qing)
     }
 
+    @MainActor func testV65MingQingEconomicAndSocialHistory() throws {
+        let ming = XCUIApplication()
+        ming.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]
+        ming.launch()
+        XCTAssertTrue(ming.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        XCTAssertEqual(ming.tabBars.buttons.allElementsBoundByIndex.map(\.label), ["朝代", "帝序", "家族", "遗珍"])
+        ming.tabBars.buttons["帝序"].tap()
+        let wanli = ming.buttons["succession_13"]
+        reach(wanli, in: ming, attempts: 20); wanli.tap()
+        ming.buttons["personHero"].tap()
+        ming.buttons["category_events"].tap()
+        ming.buttons["eventCategory_社会"].tap()
+        let urban = ming.buttons["event_v65m_urban"]
+        reachReadingLink(urban, in: ming); urban.tap()
+        XCTAssertTrue(ming.staticTexts["城市就业、消费与社会交往扩展"].waitForExistence(timeout: 5))
+        XCTAssertTrue(ming.staticTexts.matching(NSPredicate(format: "label CONTAINS %@", "并非所有地区和家庭同步进入富裕生活")).firstMatch.exists)
+        let mingSources = ming.buttons["资料与出处"]
+        reach(mingSources, in: ming, attempts: 12); mingSources.tap()
+        XCTAssertTrue(ming.buttons["source_v65_cssn_silver_social"].waitForExistence(timeout: 5))
+        shot("v65-ming-urban-life-source", ming)
+        ming.terminate()
+
+        let qing = XCUIApplication()
+        qing.launchArguments = ["--uitesting", "--ui-dynasty", "qing"]
+        qing.launch()
+        XCTAssertTrue(qing.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        qing.tabBars.buttons["帝序"].tap()
+        let xuantong = qing.buttons["succession_q_11"]
+        reach(xuantong, in: qing, attempts: 20); xuantong.tap()
+        qing.buttons["personHero"].tap()
+        qing.buttons["category_events"].tap()
+        qing.buttons["eventCategory_社会"].tap()
+        let plague = qing.buttons["event_v65q_plague"]
+        reachReadingLink(plague, in: qing); plague.tap()
+        XCTAssertTrue(qing.staticTexts["东北肺鼠疫与近代防疫实践"].waitForExistence(timeout: 5))
+        XCTAssertTrue(qing.staticTexts.matching(NSPredicate(format: "label CONTAINS %@", "不能写成一人独自指挥整个东北")).firstMatch.exists)
+        let wu = qing.buttons["explore_q_wuliande"]
+        reachReadingLink(wu, in: qing); wu.tap()
+        XCTAssertTrue(qing.staticTexts["伍连德"].waitForExistence(timeout: 5))
+        openArticle(in: qing)
+        XCTAssertTrue(qing.staticTexts["从医师到全权总医官"].waitForExistence(timeout: 5))
+        XCTAssertTrue(qing.buttons["articleContents"].exists)
+        shot("v65-wu-liande-reader", qing)
+    }
+
 }
