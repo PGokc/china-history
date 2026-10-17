@@ -22,15 +22,17 @@ struct NarrationVoiceOption: Identifiable, Hashable {
 
     var displayName: String {
         let key = "\(name) \(id)".lowercased()
+        if key.contains("zh-cn.lilian") { return "黎潋" }
+        if key.contains("zh-cn.han") { return "瀚" }
         if key.contains("li-mu") || key.contains("limu") { return "李沐" }
         if key.contains("yu-shu") || key.contains("yushu") { return "语舒" }
-        if key.contains("tingting") || key.contains("ting-ting") { return "婷婷" }
         return gender == .male ? "普通话男声" : "普通话女声"
     }
     var character: String {
+        if displayName == "瀚" { return "沉稳男声" }
+        if displayName == "黎潋" { return "自然女声" }
         if displayName == "李沐" { return "沉稳男声" }
         if displayName == "语舒" { return "自然女声" }
-        if displayName == "婷婷" { return "清晰女声" }
         return gender == .male ? "男声" : "女声"
     }
     var quality: String {
@@ -85,6 +87,7 @@ final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDele
     var canGoNext: Bool { isActive && currentIndex + 1 < sectionCount }
 
     func toggle(article: Article, from sectionID: String?) {
+        guard !voices.isEmpty else { return }
         stopPreview()
         if isPaused {
             if restartOnResume {
@@ -205,7 +208,10 @@ final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDele
     }
 
     private func speakCurrentSection() {
-        guard sections.indices.contains(currentIndex) else { return }
+        guard sections.indices.contains(currentIndex), let voice = Self.mandarinVoice(identifier: selectedVoiceID) else {
+            stop()
+            return
+        }
         restartOnResume = false
         let section = sections[currentIndex]
         currentSectionID = section.id
@@ -216,7 +222,7 @@ final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDele
         configureAudioSession()
 
         let utterance = AVSpeechUtterance(string: Self.spokenText(for: section))
-        utterance.voice = Self.mandarinVoice(identifier: selectedVoiceID)
+        utterance.voice = voice
         utterance.rate = speed.rate
         utterance.pitchMultiplier = 1.0
         utterance.prefersAssistiveTechnologySettings = false
@@ -267,7 +273,7 @@ final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDele
     }
 
     private static func installedChineseVoices() -> [NarrationVoiceOption] {
-        let preferredNames = ["tingting", "ting-ting", "yu-shu", "yushu", "li-mu", "limu"]
+        let preferredNames = ["zh-cn.lilian", "zh-cn.han", "yu-shu", "yushu", "li-mu", "limu"]
         let candidates = AVSpeechSynthesisVoice.speechVoices().filter { voice in
             let language = voice.language.replacingOccurrences(of: "_", with: "-").lowercased()
             let key = "\(voice.name) \(voice.identifier)".lowercased()
@@ -285,7 +291,7 @@ final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDele
             if let current = bestByName[key], current.qualityRank >= voice.qualityRank { continue }
             bestByName[key] = voice
         }
-        let order = ["语舒": 0, "李沐": 1, "婷婷": 2]
+        let order = ["瀚": 0, "黎潋": 1, "语舒": 2, "李沐": 3]
         return bestByName.values.sorted {
             if $0.qualityRank != $1.qualityRank { return $0.qualityRank > $1.qualityRank }
             let left = order[$0.displayName] ?? 99
@@ -301,7 +307,6 @@ final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDele
             return voice
         }
         return installedChineseVoices().first.flatMap { AVSpeechSynthesisVoice(identifier: $0.id) }
-            ?? AVSpeechSynthesisVoice(language: "zh-CN")
     }
 
     nonisolated func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didFinish utterance: AVSpeechUtterance) {
@@ -471,7 +476,7 @@ struct NarrationSettingsSheet: View {
                             Rectangle().fill(Theme.line.opacity(0.45)).frame(height: 0.5)
                         }
                         if narrator.voices.isEmpty { Text("未发现可用的中文系统声音").font(.subheadline).foregroundStyle(Theme.muted) }
-                        Text("每个试听使用同一段历史正文，并按设备上的实际音质排序。这里只显示已安装的中国大陆普通话声音；需要更多选择，可在系统的中文声音设置中下载语舒或李沐。")
+                        Text("每个试听使用同一段历史正文，并按设备上的实际音质排序。这里只显示已安装的中国大陆普通话声音；需要更多选择，可在系统的中文声音设置中下载黎潋、瀚、语舒或李沐。")
                             .font(.caption).foregroundStyle(Theme.muted).lineSpacing(4)
                     }
                 }.padding(24)

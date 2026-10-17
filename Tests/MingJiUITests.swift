@@ -599,11 +599,14 @@ final class MingJiUITests: XCTestCase {
         app.buttons["朗读设置"].tap()
         XCTAssertTrue(app.navigationBars["朗读设置"].waitForExistence(timeout: 5))
         let voiceButtons = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "narrationVoice_"))
-        XCTAssertGreaterThanOrEqual(voiceButtons.count, 1)
         XCTAssertLessThanOrEqual(voiceButtons.count, 4)
+        if voiceButtons.count == 0 {
+            XCTAssertTrue(app.staticTexts["未发现可用的中文系统声音"].exists)
+        }
         for rejected in ["Eddy", "Flo", "Grandma", "Grandpa", "Reed", "Rocko", "Sandy", "Shelley"] {
             XCTAssertFalse(app.staticTexts[rejected].exists)
         }
+        XCTAssertFalse(app.staticTexts["婷婷"].exists)
         for index in 0..<voiceButtons.count {
             XCTAssertFalse(voiceButtons.element(boundBy: index).identifier.lowercased().contains("siri"))
         }
@@ -693,6 +696,16 @@ final class MingJiUITests: XCTestCase {
         app.buttons["personHero"].tap()
         openArticle(in: app)
         let toggle = app.buttons["narrationToggle"]
+        app.buttons["narrationSettings"].tap()
+        let installedVoices = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "narrationVoice_"))
+        if installedVoices.count == 0 {
+            XCTAssertTrue(app.staticTexts["未发现可用的中文系统声音"].exists)
+            app.buttons["完成"].tap()
+            toggle.tap()
+            XCTAssertEqual(toggle.label, "开始朗读")
+            return
+        }
+        app.buttons["完成"].tap()
         toggle.tap()
         XCTAssertEqual(toggle.label, "暂停朗读")
         toggle.tap()
