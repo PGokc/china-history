@@ -263,7 +263,8 @@ struct TerritoryMapCard: View {
                         .stroke(color(region.tone), lineWidth: 1.4)
                     Annotation("", coordinate: CLLocationCoordinate2D(latitude: region.labelLatitude, longitude: region.labelLongitude)) {
                         Text(region.name).font(.caption2.weight(.semibold)).foregroundStyle(color(region.tone))
-                            .padding(.horizontal, 6).padding(.vertical, 3).background(Theme.paper.opacity(0.90), in: Capsule())
+                            .padding(.horizontal, 5).padding(.vertical, 2)
+                            .background(Theme.paper.opacity(0.92), in: RoundedRectangle(cornerRadius: 2))
                     }
                 }
             }
@@ -273,9 +274,14 @@ struct TerritoryMapCard: View {
             .accessibilityIdentifier("territoryMap_\(map.id)")
             Text(map.caption).font(.caption).foregroundStyle(Theme.muted).lineSpacing(4)
             if map.regions.count > 1 {
-                HStack(spacing: 14) {
+                LazyVGrid(columns: [GridItem(.adaptive(minimum: 92), alignment: .leading)], alignment: .leading, spacing: 8) {
                     ForEach(map.regions) { region in
-                        HStack(spacing: 5) { Circle().fill(color(region.tone)).frame(width: 7, height: 7); Text(region.name) }
+                        HStack(spacing: 7) {
+                            Rectangle().fill(color(region.tone)).frame(width: 18, height: 1.5)
+                            Text(region.name)
+                        }
+                        .accessibilityElement(children: .combine)
+                        .accessibilityIdentifier("mapLegend_\(map.id)_\(region.id)")
                     }
                 }.font(.caption2).foregroundStyle(Theme.muted)
             }

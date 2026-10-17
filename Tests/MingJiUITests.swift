@@ -2539,4 +2539,17 @@ final class MingJiUITests: XCTestCase {
         }
     }
 
+    @MainActor func testV74TerritoryMapLegendAvoidsDecorativeDots() throws {
+        let app = launch(enterFamily: false)
+        let dynasty = app.buttons["dynasty_song_liao_xia_jin"]
+        reach(dynasty, in: app, attempts: 20); dynasty.tap()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyDetail_song_liao_xia_jin"].waitForExistence(timeout: 5))
+        let map = app.descendants(matching: .any)["territoryMap_song_liao_xia_jin"]
+        reach(map, in: app, attempts: 12)
+        for region in ["jin_state", "southern_song", "western_xia"] {
+            XCTAssertTrue(app.descendants(matching: .any)["mapLegend_song_liao_xia_jin_" + region].exists)
+        }
+        shot("v74-territory-map-text-legend", app)
+    }
+
 }
