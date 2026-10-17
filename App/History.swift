@@ -1,7 +1,50 @@
 import Foundation
 import SwiftUI
 
-struct Source: Codable, Identifiable { let id, title, url, note: String }
+enum SourceProvenance: String {
+    case historicalText = "古籍转录"
+    case museum = "文博机构"
+    case heritage = "考古与遗产"
+    case scholarship = "学术研究"
+    case archive = "图像与档案"
+    case publicInstitution = "公共机构"
+    case reference = "辅助参考"
+}
+
+struct Source: Codable, Identifiable {
+    let id, title, url, note: String
+
+    var host: String {
+        guard let host = URL(string: url)?.host?.lowercased() else { return "来源网页" }
+        return host.hasPrefix("www.") ? String(host.dropFirst(4)) : host
+    }
+
+    var provenance: SourceProvenance {
+        let sourceHost = host
+        let title = title.lowercased()
+        let historicalTextHosts = ["zh.wikisource.org", "ctext.org", "shidianguji.com", "drbachinese.org", "laoziliao.net"]
+        if historicalTextHosts.contains(where: { sourceHost == $0 || sourceHost.hasSuffix("." + $0) }) { return .historicalText }
+
+        let museumHosts = [
+            "dpm.org.cn", "chnmuseum.cn", "npm.gov.tw", "metmuseum.org", "chinamuseum.org.cn",
+            "chnmus.net", "gansumuseum.com", "njmuseum.com", "hnmuseum.com", "beilin-museum.com",
+            "bmy.com.cn", "sxhm.com", "kzbwg.cn", "kyuhaku.jp", "npm.edu.tw", "hylae.com"
+        ]
+        if museumHosts.contains(where: { sourceHost == $0 || sourceHost.hasSuffix("." + $0) }) || title.contains("博物馆") || title.contains("museum") { return .museum }
+
+        let heritageHosts = ["ncha.gov.cn", "whc.unesco.org", "kaogu.cssn.cn", "cach.org.cn", "ihchina.cn", "fhac.com.cn", "qingxiling.com", "shanxiqianling.com"]
+        if heritageHosts.contains(where: { sourceHost == $0 || sourceHost.hasSuffix("." + $0) }) || sourceHost.hasPrefix("wwj.") || title.contains("考古") || title.contains("文化遗产") { return .heritage }
+
+        let archiveHosts = ["nlc.cn", "loc.gov", "fjlib.net", "commons.wikimedia.org", "saac.gov.cn", "nbdaj.gov.cn", "sdaj.hunan.gov.cn", "library.metro.tokyo.lg.jp", "gpi.culture.tw"]
+        if archiveHosts.contains(where: { sourceHost == $0 || sourceHost.hasSuffix("." + $0) }) || sourceHost.contains("archive") || sourceHost.hasPrefix("lib.") || sourceHost.hasPrefix("memory.") { return .archive }
+
+        let scholarshipHosts = ["cssn.cn", "nopss.gov.cn", "cambridge.org", "academic.oup.com", "plato.stanford.edu", "britannica.com", "qinghistory.cn"]
+        if scholarshipHosts.contains(where: { sourceHost == $0 || sourceHost.hasSuffix("." + $0) }) || sourceHost.hasSuffix(".edu.cn") || sourceHost.hasSuffix(".ac.cn") || sourceHost.hasSuffix(".cas.cn") || sourceHost.hasSuffix(".sinica.edu.tw") || sourceHost.hasSuffix(".harvard.edu") || sourceHost.hasSuffix(".uchicago.edu") { return .scholarship }
+
+        if sourceHost.hasSuffix(".gov.cn") || sourceHost == "gov.cn" || sourceHost.hasSuffix(".gov.hk") { return .publicInstitution }
+        return .reference
+    }
+}
 struct Person: Codable, Identifiable {
     let id, name, call, temple, era, reign, summary, kind, note: String
     let dynasty: String?

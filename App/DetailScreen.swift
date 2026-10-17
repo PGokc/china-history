@@ -69,7 +69,7 @@ struct DetailScreen: View {
         Group {
             title("关于", "史迹")
             Text("在朝代、帝序、家族与遗珍之间，读懂人物与时代。").font(.title3)
-            block("资料", "正文依据史料与馆藏资料整理，各节附有出处；争议记载另作说明。")
+            block("资料", "正文依据史料与馆藏资料整理，各节附有出处并标明来源性质；古籍开放转录用于核对原文，不等同官方校勘版本。争议记载另作说明。")
             block("阅读", "文章与图片可离线查看；外部出处需要联网。阅读进度仅保存在本机。")
         }
     }
@@ -85,7 +85,17 @@ struct SourcesView: View {
         } else {
             VStack(alignment: .leading, spacing: 16) {
                 Divider()
-                DisclosureGroup("资料与出处") { entries(numbered: true).padding(.top, 12) }
+                DisclosureGroup("资料与出处") {
+                    VStack(alignment: .leading, spacing: 12) {
+                        Text("来源标签说明发布或承载机构，不代替对具体记载的判断；“古籍转录”不等同官方校勘版本。")
+                            .font(.caption)
+                            .foregroundStyle(Theme.muted)
+                            .lineSpacing(4)
+                            .fixedSize(horizontal: false, vertical: true)
+                            .accessibilityIdentifier("sourceProvenanceNote")
+                        entries(numbered: true)
+                    }.padding(.top, 12)
+                }
                     .font(.subheadline).tint(Theme.muted)
             }
         }
@@ -109,6 +119,11 @@ struct SourcesView: View {
                                 .accessibilityHidden(true)
                         }
                         VStack(alignment: .leading, spacing: 6) {
+                            Text("\(source.provenance.rawValue)　\(source.host)")
+                                .font(.caption2.weight(.medium))
+                                .foregroundStyle(Theme.cinnabar)
+                                .lineLimit(1)
+                                .accessibilityIdentifier("sourceKind_\(id)")
                             Link(destination: url) {
                                 Text(source.title)
                                     .font(.subheadline)

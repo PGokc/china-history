@@ -2481,4 +2481,42 @@ final class MingJiUITests: XCTestCase {
         shot("v71-chong-court-corrected", reign)
     }
 
+    @MainActor func testV72SourceProvenanceLabels() throws {
+        let event = XCUIApplication()
+        event.launchArguments = ["--uitesting", "--ui-dynasty", "han"]
+        event.launch()
+        XCTAssertTrue(event.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        event.buttons["globalSearch"].tap()
+        let search = event.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("梁太后临朝")
+        let result = event.buttons["search_event_v52h_liang_dowager_regency"]
+        XCTAssertTrue(result.waitForExistence(timeout: 5)); result.tap()
+        let sources = event.buttons["资料与出处"]
+        reach(sources, in: event, attempts: 16); sources.tap()
+        XCTAssertTrue(event.staticTexts["sourceProvenanceNote"].waitForExistence(timeout: 5))
+        let transcript = event.staticTexts["sourceKind_v49h_houhanshu"]
+        let scholarship = event.staticTexts["sourceKind_v49h_cambridge"]
+        XCTAssertEqual(transcript.label, "古籍转录　zh.wikisource.org")
+        XCTAssertEqual(scholarship.label, "学术研究　cambridge.org")
+        reach(scholarship, in: event, attempts: 6)
+        shot("v72-source-types-text-and-scholarship", event)
+        event.terminate()
+
+        let heritage = XCUIApplication()
+        heritage.launchArguments = ["--uitesting", "--ui-dynasty", "han"]
+        heritage.launch()
+        XCTAssertTrue(heritage.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        heritage.tabBars.buttons["遗珍"].tap()
+        heritage.buttons["collectionCategory_tombs"].tap()
+        let baling = heritage.buttons["tomb_han_wen"]
+        reachReadingLink(baling, in: heritage); baling.tap()
+        let tombSources = heritage.buttons["资料与出处"]
+        reach(tombSources, in: heritage, attempts: 14); tombSources.tap()
+        let archaeology = heritage.staticTexts["sourceKind_v49h_ncha_baling"]
+        XCTAssertTrue(archaeology.waitForExistence(timeout: 5))
+        XCTAssertEqual(archaeology.label, "考古与遗产　ncha.gov.cn")
+        reach(archaeology, in: heritage, attempts: 6)
+        shot("v72-source-type-heritage", heritage)
+    }
+
 }
