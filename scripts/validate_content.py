@@ -1215,3 +1215,40 @@ if d['version'] >= 51:
  assert all(term in corpus for term in ['羡余','安南','纪年相差一年','平夏城','奏捷','字民','梦粱录','追忆故都'])
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成',corpus)
  print('V51 PASS: four full late-Tang and Song readings, eight events, and seven repaired reign-context links preserve explicit evidence boundaries')
+
+if d['version'] >= 52:
+ assert 'han_liangna' in people and people['han_liangna']['name']=='梁妠'
+ liang_article=articles['han_liangna']
+ assert len(liang_article['sections'])==5
+ assert sum(len(re.findall(r'[\u4e00-\u9fff]',s['text'])) for s in liang_article['sections'])>=700
+ assert all(s['sources'] and s.get('events') and s.get('people') for s in liang_article['sections'])
+ events={e['id']:e for e in d['events']}
+ assert events['v49h_jing_theme']['year']=='前154'
+ assert events['v49h_zhao_theme']['year']=='前81'
+ assert events['v49h_huan_theme']['year']=='166' and 'han_liangji' not in events['v49h_huan_theme']['people']
+ assert events['v49h_ling_theme']['year']=='184' and 'han_chenfan' not in events['v49h_ling_theme']['people']
+ assert 'han_zhangheng' not in events['v49h_chong_accession']['people']+events['v49h_chong_theme']['people']
+ assert 'han_chenfan' not in events['v49h_zhi_accession']['people']+events['v49h_zhi_theme']['people']
+ assert {'han_liangna','han_chong','han_zhi','han_huan','han_liangji'}==set(events['v52h_liang_dowager_regency']['people'])
+ contexts={x['person']:x for x in d['reignContexts']}
+ required_events={
+  'han_gaozu':{'v49h_baideng'},'han_wen':{'v49h_rest'},'han_jing':{'v49h_seven'},
+  'han_wu':{'v49h_tui_en','v49h_hexi','v49h_wuzhu','v49h_taixue','v49h_shiji'},
+  'han_zhao':{'v49h_saltiron'},'han_xuan':{'v49h_protectorate'},'han_guangwu':{'v49h_land'},
+  'han_he':{'v49h_western','v49h_paper','v49h_hanbook'},'han_an':{'v49h_disaster'},
+  'han_chong':{'v52h_liang_dowager_regency'},'han_zhi':{'v52h_liang_dowager_regency'},
+  'han_huan':{'v52h_liang_dowager_regency'},
+  'han_ling':{'v49h_partisan','v49h_epidemics','v49h_yellow'},
+  'han_xian':{'v49h_dongzhuo','v49h_xutian'}
+ }
+ assert all(ids<=set(contexts[pid]['events']) for pid,ids in required_events.items())
+ assert 'han_liangna' in contexts['han_shun']['people']
+ assert contexts['han_chong']['people']==['han_liangna','han_liangji']
+ assert contexts['han_zhi']['people']==['han_liangna','han_liangji'] and 'han_liangna' in contexts['han_huan']['people']
+ assert any(x['from']=='han_liangna' and x['to']=='han_shun' and x['kind']=='spouse' for x in d['familyLinks'])
+ assert all('han_zhi' not in {x['from'],x['to']} or 'han_chenfan' not in {x['from'],x['to']} for x in d['associations'])
+ assert all(set(s.get('events',[]))=={'v49h_huan_theme','v49h_partisan'} for s in articles['han_chenfan']['sections'])
+ corpus=json.dumps([people['han_liangna'],liang_article,events['v52h_liang_dowager_regency']],ensure_ascii=False)
+ assert all(term in corpus for term in ['皇太后临朝','连续拥立','归政','制度权力','不能混成一个行动主体'])
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成',corpus)
+ print('V52 PASS: Han reign pages recover twenty existing event links, correct four chronology errors, and distinguish Empress Dowager Liang from Liang Ji across three short reigns')

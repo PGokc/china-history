@@ -2449,4 +2449,36 @@ final class MingJiUITests: XCTestCase {
         XCTAssertTrue(person.staticTexts["晚唐将领"].exists)
     }
 
+    @MainActor func testV71HanReignLinksAndLiangDowager() throws {
+        let searchApp = XCUIApplication()
+        searchApp.launchArguments = ["--uitesting", "--ui-dynasty", "han"]
+        searchApp.launch()
+        XCTAssertTrue(searchApp.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        searchApp.buttons["globalSearch"].tap()
+        let search = searchApp.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("梁妠")
+        let liang = searchApp.buttons["search_person_han_liangna"]
+        XCTAssertTrue(liang.waitForExistence(timeout: 5)); liang.tap()
+        XCTAssertTrue(searchApp.staticTexts["顺烈皇后、皇太后"].waitForExistence(timeout: 5))
+        XCTAssertTrue(searchApp.buttons["articleEntry"].exists)
+        searchApp.buttons["category_events"].tap()
+        XCTAssertTrue(searchApp.buttons["event_v52h_liang_dowager_regency"].waitForExistence(timeout: 5))
+        shot("v71-liang-dowager-events", searchApp)
+        searchApp.terminate()
+
+        let reign = XCUIApplication()
+        reign.launchArguments = ["--uitesting", "--ui-dynasty", "han"]
+        reign.launch()
+        XCTAssertTrue(reign.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        reign.tabBars.buttons["帝序"].tap()
+        let chong = reign.buttons["succession_han_20"]
+        reachReadingLink(chong, in: reign); chong.tap()
+        reign.buttons["personHero"].tap()
+        reign.buttons["category_court"].tap()
+        XCTAssertTrue(reign.buttons["court_han_liangna"].waitForExistence(timeout: 5))
+        XCTAssertTrue(reign.buttons["court_han_liangji"].exists)
+        XCTAssertFalse(reign.buttons["court_han_zhangheng"].exists)
+        shot("v71-chong-court-corrected", reign)
+    }
+
 }

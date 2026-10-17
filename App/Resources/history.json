@@ -1,5 +1,5 @@
 {
-  "version": 51,
+  "version": 52,
   "reviewed": "2026-10-17",
   "people": [
     {
@@ -6925,6 +6925,23 @@
       "parent": null,
       "sources": [
         "v49h_houhanshu"
+      ],
+      "dynasty": "han"
+    },
+    {
+      "id": "han_liangna",
+      "name": "梁妠",
+      "call": "顺烈皇后、皇太后",
+      "temple": "",
+      "era": "",
+      "reign": "",
+      "summary": "汉顺帝皇后。顺帝死后以皇太后身份临朝，经历冲帝、质帝与桓帝三次皇位交接，至150年归政。",
+      "kind": "临朝者",
+      "note": "《后汉书》肯定其临朝初期委任李固、崇尚节俭，也记载梁冀专权及宦官受宠；皇太后的制度权力与梁氏外戚集团不能混成一个行动主体。",
+      "parent": null,
+      "sources": [
+        "v49h_houhanshu",
+        "v49h_cambridge"
       ],
       "dynasty": "han"
     },
@@ -30814,11 +30831,11 @@
     },
     {
       "id": "v49h_jing_theme",
-      "year": "前149",
-      "sortYear": -149,
-      "title": "七国之乱",
-      "body": "削藩触发诸侯王联合起兵，周亚夫等平乱后中央对王国控制明显增强。",
-      "impact": "这一进程把削藩的风险与平叛落实到行政、财政、边疆或社会层面；成效与代价需要依据同一时期材料共同判断。",
+      "year": "前154",
+      "sortYear": -154,
+      "title": "削藩决策与七国举兵",
+      "body": "景帝前元三年，削藩激化王国与中央的冲突。吴王刘濞等以诛晁错为名举兵；晁错被杀并未使诸王停战，周亚夫等随后平乱。",
+      "impact": "这场危机显示政策争议、政治问责与军事处置并非同一环节；平乱后王国权力继续收缩。",
       "people": [
         "han_jing",
         "han_chaocuo",
@@ -30914,8 +30931,8 @@
     },
     {
       "id": "v49h_zhao_theme",
-      "year": "前80",
-      "sortYear": -80,
+      "year": "前81",
+      "sortYear": -81,
       "title": "盐铁会议",
       "body": "贤良文学与御史大夫一方围绕盐铁、边事和民生辩论，朝廷并未简单撤销全部财政制度。",
       "impact": "这一进程把辅政与政策校正落实到行政、财政、边疆或社会层面；成效与代价需要依据同一时期材料共同判断。",
@@ -31509,8 +31526,8 @@
       "impact": "它为“幼主、太后与外戚”设定了最初的权力条件；即位不表示前朝人员、军队、财政和地方关系同时清零。",
       "people": [
         "han_chong",
-        "han_liangji",
-        "han_zhangheng"
+        "han_liangna",
+        "han_liangji"
       ],
       "sources": [
         "v49h_houhanshu"
@@ -31519,8 +31536,8 @@
       "category": "政治",
       "peopleRoles": {
         "han_chong": "即位者",
-        "han_liangji": "当朝关键人物",
-        "han_zhangheng": "参与同时期权力网络"
+        "han_liangna": "临朝皇太后",
+        "han_liangji": "大将军"
       }
     },
     {
@@ -31528,12 +31545,12 @@
       "year": "144",
       "sortYear": 144,
       "title": "灾荒赈恤诏令",
-      "body": "短朝仍有赈贷、减免等诏令，不能因皇帝年幼就把国家行政写成停摆。",
-      "impact": "这一进程把幼主、太后与外戚落实到行政、财政、边疆或社会层面；成效与代价需要依据同一时期材料共同判断。",
+      "body": "冲帝年幼，梁太后临朝。朝廷仍发布赈贷与减免诏令，实际政务由太后、外朝官员与梁氏外戚共同作用，不能写成幼帝个人施政。",
+      "impact": "短朝没有使国家行政停摆，但诏令名义、临朝决策与大将军权势必须分开辨认。",
       "people": [
         "han_chong",
-        "han_liangji",
-        "han_zhangheng"
+        "han_liangna",
+        "han_liangji"
       ],
       "sources": [
         "v49h_houhanshu",
@@ -31543,8 +31560,8 @@
       "category": "社会",
       "peopleRoles": {
         "han_chong": "在位皇帝",
-        "han_liangji": "相关人物",
-        "han_zhangheng": "相关人物"
+        "han_liangna": "临朝皇太后",
+        "han_liangji": "大将军"
       }
     },
     {
@@ -31556,8 +31573,8 @@
       "impact": "它为“外戚选择皇帝的危险”设定了最初的权力条件；即位不表示前朝人员、军队、财政和地方关系同时清零。",
       "people": [
         "han_zhi",
-        "han_liangji",
-        "han_chenfan"
+        "han_liangna",
+        "han_liangji"
       ],
       "sources": [
         "v49h_houhanshu"
@@ -31567,7 +31584,7 @@
       "peopleRoles": {
         "han_zhi": "即位者",
         "han_liangji": "当朝关键人物",
-        "han_chenfan": "参与同时期权力网络"
+        "han_liangna": "临朝皇太后"
       }
     },
     {
@@ -31579,8 +31596,7 @@
       "impact": "这一进程把外戚选择皇帝的危险落实到行政、财政、边疆或社会层面；成效与代价需要依据同一时期材料共同判断。",
       "people": [
         "han_zhi",
-        "han_liangji",
-        "han_chenfan"
+        "han_liangji"
       ],
       "sources": [
         "v49h_houhanshu",
@@ -31590,8 +31606,7 @@
       "category": "政治",
       "peopleRoles": {
         "han_zhi": "在位皇帝",
-        "han_liangji": "相关人物",
-        "han_chenfan": "相关人物"
+        "han_liangji": "相关人物"
       }
     },
     {
@@ -31603,6 +31618,7 @@
       "impact": "它为“清除外戚后的宦官政治”设定了最初的权力条件；即位不表示前朝人员、军队、财政和地方关系同时清零。",
       "people": [
         "han_huan",
+        "han_liangna",
         "han_liangji",
         "han_chenfan"
       ],
@@ -31614,19 +31630,19 @@
       "peopleRoles": {
         "han_huan": "即位者",
         "han_liangji": "当朝关键人物",
-        "han_chenfan": "参与同时期权力网络"
+        "han_chenfan": "参与同时期权力网络",
+        "han_liangna": "临朝皇太后"
       }
     },
     {
       "id": "v49h_huan_theme",
-      "year": "157",
-      "sortYear": 157,
+      "year": "166",
+      "sortYear": 166,
       "title": "第一次党锢",
-      "body": "士人对宦官及其亲属的批评转成禁锢，名望网络与中央处分互相强化。",
-      "impact": "这一进程把清除外戚后的宦官政治落实到行政、财政、边疆或社会层面；成效与代价需要依据同一时期材料共同判断。",
+      "body": "延熹九年（166），围绕宦官及其党羽的批评演变为对士人的禁锢。陈蕃等官员与清议网络的行动、朝廷处分和后来形成的党人声望，需要分层理解。",
+      "impact": "第一次党锢把官僚批评、名望网络与司法处分连在一起，并为灵帝初年的第二次党锢留下政治裂痕。",
       "people": [
         "han_huan",
-        "han_liangji",
         "han_chenfan"
       ],
       "sources": [
@@ -31637,8 +31653,7 @@
       "category": "政治",
       "peopleRoles": {
         "han_huan": "在位皇帝",
-        "han_liangji": "相关人物",
-        "han_chenfan": "相关人物"
+        "han_chenfan": "反对宦官势力的官员"
       }
     },
     {
@@ -31666,15 +31681,15 @@
     },
     {
       "id": "v49h_ling_theme",
-      "year": "178",
-      "sortYear": 178,
-      "title": "黄巾起事",
-      "body": "太平道动员在多地同时起兵，朝廷授权州郡募兵平乱，地方军事力量由此加速成长。",
-      "impact": "这一进程把财政汲取与地方军事化落实到行政、财政、边疆或社会层面；成效与代价需要依据同一时期材料共同判断。",
+      "year": "184",
+      "sortYear": 184,
+      "title": "黄巾起事与州郡募兵",
+      "body": "中平元年（184），太平道在多地起事。朝廷调兵并加强京师防务，州郡募兵平乱；地方武装因而获得更持续的组织空间。",
+      "impact": "起事虽然被分区镇压，却加快了地方军事化；中央财政、州郡军队与豪强力量的关系由此继续重组。",
       "people": [
         "han_ling",
-        "han_chenfan",
-        "han_zhangjue"
+        "han_zhangjue",
+        "han_hejin"
       ],
       "sources": [
         "v49h_houhanshu",
@@ -31684,8 +31699,8 @@
       "category": "社会",
       "peopleRoles": {
         "han_ling": "在位皇帝",
-        "han_chenfan": "相关人物",
-        "han_zhangjue": "相关人物"
+        "han_zhangjue": "太平道首领",
+        "han_hejin": "京师防务统兵者"
       }
     },
     {
@@ -56559,6 +56574,34 @@
         "s_chenyizhong": "同一时期官员",
         "s_jiashidao": "同一时期宰相"
       }
+    },
+    {
+      "id": "v52h_liang_dowager_regency",
+      "year": "144—150",
+      "sortYear": 144,
+      "title": "梁太后临朝与连续拥立",
+      "body": "顺帝死后，梁妠以皇太后身份临朝。冲帝早逝后，朝廷又经历质帝、桓帝两次继承；《后汉书》同时记载她委任李固等人与其兄梁冀扩张权势，二者不能简单视为同一意志。",
+      "impact": "连续的幼主与旁支入继扩大了皇太后、大将军和外朝官员在皇位交接中的作用，也使梁氏家族权力持续进入中枢。150年梁太后归政，临朝结束，梁冀的势力并未随之消失。",
+      "people": [
+        "han_liangna",
+        "han_chong",
+        "han_zhi",
+        "han_huan",
+        "han_liangji"
+      ],
+      "sources": [
+        "v49h_houhanshu",
+        "v49h_cambridge"
+      ],
+      "kind": "历史事件",
+      "category": "政治",
+      "peopleRoles": {
+        "han_liangna": "临朝皇太后",
+        "han_chong": "受拥立的幼帝",
+        "han_zhi": "受拥立的幼帝",
+        "han_huan": "受拥立并于其后亲政的皇帝",
+        "han_liangji": "大将军、皇太后之兄"
+      }
     }
   ],
   "objects": [
@@ -68081,6 +68124,15 @@
         "v60_jts51"
       ],
       "note": "以贵妃与皇帝关系呈现；不把后世爱情叙事写入亲属事实。"
+    },
+    {
+      "from": "han_liangna",
+      "to": "han_shun",
+      "kind": "spouse",
+      "sources": [
+        "v49h_houhanshu"
+      ],
+      "note": "顺帝阳嘉元年（132）立梁妠为皇后；顺帝死后，她以皇太后身份临朝。"
     }
   ],
   "articles": [
@@ -91641,7 +91693,8 @@
             "han_hanxin"
           ],
           "events": [
-            "v49h_gaozu_theme"
+            "v49h_gaozu_theme",
+            "v49h_baideng"
           ]
         },
         {
@@ -91995,7 +92048,8 @@
             "han_chenping"
           ],
           "events": [
-            "v49h_wen_theme"
+            "v49h_wen_theme",
+            "v49h_rest"
           ]
         },
         {
@@ -92087,7 +92141,8 @@
             "han_zhouyafu"
           ],
           "events": [
-            "v49h_jing_theme"
+            "v49h_jing_theme",
+            "v49h_seven"
           ]
         },
         {
@@ -92182,7 +92237,12 @@
             "han_sanghongyang"
           ],
           "events": [
-            "v49h_wu_theme"
+            "v49h_wu_theme",
+            "v49h_tui_en",
+            "v49h_hexi",
+            "v49h_wuzhu",
+            "v49h_taixue",
+            "v49h_shiji"
           ]
         },
         {
@@ -92263,7 +92323,8 @@
             "han_sanghongyang"
           ],
           "events": [
-            "v49h_zhao_theme"
+            "v49h_zhao_theme",
+            "v49h_saltiron"
           ]
         },
         {
@@ -92355,7 +92416,8 @@
             "han_zhaochongguo"
           ],
           "events": [
-            "v49h_xuan_theme"
+            "v49h_xuan_theme",
+            "v49h_protectorate"
           ]
         },
         {
@@ -92815,7 +92877,8 @@
             "han_mayuan"
           ],
           "events": [
-            "v49h_guangwu_theme"
+            "v49h_guangwu_theme",
+            "v49h_land"
           ]
         },
         {
@@ -93091,7 +93154,10 @@
             "han_banchao"
           ],
           "events": [
-            "v49h_he_theme"
+            "v49h_he_theme",
+            "v49h_western",
+            "v49h_paper",
+            "v49h_hanbook"
           ]
         },
         {
@@ -93275,7 +93341,8 @@
             "han_banzhao"
           ],
           "events": [
-            "v49h_an_theme"
+            "v49h_an_theme",
+            "v49h_disaster"
           ]
         },
         {
@@ -93459,7 +93526,8 @@
             "han_zhangheng"
           ],
           "events": [
-            "v49h_chong_theme"
+            "v49h_chong_theme",
+            "v52h_liang_dowager_regency"
           ]
         },
         {
@@ -93551,7 +93619,8 @@
             "han_chenfan"
           ],
           "events": [
-            "v49h_zhi_theme"
+            "v49h_zhi_theme",
+            "v52h_liang_dowager_regency"
           ]
         },
         {
@@ -93643,7 +93712,8 @@
             "han_chenfan"
           ],
           "events": [
-            "v49h_huan_theme"
+            "v49h_huan_theme",
+            "v52h_liang_dowager_regency"
           ]
         },
         {
@@ -93735,7 +93805,10 @@
             "han_zhangjue"
           ],
           "events": [
-            "v49h_ling_theme"
+            "v49h_ling_theme",
+            "v49h_partisan",
+            "v49h_epidemics",
+            "v49h_yellow"
           ]
         },
         {
@@ -93919,7 +93992,9 @@
             "han_caocao"
           ],
           "events": [
-            "v49h_xian_theme"
+            "v49h_xian_theme",
+            "v49h_dongzhuo",
+            "v49h_xutian"
           ]
         },
         {
@@ -96280,9 +96355,13 @@
           "sources": [
             "v49h_houhanshu"
           ],
-          "people": [],
+          "people": [
+            "han_huan",
+            "han_ling"
+          ],
           "events": [
-            "v49h_zhi_accession"
+            "v49h_huan_theme",
+            "v49h_partisan"
           ]
         },
         {
@@ -96294,9 +96373,13 @@
             "v49h_houhanshu",
             "v49h_cambridge"
           ],
-          "people": [],
+          "people": [
+            "han_huan",
+            "han_ling"
+          ],
           "events": [
-            "v49h_zhi_accession"
+            "v49h_huan_theme",
+            "v49h_partisan"
           ]
         },
         {
@@ -96307,9 +96390,13 @@
           "sources": [
             "v49h_houhanshu"
           ],
-          "people": [],
+          "people": [
+            "han_huan",
+            "han_ling"
+          ],
           "events": [
-            "v49h_zhi_accession"
+            "v49h_huan_theme",
+            "v49h_partisan"
           ]
         },
         {
@@ -96321,9 +96408,13 @@
             "v49h_houhanshu",
             "v49h_cambridge"
           ],
-          "people": [],
+          "people": [
+            "han_huan",
+            "han_ling"
+          ],
           "events": [
-            "v49h_zhi_accession"
+            "v49h_huan_theme",
+            "v49h_partisan"
           ]
         },
         {
@@ -96335,9 +96426,13 @@
             "v49h_cambridge",
             "v49h_nmc_ancient"
           ],
-          "people": [],
+          "people": [
+            "han_huan",
+            "han_ling"
+          ],
           "events": [
-            "v49h_zhi_accession"
+            "v49h_huan_theme",
+            "v49h_partisan"
           ]
         }
       ],
@@ -150356,6 +150451,107 @@
           ]
         }
       ]
+    },
+    {
+      "person": "han_liangna",
+      "title": "梁妠：幼主之间的临朝皇太后",
+      "dek": "从顺帝皇后到三朝临朝者，理解制度权力、外戚家族与外朝官员如何共同进入皇位交接。",
+      "sections": [
+        {
+          "id": "han_liangna_1",
+          "title": "从贵人到顺帝皇后",
+          "kind": "史实与解读",
+          "text": "梁妠出自安定梁氏，十三岁入宫，132年被立为顺帝皇后。《后汉书·皇后纪》称她读史书、习经义，也以克制和不专宠来组织其早期形象。这类纪传文字兼有事实记录与后妃德行范式，能够确认的是册立、家族位置及宫廷身份，不能据赞辞推断全部个人性格。她成为皇后后，父亲梁商及兄长梁冀先后居于显位，婚姻、外戚官职与皇后本人并不是可以互相替代的概念。",
+          "sources": [
+            "v49h_houhanshu",
+            "v49h_cambridge"
+          ],
+          "people": [
+            "han_shun",
+            "han_liangji"
+          ],
+          "events": [
+            "v49h_shun_theme"
+          ]
+        },
+        {
+          "id": "han_liangna_2",
+          "title": "冲帝即位与皇太后临朝",
+          "kind": "史实与解读",
+          "text": "144年顺帝去世，年幼的刘炳即位，是为冲帝；梁妠被尊为皇太后并临朝。此时诏令仍以皇帝和朝廷名义发布，具体决策却要经过皇太后、尚书系统、三公与大将军等多重环节。冲帝在位仅数月，若只写幼帝生卒，就会遗漏真正维持国家运转的制度结构；若把所有行动都归给梁太后，又会遮蔽李固等外朝官员和梁冀势力的差异。",
+          "sources": [
+            "v49h_houhanshu",
+            "v49h_cambridge"
+          ],
+          "people": [
+            "han_chong",
+            "han_liangji"
+          ],
+          "events": [
+            "v49h_chong_accession",
+            "v49h_chong_theme",
+            "v52h_liang_dowager_regency"
+          ]
+        },
+        {
+          "id": "han_liangna_3",
+          "title": "质帝、桓帝与连续拥立",
+          "kind": "史实与解读",
+          "text": "冲帝早逝后，朝廷在宗室近支中选择继承人，质帝刘缵即位，梁太后继续临朝。146年质帝去世，刘志被迎立为桓帝。三次交接说明东汉中期皇位继承不仅是父子相承，也受宗室资格、皇太后名位、大将军兵权与外朝争论共同影响。《后汉书》把梁冀毒杀质帝写得明确，但阅读连续拥立时仍需区分正史的责任判断、继承程序和各方实际力量。",
+          "sources": [
+            "v49h_houhanshu",
+            "v49h_cambridge"
+          ],
+          "people": [
+            "han_zhi",
+            "han_huan",
+            "han_liangji"
+          ],
+          "events": [
+            "v49h_zhi_accession",
+            "v49h_zhi_theme",
+            "v49h_huan_accession",
+            "v52h_liang_dowager_regency"
+          ]
+        },
+        {
+          "id": "han_liangna_4",
+          "title": "委任官员与梁冀扩权",
+          "kind": "史实与解读",
+          "text": "《后汉书》一方面记梁太后临朝初期委任李固等人、提倡节俭并应对盗贼和边患，另一方面也批评她后来受梁冀和宦官影响。两组记录不必压缩成单一评价：皇太后能够任用外朝官员，也依赖本族在军政中的地位；梁冀则以大将军身份扩张任免与废立影响。把梁太后简单写成梁冀的代名词，会看不见二人的制度身份、行动范围和责任并不相同。",
+          "sources": [
+            "v49h_houhanshu",
+            "v49h_cambridge"
+          ],
+          "people": [
+            "han_liangji"
+          ],
+          "events": [
+            "v52h_liang_dowager_regency"
+          ]
+        },
+        {
+          "id": "han_liangna_5",
+          "title": "归政及史料边界",
+          "kind": "史料辨析",
+          "text": "150年梁太后归政桓帝，不久去世；梁冀仍控制中枢，直至159年被桓帝诛灭。归政因此是临朝制度的结束，并不等于梁氏势力即时消失。梁妠的主要材料集中在《后汉书》本纪、皇后纪和梁统列传，叙事常以女主、外戚与宦官的兴衰组织因果。现代研究可以帮助解释制度结构，却不能补出史料没有保存的私下动机。评价她时，应把可核的册立、临朝、任官与归政，同史家的褒贬语言分别阅读。",
+          "sources": [
+            "v49h_houhanshu",
+            "v49h_cambridge"
+          ],
+          "people": [
+            "han_huan",
+            "han_liangji"
+          ],
+          "events": [
+            "v52h_liang_dowager_regency"
+          ]
+        }
+      ],
+      "sources": [
+        "v49h_houhanshu",
+        "v49h_cambridge"
+      ]
     }
   ],
   "portraits": [
@@ -156773,10 +156969,10 @@
     {
       "from": "han_shun",
       "to": "han_zhangheng",
-      "role": "在位时期重要人物",
-      "inverse": "汉顺帝时期的皇帝",
-      "period": "125—144",
-      "note": "han_zhangheng所代表的人物活动与“阳嘉改历与候风地动仪记载”相关，关系按同时期职务、亲属或政治互动解释。",
+      "role": "尚书、历算与仪器学者",
+      "inverse": "在位皇帝",
+      "period": "125—139",
+      "note": "张衡在顺帝朝任太史令、河间相，晚年入朝任尚书，139年去世。",
       "sources": [
         "v49h_houhanshu"
       ]
@@ -156784,10 +156980,10 @@
     {
       "from": "han_shun",
       "to": "han_liangji",
-      "role": "在位时期重要人物",
-      "inverse": "汉顺帝时期的皇帝",
-      "period": "125—144",
-      "note": "han_liangji所代表的人物活动与“阳嘉改历与候风地动仪记载”相关，关系按同时期职务、亲属或政治互动解释。",
+      "role": "外戚、大将军",
+      "inverse": "在位皇帝",
+      "period": "141—144",
+      "note": "梁冀于顺帝朝继任大将军；顺帝去世后，其家族权力进一步进入皇位交接。",
       "sources": [
         "v49h_houhanshu"
       ]
@@ -156795,21 +156991,10 @@
     {
       "from": "han_chong",
       "to": "han_liangji",
-      "role": "在位时期重要人物",
-      "inverse": "汉冲帝时期的皇帝",
+      "role": "大将军、皇太后之兄",
+      "inverse": "在其朝掌权的幼帝",
       "period": "144—145",
-      "note": "han_liangji所代表的人物活动与“灾荒赈恤诏令”相关，关系按同时期职务、亲属或政治互动解释。",
-      "sources": [
-        "v49h_houhanshu"
-      ]
-    },
-    {
-      "from": "han_chong",
-      "to": "han_zhangheng",
-      "role": "在位时期重要人物",
-      "inverse": "汉冲帝时期的皇帝",
-      "period": "144—145",
-      "note": "han_zhangheng所代表的人物活动与“灾荒赈恤诏令”相关，关系按同时期职务、亲属或政治互动解释。",
+      "note": "冲帝年幼在位时，梁冀以大将军和皇太后之兄的身份居于权力中枢。",
       "sources": [
         "v49h_houhanshu"
       ]
@@ -156817,21 +157002,10 @@
     {
       "from": "han_zhi",
       "to": "han_liangji",
-      "role": "在位时期重要人物",
-      "inverse": "汉质帝时期的皇帝",
+      "role": "大将军、外戚权臣",
+      "inverse": "所参与拥立的幼帝",
       "period": "145—146",
-      "note": "han_liangji所代表的人物活动与“梁冀专权与质帝遇害”相关，关系按同时期职务、亲属或政治互动解释。",
-      "sources": [
-        "v49h_houhanshu"
-      ]
-    },
-    {
-      "from": "han_zhi",
-      "to": "han_chenfan",
-      "role": "在位时期重要人物",
-      "inverse": "汉质帝时期的皇帝",
-      "period": "145—146",
-      "note": "han_chenfan所代表的人物活动与“梁冀专权与质帝遇害”相关，关系按同时期职务、亲属或政治互动解释。",
+      "note": "梁冀参与质帝继立；《后汉书》记载质帝后来被其鸩杀。",
       "sources": [
         "v49h_houhanshu"
       ]
@@ -156839,10 +157013,10 @@
     {
       "from": "han_huan",
       "to": "han_liangji",
-      "role": "在位时期重要人物",
-      "inverse": "汉桓帝时期的皇帝",
-      "period": "146—168",
-      "note": "han_liangji所代表的人物活动与“第一次党锢”相关，关系按同时期职务、亲属或政治互动解释。",
+      "role": "大将军、外戚权臣",
+      "inverse": "先受其拥立、后诛灭其族的皇帝",
+      "period": "146—159",
+      "note": "梁冀参与拥立桓帝并长期掌权；159年桓帝联合宦官诛灭梁氏。",
       "sources": [
         "v49h_houhanshu"
       ]
@@ -156850,10 +157024,10 @@
     {
       "from": "han_huan",
       "to": "han_chenfan",
-      "role": "在位时期重要人物",
-      "inverse": "汉桓帝时期的皇帝",
-      "period": "146—168",
-      "note": "han_chenfan所代表的人物活动与“第一次党锢”相关，关系按同时期职务、亲属或政治互动解释。",
+      "role": "太尉、反对宦官势力的官员",
+      "inverse": "在位皇帝",
+      "period": "165—168",
+      "note": "陈蕃在桓帝末年任太尉，反对宦官集团，并因相关冲突被免。",
       "sources": [
         "v49h_houhanshu"
       ]
@@ -171655,6 +171829,50 @@
       "sources": [
         "v43s_ss418"
       ]
+    },
+    {
+      "from": "han_shun",
+      "to": "han_liangna",
+      "role": "皇后",
+      "inverse": "夫君",
+      "period": "132—144",
+      "note": "梁妠于132年被立为皇后；她在顺帝死后成为皇太后。",
+      "sources": [
+        "v49h_houhanshu"
+      ]
+    },
+    {
+      "from": "han_chong",
+      "to": "han_liangna",
+      "role": "临朝皇太后",
+      "inverse": "所临朝的幼帝",
+      "period": "144—145",
+      "note": "冲帝年幼即位，梁太后临朝处理政务。",
+      "sources": [
+        "v49h_houhanshu"
+      ]
+    },
+    {
+      "from": "han_zhi",
+      "to": "han_liangna",
+      "role": "临朝皇太后",
+      "inverse": "所临朝的幼帝",
+      "period": "145—146",
+      "note": "冲帝死后，梁太后参与质帝继立并继续临朝。",
+      "sources": [
+        "v49h_houhanshu"
+      ]
+    },
+    {
+      "from": "han_huan",
+      "to": "han_liangna",
+      "role": "拥立者、临朝皇太后",
+      "inverse": "所拥立并归政的皇帝",
+      "period": "146—150",
+      "note": "质帝死后，梁太后参与拥立桓帝，至150年归政。",
+      "sources": [
+        "v49h_houhanshu"
+      ]
     }
   ],
   "dynasties": [
@@ -176686,7 +176904,8 @@
       ],
       "events": [
         "v49h_gaozu_accession",
-        "v49h_gaozu_theme"
+        "v49h_gaozu_theme",
+        "v49h_baideng"
       ],
       "sources": [
         "v49h_hanshu",
@@ -176778,7 +176997,8 @@
       ],
       "events": [
         "v49h_wen_accession",
-        "v49h_wen_theme"
+        "v49h_wen_theme",
+        "v49h_rest"
       ],
       "sources": [
         "v49h_hanshu",
@@ -176801,7 +177021,8 @@
       ],
       "events": [
         "v49h_jing_accession",
-        "v49h_jing_theme"
+        "v49h_jing_theme",
+        "v49h_seven"
       ],
       "sources": [
         "v49h_hanshu",
@@ -176827,7 +177048,12 @@
       ],
       "events": [
         "v49h_wu_accession",
-        "v49h_wu_theme"
+        "v49h_wu_theme",
+        "v49h_tui_en",
+        "v49h_hexi",
+        "v49h_wuzhu",
+        "v49h_taixue",
+        "v49h_shiji"
       ],
       "sources": [
         "v49h_hanshu",
@@ -176850,7 +177076,8 @@
       ],
       "events": [
         "v49h_zhao_accession",
-        "v49h_zhao_theme"
+        "v49h_zhao_theme",
+        "v49h_saltiron"
       ],
       "sources": [
         "v49h_hanshu",
@@ -176873,7 +177100,8 @@
       ],
       "events": [
         "v49h_xuan_accession",
-        "v49h_xuan_theme"
+        "v49h_xuan_theme",
+        "v49h_protectorate"
       ],
       "sources": [
         "v49h_hanshu",
@@ -176988,7 +177216,8 @@
       ],
       "events": [
         "v49h_guangwu_accession",
-        "v49h_guangwu_theme"
+        "v49h_guangwu_theme",
+        "v49h_land"
       ],
       "sources": [
         "v49h_houhanshu",
@@ -177057,7 +177286,10 @@
       ],
       "events": [
         "v49h_he_accession",
-        "v49h_he_theme"
+        "v49h_he_theme",
+        "v49h_western",
+        "v49h_paper",
+        "v49h_hanbook"
       ],
       "sources": [
         "v49h_houhanshu",
@@ -177103,7 +177335,8 @@
       ],
       "events": [
         "v49h_an_accession",
-        "v49h_an_theme"
+        "v49h_an_theme",
+        "v49h_disaster"
       ],
       "sources": [
         "v49h_houhanshu",
@@ -177122,7 +177355,8 @@
       ],
       "people": [
         "han_zhangheng",
-        "han_liangji"
+        "han_liangji",
+        "han_liangna"
       ],
       "events": [
         "v49h_shun_accession",
@@ -177144,18 +177378,19 @@
         }
       ],
       "people": [
-        "han_liangji",
-        "han_zhangheng"
+        "han_liangna",
+        "han_liangji"
       ],
       "events": [
         "v49h_chong_accession",
-        "v49h_chong_theme"
+        "v49h_chong_theme",
+        "v52h_liang_dowager_regency"
       ],
       "sources": [
         "v49h_houhanshu",
         "v49h_cambridge"
       ],
-      "note": "按本纪纪年列示；短朝与年内交接保留实际制度边界。"
+      "note": "冲帝在位不足一年且年幼，页面区分皇帝名义、梁太后临朝与梁冀任大将军三个层次。"
     },
     {
       "person": "han_zhi",
@@ -177167,18 +177402,19 @@
         }
       ],
       "people": [
-        "han_liangji",
-        "han_chenfan"
+        "han_liangna",
+        "han_liangji"
       ],
       "events": [
         "v49h_zhi_accession",
-        "v49h_zhi_theme"
+        "v49h_zhi_theme",
+        "v52h_liang_dowager_regency"
       ],
       "sources": [
         "v49h_houhanshu",
         "v49h_cambridge"
       ],
-      "note": "按本纪纪年列示；短朝与年内交接保留实际制度边界。"
+      "note": "质帝幼年在位，梁太后继续临朝；梁冀的权势与皇太后制度身份分别列示。"
     },
     {
       "person": "han_huan",
@@ -177191,17 +177427,19 @@
       ],
       "people": [
         "han_liangji",
-        "han_chenfan"
+        "han_chenfan",
+        "han_liangna"
       ],
       "events": [
         "v49h_huan_accession",
-        "v49h_huan_theme"
+        "v49h_huan_theme",
+        "v52h_liang_dowager_regency"
       ],
       "sources": [
         "v49h_houhanshu",
         "v49h_cambridge"
       ],
-      "note": "按本纪纪年列示；短朝与年内交接保留实际制度边界。"
+      "note": "桓帝146年由梁太后与梁氏权力网络拥立，150年太后归政，159年才诛灭梁冀。"
     },
     {
       "person": "han_ling",
@@ -177218,7 +177456,10 @@
       ],
       "events": [
         "v49h_ling_accession",
-        "v49h_ling_theme"
+        "v49h_ling_theme",
+        "v49h_partisan",
+        "v49h_epidemics",
+        "v49h_yellow"
       ],
       "sources": [
         "v49h_houhanshu",
@@ -177264,7 +177505,9 @@
       ],
       "events": [
         "v49h_xian_accession",
-        "v49h_xian_theme"
+        "v49h_xian_theme",
+        "v49h_dongzhuo",
+        "v49h_xutian"
       ],
       "sources": [
         "v49h_houhanshu",
