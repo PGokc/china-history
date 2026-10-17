@@ -2565,4 +2565,19 @@ final class MingJiUITests: XCTestCase {
         shot("v75-relationship-evidence-sentence", app)
     }
 
+    @MainActor func testV76SearchExplainsTruncatedResults() throws {
+        let app = launch(enterFamily: false)
+        app.buttons["globalSearch"].tap()
+        let search = app.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("皇帝")
+        let summary = app.staticTexts["searchResultCount"]
+        XCTAssertTrue(summary.waitForExistence(timeout: 5))
+        XCTAssertTrue(summary.label.contains("显示相关度较高的前"))
+        let peopleCount = app.staticTexts["searchSectionCount_people"]
+        XCTAssertTrue(peopleCount.exists)
+        XCTAssertTrue(peopleCount.label.contains("/"))
+        XCTAssertFalse(app.staticTexts.matching(NSPredicate(format: "label CONTAINS %@", " · ")).firstMatch.exists)
+        shot("v76-search-total-and-visible-counts", app)
+    }
+
 }

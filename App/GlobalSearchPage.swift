@@ -38,16 +38,17 @@ struct GlobalSearchPage: View {
         return 3
     }
 
-    private var people: [Person] {
-        Array(store.content.people.filter { includes(personText($0)) }
+    private var allPeople: [Person] {
+        store.content.people.filter { includes(personText($0)) }
             .sorted { lhs, rhs in
                 let a = personRank(lhs), b = personRank(rhs)
                 return a == b ? lhs.name.localizedStandardCompare(rhs.name) == .orderedAscending : a < b
-            }.prefix(16))
+            }
     }
+    private var people: [Person] { Array(allPeople.prefix(16)) }
 
-    private var events: [HistoryEvent] {
-        Array(store.content.events.filter { event in
+    private var allEvents: [HistoryEvent] {
+        store.content.events.filter { event in
             includes([event.title, event.year, event.kind, event.body, event.impact] + event.people.map { store.person($0).name })
         }.sorted {
             if $0.title.localizedStandardContains(term) != $1.title.localizedStandardContains(term) {
@@ -55,39 +56,48 @@ struct GlobalSearchPage: View {
             }
             return EventChronology.precedes($0.year, placement: $0.sortYear, id: $0.id,
                                              $1.year, placement: $1.sortYear, id: $1.id)
-        }.prefix(20))
+        }
     }
+    private var events: [HistoryEvent] { Array(allEvents.prefix(20)) }
 
-    private var artifacts: [Artifact] {
-        Array(store.content.objects.filter { object in
+    private var allArtifacts: [Artifact] {
+        store.content.objects.filter { object in
             includes([object.title, object.subtitle, object.body, object.note] + object.people.map { store.person($0).name })
-        }.prefix(16))
+        }
     }
+    private var artifacts: [Artifact] { Array(allArtifacts.prefix(16)) }
 
-    private var tombs: [Tomb] {
-        Array((store.content.tombs ?? []).filter { tomb in
+    private var allTombs: [Tomb] {
+        (store.content.tombs ?? []).filter { tomb in
             includes([tomb.title, tomb.area, tomb.location, tomb.status, tomb.body, tomb.note, store.person(tomb.person).name])
-        }.prefix(12))
+        }
     }
+    private var tombs: [Tomb] { Array(allTombs.prefix(12)) }
 
-    private var dynasties: [Dynasty] {
-        Array((store.content.dynasties ?? []).filter { includes([$0.name, $0.years, $0.note]) }.prefix(16))
+    private var allDynasties: [Dynasty] {
+        (store.content.dynasties ?? []).filter { includes([$0.name, $0.years, $0.note]) }
     }
+    private var dynasties: [Dynasty] { Array(allDynasties.prefix(16)) }
 
-    private var sites: [PrehistorySite] {
-        Array((store.content.prehistorySites ?? []).filter {
+    private var allSites: [PrehistorySite] {
+        (store.content.prehistorySites ?? []).filter {
             includes([$0.name, $0.period, $0.location, $0.province, $0.summary, $0.significance])
-        }.prefix(12))
+        }
     }
+    private var sites: [PrehistorySite] { Array(allSites.prefix(12)) }
 
-    private var topics: [EraTopic] {
-        Array((store.zhouGuide?.topics ?? []).filter { topic in
+    private var allTopics: [EraTopic] {
+        (store.zhouGuide?.topics ?? []).filter { topic in
             includes([topic.name, topic.call, topic.years, topic.category, topic.summary] + topic.sections.flatMap { [$0.title, $0.text] })
-        }.prefix(12))
+        }
     }
+    private var topics: [EraTopic] { Array(allTopics.prefix(12)) }
 
-    private var resultCount: Int {
+    private var displayedResultCount: Int {
         people.count + events.count + artifacts.count + tombs.count + dynasties.count + sites.count + topics.count
+    }
+    private var totalResultCount: Int {
+        allPeople.count + allEvents.count + allArtifacts.count + allTombs.count + allDynasties.count + allSites.count + allTopics.count
     }
 
     var body: some View {
@@ -95,10 +105,12 @@ struct GlobalSearchPage: View {
             LazyVStack(alignment: .leading, spacing: 26) {
                 if term.isEmpty {
                     introduction
-                } else if resultCount == 0 {
+                } else if totalResultCount == 0 {
                     noResults
                 } else {
-                    Text("显示 \(resultCount) 项相关内容")
+                    Text(displayedResultCount < totalResultCount
+                         ? "找到 \(totalResultCount) 项，显示相关度较高的前 \(displayedResultCount) 项"
+                         : "找到 \(totalResultCount) 项相关内容")
                         .font(.subheadline).foregroundStyle(Theme.muted)
                         .accessibilityIdentifier("searchResultCount")
                     if !people.isEmpty { peopleSection }
@@ -141,13 +153,13 @@ struct GlobalSearchPage: View {
     }
 
     private var peopleSection: some View {
-        SearchSection(title: "人物", count: people.count) {
+        SearchSection(title: "人物", displayed: people.count, total: allPeople.count, identifier: "searchSectionCount_people") {
             ForEach(people) { person in
                 SearchResultLink(
                     route: .person(person.id),
                     eyebrow: store.dynastyName(store.dynastyID(for: person.id)),
                     title: person.name,
-                    subtitle: [person.call, person.kind].filter { !$0.isEmpty }.joined(separator: " · "),
+                    subtitle: [person.call, person.kind].filter { !$0.isEmpty }.joined(separator: "　"),
                     identifier: "search_person_\(person.id)"
                 )
             }
@@ -155,11 +167,11 @@ struct GlobalSearchPage: View {
     }
 
     private var eventsSection: some View {
-        SearchSection(title: "历史事件", count: events.count) {
+        SearchSection(title: "历史事件", displayed: events.count, total: allEvents.count, identifier: "searchSectionCount_events") {
             ForEach(events) { event in
                 SearchResultLink(
                     route: .event(event.id),
-                    eyebrow: [event.year, event.category ?? event.kind].filter { !$0.isEmpty }.joined(separator: " · "),
+                    eyebrow: [event.year, event.category ?? event.kind].filter { !$0.isEmpty }.joined(separator: "　"),
                     title: event.title,
                     subtitle: event.body,
                     identifier: "search_event_\(event.id)"
@@ -169,23 +181,23 @@ struct GlobalSearchPage: View {
     }
 
     private var heritageSection: some View {
-        SearchSection(title: "遗珍与陵寝", count: artifacts.count + tombs.count) {
+        SearchSection(title: "遗珍与陵寝", displayed: artifacts.count + tombs.count, total: allArtifacts.count + allTombs.count, identifier: "searchSectionCount_heritage") {
             ForEach(artifacts) { object in
                 SearchResultLink(route: .object(object.id), eyebrow: "遗珍", title: object.title, subtitle: object.subtitle, identifier: "search_object_\(object.id)")
             }
             ForEach(tombs) { tomb in
-                SearchResultLink(route: .tomb(tomb.id), eyebrow: "陵寝 · \(tomb.location)", title: tomb.title, subtitle: tomb.status, identifier: "search_tomb_\(tomb.id)")
+                SearchResultLink(route: .tomb(tomb.id), eyebrow: "陵寝　\(tomb.location)", title: tomb.title, subtitle: tomb.status, identifier: "search_tomb_\(tomb.id)")
             }
         }
     }
 
     private var periodSection: some View {
-        SearchSection(title: "时期与专题", count: dynasties.count + sites.count + topics.count) {
+        SearchSection(title: "时期与专题", displayed: dynasties.count + sites.count + topics.count, total: allDynasties.count + allSites.count + allTopics.count, identifier: "searchSectionCount_periods") {
             ForEach(dynasties) { dynasty in
                 SearchResultLink(route: .dynasty(dynasty.id), eyebrow: dynasty.years, title: dynasty.name, subtitle: dynasty.note, identifier: "search_dynasty_\(dynasty.id)")
             }
             ForEach(sites) { site in
-                SearchResultLink(route: .prehistorySite(site.id), eyebrow: "史前遗址 · \(site.province)", title: site.name, subtitle: site.period, identifier: "search_site_\(site.id)")
+                SearchResultLink(route: .prehistorySite(site.id), eyebrow: "史前遗址　\(site.province)", title: site.name, subtitle: site.period, identifier: "search_site_\(site.id)")
             }
             ForEach(topics) { topic in
                 SearchResultLink(route: .eraTopic(topic.id), eyebrow: topic.period ?? topic.category, title: topic.name, subtitle: topic.call, identifier: "search_topic_\(topic.id)")
@@ -196,7 +208,8 @@ struct GlobalSearchPage: View {
 
 private struct SearchSection<Content: View>: View {
     let title: String
-    let count: Int
+    let displayed, total: Int
+    let identifier: String
     @ViewBuilder let content: Content
 
     var body: some View {
@@ -204,7 +217,9 @@ private struct SearchSection<Content: View>: View {
             HStack(alignment: .firstTextBaseline) {
                 Text(title).font(.system(.title3, design: .serif).weight(.semibold)).foregroundStyle(Theme.ink)
                 Spacer()
-                Text("\(count)项").font(.caption.monospacedDigit()).foregroundStyle(Theme.muted)
+                Text(displayed < total ? "\(displayed)/\(total)项" : "\(total)项")
+                    .font(.caption.monospacedDigit()).foregroundStyle(Theme.muted)
+                    .accessibilityIdentifier(identifier)
             }
             VStack(alignment: .leading, spacing: 18) { content }
                 .padding(18)
