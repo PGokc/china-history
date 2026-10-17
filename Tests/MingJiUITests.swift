@@ -2613,4 +2613,15 @@ final class MingJiUITests: XCTestCase {
         shot("v78-portrait-bottom-clearance", portrait)
     }
 
+    @MainActor func testV79DynastyListEndsWithoutExcessBlankSpace() throws {
+        let app = launch(enterFamily: false)
+        let qing = app.buttons["dynasty_qing"]
+        reach(qing, in: app, attempts: 20)
+        app.swipeUp()
+        let gap = app.tabBars.firstMatch.frame.minY - qing.frame.maxY
+        XCTAssertGreaterThan(gap, 20)
+        XCTAssertLessThan(gap, 60)
+        shot("v79-dynasty-list-compact-ending", app)
+    }
+
 }

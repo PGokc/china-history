@@ -101,7 +101,7 @@ struct DynastyPage: View {
                     }
                     Rectangle().fill(Theme.line.opacity(0.5)).frame(height: 0.5)
                 }
-            }.padding(.horizontal, 24).padding(.top, 22).padding(.bottom, 160)
+            }.padding(.horizontal, 24).padding(.top, 22).padding(.bottom, 44)
         }.background(Theme.paper).foregroundStyle(Theme.text)
             .navigationTitle("史迹").navigationBarTitleDisplayMode(.inline).toolbarBackground(Theme.paper, for: .navigationBar).toolbarBackground(.visible, for: .navigationBar)
             .toolbar {
