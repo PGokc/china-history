@@ -10,19 +10,15 @@ enum SourceProvenance: String {
     case news = "新闻机构"
     case publicInstitution = "公共机构"
     case reference = "辅助参考"
-}
 
-struct Source: Codable, Identifiable {
-    let id, title, url, note: String
-
-    var host: String {
+    static func host(for url: String) -> String {
         guard let host = URL(string: url)?.host?.lowercased() else { return "来源网页" }
         return host.hasPrefix("www.") ? String(host.dropFirst(4)) : host
     }
 
-    var provenance: SourceProvenance {
-        let sourceHost = host
-        let title = title.lowercased()
+    static func classify(title originalTitle: String, url: String) -> SourceProvenance {
+        let sourceHost = host(for: url)
+        let title = originalTitle.lowercased()
         let historicalTextHosts = ["zh.wikisource.org", "ctext.org", "shidianguji.com", "drbachinese.org", "laoziliao.net"]
         if historicalTextHosts.contains(where: { sourceHost == $0 || sourceHost.hasSuffix("." + $0) }) { return .historicalText }
 
@@ -44,10 +40,16 @@ struct Source: Codable, Identifiable {
 
         let newsHosts = ["chinanews.com.cn", "xinhuanet.com", "people.com.cn"]
         if newsHosts.contains(where: { sourceHost == $0 || sourceHost.hasSuffix("." + $0) }) { return .news }
-
         if sourceHost.hasSuffix(".gov.cn") || sourceHost == "gov.cn" || sourceHost.hasSuffix(".gov.hk") { return .publicInstitution }
         return .reference
     }
+}
+
+struct Source: Codable, Identifiable {
+    let id, title, url, note: String
+
+    var host: String { SourceProvenance.host(for: url) }
+    var provenance: SourceProvenance { SourceProvenance.classify(title: title, url: url) }
 }
 struct Person: Codable, Identifiable {
     let id, name, call, temple, era, reign, summary, kind, note: String
@@ -166,6 +168,8 @@ struct TerritoryMap: Codable, Identifiable {
 struct EraTopicSource: Codable, Identifiable {
     let title, url: String
     var id: String { url }
+    var host: String { SourceProvenance.host(for: url) }
+    var provenance: SourceProvenance { SourceProvenance.classify(title: title, url: url) }
 }
 struct EraTopicSection: Codable, Identifiable {
     let id, title, text: String

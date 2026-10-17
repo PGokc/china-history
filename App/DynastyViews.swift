@@ -191,6 +191,9 @@ struct EraTopicPage: View {
                     }
                     VStack(alignment: .leading, spacing: 10) {
                         Text("资料依据").font(.system(.headline, design: .serif)).foregroundStyle(Theme.ink)
+                        Text("来源标签说明发布或承载机构；古籍开放转录用于核对原文，不等同官方校勘版本。")
+                            .font(.caption).foregroundStyle(Theme.muted).lineSpacing(4)
+                            .accessibilityIdentifier("zhouSourceProvenanceNote")
                         ForEach(Array(topic.sources.enumerated()), id: \.element.id) { index, source in
                             if let url = URL(string: source.url) {
                                 HStack(alignment: .top, spacing: 12) {
@@ -198,10 +201,15 @@ struct EraTopicPage: View {
                                         .font(.caption2.monospacedDigit().weight(.medium)).foregroundStyle(Theme.cinnabar)
                                         .frame(width: 24, alignment: .leading).padding(.top, 3).accessibilityHidden(true)
                                     Link(destination: url) {
-                                        Text(source.title)
-                                            .font(.caption).foregroundStyle(Theme.cinnabar)
-                                            .multilineTextAlignment(.leading)
-                                            .frame(maxWidth: .infinity, minHeight: 36, alignment: .leading)
+                                        VStack(alignment: .leading, spacing: 5) {
+                                            Text("\(source.provenance.rawValue)　\(source.host)")
+                                                .font(.caption2.weight(.medium)).foregroundStyle(Theme.cinnabar)
+                                                .accessibilityIdentifier("zhouSourceKind_\(index)")
+                                            Text(source.title)
+                                                .font(.caption).foregroundStyle(Theme.text)
+                                                .multilineTextAlignment(.leading)
+                                        }
+                                        .frame(maxWidth: .infinity, minHeight: 44, alignment: .leading)
                                     }
                                     .buttonStyle(QuietRowStyle())
                                 }

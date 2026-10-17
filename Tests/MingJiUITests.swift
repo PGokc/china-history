@@ -2580,4 +2580,18 @@ final class MingJiUITests: XCTestCase {
         shot("v76-search-total-and-visible-counts", app)
     }
 
+    @MainActor func testV77ZhouTopicsExplainSourceTypes() throws {
+        let app = launch(enterFamily: false)
+        reach(app.buttons["dynasty_zhou"], in: app, attempts: 8); app.buttons["dynasty_zhou"].tap()
+        reach(app.buttons["zhouGuideEntry"], in: app, attempts: 12); app.buttons["zhouGuideEntry"].tap()
+        app.buttons["zhouPeriod_春秋"].tap()
+        reach(app.buttons["zhouTopic_confucius"], in: app, attempts: 10); app.buttons["zhouTopic_confucius"].tap()
+        let note = app.staticTexts["zhouSourceProvenanceNote"]
+        reach(note, in: app, attempts: 18)
+        XCTAssertTrue(note.isHittable)
+        XCTAssertEqual(app.staticTexts["zhouSourceKind_0"].label, "学术研究　plato.stanford.edu")
+        XCTAssertEqual(app.staticTexts["zhouSourceKind_1"].label, "古籍转录　ctext.org")
+        shot("v77-zhou-source-provenance", app)
+    }
+
 }
