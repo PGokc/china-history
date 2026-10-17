@@ -85,7 +85,7 @@ private struct ZhouGuideEntry: View {
 
 struct ZhouGuidePage: View {
     let store: HistoryStore
-    @State private var selectedPeriod = "春秋"
+    @State private var selectedPeriod = "西周"
     private let periods = ["西周", "春秋", "战国"]
     private let categories = ["建国与礼制", "诸侯与争霸", "变法与治理", "思想"]
     private var guide: EraGuide? { store.zhouGuide }
@@ -107,7 +107,7 @@ struct ZhouGuidePage: View {
                         }
                     }
                 }
-                .padding(.horizontal, 24).padding(.top, 22).padding(.bottom, 70)
+                .padding(.horizontal, 24).padding(.top, 22).padding(.bottom, 160)
             }
         }
         .background(Theme.paper).foregroundStyle(Theme.text)
@@ -197,15 +197,18 @@ struct EraTopicPage: View {
                                     Text(String(format: "%02d", index + 1))
                                         .font(.caption2.monospacedDigit().weight(.medium)).foregroundStyle(Theme.cinnabar)
                                         .frame(width: 24, alignment: .leading).padding(.top, 3).accessibilityHidden(true)
-                                    Link(source.title, destination: url)
-                                        .font(.caption).foregroundStyle(Theme.cinnabar)
-                                        .multilineTextAlignment(.leading)
-                                        .frame(maxWidth: .infinity, minHeight: 36, alignment: .leading)
+                                    Link(destination: url) {
+                                        Text(source.title)
+                                            .font(.caption).foregroundStyle(Theme.cinnabar)
+                                            .multilineTextAlignment(.leading)
+                                            .frame(maxWidth: .infinity, minHeight: 36, alignment: .leading)
+                                    }
+                                    .buttonStyle(QuietRowStyle())
                                 }
                             }
                         }
                     }
-                }.padding(.horizontal, 24).padding(.top, 22).padding(.bottom, 70)
+                }.padding(.horizontal, 24).padding(.top, 22).padding(.bottom, 160)
             }
             .background(Theme.paper).foregroundStyle(Theme.text)
             .navigationTitle(topic.name).navigationBarTitleDisplayMode(.inline)

@@ -528,6 +528,7 @@ final class MingJiUITests: XCTestCase {
         app.buttons["zhouGuideEntry"].tap()
         XCTAssertTrue(app.descendants(matching: .any)["zhouGuidePage"].waitForExistence(timeout: 5))
         XCTAssertTrue(app.buttons["zhouPeriod_春秋"].exists)
+        app.buttons["zhouPeriod_春秋"].tap()
         XCTAssertTrue(app.buttons["zhouTopic_confucius"].waitForExistence(timeout: 5))
         reach(app.buttons["zhouTopic_confucius"], in: app, attempts: 10)
         app.buttons["zhouTopic_confucius"].tap()
@@ -548,6 +549,29 @@ final class MingJiUITests: XCTestCase {
         reach(app.buttons["zhouTopic_shang-yang"], in: app, attempts: 12)
         XCTAssertTrue(app.buttons["zhouTopic_shang-yang"].exists)
         shot("v37-zhou-guide", app)
+    }
+
+    @MainActor func testV67ZhouGuideClosesVisibleCoverageGaps() throws {
+        let app = launch(enterFamily: false)
+        reach(app.buttons["dynasty_zhou"], in: app, attempts: 8); app.buttons["dynasty_zhou"].tap()
+        reach(app.buttons["zhouGuideEntry"], in: app, attempts: 12)
+        XCTAssertTrue(app.buttons["zhouGuideEntry"].label.contains("25个专题"))
+        app.buttons["zhouGuideEntry"].tap()
+        XCTAssertTrue(app.buttons["zhouTopic_duke-shao"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.buttons["zhouTopic_liwang-republic"].exists)
+        app.buttons["zhouPeriod_春秋"].tap()
+        XCTAssertTrue(app.buttons["zhouTopic_qin-mugong"].waitForExistence(timeout: 5))
+        reach(app.buttons["zhouTopic_wu-yue-rivalry"], in: app, attempts: 10)
+        XCTAssertTrue(app.buttons["zhouTopic_wu-yue-rivalry"].exists)
+        app.buttons["zhouPeriod_战国"].tap()
+        XCTAssertTrue(app.buttons["zhouTopic_suqin-zhangyi"].waitForExistence(timeout: 5))
+        reach(app.buttons["zhouTopic_li-bing-dujiangyan"], in: app, attempts: 14)
+        app.buttons["zhouTopic_li-bing-dujiangyan"].tap()
+        XCTAssertTrue(app.descendants(matching: .any)["eraTopic_li-bing-dujiangyan"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["活着的遗产"].exists)
+        reach(app.buttons["联合国教科文组织世界遗产中心：青城山—都江堰"], in: app, attempts: 14)
+        XCTAssertTrue(app.buttons["联合国教科文组织世界遗产中心：青城山—都江堰"].isHittable)
+        shot("v67-zhou-dujiangyan", app)
     }
 
     @MainActor func testV29ZhuDiSignatureEventsStayVisible() throws {

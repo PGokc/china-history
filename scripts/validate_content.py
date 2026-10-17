@@ -316,6 +316,22 @@ if d['version'] >= 17:
  assert all(len(x['sections'])>=3 and len(x['sources'])>=2 for x in zhou['topics'])
  assert all(source['url'].startswith('https://') for x in zhou['topics'] for source in x['sources'])
  print('V17 PASS: Zhu Di’s three signature projects are discoverable; fifteen Zhou topics span Western Zhou, Spring–Autumn and Warring States')
+if d['version'] >= 49:
+ zhou=json.loads((R/'App/Resources/zhou_topics.json').read_text())
+ topics={x['id']:x for x in zhou['topics']}
+ expanded={
+  'duke-shao','liwang-republic','pingwang-eastward','qin-mugong','wu-yue-rivalry',
+  'wu-qi','li-kui','suqin-zhangyi','qu-yuan','li-bing-dujiangyan'
+ }
+ assert len(topics)==25 and expanded <= topics.keys()
+ assert {topics[x]['period'] for x in expanded} == {'西周','春秋','战国'}
+ assert all(len(topics[x]['summary']) >= 70 and len(topics[x]['sections']) == 3 for x in expanded)
+ assert all(len(section['text']) >= 75 for x in expanded for section in topics[x]['sections'])
+ assert all(len(topics[x]['sources']) >= 2 for x in expanded)
+ assert '材料并不一致' in topics['liwang-republic']['summary'] and '并未形成' in topics['liwang-republic']['sections'][1]['text']
+ assert '不能说成' in topics['li-bing-dujiangyan']['summary']
+ assert all('非官方古籍电子本' in source['title'] for x in expanded for source in topics[x]['sources'] if 'ctext.org' in source['url'])
+ print('V49 PASS: twenty-five Zhou guide topics expose the missing royal, diplomatic, reform, literary and engineering threads')
 if d['version'] == 18:
  ideas={x['id']:x for x in d['objects'] if x.get('symbol')=='brain.head.profile'}
  required={'idea_confucian_tradition','idea_daoist_tradition','idea_wang_yangming','idea_self_strengthening'}
