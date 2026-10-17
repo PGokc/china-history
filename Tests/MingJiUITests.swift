@@ -2413,4 +2413,40 @@ final class MingJiUITests: XCTestCase {
         shot("v69-zhang-jie-reader", song)
     }
 
+    @MainActor func testV70GlobalSearchCrossesContentTypes() throws {
+        let heritage = XCUIApplication()
+        heritage.launchArguments = ["--uitesting", "--ui-dynasty", "song_liao_xia_jin"]
+        heritage.launch()
+        XCTAssertTrue(heritage.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        for tab in ["朝代", "帝序", "家族", "遗珍"] {
+            heritage.tabBars.buttons[tab].tap()
+            XCTAssertTrue(heritage.buttons["globalSearch"].waitForExistence(timeout: 5))
+        }
+        heritage.buttons["globalSearch"].tap()
+        XCTAssertTrue(heritage.descendants(matching: .any)["searchIntroduction"].waitForExistence(timeout: 5))
+        let search = heritage.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("营造法式")
+        XCTAssertTrue(heritage.buttons["search_event_v47s_yingzao"].waitForExistence(timeout: 5))
+        let object = heritage.buttons["search_object_v47s_yingzao_book"]
+        reach(object, in: heritage, attempts: 10)
+        shot("v70-global-search-mixed-results", heritage)
+        object.tap()
+        XCTAssertTrue(heritage.staticTexts["《营造法式》"].waitForExistence(timeout: 5))
+        heritage.terminate()
+
+        let person = XCUIApplication()
+        person.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]
+        person.launch()
+        XCTAssertTrue(person.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        person.buttons["globalSearch"].tap()
+        let personSearch = person.searchFields.firstMatch
+        XCTAssertTrue(personSearch.waitForExistence(timeout: 5)); personSearch.tap(); personSearch.typeText("高骈")
+        let gaopian = person.buttons["search_person_t_gaopian"]
+        XCTAssertTrue(gaopian.waitForExistence(timeout: 5))
+        shot("v70-global-search-person", person)
+        gaopian.tap()
+        XCTAssertTrue(person.staticTexts["高骈"].waitForExistence(timeout: 5))
+        XCTAssertTrue(person.staticTexts["晚唐将领"].exists)
+    }
+
 }

@@ -16,7 +16,7 @@ enum DetailRoute: Hashable {
     case personEvents(String, MajorEventCategory)
     case person(String), family(String), connections(String), event(String), object(String), tomb(String), article(String), portrait(String)
     case dynastySequence(String), dynastyCollection(String)
-    case dynasty(String), prehistorySite(String), zhouGuide, eraTopic(String), collectionCategory(String, String), about
+    case dynasty(String), prehistorySite(String), zhouGuide, eraTopic(String), collectionCategory(String, String), search, about
 }
 struct RootView: View {
     let store: HistoryStore
@@ -104,7 +104,12 @@ struct DynastyPage: View {
             }.padding(.horizontal, 24).padding(.vertical, 22)
         }.background(Theme.paper).foregroundStyle(Theme.text)
             .navigationTitle("史迹").navigationBarTitleDisplayMode(.inline).toolbarBackground(Theme.paper, for: .navigationBar).toolbarBackground(.visible, for: .navigationBar)
-            .toolbar { ToolbarItem(placement: .topBarTrailing) { NavigationLink(value: DetailRoute.about) { Image(systemName: "info.circle") }.accessibilityLabel("阅读说明") } }
+            .toolbar {
+                ToolbarItemGroup(placement: .topBarTrailing) {
+                    GlobalSearchLink()
+                    NavigationLink(value: DetailRoute.about) { Image(systemName: "info.circle") }.accessibilityLabel("阅读说明")
+                }
+            }
             .accessibilityIdentifier("dynastyPage")
     }
 }
@@ -177,6 +182,7 @@ struct RouteDestination: View {
         case .prehistorySite(let id): PrehistorySitePage(store: store, siteID: id)
         case .zhouGuide: ZhouGuidePage(store: store)
         case .eraTopic(let id): EraTopicPage(store: store, topicID: id)
+        case .search: GlobalSearchPage(store: store)
         case .collectionCategory(let dynastyID, let id):
             if let category = CollectionCategory(rawValue: id) {
                 CollectionCategoryPage(store: store, dynastyID: dynastyID, category: category)
@@ -248,6 +254,9 @@ struct FamilyPage: View {
                 }
         }
             .navigationTitle(isRoot ? (store.dynastyName(dynastyID) + "家族") : "\(p.name)家族").navigationBarTitleDisplayMode(.inline).toolbarBackground(Theme.paper, for: .navigationBar).toolbarBackground(.visible, for: .navigationBar)
+            .toolbar {
+                if isRoot { ToolbarItem(placement: .topBarTrailing) { GlobalSearchLink() } }
+            }
             .toolbar { if isRoot { ToolbarItem(placement: .topBarTrailing) { NavigationLink(value: DetailRoute.about) { Image(systemName: "info.circle").font(.system(size: 17)) }.accessibilityLabel("阅读说明") } } }
     }
     var graph: some View {
@@ -496,6 +505,7 @@ struct SuccessionPage: View {
                     .font(.caption).foregroundStyle(Theme.muted).padding(.top, 22).fixedSize(horizontal: false, vertical: true)
             }.padding(24)
         }.background(Theme.paper).foregroundStyle(Theme.text).navigationTitle(store.dynastyName(dynastyID) + "帝序").navigationBarTitleDisplayMode(.inline).toolbarBackground(Theme.paper, for: .navigationBar).toolbarBackground(.visible, for: .navigationBar)
+            .toolbar { ToolbarItem(placement: .topBarTrailing) { GlobalSearchLink() } }
             .accessibilityIdentifier("successionPage_\(dynastyID)")
             .id(dynastyID)
     }
@@ -659,6 +669,7 @@ struct CollectionPage: View {
         }
         .background(Theme.paper).foregroundStyle(Theme.text)
         .navigationTitle(store.dynastyName(dynastyID) + "遗珍").navigationBarTitleDisplayMode(.inline).toolbarBackground(Theme.paper, for: .navigationBar).toolbarBackground(.visible, for: .navigationBar)
+        .toolbar { ToolbarItem(placement: .topBarTrailing) { GlobalSearchLink() } }
         .accessibilityIdentifier("collectionPage_\(dynastyID)")
     }
 
