@@ -54,7 +54,7 @@ struct PrehistoryPage: View {
                             Button("更晚") { if let next { age = next } }.disabled(next == nil)
                                 .frame(minWidth: 44, minHeight: 44).accessibilityIdentifier("laterTime")
                         }
-                    }.padding(.horizontal, 24).padding(.top, 8).padding(.bottom, 16)
+                    }.padding(.horizontal, 24).padding(.top, 8).padding(.bottom, 150)
                 }
             }.scrollBounceBehavior(.basedOnSize)
         }

@@ -54,7 +54,7 @@ struct PersonPage: View {
                 if typeSize.isAccessibilitySize {
                     DisclosureGroup("人物简介") { Text(p.summary).font(.body).lineSpacing(5).padding(.top, 10) }
                 }
-            }.padding(24)
+            }.padding(24).padding(.bottom, 136)
         }.background(Theme.paper).foregroundStyle(Theme.text)
             .navigationTitle("人物概览").navigationBarTitleDisplayMode(.inline).toolbarBackground(Theme.paper, for: .navigationBar).toolbarBackground(.visible, for: .navigationBar)
     }
@@ -174,7 +174,7 @@ struct PersonSectionPage: View {
                     }
                 case .records: records
                 }
-            }.padding(24)
+            }.padding(24).padding(.bottom, 136)
         }.background(Theme.paper).foregroundStyle(Theme.text)
             .navigationTitle(section.rawValue).navigationBarTitleDisplayMode(.inline).toolbarBackground(Theme.paper, for: .navigationBar).toolbarBackground(.visible, for: .navigationBar)
     }
@@ -382,7 +382,7 @@ struct FamilyMembersPage: View {
                         }.buttonStyle(QuietRowStyle()).accessibilityIdentifier("member_\(person.id)")
                     }
                 }
-            }.padding(24)
+            }.padding(24).padding(.bottom, 136)
         }.background(Theme.paper).navigationTitle(group == .children ? store.childrenHeading(personID) : group.rawValue).navigationBarTitleDisplayMode(.inline).toolbarBackground(Theme.paper, for: .navigationBar).toolbarBackground(.visible, for: .navigationBar)
     }
 }

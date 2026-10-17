@@ -82,7 +82,7 @@ struct ConnectionsPage: View {
                         VStack(alignment: .leading, spacing: 10) { Text("\(store.person(link.from).name)与\(store.person(link.to).name)").font(.headline); Text(link.note).font(.subheadline); SourcesView(store: store, ids: link.sources, compact: true) }.padding(.vertical, 14)
                     }
                 }
-            }.padding(24)
+            }.padding(24).padding(.bottom, 136)
         }.background(Theme.paper).foregroundStyle(Theme.text).navigationTitle(store.person(personID).name).navigationBarTitleDisplayMode(.inline).toolbarBackground(Theme.paper, for: .navigationBar).toolbarBackground(.visible, for: .navigationBar)
     }
 }

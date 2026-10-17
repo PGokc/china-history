@@ -2594,4 +2594,23 @@ final class MingJiUITests: XCTestCase {
         shot("v77-zhou-source-provenance", app)
     }
 
+    @MainActor func testV78LongPagesClearTheTabBar() throws {
+        let records = launch()
+        records.buttons["personHero"].tap()
+        records.buttons["category_records"].tap()
+        let sources = records.buttons["资料与出处"]
+        reach(sources, in: records, attempts: 18)
+        XCTAssertLessThan(sources.frame.maxY, records.tabBars.firstMatch.frame.minY - 8)
+        shot("v78-records-bottom-clearance", records)
+        records.terminate()
+
+        let portrait = launch()
+        portrait.buttons["personHero"].tap()
+        portrait.buttons["portraitEntry"].tap()
+        let finalNote = portrait.staticTexts["历史画像未必是生前写生；作品资料及图像说明见原始出处。"]
+        reach(finalNote, in: portrait, attempts: 20)
+        XCTAssertLessThan(finalNote.frame.maxY, portrait.tabBars.firstMatch.frame.minY - 8)
+        shot("v78-portrait-bottom-clearance", portrait)
+    }
+
 }
