@@ -50,6 +50,8 @@ final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDele
     @Published private(set) var isSpeaking = false
     @Published private(set) var isPaused = false
     @Published private(set) var isLoading = false
+    @Published private(set) var elapsed: TimeInterval = 0
+    @Published private(set) var duration: TimeInterval = 0
     @Published private(set) var currentSectionID: String?
     @Published private(set) var currentTitle = ""
     @Published private(set) var currentIndex = 0
@@ -63,6 +65,7 @@ final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDele
     private let previewSynthesizer = AVSpeechSynthesizer()
     private var audioPlayer: AVAudioPlayer?
     private var loadingTask: Task<Void, Never>?
+    private var progressTimer: Timer?
     private var sections: [ArticleSection] = []
     private var autoAdvanceEnabled = false
     // Ignore delegate callbacks from an utterance replaced by navigation or settings.
@@ -89,9 +92,8 @@ final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDele
 
     var isActive: Bool { isSpeaking || isPaused || isLoading }
     var usesDoubaoNarration: Bool { dynastyID == "ming" || dynastyID == "qing" }
-    private var shouldLoadDoubaoNarration: Bool {
-        usesDoubaoNarration && !ProcessInfo.processInfo.arguments.contains("--uitesting")
-    }
+    private var shouldLoadRecordedNarration: Bool { usesDoubaoNarration }
+    var canSeek: Bool { audioPlayer != nil && duration > 0 }
     var canGoPrevious: Bool { isActive && currentIndex > 0 }
     var canGoNext: Bool { isActive && currentIndex + 1 < sectionCount }
 
@@ -172,6 +174,13 @@ final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDele
         move(to: currentIndex)
     }
 
+    func seek(to time: TimeInterval) {
+        guard let audioPlayer, audioPlayer.duration > 0 else { return }
+        let target = min(max(0, time), audioPlayer.duration)
+        audioPlayer.currentTime = target
+        elapsed = target
+    }
+
     func preview(_ option: NarrationVoiceOption) {
         stopPreview()
         pause()
@@ -207,8 +216,11 @@ final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDele
         autoAdvanceEnabled = false
         loadingTask?.cancel()
         loadingTask = nil
+        stopProgressTimer()
         audioPlayer?.stop()
         audioPlayer = nil
+        elapsed = 0
+        duration = 0
         activeUtteranceID = nil
         restartOnResume = false
         synthesizer.stopSpeaking(at: .immediate)
@@ -227,8 +239,11 @@ final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDele
         let keepPaused = isPaused
         loadingTask?.cancel()
         loadingTask = nil
+        stopProgressTimer()
         audioPlayer?.stop()
         audioPlayer = nil
+        elapsed = 0
+        duration = 0
         isLoading = false
         activeUtteranceID = nil
         synthesizer.stopSpeaking(at: .immediate)
@@ -253,7 +268,7 @@ final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDele
         currentTitle = section.title
         isPaused = false
 
-        if shouldLoadDoubaoNarration,
+        if shouldLoadRecordedNarration,
            let manifest = NarrationAudioManifest.bundled,
            let entry = manifest.entry(articleID: sectionsArticleID, section: section) {
             loadDoubaoAudio(entry: entry, manifest: manifest)
@@ -280,6 +295,9 @@ final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDele
                 player.rate = self.speed.audioRate
                 player.prepareToPlay()
                 self.audioPlayer = player
+                self.elapsed = player.currentTime
+                self.duration = player.duration
+                self.startProgressTimer()
                 self.isLoading = false
                 self.isSpeaking = player.play()
                 if !self.isSpeaking { self.speakSystemSection(self.sections[self.currentIndex]) }
@@ -293,6 +311,9 @@ final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDele
     }
 
     private func speakSystemSection(_ section: ArticleSection) {
+        stopProgressTimer()
+        elapsed = 0
+        duration = 0
         isLoading = false
         loadingTask = nil
         audioPlayer = nil
@@ -319,6 +340,24 @@ final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDele
         let session = AVAudioSession.sharedInstance()
         try? session.setCategory(.playback, mode: .spokenAudio, options: [.duckOthers, .interruptSpokenAudioAndMixWithOthers])
         try? session.setActive(true)
+    }
+
+    private func startProgressTimer() {
+        stopProgressTimer()
+        let timer = Timer(timeInterval: 0.25, repeats: true) { [weak self] _ in
+            Task { @MainActor [weak self] in
+                guard let self, let player = self.audioPlayer else { return }
+                self.elapsed = player.currentTime
+                self.duration = player.duration
+            }
+        }
+        RunLoop.main.add(timer, forMode: .common)
+        progressTimer = timer
+    }
+
+    private func stopProgressTimer() {
+        progressTimer?.invalidate()
+        progressTimer = nil
     }
 
     private func finishedSection() {
@@ -425,6 +464,8 @@ final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDele
                   let currentPlayer = self.audioPlayer,
                   ObjectIdentifier(currentPlayer) == finishedPlayerID else { return }
             self.audioPlayer = nil
+            self.stopProgressTimer()
+            self.elapsed = self.duration
             self.finishedSection()
         }
     }
@@ -470,6 +511,24 @@ struct ArticleNarrationBar: View {
     var body: some View {
         VStack(spacing: 0) {
             Rectangle().fill(Theme.line.opacity(0.75)).frame(height: 0.5)
+            if narrator.canSeek {
+                HStack(spacing: 12) {
+                    Text(timeLabel(narrator.elapsed))
+                    Slider(
+                        value: Binding(get: { narrator.elapsed }, set: { narrator.seek(to: $0) }),
+                        in: 0...max(narrator.duration, 0.1)
+                    )
+                    .tint(Theme.cinnabar)
+                    .accessibilityLabel("朗读进度")
+                    .accessibilityValue("\(timeLabel(narrator.elapsed))，共 \(timeLabel(narrator.duration))")
+                    .accessibilityIdentifier("narrationProgress")
+                    Text(timeLabel(narrator.duration))
+                }
+                .font(.caption.monospacedDigit())
+                .foregroundStyle(Theme.muted)
+                .padding(.horizontal, 22)
+                .padding(.top, 10)
+            }
             if typeSize.isAccessibilitySize {
                 Text(displayTitle).font(.subheadline).foregroundStyle(Theme.ink)
                     .frame(maxWidth: .infinity, alignment: .leading)
@@ -533,6 +592,12 @@ struct ArticleNarrationBar: View {
                 .presentationDragIndicator(.visible)
         }
     }
+
+    private func timeLabel(_ interval: TimeInterval) -> String {
+        guard interval.isFinite, interval >= 0 else { return "0:00" }
+        let total = Int(interval.rounded(.down))
+        return String(format: "%d:%02d", total / 60, total % 60)
+    }
 }
 
 struct NarrationSettingsSheet: View {
@@ -555,12 +620,9 @@ struct NarrationSettingsSheet: View {
                             }
                         }
                     }
+                    if !narrator.usesDoubaoNarration {
                     VStack(alignment: .leading, spacing: 10) {
-                        Text(narrator.usesDoubaoNarration ? "备用声音" : "声音").font(.system(.title3, design: .serif).weight(.medium))
-                        if narrator.usesDoubaoNarration {
-                            Text("明清长读优先使用豆包语音。首次播放需要联网，完成后会保存在本机；音频暂不可用时自动改用下方系统声音。")
-                                .font(.subheadline).foregroundStyle(Theme.muted).lineSpacing(4)
-                        }
+                        Text("声音").font(.system(.title3, design: .serif).weight(.medium))
                         ForEach(narrator.voices) { voice in
                             HStack(spacing: 12) {
                                 Button { narrator.changeVoice(voice.id) } label: {
@@ -587,8 +649,9 @@ struct NarrationSettingsSheet: View {
                             Rectangle().fill(Theme.line.opacity(0.45)).frame(height: 0.5)
                         }
                         if narrator.voices.isEmpty { Text("未发现可用的中文系统声音").font(.subheadline).foregroundStyle(Theme.muted) }
-                        Text("每个试听使用同一段历史正文。这里只显示设备已经安装的中国大陆普通话声音；备用声音默认优先选择黎潋，未安装时使用瀚。")
+                        Text("每个试听使用同一段历史正文。这里只显示设备已经安装的中国大陆普通话声音。")
                             .font(.caption).foregroundStyle(Theme.muted).lineSpacing(4)
+                    }
                     }
                 }.padding(24)
             }

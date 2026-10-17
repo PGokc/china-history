@@ -37,6 +37,14 @@ struct NarrationAudioManifest: Decodable {
         return base
     }
 
+    func bundledURL(for entry: Entry) -> URL? {
+        let filename = entry.path as NSString
+        let stem = filename.deletingPathExtension
+        let ext = filename.pathExtension
+        return Bundle.main.url(forResource: stem, withExtension: ext)
+            ?? Bundle.main.url(forResource: stem, withExtension: ext, subdirectory: "NarrationAudio")
+    }
+
     static func textHash(title: String, text: String) -> String {
         let spoken = ArticleNarrator.spokenText(title: title, text: text)
         return SHA256.hash(data: Data(spoken.utf8)).map { String(format: "%02x", $0) }.joined()
@@ -49,6 +57,10 @@ actor NarrationAudioCache {
     enum CacheError: Error { case unavailable, invalidResponse }
 
     func localFile(for entry: NarrationAudioManifest.Entry, manifest: NarrationAudioManifest) async throws -> URL {
+        if let bundled = manifest.bundledURL(for: entry),
+           isUsableAudio(at: bundled, expectedHash: entry.audioHash) {
+            return bundled
+        }
         guard let remoteURL = manifest.remoteURL(for: entry) else { throw CacheError.unavailable }
         let manager = FileManager.default
         let root = try manager.url(for: .cachesDirectory, in: .userDomainMask, appropriateFor: nil, create: true)

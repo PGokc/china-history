@@ -129,7 +129,8 @@ final class MingJiUITests: XCTestCase {
         XCTAssertGreaterThanOrEqual(app.buttons["开始朗读"].frame.width, 44)
         app.buttons["朗读设置"].tap()
         XCTAssertTrue(app.navigationBars["朗读设置"].waitForExistence(timeout: 5))
-        XCTAssertTrue(app.staticTexts["明清长读优先使用豆包语音。首次播放需要联网，完成后会保存在本机；音频暂不可用时自动改用下方系统声音。"].exists)
+        XCTAssertFalse(app.staticTexts.matching(NSPredicate(format: "label CONTAINS[c] %@", "豆包")).firstMatch.exists)
+        XCTAssertFalse(app.staticTexts["备用声音"].exists)
         app.buttons["完成"].tap()
         XCTAssertTrue(app.buttons["articleContents"].isHittable)
         shot("v25-reader", app)
@@ -180,10 +181,11 @@ final class MingJiUITests: XCTestCase {
         app.buttons["narrationSettings"].tap()
         XCTAssertTrue(app.navigationBars["朗读设置"].waitForExistence(timeout: 5))
         XCTAssertTrue(app.buttons["narrationSpeed_标准"].exists)
-        let hasSystemFallback = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "narrationVoice_")).count > 0
+        XCTAssertEqual(app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "narrationVoice_")).count, 0)
         app.buttons["完成"].tap()
         app.buttons["narrationToggle"].tap()
-        XCTAssertEqual(app.buttons["narrationToggle"].label, hasSystemFallback ? "暂停朗读" : "开始朗读")
+        XCTAssertEqual(app.buttons["narrationToggle"].label, "暂停朗读")
+        XCTAssertTrue(app.sliders["narrationProgress"].waitForExistence(timeout: 5))
         app.tabBars.buttons["朝代"].tap()
         app.tabBars.buttons["家族"].tap()
         openArticle(in: app)
@@ -203,6 +205,9 @@ final class MingJiUITests: XCTestCase {
         toggle.tap()
         expectation(for: NSPredicate(format: "label == %@", "暂停朗读"), evaluatedWith: toggle)
         waitForExpectations(timeout: 30)
+        let progress = app.sliders["narrationProgress"]
+        XCTAssertTrue(progress.waitForExistence(timeout: 5))
+        progress.adjust(toNormalizedSliderPosition: 0.45)
         toggle.tap()
         XCTAssertEqual(toggle.label, "继续朗读")
         shot("v83-published-narration", app)
@@ -617,10 +622,8 @@ final class MingJiUITests: XCTestCase {
         app.buttons["朗读设置"].tap()
         XCTAssertTrue(app.navigationBars["朗读设置"].waitForExistence(timeout: 5))
         let voiceButtons = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "narrationVoice_"))
-        XCTAssertLessThanOrEqual(voiceButtons.count, 4)
-        if voiceButtons.count == 0 {
-            XCTAssertTrue(app.staticTexts["未发现可用的中文系统声音"].exists)
-        }
+        XCTAssertEqual(voiceButtons.count, 0)
+        XCTAssertFalse(app.staticTexts["未发现可用的中文系统声音"].exists)
         for rejected in ["Eddy", "Flo", "Grandma", "Grandpa", "Reed", "Rocko", "Sandy", "Shelley"] {
             XCTAssertFalse(app.staticTexts[rejected].exists)
         }
@@ -715,39 +718,24 @@ final class MingJiUITests: XCTestCase {
         openArticle(in: app)
         let toggle = app.buttons["narrationToggle"]
         app.buttons["narrationSettings"].tap()
-        let installedVoices = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "narrationVoice_"))
-        if installedVoices.count == 0 {
-            XCTAssertTrue(app.staticTexts["未发现可用的中文系统声音"].exists)
-            app.buttons["完成"].tap()
-            toggle.tap()
-            XCTAssertEqual(toggle.label, "开始朗读")
-            return
-        }
+        XCTAssertEqual(app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "narrationVoice_")).count, 0)
         app.buttons["完成"].tap()
         toggle.tap()
         XCTAssertEqual(toggle.label, "暂停朗读")
+        XCTAssertTrue(app.sliders["narrationProgress"].waitForExistence(timeout: 5))
         toggle.tap()
         XCTAssertEqual(toggle.label, "继续朗读")
         app.buttons["narrationSettings"].tap()
         app.buttons["narrationSpeed_舒缓"].tap()
         app.buttons["narrationSpeed_稍快"].tap()
-        let voices = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "narrationVoice_"))
-        for index in 0..<voices.count { voices.element(boundBy: index).tap() }
         app.buttons["完成"].tap()
         XCTAssertEqual(toggle.label, "继续朗读")
         if app.buttons["narrationNext"].isEnabled { app.buttons["narrationNext"].tap() }
         XCTAssertEqual(toggle.label, "继续朗读")
         toggle.tap()
         XCTAssertEqual(toggle.label, "暂停朗读")
-        app.buttons["narrationSettings"].tap()
-        let preview = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "narrationPreview_")).firstMatch
-        XCTAssertTrue(preview.exists)
-        preview.tap()
-        app.buttons["完成"].tap()
-        XCTAssertEqual(toggle.label, "继续朗读")
-        app.buttons["narrationSettings"].tap()
-        XCTAssertTrue(preview.label.hasPrefix("试听"))
-        app.buttons["完成"].tap()
+        app.sliders["narrationProgress"].adjust(toNormalizedSliderPosition: 0.6)
+        XCTAssertEqual(toggle.label, "暂停朗读")
         shot("v38-paused-reader", app)
         toggle.tap()
         app.tabBars.buttons["朝代"].tap()
