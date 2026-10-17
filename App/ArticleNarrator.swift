@@ -44,6 +44,7 @@ struct NarrationVoiceOption: Identifiable, Hashable {
 
 @MainActor
 final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDelegate {
+    private static let voicePreviewText = "康熙六十一年，康熙帝去世，皇四子胤禛继位，是为雍正帝。雍正十三年，皇四子弘历即位，次年改元乾隆。制度的延续与调整，也由此进入新的阶段。"
     @Published private(set) var isSpeaking = false
     @Published private(set) var isPaused = false
     @Published private(set) var currentSectionID: String?
@@ -147,9 +148,13 @@ final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDele
         stopPreview()
         pause()
         configureAudioSession()
-        let utterance = AVSpeechUtterance(string: "这里是\(option.displayName)，为你朗读中国历史。")
+        let utterance = AVSpeechUtterance(string: Self.voicePreviewText)
         utterance.voice = AVSpeechSynthesisVoice(identifier: option.id)
-        utterance.rate = NarrationSpeed.normal.rate
+        utterance.rate = 0.45
+        utterance.pitchMultiplier = 1.0
+        utterance.prefersAssistiveTechnologySettings = false
+        utterance.preUtteranceDelay = 0.08
+        utterance.postUtteranceDelay = 0.1
         previewUtteranceID = ObjectIdentifier(utterance)
         previewVoiceID = option.id
         previewSynthesizer.speak(utterance)
@@ -280,12 +285,12 @@ final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDele
             if let current = bestByName[key], current.qualityRank >= voice.qualityRank { continue }
             bestByName[key] = voice
         }
-        let order = ["婷婷": 0, "语舒": 1, "李沐": 2]
+        let order = ["语舒": 0, "李沐": 1, "婷婷": 2]
         return bestByName.values.sorted {
+            if $0.qualityRank != $1.qualityRank { return $0.qualityRank > $1.qualityRank }
             let left = order[$0.displayName] ?? 99
             let right = order[$1.displayName] ?? 99
-            if left != right { return left < right }
-            return $0.qualityRank > $1.qualityRank
+            return left < right
         }.prefix(4).map { $0 }
     }
 
@@ -466,7 +471,7 @@ struct NarrationSettingsSheet: View {
                             Rectangle().fill(Theme.line.opacity(0.45)).frame(height: 0.5)
                         }
                         if narrator.voices.isEmpty { Text("未发现可用的中文系统声音").font(.subheadline).foregroundStyle(Theme.muted) }
-                        Text("这里只显示设备中已安装的中国大陆普通话声音。需要更多选择，可在系统的中文声音设置中下载语舒或李沐。")
+                        Text("每个试听使用同一段历史正文，并按设备上的实际音质排序。这里只显示已安装的中国大陆普通话声音；需要更多选择，可在系统的中文声音设置中下载语舒或李沐。")
                             .font(.caption).foregroundStyle(Theme.muted).lineSpacing(4)
                     }
                 }.padding(24)
