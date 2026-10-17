@@ -41,7 +41,7 @@ struct DynastyDetailPage: View {
                         }
                     }
                     SourcesView(store: store, ids: profile.sources)
-                }.padding(.horizontal, 24).padding(.top, 22).padding(.bottom, 160)
+                }.padding(.horizontal, 24).padding(.top, 22).padding(.bottom, Theme.pageBottom)
             }
             .background(Theme.paper)
             .navigationTitle(dynasty.name + "概览")
@@ -107,7 +107,7 @@ struct ZhouGuidePage: View {
                         }
                     }
                 }
-                .padding(.horizontal, 24).padding(.top, 22).padding(.bottom, 160)
+                .padding(.horizontal, 24).padding(.top, 22).padding(.bottom, Theme.pageBottom)
             }
         }
         .background(Theme.paper).foregroundStyle(Theme.text)
@@ -216,7 +216,7 @@ struct EraTopicPage: View {
                             }
                         }
                     }
-                }.padding(.horizontal, 24).padding(.top, 22).padding(.bottom, 160)
+                }.padding(.horizontal, 24).padding(.top, 22).padding(.bottom, Theme.pageBottom)
             }
             .background(Theme.paper).foregroundStyle(Theme.text)
             .navigationTitle(topic.name).navigationBarTitleDisplayMode(.inline)
@@ -348,7 +348,7 @@ struct PrehistoryOverviewPage: View {
                     }
                 }
                 if let sources = profile?.sources { SourcesView(store: store, ids: sources) }
-            }.padding(.horizontal, 24).padding(.top, 22).padding(.bottom, 160)
+            }.padding(.horizontal, 24).padding(.top, 22).padding(.bottom, Theme.pageBottom)
         }
         .background(Theme.paper)
         .navigationTitle("史前遗址")
@@ -377,7 +377,7 @@ struct PrehistorySitePage: View {
                     SiteTextBlock(title: "发现了什么", text: site.discovery)
                     SiteTextBlock(title: "为什么重要", text: site.significance)
                     SourcesView(store: store, ids: site.sources)
-                }.padding(.horizontal, 24).padding(.top, 22).padding(.bottom, 160)
+                }.padding(.horizontal, 24).padding(.top, 22).padding(.bottom, Theme.pageBottom)
             }
             .background(Theme.paper)
             .navigationTitle(site.name)

@@ -17,6 +17,13 @@ final class MingJiUITests: XCTestCase {
         for _ in 0..<attempts { if element.isHittable { return }; app.swipeUp() }
         XCTAssertTrue(element.isHittable)
     }
+    @MainActor func assertCompactPageEnding(_ element: XCUIElement, in app: XCUIApplication, attempts: Int = 18, file: StaticString = #filePath, line: UInt = #line) {
+        reach(element, in: app, attempts: attempts)
+        for _ in 0..<3 { app.swipeUp() }
+        let gap = app.tabBars.firstMatch.frame.minY - element.frame.maxY
+        XCTAssertGreaterThan(gap, 16, file: file, line: line)
+        XCTAssertLessThan(gap, 68, file: file, line: line)
+    }
     @MainActor func openArticle(in app: XCUIApplication) {
         if !app.buttons["articleEntry"].exists {
             reach(app.buttons["personHero"], in: app); app.buttons["personHero"].tap()
@@ -2622,6 +2629,25 @@ final class MingJiUITests: XCTestCase {
         XCTAssertGreaterThan(gap, 20)
         XCTAssertLessThan(gap, 60)
         shot("v79-dynasty-list-compact-ending", app)
+    }
+
+    @MainActor func testV80PageFamiliesUseCompactBottomSpacing() throws {
+        let overview = launch(enterFamily: false)
+        reach(overview.buttons["dynasty_sui"], in: overview, attempts: 10); overview.buttons["dynasty_sui"].tap()
+        assertCompactPageEnding(overview.buttons["资料与出处"], in: overview)
+        shot("v80-dynasty-detail-compact-ending", overview)
+        overview.terminate()
+
+        let sequence = launch(enterFamily: false)
+        sequence.tabBars.buttons["帝序"].tap()
+        assertCompactPageEnding(sequence.staticTexts["successionEndNote"], in: sequence, attempts: 24)
+        shot("v80-sequence-compact-ending", sequence)
+        sequence.terminate()
+
+        let person = launch()
+        person.buttons["personHero"].tap(); person.buttons["category_records"].tap()
+        assertCompactPageEnding(person.buttons["资料与出处"], in: person)
+        shot("v80-person-records-compact-ending", person)
     }
 
 }

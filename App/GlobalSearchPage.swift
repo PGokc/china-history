@@ -119,7 +119,7 @@ struct GlobalSearchPage: View {
                     if !dynasties.isEmpty || !sites.isEmpty || !topics.isEmpty { periodSection }
                 }
             }
-            .padding(.horizontal, 24).padding(.top, 18).padding(.bottom, 120)
+            .padding(.horizontal, 24).padding(.top, 18).padding(.bottom, Theme.pageBottom)
         }
         .background(Theme.paper)
         .foregroundStyle(Theme.text)

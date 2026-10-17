@@ -13,7 +13,7 @@ struct DetailScreen: View {
                 case .about: about
                 default: EmptyView()
                 }
-            }.frame(maxWidth: .infinity, alignment: .leading).padding(24).padding(.bottom, 160)
+            }.frame(maxWidth: .infinity, alignment: .leading).padding(24).padding(.bottom, Theme.pageBottomAfterStandardPadding)
         }.background(Theme.paper).foregroundStyle(Theme.text).navigationBarTitleDisplayMode(.inline).toolbarBackground(Theme.paper, for: .navigationBar).toolbarBackground(.visible, for: .navigationBar)
     }
     func title(_ eyebrow: String, _ text: String) -> some View {

@@ -369,6 +369,10 @@ struct Content: Codable {
     func eraTopic(_ id: String) -> EraTopic? { zhouGuide?.topics.first { $0.id == id } }
 }
 enum Theme {
+    /// Visible breathing room between the final content row and the floating tab bar.
+    static let pageBottom: CGFloat = 44
+    /// Use after `.padding(24)` so the combined bottom inset remains `pageBottom`.
+    static let pageBottomAfterStandardPadding: CGFloat = 20
     static let paper = Color(red: 245/255, green: 242/255, blue: 236/255)
     static let ink = Color(red: 24/255, green: 52/255, blue: 74/255)
     static let text = Color(red: 34/255, green: 39/255, blue: 43/255)

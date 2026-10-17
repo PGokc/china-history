@@ -101,7 +101,7 @@ struct DynastyPage: View {
                     }
                     Rectangle().fill(Theme.line.opacity(0.5)).frame(height: 0.5)
                 }
-            }.padding(.horizontal, 24).padding(.top, 22).padding(.bottom, 44)
+            }.padding(.horizontal, 24).padding(.top, 22).padding(.bottom, Theme.pageBottom)
         }.background(Theme.paper).foregroundStyle(Theme.text)
             .navigationTitle("史迹").navigationBarTitleDisplayMode(.inline).toolbarBackground(Theme.paper, for: .navigationBar).toolbarBackground(.visible, for: .navigationBar)
             .toolbar {
@@ -244,7 +244,7 @@ struct FamilyPage: View {
                     }
                     graph
                     if !store.siblings(p).isEmpty { siblings }
-                }.padding(.horizontal, 24).padding(.top, 14).padding(.bottom, 160)
+                }.padding(.horizontal, 24).padding(.top, 14).padding(.bottom, Theme.pageBottom)
                     .id("familyTop")
             }.background(Theme.paper).foregroundStyle(Theme.text)
                 .onChange(of: selected) { _, _ in
@@ -503,7 +503,8 @@ struct SuccessionPage: View {
                 }
                 Text(successionNote)
                     .font(.caption).foregroundStyle(Theme.muted).padding(.top, 22).fixedSize(horizontal: false, vertical: true)
-            }.padding(24).padding(.bottom, 136)
+                    .accessibilityIdentifier("successionEndNote")
+            }.padding(24).padding(.bottom, Theme.pageBottomAfterStandardPadding)
         }.background(Theme.paper).foregroundStyle(Theme.text).navigationTitle(store.dynastyName(dynastyID) + "帝序").navigationBarTitleDisplayMode(.inline).toolbarBackground(Theme.paper, for: .navigationBar).toolbarBackground(.visible, for: .navigationBar)
             .toolbar { ToolbarItem(placement: .topBarTrailing) { GlobalSearchLink() } }
             .accessibilityIdentifier("successionPage_\(dynastyID)")
@@ -665,7 +666,7 @@ struct CollectionPage: View {
                     .buttonStyle(QuietRowStyle()).accessibilityIdentifier("collectionCategory_\(category.rawValue)")
                     Rectangle().fill(Theme.line.opacity(0.5)).frame(height: 0.5)
                 }
-            }.padding(.horizontal, 24).padding(.top, 24).padding(.bottom, 160)
+            }.padding(.horizontal, 24).padding(.top, 24).padding(.bottom, Theme.pageBottom)
         }
         .background(Theme.paper).foregroundStyle(Theme.text)
         .navigationTitle(store.dynastyName(dynastyID) + "遗珍").navigationBarTitleDisplayMode(.inline).toolbarBackground(Theme.paper, for: .navigationBar).toolbarBackground(.visible, for: .navigationBar)
@@ -749,7 +750,7 @@ private struct CollectionCategoryPage: View {
                 .buttonStyle(QuietRowStyle()).accessibilityIdentifier("artifact_\(object.id)")
                 Rectangle().fill(Theme.line.opacity(0.48)).frame(height: 0.5)
             }
-        }.padding(.horizontal, 24).padding(.top, 10).padding(.bottom, 160)
+        }.padding(.horizontal, 24).padding(.top, 10).padding(.bottom, Theme.pageBottom)
     }
     private var tombList: some View {
         LazyVStack(alignment: .leading, spacing: 42) {
@@ -802,6 +803,6 @@ private struct CollectionCategoryPage: View {
                     }
                 }
             }
-        }.padding(.horizontal, 24).padding(.top, 24).padding(.bottom, 160)
+        }.padding(.horizontal, 24).padding(.top, 24).padding(.bottom, Theme.pageBottom)
     }
 }
