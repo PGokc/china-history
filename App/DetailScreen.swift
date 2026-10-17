@@ -87,7 +87,7 @@ struct SourcesView: View {
                 Divider()
                 DisclosureGroup("资料与出处") {
                     VStack(alignment: .leading, spacing: 12) {
-                        Text("来源标签说明发布或承载机构，不代替对具体记载的判断；“古籍转录”不等同官方校勘版本。")
+                        Text("来源标签说明发布或承载机构，不代替对具体记载的判断；“古籍转录”不等同官方校勘版本，媒体报道仍需追溯原始记录。")
                             .font(.caption)
                             .foregroundStyle(Theme.muted)
                             .lineSpacing(4)

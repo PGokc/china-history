@@ -206,6 +206,6 @@ struct PortraitPage: View {
                 }
                 Text("历史画像未必是生前写生；作品资料及图像说明见原始出处。").font(.caption).foregroundStyle(Theme.muted)
             }.padding(24)
-        }.background(Theme.paper).foregroundStyle(Theme.text).navigationTitle("\(store.person(personID).name)画像").navigationBarTitleDisplayMode(.inline).toolbarBackground(Theme.paper, for: .navigationBar).toolbarBackground(.visible, for: .navigationBar)
+        }.background(Theme.paper).foregroundStyle(Theme.text).navigationTitle("\(store.person(personID).name)画像").navigationBarTitleDisplayMode(.inline).toolbarBackground(Theme.paper, for: .navigationBar).toolbarBackground(.visible, for: .navigationBar).toolbarColorScheme(.light, for: .navigationBar)
     }
 }

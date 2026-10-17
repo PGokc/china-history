@@ -1,5 +1,5 @@
 {
-  "version": 52,
+  "version": 53,
   "reviewed": "2026-10-17",
   "people": [
     {
@@ -16136,9 +16136,9 @@
     },
     {
       "id": "portrait-jianwen-editions",
-      "title": "《佛祖道影》版本说明｜中华书局版书目与序文",
-      "url": "https://www.sanmin.com.tw/product/index/006103664",
-      "note": "三民书店所载中华书局本，ISBN9787101115000；序文说明1935年乙亥本、1955年乙未本及后续影印本。此处用于查清版本差异，不能据此把某张网络应文像断为1935原版。"
+      "title": "国家图书馆古籍与特藏文献资源｜《再增订佛祖道影》四卷",
+      "url": "https://rbook.ncl.edu.tw/NCLSearch/Search/SearchDetail?HasImage=&SourceID=3&item=b253f6c4f02b47a584a9f9b43af1716dfDUzMTY4Mw2.NC2RSnvdwUlxd6bF1nhdyf11SVykc1MMSZeOtHKttLQ_&page=2575&sourceWhereString=&whereString=IChOVUxMSUYoRGF0ZV9DcmVhdGVkLCAnICcpIGlzIE5VTEwgYW5kIE5VTExJRihEb2N1bWVudF9ZZWFyLCAnICcpIGlzIE5VTEwgKSA1.uQrV5XxqrHh4fOCXMwOuuzssvPVRwJbumFyT4mFEUCA_",
+      "note": "国家图书馆中文古籍联合目录著录1986年法界佛教大学影印本，四册、含像。它能确认后续影印版本的书目链条，不能据此把网络应文像断为1935年初印图版。"
     },
     {
       "id": "portrait-kyuhaku-jingtai",
@@ -16321,22 +16321,10 @@
       "note": "CNTS-00047975674。书目刊年1920，会文堂、上海、石版本。实查扫描第5页序署民国九年，第20页明景帝绣像，第32页明怀宗绣像。前页含后期版权登记，具体扫描本印次未独立核定。"
     },
     {
-      "id": "v4portrait-jingtai-bili",
-      "title": "柳龙君｜帝王画像集·明朝（三）：明史演义绣像",
-      "url": "https://www.bilibili.com/opus/772095224378818645",
-      "note": "采用题为明景帝的转载局部PNG，并与会文堂原书扫描第20页逐图比对；转载文件207×538，未再次裁切或改绘。"
-    },
-    {
       "id": "v4portrait-mingshi-tokyo",
       "title": "東京都立图书馆｜特8576 绘图明史通俗演义",
       "url": "https://www.library.metro.tokyo.lg.jp/collection/features/catalog/special_acquisition/index/various/index.html",
       "note": "馆方目录著录民国九年会文堂石印本，10卷100回、附图像。支持民国出版脉络；不能单独证明某张网络图的版本。"
-    },
-    {
-      "id": "v4portrait-chongzhen-bili",
-      "title": "柳龙君｜帝王画像集·明朝（五）：崇祯帝殉国图",
-      "url": "https://www.bilibili.com/opus/774392288814039160",
-      "note": "“古籍画像、其他画像”3.5提供本图，转载称山东孔子博物馆藏；尚未与馆藏编号逐件核对。其3.1明史演义绣像另已核对旧书页，作为备选。"
     },
     {
       "id": "v4portrait-jingtai-commons",
@@ -16637,6 +16625,12 @@
       "title": "中新网转引《北京日报》 · 溥仪骨灰迁葬",
       "url": "https://www.chinanews.com.cn/cul/news/2009/07-07/1764881.shtml",
       "note": "记载溥仪骨灰由八宝山迁往河北易县华龙陵园，并明确该墓是普通墓地，不属于传统清帝陵。"
+    },
+    {
+      "id": "v73_puyi_cppcc",
+      "title": "全国政协文史资料｜李以劻回忆溥仪出殡与骨灰安放",
+      "url": "https://www.cppcc.gov.cn/zxww/2019/05/16/ARTI1557966655670158.shtml",
+      "note": "亲历者李以劻回忆1967年溥仪在八宝山火化、1978年追悼会后骨灰移入革命公墓。该文不涉及1995年后迁华龙陵园，后者仍据《北京日报》转引报道。"
     },
     {
       "id": "v11_dpm_wanggongchang",
@@ -64681,9 +64675,10 @@
       "status": "溥仪骨灰后迁葬于此。",
       "body": "溥仪未营建传统清帝陵；此墓不属于十二座清代皇家帝陵。",
       "sources": [
+        "v73_puyi_cppcc",
         "v5qn_puyi_burial"
       ],
-      "note": "安葬与陵寝名称按所列来源；不由规模推断墓主品格。"
+      "note": "全国政协文史资料确认八宝山安放过程；1995年后迁华龙陵园据《北京日报》转引报道，未找到陵园或民政部门公开的原始迁葬档案。此处不把民营墓地列入传统清帝陵。"
     },
     {
       "id": "v43t_qianling_gaozong",
@@ -150657,18 +150652,17 @@
     {
       "person": "qiyu",
       "image": "portrait_v4_qiyu",
-      "title": "明景帝绣像（《明史通俗演义》）",
-      "attribution": "会文堂《明史通俗演义》书首绣像；绘者未署，柳龙君转载",
+      "title": "《明史通俗演义》第20页绣像",
+      "attribution": "会文堂《明史通俗演义》书首绣像；绘者未署；韩国国立图书馆藏本，Wikimedia Commons托管扫描",
       "date": "民国时期会文堂本；原序署1920年，所核扫描本具体印次未定",
-      "collection": "核对本来自韩国国立图书馆数字馆藏CNTS-00047975674，由Wikimedia Commons提供扫描",
-      "description": "题名“明景帝”，指景泰帝朱祁钰。此为历史演义中的后世想象绣像，不能当作明代宫廷写真。会文堂本第一册扫描第20页原图另含明英宗、于谦，景泰帝位于右侧；本图是转载者提供的该人物局部，完整保留其题名、头部与衣冠。",
+      "collection": "韩国国立图书馆数字馆藏CNTS-00047975674；Wikimedia Commons提供完整公共领域扫描",
+      "description": "原书页题名依次为于谦、明英宗、明景帝，景泰帝朱祁钰位于右侧。此为历史演义中的后世想象绣像，不能当作明代宫廷写真。应用保留整页和三人题名，避免从个人转载局部推断图像出处。",
       "sourceIds": [
         "v4portrait-mingshi-cnts",
-        "v4portrait-jingtai-bili",
         "v4portrait-mingshi-tokyo"
       ],
       "sourceURL": "https://commons.wikimedia.org/wiki/File:CNTS-00047975674_1_%E6%98%8E%E5%8F%B2%E9%80%9A%E4%BF%97%E6%BC%94%E7%BE%A9.pdf?page=20",
-      "imageURL": "https://i0.hdslb.com/bfs/article/2a7e9652a8a28251d154c2e9ff5b0deac47405ad.png",
+      "imageURL": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/CNTS-00047975674_1_%E6%98%8E%E5%8F%B2%E9%80%9A%E4%BF%97%E6%BC%94%E7%BE%A9.pdf/page20-500px-CNTS-00047975674_1_%E6%98%8E%E5%8F%B2%E9%80%9A%E4%BF%97%E6%BC%94%E7%BE%A9.pdf.jpg",
       "status": "历史画像",
       "searchNote": "",
       "displayLabel": "后世绣像"
@@ -150804,20 +150798,20 @@
     {
       "person": "youjian",
       "image": "portrait_v4_youjian",
-      "title": "崇祯帝殉国图（后世绘像，转载）",
-      "attribution": "佚名；柳龙君整理转载，转载称孔子博物馆藏",
-      "date": "后世绘像；馆方同题作品著录清代，转载图版年代尚未独立核定",
-      "collection": "转载称孔子博物馆藏，尚未逐件核对；馆方总目另著录W001386《清人崇祯殉国图》",
-      "description": "画面以崇祯殉国为题，是后世对1644年明朝覆亡的图像叙述，不能据此推定朱由检生前容貌。转载称孔子博物馆藏，尚未逐件核对；馆方总目确有同题清代作品W001386，但未附图版，不能把二者说成已确认同一件。保留转载原图的全部范围。",
+      "title": "《明史通俗演义》第32页绣像",
+      "attribution": "会文堂《明史通俗演义》书首绣像；绘者未署；韩国国立图书馆藏本，Wikimedia Commons托管扫描",
+      "date": "民国时期会文堂本；原序署1920年，所核扫描本具体印次未定",
+      "collection": "韩国国立图书馆数字馆藏CNTS-00047975674；Wikimedia Commons提供完整公共领域扫描",
+      "description": "原书页题名依次为熊廷弼、明怀宗、周皇后，崇祯帝朱由检位于中间。它是民国演义中的后世想象绣像，不能据此推定朱由检生前容貌；应用保留整页与三人题名，也不再把它和孔子博物馆所藏同题清画混为一件。",
       "sourceIds": [
-        "v4portrait-chongzhen-bili",
-        "portrait-kongzi-catalogue"
+        "v4portrait-mingshi-cnts",
+        "v4portrait-mingshi-tokyo"
       ],
-      "sourceURL": "https://www.bilibili.com/opus/774392288814039160",
-      "imageURL": "https://i0.hdslb.com/bfs/new_dyn/6474d2adc86ba1cfed40503e1be7e1f53609466.jpg",
+      "sourceURL": "https://commons.wikimedia.org/wiki/File:CNTS-00047975674_1_%E6%98%8E%E5%8F%B2%E9%80%9A%E4%BF%97%E6%BC%94%E7%BE%A9.pdf?page=32",
+      "imageURL": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/CNTS-00047975674_1_%E6%98%8E%E5%8F%B2%E9%80%9A%E4%BF%97%E6%BC%94%E7%BE%A9.pdf/page32-500px-CNTS-00047975674_1_%E6%98%8E%E5%8F%B2%E9%80%9A%E4%BF%97%E6%BC%94%E7%BE%A9.pdf.jpg",
       "status": "历史画像",
       "searchNote": "",
-      "displayLabel": "后世绘像"
+      "displayLabel": "后世绣像"
     },
     {
       "person": "ma",

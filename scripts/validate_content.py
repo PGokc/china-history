@@ -1252,3 +1252,21 @@ if d['version'] >= 52:
  assert all(term in corpus for term in ['皇太后临朝','连续拥立','归政','制度权力','不能混成一个行动主体'])
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成',corpus)
  print('V52 PASS: Han reign pages recover twenty existing event links, correct four chronology errors, and distinguish Empress Dowager Liang from Liang Ji across three short reigns')
+
+if d['version'] >= 53:
+ portraits={p['person']:p for p in d['portraits']}
+ for pid,page in [('qiyu','page=20'),('youjian','page=32')]:
+  portrait=portraits[pid]
+  assert portrait['title'].startswith('《明史通俗演义》第')
+  assert portrait['sourceIds']==['v4portrait-mingshi-cnts','v4portrait-mingshi-tokyo']
+  assert 'commons.wikimedia.org' in portrait['sourceURL'] and page in portrait['sourceURL']
+  assert 'hdslb.com' not in portrait['imageURL'] and portrait['displayLabel']=='后世绣像'
+  with Image.open(image_path(portrait['image'])) as image:
+   assert image.width>=1000 and image.height>=2000,(pid,image.size)
+ assert not any('bilibili.com' in source['url'] for source in d['sources'])
+ assert sources['portrait-jianwen-editions']['url'].startswith('https://rbook.ncl.edu.tw/')
+ puyi=next(t for t in d['tombs'] if t['id']=='tomb_q_xuantong')
+ assert puyi['sources']==['v73_puyi_cppcc','v5qn_puyi_burial']
+ assert '未找到陵园或民政部门公开的原始迁葬档案' in puyi['note']
+ assert sources['v73_puyi_cppcc']['url'].startswith('https://www.cppcc.gov.cn/')
+ print('V53 PASS: Jingtai and Chongzhen use verified full book pages; Jianwen edition and Puyi burial evidence expose their source boundaries')

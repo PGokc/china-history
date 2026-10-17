@@ -366,7 +366,7 @@ final class MingJiUITests: XCTestCase {
     }
 
     @MainActor func testV4HistoricalPortraitLabels() throws {
-        for (sequence,id,label) in [("1","yunwen","传说形象"),("6","qiyu","后世绣像"),("16","youjian","后世绘像")] {
+        for (sequence,id,label) in [("1","yunwen","传说形象"),("6","qiyu","后世绣像"),("16","youjian","后世绣像")] {
             let app = launch();openEmperor(sequence,in:app)
             XCTAssertTrue(app.buttons["personHero"].label.contains(label))
             app.buttons["personHero"].tap()
@@ -2517,6 +2517,26 @@ final class MingJiUITests: XCTestCase {
         XCTAssertEqual(archaeology.label, "考古与遗产　ncha.gov.cn")
         reach(archaeology, in: heritage, attempts: 6)
         shot("v72-source-type-heritage", heritage)
+    }
+
+    @MainActor func testV73PortraitsUseVerifiedBookPages() throws {
+        for (sequence, title, pageText) in [
+            ("6", "《明史通俗演义》第20页绣像", "原书页题名依次为于谦、明英宗、明景帝"),
+            ("16", "《明史通俗演义》第32页绣像", "原书页题名依次为熊廷弼、明怀宗、周皇后")
+        ] {
+            let app = launch()
+            openEmperor(sequence, in: app)
+            app.buttons["personHero"].tap()
+            app.buttons["portraitEntry"].tap()
+            XCTAssertTrue(app.staticTexts[title].waitForExistence(timeout: 5))
+            shot("v73-book-page-image-" + sequence, app)
+            XCTAssertTrue(app.staticTexts.matching(NSPredicate(format: "label BEGINSWITH %@", pageText)).firstMatch.exists)
+            let sources = app.buttons["资料与出处"]
+            reach(sources, in: app, attempts: 12); sources.tap()
+            XCTAssertFalse(app.staticTexts.matching(NSPredicate(format: "label CONTAINS %@", "bilibili.com")).firstMatch.exists)
+            shot("v73-book-page-source-" + sequence, app)
+            app.terminate()
+        }
     }
 
 }

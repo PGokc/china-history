@@ -7,6 +7,7 @@ enum SourceProvenance: String {
     case heritage = "考古与遗产"
     case scholarship = "学术研究"
     case archive = "图像与档案"
+    case news = "新闻机构"
     case publicInstitution = "公共机构"
     case reference = "辅助参考"
 }
@@ -35,11 +36,14 @@ struct Source: Codable, Identifiable {
         let heritageHosts = ["ncha.gov.cn", "whc.unesco.org", "kaogu.cssn.cn", "cach.org.cn", "ihchina.cn", "fhac.com.cn", "qingxiling.com", "shanxiqianling.com"]
         if heritageHosts.contains(where: { sourceHost == $0 || sourceHost.hasSuffix("." + $0) }) || sourceHost.hasPrefix("wwj.") || title.contains("考古") || title.contains("文化遗产") { return .heritage }
 
-        let archiveHosts = ["nlc.cn", "loc.gov", "fjlib.net", "commons.wikimedia.org", "saac.gov.cn", "nbdaj.gov.cn", "sdaj.hunan.gov.cn", "library.metro.tokyo.lg.jp", "gpi.culture.tw"]
+        let archiveHosts = ["nlc.cn", "ncl.edu.tw", "loc.gov", "fjlib.net", "commons.wikimedia.org", "saac.gov.cn", "nbdaj.gov.cn", "sdaj.hunan.gov.cn", "library.metro.tokyo.lg.jp", "gpi.culture.tw"]
         if archiveHosts.contains(where: { sourceHost == $0 || sourceHost.hasSuffix("." + $0) }) || sourceHost.contains("archive") || sourceHost.hasPrefix("lib.") || sourceHost.hasPrefix("memory.") { return .archive }
 
         let scholarshipHosts = ["cssn.cn", "nopss.gov.cn", "cambridge.org", "academic.oup.com", "plato.stanford.edu", "britannica.com", "qinghistory.cn"]
         if scholarshipHosts.contains(where: { sourceHost == $0 || sourceHost.hasSuffix("." + $0) }) || sourceHost.hasSuffix(".edu.cn") || sourceHost.hasSuffix(".ac.cn") || sourceHost.hasSuffix(".cas.cn") || sourceHost.hasSuffix(".sinica.edu.tw") || sourceHost.hasSuffix(".harvard.edu") || sourceHost.hasSuffix(".uchicago.edu") { return .scholarship }
+
+        let newsHosts = ["chinanews.com.cn", "xinhuanet.com", "people.com.cn"]
+        if newsHosts.contains(where: { sourceHost == $0 || sourceHost.hasSuffix("." + $0) }) { return .news }
 
         if sourceHost.hasSuffix(".gov.cn") || sourceHost == "gov.cn" || sourceHost.hasSuffix(".gov.hk") { return .publicInstitution }
         return .reference
