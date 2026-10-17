@@ -1152,3 +1152,31 @@ if d['version'] >= 48:
  assert '不是宫廷女官' in corpus and '只出版两期' in corpus and '不能把卷宗当作完整透明的日常生活实录' in corpus
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成',corpus)
  print('V48 PASS: eight sourced Ming-Qing topics and three full readings add women physicians, science, education, press, justice records and local charity with explicit evidence boundaries')
+
+if d['version'] >= 50:
+ v68_sources={s['id']:s for s in d['sources'] if s['id'].startswith('v50y_')}
+ assert len(v68_sources)==10 and all(s['url'].startswith('https://') and len(s['note'])>=25 for s in v68_sources.values())
+ yuan_people={'y_chabi','y_guan_daosheng','y_huang_daopo','y_ma_zhiyuan','y_jamal_al_din','y_ahmad_fanakati'}
+ assert yuan_people<=people.keys()
+ events=[e for e in d['events'] if e['id'].startswith('v50y_')]
+ assert len(events)==12 and Counter(e['category'] for e in events)=={'经济':5,'文化':3,'社会':2,'政治':2}
+ assert all(e['sources'] and e.get('peopleRoles') and e.get('impact') and len(re.findall(r'[\u4e00-\u9fff]',e['body']+e['impact']))>=120 for e in events)
+ for pid in yuan_people:
+  article=articles[pid]
+  assert len(article['sections'])==4 and all(s['sources'] and s.get('events') and s.get('people') for s in article['sections'])
+  assert sum(len(re.findall(r'[\u4e00-\u9fff]',s['text'])) for s in article['sections'])>=550
+  assert any(pid in e['people'] for e in events)
+ objects=[o for o in d['objects'] if o['id'].startswith('v50y_')]
+ assert len(objects)==4 and all(o['sources'] and o['people'] and len(re.findall(r'[\u4e00-\u9fff]',o['body']+o['note']))>=120 for o in objects)
+ five=[e for e in d['events'] if re.fullmatch(r'v54_[es]\d{2}',e['id'])]
+ assert len(five)==20 and all(e.get('peopleRoles') and len(re.findall(r'[\u4e00-\u9fff]',e['body']+e['impact']))>=120 for e in five)
+ contexts={x['person']:x for x in d['reignContexts']}
+ assert {'y_chabi','y_jamal_al_din','y_ahmad_fanakati','y_huang_daopo'}<=set(contexts['y_kublai']['people'])
+ assert {'v50y_late_currency','v50y_salt_revenue'}<=set(contexts['y_toghon_temur']['events'])
+ corpus=json.dumps([people[x] for x in yuan_people]+events+objects+[articles[x] for x in yuan_people]+five,ensure_ascii=False)
+ assert all(term in corpus for term in ['秋深帖','黄道婆','泉州','扎马鲁丁','阿合马','站赤','四等人','盐课','马致远'])
+ assert '不能把整个江南棉业归为她一人发明' in corpus
+ assert '不等于存在一部整齐统一' in corpus
+ assert '正文实为赵孟頫代书' in corpus
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成',corpus)
+ print('V50 PASS: six full Yuan readings, twelve institutional and social events, four evidence-bounded objects, and twenty rewritten Five Dynasties economy/social entries')

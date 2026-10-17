@@ -2328,4 +2328,42 @@ final class MingJiUITests: XCTestCase {
         shot("v66-qiu-jin-sources", qing)
     }
 
+    @MainActor func testV68YuanPeopleTradeAndEvidenceBoundaries() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["--uitesting", "--ui-dynasty", "yuan"]
+        app.launch()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        XCTAssertEqual(app.tabBars.buttons.allElementsBoundByIndex.map(\.label), ["朝代", "帝序", "家族", "遗珍"])
+        app.tabBars.buttons["帝序"].tap()
+        let kublai = app.buttons["succession_y_0"]
+        reach(kublai, in: app, attempts: 20); kublai.tap()
+        app.buttons["personHero"].tap()
+        app.buttons["eventCategory_经济"].tap()
+        let finance = app.buttons["event_v50y_ahema_finance"]
+        reachReadingLink(finance, in: app); finance.tap()
+        XCTAssertTrue(app.staticTexts["阿合马主持财赋与专卖"].waitForExistence(timeout: 5))
+        let ahmad = app.buttons["explore_y_ahmad_fanakati"]
+        reachReadingLink(ahmad, in: app); ahmad.tap()
+        XCTAssertTrue(app.staticTexts["阿合马"].waitForExistence(timeout: 5))
+        openArticle(in: app)
+        XCTAssertTrue(app.staticTexts["为什么需要新的财源"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.buttons["articleContents"].exists)
+        shot("v68-yuan-ahmad-reader", app)
+        app.navigationBars.buttons.element(boundBy: 0).tap()
+        app.navigationBars.buttons.element(boundBy: 0).tap()
+        app.navigationBars.buttons.element(boundBy: 0).tap()
+        app.tabBars.buttons["遗珍"].tap()
+        app.buttons["collectionCategory_texts"].tap()
+        let letter = app.buttons["artifact_v50y_obj_autumn_letter"]
+        reachReadingLink(letter, in: app); letter.tap()
+        XCTAssertTrue(app.staticTexts["元 · 家书署名与代书痕迹"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts.matching(NSPredicate(format: "label CONTAINS %@", "正文实为赵孟頫代书")).firstMatch.exists)
+        let sources = app.buttons["资料与出处"]
+        reach(sources, in: app, attempts: 14); sources.tap()
+        let source = app.buttons["source_v50y_guan_letter"]
+        reachReadingLink(source, in: app); app.swipeUp()
+        XCTAssertLessThanOrEqual(source.frame.maxY, app.tabBars.firstMatch.frame.minY)
+        shot("v68-autumn-letter-sources", app)
+    }
+
 }
