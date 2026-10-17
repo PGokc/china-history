@@ -2552,4 +2552,17 @@ final class MingJiUITests: XCTestCase {
         shot("v74-territory-map-text-legend", app)
     }
 
+    @MainActor func testV75RelationshipEvidenceReadsAsChinese() throws {
+        let app = launch()
+        app.buttons["personHero"].tap()
+        app.buttons["category_records"].tap()
+        let evidence = app.buttons["亲属关系的依据"]
+        reach(evidence, in: app, attempts: 10); evidence.tap()
+        let father = app.staticTexts["relationEvidence_yuanzhang_father_shizhen"]
+        XCTAssertTrue(father.waitForExistence(timeout: 5))
+        XCTAssertEqual(father.label, "朱元璋的父亲是朱世珍")
+        XCTAssertFalse(app.staticTexts.matching(NSPredicate(format: "label CONTAINS %@", "→")).firstMatch.exists)
+        shot("v75-relationship-evidence-sentence", app)
+    }
+
 }

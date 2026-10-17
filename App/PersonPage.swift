@@ -234,8 +234,9 @@ struct PersonSectionPage: View {
                     VStack(alignment: .leading, spacing: 18) {
                         ForEach(links) { link in
                             VStack(alignment: .leading, spacing: 8) {
-                                Text("\(store.person(link.from).name) → \(store.person(link.to).name)").font(.subheadline)
-                                Text(link.kind == "spouse" ? "配偶" : store.parentLabel(link.kind)).font(.caption).foregroundStyle(Theme.muted)
+                                Text(relationEvidence(link))
+                                    .font(.subheadline)
+                                    .accessibilityIdentifier("relationEvidence_\(link.id)")
                                 Text(link.note).font(.caption).foregroundStyle(Theme.muted)
                                 SourcesView(store: store, ids: link.sources, compact: true)
                             }
@@ -248,6 +249,12 @@ struct PersonSectionPage: View {
     }
     func fact(_ name: String, _ value: String) -> some View {
         VStack(alignment: .leading, spacing: 7) { Text(name).font(.caption).foregroundStyle(Theme.muted); Text(value).lineSpacing(5).fixedSize(horizontal: false, vertical: true) }
+    }
+    func relationEvidence(_ link: FamilyLink) -> String {
+        let subject = store.person(link.from).name
+        let relative = store.person(link.to).name
+        if link.kind == "spouse" { return "\(subject)与\(relative)为配偶" }
+        return "\(subject)的\(store.parentLabel(link.kind))是\(relative)"
     }
 }
 
