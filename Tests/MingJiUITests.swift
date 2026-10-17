@@ -129,6 +129,7 @@ final class MingJiUITests: XCTestCase {
         XCTAssertGreaterThanOrEqual(app.buttons["开始朗读"].frame.width, 44)
         app.buttons["朗读设置"].tap()
         XCTAssertTrue(app.navigationBars["朗读设置"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["明清长读优先使用豆包语音。首次播放需要联网，完成后会保存在本机；音频暂不可用时自动改用下方系统声音。"].exists)
         app.buttons["完成"].tap()
         XCTAssertTrue(app.buttons["articleContents"].isHittable)
         shot("v25-reader", app)
@@ -179,15 +180,32 @@ final class MingJiUITests: XCTestCase {
         app.buttons["narrationSettings"].tap()
         XCTAssertTrue(app.navigationBars["朗读设置"].waitForExistence(timeout: 5))
         XCTAssertTrue(app.buttons["narrationSpeed_标准"].exists)
+        let hasSystemFallback = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "narrationVoice_")).count > 0
         app.buttons["完成"].tap()
         app.buttons["narrationToggle"].tap()
-        XCTAssertEqual(app.buttons["narrationToggle"].label, "暂停朗读")
+        XCTAssertEqual(app.buttons["narrationToggle"].label, hasSystemFallback ? "暂停朗读" : "开始朗读")
         app.tabBars.buttons["朝代"].tap()
         app.tabBars.buttons["家族"].tap()
         openArticle(in: app)
         XCTAssertTrue(app.buttons["narrationToggle"].waitForExistence(timeout: 5))
         XCTAssertEqual(app.buttons["narrationToggle"].label, "开始朗读")
         shot("v12-article-narration", app)
+    }
+
+    @MainActor func testV83PublishedNarrationDownloadsAndPlays() throws {
+        let app = XCUIApplication()
+        app.launch()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        app.tabBars.buttons["家族"].tap()
+        XCTAssertTrue(app.buttons["personHero"].waitForExistence(timeout: 10))
+        openArticle(in: app)
+        let toggle = app.buttons["narrationToggle"]
+        toggle.tap()
+        expectation(for: NSPredicate(format: "label == %@", "暂停朗读"), evaluatedWith: toggle)
+        waitForExpectations(timeout: 30)
+        toggle.tap()
+        XCTAssertEqual(toggle.label, "继续朗读")
+        shot("v83-published-narration", app)
     }
     @MainActor func testArtifactAndTombReturnContext() throws {
         let app = launch();app.tabBars.buttons["遗珍"].tap();shot("06-objects",app)

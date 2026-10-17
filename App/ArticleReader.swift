@@ -43,9 +43,10 @@ struct ArticleReader: View {
     @State private var current: String?
     @State private var ready = false
     @State private var positions: [String: CGFloat] = [:]
-    @StateObject private var narrator = ArticleNarrator()
+    @StateObject private var narrator: ArticleNarrator
     init(store: HistoryStore, personID: String) {
         self.store = store; self.personID = personID
+        _narrator = StateObject(wrappedValue: ArticleNarrator(dynastyID: store.dynastyID(for: personID)))
         let saved = UserDefaults.standard.string(forKey: "reading_" + personID)
         resume = saved.flatMap { id in store.article(personID)?.sections.contains(where: { $0.id == id }) == true ? id : nil }
         _current = State(initialValue: resume)

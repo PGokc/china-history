@@ -8,3 +8,4 @@ build/
 build-*/
 scripts/__pycache__/
 *.pyc
+NarrationBuild/

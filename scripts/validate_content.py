@@ -1,5 +1,6 @@
 from pathlib import Path
 import json
+import hashlib
 from collections import Counter
 from PIL import Image
 R=Path(__file__).resolve().parents[1];d=json.loads((R/'App/Resources/history.json').read_text())
@@ -54,6 +55,33 @@ if d['version'] >= 2:
  import re
  articles={a['person']:a for a in d['articles']}
  assert emperors <= articles.keys(), ('missing emperor articles',emperors-articles.keys())
+ narration=json.loads((R/'App/Resources/narration_manifest.json').read_text())
+ narration_people={pid for pid,p in people.items() if p.get('dynasty') in {'ming','qing'}}
+ expected_narration={
+  (a['person'],section['id'])
+  for a in d['articles'] if a['person'] in narration_people
+  for section in a['sections']
+ }
+ actual_narration={(entry['articleID'],entry['sectionID']) for entry in narration['entries']}
+ assert len(actual_narration)==len(narration['entries']),("narration manifest",'duplicate entry')
+ assert actual_narration==expected_narration,(
+  "narration manifest mismatch",
+  "missing",expected_narration-actual_narration,
+  "unexpected",actual_narration-expected_narration,
+ )
+ narration_entries={(entry['articleID'],entry['sectionID']):entry for entry in narration['entries']}
+ digits=str.maketrans('0123456789','零一二三四五六七八九')
+ for article in d['articles']:
+  if article['person'] not in narration_people: continue
+  for section in article['sections']:
+   spoken=f"{section['title']}。{section['text']}".replace('—','至')
+   spoken=re.sub(r'(?<!\d)(\d{4})(?=年)',lambda match:match.group(1).translate(digits),spoken)
+   expected_hash=hashlib.sha256(spoken.encode()).hexdigest()
+   entry=narration_entries[(article['person'],section['id'])]
+   assert entry['textHash']==expected_hash,(article['person'],section['id'],'stale narration hash')
+ assert narration['baseURL'].startswith('https://') and narration['version']>=1
+ if narration['published']:
+  assert all(re.fullmatch(r'[0-9a-f]{64}',entry.get('audioHash','')) for entry in narration['entries'])
  for pid,a in articles.items():
   assert pid in people and a['sections']
   chars=sum(len(re.findall(r'[\u4e00-\u9fff]',s['text'])) for s in a['sections'])

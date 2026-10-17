@@ -45,10 +45,11 @@ struct NarrationVoiceOption: Identifiable, Hashable {
 }
 
 @MainActor
-final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDelegate {
+final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDelegate, AVAudioPlayerDelegate {
     private static let voicePreviewText = "康熙六十一年，康熙帝去世，皇四子胤禛继位，是为雍正帝。雍正十三年，皇四子弘历即位，次年改元乾隆。制度的延续与调整，也由此进入新的阶段。"
     @Published private(set) var isSpeaking = false
     @Published private(set) var isPaused = false
+    @Published private(set) var isLoading = false
     @Published private(set) var currentSectionID: String?
     @Published private(set) var currentTitle = ""
     @Published private(set) var currentIndex = 0
@@ -56,9 +57,12 @@ final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDele
     @Published var speed: NarrationSpeed
     @Published private(set) var voices: [NarrationVoiceOption]
     @Published private(set) var selectedVoiceID: String
+    let dynastyID: String
 
     private let synthesizer = AVSpeechSynthesizer()
     private let previewSynthesizer = AVSpeechSynthesizer()
+    private var audioPlayer: AVAudioPlayer?
+    private var loadingTask: Task<Void, Never>?
     private var sections: [ArticleSection] = []
     private var autoAdvanceEnabled = false
     // Ignore delegate callbacks from an utterance replaced by navigation or settings.
@@ -67,10 +71,11 @@ final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDele
     private var restartOnResume = false
     @Published private(set) var previewVoiceID: String?
 
-    override init() {
+    init(dynastyID: String = "") {
+        self.dynastyID = dynastyID
         let available = Self.installedChineseVoices()
         voices = available
-        let saved = UserDefaults.standard.string(forKey: "narrationVoice")
+        let saved = UserDefaults.standard.string(forKey: "narrationVoiceV2")
         if let saved, available.contains(where: { $0.id == saved }) {
             selectedVoiceID = saved
         } else {
@@ -82,16 +87,26 @@ final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDele
         previewSynthesizer.delegate = self
     }
 
-    var isActive: Bool { isSpeaking || isPaused }
+    var isActive: Bool { isSpeaking || isPaused || isLoading }
+    var usesDoubaoNarration: Bool { dynastyID == "ming" || dynastyID == "qing" }
+    private var shouldLoadDoubaoNarration: Bool {
+        usesDoubaoNarration && !ProcessInfo.processInfo.arguments.contains("--uitesting")
+    }
     var canGoPrevious: Bool { isActive && currentIndex > 0 }
     var canGoNext: Bool { isActive && currentIndex + 1 < sectionCount }
 
     func toggle(article: Article, from sectionID: String?) {
-        guard !voices.isEmpty else { return }
+        guard usesDoubaoNarration || !voices.isEmpty else { return }
         stopPreview()
-        if isPaused {
+        if isLoading {
+            stop()
+        } else if isPaused {
             if restartOnResume {
                 speakCurrentSection()
+            } else if let audioPlayer {
+                audioPlayer.play()
+                isPaused = false
+                isSpeaking = true
             } else if synthesizer.continueSpeaking() {
                 isPaused = false
                 isSpeaking = true
@@ -104,7 +119,12 @@ final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDele
     }
 
     private func pause() {
-        guard isSpeaking, synthesizer.pauseSpeaking(at: .immediate) else { return }
+        guard isSpeaking else { return }
+        if let audioPlayer, audioPlayer.isPlaying {
+            audioPlayer.pause()
+        } else if !synthesizer.pauseSpeaking(at: .immediate) {
+            return
+        }
         isPaused = true
         isSpeaking = false
     }
@@ -116,6 +136,7 @@ final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDele
         synthesizer.stopSpeaking(at: .immediate)
         autoAdvanceEnabled = true
         sections = article.sections
+        sectionsArticleID = article.id
         sectionCount = sections.count
         currentIndex = sectionID.flatMap { id in sections.firstIndex { $0.id == id } } ?? 0
         speakCurrentSection()
@@ -135,6 +156,10 @@ final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDele
         guard speed != newSpeed else { return }
         speed = newSpeed
         UserDefaults.standard.set(newSpeed.rawValue, forKey: "narrationSpeed")
+        if let audioPlayer, isActive {
+            audioPlayer.rate = newSpeed.audioRate
+            return
+        }
         guard isActive else { return }
         move(to: currentIndex)
     }
@@ -142,8 +167,8 @@ final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDele
     func changeVoice(_ identifier: String) {
         guard identifier != selectedVoiceID, voices.contains(where: { $0.id == identifier }) else { return }
         selectedVoiceID = identifier
-        UserDefaults.standard.set(identifier, forKey: "narrationVoice")
-        guard isActive else { return }
+        UserDefaults.standard.set(identifier, forKey: "narrationVoiceV2")
+        guard isActive, audioPlayer == nil else { return }
         move(to: currentIndex)
     }
 
@@ -180,12 +205,17 @@ final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDele
 
     func stop() {
         autoAdvanceEnabled = false
+        loadingTask?.cancel()
+        loadingTask = nil
+        audioPlayer?.stop()
+        audioPlayer = nil
         activeUtteranceID = nil
         restartOnResume = false
         synthesizer.stopSpeaking(at: .immediate)
         stopPreview()
         isSpeaking = false
         isPaused = false
+        isLoading = false
         currentSectionID = nil
         currentTitle = ""
         try? AVAudioSession.sharedInstance().setActive(false, options: .notifyOthersOnDeactivation)
@@ -195,6 +225,11 @@ final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDele
         guard sections.indices.contains(index) else { return }
         stopPreview()
         let keepPaused = isPaused
+        loadingTask?.cancel()
+        loadingTask = nil
+        audioPlayer?.stop()
+        audioPlayer = nil
+        isLoading = false
         activeUtteranceID = nil
         synthesizer.stopSpeaking(at: .immediate)
         currentIndex = index
@@ -208,7 +243,7 @@ final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDele
     }
 
     private func speakCurrentSection() {
-        guard sections.indices.contains(currentIndex), let voice = Self.mandarinVoice(identifier: selectedVoiceID) else {
+        guard sections.indices.contains(currentIndex) else {
             stop()
             return
         }
@@ -217,6 +252,54 @@ final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDele
         currentSectionID = section.id
         currentTitle = section.title
         isPaused = false
+
+        if shouldLoadDoubaoNarration,
+           let manifest = NarrationAudioManifest.bundled,
+           let entry = manifest.entry(articleID: sectionsArticleID, section: section) {
+            loadDoubaoAudio(entry: entry, manifest: manifest)
+            return
+        }
+        speakSystemSection(section)
+    }
+
+    private var sectionsArticleID = ""
+
+    private func loadDoubaoAudio(entry: NarrationAudioManifest.Entry, manifest: NarrationAudioManifest) {
+        isLoading = true
+        isSpeaking = false
+        configureAudioSession()
+        loadingTask = Task { [weak self] in
+            guard let self else { return }
+            do {
+                let file = try await NarrationAudioCache.shared.localFile(for: entry, manifest: manifest)
+                try Task.checkCancellation()
+                guard self.sections.indices.contains(self.currentIndex), self.sections[self.currentIndex].id == entry.sectionID else { return }
+                let player = try AVAudioPlayer(contentsOf: file)
+                player.delegate = self
+                player.enableRate = true
+                player.rate = self.speed.audioRate
+                player.prepareToPlay()
+                self.audioPlayer = player
+                self.isLoading = false
+                self.isSpeaking = player.play()
+                if !self.isSpeaking { self.speakSystemSection(self.sections[self.currentIndex]) }
+            } catch is CancellationError {
+                return
+            } catch {
+                guard self.sections.indices.contains(self.currentIndex), self.sections[self.currentIndex].id == entry.sectionID else { return }
+                self.speakSystemSection(self.sections[self.currentIndex])
+            }
+        }
+    }
+
+    private func speakSystemSection(_ section: ArticleSection) {
+        isLoading = false
+        loadingTask = nil
+        audioPlayer = nil
+        guard let voice = Self.mandarinVoice(identifier: selectedVoiceID) else {
+            stop()
+            return
+        }
         isSpeaking = true
 
         configureAudioSession()
@@ -251,8 +334,8 @@ final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDele
         speakCurrentSection()
     }
 
-    private static func spokenText(for section: ArticleSection) -> String {
-        let source = "\(section.title)。\(section.text)"
+    nonisolated static func spokenText(title: String, text: String) -> String {
+        let source = "\(title)。\(text)"
         let digits: [Character: Character] = ["0":"零", "1":"一", "2":"二", "3":"三", "4":"四", "5":"五", "6":"六", "7":"七", "8":"八", "9":"九"]
         var result = ""
         var number = ""
@@ -270,6 +353,10 @@ final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDele
             result.append(character)
         }
         return result + number
+    }
+
+    private static func spokenText(for section: ArticleSection) -> String {
+        spokenText(title: section.title, text: section.text)
     }
 
     private static func installedChineseVoices() -> [NarrationVoiceOption] {
@@ -291,7 +378,7 @@ final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDele
             if let current = bestByName[key], current.qualityRank >= voice.qualityRank { continue }
             bestByName[key] = voice
         }
-        let order = ["瀚": 0, "黎潋": 1, "语舒": 2, "李沐": 3]
+        let order = ["黎潋": 0, "瀚": 1, "语舒": 2, "李沐": 3]
         return bestByName.values.sorted {
             if $0.qualityRank != $1.qualityRank { return $0.qualityRank > $1.qualityRank }
             let left = order[$0.displayName] ?? 99
@@ -330,6 +417,17 @@ final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDele
             if self.activeUtteranceID == id { self.stop() }
         }
     }
+
+    nonisolated func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+        let finishedPlayerID = ObjectIdentifier(player)
+        Task { @MainActor [weak self] in
+            guard let self,
+                  let currentPlayer = self.audioPlayer,
+                  ObjectIdentifier(currentPlayer) == finishedPlayerID else { return }
+            self.audioPlayer = nil
+            self.finishedSection()
+        }
+    }
 }
 
 enum NarrationSpeed: String, CaseIterable, Identifiable {
@@ -343,6 +441,13 @@ enum NarrationSpeed: String, CaseIterable, Identifiable {
         case .calm: return 0.42
         case .normal: return 0.50
         case .brisk: return 0.58
+        }
+    }
+    var audioRate: Float {
+        switch self {
+        case .calm: return 0.85
+        case .normal: return 1.0
+        case .brisk: return 1.18
         }
     }
 }
@@ -372,13 +477,15 @@ struct ArticleNarrationBar: View {
             }
             HStack(spacing: 8) {
                 Button { narrator.toggle(article: article, from: visibleSectionID) } label: {
-                    Image(systemName: narrator.isSpeaking ? "pause.fill" : "play.fill")
-                        .font(.system(size: 15, weight: .semibold))
-                        .frame(width: 44, height: 44)
-                        .overlay(Circle().stroke(Theme.cinnabar.opacity(0.75), lineWidth: 1))
+                    Group {
+                        if narrator.isLoading { ProgressView().controlSize(.small) }
+                        else { Image(systemName: narrator.isSpeaking ? "pause.fill" : "play.fill").font(.system(size: 15, weight: .semibold)) }
+                    }
+                    .frame(width: 44, height: 44)
+                    .overlay(Circle().stroke(Theme.cinnabar.opacity(0.75), lineWidth: 1))
                 }
                 .foregroundStyle(Theme.cinnabar)
-                .accessibilityLabel(narrator.isSpeaking ? "暂停朗读" : (narrator.isPaused ? "继续朗读" : "开始朗读"))
+                .accessibilityLabel(narrator.isLoading ? "取消载入" : (narrator.isSpeaking ? "暂停朗读" : (narrator.isPaused ? "继续朗读" : "开始朗读")))
                 .accessibilityIdentifier("narrationToggle")
                 .accessibilityValue(narrator.isActive ? narrator.currentTitle : startingTitle)
 
@@ -449,7 +556,11 @@ struct NarrationSettingsSheet: View {
                         }
                     }
                     VStack(alignment: .leading, spacing: 10) {
-                        Text("声音").font(.system(.title3, design: .serif).weight(.medium))
+                        Text(narrator.usesDoubaoNarration ? "备用声音" : "声音").font(.system(.title3, design: .serif).weight(.medium))
+                        if narrator.usesDoubaoNarration {
+                            Text("明清长读优先使用豆包语音。首次播放需要联网，完成后会保存在本机；音频暂不可用时自动改用下方系统声音。")
+                                .font(.subheadline).foregroundStyle(Theme.muted).lineSpacing(4)
+                        }
                         ForEach(narrator.voices) { voice in
                             HStack(spacing: 12) {
                                 Button { narrator.changeVoice(voice.id) } label: {
@@ -476,7 +587,7 @@ struct NarrationSettingsSheet: View {
                             Rectangle().fill(Theme.line.opacity(0.45)).frame(height: 0.5)
                         }
                         if narrator.voices.isEmpty { Text("未发现可用的中文系统声音").font(.subheadline).foregroundStyle(Theme.muted) }
-                        Text("每个试听使用同一段历史正文，并按设备上的实际音质排序。这里只显示已安装的中国大陆普通话声音；需要更多选择，可在系统的中文声音设置中下载黎潋、瀚、语舒或李沐。")
+                        Text("每个试听使用同一段历史正文。这里只显示设备已经安装的中国大陆普通话声音；备用声音默认优先选择黎潋，未安装时使用瀚。")
                             .font(.caption).foregroundStyle(Theme.muted).lineSpacing(4)
                     }
                 }.padding(24)
