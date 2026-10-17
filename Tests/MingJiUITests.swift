@@ -2366,4 +2366,51 @@ final class MingJiUITests: XCTestCase {
         shot("v68-autumn-letter-sources", app)
     }
 
+    @MainActor func testV69LateTangAndSongReignDepth() throws {
+        let tang = XCUIApplication()
+        tang.launchArguments = ["--uitesting", "--ui-dynasty", "tang"]
+        tang.launch()
+        XCTAssertTrue(tang.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        XCTAssertEqual(tang.tabBars.buttons.allElementsBoundByIndex.map(\.label), ["朝代", "帝序", "家族", "遗珍"])
+        tang.tabBars.buttons["帝序"].tap()
+        let yizong = tang.buttons["succession_t_20"]
+        reach(yizong, in: tang, attempts: 28); yizong.tap()
+        tang.buttons["personHero"].tap()
+        tang.buttons["eventCategory_军事"].tap()
+        let annam = tang.buttons["event_v51t_annam_recovery"]
+        reachReadingLink(annam, in: tang); annam.tap()
+        XCTAssertTrue(tang.staticTexts["安南失守与高骈收复交州"].waitForExistence(timeout: 5))
+        let gaopian = tang.buttons["explore_t_gaopian"]
+        reachReadingLink(gaopian, in: tang); gaopian.tap()
+        XCTAssertTrue(tang.staticTexts["高骈"].waitForExistence(timeout: 5))
+        openArticle(in: tang)
+        XCTAssertTrue(tang.staticTexts["安南收复依赖运输与协同"].waitForExistence(timeout: 5))
+        shot("v69-gao-pian-reader", tang)
+        tang.terminate()
+
+        let song = XCUIApplication()
+        song.launchArguments = ["--uitesting", "--ui-dynasty", "song_liao_xia_jin"]
+        song.launch()
+        XCTAssertTrue(song.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        song.tabBars.buttons["帝序"].tap()
+        let zhezong = song.buttons["succession_s_6"]
+        reach(zhezong, in: song, attempts: 22); zhezong.tap()
+        song.buttons["personHero"].tap()
+        song.buttons["eventCategory_军事"].tap()
+        let pingxia = song.buttons["event_v51s_pingxia"]
+        reachReadingLink(pingxia, in: song); pingxia.tap()
+        XCTAssertTrue(song.staticTexts["章楶筑平夏城并组织防御"].waitForExistence(timeout: 5))
+        let zhangjie = song.buttons["explore_s_zhangjie"]
+        reachReadingLink(zhangjie, in: song); zhangjie.tap()
+        let articleEntry = song.buttons["articleEntry"]
+        reach(articleEntry, in: song); articleEntry.tap()
+        if !song.buttons["articleContents"].waitForExistence(timeout: 5) {
+            song.activate()
+            reach(articleEntry, in: song); articleEntry.tap()
+        }
+        XCTAssertTrue(song.buttons["articleContents"].waitForExistence(timeout: 5))
+        XCTAssertTrue(song.staticTexts["平夏城是一套工程方案"].waitForExistence(timeout: 5))
+        shot("v69-zhang-jie-reader", song)
+    }
+
 }

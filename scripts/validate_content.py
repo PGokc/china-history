@@ -1180,3 +1180,38 @@ if d['version'] >= 50:
  assert '正文实为赵孟頫代书' in corpus
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成',corpus)
  print('V50 PASS: six full Yuan readings, twelve institutional and social events, four evidence-bounded objects, and twenty rewritten Five Dynasties economy/social entries')
+
+if d['version'] >= 51:
+ added_people={'t_wangbo','t_gaopian','s_zhangjie','s_chenyizhong'}
+ assert added_people<=people.keys()
+ added_event_ids={'v51t_wangbo_salt','v51t_wuzong_property','v51t_annam_recovery','v51t_annam_relief','v51t_changan_damage','v51s_pingxia','v51s_duzong_lectures','v51s_linan_daily'}
+ added_events=[e for e in d['events'] if e['id'] in added_event_ids]
+ assert len(added_events)==8 and Counter(e['category'] for e in added_events)=={'经济':3,'军事':2,'社会':2,'文化':1}
+ assert all(e['sources'] and e.get('peopleRoles') and e.get('impact') and len(re.findall(r'[\u4e00-\u9fff]',e['body']+e['impact']))>=80 for e in added_events)
+ for pid in added_people:
+  article=articles[pid]
+  assert len(article['sections'])==4 and all(s['sources'] and s.get('events') and len(s.get('people',[]))>=2 for s in article['sections'])
+  assert sum(len(re.findall(r'[\u4e00-\u9fff]',s['text'])) for s in article['sections'])>=600
+  assert any(pid in e['people'] for e in added_events)
+ source_ids={'v51t_jts164','v51t_jts182','v51s_ss328','v51s_menglianglu'}
+ source_map={s['id']:s for s in d['sources'] if s['id'] in source_ids}
+ assert source_ids==source_map.keys() and all('非官方平台' in s['title'] and len(s['note'])>=40 for s in source_map.values())
+ contexts={x['person']:x for x in d['reignContexts']}
+ required_people={'t_jingzong':{'t_wangbo'},'t_yizong':{'t_gaopian'},'t_xizong':{'t_gaopian'},'s_zhezong':{'s_zhangjie'},'s_duzong':{'s_chenyizhong'}}
+ required_events={
+  't_jingzong':{'v51t_wangbo_salt'},'t_wuzong':{'v51t_wuzong_property'},
+  't_yizong':{'v60t_s06','v51t_annam_recovery','v51t_annam_relief'},
+  't_xizong':{'v47t_famine_rebellion','v51t_changan_damage'},
+  's_yingzong':{'v47s_futian'},'s_zhezong':{'v47s_yingzao','v51s_pingxia'},
+  's_duzong':{'v43s_gongtian','v51s_duzong_lectures','v51s_linan_daily'}
+ }
+ assert all(ids<=set(contexts[pid]['people']) for pid,ids in required_people.items())
+ assert all(ids<=set(contexts[pid]['events']) for pid,ids in required_events.items())
+ required_links={'v43t_yizong_s2':'v51t_annam_recovery','v43t_xizong_s2':'v51t_changan_damage','v43s_zhezong_2':'v51s_pingxia','v43s_duzong_5':'v51s_duzong_lectures'}
+ for section_id,event_id in required_links.items():
+  section=next(s for a in d['articles'] for s in a['sections'] if s['id']==section_id)
+  assert event_id in (section.get('events') or []),(section_id,'missing V51 event link')
+ corpus=json.dumps([people[x] for x in added_people]+added_events+[articles[x] for x in added_people],ensure_ascii=False)
+ assert all(term in corpus for term in ['羡余','安南','纪年相差一年','平夏城','奏捷','字民','梦粱录','追忆故都'])
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成',corpus)
+ print('V51 PASS: four full late-Tang and Song readings, eight events, and seven repaired reign-context links preserve explicit evidence boundaries')
