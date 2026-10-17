@@ -52,6 +52,7 @@ final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDele
     @Published private(set) var isLoading = false
     @Published private(set) var elapsed: TimeInterval = 0
     @Published private(set) var duration: TimeInterval = 0
+    @Published private(set) var loadErrorMessage: String?
     @Published private(set) var currentSectionID: String?
     @Published private(set) var currentTitle = ""
     @Published private(set) var currentIndex = 0
@@ -91,14 +92,14 @@ final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDele
     }
 
     var isActive: Bool { isSpeaking || isPaused || isLoading }
-    var usesDoubaoNarration: Bool { dynastyID == "ming" || dynastyID == "qing" }
-    private var shouldLoadRecordedNarration: Bool { usesDoubaoNarration }
+    var usesRecordedNarration: Bool { dynastyID == "ming" || dynastyID == "qing" }
+    private var shouldLoadRecordedNarration: Bool { usesRecordedNarration }
     var canSeek: Bool { audioPlayer != nil && duration > 0 }
     var canGoPrevious: Bool { isActive && currentIndex > 0 }
     var canGoNext: Bool { isActive && currentIndex + 1 < sectionCount }
 
     func toggle(article: Article, from sectionID: String?) {
-        guard usesDoubaoNarration || !voices.isEmpty else { return }
+        guard usesRecordedNarration || !voices.isEmpty else { return }
         stopPreview()
         if isLoading {
             stop()
@@ -228,6 +229,7 @@ final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDele
         isSpeaking = false
         isPaused = false
         isLoading = false
+        loadErrorMessage = nil
         currentSectionID = nil
         currentTitle = ""
         try? AVAudioSession.sharedInstance().setActive(false, options: .notifyOthersOnDeactivation)
@@ -267,11 +269,12 @@ final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDele
         currentSectionID = section.id
         currentTitle = section.title
         isPaused = false
+        loadErrorMessage = nil
 
         if shouldLoadRecordedNarration,
            let manifest = NarrationAudioManifest.bundled,
            let entry = manifest.entry(articleID: sectionsArticleID, section: section) {
-            loadDoubaoAudio(entry: entry, manifest: manifest)
+            loadRecordedAudio(entry: entry, manifest: manifest)
             return
         }
         speakSystemSection(section)
@@ -279,7 +282,7 @@ final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDele
 
     private var sectionsArticleID = ""
 
-    private func loadDoubaoAudio(entry: NarrationAudioManifest.Entry, manifest: NarrationAudioManifest) {
+    private func loadRecordedAudio(entry: NarrationAudioManifest.Entry, manifest: NarrationAudioManifest) {
         isLoading = true
         isSpeaking = false
         configureAudioSession()
@@ -300,14 +303,27 @@ final class ArticleNarrator: NSObject, ObservableObject, AVSpeechSynthesizerDele
                 self.startProgressTimer()
                 self.isLoading = false
                 self.isSpeaking = player.play()
-                if !self.isSpeaking { self.speakSystemSection(self.sections[self.currentIndex]) }
+                if !self.isSpeaking { self.recordedAudioDidFail() }
             } catch is CancellationError {
                 return
             } catch {
                 guard self.sections.indices.contains(self.currentIndex), self.sections[self.currentIndex].id == entry.sectionID else { return }
-                self.speakSystemSection(self.sections[self.currentIndex])
+                self.recordedAudioDidFail()
             }
         }
+    }
+
+    private func recordedAudioDidFail() {
+        stopProgressTimer()
+        loadingTask = nil
+        audioPlayer = nil
+        elapsed = 0
+        duration = 0
+        isLoading = false
+        isSpeaking = false
+        isPaused = false
+        loadErrorMessage = "朗读暂时无法加载，请稍后重试"
+        try? AVAudioSession.sharedInstance().setActive(false, options: .notifyOthersOnDeactivation)
     }
 
     private func speakSystemSection(_ section: ArticleSection) {
@@ -551,7 +567,10 @@ struct ArticleNarrationBar: View {
                 if !typeSize.isAccessibilitySize {
                 VStack(alignment: .leading, spacing: 3) {
                     Text("朗读").font(.caption).foregroundStyle(Theme.cinnabar)
-                    Text(displayTitle).font(.subheadline).foregroundStyle(Theme.ink).lineLimit(1)
+                    Text(narrator.loadErrorMessage ?? displayTitle)
+                        .font(.subheadline)
+                        .foregroundStyle(narrator.loadErrorMessage == nil ? Theme.ink : Theme.cinnabar)
+                        .lineLimit(1)
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
 
@@ -620,7 +639,7 @@ struct NarrationSettingsSheet: View {
                             }
                         }
                     }
-                    if !narrator.usesDoubaoNarration {
+                    if !narrator.usesRecordedNarration {
                     VStack(alignment: .leading, spacing: 10) {
                         Text("声音").font(.system(.title3, design: .serif).weight(.medium))
                         ForEach(narrator.voices) { voice in

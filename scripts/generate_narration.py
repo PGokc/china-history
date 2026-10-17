@@ -2,8 +2,8 @@
 """Prepare and synthesize the Ming/Qing narration release.
 
 The API key is read only from VOLCENGINE_TTS_API_KEY. Audio files are build
-artifacts and stay outside the app bundle; the iOS client downloads them from a
-GitHub release and caches only what the reader plays.
+artifacts and stay outside the app bundle; the iOS client downloads them from
+TOS and caches only what the reader plays.
 """
 
 from __future__ import annotations
@@ -24,7 +24,7 @@ ROOT = Path(__file__).resolve().parents[1]
 HISTORY = ROOT / "App/Resources/history.json"
 MANIFEST = ROOT / "App/Resources/narration_manifest.json"
 DEFAULT_OUTPUT = ROOT / "NarrationBuild/v1"
-BASE_URL = "https://github.com/PGokc/china-history/releases/download/narration-zh-v1/"
+BASE_URL = "https://shiji-history-assets.tos-cn-shanghai.volces.com/narration/v1/"
 SUBMIT_URL = "https://openspeech.bytedance.com/api/v3/tts/submit"
 QUERY_URL = "https://openspeech.bytedance.com/api/v3/tts/query"
 DEFAULT_VOICE = "zh_male_gaolengchenwen_uranus_bigtts"

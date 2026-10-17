@@ -37,14 +37,6 @@ struct NarrationAudioManifest: Decodable {
         return base
     }
 
-    func bundledURL(for entry: Entry) -> URL? {
-        let filename = entry.path as NSString
-        let stem = filename.deletingPathExtension
-        let ext = filename.pathExtension
-        return Bundle.main.url(forResource: stem, withExtension: ext)
-            ?? Bundle.main.url(forResource: stem, withExtension: ext, subdirectory: "NarrationAudio")
-    }
-
     static func textHash(title: String, text: String) -> String {
         let spoken = ArticleNarrator.spokenText(title: title, text: text)
         return SHA256.hash(data: Data(spoken.utf8)).map { String(format: "%02x", $0) }.joined()
@@ -57,10 +49,6 @@ actor NarrationAudioCache {
     enum CacheError: Error { case unavailable, invalidResponse }
 
     func localFile(for entry: NarrationAudioManifest.Entry, manifest: NarrationAudioManifest) async throws -> URL {
-        if let bundled = manifest.bundledURL(for: entry),
-           isUsableAudio(at: bundled, expectedHash: entry.audioHash) {
-            return bundled
-        }
         guard let remoteURL = manifest.remoteURL(for: entry) else { throw CacheError.unavailable }
         let manager = FileManager.default
         let root = try manager.url(for: .cachesDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
@@ -72,21 +60,35 @@ actor NarrationAudioCache {
             try? manager.removeItem(at: destination)
         }
 
-        let (temporary, response) = try await URLSession.shared.download(from: remoteURL)
-        guard let http = response as? HTTPURLResponse, http.statusCode == 200 else {
-            throw CacheError.invalidResponse
+        var lastError: Error = CacheError.unavailable
+        for attempt in 0..<3 {
+            do {
+                let (temporary, response) = try await URLSession.shared.download(from: remoteURL)
+                try Task.checkCancellation()
+                guard let http = response as? HTTPURLResponse, http.statusCode == 200 else {
+                    throw CacheError.invalidResponse
+                }
+                try manager.createDirectory(at: destination.deletingLastPathComponent(), withIntermediateDirectories: true)
+                let staged = destination.appendingPathExtension("download")
+                try? manager.removeItem(at: staged)
+                try manager.moveItem(at: temporary, to: staged)
+                guard isUsableAudio(at: staged, expectedHash: entry.audioHash) else {
+                    try? manager.removeItem(at: staged)
+                    throw CacheError.invalidResponse
+                }
+                try? manager.removeItem(at: destination)
+                try manager.moveItem(at: staged, to: destination)
+                return destination
+            } catch is CancellationError {
+                throw CancellationError()
+            } catch {
+                lastError = error
+                if attempt < 2 {
+                    try await Task.sleep(for: .milliseconds(400 * (attempt + 1)))
+                }
+            }
         }
-        try manager.createDirectory(at: destination.deletingLastPathComponent(), withIntermediateDirectories: true)
-        let staged = destination.appendingPathExtension("download")
-        try? manager.removeItem(at: staged)
-        try manager.moveItem(at: temporary, to: staged)
-        guard isUsableAudio(at: staged, expectedHash: entry.audioHash) else {
-            try? manager.removeItem(at: staged)
-            throw CacheError.invalidResponse
-        }
-        try? manager.removeItem(at: destination)
-        try manager.moveItem(at: staged, to: destination)
-        return destination
+        throw lastError
     }
 
     private func isUsableAudio(at url: URL, expectedHash: String?) -> Bool {

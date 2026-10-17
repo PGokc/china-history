@@ -2,7 +2,7 @@
   "version": 1,
   "voiceName": "zh_male_gaolengchenwen_uranus_bigtts",
   "published": true,
-  "baseURL": "https://github.com/PGokc/china-history/releases/download/narration-zh-v1/",
+  "baseURL": "https://shiji-history-assets.tos-cn-shanghai.volces.com/narration/v1/",
   "entries": [
     {
       "articleID": "yuanzhang",

@@ -80,18 +80,7 @@ if d['version'] >= 2:
    entry=narration_entries[(article['person'],section['id'])]
    assert entry['textHash']==expected_hash,(article['person'],section['id'],'stale narration hash')
  assert narration['baseURL'].startswith('https://') and narration['version']>=1
- audio_root=R/'App/Resources/NarrationAudio'
- bundled_audio={path.name:path for path in audio_root.glob('*.mp3')}
- expected_audio={entry['path'] for entry in narration['entries']}
- assert set(bundled_audio)==expected_audio,(
-  'bundled narration mismatch',
-  'missing',expected_audio-set(bundled_audio),
-  'unexpected',set(bundled_audio)-expected_audio,
- )
- for entry in narration['entries']:
-  audio_hash=hashlib.sha256(bundled_audio[entry['path']].read_bytes()).hexdigest()
-  assert audio_hash==entry['audioHash'],(entry['path'],'invalid bundled narration audio')
- print(f"PASS: {len(bundled_audio)} 段明清朗读音频已内置，文件与清单哈希一致。")
+ assert 'tos-cn-shanghai.volces.com' in narration['baseURL']
  if narration['published']:
   assert all(re.fullmatch(r'[0-9a-f]{64}',entry.get('audioHash','')) for entry in narration['entries'])
  for pid,a in articles.items():

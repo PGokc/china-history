@@ -194,7 +194,7 @@ final class MingJiUITests: XCTestCase {
         shot("v12-article-narration", app)
     }
 
-    @MainActor func testV83PublishedNarrationDownloadsAndPlays() throws {
+    @MainActor func testV85OnDemandNarrationDownloadsAndPlays() throws {
         let app = XCUIApplication()
         app.launch()
         XCTAssertTrue(app.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
@@ -210,7 +210,7 @@ final class MingJiUITests: XCTestCase {
         progress.adjust(toNormalizedSliderPosition: 0.45)
         toggle.tap()
         XCTAssertEqual(toggle.label, "继续朗读")
-        shot("v83-published-narration", app)
+        shot("v85-on-demand-narration", app)
     }
     @MainActor func testArtifactAndTombReturnContext() throws {
         let app = launch();app.tabBars.buttons["遗珍"].tap();shot("06-objects",app)
