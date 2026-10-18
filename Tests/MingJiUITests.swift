@@ -2669,4 +2669,36 @@ final class MingJiUITests: XCTestCase {
         shot("v80-person-records-compact-ending", person)
     }
 
+    @MainActor func testV86MingQingCentralReadingsHaveFiveLayerDepth() throws {
+        for (dynasty, query, personID, chapters) in [
+            ("ming", "王守仁", "m40_wangshouren", ["从科举官员到龙场贬谪", "知行合一不是成功学口号", "南赣治理中的组织与强制", "宁王之乱与军功风波", "晚年军务与学说的多重遗产"]),
+            ("qing", "林则徐", "q_linzexu", ["地方治理形成的行政经验", "朝廷争论与钦差权力的边界", "虎门销烟与文献能够确认的事实", "战争失败、革职与新疆经历", "译报、世界知识与后来的记忆"])
+        ] {
+            let app = XCUIApplication()
+            app.launchArguments = ["--uitesting", "--ui-dynasty", dynasty]
+            app.launch()
+            XCTAssertTrue(app.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+            app.buttons["globalSearch"].tap()
+            let search = app.searchFields.firstMatch
+            XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText(query)
+            let result = app.buttons["search_person_" + personID]
+            XCTAssertTrue(result.waitForExistence(timeout: 5)); result.tap()
+            XCTAssertTrue(app.buttons["articleEntry"].waitForExistence(timeout: 5)); app.buttons["articleEntry"].tap()
+            XCTAssertTrue(app.buttons["articleContents"].waitForExistence(timeout: 5)); app.buttons["articleContents"].tap()
+            for chapter in chapters { XCTAssertTrue(app.buttons[chapter].exists) }
+            XCTAssertTrue(app.buttons[chapters[2]].exists); app.buttons[chapters[2]].tap()
+            XCTAssertTrue(app.staticTexts[chapters[2]].waitForExistence(timeout: 5))
+            XCTAssertTrue(app.buttons["narrationToggle"].exists)
+            if dynasty == "ming" {
+                let toggle = app.buttons["narrationToggle"]
+                toggle.tap()
+                expectation(for: NSPredicate(format: "label == %@", "暂停朗读"), evaluatedWith: toggle)
+                waitForExpectations(timeout: 30)
+                XCTAssertTrue(app.sliders["narrationProgress"].waitForExistence(timeout: 5))
+            }
+            shot("v86-" + dynasty + "-layered-reading", app)
+            app.terminate()
+        }
+    }
+
 }

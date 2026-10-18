@@ -90,6 +90,7 @@ if d['version'] >= 2:
   assert len({s['id'] for s in a['sections']})==len(a['sections'])
   assert set(a['sources'])<=sources.keys()
   for s in a['sections']:
+   assert s['kind'].strip(),(pid,s['id'],'missing section kind')
    assert s['sources'] and set(s['sources'])<=sources.keys(),(pid,s['id'])
    assert set(s.get('people',[]))<=people.keys(),(pid,s['id'],'chapter people')
    assert set(s.get('events',[]))<={e['id'] for e in d['events']},(pid,s['id'],'chapter events')
@@ -1299,3 +1300,29 @@ if d['version'] >= 53:
  assert '未找到陵园或民政部门公开的原始迁葬档案' in puyi['note']
  assert sources['v73_puyi_cppcc']['url'].startswith('https://www.cppcc.gov.cn/')
  print('V53 PASS: Jingtai and Chongzhen use verified full book pages; Jianwen edition and Puyi burial evidence expose their source boundaries')
+
+if d['version'] >= 54:
+ key_readings={
+  'm40_wangshouren':{'v2l_ningwang'},
+  'm40_qijiguang':{'v2l_coastal','v40m2_jizhen_training_1568'},
+  'm41_lishizhen':{'v41m_bencao_draft','v41m_bencao_print'},
+  'm40_xuguangqi':{'v40m2_geometry_1607','v40m2_calendar_1629'},
+  'q_linzexu':{'v40q_humen','qev_opium_war_1840','v40q_haiguo'},
+  'q_zengguofan':{'v40q_xiang_army','v40q_tianjing_fall'},
+  'q_lihongzhang':{'qev_self_strengthening_1860s','qev_sino_japanese_war_1894','v26_boxer_protocol'},
+  'q_zuozongtang':{'v40q_fuzhou_shipyard','v40q_xinjiang_campaign','v41q_xinjiang_province'},
+ }
+ all_event_ids={event['id'] for event in d['events']}
+ for pid,required_events in key_readings.items():
+  article=articles[pid]
+  linked_events={event_id for section in article['sections'] for event_id in section.get('events',[])}
+  assert len(article['sections'])==5,(pid,'expected five-layer reading')
+  assert sum(len(re.findall(r'[\u4e00-\u9fff]',section['text'])) for section in article['sections'])>=880,(pid,'reading remains too short')
+  assert required_events<=linked_events<=all_event_ids,(pid,'missing or invalid event links')
+  assert len(article['sources'])>=1 and all(source_id in sources for source_id in article['sources'])
+ museum_source=sources['v54q_chnmuseum_humen']
+ assert museum_source['url'].startswith('https://www.chnmuseum.cn/') and len(museum_source['note'])>=40
+ corpus=json.dumps([articles[pid] for pid in key_readings],ensure_ascii=False)
+ assert all(term in corpus for term in ['知行合一不是成功学口号','鸳鸯阵','金陵胡承龙刊本','团队工程','责任不能倒置','地方权力','签约者','后勤线'])
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成',corpus)
+ print('V54 PASS: eight central Ming-Qing figures now have five-layer readings with event links, institutional context and explicit evidence boundaries')
