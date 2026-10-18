@@ -2732,4 +2732,35 @@ final class MingJiUITests: XCTestCase {
         }
     }
 
+    @MainActor func testV88InstitutionalReadingsKeepFiveLayerDepth() throws {
+        for (dynasty, query, personID, chapters, target) in [
+            ("ming", "魏忠贤", "m40_weizhongxian", ["从内廷差役到皇帝近侍", "外廷冲突怎样进入内廷", "杨涟弹劾与奏疏失去安全", "诏狱、追赃与政治暴力", "崇祯清算及其有限修复"], 3),
+            ("qing", "洪秀全", "q_hongxiuquan", ["科举挫折与宗教解释", "金田起义与军事共同体", "定都天京与制度试验", "性别规范与权力等级的张力", "内部分裂、天京陷落与记忆"], 2)
+        ] {
+            let app = XCUIApplication()
+            app.launchArguments = ["--uitesting", "--ui-dynasty", dynasty]
+            app.launch()
+            XCTAssertTrue(app.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+            app.buttons["globalSearch"].tap()
+            let search = app.searchFields.firstMatch
+            XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText(query)
+            let result = app.buttons["search_person_" + personID]
+            XCTAssertTrue(result.waitForExistence(timeout: 5)); result.tap()
+            XCTAssertTrue(app.buttons["articleEntry"].waitForExistence(timeout: 5)); app.buttons["articleEntry"].tap()
+            XCTAssertTrue(app.buttons["articleContents"].waitForExistence(timeout: 5)); app.buttons["articleContents"].tap()
+            for chapter in chapters { XCTAssertTrue(app.buttons[chapter].exists) }
+            app.buttons[chapters[target]].tap()
+            XCTAssertTrue(app.staticTexts[chapters[target]].waitForExistence(timeout: 5))
+            if dynasty == "ming" {
+                let toggle = app.buttons["narrationToggle"]
+                XCTAssertTrue(toggle.exists); toggle.tap()
+                expectation(for: NSPredicate(format: "label == %@", "暂停朗读"), evaluatedWith: toggle)
+                waitForExpectations(timeout: 30)
+                XCTAssertTrue(app.sliders["narrationProgress"].waitForExistence(timeout: 5))
+            }
+            shot("v88-" + dynasty + "-institutional-reading", app)
+            app.terminate()
+        }
+    }
+
 }

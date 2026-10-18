@@ -1349,3 +1349,26 @@ if d['version'] >= 55:
  assert all(term in corpus for term in ['最终任免和裁断','清官救济','通敌罪证不足','来源链越长','是否真正上达存在研究争议','思想变化不是简单反复'])
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成',corpus)
  print('V55 PASS: six pivotal Ming-Qing readings separate personal agency from institutions, networks, source limits and later memory')
+
+if d['version'] >= 56:
+ key_readings={
+  'm40_xujie':{'v2l_gengxu','v40m2_yansong_removed_1562','v2l_release','v40m2_hairui_land_1569'},
+  'm40_weizhongxian':{'v40m2_yang_accuses_1624','v2l_prisons','v2l_weifall'},
+  'm40_lizicheng':{'v40m2_dashun_1644','v2l_beijing1644'},
+  'q_hongxiuquan':{'qev_taiping_1851','v40q_tianjing_capital','v40q_tianjing_fall'},
+  'q_zhangzhidong':{'v40q_new_policy_memorial','v12_guangxu_exam'},
+  'q_yanfu':{'v41q_tianyan'},
+ }
+ for pid,required_events in key_readings.items():
+  article=articles[pid]
+  linked_events={event_id for section in article['sections'] for event_id in section.get('events',[])}
+  linked_people={person_id for section in article['sections'] for person_id in section.get('people',[])}
+  assert len(article['sections'])==5,(pid,'expected five-layer reading')
+  assert sum(len(re.findall(r'[\u4e00-\u9fff]',section['text'])) for section in article['sections'])>=900,(pid,'reading remains too short')
+  assert required_events<=linked_events,(pid,'missing event context')
+  assert linked_people<=people.keys() and linked_people,(pid,'missing or invalid people links')
+  assert len(article['sources'])>=2 and all(source_id in sources for source_id in article['sources'])
+ corpus=json.dumps([articles[pid] for pid in key_readings],ensure_ascii=False)
+ assert all(term in corpus for term in ['最终任免仍由皇帝决定','暴力并非只由一个宦官','死亡地点和过程存在不同记载','纲领文本不等于全国范围的完整实施','不能只按“创办第一”评价','赫胥黎'])
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback',corpus,re.I)
+ print('V56 PASS: six Ming-Qing readings connect political actors to institutions, social costs, contested sources and later memory')
