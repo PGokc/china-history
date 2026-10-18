@@ -272,6 +272,9 @@ struct MajorEventsPanel: View {
         return store.relatedPeriodEvents(personID, in: selection, limit: previewLimit ?? 6)
     }
     var isShowingRelatedEvents: Bool { filteredEvents.isEmpty && !relatedEvents.isEmpty }
+    var containsPeriodContext: Bool {
+        !isShowingRelatedEvents && filteredEvents.contains { !$0.people.contains(personID) }
+    }
     var visibleEvents: [HistoryEvent] {
         let items = isShowingRelatedEvents ? relatedEvents : filteredEvents
         guard let previewLimit else { return items }
@@ -281,7 +284,7 @@ struct MajorEventsPanel: View {
         VStack(alignment: .leading, spacing: 14) {
             sectionTitle("重大事件")
             if let context = store.reignContext(personID) {
-                Text(isShowingRelatedEvents ? "延伸阅读 · 同一历史阶段" : (inReignOnly ? "在位时期  \(context.periodLabel)" : "生平及身后影响"))
+                Text(isShowingRelatedEvents ? "延伸阅读 · 同一历史阶段" : (inReignOnly ? (containsPeriodContext ? "在位时期 · 含同期背景  \(context.periodLabel)" : "在位时期  \(context.periodLabel)") : "生平及身后影响"))
                     .font(.caption).foregroundStyle(Theme.muted).accessibilityIdentifier("eventTimeScope")
             }
             if typeSize.isAccessibilitySize {
@@ -305,6 +308,11 @@ struct MajorEventsPanel: View {
                     .font(.caption).foregroundStyle(Theme.muted).lineSpacing(4)
                     .fixedSize(horizontal: false, vertical: true)
                     .accessibilityIdentifier("majorEventsRelatedContext")
+            } else if containsPeriodContext {
+                Text("部分条目用于交代这一在位时期的制度与社会背景，不表示均由\(store.person(personID).name)亲自推动。")
+                    .font(.caption).foregroundStyle(Theme.muted).lineSpacing(4)
+                    .fixedSize(horizontal: false, vertical: true)
+                    .accessibilityIdentifier("majorEventsPeriodContext")
             }
 
             if visibleEvents.isEmpty {

@@ -2836,4 +2836,19 @@ final class MingJiUITests: XCTestCase {
         shot("v90-formerly-thin-person-reading", person)
     }
 
+    @MainActor func testV91PeriodContextIsNotPresentedAsPersonalAction() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["--uitesting", "--ui-dynasty", "tang"]
+        app.launch()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        app.buttons["globalSearch"].tap()
+        let search = app.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("李治")
+        XCTAssertTrue(app.buttons["search_person_t_gaozong"].waitForExistence(timeout: 5)); app.buttons["search_person_t_gaozong"].tap()
+        reach(app.buttons["eventCategory_经济"], in: app, attempts: 12); app.buttons["eventCategory_经济"].tap()
+        XCTAssertTrue(app.staticTexts["majorEventsPeriodContext"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["eventTimeScope"].label.hasPrefix("在位时期 · 含同期背景"))
+        shot("v91-period-context-disclosure", app)
+    }
+
 }

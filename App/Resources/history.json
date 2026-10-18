@@ -1,5 +1,5 @@
 {
-  "version": 58,
+  "version": 63,
   "reviewed": "2026-10-19",
   "people": [
     {
@@ -57020,6 +57020,204 @@
         "v2l_ms78"
       ],
       "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v91t_taizong_fiscal",
+      "year": "627—649",
+      "sortYear": 627,
+      "title": "均田、租庸调与贞观户籍恢复",
+      "body": "隋末战争造成户口流散与州县残破。贞观朝在既有均田、租庸调制度框架内重整户籍、核定赋役，并多次因水旱、霜蝗减免租调。制度并非由唐太宗一人创制，也未在各地整齐落实，但中央把轻徭、节用与恢复编户视为战后治理的重要尺度。",
+      "impact": "财政恢复依赖把流民重新纳入州县、让农业生产与赋役秩序逐步接续。它支持了贞观时期的军政运转，也提示所谓“治世”背后仍有地区差异、灾害冲击与基层执行问题。",
+      "people": [
+        "t_taizong"
+      ],
+      "sources": [
+        "v43t_jts2",
+        "v43t_jts3",
+        "v43t_jts48"
+      ],
+      "kind": "制度与社会",
+      "category": "经济"
+    },
+    {
+      "id": "v91t_taizong_relief",
+      "year": "628—649",
+      "sortYear": 628,
+      "title": "赈恤、减役与战后人口安顿",
+      "body": "贞观本纪反复记载旱灾、蝗灾、饥馑后的赈给、免租与遣使巡察，也记有释放宫女、减省徭役等措施。这些诏令不能直接等同于所有地方都获得充分救济，却能看出朝廷把灾害响应、刑罚宽简和人口休养放在评价政治得失的同一框架中。",
+      "impact": "救灾与减役帮助战后家庭恢复生产，也塑造了后世对贞观政治的记忆。阅读时需要同时看诏令目标和执行边界，避免只用“轻徭薄赋”概括复杂的地方社会。",
+      "people": [
+        "t_taizong"
+      ],
+      "sources": [
+        "v43t_jts2",
+        "v43t_jts3",
+        "v43t_jts48"
+      ],
+      "kind": "社会治理",
+      "category": "社会"
+    },
+    {
+      "id": "v91t_exam_expansion",
+      "year": "690—705",
+      "sortYear": 690,
+      "title": "制举、殿试与官僚入口扩张",
+      "body": "武周时期延续并扩大科举与制举取士，传统记载又把亲策贡士、开武举等举措与武则天联系起来。科举尚未取代门荫、荐举和胥吏等入仕路径，但扩大考试与文学才能的政治意义，有助于朝廷从既有高门之外吸纳可用官员。",
+      "impact": "取士方式的变化重塑了官僚竞争与政治表达，也为中宗、睿宗复位后的官场留下持续影响。所谓“殿试首创”等细节在后世叙述中常被简化，页面把它放回多种选官方式并存的背景。",
+      "people": [
+        "t_wuzetian"
+      ],
+      "sources": [
+        "v43t_jts6",
+        "v43t_jts7"
+      ],
+      "kind": "教育与选官",
+      "category": "文化"
+    },
+    {
+      "id": "v91t_zhou_capital_fiscal",
+      "year": "690—705",
+      "sortYear": 692,
+      "title": "神都营建与武周财政调度",
+      "body": "武周以洛阳为神都，宫城、礼仪工程、军费与官僚机构共同增加财政调度压力。与此同时，关东漕运和地方赋税支撑两京体系。史书多从朝廷命令与支出评价这些措施，难以完整量化地方负担，因此不能把繁盛景象直接等同于普遍富足。",
+      "impact": "两京政治强化了洛阳的全国性枢纽地位，也显示都城、交通和财政彼此牵动。中宗、睿宗时期仍需面对这一空间格局和支出结构留下的问题。",
+      "people": [
+        "t_wuzetian"
+      ],
+      "sources": [
+        "v43t_jts6",
+        "v43t_jts7",
+        "v43t_jts48"
+      ],
+      "kind": "财政与都城",
+      "category": "经济"
+    },
+    {
+      "id": "v91t_zhou_social_control",
+      "year": "690—705",
+      "sortYear": 694,
+      "title": "告密、酷吏与武周社会控制",
+      "body": "武周政权在重组政治联盟时使用告密、制狱和酷吏侦讯，周兴、来俊臣等人的活动在史书中留下集中记载。材料带有唐室复辟后的评价立场，但大规模政治审讯、官员恐惧和株连风险仍是理解当时社会气氛不可回避的证据。",
+      "impact": "高压侦讯帮助新政权打击反对者，也破坏了正常司法边界。它影响官僚行为和家庭安全感，并解释为什么中宗复位后的政治清算、平反与派系重组如此激烈。",
+      "people": [
+        "t_wuzetian"
+      ],
+      "sources": [
+        "v43t_jts6",
+        "v43t_jts50"
+      ],
+      "kind": "司法与社会",
+      "category": "社会"
+    },
+    {
+      "id": "v91t_post_rebellion_households",
+      "year": "762—779",
+      "sortYear": 763,
+      "title": "安史乱后流民、户籍与赋役重建",
+      "body": "安史之乱结束并不意味着社会立即复原。大量人口迁徙、户籍脱漏、田地荒废与地方军镇坐大，使旧有租庸调基础持续收缩。代宗朝一面处理河北藩镇与吐蕃压力，一面依靠盐利、转运和地方征收维持军政，普通家庭则面对重新编户与多重负担。",
+      "impact": "战后重建改变了国家取得资源的方式，并为德宗时期推行两税法准备了财政背景。把流民与户籍问题纳入叙事，可以看见战争结束后的长期社会成本。",
+      "people": [
+        "t_daizong"
+      ],
+      "sources": [
+        "v43t_jts11",
+        "v43t_jts48",
+        "v43t_jts49"
+      ],
+      "kind": "战后社会",
+      "category": "社会"
+    },
+    {
+      "id": "v91t_shence_ganlu",
+      "year": "835",
+      "sortYear": 835,
+      "title": "神策军控制与甘露之变",
+      "body": "文宗试图借李训、郑注等人削弱宦官集团，计划在甘露之变中诛除掌握神策军的宦官。谋划泄露后，宦官调兵反击，参与者及许多官员遭杀。事件既是宫廷政变，也是禁军指挥权长期变化的集中爆发。",
+      "impact": "失败使文宗进一步受制于宦官与神策军，中央决策的信任结构遭到重创。它说明晚唐军事问题不仅发生在边疆和藩镇，也深嵌于宫城内部的禁军体系。",
+      "people": [
+        "t_wenzong"
+      ],
+      "sources": [
+        "v43t_jts17a",
+        "v43t_jts17b",
+        "v43t_xts207"
+      ],
+      "kind": "宫廷与禁军",
+      "category": "军事"
+    },
+    {
+      "id": "v91t_dazhong_recovery",
+      "year": "847—859",
+      "sortYear": 847,
+      "title": "大中政局与会昌政策调整",
+      "body": "宣宗即位后贬逐李德裕集团，并对会昌灭佛后的若干措施作出调整，恢复部分寺院与僧尼活动；朝廷同时强调吏治、纳谏与旧章。传统史书因此形成“大中之治”的称誉，但党争、宦官和藩镇结构并未消失。",
+      "impact": "政策转向缓和了会昌时期急剧变化带来的冲突，也重组了朝廷人事与文化空间。评价这一时期应区分史书的治世叙事与晚唐结构性困境。",
+      "people": [
+        "t_xuanzong_late"
+      ],
+      "sources": [
+        "v43t_jts18b",
+        "v43t_jts174"
+      ],
+      "kind": "政策与文化",
+      "category": "文化"
+    },
+    {
+      "id": "v91t_dazhong_finance",
+      "year": "847—859",
+      "sortYear": 850,
+      "title": "盐利、漕运与大中财政",
+      "body": "晚唐中央财政高度依赖盐铁与江淮转运。宣宗朝在维持边防、官俸和宫廷开支时，仍需通过盐政与漕运连接东南财赋区和关中。正史留下制度与任官线索，却难以给出全国一致的收支图景，私盐与地方截留也长期存在。",
+      "impact": "财政对专卖和远距离运输的依赖，使中央稳定与东南市场、河道安全紧密相连；它也加重了基层征管冲突，为稍后的社会动荡埋下条件。",
+      "people": [
+        "t_xuanzong_late"
+      ],
+      "sources": [
+        "v43t_jts18b",
+        "v43t_jts48",
+        "v43t_jts49"
+      ],
+      "kind": "财政与交通",
+      "category": "经济"
+    },
+    {
+      "id": "v91t_late_tang_displacement",
+      "year": "875—904",
+      "sortYear": 880,
+      "title": "战争、迁都与晚唐人口流离",
+      "body": "黄巢战争及其后的军阀混战使长安、洛阳和多地州县反复遭受破坏。僖宗奔蜀、昭宗受藩镇挟持并最终迁往洛阳，宫廷移动背后是粮运中断、城市居民逃散和地方秩序重组。史书以朝廷行程为主，普通人的损失只能从饥荒、屠掠与户口记载间接重建。",
+      "impact": "人口流离和城市衰败削弱了唐廷最后的财政、军事与象征基础，也推动人才、技术和经济活动向区域政权分散，为五代十国格局提供社会背景。",
+      "people": [
+        "t_xizong",
+        "t_zhaozong"
+      ],
+      "sources": [
+        "v43t_jts19b",
+        "v43t_jts20a",
+        "v43t_jts200b"
+      ],
+      "kind": "战争与社会",
+      "category": "社会"
+    },
+    {
+      "id": "v91t_late_tang_revenue",
+      "year": "880—904",
+      "sortYear": 883,
+      "title": "财赋断裂与地方截留",
+      "body": "黄巢战争后，中央难以稳定取得两税、盐利和漕运收入。许多节度使掌握本地军政财赋，贡赋时断时续；朝廷迁徙与禁军开支又增加临时征敛。相关数字并不完整，但本纪和食货材料共同显示中央可支配资源持续萎缩。",
+      "impact": "财赋断裂使皇帝更依赖近臣、军阀与临时性索取，加速了中央权威空心化。它解释了晚唐政治危机为何不仅是宫廷斗争，也是国家资源网络的崩解。",
+      "people": [
+        "t_xizong",
+        "t_zhaozong"
+      ],
+      "sources": [
+        "v43t_jts19b",
+        "v43t_jts20a",
+        "v43t_jts48",
+        "v43t_jts49"
+      ],
+      "kind": "财政危机",
       "category": "经济"
     }
   ],
@@ -180532,7 +180730,9 @@
         "v43t_wencheng",
         "v43t_taizong_goguryeo",
         "v43t_xuanzang_return",
-        "v43t_xiyuji"
+        "v43t_xiyuji",
+        "v91t_taizong_fiscal",
+        "v91t_taizong_relief"
       ],
       "sources": [
         "v43t_jts2",
@@ -180542,7 +180742,8 @@
         "v60_jts51",
         "v60_dpm_bunian",
         "v60_jts191",
-        "v60_jts77"
+        "v60_jts77",
+        "v43t_jts48"
       ],
       "note": ""
     },
@@ -180606,12 +180807,19 @@
         "v43t_zhongzong_deposed",
         "v43t_shenlong",
         "v43t_chongjun",
-        "v43t_jincheng"
+        "v43t_jincheng",
+        "v91t_exam_expansion",
+        "v91t_zhou_capital_fiscal",
+        "v91t_zhou_social_control",
+        "v43t_jingye"
       ],
       "sources": [
         "v43t_jts7",
         "v43t_xts083",
-        "v60_xts76"
+        "v60_xts76",
+        "v43t_jts6",
+        "v43t_jts48",
+        "v43t_jts50"
       ],
       "note": "分列684年与705—710年两段在位，武周阶段不计入中宗在位。"
     },
@@ -180641,12 +180849,17 @@
         "v43t_tonggui",
         "v43t_wuzhou",
         "v43t_tanglong_coup",
-        "v43t_ruizong_abdication"
+        "v43t_ruizong_abdication",
+        "v91t_exam_expansion",
+        "v91t_zhou_capital_fiscal",
+        "v91t_zhou_social_control"
       ],
       "sources": [
         "v43t_jts6",
         "v43t_jts7",
-        "v43t_xts083"
+        "v43t_xts083",
+        "v43t_jts48",
+        "v43t_jts50"
       ],
       "note": "684—690年武太后掌握实权；710—712年为第二次在位，712年传位后太上皇参与政务另见生平。"
     },
@@ -180670,13 +180883,18 @@
         "v43t_four_garrisons",
         "v43t_lai_executed",
         "v43t_heir_return",
-        "v43t_shenlong"
+        "v43t_shenlong",
+        "v91t_exam_expansion",
+        "v91t_zhou_capital_fiscal",
+        "v91t_zhou_social_control"
       ],
       "sources": [
         "v43t_jts6",
         "v43t_jts7",
         "v43t_xts083",
-        "v60_xts76"
+        "v60_xts76",
+        "v43t_jts48",
+        "v43t_jts50"
       ],
       "note": "武周690—705年单列；此前皇后与临朝太后活动另见生平相关事件。"
     },
@@ -180810,14 +181028,21 @@
       "events": [
         "v43t_rebellion_end",
         "v43t_tibet_changan",
-        "v43t_grain_transport"
+        "v43t_grain_transport",
+        "v91t_post_rebellion_households",
+        "v60t_p06",
+        "v60t_c01"
       ],
       "sources": [
         "v43t_jts11",
         "v60_jts130",
         "v60_jts128",
         "v60_jts147",
-        "v60_xts196"
+        "v60_xts196",
+        "v43t_jts48",
+        "v43t_jts49",
+        "v60_nopss_tax",
+        "v60_dpm_yan"
       ],
       "note": ""
     },
@@ -180905,7 +181130,8 @@
         "v43t_xichuan",
         "v43t_huaixi",
         "v43t_buddha_bone",
-        "v61t_e02"
+        "v61t_e02",
+        "v43t_palace_market"
       ],
       "sources": [
         "v43t_jts14",
@@ -180913,7 +181139,8 @@
         "v60_jts147",
         "v60_jts160",
         "v60_jts166",
-        "v60_jts165"
+        "v60_jts165",
+        "v43t_jts135"
       ],
       "note": ""
     },
@@ -180989,13 +181216,18 @@
         "v43t_jingzong_killed",
         "v43t_wenzong_retrench",
         "v43t_ganlu",
-        "v43t_kaicheng_stone"
+        "v43t_kaicheng_stone",
+        "v91t_shence_ganlu",
+        "v60t_s03"
       ],
       "sources": [
         "v43t_jts17a",
         "v43t_jts17b",
         "v43t_beilin_stone",
-        "v60_jts165"
+        "v60_jts165",
+        "v43t_xts207",
+        "v60_jts160",
+        "v60_jts166"
       ],
       "note": ""
     },
@@ -181038,10 +181270,18 @@
       ],
       "events": [
         "v43t_dazhong_reversal",
-        "v43t_hehuang"
+        "v43t_hehuang",
+        "v91t_dazhong_recovery",
+        "v91t_dazhong_finance",
+        "v60t_s03"
       ],
       "sources": [
-        "v43t_jts18b"
+        "v43t_jts18b",
+        "v43t_jts174",
+        "v43t_jts48",
+        "v43t_jts49",
+        "v60_jts160",
+        "v60_jts166"
       ],
       "note": ""
     },
@@ -181065,14 +181305,16 @@
         "v43t_yizong_bone",
         "v60t_s06",
         "v51t_annam_recovery",
-        "v51t_annam_relief"
+        "v51t_annam_relief",
+        "v61t_p03"
       ],
       "sources": [
         "v43t_jts19a",
         "v60_jts165",
         "v51t_jts182",
         "v60_nmc_print",
-        "v60_nlc_dunhuang"
+        "v60_nlc_dunhuang",
+        "v61_nopss_clerks"
       ],
       "note": "白敏中仅关联859—861年初期任事；安南收复在本纪与高骈传之间有一年纪年差异，页面保留分歧。"
     },
@@ -181097,12 +181339,21 @@
         "v43t_huangchao_end",
         "v43t_xizong_flight",
         "v47t_famine_rebellion",
-        "v51t_changan_damage"
+        "v51t_changan_damage",
+        "v91t_late_tang_displacement",
+        "v91t_late_tang_revenue",
+        "v61t_p03",
+        "v43t_yizong_bone"
       ],
       "sources": [
         "v43t_jts19b",
         "v51t_jts182",
-        "v43t_jts200b"
+        "v43t_jts200b",
+        "v43t_jts20a",
+        "v43t_jts48",
+        "v43t_jts49",
+        "v61_nopss_clerks",
+        "v43t_jts19a"
       ],
       "note": ""
     },
@@ -181123,10 +181374,19 @@
       "events": [
         "v43t_zhaozong_heir",
         "v43t_fengxiang",
-        "v43t_move_luoyang"
+        "v43t_move_luoyang",
+        "v91t_late_tang_displacement",
+        "v91t_late_tang_revenue",
+        "v61t_c02"
       ],
       "sources": [
-        "v43t_jts20a"
+        "v43t_jts20a",
+        "v43t_jts19b",
+        "v43t_jts200b",
+        "v43t_jts48",
+        "v43t_jts49",
+        "v61_nlc_sogdian",
+        "v61_nmc_silkroad"
       ],
       "note": "900—901年间一度被废而后复位，李裕短暂被立的经过见事件；总在位年代不表示亲政从未中断。"
     },
@@ -181574,7 +181834,9 @@
         "v43s_beihan",
         "v43s_yongxi",
         "v43s_shuchuan",
-        "v56_军事_01"
+        "v56_军事_01",
+        "v55_reign_s_liao_jingzong_b",
+        "v55_c02"
       ],
       "sources": [
         "v43s_ss004",
@@ -181583,7 +181845,9 @@
         "v43s_ss258",
         "v43s_ss281",
         "v43s_ls10",
-        "v43s_ls14"
+        "v43s_ls14",
+        "v55_liaoshi",
+        "v55_songshi"
       ],
       "note": "并立君主表示当时的战争、外交与制度背景，不是宋朝臣属。"
     },
@@ -181646,7 +181910,8 @@
         "v43s_qingli_schools",
         "v43s_movable_type",
         "v56_政治_02",
-        "v56_经济_02"
+        "v56_经济_02",
+        "v55_s03"
       ],
       "sources": [
         "v43s_ss009",
@@ -181656,7 +181921,9 @@
         "v43s_ss312",
         "v43s_ss319",
         "v43s_ss336",
-        "v43s_ss485"
+        "v43s_ss485",
+        "v55_songshi",
+        "v55_xixia"
       ],
       "note": "并立君主表示当时的战争、外交与制度背景，不是宋朝臣属。"
     },
@@ -181714,7 +181981,9 @@
         "v43s_wutai",
         "v43s_tongjian_done",
         "v43s_yongle",
-        "v56_军事_03"
+        "v56_军事_03",
+        "v55_e05",
+        "v56_社会_02"
       ],
       "sources": [
         "v43s_ss014",
@@ -181724,7 +181993,10 @@
         "v43s_ss336",
         "v43s_ss338",
         "v43s_ss331",
-        "v43s_ss312"
+        "v43s_ss312",
+        "v55_songshi",
+        "v55_liaoshi",
+        "v55_dpm"
       ],
       "note": ""
     },
@@ -181749,7 +182021,9 @@
         "v43s_yuanyou",
         "v43s_shaosheng",
         "v47s_yingzao",
-        "v51s_pingxia"
+        "v51s_pingxia",
+        "v56_经济_04",
+        "v56_社会_05"
       ],
       "sources": [
         "v43s_ss017",
@@ -181759,7 +182033,10 @@
         "v43s_ss338",
         "v43s_ss331",
         "v51s_ss328",
-        "v47s_dpm_yingzao"
+        "v47s_dpm_yingzao",
+        "v56_xixia_19",
+        "v55_songshi",
+        "v56_xixia_14"
       ],
       "note": ""
     },
@@ -181783,7 +182060,9 @@
         "v43s_huashi",
         "v43s_haishang",
         "v43s_fangla",
-        "v43s_jin_foundation"
+        "v43s_jin_foundation",
+        "v55_m05",
+        "v47s_qianli"
       ],
       "sources": [
         "v43s_ss019",
@@ -181793,7 +182072,10 @@
         "v43s_ss472",
         "v43s_ss468",
         "v43s_js2",
-        "v43s_ss475"
+        "v43s_ss475",
+        "v55_songshi",
+        "v55_liaoshi",
+        "v47s_dpm_qianli"
       ],
       "note": "并立君主表示当时的战争、外交与制度背景，不是宋朝臣属。"
     },
@@ -181850,7 +182132,10 @@
         "v43s_yue_death",
         "v43s_caishi",
         "v43s_xiaozong_accession",
-        "v43s_xin_south"
+        "v43s_xin_south",
+        "v55_c05",
+        "v55_e07",
+        "v56_社会_06"
       ],
       "sources": [
         "v43s_ss024",
@@ -181863,7 +182148,10 @@
         "v43s_ss473",
         "v43s_ss383",
         "v43s_ss361",
-        "v43s_ss401"
+        "v43s_ss401",
+        "v55_songshi",
+        "v55_jinshi",
+        "v56_jinshi_73"
       ],
       "note": ""
     },
@@ -181888,7 +182176,9 @@
         "v43s_longxing_war",
         "v43s_longxing_treaty",
         "v43s_bailudong",
-        "v43s_guangzong_accession"
+        "v43s_guangzong_accession",
+        "v55_e09",
+        "v55_s08"
       ],
       "sources": [
         "v43s_ss033",
@@ -181898,7 +182188,9 @@
         "v43s_ss383",
         "v43s_ss429",
         "v43s_ss391",
-        "v43s_ss401"
+        "v43s_ss401",
+        "v55_songshi",
+        "v55_xixia"
       ],
       "note": ""
     },
@@ -181956,7 +182248,9 @@
         "v43s_qingyuan",
         "v43s_kaixi",
         "v43s_jiading_treaty",
-        "v43s_lizong_accession"
+        "v43s_lizong_accession",
+        "v55_e10",
+        "v55_s09"
       ],
       "sources": [
         "v43s_ss037",
@@ -181967,7 +182261,9 @@
         "v43s_ss474",
         "v43s_ss414",
         "v43s_ss429",
-        "v43s_ss401"
+        "v43s_ss401",
+        "v55_songshi",
+        "v55_jinshi"
       ],
       "note": ""
     },
@@ -181991,7 +182287,8 @@
         "v43s_lizong_accession",
         "v43s_cai_zhou",
         "v43s_ru_learning",
-        "v43s_gongtian"
+        "v43s_gongtian",
+        "v55_s10"
       ],
       "sources": [
         "v43s_ss041",
@@ -182001,7 +182298,9 @@
         "v43s_ss474",
         "v43s_ss418",
         "v43s_ss243",
-        "v43s_ss047"
+        "v43s_ss047",
+        "v55_songshi",
+        "v55_jinshi"
       ],
       "note": ""
     },
@@ -182508,11 +182807,13 @@
       "events": [
         "v49h_guangwu_accession",
         "v49h_guangwu_theme",
-        "v49h_land"
+        "v49h_land",
+        "v49h_yuan_theme"
       ],
       "sources": [
         "v49h_houhanshu",
-        "v49h_cambridge"
+        "v49h_cambridge",
+        "v49h_hanshu"
       ],
       "note": "按本纪纪年列示；短朝与年内交接保留实际制度边界。"
     },
@@ -182531,7 +182832,8 @@
       ],
       "events": [
         "v49h_ming_accession",
-        "v49h_ming_theme"
+        "v49h_ming_theme",
+        "v49h_land"
       ],
       "sources": [
         "v49h_houhanshu",
@@ -182554,11 +182856,14 @@
       ],
       "events": [
         "v49h_zhang_accession",
-        "v49h_zhang_theme"
+        "v49h_zhang_theme",
+        "v49h_western",
+        "v49h_saltiron"
       ],
       "sources": [
         "v49h_houhanshu",
-        "v49h_cambridge"
+        "v49h_cambridge",
+        "v49h_hanshu"
       ],
       "note": "按本纪纪年列示；短朝与年内交接保留实际制度边界。"
     },
@@ -182580,7 +182885,9 @@
         "v49h_he_theme",
         "v49h_western",
         "v49h_paper",
-        "v49h_hanbook"
+        "v49h_hanbook",
+        "v49h_silk",
+        "v49h_shang_theme"
       ],
       "sources": [
         "v49h_houhanshu",
@@ -182627,7 +182934,9 @@
       "events": [
         "v49h_an_accession",
         "v49h_an_theme",
-        "v49h_disaster"
+        "v49h_disaster",
+        "v49h_hanbook",
+        "v49h_silk"
       ],
       "sources": [
         "v49h_houhanshu",
@@ -182651,7 +182960,9 @@
       ],
       "events": [
         "v49h_shun_accession",
-        "v49h_shun_theme"
+        "v49h_shun_theme",
+        "v49h_silk",
+        "v49h_chong_theme"
       ],
       "sources": [
         "v49h_houhanshu",
@@ -182724,11 +183035,15 @@
       "events": [
         "v49h_huan_accession",
         "v49h_huan_theme",
-        "v52h_liang_dowager_regency"
+        "v52h_liang_dowager_regency",
+        "v49h_jing_theme",
+        "v49h_silk",
+        "v49h_household"
       ],
       "sources": [
         "v49h_houhanshu",
-        "v49h_cambridge"
+        "v49h_cambridge",
+        "v49h_hanshu"
       ],
       "note": "桓帝146年由梁太后与梁氏权力网络拥立，150年太后归政，159年才诛灭梁冀。"
     },
@@ -182750,7 +183065,9 @@
         "v49h_ling_theme",
         "v49h_partisan",
         "v49h_epidemics",
-        "v49h_yellow"
+        "v49h_yellow",
+        "v49h_shao_theme",
+        "v49h_silk"
       ],
       "sources": [
         "v49h_houhanshu",
@@ -182798,7 +183115,9 @@
         "v49h_xian_accession",
         "v49h_xian_theme",
         "v49h_dongzhuo",
-        "v49h_xutian"
+        "v49h_xutian",
+        "v49h_silk",
+        "v49h_household"
       ],
       "sources": [
         "v49h_houhanshu",
@@ -182833,11 +183152,15 @@
         "v50s_equal_field",
         "v50s_household_check",
         "v50s_tax_register",
-        "v50s_depose_yong"
+        "v50s_depose_yong",
+        "v50s_exams",
+        "v50s_south_integration"
       ],
       "sources": [
         "v50s_suishu1",
-        "v50s_suishu2"
+        "v50s_suishu2",
+        "v50s_suishu3",
+        "v50s_suishu48"
       ],
       "note": ""
     },
@@ -182866,7 +183189,8 @@
         "v50s_koguryo",
         "v50s_xuangan",
         "v50s_fiscal_overload",
-        "v50s_jiangdu_coup"
+        "v50s_jiangdu_coup",
+        "v50s_koguryo_mobilization"
       ],
       "sources": [
         "v50s_suishu3",
@@ -182991,11 +183315,14 @@
         "v51tk_mingdi_regency",
         "v51tk_liaodong_238",
         "v51tk_huai_farms",
-        "v51tk_military_households"
+        "v51tk_military_households",
+        "v51tk_wujian_writing"
       ],
       "sources": [
         "v51tk_sgz3",
-        "v51tk_zztj"
+        "v51tk_zztj",
+        "v51tk_wujian",
+        "v51tk_wujian_research"
       ],
       "note": "三国政权并行，相关事件按本政权实际在位年份选择。"
     },
@@ -183017,11 +183344,17 @@
         "v51tk_gaopingling",
         "v51tk_depose_caofang",
         "v51tk_zhengshi_xuanxue",
-        "v51tk_stone_classics"
+        "v51tk_stone_classics",
+        "v51tk_jiangwei_campaigns",
+        "v51tk_huai_farms",
+        "v51tk_military_households"
       ],
       "sources": [
         "v51tk_sgz4",
-        "v51tk_zztj"
+        "v51tk_zztj",
+        "v51tk_sgz44",
+        "v51tk_sgz3",
+        "v51tk_sgz28"
       ],
       "note": "三国政权并行，相关事件按本政权实际在位年份选择。"
     },
@@ -183121,11 +183454,17 @@
         "v51tk_zhugeliang_north",
         "v51tk_jiangwei_campaigns",
         "v51tk_conquest_shu",
-        "v51tk_shu_surrender"
+        "v51tk_shu_surrender",
+        "v51tk_zhengshi_xuanxue",
+        "v51tk_huai_farms"
       ],
       "sources": [
         "v51tk_sgz33",
-        "v51tk_sgz44"
+        "v51tk_sgz44",
+        "v51tk_sgz9",
+        "v51tk_zztj",
+        "v51tk_sgz3",
+        "v51tk_sgz28"
       ],
       "note": "三国政权并行，相关事件按本政权实际在位年份选择。"
     },
@@ -183152,11 +183491,13 @@
         "v51tk_wu_succession",
         "v51tk_wujian_writing",
         "v51tk_wu_land_tax",
-        "v51tk_zhuran_tomb_life"
+        "v51tk_zhuran_tomb_life",
+        "v51tk_liaodong_238"
       ],
       "sources": [
         "v51tk_sgz47",
-        "v51tk_zztj"
+        "v51tk_zztj",
+        "v51tk_sgz3"
       ],
       "note": "三国政权并行，相关事件按本政权实际在位年份选择。"
     },
@@ -183224,11 +183565,14 @@
       "events": [
         "v51tk_wu_shu_history",
         "v51tk_jin_conquest_wu",
-        "v51tk_wu_end_society"
+        "v51tk_wu_end_society",
+        "v51tk_wei_to_jin"
       ],
       "sources": [
         "v51tk_sgz48",
-        "v51tk_sgz61"
+        "v51tk_sgz61",
+        "v51tk_sgz4",
+        "v51tk_zztj"
       ],
       "note": "三国政权并行，相关事件按本政权实际在位年份选择。"
     },
@@ -183251,11 +183595,16 @@
         "v52j_reign_jin_wudi_b",
         "v52j_政01",
         "v52j_政02",
-        "v52j_军01"
+        "v52j_军01",
+        "v52j_文01",
+        "v52j_经01",
+        "v52j_社01"
       ],
       "sources": [
         "v52j_js3",
-        "v52j_zztj"
+        "v52j_zztj",
+        "v52j_met",
+        "v52j_kaogu"
       ],
       "note": "西晋、东晋与北方诸政权常并行；事件按实际年份与权力范围关联，不把晋帝在位等同全国有效统治。"
     },
@@ -183279,11 +183628,14 @@
         "v52j_reign_jin_huidi_b",
         "v52j_政03",
         "v52j_政04",
-        "v52j_军02"
+        "v52j_军02",
+        "v52j_经03",
+        "v52j_社02"
       ],
       "sources": [
         "v52j_js4",
-        "v52j_zztj"
+        "v52j_zztj",
+        "v52j_kaogu"
       ],
       "note": "西晋、东晋与北方诸政权常并行；事件按实际年份与权力范围关联，不把晋帝在位等同全国有效统治。"
     },
@@ -183412,11 +183764,13 @@
         "v52j_reign_jin_chengdi_b",
         "v52j_政07",
         "v52j_经06",
-        "v52j_社05"
+        "v52j_社05",
+        "v52j_军06"
       ],
       "sources": [
         "v52j_js7",
-        "v52j_zztj"
+        "v52j_zztj",
+        "v52j_js10"
       ],
       "note": "西晋、东晋与北方诸政权常并行；事件按实际年份与权力范围关联，不把晋帝在位等同全国有效统治。"
     },
@@ -183463,11 +183817,15 @@
         "v52j_reign_jin_mudi_a",
         "v52j_reign_jin_mudi_b",
         "v52j_军07",
-        "v52j_经07"
+        "v52j_经07",
+        "v52j_文03",
+        "v52j_社07"
       ],
       "sources": [
         "v52j_js8",
-        "v52j_zztj"
+        "v52j_zztj",
+        "v52j_met",
+        "v52j_kaogu"
       ],
       "note": "西晋、东晋与北方诸政权常并行；事件按实际年份与权力范围关联，不把晋帝在位等同全国有效统治。"
     },
@@ -183563,11 +183921,16 @@
       "events": [
         "v52j_reign_jin_xiaowudi_a",
         "v52j_reign_jin_xiaowudi_b",
-        "v52j_军09"
+        "v52j_军09",
+        "v52j_文06",
+        "v52j_经09",
+        "v52j_社08"
       ],
       "sources": [
         "v52j_js9",
-        "v52j_zztj"
+        "v52j_zztj",
+        "v52j_met",
+        "v52j_kaogu"
       ],
       "note": "西晋、东晋与北方诸政权常并行；事件按实际年份与权力范围关联，不把晋帝在位等同全国有效统治。"
     },
@@ -183590,11 +183953,16 @@
         "v52j_reign_jin_andi_a",
         "v52j_reign_jin_andi_b",
         "v52j_政09",
-        "v52j_军10"
+        "v52j_军10",
+        "v52j_文08",
+        "v52j_经10",
+        "v52j_社10"
       ],
       "sources": [
         "v52j_js10",
-        "v52j_zztj"
+        "v52j_zztj",
+        "v52j_met",
+        "v52j_kaogu"
       ],
       "note": "西晋、东晋与北方诸政权常并行；事件按实际年份与权力范围关联，不把晋帝在位等同全国有效统治。"
     },
@@ -183697,11 +184065,18 @@
         "v53ns_reign_ns_song_wen_b",
         "v53ns_p02",
         "v53ns_p03",
-        "v53ns_m02"
+        "v53ns_m02",
+        "v53ns_c02",
+        "v53ns_e02",
+        "v53ns_s03"
       ],
       "sources": [
         "v53ns_songshu",
-        "v53ns_zztj"
+        "v53ns_zztj",
+        "v53ns_met",
+        "v53ns_nanshi",
+        "v53ns_kaogu",
+        "v53ns_beishi"
       ],
       "note": "南北政权长期并立；在位段只表示本政权内部帝位，不等同对全国或全部名义领土的有效控制。"
     },
@@ -183724,11 +184099,14 @@
         "v53ns_reign_ns_song_xiaowu_a",
         "v53ns_reign_ns_song_xiaowu_b",
         "v53ns_p03",
-        "v53ns_reign_ns_song_qianfei_a"
+        "v53ns_reign_ns_song_qianfei_a",
+        "v53ns_c04"
       ],
       "sources": [
         "v53ns_songshu",
-        "v53ns_zztj"
+        "v53ns_zztj",
+        "v53ns_met",
+        "v53ns_beishi"
       ],
       "note": "南北政权长期并立；在位段只表示本政权内部帝位，不等同对全国或全部名义领土的有效控制。"
     },
@@ -183879,11 +184257,14 @@
         "v53ns_reign_ns_qi_wu_a",
         "v53ns_reign_ns_qi_wu_b",
         "v53ns_e04",
-        "v53ns_reign_ns_qi_yulin_a"
+        "v53ns_reign_ns_qi_yulin_a",
+        "v53ns_c07"
       ],
       "sources": [
         "v53ns_nanqishu",
-        "v53ns_zztj"
+        "v53ns_zztj",
+        "v53ns_met",
+        "v53ns_beishi"
       ],
       "note": "南北政权长期并立；在位段只表示本政权内部帝位，不等同对全国或全部名义领土的有效控制。"
     },
@@ -184039,11 +184420,17 @@
         "v53ns_reign_ns_liang_wu_b",
         "v53ns_p07",
         "v53ns_p08",
-        "v53ns_m06"
+        "v53ns_m06",
+        "v53ns_c14",
+        "v53ns_e12",
+        "v53ns_s10"
       ],
       "sources": [
         "v53ns_liangshu",
-        "v53ns_zztj"
+        "v53ns_zztj",
+        "v53ns_met",
+        "v53ns_beishi",
+        "v53ns_kaogu"
       ],
       "note": "南北政权长期并立；在位段只表示本政权内部帝位，不等同对全国或全部名义领土的有效控制。"
     },
@@ -184277,11 +184664,14 @@
         "v53ns_reign_ns_chen_xuan_b",
         "v53ns_m16",
         "v53ns_c19",
-        "v53ns_e19"
+        "v53ns_e19",
+        "v53ns_s18"
       ],
       "sources": [
         "v53ns_chenshu",
-        "v53ns_zztj"
+        "v53ns_zztj",
+        "v53ns_kaogu",
+        "v53ns_beishi"
       ],
       "note": "南北政权长期并立；在位段只表示本政权内部帝位，不等同对全国或全部名义领土的有效控制。"
     },
@@ -184357,11 +184747,15 @@
         "v53ns_reign_ns_wei_mingyuan_a",
         "v53ns_reign_ns_wei_mingyuan_b",
         "v53ns_m01",
-        "v53ns_reign_ns_wei_taiwu_a"
+        "v53ns_reign_ns_wei_taiwu_a",
+        "v53ns_e01",
+        "v53ns_s01"
       ],
       "sources": [
         "v53ns_weishu",
-        "v53ns_zztj"
+        "v53ns_zztj",
+        "v53ns_kaogu",
+        "v53ns_nanshi"
       ],
       "note": "南北政权长期并立；在位段只表示本政权内部帝位，不等同对全国或全部名义领土的有效控制。"
     },
@@ -184385,11 +184779,17 @@
         "v53ns_reign_ns_wei_taiwu_b",
         "v53ns_p13",
         "v53ns_m02",
-        "v53ns_m03"
+        "v53ns_m03",
+        "v53ns_c02",
+        "v53ns_e02",
+        "v53ns_s02"
       ],
       "sources": [
         "v53ns_weishu",
-        "v53ns_zztj"
+        "v53ns_zztj",
+        "v53ns_met",
+        "v53ns_nanshi",
+        "v53ns_kaogu"
       ],
       "note": "南北政权长期并立；在位段只表示本政权内部帝位，不等同对全国或全部名义领土的有效控制。"
     },
@@ -184437,11 +184837,14 @@
         "v53ns_reign_ns_wei_wencheng_a",
         "v53ns_reign_ns_wei_wencheng_b",
         "v53ns_c04",
-        "v53ns_reign_ns_wei_xianwen_a"
+        "v53ns_reign_ns_wei_xianwen_a",
+        "v53ns_s05"
       ],
       "sources": [
         "v53ns_weishu",
-        "v53ns_zztj"
+        "v53ns_zztj",
+        "v53ns_kaogu",
+        "v53ns_nanshi"
       ],
       "note": "南北政权长期并立；在位段只表示本政权内部帝位，不等同对全国或全部名义领土的有效控制。"
     },
@@ -184492,11 +184895,17 @@
         "v53ns_reign_ns_wei_xiaowen_b",
         "v53ns_p14",
         "v53ns_p15",
-        "v53ns_m05"
+        "v53ns_m05",
+        "v53ns_c07",
+        "v53ns_e05",
+        "v53ns_s07"
       ],
       "sources": [
         "v53ns_weishu",
-        "v53ns_zztj"
+        "v53ns_zztj",
+        "v53ns_met",
+        "v53ns_beishi",
+        "v53ns_kaogu"
       ],
       "note": "南北政权长期并立；在位段只表示本政权内部帝位，不等同对全国或全部名义领土的有效控制。"
     },
@@ -184520,11 +184929,17 @@
         "v53ns_reign_ns_wei_xuanwu_b",
         "v53ns_m06",
         "v53ns_e09",
-        "v53ns_e11"
+        "v53ns_e11",
+        "v53ns_c10",
+        "v53ns_s08"
       ],
       "sources": [
         "v53ns_weishu",
-        "v53ns_zztj"
+        "v53ns_zztj",
+        "v53ns_met",
+        "v53ns_nanshi",
+        "v53ns_kaogu",
+        "v53ns_beishi"
       ],
       "note": "南北政权长期并立；在位段只表示本政权内部帝位，不等同对全国或全部名义领土的有效控制。"
     },
@@ -184548,11 +184963,14 @@
         "v53ns_reign_ns_wei_xiaoming_b",
         "v53ns_m07",
         "v53ns_e12",
-        "v53ns_s10"
+        "v53ns_s10",
+        "v53ns_c13"
       ],
       "sources": [
         "v53ns_weishu",
-        "v53ns_zztj"
+        "v53ns_zztj",
+        "v53ns_met",
+        "v53ns_beishi"
       ],
       "note": "南北政权长期并立；在位段只表示本政权内部帝位，不等同对全国或全部名义领土的有效控制。"
     },
@@ -184737,11 +185155,19 @@
         "v53ns_reign_ns_ewei_xiaojing_a",
         "v53ns_reign_ns_ewei_xiaojing_b",
         "v53ns_p18",
-        "v53ns_p19"
+        "v53ns_p19",
+        "v53ns_m10",
+        "v53ns_c16",
+        "v53ns_e15",
+        "v53ns_s13"
       ],
       "sources": [
         "v53ns_beiqishu",
-        "v53ns_zztj"
+        "v53ns_zztj",
+        "v53ns_nanshi",
+        "v53ns_beishi",
+        "v53ns_met",
+        "v53ns_kaogu"
       ],
       "note": "南北政权长期并立；在位段只表示本政权内部帝位，不等同对全国或全部名义领土的有效控制。"
     },
@@ -184764,11 +185190,18 @@
         "v53ns_reign_ns_wwei_wen_a",
         "v53ns_reign_ns_wwei_wen_b",
         "v53ns_m09",
-        "v53ns_reign_ns_wwei_fei_a"
+        "v53ns_reign_ns_wwei_fei_a",
+        "v53ns_c17",
+        "v53ns_e15",
+        "v53ns_s13"
       ],
       "sources": [
         "v53ns_zhoushu",
-        "v53ns_zztj"
+        "v53ns_zztj",
+        "v53ns_met",
+        "v53ns_beishi",
+        "v53ns_kaogu",
+        "v53ns_nanshi"
       ],
       "note": "南北政权长期并立；在位段只表示本政权内部帝位，不等同对全国或全部名义领土的有效控制。"
     },
@@ -184842,11 +185275,17 @@
         "v53ns_reign_ns_qiwenxuan_b",
         "v53ns_p19",
         "v53ns_c17",
-        "v53ns_reign_ns_qifei_a"
+        "v53ns_reign_ns_qifei_a",
+        "v53ns_m14",
+        "v53ns_e16",
+        "v53ns_s14"
       ],
       "sources": [
         "v53ns_beiqishu",
-        "v53ns_zztj"
+        "v53ns_zztj",
+        "v53ns_nanshi",
+        "v53ns_beishi",
+        "v53ns_kaogu"
       ],
       "note": "南北政权长期并立；在位段只表示本政权内部帝位，不等同对全国或全部名义领土的有效控制。"
     },
@@ -184945,11 +185384,17 @@
         "v53ns_reign_ns_qihouzhu_b",
         "v53ns_m17",
         "v53ns_m18",
-        "v53ns_e20"
+        "v53ns_e20",
+        "v53ns_c19",
+        "v53ns_s17"
       ],
       "sources": [
         "v53ns_beiqishu",
-        "v53ns_zztj"
+        "v53ns_zztj",
+        "v53ns_met",
+        "v53ns_nanshi",
+        "v53ns_kaogu",
+        "v53ns_beishi"
       ],
       "note": "南北政权长期并立；在位段只表示本政权内部帝位，不等同对全国或全部名义领土的有效控制。"
     },
@@ -185051,11 +185496,18 @@
         "v53ns_reign_ns_zhou_wu_b",
         "v53ns_m15",
         "v53ns_m17",
-        "v53ns_m18"
+        "v53ns_m18",
+        "v53ns_c19",
+        "v53ns_e18",
+        "v53ns_s16"
       ],
       "sources": [
         "v53ns_zhoushu",
-        "v53ns_zztj"
+        "v53ns_zztj",
+        "v53ns_met",
+        "v53ns_nanshi",
+        "v53ns_kaogu",
+        "v53ns_beishi"
       ],
       "note": "南北政权长期并立；在位段只表示本政权内部帝位，不等同对全国或全部名义领土的有效控制。"
     },
@@ -185178,11 +185630,15 @@
         "v54_p02",
         "v54_reign_fd_youzheng_a",
         "v54_reign_fd_youzheng_b",
-        "v54_reign_fd_cunxu_a"
+        "v54_reign_fd_cunxu_a",
+        "v54_m02",
+        "v54_e02",
+        "v54_s02"
       ],
       "sources": [
         "v54_new",
-        "v54_zztj"
+        "v54_zztj",
+        "v54_kaogu"
       ],
       "note": "在位段只表示本政权内部统治，不等同对全国或全部名义领土的有效控制。"
     },
@@ -185540,11 +185996,14 @@
       "events": [
         "v54_reign_fd_wu_longyan_a",
         "v54_reign_fd_wu_longyan_b",
-        "v54_reign_fd_wu_pu_a"
+        "v54_reign_fd_wu_pu_a",
+        "v54_m02",
+        "v54_e01"
       ],
       "sources": [
         "v54_new",
-        "v54_zztj"
+        "v54_zztj",
+        "v54_kaogu"
       ],
       "note": "在位段只表示本政权内部统治，不等同对全国或全部名义领土的有效控制。"
     },
@@ -185565,11 +186024,16 @@
       "events": [
         "v54_p07",
         "v54_reign_fd_wu_pu_a",
-        "v54_reign_fd_wu_pu_b"
+        "v54_reign_fd_wu_pu_b",
+        "v54_m03",
+        "v54_c09",
+        "v54_e04",
+        "v54_s02"
       ],
       "sources": [
         "v54_new",
-        "v54_zztj"
+        "v54_zztj",
+        "v54_kaogu"
       ],
       "note": "在位段只表示本政权内部统治，不等同对全国或全部名义领土的有效控制。"
     },
@@ -185619,7 +186083,8 @@
         "v54_p09",
         "v54_m07",
         "v54_c06",
-        "v54_e08"
+        "v54_e08",
+        "v54_s06"
       ],
       "sources": [
         "v54_new",
@@ -185644,11 +186109,15 @@
       "events": [
         "v54_c08",
         "v54_reign_fd_nt_yu_a",
-        "v54_reign_fd_nt_yu_b"
+        "v54_reign_fd_nt_yu_b",
+        "v54_m09",
+        "v54_e09",
+        "v54_s09"
       ],
       "sources": [
         "v54_new",
-        "v54_zztj"
+        "v54_zztj",
+        "v54_kaogu"
       ],
       "note": "在位段只表示本政权内部统治，不等同对全国或全部名义领土的有效控制。"
     },
@@ -185694,11 +186163,16 @@
       "events": [
         "v54_reign_fd_jn_conghui_a",
         "v54_reign_fd_jn_conghui_b",
-        "v54_reign_fd_jn_baorong_a"
+        "v54_reign_fd_jn_baorong_a",
+        "v54_m04",
+        "v54_c02",
+        "v54_e05",
+        "v54_s03"
       ],
       "sources": [
         "v54_new",
-        "v54_zztj"
+        "v54_zztj",
+        "v54_kaogu"
       ],
       "note": "在位段只表示本政权内部统治，不等同对全国或全部名义领土的有效控制。"
     },
@@ -185719,11 +186193,16 @@
       "events": [
         "v54_reign_fd_jn_baorong_a",
         "v54_reign_fd_jn_baorong_b",
-        "v54_reign_fd_jn_baoxu_a"
+        "v54_reign_fd_jn_baoxu_a",
+        "v54_m05",
+        "v54_c04",
+        "v54_e07",
+        "v54_s07"
       ],
       "sources": [
         "v54_new",
-        "v54_zztj"
+        "v54_zztj",
+        "v54_kaogu"
       ],
       "note": "在位段只表示本政权内部统治，不等同对全国或全部名义领土的有效控制。"
     },
@@ -185794,7 +186273,9 @@
         "v54_e02",
         "v54_reign_fd_min_shenzhi_a",
         "v54_reign_fd_min_shenzhi_b",
-        "v54_reign_fd_min_yanhan_a"
+        "v54_reign_fd_min_yanhan_a",
+        "v54_m02",
+        "v54_s02"
       ],
       "sources": [
         "v54_new",
@@ -185844,11 +186325,14 @@
       "events": [
         "v54_reign_fd_min_yanjun_a",
         "v54_reign_fd_min_yanjun_b",
-        "v54_reign_fd_min_jipeng_a"
+        "v54_reign_fd_min_jipeng_a",
+        "v54_c09",
+        "v54_e04"
       ],
       "sources": [
         "v54_new",
-        "v54_zztj"
+        "v54_zztj",
+        "v54_kaogu"
       ],
       "note": "在位段只表示本政权内部统治，不等同对全国或全部名义领土的有效控制。"
     },
@@ -185971,11 +186455,15 @@
         "v54_e04",
         "v54_reign_fd_chu_mayin_a",
         "v54_reign_fd_chu_mayin_b",
-        "v54_reign_fd_chu_xisheng_a"
+        "v54_reign_fd_chu_xisheng_a",
+        "v54_m02",
+        "v54_c09",
+        "v54_s02"
       ],
       "sources": [
         "v54_new",
-        "v54_zztj"
+        "v54_zztj",
+        "v54_kaogu"
       ],
       "note": "在位段只表示本政权内部统治，不等同对全国或全部名义领土的有效控制。"
     },
@@ -186021,11 +186509,16 @@
       "events": [
         "v54_reign_fd_chu_xifan_a",
         "v54_reign_fd_chu_xifan_b",
-        "v54_reign_fd_chu_xiguang_a"
+        "v54_reign_fd_chu_xiguang_a",
+        "v54_m04",
+        "v54_c02",
+        "v54_e05",
+        "v54_s03"
       ],
       "sources": [
         "v54_new",
-        "v54_zztj"
+        "v54_zztj",
+        "v54_kaogu"
       ],
       "note": "在位段只表示本政权内部统治，不等同对全国或全部名义领土的有效控制。"
     },
@@ -186124,11 +186617,15 @@
       "events": [
         "v54_reign_fd_fs_wangjian_a",
         "v54_reign_fd_fs_wangjian_b",
-        "v54_reign_fd_fs_wangyan_a"
+        "v54_reign_fd_fs_wangyan_a",
+        "v54_m02",
+        "v54_e01",
+        "v54_s01"
       ],
       "sources": [
         "v54_new",
-        "v54_zztj"
+        "v54_zztj",
+        "v54_kaogu"
       ],
       "note": "在位段只表示本政权内部统治，不等同对全国或全部名义领土的有效控制。"
     },
@@ -186203,11 +186700,13 @@
         "v54_e09",
         "v54_s05",
         "v54_reign_fd_ls_mengchang_a",
-        "v54_reign_fd_ls_mengchang_b"
+        "v54_reign_fd_ls_mengchang_b",
+        "v54_c04"
       ],
       "sources": [
         "v54_new",
-        "v54_zztj"
+        "v54_zztj",
+        "v54_kaogu"
       ],
       "note": "在位段只表示本政权内部统治，不等同对全国或全部名义领土的有效控制。"
     },
@@ -186229,11 +186728,15 @@
         "v54_e01",
         "v54_reign_fd_wy_qianliu_a",
         "v54_reign_fd_wy_qianliu_b",
-        "v54_reign_fd_wy_yuanguan_a"
+        "v54_reign_fd_wy_yuanguan_a",
+        "v54_m02",
+        "v54_c09",
+        "v54_s02"
       ],
       "sources": [
         "v54_new",
-        "v54_zztj"
+        "v54_zztj",
+        "v54_kaogu"
       ],
       "note": "在位段只表示本政权内部统治，不等同对全国或全部名义领土的有效控制。"
     },
@@ -186255,11 +186758,15 @@
         "v54_e05",
         "v54_reign_fd_wy_yuanguan_a",
         "v54_reign_fd_wy_yuanguan_b",
-        "v54_reign_fd_wy_hongzuo_a"
+        "v54_reign_fd_wy_hongzuo_a",
+        "v54_m04",
+        "v54_c02",
+        "v54_s03"
       ],
       "sources": [
         "v54_new",
-        "v54_zztj"
+        "v54_zztj",
+        "v54_kaogu"
       ],
       "note": "在位段只表示本政权内部统治，不等同对全国或全部名义领土的有效控制。"
     },
@@ -186334,11 +186841,14 @@
         "v54_e10",
         "v54_s05",
         "v54_s09",
-        "v54_reign_fd_wy_hongchu_a"
+        "v54_reign_fd_wy_hongchu_a",
+        "v54_m08",
+        "v54_c06"
       ],
       "sources": [
         "v54_new",
-        "v54_zztj"
+        "v54_zztj",
+        "v54_kaogu"
       ],
       "note": "在位段只表示本政权内部统治，不等同对全国或全部名义领土的有效控制。"
     },
@@ -186359,11 +186869,16 @@
       "events": [
         "v54_reign_fd_sh_liu_yan_a",
         "v54_reign_fd_sh_liu_yan_b",
-        "v54_reign_fd_sh_liu_bin_a"
+        "v54_reign_fd_sh_liu_bin_a",
+        "v54_m03",
+        "v54_c09",
+        "v54_e04",
+        "v54_s02"
       ],
       "sources": [
         "v54_new",
-        "v54_zztj"
+        "v54_zztj",
+        "v54_kaogu"
       ],
       "note": "在位段只表示本政权内部统治，不等同对全国或全部名义领土的有效控制。"
     },
@@ -186409,11 +186924,16 @@
       "events": [
         "v54_reign_fd_sh_liu_sheng_a",
         "v54_reign_fd_sh_liu_sheng_b",
-        "v54_reign_fd_sh_liu_chang_a"
+        "v54_reign_fd_sh_liu_chang_a",
+        "v54_m05",
+        "v54_c04",
+        "v54_e06",
+        "v54_s05"
       ],
       "sources": [
         "v54_new",
-        "v54_zztj"
+        "v54_zztj",
+        "v54_kaogu"
       ],
       "note": "在位段只表示本政权内部统治，不等同对全国或全部名义领土的有效控制。"
     },
@@ -186436,11 +186956,14 @@
         "v54_m09",
         "v54_s09",
         "v54_reign_fd_sh_liu_chang_a",
-        "v54_reign_fd_sh_liu_chang_b"
+        "v54_reign_fd_sh_liu_chang_b",
+        "v54_c06",
+        "v54_e09"
       ],
       "sources": [
         "v54_new",
-        "v54_zztj"
+        "v54_zztj",
+        "v54_kaogu"
       ],
       "note": "在位段只表示本政权内部统治，不等同对全国或全部名义领土的有效控制。"
     },
@@ -186488,11 +187011,16 @@
         "v54_reign_fd_nh_liujun_a",
         "v54_reign_fd_nh_liujun_b",
         "v54_reign_fd_nh_jien_a",
-        "v54_reign_fd_nh_jien_b"
+        "v54_reign_fd_nh_jien_b",
+        "v54_m08",
+        "v54_c06",
+        "v54_e08",
+        "v54_s08"
       ],
       "sources": [
         "v54_new",
-        "v54_zztj"
+        "v54_zztj",
+        "v54_kaogu"
       ],
       "note": "在位段只表示本政权内部统治，不等同对全国或全部名义领土的有效控制。"
     },
@@ -186539,11 +187067,14 @@
         "v54_m10",
         "v54_s10",
         "v54_reign_fd_nh_jiyuan_a",
-        "v54_reign_fd_nh_jiyuan_b"
+        "v54_reign_fd_nh_jiyuan_b",
+        "v54_c08",
+        "v54_e10"
       ],
       "sources": [
         "v54_new",
-        "v54_zztj"
+        "v54_zztj",
+        "v54_kaogu"
       ],
       "note": "在位段只表示本政权内部统治，不等同对全国或全部名义领土的有效控制。"
     },
@@ -186598,11 +187129,13 @@
         "v55_reign_s_liao_taizong_b",
         "v55_reign_s_liao_shizong_a",
         "v56_政治_01",
-        "v56_社会_01"
+        "v56_社会_01",
+        "v56_文化_01"
       ],
       "sources": [
         "v55_liaoshi",
-        "v55_songshi"
+        "v55_songshi",
+        "v56_liaoshi_72"
       ],
       "note": "与宋朝及其他政权长期并立；在位段不等同对全部名义领土持续有效控制。"
     },
@@ -186675,11 +187208,15 @@
         "v55_m01",
         "v55_reign_s_liao_jingzong_a",
         "v55_reign_s_liao_jingzong_b",
-        "v55_reign_s_liao_shengzong_a"
+        "v55_reign_s_liao_shengzong_a",
+        "v43s_palace_exam",
+        "v55_s02"
       ],
       "sources": [
         "v55_liaoshi",
-        "v55_songshi"
+        "v55_songshi",
+        "v43s_ss003",
+        "v43s_ss155"
       ],
       "note": "与宋朝及其他政权长期并立；在位段不等同对全部名义领土持续有效控制。"
     },
@@ -186737,11 +187274,19 @@
         "v55_reign_s_liao_xingzong_b",
         "v55_reign_s_liao_daozong_a",
         "v56_政治_02",
-        "v56_经济_02"
+        "v56_经济_02",
+        "v55_m03",
+        "v43s_qingli_schools",
+        "v47s_yellow_river"
       ],
       "sources": [
         "v55_liaoshi",
-        "v55_songshi"
+        "v55_songshi",
+        "v55_xixia",
+        "v43s_ss155",
+        "v43s_ss314",
+        "v43s_ss011",
+        "v47s_ss091"
       ],
       "note": "与宋朝及其他政权长期并立；在位段不等同对全部名义领土持续有效控制。"
     },
@@ -186769,11 +187314,13 @@
         "v55_reign_s_liao_tianzuo_a",
         "v56_文化_02",
         "v56_社会_02",
-        "v56_社会_03"
+        "v56_社会_03",
+        "v55_m04"
       ],
       "sources": [
         "v55_liaoshi",
-        "v55_songshi"
+        "v55_songshi",
+        "v55_xixia"
       ],
       "note": "与宋朝及其他政权长期并立；在位段不等同对全部名义领土持续有效控制。"
     },
@@ -186798,11 +187345,17 @@
         "v55_m05",
         "v55_reign_s_liao_tianzuo_a",
         "v55_reign_s_liao_tianzuo_b",
-        "v56_军事_05"
+        "v56_军事_05",
+        "v47s_qianli",
+        "v55_e06",
+        "v43s_fangla"
       ],
       "sources": [
         "v55_liaoshi",
-        "v55_songshi"
+        "v55_songshi",
+        "v47s_dpm_qianli",
+        "v55_jinshi",
+        "v43s_ss022"
       ],
       "note": "与宋朝及其他政权长期并立；在位段不等同对全部名义领土持续有效控制。"
     },
@@ -186826,11 +187379,17 @@
         "v55_p05",
         "v55_m03",
         "v55_e03",
-        "v55_e04"
+        "v55_e04",
+        "v43s_qingli_schools",
+        "v47s_yellow_river"
       ],
       "sources": [
         "v55_xixia",
-        "v55_songshi"
+        "v55_songshi",
+        "v43s_ss155",
+        "v43s_ss314",
+        "v43s_ss011",
+        "v47s_ss091"
       ],
       "note": "与宋朝及其他政权长期并立；在位段不等同对全部名义领土持续有效控制。"
     },
@@ -186856,11 +187415,13 @@
         "v55_reign_s_xia_yizong_b",
         "v55_reign_s_xia_huizong_a",
         "v56_政治_03",
-        "v56_社会_04"
+        "v56_社会_04",
+        "v43s_tongjian_start"
       ],
       "sources": [
         "v55_xixia",
-        "v55_songshi"
+        "v55_songshi",
+        "v43s_ss336"
       ],
       "note": "与宋朝及其他政权长期并立；在位段不等同对全部名义领土持续有效控制。"
     },
@@ -186887,11 +187448,15 @@
         "v55_reign_s_xia_huizong_b",
         "v55_reign_s_xia_chongzong_a",
         "v56_政治_04",
-        "v56_军事_03"
+        "v56_军事_03",
+        "v43s_wutai",
+        "v55_e05"
       ],
       "sources": [
         "v55_xixia",
-        "v55_songshi"
+        "v55_songshi",
+        "v43s_ss338",
+        "v55_liaoshi"
       ],
       "note": "与宋朝及其他政权长期并立；在位段不等同对全部名义领土持续有效控制。"
     },
@@ -186916,11 +187481,17 @@
         "v55_reign_s_xia_chongzong_a",
         "v55_reign_s_xia_chongzong_b",
         "v55_reign_s_xia_renzong_a",
-        "v56_政治_05"
+        "v56_政治_05",
+        "v55_m05",
+        "v55_e06",
+        "v43s_fangla"
       ],
       "sources": [
         "v55_xixia",
-        "v55_songshi"
+        "v55_songshi",
+        "v55_liaoshi",
+        "v55_jinshi",
+        "v43s_ss022"
       ],
       "note": "与宋朝及其他政权长期并立；在位段不等同对全部名义领土持续有效控制。"
     },
@@ -186946,11 +187517,14 @@
         "v55_s08",
         "v55_reign_s_xia_renzong_a",
         "v55_reign_s_xia_renzong_b",
-        "v56_文化_05"
+        "v56_文化_05",
+        "v43s_longxing_war"
       ],
       "sources": [
         "v55_xixia",
-        "v55_songshi"
+        "v55_songshi",
+        "v43s_ss033",
+        "v43s_ss361"
       ],
       "note": "与宋朝及其他政权长期并立；在位段不等同对全部名义领土持续有效控制。"
     },
@@ -186971,11 +187545,17 @@
       "events": [
         "v55_reign_s_xia_huanzong_a",
         "v55_reign_s_xia_huanzong_b",
-        "v55_reign_s_xia_xiangzong_a"
+        "v55_reign_s_xia_xiangzong_a",
+        "v43s_kaixi",
+        "v43s_qingyuan"
       ],
       "sources": [
         "v55_xixia",
-        "v55_songshi"
+        "v55_songshi",
+        "v43s_ss038",
+        "v43s_ss474",
+        "v43s_ss037",
+        "v43s_ss429"
       ],
       "note": "与宋朝及其他政权长期并立；在位段不等同对全部名义领土持续有效控制。"
     },
@@ -187021,11 +187601,16 @@
       "events": [
         "v55_reign_s_xia_shenzong_a",
         "v55_reign_s_xia_shenzong_b",
-        "v55_reign_s_xia_xianzong_a"
+        "v55_reign_s_xia_xianzong_a",
+        "v55_m09",
+        "v55_c09",
+        "v56_经济_06",
+        "v55_s09"
       ],
       "sources": [
         "v55_xixia",
-        "v55_songshi"
+        "v55_songshi",
+        "v55_jinshi"
       ],
       "note": "与宋朝及其他政权长期并立；在位段不等同对全部名义领土持续有效控制。"
     },
@@ -187164,11 +187749,14 @@
         "v55_reign_s_jin_hailing_a",
         "v56_政治_06",
         "v56_文化_04",
-        "v56_社会_06"
+        "v56_社会_06",
+        "v43s_yue_campaign"
       ],
       "sources": [
         "v55_jinshi",
-        "v55_songshi"
+        "v55_songshi",
+        "v43s_ss029",
+        "v43s_ss365"
       ],
       "note": "与宋朝及其他政权长期并立；在位段不等同对全部名义领土持续有效控制。"
     },
@@ -187192,7 +187780,8 @@
         "v55_e07",
         "v55_s06",
         "v55_reign_s_jin_hailing_a",
-        "v55_reign_s_jin_hailing_b"
+        "v55_reign_s_jin_hailing_b",
+        "v55_c06"
       ],
       "sources": [
         "v55_jinshi",
@@ -187220,11 +187809,16 @@
         "v55_s07",
         "v55_reign_s_jin_shizong_a",
         "v55_reign_s_jin_shizong_b",
-        "v55_reign_s_jin_zhangzong_a"
+        "v55_reign_s_jin_zhangzong_a",
+        "v43s_longxing_war",
+        "v43s_bailudong"
       ],
       "sources": [
         "v55_jinshi",
-        "v55_songshi"
+        "v55_songshi",
+        "v43s_ss033",
+        "v43s_ss361",
+        "v43s_ss429"
       ],
       "note": "与宋朝及其他政权长期并立；在位段不等同对全部名义领土持续有效控制。"
     },
@@ -187249,11 +187843,17 @@
         "v55_reign_s_jin_zhangzong_a",
         "v55_reign_s_jin_zhangzong_b",
         "v55_reign_s_jin_weishao_a",
-        "v56_文化_07"
+        "v56_文化_07",
+        "v43s_kaixi",
+        "v43s_huizi_extension"
       ],
       "sources": [
         "v55_jinshi",
-        "v55_songshi"
+        "v55_songshi",
+        "v43s_ss038",
+        "v43s_ss474",
+        "v43s_ss181",
+        "v43s_ss036"
       ],
       "note": "与宋朝及其他政权长期并立；在位段不等同对全部名义领土持续有效控制。"
     },
@@ -187306,11 +187906,13 @@
         "v55_reign_s_jin_xuanzong_a",
         "v55_reign_s_jin_xuanzong_b",
         "v56_政治_07",
-        "v56_经济_06"
+        "v56_经济_06",
+        "v55_c09"
       ],
       "sources": [
         "v55_jinshi",
-        "v55_songshi"
+        "v55_songshi",
+        "v55_xixia"
       ],
       "note": "与宋朝及其他政权长期并立；在位段不等同对全部名义领土持续有效控制。"
     },
@@ -187338,11 +187940,14 @@
         "v55_reign_s_jin_modi_b",
         "v56_军事_06",
         "v56_军事_07",
-        "v56_社会_07"
+        "v56_社会_07",
+        "v55_c10",
+        "v56_经济_07"
       ],
       "sources": [
         "v55_jinshi",
-        "v55_songshi"
+        "v55_songshi",
+        "v56_jinshi_112"
       ],
       "note": "与宋朝及其他政权长期并立；在位段不等同对全部名义领土持续有效控制。"
     },

@@ -1431,3 +1431,43 @@ if d['version'] >= 58:
  assert all(term in corpus for term in ['不表示每位亲属都参与同一政治事件','追封属于身后礼制','迁都北京背后的供给与人口流动','圈地、投充与逃人问题'])
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback',corpus,re.I)
  print('V58 PASS: every person has a layered reading; durable Ming-Qing reigns cover five event lenses with evidence-bounded context')
+
+if d['version'] >= 59:
+ context_only=[(c['person'],eid) for c in d['reignContexts'] for eid in c['events'] if c['person'] not in events[eid]['people']]
+ assert context_only and len(context_only)>=190
+ assert all(any(min([int(y) for y in re.findall(r'\d{1,4}',events[eid]['year'])] or [10**9])<=max(p['start'],p['end']) and max([int(y) for y in re.findall(r'\d{1,4}',events[eid]['year'])] or [-10**9])>=min(p['start'],p['end']) for p in contexts[pid]['periods']) for pid,eid in context_only if '世纪' not in events[eid]['year'])
+ print('V59 PASS: period-context links remain distinct from direct personal participation and overlap the displayed reign')
+
+def durable_coverage(dynasties):
+ complete=total=0
+ categories={'政治','军事','文化','经济','社会'}
+ for pid,c in contexts.items():
+  if people[pid].get('dynasty') not in dynasties:continue
+  start=min(p['start'] for p in c['periods']);end=max(p['end'] for p in c['periods'])
+  if end-start<9:continue
+  total+=1
+  if categories<={events[eid]['category'] for eid in c['events']}:complete+=1
+ return complete,total
+
+if d['version'] >= 60:
+ added=[e for e in d['events'] if e['id'].startswith('v91t_')]
+ assert len(added)==11 and all(e['sources'] and e['impact'] for e in added)
+ assert all(len(re.findall(r'[\u4e00-\u9fff]',e['body']+e['impact']))>=105 for e in added)
+ assert durable_coverage({'tang'})==(14,14)
+ print('V60 PASS: eleven sourced Tang structural-history readings give every durable reign all five event lenses')
+
+if d['version'] >= 61:
+ complete,total=durable_coverage({'song_liao_xia_jin','yuan'})
+ assert (complete,total)==(24,38)
+ print('V61 PASS: twenty-four of thirty-eight durable Song-Liao-Xia-Jin-Yuan reigns now expose all five lenses; unsupported gaps remain explicit')
+
+if d['version'] >= 62:
+ complete,total=durable_coverage({'qin','han','three_kingdoms','jin','northern_southern','sui'})
+ assert (complete,total)==(24,39)
+ print('V62 PASS: twenty-four of thirty-nine durable Qin-to-Sui reigns now expose all five lenses using chronologically overlapping reviewed material')
+
+if d['version'] >= 63:
+ complete,total=durable_coverage({'xia','shang','zhou','five_dynasties'})
+ assert (complete,total)==(16,21)
+ assert d['reviewed']=='2026-10-19'
+ print('V63 PASS: early-state and Five-Dynasties contexts complete a five-pass audit without inventing evidence for the remaining gaps')
