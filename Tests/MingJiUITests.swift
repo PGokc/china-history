@@ -2788,4 +2788,52 @@ final class MingJiUITests: XCTestCase {
         shot("v89-beijing-man-search", searchApp)
     }
 
+    @MainActor func testV90ThinPeopleAndEmptyEventLensesHaveUsefulDepth() throws {
+        let ming = XCUIApplication()
+        ming.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]
+        ming.launch()
+        XCTAssertTrue(ming.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        ming.buttons["globalSearch"].tap()
+        let mingSearch = ming.searchFields.firstMatch
+        XCTAssertTrue(mingSearch.waitForExistence(timeout: 5)); mingSearch.tap(); mingSearch.typeText("朱由校")
+        XCTAssertTrue(ming.buttons["search_person_youxiao"].waitForExistence(timeout: 5)); ming.buttons["search_person_youxiao"].tap()
+        reach(ming.buttons["eventCategory_经济"], in: ming, attempts: 12); ming.buttons["eventCategory_经济"].tap()
+        XCTAssertTrue(ming.staticTexts["辽饷、军费与天启财政"].waitForExistence(timeout: 5))
+        XCTAssertFalse(ming.staticTexts["majorEventsRelatedContext"].exists)
+        shot("v90-direct-economic-history", ming)
+        ming.terminate()
+
+        let context = XCUIApplication()
+        context.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]
+        context.launch()
+        XCTAssertTrue(context.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        context.buttons["globalSearch"].tap()
+        let contextSearch = context.searchFields.firstMatch
+        XCTAssertTrue(contextSearch.waitForExistence(timeout: 5)); contextSearch.tap(); contextSearch.typeText("朱常洛")
+        XCTAssertTrue(context.buttons["search_person_changluo"].waitForExistence(timeout: 5)); context.buttons["search_person_changluo"].tap()
+        reach(context.buttons["eventCategory_军事"], in: context, attempts: 12); context.buttons["eventCategory_军事"].tap()
+        XCTAssertTrue(context.staticTexts["majorEventsRelatedContext"].waitForExistence(timeout: 5))
+        XCTAssertEqual(context.staticTexts["eventTimeScope"].label, "延伸阅读 · 同一历史阶段")
+        XCTAssertTrue(context.staticTexts["萨尔浒战役"].exists)
+        shot("v90-related-period-history", context)
+        context.terminate()
+
+        let person = XCUIApplication()
+        person.launchArguments = ["--uitesting", "--ui-dynasty", "song_liao_xia_jin"]
+        person.launch()
+        XCTAssertTrue(person.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        person.buttons["globalSearch"].tap()
+        let personSearch = person.searchFields.firstMatch
+        XCTAssertTrue(personSearch.waitForExistence(timeout: 5)); personSearch.tap(); personSearch.typeText("赵德芳")
+        XCTAssertTrue(person.buttons["search_person_s_zhaodefang"].waitForExistence(timeout: 5)); person.buttons["search_person_s_zhaodefang"].tap()
+        XCTAssertTrue(person.buttons["articleEntry"].waitForExistence(timeout: 5)); person.buttons["articleEntry"].tap()
+        XCTAssertTrue(person.buttons["articleContents"].waitForExistence(timeout: 5)); person.buttons["articleContents"].tap()
+        for chapter in ["先确认身份与时间", "世系中的具体位置", "为什么值得单独阅读", "材料边界", "从关系图回到历史问题"] {
+            XCTAssertTrue(person.buttons[chapter].exists)
+        }
+        person.buttons["材料边界"].tap()
+        XCTAssertTrue(person.staticTexts["材料边界"].waitForExistence(timeout: 5))
+        shot("v90-formerly-thin-person-reading", person)
+    }
+
 }

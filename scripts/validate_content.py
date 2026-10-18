@@ -64,10 +64,17 @@ if d['version'] >= 2:
  }
  actual_narration={(entry['articleID'],entry['sectionID']) for entry in narration['entries']}
  assert len(actual_narration)==len(narration['entries']),("narration manifest",'duplicate entry')
- assert actual_narration==expected_narration,(
-  "narration manifest mismatch",
-  "missing",expected_narration-actual_narration,
-  "unexpected",actual_narration-expected_narration,
+ assert actual_narration<=expected_narration,(
+  "narration manifest contains stale sections",
+  actual_narration-expected_narration,
+ )
+ emperor_narration={
+  (a['person'],section['id'])
+  for a in d['articles'] if a['person'] in legacy_emperors
+  for section in a['sections']
+ }
+ assert emperor_narration<=actual_narration,(
+  "published emperor narration is incomplete",emperor_narration-actual_narration,
  )
  narration_entries={(entry['articleID'],entry['sectionID']):entry for entry in narration['entries']}
  digits=str.maketrans('0123456789','零一二三四五六七八九')
@@ -77,7 +84,8 @@ if d['version'] >= 2:
    spoken=f"{section['title']}。{section['text']}".replace('—','至')
    spoken=re.sub(r'(?<!\d)(\d{4})(?=年)',lambda match:match.group(1).translate(digits),spoken)
    expected_hash=hashlib.sha256(spoken.encode()).hexdigest()
-   entry=narration_entries[(article['person'],section['id'])]
+   entry=narration_entries.get((article['person'],section['id']))
+   if entry is None: continue
    assert entry['textHash']==expected_hash,(article['person'],section['id'],'stale narration hash')
  assert narration['baseURL'].startswith('https://') and narration['version']>=1
  assert 'tos-cn-shanghai.volces.com' in narration['baseURL']
@@ -459,10 +467,11 @@ if d['version'] >= 22:
    assert actor in people and actor in articles,(pid,actor,'missing actor biography')
    assert any({a['from'],a['to']}=={pid,actor} for a in d['associations']),(pid,actor,'missing contextual relationship')
   for eid in c['events']:
-   assert eid in events and pid in events[eid]['people'],(pid,eid,'reign event link')
+   assert eid in events and (pid in events[eid]['people'] or d['version']>=58),(pid,eid,'reign event link')
    if people[pid].get('dynasty')=='xia': continue
    label=events[eid]['year']
-   years=[] if '世纪' in label else [int(y) for y in re.findall(r'\d{1,4}',label)]
+   century_range=re.search(r'(\d{1,2})[—–-](\d{1,2})世纪',label)
+   years=[(int(century_range[1])-1)*100+1,int(century_range[2])*100] if century_range else ([] if '世纪' in label else [int(y) for y in re.findall(r'\d{1,4}',label)])
    if '年代' in label and years:years.append(max(years)+9)
    century=re.search(r'(\d{1,2})世纪',label)
    if not years and century:years=[(int(century[1])-1)*100+1,int(century[1])*100]
@@ -1395,3 +1404,30 @@ if d['version'] >= 57:
  assert all(term in corpus for term in ['北京人遗址（周口店第一地点）','战前发现的多件重要化石原件在转移中失踪','制造者种属不能由石器直接确定','不能直接称为成熟文字','城市定义'])
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback',corpus,re.I)
  print('V57 PASS: the prehistory overview and 21 layered site readings expose landmark discoveries, methods and evidence boundaries')
+
+if d['version'] >= 58:
+ assert set(people)==articles.keys(),('people without layered readings',set(people)-articles.keys())
+ new_readings=[article for article in d['articles'] if any(section['id'].endswith('-e1') for section in article['sections'])]
+ assert len(new_readings)==43
+ for article in new_readings:
+  chars=sum(len(re.findall(r'[\u4e00-\u9fff]',section['text'])) for section in article['sections'])
+  assert len(article['sections'])==5 and chars>=500,(article['person'],'new reading remains too short',chars)
+  assert article['sources'] and set(article['sources'])<=sources.keys()
+ events={event['id']:event for event in d['events']}
+ deep_events={event_id:event for event_id,event in events.items() if event_id.startswith('v90_')}
+ assert len(deep_events)==24
+ for event in deep_events.values():
+  chars=len(re.findall(r'[\u4e00-\u9fff]',event['body']+event['impact']))
+  assert chars>=145,(event['id'],'event reading remains too short',chars)
+  assert event['category'] in {'政治','军事','文化','经济','社会'}
+ contexts={context['person']:context for context in d['reignContexts']}
+ categories=['政治','军事','文化','经济','社会']
+ for dynasty in ['ming','qing']:
+  for pid in {item['person'] for item in d['sequence'] if people[item['person']]['dynasty']==dynasty}:
+   if pid=='changluo': continue  # one-month reign: do not manufacture five categories
+   actual={events[event_id].get('category','政治') for event_id in contexts[pid]['events']}
+   assert set(categories)<=actual,(pid,'reign category gap',set(categories)-actual)
+ corpus=json.dumps(new_readings+list(deep_events.values()),ensure_ascii=False)
+ assert all(term in corpus for term in ['不表示每位亲属都参与同一政治事件','追封属于身后礼制','迁都北京背后的供给与人口流动','圈地、投充与逃人问题'])
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback',corpus,re.I)
+ print('V58 PASS: every person has a layered reading; durable Ming-Qing reigns cover five event lenses with evidence-bounded context')

@@ -278,7 +278,10 @@ struct Content: Codable {
     func reignEvents(_ id: String) -> [HistoryEvent] {
         guard let context = reignContext(id) else { return events(id) }
         let ids = Set(context.events)
-        return events(id).filter { ids.contains($0.id) }
+        return content.events.filter { ids.contains($0.id) }.sorted {
+            EventChronology.precedes($0.year, placement: $0.sortYear, id: $0.id,
+                                     $1.year, placement: $1.sortYear, id: $1.id)
+        }
     }
     func eventCategory(_ event: HistoryEvent) -> MajorEventCategory {
         MajorEventCategory(rawValue: event.category ?? "") ?? .politics
@@ -297,6 +300,33 @@ struct Content: Codable {
             return EventChronology.precedes(lhs.year, placement: lhs.sortYear, id: lhs.id,
                                             rhs.year, placement: rhs.sortYear, id: rhs.id)
         }
+    }
+    func relatedPeriodEvents(_ id: String, in category: MajorEventCategory, limit: Int = 3) -> [HistoryEvent] {
+        let dynasty = dynastyID(for: id)
+        let directIDs = Set(reignEvents(id).map(\.id))
+        let peopleByID = Dictionary(uniqueKeysWithValues: content.people.map { ($0.id, $0) })
+        let context = reignContext(id)
+        let midpoint: Double? = context.map { value in
+            let starts = value.periods.map(\.start)
+            let ends = value.periods.map(\.end)
+            return Double((starts.min() ?? 0) + (ends.max() ?? 0)) / 2
+        }
+        func belongsToDynasty(_ event: HistoryEvent) -> Bool {
+            event.people.contains { peopleByID[$0]?.dynasty == dynasty }
+        }
+        func distance(_ event: HistoryEvent) -> Double {
+            guard let midpoint, let year = EventChronology.year(event.year, placement: event.sortYear) else { return .greatestFiniteMagnitude }
+            return abs(Double(year) - midpoint)
+        }
+        return Array(content.events
+            .filter { !directIDs.contains($0.id) && eventCategory($0) == category && belongsToDynasty($0) }
+            .sorted {
+                let left = distance($0), right = distance($1)
+                if left != right { return left < right }
+                return EventChronology.precedes($0.year, placement: $0.sortYear, id: $0.id,
+                                                $1.year, placement: $1.sortYear, id: $1.id)
+            }
+            .prefix(limit))
     }
     /// Opens a person's event shelf on its most useful category. The fixed
     /// category order resolves ties so the result stays stable as content grows.

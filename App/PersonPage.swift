@@ -267,15 +267,21 @@ struct MajorEventsPanel: View {
     let previewLimit: Int?
     var inReignOnly = true
     var filteredEvents: [HistoryEvent] { store.events(personID, in: selection, inReignOnly: inReignOnly) }
+    var relatedEvents: [HistoryEvent] {
+        guard inReignOnly, filteredEvents.isEmpty else { return [] }
+        return store.relatedPeriodEvents(personID, in: selection, limit: previewLimit ?? 6)
+    }
+    var isShowingRelatedEvents: Bool { filteredEvents.isEmpty && !relatedEvents.isEmpty }
     var visibleEvents: [HistoryEvent] {
-        guard let previewLimit else { return filteredEvents }
-        return Array(filteredEvents.prefix(previewLimit))
+        let items = isShowingRelatedEvents ? relatedEvents : filteredEvents
+        guard let previewLimit else { return items }
+        return Array(items.prefix(previewLimit))
     }
     var body: some View {
         VStack(alignment: .leading, spacing: 14) {
             sectionTitle("重大事件")
             if let context = store.reignContext(personID) {
-                Text(inReignOnly ? "在位时期  \(context.periodLabel)" : "生平及身后影响")
+                Text(isShowingRelatedEvents ? "延伸阅读 · 同一历史阶段" : (inReignOnly ? "在位时期  \(context.periodLabel)" : "生平及身后影响"))
                     .font(.caption).foregroundStyle(Theme.muted).accessibilityIdentifier("eventTimeScope")
             }
             if typeSize.isAccessibilitySize {
@@ -292,6 +298,13 @@ struct MajorEventsPanel: View {
                     }
                 }
                 .frame(height: 42)
+            }
+
+            if isShowingRelatedEvents {
+                Text("本类暂无可直接归于\(store.person(personID).name)的事件，以下内容用于理解同一历史阶段，不表示其亲自参与。")
+                    .font(.caption).foregroundStyle(Theme.muted).lineSpacing(4)
+                    .fixedSize(horizontal: false, vertical: true)
+                    .accessibilityIdentifier("majorEventsRelatedContext")
             }
 
             if visibleEvents.isEmpty {
