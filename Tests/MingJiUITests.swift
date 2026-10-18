@@ -2701,4 +2701,35 @@ final class MingJiUITests: XCTestCase {
         }
     }
 
+    @MainActor func testV87ContestedMingQingFiguresKeepEvidenceBoundaries() throws {
+        for (dynasty, query, personID, chapters, target) in [
+            ("ming", "袁崇焕", "m40_yuanchonghuan", ["文官进入辽东战场", "宁远胜利来自多年组织", "督师权限与毛文龙之死", "己巳之变与北京城下", "处刑、反间说与证据边界"], 4),
+            ("qing", "梁启超", "q_liangqichao", ["从科举士人到维新作者", "《时务报》成为政治课堂", "戊戌失败后的海外转向", "《新民说》讨论公共能力", "思想变化不是简单反复"], 2)
+        ] {
+            let app = XCUIApplication()
+            app.launchArguments = ["--uitesting", "--ui-dynasty", dynasty]
+            app.launch()
+            XCTAssertTrue(app.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+            app.buttons["globalSearch"].tap()
+            let search = app.searchFields.firstMatch
+            XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText(query)
+            let result = app.buttons["search_person_" + personID]
+            XCTAssertTrue(result.waitForExistence(timeout: 5)); result.tap()
+            XCTAssertTrue(app.buttons["articleEntry"].waitForExistence(timeout: 5)); app.buttons["articleEntry"].tap()
+            XCTAssertTrue(app.buttons["articleContents"].waitForExistence(timeout: 5)); app.buttons["articleContents"].tap()
+            for chapter in chapters { XCTAssertTrue(app.buttons[chapter].exists) }
+            app.buttons[chapters[target]].tap()
+            XCTAssertTrue(app.staticTexts[chapters[target]].waitForExistence(timeout: 5))
+            if dynasty == "ming" {
+                let toggle = app.buttons["narrationToggle"]
+                toggle.tap()
+                expectation(for: NSPredicate(format: "label == %@", "暂停朗读"), evaluatedWith: toggle)
+                waitForExpectations(timeout: 30)
+                XCTAssertTrue(app.sliders["narrationProgress"].waitForExistence(timeout: 5))
+            }
+            shot("v87-" + dynasty + "-evidence-bounded-reading", app)
+            app.terminate()
+        }
+    }
+
 }

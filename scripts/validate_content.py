@@ -1326,3 +1326,26 @@ if d['version'] >= 54:
  assert all(term in corpus for term in ['知行合一不是成功学口号','鸳鸯阵','金陵胡承龙刊本','团队工程','责任不能倒置','地方权力','签约者','后勤线'])
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成',corpus)
  print('V54 PASS: eight central Ming-Qing figures now have five-layer readings with event links, institutional context and explicit evidence boundaries')
+
+if d['version'] >= 55:
+ key_readings={
+  'm40_yansong':{'v2l_gengxu','v40m2_yansong_removed_1562'},
+  'm40_hairui':{'v40m2_hairui_memorial_1566','v2l_release','v40m2_hairui_land_1569'},
+  'm40_yuanchonghuan':{'v40m2_sun_liaoxi_1622','v2l_ningyuan','v2l_yuan'},
+  'q_weiyuan':{'v40q_haiguo'},
+  'q_kangyouwei':{'qev_hundred_days_1898','v41q_shiwu'},
+  'q_liangqichao':{'v41q_shiwu','qev_hundred_days_1898','v41q_tianyan','v41q_xinmin'},
+ }
+ for pid,required_events in key_readings.items():
+  article=articles[pid]
+  linked_events={event_id for section in article['sections'] for event_id in section.get('events',[])}
+  linked_people={person_id for section in article['sections'] for person_id in section.get('people',[])}
+  assert len(article['sections'])==5,(pid,'expected five-layer reading')
+  assert sum(len(re.findall(r'[\u4e00-\u9fff]',section['text'])) for section in article['sections'])>=900,(pid,'reading remains too short')
+  assert required_events<=linked_events,(pid,'missing event context')
+  assert linked_people<=people.keys() and linked_people,(pid,'missing or invalid people links')
+  assert len(article['sources'])>=2 and all(source_id in sources for source_id in article['sources'])
+ corpus=json.dumps([articles[pid] for pid in key_readings],ensure_ascii=False)
+ assert all(term in corpus for term in ['最终任免和裁断','清官救济','通敌罪证不足','来源链越长','是否真正上达存在研究争议','思想变化不是简单反复'])
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成',corpus)
+ print('V55 PASS: six pivotal Ming-Qing readings separate personal agency from institutions, networks, source limits and later memory')
