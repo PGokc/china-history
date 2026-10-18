@@ -152,6 +152,9 @@ struct PrehistorySite: Codable, Identifiable {
     let id, name, period, location, province, summary, discovery, significance: String
     let latitude, longitude: Double
     let sources: [String]
+    let aliases: [String]?
+    let sections: [DynastySection]?
+    let evidenceNote: String?
 }
 struct GeoPoint: Codable { let latitude, longitude: Double }
 struct TerritoryRegion: Codable, Identifiable {

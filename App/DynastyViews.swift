@@ -7,7 +7,7 @@ struct DynastyDetailPage: View {
 
     var body: some View {
         if dynastyID == "prehistory" {
-            PrehistoryPage(store: store)
+            PrehistoryOverviewPage(store: store)
         } else if let dynasty = store.dynasty(dynastyID), let profile = store.dynastyProfile(dynastyID) {
             ScrollView {
                 VStack(alignment: .leading, spacing: 28) {
@@ -305,6 +305,9 @@ struct PrehistoryOverviewPage: View {
     @State private var selectedSiteID: String?
     @State private var showingSite = false
     private var sites: [PrehistorySite] { store.content.prehistorySites ?? [] }
+    private var featuredSites: [PrehistorySite] {
+        ["zhoukoudian", "shandingdong", "banpo", "hemudu", "liangzhu"].compactMap(store.prehistorySite)
+    }
     private var profile: DynastyProfile? { store.dynastyProfile("prehistory") }
 
     var body: some View {
@@ -315,6 +318,30 @@ struct PrehistoryOverviewPage: View {
                     Text("史前中国").font(.system(size: 38, weight: .medium, design: .serif)).foregroundStyle(Theme.ink)
                     Text(profile?.subtitle ?? "从遗址读懂没有文字的历史").font(.title3).foregroundStyle(Theme.text)
                 }
+                NavigationLink {
+                    PrehistoryPage(store: store)
+                } label: {
+                    VStack(alignment: .leading, spacing: 7) {
+                        Text("史前时间地图").font(.system(.title3, design: .serif).weight(.medium)).foregroundStyle(Theme.ink)
+                        Text("拖动年代，观察不同时期遗址在今天中国版图上的分布")
+                            .font(.subheadline).foregroundStyle(Theme.muted).lineSpacing(4)
+                    }.frame(maxWidth: .infinity, alignment: .leading).padding(.vertical, 4)
+                }.buttonStyle(QuietRowStyle()).accessibilityIdentifier("prehistoryTimelineEntry")
+
+                VStack(alignment: .leading, spacing: 0) {
+                    Text("从熟悉的遗址开始").font(.system(.title3, design: .serif).weight(.medium)).foregroundStyle(Theme.ink).padding(.bottom, 8)
+                    ForEach(featuredSites) { site in
+                        NavigationLink(value: DetailRoute.prehistorySite(site.id)) {
+                            VStack(alignment: .leading, spacing: 6) {
+                                Text(site.name).font(.system(.headline, design: .serif)).foregroundStyle(Theme.ink)
+                                Text(site.period + "　" + site.location).font(.caption).foregroundStyle(Theme.muted)
+                                Text(site.summary).font(.subheadline).foregroundStyle(Theme.text).lineLimit(2).lineSpacing(4)
+                            }.frame(maxWidth: .infinity, alignment: .leading).padding(.vertical, 15).contentShape(Rectangle())
+                        }.buttonStyle(QuietRowStyle()).accessibilityIdentifier("featuredPrehistoricSite_\(site.id)")
+                        if site.id != featuredSites.last?.id { Rectangle().fill(Theme.line.opacity(0.42)).frame(height: 0.5) }
+                    }
+                }
+
                 if let overview = profile?.overview { DynastyOverviewBlock(title: "时代总览", text: overview) }
 
                 VStack(alignment: .leading, spacing: 12) {
@@ -356,7 +383,7 @@ struct PrehistoryOverviewPage: View {
         .navigationDestination(isPresented: $showingSite) {
             if let id = selectedSiteID { PrehistorySitePage(store: store, siteID: id) }
         }
-        .accessibilityIdentifier("prehistoryPage")
+        .accessibilityIdentifier("prehistoryOverviewPage")
     }
 }
 
@@ -374,8 +401,18 @@ struct PrehistorySitePage: View {
                         Text(site.location).font(.subheadline).foregroundStyle(Theme.muted)
                     }
                     Text(site.summary).font(.title3).foregroundStyle(Theme.text).lineSpacing(5)
-                    SiteTextBlock(title: "发现了什么", text: site.discovery)
-                    SiteTextBlock(title: "为什么重要", text: site.significance)
+                    if let sections = site.sections, !sections.isEmpty {
+                        ForEach(sections) { section in
+                            SiteTextBlock(title: section.title, text: section.text)
+                                .accessibilityIdentifier("prehistorySection_\(section.id)")
+                        }
+                    } else {
+                        SiteTextBlock(title: "发现了什么", text: site.discovery)
+                        SiteTextBlock(title: "为什么重要", text: site.significance)
+                    }
+                    if let note = site.evidenceNote, !note.isEmpty {
+                        SiteTextBlock(title: "证据如何解读", text: note)
+                    }
                     SourcesView(store: store, ids: site.sources)
                 }.padding(.horizontal, 24).padding(.top, 22).padding(.bottom, Theme.pageBottom)
             }

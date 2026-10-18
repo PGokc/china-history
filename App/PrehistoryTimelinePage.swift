@@ -60,9 +60,6 @@ struct PrehistoryPage: View {
         }
         .background(Theme.paper).tint(Theme.cinnabar)
         .navigationTitle("史前时间地图").navigationBarTitleDisplayMode(.inline)
-        .toolbar { ToolbarItem(placement: .topBarTrailing) {
-            NavigationLink("总览") { PrehistoryOverviewPage(store: store) }
-        } }
         .onChange(of: scale) { _, value in age = value.initialAge }
         .navigationDestination(isPresented: $showingSite) {
             if let id = selectedSiteID { PrehistorySitePage(store: store, siteID: id) }

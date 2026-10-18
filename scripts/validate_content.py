@@ -1372,3 +1372,26 @@ if d['version'] >= 56:
  assert all(term in corpus for term in ['最终任免仍由皇帝决定','暴力并非只由一个宦官','死亡地点和过程存在不同记载','纲领文本不等于全国范围的完整实施','不能只按“创办第一”评价','赫胥黎'])
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback',corpus,re.I)
  print('V56 PASS: six Ming-Qing readings connect political actors to institutions, social costs, contested sources and later memory')
+
+if d['version'] >= 57:
+ sites={site['id']:site for site in d['prehistorySites']}
+ required={'shangchen','nihewan','yuanmou','lantian','zhoukoudian','dingcun','jinniushan','tianyuan','shandingdong','xianrendong','shangshan','jiahu','hemudu','banpo','chengtoushan','dawenkou','niuheliang','majiayao','liangzhu','taosi','shimao'}
+ assert required==sites.keys() and len(sites)==21
+ assert sites['zhoukoudian']['name']=='北京人遗址（周口店第一地点）'
+ assert {'北京人','周口店北京人','北京猿人'}<=set(sites['zhoukoudian']['aliases'])
+ for site in sites.values():
+  sections=site.get('sections') or []
+  corpus=''.join([site['summary'],site['discovery'],site['significance'],site.get('evidenceNote','')]+[section['text'] for section in sections])
+  assert len(sections)>=4,(site['id'],'insufficient reading layers')
+  assert len(re.findall(r'[\u4e00-\u9fff]',corpus))>=450,(site['id'],'site reading remains too short')
+  assert len(site.get('aliases',[]))>=2 and site.get('evidenceNote')
+  assert len(site['sources'])>=3 and set(site['sources'])<=sources.keys()
+ official_sources={'v57_nmc_human_history','v57_ivpp_origins','v57_cass_jiahu','v57_cass_chengtoushan'}
+ assert official_sources<=sources.keys()
+ assert sources['v57_nmc_human_history']['url'].startswith('https://www.chnmuseum.cn/')
+ profile=next(profile for profile in d['dynastyProfiles'] if profile['id']=='prehistory')
+ assert len(profile['sections'])==5 and len(re.findall(r'[\u4e00-\u9fff]',profile['overview']))>=300
+ corpus=json.dumps([profile]+list(sites.values()),ensure_ascii=False)
+ assert all(term in corpus for term in ['北京人遗址（周口店第一地点）','战前发现的多件重要化石原件在转移中失踪','制造者种属不能由石器直接确定','不能直接称为成熟文字','城市定义'])
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback',corpus,re.I)
+ print('V57 PASS: the prehistory overview and 21 layered site readings expose landmark discoveries, methods and evidence boundaries')

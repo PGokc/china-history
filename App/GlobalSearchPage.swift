@@ -81,7 +81,7 @@ struct GlobalSearchPage: View {
 
     private var allSites: [PrehistorySite] {
         (store.content.prehistorySites ?? []).filter {
-            includes([$0.name, $0.period, $0.location, $0.province, $0.summary, $0.significance])
+            includes([$0.name, $0.period, $0.location, $0.province, $0.summary, $0.discovery, $0.significance, $0.evidenceNote ?? ""] + ($0.aliases ?? []) + ($0.sections ?? []).flatMap { [$0.title, $0.text] })
         }
     }
     private var sites: [PrehistorySite] { Array(allSites.prefix(12)) }

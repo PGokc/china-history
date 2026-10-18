@@ -442,14 +442,13 @@ final class MingJiUITests: XCTestCase {
         let app = launch(enterFamily: false)
         XCTAssertTrue(app.buttons["dynasty_prehistory"].waitForExistence(timeout: 5))
         app.buttons["dynasty_prehistory"].tap()
-        app.buttons["总览"].tap()
-        XCTAssertTrue(app.descendants(matching: .any)["prehistoryPage"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.descendants(matching: .any)["prehistoryOverviewPage"].waitForExistence(timeout: 5))
         XCTAssertTrue(app.descendants(matching: .any)["prehistoryMap"].exists)
-        reach(app.buttons["prehistoricSite_hemudu"], in: app, attempts: 18)
-        app.buttons["prehistoricSite_hemudu"].tap()
+        reach(app.buttons["featuredPrehistoricSite_hemudu"], in: app, attempts: 12)
+        app.buttons["featuredPrehistoricSite_hemudu"].tap()
         XCTAssertTrue(app.descendants(matching: .any)["prehistorySiteDetail_hemudu"].waitForExistence(timeout: 5))
-        XCTAssertTrue(app.staticTexts["发现了什么"].exists)
-        XCTAssertTrue(app.staticTexts["为什么重要"].exists)
+        XCTAssertTrue(app.staticTexts["水湿环境保存了什么"].exists)
+        XCTAssertTrue(app.staticTexts["稻作与多样食物"].exists)
         shot("v8-02-hemudu-detail", app)
     }
 
@@ -2761,6 +2760,32 @@ final class MingJiUITests: XCTestCase {
             shot("v88-" + dynasty + "-institutional-reading", app)
             app.terminate()
         }
+    }
+
+    @MainActor func testV89BeijingManIsProminentAndPrehistoryReadingsAreLayered() throws {
+        let app = launch(enterFamily: false)
+        XCTAssertTrue(app.buttons["dynasty_prehistory"].waitForExistence(timeout: 5)); app.buttons["dynasty_prehistory"].tap()
+        XCTAssertTrue(app.descendants(matching: .any)["prehistoryOverviewPage"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["从熟悉的遗址开始"].exists)
+        shot("v89-prehistory-overview", app)
+        let beijing = app.buttons["featuredPrehistoricSite_zhoukoudian"]
+        reach(beijing, in: app, attempts: 12); XCTAssertTrue(beijing.isHittable); beijing.tap()
+        XCTAssertTrue(app.descendants(matching: .any)["prehistorySiteDetail_zhoukoudian"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["北京人遗址（周口店第一地点）"].exists)
+        for title in ["从龙骨山到第一颗头盖骨", "洞穴里保存了哪些证据", "石器、取食与火的讨论", "年代从五十万年推到更早", "失踪化石与仍在继续的研究", "证据如何解读"] {
+            XCTAssertTrue(app.staticTexts[title].exists)
+        }
+        reach(app.buttons["资料与出处"], in: app, attempts: 20)
+        XCTAssertTrue(app.buttons["资料与出处"].isHittable)
+        shot("v89-beijing-man-layered-reading", app)
+        app.terminate()
+
+        let searchApp = launch(enterFamily: false)
+        searchApp.buttons["globalSearch"].tap()
+        let search = searchApp.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("北京人")
+        XCTAssertTrue(searchApp.buttons["search_site_zhoukoudian"].waitForExistence(timeout: 5))
+        shot("v89-beijing-man-search", searchApp)
     }
 
 }
