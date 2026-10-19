@@ -1538,3 +1538,29 @@ if d['version'] >= 74:
   assert len(article['sections'])==6 and any(section['id'].startswith('v106-') for section in article['sections'])
   assert sum(len(re.findall(r'[\u4e00-\u9fff]',section['text'])) for section in article['sections'])>=740
  print('V74 PASS: all durable reigns expose five historical lenses; ten consequential Five-Dynasties rulers gain a sixth evidence-bounded reading layer')
+if d['version'] >= 75:
+ precise_sources={
+  'v107_liaoshi_6','v107_liaoshi_7','v107_xixiaji_26','v107_nanqishu_34',
+  'v107_houhanshu_79a','v107_weishu_2','v107_beishi_1','v107_jinshi_4',
+  'v107_jinshi_14','v107_jinshi_101'
+ }
+ assert precise_sources <= set(sources)
+ assert all(sources[sid]['url'].startswith('https://') for sid in precise_sources)
+ qi_registration=events['v103ns_qi_registration']
+ assert qi_registration['year']=='490' and qi_registration['sortYear']==490
+ assert '始于高帝建元二年' in qi_registration['body'] and '永明八年' in qi_registration['body']
+ assert 'v107_nanqishu_34' in qi_registration['sources']
+ taixue=events['v101h_guangwu_taixue']
+ assert taixue['year']=='29' and '建武五年' in taixue['body']
+ assert 'v107_houhanshu_79a' in taixue['sources']
+ daowu=events['v104ns_daowu_school']
+ assert '太学建设' not in daowu['title'] and '官署' in daowu['title']
+ assert {'v107_weishu_2','v107_beishi_1'} <= set(daowu['sources'])
+ assert {'v107_jinshi_14','v107_jinshi_101'} <= set(events['v99s_jin_mongol_war']['sources'])
+ assert 'v107_xixiaji_26' in events['v100s_xia_huanzong_society']['sources']
+ for pid in deepened:
+  article=articles[pid]
+  section=next(section for section in article['sections'] if section['id']==f'v106-{pid}-context')
+  assert len(re.findall(r'[\u4e00-\u9fff]',section['text']))>=240,(pid,'short audited section')
+  assert sum(len(re.findall(r'[\u4e00-\u9fff]',section['text'])) for section in article['sections'])>=900,(pid,'short article')
+ print('V75 PASS: corrected chronology and attribution; precise primary-source chapters support audited events; ten Five-Dynasties readings exceed 900 Chinese characters')

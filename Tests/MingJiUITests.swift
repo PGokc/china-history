@@ -2898,4 +2898,32 @@ final class MingJiUITests: XCTestCase {
         shot("v106-five-dynasties-sixth-layer", five)
     }
 
+    @MainActor func testV107CorrectedChronologyIsVisibleInProduct() throws {
+        let qi = XCUIApplication()
+        qi.launchArguments = ["--uitesting", "--ui-dynasty", "northern_southern"]
+        qi.launch()
+        XCTAssertTrue(qi.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        qi.buttons["globalSearch"].tap()
+        let qiSearch = qi.searchFields.firstMatch
+        XCTAssertTrue(qiSearch.waitForExistence(timeout: 5)); qiSearch.tap(); qiSearch.typeText("萧赜")
+        XCTAssertTrue(qi.buttons["search_person_ns_qi_wu"].waitForExistence(timeout: 5)); qi.buttons["search_person_ns_qi_wu"].tap()
+        reach(qi.buttons["eventCategory_社会"], in: qi, attempts: 12); qi.buttons["eventCategory_社会"].tap()
+        XCTAssertTrue(qi.staticTexts["永明八年调整却籍处置"].waitForExistence(timeout: 5))
+        XCTAssertFalse(qi.staticTexts["检籍、却籍与户籍冲突"].exists)
+        shot("v107-qi-registration-correction", qi)
+        qi.terminate()
+
+        let han = XCUIApplication()
+        han.launchArguments = ["--uitesting", "--ui-dynasty", "han"]
+        han.launch()
+        XCTAssertTrue(han.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        han.buttons["globalSearch"].tap()
+        let hanSearch = han.searchFields.firstMatch
+        XCTAssertTrue(hanSearch.waitForExistence(timeout: 5)); hanSearch.tap(); hanSearch.typeText("刘秀")
+        XCTAssertTrue(han.buttons["search_person_han_guangwu"].waitForExistence(timeout: 5)); han.buttons["search_person_han_guangwu"].tap()
+        reach(han.buttons["eventCategory_文化"], in: han, attempts: 12); han.buttons["eventCategory_文化"].tap()
+        XCTAssertTrue(han.staticTexts["建武五年修起洛阳太学"].waitForExistence(timeout: 5))
+        shot("v107-guangwu-taixue-date", han)
+    }
+
 }
