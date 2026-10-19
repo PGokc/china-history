@@ -2851,4 +2851,20 @@ final class MingJiUITests: XCTestCase {
         shot("v91-period-context-disclosure", app)
     }
 
+    @MainActor func testV96EasternHanUsesCEReignMaterial() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["--uitesting", "--ui-dynasty", "han"]
+        app.launch()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        app.buttons["globalSearch"].tap()
+        let search = app.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("刘秀")
+        XCTAssertTrue(app.buttons["search_person_han_guangwu"].waitForExistence(timeout: 5)); app.buttons["search_person_han_guangwu"].tap()
+        reach(app.buttons["eventCategory_社会"], in: app, attempts: 12); app.buttons["eventCategory_社会"].tap()
+        XCTAssertTrue(app.staticTexts["释放奴婢诏令与战后社会恢复"].waitForExistence(timeout: 5))
+        XCTAssertFalse(app.staticTexts["昭君出塞"].exists)
+        XCTAssertFalse(app.staticTexts["majorEventsPeriodContext"].exists)
+        shot("v96-eastern-han-social-history", app)
+    }
+
 }

@@ -1458,16 +1458,31 @@ if d['version'] >= 60:
 
 if d['version'] >= 61:
  complete,total=durable_coverage({'song_liao_xia_jin','yuan'})
- assert (complete,total)==(24,38)
+ assert complete>=24 and total==38
  print('V61 PASS: twenty-four of thirty-eight durable Song-Liao-Xia-Jin-Yuan reigns now expose all five lenses; unsupported gaps remain explicit')
 
 if d['version'] >= 62:
  complete,total=durable_coverage({'qin','han','three_kingdoms','jin','northern_southern','sui'})
- assert (complete,total)==(24,39)
+ assert complete>=24 and total==39
  print('V62 PASS: twenty-four of thirty-nine durable Qin-to-Sui reigns now expose all five lenses using chronologically overlapping reviewed material')
 
 if d['version'] >= 63:
  complete,total=durable_coverage({'xia','shang','zhou','five_dynasties'})
- assert (complete,total)==(16,21)
+ assert complete>=16 and total==21
  assert d['reviewed']=='2026-10-19'
  print('V63 PASS: early-state and Five-Dynasties contexts complete a five-pass audit without inventing evidence for the remaining gaps')
+
+if d['version'] >= 64:
+ added=[event for event in d['events'] if event['id'].startswith('v96')]
+ assert len(added)==23
+ assert all(event['sources'] and event['impact'] and len(re.findall(r'[\u4e00-\u9fff]',event['body']+event['impact']))>=105 for event in added)
+ assert not {'v49h_yuan_theme'}&set(contexts['han_guangwu']['events'])
+ assert not {'v49h_saltiron'}&set(contexts['han_zhang']['events'])
+ assert not {'v49h_jing_theme'}&set(contexts['han_huan']['events'])
+ assert durable_coverage({'song_liao_xia_jin','yuan'})==(30,38)
+ assert durable_coverage({'qin','han','three_kingdoms','jin','northern_southern','sui'})==(28,39)
+ assert durable_coverage({'xia','shang','zhou','five_dynasties'})==(18,21)
+ corpus=json.dumps(added,ensure_ascii=False)
+ assert all(term in corpus for term in ['不能只讲杯酒释兵权','不能据此把所有受牵连者视为同一宗教组织','不是献帝主持的宫廷工程','不能把所有蜀中艺术都直接归于王建'])
+ assert not re.search(r'本轮|补充内容|数据缺口|开发进度|AI生成|fallback',corpus,re.I)
+ print('V64 PASS: twenty-three structural events repair BCE/CE false links and deepen Song-Liao-Jin, Eastern Han and regional Five-Dynasties history')

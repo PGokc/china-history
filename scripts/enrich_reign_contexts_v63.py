@@ -95,11 +95,13 @@ def add_overlapping_context(dynasties):
             for event in data["events"]:
                 year = event_year(event)
                 bounds = event_bounds(event)
+                event_is_bce = event.get("year", "").startswith("前") and "世纪—" not in event.get("year", "")
+                reign_is_bce = all(period.get("label", "").startswith("前") for period in context["periods"])
                 same_stage = any(
                     people[target].get("dynasty") == people[person_id].get("dynasty")
                     for target in event.get("people", []) if target in people
                 )
-                if event.get("category") == category and year is not None and bounds is not None and any(bounds[0] <= b and bounds[1] >= a for a, b in periods) and same_stage:
+                if event.get("category") == category and event_is_bce == reign_is_bce and year is not None and bounds is not None and any(bounds[0] <= b and bounds[1] >= a for a, b in periods) and same_stage:
                     candidates.append(event)
             candidates.sort(key=lambda event: (abs(event_year(event) - (start + end) / 2), event["id"]))
             if candidates:
