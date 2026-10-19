@@ -2867,4 +2867,35 @@ final class MingJiUITests: XCTestCase {
         shot("v96-eastern-han-social-history", app)
     }
 
+    @MainActor func testV106DurableReignsAndFiveDynastiesReadingsAreDeep() throws {
+        let song = XCUIApplication()
+        song.launchArguments = ["--uitesting", "--ui-dynasty", "song_liao_xia_jin"]
+        song.launch()
+        XCTAssertTrue(song.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        song.buttons["globalSearch"].tap()
+        let songSearch = song.searchFields.firstMatch
+        XCTAssertTrue(songSearch.waitForExistence(timeout: 5)); songSearch.tap(); songSearch.typeText("赵恒")
+        XCTAssertTrue(song.buttons["search_person_s_zhenzong"].waitForExistence(timeout: 5)); song.buttons["search_person_s_zhenzong"].tap()
+        reach(song.buttons["eventCategory_社会"], in: song, attempts: 12); song.buttons["eventCategory_社会"].tap()
+        XCTAssertTrue(song.staticTexts["封禅、宫观营建与地方进献"].waitForExistence(timeout: 5))
+        XCTAssertFalse(song.staticTexts["majorEventsRelatedContext"].exists)
+        shot("v106-song-social-history", song)
+        song.terminate()
+
+        let five = XCUIApplication()
+        five.launchArguments = ["--uitesting", "--ui-dynasty", "five_dynasties"]
+        five.launch()
+        XCTAssertTrue(five.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        five.buttons["globalSearch"].tap()
+        let fiveSearch = five.searchFields.firstMatch
+        XCTAssertTrue(fiveSearch.waitForExistence(timeout: 5)); fiveSearch.tap(); fiveSearch.typeText("朱温")
+        XCTAssertTrue(five.buttons["search_person_fd_zhuwen"].waitForExistence(timeout: 5)); five.buttons["search_person_fd_zhuwen"].tap()
+        XCTAssertTrue(five.buttons["articleEntry"].waitForExistence(timeout: 5)); five.buttons["articleEntry"].tap()
+        XCTAssertTrue(five.buttons["articleContents"].waitForExistence(timeout: 5)); five.buttons["articleContents"].tap()
+        XCTAssertTrue(five.buttons["从唐末军阀到后梁皇帝"].exists)
+        five.buttons["从唐末军阀到后梁皇帝"].tap()
+        XCTAssertTrue(five.staticTexts["从唐末军阀到后梁皇帝"].waitForExistence(timeout: 5))
+        shot("v106-five-dynasties-sixth-layer", five)
+    }
+
 }

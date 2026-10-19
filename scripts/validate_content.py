@@ -1479,10 +1479,62 @@ if d['version'] >= 64:
  assert not {'v49h_yuan_theme'}&set(contexts['han_guangwu']['events'])
  assert not {'v49h_saltiron'}&set(contexts['han_zhang']['events'])
  assert not {'v49h_jing_theme'}&set(contexts['han_huan']['events'])
- assert durable_coverage({'song_liao_xia_jin','yuan'})==(30,38)
- assert durable_coverage({'qin','han','three_kingdoms','jin','northern_southern','sui'})==(28,39)
- assert durable_coverage({'xia','shang','zhou','five_dynasties'})==(18,21)
+ assert durable_coverage({'song_liao_xia_jin','yuan'})[0]>=30
+ assert durable_coverage({'qin','han','three_kingdoms','jin','northern_southern','sui'})[0]>=28
+ assert durable_coverage({'xia','shang','zhou','five_dynasties'})[0]>=18
  corpus=json.dumps(added,ensure_ascii=False)
  assert all(term in corpus for term in ['不能只讲杯酒释兵权','不能据此把所有受牵连者视为同一宗教组织','不是献帝主持的宫廷工程','不能把所有蜀中艺术都直接归于王建'])
  assert not re.search(r'本轮|补充内容|数据缺口|开发进度|AI生成|fallback',corpus,re.I)
  print('V64 PASS: twenty-three structural events repair BCE/CE false links and deepen Song-Liao-Jin, Eastern Han and regional Five-Dynasties history')
+
+if d['version'] >= 65:
+ for pid,c in contexts.items():
+  if people[pid].get('dynasty')!='han':continue
+  reign_bce=all(period['label'].startswith('前') for period in c['periods'])
+  for eid in c['events']:
+   label=events[eid]['year']
+   event_bce=label.startswith('前') and not re.search(r'前\d+世纪[—–-]\d+世纪',label)
+   assert event_bce==reign_bce or ('世纪' in label and '—' in label),(pid,eid,'BCE/CE direction mismatch')
+ print('V65 PASS: Han reign links distinguish BCE dates from CE dates before category coverage is counted')
+
+def assert_deep_prefix(prefix,count):
+ selected=[event for event in d['events'] if event['id'].startswith(prefix)]
+ assert len(selected)==count,(prefix,len(selected))
+ assert all(event['sources'] and event['impact'] and len(re.findall(r'[\u4e00-\u9fff]',event['body']+event['impact']))>=105 for event in selected)
+ return selected
+
+if d['version'] >= 66:
+ assert_deep_prefix('v98',1)
+ print('V66 PASS: Northern Song ritual mobilization adds a sourced social lens to Zhenzong’s reign')
+if d['version'] >= 67:
+ assert_deep_prefix('v99',4)
+ print('V67 PASS: Liao and Jin fiscal, environmental and military contexts close four durable-reign gaps')
+if d['version'] >= 68:
+ assert_deep_prefix('v100',5)
+ print('V68 PASS: Western Xia border trade and Yuan-Chagatai war complete evidence-bounded western-polity lenses')
+if d['version'] >= 69:
+ assert_deep_prefix('v101',3)
+ print('V69 PASS: Eastern Han education, agriculture and Qiang-war readings replace broad or misplaced context')
+if d['version'] >= 70:
+ assert_deep_prefix('v102',3)
+ print('V70 PASS: Wu finance and Western/Eastern Jin cultural contexts preserve agency and source boundaries')
+if d['version'] >= 71:
+ assert_deep_prefix('v103',5)
+ print('V71 PASS: Liu-Song and Southern-Qi military, monetary, household and registration history is exposed')
+if d['version'] >= 72:
+ assert_deep_prefix('v104',7)
+ print('V72 PASS: Northern-Wei state formation now connects war, education, economy, migration and border recovery')
+if d['version'] >= 73:
+ assert_deep_prefix('v105',3)
+ print('V73 PASS: Later-Liang, Yang-Wu and Min retain cultural and military history beyond succession lists')
+if d['version'] >= 74:
+ assert durable_coverage({'tang'})==(14,14)
+ assert durable_coverage({'song_liao_xia_jin','yuan'})==(38,38)
+ assert durable_coverage({'qin','han','three_kingdoms','jin','northern_southern','sui'})==(39,39)
+ assert durable_coverage({'xia','shang','zhou','five_dynasties'})==(21,21)
+ deepened=['fd_zhuwen','fd_cunxu','fd_siyuan','fd_jingtang','fd_zhiyuan','fd_guowei','fd_chairong','fd_wy_qianliu','fd_min_shenzhi','fd_nt_yu']
+ for pid in deepened:
+  article=articles[pid]
+  assert len(article['sections'])==6 and any(section['id'].startswith('v106-') for section in article['sections'])
+  assert sum(len(re.findall(r'[\u4e00-\u9fff]',section['text'])) for section in article['sections'])>=740
+ print('V74 PASS: all durable reigns expose five historical lenses; ten consequential Five-Dynasties rulers gain a sixth evidence-bounded reading layer')
