@@ -7,7 +7,7 @@ struct DynastyDetailPage: View {
 
     var body: some View {
         if dynastyID == "prehistory" {
-            PrehistoryOverviewPage(store: store)
+            PrehistoryPage(store: store)
         } else if let dynasty = store.dynasty(dynastyID), let profile = store.dynastyProfile(dynastyID) {
             ScrollView {
                 VStack(alignment: .leading, spacing: 28) {
@@ -297,93 +297,6 @@ struct TerritoryMapCard: View {
                 SourcesView(store: store, ids: map.sources, compact: true).padding(.top, 8)
             }.font(.caption).foregroundStyle(Theme.muted)
         }
-    }
-}
-
-struct PrehistoryOverviewPage: View {
-    let store: HistoryStore
-    @State private var selectedSiteID: String?
-    @State private var showingSite = false
-    private var sites: [PrehistorySite] { store.content.prehistorySites ?? [] }
-    private var featuredSites: [PrehistorySite] {
-        ["zhoukoudian", "shandingdong", "banpo", "hemudu", "liangzhu"].compactMap(store.prehistorySite)
-    }
-    private var profile: DynastyProfile? { store.dynastyProfile("prehistory") }
-
-    var body: some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: 28) {
-                VStack(alignment: .leading, spacing: 9) {
-                    Text("约210万年前—约前2070").font(.caption.monospacedDigit()).foregroundStyle(Theme.cinnabar)
-                    Text("史前中国").font(.system(size: 38, weight: .medium, design: .serif)).foregroundStyle(Theme.ink)
-                    Text(profile?.subtitle ?? "从遗址读懂没有文字的历史").font(.title3).foregroundStyle(Theme.text)
-                }
-                NavigationLink {
-                    PrehistoryPage(store: store)
-                } label: {
-                    VStack(alignment: .leading, spacing: 7) {
-                        Text("史前时间地图").font(.system(.title3, design: .serif).weight(.medium)).foregroundStyle(Theme.ink)
-                        Text("拖动年代，观察不同时期遗址在今天中国版图上的分布")
-                            .font(.subheadline).foregroundStyle(Theme.muted).lineSpacing(4)
-                    }.frame(maxWidth: .infinity, alignment: .leading).padding(.vertical, 4)
-                }.buttonStyle(QuietRowStyle()).accessibilityIdentifier("prehistoryTimelineEntry")
-
-                VStack(alignment: .leading, spacing: 0) {
-                    Text("从熟悉的遗址开始").font(.system(.title3, design: .serif).weight(.medium)).foregroundStyle(Theme.ink).padding(.bottom, 8)
-                    ForEach(featuredSites) { site in
-                        NavigationLink(value: DetailRoute.prehistorySite(site.id)) {
-                            VStack(alignment: .leading, spacing: 6) {
-                                Text(site.name).font(.system(.headline, design: .serif)).foregroundStyle(Theme.ink)
-                                Text(site.period + "　" + site.location).font(.caption).foregroundStyle(Theme.muted)
-                                Text(site.summary).font(.subheadline).foregroundStyle(Theme.text).lineLimit(2).lineSpacing(4)
-                            }.frame(maxWidth: .infinity, alignment: .leading).padding(.vertical, 15).contentShape(Rectangle())
-                        }.buttonStyle(QuietRowStyle()).accessibilityIdentifier("featuredPrehistoricSite_\(site.id)")
-                        if site.id != featuredSites.last?.id { Rectangle().fill(Theme.line.opacity(0.42)).frame(height: 0.5) }
-                    }
-                }
-
-                if let overview = profile?.overview { DynastyOverviewBlock(title: "时代总览", text: overview) }
-
-                VStack(alignment: .leading, spacing: 12) {
-                    Text("遗址分布").font(.system(.title3, design: .serif).weight(.medium)).foregroundStyle(Theme.ink)
-                    PrehistoryMap(sites: sites) { id in
-                        selectedSiteID = id
-                        showingSite = true
-                    }
-                    .frame(height: 390)
-                    .clipShape(RoundedRectangle(cornerRadius: 8))
-                    .accessibilityIdentifier("prehistoryMap")
-                    Text("点按名称查看遗址，点按分组展开相邻地点。")
-                        .font(.caption).foregroundStyle(Theme.muted).lineSpacing(4)
-
-                }
-
-                VStack(alignment: .leading, spacing: 0) {
-                    Text("沿年代浏览").font(.system(.title3, design: .serif).weight(.medium)).foregroundStyle(Theme.ink).padding(.bottom, 8)
-                    ForEach(sites) { site in
-                        NavigationLink(value: DetailRoute.prehistorySite(site.id)) {
-                            HStack(alignment: .top, spacing: 15) {
-                                VStack(alignment: .leading, spacing: 6) {
-                                    Text(site.period).font(.caption.monospacedDigit()).foregroundStyle(Theme.cinnabar)
-                                    Text(site.name).font(.system(.headline, design: .serif)).foregroundStyle(Theme.ink)
-                                    Text(site.location).font(.caption).foregroundStyle(Theme.muted)
-                                }
-                                Spacer()
-                            }.padding(.vertical, 16).contentShape(Rectangle())
-                            }.buttonStyle(QuietRowStyle()).accessibilityIdentifier("prehistoricSite_\(site.id)")
-                            if site.id != sites.last?.id { Rectangle().fill(Theme.line.opacity(0.42)).frame(height: 0.5) }
-                    }
-                }
-                if let sources = profile?.sources { SourcesView(store: store, ids: sources) }
-            }.padding(.horizontal, 24).padding(.top, 22).padding(.bottom, Theme.pageBottom)
-        }
-        .background(Theme.paper)
-        .navigationTitle("史前遗址")
-        .navigationBarTitleDisplayMode(.inline).toolbarBackground(Theme.paper, for: .navigationBar).toolbarBackground(.visible, for: .navigationBar)
-        .navigationDestination(isPresented: $showingSite) {
-            if let id = selectedSiteID { PrehistorySitePage(store: store, siteID: id) }
-        }
-        .accessibilityIdentifier("prehistoryOverviewPage")
     }
 }
 

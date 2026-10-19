@@ -63,6 +63,28 @@ final class MingJiUITests: XCTestCase {
         app.buttons["文明起源"].tap()
         shot("v28-time-map", app)
     }
+    @MainActor func testV109PrehistoryOpensOnMapAndUsesOneGroupedGuide() throws {
+        let app = launch(enterFamily: false)
+        XCTAssertTrue(app.buttons["dynasty_prehistory"].waitForExistence(timeout: 5))
+        app.buttons["dynasty_prehistory"].tap()
+        XCTAssertTrue(app.descendants(matching: .any)["prehistoryPage"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.descendants(matching: .any)["prehistoryTimeMap"].exists)
+        XCTAssertTrue(app.sliders["historyTimeSlider"].exists)
+        XCTAssertFalse(app.buttons["prehistoryTimelineEntry"].exists)
+        XCTAssertTrue(app.staticTexts["在时间中观察遗址"].exists)
+        shot("v109-prehistory-map-first", app)
+
+        let guide = app.staticTexts["prehistorySiteGuide"]
+        reach(guide, in: app, attempts: 14)
+        XCTAssertTrue(guide.exists)
+        XCTAssertTrue(app.staticTexts["远古人类"].exists)
+        reach(app.staticTexts["复杂聚落"], in: app, attempts: 20)
+        XCTAssertTrue(app.staticTexts["定居与农业"].exists)
+        XCTAssertTrue(app.staticTexts["复杂聚落"].exists)
+        XCTAssertTrue(app.buttons["prehistoricGuide_shimao"].exists)
+        shot("v109-prehistory-grouped-guide", app)
+    }
+
     @MainActor func testV27DynastyMetadataAndMapLinks() throws {
         let app = launch(enterFamily: false)
         XCTAssertFalse(app.staticTexts["正在探索 · 明"].exists)
@@ -442,10 +464,10 @@ final class MingJiUITests: XCTestCase {
         let app = launch(enterFamily: false)
         XCTAssertTrue(app.buttons["dynasty_prehistory"].waitForExistence(timeout: 5))
         app.buttons["dynasty_prehistory"].tap()
-        XCTAssertTrue(app.descendants(matching: .any)["prehistoryOverviewPage"].waitForExistence(timeout: 5))
-        XCTAssertTrue(app.descendants(matching: .any)["prehistoryMap"].exists)
-        reach(app.buttons["featuredPrehistoricSite_hemudu"], in: app, attempts: 12)
-        app.buttons["featuredPrehistoricSite_hemudu"].tap()
+        XCTAssertTrue(app.descendants(matching: .any)["prehistoryPage"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.descendants(matching: .any)["prehistoryTimeMap"].exists)
+        reach(app.buttons["prehistoricGuide_hemudu"], in: app, attempts: 16)
+        app.buttons["prehistoricGuide_hemudu"].tap()
         XCTAssertTrue(app.descendants(matching: .any)["prehistorySiteDetail_hemudu"].waitForExistence(timeout: 5))
         XCTAssertTrue(app.staticTexts["水湿环境保存了什么"].exists)
         XCTAssertTrue(app.staticTexts["稻作与多样食物"].exists)
@@ -2765,11 +2787,11 @@ final class MingJiUITests: XCTestCase {
     @MainActor func testV89BeijingManIsProminentAndPrehistoryReadingsAreLayered() throws {
         let app = launch(enterFamily: false)
         XCTAssertTrue(app.buttons["dynasty_prehistory"].waitForExistence(timeout: 5)); app.buttons["dynasty_prehistory"].tap()
-        XCTAssertTrue(app.descendants(matching: .any)["prehistoryOverviewPage"].waitForExistence(timeout: 5))
-        XCTAssertTrue(app.staticTexts["从熟悉的遗址开始"].exists)
+        XCTAssertTrue(app.descendants(matching: .any)["prehistoryPage"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["在时间中观察遗址"].exists)
         shot("v89-prehistory-overview", app)
-        let beijing = app.buttons["featuredPrehistoricSite_zhoukoudian"]
-        reach(beijing, in: app, attempts: 12); XCTAssertTrue(beijing.isHittable); beijing.tap()
+        let beijing = app.buttons["prehistoricGuide_zhoukoudian"]
+        reach(beijing, in: app, attempts: 16); XCTAssertTrue(beijing.isHittable); beijing.tap()
         XCTAssertTrue(app.descendants(matching: .any)["prehistorySiteDetail_zhoukoudian"].waitForExistence(timeout: 5))
         XCTAssertTrue(app.staticTexts["北京人遗址（周口店第一地点）"].exists)
         for title in ["从龙骨山到第一颗头盖骨", "洞穴里保存了哪些证据", "石器、取食与火的讨论", "年代从五十万年推到更早", "失踪化石与仍在继续的研究", "证据如何解读"] {

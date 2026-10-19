@@ -12,6 +12,9 @@ struct PrehistoryMap: UIViewRepresentable {
         let map = MKMapView()
         map.delegate = context.coordinator
         map.pointOfInterestFilter = .excludingAll
+        // The map sits inside a long reading page. Let vertical drags move the page;
+        // users can still pinch, tap a site, or tap a cluster to inspect the map.
+        map.isScrollEnabled = false
         map.isRotateEnabled = false
         map.isPitchEnabled = false
         let configuration = MKStandardMapConfiguration(elevationStyle: .flat, emphasisStyle: .muted)

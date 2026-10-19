@@ -1,3 +1,4 @@
+import Foundation
 import SwiftUI
 
 struct PrehistoryPage: View {
@@ -16,17 +17,34 @@ struct PrehistoryPage: View {
     }
     private var previous: Double? { positions.last { $0 > age + 1 } }
     private var next: Double? { positions.first { $0 < age - 1 } }
+    private var guideGroups: [(title: String, note: String, ids: [String])] {
+        [
+            ("远古人类", "从最早活动线索到现代人扩散", ["shangchen", "nihewan", "yuanmou", "lantian", "zhoukoudian", "dingcun", "jinniushan", "tianyuan", "shandingdong"]),
+            ("定居与农业", "陶器、稻粟栽培与村落生活", ["xianrendong", "shangshan", "jiahu", "hemudu", "banpo", "chengtoushan"]),
+            ("复杂聚落", "区域中心、城址与早期国家线索", ["dawenkou", "niuheliang", "liangzhu", "majiayao", "taosi", "shimao"]),
+        ]
+    }
     private func open(_ id: String) { selectedSiteID = id; showingSite = true }
     var body: some View {
         GeometryReader { geometry in
             ScrollView {
                 VStack(spacing: 0) {
+                    VStack(alignment: .leading, spacing: 6) {
+                        Text("约210万年前—约前2070")
+                            .font(.caption.monospacedDigit()).foregroundStyle(Theme.cinnabar)
+                        Text("在时间中观察遗址")
+                            .font(.system(.title2, design: .serif).weight(.medium)).foregroundStyle(Theme.ink)
+                        Text("拖动年代，地图只保留与当前时间重叠的地点。")
+                            .font(.subheadline).foregroundStyle(Theme.muted)
+                    }
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.horizontal, 24).padding(.top, 18).padding(.bottom, 8)
                     Picker("时间范围", selection: $scale) {
                         ForEach(PrehistoryScale.allCases) { item in Text(item.rawValue).tag(item) }
                     }.pickerStyle(.segmented).padding(.horizontal, 20).padding(.vertical, 12)
                         .accessibilityIdentifier("timeScale")
                     PrehistoryMap(sites: visibleSites, resetToken: scale.rawValue, openSite: open)
-                        .frame(height: max(240, geometry.size.height - (typeSize.isAccessibilitySize ? 350 : 250)))
+                        .frame(height: typeSize.isAccessibilitySize ? 310 : max(360, geometry.size.height * 0.56))
                         .accessibilityIdentifier("prehistoryTimeMap")
                     VStack(alignment: .leading, spacing: 14) {
                         HStack(alignment: .firstTextBaseline) {
@@ -54,34 +72,52 @@ struct PrehistoryPage: View {
                             Button("更晚") { if let next { age = next } }.disabled(next == nil)
                                 .frame(minWidth: 44, minHeight: 44).accessibilityIdentifier("laterTime")
                         }
-                    }.padding(.horizontal, 24).padding(.top, 8).padding(.bottom, Theme.pageBottom)
+                    }.padding(.horizontal, 24).padding(.top, 10).padding(.bottom, 30)
+
+                    VStack(alignment: .leading, spacing: 34) {
+                        VStack(alignment: .leading, spacing: 7) {
+                            Text("遗址导览")
+                                .font(.system(.title2, design: .serif).weight(.medium)).foregroundStyle(Theme.ink)
+                                .accessibilityIdentifier("prehistorySiteGuide")
+                            Text("21处遗址按历史问题分成三段；地图负责比较时间与位置，列表负责进入详细阅读。")
+                                .font(.subheadline).foregroundStyle(Theme.muted).lineSpacing(4)
+                        }
+                        ForEach(Array(guideGroups.enumerated()), id: \.offset) { _, group in
+                            PrehistoryGuideSection(store: store, title: group.title, note: group.note, ids: group.ids)
+                        }
+                    }
+                    .padding(.horizontal, 24).padding(.bottom, Theme.pageBottom)
                 }
             }.scrollBounceBehavior(.basedOnSize)
         }
         .background(Theme.paper).tint(Theme.cinnabar)
-        .navigationTitle("史前时间地图").navigationBarTitleDisplayMode(.inline)
+        .navigationTitle("史前中国").navigationBarTitleDisplayMode(.inline)
         .onChange(of: scale) { _, value in age = value.initialAge }
         .navigationDestination(isPresented: $showingSite) {
             if let id = selectedSiteID { PrehistorySitePage(store: store, siteID: id) }
         }
         .sheet(isPresented: $showingSites) {
             NavigationStack {
-                List {
-                    Section(scale.label(age)) {
-                        if visibleSites.isEmpty { Text("当前资料尚未覆盖这一时期，可拖动时间轴继续探索。").foregroundStyle(Theme.muted) }
-                        ForEach(visibleSites) { site in
+                ScrollView {
+                    VStack(alignment: .leading, spacing: 0) {
+                        Text(scale.label(age)).font(.caption.monospacedDigit()).foregroundStyle(Theme.cinnabar)
+                            .padding(.bottom, 12)
+                        if visibleSites.isEmpty {
+                            Text("当前资料尚未覆盖这一时期，可拖动时间轴继续探索。")
+                                .foregroundStyle(Theme.muted).padding(.vertical, 28)
+                        }
+                        ForEach(Array(visibleSites.enumerated()), id: \.element.id) { index, site in
                             NavigationLink {
                                 PrehistorySitePage(store: store, siteID: site.id)
                             } label: {
-                                VStack(alignment: .leading, spacing: 6) {
-                                    Text(site.name).font(.headline)
-                                    Text(site.dating.label).font(.caption).foregroundStyle(Theme.cinnabar)
-                                    Text(site.summary).font(.subheadline).foregroundStyle(Theme.muted)
-                                }.padding(.vertical, 6)
-                            }.accessibilityIdentifier("contemporary_\(site.id)")
+                                PrehistorySiteEditorialRow(site: site, index: index + 1, showsSummary: true)
+                            }
+                            .buttonStyle(.plain).accessibilityIdentifier("contemporary_\(site.id)")
                         }
-                    }
-                }.navigationTitle("同时期遗址").navigationBarTitleDisplayMode(.inline)
+                    }.padding(.horizontal, 24).padding(.top, 20).padding(.bottom, 36)
+                }
+                .background(Theme.paper)
+                .navigationTitle("同时期遗址").navigationBarTitleDisplayMode(.inline)
                     .toolbar { ToolbarItem(placement: .confirmationAction) { Button("完成") { showingSites = false } } }
             }
         }
@@ -100,5 +136,55 @@ struct PrehistoryPage: View {
             }.presentationDetents([.medium, .large])
         }
         .accessibilityIdentifier("prehistoryPage")
+    }
+}
+
+private struct PrehistoryGuideSection: View {
+    let store: HistoryStore
+    let title: String
+    let note: String
+    let ids: [String]
+
+    private var sites: [PrehistorySite] { ids.compactMap { store.prehistorySite($0) } }
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 0) {
+            Text(title).font(.system(.title3, design: .serif).weight(.medium)).foregroundStyle(Theme.ink)
+            Text(note).font(.caption).foregroundStyle(Theme.muted).padding(.top, 4).padding(.bottom, 10)
+            ForEach(Array(sites.enumerated()), id: \.element.id) { index, site in
+                NavigationLink(value: DetailRoute.prehistorySite(site.id)) {
+                    PrehistorySiteEditorialRow(site: site, index: index + 1, showsSummary: false)
+                }
+                .buttonStyle(.plain)
+                .accessibilityIdentifier("prehistoricGuide_\(site.id)")
+            }
+        }
+    }
+}
+
+private struct PrehistorySiteEditorialRow: View {
+    let site: PrehistorySite
+    let index: Int
+    let showsSummary: Bool
+
+    var body: some View {
+        HStack(alignment: .top, spacing: 14) {
+            Text(String(format: "%02d", index))
+                .font(.caption.monospacedDigit()).foregroundStyle(Theme.cinnabar)
+                .frame(width: 26, alignment: .leading).padding(.top, 3)
+            VStack(alignment: .leading, spacing: 5) {
+                Text(site.name).font(.system(.headline, design: .serif)).foregroundStyle(Theme.ink)
+                    .fixedSize(horizontal: false, vertical: true)
+                Text(site.period).font(.caption.monospacedDigit()).foregroundStyle(Theme.muted)
+                Text(site.location).font(.caption).foregroundStyle(Theme.muted)
+                if showsSummary {
+                    Text(site.summary).font(.subheadline).foregroundStyle(Theme.text).lineSpacing(4)
+                        .padding(.top, 2)
+                }
+            }
+            Spacer(minLength: 0)
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding(.vertical, 13).contentShape(Rectangle())
     }
 }
