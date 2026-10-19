@@ -72,12 +72,8 @@ struct RootView: View {
                 selected = store.defaultPerson(in: dynasty)
                 familyPath.removeAll(); sequencePath.removeAll(); collectionPath.removeAll()
             }
-            .onChange(of: tab) { _, newTab in
+            .onChange(of: tab) { _, _ in
                 NotificationCenter.default.post(name: .stopArticleNarration, object: nil)
-                if newTab == 2 {
-                    selected = store.defaultPerson(in: selectedDynasty)
-                    familyPath.removeAll()
-                }
             }
     }
 }
@@ -85,7 +81,6 @@ struct DynastyPage: View {
     let store: HistoryStore
     @Binding var selectedDynasty: String
     @Binding var path: [DetailRoute]
-    @State private var lastOpenedDynasty: String?
     var body: some View {
         ScrollView {
             LazyVStack(alignment: .leading, spacing: 0) {
@@ -94,8 +89,7 @@ struct DynastyPage: View {
                     Text("沿年代看王朝更替，也看见并立与转折。").font(.body).foregroundStyle(Theme.text).lineSpacing(5)
                 }.padding(.bottom, 26)
                 ForEach(store.content.dynasties ?? []) { dynasty in
-                    DynastyRow(dynasty: dynasty, isSelected: dynasty.id == (lastOpenedDynasty ?? selectedDynasty)) {
-                        lastOpenedDynasty = dynasty.id
+                    DynastyRow(dynasty: dynasty, isSelected: dynasty.id == selectedDynasty) {
                         if dynasty.selectable { selectedDynasty = dynasty.id }
                         path.append(.dynasty(dynasty.id))
                     }
@@ -647,16 +641,23 @@ struct CollectionPage: View {
     private var categories: [CollectionCategory] {
         CollectionCategory.allCases.filter { $0 == .tombs ? !store.tombs(in: dynastyID).isEmpty : !artifacts(for: $0).isEmpty }
     }
+    private var totalCount: Int { categories.reduce(0) { $0 + itemCount(for: $1) } }
 
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 0) {
-                Text("从思想、典籍与遗存，理解制度、知识和生活的变化。")
+                Text("收录\(totalCount)项。沿思想、典籍与遗存，理解制度、知识和生活的变化。")
                     .font(.subheadline).foregroundStyle(Theme.muted).lineSpacing(4).padding(.bottom, 24)
                 ForEach(categories) { category in
                     NavigationLink(value: DetailRoute.collectionCategory(dynastyID, category.rawValue)) {
                         VStack(alignment: .leading, spacing: 7) {
-                            Text(category.title).font(.system(.title2, design: .serif).weight(.medium)).foregroundStyle(Theme.ink)
+                            HStack(alignment: .firstTextBaseline, spacing: 12) {
+                                Text(category.title).font(.system(.title2, design: .serif).weight(.medium)).foregroundStyle(Theme.ink)
+                                Spacer(minLength: 8)
+                                Text("\(itemCount(for: category))项")
+                                    .font(.caption.monospacedDigit()).foregroundStyle(Theme.muted)
+                                    .accessibilityIdentifier("collectionCount_\(category.rawValue)")
+                            }
                             Text(category.note).font(.subheadline).foregroundStyle(Theme.muted)
                         }
                         .frame(maxWidth: .infinity, alignment: .leading)
@@ -676,6 +677,9 @@ struct CollectionPage: View {
 
     private func artifacts(for category: CollectionCategory) -> [Artifact] {
         store.objects(in: dynastyID).filter { $0.collectionCategory == category }
+    }
+    private func itemCount(for category: CollectionCategory) -> Int {
+        category == .tombs ? store.tombs(in: dynastyID).count : artifacts(for: category).count
     }
 }
 

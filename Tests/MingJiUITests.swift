@@ -85,28 +85,70 @@ final class MingJiUITests: XCTestCase {
         shot("v109-prehistory-grouped-guide", app)
     }
 
+    @MainActor func testV110FiveUserExperienceRounds() throws {
+        let navigation = launch(enterFamily: false)
+        navigation.buttons["dynasty_prehistory"].tap()
+        XCTAssertTrue(navigation.descendants(matching: .any)["prehistoryPage"].waitForExistence(timeout: 5))
+        navigation.navigationBars.buttons.element(boundBy: 0).tap()
+        XCTAssertEqual(navigation.buttons["dynasty_ming"].value as? String, "已选中")
+        XCTAssertNotEqual(navigation.buttons["dynasty_prehistory"].value as? String, "已选中")
+        navigation.terminate()
+
+        let overview = XCUIApplication()
+        overview.launchArguments = ["--uitesting", "--ui-dynasty", "qing"]
+        overview.launch()
+        XCTAssertTrue(overview.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        reach(overview.buttons["dynasty_qing"], in: overview, attempts: 14); overview.buttons["dynasty_qing"].tap()
+        XCTAssertTrue(overview.staticTexts["dynastyDestinationsTitle"].waitForExistence(timeout: 5))
+        XCTAssertTrue(overview.buttons["dynastySequence_qing"].exists)
+        XCTAssertLessThan(overview.staticTexts["dynastyDestinationsTitle"].frame.minY, overview.staticTexts["朝代总览"].frame.minY)
+        shot("v110-dynasty-destinations-first", overview)
+        overview.terminate()
+
+        let large = launch(true)
+        large.buttons["personHero"].tap()
+        XCTAssertTrue(large.staticTexts["personSummary"].waitForExistence(timeout: 5))
+        XCTAssertFalse(large.buttons["人物简介"].exists)
+        shot("v110-large-text-summary", large)
+        large.terminate()
+
+        let collection = XCUIApplication()
+        collection.launchArguments = ["--uitesting", "--ui-dynasty", "qing"]
+        collection.launch()
+        XCTAssertTrue(collection.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        collection.tabBars.buttons["遗珍"].tap()
+        XCTAssertTrue(collection.staticTexts["collectionCount_ideas"].waitForExistence(timeout: 5))
+        XCTAssertTrue(collection.staticTexts["collectionCount_objects"].exists)
+        XCTAssertTrue(collection.staticTexts["collectionCount_tombs"].exists)
+        shot("v110-collection-counts", collection)
+        collection.terminate()
+
+        let continuity = launch()
+        chooseChild("biao", in: continuity)
+        XCTAssertTrue(continuity.buttons["personHero"].label.contains("朱标"))
+        continuity.tabBars.buttons["帝序"].tap()
+        XCTAssertTrue(continuity.buttons["succession_0"].waitForExistence(timeout: 5))
+        continuity.tabBars.buttons["家族"].tap()
+        XCTAssertTrue(continuity.buttons["personHero"].waitForExistence(timeout: 5))
+        XCTAssertTrue(continuity.buttons["personHero"].label.contains("朱标"))
+        shot("v110-family-continuity", continuity)
+    }
+
     @MainActor func testV27DynastyMetadataAndMapLinks() throws {
         let app = launch(enterFamily: false)
         XCTAssertFalse(app.staticTexts["正在探索 · 明"].exists)
         app.buttons["dynasty_prehistory"].tap()
-        app.buttons["总览"].tap()
-        app.swipeUp()
         shot("v27-map-overview", app)
-        for _ in 0..<4 {
-            let cluster = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@ AND identifier CONTAINS %@", "siteCluster_", "hemudu")).firstMatch
-            if !cluster.exists { break }
-            cluster.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.5)).tap()
-            Thread.sleep(forTimeInterval: 1)
-        }
-        let marker = app.buttons["siteMarker_hemudu"]
-        XCTAssertTrue(marker.waitForExistence(timeout: 5))
+        XCTAssertTrue(app.sliders["historyTimeSlider"].exists)
+        let hemudu = app.buttons["prehistoricGuide_hemudu"]
+        reach(hemudu, in: app, attempts: 14)
         shot("v27-map", app)
-        marker.tap()
+        hemudu.tap()
         XCTAssertTrue(app.navigationBars["河姆渡遗址"].waitForExistence(timeout: 5))
         app.navigationBars.buttons.element(boundBy: 0).tap()
         app.navigationBars.buttons.element(boundBy: 0).tap()
-        app.navigationBars.buttons.element(boundBy: 0).tap()
-        XCTAssertEqual(app.buttons["dynasty_prehistory"].value as? String, "已选中")
+        XCTAssertEqual(app.buttons["dynasty_ming"].value as? String, "已选中")
+        XCTAssertNotEqual(app.buttons["dynasty_prehistory"].value as? String, "已选中")
         shot("v27-dynasty", app)
         app.tabBars.buttons["帝序"].tap()
         XCTAssertTrue(app.staticTexts["庙号 太祖"].exists)

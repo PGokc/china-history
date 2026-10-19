@@ -15,7 +15,10 @@ struct PersonPage: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 24) {
-                HStack(alignment: .top, spacing: 18) {
+                let headerLayout = typeSize.isAccessibilitySize
+                    ? AnyLayout(VStackLayout(alignment: .leading, spacing: 16))
+                    : AnyLayout(HStackLayout(alignment: .top, spacing: 18))
+                headerLayout {
                     if store.portrait(p.id) != nil || store.image(p.id) != nil {
                         NavigationLink(value: DetailRoute.portrait(p.id)) {
                             VStack(spacing: 7) {
@@ -26,12 +29,13 @@ struct PersonPage: View {
                     }
                     VStack(alignment: .leading, spacing: 8) {
                         Text(p.kind).font(.caption.weight(.medium)).foregroundStyle(Theme.cinnabar)
-                        Text(p.name).font(.system(.largeTitle, design: .serif)).foregroundStyle(Theme.ink)
+                        Text(p.name).font(.system(.largeTitle, design: .serif)).foregroundStyle(Theme.ink).fixedSize(horizontal: false, vertical: true)
                         Text(p.call).font(.subheadline).foregroundStyle(Theme.muted)
                         if p.kind == "皇帝" { Text("在位 \(p.reign)").font(.caption).monospacedDigit() }
                     }.frame(maxWidth: .infinity, alignment: .leading)
                 }
-                if !typeSize.isAccessibilitySize { Text(p.summary).font(.body).lineSpacing(7).fixedSize(horizontal: false, vertical: true) }
+                Text(p.summary).font(.body).lineSpacing(7).fixedSize(horizontal: false, vertical: true)
+                    .accessibilityIdentifier("personSummary")
                 if let article = store.article(p.id) {
                     NavigationLink(value: DetailRoute.article(p.id)) {
                         HStack(alignment: .center, spacing: 14) {
@@ -50,9 +54,6 @@ struct PersonPage: View {
                 PersonQuickLinks(items: quickLinks)
                 if p.kind == "皇帝" && !store.events(p.id).isEmpty {
                     MajorEventsPanel(store: store, personID: p.id, selection: $selectedEventCategory, previewLimit: 2)
-                }
-                if typeSize.isAccessibilitySize {
-                    DisclosureGroup("人物简介") { Text(p.summary).font(.body).lineSpacing(5).padding(.top, 10) }
                 }
             }.padding(24).padding(.bottom, Theme.pageBottomAfterStandardPadding)
         }.background(Theme.paper).foregroundStyle(Theme.text)
