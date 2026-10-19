@@ -2926,4 +2926,40 @@ final class MingJiUITests: XCTestCase {
         shot("v107-guangwu-taixue-date", han)
     }
 
+    @MainActor func testV108ThreeKingdomsReadingsArePersonSpecific() throws {
+        let sun = XCUIApplication()
+        sun.launchArguments = ["--uitesting", "--ui-dynasty", "three_kingdoms"]
+        sun.launch()
+        XCTAssertTrue(sun.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        sun.buttons["globalSearch"].tap()
+        let sunSearch = sun.searchFields.firstMatch
+        XCTAssertTrue(sunSearch.waitForExistence(timeout: 5)); sunSearch.tap(); sunSearch.typeText("孙策")
+        XCTAssertTrue(sun.buttons["search_person_tk_sunce"].waitForExistence(timeout: 5)); sun.buttons["search_person_tk_sunce"].tap()
+        XCTAssertTrue(sun.buttons["articleEntry"].waitForExistence(timeout: 5)); sun.buttons["articleEntry"].tap()
+        XCTAssertTrue(sun.buttons["articleContents"].waitForExistence(timeout: 5)); sun.buttons["articleContents"].tap()
+        for chapter in ["从袁术部下到渡江自立", "江东地方精英既合作也抵抗", "比较征服与治理"] {
+            XCTAssertTrue(sun.buttons[chapter].exists)
+        }
+        XCTAssertFalse(sun.buttons["时代位置"].exists)
+        sun.buttons["江东地方精英既合作也抵抗"].tap()
+        XCTAssertTrue(sun.staticTexts["江东地方精英既合作也抵抗"].waitForExistence(timeout: 5))
+        shot("v108-sun-ce-specific-reading", sun)
+        sun.terminate()
+
+        let ji = XCUIApplication()
+        ji.launchArguments = ["--uitesting", "--ui-dynasty", "three_kingdoms"]
+        ji.launch()
+        XCTAssertTrue(ji.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        ji.buttons["globalSearch"].tap()
+        let jiSearch = ji.searchFields.firstMatch
+        XCTAssertTrue(jiSearch.waitForExistence(timeout: 5)); jiSearch.tap(); jiSearch.typeText("嵇康")
+        XCTAssertTrue(ji.buttons["search_person_tk_jikang"].waitForExistence(timeout: 5)); ji.buttons["search_person_tk_jikang"].tap()
+        XCTAssertTrue(ji.buttons["articleEntry"].waitForExistence(timeout: 5)); ji.buttons["articleEntry"].tap()
+        XCTAssertTrue(ji.buttons["articleContents"].waitForExistence(timeout: 5)); ji.buttons["articleContents"].tap()
+        XCTAssertTrue(ji.buttons["音乐、养生与名教批评"].exists)
+        XCTAssertTrue(ji.buttons["广陵散与可确认事实"].exists)
+        XCTAssertTrue(ji.buttons["思想、生活与政治不能拆开"].exists)
+        shot("v108-ji-kang-specific-reading", ji)
+    }
+
 }

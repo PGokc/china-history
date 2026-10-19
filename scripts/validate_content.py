@@ -1564,3 +1564,35 @@ if d['version'] >= 75:
   assert len(re.findall(r'[\u4e00-\u9fff]',section['text']))>=240,(pid,'short audited section')
   assert sum(len(re.findall(r'[\u4e00-\u9fff]',section['text'])) for section in article['sections'])>=900,(pid,'short article')
  print('V75 PASS: corrected chronology and attribution; precise primary-source chapters support audited events; ten Five-Dynasties readings exceed 900 Chinese characters')
+three_kingdoms_passes={
+ 76:('江东奠基',['tk_sunjian','tk_sunce']),
+ 77:('赤壁联盟',['tk_zhouyu','tk_lusu']),
+ 78:('荆州攻守',['tk_lvmeng','tk_luxun']),
+ 79:('蜀汉建立',['tk_liubei','tk_guanyu']),
+ 80:('蜀汉将领',['tk_zhangfei','tk_zhaoyun']),
+ 81:('益州与托孤',['tk_zhugeliang','tk_pangtong']),
+ 82:('曹魏建国',['tk_caopi','tk_caorui']),
+ 83:('司马氏掌权',['tk_simayi','tk_simashi']),
+ 84:('魏灭蜀',['tk_dengai','tk_zhonghui']),
+ 85:('文学与名教',['tk_caozhi','tk_jikang']),
+}
+for version,(label,pids) in three_kingdoms_passes.items():
+ if d['version']>=version:
+  for pid in pids:
+   article=articles[pid]
+   titles={section['title'] for section in article['sections']}
+   assert len(article['sections'])==7,(pid,'requires seven specific layers')
+   assert not titles & {'时代位置','选择、制度与代价','人物关系与实物证据'},(pid,'templated title remains')
+   total=sum(len(re.findall(r'[\u4e00-\u9fff]',section['text'])) for section in article['sections'])
+   assert total>=580,(pid,total,'short bespoke reading')
+   assert all(section['events'] and section['sources'] for section in article['sections'])
+  print(f'V{version} PASS: {label} pair has seven person-specific reading layers and no legacy template headings')
+if d['version']>=85:
+ assert {'v108_sgz46','v108_jinshu1','v108_jinshu2','v108_jinshu49'} <= set(sources)
+ assert articles['tk_sunjian']['sources']==['v108_sgz46']
+ assert articles['tk_sunce']['sources']==['v108_sgz46']
+ for eid in ['v108_sunjian_coalition','v108_sunce_jiangdong','v108_zhangfei_yizhou','v108_pangtong_yizhou']:
+  event=events[eid]
+  assert len(re.findall(r'[\u4e00-\u9fff]',event['body']+event['impact']))>=100
+ assert '孙权称帝' not in ''.join(section['text'] for section in articles['tk_sunce']['sections'])
+ print('V85 DETAIL PASS: four missing person-events and exact primary biographies replace the Sun-Ce source mismatch')
