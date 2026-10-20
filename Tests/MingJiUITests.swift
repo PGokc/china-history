@@ -229,11 +229,42 @@ final class MingJiUITests: XCTestCase {
         app.buttons["articleContents"].tap();app.buttons["开篇"].tap();shot("04-article",app)
         app.buttons["articleContents"].tap()
         app.buttons["1368年为什么值得单独记住"].tap();shot("05-chapter",app)
-        XCTAssertTrue(app.staticTexts["1368年为什么值得单独记住"].isHittable)
+        XCTAssertEqual(app.buttons["articleContents"].value as? String, "1368年为什么值得单独记住")
         app.terminate();app.launch(); XCTAssertTrue(app.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10)); app.tabBars.buttons["家族"].tap()
         openArticle(in: app)
-        Thread.sleep(forTimeInterval:1)
+        XCTAssertTrue(app.descendants(matching: .any)["resumeReadingOffer"].waitForExistence(timeout: 5))
+        app.buttons["resumeReadingContinue"].tap()
         XCTAssertTrue(app.staticTexts["1368年为什么值得单独记住"].isHittable)
+    }
+
+    @MainActor func testV111ReadingChoiceLargeTitleAndSearchSuggestions() throws {
+        let reader = launch(); openArticle(in: reader)
+        reader.buttons["articleContents"].tap(); reader.buttons["1368年为什么值得单独记住"].tap()
+        reader.navigationBars.buttons.element(boundBy: 0).tap(); openArticle(in: reader)
+        XCTAssertTrue(reader.descendants(matching: .any)["resumeReadingOffer"].waitForExistence(timeout: 5))
+        XCTAssertTrue(reader.buttons["resumeReadingContinue"].exists)
+        XCTAssertTrue(reader.buttons["resumeReadingStartOver"].exists)
+        shot("v111-reading-choice", reader)
+        reader.buttons["resumeReadingStartOver"].tap()
+        XCTAssertEqual(reader.buttons["articleContents"].value as? String, "开篇")
+        reader.terminate()
+
+        let large = launch(true)
+        large.buttons["personHero"].tap()
+        let name = large.staticTexts["personName"]
+        XCTAssertTrue(name.waitForExistence(timeout: 5))
+        XCTAssertLessThan(name.frame.height, 65)
+        XCTAssertTrue(large.staticTexts["personSummary"].exists)
+        shot("v111-large-person-title", large)
+        large.terminate()
+
+        let search = launch(enterFamily: false)
+        search.buttons["globalSearch"].tap()
+        XCTAssertTrue(search.buttons["searchSuggestion_北京人"].waitForExistence(timeout: 5))
+        search.buttons["searchSuggestion_北京人"].tap()
+        XCTAssertTrue(search.staticTexts["searchResultCount"].waitForExistence(timeout: 5))
+        XCTAssertTrue(search.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "search_site_")).firstMatch.exists)
+        shot("v111-search-suggestion", search)
     }
     @MainActor func testV12ArticleNarrationControls() throws {
         let app = launch(); openArticle(in: app)

@@ -29,10 +29,15 @@ struct PersonPage: View {
                     }
                     VStack(alignment: .leading, spacing: 8) {
                         Text(p.kind).font(.caption.weight(.medium)).foregroundStyle(Theme.cinnabar)
-                        Text(p.name).font(.system(.largeTitle, design: .serif)).foregroundStyle(Theme.ink).fixedSize(horizontal: false, vertical: true)
+                        Text(p.name)
+                            .font(.system(typeSize.isAccessibilitySize ? .title : .largeTitle, design: .serif))
+                            .foregroundStyle(Theme.ink).fixedSize(horizontal: false, vertical: true)
+                            .accessibilityIdentifier("personName")
                         Text(p.call).font(.subheadline).foregroundStyle(Theme.muted)
                         if p.kind == "皇帝" { Text("在位 \(p.reign)").font(.caption).monospacedDigit() }
-                    }.frame(maxWidth: .infinity, alignment: .leading)
+                    }
+                    .dynamicTypeSize(...DynamicTypeSize.accessibility1)
+                    .frame(maxWidth: .infinity, alignment: .leading)
                 }
                 Text(p.summary).font(.body).lineSpacing(7).fixedSize(horizontal: false, vertical: true)
                     .accessibilityIdentifier("personSummary")

@@ -31,6 +31,8 @@ private struct EditorialDisclosure<Content: View>: View {
             }
             .buttonStyle(.plain)
             .accessibilityLabel(title)
+            .accessibilityValue(expanded ? "已展开" : "已折叠")
+            .accessibilityHint(expanded ? "轻点收起内容" : "轻点展开内容")
 
             if expanded { content() }
         }
@@ -39,8 +41,8 @@ private struct EditorialDisclosure<Content: View>: View {
 struct ArticleReader: View {
     let store: HistoryStore
     let personID: String
-    private let resume: String?
     @State private var current: String?
+    @State private var resumeOffer: String?
     @State private var ready = false
     @State private var positions: [String: CGFloat] = [:]
     @StateObject private var narrator: ArticleNarrator
@@ -48,8 +50,9 @@ struct ArticleReader: View {
         self.store = store; self.personID = personID
         _narrator = StateObject(wrappedValue: ArticleNarrator(dynastyID: store.dynastyID(for: personID)))
         let saved = UserDefaults.standard.string(forKey: "reading_" + personID)
-        resume = saved.flatMap { id in store.article(personID)?.sections.contains(where: { $0.id == id }) == true ? id : nil }
-        _current = State(initialValue: resume)
+        let resume = saved.flatMap { id in store.article(personID)?.sections.contains(where: { $0.id == id }) == true ? id : nil }
+        _current = State(initialValue: nil)
+        _resumeOffer = State(initialValue: resume)
     }
     var body: some View {
         if let article = store.article(personID) {
@@ -61,6 +64,20 @@ struct ArticleReader: View {
                             Text(article.title).font(.system(.largeTitle, design: .serif)).foregroundStyle(Theme.ink).fixedSize(horizontal: false, vertical: true)
                             Text(article.dek).font(.body).foregroundStyle(Theme.muted).lineSpacing(5)
                         }.id("opening")
+                        if let resumeOffer,
+                           let section = article.sections.first(where: { $0.id == resumeOffer }) {
+                            VStack(alignment: .leading, spacing: 13) {
+                                Text("阅读进度").font(.caption).foregroundStyle(Theme.cinnabar)
+                                Text("继续上次阅读").font(.system(.title3, design: .serif).weight(.medium)).foregroundStyle(Theme.ink)
+                                    .accessibilityIdentifier("resumeReadingOffer")
+                                Text("上次读到：\(section.title)").font(.subheadline).foregroundStyle(Theme.muted).fixedSize(horizontal: false, vertical: true)
+                                ViewThatFits(in: .horizontal) {
+                                    HStack(spacing: 24) { resumeButtons(resumeOffer, proxy: proxy) }
+                                    VStack(alignment: .leading, spacing: 8) { resumeButtons(resumeOffer, proxy: proxy) }
+                                }
+                            }
+                            .padding(.vertical, 4)
+                        }
                         ForEach(article.sections) { section in
                             VStack(alignment: .leading, spacing: 16) {
                                 HStack(alignment: .firstTextBaseline, spacing: 12) {
@@ -102,10 +119,6 @@ struct ArticleReader: View {
                     .task {
                         guard !ready else { return }
                         do {
-                            if let resume {
-                                try await Task.sleep(for: .milliseconds(150))
-                                proxy.scrollTo(resume, anchor: .top)
-                            }
                             try await Task.sleep(for: .milliseconds(350))
                             ready = true
                             updateProgress(article)
@@ -113,6 +126,7 @@ struct ArticleReader: View {
                     }
                     .onChange(of: narrator.currentSectionID) { _, sectionID in
                         guard let sectionID else { return }
+                        resumeOffer = nil
                         remember(sectionID)
                         withAnimation(.easeOut(duration: 0.28)) { proxy.scrollTo(sectionID, anchor: .top) }
                     }
@@ -124,12 +138,14 @@ struct ArticleReader: View {
                             Menu {
                                 Button("开篇") {
                                     narrator.stop()
+                                    resumeOffer = nil
                                     remember(nil)
                                     proxy.scrollTo("opening", anchor: .top)
                                 }
                                 ForEach(article.sections) { section in
                                     Button(section.title) {
                                         narrator.stop()
+                                        resumeOffer = nil
                                         remember(section.id)
                                         proxy.scrollTo(section.id, anchor: .top)
                                     }
@@ -151,9 +167,37 @@ struct ArticleReader: View {
         else { UserDefaults.standard.removeObject(forKey: "reading_" + personID) }
     }
     private func updateProgress(_ article: Article) {
-        guard ready, !positions.isEmpty, !narrator.isActive else { return }
+        guard ready, resumeOffer == nil, !positions.isEmpty, !narrator.isActive else { return }
         let sectionID = ReadingProgress.section(positions: positions, order: article.sections.map(\.id))
         if current != sectionID { remember(sectionID) }
+    }
+    @ViewBuilder private func resumeButtons(_ sectionID: String, proxy: ScrollViewProxy) -> some View {
+        Button("继续阅读") {
+            resumeOffer = nil
+            remember(sectionID)
+            DispatchQueue.main.async {
+                withAnimation(.easeOut(duration: 0.28)) { proxy.scrollTo(sectionID, anchor: .top) }
+            }
+        }
+        .buttonStyle(.plain)
+        .font(.headline)
+        .foregroundStyle(Theme.cinnabar)
+        .frame(minHeight: 44)
+        .accessibilityIdentifier("resumeReadingContinue")
+
+        Button("从开篇阅读") {
+            narrator.stop()
+            resumeOffer = nil
+            remember(nil)
+            DispatchQueue.main.async {
+                withAnimation(.easeOut(duration: 0.28)) { proxy.scrollTo("opening", anchor: .top) }
+            }
+        }
+        .buttonStyle(.plain)
+        .font(.headline)
+        .foregroundStyle(Theme.ink)
+        .frame(minHeight: 44)
+        .accessibilityIdentifier("resumeReadingStartOver")
     }
     private var articleHeritageSummary: String {
         let names = [store.tomb(personID)?.title].compactMap { $0 } + store.objects(personID).map(\.title)

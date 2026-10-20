@@ -136,11 +136,29 @@ struct GlobalSearchPage: View {
                 .font(.system(.title2, design: .serif).weight(.semibold)).foregroundStyle(Theme.ink)
             Text("可以输入人物姓名、年号、事件、典籍、器物、遗址或陵寝。结果会保留所属朝代和年代，方便判断同名人物与相近事件。")
                 .font(.body).lineSpacing(6).foregroundStyle(Theme.text)
-            Text("例如：高骈、咸通、营造法式、平夏城")
-                .font(.subheadline).foregroundStyle(Theme.muted)
+            Text("从这里开始").font(.caption).foregroundStyle(Theme.cinnabar).padding(.top, 4)
+            LazyVGrid(columns: [GridItem(.flexible(), alignment: .leading), GridItem(.flexible(), alignment: .leading)], spacing: 12) {
+                suggestion("北京人", detail: "史前遗址")
+                suggestion("雍正", detail: "人物与时代")
+                suggestion("营造法式", detail: "典籍与建筑")
+                suggestion("赤壁", detail: "人物与事件")
+            }
         }
         .padding(.top, 10)
         .accessibilityIdentifier("searchIntroduction")
+    }
+
+    private func suggestion(_ value: String, detail: String) -> some View {
+        Button { query = value } label: {
+            VStack(alignment: .leading, spacing: 3) {
+                Text(value).font(.headline).foregroundStyle(Theme.ink)
+                Text(detail).font(.caption).foregroundStyle(Theme.muted)
+            }
+            .frame(maxWidth: .infinity, minHeight: 48, alignment: .leading)
+            .contentShape(Rectangle())
+        }
+        .buttonStyle(.plain)
+        .accessibilityIdentifier("searchSuggestion_\(value)")
     }
 
     private var noResults: some View {
