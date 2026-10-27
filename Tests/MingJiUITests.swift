@@ -3110,6 +3110,30 @@ final class MingJiUITests: XCTestCase {
         shot("v120-sui-interpretation-ending", app)
     }
 
+    @MainActor func testV121TangInterpretationConnectsWuZhouMobilityAndTransformation() throws {
+        let app = launch(enterFamily: false)
+        XCTAssertTrue(app.buttons["dynasty_tang"].waitForExistence(timeout: 5))
+        reach(app.buttons["dynasty_tang"], in: app, attempts: 12)
+        app.buttons["dynasty_tang"].tap()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyDetail_tang"].waitForExistence(timeout: 5))
+
+        let interpretation = app.buttons["dynastyInterpretation_tang"]
+        reach(interpretation, in: app, attempts: 14)
+        app.swipeUp()
+        XCTAssertTrue(interpretation.isHittable)
+        shot("v121-tang-interpretation-entry", app)
+        interpretation.tap()
+
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyInterpretationPage_tang"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["建国、统一和贞观秩序不是同一时刻"].exists)
+        let transformation = app.staticTexts["安史以后是结构转型，不是一百五十年连续衰败"]
+        reach(transformation, in: app, attempts: 22)
+        XCTAssertTrue(transformation.exists)
+        reach(app.buttons["资料与出处"], in: app, attempts: 10)
+        XCTAssertTrue(app.buttons["资料与出处"].isHittable)
+        shot("v121-tang-interpretation-ending", app)
+    }
+
     @MainActor func testV90ThinPeopleAndEmptyEventLensesHaveUsefulDepth() throws {
         let ming = XCUIApplication()
         ming.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]

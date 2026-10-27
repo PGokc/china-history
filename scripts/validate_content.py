@@ -1704,3 +1704,15 @@ if d['version']>=94:
  assert all(term in corpus for term in ['580年','589年','大索貌阅','输籍定样','义仓','584年','605年','608年','610年','612至614年','杨玄感','619年'])
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback',corpus,re.I)
  print('V94 PASS: Sui macro reading connects staged reunification, registered households, canal logistics, frontier relations and multi-centred collapse')
+
+if d['version']>=95:
+ profile=next(profile for profile in d['dynastyProfiles'] if profile['id']=='tang')
+ assert [section['id'] for section in profile['sections']]==['tang-foundation','tang-government','tang-wuzhou','tang-world','tang-transformation']
+ assert len(re.findall(r'[\u4e00-\u9fff]',profile['overview']))>=400
+ assert all(len(re.findall(r'[\u4e00-\u9fff]',section['text']))>=230 for section in profile['sections'])
+ assert {'v43t_jts1','v43t_jts2','v43t_jts6','v43t_jts9','v43t_jts10','v43t_jts48','v43t_law_source','v43t_jts200b','v121_cssn_finance','v121_cssn_transition','v121_cssn_heshuo','v121_nmc_silkroad','v121_nopss_family'}<=set(profile['sources'])<=sources.keys()
+ corpus=profile['overview']+''.join(section['text'] for section in profile['sections'])
+ assert all(term in corpus for term in ['不能把建国写成太宗一人的事业','不能当作现代部委','不能直接等同现代公平考试','并不等于门第影响消失或所有女性地位普遍提高','不是街头人口统计','不能代表所有藩镇','不是一条由“盛”必然滑向“衰”的直线'])
+ assert all(term in corpus for term in ['617年','628年','626年','690至705年','755至763年','780年','875年','907年','两税法','神策军','河朔三镇'])
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback',corpus,re.I)
+ print('V95 PASS: Tang macro reading connects contested foundation, implemented institutions, Wu Zhou, unequal mobility and post-An Lushan transformation')
