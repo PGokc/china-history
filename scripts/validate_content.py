@@ -1668,3 +1668,15 @@ if d['version']>=91:
  assert all(term in corpus for term in ['220年','229年','走马楼','军粮','九品官人法','280年'])
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback',corpus,re.I)
  print('V91 PASS: Three Kingdoms macro reading connects parallel state formation, logistics, local archives, social life and the Jin transition')
+
+if d['version']>=92:
+ profile=next(profile for profile in d['dynastyProfiles'] if profile['id']=='jin')
+ assert [section['id'] for section in profile['sections']]==['jin-western','jin-north','jin-migration','jin-power','jin-life']
+ assert len(re.findall(r'[\u4e00-\u9fff]',profile['overview']))>=300
+ assert all(len(re.findall(r'[\u4e00-\u9fff]',section['text']))>=220 for section in profile['sections'])
+ assert {'v52j_js3','v52j_js4','v52j_js5','v52j_js6','v117_nmc_medieval','v118_nopss_qiaozhi','v118_njm_sixdynasties'}<=set(profile['sources'])<=sources.keys()
+ corpus=profile['overview']+''.join(section['text'] for section in profile['sections'])
+ assert all(term in corpus for term in ['不能只归结为一句“外族入侵”','不能把一个政权等同为单一、固定的现代民族','不是一次完成','不是法律规定的两家共治','不能当作东晋原迹'])
+ assert all(term in corpus for term in ['八王之乱','十六国','白籍','土断','淝水','北府兵','420年'])
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback',corpus,re.I)
+ print('V92 PASS: Jin macro reading connects fragile reunification, northern regimes, migration administration, power networks and social life')

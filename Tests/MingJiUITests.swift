@@ -3039,6 +3039,29 @@ final class MingJiUITests: XCTestCase {
         shot("v117-three-kingdoms-interpretation-ending", app)
     }
 
+    @MainActor func testV118JinInterpretationConnectsMigrationAndParallelRegimes() throws {
+        let app = launch(enterFamily: false)
+        XCTAssertTrue(app.buttons["dynasty_jin"].waitForExistence(timeout: 5))
+        app.buttons["dynasty_jin"].tap()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyDetail_jin"].waitForExistence(timeout: 5))
+
+        let interpretation = app.buttons["dynastyInterpretation_jin"]
+        reach(interpretation, in: app, attempts: 14)
+        app.swipeUp()
+        XCTAssertTrue(interpretation.isHittable)
+        shot("v118-jin-interpretation-entry", app)
+        interpretation.tap()
+
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyInterpretationPage_jin"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["西晋统一为何没有形成稳定交接"].exists)
+        let life = app.staticTexts["清谈与书法之外，还有城市、生产和信仰"]
+        reach(life, in: app, attempts: 18)
+        XCTAssertTrue(life.exists)
+        reach(app.buttons["资料与出处"], in: app, attempts: 10)
+        XCTAssertTrue(app.buttons["资料与出处"].isHittable)
+        shot("v118-jin-interpretation-ending", app)
+    }
+
     @MainActor func testV90ThinPeopleAndEmptyEventLensesHaveUsefulDepth() throws {
         let ming = XCUIApplication()
         ming.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]
