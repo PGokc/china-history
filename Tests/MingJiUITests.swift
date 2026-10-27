@@ -2913,6 +2913,43 @@ final class MingJiUITests: XCTestCase {
         shot("v112-prehistory-macro-reading-ending", app)
     }
 
+    @MainActor func testV113XiaAndShangInterpretationsAreLayered() throws {
+        let app = launch(enterFamily: false)
+        XCTAssertTrue(app.buttons["dynasty_xia"].waitForExistence(timeout: 5))
+        app.buttons["dynasty_xia"].tap()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyDetail_xia"].waitForExistence(timeout: 5))
+        let xiaEntry = app.buttons["dynastyInterpretation_xia"]
+        reach(xiaEntry, in: app, attempts: 14)
+        app.swipeUp()
+        XCTAssertTrue(xiaEntry.isHittable)
+        shot("v113-xia-interpretation-entry", app)
+        xiaEntry.tap()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyInterpretationPage_xia"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["三层证据不能混写"].exists)
+        let xiaEnding = app.staticTexts["不让传说替代人物史"]
+        reach(xiaEnding, in: app, attempts: 14)
+        XCTAssertTrue(xiaEnding.exists)
+        reach(app.buttons["资料与出处"], in: app, attempts: 8)
+        XCTAssertTrue(app.buttons["资料与出处"].isHittable)
+        shot("v113-xia-interpretation-ending", app)
+
+        app.navigationBars.buttons.element(boundBy: 0).tap()
+        app.navigationBars.buttons.element(boundBy: 0).tap()
+        XCTAssertTrue(app.buttons["dynasty_shang"].waitForExistence(timeout: 5))
+        app.buttons["dynasty_shang"].tap()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyDetail_shang"].waitForExistence(timeout: 5))
+        let shangEntry = app.buttons["dynastyInterpretation_shang"]
+        reach(shangEntry, in: app, attempts: 14)
+        XCTAssertTrue(shangEntry.isHittable)
+        shangEntry.tap()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyInterpretationPage_shang"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["两种尺度的证据"].exists)
+        let writing = app.staticTexts["甲骨文记录了谁的世界"]
+        reach(writing, in: app, attempts: 14)
+        XCTAssertTrue(writing.exists)
+        shot("v113-shang-writing-perspective", app)
+    }
+
     @MainActor func testV90ThinPeopleAndEmptyEventLensesHaveUsefulDepth() throws {
         let ming = XCUIApplication()
         ming.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]

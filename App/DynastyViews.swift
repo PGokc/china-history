@@ -34,17 +34,7 @@ struct DynastyDetailPage: View {
                     if dynastyID == "zhou", let guide = store.zhouGuide {
                         ZhouGuideEntry(guide: guide)
                     }
-                    VStack(alignment: .leading, spacing: 0) {
-                        Text("理解这个时代").font(.system(.title3, design: .serif).weight(.medium)).foregroundStyle(Theme.ink).padding(.bottom, 3)
-                        ForEach(profile.sections) { section in
-                            VStack(alignment: .leading, spacing: 9) {
-                                Text(section.title).font(.system(.headline, design: .serif)).foregroundStyle(Theme.ink)
-                                Text(section.text).font(.body).foregroundStyle(Theme.text).lineSpacing(6)
-                            }.padding(.vertical, 18)
-                            if section.id != profile.sections.last?.id { Divider().overlay(Theme.line.opacity(0.55)) }
-                        }
-                    }
-                    SourcesView(store: store, ids: profile.sources)
+                    DynastyInterpretationEntry(store: store, dynasty: dynasty, profile: profile)
                 }.padding(.horizontal, 24).padding(.top, 22).padding(.bottom, Theme.pageBottom)
             }
             .background(Theme.paper)
@@ -65,6 +55,78 @@ struct DynastyDetailPage: View {
     }
     private var collectionCount: Int {
         store.objects(in: dynastyID).count + store.tombs(in: dynastyID).count
+    }
+}
+
+private struct DynastyInterpretationEntry: View {
+    let store: HistoryStore
+    let dynasty: Dynasty
+    let profile: DynastyProfile
+
+    var body: some View {
+        NavigationLink {
+            DynastyInterpretationPage(store: store, dynasty: dynasty, profile: profile)
+        } label: {
+            VStack(alignment: .leading, spacing: 8) {
+                Text("理解\(dynasty.name)代")
+                    .font(.system(.title2, design: .serif).weight(.medium)).foregroundStyle(Theme.ink)
+                Text(profile.sections.map(\.title).prefix(3).joined(separator: "、"))
+                    .font(.subheadline).foregroundStyle(Theme.text).lineSpacing(4)
+                Text("\(profile.sections.count)个问题　专题导读")
+                    .font(.caption).foregroundStyle(Theme.cinnabar)
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding(.vertical, 19)
+            .overlay(alignment: .top) { Rectangle().fill(Theme.line.opacity(0.55)).frame(height: 0.5) }
+            .overlay(alignment: .bottom) { Rectangle().fill(Theme.line.opacity(0.55)).frame(height: 0.5) }
+            .contentShape(Rectangle())
+        }
+        .buttonStyle(.plain)
+        .accessibilityIdentifier("dynastyInterpretation_\(dynasty.id)")
+    }
+}
+
+private struct DynastyInterpretationPage: View {
+    let store: HistoryStore
+    let dynasty: Dynasty
+    let profile: DynastyProfile
+
+    var body: some View {
+        ScrollView {
+            VStack(alignment: .leading, spacing: 28) {
+                VStack(alignment: .leading, spacing: 9) {
+                    Text("时代专题")
+                        .font(.caption.weight(.medium)).foregroundStyle(Theme.cinnabar)
+                    Text("理解\(dynasty.name)代")
+                        .font(.system(size: 36, weight: .medium, design: .serif)).foregroundStyle(Theme.ink)
+                    Text(profile.subtitle)
+                        .font(.title3).foregroundStyle(Theme.text).lineSpacing(4)
+                }
+                VStack(alignment: .leading, spacing: 0) {
+                    ForEach(profile.sections) { section in
+                        VStack(alignment: .leading, spacing: 10) {
+                            Text(section.title)
+                                .font(.system(.title3, design: .serif).weight(.medium)).foregroundStyle(Theme.ink)
+                            Text(section.text)
+                                .font(.body).foregroundStyle(Theme.text).lineSpacing(7)
+                        }
+                        .padding(.vertical, 20)
+                        .accessibilityIdentifier("dynastyInterpretationSection_\(section.id)")
+                        if section.id != profile.sections.last?.id {
+                            Divider().overlay(Theme.line.opacity(0.55))
+                        }
+                    }
+                }
+                SourcesView(store: store, ids: profile.sources)
+            }
+            .padding(.horizontal, 24).padding(.top, 22).padding(.bottom, Theme.pageBottom)
+        }
+        .background(Theme.paper)
+        .navigationTitle("理解\(dynasty.name)代")
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbarBackground(Theme.paper, for: .navigationBar)
+        .toolbarBackground(.visible, for: .navigationBar)
+        .accessibilityIdentifier("dynastyInterpretationPage_\(dynasty.id)")
     }
 }
 

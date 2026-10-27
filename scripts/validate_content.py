@@ -1606,3 +1606,17 @@ if d['version']>=86:
  assert all(term in corpus for term in ['古地磁','古DNA','混合生计','调动劳力','复原图不是现场照片'])
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback',corpus,re.I)
  print('V86 PASS: five discoverable macro readings connect prehistoric evidence, population, subsistence and social complexity')
+
+if d['version']>=87:
+ for dynasty,ids in {
+  'xia':['xia-three-layers','xia-king-list','xia-erlitou','xia-debate','xia-people'],
+  'shang':['shang-evidence','shang-capitals','shang-network','shang-society','shang-writing'],
+ }.items():
+  profile=next(profile for profile in d['dynastyProfiles'] if profile['id']==dynasty)
+  assert [section['id'] for section in profile['sections']]==ids
+  assert all(len(re.findall(r'[\u4e00-\u9fff]',section['text']))>=200 for section in profile['sections'])
+  assert len(profile['sources'])>=5 and set(profile['sources'])<=sources.keys()
+ corpus=''.join(next(profile for profile in d['dynastyProfiles'] if profile['id']==dynasty)['overview']+''.join(section['text'] for section in next(profile for profile in d['dynastyProfiles'] if profile['id']==dynasty)['sections']) for dynasty in ['xia','shang'])
+ assert all(term in corpus for term in ['循环证明','不虚构个人公历年','发掘只占很小部分','王朝命名','档案视角并不等于全社会视角'])
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback',corpus,re.I)
+ print('V87 PASS: Xia and Shang each expose five evidence-led long readings without conflating archaeology, king lists and later interpretation')
