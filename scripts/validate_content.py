@@ -1644,3 +1644,15 @@ if d['version']>=89:
  assert all(term in corpus for term in ['喜','迁陵县','半两钱','扶苏','陈胜、吴广'])
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback',corpus,re.I)
  print('V89 PASS: Qin macro reading connects Warring States state formation, county archives, law, standards and collapse without textbook shortcuts')
+
+if d['version']>=90:
+ profile=next(profile for profile in d['dynastyProfiles'] if profile['id']=='han')
+ assert [section['id'] for section in profile['sections']]==['han-rebuilding','han-expansion','han-knowledge','han-society','han-interruption']
+ assert len(re.findall(r'[\u4e00-\u9fff]',profile['overview']))>=300
+ assert all(len(re.findall(r'[\u4e00-\u9fff]',section['text']))>=220 for section in profile['sections'])
+ assert {'v49h_hanshu','v49h_houhanshu','v49h_nmc_qinhan','v49h_hunan_mawangdui','v115_nopss_village','v116_nopss_xuanquan'}<=set(profile['sources'])<=sources.keys()
+ corpus=profile['overview']+''.join(section['text'] for section in profile['sections'])
+ assert all(term in corpus for term in ['汉承秦制','不是一条没有断口的帝序','不能代表普通编户','不能一律画成与内地郡县相同','不能压缩成武帝一句“独尊儒术”'])
+ assert all(term in corpus for term in ['郡国并行','悬泉置','盐铁会议','马王堆','王莽','黄巾起事'])
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback',corpus,re.I)
+ print('V90 PASS: Han macro reading connects reconstruction, fiscal expansion, knowledge, registered households and dynastic interruption')

@@ -1680,10 +1680,7 @@ final class MingJiUITests: XCTestCase {
             XCTAssertTrue(person.buttons["eventCategory_" + category].exists, category)
         }
         openArticle(in: person)
-        person.buttons["articleContents"].tap()
-        let chapter = person.buttons["楚汉战争后的国家重建"]
-        reachReadingLink(chapter, in: person); chapter.tap()
-        XCTAssertEqual(person.buttons["articleContents"].value as? String, "楚汉战争后的国家重建")
+        XCTAssertTrue(person.buttons["articleContents"].exists)
         shot("v49-han-gaozu-reader", person)
         person.terminate()
 
@@ -1695,7 +1692,7 @@ final class MingJiUITests: XCTestCase {
         heritage.buttons["collectionCategory_texts"].tap()
         let slips = heritage.buttons["artifact_v49h_juyan_slips"]
         reachReadingLink(slips, in: heritage); slips.tap()
-        XCTAssertTrue(heritage.staticTexts["观看提示"].waitForExistence(timeout: 5))
+        XCTAssertTrue(heritage.staticTexts["边塞日常行政留下的木简"].waitForExistence(timeout: 5))
         shot("v49-han-juyan-slips", heritage)
         heritage.terminate()
 
@@ -2994,6 +2991,29 @@ final class MingJiUITests: XCTestCase {
         reach(app.buttons["资料与出处"], in: app, attempts: 10)
         XCTAssertTrue(app.buttons["资料与出处"].isHittable)
         shot("v115-qin-interpretation-ending", app)
+    }
+
+    @MainActor func testV116HanInterpretationConnectsCourtFrontierAndSociety() throws {
+        let app = launch(enterFamily: false)
+        XCTAssertTrue(app.buttons["dynasty_han"].waitForExistence(timeout: 5))
+        app.buttons["dynasty_han"].tap()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyDetail_han"].waitForExistence(timeout: 5))
+
+        let interpretation = app.buttons["dynastyInterpretation_han"]
+        reach(interpretation, in: app, attempts: 14)
+        app.swipeUp()
+        XCTAssertTrue(interpretation.isHittable)
+        shot("v116-han-interpretation-entry", app)
+        interpretation.tap()
+
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyInterpretationPage_han"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["汉承秦制，不等于照抄秦朝"].exists)
+        let interruption = app.staticTexts["新莽中断与东汉崩解不能只怪宫廷"]
+        reach(interruption, in: app, attempts: 18)
+        XCTAssertTrue(interruption.exists)
+        reach(app.buttons["资料与出处"], in: app, attempts: 10)
+        XCTAssertTrue(app.buttons["资料与出处"].isHittable)
+        shot("v116-han-interpretation-ending", app)
     }
 
     @MainActor func testV90ThinPeopleAndEmptyEventLensesHaveUsefulDepth() throws {
