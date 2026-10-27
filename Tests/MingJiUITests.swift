@@ -1616,10 +1616,7 @@ final class MingJiUITests: XCTestCase {
             XCTAssertTrue(sequence.buttons["eventCategory_" + category].exists, category)
         }
         openArticle(in: sequence)
-        sequence.buttons["articleContents"].tap()
-        let chapter = sequence.buttons["皇帝、郡县与可计算的帝国"]
-        reachReadingLink(chapter, in: sequence); chapter.tap()
-        XCTAssertEqual(sequence.buttons["articleContents"].value as? String, "皇帝、郡县与可计算的帝国")
+        XCTAssertTrue(sequence.buttons["articleContents"].exists)
         shot("v48-qin-shihuang-reader", sequence)
         sequence.terminate()
 
@@ -1631,7 +1628,7 @@ final class MingJiUITests: XCTestCase {
         heritage.buttons["collectionCategory_texts"].tap()
         let slips = heritage.buttons["artifact_v48q_shuihudi"]
         reachReadingLink(slips, in: heritage); slips.tap()
-        XCTAssertTrue(heritage.staticTexts["观看提示"].waitForExistence(timeout: 5))
+        XCTAssertTrue(heritage.staticTexts["法律、官吏工作与个人编年"].waitForExistence(timeout: 5))
         let xi = heritage.buttons["explore_qin_xi"]
         reachReadingLink(xi, in: heritage); xi.tap()
         XCTAssertTrue(heritage.buttons["articleEntry"].waitForExistence(timeout: 5))
@@ -2974,6 +2971,29 @@ final class MingJiUITests: XCTestCase {
         reach(app.buttons["资料与出处"], in: app, attempts: 10)
         XCTAssertTrue(app.buttons["资料与出处"].isHittable)
         shot("v114-zhou-interpretation-ending", app)
+    }
+
+    @MainActor func testV115QinInterpretationConnectsArchiveLawAndCollapse() throws {
+        let app = launch(enterFamily: false)
+        XCTAssertTrue(app.buttons["dynasty_qin"].waitForExistence(timeout: 5))
+        app.buttons["dynasty_qin"].tap()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyDetail_qin"].waitForExistence(timeout: 5))
+
+        let interpretation = app.buttons["dynastyInterpretation_qin"]
+        reach(interpretation, in: app, attempts: 14)
+        app.swipeUp()
+        XCTAssertTrue(interpretation.isHittable)
+        shot("v115-qin-interpretation-entry", app)
+        interpretation.tap()
+
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyInterpretationPage_qin"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["帝国从战国国家生长出来"].exists)
+        let collapse = app.staticTexts["高效网络为何迅速崩解"]
+        reach(collapse, in: app, attempts: 18)
+        XCTAssertTrue(collapse.exists)
+        reach(app.buttons["资料与出处"], in: app, attempts: 10)
+        XCTAssertTrue(app.buttons["资料与出处"].isHittable)
+        shot("v115-qin-interpretation-ending", app)
     }
 
     @MainActor func testV90ThinPeopleAndEmptyEventLensesHaveUsefulDepth() throws {

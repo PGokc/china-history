@@ -1632,3 +1632,15 @@ if d['version']>=88:
  assert '“五霸”名单' in corpus and '不完全相同' in corpus
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback',corpus,re.I)
  print('V88 PASS: Zhou macro reading separates chronology, investiture networks, eastward transition, state formation and lives beyond ritual bronzes')
+
+if d['version']>=89:
+ profile=next(profile for profile in d['dynastyProfiles'] if profile['id']=='qin')
+ assert [section['id'] for section in profile['sections']]==['qin-from-state','qin-documents','qin-law','qin-standards','qin-collapse']
+ assert len(re.findall(r'[\u4e00-\u9fff]',profile['overview']))>=300
+ assert all(len(re.findall(r'[\u4e00-\u9fff]',section['text']))>=220 for section in profile['sections'])
+ assert {'v48q_shiji6','v48q_hubei_slips','v115_nmc_liye_exhibition','v115_nopss_village'}<=set(profile['sources'])<=sources.keys()
+ corpus=profile['overview']+''.join(section['text'] for section in profile['sections'])
+ assert all(term in corpus for term in ['不是制度从无到有的起点','一个县代表全国','不能等同现代法治','持续推行的过程','大雨误期当斩'])
+ assert all(term in corpus for term in ['喜','迁陵县','半两钱','扶苏','陈胜、吴广'])
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback',corpus,re.I)
+ print('V89 PASS: Qin macro reading connects Warring States state formation, county archives, law, standards and collapse without textbook shortcuts')
