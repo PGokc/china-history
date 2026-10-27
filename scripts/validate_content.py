@@ -1692,3 +1692,15 @@ if d['version']>=93:
  assert all(term in corpus for term in ['439年','均田','三长制','493年','六镇','侯景之乱','云冈','龙门','574年','577年','589年'])
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback',corpus,re.I)
  print('V93 PASS: Northern and Southern Dynasties macro reading connects parallel courts, Northern Wei reform, Jiankang society, religious patrons and contingent reunification')
+
+if d['version']>=94:
+ profile=next(profile for profile in d['dynastyProfiles'] if profile['id']=='sui')
+ assert [section['id'] for section in profile['sections']]==['sui-unification','sui-governance','sui-network','sui-frontier','sui-collapse']
+ assert len(re.findall(r'[\u4e00-\u9fff]',profile['overview']))>=350
+ assert all(len(re.findall(r'[\u4e00-\u9fff]',section['text']))>=230 for section in profile['sections'])
+ assert {'v50s_suishu1','v50s_suishu4','v50s_suishu5','v50s_suishu24','v50s_suishu67','v120_unesco_canal','v120_cssn_land','v120_nmc_hanjia','v120_nopss_goguryeo'}<=set(profile['sources'])<=sources.keys()
+ corpus=profile['overview']+''.join(section['text'] for section in profile['sections'])
+ assert all(term in corpus for term in ['不是地图在589年瞬间变成同一种社会','不能直接等同人口突然倍增','人人足额受田不可能成立','不是某一年从北京到杭州一次挖成同一条直线','不能代表所有居民都参与同等规模的“丝路生活”','把它写成现代两个民族国家之间的战争同样失真','不是全国在同一天完成交接'])
+ assert all(term in corpus for term in ['580年','589年','大索貌阅','输籍定样','义仓','584年','605年','608年','610年','612至614年','杨玄感','619年'])
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback',corpus,re.I)
+ print('V94 PASS: Sui macro reading connects staged reunification, registered households, canal logistics, frontier relations and multi-centred collapse')

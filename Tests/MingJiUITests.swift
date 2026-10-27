@@ -3086,6 +3086,30 @@ final class MingJiUITests: XCTestCase {
         shot("v119-northern-southern-interpretation-ending", app)
     }
 
+    @MainActor func testV120SuiInterpretationConnectsReunificationLogisticsAndCollapse() throws {
+        let app = launch(enterFamily: false)
+        XCTAssertTrue(app.buttons["dynasty_sui"].waitForExistence(timeout: 5))
+        reach(app.buttons["dynasty_sui"], in: app, attempts: 12)
+        app.buttons["dynasty_sui"].tap()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyDetail_sui"].waitForExistence(timeout: 5))
+
+        let interpretation = app.buttons["dynastyInterpretation_sui"]
+        reach(interpretation, in: app, attempts: 14)
+        app.swipeUp()
+        XCTAssertTrue(interpretation.isHittable)
+        shot("v120-sui-interpretation-entry", app)
+        interpretation.tap()
+
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyInterpretationPage_sui"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["从北周禅代到灭陈，统一分成许多步骤"].exists)
+        let collapse = app.staticTexts["隋末不是一场起义或一次禅让"]
+        reach(collapse, in: app, attempts: 20)
+        XCTAssertTrue(collapse.exists)
+        reach(app.buttons["资料与出处"], in: app, attempts: 10)
+        XCTAssertTrue(app.buttons["资料与出处"].isHittable)
+        shot("v120-sui-interpretation-ending", app)
+    }
+
     @MainActor func testV90ThinPeopleAndEmptyEventLensesHaveUsefulDepth() throws {
         let ming = XCUIApplication()
         ming.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]
