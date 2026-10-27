@@ -3016,6 +3016,29 @@ final class MingJiUITests: XCTestCase {
         shot("v116-han-interpretation-ending", app)
     }
 
+    @MainActor func testV117ThreeKingdomsInterpretationMovesBeyondBattles() throws {
+        let app = launch(enterFamily: false)
+        XCTAssertTrue(app.buttons["dynasty_three_kingdoms"].waitForExistence(timeout: 5))
+        app.buttons["dynasty_three_kingdoms"].tap()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyDetail_three_kingdoms"].waitForExistence(timeout: 5))
+
+        let interpretation = app.buttons["dynastyInterpretation_three_kingdoms"]
+        reach(interpretation, in: app, attempts: 14)
+        app.swipeUp()
+        XCTAssertTrue(interpretation.isHittable)
+        shot("v117-three-kingdoms-interpretation-entry", app)
+        interpretation.tap()
+
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyInterpretationPage_three_kingdoms"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["三国形成是一段过程，不是一个日期"].exists)
+        let transition = app.staticTexts["归晋结束帝号并立，没有抹平区域差异"]
+        reach(transition, in: app, attempts: 18)
+        XCTAssertTrue(transition.exists)
+        reach(app.buttons["资料与出处"], in: app, attempts: 10)
+        XCTAssertTrue(app.buttons["资料与出处"].isHittable)
+        shot("v117-three-kingdoms-interpretation-ending", app)
+    }
+
     @MainActor func testV90ThinPeopleAndEmptyEventLensesHaveUsefulDepth() throws {
         let ming = XCUIApplication()
         ming.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]

@@ -1656,3 +1656,15 @@ if d['version']>=90:
  assert all(term in corpus for term in ['郡国并行','悬泉置','盐铁会议','马王堆','王莽','黄巾起事'])
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback',corpus,re.I)
  print('V90 PASS: Han macro reading connects reconstruction, fiscal expansion, knowledge, registered households and dynastic interruption')
+
+if d['version']>=91:
+ profile=next(profile for profile in d['dynastyProfiles'] if profile['id']=='three_kingdoms')
+ assert [section['id'] for section in profile['sections']]==['tk-formation','tk-logistics','tk-documents','tk-society','tk-transition']
+ assert len(re.findall(r'[\u4e00-\u9fff]',profile['overview']))>=300
+ assert all(len(re.findall(r'[\u4e00-\u9fff]',section['text']))>=220 for section in profile['sections'])
+ assert {'v51tk_sgz2','v51tk_sgz32','v51tk_sgz47','v51tk_wujian','v117_changsha_wujian','v117_nmc_medieval'}<=set(profile['sources'])<=sources.keys()
+ corpus=profile['overview']+''.join(section['text'] for section in profile['sections'])
+ assert all(term in corpus for term in ['不是从赤壁之战同时诞生','不能排成一条前后相继','不能据此推定曹魏、蜀汉或孙吴所有郡县完全相同','不是现实社会的完整缩影','不能反向当作三世纪事实'])
+ assert all(term in corpus for term in ['220年','229年','走马楼','军粮','九品官人法','280年'])
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback',corpus,re.I)
+ print('V91 PASS: Three Kingdoms macro reading connects parallel state formation, logistics, local archives, social life and the Jin transition')
