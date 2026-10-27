@@ -1620,3 +1620,15 @@ if d['version']>=87:
  assert all(term in corpus for term in ['循环证明','不虚构个人公历年','发掘只占很小部分','王朝命名','档案视角并不等于全社会视角'])
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback',corpus,re.I)
  print('V87 PASS: Xia and Shang each expose five evidence-led long readings without conflating archaeology, king lists and later interpretation')
+
+if d['version']>=88:
+ profile=next(profile for profile in d['dynastyProfiles'] if profile['id']=='zhou')
+ assert [section['id'] for section in profile['sections']]==['zhou-evidence','zhou-network','zhou-eastward','zhou-states','zhou-society']
+ assert len(re.findall(r'[\u4e00-\u9fff]',profile['overview']))>=300
+ assert all(len(re.findall(r'[\u4e00-\u9fff]',section['text']))>=200 for section in profile['sections'])
+ assert {'v58_nmc_bronze','v58_nopss_zhou','v114_nmc_eastern_zhou','v114_nopss_reform'}<=set(profile['sources'])<=sources.keys()
+ corpus=profile['overview']+''.join(section['text'] for section in profile['sections'])
+ assert all(term in corpus for term in ['前841年','固定国界','尊王','郡县治理','礼器和长篇铭文'])
+ assert '“五霸”名单' in corpus and '不完全相同' in corpus
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback',corpus,re.I)
+ print('V88 PASS: Zhou macro reading separates chronology, investiture networks, eastward transition, state formation and lives beyond ritual bronzes')

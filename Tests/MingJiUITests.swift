@@ -698,8 +698,10 @@ final class MingJiUITests: XCTestCase {
         app.buttons["zhouTopic_li-bing-dujiangyan"].tap()
         XCTAssertTrue(app.descendants(matching: .any)["eraTopic_li-bing-dujiangyan"].waitForExistence(timeout: 5))
         XCTAssertTrue(app.staticTexts["活着的遗产"].exists)
-        reach(app.buttons["联合国教科文组织世界遗产中心：青城山—都江堰"], in: app, attempts: 14)
-        XCTAssertTrue(app.buttons["联合国教科文组织世界遗产中心：青城山—都江堰"].isHittable)
+        let heritageSource = app.buttons["zhouSourceKind_0"]
+        reach(heritageSource, in: app, attempts: 14)
+        XCTAssertTrue(heritageSource.isHittable)
+        XCTAssertTrue(heritageSource.label.contains("联合国教科文组织世界遗产中心：青城山—都江堰"))
         shot("v67-zhou-dujiangyan", app)
     }
 
@@ -2948,6 +2950,30 @@ final class MingJiUITests: XCTestCase {
         reach(writing, in: app, attempts: 14)
         XCTAssertTrue(writing.exists)
         shot("v113-shang-writing-perspective", app)
+    }
+
+    @MainActor func testV114ZhouInterpretationAndTopicsRemainDistinct() throws {
+        let app = launch(enterFamily: false)
+        XCTAssertTrue(app.buttons["dynasty_zhou"].waitForExistence(timeout: 5))
+        app.buttons["dynasty_zhou"].tap()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyDetail_zhou"].waitForExistence(timeout: 5))
+
+        let interpretation = app.buttons["dynastyInterpretation_zhou"]
+        reach(interpretation, in: app, attempts: 14)
+        app.swipeUp()
+        XCTAssertTrue(interpretation.isHittable)
+        XCTAssertTrue(app.buttons["zhouGuideEntry"].exists)
+        shot("v114-zhou-two-reading-layers", app)
+        interpretation.tap()
+
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyInterpretationPage_zhou"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["王年与证据边界"].exists)
+        let society = app.staticTexts["礼器之外的人群"]
+        reach(society, in: app, attempts: 16)
+        XCTAssertTrue(society.exists)
+        reach(app.buttons["资料与出处"], in: app, attempts: 10)
+        XCTAssertTrue(app.buttons["资料与出处"].isHittable)
+        shot("v114-zhou-interpretation-ending", app)
     }
 
     @MainActor func testV90ThinPeopleAndEmptyEventLensesHaveUsefulDepth() throws {
