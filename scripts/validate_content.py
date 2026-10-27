@@ -1680,3 +1680,15 @@ if d['version']>=92:
  assert all(term in corpus for term in ['八王之乱','十六国','白籍','土断','淝水','北府兵','420年'])
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback',corpus,re.I)
  print('V92 PASS: Jin macro reading connects fragile reunification, northern regimes, migration administration, power networks and social life')
+
+if d['version']>=93:
+ profile=next(profile for profile in d['dynastyProfiles'] if profile['id']=='northern_southern')
+ assert [section['id'] for section in profile['sections']]==['ns-parallel','ns-wei','ns-south','ns-belief','ns-reunification']
+ assert len(re.findall(r'[\u4e00-\u9fff]',profile['overview']))>=350
+ assert all(len(re.findall(r'[\u4e00-\u9fff]',section['text']))>=230 for section in profile['sections'])
+ assert {'v53ns_songshu','v53ns_weishu','v53ns_zhoushu','v53ns_yungang','v53ns_longmen','v119_cssn_capitals','v119_cssn_beiwei','v119_nmc_buddhist','v119_nanjing_gate'}<=set(profile['sources'])<=sources.keys()
+ corpus=profile['overview']+''.join(section['text'] for section in profile['sections'])
+ assert all(term in corpus for term in ['同一年并没有全国一致的皇帝与年号','不能证明每户都实际足额受田','都过于简单','不能据一个门址复原整座城市','赞助者不止皇帝','不能把西魏军制直接等同成熟的唐代府兵制','不能倒推为地理或制度必然'])
+ assert all(term in corpus for term in ['439年','均田','三长制','493年','六镇','侯景之乱','云冈','龙门','574年','577年','589年'])
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback',corpus,re.I)
+ print('V93 PASS: Northern and Southern Dynasties macro reading connects parallel courts, Northern Wei reform, Jiankang society, religious patrons and contingent reunification')

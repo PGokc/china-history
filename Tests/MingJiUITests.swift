@@ -3062,6 +3062,30 @@ final class MingJiUITests: XCTestCase {
         shot("v118-jin-interpretation-ending", app)
     }
 
+    @MainActor func testV119NorthernSouthernInterpretationConnectsStatesSocietyAndReunification() throws {
+        let app = launch(enterFamily: false)
+        XCTAssertTrue(app.buttons["dynasty_northern_southern"].waitForExistence(timeout: 5))
+        reach(app.buttons["dynasty_northern_southern"], in: app, attempts: 12)
+        app.buttons["dynasty_northern_southern"].tap()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyDetail_northern_southern"].waitForExistence(timeout: 5))
+
+        let interpretation = app.buttons["dynastyInterpretation_northern_southern"]
+        reach(interpretation, in: app, attempts: 14)
+        app.swipeUp()
+        XCTAssertTrue(interpretation.isHittable)
+        shot("v119-northern-southern-interpretation-entry", app)
+        interpretation.tap()
+
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyInterpretationPage_northern_southern"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["九条帝序不是两条整齐平行线"].exists)
+        let reunification = app.staticTexts["六世纪竞争如何走向新的统一"]
+        reach(reunification, in: app, attempts: 20)
+        XCTAssertTrue(reunification.exists)
+        reach(app.buttons["资料与出处"], in: app, attempts: 10)
+        XCTAssertTrue(app.buttons["资料与出处"].isHittable)
+        shot("v119-northern-southern-interpretation-ending", app)
+    }
+
     @MainActor func testV90ThinPeopleAndEmptyEventLensesHaveUsefulDepth() throws {
         let ming = XCUIApplication()
         ming.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]
