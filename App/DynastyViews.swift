@@ -235,7 +235,7 @@ struct EraTopicPage: View {
     }
 }
 
-private struct DynastyOverviewBlock: View {
+struct DynastyOverviewBlock: View {
     let title, text: String
     private var paragraphs: [String] { text.components(separatedBy: "\n\n").filter { !$0.isEmpty } }
     var body: some View {

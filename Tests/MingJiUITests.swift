@@ -55,12 +55,17 @@ final class MingJiUITests: XCTestCase {
         XCTAssertTrue(app.buttons["contemporary_shimao"].exists)
         XCTAssertFalse(app.buttons["contemporary_hemudu"].exists)
         app.buttons["完成"].tap()
-        app.buttons["远古人类"].tap()
-        XCTAssertTrue(app.staticTexts["距今约170万年"].exists)
+        for _ in 0..<3 { app.swipeDown() }
+        let earlyScale = app.segmentedControls.firstMatch.buttons["远古人类"]
+        XCTAssertTrue(earlyScale.isHittable)
+        earlyScale.tap()
+        let earlyDate = app.staticTexts["timelineDate"]
+        expectation(for: NSPredicate(format: "label == %@", "距今约170万年"), evaluatedWith: earlyDate)
+        waitForExpectations(timeout: 5)
         app.buttons["contemporarySites"].tap()
-        XCTAssertTrue(app.buttons["contemporary_yuanmou"].exists)
+        XCTAssertTrue(app.buttons["contemporary_yuanmou"].waitForExistence(timeout: 5))
         app.buttons["完成"].tap()
-        app.buttons["文明起源"].tap()
+        app.segmentedControls.firstMatch.buttons["文明起源"].tap()
         shot("v28-time-map", app)
     }
     @MainActor func testV109PrehistoryOpensOnMapAndUsesOneGroupedGuide() throws {
@@ -2881,6 +2886,31 @@ final class MingJiUITests: XCTestCase {
         XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("北京人")
         XCTAssertTrue(searchApp.buttons["search_site_zhoukoudian"].waitForExistence(timeout: 5))
         shot("v89-beijing-man-search", searchApp)
+    }
+
+    @MainActor func testV112PrehistoryMacroReadingIsDiscoverable() throws {
+        let app = launch(enterFamily: false)
+        XCTAssertTrue(app.buttons["dynasty_prehistory"].waitForExistence(timeout: 5))
+        app.buttons["dynasty_prehistory"].tap()
+        XCTAssertTrue(app.descendants(matching: .any)["prehistoryPage"].waitForExistence(timeout: 5))
+
+        let entry = app.buttons["prehistoryInterpretationEntry"]
+        reach(entry, in: app, attempts: 12)
+        XCTAssertTrue(entry.isHittable)
+        shot("v112-prehistory-macro-entry", app)
+        entry.tap()
+
+        XCTAssertTrue(app.descendants(matching: .any)["prehistoryInterpretationPage"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["理解史前中国"].exists)
+        XCTAssertTrue(app.staticTexts["百万年人类活动"].exists)
+        shot("v112-prehistory-macro-reading-opening", app)
+
+        let method = app.staticTexts["怎样阅读考古结论"]
+        reach(method, in: app, attempts: 18)
+        XCTAssertTrue(method.exists)
+        reach(app.buttons["资料与出处"], in: app, attempts: 10)
+        XCTAssertTrue(app.buttons["资料与出处"].isHittable)
+        shot("v112-prehistory-macro-reading-ending", app)
     }
 
     @MainActor func testV90ThinPeopleAndEmptyEventLensesHaveUsefulDepth() throws {

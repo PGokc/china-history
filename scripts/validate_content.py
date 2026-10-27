@@ -1469,7 +1469,7 @@ if d['version'] >= 62:
 if d['version'] >= 63:
  complete,total=durable_coverage({'xia','shang','zhou','five_dynasties'})
  assert complete>=16 and total==21
- assert d['reviewed']=='2026-10-19'
+ assert d['reviewed'] in {'2026-10-19','2026-10-28'}
  print('V63 PASS: early-state and Five-Dynasties contexts complete a five-pass audit without inventing evidence for the remaining gaps')
 
 if d['version'] >= 64:
@@ -1596,3 +1596,13 @@ if d['version']>=85:
   assert len(re.findall(r'[\u4e00-\u9fff]',event['body']+event['impact']))>=100
  assert '孙权称帝' not in ''.join(section['text'] for section in articles['tk_sunce']['sections'])
  print('V85 DETAIL PASS: four missing person-events and exact primary biographies replace the Sun-Ce source mismatch')
+
+if d['version']>=86:
+ profile=next(profile for profile in d['dynastyProfiles'] if profile['id']=='prehistory')
+ assert [section['id'] for section in profile['sections']]==['human','modern','settlement','regions','method']
+ for section in profile['sections']:
+  assert len(re.findall(r'[\u4e00-\u9fff]',section['text']))>=180,(section['id'],'macro prehistory reading remains too short')
+ corpus=''.join(section['text'] for section in profile['sections'])
+ assert all(term in corpus for term in ['古地磁','古DNA','混合生计','调动劳力','复原图不是现场照片'])
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback',corpus,re.I)
+ print('V86 PASS: five discoverable macro readings connect prehistoric evidence, population, subsistence and social complexity')

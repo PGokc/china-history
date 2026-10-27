@@ -75,6 +75,28 @@ struct PrehistoryPage: View {
                     }.padding(.horizontal, 24).padding(.top, 10).padding(.bottom, 30)
 
                     VStack(alignment: .leading, spacing: 34) {
+                        if let profile = store.dynastyProfile("prehistory") {
+                            NavigationLink {
+                                PrehistoryInterpretationPage(store: store, profile: profile)
+                            } label: {
+                                VStack(alignment: .leading, spacing: 8) {
+                                    Text("理解史前中国")
+                                        .font(.system(.title2, design: .serif).weight(.medium))
+                                        .foregroundStyle(Theme.ink)
+                                    Text("从人类演化、农业形成与区域社会读懂考古证据")
+                                        .font(.subheadline).foregroundStyle(Theme.text).lineSpacing(4)
+                                    Text("五个问题 · 一篇宏观导读")
+                                        .font(.caption).foregroundStyle(Theme.cinnabar)
+                                }
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                                .padding(.vertical, 19)
+                                .overlay(alignment: .top) { Rectangle().fill(Theme.line.opacity(0.55)).frame(height: 0.5) }
+                                .overlay(alignment: .bottom) { Rectangle().fill(Theme.line.opacity(0.55)).frame(height: 0.5) }
+                                .contentShape(Rectangle())
+                            }
+                            .buttonStyle(.plain)
+                            .accessibilityIdentifier("prehistoryInterpretationEntry")
+                        }
                         VStack(alignment: .leading, spacing: 7) {
                             Text("遗址导览")
                                 .font(.system(.title2, design: .serif).weight(.medium)).foregroundStyle(Theme.ink)
@@ -136,6 +158,55 @@ struct PrehistoryPage: View {
             }.presentationDetents([.medium, .large])
         }
         .accessibilityIdentifier("prehistoryPage")
+    }
+}
+
+private struct PrehistoryInterpretationPage: View {
+    let store: HistoryStore
+    let profile: DynastyProfile
+
+    var body: some View {
+        ScrollView {
+            VStack(alignment: .leading, spacing: 28) {
+                VStack(alignment: .leading, spacing: 9) {
+                    Text("宏观导读")
+                        .font(.caption.weight(.medium)).foregroundStyle(Theme.cinnabar)
+                    Text("理解史前中国")
+                        .font(.system(size: 36, weight: .medium, design: .serif)).foregroundStyle(Theme.ink)
+                    Text(profile.subtitle)
+                        .font(.title3).foregroundStyle(Theme.text).lineSpacing(4)
+                }
+
+                DynastyOverviewBlock(title: "从证据开始", text: profile.overview)
+
+                VStack(alignment: .leading, spacing: 0) {
+                    Text("五个关键问题")
+                        .font(.system(.title3, design: .serif).weight(.medium))
+                        .foregroundStyle(Theme.ink).padding(.bottom, 3)
+                    ForEach(profile.sections) { section in
+                        VStack(alignment: .leading, spacing: 10) {
+                            Text(section.title)
+                                .font(.system(.headline, design: .serif)).foregroundStyle(Theme.ink)
+                            Text(section.text)
+                                .font(.body).foregroundStyle(Theme.text).lineSpacing(6)
+                        }
+                        .padding(.vertical, 19)
+                        .accessibilityIdentifier("prehistoryInterpretation_\(section.id)")
+                        if section.id != profile.sections.last?.id {
+                            Divider().overlay(Theme.line.opacity(0.55))
+                        }
+                    }
+                }
+                SourcesView(store: store, ids: profile.sources)
+            }
+            .padding(.horizontal, 24).padding(.top, 22).padding(.bottom, Theme.pageBottom)
+        }
+        .background(Theme.paper)
+        .navigationTitle("理解史前中国")
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbarBackground(Theme.paper, for: .navigationBar)
+        .toolbarBackground(.visible, for: .navigationBar)
+        .accessibilityIdentifier("prehistoryInterpretationPage")
     }
 }
 
