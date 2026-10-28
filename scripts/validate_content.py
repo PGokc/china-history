@@ -2108,3 +2108,48 @@ if d['version']>=106:
  assert '不足以把其中一种写成确定结局' in articles['y_ragibagh']['sections'][-1]['text']
  assert '不是幼帝本人理解财政和农政的证据' in articles['y_rinchinbal']['sections'][2]['text']
  print('V106 PASS: seven mid-Yuan rulers separate military patronage, law, regency, two-capital war, cultural institutions, child rule and source silence')
+
+if d['version']>=107:
+ late_yuan=['y_late_bayan','y_toghto','y_jia_lu','y_chaghan_temur','y_koke_temur']
+ terms={
+  'y_late_bayan':['1328年','1333年','科举','汉人','1340年'],
+  'y_toghto':['1340年','科举','三史','1351年','高邮','1355年'],
+  'y_jia_lu':['《宋史》','白茅堤','两套方案','十五万','1353年'],
+  'y_chaghan_temur':['1352年','罗山','汴梁','1359年','益都','1362年'],
+  'y_koke_temur':['王保保','1362年','孛罗帖木儿','1364年','1368年','1375年'],
+ }
+ suffix={'y_late_bayan':'bayan','y_toghto':'toghto','y_jia_lu':'jialu','y_chaghan_temur':'chaghan','y_koke_temur':'koke'}
+ required_sources={'v133_dpm_toghto','v133_dpm_chaghan','v133_ys187_jialu','v133_ys141_chaghan','v133_ys044','v133_ys045','v133_ys046','v133_ms124_koke','v133_nmc_yuan_coins','v133_cssn_local_admin','v133_dpm_northern_yuan'}
+ required_events={'v133_bayan_court_concentration','v133_toghto_restoration','v133_jialu_river_survey','v133_jialu_labor','v133_chaghan_local_army','v133_kaifeng_recovery','v133_yidu_assassination','v133_koke_court_war','v133_koke_northern_yuan'}
+ assert required_sources<=sources.keys() and all(sources[source_id]['url'].startswith('https://') for source_id in required_sources)
+ assert required_events<=events.keys()
+ assert {'y_jia_lu','y_chaghan_temur','y_koke_temur'}<=people.keys()
+ seen_titles=set(); seen_sentences={}
+ for pid in late_yuan:
+  ss=articles[pid]['sections']
+  assert len(ss)==5 and all(section['id']==f'v133_{suffix[pid]}_s{index}' for index,section in enumerate(ss,1)),(pid,'wrong section structure')
+  assert all(len(re.findall(r'[\u4e00-\u9fff]',section['text']))>=190 for section in ss),(pid,'thin section')
+  corpus=''.join(section['text'] for section in ss)
+  assert len(re.findall(r'[\u4e00-\u9fff]',corpus))>=1000,(pid,'reading below 1000 Chinese characters')
+  assert all(term in corpus for term in terms[pid]),(pid,'missing chronology, institution, social cost or evidence boundary')
+  assert not re.search(r'产品|本轮|补充内容|数据缺口|开发进度|AI生成|fallback|人物页|占位|正在完善',corpus,re.I),(pid,'internal copy leaked')
+  section_sources=set()
+  for section in ss:
+   assert section['title'] not in seen_titles,(pid,'repeated title',section['title'])
+   seen_titles.add(section['title'])
+   assert 1<=len(section['events'])<=2 and set(section['events'])<=events.keys(),(pid,section['id'],'broken event links')
+   assert len(section['sources'])>=2 and set(section['sources'])<=sources.keys(),(pid,section['id'],'broken source links')
+   section_sources.update(section['sources'])
+   for sentence in re.split(r'(?<=[。！？；])',section['text']):
+    sentence=sentence.strip()
+    if len(sentence)<30: continue
+    assert sentence not in seen_sentences or seen_sentences[sentence]==pid,(pid,'cross-person repeated sentence',seen_sentences.get(sentence),sentence)
+    seen_sentences[sentence]=pid
+  assert set(articles[pid]['sources'])==section_sources,(pid,'article source union mismatch')
+ pairs={('y_late_bayan','y_toghto'),('y_toghto','y_jia_lu'),('y_chaghan_temur','y_koke_temur'),('y_toghon_temur','y_koke_temur')}
+ association_map={(association['from'],association['to']):association for association in d['associations']}
+ assert pairs<=association_map.keys()
+ assert all(association_map[pair].get('role') and association_map[pair].get('inverse') and association_map[pair].get('sources') for pair in pairs)
+ assert '民间流传独眼石人等故事' in articles['y_jia_lu']['sections'][-1]['text']
+ assert '元朝失去中原首都和全国性统治' in articles['y_koke_temur']['sections'][-1]['text']
+ print('V107 PASS: five late-Yuan readings connect court monopoly, institutional restoration, river engineering, regional armies and Northern Yuan continuity without single-cause collapse stories')

@@ -3632,4 +3632,37 @@ final class MingJiUITests: XCTestCase {
         shot("v132-rinchinbal-child-rule-agency", app)
     }
 
+    @MainActor func testV133LateYuanReadingsConnectRiverLaborRegionalArmiesAndNorthernYuan() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["--uitesting", "--ui-dynasty", "yuan"]
+        app.launch()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        app.buttons["globalSearch"].tap()
+        let search = app.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("贾鲁")
+        XCTAssertTrue(app.buttons["search_person_y_jia_lu"].waitForExistence(timeout: 5)); app.buttons["search_person_y_jia_lu"].tap()
+        openArticle(in: app)
+        app.buttons["articleContents"].tap()
+        for chapter in ["治河以前，他先处理过仓粮和漕运", "黄河不是1351年才突然决口", "疏、浚、塞、筑如何在数月内衔接", "十五万民夫之外还有谁承担河工", "河工与红巾军之间不能只画一条直线"] {
+            XCTAssertTrue(app.buttons[chapter].exists, chapter)
+        }
+        app.buttons["河工与红巾军之间不能只画一条直线"].tap()
+        XCTAssertTrue(app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不能替代对灾荒、税役、钞法贬值")).firstMatch.waitForExistence(timeout: 5))
+        shot("v133-jia-lu-river-rebellion-boundary", app)
+
+        app.navigationBars.buttons.element(boundBy: 0).tap()
+        app.navigationBars.buttons.element(boundBy: 0).tap()
+        XCTAssertTrue(app.buttons["清除文本"].waitForExistence(timeout: 5)); app.buttons["清除文本"].tap()
+        let secondSearch = app.searchFields.firstMatch
+        XCTAssertTrue(secondSearch.waitForExistence(timeout: 5)); secondSearch.tap(); secondSearch.typeText("扩廓帖木儿")
+        XCTAssertTrue(app.buttons["search_person_y_koke_temur"].waitForExistence(timeout: 5)); app.buttons["search_person_y_koke_temur"].tap()
+        openArticle(in: app)
+        app.buttons["articleContents"].tap()
+        XCTAssertTrue(app.buttons["1368年以后为什么仍要继续讲他"].exists)
+        app.buttons["1368年以后为什么仍要继续讲他"].tap()
+        XCTAssertTrue(app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "元朝失去中原首都和全国性统治")).firstMatch.waitForExistence(timeout: 5))
+        reach(app.buttons["资料与出处"], in: app, attempts: 18)
+        shot("v133-koke-temur-northern-yuan-continuity", app)
+    }
+
 }
