@@ -3209,6 +3209,30 @@ final class MingJiUITests: XCTestCase {
         shot("v124-guan-tong-evidence-boundary", app)
     }
 
+    @MainActor func testV125SongLiaoXiaJinInterpretationShowsParallelSystemsAndStagedConquest() throws {
+        let app = launch(enterFamily: false)
+        XCTAssertTrue(app.buttons["dynasty_song_liao_xia_jin"].waitForExistence(timeout: 5))
+        reach(app.buttons["dynasty_song_liao_xia_jin"], in: app, attempts: 16)
+        app.buttons["dynasty_song_liao_xia_jin"].tap()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyDetail_song_liao_xia_jin"].waitForExistence(timeout: 5))
+
+        let interpretation = app.buttons["dynastyInterpretation_song_liao_xia_jin"]
+        reach(interpretation, in: app, attempts: 16)
+        app.swipeUp()
+        XCTAssertTrue(interpretation.isHittable)
+        shot("v125-song-liao-xia-jin-interpretation-entry", app)
+        interpretation.tap()
+
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyInterpretationPage_song_liao_xia_jin"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["五条帝序不是一条宋朝主线"].exists)
+        let transition = app.staticTexts["蒙古扩张不是一次完成的统一"]
+        reach(transition, in: app, attempts: 26)
+        XCTAssertTrue(transition.exists)
+        reach(app.buttons["资料与出处"], in: app, attempts: 12)
+        XCTAssertTrue(app.buttons["资料与出处"].isHittable)
+        shot("v125-song-liao-xia-jin-interpretation-ending", app)
+    }
+
     @MainActor func testV90ThinPeopleAndEmptyEventLensesHaveUsefulDepth() throws {
         let ming = XCUIApplication()
         ming.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]

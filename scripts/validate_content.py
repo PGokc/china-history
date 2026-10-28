@@ -1793,3 +1793,23 @@ if d['version']>=98:
  assert '开封与洛阳城址' in yougui_sections[2]['text'] and '南唐山水画' not in yougui_sections[2]['text']
  assert not any(re.search(r'误接|纠正关联|没有直接人物关系',event['impact']) for event in d['events'] if event['id'].startswith('v123_'))
  print('V98 PASS: all seventy-three Five Dynasties readings use person-specific identity, mechanism, evidence and historiography layers')
+
+if d['version']>=99:
+ profile=next(profile for profile in d['dynastyProfiles'] if profile['id']=='song_liao_xia_jin')
+ assert [section['id'] for section in profile['sections']]==['slxj-world','slxj-governance','slxj-networks','slxj-society','slxj-transition']
+ assert len(re.findall(r'[\u4e00-\u9fff]',profile['overview']))>=450
+ assert all(len(re.findall(r'[\u4e00-\u9fff]',section['text']))>=320 for section in profile['sections'])
+ required_sources={
+  'v55_songshi','v55_liaoshi','v55_jinshi','v55_zztj','v125_nopss_cities',
+  'v125_cssn_song_military','v125_cssn_liao_capitals','v125_nopss_liao_capitals',
+  'v125_cssn_xixia_documents','v125_cssn_jin_mengan','v125_nopss_shipbuilding',
+  'v125_nopss_underwater','v50y_quanzhou','v63_xixia_unesco'
+ }
+ assert required_sources<=set(profile['sources'])<=sources.keys()
+ assert all(sources[source_id]['url'].startswith('https://') for source_id in required_sources)
+ corpus=profile['overview']+''.join(section['text'] for section in profile['sections'])
+ assert all(term in corpus for term in ['960年','1005年','1038年','1044年','1115年','1125年','1127年','1141年','1227年','1234年','1276年','1279年'])
+ assert all(term in corpus for term in ['五京','捺钵','头下军州','天盛改旧新定律令','猛安谋克','交子','榷场','市舶','南海一号'])
+ assert all(term in corpus for term in ['不能把它概括成“谁向谁屈服”','不等于辽代始终存在五个整齐行政区','不能写成全国同时进入现代纸币时代','不能代表全部乡村','不是地图颜色在某一年整齐替换'])
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback',corpus,re.I)
+ print('V99 PASS: Song, Liao, Western Xia and Jin macro reading connects parallel courts, plural governance, exchange, ordinary lives and staged conquest')
