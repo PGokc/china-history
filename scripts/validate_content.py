@@ -1813,3 +1813,44 @@ if d['version']>=99:
  assert all(term in corpus for term in ['不能把它概括成“谁向谁屈服”','不等于辽代始终存在五个整齐行政区','不能写成全国同时进入现代纸币时代','不能代表全部乡村','不是地图颜色在某一年整齐替换'])
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback',corpus,re.I)
  print('V99 PASS: Song, Liao, Western Xia and Jin macro reading connects parallel courts, plural governance, exchange, ordinary lives and staged conquest')
+
+if d['version']>=100:
+ liao_ids=['s_liao_taizu','s_liao_taizong','s_liao_shizong','s_liao_muzong','s_liao_jingzong','s_liao_shengzong','s_liao_xingzong','s_liao_daozong','s_liao_tianzuo']
+ liao_terms={
+  's_liao_taizu':['916年','契丹大字','东丹国','耶律倍'],
+  's_liao_taizong':['936年','燕云十六州','后晋','开封'],
+  's_liao_shizong':['947年','述律太后','火神淀','耶律察割'],
+  's_liao_muzong':['951年','后周','北宋','近侍'],
+  's_liao_jingzong':['969年','萧绰','高梁河','南京道'],
+  's_liao_shengzong':['982年','雍熙北伐','澶渊之盟','中京'],
+  's_liao_xingzong':['1031年','关南','重熙增币','西夏'],
+  's_liao_daozong':['1063年','萧观音','耶律濬','耶律乙辛'],
+  's_liao_tianzuo':['1114年','海上之盟','五京','1125年'],
+ }
+ forbidden=['处于宋、辽、西夏、金及蒙古势力先后并立的时代','同一事件在宋、辽、夏、金材料中的称谓','这一时期不是宋朝单方面面对“边患”','本节只陈述可以落到年代','金代帝陵与迁葬历史']
+ seen_titles=set()
+ seen_sentences={}
+ for pid in liao_ids:
+  article=articles[pid]
+  sections=article['sections']
+  assert len(sections)==5 and all(section['id']==f'{pid}-v126-{index}' for index,section in enumerate(sections,1)),(pid,'wrong section structure')
+  assert all(section['title'] not in seen_titles for section in sections),(pid,'cross-person repeated title')
+  seen_titles.update(section['title'] for section in sections)
+  assert all(len(re.findall(r'[\u4e00-\u9fff]',section['text']))>=170 for section in sections),(pid,'thin section')
+  corpus=''.join(section['text'] for section in sections)
+  assert len(re.findall(r'[\u4e00-\u9fff]',corpus))>=900,(pid,'reading below 900 Chinese characters')
+  assert all(term in corpus for term in liao_terms[pid]),(pid,'missing ruler-specific chronology or institution')
+  assert not any(phrase in corpus for phrase in forbidden),(pid,'legacy template survived')
+  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|误接|纠正关联',corpus,re.I)
+  for section in sections:
+   assert pid in section['people'] and len(section['events'])==1 and section['events'][0] in events,(pid,section['id'],'broken relation')
+   assert len(section['sources'])>=5 and set(section['sources'])<=sources.keys(),(pid,section['id'],'broken source')
+   for sentence in re.split(r'(?<=[。！？；])',section['text']):
+    sentence=sentence.strip()
+    if len(sentence)<30: continue
+    assert sentence not in seen_sentences or seen_sentences[sentence]==pid,(pid,'cross-ruler template sentence',seen_sentences.get(sentence),sentence)
+    seen_sentences[sentence]=pid
+ endings={event_id:events[event_id]['body'] for event_id in [f'v55_reign_{pid}_b' for pid in liao_ids]}
+ assert all('去世、被废、被俘或政权覆亡' not in body and len(re.findall(r'[\u4e00-\u9fff]',body))>=35 for body in endings.values())
+ assert '火神淀' in endings['v55_reign_s_liao_shizong_b'] and '西辽' in endings['v55_reign_s_liao_tianzuo_b']
+ print('V100 PASS: nine Liao rulers have person-specific chronology, institutions, material evidence, relationships and source boundaries')

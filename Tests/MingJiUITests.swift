@@ -3233,6 +3233,36 @@ final class MingJiUITests: XCTestCase {
         shot("v125-song-liao-xia-jin-interpretation-ending", app)
     }
 
+    @MainActor func testV126LiaoMuzongReadingSeparatesCourtViolenceFromStateContinuity() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["--uitesting", "--ui-dynasty", "song_liao_xia_jin"]
+        app.launch()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        app.buttons["globalSearch"].tap()
+        let search = app.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("耶律璟")
+        XCTAssertTrue(app.buttons["search_person_s_liao_muzong"].waitForExistence(timeout: 5))
+        app.buttons["search_person_s_liao_muzong"].tap()
+        openArticle(in: app)
+
+        app.buttons["articleContents"].tap()
+        for title in ["政变后的十八年统治", "边境与宫廷是两条风险线", "国家没有因皇帝怠政停摆", "暴力记载不能替代社会史", "如何阅读《穆宗纪》"] {
+            XCTAssertTrue(app.buttons[title].exists, title)
+        }
+        app.buttons["国家没有因皇帝怠政停摆"].tap()
+        XCTAssertTrue(app.staticTexts.matching(NSPredicate(format: "label CONTAINS %@", "制度拥有超出皇帝日常勤惰的惯性")).firstMatch.waitForExistence(timeout: 5))
+        XCTAssertEqual(app.buttons["articleContents"].value as? String, "国家没有因皇帝怠政停摆")
+        shot("v126-liao-muzong-state-continuity", app)
+
+        app.buttons["articleContents"].tap()
+        app.buttons["如何阅读《穆宗纪》"].tap()
+        XCTAssertTrue(app.staticTexts.matching(NSPredicate(format: "label CONTAINS %@", "通俗绰号不是十世纪人的正式称号")).firstMatch.waitForExistence(timeout: 5))
+        shot("v126-liao-muzong-source-boundary", app)
+        reach(app.buttons["资料与出处"], in: app, attempts: 18)
+        XCTAssertTrue(app.buttons["资料与出处"].isHittable)
+        shot("v126-liao-muzong-reading-ending", app)
+    }
+
     @MainActor func testV90ThinPeopleAndEmptyEventLensesHaveUsefulDepth() throws {
         let ming = XCUIApplication()
         ming.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]
