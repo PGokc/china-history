@@ -3263,6 +3263,35 @@ final class MingJiUITests: XCTestCase {
         shot("v126-liao-muzong-reading-ending", app)
     }
 
+    @MainActor func testV127WesternXiaRenzongReadingUsesLawAndDocumentEvidence() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["--uitesting", "--ui-dynasty", "song_liao_xia_jin"]
+        app.launch()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        app.buttons["globalSearch"].tap()
+        let search = app.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("李仁孝")
+        XCTAssertTrue(app.buttons["search_person_s_xia_renzong"].waitForExistence(timeout: 5))
+        app.buttons["search_person_s_xia_renzong"].tap()
+        openArticle(in: app)
+
+        app.buttons["articleContents"].tap()
+        for title in ["五十四年统治中的不同阶段", "学校科举不是简单汉化", "《天盛律令》怎样进入社会史", "任得敬分国危机", "繁荣评价必须看到材料偏差"] {
+            XCTAssertTrue(app.buttons[title].exists, title)
+        }
+        app.buttons["《天盛律令》怎样进入社会史"].tap()
+        XCTAssertTrue(app.staticTexts.matching(NSPredicate(format: "label CONTAINS %@", "法典写明应然规则，不等于每条都在所有地区严格执行")).firstMatch.waitForExistence(timeout: 5))
+        XCTAssertEqual(app.buttons["articleContents"].value as? String, "《天盛律令》怎样进入社会史")
+        shot("v127-western-xia-law-and-documents", app)
+
+        app.buttons["articleContents"].tap()
+        app.buttons["繁荣评价必须看到材料偏差"].tap()
+        XCTAssertTrue(app.staticTexts.matching(NSPredicate(format: "label CONTAINS %@", "不能把少数精品文物当作全民生活水平")).firstMatch.waitForExistence(timeout: 5))
+        reach(app.buttons["资料与出处"], in: app, attempts: 18)
+        XCTAssertTrue(app.buttons["资料与出处"].isHittable)
+        shot("v127-western-xia-renzong-ending", app)
+    }
+
     @MainActor func testV90ThinPeopleAndEmptyEventLensesHaveUsefulDepth() throws {
         let ming = XCUIApplication()
         ming.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]

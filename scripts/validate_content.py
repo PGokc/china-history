@@ -1854,3 +1854,39 @@ if d['version']>=100:
  assert all('去世、被废、被俘或政权覆亡' not in body and len(re.findall(r'[\u4e00-\u9fff]',body))>=35 for body in endings.values())
  assert '火神淀' in endings['v55_reign_s_liao_shizong_b'] and '西辽' in endings['v55_reign_s_liao_tianzuo_b']
  print('V100 PASS: nine Liao rulers have person-specific chronology, institutions, material evidence, relationships and source boundaries')
+
+if d['version']>=101:
+ early_xia_ids=['s_xia_jingzong','s_xia_yizong','s_xia_huizong','s_xia_chongzong','s_xia_renzong']
+ early_xia_terms={
+  's_xia_jingzong':['1038年','三川口','1044年','西夏文','宁令哥'],
+  's_xia_yizong':['1048年','没藏太后','没藏讹庞','1061年','榷场'],
+  's_xia_huizong':['1067年','大梁太后','1081年','灵州','永乐城'],
+  's_xia_chongzong':['1086年','小梁太后','1115年','1125年','感通塔碑'],
+  's_xia_renzong':['1139年','科举','天盛改旧新定律令','任得敬','1193年'],
+ }
+ forbidden=['处于宋、辽、西夏、金及蒙古势力先后并立的时代','同一事件在宋、辽、夏、金材料中的称谓','这一时期不是宋朝单方面面对“边患”','本节只陈述可以落到年代','女真文字和国家文书']
+ seen_titles=set()
+ seen_sentences={}
+ for pid in early_xia_ids:
+  sections=articles[pid]['sections']
+  assert len(sections)==5 and all(section['id']==f'{pid}-v127-{index}' for index,section in enumerate(sections,1)),(pid,'wrong section structure')
+  assert all(section['title'] not in seen_titles for section in sections),(pid,'cross-person repeated title')
+  seen_titles.update(section['title'] for section in sections)
+  assert all(len(re.findall(r'[\u4e00-\u9fff]',section['text']))>=170 for section in sections),(pid,'thin section')
+  corpus=''.join(section['text'] for section in sections)
+  assert len(re.findall(r'[\u4e00-\u9fff]',corpus))>=900,(pid,'reading below 900 Chinese characters')
+  assert all(term in corpus for term in early_xia_terms[pid]),(pid,'missing ruler-specific chronology or institution')
+  assert not any(phrase in corpus for phrase in forbidden),(pid,'legacy or cross-polity template survived')
+  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|误接|纠正关联',corpus,re.I)
+  for section in sections:
+   assert pid in section['people'] and len(section['events'])==1 and section['events'][0] in events,(pid,section['id'],'broken relation')
+   assert len(section['sources'])>=6 and set(section['sources'])<=sources.keys(),(pid,section['id'],'broken source')
+   for sentence in re.split(r'(?<=[。！？；])',section['text']):
+    sentence=sentence.strip()
+    if len(sentence)<30: continue
+    assert sentence not in seen_sentences or seen_sentences[sentence]==pid,(pid,'cross-ruler template sentence',seen_sentences.get(sentence),sentence)
+    seen_sentences[sentence]=pid
+ endings={event_id:events[event_id]['body'] for event_id in [f'v55_reign_{pid}_b' for pid in early_xia_ids]}
+ assert all('去世、被废、被俘或政权覆亡' not in body and len(re.findall(r'[\u4e00-\u9fff]',body))>=35 for body in endings.values())
+ assert '宁令哥' in endings['v55_reign_s_xia_jingzong_b'] and '两位梁太后不可混为一人' in endings['v55_reign_s_xia_huizong_b']
+ print('V101 PASS: the first five Western Xia rulers have specific succession, war, institutions, social costs and evidence boundaries')
