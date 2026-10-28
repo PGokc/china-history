@@ -2018,3 +2018,46 @@ if d['version']>=104:
  assert not any((pair&set(late_jin)) and ({'s_liao_taizu','s_liao_taizong'}&pair) for pair in pairs)
  assert frozenset(('s_jin_weishao','y_genghis')) in pairs
  print('V104 PASS: the last five Jin rulers separate legal florescence, Mongol invasion, southern migration, multi-front collapse and source-bounded succession')
+
+if d['version']>=105:
+ early_mongol=['y_genghis','y_ogedei','y_guyuk','y_mongke']
+ terms={
+  'y_genghis':['1206年','中都','1219年','1227年','拖雷监国'],
+  'y_ogedei':['1229年','十路征税','1234年','和林','1241年'],
+  'y_guyuk':['乃马真','1246年','拔都','1248年','海迷失'],
+  'y_mongke':['1251年','户口','大理','和林','1259年'],
+ }
+ req_sources={'v131_neac_mongol_history','v131_neac_yelu_chucai','v131_unesco_orkhon','v131_neac_secret_history','v131_cssn_diaoyu','v131_neac_succession','v131_loc_carpini_rubruck'}
+ req_events={'v131_genghis_jin_war','v131_genghis_death_transition','v131_karakorum_yam','v131_western_campaign_regency','v131_guyuk_envoys','v131_guyuk_death_regency','v131_mongke_campaigns','v131_mongke_karakorum'}
+ assert req_sources<=sources.keys() and all(sources[source_id]['url'].startswith('https://') for source_id in req_sources)
+ assert req_events<=events.keys()
+ seen_titles=set(); seen_sentences={}
+ for pid in early_mongol:
+  ss=articles[pid]['sections']
+  assert len(ss)==5 and all(section['id']==f'v131_{pid.removeprefix("y_")}_s{index}' for index,section in enumerate(ss,1)),(pid,'wrong section structure')
+  assert all(len(re.findall(r'[\u4e00-\u9fff]',section['text']))>=220 for section in ss),(pid,'thin section')
+  corpus=''.join(section['text'] for section in ss)
+  assert len(re.findall(r'[\u4e00-\u9fff]',corpus))>=1100,(pid,'reading below 1100 Chinese characters')
+  assert all(term in corpus for term in terms[pid]),(pid,'missing ruler-specific chronology, institution or evidence boundary')
+  assert not re.search(r'本轮|补充内容|数据缺口|开发进度|AI生成|fallback|人物页|占位|正在完善',corpus,re.I)
+  section_sources=set()
+  for section in ss:
+   assert section['title'] not in seen_titles,(pid,'repeated section title',section['title'])
+   seen_titles.add(section['title'])
+   assert 1<=len(section['events'])<=2 and set(section['events'])<=events.keys(),(pid,section['id'],'broken event links')
+   assert len(section['sources'])>=2 and set(section['sources'])<=sources.keys(),(pid,section['id'],'broken source links')
+   section_sources.update(section['sources'])
+   for sentence in re.split(r'(?<=[。！？；])',section['text']):
+    sentence=sentence.strip()
+    if len(sentence)<30: continue
+    assert sentence not in seen_sentences or seen_sentences[sentence]==pid,(pid,'cross-ruler repeated sentence',seen_sentences.get(sentence),sentence)
+    seen_sentences[sentence]=pid
+  assert set(articles[pid]['sources'])==section_sources,(pid,'article source union mismatch')
+ assert events['v131_genghis_death_transition']['people']==['y_genghis','y_tolui','y_ogedei']
+ assert '死因' in articles['y_mongke']['sections'][-1]['text'] and '无争议定论' in articles['y_mongke']['sections'][-1]['text']
+ assert '一部完整统一的法典' in articles['y_genghis']['sections'][1]['text']
+ required_pairs={('y_genghis','y_yelu_chucai'),('y_ogedei','y_yelu_chucai'),('y_ogedei','s_jin_aizong'),('y_guyuk','y_mongke'),('y_mongke','y_kublai'),('y_mongke','s_lizong')}
+ association_map={(association['from'],association['to']):association for association in d['associations']}
+ assert required_pairs<=association_map.keys()
+ assert all(association_map[pair].get('role') and association_map[pair].get('inverse') and association_map[pair].get('sources') for pair in required_pairs)
+ print('V105 PASS: four early Mongol khans distinguish alliance, conquest, taxation, regency, urban networks, evidence limits and the road to divided succession')

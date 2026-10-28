@@ -3566,4 +3566,37 @@ final class MingJiUITests: XCTestCase {
         shot("v130-modi-time-evidence-boundary", app)
     }
 
+    @MainActor func testV131EarlyMongolKhansSeparateEmpireFormationFromYuanDynasty() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["--uitesting", "--ui-dynasty", "yuan"]
+        app.launch()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        app.buttons["globalSearch"].tap()
+        let search = app.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("铁木真")
+        XCTAssertTrue(app.buttons["search_person_y_genghis"].waitForExistence(timeout: 5)); app.buttons["search_person_y_genghis"].tap()
+        openArticle(in: app)
+        app.buttons["articleContents"].tap()
+        for chapter in ["1206年以前，权力怎样形成", "千户、护卫与命令如何落地", "攻金不是一次战役完成的征服", "西征连接欧亚，也摧毁许多城市", "1227年的死亡留下什么继承难题"] {
+            XCTAssertTrue(app.buttons[chapter].exists, chapter)
+        }
+        app.buttons["攻金不是一次战役完成的征服"].tap()
+        XCTAssertTrue(app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "金朝并未随即灭亡")).firstMatch.waitForExistence(timeout: 5))
+        shot("v131-genghis-jin-war-boundary", app)
+
+        app.navigationBars.buttons.element(boundBy: 0).tap()
+        app.navigationBars.buttons.element(boundBy: 0).tap()
+        XCTAssertTrue(app.buttons["清除文本"].waitForExistence(timeout: 5)); app.buttons["清除文本"].tap()
+        let secondSearch = app.searchFields.firstMatch
+        XCTAssertTrue(secondSearch.waitForExistence(timeout: 5)); secondSearch.tap(); secondSearch.typeText("蒙哥")
+        XCTAssertTrue(app.buttons["search_person_y_mongke"].waitForExistence(timeout: 5)); app.buttons["search_person_y_mongke"].tap()
+        openArticle(in: app)
+        app.buttons["articleContents"].tap()
+        XCTAssertTrue(app.buttons["钓鱼城前后的死因与继承断裂"].exists)
+        app.buttons["钓鱼城前后的死因与继承断裂"].tap()
+        XCTAssertTrue(app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "无争议定论")).firstMatch.waitForExistence(timeout: 5))
+        reach(app.buttons["资料与出处"], in: app, attempts: 18)
+        shot("v131-mongke-death-source-boundary", app)
+    }
+
 }
