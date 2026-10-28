@@ -1755,5 +1755,41 @@ if d['version']>=97:
   article=articles[pid]
   assert all(section['events']==[event_id] for section in article['sections'] if section['id'].startswith(pid+'-v54-')),(pid,'stale event mapping')
   assert pid in new_events[event_id]['people'] and new_events[event_id]['sources']
- assert '971年宋灭南汉没有直接关系' in next(section['text'] for section in articles['fd_guan_tong']['sections'] if section['id'].endswith('-v54-4'))
+ if d['version']==97:
+  assert '971年宋灭南汉没有直接关系' in next(section['text'] for section in articles['fd_guan_tong']['sections'] if section['id'].endswith('-v54-4'))
  print('V97 PASS: seventy-three Five Dynasties readings contain no repeated filler; rotated and seven false person-event mappings are corrected')
+
+if d['version']>=98:
+ fd_people={p['id'] for p in d['people'] if p.get('dynasty')=='five_dynasties'}
+ expected_titles=['身份、时间与政权','决定发生在什么结构中','哪些材料能够作证','把人物放回区域社会','史书如何塑造人物']
+ old_phrases=[
+  '生活在唐宋之间多政权并立的时期','器物、城址与传世作品分别',
+  '这段经历由军队、官僚、宗族','本篇以《旧五代史》《新五代史》《资治通鉴》互校'
+ ]
+ seen={}
+ for pid in fd_people:
+  article=articles[pid]
+  sections=[section for section in article['sections'] if section['id'].startswith(pid+'-v54-')]
+  assert [section['title'] for section in sections]==expected_titles,(pid,'legacy section order or title')
+  lead_event=sections[0]['events']
+  assert len(lead_event)==1,(pid,'ambiguous lead event')
+  assert all(section['events']==lead_event for section in sections),(pid,'section-event drift')
+  assert all(pid in section['people'] for section in sections),(pid,'subject absent from section relations')
+  corpus=''.join(section['text'] for section in sections)
+  assert len(re.findall(r'[\u4e00-\u9fff]',corpus))>=900,(pid,'reading below 900 Chinese characters')
+  assert not any(phrase in corpus for phrase in old_phrases),(pid,'legacy template survived')
+  assert not re.search(r'误接|纠正关联|没有直接人物关系',corpus),(pid,'editorial repair note leaked')
+  for section in (sections[0],sections[2],sections[4]):
+   for sentence in re.split(r'(?<=[。；！？])',section['text']):
+    sentence=sentence.strip()
+    if len(sentence)<24: continue
+    assert sentence not in seen or seen[sentence]==pid,(pid,'cross-person template sentence',seen.get(sentence),sentence)
+    seen[sentence]=pid
+ guan=''.join(section['text'] for section in articles['fd_guan_tong']['sections'] if '-v54-' in section['id'])
+ guan_sections=[section for section in articles['fd_guan_tong']['sections'] if '-v54-' in section['id']]
+ assert guan_sections[1]['events']==['v123_guan_tong'] and '创作、摹写、收藏' in guan_sections[1]['text']
+ assert '宋军攻入广州' not in guan and '971年宋灭南汉' not in guan
+ yougui_sections=[section for section in articles['fd_yougui']['sections'] if '-v54-' in section['id']]
+ assert '开封与洛阳城址' in yougui_sections[2]['text'] and '南唐山水画' not in yougui_sections[2]['text']
+ assert not any(re.search(r'误接|纠正关联|没有直接人物关系',event['impact']) for event in d['events'] if event['id'].startswith('v123_'))
+ print('V98 PASS: all seventy-three Five Dynasties readings use person-specific identity, mechanism, evidence and historiography layers')

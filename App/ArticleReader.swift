@@ -140,14 +140,18 @@ struct ArticleReader: View {
                                     narrator.stop()
                                     resumeOffer = nil
                                     remember(nil)
-                                    proxy.scrollTo("opening", anchor: .top)
+                                    DispatchQueue.main.async {
+                                        withAnimation(.easeOut(duration: 0.28)) { proxy.scrollTo("opening", anchor: .top) }
+                                    }
                                 }
                                 ForEach(article.sections) { section in
                                     Button(section.title) {
                                         narrator.stop()
                                         resumeOffer = nil
                                         remember(section.id)
-                                        proxy.scrollTo(section.id, anchor: .top)
+                                        DispatchQueue.main.async {
+                                            withAnimation(.easeOut(duration: 0.28)) { proxy.scrollTo(section.id, anchor: .top) }
+                                        }
                                     }
                                 }
                             } label: { Image(systemName: "list.bullet").font(.system(size: 17, weight: .medium)).accessibilityLabel("目录") }.accessibilityIdentifier("articleContents")

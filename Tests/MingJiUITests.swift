@@ -3180,6 +3180,35 @@ final class MingJiUITests: XCTestCase {
         shot("v123-ma-xifan-regional-reading-ending", app)
     }
 
+    @MainActor func testV124FiveDynastiesBiographyUsesPersonSpecificEvidence() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["--uitesting", "--ui-dynasty", "five_dynasties"]
+        app.launch()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        app.buttons["globalSearch"].tap()
+        let search = app.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("关仝")
+        XCTAssertTrue(app.buttons["search_person_fd_guan_tong"].waitForExistence(timeout: 5))
+        app.buttons["search_person_fd_guan_tong"].tap()
+        openArticle(in: app)
+
+        app.buttons["articleContents"].tap()
+        for title in ["身份、时间与政权", "决定发生在什么结构中", "哪些材料能够作证", "把人物放回区域社会", "史书如何塑造人物"] {
+            XCTAssertTrue(app.buttons[title].exists, title)
+        }
+        app.buttons["决定发生在什么结构中"].tap()
+        XCTAssertTrue(app.staticTexts.matching(NSPredicate(format: "label CONTAINS %@", "创作、摹写、收藏")).firstMatch.waitForExistence(timeout: 5))
+        XCTAssertEqual(app.buttons["articleContents"].value as? String, "决定发生在什么结构中")
+        shot("v124-guan-tong-specific-mechanism", app)
+        XCTAssertFalse(app.staticTexts.matching(NSPredicate(format: "label CONTAINS %@", "宋军攻入广州")).firstMatch.exists)
+        XCTAssertFalse(app.staticTexts.matching(NSPredicate(format: "label CONTAINS %@", "971年宋灭南汉")).firstMatch.exists)
+
+        app.buttons["articleContents"].tap()
+        app.buttons["哪些材料能够作证"].tap()
+        XCTAssertTrue(app.staticTexts.matching(NSPredicate(format: "label CONTAINS %@", "署名为关仝不自动等于真迹")).firstMatch.waitForExistence(timeout: 5))
+        shot("v124-guan-tong-evidence-boundary", app)
+    }
+
     @MainActor func testV90ThinPeopleAndEmptyEventLensesHaveUsefulDepth() throws {
         let ming = XCUIApplication()
         ming.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]
