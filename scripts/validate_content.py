@@ -1996,3 +1996,25 @@ if d['version']>=103:
  assert all(set(contexts[pid]['people'])==expected_context_people[pid] for pid in early_jin_ids)
  assert all({events[event_id]['category'] for event_id in contexts[pid]['events']}=={'政治','军事','文化','经济','社会'} for pid in early_jin_ids)
  print('V103 PASS: the first five Jin rulers distinguish state formation, conquest, reform, migration, diplomacy and source-shaped memory')
+
+if d['version']>=104:
+ late_jin=['s_jin_zhangzong','s_jin_weishao','s_jin_xuanzong','s_jin_aizong','s_jin_modi']
+ terms={'s_jin_zhangzong':['1189年','泰和','1194年','开禧北伐','1208年'],'s_jin_weishao':['1208年','1211年','野狐岭','1213年','卫绍王'],'s_jin_xuanzong':['1213年','1214年','开封','1215年','1224年'],'s_jin_aizong':['1224年','西夏','三峰山','蔡州','1234年'],'s_jin_modi':['1234年','不足一日','受位','战死','元好问']}
+ req_sources={'v130_cssn_taihe_law','v130_cssn_taihe_palace','v130_cssn_taihe_legacy','v130_cssn_jin_migration','v130_cssn_kaifeng','v130_jingyuan_late_jin'}
+ req_events={'v130_jin_taihe_law','v130_jin_zhangzong_fiscal','v130_jin_weishao_defense','v130_jin_weishao_court','v130_jin_south_migration','v130_jin_song_war','v130_jin_xuanzong_culture','v130_jin_aizong_diplomacy','v130_jin_kaifeng_siege','v130_jin_cai_food','v130_jin_chenglin_memory'}
+ assert req_sources<=sources.keys() and req_events<=events.keys()
+ seen=set()
+ for pid in late_jin:
+  ss=articles[pid]['sections']; assert len(ss)==5 and all(x['id']==f'{pid}-v130-{i}' for i,x in enumerate(ss,1))
+  assert all(len(re.findall(r'[\u4e00-\u9fff]',x['text']))>=170 for x in ss)
+  corpus=''.join(x['text'] for x in ss); assert len(re.findall(r'[\u4e00-\u9fff]',corpus))>=900 and all(t in corpus for t in terms[pid])
+  assert not re.search(r'本轮|补充内容|数据缺口|开发进度|AI生成|fallback|人物页|不能写成',corpus,re.I)
+  for x in ss:
+   assert pid in x['people'] and len(x['events'])==1 and len(x['sources'])>=6
+   assert x['title'] not in seen; seen.add(x['title'])
+ endings=[events[f'v55_reign_{p}_b']['body'] for p in late_jin]
+ assert all('去世、被废、被俘或政权覆亡' not in x and len(re.findall(r'[\u4e00-\u9fff]',x))>=35 for x in endings)
+ pairs={frozenset((a['from'],a['to'])) for a in d['associations']}
+ assert not any((pair&set(late_jin)) and ({'s_liao_taizu','s_liao_taizong'}&pair) for pair in pairs)
+ assert frozenset(('s_jin_weishao','y_genghis')) in pairs
+ print('V104 PASS: the last five Jin rulers separate legal florescence, Mongol invasion, southern migration, multi-front collapse and source-bounded succession')

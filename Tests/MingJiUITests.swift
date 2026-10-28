@@ -3533,4 +3533,37 @@ final class MingJiUITests: XCTestCase {
         shot("v129-shizong-bilingual-stele", shizong)
     }
 
+    @MainActor func testV130LateJinReadingsKeepCollapseChronologyAndEvidenceBoundaries() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["--uitesting", "--ui-dynasty", "song_liao_xia_jin"]
+        app.launch()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        app.buttons["globalSearch"].tap()
+        let search = app.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("完颜守绪")
+        XCTAssertTrue(app.buttons["search_person_s_jin_aizong"].waitForExistence(timeout: 5)); app.buttons["search_person_s_jin_aizong"].tap()
+        openArticle(in: app)
+        app.buttons["articleContents"].tap()
+        for chapter in ["继承的是开封防御圈", "联夏、联宋为何都很困难", "三峰山之后主力怎样崩解", "开封围城到蔡州孤城", "自缢、传位与1234年亡国"] {
+            XCTAssertTrue(app.buttons[chapter].exists, chapter)
+        }
+        app.buttons["开封围城到蔡州孤城"].tap()
+        XCTAssertTrue(app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "粮荒、疫病")).firstMatch.waitForExistence(timeout: 5))
+        shot("v130-aizong-kaifeng-to-caizhou", app)
+
+        app.navigationBars.buttons.element(boundBy: 0).tap()
+        app.navigationBars.buttons.element(boundBy: 0).tap()
+        XCTAssertTrue(app.buttons["清除文本"].waitForExistence(timeout: 5)); app.buttons["清除文本"].tap()
+        let secondSearch = app.searchFields.firstMatch
+        XCTAssertTrue(secondSearch.waitForExistence(timeout: 5)); secondSearch.tap(); secondSearch.typeText("完颜承麟")
+        XCTAssertTrue(app.buttons["search_person_s_jin_modi"].waitForExistence(timeout: 5)); app.buttons["search_person_s_jin_modi"].tap()
+        openArticle(in: app)
+        app.buttons["articleContents"].tap()
+        XCTAssertTrue(app.buttons["城破时序为何难以精确到分钟"].exists)
+        app.buttons["城破时序为何难以精确到分钟"].tap()
+        XCTAssertTrue(app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不足以支持")).firstMatch.waitForExistence(timeout: 5))
+        reach(app.buttons["资料与出处"], in: app, attempts: 18)
+        shot("v130-modi-time-evidence-boundary", app)
+    }
+
 }

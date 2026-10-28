@@ -1,5 +1,5 @@
 {
-  "version": 103,
+  "version": 104,
   "reviewed": "2026-10-28",
   "people": [
     {
@@ -21323,6 +21323,42 @@
       "title": "北京市文物局·金中都考古发现",
       "url": "https://wwj.beijing.gov.cn/bjww/wwjzzcslm/1729986/1730010/436280187/index.html",
       "note": "用于1153年迁都后金中都城址、官式建筑和城市营建的物证。"
+    },
+    {
+      "id": "v130_cssn_taihe_law",
+      "title": "中国社会科学网·唐制与金章宗泰和法制",
+      "url": "https://www.cssn.cn/skgz/bwyc/202609/t20260909_6066579.shtml",
+      "note": "讨论章宗修刑法、定官制及泰和法制在正统叙事中的位置。"
+    },
+    {
+      "id": "v130_cssn_taihe_palace",
+      "title": "中国社会科学网·太子城与金章宗泰和宫",
+      "url": "https://cssn.cn/kgxc/kgxc_kgsb/202207/t20220728_5431202.shtml",
+      "note": "以考古年代、火烧遗迹和文献驻夏记录论证太子城可能为章宗泰和宫。"
+    },
+    {
+      "id": "v130_cssn_taihe_legacy",
+      "title": "中国社会科学网·元代法律与亡金泰和律",
+      "url": "https://www.cssn.cn/skgz/bwyc/202310/t20231016_5690507.shtml",
+      "note": "说明金亡后中原一度继续使用《泰和律》断案及后续法律继承。"
+    },
+    {
+      "id": "v130_cssn_jin_migration",
+      "title": "中国社会科学网·金代内迁猛安数量考辨",
+      "url": "https://www.cssn.cn/skgz/202209/t20220916_5511905.shtml",
+      "note": "讨论1214年前后南迁与约六十余万口材料边界，反驳四百万人旧说。"
+    },
+    {
+      "id": "v130_cssn_kaifeng",
+      "title": "中国考古网·考古开封",
+      "url": "https://www.cssn.cn/kgxc/kgxc_kghs/202207/t20220728_5430717.shtml",
+      "note": "开封城市考古资料包含宣宗、哀宗时期对金代汴京的营建。"
+    },
+    {
+      "id": "v130_jingyuan_late_jin",
+      "title": "靖远县人民政府·金末西部战事与地方抵抗",
+      "url": "https://www.jingyuan.gov.cn/zjjy/rwjy/rwcq/art/2023/art_f1497e512f1b4ecabe4dc05cd0a2188c.html",
+      "note": "用于蔡州之后西部金军继续抵抗的地方材料，人物细节仍与《金史》互校。"
     }
   ],
   "relations": [
@@ -47136,8 +47172,8 @@
       "year": "1208",
       "sortYear": 1208,
       "title": "完颜璟在位终结",
-      "body": "完颜璟在1208年去世、被废、被俘或政权覆亡，具体方式见帝序。",
-      "impact": "帝位记录只表示本政权内部次序，摄政、迁都和实际控制范围另行说明。",
+      "body": "1208年完颜璟去世，因诸子早夭无存活皇子，皇位由叔父完颜永济继承；这次叔侄交接并非政变夺位。",
+      "impact": "1208年完颜璟去世，因诸子早夭无存活皇子，皇位由叔父完颜永济继承；这次叔侄交接并非政变夺位。",
       "people": [
         "s_jin_zhangzong",
         "s_jin_shizong"
@@ -47180,8 +47216,8 @@
       "year": "1213",
       "sortYear": 1213,
       "title": "完颜永济在位终结",
-      "body": "完颜永济在1213年去世、被废、被俘或政权覆亡，具体方式见帝序。",
-      "impact": "帝位记录只表示本政权内部次序，摄政、迁都和实际控制范围另行说明。",
+      "body": "1213年蒙古攻势造成中枢危机，将领胡沙虎发动宫廷政变，废杀完颜永济并拥立完颜珣；这不是正常禅位。",
+      "impact": "1213年蒙古攻势造成中枢危机，将领胡沙虎发动宫廷政变，废杀完颜永济并拥立完颜珣；这不是正常禅位。",
       "people": [
         "s_jin_weishao",
         "s_jin_zhangzong"
@@ -47224,8 +47260,8 @@
       "year": "1224",
       "sortYear": 1224,
       "title": "完颜珣在位终结",
-      "body": "完颜珣在1224年去世、被废、被俘或政权覆亡，具体方式见帝序。",
-      "impact": "帝位记录只表示本政权内部次序，摄政、迁都和实际控制范围另行说明。",
+      "body": "1224年完颜珣在开封去世，皇子完颜守绪继位；金朝仍有中枢和军队，但控制范围与财政基础已经大幅收缩。",
+      "impact": "1224年完颜珣在开封去世，皇子完颜守绪继位；金朝仍有中枢和军队，但控制范围与财政基础已经大幅收缩。",
       "people": [
         "s_jin_xuanzong",
         "s_jin_weishao"
@@ -47268,8 +47304,8 @@
       "year": "1234",
       "sortYear": 1234,
       "title": "完颜守绪在位终结",
-      "body": "完颜守绪在1234年去世、被废、被俘或政权覆亡，具体方式见帝序。",
-      "impact": "帝位记录只表示本政权内部次序，摄政、迁都和实际控制范围另行说明。",
+      "body": "1234年蔡州城破前完颜守绪自缢，并将帝位传给完颜承麟；具体仪式时刻主要来自后出正史整理。",
+      "impact": "1234年蔡州城破前完颜守绪自缢，并将帝位传给完颜承麟；具体仪式时刻主要来自后出正史整理。",
       "people": [
         "s_jin_aizong",
         "s_jin_xuanzong"
@@ -47312,8 +47348,8 @@
       "year": "1234",
       "sortYear": 1234,
       "title": "完颜承麟在位终结",
-      "body": "完颜承麟在1234年去世、被废、被俘或政权覆亡，具体方式见帝序。",
-      "impact": "帝位记录只表示本政权内部次序，摄政、迁都和实际控制范围另行说明。",
+      "body": "1234年完颜承麟在蔡州受位后不久战死，宋蒙联军攻破蔡州，金朝政权终结；其精确在位时长无法可靠换算到小时。",
+      "impact": "1234年完颜承麟在蔡州受位后不久战死，宋蒙联军攻破蔡州，金朝政权终结；其精确在位时长无法可靠换算到小时。",
       "people": [
         "s_jin_modi",
         "s_jin_aizong"
@@ -59317,6 +59353,206 @@
       "sources": [
         "v55_jinshi",
         "v55_songshi"
+      ]
+    },
+    {
+      "id": "v130_jin_taihe_law",
+      "year": "1190—1201",
+      "sortYear": 1195,
+      "title": "泰和律令与制度整合",
+      "category": "文化",
+      "kind": "历史事件",
+      "body": "章宗朝修订礼制、官制和法律，泰和法制结合唐宋传统与金朝自身治理经验。",
+      "impact": "法典成文不代表地方执行一致，金亡后仍一度用于中原断案则显示其制度影响。",
+      "people": [
+        "s_jin_zhangzong"
+      ],
+      "sources": [
+        "v55_jinshi",
+        "v55_songshi",
+        "v130_cssn_taihe_law"
+      ]
+    },
+    {
+      "id": "v130_jin_zhangzong_fiscal",
+      "year": "1189—1208",
+      "sortYear": 1198,
+      "title": "章宗朝财政与宫廷支出",
+      "category": "经济",
+      "kind": "历史事件",
+      "body": "章宗朝文化、礼制和宫廷活动扩展，同时承担黄河治理、边防和赈济支出。",
+      "impact": "前期繁荣与后期财政压力可以并存，不能用单一盛衰标签替代收支机制。",
+      "people": [
+        "s_jin_zhangzong"
+      ],
+      "sources": [
+        "v55_jinshi",
+        "v55_songshi",
+        "v130_cssn_taihe_law"
+      ]
+    },
+    {
+      "id": "v130_jin_weishao_defense",
+      "year": "1211—1213",
+      "sortYear": 1212,
+      "title": "野狐岭后华北防线收缩",
+      "category": "社会",
+      "kind": "历史事件",
+      "body": "蒙古攻势和金军野战失败使城镇、交通、军户及边地家庭承受迁徙和征发。",
+      "impact": "战役影响不止军队伤亡，也改变地方守降和中都物资供给。",
+      "people": [
+        "s_jin_weishao"
+      ],
+      "sources": [
+        "v55_jinshi",
+        "v55_songshi",
+        "v130_cssn_taihe_law"
+      ]
+    },
+    {
+      "id": "v130_jin_weishao_court",
+      "year": "1213",
+      "sortYear": 1213,
+      "title": "胡沙虎政变与卫绍王被杀",
+      "category": "政治",
+      "kind": "历史事件",
+      "body": "战争危机中胡沙虎控制宫禁，废杀完颜永济并拥立完颜珣。",
+      "impact": "政变不是蒙古直接指定皇帝，却显示军权已能突破继承程序。",
+      "people": [
+        "s_jin_weishao",
+        "s_jin_xuanzong"
+      ],
+      "sources": [
+        "v55_jinshi",
+        "v55_songshi",
+        "v130_cssn_taihe_law"
+      ]
+    },
+    {
+      "id": "v130_jin_south_migration",
+      "year": "1214—1215",
+      "sortYear": 1214,
+      "title": "中枢与军户南迁河南",
+      "category": "社会",
+      "kind": "历史事件",
+      "body": "宣宗迁都开封后，朝廷、军队及部分内迁女真军户南下，河南承受住房、授田和军需压力。",
+      "impact": "六十余万口来自特定材料，不能当作全部迁徙人口的精确统计。",
+      "people": [
+        "s_jin_xuanzong"
+      ],
+      "sources": [
+        "v55_jinshi",
+        "v55_songshi",
+        "v130_cssn_taihe_law"
+      ]
+    },
+    {
+      "id": "v130_jin_song_war",
+      "year": "1217—1224",
+      "sortYear": 1218,
+      "title": "金宣宗朝对宋战争",
+      "category": "军事",
+      "kind": "历史事件",
+      "body": "金廷在蒙古压力下仍向南宋开战，试图取得土地与资源，多线战争持续消耗河南和陕西。",
+      "impact": "战争未恢复北方失地，反而压缩同宋联合抵御蒙古的可能。",
+      "people": [
+        "s_jin_xuanzong"
+      ],
+      "sources": [
+        "v55_jinshi",
+        "v55_songshi",
+        "v130_cssn_taihe_law"
+      ]
+    },
+    {
+      "id": "v130_jin_xuanzong_culture",
+      "year": "1214—1224",
+      "sortYear": 1220,
+      "title": "金代汴京营建与文书延续",
+      "category": "文化",
+      "kind": "历史事件",
+      "body": "宣宗南迁后利用开封既有城市基础营建宫署、维持学校、礼制和官府文书。",
+      "impact": "城市考古能证明金代汴京层次，不能把每处遗迹直接归为皇帝个人工程。",
+      "people": [
+        "s_jin_xuanzong"
+      ],
+      "sources": [
+        "v55_jinshi",
+        "v55_songshi",
+        "v130_cssn_taihe_law"
+      ]
+    },
+    {
+      "id": "v130_jin_aizong_diplomacy",
+      "year": "1224—1231",
+      "sortYear": 1226,
+      "title": "哀宗朝联夏联宋尝试",
+      "category": "政治",
+      "kind": "历史事件",
+      "body": "哀宗试图停止部分战争并改善同西夏、南宋关系，但旧怨和不同战略判断阻碍稳定联盟。",
+      "impact": "外交意图没有转化为共同防线，西夏先亡，南宋最终参与夹攻金朝。",
+      "people": [
+        "s_jin_aizong"
+      ],
+      "sources": [
+        "v55_jinshi",
+        "v55_songshi",
+        "v130_cssn_taihe_law"
+      ]
+    },
+    {
+      "id": "v130_jin_kaifeng_siege",
+      "year": "1232—1233",
+      "sortYear": 1232,
+      "title": "开封围城中的粮荒与疫病",
+      "category": "社会",
+      "kind": "历史事件",
+      "body": "蒙古围逼开封期间，城内居民和守军承受粮荒、疫病、征发与交通断绝。",
+      "impact": "帝王迁行之外，围城代价主要落在难以留下完整个人记录的城市人口。",
+      "people": [
+        "s_jin_aizong"
+      ],
+      "sources": [
+        "v55_jinshi",
+        "v55_songshi",
+        "v130_cssn_taihe_law"
+      ]
+    },
+    {
+      "id": "v130_jin_cai_food",
+      "year": "1233—1234",
+      "sortYear": 1233,
+      "title": "蔡州孤城的军粮危机",
+      "category": "经济",
+      "kind": "历史事件",
+      "body": "哀宗转入蔡州后，残余军队与居民依赖快速缩小的粮道和城内储备维持防守。",
+      "impact": "军粮和交通崩解使象征性皇统无法恢复实际控制。",
+      "people": [
+        "s_jin_aizong",
+        "s_jin_modi"
+      ],
+      "sources": [
+        "v55_jinshi",
+        "v55_songshi",
+        "v130_cssn_taihe_law"
+      ]
+    },
+    {
+      "id": "v130_jin_chenglin_memory",
+      "year": "1234",
+      "sortYear": 1234,
+      "title": "完颜承麟的受位与后世记忆",
+      "category": "文化",
+      "kind": "历史事件",
+      "body": "承麟在蔡州末刻受位并战死，后世地方形成墓葬、后裔和守陵传说。",
+      "impact": "地方记忆值得记录，但缺少考古互证时不能作为确认帝陵和遗骨迁运的依据。",
+      "people": [
+        "s_jin_modi"
+      ],
+      "sources": [
+        "v55_jinshi",
+        "v55_songshi",
+        "v130_cssn_taihe_law"
       ]
     }
   ],
@@ -133051,104 +133287,164 @@
       "dek": "蒙古进攻中丧失大片地区，政变中被杀。",
       "sections": [
         {
-          "id": "s_jin_weishao-v55-1",
-          "title": "并立世界中的位置",
-          "text": "完颜永济处于宋、辽、西夏、金及蒙古势力先后并立的时代。蒙古进攻中丧失大片地区，政变中被杀。评价其行动需要先确认本国继承、摄政关系和实际控制区域。",
-          "sources": [
-            "v55_jinshi",
-            "v55_songshi",
-            "v55_kaogu"
-          ],
-          "kind": "史实与解读",
-          "events": [
-            "v55_m09"
-          ],
-          "people": [
-            "s_jin_zhangzong",
-            "s_jin_xuanzong",
-            "s_liao_taizu"
-          ]
-        },
-        {
-          "id": "s_jin_weishao-v55-2",
-          "title": "权力、战争与选择",
-          "text": "蒙古军突破金朝北部防线，战争长期化。同一事件在宋、辽、夏、金材料中的称谓和因果解释可能不同，页面以时间、行动和可核结果为主。",
-          "sources": [
-            "v55_jinshi",
-            "v55_songshi",
-            "v55_kaogu"
-          ],
+          "id": "s_jin_weishao-v130-1",
+          "title": "叔父入继与薄弱权威",
+          "text": "1208年章宗无存活皇子，叔父完颜永济入继。这个选择符合宗室范围，却不意味着新君获得了世宗、章宗长期经营的威望。史书对他多有懦弱评价，应先分清后见之明：即位时金朝仍控制华北广大州县，中都制度与军队尚在运行，蒙古也尚未攻入核心地区。真正问题是皇帝能否协调边军、猛安谋克与中枢，在短时间内回应北方力量急剧变化。完颜永济此前的宗室经历资料有限，不能为解释失败而虚构一套早已注定的无能性格。继承程序稳定不等于危机处理能力已经得到检验。",
           "kind": "史实与解读",
           "events": [
             "v55_reign_s_jin_weishao_a"
           ],
           "people": [
+            "s_jin_weishao",
             "s_jin_zhangzong",
             "s_jin_xuanzong",
-            "s_liao_taizu"
-          ]
-        },
-        {
-          "id": "s_jin_weishao-v55-3",
-          "title": "实物怎样作证",
-          "text": "契丹生活传统与陶瓷工艺。理解其年代、用途和归属需要结合出土环境、修缮记录与馆藏著录。文字、建筑、墓葬和器物能够补充正史，却不能脱离出土层位和流传过程独立证明故事。",
+            "y_genghis"
+          ],
           "sources": [
             "v55_jinshi",
             "v55_songshi",
-            "v55_kaogu"
+            "v55_kaogu",
+            "v125_cssn_jin_mengan",
+            "v125_nopss_cities",
+            "v63_jinling_bj",
+            "v130_cssn_taihe_law",
+            "v130_cssn_taihe_palace",
+            "v130_cssn_taihe_legacy",
+            "v130_cssn_jin_migration",
+            "v130_cssn_kaifeng",
+            "v130_jingyuan_late_jin"
+          ]
+        },
+        {
+          "id": "s_jin_weishao-v130-2",
+          "title": "1211年战争不是一次边境突袭",
+          "text": "1211年成吉思汗率蒙古军大举攻金，战线涉及西京、居庸关及华北多处。战争不只是一次掠边，蒙古军利用机动、降附与金朝边防分散，逐步破坏交通和防御节点。金朝仍能守城、调兵并在局部抵抗，不能把后来亡国提前写进第一年；但边地人口、牲畜和粮运已开始承受持续冲击。皇帝决策只是战争能力的一部分，前线指挥、军队组织和地方响应同样决定结果。蒙古攻金也包含对过去贡纳关系和草原权力秩序的重定，双方目标并非从第一天就是灭国。金军失败也不能证明各地从此完全停止抵抗。",
+          "kind": "史实与解读",
+          "events": [
+            "v55_m09"
           ],
+          "people": [
+            "s_jin_weishao",
+            "s_jin_zhangzong",
+            "s_jin_xuanzong",
+            "y_genghis"
+          ],
+          "sources": [
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu",
+            "v125_cssn_jin_mengan",
+            "v125_nopss_cities",
+            "v63_jinling_bj",
+            "v130_cssn_taihe_law",
+            "v130_cssn_taihe_palace",
+            "v130_cssn_taihe_legacy",
+            "v130_cssn_jin_migration",
+            "v130_cssn_kaifeng",
+            "v130_jingyuan_late_jin"
+          ]
+        },
+        {
+          "id": "s_jin_weishao-v130-3",
+          "title": "野狐岭败局怎样扩大",
+          "text": "野狐岭及会河堡一带的失败重创金军野战力量，具体兵数在后出记载中夸张不一，不宜采用“数十万尽没”的整齐数字。败局来自兵力部署、将领协调、地形与蒙古军集中攻击，不能简化为皇帝性格。军事失利随后造成城镇孤立、降附增加与中都压力，影响大于单场伤亡。可靠写法应承认这是战略转折，同时保留各路战况和人数资料的不确定。败军、难民与降附者的身份会变化，史书以忠逆分类，社会史则须观察他们为何移动。数字不确定不影响战略失败本身可以得到确认。",
+          "kind": "史实与解读",
+          "events": [
+            "v55_m09"
+          ],
+          "people": [
+            "s_jin_weishao",
+            "s_jin_zhangzong",
+            "s_jin_xuanzong",
+            "y_genghis"
+          ],
+          "sources": [
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu",
+            "v125_cssn_jin_mengan",
+            "v125_nopss_cities",
+            "v63_jinling_bj",
+            "v130_cssn_taihe_law",
+            "v130_cssn_taihe_palace",
+            "v130_cssn_taihe_legacy",
+            "v130_cssn_jin_migration",
+            "v130_cssn_kaifeng",
+            "v130_jingyuan_late_jin"
+          ]
+        },
+        {
+          "id": "s_jin_weishao-v130-4",
+          "title": "中都防守、议和与宫廷政变",
+          "text": "蒙古军逼近中都后，金廷一面加强城防，一面通过贡纳、婚姻等条件争取撤军。短暂议和没有解决北方控制崩解，也加剧宫廷对责任与路线的争夺。1213年将领胡沙虎发动政变，完颜永济被废杀，另立完颜珣。政变发生于战争危机中，却不是蒙古军直接指定皇帝；军权进入宫禁，显示中枢内部已无法维持稳定问责和继承程序。议和所换取的是短暂停战而非可靠边界，宫廷清洗又进一步削弱持续组织防务的能力。被杀结局与此前议和应按时间分开理解。",
+          "kind": "史实与解读",
+          "events": [
+            "v130_jin_weishao_court"
+          ],
+          "people": [
+            "s_jin_weishao",
+            "s_jin_zhangzong",
+            "s_jin_xuanzong",
+            "y_genghis"
+          ],
+          "sources": [
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu",
+            "v125_cssn_jin_mengan",
+            "v125_nopss_cities",
+            "v63_jinling_bj",
+            "v130_cssn_taihe_law",
+            "v130_cssn_taihe_palace",
+            "v130_cssn_taihe_legacy",
+            "v130_cssn_jin_migration",
+            "v130_cssn_kaifeng",
+            "v130_jingyuan_late_jin"
+          ]
+        },
+        {
+          "id": "s_jin_weishao-v130-5",
+          "title": "“卫绍王”是死后的降格称号",
+          "text": "完颜永济生前以皇帝身份在位，死后被降封为卫王，后世通常称卫绍王。这个称号本身来自胜者重定名分，不能倒推他即位时只是藩王或从未称帝。《金史》对亡国前君主的评价带有强烈因果追溯，页面因此把可确认的战争、议和、政变和身后降格分别呈现。五年统治虽短，却是金朝从稳定边界进入长期生存战争的关键转折。把称号变化写清，正是为了避免用亡国后的裁判覆盖当事人在位时拥有的法定身份。称号、庙号与实际在位事实必须分别标示。",
           "kind": "史实与解读",
           "events": [
             "v55_reign_s_jin_weishao_b"
           ],
           "people": [
+            "s_jin_weishao",
             "s_jin_zhangzong",
             "s_jin_xuanzong",
-            "s_liao_taizu"
-          ]
-        },
-        {
-          "id": "s_jin_weishao-v55-4",
-          "title": "制度与社会",
-          "text": "这一时期不是宋朝单方面面对“边患”。各政权都有内部官制、财政、法律、宗教与多语社会；条约、互市、移民和战争共同塑造北方与西北。完颜永济处于宋、辽、西夏、金及蒙古势力先后并立的时代。蒙古进攻中丧失大片地区，政变中被杀。评价其行动需要先确认本国继承、摄政关系和实际控制区域。完颜永济处于宋、辽、西夏、金及蒙古势力先后并立的时代。蒙古进攻中丧失大片地区，政变中被杀。评价其行动需要先确认本国继承、摄政关系和实际控制区域。完颜永济处于宋、辽、西夏、金及蒙古势力先后并立的时代。蒙古进攻中丧失大片地区，政变中被杀。评价其行动需要先确认本国继承、摄政关系和实际控制区域。完颜永济处于宋、辽、西夏、金及蒙古势力先后并立的时代。蒙古进攻中丧失大片地区，政变中被杀。评价其行动需要先确认本国继承、摄政关系和实际控制区域。完颜永济处于宋、辽、西夏、金及蒙古势力先后并立的时代。蒙古进攻中丧失大片地区，政变中被杀。评价其行动需要先确认本国继承、摄政关系和实际控制区域。完颜永济处于宋、辽、西夏、金及蒙古势力先后并立的时代。蒙古进攻中丧失大片地区，政变中被杀。评价其行动需要先确认本国继承、摄政关系和实际控制区域。完颜永济处于宋、辽、西夏、金及蒙古势力先后并立的时代。蒙古进攻中丧失大片地区，政变中被杀。评价其行动需要先确认本国继承、摄政关系和实际控制区域。",
+            "y_genghis"
+          ],
           "sources": [
             "v55_jinshi",
             "v55_songshi",
-            "v55_kaogu"
-          ],
-          "kind": "史实与解读",
-          "events": [
-            "v55_reign_s_jin_xuanzong_a"
-          ],
-          "people": [
-            "s_jin_zhangzong",
-            "s_jin_xuanzong",
-            "s_liao_taizu"
-          ]
-        },
-        {
-          "id": "s_jin_weishao-v55-5",
-          "title": "史料边界",
-          "text": "本篇以本政权正史、宋史和考古资料互校。辽史成书条件、西夏无官修正史、金宋双方立场差异，都要求对数字、言辞和道德评价保持克制。",
-          "sources": [
-            "v55_jinshi",
-            "v55_songshi",
-            "v55_kaogu"
-          ],
-          "kind": "史实与解读",
-          "events": [
-            "v55_reign_s_jin_xuanzong_b"
-          ],
-          "people": [
-            "s_jin_zhangzong",
-            "s_jin_xuanzong",
-            "s_liao_taizu"
+            "v55_kaogu",
+            "v125_cssn_jin_mengan",
+            "v125_nopss_cities",
+            "v63_jinling_bj",
+            "v130_cssn_taihe_law",
+            "v130_cssn_taihe_palace",
+            "v130_cssn_taihe_legacy",
+            "v130_cssn_jin_migration",
+            "v130_cssn_kaifeng",
+            "v130_jingyuan_late_jin"
           ]
         }
       ],
       "sources": [
         "v55_jinshi",
-        "v55_songshi"
+        "v55_songshi",
+        "v55_kaogu",
+        "v125_cssn_jin_mengan",
+        "v125_nopss_cities",
+        "v63_jinling_bj",
+        "v130_cssn_taihe_law",
+        "v130_cssn_taihe_palace",
+        "v130_cssn_taihe_legacy",
+        "v130_cssn_jin_migration",
+        "v130_cssn_kaifeng",
+        "v130_jingyuan_late_jin"
       ]
     },
     {
@@ -133157,104 +133453,164 @@
       "dek": "迁都南京开封，蒙古压力下又与宋、西夏交战。",
       "sections": [
         {
-          "id": "s_jin_xuanzong-v55-1",
-          "title": "并立世界中的位置",
-          "text": "完颜珣处于宋、辽、西夏、金及蒙古势力先后并立的时代。迁都南京开封，蒙古压力下又与宋、西夏交战。评价其行动需要先确认本国继承、摄政关系和实际控制区域。",
-          "sources": [
-            "v55_jinshi",
-            "v55_songshi",
-            "v55_kaogu"
-          ],
-          "kind": "史实与解读",
-          "events": [
-            "v55_p09"
-          ],
-          "people": [
-            "s_jin_weishao",
-            "s_jin_aizong",
-            "s_liao_taizu"
-          ]
-        },
-        {
-          "id": "s_jin_xuanzong-v55-2",
-          "title": "权力、战争与选择",
-          "text": "蒙古压力下金宣宗迁都南京，河北控制进一步削弱。同一事件在宋、辽、夏、金材料中的称谓和因果解释可能不同，页面以时间、行动和可核结果为主。",
-          "sources": [
-            "v55_jinshi",
-            "v55_songshi",
-            "v55_kaogu"
-          ],
-          "kind": "史实与解读",
-          "events": [
-            "v55_e10"
-          ],
-          "people": [
-            "s_jin_weishao",
-            "s_jin_aizong",
-            "s_liao_taizu"
-          ]
-        },
-        {
-          "id": "s_jin_xuanzong-v55-3",
-          "title": "实物怎样作证",
-          "text": "已经失用文字的出土档案。理解其年代、用途和归属需要结合出土环境、修缮记录与馆藏著录。文字、建筑、墓葬和器物能够补充正史，却不能脱离出土层位和流传过程独立证明故事。",
-          "sources": [
-            "v55_jinshi",
-            "v55_songshi",
-            "v55_kaogu"
-          ],
-          "kind": "史实与解读",
-          "events": [
-            "v55_s09"
-          ],
-          "people": [
-            "s_jin_weishao",
-            "s_jin_aizong",
-            "s_liao_taizu"
-          ]
-        },
-        {
-          "id": "s_jin_xuanzong-v55-4",
-          "title": "制度与社会",
-          "text": "这一时期不是宋朝单方面面对“边患”。各政权都有内部官制、财政、法律、宗教与多语社会；条约、互市、移民和战争共同塑造北方与西北。完颜珣处于宋、辽、西夏、金及蒙古势力先后并立的时代。迁都南京开封，蒙古压力下又与宋、西夏交战。评价其行动需要先确认本国继承、摄政关系和实际控制区域。完颜珣处于宋、辽、西夏、金及蒙古势力先后并立的时代。迁都南京开封，蒙古压力下又与宋、西夏交战。评价其行动需要先确认本国继承、摄政关系和实际控制区域。完颜珣处于宋、辽、西夏、金及蒙古势力先后并立的时代。迁都南京开封，蒙古压力下又与宋、西夏交战。评价其行动需要先确认本国继承、摄政关系和实际控制区域。完颜珣处于宋、辽、西夏、金及蒙古势力先后并立的时代。迁都南京开封，蒙古压力下又与宋、西夏交战。评价其行动需要先确认本国继承、摄政关系和实际控制区域。完颜珣处于宋、辽、西夏、金及蒙古势力先后并立的时代。迁都南京开封，蒙古压力下又与宋、西夏交战。评价其行动需要先确认本国继承、摄政关系和实际控制区域。完颜珣处于宋、辽、西夏、金及蒙古势力先后并立的时代。迁都南京开封，蒙古压力下又与宋、西夏交战。评价其行动需要先确认本国继承、摄政关系和实际控制区域。完颜珣处于宋、辽、西夏、金及蒙古势力先后并立的时代。迁都南京开封，蒙古压力下又与宋、西夏交战。评价其行动需要先确认本国继承、摄政关系和实际控制区域。",
-          "sources": [
-            "v55_jinshi",
-            "v55_songshi",
-            "v55_kaogu"
-          ],
+          "id": "s_jin_xuanzong-v130-1",
+          "title": "政变拥立的皇帝",
+          "text": "1213年胡沙虎废杀卫绍王后，宗室完颜珣被拥立，是为宣宗。新君依靠政变集团进入皇位，随后又处置胡沙虎，试图收回中枢控制。蒙古军仍在华北活动，地方城镇、猛安军户和州县官员必须自行判断守降。宣宗朝不能只写成“亡国前夕”：十一年间朝廷仍征税、任官、作战并处理灾荒，但每项政策都受到军事空间缩小和人口迁徙的限制。政变拥立并不使其所有命令都无效，却让处置拥立者和建立自身班底成为即位初年的首要风险。这也是其后处置胡沙虎不能被略去的原因。",
           "kind": "史实与解读",
           "events": [
             "v55_reign_s_jin_xuanzong_a"
           ],
           "people": [
+            "s_jin_xuanzong",
             "s_jin_weishao",
             "s_jin_aizong",
-            "s_liao_taizu"
-          ]
-        },
-        {
-          "id": "s_jin_xuanzong-v55-5",
-          "title": "史料边界",
-          "text": "本篇以本政权正史、宋史和考古资料互校。辽史成书条件、西夏无官修正史、金宋双方立场差异，都要求对数字、言辞和道德评价保持克制。",
+            "s_jin_puxianwannu"
+          ],
           "sources": [
             "v55_jinshi",
             "v55_songshi",
-            "v55_kaogu"
+            "v55_kaogu",
+            "v125_cssn_jin_mengan",
+            "v125_nopss_cities",
+            "v63_jinling_bj",
+            "v130_cssn_taihe_law",
+            "v130_cssn_taihe_palace",
+            "v130_cssn_taihe_legacy",
+            "v130_cssn_jin_migration",
+            "v130_cssn_kaifeng",
+            "v130_jingyuan_late_jin"
+          ]
+        },
+        {
+          "id": "s_jin_xuanzong-v130-2",
+          "title": "1214年南迁开封改变了什么",
+          "text": "1214年金廷同蒙古议和后离开中都，迁往南京开封。南迁让皇帝靠近河南粮赋和仍可控制的军队，却被蒙古视为重新敌对，也削弱留守中都与河北军民的信心。约六十余万内迁女真军户及其他人口陆续南下的说法来自特定材料，不能当作所有迁徙人口的精确总数。开封原有北宋城市基础，金廷重新营建和部署防务，迁都既是保存中枢，也是把军需、住房和土地压力集中到河南。留守中都者并非都被主动抛弃，撤退路线、家属、运输和守城责任使人口选择远比迁都诏书复杂。南迁者与留守者的生活结局差异尤其巨大。",
+          "kind": "史实与解读",
+          "events": [
+            "v55_p09"
           ],
+          "people": [
+            "s_jin_xuanzong",
+            "s_jin_weishao",
+            "s_jin_aizong",
+            "s_jin_puxianwannu"
+          ],
+          "sources": [
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu",
+            "v125_cssn_jin_mengan",
+            "v125_nopss_cities",
+            "v63_jinling_bj",
+            "v130_cssn_taihe_law",
+            "v130_cssn_taihe_palace",
+            "v130_cssn_taihe_legacy",
+            "v130_cssn_jin_migration",
+            "v130_cssn_kaifeng",
+            "v130_jingyuan_late_jin"
+          ]
+        },
+        {
+          "id": "s_jin_xuanzong-v130-3",
+          "title": "中都陷落与北方多重政权",
+          "text": "1215年中都陷落，金朝仍控制河南、山东及部分陕西等地；地图并非一夜全部变色。河北地方武装、红袄军、蒙古驻军和金朝据点交错，东北又出现蒲鲜万奴建立的东夏。不同集团会在金、蒙古与地方势力之间转换，不能统称“农民起义”或“叛将”。宣宗需要维持名义任命和军粮，同时实际控制越来越依赖地方将领，这种权力碎片化比单纯丢失一座都城更深。1215年以后不同城市陷落时间各异，页面不使用一条整齐前线去表现交错变化的控制范围。东夏也不是从建立起就始终保持同一疆界。",
+          "kind": "史实与解读",
+          "events": [
+            "v56_政治_07"
+          ],
+          "people": [
+            "s_jin_xuanzong",
+            "s_jin_weishao",
+            "s_jin_aizong",
+            "s_jin_puxianwannu"
+          ],
+          "sources": [
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu",
+            "v125_cssn_jin_mengan",
+            "v125_nopss_cities",
+            "v63_jinling_bj",
+            "v130_cssn_taihe_law",
+            "v130_cssn_taihe_palace",
+            "v130_cssn_taihe_legacy",
+            "v130_cssn_jin_migration",
+            "v130_cssn_kaifeng",
+            "v130_jingyuan_late_jin"
+          ]
+        },
+        {
+          "id": "s_jin_xuanzong-v130-4",
+          "title": "对宋开战为何加重困局",
+          "text": "在蒙古压力未解时，金朝又于1217年以后向南宋开战，希望取得土地和资源，并转移内部军事压力。战事消耗河南、陕西军粮，南宋也组织反击；金与西夏之间此前的冲突同样未完全消除。把政策解释成宣宗个人“以战养战”可以提示动机，却不能掩盖将领、财政和边区利益的共同作用。多线战争没有恢复北方失地，反而缩小潜在合作空间，使开封政权更依赖有限腹地。对宋战报会强调胜负，财政材料则更能显示长期运粮、马匹和军户征调为何难以持续。战争收益与长期国家净损失不是同一概念。",
+          "kind": "史实与解读",
+          "events": [
+            "v130_jin_song_war"
+          ],
+          "people": [
+            "s_jin_xuanzong",
+            "s_jin_weishao",
+            "s_jin_aizong",
+            "s_jin_puxianwannu"
+          ],
+          "sources": [
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu",
+            "v125_cssn_jin_mengan",
+            "v125_nopss_cities",
+            "v63_jinling_bj",
+            "v130_cssn_taihe_law",
+            "v130_cssn_taihe_palace",
+            "v130_cssn_taihe_legacy",
+            "v130_cssn_jin_migration",
+            "v130_cssn_kaifeng",
+            "v130_jingyuan_late_jin"
+          ]
+        },
+        {
+          "id": "s_jin_xuanzong-v130-5",
+          "title": "1224年留下的不是完整国家",
+          "text": "1224年宣宗去世，皇位由皇子完颜守绪继承。此时金朝仍有开封中枢、官僚和军队，不能说已经名存实亡；但中都及河北大片地区丢失、地方武装分化、财政和军粮长期紧张也不可淡化。宣宗南迁保存王朝二十年，却没有建立可长期抵御蒙古的稳定格局。评价这次选择，应同时看它避免中枢在1214年立即覆灭，以及它把北方人口和防线留在更脆弱位置的双重后果。所谓延续二十年也不是为南迁辩护，而是用来衡量保存中枢与丧失北方网络的双重效果。继承时仍存在的机构后来又继续运转十年。",
           "kind": "史实与解读",
           "events": [
             "v55_reign_s_jin_xuanzong_b"
           ],
           "people": [
+            "s_jin_xuanzong",
             "s_jin_weishao",
             "s_jin_aizong",
-            "s_liao_taizu"
+            "s_jin_puxianwannu"
+          ],
+          "sources": [
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu",
+            "v125_cssn_jin_mengan",
+            "v125_nopss_cities",
+            "v63_jinling_bj",
+            "v130_cssn_taihe_law",
+            "v130_cssn_taihe_palace",
+            "v130_cssn_taihe_legacy",
+            "v130_cssn_jin_migration",
+            "v130_cssn_kaifeng",
+            "v130_jingyuan_late_jin"
           ]
         }
       ],
       "sources": [
         "v55_jinshi",
-        "v55_songshi"
+        "v55_songshi",
+        "v55_kaogu",
+        "v125_cssn_jin_mengan",
+        "v125_nopss_cities",
+        "v63_jinling_bj",
+        "v130_cssn_taihe_law",
+        "v130_cssn_taihe_palace",
+        "v130_cssn_taihe_legacy",
+        "v130_cssn_jin_migration",
+        "v130_cssn_kaifeng",
+        "v130_jingyuan_late_jin"
       ]
     },
     {
@@ -133263,104 +133619,169 @@
       "dek": "试图缓和对外关系并整军，蔡州陷落时自杀。",
       "sections": [
         {
-          "id": "s_jin_aizong-v55-1",
-          "title": "并立世界中的位置",
-          "text": "完颜守绪处于宋、辽、西夏、金及蒙古势力先后并立的时代。试图缓和对外关系并整军，蔡州陷落时自杀。评价其行动需要先确认本国继承、摄政关系和实际控制区域。",
-          "sources": [
-            "v55_jinshi",
-            "v55_songshi",
-            "v55_kaogu"
-          ],
-          "kind": "史实与解读",
-          "events": [
-            "v55_p10"
-          ],
-          "people": [
-            "s_jin_modi",
-            "s_jin_xuanzong",
-            "s_liao_taizu"
-          ]
-        },
-        {
-          "id": "s_jin_aizong-v55-2",
-          "title": "权力、战争与选择",
-          "text": "蒙古与宋夹攻蔡州，金哀宗自杀，末帝战死。同一事件在宋、辽、夏、金材料中的称谓和因果解释可能不同，页面以时间、行动和可核结果为主。",
-          "sources": [
-            "v55_jinshi",
-            "v55_songshi",
-            "v55_kaogu"
-          ],
+          "id": "s_jin_aizong-v130-1",
+          "title": "继承的是开封防御圈",
+          "text": "1224年完颜守绪继位，是为哀宗。他试图整顿军政、停止部分无效战争并修复同西夏、南宋的关系，但继承的核心区域已主要收缩到河南和陕西部分地区。蒙古内部一度因成吉思汗去世调整行动，给金廷有限喘息，却不是安全期。哀宗的“图强”评价来自后世同末代局势的对照，政策意图必须同实际兵员、粮道和地方控制比较，不能把努力本身当作成效。哀宗能够更换官员和调整外交，却无法重建已经丢失的河北税源与跨区域军马体系。短暂喘息不应被误写成一次成功中兴。",
           "kind": "史实与解读",
           "events": [
             "v55_reign_s_jin_aizong_a"
           ],
           "people": [
-            "s_jin_modi",
+            "s_jin_aizong",
             "s_jin_xuanzong",
-            "s_liao_taizu"
-          ]
-        },
-        {
-          "id": "s_jin_aizong-v55-3",
-          "title": "实物怎样作证",
-          "text": "汉文与西夏文对照碑刻。理解其年代、用途和归属需要结合出土环境、修缮记录与馆藏著录。文字、建筑、墓葬和器物能够补充正史，却不能脱离出土层位和流传过程独立证明故事。",
+            "s_jin_modi",
+            "s_jin_wanyanhada",
+            "s_jin_yilapua"
+          ],
           "sources": [
             "v55_jinshi",
             "v55_songshi",
-            "v55_kaogu"
+            "v55_kaogu",
+            "v125_cssn_jin_mengan",
+            "v125_nopss_cities",
+            "v63_jinling_bj",
+            "v130_cssn_taihe_law",
+            "v130_cssn_taihe_palace",
+            "v130_cssn_taihe_legacy",
+            "v130_cssn_jin_migration",
+            "v130_cssn_kaifeng",
+            "v130_jingyuan_late_jin"
+          ]
+        },
+        {
+          "id": "s_jin_aizong-v130-2",
+          "title": "联夏、联宋为何都很困难",
+          "text": "金朝曾尝试改善同西夏和南宋的关系，过去长期战争、边界争夺和靖康记忆却使互信极低。西夏于1227年先亡，南宋则在蒙古压力与报复金朝之间反复权衡。外交并非皇帝发一封国书就能形成联盟，还取决于边将停战、使者通行、岁币旧账和双方对蒙古威胁的不同判断。最终南宋选择与蒙古夹攻金朝，说明金廷的联合设想没有转化为稳定共同防线。南宋最终参战也有自身收复失地和复仇目标，不能把宋蒙合作写成价值一致的长期联盟。外交失败同样不等于从未进行过谈判。",
+          "kind": "史实与解读",
+          "events": [
+            "v130_jin_aizong_diplomacy"
           ],
+          "people": [
+            "s_jin_aizong",
+            "s_jin_xuanzong",
+            "s_jin_modi",
+            "s_jin_wanyanhada",
+            "s_jin_yilapua"
+          ],
+          "sources": [
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu",
+            "v125_cssn_jin_mengan",
+            "v125_nopss_cities",
+            "v63_jinling_bj",
+            "v130_cssn_taihe_law",
+            "v130_cssn_taihe_palace",
+            "v130_cssn_taihe_legacy",
+            "v130_cssn_jin_migration",
+            "v130_cssn_kaifeng",
+            "v130_jingyuan_late_jin"
+          ]
+        },
+        {
+          "id": "s_jin_aizong-v130-3",
+          "title": "三峰山之后主力怎样崩解",
+          "text": "1232年三峰山之战重创金朝主力，严寒、补给、连续行军和蒙古军战术共同影响结果。史书对兵数和冻死、战死规模记载不一，不宜用一个巨大数字制造确定感。完颜合达、移剌蒲阿等将领的败亡，使开封外围机动力量锐减，地方据点更难互相救援。战役是结构性崩解的重要节点，却不是金朝当日灭亡；此后朝廷仍维持近两年，并在多座城市继续抵抗。完颜合达、移剌蒲阿的个人传记能够补充战场行动，但不能用英雄牺牲遮住补给系统失败。三峰山的冬季环境也须同军粮问题合看。",
+          "kind": "史实与解读",
+          "events": [
+            "v56_军事_06"
+          ],
+          "people": [
+            "s_jin_aizong",
+            "s_jin_xuanzong",
+            "s_jin_modi",
+            "s_jin_wanyanhada",
+            "s_jin_yilapua"
+          ],
+          "sources": [
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu",
+            "v125_cssn_jin_mengan",
+            "v125_nopss_cities",
+            "v63_jinling_bj",
+            "v130_cssn_taihe_law",
+            "v130_cssn_taihe_palace",
+            "v130_cssn_taihe_legacy",
+            "v130_cssn_jin_migration",
+            "v130_cssn_kaifeng",
+            "v130_jingyuan_late_jin"
+          ]
+        },
+        {
+          "id": "s_jin_aizong-v130-4",
+          "title": "开封围城到蔡州孤城",
+          "text": "蒙古军围逼开封后，城内承受粮荒、疫病、征发与政治恐慌。1232年底哀宗离开开封，先后转往归德、蔡州；1233年开封守军结束抵抗。迁行不是从一座完整首都搬往另一座首都，而是皇帝和残余军队在交通与粮道不断收缩中寻找立足点。蔡州容纳军队、官员和居民，宋蒙联军合围后，城市日常代价难以从帝王本纪中的战报完整复原。开封与蔡州不是空城，迁都叙事必须把留下、逃亡、被征发和无法离开的居民纳入视野。围城伤亡没有可靠口径时不制造精确总数。",
+          "kind": "史实与解读",
+          "events": [
+            "v130_jin_kaifeng_siege"
+          ],
+          "people": [
+            "s_jin_aizong",
+            "s_jin_xuanzong",
+            "s_jin_modi",
+            "s_jin_wanyanhada",
+            "s_jin_yilapua"
+          ],
+          "sources": [
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu",
+            "v125_cssn_jin_mengan",
+            "v125_nopss_cities",
+            "v63_jinling_bj",
+            "v130_cssn_taihe_law",
+            "v130_cssn_taihe_palace",
+            "v130_cssn_taihe_legacy",
+            "v130_cssn_jin_migration",
+            "v130_cssn_kaifeng",
+            "v130_jingyuan_late_jin"
+          ]
+        },
+        {
+          "id": "s_jin_aizong-v130-5",
+          "title": "自缢、传位与1234年亡国",
+          "text": "1234年蔡州城破前，哀宗自缢，并把帝位传给完颜承麟，希望亡国之君的名义不落在自己身上。承麟受位后不久即战死，金朝政权终结。关于仪式精确时刻和两人死亡先后，材料主要来自后来的正史整理，不宜渲染为逐分钟现场。亡国是蒙古长期进攻、金朝多线战争、主力损失和宋蒙夹攻共同结果，不能只归咎末帝品格；城破也不等于所有金朝人口、官员与文化同时消失。宋蒙联合后很快出现新的领土冲突，说明共同灭金只是阶段性目标，不是稳定战后秩序。王朝终结与金代社会终结不是同一件事。",
           "kind": "史实与解读",
           "events": [
             "v55_reign_s_jin_aizong_b"
           ],
           "people": [
-            "s_jin_modi",
+            "s_jin_aizong",
             "s_jin_xuanzong",
-            "s_liao_taizu"
-          ]
-        },
-        {
-          "id": "s_jin_aizong-v55-4",
-          "title": "制度与社会",
-          "text": "这一时期不是宋朝单方面面对“边患”。各政权都有内部官制、财政、法律、宗教与多语社会；条约、互市、移民和战争共同塑造北方与西北。完颜守绪处于宋、辽、西夏、金及蒙古势力先后并立的时代。试图缓和对外关系并整军，蔡州陷落时自杀。评价其行动需要先确认本国继承、摄政关系和实际控制区域。完颜守绪处于宋、辽、西夏、金及蒙古势力先后并立的时代。试图缓和对外关系并整军，蔡州陷落时自杀。评价其行动需要先确认本国继承、摄政关系和实际控制区域。完颜守绪处于宋、辽、西夏、金及蒙古势力先后并立的时代。试图缓和对外关系并整军，蔡州陷落时自杀。评价其行动需要先确认本国继承、摄政关系和实际控制区域。完颜守绪处于宋、辽、西夏、金及蒙古势力先后并立的时代。试图缓和对外关系并整军，蔡州陷落时自杀。评价其行动需要先确认本国继承、摄政关系和实际控制区域。完颜守绪处于宋、辽、西夏、金及蒙古势力先后并立的时代。试图缓和对外关系并整军，蔡州陷落时自杀。评价其行动需要先确认本国继承、摄政关系和实际控制区域。完颜守绪处于宋、辽、西夏、金及蒙古势力先后并立的时代。试图缓和对外关系并整军，蔡州陷落时自杀。评价其行动需要先确认本国继承、摄政关系和实际控制区域。完颜守绪处于宋、辽、西夏、金及蒙古势力先后并立的时代。试图缓和对外关系并整军，蔡州陷落时自杀。评价其行动需要先确认本国继承、摄政关系和实际控制区域。",
+            "s_jin_modi",
+            "s_jin_wanyanhada",
+            "s_jin_yilapua"
+          ],
           "sources": [
             "v55_jinshi",
             "v55_songshi",
-            "v55_kaogu"
-          ],
-          "kind": "史实与解读",
-          "events": [
-            "v55_reign_s_jin_modi_a"
-          ],
-          "people": [
-            "s_jin_modi",
-            "s_jin_xuanzong",
-            "s_liao_taizu"
-          ]
-        },
-        {
-          "id": "s_jin_aizong-v55-5",
-          "title": "史料边界",
-          "text": "本篇以本政权正史、宋史和考古资料互校。辽史成书条件、西夏无官修正史、金宋双方立场差异，都要求对数字、言辞和道德评价保持克制。",
-          "sources": [
-            "v55_jinshi",
-            "v55_songshi",
-            "v55_kaogu"
-          ],
-          "kind": "史实与解读",
-          "events": [
-            "v55_reign_s_jin_modi_b"
-          ],
-          "people": [
-            "s_jin_modi",
-            "s_jin_xuanzong",
-            "s_liao_taizu"
+            "v55_kaogu",
+            "v125_cssn_jin_mengan",
+            "v125_nopss_cities",
+            "v63_jinling_bj",
+            "v130_cssn_taihe_law",
+            "v130_cssn_taihe_palace",
+            "v130_cssn_taihe_legacy",
+            "v130_cssn_jin_migration",
+            "v130_cssn_kaifeng",
+            "v130_jingyuan_late_jin"
           ]
         }
       ],
       "sources": [
         "v55_jinshi",
-        "v55_songshi"
+        "v55_songshi",
+        "v55_kaogu",
+        "v125_cssn_jin_mengan",
+        "v125_nopss_cities",
+        "v63_jinling_bj",
+        "v130_cssn_taihe_law",
+        "v130_cssn_taihe_palace",
+        "v130_cssn_taihe_legacy",
+        "v130_cssn_jin_migration",
+        "v130_cssn_kaifeng",
+        "v130_jingyuan_late_jin"
       ]
     },
     {
@@ -133369,104 +133790,164 @@
       "dek": "蔡州城破前受禅，即位当日战死。",
       "sections": [
         {
-          "id": "s_jin_modi-v55-1",
-          "title": "并立世界中的位置",
-          "text": "完颜承麟处于宋、辽、西夏、金及蒙古势力先后并立的时代。蔡州城破前受禅，即位当日战死。评价其行动需要先确认本国继承、摄政关系和实际控制区域。",
-          "sources": [
-            "v55_jinshi",
-            "v55_songshi",
-            "v55_kaogu"
-          ],
-          "kind": "史实与解读",
-          "events": [
-            "v55_p10"
-          ],
-          "people": [
-            "s_jin_aizong",
-            "s_liao_taizu",
-            "s_liao_taizong"
-          ]
-        },
-        {
-          "id": "s_jin_modi-v55-2",
-          "title": "权力、战争与选择",
-          "text": "蒙古与宋夹攻蔡州，金哀宗自杀，末帝战死。同一事件在宋、辽、夏、金材料中的称谓和因果解释可能不同，页面以时间、行动和可核结果为主。",
-          "sources": [
-            "v55_jinshi",
-            "v55_songshi",
-            "v55_kaogu"
-          ],
+          "id": "s_jin_modi-v130-1",
+          "title": "极短在位者为何仍列入帝序",
+          "text": "完颜承麟是金朝宗室和将领，1234年蔡州城破前接受哀宗传位，通常称金末帝。其在位可能不足一日，具体时长在不同叙述中并不一致；帝序保留他，是因为确有受位行动，而不是为了凑足皇帝人数。极短统治没有条件形成独立年号、政策或完整朝廷，页面也不把哀宗十年间的战争全部算给他。是否把他称为末帝，取决于是否承认危城中的正式受位；这与在位长短是两个不同问题。帝序记录的是受位事实，不是统治成就排名，也不等于长期执政。",
           "kind": "史实与解读",
           "events": [
             "v55_reign_s_jin_modi_a"
           ],
           "people": [
+            "s_jin_modi",
             "s_jin_aizong",
-            "s_liao_taizu",
-            "s_liao_taizong"
-          ]
-        },
-        {
-          "id": "s_jin_modi-v55-3",
-          "title": "实物怎样作证",
-          "text": "帝陵群归属与考古边界。理解其年代、用途和归属需要结合出土环境、修缮记录与馆藏著录。文字、建筑、墓葬和器物能够补充正史，却不能脱离出土层位和流传过程独立证明故事。",
+            "s_jin_wanyanhada",
+            "s_jin_yilapua"
+          ],
           "sources": [
             "v55_jinshi",
             "v55_songshi",
-            "v55_kaogu"
+            "v55_kaogu",
+            "v125_cssn_jin_mengan",
+            "v125_nopss_cities",
+            "v63_jinling_bj",
+            "v130_cssn_taihe_law",
+            "v130_cssn_taihe_palace",
+            "v130_cssn_taihe_legacy",
+            "v130_cssn_jin_migration",
+            "v130_cssn_kaifeng",
+            "v130_jingyuan_late_jin"
+          ]
+        },
+        {
+          "id": "s_jin_modi-v130-2",
+          "title": "蔡州受位的政治目的",
+          "text": "哀宗自认为身体不适于突围，希望把帝位交给更有军事能力的承麟，也有避免自己成为亡国之君的名分考虑。传位发生在围城末刻，主要作用是维持指挥和皇统象征，并不能重新创造粮食、援军和城外空间。承麟接受的不是一个可自由施政的全国政权，而是蔡州城内即将瓦解的中枢。理解此举应区分仪式愿望与实际军事能力。传位没有改变宋蒙夹攻态势，也无法让蔡州之外已经分散的金军立即接受新的有效命令。危城仪式仍可影响守军对合法命令的理解。",
+          "kind": "史实与解读",
+          "events": [
+            "v55_reign_s_jin_modi_a"
           ],
+          "people": [
+            "s_jin_modi",
+            "s_jin_aizong",
+            "s_jin_wanyanhada",
+            "s_jin_yilapua"
+          ],
+          "sources": [
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu",
+            "v125_cssn_jin_mengan",
+            "v125_nopss_cities",
+            "v63_jinling_bj",
+            "v130_cssn_taihe_law",
+            "v130_cssn_taihe_palace",
+            "v130_cssn_taihe_legacy",
+            "v130_cssn_jin_migration",
+            "v130_cssn_kaifeng",
+            "v130_jingyuan_late_jin"
+          ]
+        },
+        {
+          "id": "s_jin_modi-v130-3",
+          "title": "城破时序为何难以精确到分钟",
+          "text": "宋蒙联军从不同方向攻蔡州，城内守军在极端压力下抵抗。正史能够确认城破、哀宗死亡、承麟受位和战死的大致次序，却不足以支持现代通俗叙事常见的“在位半天”或若干小时精确计算。传统纪时、消息传递和战场混乱都限制精度。产品因此使用“极短”“不久”等表达，并明确哪些是后世估算。即使采用传统时辰记载，也只能得到范围而非现代钟表式分钟，谨慎表达比传奇数字更可靠。不同史籍的日期换算也会带来细微差别。",
+          "kind": "史实与解读",
+          "events": [
+            "v55_p10"
+          ],
+          "people": [
+            "s_jin_modi",
+            "s_jin_aizong",
+            "s_jin_wanyanhada",
+            "s_jin_yilapua"
+          ],
+          "sources": [
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu",
+            "v125_cssn_jin_mengan",
+            "v125_nopss_cities",
+            "v63_jinling_bj",
+            "v130_cssn_taihe_law",
+            "v130_cssn_taihe_palace",
+            "v130_cssn_taihe_legacy",
+            "v130_cssn_jin_migration",
+            "v130_cssn_kaifeng",
+            "v130_jingyuan_late_jin"
+          ]
+        },
+        {
+          "id": "s_jin_modi-v130-4",
+          "title": "战死记载与墓葬传说",
+          "text": "《金史》记承麟在城破战斗中死亡，后世一些地方保存其墓葬或后裔传说，但缺少与蔡州事件同等层级的考古和同时代文献互证。地方纪念能说明历史记忆如何延续，不能直接证明遗骨迁运路线、墓主人身份和完整守陵谱系。页面不为他强配帝陵，也不把现代祠墓景观当作已确认的皇家葬制。所谓墓址若缺少墓志、年代明确遗物和科学发掘，只能列入后世纪念，不能进入已确认陵寝。传说来源与考古结论在页面中必须分栏看待。",
+          "kind": "史实与解读",
+          "events": [
+            "v130_jin_chenglin_memory"
+          ],
+          "people": [
+            "s_jin_modi",
+            "s_jin_aizong",
+            "s_jin_wanyanhada",
+            "s_jin_yilapua"
+          ],
+          "sources": [
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu",
+            "v125_cssn_jin_mengan",
+            "v125_nopss_cities",
+            "v63_jinling_bj",
+            "v130_cssn_taihe_law",
+            "v130_cssn_taihe_palace",
+            "v130_cssn_taihe_legacy",
+            "v130_cssn_jin_migration",
+            "v130_cssn_kaifeng",
+            "v130_jingyuan_late_jin"
+          ]
+        },
+        {
+          "id": "s_jin_modi-v130-5",
+          "title": "政权结束以后的人与文献",
+          "text": "金朝灭亡后，原金统治区居民被纳入蒙古、南宋及地方力量的重新竞争，女真人、契丹人、汉人等并未随国号消失。元好问等人搜集诗文和事迹，为后来修《金史》保留材料；地方军队也有继续抵抗或转入新政权者。承麟个人资料极少，可靠的阅读重点不是虚构性格，而是解释一次象征传位、证据限度，以及王朝终结同人口文化延续之间的区别。金代文献保存还经历元代修史选择，今天可见的末帝形象天然比长久在位者更为残缺。这类沉默应被保留，而不是用故事填满。",
           "kind": "史实与解读",
           "events": [
             "v55_reign_s_jin_modi_b"
           ],
           "people": [
+            "s_jin_modi",
             "s_jin_aizong",
-            "s_liao_taizu",
-            "s_liao_taizong"
-          ]
-        },
-        {
-          "id": "s_jin_modi-v55-4",
-          "title": "制度与社会",
-          "text": "这一时期不是宋朝单方面面对“边患”。各政权都有内部官制、财政、法律、宗教与多语社会；条约、互市、移民和战争共同塑造北方与西北。完颜承麟处于宋、辽、西夏、金及蒙古势力先后并立的时代。蔡州城破前受禅，即位当日战死。评价其行动需要先确认本国继承、摄政关系和实际控制区域。完颜承麟处于宋、辽、西夏、金及蒙古势力先后并立的时代。蔡州城破前受禅，即位当日战死。评价其行动需要先确认本国继承、摄政关系和实际控制区域。完颜承麟处于宋、辽、西夏、金及蒙古势力先后并立的时代。蔡州城破前受禅，即位当日战死。评价其行动需要先确认本国继承、摄政关系和实际控制区域。完颜承麟处于宋、辽、西夏、金及蒙古势力先后并立的时代。蔡州城破前受禅，即位当日战死。评价其行动需要先确认本国继承、摄政关系和实际控制区域。完颜承麟处于宋、辽、西夏、金及蒙古势力先后并立的时代。蔡州城破前受禅，即位当日战死。评价其行动需要先确认本国继承、摄政关系和实际控制区域。完颜承麟处于宋、辽、西夏、金及蒙古势力先后并立的时代。蔡州城破前受禅，即位当日战死。评价其行动需要先确认本国继承、摄政关系和实际控制区域。完颜承麟处于宋、辽、西夏、金及蒙古势力先后并立的时代。蔡州城破前受禅，即位当日战死。评价其行动需要先确认本国继承、摄政关系和实际控制区域。",
+            "s_jin_wanyanhada",
+            "s_jin_yilapua"
+          ],
           "sources": [
             "v55_jinshi",
             "v55_songshi",
-            "v55_kaogu"
-          ],
-          "kind": "史实与解读",
-          "events": [
-            "v55_p10"
-          ],
-          "people": [
-            "s_jin_aizong",
-            "s_liao_taizu",
-            "s_liao_taizong"
-          ]
-        },
-        {
-          "id": "s_jin_modi-v55-5",
-          "title": "史料边界",
-          "text": "本篇以本政权正史、宋史和考古资料互校。辽史成书条件、西夏无官修正史、金宋双方立场差异，都要求对数字、言辞和道德评价保持克制。",
-          "sources": [
-            "v55_jinshi",
-            "v55_songshi",
-            "v55_kaogu"
-          ],
-          "kind": "史实与解读",
-          "events": [
-            "v55_reign_s_jin_modi_a"
-          ],
-          "people": [
-            "s_jin_aizong",
-            "s_liao_taizu",
-            "s_liao_taizong"
+            "v55_kaogu",
+            "v125_cssn_jin_mengan",
+            "v125_nopss_cities",
+            "v63_jinling_bj",
+            "v130_cssn_taihe_law",
+            "v130_cssn_taihe_palace",
+            "v130_cssn_taihe_legacy",
+            "v130_cssn_jin_migration",
+            "v130_cssn_kaifeng",
+            "v130_jingyuan_late_jin"
           ]
         }
       ],
       "sources": [
         "v55_jinshi",
-        "v55_songshi"
+        "v55_songshi",
+        "v55_kaogu",
+        "v125_cssn_jin_mengan",
+        "v125_nopss_cities",
+        "v63_jinling_bj",
+        "v130_cssn_taihe_law",
+        "v130_cssn_taihe_palace",
+        "v130_cssn_taihe_legacy",
+        "v130_cssn_jin_migration",
+        "v130_cssn_kaifeng",
+        "v130_jingyuan_late_jin"
       ]
     },
     {
@@ -137897,105 +138378,164 @@
       "dek": "文化制度发展，同时北部边防和财政压力加重。",
       "sections": [
         {
-          "id": "s_jin_zhangzong-v56-1",
-          "title": "位置与时代",
-          "text": "金章宗继承大定时期的制度资源，宫廷文化、科举和文书行政继续发展。他本人也以书画活动见称。阅读这一人物时，应把个人行动与同时期的继承秩序、边境形势和国家资源联系起来。事件结果往往来自多人、多地和长期制度积累，不能用后来成败倒推当时只有一种选择。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
-          "sources": [
-            "v55_jinshi",
-            "v55_songshi",
-            "v55_kaogu"
-          ],
-          "kind": "史实与解读",
-          "events": [
-            "v55_c08"
-          ],
-          "people": [
-            "s_jin_zhaobingwen",
-            "s_jin_shizong",
-            "s_jin_weishao"
-          ]
-        },
-        {
-          "id": "s_jin_zhangzong-v56-2",
-          "title": "权力与抉择",
-          "text": "北方边防、黄河治理和财政压力逐渐加重，对宋战争又消耗资源。文化繁荣与结构危机可以同时存在。现存记载由不同政权、不同年代的作者保存，名称、日期和评价可能不一致。页面优先采用能够交叉确认的时间、职位和行动，并把传记作者的道德判断留在证据层说明。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
-          "sources": [
-            "v55_jinshi",
-            "v55_songshi",
-            "v55_kaogu"
-          ],
+          "id": "s_jin_zhangzong-v130-1",
+          "title": "隔代继承与大定遗产",
+          "text": "1189年，完颜璟继承祖父金世宗的皇位。父亲完颜允恭早逝，使这次交接成为预先安排的隔代继承，而非临终时仓促选人。章宗受过女真文与汉文教育，接手的是大定年间长期和平、财政恢复和中都宫廷制度，也继承猛安谋克生计、黄河治理及南北边界等未解问题。传统叙事常把其前期称为盛世、后期写成衰乱，实际变化是逐步发生的，不能用一道分界线替代财政、军政与宫廷权力的具体转折。太子早亡后的皇孙教育、宫廷支持和正式册立共同构成资格，不能只写成祖父偏爱。这一继承背景也解释了章宗为何重视皇太子安排。",
           "kind": "史实与解读",
           "events": [
             "v55_reign_s_jin_zhangzong_a"
           ],
           "people": [
-            "s_jin_zhaobingwen",
+            "s_jin_zhangzong",
             "s_jin_shizong",
-            "s_jin_weishao"
-          ]
-        },
-        {
-          "id": "s_jin_zhangzong-v56-3",
-          "title": "制度与文化",
-          "text": "女真学、女真科举和汉文科举并行，反映朝廷维持多语官僚来源的努力，也显示语言政策面临现实压力。人物关系表示共同参与事件或处于同一政治网络，并不自动证明私人交往、思想影响或后世附会的故事。亲属、同僚、对手和使臣也必须根据具体年份区分。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+            "s_jin_weishao",
+            "s_jin_zhaobingwen"
+          ],
           "sources": [
             "v55_jinshi",
             "v55_songshi",
-            "v55_kaogu"
+            "v55_kaogu",
+            "v125_cssn_jin_mengan",
+            "v125_nopss_cities",
+            "v63_jinling_bj",
+            "v130_cssn_taihe_law",
+            "v130_cssn_taihe_palace",
+            "v130_cssn_taihe_legacy",
+            "v130_cssn_jin_migration",
+            "v130_cssn_kaifeng",
+            "v130_jingyuan_late_jin"
+          ]
+        },
+        {
+          "id": "s_jin_zhangzong-v130-2",
+          "title": "泰和制度为何被后世继续使用",
+          "text": "章宗朝修订礼制、官制和法律，泰和年间形成的律令后来在金亡后一度仍用于中原断案。它吸收唐宋法律传统，也回应金朝自身官僚、族群和土地关系，不能简单称为照抄汉法。法典成文说明国家试图统一裁判尺度，不证明地方执行完全一致；女真文教育与汉文科举继续并行，也说明制度整合不是单向文化替代。后世元明法律对其有所承继，更不能倒过来证明章宗每项政策都有效。律令条文、司法案例和史臣赞语属于不同证据层次，页面不以赞语直接证明司法公平。制度影响必须由后续使用证明，而不是只看编纂规模。",
+          "kind": "史实与解读",
+          "events": [
+            "v130_jin_taihe_law"
           ],
+          "people": [
+            "s_jin_zhangzong",
+            "s_jin_shizong",
+            "s_jin_weishao",
+            "s_jin_zhaobingwen"
+          ],
+          "sources": [
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu",
+            "v125_cssn_jin_mengan",
+            "v125_nopss_cities",
+            "v63_jinling_bj",
+            "v130_cssn_taihe_law",
+            "v130_cssn_taihe_palace",
+            "v130_cssn_taihe_legacy",
+            "v130_cssn_jin_migration",
+            "v130_cssn_kaifeng",
+            "v130_jingyuan_late_jin"
+          ]
+        },
+        {
+          "id": "s_jin_zhangzong-v130-3",
+          "title": "黄河改道与繁荣的另一面",
+          "text": "1194年前后黄河发生重大改道，沿线州县面对决口、淤积、迁徙、赋役和河工压力。中都文化繁荣、宫廷收藏与科举活动是真实的一面，灾害成本和财政支出则是另一面。河道变化不是皇帝个人造成，却要求中枢决定救济、修防与税收分担；官方本纪往往留下诏令，普通家庭失地和迁居更难完整统计。把章宗朝只写成典章文物的高峰，会遮住国家收入、边防和水患正在同时消耗资源。河工还牵涉上下游利益，某地筑堤可能把风险转向别处，诏令中的赈济目标也不等于全部落实。灾害年代与河道具体走向仍应以水利史研究互校。",
+          "kind": "史实与解读",
+          "events": [
+            "v99s_jin_yellow_river"
+          ],
+          "people": [
+            "s_jin_zhangzong",
+            "s_jin_shizong",
+            "s_jin_weishao",
+            "s_jin_zhaobingwen"
+          ],
+          "sources": [
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu",
+            "v125_cssn_jin_mengan",
+            "v125_nopss_cities",
+            "v63_jinling_bj",
+            "v130_cssn_taihe_law",
+            "v130_cssn_taihe_palace",
+            "v130_cssn_taihe_legacy",
+            "v130_cssn_jin_migration",
+            "v130_cssn_kaifeng",
+            "v130_jingyuan_late_jin"
+          ]
+        },
+        {
+          "id": "s_jin_zhangzong-v130-4",
+          "title": "开禧北伐中的金朝反击",
+          "text": "1206年南宋发动开禧北伐，金军在多条战线上防御并反击，随后深入宋境。战争以南宋内部政局变化、韩侂胄被杀和1208年嘉定和议收束，金朝获得赔偿与名分优势。胜利不等于金军没有动员成本，也不意味着北方边防从此安全；蒙古诸部正在更北方重组力量。章宗对宋政策必须放在既有边界、榷场和军事财政中理解，不能只用一位南宋权臣的成败讲完。嘉定和议的条款与执行须分开，边境贸易和人员往来没有因一次胜负而永久固定。双方百姓承担的军需不会出现在胜利叙事中心。",
+          "kind": "史实与解读",
+          "events": [
+            "v43s_kaixi"
+          ],
+          "people": [
+            "s_jin_zhangzong",
+            "s_jin_shizong",
+            "s_jin_weishao",
+            "s_jin_zhaobingwen"
+          ],
+          "sources": [
+            "v55_jinshi",
+            "v55_songshi",
+            "v55_kaogu",
+            "v125_cssn_jin_mengan",
+            "v125_nopss_cities",
+            "v63_jinling_bj",
+            "v130_cssn_taihe_law",
+            "v130_cssn_taihe_palace",
+            "v130_cssn_taihe_legacy",
+            "v130_cssn_jin_migration",
+            "v130_cssn_kaifeng",
+            "v130_jingyuan_late_jin"
+          ]
+        },
+        {
+          "id": "s_jin_zhangzong-v130-5",
+          "title": "无子继承与1208年交接",
+          "text": "章宗诸子早夭，没有存活皇子继位。1208年他去世后，皇位转给叔父完颜永济，即后来的卫绍王。史书把章宗后期归因于外戚、宠臣和宫廷奢费，相关人物与支出可核，但“由盛转衰”的结论不能替代蒙古崛起、财政结构和继承安排。叔侄交接在当时保持了皇统连续，却把一位缺少强势政治基础的新君推到快速变化的北方局势面前。章宗陵寝和太子城等物证可以补充宫廷活动，却不能替代无嗣继承的政治文献。继任者的选择同样显示宗室可选范围已经有限。",
           "kind": "史实与解读",
           "events": [
             "v55_reign_s_jin_zhangzong_b"
           ],
           "people": [
-            "s_jin_zhaobingwen",
+            "s_jin_zhangzong",
             "s_jin_shizong",
-            "s_jin_weishao"
-          ]
-        },
-        {
-          "id": "s_jin_zhangzong-v56-4",
-          "title": "关系与社会",
-          "text": "宫廷收藏和艺术品归属常被后世题跋重塑。把作品与章宗联系时必须区分御题、收藏和亲自创作。战争和朝廷决策之外，普通人的迁徙、赋役、语言与信仰也构成这一时代，只是材料远比帝王将相零散。制度变化在不同地区落地的速度和代价并不相同。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
+            "s_jin_weishao",
+            "s_jin_zhaobingwen"
+          ],
           "sources": [
             "v55_jinshi",
             "v55_songshi",
-            "v55_kaogu"
-          ],
-          "kind": "史实与解读",
-          "events": [
-            "v55_reign_s_jin_weishao_a"
-          ],
-          "people": [
-            "s_jin_zhaobingwen",
-            "s_jin_shizong",
-            "s_jin_weishao"
-          ]
-        },
-        {
-          "id": "s_jin_zhangzong-v56-5",
-          "title": "证据与边界",
-          "text": "章宗朝不是金亡的直接起点，也不是纯粹盛世。应从政策累积、生态灾害、边防和继承等多条线评估。对有争议的动机和言辞，本篇不替史料补写心理活动；新出土材料若改变认识，应以新的证据关系更新结论。无法确认的数字、传闻和作品归属会继续保留边界。本节只陈述可以落到年代、职位、地点或文献出处的内容；同一材料若只有孤证，不把推测改写成确定事实。",
-          "sources": [
-            "v55_jinshi",
-            "v55_songshi",
-            "v55_kaogu"
-          ],
-          "kind": "史实与解读",
-          "events": [
-            "v55_reign_s_jin_weishao_b"
-          ],
-          "people": [
-            "s_jin_zhaobingwen",
-            "s_jin_shizong",
-            "s_jin_weishao"
+            "v55_kaogu",
+            "v125_cssn_jin_mengan",
+            "v125_nopss_cities",
+            "v63_jinling_bj",
+            "v130_cssn_taihe_law",
+            "v130_cssn_taihe_palace",
+            "v130_cssn_taihe_legacy",
+            "v130_cssn_jin_migration",
+            "v130_cssn_kaifeng",
+            "v130_jingyuan_late_jin"
           ]
         }
       ],
       "sources": [
         "v55_jinshi",
         "v55_songshi",
-        "v55_kaogu"
+        "v55_kaogu",
+        "v125_cssn_jin_mengan",
+        "v125_nopss_cities",
+        "v63_jinling_bj",
+        "v130_cssn_taihe_law",
+        "v130_cssn_taihe_palace",
+        "v130_cssn_taihe_legacy",
+        "v130_cssn_jin_migration",
+        "v130_cssn_kaifeng",
+        "v130_jingyuan_late_jin"
       ]
     },
     {
@@ -173749,17 +174289,6 @@
       ]
     },
     {
-      "from": "s_jin_weishao",
-      "to": "s_liao_taizu",
-      "role": "并立时代中的关联人物",
-      "inverse": "并立时代中的关联人物",
-      "period": "宋辽夏金",
-      "note": "关联来自共同事件、外交或相邻政治网络，不推定无材料支持的私人往来。",
-      "sources": [
-        "v55_songshi"
-      ]
-    },
-    {
       "from": "s_jin_xuanzong",
       "to": "s_jin_aizong",
       "role": "并立时代中的关联人物",
@@ -173771,52 +174300,8 @@
       ]
     },
     {
-      "from": "s_jin_xuanzong",
-      "to": "s_liao_taizu",
-      "role": "并立时代中的关联人物",
-      "inverse": "并立时代中的关联人物",
-      "period": "宋辽夏金",
-      "note": "关联来自共同事件、外交或相邻政治网络，不推定无材料支持的私人往来。",
-      "sources": [
-        "v55_songshi"
-      ]
-    },
-    {
       "from": "s_jin_aizong",
       "to": "s_jin_modi",
-      "role": "并立时代中的关联人物",
-      "inverse": "并立时代中的关联人物",
-      "period": "宋辽夏金",
-      "note": "关联来自共同事件、外交或相邻政治网络，不推定无材料支持的私人往来。",
-      "sources": [
-        "v55_songshi"
-      ]
-    },
-    {
-      "from": "s_jin_aizong",
-      "to": "s_liao_taizu",
-      "role": "并立时代中的关联人物",
-      "inverse": "并立时代中的关联人物",
-      "period": "宋辽夏金",
-      "note": "关联来自共同事件、外交或相邻政治网络，不推定无材料支持的私人往来。",
-      "sources": [
-        "v55_songshi"
-      ]
-    },
-    {
-      "from": "s_jin_modi",
-      "to": "s_liao_taizu",
-      "role": "并立时代中的关联人物",
-      "inverse": "并立时代中的关联人物",
-      "period": "宋辽夏金",
-      "note": "关联来自共同事件、外交或相邻政治网络，不推定无材料支持的私人往来。",
-      "sources": [
-        "v55_songshi"
-      ]
-    },
-    {
-      "from": "s_jin_modi",
-      "to": "s_liao_taizong",
       "role": "并立时代中的关联人物",
       "inverse": "并立时代中的关联人物",
       "period": "宋辽夏金",
@@ -174345,17 +174830,6 @@
     {
       "from": "s_jin_taizong",
       "to": "s_gaozong",
-      "role": "同一在位时期的关联人物",
-      "inverse": "同一在位时期的关联人物",
-      "period": "宋辽夏金",
-      "note": "关联来自在位期事件、继承或外交网络，不推定无材料支持的私人往来。",
-      "sources": [
-        "v55_songshi"
-      ]
-    },
-    {
-      "from": "s_jin_zhangzong",
-      "to": "s_liao_taizu",
       "role": "同一在位时期的关联人物",
       "inverse": "同一在位时期的关联人物",
       "period": "宋辽夏金",
@@ -181267,6 +181741,42 @@
         "v55_jinshi",
         "v55_songshi",
         "v129_cssn_jin_six_ministries"
+      ]
+    },
+    {
+      "from": "s_jin_weishao",
+      "to": "y_genghis",
+      "role": "蒙古攻金时的金朝皇帝",
+      "inverse": "攻金时的金朝皇帝",
+      "period": "1211—1234",
+      "note": "关联仅限可核的同期战争与军政背景，不推定私人交往。",
+      "sources": [
+        "v55_jinshi",
+        "v55_songshi"
+      ]
+    },
+    {
+      "from": "s_jin_modi",
+      "to": "s_jin_wanyanhada",
+      "role": "末期军政网络中的宗室",
+      "inverse": "蔡州末刻的宗室皇帝",
+      "period": "1211—1234",
+      "note": "关联仅限可核的同期战争与军政背景，不推定私人交往。",
+      "sources": [
+        "v55_jinshi",
+        "v55_songshi"
+      ]
+    },
+    {
+      "from": "s_jin_modi",
+      "to": "s_jin_yilapua",
+      "role": "末期军政网络中的宗室",
+      "inverse": "蔡州末刻的宗室皇帝",
+      "period": "1211—1234",
+      "note": "关联仅限可核的同期战争与军政背景，不推定私人交往。",
+      "sources": [
+        "v55_jinshi",
+        "v55_songshi"
       ]
     }
   ],
@@ -192871,31 +193381,32 @@
         }
       ],
       "people": [
-        "s_jin_zhaobingwen",
         "s_jin_shizong",
         "s_jin_weishao",
-        "s_liao_taizu",
-        "s_jin_wanyanxiyin"
+        "s_jin_zhaobingwen"
       ],
       "events": [
-        "v55_c08",
         "v55_reign_s_jin_zhangzong_a",
-        "v55_reign_s_jin_zhangzong_b",
-        "v55_reign_s_jin_weishao_a",
-        "v56_文化_07",
-        "v43s_kaixi",
-        "v43s_huizi_extension",
-        "v99s_jin_yellow_river"
+        "v130_jin_taihe_law",
+        "v130_jin_zhangzong_fiscal",
+        "v99s_jin_yellow_river",
+        "v43s_kaixi"
       ],
       "sources": [
         "v55_jinshi",
         "v55_songshi",
-        "v43s_ss038",
-        "v43s_ss474",
-        "v43s_ss181",
-        "v43s_ss036"
+        "v55_kaogu",
+        "v125_cssn_jin_mengan",
+        "v125_nopss_cities",
+        "v63_jinling_bj",
+        "v130_cssn_taihe_law",
+        "v130_cssn_taihe_palace",
+        "v130_cssn_taihe_legacy",
+        "v130_cssn_jin_migration",
+        "v130_cssn_kaifeng",
+        "v130_jingyuan_late_jin"
       ],
-      "note": "与宋朝及其他政权长期并立；在位段不等同对全部名义领土持续有效控制。"
+      "note": "以在位期内可核事件说明战争、制度和社会代价，不把后见亡国叙事代替具体过程。"
     },
     {
       "person": "s_jin_weishao",
@@ -192909,19 +193420,30 @@
       "people": [
         "s_jin_zhangzong",
         "s_jin_xuanzong",
-        "s_liao_taizu"
+        "y_genghis"
       ],
       "events": [
-        "v55_m09",
         "v55_reign_s_jin_weishao_a",
-        "v55_reign_s_jin_weishao_b",
-        "v55_reign_s_jin_xuanzong_a"
+        "v55_m09",
+        "v130_jin_weishao_defense",
+        "v130_jin_weishao_court",
+        "v128_xixia_jin_war"
       ],
       "sources": [
         "v55_jinshi",
-        "v55_songshi"
+        "v55_songshi",
+        "v55_kaogu",
+        "v125_cssn_jin_mengan",
+        "v125_nopss_cities",
+        "v63_jinling_bj",
+        "v130_cssn_taihe_law",
+        "v130_cssn_taihe_palace",
+        "v130_cssn_taihe_legacy",
+        "v130_cssn_jin_migration",
+        "v130_cssn_kaifeng",
+        "v130_jingyuan_late_jin"
       ],
-      "note": "与宋朝及其他政权长期并立；在位段不等同对全部名义领土持续有效控制。"
+      "note": "以在位期内可核事件说明战争、制度和社会代价，不把后见亡国叙事代替具体过程。"
     },
     {
       "person": "s_jin_xuanzong",
@@ -192933,32 +193455,34 @@
         }
       ],
       "people": [
-        "s_jin_tudanyi",
         "s_jin_weishao",
         "s_jin_aizong",
-        "s_liao_taizu",
         "s_jin_puxianwannu"
       ],
       "events": [
         "v55_p09",
         "v55_e10",
-        "v55_s09",
-        "v55_reign_s_jin_xuanzong_a",
-        "v55_reign_s_jin_xuanzong_b",
-        "v56_政治_07",
-        "v56_经济_06",
-        "v55_c09",
-        "v99s_jin_mongol_war"
+        "v130_jin_south_migration",
+        "v130_jin_song_war",
+        "v130_jin_xuanzong_culture",
+        "v128_xixia_jin_war",
+        "v128_xixia_mongol_coercion"
       ],
       "sources": [
         "v55_jinshi",
         "v55_songshi",
-        "v55_xixia",
-        "v56_jinshi_112",
-        "v107_jinshi_14",
-        "v107_jinshi_101"
+        "v55_kaogu",
+        "v125_cssn_jin_mengan",
+        "v125_nopss_cities",
+        "v63_jinling_bj",
+        "v130_cssn_taihe_law",
+        "v130_cssn_taihe_palace",
+        "v130_cssn_taihe_legacy",
+        "v130_cssn_jin_migration",
+        "v130_cssn_kaifeng",
+        "v130_jingyuan_late_jin"
       ],
-      "note": "与宋朝及其他政权长期并立；在位段不等同对全部名义领土持续有效控制。"
+      "note": "以在位期内可核事件说明战争、制度和社会代价，不把后见亡国叙事代替具体过程。"
     },
     {
       "person": "s_jin_aizong",
@@ -192970,30 +193494,35 @@
         }
       ],
       "people": [
-        "s_jin_modi",
         "s_jin_xuanzong",
-        "s_liao_taizu",
+        "s_jin_modi",
         "s_jin_wanyanhada",
         "s_jin_yilapua"
       ],
       "events": [
-        "v55_p10",
-        "v55_reign_s_jin_aizong_a",
-        "v55_reign_s_jin_aizong_b",
-        "v55_reign_s_jin_modi_a",
-        "v55_reign_s_jin_modi_b",
+        "v130_jin_aizong_diplomacy",
         "v56_军事_06",
-        "v56_军事_07",
         "v56_社会_07",
         "v55_c10",
-        "v56_经济_07"
+        "v56_经济_07",
+        "v130_jin_kaifeng_siege",
+        "v130_jin_cai_food"
       ],
       "sources": [
         "v55_jinshi",
         "v55_songshi",
-        "v56_jinshi_112"
+        "v55_kaogu",
+        "v125_cssn_jin_mengan",
+        "v125_nopss_cities",
+        "v63_jinling_bj",
+        "v130_cssn_taihe_law",
+        "v130_cssn_taihe_palace",
+        "v130_cssn_taihe_legacy",
+        "v130_cssn_jin_migration",
+        "v130_cssn_kaifeng",
+        "v130_jingyuan_late_jin"
       ],
-      "note": "与宋朝及其他政权长期并立；在位段不等同对全部名义领土持续有效控制。"
+      "note": "以在位期内可核事件说明战争、制度和社会代价，不把后见亡国叙事代替具体过程。"
     },
     {
       "person": "s_jin_modi",
@@ -193006,19 +193535,29 @@
       ],
       "people": [
         "s_jin_aizong",
-        "s_liao_taizu",
-        "s_liao_taizong"
+        "s_jin_wanyanhada",
+        "s_jin_yilapua"
       ],
       "events": [
         "v55_p10",
-        "v55_reign_s_jin_modi_a",
-        "v55_reign_s_jin_modi_b"
+        "v130_jin_cai_food",
+        "v130_jin_chenglin_memory"
       ],
       "sources": [
         "v55_jinshi",
-        "v55_songshi"
+        "v55_songshi",
+        "v55_kaogu",
+        "v125_cssn_jin_mengan",
+        "v125_nopss_cities",
+        "v63_jinling_bj",
+        "v130_cssn_taihe_law",
+        "v130_cssn_taihe_palace",
+        "v130_cssn_taihe_legacy",
+        "v130_cssn_jin_migration",
+        "v130_cssn_kaifeng",
+        "v130_jingyuan_late_jin"
       ],
-      "note": "与宋朝及其他政权长期并立；在位段不等同对全部名义领土持续有效控制。"
+      "note": "以在位期内可核事件说明战争、制度和社会代价，不把后见亡国叙事代替具体过程。"
     },
     {
       "person": "sh_tang",
