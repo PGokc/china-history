@@ -3134,6 +3134,30 @@ final class MingJiUITests: XCTestCase {
         shot("v121-tang-interpretation-ending", app)
     }
 
+    @MainActor func testV122FiveDynastiesInterpretationShowsParallelStatesAndStagedIntegration() throws {
+        let app = launch(enterFamily: false)
+        XCTAssertTrue(app.buttons["dynasty_five_dynasties"].waitForExistence(timeout: 5))
+        reach(app.buttons["dynasty_five_dynasties"], in: app, attempts: 14)
+        app.buttons["dynasty_five_dynasties"].tap()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyDetail_five_dynasties"].waitForExistence(timeout: 5))
+
+        let interpretation = app.buttons["dynastyInterpretation_five_dynasties"]
+        reach(interpretation, in: app, attempts: 14)
+        app.swipeUp()
+        XCTAssertTrue(interpretation.isHittable)
+        shot("v122-five-dynasties-interpretation-entry", app)
+        interpretation.tap()
+
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyInterpretationPage_five_dynasties"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["五代、十国和辽是同时存在的多套政治中心"].exists)
+        let transition = app.staticTexts["宋的建立不是分裂在960年突然结束"]
+        reach(transition, in: app, attempts: 24)
+        XCTAssertTrue(transition.exists)
+        reach(app.buttons["资料与出处"], in: app, attempts: 10)
+        XCTAssertTrue(app.buttons["资料与出处"].isHittable)
+        shot("v122-five-dynasties-interpretation-ending", app)
+    }
+
     @MainActor func testV90ThinPeopleAndEmptyEventLensesHaveUsefulDepth() throws {
         let ming = XCUIApplication()
         ming.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]

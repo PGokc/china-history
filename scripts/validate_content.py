@@ -1716,3 +1716,15 @@ if d['version']>=95:
  assert all(term in corpus for term in ['617年','628年','626年','690至705年','755至763年','780年','875年','907年','两税法','神策军','河朔三镇'])
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback',corpus,re.I)
  print('V95 PASS: Tang macro reading connects contested foundation, implemented institutions, Wu Zhou, unequal mobility and post-An Lushan transformation')
+
+if d['version']>=96:
+ profile=next(profile for profile in d['dynastyProfiles'] if profile['id']=='five_dynasties')
+ assert [section['id'] for section in profile['sections']]==['fd-polities','fd-military-state','fd-regions','fd-society','fd-transition']
+ assert len(re.findall(r'[\u4e00-\u9fff]',profile['overview']))>=400
+ assert all(len(re.findall(r'[\u4e00-\u9fff]',section['text']))>=230 for section in profile['sections'])
+ assert {'v54_old','v54_new','v54_zztj','v54_wudaihuiyao','v122_cssn_military','v122_cssn_memory','v122_cssn_geopolitics','v122_cssn_wuyue','v122_nmc_wuyue'}<=set(profile['sources'])<=sources.keys()
+ corpus=profile['overview']+''.join(section['text'] for section in profile['sections'])
+ assert all(term in corpus for term in ['不是当时一套整齐的国家名单','不能机械理解为始终恰好十国并立','不能只用“武将跋扈”解释','吴越经验不能代表整个南方','不能当作全社会的生活快照','不是简单反武','“统一”必须说明范围'])
+ assert all(term in corpus for term in ['907年','923年','936年','947年','951年','960年','965年','971年','975年','978年','979年','枢密院','投龙银简','北汉'])
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback',corpus,re.I)
+ print('V96 PASS: Five Dynasties macro reading connects parallel states, military governance, regional economies, ordinary life and staged Song integration')
