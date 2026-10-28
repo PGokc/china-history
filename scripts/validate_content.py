@@ -1408,7 +1408,10 @@ if d['version'] >= 57:
 if d['version'] >= 58:
  assert set(people)==articles.keys(),('people without layered readings',set(people)-articles.keys())
  new_readings=[article for article in d['articles'] if any(section['id'].endswith('-e1') for section in article['sections'])]
- assert len(new_readings)==43
+ # V108 replaces the two generic Han Lin'er and Zhang Shicheng fallback
+ # readings (whose legacy section identifiers ended in -e1) with audited,
+ # person-specific transition histories.
+ assert len(new_readings)==(41 if d['version']>=108 else 43)
  for article in new_readings:
   chars=sum(len(re.findall(r'[\u4e00-\u9fff]',section['text'])) for section in article['sections'])
   assert len(article['sections'])==5 and chars>=500,(article['person'],'new reading remains too short',chars)
@@ -2153,3 +2156,55 @@ if d['version']>=107:
  assert '民间流传独眼石人等故事' in articles['y_jia_lu']['sections'][-1]['text']
  assert '元朝失去中原首都和全国性统治' in articles['y_koke_temur']['sections'][-1]['text']
  print('V107 PASS: five late-Yuan readings connect court monopoly, institutional restoration, river engineering, regional armies and Northern Yuan continuity without single-cause collapse stories')
+
+if d['version']>=108:
+ transition_people=['y_han_shantong','y_liu_futong','han','y_xu_shouhui','chenyou','y_fang_guozhen','zhang','y_ming_yuzhen']
+ suffix={'y_han_shantong':'hanshan','y_liu_futong':'liufutong','han':'hanliner','y_xu_shouhui':'xushouhui','chenyou':'chenyou','y_fang_guozhen':'fang','zhang':'zhang','y_ming_yuzhen':'ming'}
+ terms={
+  'y_han_shantong':['1351年','白莲教','宋徽宗八世孙','河工','韩林儿'],
+  'y_liu_futong':['颍州','1355年','三路北伐','汴梁','安丰'],
+  'han':['小明王','龙凤五年','管军万户府印','朱元璋','1366年'],
+  'y_xu_shouhui':['蕲水','天完','倪文俊','陈友谅','1360年'],
+  'chenyou':['县中小吏','徐寿辉','大型楼船','洪都','陈理'],
+  'y_fang_guozhen':['黄岩','海运','元廷官号','张士诚','1367年'],
+  'zhang':['白驹场','高邮','脱脱','安丰','平江'],
+  'y_ming_yuzhen':['随州','重庆','1362年','大夏','1371年'],
+ }
+ required_sources={'v134_dpm_liufutong','v134_dpm_red_turbans','v134_ms122_han_song','v134_ms123_rivals','v134_dpm_zhang_shicheng','v134_dpm_fang_guozhen','v134_dpm_chen_youliang','v134_nmc_han_song_seal','v134_nopss_yuan_ming_jiangnan'}
+ required_events={'v134_yingzhou_uprising','v134_tianwan_founding','v134_gaoyou_salt_uprising','v134_gaoyou_defense','v134_han_song_founding','v134_han_song_northern_campaigns','v134_han_song_seal_offices','v134_tianwan_takeover','v134_fang_maritime_network','v134_daxia_sichuan','v134_anfeng_relief','v134_hongdu_poyang_system','v134_pingjiang_siege_society'}
+ assert required_sources<=sources.keys() and all(sources[source_id]['url'].startswith('https://') for source_id in required_sources)
+ assert required_events<=events.keys()
+ assert {'y_han_shantong','y_liu_futong','y_xu_shouhui','y_fang_guozhen','y_ming_yuzhen'}<=people.keys()
+ assert all(people[pid]['dynasty']=='yuan' for pid in transition_people)
+ assert all(len(re.findall(r'[\u4e00-\u9fff]',events[event_id]['body']+events[event_id]['impact']))>=70 for event_id in required_events)
+ seen_titles=set(); seen_sentences={}
+ for pid in transition_people:
+  ss=articles[pid]['sections']
+  assert len(ss)==5 and all(section['id']==f'v134_{suffix[pid]}_s{index}' for index,section in enumerate(ss,1)),(pid,'wrong section structure')
+  assert all(len(re.findall(r'[\u4e00-\u9fff]',section['text']))>=200 for section in ss),(pid,'thin section')
+  corpus=''.join(section['text'] for section in ss)
+  assert len(re.findall(r'[\u4e00-\u9fff]',corpus))>=1040,(pid,'reading below 1040 Chinese characters')
+  assert all(term in corpus for term in terms[pid]),(pid,'missing chronology, political mechanism, social cost or evidence boundary')
+  assert not re.search(r'产品|本轮|补充内容|数据缺口|开发进度|AI生成|fallback|人物页|占位|正在完善',corpus,re.I),(pid,'internal copy leaked')
+  section_sources=set()
+  for section in ss:
+   assert section['title'] not in seen_titles,(pid,'repeated title',section['title'])
+   seen_titles.add(section['title'])
+   assert 1<=len(section['events'])<=2 and set(section['events'])<=events.keys(),(pid,section['id'],'broken event links')
+   assert len(set(section['sources']))>=2 and set(section['sources'])<=sources.keys(),(pid,section['id'],'broken source links')
+   section_sources.update(section['sources'])
+   for sentence in re.split(r'(?<=[。！？；])',section['text']):
+    sentence=sentence.strip()
+    if len(sentence)<30: continue
+    assert sentence not in seen_sentences or seen_sentences[sentence]==pid,(pid,'cross-person repeated sentence',seen_sentences.get(sentence),sentence)
+    seen_sentences[sentence]=pid
+  assert set(articles[pid]['sources'])==section_sources,(pid,'article source union mismatch')
+ pairs={('y_han_shantong','han'),('y_han_shantong','y_liu_futong'),('y_liu_futong','han'),('y_xu_shouhui','chenyou'),('y_xu_shouhui','y_ming_yuzhen'),('yuanzhang','han'),('yuanzhang','zhang'),('yuanzhang','y_fang_guozhen'),('chenyou','y_ming_yuzhen')}
+ association_map={(association['from'],association['to']):association for association in d['associations']}
+ assert pairs<=association_map.keys()
+ assert all(association_map[pair].get('role') and association_map[pair].get('inverse') and association_map[pair].get('sources') for pair in pairs)
+ seal=next(item for item in d['objects'] if item['id']=='v134_obj_han_song_seal')
+ assert seal['dynasties']==['yuan'] and set(seal['people'])=={'han','y_liu_futong'} and '中书礼部造' in seal['body']
+ assert '不能把幕后命令视为无争议事实' in articles['han']['sections'][-1]['text']
+ assert '1363年是决定性转折，1364年才是汉政权的制度终点' in articles['chenyou']['sections'][-1]['text']
+ print('V108 PASS: eight Yuan-Ming transition readings connect religious mobilization, rival state institutions, maritime and salt networks, regional economies and evidence-bounded endings')

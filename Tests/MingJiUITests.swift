@@ -3665,4 +3665,36 @@ final class MingJiUITests: XCTestCase {
         shot("v133-koke-temur-northern-yuan-continuity", app)
     }
 
+    @MainActor func testV134YuanMingTransitionConnectsHanSongReadingToMaterialEvidence() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["--uitesting", "--ui-dynasty", "yuan"]
+        app.launch()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        app.buttons["globalSearch"].tap()
+        let search = app.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("韩林儿")
+        XCTAssertTrue(app.buttons["search_person_han"].waitForExistence(timeout: 5)); app.buttons["search_person_han"].tap()
+        openArticle(in: app)
+        app.buttons["articleContents"].tap()
+        for chapter in ["父亲的世系主张如何落到儿子身上", "龙凤政权不是一句口号", "朱元璋为什么曾使用龙凤纪年", "从汴梁到安丰，他能决定多少事务", "1366年溺亡：事实与幕后推断要分开"] {
+            XCTAssertTrue(app.buttons[chapter].exists, chapter)
+        }
+        app.buttons["1366年溺亡：事实与幕后推断要分开"].tap()
+        XCTAssertTrue(app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不能把幕后命令视为无争议事实")).firstMatch.waitForExistence(timeout: 5))
+        reach(app.buttons["资料与出处"], in: app, attempts: 18)
+        shot("v134-han-liner-death-evidence-boundary", app)
+
+        app.navigationBars.buttons.element(boundBy: 0).tap()
+        app.navigationBars.buttons.element(boundBy: 0).tap()
+        XCTAssertTrue(app.buttons["清除文本"].waitForExistence(timeout: 5)); app.buttons["清除文本"].tap()
+        let secondSearch = app.searchFields.firstMatch
+        XCTAssertTrue(secondSearch.waitForExistence(timeout: 5)); secondSearch.tap(); secondSearch.typeText("管军万户府印")
+        let seal = app.buttons["search_object_v134_obj_han_song_seal"]
+        XCTAssertTrue(seal.waitForExistence(timeout: 5)); seal.tap()
+        XCTAssertTrue(app.staticTexts["韩宋管军万户府印"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "中书礼部造")).firstMatch.waitForExistence(timeout: 5))
+        reach(app.buttons["资料与出处"], in: app, attempts: 14)
+        shot("v134-han-song-seal-material-evidence", app)
+    }
+
 }

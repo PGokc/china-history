@@ -1055,41 +1055,6 @@
       "audioHash": "ad1a4e667c6045a960e4c9b8ac0a1290c005f1ef3a2f1ae28734b200fff68f34"
     },
     {
-      "articleID": "chenyou",
-      "sectionID": "chenyou-f1",
-      "path": "ming-chenyou-chenyou-f1-f2c0228205f1.mp3",
-      "textHash": "f2c0228205f11e44970958bbc6a0eee4be89e2b3483fb60bda2196a033acd9b1",
-      "audioHash": "e487fcc12b806cbc01b57f0bb8b3147ee37f7e4a2976befb4527b25f167f4d09"
-    },
-    {
-      "articleID": "chenyou",
-      "sectionID": "chenyou-f2",
-      "path": "ming-chenyou-chenyou-f2-8439bb05e7a1.mp3",
-      "textHash": "8439bb05e7a15f3709a0efb668d02da34116e7b76a4b29c4455c653f82b9b349",
-      "audioHash": "e69423fea535ca522374a109c405c72f1cf6113add7601ce0e488dbc802c1c9d"
-    },
-    {
-      "articleID": "chenyou",
-      "sectionID": "chenyou-f3",
-      "path": "ming-chenyou-chenyou-f3-dc7b715da5d1.mp3",
-      "textHash": "dc7b715da5d1688d5d75414e22932a558a8ea7d96f22f831a668a6b88c28aa4c",
-      "audioHash": "e2ab7c649f16e462c5a77cd89b39572d5ed10b1df05ff3d28b93a5fe14cbd51e"
-    },
-    {
-      "articleID": "chenyou",
-      "sectionID": "chenyou-f4",
-      "path": "ming-chenyou-chenyou-f4-887a1a8fc329.mp3",
-      "textHash": "887a1a8fc329b0ae8f12b18adf5cd5c40ccd450b00d2f96b973b40613cbd6df3",
-      "audioHash": "ba0d21b3e4e657f1212dd6bd347617005aa65f723b5dd92691e734bc4749a8a9"
-    },
-    {
-      "articleID": "chenyou",
-      "sectionID": "chenyou-f5",
-      "path": "ming-chenyou-chenyou-f5-fecb4461415d.mp3",
-      "textHash": "fecb4461415d08ec019f02c95d5190830ae1d0af2b14e6540e589964a1208360",
-      "audioHash": "dd10640fd8990a916a1a7ccbb7a28d0987fb5250ffcc91e64fce50bcf81df005"
-    },
-    {
       "articleID": "yuqian",
       "sectionID": "yuqian-n1",
       "path": "ming-yuqian-yuqian-n1-9061f01eae83.mp3",
