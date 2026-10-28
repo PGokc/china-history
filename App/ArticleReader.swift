@@ -83,7 +83,16 @@ struct ArticleReader: View {
                                 HStack(alignment: .firstTextBaseline, spacing: 12) {
                                     Text(section.title).font(.system(.title2, design: .serif)).foregroundStyle(Theme.ink)
                                 }
-                                Text(section.text).font(.body).lineSpacing(7).fixedSize(horizontal: false, vertical: true).textSelection(.enabled)
+                                VStack(alignment: .leading, spacing: 12) {
+                                    ForEach(Array(readingParagraphs(section.text).enumerated()), id: \.offset) { _, paragraph in
+                                        Text(paragraph)
+                                            .font(.body)
+                                            .lineSpacing(7)
+                                            .lineLimit(nil)
+                                            .fixedSize(horizontal: false, vertical: true)
+                                            .layoutPriority(1)
+                                    }
+                                }
                                 if !(section.people ?? []).isEmpty || !(section.events ?? []).isEmpty {
                                     EditorialDisclosure("相关人物与事件") { chapterLinks(section) }
                                         .font(.subheadline)
@@ -174,6 +183,31 @@ struct ArticleReader: View {
         guard ready, resumeOffer == nil, !positions.isEmpty, !narrator.isActive else { return }
         let sectionID = ReadingProgress.section(positions: positions, order: article.sections.map(\.id))
         if current != sectionID { remember(sectionID) }
+    }
+    private func readingParagraphs(_ text: String) -> [String] {
+        var sentences: [String] = []
+        var sentence = ""
+        for character in text {
+            sentence.append(character)
+            if "。！？；".contains(character) {
+                sentences.append(sentence)
+                sentence = ""
+            }
+        }
+        if !sentence.isEmpty { sentences.append(sentence) }
+
+        var paragraphs: [String] = []
+        var paragraph = ""
+        for item in sentences {
+            if !paragraph.isEmpty && paragraph.count + item.count > 110 {
+                paragraphs.append(paragraph)
+                paragraph = item
+            } else {
+                paragraph += item
+            }
+        }
+        if !paragraph.isEmpty { paragraphs.append(paragraph) }
+        return paragraphs.isEmpty ? [text] : paragraphs
     }
     @ViewBuilder private func resumeButtons(_ sectionID: String, proxy: ScrollViewProxy) -> some View {
         Button("继续阅读") {

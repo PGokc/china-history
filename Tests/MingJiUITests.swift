@@ -3783,4 +3783,43 @@ final class MingJiUITests: XCTestCase {
         shot("v136-hu-case-source-footer", hu)
     }
 
+    @MainActor func testV137JianwenYongleReadingsExposeViolenceLaborAndVoyageLimits() throws {
+        let fang = XCUIApplication()
+        fang.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]
+        fang.launch()
+        XCTAssertTrue(fang.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        fang.buttons["globalSearch"].tap()
+        let fangSearch = fang.searchFields.firstMatch
+        XCTAssertTrue(fangSearch.waitForExistence(timeout: 5)); fangSearch.tap(); fangSearch.typeText("方孝孺")
+        let fangResult = fang.buttons["search_person_m40_fangxiaoru"]
+        XCTAssertTrue(fangResult.waitForExistence(timeout: 5)); fangResult.tap()
+        XCTAssertTrue(fang.buttons["articleEntry"].waitForExistence(timeout: 5)); fang.buttons["articleEntry"].tap()
+        XCTAssertTrue(fang.buttons["articleContents"].waitForExistence(timeout: 5)); fang.buttons["articleContents"].tap()
+        for chapter in ["宋濂门下的地方学者", "建文新政的文字与制度", "文章进入战争指挥", "拒写诏书的政治含义", "“诛十族”之外的证据边界"] {
+            XCTAssertTrue(fang.buttons[chapter].exists, chapter)
+        }
+        fang.buttons["“诛十族”之外的证据边界"].tap()
+        XCTAssertTrue(fang.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "并非都能由同时代材料确认")).firstMatch.waitForExistence(timeout: 5))
+        XCTAssertTrue(fang.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "放回叙事中心")).firstMatch.exists)
+        shot("v137-fangxiaoru-evidence-boundary", fang)
+        fang.terminate()
+
+        let zheng = XCUIApplication()
+        zheng.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]
+        zheng.launch()
+        XCTAssertTrue(zheng.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        zheng.buttons["globalSearch"].tap()
+        let zhengSearch = zheng.searchFields.firstMatch
+        XCTAssertTrue(zhengSearch.waitForExistence(timeout: 5)); zhengSearch.tap(); zhengSearch.typeText("郑和")
+        let zhengResult = zheng.buttons["search_person_m40_zhenghe"]
+        XCTAssertTrue(zhengResult.waitForExistence(timeout: 5)); zhengResult.tap()
+        XCTAssertTrue(zheng.buttons["articleEntry"].waitForExistence(timeout: 5)); zheng.buttons["articleEntry"].tap()
+        XCTAssertTrue(zheng.buttons["articleContents"].waitForExistence(timeout: 5)); zheng.buttons["articleContents"].tap()
+        XCTAssertTrue(zheng.buttons["船队由谁供养"].exists)
+        XCTAssertTrue(zheng.buttons["礼仪背后也有武力"].exists)
+        zheng.buttons["礼仪背后也有武力"].tap()
+        XCTAssertTrue(zheng.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "完全和平同样不准确")).firstMatch.waitForExistence(timeout: 5))
+        shot("v137-zhenghe-conflict-boundary", zheng)
+    }
+
 }

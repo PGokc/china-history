@@ -2924,69 +2924,6 @@
       "audioHash": "a945a9949d96bd66dbb83a4edd13c88cb848b366bfb09696f50eebae3823e0ca"
     },
     {
-      "articleID": "m40_qitai",
-      "sectionID": "m40_qitai-1",
-      "path": "ming-m40_qitai-m40_qitai-1-9d61d2ff8b3d.mp3",
-      "textHash": "9d61d2ff8b3de6281e1c943a09a7d132ca44836034a2b453da03f27b7975c432",
-      "audioHash": "5056038546812b3f944649ab605e569b2f551e06f60c2fa4ebd3ebadc76c31e2"
-    },
-    {
-      "articleID": "m40_qitai",
-      "sectionID": "m40_qitai-2",
-      "path": "ming-m40_qitai-m40_qitai-2-fc5145463063.mp3",
-      "textHash": "fc5145463063888fd09981d744afeef9fd2f33e373fce14df99c3f275e24491b",
-      "audioHash": "23368c4e45fcc34c59a9267774d16ae28cd40605b225f6ad36903288250976ae"
-    },
-    {
-      "articleID": "m40_qitai",
-      "sectionID": "m40_qitai-3",
-      "path": "ming-m40_qitai-m40_qitai-3-99d299b0f96e.mp3",
-      "textHash": "99d299b0f96ed61170bd968aeee0ed2481948445a824266c94e810a2e0b6abb0",
-      "audioHash": "258a04680aeae50cd59fe22d9c9b7d127a385b24b78ae3cc18bac1899ebe26d8"
-    },
-    {
-      "articleID": "m40_huangzicheng",
-      "sectionID": "m40_huangzicheng-1",
-      "path": "ming-m40_huangzicheng-m40_huangzicheng-1-439ec0f60343.mp3",
-      "textHash": "439ec0f6034345379b243d6e9dd2174446a875df4c134775b58b941b90cac280",
-      "audioHash": "418ca062144e1dca3d7a08caf280bb0ff9917e7fe34ec0f8c56405db66a8bd99"
-    },
-    {
-      "articleID": "m40_huangzicheng",
-      "sectionID": "m40_huangzicheng-2",
-      "path": "ming-m40_huangzicheng-m40_huangzicheng-2-ce4b0e88b4f4.mp3",
-      "textHash": "ce4b0e88b4f4b62e739a6e360f09eda4195edc80f3a7825a8d1ffcfbc2919a2c",
-      "audioHash": "5b7c70b39fb2f10015853f3429d4f5546caa8cf5f66411bf3e96e174f92ea014"
-    },
-    {
-      "articleID": "m40_huangzicheng",
-      "sectionID": "m40_huangzicheng-3",
-      "path": "ming-m40_huangzicheng-m40_huangzicheng-3-5d52d1d2f9f8.mp3",
-      "textHash": "5d52d1d2f9f893c3eeafa5653e9fa0c2c1892499d6c789e72166915c4483e18b",
-      "audioHash": "128db8d2852b602fc9ece3d58de450b152bd230886df085ebc0ba4b6150ccf81"
-    },
-    {
-      "articleID": "m40_fangxiaoru",
-      "sectionID": "m40_fangxiaoru-1",
-      "path": "ming-m40_fangxiaoru-m40_fangxiaoru-1-9819594e317b.mp3",
-      "textHash": "9819594e317b0af88c2657b8aced7e6aa4dbca8e61966c65f02719cf91dfee10",
-      "audioHash": "a1ba155fbc3e5e5ca3e464f764a6da402f064c591b4ad6da415e4eae5167248d"
-    },
-    {
-      "articleID": "m40_fangxiaoru",
-      "sectionID": "m40_fangxiaoru-2",
-      "path": "ming-m40_fangxiaoru-m40_fangxiaoru-2-5a8694e74c62.mp3",
-      "textHash": "5a8694e74c62b03395a1e57fb2474afbb550366af39b1772e0ac36d5a843c97d",
-      "audioHash": "e2a874d8ad7105b54b13ebbbf418cd1b408a1333764f5ea62a01464d2c3b0bc3"
-    },
-    {
-      "articleID": "m40_fangxiaoru",
-      "sectionID": "m40_fangxiaoru-3",
-      "path": "ming-m40_fangxiaoru-m40_fangxiaoru-3-e010a882e7b6.mp3",
-      "textHash": "e010a882e7b6ab43c00ac57b9a4b78adc83fef2020887fa931b32dd97d1f6b8e",
-      "audioHash": "0daf7997c2f2fe83feec18f4d0c614189498396d7f36f168f59db02f27e4f6cf"
-    },
-    {
       "articleID": "m40_yangshiqi",
       "sectionID": "m40_yangshiqi-1",
       "path": "ming-m40_yangshiqi-m40_yangshiqi-1-0766c078fcf0.mp3",
@@ -3048,48 +2985,6 @@
       "path": "ming-m40_yangpu-m40_yangpu-3-7279fc5d891d.mp3",
       "textHash": "7279fc5d891db9e9b028216b5d8bf7f1c27d421fadd4aad8d25374ad92740a50",
       "audioHash": "07cc83d39a1928f51312325f5f3dfb41f2cd10a4e0f65a38891693287fc978b0"
-    },
-    {
-      "articleID": "m40_xiayuanji",
-      "sectionID": "m40_xiayuanji-1",
-      "path": "ming-m40_xiayuanji-m40_xiayuanji-1-a19883d864d4.mp3",
-      "textHash": "a19883d864d40651c749f5e0da7cb22e96400cac14c2e2b0a17cc97656df9064",
-      "audioHash": "84862aa9d4c9117f8eb8be5669754bd452d96538a76c7cdf38f885fe6e59f7e4"
-    },
-    {
-      "articleID": "m40_xiayuanji",
-      "sectionID": "m40_xiayuanji-2",
-      "path": "ming-m40_xiayuanji-m40_xiayuanji-2-51ed937b2fcf.mp3",
-      "textHash": "51ed937b2fcf53b00d0b1f42c82f5a344884fad38a6fe51b03951f06a9a08706",
-      "audioHash": "bb86342e10f42f610dcd0a191ee5f24bc2e17a3f0a5c55a37c911fe4372f005e"
-    },
-    {
-      "articleID": "m40_xiayuanji",
-      "sectionID": "m40_xiayuanji-3",
-      "path": "ming-m40_xiayuanji-m40_xiayuanji-3-9d01e6d51c3e.mp3",
-      "textHash": "9d01e6d51c3ec7e808f51fb1747007ffa09666b3411581a7b7dc2906ce986ed0",
-      "audioHash": "18fd7009472f52afc3bda6004028ad0ffd20f74c5e6b5685a9ea38a4f5a2190a"
-    },
-    {
-      "articleID": "m40_zhenghe",
-      "sectionID": "m40_zhenghe-1",
-      "path": "ming-m40_zhenghe-m40_zhenghe-1-e7039851ae2a.mp3",
-      "textHash": "e7039851ae2a4e31ad45ab626206d554930a78e0e3b968929ecfa01583079a8c",
-      "audioHash": "c569f4f3967dc5f852544d023194fd521380373bb72ba9bdc242c41f8bae6241"
-    },
-    {
-      "articleID": "m40_zhenghe",
-      "sectionID": "m40_zhenghe-2",
-      "path": "ming-m40_zhenghe-m40_zhenghe-2-ad9b0b3438b1.mp3",
-      "textHash": "ad9b0b3438b15e1ee08c5896a41cc571575b6d414efd3496d3b75a8efd57d9bc",
-      "audioHash": "2bd3a90a360b33a4e61e9c7d521558199a6dfbe30a894bc8451d6c4fa50e7b0f"
-    },
-    {
-      "articleID": "m40_zhenghe",
-      "sectionID": "m40_zhenghe-3",
-      "path": "ming-m40_zhenghe-m40_zhenghe-3-72554bccce5b.mp3",
-      "textHash": "72554bccce5be748097ba6b3d87f02efa08bca91ab2c28d3821f05fe4ed6957c",
-      "audioHash": "9a2aeea9e04bc66f64577d509458a70f039e6374e2c8db2479a08c0d7883e03f"
     },
     {
       "articleID": "m40_zhouchen",
@@ -3174,48 +3069,6 @@
       "path": "ming-m40_wangzhi-m40_wangzhi-3-5533febc862b.mp3",
       "textHash": "5533febc862b38c4fb0da87a64b528f21ba76700d999ce218c5588c199e7bbbe",
       "audioHash": "19b1d7b5b7be110a447d5ffb58291a8f2c3ebd85db7e65e14ae7b60e2a266082"
-    },
-    {
-      "articleID": "m40_yaoguangxiao",
-      "sectionID": "m40_yaoguangxiao-1",
-      "path": "ming-m40_yaoguangxiao-m40_yaoguangxiao-1-961ce381b65d.mp3",
-      "textHash": "961ce381b65d97ea4df4bad7e6deebd616b2d5b17c4605bd7475443755508b27",
-      "audioHash": "646c1cedf2849e67411b3fc9f20b73e58c823fe9c5072448b193f79606fded79"
-    },
-    {
-      "articleID": "m40_yaoguangxiao",
-      "sectionID": "m40_yaoguangxiao-2",
-      "path": "ming-m40_yaoguangxiao-m40_yaoguangxiao-2-bc723c8c36ac.mp3",
-      "textHash": "bc723c8c36ac95688befc5ebdd102d268e7db79377cba43ca7bcc5ce26a3e04f",
-      "audioHash": "04630426b4190ed821b7395e1a4211de6bb51148150cb27ad1377590ce0468bb"
-    },
-    {
-      "articleID": "m40_yaoguangxiao",
-      "sectionID": "m40_yaoguangxiao-3",
-      "path": "ming-m40_yaoguangxiao-m40_yaoguangxiao-3-dd98ac48451d.mp3",
-      "textHash": "dd98ac48451d30fc7b0921a86090ac5c5ca7c0c274828a7d9356dff66be1b3b6",
-      "audioHash": "009a20b9a85145598b871c67a37a2363a497df6e53d6f0b6a9885375d8ea1878"
-    },
-    {
-      "articleID": "m40_xiejin",
-      "sectionID": "m40_xiejin-1",
-      "path": "ming-m40_xiejin-m40_xiejin-1-be90a51d014d.mp3",
-      "textHash": "be90a51d014d6c46b4b542ee3b8247186385fe0106c922f4dec13325c4efc27a",
-      "audioHash": "610a3d2cca1769bc3094da35e1e11f12c25abae41b053e7ee1d2cbefe4bdea42"
-    },
-    {
-      "articleID": "m40_xiejin",
-      "sectionID": "m40_xiejin-2",
-      "path": "ming-m40_xiejin-m40_xiejin-2-c5064e34534c.mp3",
-      "textHash": "c5064e34534c02862532c8b0de6da0b7e50c382925f502f4687b06415f5fc027",
-      "audioHash": "ef9944c55d4d1258f3317f5b85ecdb00caa863525807090abf71136f349b2a60"
-    },
-    {
-      "articleID": "m40_xiejin",
-      "sectionID": "m40_xiejin-3",
-      "path": "ming-m40_xiejin-m40_xiejin-3-86ba67584fe4.mp3",
-      "textHash": "86ba67584fe43e78e67be51ab2742ec612a210e3f69122275c52a3c5c459108a",
-      "audioHash": "a43efd5ca97f70176985806f321cbce22917edb441b874334aad6ff5fd4d7920"
     },
     {
       "articleID": "m40_liujian",

@@ -2274,3 +2274,35 @@ if d['version']>=110:
  assert all(boundary in corpus for boundary in ['不能等同于有固定程序','后出的证词不能无条件倒推','不能被“统一”一词遮蔽','不把推测写成案情','不能因死亡相近就虚构共同密谋'])
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|人物页|占位|正在完善',corpus,re.I)
  print('V110 PASS: six Hongwu-era readings connect palace labor, education, the abolished chancellery, Yunnan conquest and military command while keeping later case narratives evidence-bounded')
+
+if d['version']>=111:
+ jianwen_yongle=['m40_qitai','m40_huangzicheng','m40_fangxiaoru','m40_yaoguangxiao','m40_xiejin','m40_xiayuanji','m40_zhenghe']
+ suffix={'m40_qitai':'qitai','m40_huangzicheng':'huang','m40_fangxiaoru':'fang','m40_yaoguangxiao':'yao','m40_xiejin':'xie','m40_xiayuanji':'xia','m40_zhenghe':'zheng'}
+ required_events={
+  'v40m1_reduce_princes','v137_jianwen_records','v137_jianwen_command','v137_1402_purge',
+  'v12_yongle_dadian','v40m1_yongle_heir','v40m1_waterworks','v137_northern_campaign_fiscal',
+  'v137_voyage_logistics','v137_voyage_conflicts','v137_voyage_pause',
+ }
+ assert required_events<=events.keys()
+ assert {events[event_id]['category'] for event_id in required_events}=={'政治','军事','文化','经济','社会'}
+ assert all(set(events[event_id]['people'])<=people.keys() and set(events[event_id]['sources'])<=sources.keys() for event_id in required_events)
+ for pid in jianwen_yongle:
+  person=people[pid]; reading=articles[pid]; ss=reading['sections']
+  assert person['dynasty']=='ming' and len(person['sources'])>=2
+  assert len(ss)==5 and all(item['id']==f'v137_{suffix[pid]}_s{index}' for index,item in enumerate(ss,1)),(pid,'wrong five-layer reading')
+  chars=sum(len(re.findall(r'[\u4e00-\u9fff]',item['text'])) for item in ss)
+  assert chars>=850,(pid,'Jianwen-Yongle reading remains too short',chars)
+  assert all(len(set(item['sources']))>=2 and set(item['sources'])<=sources.keys() for item in ss)
+  assert all(item['events'] and set(item['events'])<=events.keys() for item in ss)
+  assert all(set(item['people'])<=people.keys() for item in ss)
+  assert set(reading['sources'])=={source for item in ss for source in item['sources']}
+ corpus=json.dumps([people[pid] for pid in jianwen_yongle]+[articles[pid] for pid in jianwen_yongle]+[events[event_id] for event_id in required_events],ensure_ascii=False)
+ for term in ['边军名籍','李景隆','诛十族','《太祖实录》','《永乐大典》','淤田','粮饷','旧港','锡兰','中止与重启']:
+  assert term in corpus,('missing Jianwen-Yongle evidence term',term)
+ for boundary in ['不能视为提前知道皇位归属','不是可逐字核验的审判记录','不能用有争议的宝船尺寸代表全部成就','不能写成唯一目的','描述成完全和平']:
+  assert boundary in corpus,('missing evidence boundary',boundary)
+ association_pairs={(item['from'],item['to']) for item in d['associations']}
+ required_pairs={('m40_qitai','m40_huangzicheng'),('m40_fangxiaoru','m136_songlian'),('m40_fangxiaoru','m40_qitai'),('m40_yaoguangxiao','gaochi'),('m40_xiejin','m40_yaoguangxiao'),('m40_xiejin','gaochi'),('m40_xiayuanji','m40_zhenghe')}
+ assert required_pairs<=association_pairs
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|人物页|占位|正在完善',corpus,re.I)
+ print('V111 PASS: seven Jianwen-Yongle readings connect military records, succession, compilation labor, fiscal and water policy, voyage logistics and political violence with explicit source boundaries')
