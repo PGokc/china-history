@@ -3599,4 +3599,37 @@ final class MingJiUITests: XCTestCase {
         shot("v131-mongke-death-source-boundary", app)
     }
 
+    @MainActor func testV132MidYuanSuccessionSeparatesChildRuleFromActualDecisionMakers() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["--uitesting", "--ui-dynasty", "yuan"]
+        app.launch()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        app.buttons["globalSearch"].tap()
+        let search = app.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("阿速吉八")
+        XCTAssertTrue(app.buttons["search_person_y_ragibagh"].waitForExistence(timeout: 5)); app.buttons["search_person_y_ragibagh"].tap()
+        openArticle(in: app)
+        app.buttons["articleContents"].tap()
+        for chapter in ["名字、年龄和本纪为什么都不完整", "上都不是临时搭起的营帐", "大都为什么能另立图帖睦尔", "关隘和军粮决定短朝长度", "失败以后，材料为何突然沉默"] {
+            XCTAssertTrue(app.buttons[chapter].exists, chapter)
+        }
+        app.buttons["失败以后，材料为何突然沉默"].tap()
+        XCTAssertTrue(app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不足以把其中一种写成确定结局")).firstMatch.waitForExistence(timeout: 5))
+        shot("v132-ragibagh-source-silence", app)
+
+        app.navigationBars.buttons.element(boundBy: 0).tap()
+        app.navigationBars.buttons.element(boundBy: 0).tap()
+        XCTAssertTrue(app.buttons["清除文本"].waitForExistence(timeout: 5)); app.buttons["清除文本"].tap()
+        let secondSearch = app.searchFields.firstMatch
+        XCTAssertTrue(secondSearch.waitForExistence(timeout: 5)); secondSearch.tap(); secondSearch.typeText("懿璘质班")
+        XCTAssertTrue(app.buttons["search_person_y_rinchinbal"].waitForExistence(timeout: 5)); app.buttons["search_person_y_rinchinbal"].tap()
+        openArticle(in: app)
+        app.buttons["articleContents"].tap()
+        XCTAssertTrue(app.buttons["登极诏不能当作幼帝亲自施政"].exists)
+        app.buttons["登极诏不能当作幼帝亲自施政"].tap()
+        XCTAssertTrue(app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不是幼帝本人理解财政和农政的证据")).firstMatch.waitForExistence(timeout: 5))
+        reach(app.buttons["资料与出处"], in: app, attempts: 18)
+        shot("v132-rinchinbal-child-rule-agency", app)
+    }
+
 }

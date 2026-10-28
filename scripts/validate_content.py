@@ -628,8 +628,8 @@ if d['version'] >= 28:
  }
  for pid in expanded:
   article=articles[pid]
-  section=next((x for x in article['sections'] if x['id']=='v46-depth'),None)
-  assert section and section.get('sources') and section.get('people') and section.get('events'),(pid,'missing sourced depth section')
+  depth_sections=[x for x in article['sections'] if x['id']=='v46-depth' or x['id'].startswith('v132_')]
+  assert depth_sections and all(x.get('sources') and x.get('people') and x.get('events') for x in depth_sections),(pid,'missing sourced depth section')
   chars=sum(len(re.findall(r'[\u4e00-\u9fff]',x['text'])) for x in article['sections'])
   assert chars>=850,(pid,'expanded article is still thin',chars)
  assert all(not re.search(r'本轮|补充内容|数据缺口|页面需要',json.dumps(articles[pid],ensure_ascii=False)) for pid in expanded), 'editorial language leaked into product copy'
@@ -2061,3 +2061,50 @@ if d['version']>=105:
  assert required_pairs<=association_map.keys()
  assert all(association_map[pair].get('role') and association_map[pair].get('inverse') and association_map[pair].get('sources') for pair in required_pairs)
  print('V105 PASS: four early Mongol khans distinguish alliance, conquest, taxation, regency, urban networks, evidence limits and the road to divided succession')
+
+if d['version']>=106:
+ mid_yuan=['y_kulug','y_gegeen','y_yesun_temur','y_ragibagh','y_tugh_temur','y_kusala','y_rinchinbal']
+ terms={
+  'y_kulug':['1307年','海都','1309年','中都','1311年'],
+  'y_gegeen':['1320年','铁木迭儿','大元通制','灾伤','1323年'],
+  'y_yesun_temur':['1323年','泰定','倒剌沙','铺马','1328年'],
+  'y_ragibagh':['1328年','天顺','上都','大都','下落'],
+  'y_tugh_temur':['1328年','1329年','燕铁木儿','奎章阁','1332年'],
+  'y_kusala':['1311年','周王','西北','1329年','起辇谷'],
+  'y_rinchinbal':['1326年','七岁','五十余日','海运','妥懽帖睦尔'],
+ }
+ req_sources={'v132_dpm_yuanshi_benji','v132_dpm_kuizhang','v132_dpm_yuji','v132_unesco_xanadu','v132_cssn_shangdu','v132_nopss_taiding_decree','v132_cssn_official_docs'}
+ req_events={'v132_kulug_rewards_offices','v132_gegeen_relief_finance','v132_taiding_decree_labor','v132_tianshun_war_supply','v132_tianshun_evidence','v132_wenzong_fiscal_relief','v132_kusala_exile_network','v132_ningzong_daily_state'}
+ assert req_sources<=sources.keys() and all(sources[source_id]['url'].startswith('https://') for source_id in req_sources)
+ assert req_events<=events.keys()
+ seen_titles=set(); seen_sentences={}
+ section_suffix={'y_yesun_temur':'yesun','y_tugh_temur':'tugh'}
+ for pid in mid_yuan:
+  ss=articles[pid]['sections']
+  suffix=section_suffix.get(pid,pid.removeprefix('y_'))
+  assert len(ss)==5 and all(section['id']==f'v132_{suffix}_s{index}' for index,section in enumerate(ss,1)),(pid,'wrong section structure')
+  assert all(len(re.findall(r'[\u4e00-\u9fff]',section['text']))>=190 for section in ss),(pid,'thin section')
+  corpus=''.join(section['text'] for section in ss)
+  assert len(re.findall(r'[\u4e00-\u9fff]',corpus))>=1000,(pid,'reading below 1000 Chinese characters')
+  assert all(term in corpus for term in terms[pid]),(pid,'missing person-specific chronology, institution or evidence boundary')
+  assert not re.search(r'产品|本轮|补充内容|数据缺口|开发进度|AI生成|fallback|人物页|占位|正在完善',corpus,re.I),(pid,'internal copy leaked')
+  section_sources=set()
+  for section in ss:
+   assert section['title'] not in seen_titles,(pid,'repeated title',section['title'])
+   seen_titles.add(section['title'])
+   assert 1<=len(section['events'])<=2 and set(section['events'])<=events.keys(),(pid,section['id'],'broken event links')
+   assert len(section['sources'])>=2 and set(section['sources'])<=sources.keys(),(pid,section['id'],'broken source links')
+   section_sources.update(section['sources'])
+   for sentence in re.split(r'(?<=[。！？；])',section['text']):
+    sentence=sentence.strip()
+    if len(sentence)<30: continue
+    assert sentence not in seen_sentences or seen_sentences[sentence]==pid,(pid,'cross-ruler repeated sentence',seen_sentences.get(sentence),sentence)
+    seen_sentences[sentence]=pid
+  assert set(articles[pid]['sources'])==section_sources,(pid,'article source union mismatch')
+ pairs={('y_kulug','y_ayurbarwada'),('y_gegeen','y_baizhu'),('y_yesun_temur','y_daolasha'),('y_ragibagh','y_daolasha'),('y_ragibagh','y_tugh_temur'),('y_tugh_temur','y_yan_tiemuer'),('y_tugh_temur','y_kusala'),('y_rinchinbal','y_budashiri')}
+ association_map={(association['from'],association['to']):association for association in d['associations']}
+ assert pairs<=association_map.keys()
+ assert all(association_map[pair].get('role') and association_map[pair].get('inverse') and association_map[pair].get('sources') for pair in pairs)
+ assert '不足以把其中一种写成确定结局' in articles['y_ragibagh']['sections'][-1]['text']
+ assert '不是幼帝本人理解财政和农政的证据' in articles['y_rinchinbal']['sections'][2]['text']
+ print('V106 PASS: seven mid-Yuan rulers separate military patronage, law, regency, two-capital war, cultural institutions, child rule and source silence')
