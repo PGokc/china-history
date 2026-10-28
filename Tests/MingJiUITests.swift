@@ -3158,6 +3158,28 @@ final class MingJiUITests: XCTestCase {
         shot("v122-five-dynasties-interpretation-ending", app)
     }
 
+    @MainActor func testV123FiveDynastiesBiographyHasSpecificRegionalReading() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["--uitesting", "--ui-dynasty", "five_dynasties"]
+        app.launch()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        app.buttons["globalSearch"].tap()
+        let search = app.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("马希范")
+        XCTAssertTrue(app.buttons["search_person_fd_chu_xifan"].waitForExistence(timeout: 5))
+        app.buttons["search_person_fd_chu_xifan"].tap()
+        openArticle(in: app)
+        app.buttons["articleContents"].tap()
+        XCTAssertTrue(app.buttons["把人物放回区域社会"].waitForExistence(timeout: 5))
+        app.buttons["把人物放回区域社会"].tap()
+        XCTAssertTrue(app.staticTexts.matching(NSPredicate(format: "label CONTAINS %@", "茶叶生产、商路")).firstMatch.waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts.matching(NSPredicate(format: "label CONTAINS %@", "不能只由“扩建长沙宫室")).firstMatch.exists)
+        shot("v123-ma-xifan-regional-reading", app)
+        for _ in 0..<12 { app.swipeUp() }
+        XCTAssertTrue(app.buttons["资料与出处"].exists)
+        shot("v123-ma-xifan-regional-reading-ending", app)
+    }
+
     @MainActor func testV90ThinPeopleAndEmptyEventLensesHaveUsefulDepth() throws {
         let ming = XCUIApplication()
         ming.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]

@@ -1728,3 +1728,32 @@ if d['version']>=96:
  assert all(term in corpus for term in ['907年','923年','936年','947年','951年','960年','965年','971年','975年','978年','979年','枢密院','投龙银简','北汉'])
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback',corpus,re.I)
  print('V96 PASS: Five Dynasties macro reading connects parallel states, military governance, regional economies, ordinary life and staged Song integration')
+
+if d['version']>=97:
+ fd_people={p['id'] for p in d['people'] if p.get('dynasty')=='five_dynasties'}
+ fd_articles=[articles[pid] for pid in fd_people]
+ legacy_phrase='生活在唐宋之间多政权并立的时期'
+ for article in fd_articles:
+  for section in article['sections']:
+   substantial=[part.strip() for part in re.split(r'[。！？]',section['text']) if len(part.strip())>=12]
+   repeated=[sentence for sentence,count in Counter(substantial).items() if count>1]
+   assert not repeated,(article['person'],section['id'],'repeated substantial sentence',repeated)
+  lead=next((section for section in article['sections'] if section['id'].endswith('-v54-1')),None)
+  regional=next((section for section in article['sections'] if section['id'].endswith('-v54-4')),None)
+  if regional:
+   assert regional['title']=='把人物放回区域社会',(article['person'],'stale regional reading')
+   assert len(re.findall(r'[\u4e00-\u9fff]',regional['text']))>=430,(article['person'],'regional reading too thin')
+   assert legacy_phrase not in regional['text'],(article['person'],'legacy filler survived in regional reading')
+   assert lead and regional['events']==lead['events'] and regional['people']==lead['people'],(article['person'],'rotated legacy relation')
+ corrected={
+  'fd_gu_cheng':'v123_gu_quanwu','fd_xuwen':'v123_xu_wen','fd_jing_yanguang':'v123_jing_yanguang',
+  'fd_sang_weihan':'v123_sang_weihan','fd_wang_pu':'v123_wang_pu','fd_guan_tong':'v123_guan_tong','fd_he_ning':'v123_he_ning'
+ }
+ new_events={event['id']:event for event in d['events'] if event['id'].startswith('v123_')}
+ assert set(new_events)==set(corrected.values())
+ for pid,event_id in corrected.items():
+  article=articles[pid]
+  assert all(section['events']==[event_id] for section in article['sections'] if section['id'].startswith(pid+'-v54-')),(pid,'stale event mapping')
+  assert pid in new_events[event_id]['people'] and new_events[event_id]['sources']
+ assert '971年宋灭南汉没有直接关系' in next(section['text'] for section in articles['fd_guan_tong']['sections'] if section['id'].endswith('-v54-4'))
+ print('V97 PASS: seventy-three Five Dynasties readings contain no repeated filler; rotated and seven false person-event mappings are corrected')
