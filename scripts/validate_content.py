@@ -1411,7 +1411,7 @@ if d['version'] >= 58:
  # V108 replaces the two generic Han Lin'er and Zhang Shicheng fallback
  # readings (whose legacy section identifiers ended in -e1) with audited,
  # person-specific transition histories.
- assert len(new_readings)==(41 if d['version']>=108 else 43)
+ assert len(new_readings)==(40 if d['version']>=110 else (41 if d['version']>=108 else 43))
  for article in new_readings:
   chars=sum(len(re.findall(r'[\u4e00-\u9fff]',section['text'])) for section in article['sections'])
   assert len(article['sections'])==5 and chars>=500,(article['person'],'new reading remains too short',chars)
@@ -2240,3 +2240,37 @@ if d['version']>=109:
  assert '1588' in silver['body'] and '不能代表全国各地' in silver['body']
  assert all(person_id in people for item in (baochao,silver) for person_id in item['people'])
  print('V109 PASS: the Ming macro guide now connects staged unification, household registration, Beijing supply, paper-to-silver fiscal change and the long 1644 transition through material evidence')
+
+if d['version']>=110:
+ required_people={'ma','m136_songlian','m136_huweiyong','m136_muying','m136_fuyoude','m136_fengsheng'}
+ assert required_people<=people.keys()
+ for pid in required_people:
+  person=people[pid]; reading=articles[pid]
+  assert person['dynasty']=='ming' and len(person['sources'])>=2
+  assert len(reading['sections'])==5
+  chars=sum(len(re.findall(r'[\u4e00-\u9fff]',section['text'])) for section in reading['sections'])
+  assert chars>=850,(pid,'Hongwu reading remains too short',chars)
+  assert all(len(section['sources'])>=2 and set(section['sources'])<=sources.keys() for section in reading['sections'])
+  assert set(reading['sources'])=={source for section in reading['sections'] for source in section['sources']}
+  assert any(section.get('events') for section in reading['sections'])
+  assert any(section.get('people') for section in reading['sections'])
+ required_events={
+  'v136_ma_war_logistics','v136_ma_palace_mediation','v136_red_board_granary',
+  'v136_yuan_history_compilation','v136_prince_education','cabinet','v136_hu_case_expansion',
+  'v136_yunnan_campaign_stages','v136_yunnan_postwar_rule','v136_naghachu_surrender',
+  'v136_generals_forced_deaths',
+ }
+ assert required_events<=events.keys()
+ assert {events[event_id]['category'] for event_id in required_events}=={'政治','军事','文化','经济','社会'}
+ assert all(set(events[event_id]['people'])<=people.keys() and set(events[event_id]['sources'])<=sources.keys() for event_id in required_events)
+ assert next(portrait for portrait in d['portraits'] if portrait['person']=='ma')['image']=='portrait_ma'
+ family={(link['from'],link['to'],link['kind']) for link in d['familyLinks']}
+ assert {('m136_muying','yuanzhang','adoptiveFather'),('m136_muying','ma','adoptiveMother')}<=family
+ association_pairs={(item['from'],item['to']) for item in d['associations']}
+ assert {('ma','m136_songlian'),('m136_songlian','biao'),('m136_huweiyong','lishanzhang'),('m136_huweiyong','liuji'),('m136_fuyoude','m136_muying'),('m136_fengsheng','m136_fuyoude'),('m136_muying','lanyu')}<=association_pairs
+ corpus=json.dumps([people[pid] for pid in required_people]+[articles[pid] for pid in required_people]+[events[event_id] for event_id in required_events],ensure_ascii=False)
+ for term in ['红板仓','《元史》','1380年','多年扩张','曲靖','大理','屯田','纳哈出','1394年','1395年','证据边界']:
+  assert term in corpus,('missing Hongwu evidence term',term)
+ assert all(boundary in corpus for boundary in ['不能等同于有固定程序','后出的证词不能无条件倒推','不能被“统一”一词遮蔽','不把推测写成案情','不能因死亡相近就虚构共同密谋'])
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|人物页|占位|正在完善',corpus,re.I)
+ print('V110 PASS: six Hongwu-era readings connect palace labor, education, the abolished chancellery, Yunnan conquest and military command while keeping later case narratives evidence-bounded')

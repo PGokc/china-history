@@ -3738,4 +3738,49 @@ final class MingJiUITests: XCTestCase {
         shot("v135-flower-silver-evidence-boundary", searchApp)
     }
 
+    @MainActor func testV136HongwuPeopleConnectPortraitInstitutionsAndEvidenceBoundaries() throws {
+        let ma = XCUIApplication()
+        ma.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]
+        ma.launch()
+        XCTAssertTrue(ma.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        ma.buttons["globalSearch"].tap()
+        let maSearch = ma.searchFields.firstMatch
+        XCTAssertTrue(maSearch.waitForExistence(timeout: 5)); maSearch.tap(); maSearch.typeText("马皇后")
+        let maResult = ma.buttons["search_person_ma"]
+        XCTAssertTrue(maResult.waitForExistence(timeout: 5)); maResult.tap()
+        XCTAssertTrue(ma.buttons["portraitEntry"].exists)
+        XCTAssertTrue(ma.buttons["articleEntry"].waitForExistence(timeout: 5)); ma.buttons["articleEntry"].tap()
+        XCTAssertTrue(ma.buttons["articleContents"].waitForExistence(timeout: 5)); ma.buttons["articleContents"].tap()
+        for chapter in ["郭子兴家中的养女", "军队背后的衣食与家属", "皇帝震怒时的缓冲", "从灾荒到学生家属", "画像与贤后记忆"] {
+            XCTAssertTrue(ma.buttons[chapter].exists)
+        }
+        ma.buttons["画像与贤后记忆"].tap()
+        XCTAssertTrue(ma.staticTexts["画像与贤后记忆"].waitForExistence(timeout: 5))
+        XCTAssertTrue(ma.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不能用来断定真实容貌")).firstMatch.exists)
+        shot("v136-ma-portrait-evidence", ma)
+        ma.terminate()
+
+        let hu = XCUIApplication()
+        hu.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]
+        hu.launch()
+        XCTAssertTrue(hu.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        hu.buttons["globalSearch"].tap()
+        let huSearch = hu.searchFields.firstMatch
+        XCTAssertTrue(huSearch.waitForExistence(timeout: 5)); huSearch.tap(); huSearch.typeText("胡惟庸")
+        let huResult = hu.buttons["search_person_m136_huweiyong"]
+        XCTAssertTrue(huResult.waitForExistence(timeout: 5)); huResult.tap()
+        XCTAssertTrue(hu.buttons["articleEntry"].waitForExistence(timeout: 5)); hu.buttons["articleEntry"].tap()
+        XCTAssertTrue(hu.buttons["articleContents"].waitForExistence(timeout: 5)); hu.buttons["articleContents"].tap()
+        XCTAssertTrue(hu.buttons["人死之后，案情仍在扩大"].exists)
+        hu.buttons["人死之后，案情仍在扩大"].tap()
+        XCTAssertTrue(hu.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "后出的证词不能无条件倒推")).firstMatch.waitForExistence(timeout: 5))
+        reach(hu.buttons["资料与出处"], in: hu, attempts: 24); hu.buttons["资料与出处"].tap()
+        let sourceRows = hu.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "source_"))
+        XCTAssertGreaterThanOrEqual(sourceRows.count, 2)
+        let lastSource = sourceRows.element(boundBy: sourceRows.count - 1)
+        reach(lastSource, in: hu, attempts: 18); hu.swipeUp()
+        XCTAssertLessThanOrEqual(lastSource.frame.maxY, hu.tabBars.firstMatch.frame.minY)
+        shot("v136-hu-case-source-footer", hu)
+    }
+
 }
