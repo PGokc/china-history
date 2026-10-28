@@ -1890,3 +1890,57 @@ if d['version']>=101:
  assert all('去世、被废、被俘或政权覆亡' not in body and len(re.findall(r'[\u4e00-\u9fff]',body))>=35 for body in endings.values())
  assert '宁令哥' in endings['v55_reign_s_xia_jingzong_b'] and '两位梁太后不可混为一人' in endings['v55_reign_s_xia_huizong_b']
  print('V101 PASS: the first five Western Xia rulers have specific succession, war, institutions, social costs and evidence boundaries')
+
+if d['version']>=102:
+ late_xia_ids=['s_xia_huanzong','s_xia_xiangzong','s_xia_shenzong','s_xia_xianzong','s_xia_mozhu']
+ late_xia_terms={
+  's_xia_huanzong':['1193年','德行集','1205年','宋夏互市','1206年'],
+  's_xia_xiangzong':['1206年','1209年','中兴府','1210年','1211年'],
+  's_xia_shenzong':['1211年','十三年','蒙古','1223年','1226年'],
+  's_xia_xianzong':['1223年','夏金','1226年','最后三位皇帝','金史'],
+  's_xia_mozhu':['1226年','中兴府','1227年','投降','元代'],
+ }
+ forbidden=['处于宋、辽、西夏、金及蒙古势力先后并立的时代','同一事件在宋、辽、夏、金材料中的称谓','这一时期不是宋朝单方面面对“边患”','本节只陈述可以落到年代','去世、被废、被俘或政权覆亡']
+ required_sources={'v128_cssn_xixia_historiography','v128_nxkg_chunyou','v128_xixia_protection_plan'}
+ required_events={'v128_xixia_dexingji','v128_xixia_1205_conflict','v128_xixia_1209_siege','v128_xixia_jin_war','v128_xixia_mongol_coercion','v128_xixia_wartime_economy','v128_xixia_war_displacement','v128_xixia_jin_reconciliation','v128_xixia_final_campaign','v128_xixia_last_tombs','v128_xixia_final_siege'}
+ assert required_sources<=sources.keys() and all(sources[source_id]['url'].startswith('https://') for source_id in required_sources)
+ assert required_events<=events.keys()
+ seen_titles=set()
+ seen_sentences={}
+ for pid in late_xia_ids:
+  sections=articles[pid]['sections']
+  assert len(sections)==5 and all(section['id']==f'{pid}-v128-{index}' for index,section in enumerate(sections,1)),(pid,'wrong section structure')
+  assert all(section['title'] not in seen_titles for section in sections),(pid,'cross-person repeated title')
+  seen_titles.update(section['title'] for section in sections)
+  assert all(len(re.findall(r'[\u4e00-\u9fff]',section['text']))>=170 for section in sections),(pid,'thin section')
+  corpus=''.join(section['text'] for section in sections)
+  assert len(re.findall(r'[\u4e00-\u9fff]',corpus))>=900,(pid,'reading below 900 Chinese characters')
+  assert all(term in corpus for term in late_xia_terms[pid]),(pid,'missing ruler-specific chronology, institution or evidence boundary')
+  assert not any(phrase in corpus for phrase in forbidden),(pid,'legacy template survived')
+  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|误接|纠正关联',corpus,re.I)
+  for section in sections:
+   assert pid in section['people'] and len(section['events'])==1 and section['events'][0] in events,(pid,section['id'],'broken relation')
+   assert len(section['sources'])>=6 and set(section['sources'])<=sources.keys(),(pid,section['id'],'broken source')
+   for sentence in re.split(r'(?<=[。！？；])',section['text']):
+    sentence=sentence.strip()
+    if len(sentence)<30: continue
+    assert sentence not in seen_sentences or seen_sentences[sentence]==pid,(pid,'cross-ruler template sentence',seen_sentences.get(sentence),sentence)
+    seen_sentences[sentence]=pid
+ endings={event_id:events[event_id]['body'] for event_id in [f'v55_reign_{pid}_b' for pid in late_xia_ids]}
+ assert all('去世、被废、被俘或政权覆亡' not in body and len(re.findall(r'[\u4e00-\u9fff]',body))>=35 for body in endings.values())
+ assert '太上皇' in endings['v55_reign_s_xia_shenzong_b'] and '各材料仍有分歧' in endings['v55_reign_s_xia_mozhu_b']
+ assert all(not re.search(r'人物页|本轮|开发进度|占位|AI生成|fallback',events[event_id]['body'],re.I) for event_id in required_events)
+ late_pairs={frozenset((association['from'],association['to'])) for association in d['associations']}
+ assert not any((pair & set(late_xia_ids)) and any(person_id.startswith('s_liao_') for person_id in pair) for pair in late_pairs)
+ assert frozenset(('s_xia_mozhu','y_genghis')) in late_pairs
+ expected_context_people={
+  's_xia_huanzong':{'s_xia_renzong','s_xia_xiangzong','y_genghis'},
+  's_xia_xiangzong':{'s_xia_huanzong','s_xia_shenzong','y_genghis'},
+  's_xia_shenzong':{'s_xia_xiangzong','s_xia_xianzong','s_jin_xuanzong'},
+  's_xia_xianzong':{'s_xia_shenzong','s_xia_mozhu','y_genghis'},
+  's_xia_mozhu':{'s_xia_xianzong','y_genghis','s_jin_aizong'},
+ }
+ contexts={context['person']:context for context in d['reignContexts']}
+ assert all(set(contexts[pid]['people'])==expected_context_people[pid] for pid in late_xia_ids)
+ assert 's_xia_xiangzong' not in contexts['s_liao_taizu']['people'] and 's_liao_shulu' in contexts['s_liao_taizu']['people']
+ print('V102 PASS: the last five Western Xia rulers distinguish coups, coercive diplomacy, social costs, final conquest and source disagreement')

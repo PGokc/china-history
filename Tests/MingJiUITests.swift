@@ -3466,4 +3466,30 @@ final class MingJiUITests: XCTestCase {
         shot("v108-ji-kang-specific-reading", ji)
     }
 
+    @MainActor func testV128WesternXiaFinalRulerKeepsSourceUncertainty() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["--uitesting", "--ui-dynasty", "song_liao_xia_jin"]
+        app.launch()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        app.buttons["globalSearch"].tap()
+        let search = app.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("李睍")
+        XCTAssertTrue(app.buttons["search_person_s_xia_mozhu"].waitForExistence(timeout: 5)); app.buttons["search_person_s_xia_mozhu"].tap()
+        XCTAssertTrue(app.buttons["articleEntry"].waitForExistence(timeout: 5)); app.buttons["articleEntry"].tap()
+        XCTAssertTrue(app.buttons["articleContents"].waitForExistence(timeout: 5)); app.buttons["articleContents"].tap()
+        for chapter in ["史书连姓名都没有同样保存", "中兴府被围的一年", "投降、死亡与材料分歧", "王朝结束不等于人口消失", "如何书写1227年"] {
+            XCTAssertTrue(app.buttons[chapter].exists)
+        }
+        app.buttons["投降、死亡与材料分歧"].tap()
+        XCTAssertTrue(app.staticTexts["投降、死亡与材料分歧"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "各材料存在差异")).firstMatch.waitForExistence(timeout: 5))
+        shot("v128-western-xia-surrender-source-boundary", app)
+        app.buttons["articleContents"].tap()
+        app.buttons["王朝结束不等于人口消失"].tap()
+        XCTAssertTrue(app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "并未随国号一同消失")).firstMatch.waitForExistence(timeout: 5))
+        reach(app.buttons["资料与出处"], in: app, attempts: 15)
+        XCTAssertTrue(app.buttons["资料与出处"].isHittable)
+        shot("v128-western-xia-after-conquest", app)
+    }
+
 }
