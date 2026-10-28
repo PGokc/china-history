@@ -3492,4 +3492,45 @@ final class MingJiUITests: XCTestCase {
         shot("v128-western-xia-after-conquest", app)
     }
 
+    @MainActor func testV129EarlyJinReadingsSeparatePolicyFromMoralJudgment() throws {
+        let hailing = XCUIApplication()
+        hailing.launchArguments = ["--uitesting", "--ui-dynasty", "song_liao_xia_jin"]
+        hailing.launch()
+        XCTAssertTrue(hailing.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        hailing.buttons["globalSearch"].tap()
+        let search = hailing.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("完颜亮")
+        XCTAssertTrue(hailing.buttons["search_person_s_jin_hailing"].waitForExistence(timeout: 5)); hailing.buttons["search_person_s_jin_hailing"].tap()
+        for category in ["政治", "军事", "文化", "经济", "社会"] {
+            XCTAssertTrue(hailing.buttons["eventCategory_" + category].exists, category)
+        }
+        openArticle(in: hailing)
+        hailing.buttons["articleContents"].tap()
+        for chapter in ["夺位者如何集中皇权", "1153年迁都中都", "正隆官制与国家重组", "内迁猛安与土地压力", "1161年败局不只是一场采石"] {
+            XCTAssertTrue(hailing.buttons[chapter].exists, chapter)
+        }
+        hailing.buttons["内迁猛安与土地压力"].tap()
+        XCTAssertTrue(hailing.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "四十猛安")).firstMatch.waitForExistence(timeout: 5))
+        shot("v129-hailing-migration-evidence", hailing)
+        hailing.terminate()
+
+        let shizong = XCUIApplication()
+        shizong.launchArguments = ["--uitesting", "--ui-dynasty", "song_liao_xia_jin"]
+        shizong.launch()
+        XCTAssertTrue(shizong.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        shizong.buttons["globalSearch"].tap()
+        let shizongSearch = shizong.searchFields.firstMatch
+        XCTAssertTrue(shizongSearch.waitForExistence(timeout: 5)); shizongSearch.tap(); shizongSearch.typeText("完颜雍")
+        XCTAssertTrue(shizong.buttons["search_person_s_jin_shizong"].waitForExistence(timeout: 5)); shizong.buttons["search_person_s_jin_shizong"].tap()
+        openArticle(in: shizong)
+        shizong.buttons["articleContents"].tap()
+        XCTAssertTrue(shizong.buttons["女真文字、学校与双语碑"].exists)
+        XCTAssertTrue(shizong.buttons["猛安谋克困境与“小尧舜”"].exists)
+        shizong.buttons["女真文字、学校与双语碑"].tap()
+        XCTAssertTrue(shizong.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "得胜陀")).firstMatch.waitForExistence(timeout: 5))
+        reach(shizong.buttons["资料与出处"], in: shizong, attempts: 18)
+        XCTAssertTrue(shizong.buttons["资料与出处"].isHittable)
+        shot("v129-shizong-bilingual-stele", shizong)
+    }
+
 }

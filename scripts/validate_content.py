@@ -1944,3 +1944,55 @@ if d['version']>=102:
  assert all(set(contexts[pid]['people'])==expected_context_people[pid] for pid in late_xia_ids)
  assert 's_xia_xiangzong' not in contexts['s_liao_taizu']['people'] and 's_liao_shulu' in contexts['s_liao_taizu']['people']
  print('V102 PASS: the last five Western Xia rulers distinguish coups, coercive diplomacy, social costs, final conquest and source disagreement')
+
+if d['version']>=103:
+ early_jin_ids=['s_jin_taizu','s_jin_taizong','s_jin_xizong','s_jin_hailing','s_jin_shizong']
+ early_jin_terms={
+  's_jin_taizu':['1114年','1115年','猛安谋克','1119年','1123年'],
+  's_jin_taizong':['1123年','1125年','海上之盟','1127年','1135年'],
+  's_jin_xizong':['1135年','天眷','1141年','完颜希尹','1150年'],
+  's_jin_hailing':['1150年','1153年','中都','四十猛安','1161年'],
+  's_jin_shizong':['1161年','隆兴和议','1171年','1185年','1189年'],
+ }
+ forbidden=['处于宋、辽、西夏、金及蒙古势力先后并立的时代','同一事件在宋、辽、夏、金材料中的称谓','这一时期不是宋朝单方面面对“边患”','本节只陈述可以落到年代','去世、被废、被俘或政权覆亡']
+ required_sources={'v129_cssn_jin_victory_stele','v129_cssn_jin_six_ministries','v129_cssn_jin_elites','v129_cssn_jin_migration','v129_cssn_shangjing_archaeology','v129_beijing_zhongdu_archaeology'}
+ required_events={'v129_jin_taizu_war','v129_jin_1119_script','v129_jin_bojilie_transition','v129_jin_taizong_revenue','v129_jin_tianjuan_reform','v129_jin_xizong_song_war','v129_jin_hailing_centralization','v129_jin_zhenglong_reform','v129_jin_mengan_migration','v129_jin_1161_mutiny','v129_jin_1161_tokyo_accession','v129_jin_shizong_song_war','v129_jin_dading_governance','v129_jin_dading_education','v129_jin_mengan_livelihood'}
+ assert required_sources<=sources.keys() and all(sources[source_id]['url'].startswith('https://') for source_id in required_sources)
+ assert required_events<=events.keys()
+ seen_titles=set()
+ seen_sentences={}
+ for pid in early_jin_ids:
+  sections=articles[pid]['sections']
+  assert len(sections)==5 and all(section['id']==f'{pid}-v129-{index}' for index,section in enumerate(sections,1)),(pid,'wrong section structure')
+  assert all(section['title'] not in seen_titles for section in sections),(pid,'cross-person repeated title')
+  seen_titles.update(section['title'] for section in sections)
+  assert all(len(re.findall(r'[\u4e00-\u9fff]',section['text']))>=170 for section in sections),(pid,'thin section')
+  corpus=''.join(section['text'] for section in sections)
+  assert len(re.findall(r'[\u4e00-\u9fff]',corpus))>=900,(pid,'reading below 900 Chinese characters')
+  assert all(term in corpus for term in early_jin_terms[pid]),(pid,'missing ruler-specific chronology, institution or evidence boundary')
+  assert not any(phrase in corpus for phrase in forbidden),(pid,'legacy template survived')
+  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|误接|纠正关联',corpus,re.I)
+  for section in sections:
+   assert pid in section['people'] and len(section['events'])==1 and section['events'][0] in events,(pid,section['id'],'broken relation')
+   assert len(section['sources'])>=6 and set(section['sources'])<=sources.keys(),(pid,section['id'],'broken source')
+   for sentence in re.split(r'(?<=[。！？；])',section['text']):
+    sentence=sentence.strip()
+    if len(sentence)<30: continue
+    assert sentence not in seen_sentences or seen_sentences[sentence]==pid,(pid,'cross-ruler template sentence',seen_sentences.get(sentence),sentence)
+    seen_sentences[sentence]=pid
+ endings={event_id:events[event_id]['body'] for event_id in [f'v55_reign_{pid}_b' for pid in early_jin_ids]}
+ assert all('去世、被废、被俘或政权覆亡' not in body and len(re.findall(r'[\u4e00-\u9fff]',body))>=35 for body in endings.values())
+ assert '兄终弟及' in endings['v55_reign_s_jin_taizu_b'] and '扬州附近' in endings['v55_reign_s_jin_hailing_b']
+ early_pairs={frozenset((association['from'],association['to'])) for association in d['associations']}
+ assert frozenset(('s_jin_hailing','s_xia_zhangyuan')) not in early_pairs
+ assert not any((pair&set(early_jin_ids)) and ({'s_liao_taizu','s_liao_taizong'}&pair) for pair in early_pairs)
+ expected_context_people={
+  's_jin_taizu':{'s_jin_taizong','s_jin_wanyanxiyin','s_liao_tianzuo'},
+  's_jin_taizong':{'s_jin_taizu','s_liao_tianzuo','s_qinzong','s_jin_xizong'},
+  's_jin_xizong':{'s_jin_taizong','s_jin_hailing','s_jin_wanyanxiyin','s_jin_zonghan'},
+  's_jin_hailing':{'s_jin_xizong','s_jin_shizong','s_jin_zhanghao','s_yuyunwen'},
+  's_jin_shizong':{'s_jin_hailing','s_jin_zhangzong','s_xiaozong','s_jin_zhanghao'},
+ }
+ assert all(set(contexts[pid]['people'])==expected_context_people[pid] for pid in early_jin_ids)
+ assert all({events[event_id]['category'] for event_id in contexts[pid]['events']}=={'政治','军事','文化','经济','社会'} for pid in early_jin_ids)
+ print('V103 PASS: the first five Jin rulers distinguish state formation, conquest, reform, migration, diplomacy and source-shaped memory')
