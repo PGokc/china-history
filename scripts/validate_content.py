@@ -1472,7 +1472,7 @@ if d['version'] >= 62:
 if d['version'] >= 63:
  complete,total=durable_coverage({'xia','shang','zhou','five_dynasties'})
  assert complete>=16 and total==21
- assert d['reviewed'] in {'2026-10-19','2026-10-28'}
+ assert d['reviewed'] in {'2026-10-19','2026-10-28','2026-10-29'}
  print('V63 PASS: early-state and Five-Dynasties contexts complete a five-pass audit without inventing evidence for the remaining gaps')
 
 if d['version'] >= 64:
@@ -2208,3 +2208,35 @@ if d['version']>=108:
  assert '不能把幕后命令视为无争议事实' in articles['han']['sections'][-1]['text']
  assert '1363年是决定性转折，1364年才是汉政权的制度终点' in articles['chenyou']['sections'][-1]['text']
  print('V108 PASS: eight Yuan-Ming transition readings connect religious mobilization, rival state institutions, maritime and salt networks, regional economies and evidence-bounded endings')
+
+if d['version']>=109:
+ profile=next(profile for profile in d['dynastyProfiles'] if profile['id']=='ming')
+ expected_sections=['ming-transition','ming-households','ming-beijing','ming-silver','ming-crisis']
+ assert [section['id'] for section in profile['sections']]==expected_sections
+ assert len(re.findall(r'[\u4e00-\u9fff]',profile['overview']))>=420
+ assert all(len(re.findall(r'[\u4e00-\u9fff]',section['text']))>=330 for section in profile['sections'])
+ required_sources={
+  '226244','226257','cabinet','v2l_ms78','v2l_ms81','v40m1_ms304','v50s_canal',
+  'v120_unesco_canal','v64_forbidden_dpm','v65_cssn_silver','v65_cssn_silver_social',
+  'v134_nopss_yuan_ming_jiangnan','v135_nmc_baochao','v135_nmc_flower_silver',
+  'v135_cssn_ming_global','v135_cssn_fiscal_society','v135_dpm_yongle_fiscal',
+ }
+ assert set(profile['sources'])==required_sources and required_sources<=sources.keys()
+ assert all(sources[source_id]['url'].startswith('https://') for source_id in required_sources)
+ corpus=profile['overview']+''.join(section['text'] for section in profile['sections'])
+ for term in ['1368年','1371年','1381—1382年','黄册','里甲','鱼鳞图册','军户','内阁','1421年','郑和','大明通行宝钞','金花银','一条鞭法','辽饷','1644年','南明','1683年']:
+  assert term in corpus,('missing Ming macro term',term)
+ for boundary in ['不是地图上全部颜色瞬间替换','账册不是人口与土地的透明照片','不能只写成和平探险','不保证每户负担下降','不能归结为一位皇帝怠政']:
+  assert boundary in corpus,('missing evidence boundary',boundary)
+ assert not re.search(r'产品|本轮|补充内容|数据缺口|开发进度|AI生成|fallback|人物页|占位|正在完善',corpus,re.I)
+ object_map={item['id']:item for item in d['objects']}
+ assert {'v135_obj_baochao','v135_obj_flower_silver'}<=object_map.keys()
+ baochao=object_map['v135_obj_baochao']; silver=object_map['v135_obj_flower_silver']
+ assert baochao['dynasties']==['ming'] and baochao['people']==['yuanzhang']
+ assert set(baochao['sources'])=={'v135_nmc_baochao','v2l_ms81','v65_cssn_silver'}
+ assert '票面写出的比价是制度主张' in baochao['body'] and '宋元' in baochao['body']
+ assert silver['dynasties']==['ming'] and set(silver['people'])=={'yijun','zhangjuzheng'}
+ assert set(silver['sources'])=={'v135_nmc_flower_silver','v2l_ms78','v65_cssn_silver_social'}
+ assert '1588' in silver['body'] and '不能代表全国各地' in silver['body']
+ assert all(person_id in people for item in (baochao,silver) for person_id in item['people'])
+ print('V109 PASS: the Ming macro guide now connects staged unification, household registration, Beijing supply, paper-to-silver fiscal change and the long 1644 transition through material evidence')

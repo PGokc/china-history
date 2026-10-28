@@ -3697,4 +3697,45 @@ final class MingJiUITests: XCTestCase {
         shot("v134-han-song-seal-material-evidence", app)
     }
 
+    @MainActor func testV135MingMacroConnectsStateHouseholdsMoneyAndLongTransition() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]
+        app.launch()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        reach(app.buttons["dynasty_ming"], in: app, attempts: 20); app.buttons["dynasty_ming"].tap()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyDetail_ming"].waitForExistence(timeout: 5))
+        let guide = app.buttons["dynastyInterpretation_ming"]
+        reach(guide, in: app, attempts: 20); guide.tap()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyInterpretationPage_ming"].waitForExistence(timeout: 5))
+        for section in ["ming-transition", "ming-households", "ming-beijing", "ming-silver", "ming-crisis"] {
+            XCTAssertTrue(app.descendants(matching: .any)["dynastyInterpretationSection_" + section].exists, section)
+        }
+        let silver = app.staticTexts["从一贯宝钞到一锭金花银"]
+        reach(silver, in: app, attempts: 30)
+        XCTAssertTrue(silver.isHittable)
+        shot("v135-ming-paper-to-silver-guide", app)
+        reach(app.buttons["资料与出处"], in: app, attempts: 30); app.buttons["资料与出处"].tap()
+        let sources = app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "source_"))
+        XCTAssertGreaterThanOrEqual(sources.count, 10)
+        let last = sources.element(boundBy: sources.count - 1)
+        reach(last, in: app, attempts: 24); app.swipeUp()
+        XCTAssertLessThanOrEqual(last.frame.maxY, app.tabBars.firstMatch.frame.minY)
+        shot("v135-ming-guide-source-footer", app)
+
+        app.terminate()
+        let searchApp = XCUIApplication()
+        searchApp.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]
+        searchApp.launch()
+        XCTAssertTrue(searchApp.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        searchApp.buttons["globalSearch"].tap()
+        let search = searchApp.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("金花银")
+        let object = searchApp.buttons["search_object_v135_obj_flower_silver"]
+        XCTAssertTrue(object.waitForExistence(timeout: 5)); object.tap()
+        XCTAssertTrue(searchApp.staticTexts["万历十六年金花银"].waitForExistence(timeout: 5))
+        XCTAssertTrue(searchApp.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不能代表全国各地")).firstMatch.exists)
+        reach(searchApp.buttons["资料与出处"], in: searchApp, attempts: 18)
+        shot("v135-flower-silver-evidence-boundary", searchApp)
+    }
+
 }
