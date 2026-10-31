@@ -3862,48 +3862,6 @@
       "audioHash": "d8a1d71ded8ccc91443d562801362ad62c1e4bb604ff094f24f7234631932564"
     },
     {
-      "articleID": "q_jinfu",
-      "sectionID": "v42q_jinfu_1",
-      "path": "qing-q_jinfu-v42q_jinfu_1-9e40b6c7cd59.mp3",
-      "textHash": "9e40b6c7cd59645cc2cd5a2077c4ef9f4cb5cb1461fa87d864e8cce5fa774df5",
-      "audioHash": "e0970cc1257cd2dc7f3e25d144e734b72e14ce022458b4dcb964dbc4b4dd6b09"
-    },
-    {
-      "articleID": "q_jinfu",
-      "sectionID": "v42q_jinfu_2",
-      "path": "qing-q_jinfu-v42q_jinfu_2-90817c01cc7f.mp3",
-      "textHash": "90817c01cc7f8c3470f108e6246ee579ce42b0b792b54be134bc9886553bdceb",
-      "audioHash": "adbefff3b209c65e074e98fc07ce3fa823c3609d87f5d44c3a3576a872539128"
-    },
-    {
-      "articleID": "q_jinfu",
-      "sectionID": "v42q_jinfu_3",
-      "path": "qing-q_jinfu-v42q_jinfu_3-54aadf02d862.mp3",
-      "textHash": "54aadf02d86268ad80749adc645122e9799d945a2596a60768065897c2321711",
-      "audioHash": "51910ec8e5a27759e678ac67f7530e91915d4c6f14c49dfbafbe60e514ea61c3"
-    },
-    {
-      "articleID": "q_chenhuang",
-      "sectionID": "v42q_chenhuang_1",
-      "path": "qing-q_chenhuang-v42q_chenhuang_1-739af4a615d6.mp3",
-      "textHash": "739af4a615d6fb455a7f14a0c1d8a930df64d87450a51deb0d063b2c375ca9c9",
-      "audioHash": "56b3530ecc7ff95ed69ce664a356dd3557646d330b104302e0b8c83cdef2821d"
-    },
-    {
-      "articleID": "q_chenhuang",
-      "sectionID": "v42q_chenhuang_2",
-      "path": "qing-q_chenhuang-v42q_chenhuang_2-6ca5ab72cadd.mp3",
-      "textHash": "6ca5ab72cadd5848f08785ac3edb44cd127268c84ed4f31880586f26a32036c5",
-      "audioHash": "aadaed4b361146f73bedf9dcba06170dd6f0699c50742d1de8731aa75b7ee4ad"
-    },
-    {
-      "articleID": "q_chenhuang",
-      "sectionID": "v42q_chenhuang_3",
-      "path": "qing-q_chenhuang-v42q_chenhuang_3-27bb71579a02.mp3",
-      "textHash": "27bb71579a023a42871011e37526e843d45c49ac7fd21d0a3e27816c79bd326e",
-      "audioHash": "eb7287b57484e1ad992d6b665661b92d01855ecebdf3f25de84e77cf87f01b7f"
-    },
-    {
       "articleID": "q_yuchenglong",
       "sectionID": "v42q_yuchenglong_1",
       "path": "qing-q_yuchenglong-v42q_yuchenglong_1-7818524d9283.mp3",

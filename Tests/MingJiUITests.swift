@@ -4563,4 +4563,44 @@ final class MingJiUITests: XCTestCase {
         shot("v155-shang-kexi-feudatory-finance", feudatory)
     }
 
+    @MainActor func testV156MiddleKangxiSeparatesBorderLogisticsAndNamesakes() throws {
+        let border = XCUIApplication()
+        border.launchArguments = ["--uitesting", "--ui-dynasty", "qing"]
+        border.launch()
+        XCTAssertTrue(border.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        border.buttons.matching(NSPredicate(format: "identifier == %@", "globalSearch")).firstMatch.tap()
+        let search = border.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("萨布素")
+        let result = border.buttons["search_person_q156_sabsu"]
+        XCTAssertTrue(result.waitForExistence(timeout: 5)); result.tap()
+        XCTAssertTrue(border.buttons["articleEntry"].waitForExistence(timeout: 5)); border.buttons["articleEntry"].tap()
+        XCTAssertTrue(border.buttons["articleContents"].waitForExistence(timeout: 5)); border.buttons["articleContents"].tap()
+        let albazin = border.buttons["两次雅克萨行动从速攻转向围困，补给比一次冲锋更重要"]
+        XCTAssertTrue(albazin.exists); albazin.tap()
+        XCTAssertTrue(border.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "马匹分地饲养、冬季藏船")).firstMatch.waitForExistence(timeout: 5))
+        openChapterSources("v156_sa3", in: border)
+        XCTAssertTrue(border.descendants(matching: .any)["source_v156_qsg280"].waitForExistence(timeout: 3))
+        border.swipeUp()
+        shot("v156-sabsu-albazin-logistics", border)
+        border.terminate()
+
+        let namesake = XCUIApplication()
+        namesake.launchArguments = ["--uitesting", "--ui-dynasty", "qing"]
+        namesake.launch()
+        XCTAssertTrue(namesake.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        namesake.buttons.matching(NSPredicate(format: "identifier == %@", "globalSearch")).firstMatch.tap()
+        let namesakeSearch = namesake.searchFields.firstMatch
+        XCTAssertTrue(namesakeSearch.waitForExistence(timeout: 5)); namesakeSearch.tap(); namesakeSearch.typeText("于成龙")
+        XCTAssertTrue(namesake.buttons["search_person_q_yuchenglong"].waitForExistence(timeout: 5))
+        let riverOfficial = namesake.buttons["search_person_q156_yuchenglong_river"]
+        XCTAssertTrue(riverOfficial.waitForExistence(timeout: 5)); riverOfficial.tap()
+        XCTAssertTrue(namesake.buttons["articleEntry"].waitForExistence(timeout: 5)); namesake.buttons["articleEntry"].tap()
+        XCTAssertTrue(namesake.buttons["articleContents"].waitForExistence(timeout: 5)); namesake.buttons["articleContents"].tap()
+        let identity = namesake.buttons["同名造成最持久的误读：字振甲的汉军河臣不是山西于成龙"]
+        XCTAssertTrue(identity.exists); identity.tap()
+        XCTAssertTrue(namesake.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "若把二人合并")).firstMatch.waitForExistence(timeout: 5))
+        namesake.swipeUp()
+        shot("v156-two-yu-chenglongs-separated", namesake)
+    }
+
 }

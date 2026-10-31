@@ -2997,3 +2997,35 @@ if d['version'] >= 129:
  assert not any(item['articleID'] in set(v155_rewritten) for item in narration['entries'])
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将',corpus,re.I)
  print('V129 PASS: twelve early-Kangxi and Zheng readings connect regency, banner land, feudatory finance, regional armies, coastal displacement, maritime trade, Taiwan administration, Indigenous land limits, Penghu and postwar reorganization with explicit evidence boundaries')
+
+if d['version'] >= 130:
+ v156_people=['q156_suoetu','q156_mingzhu','q156_sabsu','q156_feiyanggu','q156_galdan','q156_zhangpenghe','q156_liguangdi','q156_nanhuairen','q156_meiwending','q156_yuchenglong_river']
+ v156_rewritten=['q_jinfu','q_chenhuang']
+ v156_events={event['id'] for event in d['events'] if event['id'].startswith('v156_')}
+ v156_sources={source['id'] for source in d['sources'] if source['id'].startswith('v156_')}
+ assert len(v156_events)==27 and len(v156_sources)==24
+ assert set(v156_people+v156_rewritten)<=people.keys() and set(v156_people+v156_rewritten)<=articles.keys()
+ assert {events[event_id]['category'] for event_id in v156_events}=={'政治','军事','文化','经济','社会'}
+ for pid in v156_people+v156_rewritten:
+  reading=articles[pid]; ss=reading['sections']
+  assert len(ss)==5 and all(item['sources'] and item['events'] for item in ss),(pid,'incomplete middle-Kangxi five-layer reading')
+  chars=sum(len(re.findall(r'[\u4e00-\u9fff]',item['text'])) for item in ss)
+  assert chars>=500,(pid,'middle-Kangxi reading remains too short',chars)
+  assert all(set(item['sources'])<=sources.keys() and set(item['events'])<=events.keys() and set(item.get('people',[]))<=people.keys() for item in ss)
+  assert set(reading['sources'])=={source for item in ss for source in item['sources']}
+ assert all(set(events[event_id]['people'])<=people.keys() and set(events[event_id]['sources'])<=sources.keys() for event_id in v156_events)
+ assert people['q156_yuchenglong_river']['name']=='于成龙（河臣）'
+ assert '振甲' in people['q156_yuchenglong_river']['note'] and '北溟' in people['q156_yuchenglong_river']['note']
+ assert people['q_yuchenglong']['name']=='于成龙' and people['q_yuchenglong']['id']!=people['q156_yuchenglong_river']['id']
+ corpus=json.dumps([people[pid] for pid in v156_people+v156_rewritten]+[articles[pid] for pid in v156_people+v156_rewritten]+[events[event_id] for event_id in v156_events]+[events['v40q_taiwan_retention']]+[events['v155_open_seas']]+[events['qev_treaty_nerchinsk_1689']]+[events['v42q_river_plan']]+[events['v42q_river_debate']]+[events['v26_southern_tours']]+[events['v12_kangxi_tax']]+[events['v12_kangxi_dictionary']]+[events['qev_kangxi_succession_1708']]+[events['qev_yinti_west_1718']],ensure_ascii=False)
+ for term in ['台湾府','指定口岸','四海关','雅克萨','尼布楚','达斡尔','索伦','乌兰布通','多伦诺尔','昭莫多','中河','下河','皇舆全览图','数理精蕴','红票','永不加赋','南山集','第二次废太子','拉萨']:
+  assert term in corpus,('missing middle-Kangxi evidence term',term)
+ for boundary in ['不能把纸面府县写成朝廷即时控制全岛','不是无人土地等待开发','不等于现代自由贸易','不能把一次签约写成现代国境管理即时完成','不是逐项完成的司法审计','不能当完整民意调查','把康熙三征直接写成“统一新疆”','不能写成“西学一次击败中学”','不是宣布所有人头税立刻消失','不能支持“十改于”等通俗传说']:
+  assert boundary in corpus,('missing middle-Kangxi evidence boundary',boundary)
+ kangxi=next(item for item in d['reignContexts'] if item['person']=='q_kangxi')
+ assert set(v156_people)<=set(kangxi['people']) and v156_events<=set(kangxi['events'])
+ pairset={(item['from'],item['to']) for item in d['associations']}
+ assert {('q_kangxi','q156_suoetu'),('q_kangxi','q156_mingzhu'),('q_kangxi','q156_sabsu'),('q_kangxi','q156_feiyanggu'),('q_kangxi','q156_galdan'),('q_kangxi','q156_zhangpenghe'),('q_kangxi','q156_liguangdi'),('q_kangxi','q156_nanhuairen'),('q_kangxi','q156_meiwending'),('q_kangxi','q156_yuchenglong_river'),('q156_sabsu','q156_suoetu'),('q156_feiyanggu','q156_galdan'),('q_jinfu','q_chenhuang'),('q_jinfu','q156_yuchenglong_river')}<=pairset
+ assert not any(item['articleID'] in set(v156_rewritten) for item in narration['entries'])
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将',corpus,re.I)
+ print('V130 PASS: ten middle-Kangxi figures and twenty-seven events connect Taiwan government, maritime customs, Albazin and Nerchinsk, river engineering, Dzungar war, mapping, taxation, rites and succession with explicit evidence boundaries')
