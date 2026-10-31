@@ -2699,3 +2699,47 @@ if d['version'] >= 122:
  assert {'m148_yexianggao','m148_chenfeng'}<=set(wanli['sections'][5]['people'])
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|人物页|占位|正在完善|产品将',corpus,re.I)
  print('V122 PASS: nine middle-late Wanli readings connect war logistics, contested diplomacy, succession procedure, tusi forces, mineral-tax extraction, urban protest, office vacancies and evidence limits across the Ming-Korea-Japan conflict')
+
+if d['version'] >= 123:
+ v149_people=['m149_yanghao','m149_dusong','m149_liuting','m149_lirubai','m149_liyongfang','m149_xiongtingbi']
+ v149_prefix={'m149_yanghao':'yh','m149_dusong':'ds','m149_liuting':'lt','m149_lirubai':'lrb','m149_liyongfang':'lyf','m149_xiongtingbi':'xtb'}
+ v149_events={
+  'v149_qidahen_manifesto','v149_fushun_surrender','v149_fushun_relief_destroyed','v149_qinghe_fall',
+  'v149_liaoxiang_initial','v149_court_urges_attack','v149_four_routes_plan','v149_dusong_crossing',
+  'v149_jiefan_sarhu_split','v149_malin_beiziyu','v149_liuting_deep_advance','v149_false_banners',
+  'v149_korean_surrender','v149_lirubai_withdrawal','v149_sarhu_accountability','v149_xiong_defense',
+  'v149_liaodong_displacement','v149_sarhu_memory',
+ }
+ assert set(v149_people)<=people.keys() and v149_events<=events.keys()
+ assert {'v149_ms259','v149_ms239','v149_ms247','v149_ms238','v149_ms291','v149_qsg231','v149_dpm_qidahen','v149_dpm_nurhaci'}<=sources.keys()
+ assert {events[event_id]['category'] for event_id in v149_events}=={'政治','军事','文化','经济','社会'}
+ for name in ['杨镐','杜松','刘綎','李如柏','李永芳','熊廷弼']:
+  assert len([person for person in d['people'] if person['name']==name])==1,(name,'duplicate late-Wanli Liaodong person')
+ for pid in v149_people:
+  person=people[pid]; reading=articles[pid]; ss=reading['sections']
+  assert person['dynasty']=='ming' and len(set(person['sources']))>=2
+  assert len(ss)==5 and all(item['id']==f'v149_{v149_prefix[pid]}{index}' for index,item in enumerate(ss,1)),(pid,'wrong Sahu five-layer reading')
+  chars=sum(len(re.findall(r'[\u4e00-\u9fff]',item['text'])) for item in ss)
+  assert chars>=700,(pid,'Sahu reading remains too short',chars)
+  assert all(item['sources'] and item['events'] for item in ss)
+  assert all(set(item['sources'])<=sources.keys() and set(item['events'])<=events.keys() and set(item['people'])<=people.keys() for item in ss)
+  assert set(reading['sources'])=={source for item in ss for source in item['sources']}
+ assert all(set(events[event_id]['people'])<=people.keys() and set(events[event_id]['sources'])<=sources.keys() for event_id in v149_events)
+ corpus=json.dumps([people[pid] for pid in v149_people]+[articles[pid] for pid in v149_people]+[events[event_id] for event_id in v149_events]+[events['v2l_sarhu']],ensure_ascii=False)
+ for term in ['七大恨','抚顺','清河','辽饷','四路','浑河','界凡','萨尔浒','稗子峪','朝鲜军','旗帜','踩踏','流移','忠烈传']:
+  assert term in corpus,('missing late-Wanli Liaodong evidence term',term)
+ for boundary in ['不是中立调查报告','私人动机不写成定论','不能当作现场录音','不能把全败只缩成一人的性格缺陷','不能用后来的自裁反推','无法验证的反事实','不以民族性格解释']:
+  assert boundary in corpus,('missing Sahu evidence boundary',boundary)
+ pairset={(item['from'],item['to']) for item in d['associations']}
+ assert {('yijun',pid) for pid in v149_people}<=pairset
+ assert {('m149_yanghao','m149_dusong'),('m149_yanghao','m149_liuting'),('m149_yanghao','m149_xiongtingbi'),('m149_liyongfang','q_nurhaci'),('m149_lirubai','m147_lichengliang'),('m149_lirubai','m148_lirusong')}<=pairset
+ father=next(item for item in d['familyLinks'] if item['from']=='m149_lirubai' and item['to']=='m147_lichengliang')
+ assert father['kind']=='father'
+ wanli=articles['yijun']
+ linked_people={person_id for item in wanli['sections'] for person_id in item.get('people',[])}
+ linked_events={event_id for item in wanli['sections'] for event_id in item.get('events',[])}
+ assert set(v149_people)<=linked_people and v149_events|{'v2l_sarhu'}<=linked_events
+ reign=next(item for item in d['reignContexts'] if item['person']=='yijun')
+ assert set(v149_people)<=set(reign['people']) and v149_events|{'v2l_sarhu'}<=set(reign['events'])
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|人物页|占位|正在完善|产品将',corpus,re.I)
+ print('V123 PASS: six late-Wanli Liaodong readings connect the Seven Grievances, Fushun and Qinghe, Liaoxiang, four-route command, rivers and road delays, Korean allied forces, battlefield identification, displacement and contested war memory')

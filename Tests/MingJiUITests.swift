@@ -4252,4 +4252,49 @@ final class MingJiUITests: XCTestCase {
         shot("v148-tax-informants-and-urban-burden", tax)
     }
 
+    @MainActor func testV149SarhuReadingsConnectCommandTerrainAndContestedMemory() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]
+        app.launch()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        let searchButton = app.buttons.matching(NSPredicate(format: "identifier == %@", "globalSearch")).firstMatch
+        XCTAssertTrue(searchButton.waitForExistence(timeout: 5)); searchButton.tap()
+        let search = app.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("杨镐")
+        let result = app.buttons["search_person_m149_yanghao"]
+        XCTAssertTrue(result.waitForExistence(timeout: 5)); result.tap()
+        XCTAssertTrue(app.buttons["articleEntry"].waitForExistence(timeout: 5)); app.buttons["articleEntry"].tap()
+        XCTAssertTrue(app.buttons["articleContents"].waitForExistence(timeout: 5)); app.buttons["articleContents"].tap()
+        let fourRoutes = app.buttons["四路在地图上合围，实际却无法同时抵达"]
+        XCTAssertTrue(fourRoutes.exists); fourRoutes.tap()
+        XCTAssertTrue(app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "没有可靠的即时通信")).firstMatch.waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "纸面包围反而成为兵力分散")).firstMatch.exists)
+        reach(app.buttons["资料与出处"], in: app, attempts: 32); app.buttons["资料与出处"].tap()
+        let source = app.buttons["source_v149_ms259"]
+        reach(source, in: app, attempts: 8); XCTAssertTrue(source.isHittable); app.swipeUp()
+        shot("v149-sarhu-four-routes-and-command-limits", app)
+        app.terminate()
+
+        let border = XCUIApplication()
+        border.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]
+        border.launch()
+        XCTAssertTrue(border.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        let borderSearchButton = border.buttons.matching(NSPredicate(format: "identifier == %@", "globalSearch")).firstMatch
+        XCTAssertTrue(borderSearchButton.waitForExistence(timeout: 5)); borderSearchButton.tap()
+        let borderSearch = border.searchFields.firstMatch
+        XCTAssertTrue(borderSearch.waitForExistence(timeout: 5)); borderSearch.tap(); borderSearch.typeText("李永芳")
+        let borderResult = border.buttons["search_person_m149_liyongfang"]
+        XCTAssertTrue(borderResult.waitForExistence(timeout: 5)); borderResult.tap()
+        XCTAssertTrue(border.buttons["articleEntry"].waitForExistence(timeout: 5)); border.buttons["articleEntry"].tap()
+        XCTAssertTrue(border.buttons["articleContents"].waitForExistence(timeout: 5)); border.buttons["articleContents"].tap()
+        let memory = border.buttons["明清两种官修叙事分别需要‘失节’与‘识时’"]
+        XCTAssertTrue(memory.exists); memory.tap()
+        XCTAssertTrue(border.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "两种评价都服务王朝正统")).firstMatch.waitForExistence(timeout: 5))
+        XCTAssertTrue(border.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不使用‘汉奸’一词替代具体责任")).firstMatch.exists)
+        reach(border.buttons["资料与出处"], in: border, attempts: 32); border.buttons["资料与出处"].tap()
+        let borderSource = border.buttons["source_v149_qsg231"]
+        reach(borderSource, in: border, attempts: 8); XCTAssertTrue(borderSource.isHittable); border.swipeUp()
+        shot("v149-fushun-surrender-and-two-court-memories", border)
+    }
+
 }
