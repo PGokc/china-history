@@ -2419,3 +2419,31 @@ if d['version'] >= 115:
  assert all(set(events[event_id]['people'])<=people.keys() and set(events[event_id]['sources'])<=sources.keys() for event_id in v141_events)
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|人物页|占位|正在完善',corpus,re.I)
  print('V115 PASS: seven late Chenghua-Hongzhi readings connect secret appointments, palace procurement, estates, weaving, policy printing, fiscal restraint and local information with explicit evidence limits')
+
+if d['version'] >= 116:
+ v142_people=['m142_wangshu','m42_mawensheng','m142_liudaxia']
+ v142_suffix={'m142_wangshu':'wangshu','m42_mawensheng':'mawensheng','m142_liudaxia':'liudaxia'}
+ v142_events={
+  'v142_wangshu_yangzhou_relief','v142_nanzhili_white_grain','v142_hongzhi_appointments',
+  'v142_ma_grain_relief','v142_hami_campaign','v142_prince_education','v142_zhangqiu_river',
+  'v142_xuanfu_grain_market','v142_sixteen_reforms','v142_soldier_pay_clawback','v142_salt_silver_reform',
+ }
+ assert set(v142_people)<=people.keys() and v142_events<=events.keys()
+ assert {'v42m_ms182','v42m_ms83','v142_ms80'}<=sources.keys()
+ assert {events[event_id]['category'] for event_id in v142_events}=={'政治','军事','文化','经济','社会'}
+ for pid in v142_people:
+  reading=articles[pid]; ss=reading['sections']
+  assert len(ss)==5 and all(item['id']==f'v142_{v142_suffix[pid]}_s{index}' for index,item in enumerate(ss,1)),(pid,'wrong five-layer reading')
+  chars=sum(len(re.findall(r'[\u4e00-\u9fff]',item['text'])) for item in ss)
+  assert chars>=900,(pid,'Hongzhi governance reading remains too short',chars)
+  assert all(len(set(item['sources']))>=2 and item['events'] for item in ss)
+  assert all(set(item['sources'])<=sources.keys() and set(item['events'])<=events.keys() and set(item['people'])<=people.keys() for item in ss)
+  assert set(reading['sources'])=={source for item in ss for source in item['sources']}
+ corpus=json.dumps([people[pid] for pid in v142_people]+[articles[pid] for pid in v142_people]+[events[event_id] for event_id in v142_events],ensure_ascii=False)
+ for term in ['白粮','哈密','太子教育','张秋','宣府边粮','十六项','月粮、行粮','盐引纳银']:
+  assert term in corpus,('missing Hongzhi governance evidence term',term)
+ for boundary in ['不能由“不待报”推定救济没有遗漏','不能把一次军事恢复写成长期稳定','不能把成功命名“安平”写成黄河从此安定','无法证明克扣已经消失','不能用单一政策解释全部后果']:
+  assert boundary in corpus,('missing Hongzhi governance evidence boundary',boundary)
+ assert all(set(events[event_id]['people'])<=people.keys() and set(events[event_id]['sources'])<=sources.keys() for event_id in v142_events)
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|人物页|占位|正在完善',corpus,re.I)
+ print('V116 PASS: Wang Shu, Ma Wensheng and Liu Daxia connect appointments, relief, frontier markets, river engineering, soldier pay and salt finance without turning Hongzhi into a simple virtuous-ministers narrative')

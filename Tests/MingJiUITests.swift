@@ -3970,4 +3970,42 @@ final class MingJiUITests: XCTestCase {
         shot("v141-qiujun-policy-execution-boundary", qiu)
     }
 
+    @MainActor func testV142HongzhiGovernanceConnectsAppointmentsRiverAndSoldierPay() throws {
+        let wang = XCUIApplication()
+        wang.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]
+        wang.launch()
+        XCTAssertTrue(wang.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        let wangSearchButton = wang.buttons.matching(NSPredicate(format: "identifier == %@", "globalSearch")).firstMatch
+        XCTAssertTrue(wangSearchButton.waitForExistence(timeout: 5)); wangSearchButton.tap()
+        let wangSearch = wang.searchFields.firstMatch
+        XCTAssertTrue(wangSearch.waitForExistence(timeout: 5)); wangSearch.tap(); wangSearch.typeText("王恕")
+        let wangResult = wang.buttons["search_person_m142_wangshu"]
+        XCTAssertTrue(wangResult.waitForExistence(timeout: 5)); wangResult.tap()
+        XCTAssertTrue(wang.buttons["articleEntry"].waitForExistence(timeout: 5)); wang.buttons["articleEntry"].tap()
+        XCTAssertTrue(wang.buttons["articleContents"].waitForExistence(timeout: 5)); wang.buttons["articleContents"].tap()
+        XCTAssertTrue(wang.buttons["白粮、上供与隐藏在正额外的成本"].exists)
+        wang.buttons["先发赈粮，再补行政程序"].tap()
+        XCTAssertTrue(wang.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不能推定所有粮食都准确到户")).firstMatch.waitForExistence(timeout: 5))
+        shot("v142-wangshu-emergency-relief-boundary", wang)
+        wang.terminate()
+
+        let liu = XCUIApplication()
+        liu.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]
+        liu.launch()
+        XCTAssertTrue(liu.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        let liuSearchButton = liu.buttons.matching(NSPredicate(format: "identifier == %@", "globalSearch")).firstMatch
+        XCTAssertTrue(liuSearchButton.waitForExistence(timeout: 5)); liuSearchButton.tap()
+        let liuSearch = liu.searchFields.firstMatch
+        XCTAssertTrue(liuSearch.waitForExistence(timeout: 5)); liuSearch.tap(); liuSearch.typeText("刘大夏")
+        let liuResult = liu.buttons["search_person_m142_liudaxia"]
+        XCTAssertTrue(liuResult.waitForExistence(timeout: 5)); liuResult.tap()
+        XCTAssertTrue(liu.buttons["articleEntry"].waitForExistence(timeout: 5)); liu.buttons["articleEntry"].tap()
+        XCTAssertTrue(liu.buttons["articleContents"].waitForExistence(timeout: 5)); liu.buttons["articleContents"].tap()
+        XCTAssertTrue(liu.buttons["张秋治河先处理水势"].exists)
+        liu.buttons["军士贫困来自制度之外的侵扣"].tap()
+        XCTAssertTrue(liu.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "账面待遇与实得收入的差距")).firstMatch.waitForExistence(timeout: 5))
+        reach(liu.buttons["资料与出处"], in: liu, attempts: 26)
+        shot("v142-liudaxia-soldier-pay-and-footer", liu)
+    }
+
 }
