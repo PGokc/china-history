@@ -4297,4 +4297,49 @@ final class MingJiUITests: XCTestCase {
         shot("v149-fushun-surrender-and-two-court-memories", border)
     }
 
+    @MainActor func testV150LiaoshenGuangningConnectsCommandRefugeesAndSeaSupply() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]
+        app.launch()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        let searchButton = app.buttons.matching(NSPredicate(format: "identifier == %@", "globalSearch")).firstMatch
+        XCTAssertTrue(searchButton.waitForExistence(timeout: 5)); searchButton.tap()
+        let search = app.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("袁应泰")
+        let result = app.buttons["search_person_m150_yuanyingtai"]
+        XCTAssertTrue(result.waitForExistence(timeout: 5)); result.tap()
+        XCTAssertTrue(app.buttons["articleEntry"].waitForExistence(timeout: 5)); app.buttons["articleEntry"].tap()
+        XCTAssertTrue(app.buttons["articleContents"].waitForExistence(timeout: 5)); app.buttons["articleContents"].tap()
+        let relief = app.buttons["招纳饥困蒙古人群，既是救济也是边防实验"]
+        XCTAssertTrue(relief.exists); relief.tap()
+        XCTAssertTrue(app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不能把来投群体整体写成预谋者")).firstMatch.waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "没有完成制度化的高风险选择")).firstMatch.exists)
+        reach(app.buttons["资料与出处"], in: app, attempts: 32); app.buttons["资料与出处"].tap()
+        let source = app.buttons["source_v149_ms259"]
+        reach(source, in: app, attempts: 8); XCTAssertTrue(source.isHittable); app.swipeUp()
+        shot("v150-liaoyang-relief-security-and-source-boundary", app)
+        app.terminate()
+
+        let sea = XCUIApplication()
+        sea.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]
+        sea.launch()
+        XCTAssertTrue(sea.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        let seaSearchButton = sea.buttons.matching(NSPredicate(format: "identifier == %@", "globalSearch")).firstMatch
+        XCTAssertTrue(seaSearchButton.waitForExistence(timeout: 5)); seaSearchButton.tap()
+        let seaSearch = sea.searchFields.firstMatch
+        XCTAssertTrue(seaSearch.waitForExistence(timeout: 5)); seaSearch.tap(); seaSearch.typeText("毛文龙")
+        let seaResult = sea.buttons["search_person_m150_maowenlong"]
+        XCTAssertTrue(seaResult.waitForExistence(timeout: 5)); seaResult.tap()
+        XCTAssertTrue(sea.buttons["articleEntry"].waitForExistence(timeout: 5)); sea.buttons["articleEntry"].tap()
+        XCTAssertTrue(sea.buttons["articleContents"].waitForExistence(timeout: 5)); sea.buttons["articleContents"].tap()
+        let island = sea.buttons["皮岛不是孤立军营，而是由流民、军士、商运组成的岛屿社会"]
+        XCTAssertTrue(island.exists); island.tap()
+        XCTAssertTrue(sea.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "把流民一概算作战兵，又会夸大兵力")).firstMatch.waitForExistence(timeout: 5))
+        XCTAssertTrue(sea.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "难民安置和跨海财政")).firstMatch.exists)
+        reach(sea.buttons["资料与出处"], in: sea, attempts: 32); sea.buttons["资料与出处"].tap()
+        let seaSource = sea.buttons["source_v150_ms22"]
+        reach(seaSource, in: sea, attempts: 8); XCTAssertTrue(seaSource.isHittable); sea.swipeUp()
+        shot("v150-dongjiang-refugees-and-sea-supply", sea)
+    }
+
 }

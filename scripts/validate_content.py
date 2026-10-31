@@ -2743,3 +2743,44 @@ if d['version'] >= 123:
  assert set(v149_people)<=set(reign['people']) and v149_events|{'v2l_sarhu'}<=set(reign['events'])
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|人物页|占位|正在完善|产品将',corpus,re.I)
  print('V123 PASS: six late-Wanli Liaodong readings connect the Seven Grievances, Fushun and Qinghe, Liaoxiang, four-route command, rivers and road delays, Korean allied forces, battlefield identification, displacement and contested war memory')
+
+if d['version'] >= 124:
+ v150_people=['m150_yuanyingtai','m150_wanghuazhen','m150_maowenlong','m150_zhangquan','m150_heshixian']
+ v150_prefix={'m150_yuanyingtai':'ye','m150_wanghuazhen':'wh','m150_maowenlong':'mw','m150_zhangquan':'zq','m150_heshixian':'hs'}
+ v150_events={
+  'v150_xiong_removed','v150_mongol_refugees','v150_shenyang_battle','v150_shenyang_fall','v150_liaoyang_water',
+  'v150_liaoyang_fall','v150_liaodong_exodus','v150_three_routes','v150_zhenjiang','v150_zhenjiang_reprisals',
+  'v150_dongjiang_supply','v150_command_split','v150_mongol_expectation','v150_xiping','v150_pingyang_bridge',
+  'v150_guangning_panic','v150_refugees_pass','v150_trial_memory','v150_liaoyang_memory',
+ }
+ assert set(v150_people)<=people.keys() and v150_events<=events.keys()
+ assert {'v149_ms259','v149_ms291','v150_ms22','v150_ms271'}<=sources.keys()
+ assert {events[event_id]['category'] for event_id in v150_events}=={'政治','军事','文化','经济','社会'}
+ for name in ['袁应泰','王化贞','毛文龙','张铨','贺世贤']:
+  assert len([person for person in d['people'] if person['name']==name])==1,(name,'duplicate Tianqi Liaodong person')
+ for pid in v150_people:
+  person=people[pid]; reading=articles[pid]; ss=reading['sections']
+  assert person['dynasty']=='ming' and len(set(person['sources']))>=2
+  assert len(ss)==5 and all(item['id']==f'v150_{v150_prefix[pid]}{index}' for index,item in enumerate(ss,1)),(pid,'wrong Tianqi five-layer reading')
+  chars=sum(len(re.findall(r'[\u4e00-\u9fff]',item['text'])) for item in ss)
+  assert chars>=700,(pid,'Tianqi Liaodong reading remains too short',chars)
+  assert all(item['sources'] and item['events'] for item in ss)
+  assert all(set(item['sources'])<=sources.keys() and set(item['events'])<=events.keys() and set(item['people'])<=people.keys() for item in ss)
+  assert set(reading['sources'])=={source for item in ss for source in item['sources']}
+ assert all(set(events[event_id]['people'])<=people.keys() and set(events[event_id]['sources'])<=sources.keys() for event_id in v150_events)
+ corpus=json.dumps([people[pid] for pid in v150_people]+[articles[pid] for pid in v150_people]+[events[event_id] for event_id in v150_events]+[events['v2l_liaoyang']],ensure_ascii=False)
+ for term in ['沈阳','辽阳','引水注濠','广宁','西平堡','平阳桥','经抚','蒙古援兵','李永芳','镇江','皮岛','登莱','朝鲜','辽东流民','山海关']:
+  assert term in corpus,('missing Tianqi Liaodong evidence term',term)
+ for boundary in ['不能把来投群体整体写成预谋者','不能按现代兵力统计接受','不能只用‘怯懦’解释普通人的奔逃','不能整包当作已判明事实','不能把传记中的性格词直接当成唯一因果','不能只从一位总兵的性情寻找答案']:
+  assert boundary in corpus,('missing Tianqi Liaodong evidence boundary',boundary)
+ pairset={(item['from'],item['to']) for item in d['associations']}
+ assert {('youxiao',pid) for pid in v150_people}<=pairset
+ assert {('m149_xiongtingbi','m150_wanghuazhen'),('m149_xiongtingbi','m150_maowenlong'),('m150_yuanyingtai','m150_zhangquan')}<=pairset
+ tianqi=articles['youxiao']
+ linked_people={person_id for item in tianqi['sections'] for person_id in item.get('people',[])}
+ linked_events={event_id for item in tianqi['sections'] for event_id in item.get('events',[])}
+ assert set(v150_people)<=linked_people and v150_events<=linked_events
+ reign=next(item for item in d['reignContexts'] if item['person']=='youxiao')
+ assert set(v150_people)<=set(reign['people']) and v150_events|{'v2l_liaoyang'}<=set(reign['events'])
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|人物页|占位|正在完善|产品将',corpus,re.I)
+ print('V124 PASS: five Tianqi-era Liaodong readings connect Shenyang and Liaoyang defense, divided command, unverified allies, Guangning collapse, refugee routes, Dongjiang sea supply, civilian costs and politicized war memory')
