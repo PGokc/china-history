@@ -4525,4 +4525,42 @@ final class MingJiUITests: XCTestCase {
         shot("v154-li-dingguo-victory-and-evidence-boundary", reading)
     }
 
+    @MainActor func testV155EarlyKangxiConnectsFeudatoriesMaritimeTradeAndTaiwan() throws {
+        let maritime = XCUIApplication()
+        maritime.launchArguments = ["--uitesting", "--ui-dynasty", "qing"]
+        maritime.launch()
+        XCTAssertTrue(maritime.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        maritime.buttons.matching(NSPredicate(format: "identifier == %@", "globalSearch")).firstMatch.tap()
+        let search = maritime.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("郑经")
+        let result = maritime.buttons["search_person_m155_zhengjing"]
+        XCTAssertTrue(result.waitForExistence(timeout: 5)); result.tap()
+        XCTAssertTrue(maritime.buttons["articleEntry"].waitForExistence(timeout: 5)); maritime.buttons["articleEntry"].tap()
+        XCTAssertTrue(maritime.buttons["articleContents"].waitForExistence(timeout: 5)); maritime.buttons["articleContents"].tap()
+        let trade = maritime.buttons["贸易、糖鹿皮与海外银铜维持了被禁海包围的财政"]
+        XCTAssertTrue(trade.exists); trade.tap()
+        XCTAssertTrue(maritime.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "马尼拉海关")).firstMatch.waitForExistence(timeout: 5))
+        openChapterSources("v155_zj3", in: maritime)
+        XCTAssertTrue(maritime.descendants(matching: .any)["source_v155_tw_trade"].waitForExistence(timeout: 3))
+        maritime.swipeUp()
+        shot("v155-zheng-jing-maritime-trade", maritime)
+        maritime.terminate()
+
+        let feudatory = XCUIApplication()
+        feudatory.launchArguments = ["--uitesting", "--ui-dynasty", "qing"]
+        feudatory.launch()
+        XCTAssertTrue(feudatory.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        feudatory.buttons.matching(NSPredicate(format: "identifier == %@", "globalSearch")).firstMatch.tap()
+        let feudatorySearch = feudatory.searchFields.firstMatch
+        XCTAssertTrue(feudatorySearch.waitForExistence(timeout: 5)); feudatorySearch.tap(); feudatorySearch.typeText("尚可喜")
+        let feudatoryResult = feudatory.buttons["search_person_q_shangkexi"]
+        XCTAssertTrue(feudatoryResult.waitForExistence(timeout: 5)); feudatoryResult.tap()
+        XCTAssertTrue(feudatory.buttons["articleEntry"].waitForExistence(timeout: 5)); feudatory.buttons["articleEntry"].tap()
+        XCTAssertTrue(feudatory.buttons["articleContents"].waitForExistence(timeout: 5)); feudatory.buttons["articleContents"].tap()
+        let finance = feudatory.buttons["平南藩拥有军队、税目和地方影响，不只是一个荣誉爵位"]
+        XCTAssertTrue(finance.exists); finance.tap()
+        XCTAssertTrue(feudatory.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "盐埠、渡税、市舶")).firstMatch.waitForExistence(timeout: 5))
+        shot("v155-shang-kexi-feudatory-finance", feudatory)
+    }
+
 }

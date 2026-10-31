@@ -2967,3 +2967,33 @@ if d['version'] >= 128:
  assert {('m154_hongguang','m154_shikefa'),('m154_hongguang','q_dodo'),('m154_longwu','m154_luwang'),('m154_longwu','m154_shaowu'),('m154_longwu','m_zhengchenggong'),('m154_shaowu','m154_yongli'),('m154_yongli','m154_qushisi'),('m154_yongli','m154_hetengjiao'),('m154_yongli','m154_lidingguo'),('m154_yongli','q_wusangui'),('m154_luwang','m_zhengchenggong')}<=pairset
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将',corpus,re.I)
  print('V128 PASS: nine Ming-Qing transition readings and four grouped Southern Ming succession rows preserve overlapping claims, regional armies, maritime and southwest logistics, ordinary displacement, phased hair policy, institutional continuity and source-position limits')
+
+if d['version'] >= 129:
+ v155_people=['q_shangkexi','q_shangzhixin','q_gengjingzhong','q_yaoqisheng','q_yuele','m155_zhengjing','m155_chenyonghua','m155_liuguoxuan','m155_zhengkeshhuang']
+ v155_rewritten=['q_oboi','q_wusangui','q_shilang']
+ v155_events={event['id'] for event in d['events'] if event['id'].startswith('v155_')}
+ v155_sources={source['id'] for source in d['sources'] if source['id'].startswith('v155_')}
+ assert len(v155_events)==34 and len(v155_sources)==16
+ assert set(v155_people+v155_rewritten)<=people.keys() and set(v155_people+v155_rewritten)<=articles.keys()
+ assert {events[event_id]['category'] for event_id in v155_events}=={'政治','军事','文化','经济','社会'}
+ for pid in v155_people+v155_rewritten:
+  reading=articles[pid]; ss=reading['sections']
+  assert len(ss)==5 and all(item['sources'] and item['events'] for item in ss),(pid,'incomplete five-layer reading')
+  chars=sum(len(re.findall(r'[\u4e00-\u9fff]',item['text'])) for item in ss)
+  assert chars>=(650 if pid in v155_rewritten else 500),(pid,'early Kangxi reading remains too short',chars)
+  assert all(set(item['sources'])<=sources.keys() and set(item['events'])<=events.keys() and set(item['people'])<=people.keys() for item in ss)
+  assert set(reading['sources'])=={source for item in ss for source in item['sources']}
+ assert all(set(events[event_id]['people'])<=people.keys() and set(events[event_id]['sources'])<=sources.keys() for event_id in v155_events)
+ corpus=json.dumps([people[pid] for pid in v155_people+v155_rewritten]+[articles[pid] for pid in v155_people+v155_rewritten]+[events[event_id] for event_id in v155_events]+[events['qev_oboi_removed_1669']]+[events['qev_taiwan_1683']]+[events['v40q_four_regents']]+[events['v40q_taiwan_retention']],ensure_ascii=False)
+ for term in ['四辅臣','换地','苏克萨哈','迁界','禁海','东宁','军屯','孔庙','马尼拉','请撤','裕民通宝','仙霞关','绿营','红衣炮','岳州','厦门','金门','澎湖','弃留']:
+  assert term in corpus,('missing early Kangxi evidence term',term)
+ for boundary in ['不能笼统等同整个清代“闭关”','不能把“开垦”只写成无人荒地开发','不能全部当现场记录','不是现代法治胜利','不能合并成现代统计','不能直接当现代统计']:
+  assert boundary in corpus,('missing early Kangxi evidence boundary',boundary)
+ assert '把“收复”或“征服”单独作为标题会预设立场' in articles['q_shilang']['sections'][3]['text']
+ kangxi=next(item for item in d['reignContexts'] if item['person']=='q_kangxi')
+ assert set(v155_people+v155_rewritten)<=set(kangxi['people']) and v155_events<=set(kangxi['events'])
+ pairset={(item['from'],item['to']) for item in d['associations']}
+ assert {('q_kangxi','q_shangkexi'),('q_kangxi','q_shangzhixin'),('q_kangxi','q_gengjingzhong'),('q_kangxi','q_yaoqisheng'),('q_kangxi','q_yuele'),('q_kangxi','m155_zhengjing'),('q_kangxi','m155_chenyonghua'),('q_kangxi','m155_liuguoxuan'),('q_kangxi','m155_zhengkeshhuang'),('q_yaoqisheng','q_shilang'),('q_gengjingzhong','m155_zhengjing'),('m155_zhengjing','m155_chenyonghua'),('m155_zhengjing','m155_liuguoxuan'),('m155_zhengkeshhuang','q_shilang')}<=pairset
+ assert not any(item['articleID'] in set(v155_rewritten) for item in narration['entries'])
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将',corpus,re.I)
+ print('V129 PASS: twelve early-Kangxi and Zheng readings connect regency, banner land, feudatory finance, regional armies, coastal displacement, maritime trade, Taiwan administration, Indigenous land limits, Penghu and postwar reorganization with explicit evidence boundaries')
