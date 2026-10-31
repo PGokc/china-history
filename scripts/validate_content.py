@@ -2306,3 +2306,36 @@ if d['version']>=111:
  assert required_pairs<=association_pairs
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|人物页|占位|正在完善',corpus,re.I)
  print('V111 PASS: seven Jianwen-Yongle readings connect military records, succession, compilation labor, fiscal and water policy, voyage logistics and political violence with explicit source boundaries')
+
+if d['version']>=112:
+ renxuan_people=['m40_yangshiqi','m40_yangrong','m40_yangpu','m138_jianyi','m138_zhangfu','m40_zhouchen','m138_kuangzhong']
+ suffix={'m40_yangshiqi':'yangshiqi','m40_yangrong':'yangrong','m40_yangpu':'yangpu','m138_jianyi':'jianyi','m138_zhangfu':'zhangfu','m40_zhouchen':'zhouchen','m138_kuangzhong':'kuang'}
+ required_events={
+  'v138_east_palace_counsel','v138_hongxi_burden','v138_real_records',
+  'v138_jiaozhi_withdrawal','v138_han_prince_counsel','v138_jiangnan_ledgers',
+  'v138_jinong_warehouse','v138_suzhou_prefect','v138_tumu_old_guard',
+ }
+ assert required_events<=events.keys()
+ assert {events[event_id]['category'] for event_id in required_events}=={'政治','军事','文化','经济','社会'}
+ assert all(set(events[event_id]['people'])<=people.keys() and set(events[event_id]['sources'])<=sources.keys() for event_id in required_events)
+ assert {'v40m1_ms148','v40m1_ms149','v40m1_ms153','v138_ms154','v138_ms161'}<=sources.keys()
+ for pid in renxuan_people:
+  person=people[pid]; reading=articles[pid]; ss=reading['sections']
+  assert person['dynasty']=='ming' and len(person['sources'])>=2
+  assert len(ss)==5 and all(item['id']==f'v138_{suffix[pid]}_s{index}' for index,item in enumerate(ss,1)),(pid,'wrong five-layer reading')
+  chars=sum(len(re.findall(r'[\u4e00-\u9fff]',item['text'])) for item in ss)
+  assert chars>=850,(pid,'Renxuan reading remains too short',chars)
+  assert all(len(set(item['sources']))>=2 and set(item['sources'])<=sources.keys() for item in ss)
+  assert all(item['events'] and set(item['events'])<=events.keys() for item in ss)
+  assert all(set(item['people'])<=people.keys() for item in ss)
+  assert set(reading['sources'])=={source for item in ss for source in item['sources']}
+ corpus=json.dumps([people[pid] for pid in renxuan_people]+[articles[pid] for pid in renxuan_people]+[events[event_id] for event_id in required_events],ensure_ascii=False)
+ for term in ['八十万军队','交阯','弘文阁','太皇太后','八十万斤','铁斛','拨运簿','纲运簿','济农仓','军籍','土木之变']:
+  assert term in corpus,('missing Renxuan evidence term',term)
+ for boundary in ['不能直接当成精确统计','不能把即时处死包装成高效治理','没有建立能在他们离世后自动运转','不是只用贫寒名臣的传奇','不能假定只要让老将发言就必然获胜']:
+  assert boundary in corpus,('missing Renxuan evidence boundary',boundary)
+ association_pairs={(item['from'],item['to']) for item in d['associations']}
+ required_pairs={('m40_yangshiqi','m40_yangrong'),('m40_yangshiqi','m40_yangpu'),('m138_jianyi','m40_xiayuanji'),('m138_zhangfu','m40_yangshiqi'),('m40_yangrong','m40_zhouchen'),('m40_zhouchen','m138_kuangzhong'),('m40_yangshiqi','m138_kuangzhong')}
+ assert required_pairs<=association_pairs
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|人物页|占位|正在完善',corpus,re.I)
+ print('V112 PASS: seven Renxuan-era readings connect east-palace government, historical compilation, Jiaozhi withdrawal, Jiangnan tax logistics, local justice and the limits of informal regency')

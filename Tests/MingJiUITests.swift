@@ -3822,4 +3822,49 @@ final class MingJiUITests: XCTestCase {
         shot("v137-zhenghe-conflict-boundary", zheng)
     }
 
+    @MainActor func testV138RenxuanReadingsConnectLocalGovernmentAndMilitaryLimits() throws {
+        let kuang = XCUIApplication()
+        kuang.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]
+        kuang.launch()
+        XCTAssertTrue(kuang.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        kuang.buttons["globalSearch"].tap()
+        let kuangSearch = kuang.searchFields.firstMatch
+        XCTAssertTrue(kuangSearch.waitForExistence(timeout: 5)); kuangSearch.tap(); kuangSearch.typeText("况钟")
+        let kuangResult = kuang.buttons["search_person_m138_kuangzhong"]
+        XCTAssertTrue(kuangResult.waitForExistence(timeout: 5)); kuangResult.tap()
+        XCTAssertTrue(kuang.buttons["articleEntry"].waitForExistence(timeout: 5)); kuang.buttons["articleEntry"].tap()
+        XCTAssertTrue(kuang.buttons["articleContents"].waitForExistence(timeout: 5)); kuang.buttons["articleContents"].tap()
+        for chapter in ["从吏员出身到治理大府", "严惩胥吏不等于现代法治", "军籍和田赋都要回到具体家庭", "同周忱把减赋写进账本", "百姓请留背后是长期任职的稀缺"] {
+            XCTAssertTrue(kuang.buttons[chapter].exists, chapter)
+        }
+        kuang.buttons["严惩胥吏不等于现代法治"].tap()
+        XCTAssertTrue(kuang.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不能把即时处死包装成高效治理")).firstMatch.waitForExistence(timeout: 5))
+        shot("v138-kuangzhong-justice-boundary", kuang)
+        reach(kuang.buttons["资料与出处"], in: kuang, attempts: 30); kuang.buttons["资料与出处"].tap()
+        let kuangSources = kuang.buttons.matching(NSPredicate(format: "identifier BEGINSWITH %@", "source_"))
+        XCTAssertGreaterThanOrEqual(kuangSources.count, 2)
+        let kuangLast = kuangSources.element(boundBy: kuangSources.count - 1)
+        reach(kuangLast, in: kuang, attempts: 20); kuang.swipeUp()
+        XCTAssertLessThanOrEqual(kuangLast.frame.maxY, kuang.tabBars.firstMatch.frame.minY)
+        shot("v138-kuangzhong-source-footer", kuang)
+        kuang.terminate()
+
+        let zhang = XCUIApplication()
+        zhang.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]
+        zhang.launch()
+        XCTAssertTrue(zhang.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        zhang.buttons["globalSearch"].tap()
+        let zhangSearch = zhang.searchFields.firstMatch
+        XCTAssertTrue(zhangSearch.waitForExistence(timeout: 5)); zhangSearch.tap(); zhangSearch.typeText("张辅")
+        let zhangResult = zhang.buttons["search_person_m138_zhangfu"]
+        XCTAssertTrue(zhangResult.waitForExistence(timeout: 5)); zhangResult.tap()
+        XCTAssertTrue(zhang.buttons["articleEntry"].waitForExistence(timeout: 5)); zhang.buttons["articleEntry"].tap()
+        XCTAssertTrue(zhang.buttons["articleContents"].waitForExistence(timeout: 5)); zhang.buttons["articleContents"].tap()
+        XCTAssertTrue(zhang.buttons["进入交阯后的战果数字需要降温"].exists)
+        XCTAssertTrue(zhang.buttons["随军并不等于能够指挥"].exists)
+        zhang.buttons["随军并不等于能够指挥"].tap()
+        XCTAssertTrue(zhang.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不能假定只要让老将发言就必然获胜")).firstMatch.waitForExistence(timeout: 5))
+        shot("v138-zhangfu-command-boundary", zhang)
+    }
+
 }
