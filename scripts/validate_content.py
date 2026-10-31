@@ -1472,7 +1472,7 @@ if d['version'] >= 62:
 if d['version'] >= 63:
  complete,total=durable_coverage({'xia','shang','zhou','five_dynasties'})
  assert complete>=16 and total==21
- assert d['reviewed'] in {'2026-10-19','2026-10-28','2026-10-29'}
+ assert d['reviewed'] in {'2026-10-19','2026-10-28','2026-10-29','2026-10-31'}
  print('V63 PASS: early-state and Five-Dynasties contexts complete a five-pass audit without inventing evidence for the remaining gaps')
 
 if d['version'] >= 64:
@@ -2339,3 +2339,21 @@ if d['version']>=112:
  assert required_pairs<=association_pairs
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|人物页|占位|正在完善',corpus,re.I)
  print('V112 PASS: seven Renxuan-era readings connect east-palace government, historical compilation, Jiaozhi withdrawal, Jiangnan tax logistics, local justice and the limits of informal regency')
+def validate_v113(data):
+    assert data["version"] >= 113
+    article_map = {item["person"]: item for item in data["articles"]}
+    for person_id in ["yuqian", "wangzhen", "esen"]:
+        article = article_map[person_id]
+        assert len(article["sections"]) >= 5
+        assert sum(len(section["text"]) for section in article["sections"]) >= 900
+    event_map = {item["id"]: item for item in data["events"]}
+    ids = ["v139_tongzhou_grain", "v139_city_residents", "v139_battlefield_burials", "v139_jingtai_relief", "v139_ten_battalions", "v139_restoration_rewards"]
+    assert all(event_id in event_map for event_id in ids)
+    assert {event_map[event_id]["category"] for event_id in ids} == {"政治", "军事", "文化", "经济", "社会"}
+    joined = "".join(event_map[event_id]["body"] + event_map[event_id]["impact"] for event_id in ids)
+    for phrase in ["普通人", "不把本纪记载当作现代统计", "英宗最终裁决的责任", "不是少数名臣的独角戏"]:
+        assert phrase in joined
+    print("V113 PASS: the Tumu-Jingtai-restoration layer connects grain logistics, residents, battlefield burial, relief, army rebuilding and political responsibility")
+
+if d['version'] >= 113:
+ validate_v113(d)

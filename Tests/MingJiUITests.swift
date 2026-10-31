@@ -1,6 +1,31 @@
 import XCTest
 
 final class MingJiUITests: XCTestCase {
+    func testV139TumuJingtaiReadingsExposeLogisticsAndResponsibility() throws {
+        let app = XCUIApplication()
+        app.launchArguments += ["-ui-testing"]
+        app.launch()
+
+        let search = app.buttons.matching(NSPredicate(format: "identifier == %@", "globalSearch")).firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 8))
+        search.tap()
+        let field = app.searchFields.firstMatch
+        XCTAssertTrue(field.waitForExistence(timeout: 5))
+        field.tap()
+        field.typeText("于谦")
+        let result = app.staticTexts["于谦"].firstMatch
+        XCTAssertTrue(result.waitForExistence(timeout: 6))
+        result.tap()
+        let longRead = app.staticTexts["生平长读"]
+        XCTAssertTrue(longRead.waitForExistence(timeout: 8))
+        longRead.tap()
+        let evidence = app.staticTexts.matching(NSPredicate(format: "label CONTAINS %@", "地方赈务并不是北京保卫的序章装饰")).firstMatch
+        XCTAssertTrue(evidence.waitForExistence(timeout: 8))
+        let attachment = XCTAttachment(screenshot: app.screenshot())
+        attachment.name = "v139-yuqian-logistics"
+        attachment.lifetime = .keepAlways
+        add(attachment)
+    }
     @MainActor func launch(_ large: Bool = false, enterFamily: Bool = true) -> XCUIApplication {
         let app = XCUIApplication(); app.launchArguments = ["--uitesting"]
         if large { app.launchArguments += ["-UIPreferredContentSizeCategoryName", "UICTContentSizeCategoryAccessibilityXXXL"] }
