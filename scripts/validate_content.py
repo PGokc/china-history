@@ -2563,3 +2563,44 @@ if d['version'] >= 119:
  assert {'m145_lichunfang','m145_chenyiqin','m41_wangchonggu','m145_fangfengshi','m145_bahannaji','m144_altan'}<=set(reign['people'])
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|人物页|占位|正在完善|产品将',corpus,re.I)
  print('V119 PASS: eight Longqing readings connect accession cleanup, palace finance, prince education, cabinet competition, Jizhen organization, Bahan Naji diplomacy, tribute-market rules and border livelihoods with explicit evidence limits')
+
+if d['version'] >= 120:
+ v146_people=['m146_zhuwan','m146_zhangjing','m146_zhaowenhua','m41_huzongxian','m146_wangzhi_mariner','m146_xuhai','m146_tangshunzhi','m41_yudayou','m40_qijiguang']
+ v146_prefix={'m146_zhuwan':'zw','m146_zhangjing':'zj','m146_zhaowenhua':'zwh','m41_huzongxian':'hz','m146_wangzhi_mariner':'wz','m146_xuhai':'xh','m146_tangshunzhi':'ts','m41_yudayou':'ydy','m40_qijiguang':'qjg'}
+ v146_events={
+  'v146_ningbo_incident','v146_trade_credit_network','v146_zhuwan_command','v146_zoumaxi_execution',
+  'v146_1553_coastal_crisis','v146_interregional_troops','v146_wangjiangjing_purge',
+  'v146_xuhai_division','v146_wangzhi_return','v146_cengang_transfer','v146_maritime_interception',
+  'v146_yiwu_recruitment','v146_training_knowledge','v146_xinghua_occupation',
+  'v146_pinghai_recovery','v146_five_water_forts','v146_month_port_permits','v146_coastal_livelihoods',
+ }
+ assert set(v146_people)<=people.keys() and v146_events<=events.keys()
+ assert {'v146_ms205','v146_ms212','v146_ms222','v146_ms322','v146_ms81','v146_ms91','v146_scsio_month_port'}<=sources.keys()
+ assert {events[event_id]['category'] for event_id in v146_events}=={'政治','军事','文化','经济','社会'}
+ assert len([person for person in d['people'] if person['name']=='王直'])==1
+ assert len([person for person in d['people'] if person['name']=='汪直'])==1
+ for pid in v146_people:
+  person=people[pid]; reading=articles[pid]; ss=reading['sections']
+  assert person['dynasty']=='ming' and len(set(person['sources']))>=3
+  assert len(ss)==5 and all(item['id']==f'v146_{v146_prefix[pid]}{index}' for index,item in enumerate(ss,1)),(pid,'wrong southeast-coast five-layer reading')
+  chars=sum(len(re.findall(r'[\u4e00-\u9fff]',item['text'])) for item in ss)
+  assert chars>=800,(pid,'southeast-coast reading remains too short',chars)
+  assert all(len(set(item['sources']))>=1 and item['events'] for item in ss)
+  assert all(set(item['sources'])<=sources.keys() and set(item['events'])<=events.keys() and set(item['people'])<=people.keys() for item in ss)
+  assert set(reading['sources'])=={source for item in ss for source in item['sources']}
+ assert all(set(events[event_id]['people'])<=people.keys() and set(events[event_id]['sources'])<=sources.keys() for event_id in v146_events)
+ corpus=json.dumps([people[pid] for pid in v146_people]+[articles[pid] for pid in v146_people]+[events[event_id] for event_id in v146_events]+[events['v2l_sea']],ensure_ascii=False)
+ for term in ['宁波争贡','走马溪','王江泾','田州','招抚承诺','岑港','义乌募兵','兴化府','五水寨','船引','引税','对日贸易仍被禁止']:
+  assert term in corpus,('missing southeast-coast evidence term',term)
+ for boundary in ['不能把被杀者一概写成无辜商人','不把“倭寇”自动翻译成一个民族','无法统计合法、灰色和暴力交易各占多少','不能替相关女性编造情感','无法据此推算精确人口损失','非全国全面解禁']:
+  assert boundary in corpus,('missing southeast-coast evidence boundary',boundary)
+ pairset={(item['from'],item['to']) for item in d['associations']}
+ assert {('m146_zhuwan','m146_wangzhi_mariner'),('m146_zhangjing','m146_zhaowenhua'),('m146_zhangjing','m41_yudayou'),('m146_zhaowenhua','m41_huzongxian'),('m41_huzongxian','m146_xuhai'),('m41_huzongxian','m146_wangzhi_mariner'),('m41_yudayou','m146_wangzhi_mariner'),('m146_tangshunzhi','m41_huzongxian'),('m40_qijiguang','m41_yudayou'),('m40_qijiguang','m41_tanlun')}<=pairset
+ jiajing=articles['houcong']; longqing=articles['zaihou']
+ jiajing_people={person_id for item in jiajing['sections'] for person_id in item.get('people',[])}
+ jiajing_events={event_id for item in jiajing['sections'] for event_id in item.get('events',[])}
+ longqing_events={event_id for item in longqing['sections'] for event_id in item.get('events',[])}
+ assert set(v146_people)<=jiajing_people and v146_events-{'v146_month_port_permits','v146_coastal_livelihoods'}<=jiajing_events
+ assert {'v2l_sea','v146_month_port_permits','v146_coastal_livelihoods'}<=longqing_events
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|人物页|占位|正在完善|产品将',corpus,re.I)
+ print('V120 PASS: nine coastal readings connect maritime credit, emergency authority, interregional troops, recruitment, siege damage, five water forts and the limited Moon Port opening without reducing the crisis to heroic anti-piracy')

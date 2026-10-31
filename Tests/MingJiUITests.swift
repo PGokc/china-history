@@ -4124,4 +4124,44 @@ final class MingJiUITests: XCTestCase {
         shot("v145-bahannaji-agency-and-source-limits", bahan)
     }
 
+    @MainActor func testV146CoastalActorsAndLimitedMoonPortOpening() throws {
+        let wang = XCUIApplication()
+        wang.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]
+        wang.launch()
+        XCTAssertTrue(wang.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        let searchButton = wang.buttons.matching(NSPredicate(format: "identifier == %@", "globalSearch")).firstMatch
+        XCTAssertTrue(searchButton.waitForExistence(timeout: 5)); searchButton.tap()
+        let search = wang.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("王直")
+        let result = wang.buttons["search_person_m146_wangzhi_mariner"]
+        XCTAssertTrue(result.waitForExistence(timeout: 5)); result.tap()
+        XCTAssertTrue(wang.buttons["articleEntry"].waitForExistence(timeout: 5)); wang.buttons["articleEntry"].tap()
+        XCTAssertTrue(wang.buttons["articleContents"].waitForExistence(timeout: 5)); wang.buttons["articleContents"].tap()
+        XCTAssertTrue(wang.buttons["先区分王直与成化朝西厂汪直"].exists)
+        wang.buttons["先区分王直与成化朝西厂汪直"].tap()
+        XCTAssertTrue(wang.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不是同一人")).firstMatch.waitForExistence(timeout: 5))
+        wang.buttons["articleContents"].tap()
+        wang.buttons["“市通则商”不是免罪公式，开放也必须保留治安与司法"].tap()
+        XCTAssertTrue(wang.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不把“倭寇”自动翻译成一个民族")).firstMatch.waitForExistence(timeout: 5))
+        reach(wang.buttons["资料与出处"], in: wang, attempts: 30)
+        shot("v146-wangzhi-disambiguation-and-source-boundary", wang)
+        wang.terminate()
+
+        let port = XCUIApplication()
+        port.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]
+        port.launch()
+        XCTAssertTrue(port.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        let portSearchButton = port.buttons.matching(NSPredicate(format: "identifier == %@", "globalSearch")).firstMatch
+        XCTAssertTrue(portSearchButton.waitForExistence(timeout: 5)); portSearchButton.tap()
+        let portSearch = port.searchFields.firstMatch
+        XCTAssertTrue(portSearch.waitForExistence(timeout: 5)); portSearch.tap(); portSearch.typeText("月港有限开海")
+        let portResult = port.buttons["search_event_v2l_sea"]
+        XCTAssertTrue(portResult.waitForExistence(timeout: 5)); portResult.tap()
+        XCTAssertTrue(port.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "对日贸易仍被禁止")).firstMatch.waitForExistence(timeout: 5))
+        XCTAssertTrue(port.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不是全国、全航线的全面解禁")).firstMatch.exists)
+        reach(port.buttons["资料与出处"], in: port, attempts: 16); port.buttons["资料与出处"].tap()
+        XCTAssertTrue(port.buttons["source_v146_scsio_month_port"].waitForExistence(timeout: 5))
+        shot("v146-moon-port-limits-and-sources", port)
+    }
+
 }

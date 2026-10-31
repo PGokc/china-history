@@ -2917,41 +2917,6 @@
       "audioHash": "a56d5d373f3992fc87b29fe1d8712fa736ebec77da5462f3f7626aa81f7a7243"
     },
     {
-      "articleID": "m40_qijiguang",
-      "sectionID": "v54_m40_qijiguang_1",
-      "path": "ming-m40_qijiguang-v54_m40_qijiguang_1-8fcbf5652e9b.mp3",
-      "textHash": "8fcbf5652e9bd1b1c74bf48ecfc192419633726e0617fd49794f36d391d22643",
-      "audioHash": "97d035879971cfb3a75c88c3e09446b924c9dccf73e2c2e0ea87023c1c4776e8"
-    },
-    {
-      "articleID": "m40_qijiguang",
-      "sectionID": "v54_m40_qijiguang_2",
-      "path": "ming-m40_qijiguang-v54_m40_qijiguang_2-c549541f92a1.mp3",
-      "textHash": "c549541f92a1787f1e1be738b7eda9a499977b208168e5e61677e8c2ee02ef36",
-      "audioHash": "ae4a246bcd5be09698c6f394536c5b3f090116daf904d56f3e368a9713379f5b"
-    },
-    {
-      "articleID": "m40_qijiguang",
-      "sectionID": "v54_m40_qijiguang_3",
-      "path": "ming-m40_qijiguang-v54_m40_qijiguang_3-4ee232d88a10.mp3",
-      "textHash": "4ee232d88a1034cba7cedca9d4e761d3f6a041e1eaff1471d75107eb18917ffb",
-      "audioHash": "faa714a2c0318e8d0188710d3593973d912258a866ce8a1d78f171d62c27e523"
-    },
-    {
-      "articleID": "m40_qijiguang",
-      "sectionID": "v54_m40_qijiguang_4",
-      "path": "ming-m40_qijiguang-v54_m40_qijiguang_4-4978ac76b0d5.mp3",
-      "textHash": "4978ac76b0d54c7a45abbe11d16a76e523f76eb4288069c864bb482fdcae87aa",
-      "audioHash": "682b3a0d47811323bbabf4b8439e0177fcf62cb96485580f536f7039afed041f"
-    },
-    {
-      "articleID": "m40_qijiguang",
-      "sectionID": "v54_m40_qijiguang_5",
-      "path": "ming-m40_qijiguang-v54_m40_qijiguang_5-18e76a34b913.mp3",
-      "textHash": "18e76a34b913919f1f184e3a721ffa046ad379022c9d06448b2d936787c1d5fe",
-      "audioHash": "67afcbbcf9d4d84b5f3c72cd5102bda377972dbfeadd12bf7b25761aba058275"
-    },
-    {
       "articleID": "m40_hairui",
       "sectionID": "v55_m40_hairui_1",
       "path": "ming-m40_hairui-v55_m40_hairui_1-593ed41622ad.mp3",
@@ -3741,48 +3706,6 @@
       "path": "qing-q_sunyatsen-v40q_sunyatsen_3-d49d15546f4a.mp3",
       "textHash": "d49d15546f4a86df9f5c622b4f2021be3c75b0f76569ff600151ccbd4afec052",
       "audioHash": "9b97d75071644dad5f50f97a87078076ff88ed1e29e8058d55620bd06e0017ba"
-    },
-    {
-      "articleID": "m41_huzongxian",
-      "sectionID": "m41_huzongxian-1",
-      "path": "ming-m41_huzongxian-m41_huzongxian-1-7324eb5afcd9.mp3",
-      "textHash": "7324eb5afcd943c824fc0b5a421d96df2ff79eb88f49df582828312609d0d216",
-      "audioHash": "a755a4f97167e4262ccbf9168e9105ccc59f811b3683f62be905a64f753f4a6e"
-    },
-    {
-      "articleID": "m41_huzongxian",
-      "sectionID": "m41_huzongxian-2",
-      "path": "ming-m41_huzongxian-m41_huzongxian-2-4260499a70c9.mp3",
-      "textHash": "4260499a70c9658437aec93c1a33e6e09ad0811a96220ded11041977fb828082",
-      "audioHash": "b4054291f2923229b91f0908631aff14136f8fce1e49fbddcd7847c24d2a9b86"
-    },
-    {
-      "articleID": "m41_huzongxian",
-      "sectionID": "m41_huzongxian-3",
-      "path": "ming-m41_huzongxian-m41_huzongxian-3-bd85473f2b40.mp3",
-      "textHash": "bd85473f2b4028ad508951139b93750a7b673c6d0f25e6a6224e5717365be9b0",
-      "audioHash": "fed4c4eaba7c3b73a2573c75413c8855a73b1672d4f7977082e57ec54783cdc7"
-    },
-    {
-      "articleID": "m41_yudayou",
-      "sectionID": "m41_yudayou-1",
-      "path": "ming-m41_yudayou-m41_yudayou-1-747519409508.mp3",
-      "textHash": "7475194095080645b0b25988f42918eef17246f2047315d757d27ffc8963cd66",
-      "audioHash": "4e16b1cc1741c9e4a8cea57ce6ff54c586c82f44cb0e7579fe59ba58a497f55f"
-    },
-    {
-      "articleID": "m41_yudayou",
-      "sectionID": "m41_yudayou-2",
-      "path": "ming-m41_yudayou-m41_yudayou-2-61a4277f59a1.mp3",
-      "textHash": "61a4277f59a142455aa659fc751601b0be77c82d5c88ae15edcf9db6c0cc3106",
-      "audioHash": "631b5ad4afea0e000cc414107dfa9cd4dbe6487ec982945e91170e87c38d77d2"
-    },
-    {
-      "articleID": "m41_yudayou",
-      "sectionID": "m41_yudayou-3",
-      "path": "ming-m41_yudayou-m41_yudayou-3-7d70d0ee4489.mp3",
-      "textHash": "7d70d0ee4489cbd440b682fb7591b93b04739dae38f298a339cdce690f812a0c",
-      "audioHash": "301266cef00e240b8f0e37916bffeb5d3971ff5b5f08ce9dd5d2daa5d5b1e0f5"
     },
     {
       "articleID": "m41_lishizhen",
