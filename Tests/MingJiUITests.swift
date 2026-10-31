@@ -4603,4 +4603,46 @@ final class MingJiUITests: XCTestCase {
         shot("v156-two-yu-chenglongs-separated", namesake)
     }
 
+    @MainActor func testV157YongzhengConnectsDisasterReportingAndCoercedConfession() throws {
+        let localGovernment = XCUIApplication()
+        localGovernment.launchArguments = ["--uitesting", "--ui-dynasty", "qing"]
+        localGovernment.launch()
+        XCTAssertTrue(localGovernment.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        localGovernment.buttons.matching(NSPredicate(format: "identifier == %@", "globalSearch")).firstMatch.tap()
+        let search = localGovernment.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("田文镜")
+        let result = localGovernment.buttons["search_person_q157_tianwenjing"]
+        XCTAssertTrue(result.waitForExistence(timeout: 5)); result.tap()
+        XCTAssertTrue(localGovernment.buttons["articleEntry"].waitForExistence(timeout: 5)); localGovernment.buttons["articleEntry"].tap()
+        XCTAssertTrue(localGovernment.buttons["articleContents"].waitForExistence(timeout: 5)); localGovernment.buttons["articleContents"].tap()
+        let disaster = localGovernment.buttons["瞒灾与鬻卖子女击穿了考成数字，皇帝信任也未提供全知"]
+        XCTAssertTrue(disaster.exists); disaster.tap()
+        XCTAssertTrue(localGovernment.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "祥符、封丘")).firstMatch.waitForExistence(timeout: 5))
+        XCTAssertTrue(localGovernment.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "鬻卖子女")).firstMatch.exists)
+        openChapterSources("v157_tw5", in: localGovernment)
+        XCTAssertTrue(localGovernment.descendants(matching: .any)["source_v40q_qsg294"].waitForExistence(timeout: 3))
+        localGovernment.swipeUp()
+        shot("v157-tian-wenjing-disaster-reporting", localGovernment)
+        localGovernment.terminate()
+
+        let testimony = XCUIApplication()
+        testimony.launchArguments = ["--uitesting", "--ui-dynasty", "qing"]
+        testimony.launch()
+        XCTAssertTrue(testimony.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        testimony.buttons.matching(NSPredicate(format: "identifier == %@", "globalSearch")).firstMatch.tap()
+        let testimonySearch = testimony.searchFields.firstMatch
+        XCTAssertTrue(testimonySearch.waitForExistence(timeout: 5)); testimonySearch.tap(); testimonySearch.typeText("曾静")
+        let testimonyResult = testimony.buttons["search_person_q157_zengjing"]
+        XCTAssertTrue(testimonyResult.waitForExistence(timeout: 5)); testimonyResult.tap()
+        XCTAssertTrue(testimony.buttons["articleEntry"].waitForExistence(timeout: 5)); testimony.buttons["articleEntry"].tap()
+        XCTAssertTrue(testimony.buttons["articleContents"].waitForExistence(timeout: 5)); testimony.buttons["articleContents"].tap()
+        let interrogation = testimony.buttons["假意盟誓、逮捕与审讯决定了现存口供如何形成"]
+        XCTAssertTrue(interrogation.exists); interrogation.tap()
+        XCTAssertTrue(testimony.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不能按自由辩论理解")).firstMatch.waitForExistence(timeout: 5))
+        openChapterSources("v157_zj3", in: testimony)
+        XCTAssertTrue(testimony.descendants(matching: .any)["source_v157_dpm_zengjing"].waitForExistence(timeout: 3))
+        testimony.swipeUp()
+        shot("v157-zeng-jing-interrogation-evidence", testimony)
+    }
+
 }

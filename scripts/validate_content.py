@@ -3029,3 +3029,43 @@ if d['version'] >= 130:
  assert not any(item['articleID'] in set(v156_rewritten) for item in narration['entries'])
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将',corpus,re.I)
  print('V130 PASS: ten middle-Kangxi figures and twenty-seven events connect Taiwan government, maritime customs, Albazin and Nerchinsk, river engineering, Dzungar war, mapping, taxation, rites and succession with explicit evidence boundaries')
+
+if d['version'] >= 131:
+ v157_people=['q157_tianwenjing','q157_yuezhongqi','q157_zengjing','q157_lvliuliang','q157_nomin']
+ v157_rewritten=['q_yinxiang','q_longkodo','q_liwei','q_zhangtingyu','q_eertai','q_niangengyao']
+ v157_events={event['id'] for event in d['events'] if event['id'].startswith('v157_')}
+ v157_sources={source['id'] for source in d['sources'] if source['id'].startswith('v157_')}
+ v157_objects={item['id'] for item in d['objects'] if item['id'].startswith('v157_')}
+ v157_object_map={item['id']:item for item in d['objects']}
+ assert len(v157_events)==29 and len(v157_sources)==10 and len(v157_objects)==3
+ assert set(v157_people+v157_rewritten)<=people.keys() and set(v157_people+v157_rewritten)<=articles.keys()
+ assert {events[event_id]['category'] for event_id in v157_events}=={'政治','军事','文化','经济','社会'}
+ for pid in v157_people+v157_rewritten:
+  reading=articles[pid]; ss=reading['sections']
+  assert len(ss)==5 and all(item['sources'] and item['events'] for item in ss),(pid,'incomplete Yongzheng five-layer reading')
+  chars=sum(len(re.findall(r'[\u4e00-\u9fff]',item['text'])) for item in ss)
+  assert chars>=500,(pid,'Yongzheng reading remains too short',chars)
+  assert all(set(item['sources'])<=sources.keys() and set(item['events'])<=events.keys() and set(item.get('people',[]))<=people.keys() for item in ss)
+  assert set(reading['sources'])=={source for item in ss for source in item['sources']}
+ assert all(set(events[event_id]['people'])<=people.keys() and set(events[event_id]['sources'])<=sources.keys() for event_id in v157_events)
+ for object_id in v157_objects:
+  item=v157_object_map[object_id]
+  assert item['dynasties']==['qing'] and item['people'] and item['sources']
+  assert set(item['people'])<=people.keys() and set(item['sources'])<=sources.keys()
+ corpus=json.dumps([people[pid] for pid in v157_people+v157_rewritten]+[articles[pid] for pid in v157_people+v157_rewritten]+[events[event_id] for event_id in v157_events]+[events['qev_yongzheng_accession_1722']]+[events['v39_nian_campaign']]+[events['v26_grand_council']]+[events['v12_yongzheng_tax']]+[events['v13_yongzheng_tushu']]+[v157_object_map[object_id] for object_id in v157_objects],ensure_ascii=False)
+ for term in ['总理事务','加色','加平','耗羡归公','养廉银','绅衿富户','按户出夫','鬻卖子女','乐户','堕民','白契奴婢','保甲','罗卜藏丹津','和通泊','额尔德尼昭','恰克图','大义觉迷录','朱批谕旨','珐琅料','十二月行乐图']:
+  assert term in corpus,('missing Yongzheng evidence term',term)
+ for boundary in ['不能把账面补齐直接等同居民负担下降','不等于税民从此不再负担耗羡','不是某日全国废除全部人头税','不能把册上面积直接当作新增良田','解除贱籍与禁止原职业不是同一件事','没有废除官私奴婢和全部等级法律','不能把条约写成边境从此无争议或现代自由贸易','不能把1732年写成准噶尔政权终结','供词不是自由对话','不是透明镜子','不是连续十二个月的现场纪实']:
+  assert boundary in corpus,('missing Yongzheng evidence boundary',boundary)
+ yongzheng=next(item for item in d['reignContexts'] if item['person']=='q_yongzheng')
+ assert set(v157_people+v157_rewritten+['q_yinsi','q_yintang'])<=set(yongzheng['people'])
+ assert v157_events<=set(yongzheng['events'])
+ emperor=articles['q_yongzheng']
+ linked_people={person_id for section in emperor['sections'] for person_id in section.get('people',[])}
+ linked_events={event_id for section in emperor['sections'] for event_id in section.get('events',[])}
+ assert set(v157_people+v157_rewritten)<=linked_people and v157_events<=linked_events
+ pairset={(item['from'],item['to']) for item in d['associations']}
+ assert {('q_yongzheng','q157_tianwenjing'),('q_yongzheng','q157_yuezhongqi'),('q_yongzheng','q157_zengjing'),('q_yongzheng','q157_lvliuliang'),('q_yongzheng','q157_nomin'),('q157_yuezhongqi','q157_zengjing'),('q157_zengjing','q157_lvliuliang'),('q157_tianwenjing','q157_nomin'),('q_liwei','q157_lvliuliang')}<=pairset
+ assert not any(item['articleID'] in set(v157_rewritten) for item in narration['entries'])
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将',corpus,re.I)
+ print('V131 PASS: five new and six rewritten Yongzheng readings connect provincial finance, disaster reporting, social status, Qinghai and Dzungar war, sealed memorials, the Zeng Jing case and three material-culture paths with explicit evidence boundaries')
