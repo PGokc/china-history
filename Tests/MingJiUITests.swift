@@ -4008,4 +4008,44 @@ final class MingJiUITests: XCTestCase {
         shot("v142-liudaxia-soldier-pay-and-footer", liu)
     }
 
+    @MainActor func testV143ZhengdeGovernanceConnectsCourtAccessArmiesAndSuccession() throws {
+        let yang = XCUIApplication()
+        yang.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]
+        yang.launch()
+        XCTAssertTrue(yang.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        let yangSearchButton = yang.buttons.matching(NSPredicate(format: "identifier == %@", "globalSearch")).firstMatch
+        XCTAssertTrue(yangSearchButton.waitForExistence(timeout: 5)); yangSearchButton.tap()
+        let yangSearch = yang.searchFields.firstMatch
+        XCTAssertTrue(yangSearch.waitForExistence(timeout: 5)); yangSearch.tap(); yangSearch.typeText("杨廷和")
+        let yangResult = yang.buttons["search_person_m143_yangtinghe"]
+        XCTAssertTrue(yangResult.waitForExistence(timeout: 5)); yangResult.tap()
+        XCTAssertTrue(yang.buttons["articleEntry"].waitForExistence(timeout: 5)); yang.buttons["articleEntry"].tap()
+        XCTAssertTrue(yang.buttons["articleContents"].waitForExistence(timeout: 5)); yang.buttons["articleContents"].tap()
+        XCTAssertTrue(yang.buttons["巡幸期间的反对意见为何经常失效"].exists)
+        XCTAssertTrue(yang.buttons["无嗣去世后的第一件事是同时控制名分与军队"].exists)
+        yang.buttons["无嗣去世后的第一件事是同时控制名分与军队"].tap()
+        XCTAssertTrue(yang.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "三者缺一")).firstMatch.waitForExistence(timeout: 5))
+        shot("v143-yangtinghe-succession-and-armies", yang)
+        yang.terminate()
+
+        let zhu = XCUIApplication()
+        zhu.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]
+        zhu.launch()
+        XCTAssertTrue(zhu.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        let zhuSearchButton = zhu.buttons.matching(NSPredicate(format: "identifier == %@", "globalSearch")).firstMatch
+        XCTAssertTrue(zhuSearchButton.waitForExistence(timeout: 5)); zhuSearchButton.tap()
+        let zhuSearch = zhu.searchFields.firstMatch
+        XCTAssertTrue(zhuSearch.waitForExistence(timeout: 5)); zhuSearch.tap(); zhuSearch.typeText("朱宸濠")
+        let zhuResult = zhu.buttons["search_person_m143_zhuchenhao"]
+        XCTAssertTrue(zhuResult.waitForExistence(timeout: 5)); zhuResult.tap()
+        XCTAssertTrue(zhu.buttons["articleEntry"].waitForExistence(timeout: 5)); zhu.buttons["articleEntry"].tap()
+        XCTAssertTrue(zhu.buttons["articleContents"].waitForExistence(timeout: 5)); zhu.buttons["articleContents"].tap()
+        XCTAssertTrue(zhu.buttons["先分清明初宁王朱权与正德宁王朱宸濠"].exists)
+        XCTAssertTrue(zhu.buttons["进献网络为什么会让预警到不了皇帝面前"].exists)
+        zhu.buttons["进献网络为什么会让预警到不了皇帝面前"].tap()
+        XCTAssertTrue(zhu.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "缺少让多路报告交叉验证的机制")).firstMatch.waitForExistence(timeout: 5))
+        reach(zhu.buttons["资料与出处"], in: zhu, attempts: 28)
+        shot("v143-zhuchenhao-warning-network-and-footer", zhu)
+    }
+
 }

@@ -2447,3 +2447,42 @@ if d['version'] >= 116:
  assert all(set(events[event_id]['people'])<=people.keys() and set(events[event_id]['sources'])<=sources.keys() for event_id in v142_events)
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|人物页|占位|正在完善',corpus,re.I)
  print('V116 PASS: Wang Shu, Ma Wensheng and Liu Daxia connect appointments, relief, frontier markets, river engineering, soldier pay and salt finance without turning Hongzhi into a simple virtuous-ministers narrative')
+
+if d['version'] >= 117:
+ v143_people=['m143_hanwen','m143_yangtinghe','m143_yangyiqing','m143_zhangyong','m143_qianning','m143_jiangbin','m143_zhuchenhao']
+ v143_suffix={'m143_hanwen':'hanwen','m143_yangtinghe':'yangtinghe','m143_yangyiqing':'yangyiqing','m143_zhangyong':'zhangyong','m143_qianning':'qianning','m143_jiangbin':'jiangbin','m143_zhuchenhao':'zhuchenhao'}
+ v143_events={
+  'v143_nanjing_grain_relief','v143_zhengde_budget','v143_estate_tenants',
+  'v143_nine_ministers_remonstrance','v143_teahorse_frontier_wall','v143_anhua_liujin',
+  'v143_uprising_mobilization','v143_outer_four_armies','v143_lecture_documents',
+  'v143_imperial_shops_tours','v143_ning_prince_network','v143_south_tour_remonstrance',
+  'v143_ning_rebellion_local_cost','v143_succession_cleanup',
+ }
+ assert set(v143_people)<=people.keys() and v143_events<=events.keys()
+ assert {'v143_ms186','v143_ms190','v143_ms198','v143_ms304','v143_ms307','v143_ms117'}<=sources.keys()
+ assert {events[event_id]['category'] for event_id in v143_events}=={'政治','军事','文化','经济','社会'}
+ for pid in v143_people:
+  person=people[pid]; reading=articles[pid]; ss=reading['sections']
+  assert person['dynasty']=='ming' and len(set(person['sources']))>=2
+  assert len(ss)==5 and all(item['id']==f'v143_{v143_suffix[pid]}_s{index}' for index,item in enumerate(ss,1)),(pid,'wrong five-layer reading')
+  chars=sum(len(re.findall(r'[\u4e00-\u9fff]',item['text'])) for item in ss)
+  assert chars>=950,(pid,'Zhengde governance reading remains too short',chars)
+  assert all(item['sources'] and item['events'] for item in ss)
+  assert all(set(item['sources'])<=sources.keys() and set(item['events'])<=events.keys() and set(item['people'])<=people.keys() for item in ss)
+  assert set(reading['sources'])=={source for item in ss for source in item['sources']}
+ corpus=json.dumps([people[pid] for pid in v143_people]+[articles[pid] for pid in v143_people]+[events[event_id] for event_id in v143_events],ensure_ascii=False)
+ for term in ['南京米价','登极、山陵','皇庄','九卿伏阙','茶马','三边总制','安化王','外四家','讲筵','皇店','孙燧','四十余日','威武营']:
+  assert term in corpus,('missing Zhengde governance evidence term',term)
+ for boundary in ['不能据此推算今日币值','不能把方案全文当成已建成事实','不能把所有官员都写成同谋','不应直接当作精确统计','不由十六级首功推断全部伤亡']:
+  assert boundary in corpus,('missing Zhengde governance evidence boundary',boundary)
+ assert all(set(events[event_id]['people'])<=people.keys() and set(events[event_id]['sources'])<=sources.keys() for event_id in v143_events)
+ association_pairs={(item['from'],item['to']) for item in d['associations']}
+ required_pairs={('m143_hanwen','m40_liujian'),('m143_yangyiqing','m143_zhangyong'),('m143_qianning','m143_zhuchenhao'),('m143_qianning','m143_jiangbin'),('m143_jiangbin','m143_yangtinghe'),('m143_yangtinghe','m143_zhuchenhao'),('m143_zhangyong','m40_wangshouren'),('m143_yangtinghe','houcong')}
+ assert required_pairs<=association_pairs
+ houzhao_article=articles['houzhao']
+ linked_people={person_id for item in houzhao_article['sections'] for person_id in item.get('people',[])}
+ linked_events={event_id for item in houzhao_article['sections'] for event_id in item.get('events',[])}
+ assert {'m143_hanwen','m143_yangtinghe','m143_yangyiqing','m143_zhangyong','m143_qianning','m143_jiangbin','m143_zhuchenhao'}<=linked_people
+ assert {'v143_nine_ministers_remonstrance','v143_anhua_liujin','v143_outer_four_armies','v143_south_tour_remonstrance','v143_ning_rebellion_local_cost','v143_succession_cleanup'}<=linked_events
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|人物页|占位|正在完善',corpus,re.I)
+ print('V117 PASS: seven Zhengde readings connect budgets, estates, remonstrance, frontier armies, court access, princely oversight, local war and succession with explicit source boundaries')
