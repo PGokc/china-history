@@ -2357,3 +2357,37 @@ def validate_v113(data):
 
 if d['version'] >= 113:
  validate_v113(d)
+
+if d['version'] >= 114:
+ v140_people=['m40_lixian','m40_shanglu','m40_wangzhi','m42_hanyong','m42_yuzijun','m140_xiangzhong','m140_yuanjie']
+ v140_suffix={'m40_lixian':'lixian','m40_shanglu':'shanglu','m40_wangzhi':'wangzhi','m42_hanyong':'hanyong','m42_yuzijun':'yuzijun','m140_xiangzhong':'xiangzhong','m140_yuanjie':'yuanjie'}
+ v140_events={
+  'v140_relief_not_abandoned','v140_palace_women_release','v140_huanyu_tongzhi',
+  'v140_jingxiang_campaign','v140_jingxiang_households','v140_yunyang_governance',
+  'v140_west_factory_cases','v140_west_factory_border','v140_yansui_system','v140_xuanda_cost',
+ }
+ assert set(v140_people)<=people.keys()
+ assert v140_events<=events.keys()
+ assert {events[event_id]['category'] for event_id in v140_events}=={'政治','军事','文化','经济','社会'}
+ assert {'v140_ms159','v140_ms171','v140_mingtongjian37'}<=sources.keys()
+ for pid in v140_people:
+  person=people[pid]; reading=articles[pid]; ss=reading['sections']
+  assert person['dynasty']=='ming' and len(set(person['sources']))>=2
+  assert len(ss)==5 and all(item['id']==f'v140_{v140_suffix[pid]}_s{index}' for index,item in enumerate(ss,1)),(pid,'wrong five-layer reading')
+  chars=sum(len(re.findall(r'[\u4e00-\u9fff]',item['text'])) for item in ss)
+  assert chars>=880,(pid,'Tianshun-Chenghua reading remains too short',chars)
+  assert all(len(set(item['sources']))>=2 and set(item['sources'])<=sources.keys() for item in ss)
+  assert all(item['events'] and set(item['events'])<=events.keys() for item in ss)
+  assert all(set(item['people'])<=people.keys() for item in ss)
+  assert set(reading['sources'])=={source for item in ss for source in item['sources']}
+ assert all(set(events[event_id]['people'])<=people.keys() and set(events[event_id]['sources'])<=sources.keys() for event_id in v140_events)
+ corpus=json.dumps([people[pid] for pid in v140_people]+[articles[pid] for pid in v140_people]+[events[event_id] for event_id in v140_events],ensure_ascii=False)
+ for term in ['浣衣局','《寰宇通志》','西厂','大藤峡','十一万三千','郧阳府','榆林','宣府、大同']:
+  assert term in corpus,('missing Tianshun-Chenghua evidence term',term)
+ for boundary in ['不是无遗漏人口普查','不能替他编造被俘细节','把整个族群视作叛乱者','没有贪污不代表规模、时机和成本分配正确','不能用一个“贼”字统括']:
+  assert boundary in corpus,('missing evidence boundary',boundary)
+ association_pairs={(item['from'],item['to']) for item in d['associations']}
+ required_pairs={('m40_lixian','m40_shanglu'),('m40_shanglu','m40_wangzhi'),('m140_xiangzhong','m40_wangzhi'),('m140_xiangzhong','m140_yuanjie'),('m42_hanyong','m40_lixian'),('m42_yuzijun','m40_wangzhi'),('m140_yuanjie','jianshen')}
+ assert required_pairs<=association_pairs
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|人物页|占位|正在完善',corpus,re.I)
+ print('V114 PASS: seven Tianshun-Chenghua readings connect relief, palace labor, migrant registration, West Depot surveillance, frontier warfare and infrastructure with explicit source boundaries')

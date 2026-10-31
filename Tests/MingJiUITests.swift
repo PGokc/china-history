@@ -3892,4 +3892,43 @@ final class MingJiUITests: XCTestCase {
         shot("v138-zhangfu-command-boundary", zhang)
     }
 
+    @MainActor func testV140TianshunChenghuaMigrationAndSurveillance() throws {
+        let yuan = XCUIApplication()
+        yuan.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]
+        yuan.launch()
+        XCTAssertTrue(yuan.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        let yuanSearchButton = yuan.buttons.matching(NSPredicate(format: "identifier == %@", "globalSearch")).firstMatch
+        XCTAssertTrue(yuanSearchButton.waitForExistence(timeout: 5)); yuanSearchButton.tap()
+        let yuanSearch = yuan.searchFields.firstMatch
+        XCTAssertTrue(yuanSearch.waitForExistence(timeout: 5)); yuanSearch.tap(); yuanSearch.typeText("原杰")
+        let yuanResult = yuan.buttons["search_person_m140_yuanjie"]
+        XCTAssertTrue(yuanResult.waitForExistence(timeout: 5)); yuanResult.tap()
+        XCTAssertTrue(yuan.buttons["articleEntry"].waitForExistence(timeout: 5)); yuan.buttons["articleEntry"].tap()
+        XCTAssertTrue(yuan.buttons["articleContents"].waitForExistence(timeout: 5)); yuan.buttons["articleContents"].tap()
+        XCTAssertTrue(yuan.buttons["走进山溪之后，流民第一次被成规模登记"].exists)
+        XCTAssertTrue(yuan.buttons["设郧阳府不是画一条新边界"].exists)
+        yuan.buttons["走进山溪之后，流民第一次被成规模登记"].tap()
+        XCTAssertTrue(yuan.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不是无遗漏人口普查")).firstMatch.waitForExistence(timeout: 5))
+        shot("v140-yuanjie-registration-boundary", yuan)
+        yuan.terminate()
+
+        let wang = XCUIApplication()
+        wang.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]
+        wang.launch()
+        XCTAssertTrue(wang.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        let wangSearchButton = wang.buttons.matching(NSPredicate(format: "identifier == %@", "globalSearch")).firstMatch
+        XCTAssertTrue(wangSearchButton.waitForExistence(timeout: 5)); wangSearchButton.tap()
+        let wangSearch = wang.searchFields.firstMatch
+        XCTAssertTrue(wangSearch.waitForExistence(timeout: 5)); wangSearch.tap(); wangSearch.typeText("汪直")
+        let wangResult = wang.buttons["search_person_m40_wangzhi"]
+        XCTAssertTrue(wangResult.waitForExistence(timeout: 5)); wangResult.tap()
+        XCTAssertTrue(wang.buttons["articleEntry"].waitForExistence(timeout: 5)); wang.buttons["articleEntry"].tap()
+        XCTAssertTrue(wang.buttons["articleContents"].waitForExistence(timeout: 5)); wang.buttons["articleContents"].tap()
+        XCTAssertTrue(wang.buttons["一次宫禁事件怎样催生新的侦缉渠道"].exists)
+        XCTAssertTrue(wang.buttons["边功让侦缉、人事与军令结成网络"].exists)
+        wang.buttons["一次宫禁事件怎样催生新的侦缉渠道"].tap()
+        XCTAssertTrue(wang.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "西厂不是汪直私人凭空建立")).firstMatch.waitForExistence(timeout: 5))
+        shot("v140-wangzhi-imperial-authorization", wang)
+    }
+
 }

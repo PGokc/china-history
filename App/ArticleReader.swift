@@ -137,7 +137,7 @@ struct ArticleReader: View {
                         guard let sectionID else { return }
                         resumeOffer = nil
                         remember(sectionID)
-                        withAnimation(.easeOut(duration: 0.28)) { proxy.scrollTo(sectionID, anchor: .top) }
+                        withAnimation(.easeOut(duration: 0.28)) { proxy.scrollTo(sectionID, anchor: chapterScrollAnchor) }
                     }
                     .safeAreaInset(edge: .bottom, spacing: 0) {
                         ArticleNarrationBar(article: article, visibleSectionID: current, narrator: narrator)
@@ -159,7 +159,7 @@ struct ArticleReader: View {
                                         resumeOffer = nil
                                         remember(section.id)
                                         DispatchQueue.main.async {
-                                            withAnimation(.easeOut(duration: 0.28)) { proxy.scrollTo(section.id, anchor: .top) }
+                                            withAnimation(.easeOut(duration: 0.28)) { proxy.scrollTo(section.id, anchor: chapterScrollAnchor) }
                                         }
                                     }
                                 }
@@ -179,6 +179,7 @@ struct ArticleReader: View {
         if let sectionID { UserDefaults.standard.set(sectionID, forKey: "reading_" + personID) }
         else { UserDefaults.standard.removeObject(forKey: "reading_" + personID) }
     }
+    private var chapterScrollAnchor: UnitPoint { UnitPoint(x: 0.5, y: 0.08) }
     private func updateProgress(_ article: Article) {
         guard ready, resumeOffer == nil, !positions.isEmpty, !narrator.isActive else { return }
         let sectionID = ReadingProgress.section(positions: positions, order: article.sections.map(\.id))
@@ -214,7 +215,7 @@ struct ArticleReader: View {
             resumeOffer = nil
             remember(sectionID)
             DispatchQueue.main.async {
-                withAnimation(.easeOut(duration: 0.28)) { proxy.scrollTo(sectionID, anchor: .top) }
+                withAnimation(.easeOut(duration: 0.28)) { proxy.scrollTo(sectionID, anchor: chapterScrollAnchor) }
             }
         }
         .buttonStyle(.plain)
