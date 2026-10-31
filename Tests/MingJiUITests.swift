@@ -4387,4 +4387,49 @@ final class MingJiUITests: XCTestCase {
         shot("v151-qiantun-refugees-tuntian-and-military-service", frontier)
     }
 
+    @MainActor func testV152JisiCrisisConnectsWartimeProcedurePayAndCivilianCosts() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]
+        app.launch()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        let searchButton = app.buttons.matching(NSPredicate(format: "identifier == %@", "globalSearch")).firstMatch
+        XCTAssertTrue(searchButton.waitForExistence(timeout: 5)); searchButton.tap()
+        let search = app.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("成基命")
+        let result = app.buttons["search_person_m152_chengjiming"]
+        XCTAssertTrue(result.waitForExistence(timeout: 5)); result.tap()
+        XCTAssertTrue(app.buttons["articleEntry"].waitForExistence(timeout: 5)); app.buttons["articleEntry"].tap()
+        XCTAssertTrue(app.buttons["articleContents"].waitForExistence(timeout: 5)); app.buttons["articleContents"].tap()
+        let arrest = app.buttons["平台捕袁时两次请慎重，理由首先是敌军仍在城下"]
+        XCTAssertTrue(arrest.exists); arrest.tap()
+        XCTAssertTrue(app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "司法复核需要时间")).firstMatch.waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "结果祖大寿当场恐惧")).firstMatch.exists)
+        reach(app.buttons["资料与出处"], in: app, attempts: 32); app.buttons["资料与出处"].tap()
+        let source = app.buttons["source_v152_ms251"]
+        reach(source, in: app, attempts: 8); XCTAssertTrue(source.isHittable); app.swipeUp()
+        shot("v152-wartime-arrest-procedure-and-command-break", app)
+        app.terminate()
+
+        let pay = XCUIApplication()
+        pay.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]
+        pay.launch()
+        XCTAssertTrue(pay.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        let paySearchButton = pay.buttons.matching(NSPredicate(format: "identifier == %@", "globalSearch")).firstMatch
+        XCTAssertTrue(paySearchButton.waitForExistence(timeout: 5)); paySearchButton.tap()
+        let paySearch = pay.searchFields.firstMatch
+        XCTAssertTrue(paySearch.waitForExistence(timeout: 5)); paySearch.tap(); paySearch.typeText("耿如杞")
+        let payResult = pay.buttons["search_person_m152_gengrugi"]
+        XCTAssertTrue(payResult.waitForExistence(timeout: 5)); payResult.tap()
+        XCTAssertTrue(pay.buttons["articleEntry"].waitForExistence(timeout: 5)); pay.buttons["articleEntry"].tap()
+        XCTAssertTrue(pay.buttons["articleContents"].waitForExistence(timeout: 5)); pay.buttons["articleContents"].tap()
+        let redeployment = pay.buttons["通州、昌平、良乡连续改驻，驻地未定便无法按旧规领饷"]
+        XCTAssertTrue(redeployment.exists); redeployment.tap()
+        XCTAssertTrue(pay.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "财政程序却以稳定汛地为前提")).firstMatch.waitForExistence(timeout: 5))
+        XCTAssertTrue(pay.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不能让士兵吃饱或居民免遭抢掠")).firstMatch.exists)
+        reach(pay.buttons["资料与出处"], in: pay, attempts: 32); pay.buttons["资料与出处"].tap()
+        let paySource = pay.buttons["source_v152_ms248"]
+        reach(paySource, in: pay, attempts: 8); XCTAssertTrue(paySource.isHittable); pay.swipeUp()
+        shot("v152-redeployment-pay-breakdown-and-civilian-cost", pay)
+    }
+
 }

@@ -2828,3 +2828,52 @@ if d['version'] >= 125:
  assert not any(item.get('articleID')=='m40_sunchengzong' for item in narration['entries'])
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|人物页|占位|正在完善|产品将',corpus,re.I)
  print('V125 PASS: six Ningyuan-Ningjin readings connect strategic depth, refugee rescue, roster audits, city engineering, artillery organization, forced withdrawal, Juehua losses, tuntian recovery, distributed battlefield credit and explicit evidence limits')
+
+if d['version'] >= 126:
+ v152_people=['m152_wangqia','m152_qianlongxi','m152_chengjiming','m152_heruchong','m152_liuce','m152_gengrugi','m152_sunzushou']
+ v152_prefix={'m152_wangqia':'wq','m152_qianlongxi':'ql','m152_chengjiming':'cj','m152_heruchong':'hr','m152_liuce':'lc','m152_gengrugi':'gr','m152_sunzushou':'sz'}
+ v152_events={
+  'v152_platform_promise','v152_command_concentration','v152_wang_tuntian','v152_four_town_budget',
+  'v152_mao_execution','v152_eastjiang_after_mao','v152_route_entry','v152_zunhua_relief',
+  'v152_jizhou_bypass','v152_national_mobilization','v152_supply_redeployment','v152_reinforcement_looting',
+  'v152_guangqumen','v152_capital_rumor','v152_private_militias','v152_wangqia_prison',
+  'v152_yuan_arrest','v152_zushou_return','v152_mangui_final','v152_battlefield_burial',
+  'v152_war_news_ban','v152_liuce_execution','v152_recover_four_cities','v152_qian_prosecution',
+  'v152_collective_punishment','v152_yuan_execution','v152_counterintelligence_memory','v152_five_year_memory',
+ }
+ assert set(v152_people)<=people.keys() and v152_events<=events.keys()
+ assert {'v2l_ms23','v40m2_ms259','v151_ms271','v152_ms248','v152_ms251','v152_ms257','v152_dpm_counterintelligence','v152_dpm_five_year'}<=sources.keys()
+ assert {events[event_id]['category'] for event_id in v152_events}=={'政治','军事','文化','经济','社会'}
+ for name in ['王洽','钱龙锡','成基命','何如宠','刘策','耿如杞','孙祖寿']:
+  assert len([person for person in d['people'] if person['name']==name])==1,(name,'duplicate early-Chongzhen person')
+ for pid in v152_people:
+  person=people[pid]; reading=articles[pid]; ss=reading['sections']
+  assert person['dynasty']=='ming' and len(set(person['sources']))>=2
+  assert len(ss)==5 and all(item['id']==f'v152_{v152_prefix[pid]}{index}' for index,item in enumerate(ss,1)),(pid,'wrong early-Chongzhen five-layer reading')
+  chars=sum(len(re.findall(r'[\u4e00-\u9fff]',item['text'])) for item in ss)
+  assert chars>=700,(pid,'early-Chongzhen reading remains too short',chars)
+  assert all(item['sources'] and item['events'] for item in ss)
+  assert all(set(item['sources'])<=sources.keys() and set(item['events'])<=events.keys() and set(item['people'])<=people.keys() for item in ss)
+  assert set(reading['sources'])=={source for item in ss for source in item['sources']}
+ assert all(set(events[event_id]['people'])<=people.keys() and set(events[event_id]['sources'])<=sources.keys() for event_id in v152_events)
+ corpus=json.dumps([people[pid] for pid in v152_people]+[articles[pid] for pid in v152_people]+[events[event_id] for event_id in v152_events]+[events['v2l_yuan']],ensure_ascii=False)
+ for term in ['平台召对','五年复辽','屯田','双岛','大安口','龙井关','遵化','蓟州','广渠门','通州','昌平','良乡','欠饷','永平','滦州','定海','收瘗','边报','三覆奏']:
+  assert term in corpus,('missing early-Chongzhen evidence term',term)
+ for boundary in ['不能只摘‘五年’二字','不等于获得不受法律复核的无限授权','不能整包当作逐项判决','不能用‘绕道’两字宣布任何一人必然通敌','不能直接换算为可同时作战的有效兵数','不能免除军队伤害居民的责任','恐惧和怨言是真实社会反应，却不是司法证据','逮捕不等于谋叛罪已经审明','处死不是现代调查报告的替代品','不能把后出细节当现场录音']:
+  assert boundary in corpus,('missing early-Chongzhen evidence boundary',boundary)
+ pairset={(item['from'],item['to']) for item in d['associations']}
+ assert {('youjian',pid) for pid in v152_people}<=pairset
+ assert {('m40_yuanchonghuan','m152_qianlongxi'),('m40_yuanchonghuan','m152_chengjiming'),('m40_yuanchonghuan','m152_heruchong'),('m40_yuanchonghuan','m152_wangqia'),('m152_wangqia','m152_liuce'),('m152_wangqia','m152_gengrugi'),('m152_chengjiming','m40_sunchengzong'),('m152_chengjiming','m152_liuce'),('m151_mangui','m152_sunzushou')}<=pairset
+ emperor=articles['youjian']
+ linked_people={person_id for item in emperor['sections'] for person_id in item.get('people',[])}
+ linked_events={event_id for item in emperor['sections'] for event_id in item.get('events',[])}
+ assert set(v152_people)<=linked_people and v152_events|{'v2l_yuan'}<=linked_events
+ reign=next(item for item in d['reignContexts'] if item['person']=='youjian')
+ assert set(v152_people)<=set(reign['people']) and v152_events<=set(reign['events'])
+ yuan=articles['m40_yuanchonghuan']
+ assert {'v152_mao_execution','v152_route_entry','v152_guangqumen','v152_yuan_arrest','v152_qian_prosecution','v152_yuan_execution','v152_counterintelligence_memory','v152_five_year_memory'}<={event_id for item in yuan['sections'] for event_id in item.get('events',[])}
+ assert {'v152_mangui_final','v152_battlefield_burial'}<=set(articles['m151_mangui']['sections'][4]['events'])
+ assert {'v152_route_entry','v152_zunhua_relief'}<=set(articles['m151_zhaolvjiao']['sections'][4]['events'])
+ assert {'v152_zushou_return','v152_recover_four_cities'}<=set(articles['m40_sunchengzong']['sections'][4]['events'])
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将',corpus,re.I)
+ print('V126 PASS: seven early-Chongzhen readings connect the five-year pledge, concentrated command, Dongjiang succession, Jizhen route failure, national mobilization, pay breakdown, capital panic, wartime arrest, collective punishment, four-city recovery and the later counterintelligence narrative with explicit evidence limits')

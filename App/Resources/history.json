@@ -1,5 +1,5 @@
 {
-  "version": 125,
+  "version": 126,
   "reviewed": "2026-10-31",
   "people": [
     {
@@ -17123,6 +17123,127 @@
       "kind": "关宁将领・宁远筑城者",
       "note": "早期筑城与守御、后期被围投降属于不同处境；馆方简传与官修史的忠逆框架不能替代逐阶段事实。",
       "dynasty": "ming"
+    },
+    {
+      "id": "m152_wangqia",
+      "name": "王洽",
+      "call": "提出军政整顿与京东屯田方案，却在己巳之变后承担兵部调度责任的尚书",
+      "temple": "—",
+      "era": "万历—崇祯",
+      "reign": "？—1630",
+      "summary": "崇祯初任兵部尚书，提出核兵、整饷与京东屯田；1629年后金军入塞时征调各镇勤王，因防御失利下狱，次年死于狱中。",
+      "parent": null,
+      "sources": [
+        "v152_ms257",
+        "v2l_ms23"
+      ],
+      "kind": "兵部尚书・军政调度者",
+      "note": "应区分其制度建议、实际可用资源和入塞后的责任；把一次危机全部归结为兵部尚书个人失职，会遮蔽分区指挥与供饷问题。",
+      "dynasty": "ming"
+    },
+    {
+      "id": "m152_qianlongxi",
+      "name": "钱龙锡",
+      "call": "参与逆案清理、与袁崇焕通信，并在袁案扩张中被长期流戍的阁臣",
+      "temple": "—",
+      "era": "万历—南明",
+      "reign": "？—1645",
+      "summary": "崇祯初入阁，曾与袁崇焕讨论毛文龙和议和问题；袁案后被指共同谋划，虽未被认定有谋逆实据，仍下狱并流戍定海十二年。",
+      "parent": null,
+      "sources": [
+        "v152_ms251",
+        "v40m2_ms259",
+        "v2l_ms23"
+      ],
+      "kind": "内阁大学士・袁案被牵连者",
+      "note": "现存材料可确认私人通信、朝廷审议和最终刑罚，不能把‘知情’自动写成‘授意’，也不能把后来申冤自动等同于全部决策正确。",
+      "dynasty": "ming"
+    },
+    {
+      "id": "m152_chengjiming",
+      "name": "成基命",
+      "call": "京师戒严时主张召回孙承宗、慎捕袁崇焕并约束急刑的阁臣",
+      "temple": "—",
+      "era": "万历—崇祯",
+      "reign": "？—1635",
+      "summary": "崇祯二年京师戒严后入阁，建议召回孙承宗；袁崇焕被捕时请求慎重，并以袁的手书招回东撤的祖大寿，后来持续反对诏狱急刑。",
+      "parent": null,
+      "sources": [
+        "v152_ms251",
+        "v2l_ms23"
+      ],
+      "kind": "内阁大学士・危机协调者",
+      "note": "列传保存其程序性反对意见，但不能由此推定他掌握全部边情或能预见所有后果。",
+      "dynasty": "ming"
+    },
+    {
+      "id": "m152_heruchong",
+      "name": "何如宠",
+      "call": "在京师危机中警惕私人聚众，并阻止袁案扩大为三百余人族刑的阁臣",
+      "temple": "—",
+      "era": "万历—崇祯",
+      "reign": "？—1641",
+      "summary": "崇祯初任礼部尚书，己巳之变时反对京城豪强以私财自行聚众；入阁后为袁崇焕亲属申救，使三百余人免于连坐死刑。",
+      "parent": null,
+      "sources": [
+        "v152_ms251",
+        "v2l_ms23"
+      ],
+      "kind": "礼部尚书・内阁大学士",
+      "note": "私人助防并非一概有害；他的判断针对武装失控风险。三百余人的数字来自本传，说明连坐范围，不作现代户籍统计。",
+      "dynasty": "ming"
+    },
+    {
+      "id": "m152_liuce",
+      "name": "刘策",
+      "call": "总理蓟辽保定却未能阻止大安口入塞，随后被迅速处死的总督",
+      "temple": "—",
+      "era": "万历—崇祯",
+      "reign": "？—1630",
+      "summary": "崇祯二年夏起任蓟辽保定总理，后金军由大安口、龙井关方向入塞；他参与招回东撤的祖大寿，次年正月被捕论死并处刑。",
+      "parent": null,
+      "sources": [
+        "v152_ms248",
+        "v2l_ms23",
+        "v40m2_ms259"
+      ],
+      "kind": "蓟辽保定总理・边防问责者",
+      "note": "辖区责任明确，但辖区辽阔、旧有镇路分工和临时调兵同样需要呈现；不能用处刑结果反推全部事实已经审清。",
+      "dynasty": "ming"
+    },
+    {
+      "id": "m152_gengrugi",
+      "name": "耿如杞",
+      "call": "从诏狱获释后整修山西边防，却因勤王军欠饷劫掠而被处死的巡抚",
+      "temple": "—",
+      "era": "万历—崇祯",
+      "reign": "？—1631",
+      "summary": "天启时因拒绝迎合魏忠贤下诏狱，崇祯即位获释并巡抚山西；1629年率五千兵勤王，部队反复移防、三日无饷后劫掠，最终与总兵张鸿功被处死。",
+      "parent": null,
+      "sources": [
+        "v152_ms248",
+        "v2l_ms23"
+      ],
+      "kind": "山西巡抚・勤王军统率者",
+      "note": "欠饷与命令混乱可以解释军队失控，却不能免除劫掠平民的责任；列传人数和日数保留史料口径。",
+      "dynasty": "ming"
+    },
+    {
+      "id": "m152_sunzushou",
+      "name": "孙祖寿",
+      "call": "曾参与蓟镇三协部署，罢职后散家财召回部曲并战死北京城外的总兵",
+      "temple": "—",
+      "era": "万历—崇祯",
+      "reign": "？—1629",
+      "summary": "曾任蓟镇总兵并参与三协十二路部署，宁锦告警时因不敢战被罢；己巳之变中以家财召集旧部，随满桂在北京城外作战而死。",
+      "parent": null,
+      "sources": [
+        "v151_ms271",
+        "v2l_ms23"
+      ],
+      "kind": "蓟镇总兵・勤王将领",
+      "note": "应同时保留此前失援被劾与后来出资赴战，不用战死把整段履历改写成无瑕忠勇传。",
+      "dynasty": "ming"
     }
   ],
   "sources": [
@@ -23473,6 +23594,36 @@
       "title": "王在晋《三朝辽事实录》",
       "url": "https://zh.wikisource.org/zh-hans/三朝遼事實錄",
       "note": "万历、泰昌、天启辽事的明末编年材料，保存奏疏和当事视角。王在晋本人参与辽东战略争论，其选材与归责不是中立旁观记录。"
+    },
+    {
+      "id": "v152_ms248",
+      "title": "《明史》卷248 · 刘策、耿如杞等传",
+      "url": "https://zh.wikisource.org/zh-hans/明史/卷248",
+      "note": "用于核对刘策的蓟辽保定职权、入塞问责与处刑，以及耿如杞勤王部队反复移防、欠饷、劫掠和处刑。列传把个人结局纳入褒贬框架，不能替代对军令、粮饷和辖区条件的分析。"
+    },
+    {
+      "id": "v152_ms251",
+      "title": "《明史》卷251 · 钱龙锡、成基命、何如宠等传",
+      "url": "https://zh.wikisource.org/zh-hans/明史/卷251",
+      "note": "用于核对己巳之变前后的内阁决策、钱龙锡案件、成基命主张慎捕与何如宠反对族刑。奏疏和对白经史臣整理，不作逐字庭审记录。"
+    },
+    {
+      "id": "v152_ms257",
+      "title": "《明史》卷257 · 王洽传",
+      "url": "https://zh.wikisource.org/zh-hans/明史/卷257",
+      "note": "用于核对王洽任兵部尚书、屯田建议、勤王调度、下狱与瘐死。传中将其廉能和失事并列，计划面积与军额不是实施结果。"
+    },
+    {
+      "id": "v152_dpm_counterintelligence",
+      "title": "故宫博物院研究文章 · 崇祯中反间计了吗",
+      "url": "https://www.dpm.org.cn/Uploads/File/pdf/da/80/94/da8094ae595f3b7e44354db0d1a058aa.pdf",
+      "note": "用于辨析反间叙事的材料形成、后出记载与细节矛盾。文章提出研究者解释，不等同于唯一结论。"
+    },
+    {
+      "id": "v152_dpm_five_year",
+      "title": "故宫博物院研究文章 · ‘五年复辽’与袁崇焕之死",
+      "url": "https://www.dpm.org.cn/Uploads/File/pdf/5f/49/61/5f49617df6f490d58603ff66627b230a.pdf",
+      "note": "用于理解平台召对、五年承诺与己巳之变后的政治落差。文中引述及因果分析需与本纪、列传互证。"
     }
   ],
   "relations": [
@@ -24515,20 +24666,29 @@
     },
     {
       "id": "v2l_yuan",
-      "year": "1629—1630",
-      "title": "袁崇焕入狱与被杀",
-      "body": "1629年后金绕道入塞威胁北京，袁崇焕率军回援，随后被崇祯下狱，1630年被处死。此前擅杀毛文龙、军事部署和皇帝猜疑等问题交织。",
-      "impact": "《明史》记有反间说，但不能用一个计谋概括全案，更不能把入狱罪名直接当成已证通敌事实。处刑造成军政震荡，辽事困难仍有多重原因。",
+      "year": "1628—1630年",
+      "title": "袁崇焕复出、己巳入塞与扩张性审判",
+      "body": "平台召对、督师集权、处决毛文龙、蓟镇入塞、北京城外作战、战时逮捕和最终处刑是相互连接但不能互相替代的事件。袁崇焕对擅杀与判断负有责任，现存材料却不足以证明其引敌献城。",
+      "impact": "这一案件破坏关宁军与中央的信任，也显示崇祯朝以严刑处理系统失败。反间叙事有材料依据和后出细节，不能当作解释所有决策的唯一钥匙。",
       "people": [
+        "m40_yuanchonghuan",
         "youjian",
-        "m40_yuanchonghuan"
+        "m150_maowenlong",
+        "m151_zudashou",
+        "m152_qianlongxi",
+        "m152_chengjiming",
+        "m152_heruchong"
       ],
       "sources": [
         "v2l_ms23",
-        "v40m2_ms259"
+        "v40m2_ms259",
+        "v152_ms251",
+        "v152_dpm_counterintelligence",
+        "v152_dpm_five_year"
       ],
-      "kind": "历史事件",
-      "category": "政治"
+      "kind": "边事责任、战时司法与历史记忆",
+      "category": "政治",
+      "sortYear": 1629
     },
     {
       "id": "v2l_songjin",
@@ -66749,6 +66909,543 @@
         "v151_ms271"
       ],
       "kind": "将帅关系与军镇事权"
+    },
+    {
+      "id": "v152_platform_promise",
+      "year": "1628年七月",
+      "sortYear": 1628,
+      "title": "平台召对把‘五年复辽’变成可追责的政治承诺",
+      "category": "政治",
+      "body": "崇祯帝在平台询问辽事，袁崇焕表示希望获得便宜权限，并以五年为期恢复全辽；随后又说明需户、工、吏、兵四部协同。",
+      "impact": "现存记载显示承诺带有安慰皇帝和争取制度支持的成分，不能只摘‘五年’二字当作完整军事计划；但公开时限确实抬高了后来问责强度。",
+      "people": [
+        "youjian",
+        "m40_yuanchonghuan"
+      ],
+      "sources": [
+        "v40m2_ms259",
+        "v152_dpm_five_year",
+        "v2l_ms23"
+      ],
+      "kind": "君臣授权与绩效承诺"
+    },
+    {
+      "id": "v152_command_concentration",
+      "year": "1628年",
+      "sortYear": 1628,
+      "title": "蓟辽登莱天津权力集中于督师，减少掣肘也压缩复核",
+      "category": "政治",
+      "body": "朝廷让袁崇焕兼督蓟辽、登莱和天津军务，并陆续裁并部分经略、巡抚层级，希望用统一指挥解决此前经抚冲突。",
+      "impact": "权力集中可以加快调兵与整饷，也使毛文龙处置、议和和关宁军制更依赖督师判断；‘便宜行事’不等于获得不受法律复核的无限授权。",
+      "people": [
+        "youjian",
+        "m40_yuanchonghuan",
+        "m152_wangqia"
+      ],
+      "sources": [
+        "v40m2_ms259",
+        "v152_ms257"
+      ],
+      "kind": "督师权限与监督边界"
+    },
+    {
+      "id": "v152_wang_tuntian",
+      "year": "1628年",
+      "sortYear": 1628,
+      "title": "王洽提出京东与沿海屯田，计划面积不等于实际开垦",
+      "category": "经济",
+      "body": "王洽主张清理辽东、永平、天津、登莱及京东诸县荒闲地，恢复军屯，以部分兵力屯垦来补充军食。",
+      "impact": "方案说明军费危机已促使兵部寻找就地供粮，但所谓百万顷是奏疏中的资源估计；水利、产权、豪强阻力、移民和初期投入都未因一道命令自动解决。",
+      "people": [
+        "m152_wangqia",
+        "youjian"
+      ],
+      "sources": [
+        "v152_ms257"
+      ],
+      "kind": "军屯计划与实施条件"
+    },
+    {
+      "id": "v152_four_town_budget",
+      "year": "1629年",
+      "sortYear": 1629,
+      "title": "四镇整编以十五万余兵和岁费四百八十余万呈报",
+      "category": "经济",
+      "body": "袁崇焕把辽东、登莱、天津、东江等处兵制合并核算，奏称总兵额十五万余、马八万余，岁费四百八十余万，并称较旧额节省。",
+      "impact": "这些数字是军政预算和整编成果的奏报，不是现代审计；它们同时显示所谓五年方略需要跨海岛、边城和内地运输的长期财政网络。",
+      "people": [
+        "m40_yuanchonghuan",
+        "m150_maowenlong",
+        "m152_wangqia"
+      ],
+      "sources": [
+        "v40m2_ms259"
+      ],
+      "kind": "四镇军额与财政口径"
+    },
+    {
+      "id": "v152_mao_execution",
+      "year": "1629年夏",
+      "sortYear": 1629,
+      "title": "双岛处决毛文龙，整顿军镇也越过了正常复核",
+      "category": "政治",
+      "body": "袁崇焕以阅兵为名至双岛，列举十二项罪状后用尚方剑处死毛文龙，再向朝廷报告并重编东江部队。崇祯帝震惊，但在既成事实下暂予认可。",
+      "impact": "毛文龙的虚报、军饷与军纪问题可以审查，东江牵制价值也不能抹去；未经朝廷先行审理即杀大将，使军令、法律与政治信任同时受损。十二罪是行刑者陈述，不能整包当作逐项判决。",
+      "people": [
+        "m40_yuanchonghuan",
+        "m150_maowenlong",
+        "m152_qianlongxi",
+        "youjian"
+      ],
+      "sources": [
+        "v40m2_ms259",
+        "v152_ms251"
+      ],
+      "kind": "东江整编与擅杀争议"
+    },
+    {
+      "id": "v152_eastjiang_after_mao",
+      "year": "1629年",
+      "sortYear": 1629,
+      "title": "毛文龙死后东江分协增饷，岛兵认同却逐渐松动",
+      "category": "社会",
+      "body": "袁崇焕分东江兵为数协，增加军饷并安抚岛众；史料同时记载部分将校因失去原主帅而离心，后来出现叛离。",
+      "impact": "东江不是只由一名总兵组成，岛上还有辽民家庭、商运、军士和朝鲜交通。处决一人不能自动完成组织转换，增饷也不能立即重建上下信任。",
+      "people": [
+        "m40_yuanchonghuan",
+        "m150_maowenlong"
+      ],
+      "sources": [
+        "v40m2_ms259"
+      ],
+      "kind": "军镇继承与岛屿社会"
+    },
+    {
+      "id": "v152_route_entry",
+      "year": "1629年十月",
+      "sortYear": 1629,
+      "title": "后金军由大安口、龙井关方向入塞，绕开关宁正面",
+      "category": "军事",
+      "body": "后金军没有强攻山海关和宁远正面，而从蓟镇北部隘口进入京畿。正式辖区属蓟辽总理刘策等负责，但边墙、路口、守兵与情报分属多层。",
+      "impact": "这次突破证明关宁防线能守一段正面，却不能替代整个燕山通道体系。责任应具体追问入口守备、总督协调和增援时序，不能用‘绕道’两字宣布任何一人必然通敌。",
+      "people": [
+        "m152_liuce",
+        "m152_wangqia",
+        "m40_yuanchonghuan",
+        "q_hongtaiji"
+      ],
+      "sources": [
+        "v2l_ms23",
+        "v40m2_ms259",
+        "v152_ms248",
+        "v152_ms257"
+      ],
+      "kind": "蓟镇隘口与战略绕行"
+    },
+    {
+      "id": "v152_zunhua_relief",
+      "year": "1629年十一月",
+      "sortYear": 1629,
+      "title": "赵率教三昼夜驰援遵化，未能入城并全军覆没",
+      "category": "军事",
+      "body": "赵率教由关门西援，急行至三屯营后继续向遵化，最终在城外战死，所部遭到严重损失；遵化随后失守。",
+      "impact": "驰援速度说明他主动承担风险，急行、城门是否接纳、敌情与道路侦察又共同决定结局。不能把战死自动写成有效救援，也不能用败亡抹去其前屯与锦州经营。",
+      "people": [
+        "m151_zhaolvjiao",
+        "m152_liuce",
+        "m152_wangqia"
+      ],
+      "sources": [
+        "v2l_ms23",
+        "v151_ms271",
+        "v152_ms257"
+      ],
+      "kind": "急行增援与城镇失守"
+    },
+    {
+      "id": "v152_jizhou_bypass",
+      "year": "1629年十一月",
+      "sortYear": 1629,
+      "title": "袁崇焕在蓟州及沿途留兵，敌军仍越过部署西进",
+      "category": "军事",
+      "body": "袁崇焕闻警后率祖大寿等入援，在抚宁、永平、迁安、丰润、玉田等处留兵，抵蓟州后受命统合援军；后金军仍越过蓟州向北京推进。",
+      "impact": "留下守军有保护交通和城镇的逻辑，却会削弱机动兵力；敌军越过也不等于双方存在已证实的放行约定。应把路线、速度、兵力分配和信息延迟分开。",
+      "people": [
+        "m40_yuanchonghuan",
+        "m151_zudashou",
+        "m152_wangqia"
+      ],
+      "sources": [
+        "v40m2_ms259",
+        "v2l_ms23"
+      ],
+      "kind": "沿途设防与机动兵力"
+    },
+    {
+      "id": "v152_national_mobilization",
+      "year": "1629年十一月",
+      "sortYear": 1629,
+      "title": "兵部急征各镇勤王，远兵到达不等于立即形成统一军队",
+      "category": "政治",
+      "body": "王洽奉命征调宣大、山西、保定及其他地区部队入卫，袁崇焕、祖大寿、满桂、侯世禄等先后抵达。各军建制、驻地、粮饷和指挥关系不同。",
+      "impact": "全国动员扩大了可用兵力，也把边镇本地防务、沿途供应和京师驻扎压力带入同一危机。名单上的到达不能直接换算为可同时作战的有效兵数。",
+      "people": [
+        "m152_wangqia",
+        "m40_yuanchonghuan",
+        "m151_mangui",
+        "m152_gengrugi",
+        "m152_sunzushou"
+      ],
+      "sources": [
+        "v152_ms257",
+        "v152_ms248",
+        "v2l_ms23"
+      ],
+      "kind": "跨镇勤王与统合作战"
+    },
+    {
+      "id": "v152_supply_redeployment",
+      "year": "1629年十一月",
+      "sortYear": 1629,
+      "title": "山西勤王军反复改驻且三日未领饷，继而劫掠",
+      "category": "经济",
+      "body": "耿如杞率五千兵到京，原定汛地尚未稳定便在通州、昌平、良乡间连续改调，按军令又需驻定后才发饷；部队三日未获供应后哗变抢掠。",
+      "impact": "欠饷和反复命令揭示应急动员的制度故障，但饥饿与失序不能免除军队伤害居民的责任。人数、日数来自列传，显示问题尺度，不作精确财务审计。",
+      "people": [
+        "m152_gengrugi",
+        "m152_wangqia"
+      ],
+      "sources": [
+        "v152_ms248",
+        "v2l_ms23"
+      ],
+      "kind": "勤王军供饷与驻地变更"
+    },
+    {
+      "id": "v152_reinforcement_looting",
+      "year": "1629年十一月",
+      "sortYear": 1629,
+      "title": "本为保卫京畿的援军转而劫掠沿途居民",
+      "category": "社会",
+      "body": "山西援军因欠饷和调度混乱发生哗变与抢掠，其他边军也面临驻地、粮秣和军纪压力。京畿居民同时承受外敌进攻、征发和友军失控。",
+      "impact": "把援军简单称为‘勤王忠兵’会漏掉平民经验；把所有士卒都写成天生暴徒同样错误。军饷制度、军官控制和具体参与者责任需要并列。",
+      "people": [
+        "m152_gengrugi",
+        "m152_wangqia"
+      ],
+      "sources": [
+        "v152_ms248"
+      ],
+      "kind": "友军失控与居民损失"
+    },
+    {
+      "id": "v152_guangqumen",
+      "year": "1629年十一月",
+      "sortYear": 1629,
+      "title": "关宁军在广渠门外作战，疲军仍被拒绝入城休整",
+      "category": "军事",
+      "body": "袁崇焕率部抵北京后在广渠门外扎营，与后金军作战，双方均有伤亡。袁以人马疲惫请求入城休整，皇帝没有准许。",
+      "impact": "城门是否开放涉及京师安全、军民恐慌和对外军的不信任；拒绝入城保护了城内控制，也把长期急行的部队继续留在野外。战斗不能证明此前路线判断全部正确。",
+      "people": [
+        "m40_yuanchonghuan",
+        "m151_zudashou",
+        "youjian"
+      ],
+      "sources": [
+        "v40m2_ms259",
+        "v2l_ms23"
+      ],
+      "kind": "北京城外防御与入城限制"
+    },
+    {
+      "id": "v152_capital_rumor",
+      "year": "1629年十一月至十二月",
+      "sortYear": 1629,
+      "title": "兵临城下使京师流言、怨谤与通敌指控迅速合流",
+      "category": "社会",
+      "body": "京师居民突然面对战火，关于袁崇焕纵敌、拥兵或借敌逼和的说法扩散；此前议和和擅杀毛文龙又为怀疑提供了可拼接的材料。",
+      "impact": "恐惧和怨言是真实社会反应，却不是司法证据。也不能反过来羞辱受惊居民‘愚昧’：政府没有及时提供可信战报，路线异常和城外军队本就难以由普通人判断。",
+      "people": [
+        "m40_yuanchonghuan",
+        "youjian",
+        "m152_wangqia"
+      ],
+      "sources": [
+        "v40m2_ms259",
+        "v152_dpm_counterintelligence"
+      ],
+      "kind": "战时舆论与信息真空"
+    },
+    {
+      "id": "v152_private_militias",
+      "year": "1629年冬",
+      "sortYear": 1629,
+      "title": "京城有人请以私财聚众，朝廷担忧助防反成内乱",
+      "category": "社会",
+      "body": "京师戒严时，有城中豪强请以个人财力招聚人众协助官军。何如宠认为在武器、指挥与身份未经核验时贸然采用，可能造成城内冲突，侦察材料随后印证其部分担忧。",
+      "impact": "私人出资不等于必然谋乱，国家危急时也确有自愿助防；风险在于谁核验、谁指挥、谁供给以及战后如何解散，不能只以‘民气可用’替代制度。",
+      "people": [
+        "m152_heruchong",
+        "youjian"
+      ],
+      "sources": [
+        "v152_ms251"
+      ],
+      "kind": "城市自卫与武装控制"
+    },
+    {
+      "id": "v152_wangqia_prison",
+      "year": "1629年十一月",
+      "sortYear": 1629,
+      "title": "以兵部调度失当下王洽于狱，危机迅速寻找单一责任人",
+      "category": "政治",
+      "body": "后金军逼近北京后，周延儒等指责兵部防御疏忽、调度失当，并援引嘉靖时处死丁汝夔震慑将士的先例。崇祯帝遂将王洽下狱。",
+      "impact": "王洽负有兵部统筹责任，但以历史处刑先例证明当下也应杀人，是政治威慑而非事实调查。入口守备、总督辖区、援军供饷和皇帝命令不能由一名尚书代替。",
+      "people": [
+        "m152_wangqia",
+        "youjian"
+      ],
+      "sources": [
+        "v152_ms257",
+        "v2l_ms23"
+      ],
+      "kind": "兵部问责与处刑先例"
+    },
+    {
+      "id": "v152_yuan_arrest",
+      "year": "1629年十二月",
+      "sortYear": 1629,
+      "title": "再召平台即逮捕袁崇焕，前线指挥链当场断裂",
+      "category": "政治",
+      "body": "崇祯帝再次召见袁崇焕、祖大寿等，将袁下锦衣卫狱。成基命请求在敌军尚在城下时慎重处理，未被采纳；祖大寿随后率部东撤。",
+      "impact": "逮捕不等于谋叛罪已经审明。即使朝廷认为需调查议和、杀帅和入援路线，也应评估战时换帅的即时后果；程序与军事连续性并非替罪者的借口。",
+      "people": [
+        "m40_yuanchonghuan",
+        "m151_zudashou",
+        "m152_chengjiming",
+        "youjian"
+      ],
+      "sources": [
+        "v2l_ms23",
+        "v40m2_ms259",
+        "v152_ms251"
+      ],
+      "kind": "战时逮捕与指挥断裂"
+    },
+    {
+      "id": "v152_zushou_return",
+      "year": "1629年十二月",
+      "sortYear": 1629,
+      "title": "祖大寿率关宁军东撤，靠狱中手书才被招回",
+      "category": "军事",
+      "body": "袁崇焕被捕后，祖大寿担心牵连，率军向关外撤退。成基命建议让袁在狱中写信招抚，孙承宗等参与处置，祖部才重新归命。",
+      "impact": "东撤有保存部众和自保的动机，也直接削弱京师防务；用‘叛逃’或‘忠军’一个词都不足。事件说明边军忠诚依赖将领私人信任，也依赖朝廷能否提供可预测的法律结果。",
+      "people": [
+        "m151_zudashou",
+        "m40_yuanchonghuan",
+        "m152_chengjiming",
+        "m40_sunchengzong",
+        "m152_liuce"
+      ],
+      "sources": [
+        "v40m2_ms259",
+        "v152_ms251",
+        "v152_ms248",
+        "v2l_ms23"
+      ],
+      "kind": "边军信任与招抚"
+    },
+    {
+      "id": "v152_mangui_final",
+      "year": "1629年十二月",
+      "sortYear": 1629,
+      "title": "满桂、孙祖寿奉催出战并在北京城外战死",
+      "category": "军事",
+      "body": "袁崇焕被捕后，满桂受命统率入卫军。朝廷催其出战，满桂与罢职后自募旧部的孙祖寿等在城外作战，二人均阵亡，多名将领被俘或伤亡。",
+      "impact": "官修本纪可确认出战命令和结局，具体阵形、兵数与每次冲突需与其他材料分读。战死不能证明仓促催战合理，也不能抹去两人此前的指挥争议。",
+      "people": [
+        "m151_mangui",
+        "m152_sunzushou",
+        "youjian"
+      ],
+      "sources": [
+        "v2l_ms23",
+        "v151_ms271"
+      ],
+      "kind": "城外决战与催战责任"
+    },
+    {
+      "id": "v152_battlefield_burial",
+      "year": "1630年正月",
+      "sortYear": 1630,
+      "title": "朝廷下令收瘗京城外战士遗骸",
+      "category": "社会",
+      "body": "后金军仍控制永平、滦州等地时，明廷命人收瘗京城外战士遗骸。短短本纪记载留下了城外作战后最具体的善后动作之一。",
+      "impact": "‘战士’称谓没有交代姓名、军籍、家属领恤与平民死者，不能由一条命令推定善后完整。它提醒读者，所谓京师保卫的结局不仅是将帅奖惩，还有尸体辨认与家庭失去劳动力。",
+      "people": [
+        "youjian",
+        "m151_mangui",
+        "m152_sunzushou"
+      ],
+      "sources": [
+        "v2l_ms23"
+      ],
+      "kind": "战后收瘗与无名死者"
+    },
+    {
+      "id": "v152_war_news_ban",
+      "year": "1630年正月",
+      "sortYear": 1630,
+      "title": "危机中禁止抄传边报，信息控制进一步扩大猜疑",
+      "category": "文化",
+      "body": "永平、滦州失守和多名官员被捕之际，朝廷下令禁止抄传边报。边报本是军政文书，也会经抄录、邸报和口耳进入社会。",
+      "impact": "限制泄密有军事理由，但封闭信息会让流言成为解释战局的替代渠道。禁令本身不能证明每一份抄报为真或为假，也不能消除居民理解危机的需要。",
+      "people": [
+        "youjian",
+        "m152_wangqia",
+        "m152_liuce"
+      ],
+      "sources": [
+        "v2l_ms23"
+      ],
+      "kind": "战报传播与信息控制"
+    },
+    {
+      "id": "v152_liuce_execution",
+      "year": "1630年正月",
+      "sortYear": 1630,
+      "title": "刘策以隘口失守被捕处死，辖区责任被压成个人死刑",
+      "category": "政治",
+      "body": "朝廷认定大安口方向属于刘策所辖，永平、滦州相继失守后将其逮捕，与总兵张士显论死并处刑。",
+      "impact": "刘策确有边防责任，不能因刑罚严酷而免除；但列传只用‘不能御’概括突破，未呈现隘口兵额、预警、增援和上级命令。处死不是现代调查报告的替代品。",
+      "people": [
+        "m152_liuce",
+        "youjian"
+      ],
+      "sources": [
+        "v152_ms248",
+        "v2l_ms23",
+        "v40m2_ms259"
+      ],
+      "kind": "总督责任与极速死刑"
+    },
+    {
+      "id": "v152_recover_four_cities",
+      "year": "1630年五月",
+      "sortYear": 1630,
+      "title": "孙承宗体系收复遵化、永平等城，胜利仍依赖多军协同",
+      "category": "军事",
+      "body": "孙承宗主持关内外防务后，马世龙、祖大寿等军陆续攻复滦州，后金军东撤，永平、迁安、遵化相继恢复。",
+      "impact": "收复说明袁被捕后并非边务立即无人，也不能反推此前逮捕没有代价。围城、劝降、炮火和撤军时机共同作用，功劳不应只归一位枢辅。",
+      "people": [
+        "m40_sunchengzong",
+        "m151_zudashou",
+        "m152_chengjiming"
+      ],
+      "sources": [
+        "v2l_ms23",
+        "v152_ms251"
+      ],
+      "kind": "遵永恢复与多军协作"
+    },
+    {
+      "id": "v152_qian_prosecution",
+      "year": "1630—1631年",
+      "sortYear": 1630,
+      "title": "钱龙锡因与袁崇焕通信被指共谋，书信内容却不支持谋逆定罪",
+      "category": "政治",
+      "body": "袁案审理中，钱龙锡因曾谈及毛文龙处置、收到并回复袁的信件而被追究。法司和廷臣承认其对擅杀、议和处理失当，却未确认共同谋逆；皇帝仍令长期系狱，后改戍定海。",
+      "impact": "私人讨论军国大事而不上奏可以构成政治责任，但‘知道可能处置’不等于授意擅杀，‘酌量’也不是谋叛暗号。应把通信原件、弹劾者利益和最终裁判分开。",
+      "people": [
+        "m152_qianlongxi",
+        "m40_yuanchonghuan",
+        "youjian"
+      ],
+      "sources": [
+        "v152_ms251",
+        "v40m2_ms259",
+        "v2l_ms23"
+      ],
+      "kind": "阁臣通信与扩张性追诉"
+    },
+    {
+      "id": "v152_collective_punishment",
+      "year": "1630年",
+      "sortYear": 1630,
+      "title": "何如宠反对袁案族刑，使三百余名亲属免死",
+      "category": "政治",
+      "body": "袁崇焕被判重刑后，崇祯帝一度欲扩大到家族。何如宠在内阁申救，使三百余人免于死刑，但兄弟妻子仍流徙三千里，家产被籍没。",
+      "impact": "减免族刑不是为袁的全部决策背书，而是区分个人刑责与亲属身份。三百余人的本传数字显示连坐范围之广，不把它当作精确家谱人数。",
+      "people": [
+        "m152_heruchong",
+        "m40_yuanchonghuan",
+        "youjian"
+      ],
+      "sources": [
+        "v152_ms251",
+        "v40m2_ms259"
+      ],
+      "kind": "族刑限制与亲属连坐"
+    },
+    {
+      "id": "v152_yuan_execution",
+      "year": "1630年八月",
+      "sortYear": 1630,
+      "title": "袁崇焕被磔于市，议和、擅杀与入援疑点被合并为谋叛",
+      "category": "政治",
+      "body": "袁崇焕在羁押数月后被处以重刑，家属流徙、家产籍没。案件把私议和谈、擅杀毛文龙、敌军入塞与所谓通敌线索合并，形成谋叛裁判。",
+      "impact": "可以批评其擅杀和战略判断，却没有可靠材料证明他引敌逼和或与后金约定献城。刑罚结果不能反向制造证据；同情其冤也不能删除东江处置的责任。",
+      "people": [
+        "m40_yuanchonghuan",
+        "youjian",
+        "m152_qianlongxi",
+        "m152_heruchong"
+      ],
+      "sources": [
+        "v2l_ms23",
+        "v40m2_ms259",
+        "v152_dpm_counterintelligence",
+        "v152_dpm_five_year"
+      ],
+      "kind": "谋叛裁判与责任分层"
+    },
+    {
+      "id": "v152_counterintelligence_memory",
+      "year": "1630年以后",
+      "sortYear": 1630,
+      "title": "‘反间计’逐渐成为解释袁案的单线故事",
+      "category": "文化",
+      "body": "清方实录、后出诗文和清修《明史》都保存反间叙事，但具体实施者、被俘宦官和消息传递细节并不完全一致，部分记载形成较晚。",
+      "impact": "后金有利用明廷猜疑的动机和行动并不等于一条计策独自决定处刑。皇帝的用刑、擅杀毛文龙、入援路线、朝内党争和信息恐慌共同构成案件条件。不能把后出细节当现场录音。",
+      "people": [
+        "m40_yuanchonghuan",
+        "youjian",
+        "q_hongtaiji",
+        "q_fanwencheng"
+      ],
+      "sources": [
+        "v40m2_ms259",
+        "v152_dpm_counterintelligence"
+      ],
+      "kind": "反间叙事与史料形成"
+    },
+    {
+      "id": "v152_five_year_memory",
+      "year": "1628—1630年及后世记忆",
+      "sortYear": 1629,
+      "title": "‘五年复辽’从条件性承诺变成评价袁崇焕的倒计时",
+      "category": "文化",
+      "body": "平台召对记录把五年目标置于皇帝授权、四部协同和边镇整编之中；己巳之变后，政治叙事更容易只保留期限与失败的反差。",
+      "impact": "既不能把五年说成严密可执行的完整计划，也不能说它只是毫无后果的安慰话。公开承诺改变了君臣预期，在危机来临时成为追责资源。",
+      "people": [
+        "m40_yuanchonghuan",
+        "youjian"
+      ],
+      "sources": [
+        "v40m2_ms259",
+        "v152_dpm_five_year"
+      ],
+      "kind": "政治承诺的后世压缩"
     }
   ],
   "objects": [
@@ -80654,9 +81351,29 @@
           "text": "朱由检是泰昌帝第五子，生母刘氏，与天启帝朱由校同父异母。1627年天启去世，没有存世皇子，信王继位，次年改元崇祯。他接手的朝廷已经经历矿税争议、辽东失地与政治清洗，新的皇帝自然承载改变局面的期待。但继承的不只是皇位，也包括军队、财政和办事方式的积累问题。把他想象成一位孤身面对所有坏人的好皇帝，会掩盖政治选择的责任；把明亡全归于他个人，也同样忽视了危机形成的长期过程。",
           "sources": [
             "v2l_ms23",
-            "226246"
+            "226246",
+            "v40m2_ms259",
+            "v152_ms248",
+            "v152_ms251",
+            "v152_ms257",
+            "v152_dpm_counterintelligence",
+            "v152_dpm_five_year"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "people": [
+            "m152_wangqia",
+            "m152_qianlongxi",
+            "m152_chengjiming",
+            "m152_heruchong",
+            "m152_liuce",
+            "m152_gengrugi",
+            "m152_sunzushou"
+          ],
+          "events": [
+            "v152_platform_promise",
+            "v152_command_concentration",
+            "v152_wang_tuntian"
+          ]
         },
         {
           "id": "youjian-2",
@@ -80678,14 +81395,55 @@
           "title": "袁崇焕案与军事信任的破裂",
           "text": "1628年袁崇焕受命督师蓟辽，1629年后金绕道入关，迫近北京。袁率军入援，随后被捕，1630年遭处死。这一事件给军事指挥带来严重冲击。关于定罪原因、反间活动及皇帝判断，后世仍有论争，事情的全部经过尚难确定。可以确定的是，边防危机与朝廷不信任在此交织，最高统治者选择以极重惩罚处置重臣。军事失败需要追责，但若惩罚替代了稳定指挥与信息核验，危机便未必因此得到解决。",
           "sources": [
-            "v2l_ms23"
+            "v2l_ms23",
+            "v40m2_ms259",
+            "v152_ms248",
+            "v152_ms251",
+            "v152_ms257",
+            "v152_dpm_counterintelligence",
+            "v152_dpm_five_year"
           ],
           "kind": "史实与解读",
           "events": [
-            "v2l_yuan"
+            "v2l_yuan",
+            "v152_platform_promise",
+            "v152_command_concentration",
+            "v152_wang_tuntian",
+            "v152_four_town_budget",
+            "v152_mao_execution",
+            "v152_eastjiang_after_mao",
+            "v152_route_entry",
+            "v152_zunhua_relief",
+            "v152_jizhou_bypass",
+            "v152_national_mobilization",
+            "v152_supply_redeployment",
+            "v152_reinforcement_looting",
+            "v152_guangqumen",
+            "v152_capital_rumor",
+            "v152_private_militias",
+            "v152_wangqia_prison",
+            "v152_yuan_arrest",
+            "v152_zushou_return",
+            "v152_mangui_final",
+            "v152_battlefield_burial",
+            "v152_war_news_ban",
+            "v152_liuce_execution",
+            "v152_recover_four_cities",
+            "v152_qian_prosecution",
+            "v152_collective_punishment",
+            "v152_yuan_execution",
+            "v152_counterintelligence_memory",
+            "v152_five_year_memory"
           ],
           "people": [
-            "m40_yuanchonghuan"
+            "m40_yuanchonghuan",
+            "m152_wangqia",
+            "m152_qianlongxi",
+            "m152_chengjiming",
+            "m152_heruchong",
+            "m152_liuce",
+            "m152_gengrugi",
+            "m152_sunzushou"
           ]
         },
         {
@@ -80708,16 +81466,40 @@
           "text": "崇祯朝既要应对后金及后来的清军，也要应对李自成、张献忠等力量，不能随意把全部军队集中到一处。1641年至1642年松锦战事失败，洪承畴被俘后降清，关外形势进一步恶化。与此同时，中原城池反复争夺，地方社会承受围城、饥荒和流离。朝廷在招抚、进剿和防守间调整政策，各方执行却受到将领关系、粮饷和路程限制。真正的问题不是地图上还有多少兵的简单加总，而是能否在合适时间把有补给、有明确指挥的部队送到需要的位置。",
           "sources": [
             "v2l_ms24",
-            "v2l_ms78"
+            "v2l_ms78",
+            "v2l_ms23",
+            "v40m2_ms259",
+            "v152_ms248",
+            "v152_ms251",
+            "v152_ms257",
+            "v152_dpm_counterintelligence",
+            "v152_dpm_five_year"
           ],
           "kind": "史实与解读",
           "events": [
             "v2l_songjin",
-            "v40m2_calendar_1629"
+            "v40m2_calendar_1629",
+            "v152_route_entry",
+            "v152_zunhua_relief",
+            "v152_jizhou_bypass",
+            "v152_national_mobilization",
+            "v152_supply_redeployment",
+            "v152_reinforcement_looting",
+            "v152_guangqumen",
+            "v152_mangui_final",
+            "v152_battlefield_burial",
+            "v152_recover_four_cities"
           ],
           "people": [
             "m40_sunchengzong",
-            "m40_xuguangqi"
+            "m40_xuguangqi",
+            "m152_wangqia",
+            "m152_qianlongxi",
+            "m152_chengjiming",
+            "m152_heruchong",
+            "m152_liuce",
+            "m152_gengrugi",
+            "m152_sunzushou"
           ]
         },
         {
@@ -80765,7 +81547,12 @@
         "226246",
         "v2l_ms78",
         "v2l_ms24",
-        "siling"
+        "siling",
+        "v152_ms248",
+        "v152_ms251",
+        "v152_ms257",
+        "v152_dpm_counterintelligence",
+        "v152_dpm_five_year"
       ]
     },
     {
@@ -88594,16 +89381,23 @@
           "sources": [
             "v40m2_ms250",
             "v40m2_ms259",
-            "v150_ms22"
+            "v150_ms22",
+            "v152_ms251",
+            "v152_ms248",
+            "v2l_ms23"
           ],
           "events": [
             "v151_sun_departure",
             "v151_gaodi_retreat",
-            "v151_ningyuan_defense"
+            "v151_ningyuan_defense",
+            "v152_zushou_return",
+            "v152_recover_four_cities"
           ],
           "people": [
             "m151_gaodi",
-            "m40_weizhongxian"
+            "m40_weizhongxian",
+            "m152_chengjiming",
+            "m152_liuce"
           ]
         }
       ],
@@ -88613,7 +89407,10 @@
         "v151_sanchao",
         "v151_dpm_artillery",
         "v151_ms271",
-        "v150_ms22"
+        "v150_ms22",
+        "v152_ms251",
+        "v152_ms248",
+        "v2l_ms23"
       ]
     },
     {
@@ -88700,7 +89497,9 @@
             "m151_zhaolvjiao",
             "m151_mangui",
             "m151_zudashou",
-            "m150_maowenlong"
+            "m150_maowenlong",
+            "m152_wangqia",
+            "m152_qianlongxi"
           ],
           "events": [
             "v151_rebuild_tuntian",
@@ -88708,7 +89507,11 @@
             "v151_jinzhou_siege",
             "v151_ningjin_field",
             "v151_credit_distribution",
-            "v151_command_conflicts"
+            "v151_command_conflicts",
+            "v152_command_concentration",
+            "v152_four_town_budget",
+            "v152_mao_execution",
+            "v152_eastjiang_after_mao"
           ]
         },
         {
@@ -88724,10 +89527,22 @@
           ],
           "people": [
             "youjian",
-            "q_hongtaiji"
+            "q_hongtaiji",
+            "m152_wangqia",
+            "m152_liuce",
+            "m152_chengjiming",
+            "m152_sunzushou"
           ],
           "events": [
-            "v2l_yuan"
+            "v2l_yuan",
+            "v152_route_entry",
+            "v152_zunhua_relief",
+            "v152_jizhou_bypass",
+            "v152_national_mobilization",
+            "v152_guangqumen",
+            "v152_capital_rumor",
+            "v152_yuan_arrest",
+            "v152_zushou_return"
           ]
         },
         {
@@ -88743,10 +89558,18 @@
           ],
           "people": [
             "youjian",
-            "m40_sunchengzong"
+            "m40_sunchengzong",
+            "m152_qianlongxi",
+            "m152_heruchong",
+            "m152_chengjiming"
           ],
           "events": [
-            "v2l_yuan"
+            "v2l_yuan",
+            "v152_qian_prosecution",
+            "v152_collective_punishment",
+            "v152_yuan_execution",
+            "v152_counterintelligence_memory",
+            "v152_five_year_memory"
           ]
         }
       ],
@@ -88757,7 +89580,12 @@
         "v2l_ms23",
         "v151_ms271",
         "v151_dpm_zudashou",
-        "v151_dpm_artillery"
+        "v151_dpm_artillery",
+        "v152_ms251",
+        "v152_ms257",
+        "v152_ms248",
+        "v152_dpm_counterintelligence",
+        "v152_dpm_five_year"
       ]
     },
     {
@@ -177270,21 +178098,26 @@
           "kind": "争议与证据",
           "sources": [
             "v149_ms259",
-            "v150_ms22"
+            "v150_ms22",
+            "v152_ms251"
           ],
           "events": [
             "v150_dongjiang_supply",
-            "v150_trial_memory"
+            "v150_trial_memory",
+            "v152_mao_execution",
+            "v152_eastjiang_after_mao"
           ],
           "people": [
             "m40_yuanchonghuan",
-            "q_hongtaiji"
+            "q_hongtaiji",
+            "m152_qianlongxi"
           ]
         }
       ],
       "sources": [
         "v149_ms259",
-        "v150_ms22"
+        "v150_ms22",
+        "v152_ms251"
       ]
     },
     {
@@ -177750,22 +178583,28 @@
           "kind": "事权与结局",
           "sources": [
             "v151_ms271",
-            "v40m2_ms259"
+            "v40m2_ms259",
+            "v2l_ms23"
           ],
           "events": [
             "v151_command_conflicts",
-            "v151_credit_distribution"
+            "v151_credit_distribution",
+            "v152_national_mobilization",
+            "v152_mangui_final",
+            "v152_battlefield_burial"
           ],
           "people": [
             "m40_yuanchonghuan",
-            "m151_zhaolvjiao"
+            "m151_zhaolvjiao",
+            "m152_sunzushou"
           ]
         }
       ],
       "sources": [
         "v151_ms271",
         "v40m2_ms250",
-        "v40m2_ms259"
+        "v40m2_ms259",
+        "v2l_ms23"
       ]
     },
     {
@@ -177847,14 +178686,19 @@
           "kind": "围城与结局",
           "sources": [
             "v151_ms271",
-            "v40m2_ms259"
+            "v40m2_ms259",
+            "v2l_ms23"
           ],
           "events": [
             "v151_jinzhou_siege",
-            "v151_ningjin_field"
+            "v151_ningjin_field",
+            "v152_route_entry",
+            "v152_zunhua_relief"
           ],
           "people": [
-            "q_hongtaiji"
+            "q_hongtaiji",
+            "m152_liuce",
+            "m152_wangqia"
           ]
         }
       ],
@@ -177862,7 +178706,8 @@
         "v151_ms271",
         "v149_ms259",
         "v40m2_ms250",
-        "v40m2_ms259"
+        "v40m2_ms259",
+        "v2l_ms23"
       ]
     },
     {
@@ -177965,6 +178810,687 @@
         "v40m2_ms259",
         "v151_ms271",
         "v151_dpm_artillery"
+      ]
+    },
+    {
+      "person": "m152_wangqia",
+      "title": "王洽：兵部调度、军屯设想与己巳问责",
+      "dek": "制度建议可以写在奏疏里，边墙、军粮与多镇命令却不会自动同步。",
+      "sections": [
+        {
+          "id": "v152_wq1",
+          "title": "从魏忠贤时期被逐到崇祯朝掌兵部，他接到的是积弊而非新军",
+          "text": "王洽早年任地方官和吏部官，天启时受赵南星牵连被罢。崇祯帝召回后，他从工部迅速转任兵部尚书，提出严债帅、核实兵、衡将材、惩朘削和勤训练等十项军政。条目说明他知道空额、克饷与将领考核的问题，却不证明这些积弊已在一年内解决。皇帝召见后立即擢用，也显示崇祯初年相信通过换人和严责可以迅速振作军政；这既给予王洽权力，也把长期制度债务压到一个新任尚书身上。",
+          "kind": "任用与积弊",
+          "sources": [
+            "v152_ms257"
+          ],
+          "events": [
+            "v152_command_concentration"
+          ],
+          "people": [
+            "youjian"
+          ]
+        },
+        {
+          "id": "v152_wq2",
+          "title": "京东屯田把军粮问题带回土地、水利与产权",
+          "text": "王洽建议在辽东、永平、天津、登莱及宝坻等京东州县清理荒闲地，恢复部分军屯。他引用前代尝试，说明方案不是临时想象，也承认曾遭豪强阻碍。计划中的百万顷不能读成已经丈量、灌溉和收获的面积：所谓荒地可能已有使用者，改作水田需要工程，军户屯垦还要种具与初始口粮。屯田可减少远途转运，却不会在危机当年立刻供军。把奏疏放回实施条件，才能看见‘以地养兵’不是免费财政。",
+          "kind": "屯田与产权",
+          "sources": [
+            "v152_ms257"
+          ],
+          "events": [
+            "v152_wang_tuntian"
+          ],
+          "people": [
+            "youjian"
+          ]
+        },
+        {
+          "id": "v152_wq3",
+          "title": "各镇勤王名单很长，兵部仍缺少统一驻地、粮饷和指挥节奏",
+          "text": "后金军入塞，王洽急征各方兵马。袁崇焕、祖大寿、赵率教、满桂、侯世禄以及山西、宣大、保定等部先后行动，但到达并不等于整合：有的守城，有的野战，有的连续改驻，有的数日未饷。兵部要同时处理边镇原防、道路、驻地、军粮和皇帝不断变化的要求。王洽对预警和统筹负有责任，不能以事务繁难免罪；同样不能把各路不能协同全部写成一个尚书的个人‘调度乖张’。",
+          "kind": "动员与协同",
+          "sources": [
+            "v152_ms257",
+            "v152_ms248",
+            "v2l_ms23"
+          ],
+          "events": [
+            "v152_route_entry",
+            "v152_national_mobilization",
+            "v152_supply_redeployment"
+          ],
+          "people": [
+            "m152_gengrugi",
+            "m152_liuce",
+            "m40_yuanchonghuan"
+          ]
+        },
+        {
+          "id": "v152_wq4",
+          "title": "周延儒以丁汝夔旧例推动下狱，威慑先于完整调查",
+          "text": "敌军逼近北京时，王洽被指防御疏忽、调度失当。廷臣援引嘉靖朝处死兵部尚书丁汝夔、从而震慑将士的故事，崇祯帝随即下王洽于狱。这种逻辑把惩罚本身当作重建军纪的工具，未先回答大安口由谁守、蓟辽总理掌握多少兵、援军为何缺饷和皇帝如何催战。王洽不能因成为替罪者便被写成无责；但处刑先例也不是证据，历史相似不能代替本案逐项核查。",
+          "kind": "问责与先例",
+          "sources": [
+            "v152_ms257",
+            "v2l_ms23"
+          ],
+          "events": [
+            "v152_wangqia_prison",
+            "v152_capital_rumor"
+          ],
+          "people": [
+            "youjian"
+          ]
+        },
+        {
+          "id": "v152_wq5",
+          "title": "狱中死亡后仍追论大辟，结局暴露崇祯问责的不可逆",
+          "text": "王洽在次年四月死于狱中，随后议罪仍追至死刑。这个结局没有带回失守城镇，也没有自动修复兵部与总督、督师、边镇之间的职责。对他最稳妥的评价，应保留三层：他提出过核兵和屯田等有针对性的改革；己巳之变中兵部确未形成有效协同；朝廷又以迅速惩罚代替了足以改进制度的公开调查。廉能传记不能替他免除失职，瘐死也不能成为调度问题已经查清的证明。",
+          "kind": "刑罚与制度学习",
+          "sources": [
+            "v152_ms257",
+            "v2l_ms23"
+          ],
+          "events": [
+            "v152_wangqia_prison",
+            "v152_battlefield_burial"
+          ],
+          "people": [
+            "youjian"
+          ]
+        }
+      ],
+      "sources": [
+        "v152_ms257",
+        "v152_ms248",
+        "v2l_ms23"
+      ]
+    },
+    {
+      "person": "m152_qianlongxi",
+      "title": "钱龙锡：边臣通信怎样被扩张成谋逆案件",
+      "dek": "知情、劝止、失察与共同谋划必须分别举证。",
+      "sections": [
+        {
+          "id": "v152_ql1",
+          "title": "定逆案使他参与清理魏党，也为后来反向报复留下政治结构",
+          "text": "钱龙锡在崇祯初入阁，参与清理魏忠贤时期案件。朝廷并没有因此形成稳定中立的司法环境：被列入逆案者的旧党仍在言路和部院活动，新的皇帝又倾向以严刑显示振作。袁崇焕案爆发后，钱既是与边臣有通信的阁臣，也是旧政治冲突中的可攻击目标。承认报复网络存在，不等于把所有弹劾都判为虚假；它要求读者检查每项指控的材料来源，而不是先用‘东林’或‘魏党’给证词定真伪。",
+          "kind": "政治位置",
+          "sources": [
+            "v152_ms251",
+            "v40m2_ms259"
+          ],
+          "events": [
+            "v152_qian_prosecution"
+          ],
+          "people": [
+            "youjian"
+          ]
+        },
+        {
+          "id": "v152_ql2",
+          "title": "他知道袁崇焕考虑处置毛文龙，但现存材料不证明授意擅杀",
+          "text": "袁崇焕曾向钱龙锡谈到毛文龙可用则用、不可用则处置，后来又以书信报告相关想法。钱的回复包含慎重、酌量等意思；在袁实际于双岛先斩后奏后，钱没有及时公开追究，构成政治失察的讨论空间。但‘听到可能去之’与‘命令秘密斩杀’之间仍缺少证据。毛文龙罪状、尚方剑权限和东江后续都需单独审查，不能用一段含混通信让阁臣承担行刑决定。",
+          "kind": "知情与授意",
+          "sources": [
+            "v152_ms251",
+            "v40m2_ms259"
+          ],
+          "events": [
+            "v152_mao_execution"
+          ],
+          "people": [
+            "m40_yuanchonghuan",
+            "m150_maowenlong"
+          ]
+        },
+        {
+          "id": "v152_ql3",
+          "title": "议和书信中有劝止内容，案件却把通信本身解释成共同通款",
+          "text": "袁崇焕曾把议和视为修城、整军的缓兵方法，钱龙锡的信件并非一味赞成，材料记载他曾劝止。己巳之变后，‘私自谈论和战而未上奏’仍可被追究，但这与秘密向敌方承诺献城不是同一事实。审理若从‘与边臣通信’直接跳到‘卖国欺君’，便省略了文字原意、政策权限和实际行动三个层次。这里保留阁臣对重大边策未公开复核的责任，同时拒绝把沉默补写成谋逆协议。",
+          "kind": "议和与证据",
+          "sources": [
+            "v152_ms251",
+            "v40m2_ms259"
+          ],
+          "events": [
+            "v152_qian_prosecution",
+            "v152_yuan_execution"
+          ],
+          "people": [
+            "m40_yuanchonghuan"
+          ]
+        },
+        {
+          "id": "v152_ql4",
+          "title": "弹劾、书信出示与廷臣议罪显示朝廷内部并非一致认定谋逆",
+          "text": "袁案之后，高捷等连续攻击钱龙锡。钱提交往来原信自辩，廷臣讨论认为擅杀问题有失察，但书信中有慎重与反对议和的意思。法司一度拟重刑，皇帝又承认没有明确逆谋而令长期系狱。这些变化说明案件不是已经发现一份无可争议的共谋文件，而是皇帝、言官、法司和旧党冲突共同塑造的政治审判。不能以最终流戍证明最初指控成立，也不能以未杀证明全无责任。",
+          "kind": "审判分歧",
+          "sources": [
+            "v152_ms251",
+            "v2l_ms23"
+          ],
+          "events": [
+            "v152_qian_prosecution"
+          ],
+          "people": [
+            "youjian"
+          ]
+        },
+        {
+          "id": "v152_ql5",
+          "title": "定海流戍十二年使一场边事案件延长为个人与家族生活史",
+          "text": "钱龙锡被戍定海，十二年间两遇赦仍未获释，儿子请求输粟赎罪也未成。直到南明才复官，归里不久去世。长期流戍不是抽象‘党争’：它改变居住、家庭资源和政治身份。评价钱龙锡不应只问他是否‘忠臣’，而应说明国家如何把通信、失察和阵营身份合并成可延续十余年的刑罚。后来的平反同样是另一政治环境中的裁决，不能替代对原信和当时法定程序的阅读。",
+          "kind": "流戍与记忆",
+          "sources": [
+            "v152_ms251"
+          ],
+          "events": [
+            "v152_qian_prosecution",
+            "v152_collective_punishment"
+          ],
+          "people": [
+            "m152_heruchong"
+          ]
+        }
+      ],
+      "sources": [
+        "v152_ms251",
+        "v40m2_ms259",
+        "v2l_ms23"
+      ]
+    },
+    {
+      "person": "m152_chengjiming",
+      "title": "成基命：京师危机中的慎重、招抚与程序",
+      "dek": "在敌军城下要求慢一步，不等于反对追责，而是避免让指挥链与司法一起崩断。",
+      "sections": [
+        {
+          "id": "v152_cj1",
+          "title": "魏忠贤以杨涟同门为由罢他，崇祯朝重新起用并不消除旧冲突",
+          "text": "成基命在天启末被魏忠贤势力落职，崇祯初重新任吏部左侍郎。这个履历使他重视逆案后的政治修复，也使后来为袁崇焕请求慎重容易被对手解释为阵营庇护。把他写成单纯‘东林忠臣’会遮蔽具体职务：京师危机时，他处理的是枢臣配置、边军召回、诏狱程序与内阁协调。政治标签可以解释攻击路径，不能代替判断其建议是否可行。",
+          "kind": "复起与标签",
+          "sources": [
+            "v152_ms251"
+          ],
+          "events": [
+            "v152_qian_prosecution"
+          ],
+          "people": [
+            "m152_qianlongxi"
+          ]
+        },
+        {
+          "id": "v152_cj2",
+          "title": "戒严之初建议召孙承宗、增枢臣，是先补指挥而非先找罪人",
+          "text": "己巳入塞后，成基命请求召回熟悉辽事的孙承宗，减少无用争论，并参照旧例增加处理军事的重臣。皇帝采纳，孙后来驻通州、山海关，参与招回祖大寿和恢复遵永。建议并不神奇地解决粮饷与道路，也不能反事实断言若完全听从便无败局；它的重要性在于把危机看成需要经验、分工和连续授权的组织问题，而非只靠一道严旨或一名勇将。",
+          "kind": "枢辅与连续性",
+          "sources": [
+            "v152_ms251",
+            "v2l_ms23"
+          ],
+          "events": [
+            "v152_national_mobilization",
+            "v152_recover_four_cities"
+          ],
+          "people": [
+            "m40_sunchengzong",
+            "m152_wangqia"
+          ]
+        },
+        {
+          "id": "v152_cj3",
+          "title": "平台捕袁时两次请慎重，理由首先是敌军仍在城下",
+          "text": "崇祯帝在平台逮捕袁崇焕，成基命反复叩请慎重，强调战时不同于平日。这个意见不等于他已证明袁无罪，也不是要求免查议和、杀毛与入援路线；它指出逮捕统帅会立即影响关宁军。皇帝把慎重理解为因循，反映崇祯治理中常见的时间冲突：司法复核需要时间，君主又希望用迅速惩罚显示控制。结果祖大寿当场恐惧，出宫后率军东撤。",
+          "kind": "慎捕与战时司法",
+          "sources": [
+            "v152_ms251",
+            "v2l_ms23"
+          ],
+          "events": [
+            "v152_yuan_arrest"
+          ],
+          "people": [
+            "m40_yuanchonghuan",
+            "m151_zudashou",
+            "youjian"
+          ]
+        },
+        {
+          "id": "v152_cj4",
+          "title": "让狱中袁崇焕写信招回祖大寿，是把私人信任暂时转为国家工具",
+          "text": "祖大寿东撤后，成基命建议由袁崇焕亲笔招抚，朝廷接受，孙承宗、刘策等继续处置，关宁军方才回归。这个办法有效，却暴露军队对个人关系的依赖：士兵和将领不确定法律后果时，更相信旧主的书信而非抽象诏令。招回不能删除东撤的军纪责任，也不能证明祖大寿从未动摇；它说明国家若不能提供可预期程序，只能借用私人信用维持军队。",
+          "kind": "手书与军队信任",
+          "sources": [
+            "v152_ms251",
+            "v40m2_ms259",
+            "v152_ms248"
+          ],
+          "events": [
+            "v152_zushou_return"
+          ],
+          "people": [
+            "m151_zudashou",
+            "m40_yuanchonghuan",
+            "m152_liuce"
+          ]
+        },
+        {
+          "id": "v152_cj5",
+          "title": "反对诏狱即时重刑，延续为‘真死罪亦须三覆奏’的程序立场",
+          "text": "成基命后来为多名被下狱官员申救，甚至长跪会极门，强调真正死罪尚需反复审奏，不能一次诏狱讯问便立刻极刑。他也曾误判或无力阻止政治倾轧，不宜塑造成始终正确的法治理想者；但这条意见给出了可检验的原则：危机越大，越需区分调查、裁判与执行。己巳问责最终连续处置王洽、刘策、袁崇焕等人，却很少把调查结果转成公开的边防改进。程序不会保证判断正确，却能迫使指控留下可复查的证据。",
+          "kind": "程序与操切",
+          "sources": [
+            "v152_ms251",
+            "v2l_ms23"
+          ],
+          "events": [
+            "v152_liuce_execution",
+            "v152_yuan_execution",
+            "v152_wangqia_prison"
+          ],
+          "people": [
+            "m152_heruchong",
+            "m152_qianlongxi"
+          ]
+        }
+      ],
+      "sources": [
+        "v152_ms251",
+        "v2l_ms23",
+        "v40m2_ms259",
+        "v152_ms248"
+      ]
+    },
+    {
+      "person": "m152_heruchong",
+      "title": "何如宠：城内自卫、内阁判断与族刑边界",
+      "dek": "危机中的克制不是不作为，而是先问武器、命令和刑罚究竟落到谁身上。",
+      "sections": [
+        {
+          "id": "v152_hr1",
+          "title": "从礼部宗藩积案入手，他习惯先看制度如何压在具体家庭上",
+          "text": "何如宠在崇祯初任礼部尚书，处理长期积压的宗藩婚嫁和命名申请，使一批贫困宗室得以完成婚配。这个经历与边战并非无关：它显示中央规则若只在纸面存在，会让家庭多年承受等待成本。己巳之变中，他后来关注私人聚众和袁案连坐，也沿用同一视角——国家当然要自卫和惩罪，但命令必须分清身份、权限与无辜者。官修传记称颂其德行，具体数字仍需保留史料口径。",
+          "kind": "制度与家庭",
+          "sources": [
+            "v152_ms251"
+          ],
+          "events": [
+            "v152_collective_punishment"
+          ],
+          "people": [
+            "youjian"
+          ]
+        },
+        {
+          "id": "v152_hr2",
+          "title": "有人愿以私财聚众助防，他先追问这支人群由谁控制",
+          "text": "敌军兵临北京，城中有人提出自行出资召集人众。朝议容易把这种表示理解为忠勇，何如宠却警告若使用不当可能造成内乱，皇帝掌握的侦察片纸与其担忧相合。我们不能据此断言所有倡议者都图谋不轨，也不能浪漫化为自发民兵必能救城。城市里混有居民、流民、豪强家丁和临时武装，武器发放、口粮、指挥、识别与解散都需要明确制度。",
+          "kind": "私人武装与城市秩序",
+          "sources": [
+            "v152_ms251"
+          ],
+          "events": [
+            "v152_private_militias",
+            "v152_capital_rumor"
+          ],
+          "people": [
+            "youjian"
+          ]
+        },
+        {
+          "id": "v152_hr3",
+          "title": "进入内阁后面对的不是一场战斗，而是援军、审判和城内秩序同时发生",
+          "text": "何如宠在戒严后入阁。此时关宁军在城外，山西援军因欠饷劫掠，王洽和袁崇焕先后下狱，战报又被限制传播。内阁既要拟旨调兵，也要判断刑罚和社会反应。传记没有证明何如宠掌握全部军事情报，更不能把后来保全亲属写成他完全赞同袁的战略。他的价值在于提醒：内阁决策不只有胜负判断，还包括城内治安、文书证据和连坐范围。",
+          "kind": "内阁危机治理",
+          "sources": [
+            "v152_ms251",
+            "v2l_ms23"
+          ],
+          "events": [
+            "v152_reinforcement_looting",
+            "v152_war_news_ban",
+            "v152_yuan_arrest"
+          ],
+          "people": [
+            "m152_chengjiming",
+            "m152_wangqia"
+          ]
+        },
+        {
+          "id": "v152_hr4",
+          "title": "阻止三百余名亲属被族刑，是把个人重罪与血缘身份重新分开",
+          "text": "袁崇焕被处重刑后，皇帝一度欲将处罚扩展到家族。何如宠申救，使三百余人免死，但袁的兄弟妻子仍被远徙，家产籍没。这个结果不是现代意义的无罪保护，却在当时严酷刑制中限制了惩罚扩张。数字出自本传，不作精确户籍统计；其意义在于显示一项边事裁判可能波及大量没有参与军事决策的人。反对族刑不等于否定对袁本人擅杀毛文龙的追责。",
+          "kind": "亲属连坐",
+          "sources": [
+            "v152_ms251",
+            "v40m2_ms259"
+          ],
+          "events": [
+            "v152_collective_punishment",
+            "v152_yuan_execution"
+          ],
+          "people": [
+            "m40_yuanchonghuan",
+            "youjian"
+          ]
+        },
+        {
+          "id": "v152_hr5",
+          "title": "克制路线在崇祯朝并未成为稳定制度，只留下少数具体减损",
+          "text": "何如宠后来多次求退，温体仁执政后也未形成以他为中心的长期政策。把他称为‘宽厚’容易停在品德赞语，更值得保留的是几项可核行动：警惕未经编制的私人武装、为受牵连者申救、劝皇帝从历史中辨治乱。这些行动不能挽回己巳战局，却减少了城内失控和族刑范围。明末危机史若只写前线勇将，就会漏掉决定谁可持兵、谁被连坐、谁能活下来的文官工作。",
+          "kind": "克制与限度",
+          "sources": [
+            "v152_ms251"
+          ],
+          "events": [
+            "v152_private_militias",
+            "v152_collective_punishment"
+          ],
+          "people": [
+            "m152_chengjiming"
+          ]
+        }
+      ],
+      "sources": [
+        "v152_ms251",
+        "v2l_ms23",
+        "v40m2_ms259"
+      ]
+    },
+    {
+      "person": "m152_liuce",
+      "title": "刘策：辽阔辖区、隘口失守与极速处刑",
+      "dek": "正式负责一片边防，不代表一道官衔已经配置足够兵力、情报与时间。",
+      "sections": [
+        {
+          "id": "v152_lc1",
+          "title": "从言官与党争中起落，崇祯二年夏才接手蓟辽保定",
+          "text": "刘策早年任御史，曾参与熊廷弼勘查等朝争，天启时被指为东林而削籍。崇祯二年夏，他才以兵部右侍郎兼都御史总理蓟、辽、保定军务。这个任命发生在后金入塞前数月，辖区从山海关外联系到燕山隘口和保定援军。短任不能自动免除责任，却提醒读者不要把多年边墙配置、镇路权责和兵额空虚都写成他个人形成。政治复起也使他更依赖皇帝对‘新用之人’快速见效的期待。",
+          "kind": "任期与辖区",
+          "sources": [
+            "v152_ms248",
+            "v2l_ms23"
+          ],
+          "events": [
+            "v152_route_entry"
+          ],
+          "people": [
+            "youjian"
+          ]
+        },
+        {
+          "id": "v152_lc2",
+          "title": "大安口属于其总理范围，入口守备仍由多级镇路执行",
+          "text": "后金军从大安口、龙井关方向入塞，正面绕开宁远、山海关。袁崇焕传明确指出入隘属刘策辖区，这构成可核的总督责任。但总理不是亲守每一道口：具体边墙、墩台、哨探、地方总兵和巡抚各有职责，兵部又掌跨镇调度。若只写‘刘策不能御’，读者无法知道是预警未报、兵力不足、命令迟缓还是守军溃散。资料不足处应保留问题，而不是用死刑填空。",
+          "kind": "隘口与分层责任",
+          "sources": [
+            "v152_ms248",
+            "v40m2_ms259"
+          ],
+          "events": [
+            "v152_route_entry"
+          ],
+          "people": [
+            "m152_wangqia",
+            "m40_yuanchonghuan"
+          ]
+        },
+        {
+          "id": "v152_lc3",
+          "title": "敌军越蓟州向西，说明名义辖区无法自动组织机动截击",
+          "text": "入塞后，赵率教驰援遵化战死，袁崇焕在沿途城市留兵并至蓟州，敌军仍继续西进。刘策的任务既含隘口预防，也涉及蓟镇、辽军和保定部队协同。每支军队有原驻地与补给线，跨越数百里后更难即时服从同一命令。不能因此把战局说成无人负责；相反，应把可核命令、到达时间与未完成拦截分别列出。总督官衔覆盖越广，越需要稳定参谋和通信，而非只扩大问责面积。",
+          "kind": "机动与协同",
+          "sources": [
+            "v2l_ms23",
+            "v40m2_ms259",
+            "v152_ms248"
+          ],
+          "events": [
+            "v152_zunhua_relief",
+            "v152_jizhou_bypass",
+            "v152_national_mobilization"
+          ],
+          "people": [
+            "m151_zhaolvjiao",
+            "m40_yuanchonghuan"
+          ]
+        },
+        {
+          "id": "v152_lc4",
+          "title": "祖大寿东撤时，他又参与招抚，危机职责并非只有失守",
+          "text": "袁崇焕被捕后祖大寿率关宁军东撤，刘策与孙承宗等参与招回。这个行动不能抵消大安口失守，但说明朝廷仍需使用被问责官员维持军队。祖军是否回归关系京师防御与关外各城，处理时依靠袁的手书、孙的威望和刘的正式职权。若国家一面需要其协调，一面又很快以一行‘不能御’处死，便难以形成可传承的危机复盘。这里不替刘策判无罪，只区分失败责任与后来有效处置。",
+          "kind": "招抚与连续性",
+          "sources": [
+            "v152_ms248",
+            "v152_ms251",
+            "v40m2_ms259"
+          ],
+          "events": [
+            "v152_zushou_return"
+          ],
+          "people": [
+            "m40_sunchengzong",
+            "m151_zudashou",
+            "m152_chengjiming"
+          ]
+        },
+        {
+          "id": "v152_lc5",
+          "title": "永平、滦州失守后被迅速处死，刑罚没有留下足够制度答案",
+          "text": "崇祯三年正月，永平、滦州相继被占，刘策与总兵张士显被捕论死并处刑。正史没有提供一份逐项调查，说明每处隘口兵额、预警和援军命令，只以辖区失事概括责任。刘策是总理，理应对防线失效负责；但处死不能自动证明所有失败都来自他的怯懦或不忠。几个月后诸军收复遵永，依靠的是重新组织而非死刑本身。对他的长读必须让责任、信息缺口和崇祯朝严刑治理同时存在。",
+          "kind": "处刑与证据缺口",
+          "sources": [
+            "v152_ms248",
+            "v2l_ms23"
+          ],
+          "events": [
+            "v152_liuce_execution",
+            "v152_recover_four_cities"
+          ],
+          "people": [
+            "youjian"
+          ]
+        }
+      ],
+      "sources": [
+        "v152_ms248",
+        "v2l_ms23",
+        "v40m2_ms259",
+        "v152_ms251"
+      ]
+    },
+    {
+      "person": "m152_gengrugi",
+      "title": "耿如杞：勤王军为什么在京畿变成了劫掠者",
+      "dek": "军饷与驻地失序能够解释哗变，不能让受害居民从历史中消失。",
+      "sections": [
+        {
+          "id": "v152_gr1",
+          "title": "因拒绝向魏忠贤画像行大礼而下诏狱，获释后并非天然善治",
+          "text": "耿如杞在蓟州任职时不肯迎合魏忠贤建祠，被逮入诏狱并判死；崇祯即位后获释，迅速升任山西巡抚。这段经历说明新朝用受害者替换魏党，但受迫害身份不能自动证明其后所有军事判断正确。山西巡抚要处理插汉关系、塞垣工事、军饷和地方治安，既是政治清流也是具体行政官。评价己巳勤王时，应看他实际掌握的兵、命令和补给，而不是用前一朝的道德立场代替后一次责任。",
+          "kind": "身份与行政",
+          "sources": [
+            "v152_ms248"
+          ],
+          "events": [
+            "v152_national_mobilization"
+          ],
+          "people": [
+            "youjian"
+          ]
+        },
+        {
+          "id": "v152_gr2",
+          "title": "此前主张守边、修墙与整地，说明赴援会抽走本地防务资源",
+          "text": "巡抚山西后，耿如杞主张以守为主，修塞垣、战垒和道路障碍。己巳之变发生，他率总兵张鸿功和约五千兵赴京。勤王看似只是增加首都兵力，实际上意味着山西原防抽兵、长途行军、马匹与口粮沿途消耗。列传人数是奏报尺度，不视为准确点名册。明廷频繁从各边镇抽调部队，容易让每地都只保留不足的守备；理解这层资源转移，才能避免把‘来得快’等同于‘到后即可战’。",
+          "kind": "边镇抽兵",
+          "sources": [
+            "v152_ms248",
+            "v2l_ms23"
+          ],
+          "events": [
+            "v152_national_mobilization"
+          ],
+          "people": [
+            "m152_wangqia"
+          ]
+        },
+        {
+          "id": "v152_gr3",
+          "title": "通州、昌平、良乡连续改驻，驻地未定便无法按旧规领饷",
+          "text": "耿军到京后，兵部命其先守通州，次日改昌平，又次日改良乡。军令规定驻地确定后才发饷，于是部队连续数日没有领到供应。这里不能把‘三日’外推成整场危机的统一欠饷时长，但它清楚揭示制度错位：战时需要快速移动，财政程序却以稳定汛地为前提。巡抚和总兵应维持军纪，兵部也必须让调令与粮饷同步。任何一方把问题推给另一方，都不能让士兵吃饱或居民免遭抢掠。",
+          "kind": "调令与粮饷",
+          "sources": [
+            "v152_ms248"
+          ],
+          "events": [
+            "v152_supply_redeployment"
+          ],
+          "people": [
+            "m152_wangqia"
+          ]
+        },
+        {
+          "id": "v152_gr4",
+          "title": "哗变抢掠使‘保卫京师’与‘伤害京畿’同时发生",
+          "text": "欠饷部队随后大噪并抢掠。士兵疲惫和饥饿是原因，不是免责；居民没有义务以财物和安全承担兵部程序失灵。也不能由一次劫掠把每名山西士兵都定为暴徒，需区分发起者、随从者、试图约束者和上级军官。传统忠勇叙事常把勤王军写成同质队伍，受害者则没有姓名。本页把居民经验放回事件：外敌、征发、物价和友军暴力可以在同一地点叠加。",
+          "kind": "军纪与居民",
+          "sources": [
+            "v152_ms248"
+          ],
+          "events": [
+            "v152_reinforcement_looting",
+            "v152_capital_rumor"
+          ],
+          "people": [
+            "m152_heruchong"
+          ]
+        },
+        {
+          "id": "v152_gr5",
+          "title": "廷臣无人敢救、两年后斩于西市，说明问责同样受恐惧支配",
+          "text": "崇祯帝闻劫掠大怒，下令逮捕耿如杞和张鸿功，朝臣当时无人敢救，崇祯四年二人被处死。耿身为巡抚，对部队失控负有重大责任；但审理若不处理反复移防和发饷规则，同类风险仍会发生。后世为其恢复名位也不能撤销居民损失。最完整的评价应同时写出：他曾因拒绝魏忠贤受迫害；他努力整修山西边防；他的勤王军伤害了百姓；朝廷又以严刑收束事件而没有公开改革供应流程。",
+          "kind": "处刑与复盘",
+          "sources": [
+            "v152_ms248"
+          ],
+          "events": [
+            "v152_reinforcement_looting",
+            "v152_liuce_execution"
+          ],
+          "people": [
+            "youjian"
+          ]
+        }
+      ],
+      "sources": [
+        "v152_ms248",
+        "v2l_ms23"
+      ]
+    },
+    {
+      "person": "m152_sunzushou",
+      "title": "孙祖寿：蓟镇部署、前次失援与散财赴战",
+      "dek": "一次战死不能洗去此前退缩，一次退缩也不能抹掉后来真实承担。",
+      "sections": [
+        {
+          "id": "v152_sz1",
+          "title": "从固关把总到蓟镇总兵，他的经验属于关内隘口而非辽西孤城",
+          "text": "孙祖寿由武职基层升至蓟镇总兵。孙承宗规划三协十二路时，让他负责西协，涉及石匣、古北、曹家、墙子等路并驻遵化。王在晋、王象乾等对驻地安排提出异议，认为多镇并列可能重复且应援疏远。这个争论说明己巳入塞前，蓟镇不是无人设计，而是存在不同的空间方案。孙祖寿是方案执行者之一，不能把整套防线归为个人作品，也不能忽略站位争议对后来增援距离的影响。",
+          "kind": "蓟镇空间",
+          "sources": [
+            "v151_ms271"
+          ],
+          "events": [
+            "v152_route_entry"
+          ],
+          "people": [
+            "m40_sunchengzong",
+            "m151_wangzaijin"
+          ]
+        },
+        {
+          "id": "v152_sz2",
+          "title": "三协十二路把山口分区，却没有消除跨区指挥和兵力重复",
+          "text": "西协、东协和中协分别覆盖多路，意在让将领熟悉辖区并互相支援。反对者担心永平、三屯、遵化的镇将过密，有的地方反而离山海关太远。地图上的分区如果没有共同情报、机动预备队和粮道，仍可能各守一段。孙祖寿履历让我们看到边防制度的中层：他既不是制定全部战略的督师，也不是无名守卒，而是把上层方案变成驻地、巡哨和调兵的总兵。后来的失败不能简单证明所有前期规划毫无价值。",
+          "kind": "分区与互援",
+          "sources": [
+            "v151_ms271",
+            "v40m2_ms250"
+          ],
+          "events": [
+            "v152_command_concentration",
+            "v152_route_entry"
+          ],
+          "people": [
+            "m40_sunchengzong"
+          ]
+        },
+        {
+          "id": "v152_sz3",
+          "title": "宁锦告警时赴援而不敢战，被劾罢归是不能删去的责任",
+          "text": "天启七年锦州受围，孙祖寿奉命赴援却未积极交战，随后被弹劾罢职。官修传记后来以战死忠节收尾，容易让这次失援变成履历中的一行空白。我们不能仅凭‘不敢战’复原当时全部敌情、命令和兵力，也不能因为后来牺牲就宣布此前选择正确。把这次失败与赵率教守锦州、满桂守宁远并置，能看到互援体系最脆弱处：每名将领都担心本部损失，结果外围守城者可能独自承压。",
+          "kind": "失援与问责",
+          "sources": [
+            "v151_ms271",
+            "v40m2_ms259"
+          ],
+          "events": [
+            "v151_jinzhou_siege",
+            "v151_ningjin_field"
+          ],
+          "people": [
+            "m151_zhaolvjiao",
+            "m151_mangui"
+          ]
+        },
+        {
+          "id": "v152_sz4",
+          "title": "京师戒严后散家财召回旧部，私人资源填补了国家动员缝隙",
+          "text": "己巳之变时，已罢职的孙祖寿散出家财，招回旧部，跟随满桂参与北京城外防御。这个行动显示武将部曲关系和家庭财产可在紧急时转化为兵力，也暴露国家不能只靠正式军籍迅速召集。私人出资不应浪漫化：旧部的口粮、装备、服从和战后安置仍是公共问题。与城中豪强请求自行聚众相比，孙有既往军职和部曲网络，但同样需要国家授权。",
+          "kind": "家财与部曲",
+          "sources": [
+            "v151_ms271",
+            "v152_ms251"
+          ],
+          "events": [
+            "v152_national_mobilization",
+            "v152_private_militias"
+          ],
+          "people": [
+            "m151_mangui",
+            "m152_heruchong"
+          ]
+        },
+        {
+          "id": "v152_sz5",
+          "title": "随满桂出战而死，战场细节不应被忠烈范型填满",
+          "text": "袁崇焕被捕后，满桂受命统军并被催战，孙祖寿随之在北京城外作战阵亡。本纪和列传可确认两人同日战死，具体兵数、阵地转换和每次冲突细节在不同材料中并不完全一致。本页不制造最后遗言，也不以战死证明仓促出战必然必要。朝廷随后收瘗城外遗骸，孙有姓名和恤典，更多士卒只留下群体称谓。纪念他的最好方式，是同时记住前次失援、这次真实承担和无名部众，而非塑造无瑕英雄。",
+          "kind": "战死与记忆",
+          "sources": [
+            "v2l_ms23",
+            "v151_ms271"
+          ],
+          "events": [
+            "v152_mangui_final",
+            "v152_battlefield_burial"
+          ],
+          "people": [
+            "m151_mangui",
+            "youjian"
+          ]
+        }
+      ],
+      "sources": [
+        "v151_ms271",
+        "v40m2_ms250",
+        "v40m2_ms259",
+        "v152_ms251",
+        "v2l_ms23"
       ]
     }
   ],
@@ -201156,6 +202682,188 @@
         "v40m2_ms259",
         "v151_dpm_zudashou"
       ]
+    },
+    {
+      "from": "youjian",
+      "to": "m152_wangqia",
+      "role": "兵部尚书",
+      "inverse": "皇帝与兵部尚书",
+      "period": "1628—1629年",
+      "note": "任其整顿军政，己巳之变后下狱。",
+      "sources": [
+        "v152_ms257"
+      ]
+    },
+    {
+      "from": "youjian",
+      "to": "m152_qianlongxi",
+      "role": "内阁大学士",
+      "inverse": "皇帝与阁臣",
+      "period": "1627—1631年",
+      "note": "先参与逆案清理，后因袁案通信被捕流戍。",
+      "sources": [
+        "v152_ms251"
+      ]
+    },
+    {
+      "from": "youjian",
+      "to": "m152_chengjiming",
+      "role": "内阁大学士",
+      "inverse": "皇帝与阁臣",
+      "period": "1629—1630年",
+      "note": "戒严中请求慎捕并协调边军。",
+      "sources": [
+        "v152_ms251"
+      ]
+    },
+    {
+      "from": "youjian",
+      "to": "m152_heruchong",
+      "role": "礼部尚书、阁臣",
+      "inverse": "皇帝与阁臣",
+      "period": "1628—1631年",
+      "note": "处理城内聚众风险并限制袁案族刑。",
+      "sources": [
+        "v152_ms251"
+      ]
+    },
+    {
+      "from": "youjian",
+      "to": "m152_liuce",
+      "role": "蓟辽保定总理",
+      "inverse": "皇帝与总理",
+      "period": "1629—1630年",
+      "note": "负责蓟辽保定，入塞失事后被处死。",
+      "sources": [
+        "v152_ms248"
+      ]
+    },
+    {
+      "from": "youjian",
+      "to": "m152_gengrugi",
+      "role": "山西巡抚",
+      "inverse": "皇帝与巡抚",
+      "period": "1627—1631年",
+      "note": "率兵勤王，部队劫掠后被处死。",
+      "sources": [
+        "v152_ms248"
+      ]
+    },
+    {
+      "from": "youjian",
+      "to": "m152_sunzushou",
+      "role": "勤王将领",
+      "inverse": "皇帝与将领",
+      "period": "1629年",
+      "note": "罢职后自募旧部入卫并战死。",
+      "sources": [
+        "v2l_ms23",
+        "v151_ms271"
+      ]
+    },
+    {
+      "from": "m40_yuanchonghuan",
+      "to": "m152_qianlongxi",
+      "role": "边臣与阁臣通信",
+      "inverse": "阁臣与边臣通信",
+      "period": "1628—1630年",
+      "note": "讨论毛文龙与和战，后成为案件证据。",
+      "sources": [
+        "v152_ms251",
+        "v40m2_ms259"
+      ]
+    },
+    {
+      "from": "m40_yuanchonghuan",
+      "to": "m152_chengjiming",
+      "role": "被捕统帅与慎捕阁臣",
+      "inverse": "阁臣为统帅请慎",
+      "period": "1629年",
+      "note": "平台逮捕时请求慎重，后建议用手书召祖大寿。",
+      "sources": [
+        "v152_ms251"
+      ]
+    },
+    {
+      "from": "m40_yuanchonghuan",
+      "to": "m152_heruchong",
+      "role": "被处刑者与救族阁臣",
+      "inverse": "阁臣限制连坐",
+      "period": "1630年",
+      "note": "袁案后为何如宠申救亲属。",
+      "sources": [
+        "v152_ms251"
+      ]
+    },
+    {
+      "from": "m40_yuanchonghuan",
+      "to": "m152_wangqia",
+      "role": "督师与兵部尚书",
+      "inverse": "兵部尚书与督师",
+      "period": "1628—1629年",
+      "note": "兵部负责军政资源与勤王调度。",
+      "sources": [
+        "v40m2_ms259",
+        "v152_ms257"
+      ]
+    },
+    {
+      "from": "m152_wangqia",
+      "to": "m152_liuce",
+      "role": "兵部尚书与辖区总理",
+      "inverse": "总理与兵部尚书",
+      "period": "1629年",
+      "note": "分别承担中央调度与蓟辽保定防区责任。",
+      "sources": [
+        "v152_ms257",
+        "v152_ms248"
+      ]
+    },
+    {
+      "from": "m152_wangqia",
+      "to": "m152_gengrugi",
+      "role": "调兵机关与勤王巡抚",
+      "inverse": "勤王巡抚与兵部",
+      "period": "1629年",
+      "note": "山西军入援后因改驻与欠饷失控。",
+      "sources": [
+        "v152_ms248"
+      ]
+    },
+    {
+      "from": "m152_chengjiming",
+      "to": "m40_sunchengzong",
+      "role": "荐召旧辅",
+      "inverse": "受荐回朝",
+      "period": "1629年",
+      "note": "京师戒严时建议召孙承宗处理边务。",
+      "sources": [
+        "v152_ms251"
+      ]
+    },
+    {
+      "from": "m152_chengjiming",
+      "to": "m152_liuce",
+      "role": "内阁协调与总理执行",
+      "inverse": "总理与阁臣",
+      "period": "1629—1630年",
+      "note": "共同处置关宁军东撤与遵永战事。",
+      "sources": [
+        "v152_ms251",
+        "v152_ms248"
+      ]
+    },
+    {
+      "from": "m151_mangui",
+      "to": "m152_sunzushou",
+      "role": "共同出战",
+      "inverse": "共同出战",
+      "period": "1629年",
+      "note": "在北京城外同日战死。",
+      "sources": [
+        "v2l_ms23",
+        "v151_ms271"
+      ]
     }
   ],
   "dynasties": [
@@ -205062,7 +206770,14 @@
         "m40_weizhongxian",
         "m41_songyingxing",
         "q_wusangui",
-        "q_wangfuzhi"
+        "q_wangfuzhi",
+        "m152_wangqia",
+        "m152_qianlongxi",
+        "m152_chengjiming",
+        "m152_heruchong",
+        "m152_liuce",
+        "m152_gengrugi",
+        "m152_sunzushou"
       ],
       "events": [
         "v2l_weifall",
@@ -205074,7 +206789,35 @@
         "v40m2_dashun_1644",
         "v41m_tiangong_print",
         "v43mq_wang_juren",
-        "v90_m_chongzhen_surtax"
+        "v90_m_chongzhen_surtax",
+        "v152_platform_promise",
+        "v152_command_concentration",
+        "v152_wang_tuntian",
+        "v152_four_town_budget",
+        "v152_mao_execution",
+        "v152_eastjiang_after_mao",
+        "v152_route_entry",
+        "v152_zunhua_relief",
+        "v152_jizhou_bypass",
+        "v152_national_mobilization",
+        "v152_supply_redeployment",
+        "v152_reinforcement_looting",
+        "v152_guangqumen",
+        "v152_capital_rumor",
+        "v152_private_militias",
+        "v152_wangqia_prison",
+        "v152_yuan_arrest",
+        "v152_zushou_return",
+        "v152_mangui_final",
+        "v152_battlefield_burial",
+        "v152_war_news_ban",
+        "v152_liuce_execution",
+        "v152_recover_four_cities",
+        "v152_qian_prosecution",
+        "v152_collective_punishment",
+        "v152_yuan_execution",
+        "v152_counterintelligence_memory",
+        "v152_five_year_memory"
       ],
       "sources": [
         "v2l_ms23",
@@ -205093,7 +206836,12 @@
         "v41m_nlc_tiangong",
         "v41m_ihns_song",
         "v43mq_huang",
-        "v43mq_wu"
+        "v43mq_wu",
+        "v152_ms248",
+        "v152_ms251",
+        "v152_ms257",
+        "v152_dpm_counterintelligence",
+        "v152_dpm_five_year"
       ],
       "note": ""
     },
