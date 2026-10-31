@@ -621,62 +621,6 @@
       "audioHash": "397a2678ed65d5bc352e5fc05068de4118e184ed53b8d8408559de3e152f7182"
     },
     {
-      "articleID": "yijun",
-      "sectionID": "yijun-1",
-      "path": "ming-yijun-yijun-1-12d18c8247a0.mp3",
-      "textHash": "12d18c8247a07db170b1fa449bca81a2b1ef5f821dd3d8608530c9f5b34f87a5",
-      "audioHash": "6cdb3ba3d021da3f9c10117f60ee2d2813f4d7ff3f3856ac0996407193a34e33"
-    },
-    {
-      "articleID": "yijun",
-      "sectionID": "yijun-2",
-      "path": "ming-yijun-yijun-2-a8b169cd4ec5.mp3",
-      "textHash": "a8b169cd4ec526abea0518d6c8dc02537c73c8b8d43c8b0f49cc3a173ad84225",
-      "audioHash": "02f2d6cc910b1df18b98f8103378548f7fb3d1d36c30bec0d40938f822f6e333"
-    },
-    {
-      "articleID": "yijun",
-      "sectionID": "yijun-3",
-      "path": "ming-yijun-yijun-3-68e2d7eafc9a.mp3",
-      "textHash": "68e2d7eafc9a9d27dd5a7bf1646025607f88490ff0755e46dd0bbe4c31278f28",
-      "audioHash": "bae439ee9538ebdf6c43c1888a77dee1d76b1ae2106334cffc450137e17531be"
-    },
-    {
-      "articleID": "yijun",
-      "sectionID": "yijun-4",
-      "path": "ming-yijun-yijun-4-2258e304f037.mp3",
-      "textHash": "2258e304f037e1c28df0d9d15ad44933697d2fc8a4d87c7b9a04d166529f20b3",
-      "audioHash": "5ca21db8332bb910de902fff633405a28611a80a3ea18eff4be9efac75a94c73"
-    },
-    {
-      "articleID": "yijun",
-      "sectionID": "yijun-5",
-      "path": "ming-yijun-yijun-5-0ddecf062e73.mp3",
-      "textHash": "0ddecf062e73b98bf70fac89c16562693d68ecbc45a7c2d0d5a82fcb21bdaa86",
-      "audioHash": "3249c180885f455d350ac5f5e26c3f4bc96c3cbb04431fc7787eb9109add127f"
-    },
-    {
-      "articleID": "yijun",
-      "sectionID": "yijun-6",
-      "path": "ming-yijun-yijun-6-25b2c99e4f62.mp3",
-      "textHash": "25b2c99e4f62642e317885cc4c8d0910185d24f2a2d608733397a0ab5631ffde",
-      "audioHash": "41e85f7f8a2cac39563707fc0dbcf2efa1b2fe7a9d59f46a7e365a0ca5e5bd13"
-    },
-    {
-      "articleID": "yijun",
-      "sectionID": "yijun-7",
-      "path": "ming-yijun-yijun-7-e599dc6cc0f8.mp3",
-      "textHash": "e599dc6cc0f83695b4da603cd61b16526363da6c6010ab043ff8730c554de7db",
-      "audioHash": "de47e68d41cb73c2ba4285a3e79c4b8fdb198fc20f012b7f06cc8e180d04acb3"
-    },
-    {
-      "articleID": "yijun",
-      "sectionID": "yijun-8",
-      "path": "ming-yijun-yijun-8-4cf2cccdfd7a.mp3",
-      "textHash": "4cf2cccdfd7ab7df85b4dfab1ca15f925762ac3380c52d428a33874642158dc3",
-      "audioHash": "fb247ba9304d5b38b956d3164ceb320ec3640a3ef7f8c093367a503f1aecb4a0"
-    },
-    {
       "articleID": "changluo",
       "sectionID": "changluo-1",
       "path": "ming-changluo-changluo-1-ed8c91b6b718.mp3",
@@ -4329,6 +4273,62 @@
       "path": "qing-q_qiujin-v66_qiu_4-340e9a526bcf.mp3",
       "textHash": "340e9a526bcf8f05c026dd66637e5beb62d1759a19cd3621c2c58bd07790feb5",
       "audioHash": "3f7ba7c02c697119c11a991f3cb25ef4235974dd843aedde49cc54a5c8d6c39f"
+    },
+    {
+      "articleID": "yijun",
+      "sectionID": "yijun-1",
+      "path": "ming-yijun-yijun-1-12d18c8247a0.mp3",
+      "textHash": "12d18c8247a07db170b1fa449bca81a2b1ef5f821dd3d8608530c9f5b34f87a5",
+      "audioHash": "6cdb3ba3d021da3f9c10117f60ee2d2813f4d7ff3f3856ac0996407193a34e33"
+    },
+    {
+      "articleID": "yijun",
+      "sectionID": "yijun-2",
+      "path": "ming-yijun-yijun-2-a8b169cd4ec5.mp3",
+      "textHash": "a8b169cd4ec526abea0518d6c8dc02537c73c8b8d43c8b0f49cc3a173ad84225",
+      "audioHash": "02f2d6cc910b1df18b98f8103378548f7fb3d1d36c30bec0d40938f822f6e333"
+    },
+    {
+      "articleID": "yijun",
+      "sectionID": "yijun-3",
+      "path": "ming-yijun-yijun-3-68e2d7eafc9a.mp3",
+      "textHash": "68e2d7eafc9a9d27dd5a7bf1646025607f88490ff0755e46dd0bbe4c31278f28",
+      "audioHash": "bae439ee9538ebdf6c43c1888a77dee1d76b1ae2106334cffc450137e17531be"
+    },
+    {
+      "articleID": "yijun",
+      "sectionID": "yijun-4",
+      "path": "ming-yijun-yijun-4-2258e304f037.mp3",
+      "textHash": "2258e304f037e1c28df0d9d15ad44933697d2fc8a4d87c7b9a04d166529f20b3",
+      "audioHash": "5ca21db8332bb910de902fff633405a28611a80a3ea18eff4be9efac75a94c73"
+    },
+    {
+      "articleID": "yijun",
+      "sectionID": "yijun-5",
+      "path": "ming-yijun-yijun-5-0ddecf062e73.mp3",
+      "textHash": "0ddecf062e73b98bf70fac89c16562693d68ecbc45a7c2d0d5a82fcb21bdaa86",
+      "audioHash": "3249c180885f455d350ac5f5e26c3f4bc96c3cbb04431fc7787eb9109add127f"
+    },
+    {
+      "articleID": "yijun",
+      "sectionID": "yijun-6",
+      "path": "ming-yijun-yijun-6-25b2c99e4f62.mp3",
+      "textHash": "25b2c99e4f62642e317885cc4c8d0910185d24f2a2d608733397a0ab5631ffde",
+      "audioHash": "41e85f7f8a2cac39563707fc0dbcf2efa1b2fe7a9d59f46a7e365a0ca5e5bd13"
+    },
+    {
+      "articleID": "yijun",
+      "sectionID": "yijun-7",
+      "path": "ming-yijun-yijun-7-e599dc6cc0f8.mp3",
+      "textHash": "e599dc6cc0f83695b4da603cd61b16526363da6c6010ab043ff8730c554de7db",
+      "audioHash": "de47e68d41cb73c2ba4285a3e79c4b8fdb198fc20f012b7f06cc8e180d04acb3"
+    },
+    {
+      "articleID": "yijun",
+      "sectionID": "yijun-8",
+      "path": "ming-yijun-yijun-8-4cf2cccdfd7a.mp3",
+      "textHash": "4cf2cccdfd7ab7df85b4dfab1ca15f925762ac3380c52d428a33874642158dc3",
+      "audioHash": "fb247ba9304d5b38b956d3164ceb320ec3640a3ef7f8c093367a503f1aecb4a0"
     }
   ]
 }

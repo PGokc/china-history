@@ -2604,3 +2604,49 @@ if d['version'] >= 120:
  assert {'v2l_sea','v146_month_port_permits','v146_coastal_livelihoods'}<=longqing_events
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|人物页|占位|正在完善|产品将',corpus,re.I)
  print('V120 PASS: nine coastal readings connect maritime credit, emergency authority, interregional troops, recruitment, siege damage, five water forts and the limited Moon Port opening without reducing the crisis to heroic anti-piracy')
+
+if d['version'] >= 121:
+ v147_people=['m147_litaihou','m147_fengbao','m147_wangguoguang','m147_panjixun','m147_zhangxueyan','m147_lichengliang','m147_zhangsiwei']
+ v147_prefix={'m147_litaihou':'lt','m147_fengbao':'fb','m147_wangguoguang':'wgg','m147_panjixun':'pjx','m147_zhangxueyan':'zxy','m147_lichengliang':'lcl','m147_zhangsiwei':'zsw'}
+ v147_events={
+  'v147_two_dowagers','v147_emperor_education','v147_kaocheng_registers','v147_fiscal_accounting',
+  'v147_arrears_inventory','v147_relay_audit','v147_liaodong_recovery','v147_wanggao_market_conflict',
+  'v147_selected_troops','v147_liaodong_not_peace','v147_mourning_dispute','v147_river_system',
+  'v147_river_labor','v147_land_survey','v147_one_whip','v147_hangzhou_mutiny',
+  'v147_fengbao_fall','v147_transition_amnesty','v147_wangguoguang_fall',
+  'v147_zhang_household_purge','v147_policy_continuity',
+ }
+ assert set(v147_people)<=people.keys() and v147_events<=events.keys()
+ assert {'v147_ms114','v147_ms219','v147_ms223','v147_ms225','v147_ms238','v147_ms305','v147_ms84'}<=sources.keys()
+ assert {events[event_id]['category'] for event_id in v147_events}=={'政治','军事','文化','经济','社会'}
+ assert len([person for person in d['people'] if person['name']=='李太后'])==1
+ assert len([person for person in d['people'] if person['name']=='冯保'])==1
+ for pid in v147_people:
+  person=people[pid]; reading=articles[pid]; ss=reading['sections']
+  assert person['dynasty']=='ming' and len(set(person['sources']))>=4
+  assert len(ss)==5 and all(item['id']==f'v147_{v147_prefix[pid]}{index}' for index,item in enumerate(ss,1)),(pid,'wrong early-Wanli five-layer reading')
+  chars=sum(len(re.findall(r'[\u4e00-\u9fff]',item['text'])) for item in ss)
+  assert chars>=800,(pid,'early-Wanli reading remains too short',chars)
+  assert all(item['sources'] and item['events'] for item in ss)
+  assert all(set(item['sources'])<=sources.keys() and set(item['events'])<=events.keys() and set(item['people'])<=people.keys() for item in ss)
+  assert set(reading['sources'])=={source for item in ss for source in item['sources']}
+ assert all(set(events[event_id]['people'])<=people.keys() and set(events[event_id]['sources'])<=sources.keys() for event_id in v147_events)
+ corpus=json.dumps([people[pid] for pid in v147_people]+[articles[pid] for pid in v147_people]+[events[event_id] for event_id in v147_events],ensure_ascii=False)
+ for term in ['两宫并尊','乾清宫','日讲','考成法','《万历会计录》','高家堰','束水攻沙','八十余万顷','一条鞭','粮长','王杲','选锋','土蛮','杭州兵变','冯保']:
+  assert term in corpus,('missing early-Wanli evidence term',term)
+ for boundary in ['不是现代绩效表','不等于同等面积全部新增征税','没有自动消灭','不能用一个民族标签','不能自动证明每场战斗经过','具体私语不能当成无争议录音','不能代替现代水文复原']:
+  assert boundary in corpus,('missing early-Wanli evidence boundary',boundary)
+ pairset={(item['from'],item['to']) for item in d['associations']}
+ assert {('m147_litaihou','m147_fengbao'),('m147_litaihou','zhangjuzheng'),('m147_fengbao','zhangjuzheng'),('m147_wangguoguang','zhangjuzheng'),('m147_wangguoguang','m147_zhangxueyan'),('m147_panjixun','zhangjuzheng'),('m147_zhangxueyan','m147_lichengliang'),('m147_lichengliang','zhangjuzheng'),('m147_zhangsiwei','zhangjuzheng'),('m147_zhangsiwei','m147_fengbao'),('m147_zhangsiwei','m40_shenshixing')}<=pairset
+ family=next(item for item in d['familyLinks'] if item['from']=='yijun' and item['to']=='m147_litaihou')
+ assert family['kind']=='mother' and 'v147_ms114' in family['sources']
+ wanli=articles['yijun']
+ linked_people={person_id for item in wanli['sections'] for person_id in item.get('people',[])}
+ linked_events={event_id for item in wanli['sections'] for event_id in item.get('events',[])}
+ assert set(v147_people)<=linked_people and v147_events<=linked_events
+ zhang=articles['zhangjuzheng']
+ assert len(zhang['sections'])==5 and {'m147_litaihou','m147_fengbao','m147_wangguoguang','m147_panjixun','m147_zhangxueyan','m147_lichengliang','m147_zhangsiwei'}<={person_id for item in zhang['sections'] for person_id in item.get('people',[])}
+ reign=next(item for item in d['reignContexts'] if item['person']=='yijun')
+ assert set(v147_people)<=set(reign['people']) and v147_events<=set(reign['events'])
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|人物页|占位|正在完善|产品将',corpus,re.I)
+ print('V121 PASS: seven early-Wanli readings connect court guardianship, accountable paperwork, tax accounting, Yellow-Huai works, Liaodong recovery, elite troops, household burdens and the post-1582 transition with explicit evidence limits')

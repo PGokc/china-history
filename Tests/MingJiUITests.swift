@@ -4164,4 +4164,47 @@ final class MingJiUITests: XCTestCase {
         shot("v146-moon-port-limits-and-sources", port)
     }
 
+    @MainActor func testV147EarlyWanliGovernanceConnectsCourtTaxAndOrdinaryBurden() throws {
+        let dowager = XCUIApplication()
+        dowager.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]
+        dowager.launch()
+        XCTAssertTrue(dowager.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        let searchButton = dowager.buttons.matching(NSPredicate(format: "identifier == %@", "globalSearch")).firstMatch
+        XCTAssertTrue(searchButton.waitForExistence(timeout: 5)); searchButton.tap()
+        let search = dowager.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("李太后")
+        let result = dowager.buttons["search_person_m147_litaihou"]
+        XCTAssertTrue(result.waitForExistence(timeout: 5)); result.tap()
+        XCTAssertTrue(dowager.buttons["articleEntry"].waitForExistence(timeout: 5)); dowager.buttons["articleEntry"].tap()
+        XCTAssertTrue(dowager.buttons["articleContents"].waitForExistence(timeout: 5)); dowager.buttons["articleContents"].tap()
+        XCTAssertTrue(dowager.buttons["授权张居正与冯保，不等于太后独自统治"].exists)
+        dowager.buttons["授权张居正与冯保，不等于太后独自统治"].tap()
+        XCTAssertTrue(dowager.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "三者与幼帝构成合作网络")).firstMatch.waitForExistence(timeout: 5))
+        reach(dowager.buttons["资料与出处"], in: dowager, attempts: 30)
+        dowager.buttons["资料与出处"].tap()
+        let dowagerSource = dowager.buttons["source_v147_ms114"]
+        reach(dowagerSource, in: dowager, attempts: 8)
+        XCTAssertTrue(dowagerSource.isHittable)
+        shot("v147-li-dowager-coalition-and-sources", dowager)
+        dowager.terminate()
+
+        let tax = XCUIApplication()
+        tax.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]
+        tax.launch()
+        XCTAssertTrue(tax.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        let taxSearchButton = tax.buttons.matching(NSPredicate(format: "identifier == %@", "globalSearch")).firstMatch
+        XCTAssertTrue(taxSearchButton.waitForExistence(timeout: 5)); taxSearchButton.tap()
+        let taxSearch = tax.searchFields.firstMatch
+        XCTAssertTrue(taxSearch.waitForExistence(timeout: 5)); taxSearch.tap(); taxSearch.typeText("一条鞭合并赋役")
+        let taxResult = tax.buttons["search_event_v147_one_whip"]
+        XCTAssertTrue(taxResult.waitForExistence(timeout: 5)); taxResult.tap()
+        XCTAssertTrue(tax.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "没有自动消灭粮长")).firstMatch.waitForExistence(timeout: 5))
+        XCTAssertTrue(tax.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "银价、地区差异和额外摊派")).firstMatch.exists)
+        reach(tax.buttons["资料与出处"], in: tax, attempts: 16); tax.buttons["资料与出处"].tap()
+        let taxSource = tax.buttons["source_v2l_ms78"]
+        reach(taxSource, in: tax, attempts: 8)
+        XCTAssertTrue(taxSource.isHittable)
+        shot("v147-one-whip-burden-and-sources", tax)
+    }
+
 }
