@@ -2650,3 +2650,52 @@ if d['version'] >= 121:
  assert set(v147_people)<=set(reign['people']) and v147_events<=set(reign['events'])
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|人物页|占位|正在完善|产品将',corpus,re.I)
  print('V121 PASS: seven early-Wanli readings connect court guardianship, accountable paperwork, tax accounting, Yellow-Huai works, Liaodong recovery, elite troops, household burdens and the post-1582 transition with explicit evidence limits')
+
+if d['version'] >= 122:
+ v148_people=['m148_wangxijue','m148_shenyiguan','m148_yexianggao','m148_lirusong','m148_songyingchang','m148_shenweijing','m148_lihualong','m148_chenfeng','m148_guxiancheng']
+ v148_prefix={'m148_wangxijue':'wxj','m148_shenyiguan':'syg','m148_yexianggao':'yxg','m148_lirusong':'lrs','m148_songyingchang':'syc','m148_shenweijing':'swj','m148_lihualong':'lhl','m148_chenfeng':'cf','m148_guxiancheng':'gxc'}
+ v148_events={
+  'v148_ningxia_command','v148_korea_mobilization','v148_pyongyang','v148_byeokjegwan',
+  'v148_yongsan_granary','v148_investiture_mismatch','v148_second_invasion','v148_ulsan_siege',
+  'v148_four_routes','v148_withdrawal_after_war','v148_three_campaign_costs',
+  'v148_bozhou_eight_routes','v148_bozhou_prefectures','v148_heir_education_delay',
+  'v148_three_princes','v148_crown_established','v148_donglin_academy','v148_tax_commissioners',
+  'v148_wuchang_protest','v148_1602_reversal','v148_vacant_offices',
+  'v148_fuwang_departure','v148_tingji_evidence',
+ }
+ assert set(v148_people)<=people.keys() and v148_events<=events.keys()
+ assert {'v148_ms218','v148_ms228','v148_ms231','v148_ms237','v148_ms238','v148_ms240','v148_ms305','v148_ms320','v148_ms322'}<=sources.keys()
+ assert {events[event_id]['category'] for event_id in v148_events}=={'政治','军事','文化','经济','社会'}
+ for name in ['王锡爵','沈一贯','叶向高','李如松','宋应昌','沈惟敬','李化龙','陈奉','顾宪成']:
+  assert len([person for person in d['people'] if person['name']==name])==1,(name,'duplicate middle-late Wanli person')
+ for pid in v148_people:
+  person=people[pid]; reading=articles[pid]; ss=reading['sections']
+  assert person['dynasty']=='ming' and len(set(person['sources']))>=3
+  assert len(ss)==5 and all(item['id']==f'v148_{v148_prefix[pid]}{index}' for index,item in enumerate(ss,1)),(pid,'wrong middle-late Wanli five-layer reading')
+  chars=sum(len(re.findall(r'[\u4e00-\u9fff]',item['text'])) for item in ss)
+  assert chars>=800,(pid,'middle-late Wanli reading remains too short',chars)
+  assert all(item['sources'] and item['events'] for item in ss)
+  assert all(set(item['sources'])<=sources.keys() and set(item['events'])<=events.keys() and set(item['people'])<=people.keys() for item in ss)
+  assert set(reading['sources'])=={source for item in ss for source in item['sources']}
+ assert all(set(events[event_id]['people'])<=people.keys() and set(events[event_id]['sources'])<=sources.keys() for event_id in v148_events)
+ corpus=json.dumps([people[pid] for pid in v148_people]+[articles[pid] for pid in v148_people]+[events[event_id] for event_id in v148_events],ensure_ascii=False)
+ for term in ['宁夏','平壤','碧蹄馆','龙山粮仓','封贡','蔚山','四路','海龙囤','土司兵','三王并封','封还诏书','东林书院','矿监税使','武昌','中旨','福王','梃击']:
+  assert term in corpus,('missing middle-late Wanli evidence term',term)
+ for boundary in ['不能把每支部队固定成单一能力','不能证明所有讲学者受其统一指挥','不足以确认贵妃策划','不等于冲突立即消失','不能逐字照录为法庭事实','不能机械相加','不能倒过来把每次任用都解释为预先组织好的党派行动']:
+  assert boundary in corpus,('missing middle-late Wanli evidence boundary',boundary)
+ pairset={(item['from'],item['to']) for item in d['associations']}
+ assert {('m148_lirusong','m148_songyingchang'),('m148_shenweijing','m148_songyingchang'),('m148_wangxijue','m148_guxiancheng'),('m148_shenyiguan','m148_chenfeng'),('m148_yexianggao','m148_guxiancheng'),('m148_lihualong','m148_chenfeng'),('m148_lirusong','m147_lichengliang')}<=pairset
+ assert {('yijun',pid) for pid in v148_people}<=pairset
+ father=next(item for item in d['familyLinks'] if item['from']=='m148_lirusong' and item['to']=='m147_lichengliang')
+ assert father['kind']=='father' and 'v148_ms238' in father['sources']
+ wanli=articles['yijun']
+ linked_people={person_id for item in wanli['sections'] for person_id in item.get('people',[])}
+ linked_events={event_id for item in wanli['sections'] for event_id in item.get('events',[])}
+ assert set(v148_people)<=linked_people and v148_events<=linked_events
+ reign=next(item for item in d['reignContexts'] if item['person']=='yijun')
+ assert set(v148_people)<=set(reign['people']) and v148_events<=set(reign['events'])
+ assert {'m148_lirusong','m148_songyingchang','m148_shenweijing','m148_lihualong'}<=set(wanli['sections'][3]['people'])
+ assert {'m148_wangxijue','m148_shenyiguan','m148_guxiancheng'}<=set(wanli['sections'][4]['people'])
+ assert {'m148_yexianggao','m148_chenfeng'}<=set(wanli['sections'][5]['people'])
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|人物页|占位|正在完善|产品将',corpus,re.I)
+ print('V122 PASS: nine middle-late Wanli readings connect war logistics, contested diplomacy, succession procedure, tusi forces, mineral-tax extraction, urban protest, office vacancies and evidence limits across the Ming-Korea-Japan conflict')

@@ -4207,4 +4207,49 @@ final class MingJiUITests: XCTestCase {
         shot("v147-one-whip-burden-and-sources", tax)
     }
 
+    @MainActor func testV148WanliWarAndTaxReadingsExposeLogisticsAndEvidenceLimits() throws {
+        let war = XCUIApplication()
+        war.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]
+        war.launch()
+        XCTAssertTrue(war.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        let warSearchButton = war.buttons.matching(NSPredicate(format: "identifier == %@", "globalSearch")).firstMatch
+        XCTAssertTrue(warSearchButton.waitForExistence(timeout: 5)); warSearchButton.tap()
+        let warSearch = war.searchFields.firstMatch
+        XCTAssertTrue(warSearch.waitForExistence(timeout: 5)); warSearch.tap(); warSearch.typeText("李如松")
+        let warResult = war.buttons["search_person_m148_lirusong"]
+        XCTAssertTrue(warResult.waitForExistence(timeout: 5)); warResult.tap()
+        XCTAssertTrue(war.buttons["articleEntry"].waitForExistence(timeout: 5)); war.buttons["articleEntry"].tap()
+        XCTAssertTrue(war.buttons["articleContents"].waitForExistence(timeout: 5)); war.buttons["articleContents"].tap()
+        let byeokje = war.buttons["碧蹄馆不是英雄受挫，而是情报与兵种的系统警告"]
+        XCTAssertTrue(byeokje.exists); byeokje.tap()
+        XCTAssertTrue(war.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "雨后稻田又限制骑兵")).firstMatch.waitForExistence(timeout: 5))
+        XCTAssertTrue(war.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不能从一次败仗直接推论")).firstMatch.exists)
+        reach(war.buttons["资料与出处"], in: war, attempts: 32); war.buttons["资料与出处"].tap()
+        let warSource = war.buttons["source_v148_ms238"]
+        reach(warSource, in: war, attempts: 8); XCTAssertTrue(warSource.isHittable)
+        shot("v148-byeokjegwan-logistics-and-source-boundary", war)
+        war.terminate()
+
+        let tax = XCUIApplication()
+        tax.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]
+        tax.launch()
+        XCTAssertTrue(tax.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        let taxSearchButton = tax.buttons.matching(NSPredicate(format: "identifier == %@", "globalSearch")).firstMatch
+        XCTAssertTrue(taxSearchButton.waitForExistence(timeout: 5)); taxSearchButton.tap()
+        let taxSearch = tax.searchFields.firstMatch
+        XCTAssertTrue(taxSearch.waitForExistence(timeout: 5)); taxSearch.tap(); taxSearch.typeText("陈奉")
+        let taxResult = tax.buttons["search_person_m148_chenfeng"]
+        XCTAssertTrue(taxResult.waitForExistence(timeout: 5)); taxResult.tap()
+        XCTAssertTrue(tax.buttons["articleEntry"].waitForExistence(timeout: 5)); tax.buttons["articleEntry"].tap()
+        XCTAssertTrue(tax.buttons["articleContents"].waitForExistence(timeout: 5)); tax.buttons["articleContents"].tap()
+        let disclosure = tax.buttons["告密机制让住宅、商路和墓葬都可能成为征收对象"]
+        XCTAssertTrue(disclosure.exists); disclosure.tap()
+        XCTAssertTrue(tax.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "被指者再承担证明没有的成本")).firstMatch.waitForExistence(timeout: 5))
+        XCTAssertTrue(tax.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不知道何物会被重新定义")).firstMatch.exists)
+        reach(tax.buttons["资料与出处"], in: tax, attempts: 32); tax.buttons["资料与出处"].tap()
+        let taxSource = tax.buttons["source_v148_ms237"]
+        reach(taxSource, in: tax, attempts: 8); XCTAssertTrue(taxSource.isHittable)
+        shot("v148-tax-informants-and-urban-burden", tax)
+    }
+
 }
