@@ -2391,3 +2391,31 @@ if d['version'] >= 114:
  assert required_pairs<=association_pairs
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|人物页|占位|正在完善',corpus,re.I)
  print('V114 PASS: seven Tianshun-Chenghua readings connect relief, palace labor, migrant registration, West Depot surveillance, frontier warfare and infrastructure with explicit source boundaries')
+
+if d['version'] >= 115:
+ v141_people=['m141_wanan','m141_lizisheng','m141_liangfang','m42_qiujun','m40_liujian','m40_xieqian','m40_lidongyang']
+ v141_suffix={'m141_wanan':'wanan','m141_lizisheng':'lizisheng','m141_liangfang':'liangfang','m42_qiujun':'qiujun','m40_liujian':'liujian','m40_xieqian':'xieqian','m40_lidongyang':'lidongyang'}
+ v141_events={
+  'v141_chuanfeng_network','v141_palace_procurement','v141_yongchang_temple','v141_1485_review',
+  'v141_hongzhi_accession_cleanup','v141_huangzhuang_agents','v141_daxue_yanyibu_event',
+  'v141_weaving_reduction','v141_border_finance_1501','v141_lidongyang_drought_journey',
+ }
+ assert set(v141_people)<=people.keys() and v141_events<=events.keys()
+ assert {'v141_ms168','v141_ms307','v141_ms77','v141_daxue_yanyibu'}<=sources.keys()
+ assert {events[event_id]['category'] for event_id in v141_events}=={'政治','军事','文化','经济','社会'}
+ for pid in v141_people:
+  reading=articles[pid]; ss=reading['sections']
+  assert len(ss)==5 and all(item['id']==f'v141_{v141_suffix[pid]}_s{index}' for index,item in enumerate(ss,1)),(pid,'wrong five-layer reading')
+  chars=sum(len(re.findall(r'[\u4e00-\u9fff]',item['text'])) for item in ss)
+  assert chars>=880,(pid,'late Chenghua-Hongzhi reading remains too short',chars)
+  assert all(len(set(item['sources']))>=2 and item['events'] for item in ss)
+  assert all(set(item['sources'])<=sources.keys() and set(item['events'])<=events.keys() and set(item['people'])<=people.keys() for item in ss)
+  assert set(reading['sources'])=={source for item in ss for source in item['sources']}
+ corpus=json.dumps([people[pid] for pid in v141_people]+[articles[pid] for pid in v141_people]+[events[event_id] for event_id in v141_events],ensure_ascii=False)
+ for term in ['传奉','大永昌寺','《大学衍义补》','皇庄','织造','军饷','信息逐层过滤']:
+  assert term in corpus,('missing late Chenghua-Hongzhi evidence term',term)
+ for boundary in ['不意味着每名被任者都无能力','不能把各地普通宗教群体都视为近幸网络','不能因其失势而被合理化','不等于书中主张被逐条执行','不等于侵占立即消失']:
+  assert boundary in corpus,('missing evidence boundary',boundary)
+ assert all(set(events[event_id]['people'])<=people.keys() and set(events[event_id]['sources'])<=sources.keys() for event_id in v141_events)
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|人物页|占位|正在完善',corpus,re.I)
+ print('V115 PASS: seven late Chenghua-Hongzhi readings connect secret appointments, palace procurement, estates, weaving, policy printing, fiscal restraint and local information with explicit evidence limits')

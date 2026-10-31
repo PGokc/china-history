@@ -3931,4 +3931,43 @@ final class MingJiUITests: XCTestCase {
         shot("v140-wangzhi-imperial-authorization", wang)
     }
 
+    @MainActor func testV141LateChenghuaHongzhiAppointmentsAndPolicyKnowledge() throws {
+        let li = XCUIApplication()
+        li.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]
+        li.launch()
+        XCTAssertTrue(li.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        let liSearchButton = li.buttons.matching(NSPredicate(format: "identifier == %@", "globalSearch")).firstMatch
+        XCTAssertTrue(liSearchButton.waitForExistence(timeout: 5)); liSearchButton.tap()
+        let liSearch = li.searchFields.firstMatch
+        XCTAssertTrue(liSearch.waitForExistence(timeout: 5)); liSearch.tap(); liSearch.typeText("李孜省")
+        let liResult = li.buttons["search_person_m141_lizisheng"]
+        XCTAssertTrue(liResult.waitForExistence(timeout: 5)); liResult.tap()
+        XCTAssertTrue(li.buttons["articleEntry"].waitForExistence(timeout: 5)); li.buttons["articleEntry"].tap()
+        XCTAssertTrue(li.buttons["articleContents"].waitForExistence(timeout: 5)); li.buttons["articleContents"].tap()
+        XCTAssertTrue(li.buttons["传奉不是一张同质名单"].exists)
+        XCTAssertTrue(li.buttons["弘治追责与证据边界"].exists)
+        li.buttons["传奉不是一张同质名单"].tap()
+        XCTAssertTrue(li.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "制度缺陷在于没有公开考试")).firstMatch.waitForExistence(timeout: 5))
+        shot("v141-lizisheng-appointment-boundary", li)
+        li.terminate()
+
+        let qiu = XCUIApplication()
+        qiu.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]
+        qiu.launch()
+        XCTAssertTrue(qiu.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        let qiuSearchButton = qiu.buttons.matching(NSPredicate(format: "identifier == %@", "globalSearch")).firstMatch
+        XCTAssertTrue(qiuSearchButton.waitForExistence(timeout: 5)); qiuSearchButton.tap()
+        let qiuSearch = qiu.searchFields.firstMatch
+        XCTAssertTrue(qiuSearch.waitForExistence(timeout: 5)); qiuSearch.tap(); qiuSearch.typeText("丘濬")
+        let qiuResult = qiu.buttons["search_person_m42_qiujun"]
+        XCTAssertTrue(qiuResult.waitForExistence(timeout: 5)); qiuResult.tap()
+        XCTAssertTrue(qiu.buttons["articleEntry"].waitForExistence(timeout: 5)); qiu.buttons["articleEntry"].tap()
+        XCTAssertTrue(qiu.buttons["articleContents"].waitForExistence(timeout: 5)); qiu.buttons["articleContents"].tap()
+        XCTAssertTrue(qiu.buttons["《大学衍义补》补了什么"].exists)
+        qiu.buttons["刊行、摘议与执行之间"].tap()
+        XCTAssertTrue(qiu.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不等于每条落地")).firstMatch.waitForExistence(timeout: 5))
+        reach(qiu.buttons["资料与出处"], in: qiu, attempts: 24)
+        shot("v141-qiujun-policy-execution-boundary", qiu)
+    }
+
 }
