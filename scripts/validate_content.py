@@ -2784,3 +2784,47 @@ if d['version'] >= 124:
  assert set(v150_people)<=set(reign['people']) and v150_events|{'v2l_liaoyang'}<=set(reign['events'])
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|人物页|占位|正在完善|产品将',corpus,re.I)
  print('V124 PASS: five Tianqi-era Liaodong readings connect Shenyang and Liaoyang defense, divided command, unverified allies, Guangning collapse, refugee routes, Dongjiang sea supply, civilian costs and politicized war memory')
+
+if d['version'] >= 125:
+ v151_people=['m40_sunchengzong','m151_wangzaijin','m151_gaodi','m151_mangui','m151_zhaolvjiao','m151_zudashou']
+ v151_prefix={'m40_sunchengzong':'sc','m151_wangzaijin':'wz','m151_gaodi':'gd','m151_mangui':'mg','m151_zhaolvjiao':'zl','m151_zudashou':'zd'}
+ v151_events={
+  'v151_eight_li_debate','v151_thirteen_mountains','v151_command_team','v151_roster_audit',
+  'v151_ningyuan_build','v151_ningyuan_society','v151_artillery_network','v151_eunuch_inspection',
+  'v151_sun_departure','v151_gaodi_retreat','v151_forced_evacuations','v151_clear_fields',
+  'v151_ningyuan_defense','v151_juehua_loss','v151_nurhaci_death_memory','v151_rebuild_tuntian',
+  'v151_truce_korea','v151_jinzhou_siege','v151_ningjin_field','v151_credit_distribution',
+  'v151_command_conflicts',
+ }
+ assert set(v151_people)<=people.keys() and v151_events<=events.keys()
+ assert {'v40m2_ms250','v40m2_ms259','v151_ms271','v151_dpm_zudashou','v151_dpm_artillery','v151_sanchao'}<=sources.keys()
+ assert {events[event_id]['category'] for event_id in v151_events}=={'政治','军事','文化','经济','社会'}
+ for name in ['王在晋','高第','满桂','赵率教','祖大寿']:
+  assert len([person for person in d['people'] if person['name']==name])==1,(name,'duplicate Ningyuan-Ningjin person')
+ for pid in v151_people:
+  person=people[pid]; reading=articles[pid]; ss=reading['sections']
+  assert person['dynasty']=='ming' and len(set(person['sources']))>=2
+  assert len(ss)==5 and all(item['id']==f'v151_{v151_prefix[pid]}{index}' for index,item in enumerate(ss,1)),(pid,'wrong Ningyuan-Ningjin five-layer reading')
+  chars=sum(len(re.findall(r'[\u4e00-\u9fff]',item['text'])) for item in ss)
+  assert chars>=700,(pid,'Ningyuan-Ningjin reading remains too short',chars)
+  assert all(item['sources'] and item['events'] for item in ss)
+  assert all(set(item['sources'])<=sources.keys() and set(item['events'])<=events.keys() and set(item['people'])<=people.keys() for item in ss)
+  assert set(reading['sources'])=={source for item in ss for source in item['sources']}
+ assert all(set(events[event_id]['people'])<=people.keys() and set(events[event_id]['sources'])<=sources.keys() for event_id in v151_events)
+ corpus=json.dumps([people[pid] for pid in v151_people]+[articles[pid] for pid in v151_people]+[events[event_id] for event_id in v151_events]+[events['v2l_ningyuan']]+[events['v40m2_sun_liaoxi_1622']],ensure_ascii=False)
+ for term in ['八里铺','十三山','宁远','觉华岛','前屯','锦州','军籍','屯田','炮台','西洋大炮','清野','宁锦','商旅','辽民','魏忠贤']:
+  assert term in corpus,('missing Ningyuan-Ningjin evidence term',term)
+ for boundary in ['联盟可以使用，却不能把承诺直接计入确定兵额','不能由‘守’或‘撤’一个字决定','具体数量不可机械接受','不能由一人代表全部蒙古人','避免把功劳全部压在一名主帅或一件武器上','不能把‘炮伤致死’写成无争议医学结论','不把数字当现代审计','不能合并成一次事件']:
+  assert boundary in corpus,('missing Ningyuan-Ningjin evidence boundary',boundary)
+ pairset={(item['from'],item['to']) for item in d['associations']}
+ assert {('youxiao',pid) for pid in v151_people}<=pairset
+ assert {('m40_sunchengzong','m151_wangzaijin'),('m40_sunchengzong','m151_gaodi'),('m40_sunchengzong','m151_mangui'),('m40_sunchengzong','m151_zhaolvjiao'),('m40_sunchengzong','m151_zudashou'),('m40_yuanchonghuan','m151_mangui'),('m40_yuanchonghuan','m151_zhaolvjiao'),('m40_yuanchonghuan','m151_zudashou')}<=pairset
+ tianqi=articles['youxiao']
+ linked_people={person_id for item in tianqi['sections'] for person_id in item.get('people',[])}
+ linked_events={event_id for item in tianqi['sections'] for event_id in item.get('events',[])}
+ assert set(v151_people)<=linked_people and v151_events|{'v2l_ningyuan','v40m2_sun_liaoxi_1622'}<=linked_events
+ reign=next(item for item in d['reignContexts'] if item['person']=='youxiao')
+ assert set(v151_people)<=set(reign['people']) and v151_events|{'v2l_ningyuan','v40m2_sun_liaoxi_1622'}<=set(reign['events'])
+ assert not any(item.get('articleID')=='m40_sunchengzong' for item in narration['entries'])
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|人物页|占位|正在完善|产品将',corpus,re.I)
+ print('V125 PASS: six Ningyuan-Ningjin readings connect strategic depth, refugee rescue, roster audits, city engineering, artillery organization, forced withdrawal, Juehua losses, tuntian recovery, distributed battlefield credit and explicit evidence limits')

@@ -4342,4 +4342,49 @@ final class MingJiUITests: XCTestCase {
         shot("v150-dongjiang-refugees-and-sea-supply", sea)
     }
 
+    @MainActor func testV151NingyuanNingjinConnectsOrganizationRefugeesAndDistributedCredit() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]
+        app.launch()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        let searchButton = app.buttons.matching(NSPredicate(format: "identifier == %@", "globalSearch")).firstMatch
+        XCTAssertTrue(searchButton.waitForExistence(timeout: 5)); searchButton.tap()
+        let search = app.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("孙承宗")
+        let result = app.buttons["search_person_m40_sunchengzong"]
+        XCTAssertTrue(result.waitForExistence(timeout: 5)); result.tap()
+        XCTAssertTrue(app.buttons["articleEntry"].waitForExistence(timeout: 5)); app.buttons["articleEntry"].tap()
+        XCTAssertTrue(app.buttons["articleContents"].waitForExistence(timeout: 5)); app.buttons["articleContents"].tap()
+        let organization = app.buttons["宁远不是一句‘用炮守城’，而是一张专业分工表"]
+        XCTAssertTrue(organization.exists); organization.tap()
+        XCTAssertTrue(app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "把这张分工表还原")).firstMatch.waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "避免把功劳全部压在一名主帅或一件武器上")).firstMatch.exists)
+        reach(app.buttons["资料与出处"], in: app, attempts: 32); app.buttons["资料与出处"].tap()
+        let source = app.buttons["source_v151_dpm_artillery"]
+        reach(source, in: app, attempts: 8); XCTAssertTrue(source.isHittable); app.swipeUp()
+        shot("v151-ningyuan-organization-and-artillery-chain", app)
+        app.terminate()
+
+        let frontier = XCUIApplication()
+        frontier.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]
+        frontier.launch()
+        XCTAssertTrue(frontier.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        let frontierSearchButton = frontier.buttons.matching(NSPredicate(format: "identifier == %@", "globalSearch")).firstMatch
+        XCTAssertTrue(frontierSearchButton.waitForExistence(timeout: 5)); frontierSearchButton.tap()
+        let frontierSearch = frontier.searchFields.firstMatch
+        XCTAssertTrue(frontierSearch.waitForExistence(timeout: 5)); frontierSearch.tap(); frontierSearch.typeText("赵率教")
+        let frontierResult = frontier.buttons["search_person_m151_zhaolvjiao"]
+        XCTAssertTrue(frontierResult.waitForExistence(timeout: 5)); frontierResult.tap()
+        XCTAssertTrue(frontier.buttons["articleEntry"].waitForExistence(timeout: 5)); frontier.buttons["articleEntry"].tap()
+        XCTAssertTrue(frontier.buttons["articleContents"].waitForExistence(timeout: 5)); frontier.buttons["articleContents"].tap()
+        let tuntian = frontier.buttons["给牛种、选壮者为兵，前屯把救济、生产与军事编组连在一起"]
+        XCTAssertTrue(tuntian.exists); tuntian.tap()
+        XCTAssertTrue(frontier.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "把受救助者纳入军役和边镇管理")).firstMatch.waitForExistence(timeout: 5))
+        XCTAssertTrue(frontier.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "功绩叙事没有充分回答")).firstMatch.exists)
+        reach(frontier.buttons["资料与出处"], in: frontier, attempts: 32); frontier.buttons["资料与出处"].tap()
+        let frontierSource = frontier.buttons["source_v151_ms271"]
+        reach(frontierSource, in: frontier, attempts: 8); XCTAssertTrue(frontierSource.isHittable); frontier.swipeUp()
+        shot("v151-qiantun-refugees-tuntian-and-military-service", frontier)
+    }
+
 }
