@@ -4645,4 +4645,46 @@ final class MingJiUITests: XCTestCase {
         shot("v157-zeng-jing-interrogation-evidence", testimony)
     }
 
+    @MainActor func testV158EarlyQianlongShowsRiverLabourAndAllianceBreakdown() throws {
+        let river = XCUIApplication()
+        river.launchArguments = ["--uitesting", "--ui-dynasty", "qing"]
+        river.launch()
+        XCTAssertTrue(river.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        river.buttons.matching(NSPredicate(format: "identifier == %@", "globalSearch")).firstMatch.tap()
+        let search = river.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("高斌")
+        let result = river.buttons["search_person_q158_gaobin"]
+        XCTAssertTrue(result.waitForExistence(timeout: 5)); result.tap()
+        XCTAssertTrue(river.buttons["articleEntry"].waitForExistence(timeout: 5)); river.buttons["articleEntry"].tap()
+        XCTAssertTrue(river.buttons["articleContents"].waitForExistence(timeout: 5)); river.buttons["articleContents"].tap()
+        let labour = river.buttons["六成民工的纸面分配揭示河工由谁真正抬土"]
+        XCTAssertTrue(labour.exists); labour.tap()
+        XCTAssertTrue(river.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "沿河家庭")).firstMatch.waitForExistence(timeout: 5))
+        XCTAssertTrue(river.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "工食")).firstMatch.exists)
+        openChapterSources("v158_gb3", in: river)
+        XCTAssertTrue(river.descendants(matching: .any)["source_v158_qsg310"].waitForExistence(timeout: 3))
+        river.swipeUp()
+        shot("v158-gao-bin-river-labour", river)
+        river.terminate()
+
+        let alliance = XCUIApplication()
+        alliance.launchArguments = ["--uitesting", "--ui-dynasty", "qing"]
+        alliance.launch()
+        XCTAssertTrue(alliance.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        alliance.buttons.matching(NSPredicate(format: "identifier == %@", "globalSearch")).firstMatch.tap()
+        let allianceSearch = alliance.searchFields.firstMatch
+        XCTAssertTrue(allianceSearch.waitForExistence(timeout: 5)); allianceSearch.tap(); allianceSearch.typeText("阿睦尔撒纳")
+        let allianceResult = alliance.buttons["search_person_q158_amursana"]
+        XCTAssertTrue(allianceResult.waitForExistence(timeout: 5)); allianceResult.tap()
+        XCTAssertTrue(alliance.buttons["articleEntry"].waitForExistence(timeout: 5)); alliance.buttons["articleEntry"].tap()
+        XCTAssertTrue(alliance.buttons["articleContents"].waitForExistence(timeout: 5)); alliance.buttons["articleContents"].tap()
+        let fourKhans = alliance.buttons["四汗方案拒绝其统领要求，使潜在矛盾公开化"]
+        XCTAssertTrue(fourKhans.exists); fourKhans.tap()
+        XCTAssertTrue(alliance.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不等于为随后的战争开脱")).firstMatch.waitForExistence(timeout: 5))
+        openChapterSources("v158_am3", in: alliance)
+        XCTAssertTrue(alliance.descendants(matching: .any)["source_v158_qsg312"].waitForExistence(timeout: 3))
+        alliance.swipeUp()
+        shot("v158-amursana-four-khans-alliance-breakdown", alliance)
+    }
+
 }

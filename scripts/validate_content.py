@@ -3069,3 +3069,41 @@ if d['version'] >= 131:
  assert not any(item['articleID'] in set(v157_rewritten) for item in narration['entries'])
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将',corpus,re.I)
  print('V131 PASS: five new and six rewritten Yongzheng readings connect provincial finance, disaster reporting, social status, Qinghai and Dzungar war, sealed memorials, the Zeng Jing case and three material-culture paths with explicit evidence boundaries')
+
+if d['version'] >= 132:
+ v158_people=['q158_fuheng','q158_gaobin','q158_liutongxun','q158_chenhongmou','q158_sunjiagan','q158_bandi','q158_erongan','q158_zhaohui','q158_amursana','q158_dawaci','q158_burhan','q158_khoja_jahan']
+ v158_events={item['id'] for item in d['events'] if item['id'].startswith('v158_')}
+ v158_sources={item['id'] for item in d['sources'] if item['id'].startswith('v158_')}
+ v158_objects={item['id'] for item in d['objects'] if item['id'].startswith('v158_')}
+ v158_object_map={item['id']:item for item in d['objects']}
+ assert len(v158_people)==12 and len(v158_events)==28 and len(v158_sources)==12 and len(v158_objects)==4
+ assert set(v158_people)<=people.keys() and set(v158_people)<=articles.keys()
+ assert {events[event_id]['category'] for event_id in v158_events}=={'政治','军事','文化','经济','社会'}
+ for pid in v158_people:
+  reading=articles[pid]; ss=reading['sections']
+  assert len(ss)==5 and all(item['sources'] and item['events'] for item in ss),(pid,'incomplete early-Qianlong five-layer reading')
+  chars=sum(len(re.findall(r'[\u4e00-\u9fff]',item['text'])) for item in ss)
+  assert chars>=500,(pid,'early-Qianlong reading remains too short',chars)
+  assert all(set(item['sources'])<=sources.keys() and set(item['events'])<=events.keys() and set(item.get('people',[]))<=people.keys() for item in ss)
+  assert set(reading['sources'])=={source for item in ss for source in item['sources']}
+ assert all(set(events[event_id]['people'])<=people.keys() and set(events[event_id]['sources'])<=sources.keys() for event_id in v158_events)
+ for object_id in v158_objects:
+  item=v158_object_map[object_id]
+  assert item['dynasties']==['qing'] and item['people'] and item['sources']
+  assert set(item['people'])<=people.keys() and set(item['sources'])<=sources.keys()
+ corpus=json.dumps([people[pid] for pid in v158_people]+[articles[pid] for pid in v158_people]+[events[event_id] for event_id in v158_events]+[v158_object_map[object_id] for object_id in v158_objects],ensure_ascii=False)
+ for term in ['总理事务','永琏','伪奏稿','毛城铺','民工六成','高邮','乐输','金川','粮运','四部设汗','伊犁','天花','黑水','伯克','巴达克山','盛京赋','三希堂法帖','平定西域战图']:
+  assert term in corpus,('missing early-Qianlong evidence term',term)
+ for boundary in ['不能直接等同现代权力制衡','不能把获准等同没有代价','不能只写成受恩后的突然背叛','不宜伪装成精确统计','不能用“统一”二字抹去','不能把生存完全归为单一将领勇武','不是行动一致的整体','不能据此无缝重建','不是官府一道命令即可到户','不是三件晋人墨迹原件','不是连续现场记录']:
+  assert boundary in corpus,('missing early-Qianlong evidence boundary',boundary)
+ qianlong=next(item for item in d['reignContexts'] if item['person']=='q_qianlong')
+ assert set(v158_people)<=set(qianlong['people']) and v158_events<=set(qianlong['events']) and v158_sources<=set(qianlong['sources'])
+ emperor=articles['q_qianlong']
+ linked_people={person_id for section in emperor['sections'] for person_id in section.get('people',[])}
+ linked_events={event_id for section in emperor['sections'] for event_id in section.get('events',[])}
+ assert set(v158_people)<=linked_people and v158_events<=linked_events
+ pairset={(item['from'],item['to']) for item in d['associations']}
+ assert {('q_qianlong',pid) for pid in v158_people}<=pairset
+ assert {('q158_amursana','q158_dawaci'),('q158_burhan','q158_khoja_jahan'),('q158_gaobin','q158_liutongxun'),('q158_zhaohui','q158_burhan'),('q158_zhaohui','q158_khoja_jahan')}<=pairset
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将',corpus,re.I)
+ print('V132 PASS: twelve early-Qianlong readings and twenty-eight events connect succession, river labour, disaster relief, Jinchuan logistics, Dzungar destruction, Altishahr governance and court visual culture without reducing the period to victorious expansion')

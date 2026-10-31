@@ -1,5 +1,5 @@
 {
-  "version": 131,
+  "version": 132,
   "reviewed": "2026-10-31",
   "people": [
     {
@@ -17968,6 +17968,211 @@
       "kind": "清代督抚",
       "note": "耗羡归公承认并规制既有附加，不等于税民从此不再负担耗羡。",
       "dynasty": "qing"
+    },
+    {
+      "id": "q158_fuheng",
+      "name": "傅恒",
+      "call": "保和殿大学士",
+      "temple": "",
+      "era": "乾隆",
+      "reign": "1722—1770年",
+      "summary": "以军机中枢和外戚身份迅速升迁，先后主持金川、准噶尔与缅甸军务。",
+      "parent": null,
+      "sources": [
+        "v158_qsg301",
+        "v5qe_qsg10_15"
+      ],
+      "kind": "满洲镶黄旗大臣",
+      "note": "他既是孝贤皇后之弟，也是具体处理军机文书和战争决策的大臣，不能只以外戚或名将概括。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q158_gaobin",
+      "name": "高斌",
+      "call": "江南河道总督",
+      "temple": "",
+      "era": "乾隆",
+      "reign": "1683—1755年",
+      "summary": "长期主持黄淮运河工程，在蓄泄方案、民工组织、侵帑追责和水灾失败之间承受巨大风险。",
+      "parent": null,
+      "sources": [
+        "v158_qsg310",
+        "v5qe_qsg10_15"
+      ],
+      "kind": "清代河臣",
+      "note": "工程传记多以合龙和皇帝评价组织材料，河岸居民、民夫与盐场灶户的损益并不完整。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q158_liutongxun",
+      "name": "刘统勋",
+      "call": "东阁大学士",
+      "temple": "",
+      "era": "乾隆",
+      "reign": "1698—1773年",
+      "summary": "由言官、刑部与河工查办进入军机，既监督权臣亲族，也承担灾赈、工程和司法核查。",
+      "parent": null,
+      "sources": [
+        "v40q_qsg302",
+        "v5qe_qsg10_15"
+      ],
+      "kind": "清代中枢大臣",
+      "note": "“清廉”是官修评价，真正可观察的是奏疏、查案与工程意见如何进入制度流程。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q158_chenhongmou",
+      "name": "陈宏谋",
+      "call": "东阁大学士",
+      "temple": "",
+      "era": "乾隆",
+      "reign": "1696—1771年",
+      "summary": "长期转任多省，以仓储、书院、妇女教育和基层教化著称，也因垦务、催科和行政干预引发争议。",
+      "parent": null,
+      "sources": [
+        "v158_qsg307",
+        "v5qe_qsg10_15"
+      ],
+      "kind": "清代督抚",
+      "note": "其地方治理兼具救荒与规训，不能把官箴和教化读物直接当作社会现实。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q158_sunjiagan",
+      "name": "孙嘉淦",
+      "call": "协办大学士",
+      "temple": "",
+      "era": "乾隆",
+      "reign": "1683—1753年",
+      "summary": "以敢言和清慎著称，乾隆朝历掌吏、刑、工部及直隶、湖广；死后不久仍被借名伪造奏稿。",
+      "parent": null,
+      "sources": [
+        "v158_qsg303",
+        "v5qe_qsg10_15"
+      ],
+      "kind": "清代大臣",
+      "note": "著名直言故事来自官修传；伪奏稿广泛传播说明社会借他的名望表达政治批评。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q158_bandi",
+      "name": "班第",
+      "call": "定北将军",
+      "temple": "",
+      "era": "乾隆",
+      "reign": "1664—1755年",
+      "summary": "由军机、地方督抚和驻藏事务进入西北军务，率军取伊犁后在阿睦尔撒纳反叛中身亡。",
+      "parent": null,
+      "sources": [
+        "v158_qsg312",
+        "v158_qsg523"
+      ],
+      "kind": "蒙古镶黄旗大臣",
+      "note": "忠烈追赠不应遮蔽伊犁仅留少量兵力、对归附首领约束失效等制度问题。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q158_erongan",
+      "name": "鄂容安",
+      "call": "两江总督、参赞大臣",
+      "temple": "",
+      "era": "乾隆",
+      "reign": "1714—1755年",
+      "summary": "历任多省巡抚总督，处理水灾、海运粮食与胥役，后随军进入伊犁并与班第一同身亡。",
+      "parent": null,
+      "sources": [
+        "v158_qsg312",
+        "v5qe_qsg10_15"
+      ],
+      "kind": "满洲镶蓝旗大臣",
+      "note": "他不是只有战死一刻；地方行政经验和对费用、灾粮的处理同样构成人物。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q158_zhaohui",
+      "name": "兆惠",
+      "call": "定边将军",
+      "temple": "",
+      "era": "乾隆",
+      "reign": "1708—1764年",
+      "summary": "从军机笔帖式和粮运官成长为西北统帅，经历伊犁撤退、黑水围困与天山南路设治。",
+      "parent": null,
+      "sources": [
+        "v158_qsg313",
+        "v158_qingshilu597"
+      ],
+      "kind": "满洲正黄旗将领",
+      "note": "战功叙事必须与补给、盟军、当地伯克及战后税役安排并读。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q158_amursana",
+      "name": "阿睦尔撒纳",
+      "call": "辉特台吉",
+      "temple": "",
+      "era": "乾隆",
+      "reign": "约1723—1757年",
+      "summary": "先与达瓦齐角逐并投清借兵，因清廷拒绝其统领四部的要求而反叛，最终逃往俄境病死。",
+      "parent": null,
+      "sources": [
+        "v158_qsg312",
+        "v158_qsg523",
+        "v158_cambridge_dzungar"
+      ],
+      "kind": "准噶尔辉特首领",
+      "note": "清廷材料称其反复；若忽略四部设汗方案与其政治目标，就会把联盟破裂简化为个人背叛。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q158_dawaci",
+      "name": "达瓦齐",
+      "call": "准噶尔首领",
+      "temple": "",
+      "era": "乾隆",
+      "reign": "卒于1759年",
+      "summary": "在准噶尔内乱中取得汗位，又与阿睦尔撒纳决裂；1755年被清军俘获后送往北京并获封爵。",
+      "parent": null,
+      "sources": [
+        "v158_qsg523",
+        "v5qe_qsg10_15"
+      ],
+      "kind": "准噶尔绰罗斯首领",
+      "note": "胜利者材料强调其昏暴，准噶尔内部支持结构和地方社会处境记录不足。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q158_burhan",
+      "name": "布拉呢敦",
+      "call": "大和卓",
+      "temple": "",
+      "era": "乾隆",
+      "reign": "卒于1759年",
+      "summary": "从准噶尔控制下获释后返回天山南路，与弟霍集占共同对抗清军，失败后逃入巴达克山。",
+      "parent": null,
+      "sources": [
+        "v158_qsg313",
+        "v158_qingshilu597"
+      ],
+      "kind": "和卓家族首领",
+      "note": "清实录多以“逆酋”框定其行动；兄弟之间的策略差异及当地支持并不总能由军报还原。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q158_khoja_jahan",
+      "name": "霍集占",
+      "call": "小和卓",
+      "temple": "",
+      "era": "乾隆",
+      "reign": "卒于1759年",
+      "summary": "参与推翻准噶尔在天山南路的控制，随后拒绝清廷安排并组织抵抗，最终在巴达克山身亡。",
+      "parent": null,
+      "sources": [
+        "v158_qsg313",
+        "v158_qingshilu597"
+      ],
+      "kind": "和卓家族首领",
+      "note": "不能把天山南路不同城镇、伯克与居民视为对兄弟二人一致支持，也不能只沿用“叛乱”标签。",
+      "dynasty": "qing"
     }
   ],
   "sources": [
@@ -19527,9 +19732,9 @@
     },
     {
       "id": "v40q_qsg302",
-      "title": "《清史稿》卷302：刘墉传",
+      "title": "《清史稿》卷302：刘统勋、刘墉等传",
       "url": "https://zh.wikisource.org/zh-hans/清史稿/卷302",
-      "note": "据本卷相关本传与纪事核对任职、政务及事件经过。此书为未定稿，带有清廷立场；原文评价与数字须结合史料判断。"
+      "note": "用于刘统勋、刘墉父子及乾隆朝中枢、河工与司法经历。此书为未定稿，清廉评价、工程责任和皇帝裁决须与本纪及案件经过互证。"
     },
     {
       "id": "v40q_qsg369",
@@ -24744,6 +24949,78 @@
       "title": "故宫博物院 · 明清档案整理与《朱批谕旨》",
       "url": "https://www.dpm.org.cn/forum_detail/100025.html",
       "note": "用于核对雍正朱批奏折汇刊、已录与未录奏折档案；现存密折丰富但不等于皇帝得到的信息完整无误。"
+    },
+    {
+      "id": "v158_qsg301",
+      "title": "《清史稿》卷301：讷亲、傅恒传",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷301",
+      "note": "用于傅恒、第一次金川战争与乾隆前期军机运作。此书为未定稿，亲贵褒贬、军功和战争责任须结合本纪与方略判断。"
+    },
+    {
+      "id": "v158_qsg303",
+      "title": "《清史稿》卷303：孙嘉淦传",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷303",
+      "note": "用于孙嘉淦任官、直言传统与伪奏稿事件。传中清廉评价不能替代对具体制度与案件传播的分析。"
+    },
+    {
+      "id": "v158_qsg307",
+      "title": "《清史稿》卷307：陈宏谋传",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷307",
+      "note": "用于陈宏谋在云南、陕西、江西、河南等地的粮政、教育和垦务。地方奏效数字与道德评价须保留核验边界。"
+    },
+    {
+      "id": "v158_qsg310",
+      "title": "《清史稿》卷310：高斌等河臣传",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷310",
+      "note": "用于毛城铺、淮扬运河、高邮水灾与河工侵帑案。官修传将工程成败集中于河臣，民夫、料价和下游损失需另行观察。"
+    },
+    {
+      "id": "v158_qsg312",
+      "title": "《清史稿》卷312：班第、鄂容安传",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷312",
+      "note": "用于两人的地方任职、伊犁善后、阿睦尔撒纳反叛及身亡。忠烈叙事不能遮蔽兵力配置与政策误判。"
+    },
+    {
+      "id": "v158_qsg313",
+      "title": "《清史稿》卷313：兆惠传",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷313",
+      "note": "用于金川粮运、准噶尔战事、黑水围困与天山南路战后设治。军功数字、敌我称谓及归附叙事带有胜利王朝立场。"
+    },
+    {
+      "id": "v158_qsg523",
+      "title": "《清史稿》卷523：杜尔伯特与辉特诸部传",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷523",
+      "note": "用于准噶尔内部的部落关系、阿睦尔撒纳与达瓦齐冲突及归附过程；后出官修材料的谱系和动机叙述须谨慎。"
+    },
+    {
+      "id": "v158_qingshilu597",
+      "title": "《清高宗实录》卷597：追索布拉呢敦与霍集占",
+      "url": "https://zh.wikisource.org/zh-hans/清實錄/大清高宗純皇帝實錄/卷之五百九十七",
+      "note": "用于1759年巴达克山交涉与两位和卓结局。实录保存皇帝命令和军报，不等于当地社会的完整视角。"
+    },
+    {
+      "id": "v158_dpm_sanxi",
+      "title": "故宫博物院 · 《三希堂法帖》",
+      "url": "https://www.dpm.org.cn/lemmas/242597.html",
+      "note": "用于核对1747年敕刻、三十二卷及宫廷收藏传播；摹刻本既保存书迹，也经过宫廷选择和编排。"
+    },
+    {
+      "id": "v158_dpm_western",
+      "title": "故宫博物院 · 郎世宁等《平定西域战图》册",
+      "url": "https://www.dpm.org.cn/collection/paint/257897.html",
+      "note": "用于十六幅战图的题名、制作目的与图像性质。庆功图是事后策划的宫廷叙事，不是战场即时摄影。"
+    },
+    {
+      "id": "v158_dpm_shengjing",
+      "title": "故宫博物院 · 乾隆帝与三十二体篆书《盛京赋》",
+      "url": "https://www.dpm.org.cn/handwritings/talk/248916.html",
+      "note": "用于1743年《盛京赋》、1748年满汉杂体篆书制作及其尊祖、文字展示意图。"
+    },
+    {
+      "id": "v158_cambridge_dzungar",
+      "title": "Cambridge University Press · The Qing Extermination of the Zünghars",
+      "url": "https://www.cambridge.org/core/books/abs/cambridge-world-history-of-genocide/qing-extermination-of-the-zunghars/6D038CADD0F808459451175C1CAD6DC5",
+      "note": "用于核对持续杀戮、饥荒与疾病共同造成准噶尔社会毁灭的研究判断；确切人口比例仍受史料与估算方法限制。"
     }
   ],
   "relations": [
@@ -71329,6 +71606,490 @@
       ],
       "category": "文化",
       "kind": "历史事件"
+    },
+    {
+      "id": "v158_initial_council",
+      "year": "1735—1736年",
+      "title": "乾隆初设总理事务王大臣后恢复常规中枢",
+      "body": "雍正去世后，允礼、鄂尔泰、张廷玉等受命总理事务。乾隆很快停止诸王兼管部院，并在服丧期后恢复军机处。",
+      "impact": "短期辅政并非长期摄政。制度调整既显示新帝接管节奏，也保留雍正朝形成的机要行政。",
+      "people": [
+        "q_qianlong",
+        "q_yinli",
+        "q_eertai",
+        "q_zhangtingyu"
+      ],
+      "sources": [
+        "v5qe_qsg10_15"
+      ],
+      "category": "政治",
+      "kind": "历史事件"
+    },
+    {
+      "id": "v158_secret_heir",
+      "year": "1736—1738年",
+      "title": "永琏早逝揭示乾隆第一次秘密建储",
+      "body": "乾隆即位后密定嫡子永琏为储君，密旨未公开。永琏1738年去世，皇帝才公布其储位并按皇太子礼治丧。",
+      "impact": "秘密建储减少公开争位，却把继承信息集中于皇帝；早逝也迫使储位重新悬置。",
+      "people": [
+        "q_qianlong"
+      ],
+      "sources": [
+        "v5qe_qsg10_15"
+      ],
+      "category": "政治",
+      "kind": "历史事件"
+    },
+    {
+      "id": "v158_sun_forgery",
+      "year": "1751—1753年",
+      "title": "冒名孙嘉淦奏稿跨省传抄并引发追查",
+      "body": "一篇列举皇帝过失的文字借孙嘉淦名义流传，督抚密报、军机追查，最终江南千总卢鲁生被处死，大量传抄者遭审讯。",
+      "impact": "冒名不等于孙嘉淦撰写；案件更能说明手抄政治信息如何跨地区流动，以及国家如何把阅读和转传纳入刑事追索。",
+      "people": [
+        "q_qianlong",
+        "q158_sunjiagan"
+      ],
+      "sources": [
+        "v158_qsg303",
+        "v5qe_qsg10_15"
+      ],
+      "category": "政治",
+      "kind": "历史事件"
+    },
+    {
+      "id": "v158_first_southern_tour",
+      "year": "1751年",
+      "title": "第一次南巡连接河工检阅、地方接驾与政治表演",
+      "body": "乾隆奉皇太后南下，沿运河检阅河工、祭陵、阅兵并接见地方官绅。沿途虽屡谕不扰民，行宫、舟役和供应仍需地方筹办。",
+      "impact": "巡幸是移动政务，也是财政和劳役事件；不能只按诗画中的江南胜景理解。",
+      "people": [
+        "q_qianlong",
+        "q158_gaobin"
+      ],
+      "sources": [
+        "v5qe_qsg10_15",
+        "v158_qsg310"
+      ],
+      "category": "社会",
+      "kind": "历史事件"
+    },
+    {
+      "id": "v158_tibet_1751",
+      "year": "1750—1751年",
+      "title": "驻藏大臣遇害后重订西藏办事章程",
+      "body": "珠尔默特那木扎勒与驻藏大臣冲突导致双方死亡，清廷调兵入藏并重组噶伦与驻藏大臣权限。班第、兆惠参与善后。",
+      "impact": "章程加强清廷介入，但实际治理仍依赖西藏官员、宗教网络和远距离补给，不能写成制度一纸落地。",
+      "people": [
+        "q_qianlong",
+        "q158_bandi",
+        "q158_zhaohui"
+      ],
+      "sources": [
+        "v5qe_qsg10_15",
+        "v158_qsg313"
+      ],
+      "category": "政治",
+      "kind": "历史事件"
+    },
+    {
+      "id": "v158_first_jinchuan",
+      "year": "1747—1749年",
+      "title": "第一次金川战争暴露碉寨、粮运与统帅责任危机",
+      "body": "清廷大举进攻大金川，张广泗、讷亲相继失利并被处死。傅恒接任后推进攻势，最终接受莎罗奔父子请降。",
+      "impact": "战争不只是“平定”：山地运输、土司联盟、军费和普通兵夫共同决定进程；将失败归罪少数统帅也保护了皇帝决策。",
+      "people": [
+        "q_qianlong",
+        "q158_fuheng",
+        "q157_yuezhongqi",
+        "q158_bandi",
+        "q158_zhaohui"
+      ],
+      "sources": [
+        "v158_qsg301",
+        "v5qe_qsg10_15"
+      ],
+      "category": "军事",
+      "kind": "历史事件"
+    },
+    {
+      "id": "v158_jinchuan_burden",
+      "year": "1747—1749年",
+      "title": "金川增兵把粮饷、挽运与采购压力推向多省",
+      "body": "增调满汉兵与随役后，班第、兆惠被要求筹划浩繁月粮，陕西又为官兵起程费用咨拨河南库银。",
+      "impact": "军队人数之外还有夫役、牲畜、道路和转运损耗；“兵到即胜”的上谕不能替代实际后勤。",
+      "people": [
+        "q158_fuheng",
+        "q158_bandi",
+        "q158_zhaohui"
+      ],
+      "sources": [
+        "v158_qsg301",
+        "v158_qsg313"
+      ],
+      "category": "经济",
+      "kind": "历史事件"
+    },
+    {
+      "id": "v158_dzungar_split",
+      "year": "1745—1754年",
+      "title": "噶尔丹策零死后准噶尔权力反复重组",
+      "body": "准噶尔内部连续发生废立与冲突，达瓦齐、阿睦尔撒纳由合作转为争夺，杜尔伯特等首领陆续投清。清廷由议和边界转向评估出兵。",
+      "impact": "内部分裂提供了军事机会，但不意味着当地各部共同要求清军接管；“归附”各有生存和权力计算。",
+      "people": [
+        "q158_amursana",
+        "q158_dawaci",
+        "q_qianlong"
+      ],
+      "sources": [
+        "v158_qsg523",
+        "v5qe_qsg10_15"
+      ],
+      "category": "政治",
+      "kind": "历史事件"
+    },
+    {
+      "id": "v158_dawaci_campaign",
+      "year": "1755年",
+      "title": "清军借降附力量进入伊犁并俘获达瓦齐",
+      "body": "清廷分两路进军，以阿睦尔撒纳等熟悉地形的首领为前锋，迅速进入伊犁。达瓦齐逃往乌什后被擒送北京。",
+      "impact": "战役胜利依赖准噶尔内部倒戈和地方引路，并非单纯由中央军队正面摧毁完整政权。",
+      "people": [
+        "q_qianlong",
+        "q158_bandi",
+        "q158_erongan",
+        "q158_amursana",
+        "q158_dawaci"
+      ],
+      "sources": [
+        "v5qe_qsg10_15",
+        "v158_qsg312",
+        "v158_qsg523"
+      ],
+      "category": "军事",
+      "kind": "历史事件"
+    },
+    {
+      "id": "v158_amursana_revolt",
+      "year": "1755年",
+      "title": "四部设汗方案与阿睦尔撒纳政治目标决裂",
+      "body": "清廷计划分设四汗，只授阿睦尔撒纳辉特汗；他要求统领四部未获准，在被催促入觐时脱离清营并起兵。",
+      "impact": "联盟破裂同时包含个人权力竞争与帝国重组方案冲突，不能只写成受恩后的突然背叛。",
+      "people": [
+        "q_qianlong",
+        "q158_amursana",
+        "q158_bandi",
+        "q158_erongan"
+      ],
+      "sources": [
+        "v158_qsg312",
+        "v158_qsg523"
+      ],
+      "category": "政治",
+      "kind": "历史事件"
+    },
+    {
+      "id": "v158_ili_collapse",
+      "year": "1755年",
+      "title": "伊犁驻军薄弱，班第、鄂容安在突围中身亡",
+      "body": "大军撤回后伊犁只留少量官兵。阿睦尔撒纳部众发动攻击，班第、鄂容安率数百人转战突围，最终自尽。",
+      "impact": "忠烈纪念不能代替复盘：错误的兵力安排、对盟友的误判和漫长交通线共同制造了危机。",
+      "people": [
+        "q158_bandi",
+        "q158_erongan",
+        "q158_amursana"
+      ],
+      "sources": [
+        "v158_qsg312"
+      ],
+      "category": "军事",
+      "kind": "历史事件"
+    },
+    {
+      "id": "v158_dzungar_destruction",
+      "year": "1756—1758年",
+      "title": "清军追剿、天花与饥荒共同摧毁准噶尔社会",
+      "body": "清廷在阿睦尔撒纳反复逃亡后扩大军事清剿；持续杀戮、疫病、饥荒、逃亡与俘虏分配使准噶尔人口和社会组织遭到毁灭性破坏。",
+      "impact": "比例数字来自后出材料和估算，不宜伪装成精确统计；但不能用“统一”二字抹去大规模死亡、离散和强制迁徙。",
+      "people": [
+        "q_qianlong",
+        "q158_amursana",
+        "q158_zhaohui"
+      ],
+      "sources": [
+        "v158_cambridge_dzungar",
+        "v158_qsg313"
+      ],
+      "category": "社会",
+      "kind": "历史事件"
+    },
+    {
+      "id": "v158_western_supply",
+      "year": "1755—1759年",
+      "title": "台站、军屯、牲畜与跨区粮运支撑西北连续战争",
+      "body": "兆惠等长期督办乌里雅苏台、巴里坤至伊犁的粮运台站，军队还依赖蒙古部众、降附首领、驮畜和沿途草场。",
+      "impact": "战图中的冲锋只是末端；运输距离、疫病和牲畜损耗决定军队能否持续行动。",
+      "people": [
+        "q158_zhaohui",
+        "q158_bandi",
+        "q158_erongan"
+      ],
+      "sources": [
+        "v158_qsg313",
+        "v5qe_qsg10_15"
+      ],
+      "category": "经济",
+      "kind": "历史事件"
+    },
+    {
+      "id": "v158_black_river",
+      "year": "1758—1759年",
+      "title": "黑水围困把攻城战变成长期补给危机",
+      "body": "兆惠进攻叶尔羌未克，在黑水一带筑垒，被布拉呢敦、霍集占军队长期围困；清军掘壕、取粮并等待富德援军。",
+      "impact": "解围是多人、多路军队和当地信息共同作用，不能把生存完全归为单一将领勇武。",
+      "people": [
+        "q158_zhaohui",
+        "q158_burhan",
+        "q158_khoja_jahan"
+      ],
+      "sources": [
+        "v158_qsg313"
+      ],
+      "category": "军事",
+      "kind": "历史事件"
+    },
+    {
+      "id": "v158_altishahr_war",
+      "year": "1758—1759年",
+      "title": "清军进入喀什噶尔、叶尔羌并击败和卓兄弟",
+      "body": "清军在库车、叶尔羌等地作战，布拉呢敦与霍集占最终放弃两城西逃。不同城镇伯克和居民在投降、抵抗与观望之间选择。",
+      "impact": "“回部”不是行动一致的整体；战后控制建立于既有伯克网络、驻军和重新规定的贡赋之上。",
+      "people": [
+        "q158_zhaohui",
+        "q158_burhan",
+        "q158_khoja_jahan"
+      ],
+      "sources": [
+        "v158_qsg313",
+        "v158_qingshilu597"
+      ],
+      "category": "军事",
+      "kind": "历史事件"
+    },
+    {
+      "id": "v158_badakhshan",
+      "year": "1759年",
+      "title": "巴达克山交涉与和卓兄弟结局留下材料断裂",
+      "body": "清军追至巴达克山边界，当地统治者称霍集占中弹死亡、布拉呢敦被擒，后来交出霍集占首级；布拉呢敦的具体死亡过程记录不一。",
+      "impact": "清实录保存的是军方索取首级和对方回复，不能据此无缝重建山外发生的全部细节。",
+      "people": [
+        "q158_burhan",
+        "q158_khoja_jahan",
+        "q158_zhaohui"
+      ],
+      "sources": [
+        "v158_qingshilu597",
+        "v158_qsg313"
+      ],
+      "category": "政治",
+      "kind": "历史事件"
+    },
+    {
+      "id": "v158_altishahr_tax_coin",
+      "year": "1759—1760年",
+      "title": "喀什噶尔、叶尔羌战后保留伯克并重定贡赋钱币",
+      "body": "兆惠等进驻后划分驻地、设定贡赋、铸造钱币，并安排满汉兵分驻，地方事务仍大量通过伯克办理。",
+      "impact": "差异化治理不是行政空白，也不是内地州县制度完整移植；居民负担取决于伯克、驻军与市场的实际互动。",
+      "people": [
+        "q158_zhaohui",
+        "q_qianlong"
+      ],
+      "sources": [
+        "v158_qsg313"
+      ],
+      "category": "经济",
+      "kind": "历史事件"
+    },
+    {
+      "id": "v158_gaobin_maocheng",
+      "year": "1736—1746年",
+      "title": "毛城铺与淮扬运河蓄泄方案引发长期争论",
+      "body": "高斌主张疏浚毛城铺旧河、利用洪泽湖与闸坝分泄，反对者担心水入淮扬、危及民田。皇帝最终采用其方案。",
+      "impact": "河工没有无代价的唯一答案：上游泄洪、漕运和下游村田会得到不同结果，奏疏争论不能只按胜负裁判。",
+      "people": [
+        "q158_gaobin",
+        "q158_liutongxun"
+      ],
+      "sources": [
+        "v158_qsg310"
+      ],
+      "category": "经济",
+      "kind": "历史事件"
+    },
+    {
+      "id": "v158_river_labor",
+      "year": "1736—1755年",
+      "title": "河兵、民工、料物与地方解款构成工程日常",
+      "body": "高斌建议抢修土方由河兵与民工分担，并把外解款归河库管理；长期工程还需苇柴、船只、石料和工头。",
+      "impact": "工程受益可能广泛，劳役和采购却集中落在沿河家庭。官书记“议行”不等于工食及时足额。",
+      "people": [
+        "q158_gaobin"
+      ],
+      "sources": [
+        "v158_qsg310"
+      ],
+      "category": "社会",
+      "kind": "历史事件"
+    },
+    {
+      "id": "v158_shandong_relief",
+      "year": "1748年",
+      "title": "山东灾赈把开仓、河道与地方报告放在一起核查",
+      "body": "乾隆命高斌、刘统勋赴山东治赈并勘河道，多地同时面临旱涝和粮价问题。",
+      "impact": "赈济并非单次发粮：灾分认定、仓储、运输和停征共同决定居民是否真正得到帮助。",
+      "people": [
+        "q158_gaobin",
+        "q158_liutongxun"
+      ],
+      "sources": [
+        "v158_qsg310",
+        "v40q_qsg302"
+      ],
+      "category": "社会",
+      "kind": "历史事件"
+    },
+    {
+      "id": "v158_gaoyou_breach",
+      "year": "1753年",
+      "title": "高邮邵伯决口与侵帑案触发严厉追责",
+      "body": "洪泽湖溢、减水闸和车逻坝冲决，高邮、宝应受灾。刘统勋等查出河员亏帑误工，高斌被夺职留工，多名属员被处死。",
+      "impact": "严刑制造问责，却不能自动修复工程制度；灾民损失、材料质量与层级隐瞒不能只由死刑解释。",
+      "people": [
+        "q158_gaobin",
+        "q158_liutongxun"
+      ],
+      "sources": [
+        "v158_qsg310",
+        "v40q_qsg302"
+      ],
+      "category": "政治",
+      "kind": "历史事件"
+    },
+    {
+      "id": "v158_erongan_sea_grain",
+      "year": "1751年",
+      "title": "山东水灾后暂弛海禁招商赴奉天籴粮",
+      "body": "鄂容安任山东巡抚时面对济南水灾米贵，请暂时放宽海运限制，招募商船前往奉天采购粮食。",
+      "impact": "灾粮运输依赖市场、航路和商人风险，不是官府一道命令即可到户；临时开放也不等于普遍自由海贸。",
+      "people": [
+        "q158_erongan"
+      ],
+      "sources": [
+        "v158_qsg312"
+      ],
+      "category": "经济",
+      "kind": "历史事件"
+    },
+    {
+      "id": "v158_chen_granaries",
+      "year": "1736—1754年",
+      "title": "陈宏谋以社仓、义学和地方规条连接救荒与教化",
+      "body": "陈宏谋在多省推动仓储、清查户口垦务、书院义学及乡约教化，试图把地方士绅纳入常规治理。",
+      "impact": "规条显示官员希望社会如何运作，不证明每座仓都有粮、每个村都执行；士绅参与也可能成为控制资源的渠道。",
+      "people": [
+        "q158_chenhongmou"
+      ],
+      "sources": [
+        "v158_qsg307"
+      ],
+      "category": "社会",
+      "kind": "历史事件"
+    },
+    {
+      "id": "v158_tour_contributions",
+      "year": "1750—1751年",
+      "title": "巡幸“乐输”被退回，地方筹办仍难完全透明",
+      "body": "鄂容安奏称河南士民乐输银五十八万余两，乾隆命退还并责其有累民之嫌；鄂容安又担心退还过程被胥吏侵吞。",
+      "impact": "皇帝禁止摊派不等于地方没有接驾成本；“自愿捐输”与行政压力之间需要逐案辨认。",
+      "people": [
+        "q_qianlong",
+        "q158_erongan"
+      ],
+      "sources": [
+        "v158_qsg312"
+      ],
+      "category": "社会",
+      "kind": "历史事件"
+    },
+    {
+      "id": "v158_shengjing_fu",
+      "year": "1743—1748年",
+      "title": "《盛京赋》与三十二体篆书重塑祖地记忆",
+      "body": "乾隆谒盛京陵寝后作赋，赞颂祖先、物产与“龙兴之地”；随后命臣工以满汉文字和多种篆体缮写刊刻。",
+      "impact": "作品同时借用汉赋、古文字和满洲祖地叙事，不宜只当文学炫技或单一民族同化证据。",
+      "people": [
+        "q_qianlong",
+        "q158_fuheng"
+      ],
+      "sources": [
+        "v158_dpm_shengjing",
+        "v5qe_qsg10_15"
+      ],
+      "category": "文化",
+      "kind": "历史事件"
+    },
+    {
+      "id": "v158_sanxitang",
+      "year": "1746—1750年",
+      "title": "三希堂收藏与法帖摹刻形成宫廷书法谱系",
+      "body": "乾隆将三件晋人书迹集中于养心殿，命梁诗正、蒋溥等从内府收藏中选刻三十二卷《三希堂法帖》。",
+      "impact": "摹刻扩大名迹传播，也通过选择、编次和题跋建立皇室认可的书法经典；拓本不是原迹本身。",
+      "people": [
+        "q_qianlong"
+      ],
+      "sources": [
+        "v158_dpm_sanxi"
+      ],
+      "category": "文化",
+      "kind": "历史事件"
+    },
+    {
+      "id": "v158_western_geography",
+      "year": "1755—1760年",
+      "title": "随军询访与测绘把西域知识编入帝国档案",
+      "body": "鄂容安、兆惠等奉命记录山川、古迹、道路和部众，战后又形成舆图与《西域图志》等知识工程。",
+      "impact": "军事调查能留下珍贵地理信息，也会按驻军、赋税与交通需要重新分类地方；地图不等于无争议边界。",
+      "people": [
+        "q158_erongan",
+        "q158_zhaohui",
+        "q_qianlong"
+      ],
+      "sources": [
+        "v158_qsg312",
+        "v158_qsg313"
+      ],
+      "category": "文化",
+      "kind": "历史事件"
+    },
+    {
+      "id": "v158_battle_images",
+      "year": "1760年代",
+      "title": "《平定西域战图》把复杂战争重编为十六幅胜利序列",
+      "body": "郎世宁等绘制战役图稿，部分送往欧洲制成铜版，画面依次表现受降、战斗、献俘、郊劳和凯宴。",
+      "impact": "作品保存装备与宫廷视觉信息，却删减败退、疫病、平民死亡和政策争议；它是庆功叙事，不是连续战场纪实。",
+      "people": [
+        "q_qianlong",
+        "q158_zhaohui",
+        "q158_amursana",
+        "q158_dawaci",
+        "q158_burhan",
+        "q158_khoja_jahan"
+      ],
+      "sources": [
+        "v158_dpm_western"
+      ],
+      "category": "文化",
+      "kind": "历史事件"
     }
   ],
   "objects": [
@@ -76314,6 +77075,81 @@
       ],
       "sources": [
         "v157_dpm_archives"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v158_obj_sanxitang",
+      "title": "《三希堂法帖》",
+      "subtitle": "宫廷收藏、摹刻技术与被选择的书法经典",
+      "symbol": "books.vertical",
+      "body": "乾隆十二年敕命梁诗正、蒋溥等从内府法书中选编，摹勒为三十二卷石刻。它让珍贵书迹通过拓本传播，也记录宫廷如何排序、题跋和认证古代艺术。",
+      "note": "法帖是摹刻、编选和传播物，不是三件晋人墨迹原件；收录与次序体现乾隆内府的鉴藏权力。",
+      "people": [
+        "q_qianlong"
+      ],
+      "sources": [
+        "v158_dpm_sanxi"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v158_obj_shengjing",
+      "title": "三十二体篆书《盛京赋》",
+      "subtitle": "满汉文字、古篆知识与“龙兴之地”的国家记忆",
+      "symbol": "character.book.closed",
+      "body": "乾隆谒盛京陵寝后作《盛京赋》，傅恒等奏请将其满汉正文以多种篆体缮写刊刻。文本、书体与祖地叙事被组合为一项跨语言宫廷工程。",
+      "note": "它同时借用汉赋和古文字传统、强调满洲祖地，不能简化为单向“汉化”或纯粹书法游戏。",
+      "people": [
+        "q_qianlong",
+        "q158_fuheng"
+      ],
+      "sources": [
+        "v158_dpm_shengjing"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v158_obj_western_battles",
+      "title": "郎世宁等《平定西域战图》册",
+      "subtitle": "十六幅胜利序列与画面之外的战争代价",
+      "symbol": "photo.artframe",
+      "body": "故宫藏册以受降、战斗、解围、追击、献俘和凯宴编排准噶尔与天山南路战争，部分图稿另制铜版。画面保存军服、武器、地貌和庆典信息。",
+      "note": "战图为事后策划的庆功图像，不是连续现场记录；败退、疾病、屠杀、迁徙和普通居民被留在画外。",
+      "people": [
+        "q_qianlong",
+        "q158_zhaohui",
+        "q158_amursana",
+        "q158_dawaci",
+        "q158_burhan",
+        "q158_khoja_jahan"
+      ],
+      "sources": [
+        "v158_dpm_western"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v158_obj_qianlong_review",
+      "title": "郎世宁《乾隆皇帝大阅图》轴",
+      "subtitle": "1758年军队检阅与被塑造的马上皇帝",
+      "symbol": "figure.equestrian.sports",
+      "body": "乾隆二十三年南苑大阅期间，郎世宁以中西结合技法描绘披甲骑马的皇帝。作品细致表现甲胄、弓箭、马具和宫廷造办处工艺。",
+      "note": "大阅图以皇帝为中心构造军威，不能据画面推断前线战力，也不能替代同年黑水围困和后勤危机。",
+      "people": [
+        "q_qianlong",
+        "q158_zhaohui"
+      ],
+      "sources": [
+        "v5qp_qianlong"
       ],
       "dynasties": [
         "qing"
@@ -87790,11 +88626,31 @@
           "text": "弘历生于1711年，是雍正帝第四子。1735年雍正帝去世，密封诏书公布，弘历即位，次年改元乾隆。他是秘密建储制度首次实际完成的继承者，权力交接没有重演康熙末年的公开夺嫡。即位后他释放部分宗室、调整雍正朝严厉政策，同时保留军机处、密折与财政制度。所谓“宽严相济”是官方自我描述，具体案件和阶段仍需分别判断。",
           "sources": [
             "v5qe_qsg10_15",
-            "v5qe_dpm_lineage"
+            "v5qe_dpm_lineage",
+            "v158_qsg301",
+            "v158_qsg303",
+            "v158_qsg307",
+            "v158_qsg310",
+            "v158_qsg312",
+            "v158_qsg313",
+            "v158_qsg523",
+            "v158_qingshilu597",
+            "v158_dpm_sanxi",
+            "v158_dpm_western",
+            "v158_dpm_shengjing",
+            "v158_cambridge_dzungar"
           ],
           "kind": "史实与解读",
           "events": [
-            "qev_qianlong_accession_1735"
+            "qev_qianlong_accession_1735",
+            "v158_initial_council",
+            "v158_secret_heir",
+            "v158_sun_forgery"
+          ],
+          "people": [
+            "q158_fuheng",
+            "q158_liutongxun",
+            "q158_sunjiagan"
           ]
         },
         {
@@ -87804,16 +88660,48 @@
           "sources": [
             "v5qe_qsg10_15",
             "v5qe_dpm_qianlong",
-            "v42q_qsg318"
+            "v42q_qsg318",
+            "v158_qsg301",
+            "v158_qsg303",
+            "v158_qsg307",
+            "v158_qsg310",
+            "v158_qsg312",
+            "v158_qsg313",
+            "v158_qsg523",
+            "v158_qingshilu597",
+            "v158_dpm_sanxi",
+            "v158_dpm_western",
+            "v158_dpm_shengjing",
+            "v158_cambridge_dzungar"
           ],
           "kind": "史实与解读",
           "events": [
             "qev_qianlong_xinjiang_1759",
             "v42q_ili_tun",
-            "v42q_second_jinchuan"
+            "v42q_second_jinchuan",
+            "v158_first_jinchuan",
+            "v158_jinchuan_burden",
+            "v158_dzungar_split",
+            "v158_dawaci_campaign",
+            "v158_amursana_revolt",
+            "v158_ili_collapse",
+            "v158_dzungar_destruction",
+            "v158_western_supply",
+            "v158_black_river",
+            "v158_altishahr_war",
+            "v158_badakhshan",
+            "v158_altishahr_tax_coin"
           ],
           "people": [
-            "q_agui"
+            "q_agui",
+            "q158_fuheng",
+            "q158_bandi",
+            "q158_erongan",
+            "q158_zhaohui",
+            "q158_amursana",
+            "q158_dawaci",
+            "q158_burhan",
+            "q158_khoja_jahan"
           ]
         },
         {
@@ -87821,11 +88709,37 @@
           "title": "人口增长与财政表象",
           "text": "十八世纪人口持续增长，农业扩展、商业网络和手工业支撑繁荣。乾隆帝多次普免钱粮、赈济灾区，国库前期较充裕。但人口增加也加剧人地压力，山区移民、土地兼并、灾荒与基层纠纷不断积累。政府维持较低田赋定额，有利于稳定，也使新增治理成本更多依赖盐税、关税、捐纳等来源。宏观繁荣并不表示所有地区和家庭都同步富裕。",
           "sources": [
-            "v5qe_qsg10_15"
+            "v5qe_qsg10_15",
+            "v158_qsg301",
+            "v158_qsg303",
+            "v158_qsg307",
+            "v158_qsg310",
+            "v158_qsg312",
+            "v158_qsg313",
+            "v158_qsg523",
+            "v158_qingshilu597",
+            "v158_dpm_sanxi",
+            "v158_dpm_western",
+            "v158_dpm_shengjing",
+            "v158_cambridge_dzungar"
           ],
           "kind": "史实与解读",
           "events": [
-            "v12_qianlong_population"
+            "v12_qianlong_population",
+            "v158_first_southern_tour",
+            "v158_gaobin_maocheng",
+            "v158_river_labor",
+            "v158_shandong_relief",
+            "v158_gaoyou_breach",
+            "v158_erongan_sea_grain",
+            "v158_chen_granaries",
+            "v158_tour_contributions"
+          ],
+          "people": [
+            "q158_gaobin",
+            "q158_liutongxun",
+            "q158_chenhongmou",
+            "q158_erongan"
           ]
         },
         {
@@ -87834,16 +88748,34 @@
           "text": "乾隆朝组织编纂《四库全书》，征集、校勘和分类大量典籍，保存了一批珍贵文本，也借审查查禁、抽毁被认为违碍清朝统治的书籍。皇帝通过诗文、收藏、巡幸和宫殿营造塑造文治形象。文化工程同时具有知识整理与政治筛选功能。讨论其成果，既不能忽略保存和目录学贡献，也不能淡化文字狱及禁毁造成的损失。",
           "sources": [
             "v5qe_qsg10_15",
-            "v5qe_dpm_reader"
+            "v5qe_dpm_reader",
+            "v158_qsg301",
+            "v158_qsg303",
+            "v158_qsg307",
+            "v158_qsg310",
+            "v158_qsg312",
+            "v158_qsg313",
+            "v158_qsg523",
+            "v158_qingshilu597",
+            "v158_dpm_sanxi",
+            "v158_dpm_western",
+            "v158_dpm_shengjing",
+            "v158_cambridge_dzungar"
           ],
           "kind": "史实与解读",
           "events": [
             "v12_qianlong_siku",
             "v66q_wang_science",
-            "v66q_xingke_records"
+            "v66q_xingke_records",
+            "v158_shengjing_fu",
+            "v158_sanxitang",
+            "v158_western_geography",
+            "v158_battle_images"
           ],
           "people": [
-            "q_wangzhenyi"
+            "q_wangzhenyi",
+            "q158_fuheng",
+            "q158_sunjiagan"
           ]
         },
         {
@@ -87854,15 +88786,30 @@
             "v5qe_qsg10_15",
             "v5qe_dpm_qianlong",
             "v26_qianlong",
-            "v42q_qsg342"
+            "v42q_qsg342",
+            "v158_qsg301",
+            "v158_qsg303",
+            "v158_qsg307",
+            "v158_qsg310",
+            "v158_qsg312",
+            "v158_qsg313",
+            "v158_qsg523",
+            "v158_qingshilu597",
+            "v158_dpm_sanxi",
+            "v158_dpm_western",
+            "v158_dpm_shengjing",
+            "v158_cambridge_dzungar"
           ],
           "kind": "史实与解读",
           "events": [
             "v26_macartney",
-            "v42q_kyakhta_negotiation"
+            "v42q_kyakhta_negotiation",
+            "v158_tibet_1751"
           ],
           "people": [
-            "q_songyun"
+            "q_songyun",
+            "q158_bandi",
+            "q158_zhaohui"
           ]
         },
         {
@@ -87873,7 +88820,19 @@
             "v5qe_qsg10_15",
             "v40q_qsg319",
             "v40q_qsg302",
-            "v42q_qsg318"
+            "v42q_qsg318",
+            "v158_qsg301",
+            "v158_qsg303",
+            "v158_qsg307",
+            "v158_qsg310",
+            "v158_qsg312",
+            "v158_qsg313",
+            "v158_qsg523",
+            "v158_qingshilu597",
+            "v158_dpm_sanxi",
+            "v158_dpm_western",
+            "v158_dpm_shengjing",
+            "v158_cambridge_dzungar"
           ],
           "kind": "史实与解读",
           "events": [
@@ -87895,12 +88854,25 @@
           "text": "乾隆帝早年表示在位不超过祖父康熙的六十一年，1795年决定传位颙琰，1796年正式成为太上皇。嘉庆帝已经名义即位，但重大政务、用人和礼仪仍由太上皇主导，直到1799年乾隆去世后才真正亲政并处置和珅。因此乾隆在位通常写1735至1796，年号使用1736至1795，实际最高权力延续至1799。乾隆葬清东陵裕陵，庙号高宗；三种时间口径不可混写。\n\n多语言帝国与皇帝形象。乾隆帝面对不同臣民时使用多套政治语言：在内地强调儒家皇帝和道统，在蒙古、西藏事务中借助盟旗、册封与藏传佛教关系，在新疆保留伯克等地方制度。宫廷档案和碑刻使用满、汉、蒙古、藏等文字，体现统治不是单一文化模式。皇帝又通过南巡、木兰秋狝、承德寺庙和图像工程展示秩序。这些活动能联结精英、巡查河工与强化仪式，也消耗财政并要求地方供给。乾隆晚年自称“十全老人”，是对战争功业的主动塑造；其中部分战役代价巨大，结果也并非永久稳定。评价其统治，应把皇帝自我叙述和实际行政后果分开。\n\n乾隆帝去世后，嘉庆立刻查办和珅，说明晚年权力结构在新君眼中已不可维持。不过许多制度、官员和财政办法仍然延续，王朝没有随一个权臣倒台便重新开始。所谓乾隆盛世的终点因此有多种口径：可以指战争扩张结束、人口财政压力显现，也可以指1796年退位或1799年去世，必须说明所谈的是哪一层变化。",
           "sources": [
             "v5qe_qsg10_15",
-            "v5qe_dpm_lineage"
+            "v5qe_dpm_lineage",
+            "v158_qsg301",
+            "v158_qsg303",
+            "v158_qsg307",
+            "v158_qsg310",
+            "v158_qsg312",
+            "v158_qsg313",
+            "v158_qsg523",
+            "v158_qingshilu597",
+            "v158_dpm_sanxi",
+            "v158_dpm_western",
+            "v158_dpm_shengjing",
+            "v158_cambridge_dzungar"
           ],
           "kind": "史实与解读",
           "events": [
             "qev_qianlong_abdication_1796"
-          ]
+          ],
+          "people": []
         }
       ],
       "sources": [
@@ -87912,7 +88884,19 @@
         "v40q_qsg319",
         "v40q_qsg302",
         "v42q_qsg318",
-        "v42q_qsg342"
+        "v42q_qsg342",
+        "v158_qsg301",
+        "v158_qsg303",
+        "v158_qsg307",
+        "v158_qsg310",
+        "v158_qsg312",
+        "v158_qsg313",
+        "v158_qsg523",
+        "v158_qingshilu597",
+        "v158_dpm_sanxi",
+        "v158_dpm_western",
+        "v158_dpm_shengjing",
+        "v158_cambridge_dzungar"
       ]
     },
     {
@@ -188132,6 +189116,1103 @@
         "v157_qsg296",
         "v157_dpm_archives"
       ]
+    },
+    {
+      "person": "q158_fuheng",
+      "title": "傅恒：外戚身份之外，军机与战争如何汇到一人手中",
+      "dek": "亲近皇帝使他得到机会，文书能力、后勤组织和对最高决策的服从才决定其实际作用。",
+      "sections": [
+        {
+          "id": "v158_fh1",
+          "title": "皇后之弟迅速进入军机，但不是只有血缘在办公",
+          "text": "傅恒出身富察氏，是孝贤皇后之弟，由侍卫、户部侍郎升入军机。外戚身份提供接近皇帝的条件；他推动军机大臣共同入见、让章京拟稿，改变了讷亲独自承旨的做法。把升迁只写成裙带会漏掉中枢工作方式，把勤慎评价当客观全貌也会忽略权力来源。",
+          "kind": "军机与亲贵",
+          "sources": [
+            "v158_qsg301"
+          ],
+          "events": [
+            "v158_initial_council"
+          ],
+          "people": [
+            "q_qianlong",
+            "q_zhangtingyu"
+          ]
+        },
+        {
+          "id": "v158_fh2",
+          "title": "金川受命时，首要问题是接住已经失败的战争",
+          "text": "讷亲、张广泗失利后，傅恒接掌川陕与经略权。他面对的是多省兵力、碉寨山路、粮饷欠缺和皇帝限定的时间。班第、兆惠分别承担地方与粮运。其后接受莎罗奔请降，既保存朝廷体面，也让战争在未彻底改造地方结构时结束。",
+          "kind": "金川接任",
+          "sources": [
+            "v158_qsg301"
+          ],
+          "events": [
+            "v158_first_jinchuan",
+            "v158_jinchuan_burden"
+          ],
+          "people": [
+            "q157_yuezhongqi",
+            "q158_bandi",
+            "q158_zhaohui"
+          ]
+        },
+        {
+          "id": "v158_fh3",
+          "title": "他赞成西征，却不能把准噶尔内部分裂写成既定胜局",
+          "text": "1754年前后，廷臣对出兵多有疑虑，傅恒支持利用准噶尔内乱。清军迅速俘获达瓦齐后，阿睦尔撒纳反叛，说明最初方案没有解决权力重组。傅恒一度奉命出塞整军又被召回。赞成开战是政治责任，不能用后来疆域结果倒推每一步都正确。",
+          "kind": "西征决策",
+          "sources": [
+            "v158_qsg301",
+            "v158_qsg523"
+          ],
+          "events": [
+            "v158_dzungar_split",
+            "v158_dawaci_campaign",
+            "v158_amursana_revolt"
+          ],
+          "people": [
+            "q158_amursana",
+            "q158_dawaci"
+          ]
+        },
+        {
+          "id": "v158_fh4",
+          "title": "《盛京赋》与战功图像显示文治武功由同一中枢组织",
+          "text": "傅恒等奏请以《盛京赋》制作满汉杂体篆书，他又位居紫光阁功臣之首。编纂、书写、画像和宴礼把皇帝的祖地记忆与战争胜利固定下来。它们不是政务之外的装饰，而是告诉臣民应如何理解王朝历史的制度性生产。",
+          "kind": "文化工程",
+          "sources": [
+            "v158_dpm_shengjing",
+            "v158_qsg301"
+          ],
+          "events": [
+            "v158_shengjing_fu",
+            "v158_battle_images"
+          ],
+          "people": [
+            "q_qianlong"
+          ]
+        },
+        {
+          "id": "v158_fh5",
+          "title": "亲信大臣仍受严密训诫，晚年缅甸失败也不能删去",
+          "text": "傅恒长期受信任，偶有疏失仍被皇帝反复训谕。后来征缅时，疾病和坚寨使军队锐减，战争没有取得预期成果。他承担请战和组织责任，乾隆也承认最高决策应由自己负责。评价不能只取金川受降，也不能以一次失败抹去二十余年军机劳动。他拒受部分加封的姿态由官修材料反复书写，既可能反映谨慎，也构成君臣互信的公开表演。判断其权力不能只看爵位，还要看谁能承旨、拟稿、调兵、核销军需，以及失败后由谁承担处分。",
+          "kind": "责任与评价",
+          "sources": [
+            "v158_qsg301"
+          ],
+          "events": [
+            "v158_first_jinchuan"
+          ],
+          "people": [
+            "q_qianlong"
+          ]
+        }
+      ],
+      "sources": [
+        "v158_dpm_shengjing",
+        "v158_qsg301",
+        "v158_qsg523"
+      ]
+    },
+    {
+      "person": "q158_gaobin",
+      "title": "高斌：治河不是合龙神话，而是不断选择谁承受水",
+      "dek": "黄河、淮河、运河与下河民田相互牵动，任何方案都在风险之间取舍。",
+      "sections": [
+        {
+          "id": "v158_gb1",
+          "title": "内务府出身进入河务，工程知识来自长期现场而非一纸任命",
+          "text": "高斌先任织造、盐政和布政使，雍正后期转入南河。乾隆初主持江南河道时，他已熟悉盐运、漕运和地方财政。河臣需要读水势、调料物、管钱粮，也受皇帝和言官持续审查；“懂河”是经验网络，不是个人天赋。",
+          "kind": "河务路径",
+          "sources": [
+            "v158_qsg310"
+          ],
+          "events": [
+            "v158_gaobin_maocheng"
+          ],
+          "people": [
+            "q_qianlong"
+          ]
+        },
+        {
+          "id": "v158_gb2",
+          "title": "毛城铺争论的核心不是开或不开，而是水最终去哪里",
+          "text": "高斌主张疏浚旧减水河，使黄水经湖泊和河道分泄，反对者担心泥沙与洪水危及淮扬居民。乾隆召集廷议后采用其方案。奏疏都以“民生”为理由，但上游、运河、洪泽湖和下河村庄利益并不相同，不能把获准等同没有代价。",
+          "kind": "蓄泄争论",
+          "sources": [
+            "v158_qsg310"
+          ],
+          "events": [
+            "v158_gaobin_maocheng"
+          ],
+          "people": [
+            "q158_liutongxun"
+          ]
+        },
+        {
+          "id": "v158_gb3",
+          "title": "六成民工的纸面分配揭示河工由谁真正抬土",
+          "text": "抢修土方按奏议由河兵承担四成、民工六成，另有苇柴、石料、船运和州县解款。工程保护大片区域，劳动却集中在沿河家庭，工食还须经过层层发放。官书详记丈尺，较少连续记录民夫误农、伤亡和欠饷。",
+          "kind": "工程劳动",
+          "sources": [
+            "v158_qsg310"
+          ],
+          "events": [
+            "v158_river_labor"
+          ],
+          "people": [
+            "q158_chenhongmou"
+          ]
+        },
+        {
+          "id": "v158_gb4",
+          "title": "高邮水灾后，查出侵帑不等于找到全部决口原因",
+          "text": "1753年洪泽湖与运河工程失守，高邮、宝应被水。刘统勋等查办亏帑、迟报和误工，高斌被夺职并被迫观看属员处刑。贪污与维护不力确实重要，水文变化、旧工老化和层级压力也不能被刑罚抹去。",
+          "kind": "决口与问责",
+          "sources": [
+            "v158_qsg310",
+            "v40q_qsg302"
+          ],
+          "events": [
+            "v158_gaoyou_breach"
+          ],
+          "people": [
+            "q158_liutongxun"
+          ]
+        },
+        {
+          "id": "v158_gb5",
+          "title": "乾隆后来恢复他的名誉，恰好说明功过是政治性归纳",
+          "text": "高斌死后，乾隆既承认毛城铺和日常防汛之功，也批评其晚年自信与失误，最终令入祀。皇帝的总结影响官修传记，却不是工程效果的唯一尺度。应把堤坝、灾区、帑银和劳动者放回同一张图，而不是只问他是名臣还是罪臣。河工奏疏常把数百里水系压缩为闸坝丈尺，便于决策却不等于能预测每次汛情。1753年之后的处分和后来恢复名誉相互并存，说明“功臣”与“罪臣”都是特定政治时刻的归纳。今天仍能核对的是奏议、工段、决口与处分次序，无法精确复原每户得失；因此正文只说明可证机制，不替沿河居民作一致评价。",
+          "kind": "身后评价",
+          "sources": [
+            "v158_qsg310"
+          ],
+          "events": [
+            "v158_gaoyou_breach",
+            "v158_shandong_relief"
+          ],
+          "people": [
+            "q_qianlong"
+          ]
+        }
+      ],
+      "sources": [
+        "v158_qsg310",
+        "v40q_qsg302"
+      ]
+    },
+    {
+      "person": "q158_liutongxun",
+      "title": "刘统勋：直言、查案与工程核验之间的中枢能力",
+      "dek": "敢于上疏只是起点，更重要的是把权力监督落实到清册、工段和审讯程序。",
+      "sections": [
+        {
+          "id": "v158_lt1",
+          "title": "批评张廷玉亲族和讷亲权势，是在皇帝许可的监督框架内",
+          "text": "刘统勋任左都御史时请求限制张、姚两姓亲属升转，并指出讷亲兼掌事务过多。乾隆公开奏疏并要求大臣自省。此事显示言官可以触及权臣，也显示批评能否成立最终取决于皇帝裁量，不能直接等同现代权力制衡。",
+          "kind": "监察权臣",
+          "sources": [
+            "v40q_qsg302"
+          ],
+          "events": [
+            "v158_initial_council"
+          ],
+          "people": [
+            "q_zhangtingyu"
+          ]
+        },
+        {
+          "id": "v158_lt2",
+          "title": "海塘、漕运和山东赈务把言官送到具体水路",
+          "text": "他先赴浙江学习海塘，后署漕运总督，又与高斌赴山东治赈、调整泄水工程。现场判断需要核对水位、河口、仓粮和受灾州县。官员履历中的“奉命勘查”并不保证建议正确，却让监督不只停留在道德指责。",
+          "kind": "灾赈与勘查",
+          "sources": [
+            "v40q_qsg302"
+          ],
+          "events": [
+            "v158_shandong_relief",
+            "v158_gaobin_maocheng"
+          ],
+          "people": [
+            "q158_gaobin"
+          ]
+        },
+        {
+          "id": "v158_lt3",
+          "title": "河工案里，一百余万未结款比“清官”标签更可核查",
+          "text": "高邮水灾后，他查出河员侵帑、迟报和未结款项，提出限期核销，也反对缺乏水源、易淤的引河方案。清廉声誉有助于理解信任，却不能替代对账册、工程判断与皇帝严刑之间关系的分析。",
+          "kind": "河工审计",
+          "sources": [
+            "v40q_qsg302",
+            "v158_qsg310"
+          ],
+          "events": [
+            "v158_gaoyou_breach"
+          ],
+          "people": [
+            "q158_gaobin"
+          ]
+        },
+        {
+          "id": "v158_lt4",
+          "title": "处死误工属员显示问责强度，也暴露制度把风险向下传递",
+          "text": "乾隆下令在工次处死被指侵帑误工的官员，并让高斌观看。刘统勋负责调查，不等于所有裁决都由他决定。严刑可能迫使官员报告，也可能诱发瞒报和寻找替罪者；工程安全不能靠恐惧单独维持。",
+          "kind": "司法边界",
+          "sources": [
+            "v40q_qsg302"
+          ],
+          "events": [
+            "v158_gaoyou_breach"
+          ],
+          "people": [
+            "q_qianlong",
+            "q158_gaobin"
+          ]
+        },
+        {
+          "id": "v158_lt5",
+          "title": "进入军机以后，他连接的是不同专业而非包办一切",
+          "text": "刘统勋后来进入军机并升大学士，仍处理司法、河工和地方案件。他的价值在于能把奏折、查案与现场意见送入中枢，不是个人取代制度。其子刘墉另有政治生涯，不能把父子清名和民间传说混为同一个“刘罗锅”故事。乾隆允许他弹劾重臣，并不代表其意见总被采纳；皇帝也可能把直言当作证明朝廷开明的材料。人物价值应落在可追踪的奏议和查案上，而不是把所有公正裁决都归给一个清官。他与高斌既合作勘灾又参与查办，说明官场关系不是永远的盟友或对手。职责随案件变化，正是制度运行比清官传奇更复杂之处。",
+          "kind": "中枢与记忆",
+          "sources": [
+            "v40q_qsg302"
+          ],
+          "events": [
+            "v158_sun_forgery"
+          ],
+          "people": [
+            "q_liuyong",
+            "q158_sunjiagan"
+          ]
+        }
+      ],
+      "sources": [
+        "v158_qsg310",
+        "v40q_qsg302"
+      ]
+    },
+    {
+      "person": "q158_chenhongmou",
+      "title": "陈宏谋：仓粮、学校与家庭规训组成的地方治理",
+      "dek": "他关注普通生活，但“为民”政策也把国家期待推进村社和家庭。",
+      "sections": [
+        {
+          "id": "v158_ch1",
+          "title": "广西出身和多省轮调，使他的治理不是单一地方经验",
+          "text": "陈宏谋从翰林与监察官转任云南、江西、陕西、河南、福建等省。频繁调动让他比较仓储、垦务和基层吏治，也意味着很多方案由继任者落实。官修传把连续升迁组织成能臣故事，实际政策效果需逐省判断。",
+          "kind": "跨省履历",
+          "sources": [
+            "v158_qsg307"
+          ],
+          "events": [
+            "v158_chen_granaries"
+          ],
+          "people": [
+            "q_qianlong"
+          ]
+        },
+        {
+          "id": "v158_ch2",
+          "title": "社仓和赈济要经过士绅、州县与家庭三道关系",
+          "text": "他推动社仓、义仓和备荒，强调谷物出纳与地方公议。仓储能够缩短灾时运输，却可能出现富户把持、虚数和借贷难归还。制度文本展示理想程序，不能证明每座仓在饥年都有足够存粮。",
+          "kind": "仓储救荒",
+          "sources": [
+            "v158_qsg307"
+          ],
+          "events": [
+            "v158_chen_granaries",
+            "v158_shandong_relief"
+          ],
+          "people": [
+            "q158_liutongxun"
+          ]
+        },
+        {
+          "id": "v158_ch3",
+          "title": "垦荒数字若脱离土质、权属和移民，就会把纸面面积当粮食",
+          "text": "陈宏谋处理云南、陕西等地垦务，既要求核实荒熟，也曾因奏报受责。地方官为完成考成可能把熟田、边角或争议土地列作新垦。新增亩数不能直接证明产量增加，更不能说明佃户获得稳定产权。",
+          "kind": "垦务边界",
+          "sources": [
+            "v158_qsg307"
+          ],
+          "events": [
+            "v158_chen_granaries"
+          ],
+          "people": [
+            "q157_tianwenjing"
+          ]
+        },
+        {
+          "id": "v158_ch4",
+          "title": "妇女训诫和乡约教育既扩散文字，也强化性别秩序",
+          "text": "他编发教化文本、推动义学，希望从家庭勤俭、孝悌和妇女行为塑造地方秩序。这些读物能进入更广社会，却主要表达官员和士绅规范，不是女性自述。识字传播与约束身体、劳动和婚姻可以同时发生。",
+          "kind": "教育与性别",
+          "sources": [
+            "v158_qsg307"
+          ],
+          "events": [
+            "v158_chen_granaries"
+          ],
+          "people": [
+            "q_wangzhenyi"
+          ]
+        },
+        {
+          "id": "v158_ch5",
+          "title": "“名督抚”需要用执行链检验，而不是用动机替代结果",
+          "text": "陈宏谋重视民生并不意味着政策没有催科、干预与地方权力成本。他的奏疏适合观察国家想把仓、学、乡约与户口连成什么样；居民是否受益，则要看粮价、灾年、租佃和胥吏。高评价与具体限制应同时保留。他留下大量官箴和地方规条，使后人容易看到政策设计，却较难听见不识字居民的回应。文本越完整，越要区分“要求如此”“官员报告如此”和“社会确实如此”三个层次。若只摘录他的劝善语言，会把贫困、租佃和性别权力变成道德问题；把物质条件接回教化文本，才不会让“勤俭”替代救济。",
+          "kind": "评价方法",
+          "sources": [
+            "v158_qsg307"
+          ],
+          "events": [
+            "v158_tour_contributions"
+          ],
+          "people": [
+            "q_qianlong"
+          ]
+        }
+      ],
+      "sources": [
+        "v158_qsg307"
+      ]
+    },
+    {
+      "person": "q158_sunjiagan",
+      "title": "孙嘉淦：直言声望为何能被一篇伪奏稿借走",
+      "dek": "人物影响不只来自本人做过什么，也来自社会相信他可能说什么。",
+      "sections": [
+        {
+          "id": "v158_sj1",
+          "title": "雍正朝的大胆上疏形成了乾隆朝可调用的公共形象",
+          "text": "孙嘉淦早年请求亲骨肉、停捐纳、罢西兵，被视为“狂生”。故事由官修传保存，核心是皇帝最终容纳批评，而非臣下拥有不受处分的言论权。他的清直名望后来成为伪作能够取信读者的前提。",
+          "kind": "直言传统",
+          "sources": [
+            "v158_qsg303"
+          ],
+          "events": [
+            "v158_sun_forgery"
+          ],
+          "people": [
+            "q_yongzheng",
+            "q157_yuezhongqi"
+          ]
+        },
+        {
+          "id": "v158_sj2",
+          "title": "任吏刑两部和直隶总督时，他同样会被弹劾和罢职",
+          "text": "乾隆初，他掌吏部、刑部，后任直隶总督并处理河务、官员案件，也曾因查案被认定附和而夺职。敢言形象不能覆盖每项行政判断；制度中的监督者也会成为被监督者。",
+          "kind": "行政与处分",
+          "sources": [
+            "v158_qsg303",
+            "v5qe_qsg10_15"
+          ],
+          "events": [
+            "v158_gaobin_maocheng"
+          ],
+          "people": [
+            "q158_gaobin"
+          ]
+        },
+        {
+          "id": "v158_sj3",
+          "title": "伪奏稿的传播说明读者先判断“像不像”，再判断真不真",
+          "text": "1751年前后，一篇列举皇帝过失的文字冒其名流传。它能跨省传抄，是因为孙嘉淦的声望使文本具有可信外壳。冒名事实已经确定，但谁在何地添加、转抄、相信，现有案卷很难形成完整传播图。",
+          "kind": "伪作与声望",
+          "sources": [
+            "v158_qsg303"
+          ],
+          "events": [
+            "v158_sun_forgery"
+          ],
+          "people": [
+            "q_qianlong"
+          ]
+        },
+        {
+          "id": "v158_sj4",
+          "title": "追查把阅读、抄写和不上报都变成可能受罚的行为",
+          "text": "军机和督抚逐级追索底本及传抄者，卢鲁生最终被处死。案件不仅惩罚作者，还试图切断信息链。口供是在高压审讯中形成，不能当作自由回忆；遍布多省的记录也不等于每位读者都赞同文本。",
+          "kind": "信息控制",
+          "sources": [
+            "v158_qsg303",
+            "v5qe_qsg10_15"
+          ],
+          "events": [
+            "v158_sun_forgery"
+          ],
+          "people": [
+            "q158_liutongxun"
+          ]
+        },
+        {
+          "id": "v158_sj5",
+          "title": "他的名字在死后成为政治语言，反而比一则清官故事更重要",
+          "text": "孙嘉淦1753年去世，伪奏案仍延续。社会借他的名字表达批评，国家借案件重申皇帝不可被匿名议论。人物页因此既要讲本人任职，也要讲名望如何脱离本人继续行动，且不能把伪文内容算到他名下。清廷最终锁定具体伪造者，不等于已经还原每条传抄路线。案件中有人因阅读、收藏、转交或迟报受牵连，处罚范围本身就是国家试图控制政治信息流通的证据。伪作中对皇帝的批评也不能反过来当作孙嘉淦思想材料。能证明的，是社会认为他的名字足以承载这种语言，以及朝廷对此高度警惕。这也是辨认人物本人、社会声望与后世故事必须分开的理由。",
+          "kind": "身后政治",
+          "sources": [
+            "v158_qsg303"
+          ],
+          "events": [
+            "v158_sun_forgery"
+          ],
+          "people": [
+            "q_liuyong"
+          ]
+        }
+      ],
+      "sources": [
+        "v158_qsg303",
+        "v5qe_qsg10_15"
+      ]
+    },
+    {
+      "person": "q158_bandi",
+      "title": "班第：从赈灾、驻藏到伊犁孤军的制度履历",
+      "dek": "战死是结局，不是解释；此前的地方行政和最后的兵力配置更值得追问。",
+      "sections": [
+        {
+          "id": "v158_bd1",
+          "title": "军机与地方任职让他同时熟悉文书、财政和边务",
+          "text": "班第由内阁、军机转任湖广、两广等地，又奉命赈宁夏地震。他不是突然被派出的武将，而是兼具行政和机要经验的旗人大臣。官修传以忠烈收束，容易让前半生的赈务和督抚工作消失。",
+          "kind": "行政背景",
+          "sources": [
+            "v158_qsg312",
+            "v5qe_qsg10_15"
+          ],
+          "events": [
+            "v158_initial_council"
+          ],
+          "people": [
+            "q_qianlong"
+          ]
+        },
+        {
+          "id": "v158_bd2",
+          "title": "驻藏善后要求与噶伦、驻军和远程中枢共同协商",
+          "text": "1750年冲突后，班第掌驻藏大臣关防，参与重定办事章程。清廷权限增加，却仍需当地官员、寺院和驿站执行。把章程写成中央从此直接管理一切，会忽略制度协商与交通限制。",
+          "kind": "驻藏事务",
+          "sources": [
+            "v158_qsg312",
+            "v5qe_qsg10_15"
+          ],
+          "events": [
+            "v158_tibet_1751"
+          ],
+          "people": [
+            "q158_zhaohui"
+          ]
+        },
+        {
+          "id": "v158_bd3",
+          "title": "西征时他统北路，阿睦尔撒纳既是副将也是不可替代的向导",
+          "text": "1755年出兵，班第与阿睦尔撒纳同路进入伊犁。清军依赖降附部众提供情报、地形和政治联络。迅速获胜并非双方已经建立稳定信任；班第随后报告阿睦尔撒纳擅权，说明联盟内部风险很早出现。",
+          "kind": "联盟战争",
+          "sources": [
+            "v158_qsg312",
+            "v158_qsg523"
+          ],
+          "events": [
+            "v158_dawaci_campaign"
+          ],
+          "people": [
+            "q158_amursana",
+            "q158_dawaci"
+          ]
+        },
+        {
+          "id": "v158_bd4",
+          "title": "只留数百人办理善后，把政治误判变成无法承受的军事风险",
+          "text": "主力撤回后，他与鄂容安留守伊犁，催阿睦尔撒纳入觐。反叛爆发，交通被截，少数官兵边战边退。个体赴死值得记录，更应追问为何以如此薄弱兵力承担尚未稳定的四部重组。",
+          "kind": "伊犁危机",
+          "sources": [
+            "v158_qsg312"
+          ],
+          "events": [
+            "v158_amursana_revolt",
+            "v158_ili_collapse"
+          ],
+          "people": [
+            "q158_erongan"
+          ]
+        },
+        {
+          "id": "v158_bd5",
+          "title": "乾隆对其殉难评价前后变化，显示忠烈也是被建构的记忆",
+          "text": "皇帝起初认为班第自尽“于事无补”，后来又按傅清、拉布敦例建双忠祠、绘紫光阁像。追赠不是事件当天自然形成的共识。纪念可以保留忠诚，也可能把错误部署和政策责任移出视野。班第死后画像、祠祀和谥号把他纳入忠臣谱系，却没有回答主力为何过早撤离、召见阿睦尔撒纳为何反复延误。把这些问题保留下来，才能让纪念与军事责任同时成立。同一位皇帝先批评殉死无益、后又建祠表彰，这种变化不是细枝末节，而是国家如何整理一次失败、重建军心并安排责任的过程。因而英雄结局不能成为停止追问制度原因的终点。",
+          "kind": "纪念与责任",
+          "sources": [
+            "v158_qsg312"
+          ],
+          "events": [
+            "v158_ili_collapse",
+            "v158_battle_images"
+          ],
+          "people": [
+            "q_qianlong",
+            "q158_erongan"
+          ]
+        }
+      ],
+      "sources": [
+        "v158_qsg312",
+        "v158_qsg523",
+        "v5qe_qsg10_15"
+      ]
+    },
+    {
+      "person": "q158_erongan",
+      "title": "鄂容安：地方治理经验为何没能挽救伊犁善后",
+      "dek": "他既处理粮价、胥役和河道，也在远征中承担一套尚未稳定的政治安排。",
+      "sections": [
+        {
+          "id": "v158_er1",
+          "title": "由上书房进入封疆，他的早期履历包含一次泄密处分",
+          "text": "鄂容安出身鄂尔泰家族，入上书房后转任多省巡抚。乾隆七年因泄露机密下慎刑司，获释后复职。亲贵网络提供机会，却不能免于皇帝处分；这段经历也说明机要信息本身就是权力。",
+          "kind": "亲贵与处分",
+          "sources": [
+            "v158_qsg312",
+            "v5qe_qsg10_15"
+          ],
+          "events": [
+            "v158_initial_council"
+          ],
+          "people": [
+            "q_eertai"
+          ]
+        },
+        {
+          "id": "v158_er2",
+          "title": "山东水灾中提议海运籴粮，是把官赈接到市场航路",
+          "text": "济南被水、米价上涨时，他请暂弛海禁，招商赴奉天买粮。海运可能扩大供给，也受船价、风险和口岸规制影响。获准的政策不能证明粮食平均抵达每个灾户，临时弛禁也不是全面开放海贸。",
+          "kind": "灾粮与市场",
+          "sources": [
+            "v158_qsg312"
+          ],
+          "events": [
+            "v158_erongan_sea_grain"
+          ],
+          "people": [
+            "q158_gaobin"
+          ]
+        },
+        {
+          "id": "v158_er3",
+          "title": "两江总督任内列举赈、漕、徭役胥弊，说明基层成本来自何处",
+          "text": "他指出淮安赈务、苏州漕务、徐州徭役中额外白役和胥吏侵扰，要求按经制裁减。奏疏证明问题被看见，不证明禁令彻底执行。胥役依赖办事费用，若不改变财政来源，名目可能消失而负担转形。",
+          "kind": "胥役与经费",
+          "sources": [
+            "v158_qsg312"
+          ],
+          "events": [
+            "v158_tour_contributions"
+          ],
+          "people": [
+            "q158_liutongxun"
+          ]
+        },
+        {
+          "id": "v158_er4",
+          "title": "巡幸捐输被斥，暴露“自愿”与官场迎合之间的灰区",
+          "text": "河南士民被称乐输五十八万余两，乾隆命退还，鄂容安担心胥吏中饱而再奏。无论初衷如何，地方官申报巨额捐输本身可能形成压力。皇帝拒收不等于行程无成本，退还也需要可追踪名册。",
+          "kind": "巡幸费用",
+          "sources": [
+            "v158_qsg312"
+          ],
+          "events": [
+            "v158_tour_contributions",
+            "v158_first_southern_tour"
+          ],
+          "people": [
+            "q_qianlong"
+          ]
+        },
+        {
+          "id": "v158_er5",
+          "title": "伊犁之死不能只用勇气解释，善后方案和兵力同样负责",
+          "text": "他随军记录地理、安抚部众，主力撤回后与班第留守。阿睦尔撒纳反叛时，两人仅率数百人突围并自尽。地方治理经验无法替代兵力与交通；纪念其忠烈时，仍须保留清廷错误估计局势的责任。鄂容安的奏疏还显示地方官必须在皇帝“不扰民”的自我形象与真实筹款之间措辞。官员说士民乐输、皇帝说不许累民，两者都不能直接替代捐款者是否承受压力的证据。这些经历使他成为连接内地财政和边疆战争的人物：灾区商粮、江南胥役与伊犁军需看似分散，背后都在问国家如何动员地方资源。",
+          "kind": "战死与结构",
+          "sources": [
+            "v158_qsg312"
+          ],
+          "events": [
+            "v158_western_geography",
+            "v158_ili_collapse"
+          ],
+          "people": [
+            "q158_bandi",
+            "q158_amursana"
+          ]
+        }
+      ],
+      "sources": [
+        "v158_qsg312",
+        "v5qe_qsg10_15"
+      ]
+    },
+    {
+      "person": "q158_zhaohui",
+      "title": "兆惠：粮运官如何被战争推成西北统帅",
+      "dek": "黑水围困之后的英雄形象，建立在多年台站、撤退和失败经验之上。",
+      "sections": [
+        {
+          "id": "v158_zh1",
+          "title": "笔帖式出身意味着他首先熟悉的是档案和供给",
+          "text": "兆惠从军机处笔帖式升迁，赴金川时负责粮运并核查各省报兵不实。粮运不是辅助事务：兵数、口粮、驮畜和道路共同限定作战范围。将领履历从文书开始，也说明清代战争由高度行政化的网络支撑。",
+          "kind": "军机与粮运",
+          "sources": [
+            "v158_qsg313"
+          ],
+          "events": [
+            "v158_jinchuan_burden",
+            "v158_western_supply"
+          ],
+          "people": [
+            "q158_fuheng"
+          ]
+        },
+        {
+          "id": "v158_zh2",
+          "title": "阿睦尔撒纳反叛后，他经历了追击失败与伊犁撤退",
+          "text": "兆惠从伊犁追捕反叛者，兵败后又在多支部众夹击中整队东撤。官修传强调勇毅，仍保留兵力不足、将领失和和台路断绝。后来的胜利不能倒写成他从未判断错误。",
+          "kind": "追击与撤退",
+          "sources": [
+            "v158_qsg313"
+          ],
+          "events": [
+            "v158_amursana_revolt",
+            "v158_dzungar_destruction"
+          ],
+          "people": [
+            "q158_amursana"
+          ]
+        },
+        {
+          "id": "v158_zh3",
+          "title": "黑水被围时，挖壕、取草根和等待援军比冲锋更接近真实",
+          "text": "进攻叶尔羌未克后，他在黑水筑垒，长期受围。军队依赖突围取粮、保存马匹和富德援军。战斗确有强烈个人指挥因素，却也是多人协同和对方围困未完全封死的结果，不能只读成独胆英雄。",
+          "kind": "黑水围困",
+          "sources": [
+            "v158_qsg313"
+          ],
+          "events": [
+            "v158_black_river"
+          ],
+          "people": [
+            "q158_burhan",
+            "q158_khoja_jahan"
+          ]
+        },
+        {
+          "id": "v158_zh4",
+          "title": "占领两城以后，真正困难转为伯克、贡赋、钱币和驻军",
+          "text": "布拉呢敦、霍集占西逃后，兆惠等进入喀什噶尔、叶尔羌，重定贡赋、铸钱、分兵驻守，并利用原有伯克体系。军事胜利没有把多城社会变成空白纸张；差异化行政是在旧关系上重新分配权力。",
+          "kind": "战后设治",
+          "sources": [
+            "v158_qsg313",
+            "v158_qingshilu597"
+          ],
+          "events": [
+            "v158_altishahr_war",
+            "v158_altishahr_tax_coin"
+          ],
+          "people": [
+            "q158_burhan",
+            "q158_khoja_jahan"
+          ]
+        },
+        {
+          "id": "v158_zh5",
+          "title": "紫光阁画像和战图把后勤官改写成凯旋将军",
+          "text": "兆惠回京获郊劳、饮至并入功臣图，后来战图突出黑水解围等胜利。图像有助于观察装备、礼仪与记忆，却把撤退、疾病和居民损失压到画外。人物评价应让粮运官、败退者、围困幸存者和战后管理者同时存在。回京后的郊劳和画像把危险经历转化为可见荣誉，前线参与的绿营、蒙古部众、伯克、驮运者与援军则更难进入人物中心。阅读他的生平，应不断把个人功劳重新放回这套协作网络。《清史稿》成书很晚，沿用了大量国史馆材料，也继承胜利王朝评价。章节引用其事实次序，但不照录歧视性称谓、夸大战果或天命结论。",
+          "kind": "图像记忆",
+          "sources": [
+            "v158_qsg313",
+            "v158_dpm_western"
+          ],
+          "events": [
+            "v158_battle_images"
+          ],
+          "people": [
+            "q_qianlong"
+          ]
+        }
+      ],
+      "sources": [
+        "v158_dpm_western",
+        "v158_qingshilu597",
+        "v158_qsg313"
+      ]
+    },
+    {
+      "person": "q158_amursana",
+      "title": "阿睦尔撒纳：借清军重组准噶尔的计划为何反噬所有人",
+      "dek": "他的选择具有强烈权力野心，也必须放回准噶尔内乱与清廷分部方案中理解。",
+      "sections": [
+        {
+          "id": "v158_am1",
+          "title": "他先帮助达瓦齐夺位，联盟又因汗权分配破裂",
+          "text": "阿睦尔撒纳属于辉特支系，曾与达瓦齐共同推翻喇嘛达尔札。达瓦齐取得汗位后，两人围绕部众和权力冲突。官修材料把准噶尔内乱归于个人反复，部众、宰桑和牧地资源同样推动阵营变化。",
+          "kind": "准噶尔内争",
+          "sources": [
+            "v158_qsg523"
+          ],
+          "events": [
+            "v158_dzungar_split"
+          ],
+          "people": [
+            "q158_dawaci"
+          ]
+        },
+        {
+          "id": "v158_am2",
+          "title": "投清并请兵是借外力夺权，不是无条件接受清廷安排",
+          "text": "受达瓦齐进攻后，他率部投清，提供地理与政治情报并随军进攻伊犁。清廷需要他引路，他需要清军改变权力格局。双方目标在击败达瓦齐时重合，却从未对战后谁统治四部达成一致。",
+          "kind": "条件性联盟",
+          "sources": [
+            "v158_qsg523",
+            "v158_qsg312"
+          ],
+          "events": [
+            "v158_dawaci_campaign"
+          ],
+          "people": [
+            "q158_bandi",
+            "q158_erongan"
+          ]
+        },
+        {
+          "id": "v158_am3",
+          "title": "四汗方案拒绝其统领要求，使潜在矛盾公开化",
+          "text": "乾隆拟把四卫拉特分别立汗，只许他领辉特。阿睦尔撒纳继续使用旧印、联络各部，并拖延入觐。清廷视之为叛迹，他则试图保存更高汗权。解释政治目标不等于为随后的战争开脱。",
+          "kind": "战后方案冲突",
+          "sources": [
+            "v158_qsg312"
+          ],
+          "events": [
+            "v158_amursana_revolt"
+          ],
+          "people": [
+            "q_qianlong"
+          ]
+        },
+        {
+          "id": "v158_am4",
+          "title": "反叛引发的不只是追捕个人，而是范围不断扩大的清剿",
+          "text": "1755年反叛后，伊犁驻军崩溃，清军多次重返。他在哈萨克与准噶尔各部之间奔走，最终逃入俄境并死于天花。持续战争、清军命令、疫病和饥荒共同摧毁当地社会，不能把全部死亡归因一个人的“作乱”。",
+          "kind": "战争扩大",
+          "sources": [
+            "v158_qsg313",
+            "v158_cambridge_dzungar"
+          ],
+          "events": [
+            "v158_ili_collapse",
+            "v158_dzungar_destruction"
+          ],
+          "people": [
+            "q158_zhaohui"
+          ]
+        },
+        {
+          "id": "v158_am5",
+          "title": "清廷战图把他固定为反派，恰好需要补回联盟的前半段",
+          "text": "《平定西域战图》从受降走向胜利，方便呈现皇帝平乱，却难表达他曾是清军副将和关键盟友。人物页保留这一转折，不是模糊责任，而是防止用结局删改开端，并看见帝国如何与地方精英合作后再将其消灭。他逃往哈萨克、再入准噶尔、最后进入俄境的路线说明边界并非封闭线条，而是多方外交和庇护空间。清廷追索个人的过程同时改变了与哈萨克和俄罗斯的关系，不能只画成国内追逃。关于他是否一开始就计划反叛，清方材料多以结局倒推。现有证据足以确认其扩张目标和秘密联络，却不足以把每次谈判都解释为预谋欺骗。",
+          "kind": "记忆与立场",
+          "sources": [
+            "v158_dpm_western",
+            "v158_qsg523"
+          ],
+          "events": [
+            "v158_battle_images"
+          ],
+          "people": [
+            "q_qianlong",
+            "q158_dawaci"
+          ]
+        }
+      ],
+      "sources": [
+        "v158_cambridge_dzungar",
+        "v158_dpm_western",
+        "v158_qsg312",
+        "v158_qsg313",
+        "v158_qsg523"
+      ]
+    },
+    {
+      "person": "q158_dawaci",
+      "title": "达瓦齐：被俘的准噶尔汗与胜利者材料中的“昏暴”",
+      "dek": "他的失败来自内部分裂、联盟倒转和清军介入，不是一场孤立决战。",
+      "sections": [
+        {
+          "id": "v158_dw1",
+          "title": "准噶尔汗位本已在连续废立中失去稳定继承规则",
+          "text": "噶尔丹策零死后，部内发生多次夺位。达瓦齐与阿睦尔撒纳合作推翻喇嘛达尔札并取得汗位。官修资料把过程写成暴君循环，仍能看出汗、台吉、宰桑和部众之间没有单一服从链。",
+          "kind": "汗位重组",
+          "sources": [
+            "v158_qsg523"
+          ],
+          "events": [
+            "v158_dzungar_split"
+          ],
+          "people": [
+            "q158_amursana"
+          ]
+        },
+        {
+          "id": "v158_dw2",
+          "title": "与阿睦尔撒纳决裂后，他无法同时控制牧地、部众和外部边界",
+          "text": "双方围绕部众分配与最高权力开战。阿睦尔撒纳退往额尔齐斯并最终投清，多个首领也陆续内附。达瓦齐的军事优势因此被政治流失削弱；这不是“清军到来前政权已经不存在”，而是国家结构严重分裂。",
+          "kind": "分裂与外援",
+          "sources": [
+            "v158_qsg523"
+          ],
+          "events": [
+            "v158_dzungar_split"
+          ],
+          "people": [
+            "q158_amursana"
+          ]
+        },
+        {
+          "id": "v158_dw3",
+          "title": "1755年的迅速溃败依赖倒戈、引路和对伊犁的突然推进",
+          "text": "清军分路前进，降附首领充当前锋。达瓦齐兵力瓦解后向天山南路逃亡，在乌什被当地首领擒交清军。胜利来自跨阵营合作，不能只用官方军功名单还原每个参与者的选择。",
+          "kind": "被俘过程",
+          "sources": [
+            "v5qe_qsg10_15",
+            "v158_qsg523"
+          ],
+          "events": [
+            "v158_dawaci_campaign"
+          ],
+          "people": [
+            "q158_bandi",
+            "q158_erongan"
+          ]
+        },
+        {
+          "id": "v158_dw4",
+          "title": "送京、献俘与封爵把敌对首领转换成皇帝宽恩的展示对象",
+          "text": "达瓦齐被带到北京，经过献俘礼后免死并获封。礼仪显示皇帝有权决定生杀与身份，也把准噶尔内部政治压缩成臣服场景。免死不等于双方平等和解，更不能代表其旧部处境。",
+          "kind": "献俘与安置",
+          "sources": [
+            "v5qe_qsg10_15"
+          ],
+          "events": [
+            "v158_dawaci_campaign"
+          ],
+          "people": [
+            "q_qianlong"
+          ]
+        },
+        {
+          "id": "v158_dw5",
+          "title": "“昏暴亡国”是胜利者解释，不能替代对制度崩裂的分析",
+          "text": "清代方略和传记反复以个人品行解释失败，便于证明征服合理。人物页仍可记录其残酷与权争，但应同时看继承危机、牧地资源、部落联盟和清廷军事介入。材料主要来自对手，缺失本身就是证据边界。北京给予封爵让其个人得以存活，却没有恢复原有政治共同体。对投降首领的优待和对其部众的清剿、迁徙可以同时发生；只看献俘后的宽赦会误读战争后果。他的个人声音几乎没有独立保存，现有生平主要由清廷和后来官修书重组。对其暴力与失政可以记录，但材料不对称必须公开说明。这种沉默不能靠想象性的对白补齐。",
+          "kind": "史料立场",
+          "sources": [
+            "v158_qsg523",
+            "v158_dpm_western"
+          ],
+          "events": [
+            "v158_battle_images"
+          ],
+          "people": [
+            "q158_amursana"
+          ]
+        }
+      ],
+      "sources": [
+        "v158_dpm_western",
+        "v158_qsg523",
+        "v5qe_qsg10_15"
+      ]
+    },
+    {
+      "person": "q158_burhan",
+      "title": "布拉呢敦：从被囚和卓到喀什噶尔战争领袖",
+      "dek": "家族宗教声望提供政治资源，却不能代表天山南路所有居民。",
+      "sections": [
+        {
+          "id": "v158_bh1",
+          "title": "和卓家族曾被准噶尔控制，其获释首先改变了地方权力平衡",
+          "text": "布拉呢敦与弟霍集占属于和卓家族，长期受准噶尔约束。1755年清军进入伊犁后，他们被释放并被安排返回南路招抚。清廷希望借其声望稳定地方，兄弟则有自己的统治目标，合作从一开始就有条件。",
+          "kind": "获释与招抚",
+          "sources": [
+            "v158_qsg313"
+          ],
+          "events": [
+            "v158_dawaci_campaign"
+          ],
+          "people": [
+            "q158_khoja_jahan",
+            "q158_amursana"
+          ]
+        },
+        {
+          "id": "v158_bh2",
+          "title": "反对清廷安排不能简写成所有“回部”一致起兵",
+          "text": "准噶尔秩序崩溃后，兄弟控制喀什噶尔、叶尔羌等地并拒绝清廷征召。各城伯克、商人和居民对战争反应不同，有人支持、有人降清、有人在强权间求生。官方“回众”一词会抹平这些差异。",
+          "kind": "地方政治",
+          "sources": [
+            "v158_qsg313"
+          ],
+          "events": [
+            "v158_altishahr_war"
+          ],
+          "people": [
+            "q158_khoja_jahan"
+          ]
+        },
+        {
+          "id": "v158_bh3",
+          "title": "黑水围困显示他们能够组织持续作战，却未能完全封死清军",
+          "text": "布拉呢敦、霍集占军队围攻兆惠营垒数月，同时受布鲁特行动和清军援兵牵制。围困并非毫无章法，也没有取得最终歼灭。军报中的伤亡与人数来自交战一方，不能当精确统计。",
+          "kind": "围困战争",
+          "sources": [
+            "v158_qsg313"
+          ],
+          "events": [
+            "v158_black_river"
+          ],
+          "people": [
+            "q158_zhaohui"
+          ]
+        },
+        {
+          "id": "v158_bh4",
+          "title": "两城相继放弃后，逃亡路线进入材料最不透明的阶段",
+          "text": "1759年清军推进，兄弟西逃巴达克山。清实录记录当地统治者关于一死一擒的回复及清军索取，但布拉呢敦具体如何死亡并不清楚。不能把外交文书的简短句子扩写成确定现场。",
+          "kind": "西逃与结局",
+          "sources": [
+            "v158_qingshilu597"
+          ],
+          "events": [
+            "v158_badakhshan"
+          ],
+          "people": [
+            "q158_khoja_jahan"
+          ]
+        },
+        {
+          "id": "v158_bh5",
+          "title": "战图把他安排在“叛乱—献俘”序列，人物页要恢复开放问题",
+          "text": "宫廷战图以胜利和凯宴结束，兄弟成为被平定对象。图像有明确政治目的，无法说明宗教声望、城镇分歧和居民损失。恢复这些层次并非浪漫化抵抗，而是拒绝让一种官方称谓替代整个地区。称谓也需要说明：清代汉文档案常用“波罗尼都”等译名，今多写布拉呢敦。名称变化反映转写传统，不应被误认成不同人物；而“大和卓”是相对其弟的通称，不等于统一官职。清军进入两城之后仍沿用大量地方伯克，反过来证明战争前的政治社会并非只围绕兄弟二人。首领生平必须接回城镇网络与普通居民。不同城市的选择也不能由一个首领代言。",
+          "kind": "图像与记忆",
+          "sources": [
+            "v158_dpm_western"
+          ],
+          "events": [
+            "v158_battle_images",
+            "v158_altishahr_tax_coin"
+          ],
+          "people": [
+            "q_qianlong",
+            "q158_khoja_jahan"
+          ]
+        }
+      ],
+      "sources": [
+        "v158_dpm_western",
+        "v158_qingshilu597",
+        "v158_qsg313"
+      ]
+    },
+    {
+      "person": "q158_khoja_jahan",
+      "title": "霍集占：小和卓的抵抗、失败与被标签化的南路社会",
+      "dek": "军事行动清晰可见，地方支持的范围和动机却远比军报模糊。",
+      "sections": [
+        {
+          "id": "v158_kh1",
+          "title": "他从伊犁返回南路时，既借家族名望也借准噶尔崩解的机会",
+          "text": "霍集占与兄布拉呢敦获释后返回天山南路。其政治空间来自和卓家族影响，也来自准噶尔统治突然瓦解。清廷最初把兄弟视为招抚工具，随后因其拒绝入觐和控制地方而转向军事解决。",
+          "kind": "权力真空",
+          "sources": [
+            "v158_qsg313"
+          ],
+          "events": [
+            "v158_dawaci_campaign",
+            "v158_altishahr_war"
+          ],
+          "people": [
+            "q158_burhan",
+            "q158_amursana"
+          ]
+        },
+        {
+          "id": "v158_kh2",
+          "title": "拒绝清廷并组织军队是主动选择，但不等于代表所有维吾尔居民",
+          "text": "他在叶尔羌等地组织抵抗、调兵围困清军。现有清方档案善于记录首领和战斗，较少保存农户、手工业者和各城伯克为何服从或转向。使用“维吾尔族首领”时仍需避免投射现代统一政治代表性。",
+          "kind": "抵抗与代表性",
+          "sources": [
+            "v158_qsg313"
+          ],
+          "events": [
+            "v158_black_river"
+          ],
+          "people": [
+            "q158_zhaohui"
+          ]
+        },
+        {
+          "id": "v158_kh3",
+          "title": "黑水未能歼灭兆惠，使战争重回补给与多路增援的竞争",
+          "text": "围困持续期间，清军营内粮草紧张，霍集占一方也要维持部众、监视布鲁特并防援军。富德等到达后局势逆转。战局不只由一场勇战决定，而是看谁能在冬季与远距离中维持网络。",
+          "kind": "围困与补给",
+          "sources": [
+            "v158_qsg313"
+          ],
+          "events": [
+            "v158_black_river",
+            "v158_western_supply"
+          ],
+          "people": [
+            "q158_burhan",
+            "q158_zhaohui"
+          ]
+        },
+        {
+          "id": "v158_kh4",
+          "title": "巴达克山报告能确认追索发生，不能确认每个死亡细节",
+          "text": "清军追至边界后，当地统治者称霍集占中弹死并最终交出其首级。报告产生于大军压境的外交环境，内容服务于止战和交涉。可确认其抵抗失败与死亡，不应虚构最后对白或精确现场。",
+          "kind": "结局证据",
+          "sources": [
+            "v158_qingshilu597"
+          ],
+          "events": [
+            "v158_badakhshan"
+          ],
+          "people": [
+            "q158_burhan"
+          ]
+        },
+        {
+          "id": "v158_kh5",
+          "title": "战后伯克、贡赋和驻军继续运作，说明失败者之外还有社会",
+          "text": "兄弟败亡后，清廷没有把南路改成普通内地州县，而是保留并重排伯克、贡赋、铸钱和驻军。人物结局应接到制度后果：居民面对的是新旧精英重新组合，而不只是战争画卷上的献俘终点。“霍集占”也见不同音译。清廷将其与兄长并称大小和卓，便于构造单一敌方中心，但两人的决策、地方关系和死亡线索仍应分别书写，避免组合称呼吞掉人物差异。战后宫廷把胜利纳入“十全武功”，这种命名是皇帝晚年的自我总结。1759年的参与者并不知道既定结局，正文不以后来称号替代当时不确定性。材料边界应比胜负结论更先说明。",
+          "kind": "战后社会",
+          "sources": [
+            "v158_qsg313",
+            "v158_dpm_western"
+          ],
+          "events": [
+            "v158_altishahr_tax_coin",
+            "v158_battle_images"
+          ],
+          "people": [
+            "q_qianlong",
+            "q158_zhaohui"
+          ]
+        }
+      ],
+      "sources": [
+        "v158_dpm_western",
+        "v158_qingshilu597",
+        "v158_qsg313"
+      ]
     }
   ],
   "portraits": [
@@ -212346,6 +214427,199 @@
         "v5qn_qsg220",
         "v40q_qsg294"
       ]
+    },
+    {
+      "from": "q_qianlong",
+      "to": "q158_fuheng",
+      "role": "倚为军机重臣并授金川、缅甸经略",
+      "inverse": "长期承旨、组织军务并支持西征",
+      "period": "1745—1770年",
+      "note": "外戚关系与具体行政能力并存",
+      "sources": [
+        "v158_qsg301"
+      ]
+    },
+    {
+      "from": "q_qianlong",
+      "to": "q158_gaobin",
+      "role": "任用主持黄淮运河并在决口后严厉追责",
+      "inverse": "设计蓄泄工程，晚年因水灾与侵帑案失势",
+      "period": "1735—1755年",
+      "note": "工程功过不能只按皇帝最终评价",
+      "sources": [
+        "v158_qsg310"
+      ]
+    },
+    {
+      "from": "q_qianlong",
+      "to": "q158_liutongxun",
+      "role": "容纳其监督权臣并委以河工、司法和军机",
+      "inverse": "上疏纠偏、核查工程后进入中枢",
+      "period": "1736—1773年",
+      "note": "直言仍在皇权裁量框架内",
+      "sources": [
+        "v40q_qsg302"
+      ]
+    },
+    {
+      "from": "q_qianlong",
+      "to": "q158_chenhongmou",
+      "role": "频繁调任多省并采纳部分仓储教化方案",
+      "inverse": "以仓、学、乡约和垦务组织地方治理",
+      "period": "1736—1771年",
+      "note": "制度理想不等于各地同样执行",
+      "sources": [
+        "v158_qsg307"
+      ]
+    },
+    {
+      "from": "q_qianlong",
+      "to": "q158_sunjiagan",
+      "role": "任以吏刑工部和督抚，后追查冒名奏稿",
+      "inverse": "清直声望被社会借用为批评皇帝的文本外壳",
+      "period": "1735—1753年",
+      "note": "伪奏稿不是孙嘉淦作品",
+      "sources": [
+        "v158_qsg303"
+      ]
+    },
+    {
+      "from": "q_qianlong",
+      "to": "q158_bandi",
+      "role": "授驻藏、定北将军并令留守伊犁",
+      "inverse": "统军与善后，阿睦尔撒纳反叛时身亡",
+      "period": "1750—1755年",
+      "note": "殉难与兵力配置须同时解释",
+      "sources": [
+        "v158_qsg312"
+      ]
+    },
+    {
+      "from": "q_qianlong",
+      "to": "q158_erongan",
+      "role": "任巡抚总督和参赞大臣",
+      "inverse": "处理灾粮胥役，后在伊犁突围中身亡",
+      "period": "1743—1755年",
+      "note": "地方行政经历不应被战死遮蔽",
+      "sources": [
+        "v158_qsg312"
+      ]
+    },
+    {
+      "from": "q_qianlong",
+      "to": "q158_zhaohui",
+      "role": "由粮运官擢为西北统帅并隆重凯旋",
+      "inverse": "经历败退、黑水围困和南路设治",
+      "period": "1748—1764年",
+      "note": "军功依赖后勤和多方协作",
+      "sources": [
+        "v158_qsg313"
+      ]
+    },
+    {
+      "from": "q_qianlong",
+      "to": "q158_amursana",
+      "role": "借其进攻达瓦齐，后拒绝其统领四部",
+      "inverse": "先合作后反叛，逃入俄境病死",
+      "period": "1754—1757年",
+      "note": "双方目标从未完全一致",
+      "sources": [
+        "v158_qsg312",
+        "v158_qsg523"
+      ]
+    },
+    {
+      "from": "q158_amursana",
+      "to": "q158_dawaci",
+      "role": "先合作夺位，后围绕汗权与部众决裂",
+      "inverse": "先合作夺位，后围绕汗权与部众决裂",
+      "period": "1752—1755年",
+      "note": "个人竞争嵌在准噶尔政治结构中",
+      "sources": [
+        "v158_qsg523"
+      ]
+    },
+    {
+      "from": "q158_burhan",
+      "to": "q158_khoja_jahan",
+      "role": "兄弟共同控制南路并组织抵抗",
+      "inverse": "兄弟共同控制南路并组织抵抗",
+      "period": "1755—1759年",
+      "note": "兄弟策略并非每一阶段都完全相同",
+      "sources": [
+        "v158_qsg313",
+        "v158_qingshilu597"
+      ]
+    },
+    {
+      "from": "q158_zhaohui",
+      "to": "q158_burhan",
+      "role": "围攻与追击中的交战对手",
+      "inverse": "组织围困并在清军推进后西逃",
+      "period": "1758—1759年",
+      "note": "军报立场不代表全部地方社会",
+      "sources": [
+        "v158_qsg313"
+      ]
+    },
+    {
+      "from": "q158_zhaohui",
+      "to": "q158_khoja_jahan",
+      "role": "围攻与追击中的交战对手",
+      "inverse": "组织围困并在清军推进后西逃",
+      "period": "1758—1759年",
+      "note": "结局细节受外交文书限制",
+      "sources": [
+        "v158_qingshilu597"
+      ]
+    },
+    {
+      "from": "q158_gaobin",
+      "to": "q158_liutongxun",
+      "role": "河工方案与查案对象关系交叠",
+      "inverse": "勘查山东、江南河工并追查侵帑",
+      "period": "1748—1755年",
+      "note": "合作、监督和处分不是固定阵营",
+      "sources": [
+        "v158_qsg310",
+        "v40q_qsg302"
+      ]
+    },
+    {
+      "from": "q_qianlong",
+      "to": "q158_dawaci",
+      "role": "出兵击败并俘获，献俘后免死封爵",
+      "inverse": "准噶尔内乱中的汗位竞争者，1755年成为清军俘虏",
+      "period": "1755—1759年",
+      "note": "个人宽赦与部众遭遇必须分开",
+      "sources": [
+        "v158_qsg523",
+        "v5qe_qsg10_15"
+      ]
+    },
+    {
+      "from": "q_qianlong",
+      "to": "q158_burhan",
+      "role": "先借其招抚南路，后命军队追击",
+      "inverse": "获释返乡后拒绝清廷安排并组织抵抗",
+      "period": "1755—1759年",
+      "note": "清方敌对称谓不能代替地方视角",
+      "sources": [
+        "v158_qsg313",
+        "v158_qingshilu597"
+      ]
+    },
+    {
+      "from": "q_qianlong",
+      "to": "q158_khoja_jahan",
+      "role": "先借其招抚南路，后命军队追击",
+      "inverse": "获释返乡后拒绝清廷安排并组织抵抗",
+      "period": "1755—1759年",
+      "note": "不能把各城居民视为一致支持者",
+      "sources": [
+        "v158_qsg313",
+        "v158_qingshilu597"
+      ]
     }
   ],
   "dynasties": [
@@ -216792,7 +219066,19 @@
         "q_zhangtingyu",
         "q_agui",
         "q_songyun",
-        "q_wangzhenyi"
+        "q_wangzhenyi",
+        "q158_fuheng",
+        "q158_gaobin",
+        "q158_liutongxun",
+        "q158_chenhongmou",
+        "q158_sunjiagan",
+        "q158_bandi",
+        "q158_erongan",
+        "q158_zhaohui",
+        "q158_amursana",
+        "q158_dawaci",
+        "q158_burhan",
+        "q158_khoja_jahan"
       ],
       "events": [
         "qev_qianlong_accession_1735",
@@ -216811,7 +219097,35 @@
         "v42q_gansu_relief_fraud",
         "v42q_kyakhta_negotiation",
         "v66q_wang_science",
-        "v66q_xingke_records"
+        "v66q_xingke_records",
+        "v158_initial_council",
+        "v158_secret_heir",
+        "v158_sun_forgery",
+        "v158_first_southern_tour",
+        "v158_tibet_1751",
+        "v158_first_jinchuan",
+        "v158_jinchuan_burden",
+        "v158_dzungar_split",
+        "v158_dawaci_campaign",
+        "v158_amursana_revolt",
+        "v158_ili_collapse",
+        "v158_dzungar_destruction",
+        "v158_western_supply",
+        "v158_black_river",
+        "v158_altishahr_war",
+        "v158_badakhshan",
+        "v158_altishahr_tax_coin",
+        "v158_gaobin_maocheng",
+        "v158_river_labor",
+        "v158_shandong_relief",
+        "v158_gaoyou_breach",
+        "v158_erongan_sea_grain",
+        "v158_chen_granaries",
+        "v158_tour_contributions",
+        "v158_shengjing_fu",
+        "v158_sanxitang",
+        "v158_western_geography",
+        "v158_battle_images"
       ],
       "sources": [
         "v5qn_qing_annals",
@@ -216833,9 +219147,21 @@
         "v42q_qsg342",
         "v42q_xinjiang_tun",
         "v66_njdfz_wang",
-        "v66_saac_xingke"
+        "v66_saac_xingke",
+        "v158_qsg301",
+        "v158_qsg303",
+        "v158_qsg307",
+        "v158_qsg310",
+        "v158_qsg312",
+        "v158_qsg313",
+        "v158_qsg523",
+        "v158_qingshilu597",
+        "v158_dpm_sanxi",
+        "v158_dpm_western",
+        "v158_dpm_shengjing",
+        "v158_cambridge_dzungar"
       ],
-      "note": "聚焦1735—1796年在位时期，禅位后的太上皇经历另见生平相关事件。"
+      "note": "按1735—1760年前期、1760—1775中期、1775—1796后期分层阅读；当前前期重点连接中枢、河工、地方社会与西北战争，禅位后的太上皇经历另见生平事件。"
     },
     {
       "person": "q_jiaqing",
