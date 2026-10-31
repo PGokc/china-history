@@ -21,8 +21,9 @@ qing_emperors={pid for pid in emperors if pid.startswith('q_')}
 assert len(ming_emperors)==16
 assert len(qing_emperors)==(12 if d['version']>=5 else 0)
 legacy_emperors=ming_emperors|qing_emperors
-expected_sequence_count = 367 if d['version']>=41 else 350 if d['version']>=40 else 313 if d['version']>=39 else 283 if d['version']>=37 else 254 if d['version']>=36 else 198 if d['version']>=35 else 142 if d['version']>=34 else 127 if d['version']>=33 else 116 if d['version']>=32 else 111 if d['version']>=31 else 85 if d['version']>=30 else 83 if d['version']>=25 else 29 if d['version']>=5 else 17
-assert len(d['sequence'])==expected_sequence_count and {s['person'] for s in d['sequence']}==emperors
+southern_ming_claimants={'m154_hongguang','m154_longwu','m154_shaowu','m154_yongli'} if d['version']>=128 else set()
+expected_sequence_count = 371 if d['version']>=128 else 367 if d['version']>=41 else 350 if d['version']>=40 else 313 if d['version']>=39 else 283 if d['version']>=37 else 254 if d['version']>=36 else 198 if d['version']>=35 else 142 if d['version']>=34 else 127 if d['version']>=33 else 116 if d['version']>=32 else 111 if d['version']>=31 else 85 if d['version']>=30 else 83 if d['version']>=25 else 29 if d['version']>=5 else 17
+assert len(d['sequence'])==expected_sequence_count and {s['person'] for s in d['sequence']}==emperors|southern_ming_claimants
 counts=Counter(s['person'] for s in d['sequence'])
 repeated={'qizhen','t_zhongzong','t_ruizong','y_tugh_temur'} if d['version']>=25 else {'qizhen'}
 assert all(counts[p]==2 for p in repeated) and all(v==1 for k,v in counts.items() if k not in repeated)
@@ -445,7 +446,7 @@ if d['version'] >= 21:
 if d['version'] >= 22:
  contexts={c['person']:c for c in d['reignContexts']}
  events={e['id']:e for e in d['events']}
- assert len(contexts)==len(d['reignContexts']) and contexts.keys()==emperors
+ assert len(contexts)==len(d['reignContexts']) and contexts.keys()==emperors|southern_ming_claimants
  assert len(articles)==len(d['articles']), 'duplicate person articles'
  assert len({(a['from'],a['to'],a['period']) for a in d['associations']})==len(d['associations']), 'duplicate relationship identity'
  for pid,c in contexts.items():
@@ -2929,3 +2930,40 @@ if d['version'] >= 127:
  assert {'m153_zhouyuji','m153_fanjingwen'}<=set(events['v2l_beijing1644']['people'])
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将',corpus,re.I)
  print('V127 PASS: seven middle-late Chongzhen readings connect relay cuts, famine, war surtaxes, divided command, pacification failure, Songjin logistics, secret peace, Kaifeng flood, epidemic, Tongguan, Ningwu and Beijing with explicit evidence limits')
+
+if d['version'] >= 128:
+ v154_people=['m154_hongguang','m154_longwu','m154_shaowu','m154_yongli','m154_luwang','m154_shikefa','m154_hetengjiao','m154_qushisi','m154_lidingguo']
+ v154_prefix={'m154_hongguang':'hg','m154_longwu':'lw','m154_shaowu':'sw','m154_yongli':'yl','m154_luwang':'lu','m154_shikefa':'sk','m154_hetengjiao':'ht','m154_qushisi':'qs','m154_lidingguo':'ld'}
+ v154_events={event['id'] for event in d['events'] if event['id'].startswith('v154_')}
+ assert set(v154_people)<=people.keys() and len(v154_events)==28
+ assert {'v154_ms120','v154_ms274','v154_ms276','v154_ms279','v154_ms280','v154_qsg4','v154_qsg218','v154_qsg234','v154_qsg6','v154_dpm_hair'}<=sources.keys()
+ assert {events[event_id]['category'] for event_id in v154_events}=={'政治','军事','文化','经济','社会'}
+ for name in ['朱由崧','朱聿键','朱聿鐭','朱由榔','朱以海','史可法','何腾蛟','瞿式耜','李定国']:
+  assert len([person for person in d['people'] if person['name']==name])==1,(name,'duplicate Ming-Qing transition person')
+ for pid in v154_people:
+  person=people[pid]; reading=articles[pid]; ss=reading['sections']
+  assert person['dynasty']=='ming' and len(set(person['sources']))>=2
+  assert len(ss)==5 and all(item['id']==f'v154_{v154_prefix[pid]}{index}' for index,item in enumerate(ss,1)),(pid,'wrong transition five-layer reading')
+  chars=sum(len(re.findall(r'[\u4e00-\u9fff]',item['text'])) for item in ss)
+  assert chars>=700,(pid,'Ming-Qing transition reading remains too short',chars)
+  assert all(item['sources'] and item['events'] for item in ss)
+  assert all(set(item['sources'])<=sources.keys() and set(item['events'])<=events.keys() and set(item['people'])<=people.keys() for item in ss)
+  assert set(reading['sources'])=={source for item in ss for source in item['sources']}
+ assert all(set(events[event_id]['people'])<=people.keys() and set(events[event_id]['sources'])<=sources.keys() for event_id in v154_events)
+ southern=[item for item in d['sequence'] if item['id'].startswith('m154_')]
+ assert [(item['person'],item['years']) for item in southern]==[
+  ('m154_hongguang','1644—1645'),('m154_longwu','1645—1646'),('m154_shaowu','1646'),('m154_yongli','1646—1662')]
+ assert all(item['polity']=='南明政权' for item in southern)
+ assert all(item.get('polity')=='北京明廷' for item in d['sequence'] if item['person'] in ming_emperors)
+ assert 'm154_luwang' not in {item['person'] for item in d['sequence']}
+ corpus=json.dumps([people[pid] for pid in v154_people]+[articles[pid] for pid in v154_people]+[events[event_id] for event_id in v154_events]+[events['v12_shunzhi_hair_order']],ensure_ascii=False)
+ for term in ['弘光','隆武','绍武','永历','鲁王监国','江北四镇','扬州','桂林','湘潭','安龙','缅甸','圈地','投充','逃人','乡试','舟山','大西军']:
+  assert term in corpus,('missing Ming-Qing transition evidence term',term)
+ for boundary in ['不能直接当作现代人口统计','不能把一次命令写成全国同日改变','不使用‘伪朝’作中性标签','不把忠烈对白当现场录音','不能直接按现代统计接受','不能只用将领忠奸解释']:
+  assert boundary in corpus,('missing Ming-Qing transition evidence boundary',boundary)
+ assert '1644年入京初次命令曾因阻力短暂放宽' in events['v12_shunzhi_hair_order']['body']
+ assert set(events['v12_shunzhi_hair_order']['sources'])=={'v154_qsg4','v154_dpm_hair'}
+ pairset={(item['from'],item['to']) for item in d['associations']}
+ assert {('m154_hongguang','m154_shikefa'),('m154_hongguang','q_dodo'),('m154_longwu','m154_luwang'),('m154_longwu','m154_shaowu'),('m154_longwu','m_zhengchenggong'),('m154_shaowu','m154_yongli'),('m154_yongli','m154_qushisi'),('m154_yongli','m154_hetengjiao'),('m154_yongli','m154_lidingguo'),('m154_yongli','q_wusangui'),('m154_luwang','m_zhengchenggong')}<=pairset
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将',corpus,re.I)
+ print('V128 PASS: nine Ming-Qing transition readings and four grouped Southern Ming succession rows preserve overlapping claims, regional armies, maritime and southwest logistics, ordinary displacement, phased hair policy, institutional continuity and source-position limits')

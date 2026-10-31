@@ -446,11 +446,13 @@ struct SuccessionPage: View {
     @Environment(\.dynamicTypeSize) private var typeSize
     var items: [Succession] { store.sequence(in: dynastyID) }
     private var groups: [SuccessionGroup] {
-        guard dynastyID == "zhou" || dynastyID == "three_kingdoms" || dynastyID == "jin" || dynastyID == "northern_southern" || dynastyID == "five_dynasties" || dynastyID == "song_liao_xia_jin" else {
+        guard dynastyID == "ming" || dynastyID == "zhou" || dynastyID == "three_kingdoms" || dynastyID == "jin" || dynastyID == "northern_southern" || dynastyID == "five_dynasties" || dynastyID == "song_liao_xia_jin" else {
             return [SuccessionGroup(id: dynastyID, title: nil, items: items)]
         }
         let order: [String]
-        if dynastyID == "zhou" {
+        if dynastyID == "ming" {
+            order = ["北京明廷", "南明政权"]
+        } else if dynastyID == "zhou" {
             order = ["西周", "东周"]
         } else if dynastyID == "jin" {
             order = ["西晋", "东晋"]
@@ -529,6 +531,8 @@ struct SuccessionPage: View {
             return "五代只指中原先后更替的后梁、后唐、后晋、后汉、后周；同一时期各地政权并非附属年表。闽国王延政与福州政权一度并立，相关短期统治者也保留。"
         case "song_liao_xia_jin":
             return "五条帝序在时间上长期重叠。辽、西夏与金各有自身的继承、官制和社会历史；宋辽、宋夏、宋金关系中的岁币、岁赐、战争和称谓按具体条约分别说明。"
+        case "ming":
+            return "1368—1644是北京明廷的通行断代。1644年以后，弘光、隆武、绍武和永历政权在南方先后或并立，永历延续至1662年；鲁王朱以海使用监国名义，另列人物而不改称皇帝。这里保留重叠，不把多地政权拼成一条无缝交接。"
         case "qing":
             return "努尔哈赤生前为后金大汗；1636年皇太极改国号为清。公历年概括实际统治，摄政与太上皇掌权另在人物和事件中说明。"
         default:

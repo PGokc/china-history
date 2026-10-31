@@ -4488,4 +4488,41 @@ final class MingJiUITests: XCTestCase {
         shot("v153-secret-peace-leak-and-shared-responsibility", peace)
     }
 
+    @MainActor func testV154SouthernMingShowsOverlappingSequenceAndSouthwestNetwork() throws {
+        let sequence = XCUIApplication()
+        sequence.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]
+        sequence.launch()
+        XCTAssertTrue(sequence.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        sequence.tabBars.buttons["帝序"].tap()
+        XCTAssertTrue(sequence.staticTexts["successionGroup_北京明廷"].waitForExistence(timeout: 5))
+        let southern = sequence.staticTexts["successionGroup_南明政权"]
+        reach(southern, in: sequence, attempts: 26)
+        XCTAssertTrue(southern.exists)
+        XCTAssertTrue(sequence.buttons["succession_m154_hg_seq"].exists)
+        XCTAssertTrue(sequence.buttons["succession_m154_lw_seq"].exists)
+        XCTAssertTrue(sequence.buttons["succession_m154_sw_seq"].exists)
+        XCTAssertTrue(sequence.buttons["succession_m154_yl_seq"].exists)
+        shot("v154-southern-ming-overlapping-succession", sequence)
+        sequence.terminate()
+
+        let reading = XCUIApplication()
+        reading.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]
+        reading.launch()
+        XCTAssertTrue(reading.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        reading.buttons.matching(NSPredicate(format: "identifier == %@", "globalSearch")).firstMatch.tap()
+        let search = reading.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("李定国")
+        let result = reading.buttons["search_person_m154_lidingguo"]
+        XCTAssertTrue(result.waitForExistence(timeout: 5)); result.tap()
+        XCTAssertTrue(reading.buttons["articleEntry"].waitForExistence(timeout: 5)); reading.buttons["articleEntry"].tap()
+        XCTAssertTrue(reading.buttons["articleContents"].waitForExistence(timeout: 5)); reading.buttons["articleContents"].tap()
+        let chapter = reading.buttons["桂林与衡州战役打破清军连续胜利的叙事"]
+        XCTAssertTrue(chapter.exists); chapter.tap()
+        XCTAssertTrue(reading.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不能直接拼成精确战报")).firstMatch.waitForExistence(timeout: 5))
+        openChapterSources("v154_ld2", in: reading)
+        XCTAssertTrue(reading.descendants(matching: .any)["source_v154_qsg234"].waitForExistence(timeout: 3))
+        reading.swipeUp()
+        shot("v154-li-dingguo-victory-and-evidence-boundary", reading)
+    }
+
 }
