@@ -4086,4 +4086,42 @@ final class MingJiUITests: XCTestCase {
         shot("v144-wengwanda-frontier-system", weng)
     }
 
+    @MainActor func testV145LongqingTransitionConnectsTrainingDiplomacyAndMarkets() throws {
+        let wang = XCUIApplication()
+        wang.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]
+        wang.launch()
+        XCTAssertTrue(wang.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        let searchButton = wang.buttons.matching(NSPredicate(format: "identifier == %@", "globalSearch")).firstMatch
+        XCTAssertTrue(searchButton.waitForExistence(timeout: 5)); searchButton.tap()
+        let search = wang.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("王崇古")
+        let result = wang.buttons["search_person_m41_wangchonggu"]
+        XCTAssertTrue(result.waitForExistence(timeout: 5)); result.tap()
+        XCTAssertTrue(wang.buttons["articleEntry"].waitForExistence(timeout: 5)); wang.buttons["articleEntry"].tap()
+        XCTAssertTrue(wang.buttons["articleContents"].waitForExistence(timeout: 5)); wang.buttons["articleContents"].tap()
+        XCTAssertTrue(wang.buttons["封号之外，贡额、市场和驻兵才让制度能够运行"].exists)
+        wang.buttons["把贡市当作休整，不把它写成永久和平保证"].tap()
+        XCTAssertTrue(wang.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不是民族和解的终点")).firstMatch.waitForExistence(timeout: 5))
+        reach(wang.buttons["资料与出处"], in: wang, attempts: 28)
+        shot("v145-wangchonggu-market-rules-and-footer", wang)
+        wang.terminate()
+
+        let bahan = XCUIApplication()
+        bahan.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]
+        bahan.launch()
+        XCTAssertTrue(bahan.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        let bahanSearchButton = bahan.buttons.matching(NSPredicate(format: "identifier == %@", "globalSearch")).firstMatch
+        XCTAssertTrue(bahanSearchButton.waitForExistence(timeout: 5)); bahanSearchButton.tap()
+        let bahanSearch = bahan.searchFields.firstMatch
+        XCTAssertTrue(bahanSearch.waitForExistence(timeout: 5)); bahanSearch.tap(); bahanSearch.typeText("把汉那吉")
+        let bahanResult = bahan.buttons["search_person_m145_bahannaji"]
+        XCTAssertTrue(bahanResult.waitForExistence(timeout: 5)); bahanResult.tap()
+        XCTAssertTrue(bahan.buttons["articleEntry"].waitForExistence(timeout: 5)); bahan.buttons["articleEntry"].tap()
+        XCTAssertTrue(bahan.buttons["articleContents"].waitForExistence(timeout: 5)); bahan.buttons["articleContents"].tap()
+        XCTAssertTrue(bahan.buttons["被授指挥使既是保护，也是明朝控制身份的方式"].exists)
+        bahan.buttons["偶发事件能开启谈判，不代表和平只靠一个人"].tap()
+        XCTAssertTrue(bahan.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不是封贡唯一作者")).firstMatch.waitForExistence(timeout: 5))
+        shot("v145-bahannaji-agency-and-source-limits", bahan)
+    }
+
 }

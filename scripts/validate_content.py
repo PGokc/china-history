@@ -318,7 +318,7 @@ if d['version'] >= 16:
  expanded={e['id']:e for e in d['events'] if e['id'].startswith('v26_')}
  assert len(expanded)==8
  articles={a['person']:a for a in d['articles']}
- assert len(articles['zhangjuzheng']['sections'])==4
+ assert len(articles['zhangjuzheng']['sections'])==(5 if d['version']>=119 else 4)
  # Every new event must be discoverable from an emperor's long-read chapter.
  chapter_events={eid for a in d['articles'] if a['person'] in emperors for s in a['sections'] for eid in s.get('events',[])}
  assert expanded.keys() <= chapter_events
@@ -2524,3 +2524,42 @@ if d['version'] >= 118:
  assert {'v144_left_gate','v144_lifuda','v144_hetao_plan','v144_hetao_trial','v144_gengxu_supply','v144_1556_earthquake'}<=linked_events
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|人物页|占位|正在完善',corpus,re.I)
  print('V118 PASS: seven Jiajing readings connect ritual politics, judicial procedure, land and salt policy, frontier engineering, the Hetao debate, Gengxu logistics, border trade and disaster with explicit evidence boundaries')
+
+if d['version'] >= 119:
+ v145_people=['m40_gaogong','zhangjuzheng','m41_tanlun','m145_lichunfang','m145_chenyiqin','m41_wangchonggu','m145_fangfengshi','m145_bahannaji']
+ v145_prefix={'m40_gaogong':'gg','zhangjuzheng':'zjz','m41_tanlun':'tl','m145_lichunfang':'lcf','m145_chenyiqin':'cyq','m41_wangchonggu':'wcg','m145_fangfengshi':'ffs','m145_bahannaji':'bhnj'}
+ v145_events={
+  'v145_accession_cleanup','v145_tax_arrears','v145_yudi_lectures','v145_prince_finance',
+  'v145_zongfan_rules','v145_xiangfeng_tower','v145_three_camps','v145_jizhen_three_camps',
+  'v145_jizhen_pay_towers','v145_bahan_surrender','v145_zhaoquan_exchange',
+  'v145_title_tribute','v145_market_rules','v145_border_livelihoods','v145_longqing_succession',
+ }
+ assert set(v145_people)<=people.keys() and v145_events<=events.keys()
+ assert {'v145_ms19','v145_ms193','v145_ms213','v145_ms222','v145_ms327','v145_ms77','v145_ms91'}<=sources.keys()
+ assert {events[event_id]['category'] for event_id in v145_events}=={'政治','军事','文化','经济','社会'}
+ assert len([person for person in d['people'] if person['name']=='王崇古'])==1
+ for pid in v145_people:
+  reading=articles[pid]; ss=reading['sections']
+  assert len(ss)==5 and all(item['id']==f'v145_{v145_prefix[pid]}{index}' for index,item in enumerate(ss,1)),(pid,'wrong Longqing five-layer reading')
+  chars=sum(len(re.findall(r'[\u4e00-\u9fff]',item['text'])) for item in ss)
+  assert chars>=800,(pid,'Longqing transition reading remains too short',chars)
+  assert all(item['sources'] and set(item['sources'])<=sources.keys() for item in ss)
+  assert all(set(item['events'])<=events.keys() and set(item['people'])<=people.keys() for item in ss)
+  assert set(reading['sources'])=={source for item in ss for source in item['sources']}
+ corpus=json.dumps([people[pid] for pid in v145_people]+[articles[pid] for pid in v145_people]+[events[event_id] for event_id in v145_events],ensure_ascii=False)
+ for term in ['田赋之半','三年给赐','《宗藩条例》','三万兵年饷五十四万','十二路','敌台三千','把汉那吉','赵全','顺义王','贡马数量','双方驻兵']:
+  assert term in corpus,('missing Longqing evidence term',term)
+ for boundary in ['不能将整个聚落视为同罪','不能宣称全部同期建成','个人行动，不代表土默特整体归附','不能把所有板升居民视为同罪','开市也不等于边界完全开放','不是逐字记录']:
+  assert boundary in corpus,('missing Longqing evidence boundary',boundary)
+ assert all(set(events[event_id]['people'])<=people.keys() and set(events[event_id]['sources'])<=sources.keys() for event_id in v145_events)
+ pairset={(item['from'],item['to']) for item in d['associations']}
+ assert {('m40_gaogong','m145_chenyiqin'),('m40_gaogong','zhangjuzheng'),('m145_lichunfang','m40_gaogong'),('m41_wangchonggu','m145_fangfengshi'),('m41_wangchonggu','m145_bahannaji'),('m145_fangfengshi','m145_bahannaji'),('m41_wangchonggu','m144_altan'),('m41_tanlun','m40_qijiguang')}<=pairset
+ emperor=articles['zaihou']
+ linked_people={person_id for item in emperor['sections'] for person_id in item.get('people',[])}
+ linked_events={event_id for item in emperor['sections'] for event_id in item.get('events',[])}
+ assert set(v145_people)|{'m144_altan'}<=linked_people
+ assert {'v145_accession_cleanup','v145_tax_arrears','v145_jizhen_three_camps','v145_bahan_surrender','v145_zhaoquan_exchange','v145_title_tribute','v145_market_rules','v145_longqing_succession'}<=linked_events
+ reign=next(item for item in d['reignContexts'] if item['person']=='zaihou')
+ assert {'m145_lichunfang','m145_chenyiqin','m41_wangchonggu','m145_fangfengshi','m145_bahannaji','m144_altan'}<=set(reign['people'])
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|人物页|占位|正在完善|产品将',corpus,re.I)
+ print('V119 PASS: eight Longqing readings connect accession cleanup, palace finance, prince education, cabinet competition, Jizhen organization, Bahan Naji diplomacy, tribute-market rules and border livelihoods with explicit evidence limits')
