@@ -4048,4 +4048,42 @@ final class MingJiUITests: XCTestCase {
         shot("v143-zhuchenhao-warning-network-and-footer", zhu)
     }
 
+    @MainActor func testV144JiajingGovernanceConnectsHetaoFrontierAndEvidenceLimits() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]
+        app.launch()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        let searchButton = app.buttons.matching(NSPredicate(format: "identifier == %@", "globalSearch")).firstMatch
+        XCTAssertTrue(searchButton.waitForExistence(timeout: 5)); searchButton.tap()
+        let search = app.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("曾铣")
+        let result = app.buttons["search_person_m144_zengxian"]
+        XCTAssertTrue(result.waitForExistence(timeout: 5)); result.tap()
+        XCTAssertTrue(app.buttons["articleEntry"].waitForExistence(timeout: 5)); app.buttons["articleEntry"].tap()
+        XCTAssertTrue(app.buttons["articleContents"].waitForExistence(timeout: 5)); app.buttons["articleContents"].tap()
+        XCTAssertTrue(app.buttons["六万兵与五十日粮是方案参数，不是已经动员"].exists)
+        app.buttons["无证受贿指控被改造成死刑依据"].tap()
+        XCTAssertTrue(app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不能证明复套必胜")).firstMatch.waitForExistence(timeout: 5))
+        reach(app.buttons["资料与出处"], in: app, attempts: 28)
+        shot("v144-zengxian-hetao-evidence-and-footer", app)
+        app.terminate()
+
+        let weng = XCUIApplication()
+        weng.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]
+        weng.launch()
+        XCTAssertTrue(weng.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        let wengSearchButton = weng.buttons.matching(NSPredicate(format: "identifier == %@", "globalSearch")).firstMatch
+        XCTAssertTrue(wengSearchButton.waitForExistence(timeout: 5)); wengSearchButton.tap()
+        let wengSearch = weng.searchFields.firstMatch
+        XCTAssertTrue(wengSearch.waitForExistence(timeout: 5)); wengSearch.tap(); wengSearch.typeText("翁万达")
+        let wengResult = weng.buttons["search_person_m144_wengwanda"]
+        XCTAssertTrue(wengResult.waitForExistence(timeout: 5)); wengResult.tap()
+        XCTAssertTrue(weng.buttons["articleEntry"].waitForExistence(timeout: 5)); weng.buttons["articleEntry"].tap()
+        XCTAssertTrue(weng.buttons["articleContents"].waitForExistence(timeout: 5)); weng.buttons["articleContents"].tap()
+        XCTAssertTrue(weng.buttons["墙、堡、墩台只有和守军道路结合才是防线"].exists)
+        weng.buttons["多次建议贡市，是试图给战争加入可控替代项"].tap()
+        XCTAssertTrue(weng.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "完全堵塞交易同样会放大走私")).firstMatch.waitForExistence(timeout: 5))
+        shot("v144-wengwanda-frontier-system", weng)
+    }
+
 }

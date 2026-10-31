@@ -2486,3 +2486,41 @@ if d['version'] >= 117:
  assert {'v143_nine_ministers_remonstrance','v143_anhua_liujin','v143_outer_four_armies','v143_south_tour_remonstrance','v143_ning_rebellion_local_cost','v143_succession_cleanup'}<=linked_events
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|人物页|占位|正在完善',corpus,re.I)
  print('V117 PASS: seven Zhengde readings connect budgets, estates, remonstrance, frontier armies, court access, princely oversight, local war and succession with explicit source boundaries')
+
+if d['version'] >= 118:
+ v144_people=['m144_zhangcong','m144_guie','m144_xiayan','m144_zengxian','m144_qiuluan','m144_wengwanda','m144_altan']
+ v144_suffix={'m144_zhangcong':'zc','m144_guie':'ge','m144_xiayan':'xy','m144_zengxian':'zx','m144_qiuluan':'ql','m144_wengwanda':'wwd','m144_altan':'aa'}
+ v144_events={
+  'v144_left_gate','v144_lifuda','v144_estates_eunuchs','v144_tax_salt_relief',
+  'v144_wall_network','v144_trade_envoys','v144_hetao_plan','v144_hetao_trial',
+  'v144_gengxu_supply','v144_gengxu_people','v144_horse_markets',
+  'v144_beijing_outer_city','v144_1556_earthquake',
+ }
+ assert set(v144_people)<=people.keys() and v144_events<=events.keys()
+ assert {'v144_ms17','v144_ms18','v144_ms196','v144_ms198','v144_ms204','v144_ms327'}<=sources.keys()
+ assert {events[event_id]['category'] for event_id in v144_events}=={'政治','军事','文化','经济','社会'}-{'文化'}
+ # Cultural ritual material already exists as v13_jiajing_minglun; the new network must link it rather than duplicate it.
+ for pid in v144_people:
+  person=people[pid]; reading=articles[pid]; ss=reading['sections']
+  assert person['dynasty']=='ming' and len(set(person['sources']))>=2
+  assert len(ss)==5 and all(item['id']==f'v144_{v144_suffix[pid]}{index}' for index,item in enumerate(ss,1)),(pid,'wrong five-layer reading')
+  chars=sum(len(re.findall(r'[\u4e00-\u9fff]',item['text'])) for item in ss)
+  assert chars>=800,(pid,'Jiajing governance reading remains too short',chars)
+  assert all(item['sources'] and set(item['sources'])<=sources.keys() for item in ss)
+  assert all(set(item['events'])<=events.keys() and set(item['people'])<=people.keys() for item in ss)
+  assert set(reading['sources'])=={source for item in ss for source in item['sources']}
+ corpus=json.dumps([people[pid] for pid in v144_people]+[articles[pid] for pid in v144_people]+[events[event_id] for event_id in v144_events],ensure_ascii=False)
+ for term in ['继统不继嗣','左顺门','李福达','预免次年税粮','开中','六万锐卒','五十日粮','军籍虚额','武库','马市','八十三万余']:
+  assert term in corpus,('missing Jiajing evidence term',term)
+ for boundary in ['未实施方案','不能反推方案必胜','不能当成现代精确统计','不能保证和平','不能把所有越境者都称为自愿投敌']:
+  assert boundary in corpus,('missing Jiajing evidence boundary',boundary)
+ assert all(set(events[event_id]['people'])<=people.keys() and set(events[event_id]['sources'])<=sources.keys() for event_id in v144_events)
+ association_pairs={(item['from'],item['to']) for item in d['associations']}
+ assert {('m144_zhangcong','m144_guie'),('m144_zhangcong','m143_yangtinghe'),('m144_xiayan','m144_zengxian'),('m144_xiayan','m40_yansong'),('m144_zengxian','m144_qiuluan'),('m144_wengwanda','m144_zengxian'),('m144_wengwanda','m144_altan'),('m144_qiuluan','m144_altan')}<=association_pairs
+ houcong_article=articles['houcong']
+ linked_people={person_id for item in houcong_article['sections'] for person_id in item.get('people',[])}
+ linked_events={event_id for item in houcong_article['sections'] for event_id in item.get('events',[])}
+ assert set(v144_people)<=linked_people
+ assert {'v144_left_gate','v144_lifuda','v144_hetao_plan','v144_hetao_trial','v144_gengxu_supply','v144_1556_earthquake'}<=linked_events
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|人物页|占位|正在完善',corpus,re.I)
+ print('V118 PASS: seven Jiajing readings connect ritual politics, judicial procedure, land and salt policy, frontier engineering, the Hetao debate, Gengxu logistics, border trade and disaster with explicit evidence boundaries')
