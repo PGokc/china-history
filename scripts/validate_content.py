@@ -2877,3 +2877,55 @@ if d['version'] >= 126:
  assert {'v152_zushou_return','v152_recover_four_cities'}<=set(articles['m40_sunchengzong']['sections'][4]['events'])
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将',corpus,re.I)
  print('V126 PASS: seven early-Chongzhen readings connect the five-year pledge, concentrated command, Dongjiang succession, Jizhen route failure, national mobilization, pay breakdown, capital panic, wartime arrest, collective punishment, four-city recovery and the later counterintelligence narrative with explicit evidence limits')
+
+if d['version'] >= 127:
+ v153_people=['m153_luxiangsheng','m153_yangsichang','m153_sunchuanting','m153_chenxinjia','m153_zhouyuji','m153_fanjingwen','m153_zhangxianzhong']
+ v153_prefix={'m153_luxiangsheng':'lu','m153_yangsichang':'ys','m153_sunchuanting':'st','m153_chenxinjia':'cx','m153_zhouyuji':'zy','m153_fanjingwen':'fj','m153_zhangxianzhong':'zx'}
+ v153_events={
+  'v153_relay_cuts','v153_hong_lu_regions','v153_sun_tuntian','v153_ten_side_net',
+  'v153_2_8m_surtax','v153_drought_famine','v153_gao_capture_li_escape','v153_pacification_oversight',
+  'v153_lu_command_split','v153_julu_battle','v153_lu_delayed_burial','v153_gucheng_revolt',
+  'v153_three_surcharges','v153_xiangyang_luoyang','v153_beijing_epidemic','v153_songjin_court_pressure',
+  'v153_songjin_encirclement','v153_songshan_fall','v153_hong_false_death','v153_secret_peace',
+  'v153_kaifeng_siege','v153_kaifeng_flood','v153_shiyuan_defeat','v153_xiangyang_regime',
+  'v153_tongguan_defeat','v153_source_labels','v153_zhang_wuchang','v153_north_defection_chain',
+  'v153_ningwu','v153_southern_plan','v153_beijing_pay_defense','v153_beijing_fall',
+  'v153_final_note_memory',
+ }
+ assert set(v153_people)<=people.keys() and v153_events<=events.keys()
+ assert {'v2l_ms23','v2l_ms24','v40m2_ms309','v40q_qsg237','v153_ms252','v153_ms257','v153_ms261','v153_ms262','v153_ms265','v153_ms268'}<=sources.keys()
+ assert {events[event_id]['category'] for event_id in v153_events}=={'政治','军事','文化','经济','社会'}
+ for name in ['卢象升','杨嗣昌','孙传庭','陈新甲','周遇吉','范景文','张献忠']:
+  assert len([person for person in d['people'] if person['name']==name])==1,(name,'duplicate middle-late Chongzhen person')
+ for pid in v153_people:
+  person=people[pid]; reading=articles[pid]; ss=reading['sections']
+  assert person['dynasty']=='ming' and len(set(person['sources']))>=2
+  assert len(ss)==5 and all(item['id']==f'v153_{v153_prefix[pid]}{index}' for index,item in enumerate(ss,1)),(pid,'wrong middle-late Chongzhen five-layer reading')
+  chars=sum(len(re.findall(r'[\u4e00-\u9fff]',item['text'])) for item in ss)
+  assert chars>=840,(pid,'middle-late Chongzhen reading remains too short',chars)
+  assert all(item['sources'] and item['events'] for item in ss)
+  assert all(set(item['sources'])<=sources.keys() and set(item['events'])<=events.keys() and set(item['people'])<=people.keys() for item in ss)
+  assert set(reading['sources'])=={source for item in ss for source in item['sources']}
+ assert all(set(events[event_id]['people'])<=people.keys() and set(events[event_id]['sources'])<=sources.keys() for event_id in v153_events)
+ corpus=json.dumps([people[pid] for pid in v153_people]+[articles[pid] for pid in v153_people]+[events[event_id] for event_id in v153_events]+[events['v2l_songjin']]+[events['v2l_beijing1644']]+[articles['q_hongchengchou']]+[articles['m40_lizicheng']],ensure_ascii=False)
+ for term in ['裁减驿站','四正六隅','二百八十万两','专兵专饷','高迎祥','十八骑','谷城','巨鹿','玛瑙山','襄阳','松山','锦州','秘密往返数十道手诏','开封','朱家寨口','马家口','柿园','潼关','宁武','大疫','太子监国','京营欠饷']:
+  assert term in corpus,('missing middle-late Chongzhen evidence term',term)
+ for boundary in ['不能据此写成‘一次裁员造成明亡’','不能当成土地改革的全面成功','不能把纸面兵额当成实际可用兵力','不宜当成精确点名册','不能仅凭‘大疫’确定现代病原','不能用未经证实的宫廷艳闻解释','责任不能单线归属','不能当现代人口统计','不能把所有战败都归为个人奸邪','不能直接换算人口']:
+  assert boundary in corpus,('missing middle-late Chongzhen evidence boundary',boundary)
+ pairset={(item['from'],item['to']) for item in d['associations']}
+ assert {('youjian','m153_luxiangsheng'),('m153_yangsichang','m153_luxiangsheng'),('m153_yangsichang','m153_sunchuanting'),('m153_yangsichang','m153_zhangxianzhong'),('m153_sunchuanting','m40_lizicheng'),('m153_chenxinjia','q_hongchengchou'),('youjian','m153_chenxinjia'),('q_hongtaiji','q_hongchengchou'),('m153_zhouyuji','m40_lizicheng'),('youjian','m153_fanjingwen'),('m153_fanjingwen','m153_zhouyuji'),('m153_zhangxianzhong','m40_lizicheng')}<=pairset
+ emperor=articles['youjian']
+ linked_people={person_id for item in emperor['sections'] for person_id in item.get('people',[])}
+ linked_events={event_id for item in emperor['sections'] for event_id in item.get('events',[])}
+ assert set(v153_people)<=linked_people and v153_events<=linked_events
+ reign=next(item for item in d['reignContexts'] if item['person']=='youjian')
+ assert set(v153_people)<=set(reign['people']) and v153_events<=set(reign['events'])
+ hong=articles['q_hongchengchou']
+ assert len(hong['sections'])>=5 and {'v153_gao_capture_li_escape','v153_songjin_court_pressure','v153_songjin_encirclement','v153_songshan_fall','v153_hong_false_death'}<={event_id for item in hong['sections'] for event_id in item.get('events',[])}
+ li=articles['m40_lizicheng']
+ assert {'v153_relay_cuts','v153_drought_famine','v153_kaifeng_flood','v153_xiangyang_regime','v153_tongguan_defeat','v153_ningwu','v153_beijing_fall'}<={event_id for item in li['sections'] for event_id in item.get('events',[])}
+ assert {'q_hongchengchou','m153_chenxinjia'}<=set(articles['q_wusangui']['sections'][0]['people'])
+ assert {'q_hongchengchou','q_hongtaiji','q_wusangui','m153_chenxinjia'}<=set(events['v2l_songjin']['people'])
+ assert {'m153_zhouyuji','m153_fanjingwen'}<=set(events['v2l_beijing1644']['people'])
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将',corpus,re.I)
+ print('V127 PASS: seven middle-late Chongzhen readings connect relay cuts, famine, war surtaxes, divided command, pacification failure, Songjin logistics, secret peace, Kaifeng flood, epidemic, Tongguan, Ningwu and Beijing with explicit evidence limits')

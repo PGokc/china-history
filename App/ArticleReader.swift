@@ -6,11 +6,13 @@ private struct ReadingPositions: PreferenceKey {
 }
 private struct EditorialDisclosure<Content: View>: View {
     let title: String
+    let identifier: String?
     let content: () -> Content
     @State private var expanded = false
 
-    init(_ title: String, @ViewBuilder content: @escaping () -> Content) {
+    init(_ title: String, identifier: String? = nil, @ViewBuilder content: @escaping () -> Content) {
         self.title = title
+        self.identifier = identifier
         self.content = content
     }
 
@@ -33,6 +35,7 @@ private struct EditorialDisclosure<Content: View>: View {
             .accessibilityLabel(title)
             .accessibilityValue(expanded ? "已展开" : "已折叠")
             .accessibilityHint(expanded ? "轻点收起内容" : "轻点展开内容")
+            .accessibilityIdentifier(identifier ?? title)
 
             if expanded { content() }
         }
@@ -94,11 +97,10 @@ struct ArticleReader: View {
                                     }
                                 }
                                 if !(section.people ?? []).isEmpty || !(section.events ?? []).isEmpty {
-                                    EditorialDisclosure("相关人物与事件") { chapterLinks(section) }
+                                    EditorialDisclosure("相关人物与事件", identifier: "chapterLinks_\(section.id)") { chapterLinks(section) }
                                         .font(.subheadline)
-                                        .accessibilityIdentifier("chapterLinks_\(section.id)")
                                 }
-                                EditorialDisclosure("本节依据") { SourcesView(store: store, ids: section.sources, compact: true) }
+                                EditorialDisclosure("本节依据", identifier: "chapterSources_\(section.id)") { SourcesView(store: store, ids: section.sources, compact: true) }
                                     .font(.caption).foregroundStyle(Theme.muted)
                             }.id(section.id)
                                 .background(GeometryReader { g in Color.clear.preference(key: ReadingPositions.self, value: [section.id: g.frame(in: .named("reading")).minY]) })

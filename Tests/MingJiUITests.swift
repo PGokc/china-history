@@ -42,6 +42,17 @@ final class MingJiUITests: XCTestCase {
         for _ in 0..<attempts { if element.isHittable { return }; app.swipeUp() }
         XCTAssertTrue(element.isHittable)
     }
+    @MainActor func openChapterSources(_ sectionID: String, in app: XCUIApplication) {
+        let button = app.buttons["chapterSources_\(sectionID)"]
+        for _ in 0..<12 {
+            if button.isHittable {
+                button.tap()
+                return
+            }
+            app.swipeUp()
+        }
+        XCTFail("本节依据未进入可触控区域")
+    }
     @MainActor func assertCompactPageEnding(_ element: XCUIElement, in app: XCUIApplication, attempts: Int = 18, file: StaticString = #filePath, line: UInt = #line) {
         reach(element, in: app, attempts: attempts)
         for _ in 0..<3 { app.swipeUp() }
@@ -4430,6 +4441,51 @@ final class MingJiUITests: XCTestCase {
         let paySource = pay.buttons["source_v152_ms248"]
         reach(paySource, in: pay, attempts: 8); XCTAssertTrue(paySource.isHittable); pay.swipeUp()
         shot("v152-redeployment-pay-breakdown-and-civilian-cost", pay)
+    }
+
+    @MainActor func testV153LateChongzhenConnectsTuntianSongjinAndSecretPeace() throws {
+        let tuntian = XCUIApplication()
+        tuntian.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]
+        tuntian.launch()
+        XCTAssertTrue(tuntian.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        let searchButton = tuntian.buttons.matching(NSPredicate(format: "identifier == %@", "globalSearch")).firstMatch
+        XCTAssertTrue(searchButton.waitForExistence(timeout: 5)); searchButton.tap()
+        let search = tuntian.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("孙传庭")
+        let result = tuntian.buttons["search_person_m153_sunchuanting"]
+        XCTAssertTrue(result.waitForExistence(timeout: 5)); result.tap()
+        XCTAssertTrue(tuntian.buttons["articleEntry"].waitForExistence(timeout: 5)); tuntian.buttons["articleEntry"].tap()
+        XCTAssertTrue(tuntian.buttons["articleContents"].waitForExistence(timeout: 5)); tuntian.buttons["articleContents"].tap()
+        let chapter = tuntian.buttons["关中屯田既补军食，也把卫所田地归属重新推到台前"]
+        XCTAssertTrue(chapter.exists); chapter.tap()
+        XCTAssertTrue(tuntian.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "田归豪右、军存虚籍")).firstMatch.waitForExistence(timeout: 5))
+        XCTAssertTrue(tuntian.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不能当成土地改革的全面成功")).firstMatch.exists)
+        openChapterSources("v153_st1", in: tuntian)
+        let source = tuntian.descendants(matching: .any)["source_v153_ms262"]
+        XCTAssertTrue(source.waitForExistence(timeout: 3)); tuntian.swipeUp()
+        shot("v153-tuntian-garrison-land-and-army-supply", tuntian)
+        tuntian.terminate()
+
+        let peace = XCUIApplication()
+        peace.launchArguments = ["--uitesting", "--ui-dynasty", "ming"]
+        peace.launch()
+        XCTAssertTrue(peace.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        let peaceSearchButton = peace.buttons.matching(NSPredicate(format: "identifier == %@", "globalSearch")).firstMatch
+        XCTAssertTrue(peaceSearchButton.waitForExistence(timeout: 5)); peaceSearchButton.tap()
+        let peaceSearch = peace.searchFields.firstMatch
+        XCTAssertTrue(peaceSearch.waitForExistence(timeout: 5)); peaceSearch.tap(); peaceSearch.typeText("陈新甲")
+        let peaceResult = peace.buttons["search_person_m153_chenxinjia"]
+        XCTAssertTrue(peaceResult.waitForExistence(timeout: 5)); peaceResult.tap()
+        XCTAssertTrue(peace.buttons["articleEntry"].waitForExistence(timeout: 5)); peace.buttons["articleEntry"].tap()
+        XCTAssertTrue(peace.buttons["articleContents"].waitForExistence(timeout: 5)); peace.buttons["articleContents"].tap()
+        let leak = peace.buttons["和议泄露以后，处分变成皇帝与大臣共同遮蔽责任的出口"]
+        XCTAssertTrue(leak.exists); leak.tap()
+        XCTAssertTrue(peace.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "秘密往返数十道手诏")).firstMatch.waitForExistence(timeout: 5))
+        XCTAssertTrue(peace.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "泄密不等于和议由他一人发起")).firstMatch.exists)
+        openChapterSources("v153_cx4", in: peace)
+        let peaceSource = peace.descendants(matching: .any)["source_v153_ms257"]
+        XCTAssertTrue(peaceSource.waitForExistence(timeout: 3)); peace.swipeUp()
+        shot("v153-secret-peace-leak-and-shared-responsibility", peace)
     }
 
 }
