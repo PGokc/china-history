@@ -5677,4 +5677,51 @@ final class MingJiUITests: XCTestCase {
         shot("v187-haihun-archaeology-and-text-boundary", heritage)
     }
 
+    @MainActor func testV188LateWesternHanKnowledgeFavorAndEvidenceBoundaries() throws {
+        let knowledge = XCUIApplication()
+        knowledge.launchArguments = ["--uitesting", "--ui-dynasty", "han"]
+        knowledge.launch()
+        XCTAssertTrue(knowledge.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        knowledge.buttons["globalSearch"].tap()
+        let knowledgeSearch = knowledge.searchFields.firstMatch
+        XCTAssertTrue(knowledgeSearch.waitForExistence(timeout: 5)); knowledgeSearch.tap(); knowledgeSearch.typeText("刘向")
+        let liuXiang = knowledge.buttons["search_person_han_liuxiang"]
+        XCTAssertTrue(liuXiang.waitForExistence(timeout: 5)); liuXiang.tap()
+        XCTAssertTrue(knowledge.buttons["articleEntry"].waitForExistence(timeout: 5))
+        openArticle(in: knowledge)
+        knowledge.buttons["articleContents"].tap()
+        let collation = knowledge.buttons["中秘书校书不是独自著书"]
+        XCTAssertTrue(collation.exists); collation.tap()
+        let collaborationBoundary = knowledge.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不能把全部典籍都署成刘向个人作品")).firstMatch
+        XCTAssertTrue(collaborationBoundary.waitForExistence(timeout: 5))
+        shot("v188-liu-xiang-library-collation-boundary", knowledge)
+        reach(knowledge.buttons["资料与出处"], in: knowledge, attempts: 18)
+        XCTAssertTrue(knowledge.buttons["资料与出处"].isHittable); knowledge.buttons["资料与出处"].tap()
+        let source = knowledge.descendants(matching: .any)["source_v188_hanshu36"]
+        reach(source, in: knowledge, attempts: 8)
+        XCTAssertTrue(source.exists)
+        XCTAssertLessThanOrEqual(source.frame.maxY, knowledge.tabBars.firstMatch.frame.minY - 16)
+        shot("v188-liu-xiang-sources-and-safe-ending", knowledge)
+        knowledge.terminate()
+
+        let favor = XCUIApplication()
+        favor.launchArguments = ["--uitesting", "--ui-dynasty", "han"]
+        favor.launch()
+        XCTAssertTrue(favor.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        favor.buttons["globalSearch"].tap()
+        let favorSearch = favor.searchFields.firstMatch
+        XCTAssertTrue(favorSearch.waitForExistence(timeout: 5)); favorSearch.tap(); favorSearch.typeText("董贤")
+        let dongXian = favor.buttons["search_person_han_dongxian"]
+        XCTAssertTrue(dongXian.waitForExistence(timeout: 5)); dongXian.tap()
+        XCTAssertTrue(favor.buttons["articleEntry"].waitForExistence(timeout: 5))
+        openArticle(in: favor)
+        favor.buttons["articleContents"].tap()
+        let privateRelation = favor.buttons["断袖不能替代制度分析"]
+        XCTAssertTrue(privateRelation.exists); privateRelation.tap()
+        let privateBoundary = favor.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不能单独证明两人全部私人生活")).firstMatch
+        XCTAssertTrue(privateBoundary.waitForExistence(timeout: 5))
+        XCTAssertFalse(favor.staticTexts["从这里继续"].exists)
+        shot("v188-dong-xian-private-favor-and-public-power", favor)
+    }
+
 }

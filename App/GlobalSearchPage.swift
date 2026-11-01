@@ -22,8 +22,12 @@ struct GlobalSearchPage: View {
         !term.isEmpty && values.contains { $0.localizedStandardContains(term) }
     }
 
+    private func personCoreText(_ person: Person) -> [String] {
+        [person.name, person.call, person.temple, person.era, person.reign, person.summary, person.kind, person.note]
+    }
+
     private func personText(_ person: Person) -> [String] {
-        var values = [person.name, person.call, person.temple, person.era, person.reign, person.summary, person.kind, person.note]
+        var values = personCoreText(person)
         if let article = store.article(person.id) {
             values += [article.title, article.dek]
             values += article.sections.flatMap { [$0.title, $0.text] }
@@ -38,9 +42,15 @@ struct GlobalSearchPage: View {
         return 3
     }
 
+    private var directPeople: [Person] {
+        store.content.people.filter { includes(personCoreText($0)) }
+    }
+
     private var allPeople: [Person] {
-        store.content.people.filter { includes(personText($0)) }
-            .sorted { lhs, rhs in
+        let matches = directPeople.isEmpty
+            ? store.content.people.filter { includes(personText($0)) }
+            : directPeople
+        return matches.sorted { lhs, rhs in
                 let a = personRank(lhs), b = personRank(rhs)
                 return a == b ? lhs.name.localizedStandardCompare(rhs.name) == .orderedAscending : a < b
             }
@@ -48,8 +58,12 @@ struct GlobalSearchPage: View {
     private var people: [Person] { Array(allPeople.prefix(16)) }
 
     private var allEvents: [HistoryEvent] {
-        store.content.events.filter { event in
-            includes([event.title, event.year, event.kind, event.body, event.impact] + event.people.map { store.person($0).name })
+        let personMatched = !directPeople.isEmpty
+        return store.content.events.filter { event in
+            let primary = [event.title, event.year, event.kind]
+            return !personMatched
+                ? includes(primary + [event.body, event.impact] + event.people.map { store.person($0).name })
+                : includes(primary)
         }.sorted {
             if $0.title.localizedStandardContains(term) != $1.title.localizedStandardContains(term) {
                 return $0.title.localizedStandardContains(term)
@@ -61,15 +75,23 @@ struct GlobalSearchPage: View {
     private var events: [HistoryEvent] { Array(allEvents.prefix(20)) }
 
     private var allArtifacts: [Artifact] {
-        store.content.objects.filter { object in
-            includes([object.title, object.subtitle, object.body, object.note] + object.people.map { store.person($0).name })
+        let personMatched = !directPeople.isEmpty
+        return store.content.objects.filter { object in
+            let primary = [object.title, object.subtitle]
+            return !personMatched
+                ? includes(primary + [object.body, object.note] + object.people.map { store.person($0).name })
+                : includes(primary)
         }
     }
     private var artifacts: [Artifact] { Array(allArtifacts.prefix(16)) }
 
     private var allTombs: [Tomb] {
-        (store.content.tombs ?? []).filter { tomb in
-            includes([tomb.title, tomb.area, tomb.location, tomb.status, tomb.body, tomb.note, store.person(tomb.person).name])
+        let personMatched = !directPeople.isEmpty
+        return (store.content.tombs ?? []).filter { tomb in
+            let primary = [tomb.title, tomb.area, tomb.location, tomb.status]
+            return !personMatched
+                ? includes(primary + [tomb.body, tomb.note, store.person(tomb.person).name])
+                : includes(primary)
         }
     }
     private var tombs: [Tomb] { Array(allTombs.prefix(12)) }

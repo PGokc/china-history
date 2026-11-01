@@ -1499,11 +1499,12 @@ if d['version'] >= 64:
 if d['version'] >= 65:
  for pid,c in contexts.items():
   if people[pid].get('dynasty')!='han':continue
-  reign_bce=all(period['label'].startswith('前') for period in c['periods'])
+  reign_crosses_era=any(re.match(r'^前\d+[—–-]\d+$',period['label']) for period in c['periods'])
+  reign_bce=all(period['label'].startswith('前') for period in c['periods']) and not reign_crosses_era
   for eid in c['events']:
    label=events[eid]['year']
    event_bce=label.startswith('前') and not re.search(r'前\d+世纪[—–-]\d+世纪',label)
-   assert event_bce==reign_bce or ('世纪' in label and '—' in label),(pid,eid,'BCE/CE direction mismatch')
+   assert reign_crosses_era or event_bce==reign_bce or ('世纪' in label and '—' in label),(pid,eid,'BCE/CE direction mismatch')
  print('V65 PASS: Han reign links distinguish BCE dates from CE dates before category coverage is counted')
 
 def assert_deep_prefix(prefix,count):
@@ -4077,3 +4078,55 @@ if d['version'] >= 161:
  overview_source=(R/'App/DynastyViews.swift').read_text()
  assert '从这里继续' not in overview_source and 'DynastyContinuationGuide' not in overview_source
  print('V161 PASS: Zhao-Xuan history now connects regency, Salt-Iron debate, Changyi deposition, document control, Qiang tuntian, Western Regions administration and Haihun archaeology without restoring the duplicate dynasty guide')
+
+if d['version'] >= 162:
+ late_han_people={'han_chentang','han_liuxiang','han_liuxin','han_wangfeng','han_shidan','han_dongxian'}
+ late_han_sources={'v188_hanshu9','v188_hanshu10','v188_hanshu11','v188_hanshu12','v188_hanshu36','v188_hanshu70','v188_hanshu86','v188_hanshu93'}
+ late_han_events={'v188_xiaowangzhi_documents','v188_zhizhi_campaign','v188_yellow_river_relief','v188_library_collation','v188_changling_failure','v188_dongxian_power','v188_ping_relief','v188_school_ritual'}
+ assert late_han_people<=people.keys() and late_han_sources<=sources.keys()
+ assert all(people[person_id]['dynasty']=='han' for person_id in late_han_people)
+ event_map={event['id']:event for event in d['events']}
+ late_han_articles={article['person']:article for article in d['articles'] if article['person'] in late_han_people}
+ assert late_han_articles.keys()==late_han_people
+ for person_id,article in late_han_articles.items():
+  chars=len(re.findall(r'[\u4e00-\u9fff]',''.join(section['text'] for section in article['sections'])))
+  assert len(article['sections'])==5 and chars>=430,(person_id,chars)
+  assert len({section['id'] for section in article['sections']})==5
+  assert len(article['sources'])>=2 and set(article['sources'])<=sources.keys()
+  for section in article['sections']:
+   assert len(re.findall(r'[\u4e00-\u9fff]',section['text']))>=75,(person_id,section['id'])
+   assert set(section['sources'])<=sources.keys()
+   assert set(section.get('events',[]))<=event_map.keys()
+   assert set(section.get('people',[]))<=people.keys()
+ emperor_ids={'han_yuan','han_cheng','han_ai','han_ping'}
+ emperor_articles={article['person']:article for article in d['articles'] if article['person'] in emperor_ids}
+ assert emperor_articles.keys()==emperor_ids
+ generic_phrases=['相关政策从朝廷形成','当朝人物与执行网络','放回汉代全局','重大结果通常由多方行动叠加而成']
+ for emperor_id,article in emperor_articles.items():
+  text=''.join(section['text'] for section in article['sections'])
+  assert len(article['sections'])==5 and len(re.findall(r'[\u4e00-\u9fff]',text))>=500,(emperor_id,'article too short')
+  assert not any(phrase in text for phrase in generic_phrases),(emperor_id,'generic template remains')
+  assert set(article['sources'])<=late_han_sources
+ for event_id in late_han_events:
+  event=event_map[event_id]
+  assert len(re.findall(r'[\u4e00-\u9fff]',event['body']))>=70,(event_id,'body')
+  assert len(re.findall(r'[\u4e00-\u9fff]',event['impact']))>=60,(event_id,'impact')
+  assert set(event['sources'])<=late_han_sources
+  assert set(event['people'])==set(event['peopleRoles']),(event_id,'person-role mismatch')
+ association_pairs={(item['from'],item['to']) for item in d['associations']}
+ assert {('han_yuan','han_chentang'),('han_yuan','han_liuxiang'),('han_cheng','han_wangfeng'),('han_cheng','han_liuxiang'),('han_liuxiang','han_liuxin'),('han_ai','han_shidan'),('han_ai','han_dongxian'),('han_ping','han_liuxin')}<=association_pairs
+ context_map={context['person']:context for context in d['reignContexts']}
+ assert {'han_chentang','han_liuxiang'}<=set(context_map['han_yuan']['people']) and {'v188_xiaowangzhi_documents','v188_zhizhi_campaign'}<=set(context_map['han_yuan']['events'])
+ assert {'han_wangfeng','han_liuxiang','han_liuxin'}<=set(context_map['han_cheng']['people']) and {'v188_yellow_river_relief','v188_library_collation','v188_changling_failure'}<=set(context_map['han_cheng']['events'])
+ assert {'han_shidan','han_dongxian'}<=set(context_map['han_ai']['people']) and 'v188_dongxian_power' in context_map['han_ai']['events']
+ assert {'han_liuxin'}<=set(context_map['han_ping']['people']) and {'v188_ping_relief','v188_school_ritual'}<=set(context_map['han_ping']['events'])
+ corpus=json.dumps(list(late_han_articles.values())+list(emperor_articles.values())+[event_map[event_id] for event_id in late_han_events],ensure_ascii=False)
+ for term in ['虽远必诛是战后奏疏','未执行本身就是历史结果','断袖不能替代制度分析','灾异说是政治语言','中秘书校书不是独自著书','辅政、摄政与称帝是逐步越界的三个阶段']:
+  assert term in corpus,('missing late Western Han term',term)
+ for boundary in ['不是现代自然科学的因果解释','不能把它写成哀帝已经完成的改革','不能单独证明两人全部私人生活','不把指控写成经现代法证确认的事实','不能把全部典籍都署成刘向个人作品']:
+  assert boundary in corpus,('missing late Western Han evidence boundary',boundary)
+ assert len({section['text'] for article in late_han_articles.values() for section in article['sections']})==30
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品不用|产品将|产品采用',corpus,re.I)
+ overview_source=(R/'App/DynastyViews.swift').read_text()
+ assert '从这里继续' not in overview_source and 'DynastyContinuationGuide' not in overview_source
+ print('V162 PASS: Yuan, Cheng, Ai and Ping reigns now connect document control, Western Regions war, flood relief, library collation, land limits, private favor, education and regency with explicit evidence boundaries')
