@@ -1,5 +1,5 @@
 {
-  "version": 135,
+  "version": 136,
   "reviewed": "2026-10-31",
   "people": [
     {
@@ -18763,6 +18763,212 @@
       "kind": "英国使节",
       "note": "清英双方都用本国政治语言解释失败，不能把复杂交涉缩成一方‘不懂礼’。",
       "dynasty": "qing"
+    },
+    {
+      "id": "q162_taoshu",
+      "name": "陶澍",
+      "call": "把赈荒、河工、海运和票盐连成地方财政改革",
+      "temple": "",
+      "era": "道光前中期",
+      "reign": "1779—1839",
+      "summary": "把赈荒、河工、海运和票盐连成地方财政改革。",
+      "parent": null,
+      "sources": [
+        "v162_qsg122",
+        "v162_qsg123",
+        "v162_qsl297",
+        "v162_dpm_jianghai"
+      ],
+      "kind": "两江总督",
+      "note": "人物评价须放回具体制度、奏报链和史料立场中理解。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q162_yinghe",
+      "name": "英和",
+      "call": "在宫廷财政与漕运危机间提出海运方案的满洲大臣",
+      "temple": "",
+      "era": "道光前中期",
+      "reign": "1771—1840",
+      "summary": "在宫廷财政与漕运危机间提出海运方案的满洲大臣。",
+      "parent": null,
+      "sources": [
+        "v162_qsg363",
+        "v162_qsg122"
+      ],
+      "kind": "协办大学士",
+      "note": "人物评价须放回具体制度、奏报链和史料立场中理解。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q162_hechangling",
+      "name": "贺长龄",
+      "call": "从海运实务走向经世文献整理的地方大员",
+      "temple": "",
+      "era": "道光前中期",
+      "reign": "1785—1848",
+      "summary": "从海运实务走向经世文献整理的地方大员。",
+      "parent": null,
+      "sources": [
+        "v162_qsg122",
+        "v162_dpm_grain_archive"
+      ],
+      "kind": "地方官与经世学者",
+      "note": "人物评价须放回具体制度、奏报链和史料立场中理解。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q162_baoshichen",
+      "name": "包世臣",
+      "call": "以幕府调查和文字议论追问漕盐海防的经世学者",
+      "temple": "",
+      "era": "道光前中期",
+      "reign": "1775—1855",
+      "summary": "以幕府调查和文字议论追问漕盐海防的经世学者。",
+      "parent": null,
+      "sources": [
+        "v162_qsg486",
+        "v162_dpm_jianghai"
+      ],
+      "kind": "经世学者",
+      "note": "人物评价须放回具体制度、奏报链和史料立场中理解。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q162_zhangger",
+      "name": "张格尔",
+      "call": "利用南疆治理裂缝与跨境网络发动战争的和卓后裔",
+      "temple": "",
+      "era": "道光前中期",
+      "reign": "约18世纪末—1828",
+      "summary": "利用南疆治理裂缝与跨境网络发动战争的和卓后裔。",
+      "parent": null,
+      "sources": [
+        "v162_qsg367"
+      ],
+      "kind": "南疆战争领导者",
+      "note": "人物评价须放回具体制度、奏报链和史料立场中理解。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q162_huangjuezi",
+      "name": "黄爵滋",
+      "call": "把银贵、吸食与官员责任推向严禁方案的言官",
+      "temple": "",
+      "era": "道光前中期",
+      "reign": "1793—1853",
+      "summary": "把银贵、吸食与官员责任推向严禁方案的言官。",
+      "parent": null,
+      "sources": [
+        "v162_qsg378",
+        "v162_dpm_silver"
+      ],
+      "kind": "言官",
+      "note": "人物评价须放回具体制度、奏报链和史料立场中理解。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q162_dengtingzhen",
+      "name": "邓廷桢",
+      "call": "在广东先行查烟并与林则徐协同的两广总督",
+      "temple": "",
+      "era": "道光前中期",
+      "reign": "1776—1846",
+      "summary": "在广东先行查烟并与林则徐协同的两广总督。",
+      "parent": null,
+      "sources": [
+        "v162_qsg369",
+        "v162_qsl329"
+      ],
+      "kind": "两广总督",
+      "note": "人物评价须放回具体制度、奏报链和史料立场中理解。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q162_guantianpei",
+      "name": "关天培",
+      "call": "从护送海运到重建虎门防线的水师将领",
+      "temple": "",
+      "era": "道光前中期",
+      "reign": "1781—1841",
+      "summary": "从护送海运到重建虎门防线的水师将领。",
+      "parent": null,
+      "sources": [
+        "v162_qsg372",
+        "v162_chn_humen"
+      ],
+      "kind": "广东水师提督",
+      "note": "人物评价须放回具体制度、奏报链和史料立场中理解。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q162_yuqian",
+      "name": "裕谦",
+      "call": "主张浙江速战并在镇海陷落时殉难的钦差大臣",
+      "temple": "",
+      "era": "道光前中期",
+      "reign": "1793—1841",
+      "summary": "主张浙江速战并在镇海陷落时殉难的钦差大臣。",
+      "parent": null,
+      "sources": [
+        "v162_qsg370",
+        "v162_qsg154"
+      ],
+      "kind": "钦差大臣",
+      "note": "人物评价须放回具体制度、奏报链和史料立场中理解。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q162_chenhuacheng",
+      "name": "陈化成",
+      "call": "长期海上缉盗并在吴淞炮台阵亡的江南提督",
+      "temple": "",
+      "era": "道光前中期",
+      "reign": "1776—1842",
+      "summary": "长期海上缉盗并在吴淞炮台阵亡的江南提督。",
+      "parent": null,
+      "sources": [
+        "v162_qsg372",
+        "v162_sh_wusong"
+      ],
+      "kind": "江南提督",
+      "note": "人物评价须放回具体制度、奏报链和史料立场中理解。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q162_muzhanga",
+      "name": "穆彰阿",
+      "call": "长期主持军机却以信息过滤和用人政治影响战和决策",
+      "temple": "",
+      "era": "道光前中期",
+      "reign": "1782—1856",
+      "summary": "长期主持军机却以信息过滤和用人政治影响战和决策。",
+      "parent": null,
+      "sources": [
+        "v162_qsg363",
+        "v162_qsg154"
+      ],
+      "kind": "大学士与军机大臣",
+      "note": "人物评价须放回具体制度、奏报链和史料立场中理解。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q162_qiying",
+      "name": "耆英",
+      "call": "在军事败局中签约并主持早期条约执行的宗室大臣",
+      "temple": "",
+      "era": "道光前中期",
+      "reign": "1787—1858",
+      "summary": "在军事败局中签约并主持早期条约执行的宗室大臣。",
+      "parent": null,
+      "sources": [
+        "v162_qsg370",
+        "v162_qsg154",
+        "v162_nanjing_treaty"
+      ],
+      "kind": "钦差大臣",
+      "note": "人物评价须放回具体制度、奏报链和史料立场中理解。",
+      "dynasty": "qing"
     }
   ],
   "sources": [
@@ -25947,6 +26153,138 @@
       "title": "故宫博物院研究 · 陈设档中的‘林清纪略’误题",
       "url": "https://www.dpm.org.cn/Uploads/File/pdf/ec/00/93/ec00939693d8398cef4329dbe11a4491.pdf",
       "note": "研究指出陈设档所记《御制剿捕林清逆匪纪略》疑为乾隆朝《钦定剿捕临清逆匪纪略》之误写，不能据此制造一件嘉庆朝书物。"
+    },
+    {
+      "id": "v162_qsg122",
+      "title": "《清史稿》卷122 · 漕运与道光海运",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷122",
+      "note": "核对英和、陶澍、贺长龄参与海运及河运费用结构。志书称许须与具体档案互证。"
+    },
+    {
+      "id": "v162_qsg123",
+      "title": "《清史稿》卷123 · 盐法与陶澍票盐",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷123",
+      "note": "核对两淮盐政由纲引向票盐调整的制度轮廓，不把改革成效理解为私盐从此消失。"
+    },
+    {
+      "id": "v162_qsg154",
+      "title": "《清史稿》卷154 · 道光朝邦交与战争",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷154",
+      "note": "核对鸦片贸易、交涉、战争与条约过程；其叙述带有清末修史立场。"
+    },
+    {
+      "id": "v162_qsg363",
+      "title": "《清史稿》卷363 · 英和、王鼎、穆彰阿",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷363",
+      "note": "核对海运倡议、河工核查与军机政治。人物褒贬不能代替具体决策链。"
+    },
+    {
+      "id": "v162_qsg367",
+      "title": "《清史稿》卷367 · 长龄与张格尔之役",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷367",
+      "note": "核对南疆官员失政、四城失守、远程军粮和战后善后。战果数字采用时需注明官修来源。"
+    },
+    {
+      "id": "v162_qsg369",
+      "title": "《清史稿》卷369 · 林则徐与邓廷桢",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷369",
+      "note": "核对广东禁烟、海防和邓廷桢被谪经历，注意传记的忠臣书写。"
+    },
+    {
+      "id": "v162_qsg370",
+      "title": "《清史稿》卷370 · 伊里布与战时交涉",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷370",
+      "note": "核对浙江战守、定海交涉及南京议约前后的任免。"
+    },
+    {
+      "id": "v162_qsg372",
+      "title": "《清史稿》卷372 · 关天培与陈化成",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷372",
+      "note": "核对虎门、吴淞防务与两位水师将领经历；殉难叙述与防御能力需分开讨论。"
+    },
+    {
+      "id": "v162_qsg378",
+      "title": "《清史稿》卷378 · 黄爵滋禁烟奏议",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷378",
+      "note": "核对1838年禁烟主张和银钱论述，不把奏折估算直接当成精确统计。"
+    },
+    {
+      "id": "v162_qsg486",
+      "title": "《清史稿》卷486 · 包世臣经世议论",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷486",
+      "note": "核对包世臣关于海防、漕运、盐政的经历与著述，区分建议和实际施行。"
+    },
+    {
+      "id": "v162_dpm_daoguang",
+      "title": "故宫博物院 · 道光皇帝年表",
+      "url": "https://www.dpm.org.cn/court/lineage/226239.html",
+      "note": "核对道光朝重要任免、海运、禁烟、战争与条约节点。"
+    },
+    {
+      "id": "v162_dpm_jianghai",
+      "title": "故宫博物院院刊 · 《江海全图》与道光朝海运航路研究",
+      "url": "https://www.dpm.org.cn/journal/247908.html",
+      "note": "核对海运地图、商船知识与官方筹划的关系；图的绘制者和具体用途仍有讨论空间。"
+    },
+    {
+      "id": "v162_dpm_grain_archive",
+      "title": "故宫博物院 · 清代宫中朱批奏折漕粮档案简介",
+      "url": "https://img.dpm.org.cn/Uploads/pdf/1918/T00093_00.pdf",
+      "note": "核对漕粮征收、运输及道光六年海运背景。"
+    },
+    {
+      "id": "v162_dpm_silver",
+      "title": "故宫博物院 · 略论鸦片战争前后银贵钱贱的原因",
+      "url": "https://www.dpm.org.cn/historical/talk/208200.html",
+      "note": "说明银贵钱贱同时涉及白银流动和货币体系内部机制，避免单因解释。"
+    },
+    {
+      "id": "v162_chn_humen",
+      "title": "中国国家博物馆 · 虎门抗英陈列",
+      "url": "https://www.chnmuseum.cn/portals/0/web/zt/fuxing/visit_atc_3.html",
+      "note": "核对关天培、靖远炮台守军和现存火炮说明。展陈叙事不能替代完整战场统计。"
+    },
+    {
+      "id": "v162_dpm_nanjing",
+      "title": "故宫博物院 · 签订《南京条约》",
+      "url": "https://www.dpm.org.cn/court/event/157696.html",
+      "note": "核对英军进入长江、镇江失守与南京议约的压力链。"
+    },
+    {
+      "id": "v162_nanjing_treaty",
+      "title": "《南京条约》汉文本",
+      "url": "https://zh.wikisource.org/zh-hans/南京條約",
+      "note": "核对五口通商、赔款、香港及废除行商专管等条款。原文不能单独说明执行过程。"
+    },
+    {
+      "id": "v162_qsl297",
+      "title": "《清宣宗实录》卷297 · 陶澍盐务",
+      "url": "https://zh.wikisource.org/zh-hans/清實錄/宣宗成皇帝實錄/卷二百九十七",
+      "note": "核对道光十七年盐务奏报与朝廷评价。奏销数字来自行政信息链。"
+    },
+    {
+      "id": "v162_qsl329",
+      "title": "《清宣宗实录》卷329 · 福建禁烟查办",
+      "url": "https://zh.wikisource.org/zh-hans/清實錄/宣宗成皇帝實錄/卷三百二十九",
+      "note": "核对禁烟从广东扩展福建及官弁包庇、吸食问题。"
+    },
+    {
+      "id": "v162_ruc_jianghai",
+      "title": "中国人民大学清史研究所 · 陶澍海运图研究",
+      "url": "https://iqh.ruc.edu.cn/old/zglsdlyj/lsdl_lzjj/qsdlyj/6ff4040afda54474992cbd4a57367d6e.htm",
+      "note": "补充海运图所用舵工、商帮知识及海河并运设想。"
+    },
+    {
+      "id": "v162_sh_wusong",
+      "title": "上海市文旅推广网 · 吴淞炮台遗址",
+      "url": "https://www.meet-in-shanghai.net/cn/shanghai-cultural-relics-protection-unit/the-ruins-of-wusong-fort-423862/",
+      "note": "核对吴淞炮台、陈化成守御与遗址变迁；现存设施不全等于1842年原貌。"
+    },
+    {
+      "id": "v162_jinghaisi",
+      "title": "南京静海寺纪念馆 · 《南京条约》史料陈列",
+      "url": "https://njjhs.cn/zh-CN/",
+      "note": "核对议约地点记忆与当代陈列，区分遗址纪念和条约原件。"
     }
   ],
   "relations": [
@@ -75038,6 +75376,816 @@
       ],
       "kind": "史实与解读",
       "category": "军事"
+    },
+    {
+      "id": "v162_zhangger_governance",
+      "year": "1820—1826年",
+      "sortYear": 1820,
+      "title": "南疆官员失政削弱地方信任",
+      "body": "驻疆官员对伯克与居民的苛索，成为张格尔扩张动员的背景之一。",
+      "impact": "官修史也记录失政，不能把战争只归为外来煽动。",
+      "people": [
+        "q162_zhangger",
+        "q_daoguang"
+      ],
+      "sources": [
+        "v162_qsg367"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v162_sea_transport_authorization",
+      "year": "1825—1826年",
+      "sortYear": 1825,
+      "title": "道光批准试办漕粮海运",
+      "body": "中枢采纳英和等倡议，陶澍、贺长龄在江苏组织执行。",
+      "impact": "政策突破来自河运危机和多层协作，不是皇帝一人灵机。",
+      "people": [
+        "q_daoguang",
+        "q162_yinghe",
+        "q162_taoshu",
+        "q162_hechangling"
+      ],
+      "sources": [
+        "v162_qsg122",
+        "v162_dpm_daoguang"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v162_opium_relaxation_debate",
+      "year": "1836年",
+      "sortYear": 1836,
+      "title": "许乃济提出弛禁征税方案",
+      "body": "弛禁者希望用征税和货易货减少白银流出，并限制官兵吸食。",
+      "impact": "争论表明朝廷知道旧禁令失效，但对合法化后果分歧很大。",
+      "people": [
+        "q_daoguang",
+        "q162_huangjuezi"
+      ],
+      "sources": [
+        "v162_qsg154",
+        "v162_dpm_daoguang"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v162_huang_memorial",
+      "year": "1838年",
+      "sortYear": 1838,
+      "title": "黄爵滋提出限期戒烟与重惩",
+      "body": "奏折把吸食者、地方官责任与银钱危机连在一起。",
+      "impact": "严刑方案强化紧迫感，也可能扩大选择性执法。",
+      "people": [
+        "q162_huangjuezi",
+        "q_daoguang"
+      ],
+      "sources": [
+        "v162_qsg378",
+        "v162_dpm_silver"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v162_lin_commission",
+      "year": "1838年末",
+      "sortYear": 1838,
+      "title": "林则徐受命赴广东禁烟",
+      "body": "道光授钦差权力并节制广东水师。",
+      "impact": "这是明确皇帝决策，但执行依赖总督衙门和水师。",
+      "people": [
+        "q_daoguang",
+        "q_linzexu",
+        "q162_dengtingzhen",
+        "q162_guantianpei"
+      ],
+      "sources": [
+        "v162_dpm_daoguang",
+        "v162_qsg369"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v162_fujian_investigation",
+      "year": "1839年",
+      "sortYear": 1839,
+      "title": "禁烟调查扩展到福建官场",
+      "body": "黄爵滋等查办水师官弁包庇、地方官吸食与走私。",
+      "impact": "执法者卷入市场，说明单靠加重刑罚难以截断网络。",
+      "people": [
+        "q162_huangjuezi",
+        "q162_dengtingzhen"
+      ],
+      "sources": [
+        "v162_qsl329"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v162_wartime_dismissals",
+      "year": "1840—1841年",
+      "sortYear": 1840,
+      "title": "清廷以频繁处分表达战和转向",
+      "body": "林则徐、邓廷桢、琦善、伊里布等先后被撤换或治罪。",
+      "impact": "人事问责没有自动提供稳定战略和真实情报。",
+      "people": [
+        "q_daoguang",
+        "q_linzexu",
+        "q_qishan",
+        "q162_dengtingzhen",
+        "q162_muzhanga"
+      ],
+      "sources": [
+        "v162_qsg154",
+        "v162_qsg369",
+        "v162_qsg370"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v162_nanjing_treaty",
+      "year": "1842年",
+      "sortYear": 1842,
+      "title": "南京条约在军事压力下签订",
+      "body": "耆英、伊里布与英方代表议定香港、赔款、五口通商等条款。",
+      "impact": "条约改变沿海贸易和外交结构，不只是一次停战文书。",
+      "people": [
+        "q_daoguang",
+        "q162_qiying"
+      ],
+      "sources": [
+        "v162_nanjing_treaty",
+        "v162_dpm_nanjing"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v162_treaty_implementation",
+      "year": "1843—1844年",
+      "sortYear": 1843,
+      "title": "五口通商进入地方执行",
+      "body": "通商章程、税则与领事交涉在各口岸逐步展开。",
+      "impact": "短文本被转化为长期制度，地方执行产生新摩擦。",
+      "people": [
+        "q162_qiying",
+        "q_daoguang"
+      ],
+      "sources": [
+        "v162_qsg154",
+        "v162_nanjing_treaty"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v162_four_cities_fall",
+      "year": "1826年",
+      "sortYear": 1826,
+      "title": "张格尔势力占据南疆四城",
+      "body": "喀什噶尔、英吉沙尔、叶尔羌、和阗先后失守。",
+      "impact": "响应者动机多样，不能将当地居民视为单一阵营。",
+      "people": [
+        "q162_zhangger",
+        "q161_yangyuchun"
+      ],
+      "sources": [
+        "v162_qsg367"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v162_western_logistics",
+      "year": "1826—1827年",
+      "sortYear": 1826,
+      "title": "清军建立跨戈壁粮台进军",
+      "body": "长龄、杨遇春等调集内地与边疆兵力，护粮兵占很大比例。",
+      "impact": "复城胜利依赖运输劳动，凯旋叙事很少记录其损耗。",
+      "people": [
+        "q162_zhangger",
+        "q161_yangyuchun"
+      ],
+      "sources": [
+        "v162_qsg367"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v162_four_cities_recovered",
+      "year": "1827年",
+      "sortYear": 1827,
+      "title": "清军收复南疆四城",
+      "body": "清军渡河推进，数月内恢复四城控制。",
+      "impact": "官修战果数字需与后勤、地方响应和战后治理并读。",
+      "people": [
+        "q162_zhangger",
+        "q161_yangyuchun"
+      ],
+      "sources": [
+        "v162_qsg367"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v162_zhangger_captured",
+      "year": "1828年",
+      "sortYear": 1828,
+      "title": "张格尔被擒送京",
+      "body": "追捕力量在边外俘获张格尔，随后押解北京处死。",
+      "impact": "擒获结束主要战事，却未消除跨境与治理矛盾。",
+      "people": [
+        "q162_zhangger",
+        "q_daoguang"
+      ],
+      "sources": [
+        "v162_qsg367"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v162_humen_fortification",
+      "year": "1834—1839年",
+      "sortYear": 1834,
+      "title": "关天培重整虎门多层防线",
+      "body": "广东修炮台、铸炮、练兵并设置水面障碍。",
+      "impact": "工程投入真实存在，但机动舰船、训练与协同仍不足。",
+      "people": [
+        "q162_guantianpei",
+        "q162_dengtingzhen",
+        "q_linzexu"
+      ],
+      "sources": [
+        "v162_qsg372",
+        "v162_chn_humen"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v162_dinghai_fall",
+      "year": "1840年",
+      "sortYear": 1840,
+      "title": "英军攻占定海",
+      "body": "舰队北上后以海军火力攻占舟山要地。",
+      "impact": "战场扩大证明广东一口防御不能替代全国海防。",
+      "people": [
+        "q162_yuqian",
+        "q162_muzhanga"
+      ],
+      "sources": [
+        "v162_qsg154",
+        "v162_qsg370"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v162_humen_fall",
+      "year": "1841年",
+      "sortYear": 1841,
+      "title": "虎门防线失守与关天培阵亡",
+      "body": "英军逐层攻击炮台，关天培与多名守军战死。",
+      "impact": "忠勇不能掩盖火力、舰船和援军体系差距。",
+      "people": [
+        "q162_guantianpei",
+        "q_daoguang"
+      ],
+      "sources": [
+        "v162_qsg372",
+        "v162_chn_humen"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v162_zhenhai_fall",
+      "year": "1841年",
+      "sortYear": 1841,
+      "title": "镇海失守与裕谦殉难",
+      "body": "英军攻破镇海防线，裕谦在败局中殉难。",
+      "impact": "坚定主战并不等于已形成可执行的联合防御。",
+      "people": [
+        "q162_yuqian"
+      ],
+      "sources": [
+        "v162_qsg370",
+        "v162_qsg154"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v162_wusong_battle",
+      "year": "1842年",
+      "sortYear": 1842,
+      "title": "吴淞炮台战斗与陈化成阵亡",
+      "body": "英舰进入长江口，陈化成在西炮台指挥作战时阵亡。",
+      "impact": "阵亡、抵抗与部分部队溃退同时存在。",
+      "people": [
+        "q162_chenhuacheng",
+        "q162_qiying"
+      ],
+      "sources": [
+        "v162_qsg372",
+        "v162_sh_wusong"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v162_sea_grain_transport",
+      "year": "1826年",
+      "sortYear": 1826,
+      "title": "上海沙船将漕粮海运天津",
+      "body": "苏松等地漕粮绕开阻塞运河，由商船北运。",
+      "impact": "节费与提速之外，风险和收益重新分配给船商与海员。",
+      "people": [
+        "q162_taoshu",
+        "q162_yinghe",
+        "q162_hechangling",
+        "q162_guantianpei"
+      ],
+      "sources": [
+        "v162_qsg122",
+        "v162_dpm_jianghai"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v162_river_transport_costs",
+      "year": "1820年代",
+      "sortYear": 1822,
+      "title": "河运层层费用挤压财政与民户",
+      "body": "过闸、剥浅、催趱和帮费使国家正项之外仍有大量支出。",
+      "impact": "路线改革若不触及报销与征收，节省可能被新环节吸收。",
+      "people": [
+        "q162_baoshichen",
+        "q162_taoshu"
+      ],
+      "sources": [
+        "v162_qsg122",
+        "v162_dpm_grain_archive"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v162_ticket_salt",
+      "year": "1832—1837年",
+      "sortYear": 1832,
+      "title": "两淮票盐改革冲击旧商垄断",
+      "body": "陶澍以领票运销替代部分旧有纲引安排。",
+      "impact": "盐课恢复不等于私盐和地方生计问题消失。",
+      "people": [
+        "q162_taoshu",
+        "q162_baoshichen"
+      ],
+      "sources": [
+        "v162_qsg123",
+        "v162_qsl297"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v162_silver_copper_ratio",
+      "year": "1820—1840年代",
+      "sortYear": 1820,
+      "title": "银贵钱贱加重以钱换银者负担",
+      "body": "银钱比价在不同地区上升，纳税者需用更多铜钱购买白银。",
+      "impact": "鸦片白银外流重要，但货币结构与国际银价也在作用。",
+      "people": [
+        "q162_huangjuezi",
+        "q_daoguang"
+      ],
+      "sources": [
+        "v162_dpm_silver"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v162_opium_credit_network",
+      "year": "1830年代",
+      "sortYear": 1830,
+      "title": "趸船、窑口与快蟹形成赊销网络",
+      "body": "海上存货、岸上包买和武装运送把鸦片送入内地。",
+      "impact": "贸易依赖中国合作者与官员包庇，不能只画成外国船单向倾销。",
+      "people": [
+        "q162_dengtingzhen",
+        "q162_huangjuezi"
+      ],
+      "sources": [
+        "v162_qsg154",
+        "v162_qsg369"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v162_coastal_trade_interruptions",
+      "year": "1839—1842年",
+      "sortYear": 1839,
+      "title": "封港与战争打断沿海贸易",
+      "body": "禁烟冲突和舰队行动影响广州、厦门、宁波、上海等港口。",
+      "impact": "损失落在行商、船工、搬运者与依赖市场的居民身上。",
+      "people": [
+        "q162_dengtingzhen",
+        "q162_qiying"
+      ],
+      "sources": [
+        "v162_qsg154"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v162_war_requisitions",
+      "year": "1840—1842年",
+      "sortYear": 1840,
+      "title": "多省调兵筹饷增加地方支出",
+      "body": "军队运输、炮台修筑和临时征购需要地方垫款。",
+      "impact": "财政分散使战费难以透明汇总，也加重基层摊派。",
+      "people": [
+        "q162_muzhanga",
+        "q_daoguang"
+      ],
+      "sources": [
+        "v162_qsg154",
+        "v162_dpm_nanjing"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v162_indemnity_burden",
+      "year": "1842年后",
+      "sortYear": 1842,
+      "title": "条约赔款转化为持续财政压力",
+      "body": "南京条约规定多项赔款，并要求分期支付。",
+      "impact": "赔款最终通过国库和地方筹措承担，不止是外交数字。",
+      "people": [
+        "q162_qiying",
+        "q_daoguang"
+      ],
+      "sources": [
+        "v162_nanjing_treaty"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v162_five_port_reallocation",
+      "year": "1843—1850年",
+      "sortYear": 1843,
+      "title": "五口通商重排沿海贸易节点",
+      "body": "广州垄断被打破，厦门、福州、宁波、上海逐步进入条约贸易。",
+      "impact": "商业机会与主权限制同时出现，地区变化速度并不一致。",
+      "people": [
+        "q162_qiying"
+      ],
+      "sources": [
+        "v162_nanjing_treaty",
+        "v162_qsg154"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v162_taoshu_relief",
+      "year": "1820年代",
+      "sortYear": 1820,
+      "title": "陶澍整顿赈务与地方仓储",
+      "body": "灾荒救济需要核户、运粮和清查仓库亏空。",
+      "impact": "‘善政’背后是大量登记劳动，也可能遗漏流动人口。",
+      "people": [
+        "q162_taoshu",
+        "q162_hechangling"
+      ],
+      "sources": [
+        "v162_qsg363"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v162_boatmen_transition",
+      "year": "1826年",
+      "sortYear": 1826,
+      "title": "海运试办改变漕丁与沿河生计",
+      "body": "绕开部分河运环节，减少某些帮船和沿线服务需求。",
+      "impact": "国家节费可能成为特定劳动群体失去收入的代价。",
+      "people": [
+        "q162_taoshu",
+        "q162_baoshichen"
+      ],
+      "sources": [
+        "v162_qsg122",
+        "v162_dpm_grain_archive"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v162_sailor_risk",
+      "year": "1826年",
+      "sortYear": 1826,
+      "title": "沙船水手承担风汛与沉损风险",
+      "body": "商船北运依靠熟悉针路的舵工、水手和装卸者。",
+      "impact": "成功抵达常被记功，遇险者的家庭与工资较少进入奏折。",
+      "people": [
+        "q162_hechangling",
+        "q162_yinghe"
+      ],
+      "sources": [
+        "v162_dpm_jianghai",
+        "v162_ruc_jianghai"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v162_opium_households",
+      "year": "1830年代",
+      "sortYear": 1830,
+      "title": "吸食与债务进入家庭生活",
+      "body": "鸦片消费可能造成健康、债务与劳动能力问题，程度因阶层和地区而异。",
+      "impact": "不能把所有吸食者写成同一种道德形象。",
+      "people": [
+        "q162_huangjuezi",
+        "q162_dengtingzhen"
+      ],
+      "sources": [
+        "v162_qsg378",
+        "v162_dpm_silver"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v162_enforcement_abuse",
+      "year": "1838—1839年",
+      "sortYear": 1838,
+      "title": "严禁扩大基层搜查与告发空间",
+      "body": "地方官被要求限期查拿吸食、贩卖与包庇者。",
+      "impact": "高压执法可能打击网络，也可能产生勒索和替罪。",
+      "people": [
+        "q162_huangjuezi",
+        "q_linzexu"
+      ],
+      "sources": [
+        "v162_qsg378",
+        "v162_qsl329"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v162_coastal_displacement",
+      "year": "1840—1842年",
+      "sortYear": 1840,
+      "title": "沿海战事迫使居民撤离与避难",
+      "body": "炮击、筑防和军队驻扎影响村镇住房、市场与田地。",
+      "impact": "官修战报重城池得失，居民流离常只留下零散记录。",
+      "people": [
+        "q162_yuqian",
+        "q162_chenhuacheng"
+      ],
+      "sources": [
+        "v162_qsg154",
+        "v162_dpm_nanjing"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v162_unnamed_defenders",
+      "year": "1841年",
+      "sortYear": 1841,
+      "title": "虎门阵亡守军被合葬纪念",
+      "body": "部分无亲属认领的守军遗体由当地人收殓并后续合葬。",
+      "impact": "无名者使战争记忆超出将领传记。",
+      "people": [
+        "q162_guantianpei"
+      ],
+      "sources": [
+        "v162_chn_humen"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v162_city_market_war",
+      "year": "1842年",
+      "sortYear": 1842,
+      "title": "上海与镇江居民承受长江战事",
+      "body": "舰队进入长江后，城市贸易、运输和日常安全受到冲击。",
+      "impact": "战争并非只发生在炮台，也改变市场和家庭选择。",
+      "people": [
+        "q162_chenhuacheng",
+        "q162_qiying"
+      ],
+      "sources": [
+        "v162_dpm_nanjing",
+        "v162_qsg154"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v162_treaty_port_labor",
+      "year": "1843—1850年",
+      "sortYear": 1843,
+      "title": "口岸出现新的翻译、搬运与服务劳动",
+      "body": "常驻领事和扩大贸易需要通事、买办、船工与仓储人员。",
+      "impact": "新职业机会伴随权力不对等和法律边界模糊。",
+      "people": [
+        "q162_qiying"
+      ],
+      "sources": [
+        "v162_qsg154",
+        "v162_nanjing_treaty"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v162_jingshi_wenbian",
+      "year": "1826年",
+      "sortYear": 1826,
+      "title": "《皇朝经世文编》汇集治理文章",
+      "body": "贺长龄主持、魏源协助，将户政、河工、边防等文章分类。",
+      "impact": "选集扩大政策知识传播，也主要保存士大夫声音。",
+      "people": [
+        "q162_hechangling",
+        "q_weiyuan",
+        "q162_baoshichen"
+      ],
+      "sources": [
+        "v162_qsg486"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v162_jianghai_map",
+      "year": "1825—1826年",
+      "sortYear": 1825,
+      "title": "海运筹划吸收舵工与商帮地图知识",
+      "body": "海图标出海岸、沙线、水深和航线，服务漕粮海运讨论。",
+      "impact": "现存《江海全图》的作者和具体用途仍需保持限定。",
+      "people": [
+        "q162_taoshu",
+        "q162_yinghe",
+        "q162_hechangling"
+      ],
+      "sources": [
+        "v162_dpm_jianghai",
+        "v162_ruc_jianghai"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v162_memorial_numbers",
+      "year": "1830年代",
+      "sortYear": 1830,
+      "title": "银价与鸦片数字成为政策论证工具",
+      "body": "言官以估算的外流银额和银钱比价制造紧迫感。",
+      "impact": "数字能推动决策，但来源和地区差异必须说明。",
+      "people": [
+        "q162_huangjuezi",
+        "q162_muzhanga"
+      ],
+      "sources": [
+        "v162_qsg378",
+        "v162_dpm_silver"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v162_coastal_mapping",
+      "year": "1830—1840年代",
+      "sortYear": 1830,
+      "title": "海防测绘从航路转向炮台与口岸",
+      "body": "官员、船民和交涉者需要不断更新沿海地理知识。",
+      "impact": "拥有地图不等于形成统一海军情报体系。",
+      "people": [
+        "q162_guantianpei",
+        "q162_baoshichen"
+      ],
+      "sources": [
+        "v162_dpm_jianghai",
+        "v162_qsg486"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v162_translation_gap",
+      "year": "1840—1842年",
+      "sortYear": 1840,
+      "title": "翻译与外交术语改变命令含义",
+      "body": "‘通商’‘照会’‘全权’等词在中英制度中含义不同。",
+      "impact": "误解不是战争唯一原因，却限制双方准确评估要求。",
+      "people": [
+        "q162_qiying",
+        "q162_muzhanga"
+      ],
+      "sources": [
+        "v162_qsg154",
+        "v162_nanjing_treaty"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v162_battle_report_filter",
+      "year": "1840—1842年",
+      "sortYear": 1840,
+      "title": "战报在层层上奏中被加工",
+      "body": "地方可能夸大战果、缩小损失，中枢据此不断调整将领。",
+      "impact": "皇帝决策失误与信息制度相互作用。",
+      "people": [
+        "q162_muzhanga",
+        "q_daoguang",
+        "q162_yuqian"
+      ],
+      "sources": [
+        "v162_qsg154",
+        "v162_qsg363"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v162_loyalist_memory",
+      "year": "1841—1842年",
+      "sortYear": 1841,
+      "title": "殉难将领进入忠烈记忆",
+      "body": "关天培、裕谦、陈化成等获褒恤并被后世纪念。",
+      "impact": "忠烈叙事保存抵抗，也可能压缩战术复盘。",
+      "people": [
+        "q162_guantianpei",
+        "q162_yuqian",
+        "q162_chenhuacheng"
+      ],
+      "sources": [
+        "v162_qsg370",
+        "v162_qsg372"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v162_treaty_text_duality",
+      "year": "1842年",
+      "sortYear": 1842,
+      "title": "中英文本共同构成条约证据",
+      "body": "南京条约以两种语言确定条款并交换批准。",
+      "impact": "阅读条款要区分原文、后续章程与后来历史评价。",
+      "people": [
+        "q162_qiying"
+      ],
+      "sources": [
+        "v162_nanjing_treaty",
+        "v162_jinghaisi"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v162_site_memory",
+      "year": "19世纪后期至今",
+      "sortYear": 1842,
+      "title": "炮台与议约地点被反复改建和纪念",
+      "body": "吴淞、虎门和静海寺通过遗址、纪念馆与展陈保存战争记忆。",
+      "impact": "现存空间包含后世重建，不能直接等同原战场。",
+      "people": [
+        "q162_guantianpei",
+        "q162_chenhuacheng",
+        "q162_qiying"
+      ],
+      "sources": [
+        "v162_chn_humen",
+        "v162_sh_wusong",
+        "v162_jinghaisi"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
     }
   ],
   "objects": [
@@ -80367,6 +81515,108 @@
         "v161_dpm_secret_box",
         "v161_dpm_succession",
         "v161_qsg341"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v162_obj_jianghai",
+      "title": "《江海全图》与《海运图》",
+      "subtitle": "海运不是在空白海面上画一条线，而是吸收船民经验",
+      "symbol": "map",
+      "image": null,
+      "body": "地图记录海岸、沙线、水深、港口与航程，为道光六年漕粮海运提供空间知识。不同图本方位和内容并不相同。",
+      "note": "《江海全图》的具体作者与用途仍有讨论，不能直接称为陶澍亲绘。",
+      "people": [
+        "q162_taoshu",
+        "q162_yinghe",
+        "q162_hechangling"
+      ],
+      "sources": [
+        "v162_dpm_jianghai",
+        "v162_ruc_jianghai"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v162_obj_jingshi",
+      "title": "《皇朝经世文编》",
+      "subtitle": "把分散奏议重排为治理问题的知识地图",
+      "symbol": "books.vertical",
+      "image": null,
+      "body": "贺长龄主持、魏源协助汇编清代经世文章，分类涉及治体、户政、河工、盐政、边防等。",
+      "note": "选集保存士大夫政策文字，不能代表船工、农户与边疆居民的完整经验。",
+      "people": [
+        "q162_hechangling",
+        "q_weiyuan",
+        "q162_baoshichen"
+      ],
+      "sources": [
+        "v162_qsg486"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v162_obj_humen_cannon",
+      "title": "道光十六年虎门铁炮",
+      "subtitle": "火炮实物既证明备战，也暴露岸防体系的边界",
+      "symbol": "scope",
+      "image": null,
+      "body": "邓廷桢、关天培主持铸炮和修整炮台，现存相关火炮让口径、重量与铸造成为可观察证据。",
+      "note": "一门炮不能代表整条防线，更不能只凭重量推定实际射速、命中率和战果。",
+      "people": [
+        "q162_dengtingzhen",
+        "q162_guantianpei",
+        "q_linzexu"
+      ],
+      "sources": [
+        "v162_chn_humen",
+        "v162_qsg372"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v162_obj_wusong",
+      "title": "吴淞炮台遗址",
+      "subtitle": "江海门户上的1842年战场叠压着后世改建",
+      "symbol": "building.columns",
+      "image": null,
+      "body": "陈化成在吴淞西炮台督战阵亡，遗址帮助理解长江口地形、上海与漕运线的关系。",
+      "note": "现存炮台包含同治以后迁建层次，不可把所有构筑物都标为1842年原物。",
+      "people": [
+        "q162_chenhuacheng"
+      ],
+      "sources": [
+        "v162_sh_wusong",
+        "v162_qsg372"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v162_obj_nanjing",
+      "title": "《南京条约》中英文本",
+      "subtitle": "短短条款把军事败局转化为长期制度",
+      "symbol": "doc.text",
+      "image": null,
+      "body": "条约规定香港、赔款、五口通商、废除行商专管等事项，签署后还需税则和通商章程继续落实。",
+      "note": "静海寺是议约记忆地点，条约在英舰上签署；纪念馆陈列不等于原件始终存放于此。",
+      "people": [
+        "q162_qiying",
+        "q_daoguang"
+      ],
+      "sources": [
+        "v162_nanjing_treaty",
+        "v162_dpm_nanjing",
+        "v162_jinghaisi"
       ],
       "dynasties": [
         "qing"
@@ -92686,10 +93936,18 @@
           "events": [
             "v12_daoguang_silver",
             "v41q_river_audit",
-            "v41q_kaifeng_flood"
+            "v41q_kaifeng_flood",
+            "v162_sea_grain_transport",
+            "v162_ticket_salt",
+            "v162_silver_copper_ratio",
+            "v162_river_transport_costs"
           ],
           "people": [
-            "q_wangding"
+            "q_wangding",
+            "q162_taoshu",
+            "q162_yinghe",
+            "q162_hechangling",
+            "q162_baoshichen"
           ]
         },
         {
@@ -92706,11 +93964,17 @@
           "kind": "史实与解读",
           "events": [
             "v40q_humen",
-            "v40q_haiguo"
+            "v40q_haiguo",
+            "v162_opium_relaxation_debate",
+            "v162_huang_memorial",
+            "v162_fujian_investigation"
           ],
           "people": [
             "q_linzexu",
-            "q_weiyuan"
+            "q_weiyuan",
+            "q162_huangjuezi",
+            "q162_dengtingzhen",
+            "q162_guantianpei"
           ]
         },
         {
@@ -92726,11 +93990,19 @@
           "kind": "史实与解读",
           "events": [
             "qev_opium_war_1840",
-            "v41q_chuanbi"
+            "v41q_chuanbi",
+            "v162_dinghai_fall",
+            "v162_humen_fall",
+            "v162_zhenhai_fall",
+            "v162_wusong_battle",
+            "v162_battle_report_filter"
           ],
           "people": [
             "q_qishan",
-            "q_wangding"
+            "q_wangding",
+            "q162_yuqian",
+            "q162_chenhuacheng",
+            "q162_muzhanga"
           ]
         },
         {
@@ -92743,7 +94015,13 @@
           ],
           "kind": "史实与解读",
           "events": [
-            "qev_nanjing_treaty_1842"
+            "qev_nanjing_treaty_1842",
+            "v162_nanjing_treaty",
+            "v162_treaty_implementation",
+            "v162_treaty_text_duality"
+          ],
+          "people": [
+            "q162_qiying"
           ]
         },
         {
@@ -197551,6 +198829,1176 @@
         "v161_haiguo77",
         "v161_opium_edict"
       ]
+    },
+    {
+      "person": "q162_taoshu",
+      "title": "陶澍：改革不是一道奏折",
+      "dek": "他在灾荒、河运阻塞与盐课亏空之间工作，成效来自调查、幕府和执行网络，也留下利益重分配。",
+      "sections": [
+        {
+          "id": "v162_taoshu1",
+          "title": "从赈荒建立地方知识",
+          "text": "陶澍在安徽等地办理赈济时，要求清查户口、仓储和受灾程度。赈荒不是单纯发粮，还牵涉运送、票据、基层胥吏与谁被登记为灾民。官修传记偏重清廉能干，实际成效仍需结合地方档案观察。",
+          "sources": [
+            "v162_qsg122",
+            "v162_qsg123"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_sea_transport_authorization",
+            "v162_boatmen_transition"
+          ],
+          "people": [
+            "q_daoguang",
+            "q162_yinghe",
+            "q162_hechangling"
+          ]
+        },
+        {
+          "id": "v162_taoshu2",
+          "title": "海运是被河道逼出的试验",
+          "text": "黄河与运河阻滞使漕粮延误，陶澍会同英和、贺长龄筹划从上海雇沙船运粮到天津。方案借助商船、舵工和沿海知识，并非朝廷凭空发明；它减少部分过闸和剥运费用，也把风险转给海员与商人。",
+          "sources": [
+            "v162_qsg122",
+            "v162_qsg123"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_sea_grain_transport",
+            "v162_jianghai_map"
+          ],
+          "people": [
+            "q_daoguang",
+            "q162_yinghe",
+            "q162_hechangling"
+          ]
+        },
+        {
+          "id": "v162_taoshu3",
+          "title": "票盐改变准入和利益分配",
+          "text": "两淮盐政积欠严重，陶澍以票盐降低旧商垄断门槛，让有资本者领票运销。盐课一度恢复，但私盐、地方销售和旧商损失并未自动消失。称它为成功改革，仍要追问谁获得新票、谁承担转型成本。",
+          "sources": [
+            "v162_qsg122",
+            "v162_qsg123"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_river_transport_costs"
+          ],
+          "people": [
+            "q_daoguang",
+            "q162_yinghe",
+            "q162_hechangling"
+          ]
+        },
+        {
+          "id": "v162_taoshu4",
+          "title": "幕府把技术问题带进政治",
+          "text": "地图、奏折、会计和地方访查由众多幕友与属员共同完成。陶澍的个人声望遮住了这种协作结构；海运航线和盐务数字能进入皇帝视野，依靠的是从船户、州县到督抚的多层信息加工。",
+          "sources": [
+            "v162_qsg122",
+            "v162_qsg123"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_ticket_salt"
+          ],
+          "people": [
+            "q_daoguang",
+            "q162_yinghe",
+            "q162_hechangling"
+          ]
+        },
+        {
+          "id": "v162_taoshu5",
+          "title": "经世名臣也受制度边界约束",
+          "text": "陶澍去世后，海运与票盐仍被反复调整，说明改革不能靠一位能臣永久维持。把他放回道光朝，应同时看到行政学习能力、利益阻力和中央财政缺乏稳定数据的问题，而不是用‘中兴名臣’结束讨论。具体阅读时还应把三类材料分开：奏折说明官员希望皇帝如何理解问题，账册显示申报的收支，地图与地方记录才接近运输空间。三者若相互印证，可以确认某项改革确已运行；若只见褒奖文字，则最多说明朝廷接受了这种自我描述。海运和票盐都形成新的获益者与受损者，因此改革评价不能只看课银是否增加，还要观察船户风险、旧商退出、基层加费以及政策在陶澍去世后的延续程度。",
+          "sources": [
+            "v162_qsg122",
+            "v162_qsg123",
+            "v162_qsl297",
+            "v162_dpm_jianghai"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_taoshu_relief"
+          ],
+          "people": [
+            "q_daoguang",
+            "q162_yinghe",
+            "q162_hechangling"
+          ]
+        }
+      ],
+      "sources": [
+        "v162_qsg122",
+        "v162_qsg123",
+        "v162_qsl297",
+        "v162_dpm_jianghai"
+      ]
+    },
+    {
+      "person": "q162_yinghe",
+      "title": "英和：海运倡议与宫廷政治的反转",
+      "dek": "他熟悉财政和典章，也因皇陵工程与政治责任被惩处；一项合理建议并不能保证仕途安全。",
+      "sections": [
+        {
+          "id": "v162_yinghe1",
+          "title": "内务府家庭与考试仕途",
+          "text": "英和出身内务府满洲家庭，经科举进入翰林与中枢。这样的经历使他同时熟悉宫廷事务、文书制度和财政讨论，但不能把家世直接等同于政策能力；具体主张仍要看奏议与执行结果。",
+          "sources": [
+            "v162_qsg363",
+            "v162_qsg122"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_sea_transport_authorization"
+          ],
+          "people": [
+            "q_daoguang",
+            "q162_taoshu",
+            "q162_hechangling"
+          ]
+        },
+        {
+          "id": "v162_yinghe2",
+          "title": "海运先是风险很高的少数意见",
+          "text": "漕运既养活庞大人员，也形成层层费用。英和提出借海路转运，会触动漕丁、河工与沿线利益，并面对沉船风险。道光帝最终采纳试办，说明危机迫使中枢容纳原先边缘的方案。",
+          "sources": [
+            "v162_qsg363",
+            "v162_qsg122"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_sea_grain_transport"
+          ],
+          "people": [
+            "q_daoguang",
+            "q162_taoshu",
+            "q162_hechangling"
+          ]
+        },
+        {
+          "id": "v162_yinghe3",
+          "title": "商船知识进入国家运输",
+          "text": "海运依靠上海沙船、熟悉针路的舵工和天津接卸体系。英和提供政治倡议，陶澍、贺长龄承担地方组织，不能把功劳归给单一首倡者。国家能力在这里表现为吸收民间技术，而非完全自给。",
+          "sources": [
+            "v162_qsg363",
+            "v162_qsg122"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_sailor_risk"
+          ],
+          "people": [
+            "q_daoguang",
+            "q162_taoshu",
+            "q162_hechangling"
+          ]
+        },
+        {
+          "id": "v162_yinghe4",
+          "title": "皇陵工程改变他的命运",
+          "text": "宝华峪地宫渗水暴露后，英和因参与营建受到严厉处分。工程责任既包括技术判断，也受皇权问责逻辑影响；抄家与惩处不等于所有工程错误都由一人造成。",
+          "sources": [
+            "v162_qsg363",
+            "v162_qsg122"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_jianghai_map"
+          ],
+          "people": [
+            "q_daoguang",
+            "q162_taoshu",
+            "q162_hechangling"
+          ]
+        },
+        {
+          "id": "v162_yinghe5",
+          "title": "从失势者看道光政治",
+          "text": "英和后半生的起落提醒我们，道光朝的节俭形象与大型工程、追责政治并存。海运建议可被继续使用，提出建议的人却可能被排出中枢，制度会选择性保存政策而切断个人声誉。英和案还提供一组有价值的对照：同一个官员可以在漕运问题上推动制度学习，在皇陵工程中又成为责任追究对象。人物不是永远正确或永远无能的固定类型。研究其处分，应核对工程参与阶段、职权范围和事后查验，而不能因海运贡献便替他免除责任，也不能因获罪便抹去建议价值。政策史由一连串可分解的判断组成，比忠奸总评更接近行政实际。这些判断仍需随新档案继续校正。",
+          "sources": [
+            "v162_qsg363",
+            "v162_qsg122"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_sea_transport_authorization"
+          ],
+          "people": [
+            "q_daoguang",
+            "q162_taoshu",
+            "q162_hechangling"
+          ]
+        }
+      ],
+      "sources": [
+        "v162_qsg363",
+        "v162_qsg122"
+      ]
+    },
+    {
+      "person": "q162_hechangling",
+      "title": "贺长龄：把行政经验编成经世知识",
+      "dek": "他既是海运执行者，又主持《皇朝经世文编》，显示地方治理经验如何被重新分类和传播。",
+      "sections": [
+        {
+          "id": "v162_hechangling1",
+          "title": "地方官从账册理解国家",
+          "text": "贺长龄历任州县和省级官职，接触钱粮、治安、水利与灾荒。地方治理不是抽象道德实践，而是核对户口、厘清亏欠、调度人员的日常工作；传记的‘循吏’称誉不能代替这些机制。",
+          "sources": [
+            "v162_qsg122",
+            "v162_dpm_grain_archive"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_sea_transport_authorization",
+            "v162_jianghai_map"
+          ],
+          "people": [
+            "q_daoguang",
+            "q162_yinghe",
+            "q162_taoshu"
+          ]
+        },
+        {
+          "id": "v162_hechangling2",
+          "title": "1826年海运依赖地方协调",
+          "text": "作为江苏布政使，他协助陶澍筹粮、雇船、验收和北运。海运节费并不意味着免费，商船合同、保险性加价、损耗责任和天津接卸都要重新规定，执行层决定方案能否落地。",
+          "sources": [
+            "v162_qsg122",
+            "v162_dpm_grain_archive"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_sea_grain_transport"
+          ],
+          "people": [
+            "q_daoguang",
+            "q162_yinghe",
+            "q162_taoshu"
+          ]
+        },
+        {
+          "id": "v162_hechangling3",
+          "title": "经世文编重排旧文章",
+          "text": "贺长龄邀魏源协助编纂《皇朝经世文编》，把清代以来有关治体、户政、河工、边防的文章分类汇集。选文创造了一张知识地图，也反映编者认为哪些问题值得国家处理。",
+          "sources": [
+            "v162_qsg122",
+            "v162_dpm_grain_archive"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_taoshu_relief"
+          ],
+          "people": [
+            "q_daoguang",
+            "q162_yinghe",
+            "q162_taoshu"
+          ]
+        },
+        {
+          "id": "v162_hechangling4",
+          "title": "文本传播训练新一代官员",
+          "text": "文编让远离档案库的读书人接触政策争论，后来影响众多经世学者。不过选集保留的是士大夫文字，船工、灾民和基层差役的经验多经官员转述；它拓宽视野，也有明确社会边界。",
+          "sources": [
+            "v162_qsg122",
+            "v162_dpm_grain_archive"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_sailor_risk"
+          ],
+          "people": [
+            "q_daoguang",
+            "q162_yinghe",
+            "q162_taoshu"
+          ]
+        },
+        {
+          "id": "v162_hechangling5",
+          "title": "从知识到政策仍有距离",
+          "text": "贺长龄的经历连接编书和办事，却不能证明好文章会自动变成好政策。信息经过奏折、部议和皇帝裁决才能实施，地方条件又会改变结果。阅读他，应把知识生产、行政权限和执行反馈放在一起。《皇朝经世文编》的目录本身就是史料：哪些文章被放进户政、河工、兵政，决定读者怎样理解国家。它把前代奏议转化为可检索的治理经验，却也容易让人相信问题都能由官员写作解决。若把文编与海运档案并读，会看到文字中的‘便民’需要经过雇船、验米、风汛和报销等环节才能成立。知识传播的贡献真实存在，知识与行动之间的落差同样真实。这些判断仍需随新档案继续校正。",
+          "sources": [
+            "v162_qsg122",
+            "v162_dpm_grain_archive"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_jingshi_wenbian"
+          ],
+          "people": [
+            "q_daoguang",
+            "q162_yinghe",
+            "q162_taoshu"
+          ]
+        }
+      ],
+      "sources": [
+        "v162_qsg122",
+        "v162_dpm_grain_archive"
+      ]
+    },
+    {
+      "person": "q162_baoshichen",
+      "title": "包世臣：在幕府与书斋之间讨论国家危机",
+      "dek": "他的许多方案并未直接实施，却保存了地方观察如何挑战常规官样答案。",
+      "sections": [
+        {
+          "id": "v162_baoshichen1",
+          "title": "幕府经验不是旁观",
+          "text": "包世臣长期游幕，接触漕运、盐务、河工和海防材料。幕友没有正式高位，却能调查、起草和比较方案；这种半官方位置让他看到行政细节，也限制了他对最终决策的控制。",
+          "sources": [
+            "v162_qsg486",
+            "v162_dpm_jianghai"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_river_transport_costs"
+          ],
+          "people": [
+            "q162_taoshu"
+          ]
+        },
+        {
+          "id": "v162_baoshichen2",
+          "title": "漕运问题是运输也是分配",
+          "text": "他关注漕粮征收、船帮费用和河道阻滞，认为层层耗费损害国家与民户。改革若只改路线而不改征收和报销，节省可能被新环节吸收，因此海运讨论必须连到财政透明。",
+          "sources": [
+            "v162_qsg486",
+            "v162_dpm_jianghai"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_ticket_salt"
+          ],
+          "people": [
+            "q162_taoshu"
+          ]
+        },
+        {
+          "id": "v162_baoshichen3",
+          "title": "盐政议论触及旧商垄断",
+          "text": "包世臣批评盐法积弊，支持扩大流通、压低成本。票盐改革与他的经世问题意识相通，但建议文本常把复杂社会压缩成可治理对象，实际私盐网络和地方生计比方案更难整齐。",
+          "sources": [
+            "v162_qsg486",
+            "v162_dpm_jianghai"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_boatmen_transition"
+          ],
+          "people": [
+            "q162_taoshu"
+          ]
+        },
+        {
+          "id": "v162_baoshichen4",
+          "title": "海防知识来自沿海行走",
+          "text": "他曾考察沿海岛屿和防务，强调水师、地形、商船和情报。鸦片战争证明炮台数量不是全部，训练、补给和跨省指挥同样关键；早期议论有洞见，却不能倒推为已经预见全部战争。",
+          "sources": [
+            "v162_qsg486",
+            "v162_dpm_jianghai"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_jingshi_wenbian"
+          ],
+          "people": [
+            "q162_taoshu"
+          ]
+        },
+        {
+          "id": "v162_baoshichen5",
+          "title": "未实施方案也有史料价值",
+          "text": "包世臣的意义不只在‘说对了什么’，还在展示官僚体系外缘如何组织问题。把奏议与实际政策对读，可以看见哪些建议被采纳、哪些被过滤，以及国家为何反复知道问题却难以持续修正。包世臣的文字适合用作问题清单，而不宜直接当作实施成效。他能指出漕船费用、盐商垄断、水师训练和官吏信息失真之间的联系，但不少数字来自访谈、幕府材料或论辩需要。可靠做法是把他的方案与同年奏折、实际章程和后续结果对读。这样既不会因为他没有高官职位而忽略观察，也不会把一个善于论政的作者塑造成所有近代改革的预言者。这些判断仍需随新档案继续校正。",
+          "sources": [
+            "v162_qsg486",
+            "v162_dpm_jianghai"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_coastal_mapping"
+          ],
+          "people": [
+            "q162_taoshu"
+          ]
+        }
+      ],
+      "sources": [
+        "v162_qsg486",
+        "v162_dpm_jianghai"
+      ]
+    },
+    {
+      "person": "q162_zhangger",
+      "title": "张格尔：南疆战争背后的治理裂缝",
+      "dek": "1826年的四城失守不只是一次越境袭击，也暴露官员苛索、跨境政治和地方认同的复杂关系。",
+      "sections": [
+        {
+          "id": "v162_zhangger1",
+          "title": "和卓后裔与浩罕网络",
+          "text": "张格尔以和卓家族身份在浩罕、布鲁特等跨境网络中活动，宗教声望和政治血统为动员提供资源。边界并非封闭线，商路、逃亡者和外交馈赠共同塑造冲突条件。",
+          "sources": [
+            "v162_qsg367"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_zhangger_governance"
+          ],
+          "people": [
+            "q_daoguang"
+          ]
+        },
+        {
+          "id": "v162_zhangger2",
+          "title": "地方失政先削弱信任",
+          "text": "《清史稿》也承认部分驻疆大臣苛索伯克、侵扰居民，斌静行为尤其激化不满。官修叙事称参与者为‘逆’，但战争扩张不能只用煽动解释，还要看到长期治理关系。",
+          "sources": [
+            "v162_qsg367"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_four_cities_fall"
+          ],
+          "people": [
+            "q_daoguang"
+          ]
+        },
+        {
+          "id": "v162_zhangger3",
+          "title": "四城失守与多样参与",
+          "text": "喀什噶尔、英吉沙尔、叶尔羌、和阗相继失守，参与者包括外来武装和本地响应者，动机并不一致。不能把所有当地居民视为同一阵营，也不能以战后定罪名册复原完整社会。",
+          "sources": [
+            "v162_qsg367"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_western_logistics"
+          ],
+          "people": [
+            "q_daoguang"
+          ]
+        },
+        {
+          "id": "v162_zhangger4",
+          "title": "远征胜利依赖漫长粮台",
+          "text": "清军从内地和北疆调兵，长龄强调戈壁距离、留防与粮台。复城战役的胜利既有军事指挥，也建立在大量驮运、征粮和沿途服务上；普通劳动者的损耗较少进入凯旋叙事。",
+          "sources": [
+            "v162_qsg367"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_four_cities_recovered"
+          ],
+          "people": [
+            "q_daoguang"
+          ]
+        },
+        {
+          "id": "v162_zhangger5",
+          "title": "擒获之后问题没有结束",
+          "text": "张格尔被擒送京处死，清廷重建驻防并调整善后。军事胜利恢复城池，却没有消除跨境权力、伯克治理和贸易关系。将此役只写成‘平叛’，会遮住道光朝边疆国家能力的成本与限度。这场战争的史料极不对称：清军将领有传记、战报和封赏，张格尔一方主要以审讯、定罪和敌情出现，本地居民的声音更加稀少。因此可以确认城池得失、主要行军与官员失政，却难以给每一群参与者安排统一动机。战后所谓‘安抚’也需拆成伯克任用、税赋、驻军和跨境交涉观察。只有把胜利以后仍需处理的问题写出来，才不会让处死首领成为虚假的终点。这些判断仍需随新档案继续校正。这些判断仍需随新档案继续校正。",
+          "sources": [
+            "v162_qsg367"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_zhangger_captured"
+          ],
+          "people": [
+            "q_daoguang"
+          ]
+        }
+      ],
+      "sources": [
+        "v162_qsg367"
+      ]
+    },
+    {
+      "person": "q162_huangjuezi",
+      "title": "黄爵滋：严禁方案如何进入皇帝视野",
+      "dek": "他的奏折把银价、成瘾和官员责任绑在一起，也用极重刑罚想象快速扭转社会习惯。",
+      "sections": [
+        {
+          "id": "v162_huangjuezi1",
+          "title": "言官以数字制造紧迫感",
+          "text": "黄爵滋援引白银外流和银钱比价上升，说明鸦片贸易危及财政民生。奏折数字来自地方报告和估算，足以显示焦虑，却不能当成全国统一统计。",
+          "sources": [
+            "v162_qsg378",
+            "v162_dpm_silver"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_opium_relaxation_debate",
+            "v162_opium_households"
+          ],
+          "people": [
+            "q_daoguang"
+          ]
+        },
+        {
+          "id": "v162_huangjuezi2",
+          "title": "重治吸食者的逻辑",
+          "text": "他主张给吸食者期限戒除，逾期重惩，希望从需求端截断市场。方案把执法责任压给地方官，也可能扩大告密、勒索和选择性执法；严厉不等于可执行。",
+          "sources": [
+            "v162_qsg378",
+            "v162_dpm_silver"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_huang_memorial",
+            "v162_enforcement_abuse"
+          ],
+          "people": [
+            "q_daoguang"
+          ]
+        },
+        {
+          "id": "v162_huangjuezi3",
+          "title": "奏折促成全国讨论",
+          "text": "道光帝将禁烟问题交各地督抚议奏，不同官员在弛禁、严禁和先治官吏之间分歧。政策形成不是一人说服皇帝的直线，而是奏折汇集、部议和政治判断的过程。",
+          "sources": [
+            "v162_qsg378",
+            "v162_dpm_silver"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_fujian_investigation",
+            "v162_memorial_numbers"
+          ],
+          "people": [
+            "q_daoguang"
+          ]
+        },
+        {
+          "id": "v162_huangjuezi4",
+          "title": "福建查办检验制度现实",
+          "text": "黄爵滋随后参与福建禁烟调查，材料显示水师官弁、地方官和商贩可能共同包庇。市场嵌入行政网络后，仅处罚消费者无法切断供给，也暴露国家执法者本身是问题一部分。",
+          "sources": [
+            "v162_qsg378",
+            "v162_dpm_silver"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_silver_copper_ratio"
+          ],
+          "people": [
+            "q_daoguang"
+          ]
+        },
+        {
+          "id": "v162_huangjuezi5",
+          "title": "正确警告不保证完整方案",
+          "text": "黄爵滋准确指出危机严重性，但把银贵主要归因鸦片、把重刑视为根治，都需要后见研究修正。理解他应同时保留预警贡献与政策局限，而非在主战、主和标签间站队。奏折中的因果链还应接受货币史检验。银钱比价在地区间不同，白银外流、铜钱供给、海外银价和税收以银计征共同作用；吸食人数也没有现代调查可供精确计算。黄爵滋的价值在于迫使中枢承认旧禁令失效并讨论官员责任，局限则在于相信死刑威慑能迅速改变市场。把预警和处方分开评价，才能避免用后来战争证明他每一项判断都正确。这些判断仍需随新档案继续校正。这些判断仍需随新档案继续校正。现有结论只到证据允许抵达的地方，不用空白补成确定故事。",
+          "sources": [
+            "v162_qsg378",
+            "v162_dpm_silver"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_opium_credit_network"
+          ],
+          "people": [
+            "q_daoguang"
+          ]
+        }
+      ],
+      "sources": [
+        "v162_qsg378",
+        "v162_dpm_silver"
+      ]
+    },
+    {
+      "person": "q162_dengtingzhen",
+      "title": "邓廷桢：禁烟并非从林则徐抵粤才开始",
+      "dek": "他在广东已查缉走私、整顿海防；随后与林则徐协同，也在战败问责中一同被贬。",
+      "sections": [
+        {
+          "id": "v162_dengtingzhen1",
+          "title": "地方司法塑造治理风格",
+          "text": "邓廷桢早年任地方官，处理案件、灾赈和水利。传记称其善折狱，但个案称誉不能证明所有司法实践；重要的是他习惯把治安、行政责任和地方调查结合。",
+          "sources": [
+            "v162_qsg369",
+            "v162_qsl329"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_lin_commission",
+            "v162_coastal_trade_interruptions"
+          ],
+          "people": [
+            "q_daoguang",
+            "q_linzexu",
+            "q162_guantianpei"
+          ]
+        },
+        {
+          "id": "v162_dengtingzhen2",
+          "title": "广东走私是一条海陆链",
+          "text": "担任两广总督后，他查处趸船、快蟹和内地窑口，并与关天培整备海防。鸦片并非外国船一到岸就自动销售，沿海居民、买办、武装快艇和官员包庇共同构成网络。",
+          "sources": [
+            "v162_qsg369",
+            "v162_qsl329"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_fujian_investigation",
+            "v162_opium_households"
+          ],
+          "people": [
+            "q_daoguang",
+            "q_linzexu",
+            "q162_guantianpei"
+          ]
+        },
+        {
+          "id": "v162_dengtingzhen3",
+          "title": "与林则徐是协作而非背景板",
+          "text": "1839年林则徐到粤后，邓廷桢参与收缴烟土、讯问与防务安排。英雄叙事常把他缩成配角，实际总督衙门、钦差权限和水师需要并行才能行动。",
+          "sources": [
+            "v162_qsg369",
+            "v162_qsl329"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_wartime_dismissals"
+          ],
+          "people": [
+            "q_daoguang",
+            "q_linzexu",
+            "q162_guantianpei"
+          ]
+        },
+        {
+          "id": "v162_dengtingzhen4",
+          "title": "厦门防御与跨省调任",
+          "text": "战争爆发后他调任闽浙，组织厦门等处防务。沿海各口条件不同，广东经验不能直接复制；兵力、炮位和地方财政决定抵抗能力，中央命令往往落后于舰队移动。",
+          "sources": [
+            "v162_qsg369",
+            "v162_qsl329"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_humen_fortification"
+          ],
+          "people": [
+            "q_daoguang",
+            "q_linzexu",
+            "q162_guantianpei"
+          ]
+        },
+        {
+          "id": "v162_dengtingzhen5",
+          "title": "问责压缩了复杂失败",
+          "text": "清廷后来把‘办理不善、转滋事端’责任加于林则徐、邓廷桢。处分满足中枢寻找责任人的需要，却不能解释英国战争目标、海军差距和多省指挥问题。个人去留与制度学习并非一回事。邓廷桢的案例还能纠正‘中央下令、地方执行’的简单图景。广东在钦差抵达前已积累缉私、审讯和炮台资料，林则徐到来后借用了这些人员与知识；战争发生后，中央又把地方经验解释为滋事原因。评价禁烟必须比较三个时间层：此前禁令为何落空，1839年为何能集中收缴，集中行动为何没有同步形成多口岸防御。这样才看得到协作能力与制度断裂并存。这些判断仍需随新档案继续校正。这些判断仍需随新档案继续校正。现有结论只到证据允许抵达的地方，不用空白补成确定故事。",
+          "sources": [
+            "v162_qsg369",
+            "v162_qsl329"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_opium_credit_network"
+          ],
+          "people": [
+            "q_daoguang",
+            "q_linzexu",
+            "q162_guantianpei"
+          ]
+        }
+      ],
+      "sources": [
+        "v162_qsg369",
+        "v162_qsl329"
+      ]
+    },
+    {
+      "person": "q162_guantianpei",
+      "title": "关天培：炮台、训练与虎门防线的极限",
+      "dek": "他的殉难值得纪念，但真正理解守御还要看工事布局、经费、兵员和舰炮差距。",
+      "sections": [
+        {
+          "id": "v162_guantianpei1",
+          "title": "海运护航积累海上经验",
+          "text": "关天培曾护送道光六年漕粮海运船队抵达天津。护航涉及编队、风汛与沿途纪律，这段经历说明水师任务并非只有战斗，也服务国家运输。",
+          "sources": [
+            "v162_qsg372",
+            "v162_chn_humen"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_lin_commission",
+            "v162_coastal_mapping"
+          ],
+          "people": [
+            "q_daoguang",
+            "q_linzexu",
+            "q162_dengtingzhen"
+          ]
+        },
+        {
+          "id": "v162_guantianpei2",
+          "title": "虎门是多层防御工程",
+          "text": "任广东水师提督后，他勘察水道、修炮台、铸炮并设置铁链障碍。防线需要多座炮台相互支援，单个英雄无法替代火力覆盖、通信和机动舰船。",
+          "sources": [
+            "v162_qsg372",
+            "v162_chn_humen"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_humen_fortification",
+            "v162_loyalist_memory"
+          ],
+          "people": [
+            "q_daoguang",
+            "q_linzexu",
+            "q162_dengtingzhen"
+          ]
+        },
+        {
+          "id": "v162_guantianpei3",
+          "title": "查烟与海防相互牵动",
+          "text": "邓廷桢、林则徐查禁鸦片时，关天培负责武力威慑和水面控制。执法升级改变中英船只互动，海防准备却受经费、训练和旧式舰船限制；政策意志快于军事改造。",
+          "sources": [
+            "v162_qsg372",
+            "v162_chn_humen"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_humen_fall",
+            "v162_site_memory"
+          ],
+          "people": [
+            "q_daoguang",
+            "q_linzexu",
+            "q162_dengtingzhen"
+          ]
+        },
+        {
+          "id": "v162_guantianpei4",
+          "title": "1841年防线被逐层突破",
+          "text": "沙角、大角失守后，英军以舰炮和机动优势攻击第二重门户。关天培在靖远炮台战死，多名守军同殉。勇敢是真实的，但用勇敢解释失败会遮住装备、战术与援军问题。",
+          "sources": [
+            "v162_qsg372",
+            "v162_chn_humen"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_sea_grain_transport"
+          ],
+          "people": [
+            "q_daoguang",
+            "q_linzexu",
+            "q162_dengtingzhen"
+          ]
+        },
+        {
+          "id": "v162_guantianpei5",
+          "title": "遗物与墓葬保存不同记忆",
+          "text": "现存大炮、炮台遗址和合葬守军让战斗具有物质尺度。展陈常强调忠烈，研究还应追问无名兵卒的籍贯、薪饷和遗体处理；他们不是将领传记的背景。战场复原尤其要避免拿现存大炮重量直接推算胜负。炮位高度、射界、火药质量、装填速度、训练、潮汐和英舰机动共同影响效果；褒恤奏报则更关注将领是否守节。关天培的海运护航经历说明他并非不懂海洋，但传统水师长期承担缉私和护运，组织目标与远洋舰队不同。把职业经验、工程准备和制度差距同时呈现，才是对其殉难更严肃的纪念。这些判断仍需随新档案继续校正。这些判断仍需随新档案继续校正。现有结论只到证据允许抵达的地方，不用空白补成确定故事。这些判断仍需随新档案继续校正。守军名册、炮台日志和英方舰艇记录若能继续互证，仍可修正具体战斗过程。",
+          "sources": [
+            "v162_qsg372",
+            "v162_chn_humen"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_unnamed_defenders"
+          ],
+          "people": [
+            "q_daoguang",
+            "q_linzexu",
+            "q162_dengtingzhen"
+          ]
+        }
+      ],
+      "sources": [
+        "v162_qsg372",
+        "v162_chn_humen"
+      ]
+    },
+    {
+      "person": "q162_yuqian",
+      "title": "裕谦：速战主张与镇海败局",
+      "dek": "他反对缓和交涉并亲临浙江前线，但立场坚定没有自动转化为可执行的联合防御。",
+      "sections": [
+        {
+          "id": "v162_yuqian1",
+          "title": "从地方官到钦差",
+          "text": "裕谦经历州县和省级行政后被派往浙江督办军务。清廷频繁更换主将，希望用人事调整改变战局，也使前线方案缺乏连续性。",
+          "sources": [
+            "v162_qsg370",
+            "v162_qsg154"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_dinghai_fall"
+          ],
+          "people": [
+            "q162_muzhanga"
+          ]
+        },
+        {
+          "id": "v162_yuqian2",
+          "title": "与伊里布争论战守",
+          "text": "他批评伊里布缓攻定海，主张抢占要地、迅速恢复。争论常被后世写成主战忠臣与投降派对立，但双方都面对兵力不足、情报不稳和中央命令反复。",
+          "sources": [
+            "v162_qsg370",
+            "v162_qsg154"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_zhenhai_fall"
+          ],
+          "people": [
+            "q162_muzhanga"
+          ]
+        },
+        {
+          "id": "v162_yuqian3",
+          "title": "防御需要跨区域协同",
+          "text": "定海、镇海和宁波相互关联，守军来自不同省份，军饷、炮械与指挥体系并不统一。裕谦的意志难以弥补水师机动性和联合作战不足。",
+          "sources": [
+            "v162_qsg370",
+            "v162_qsg154"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_coastal_displacement"
+          ],
+          "people": [
+            "q162_muzhanga"
+          ]
+        },
+        {
+          "id": "v162_yuqian4",
+          "title": "镇海陷落与自尽",
+          "text": "1841年英军进攻镇海，阵地失守，裕谦殉难。官修传记以忠节收束其人生，战场复原仍需区分他亲见、下属奏报和战后褒恤形成的叙事。",
+          "sources": [
+            "v162_qsg370",
+            "v162_qsg154"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_battle_report_filter"
+          ],
+          "people": [
+            "q162_muzhanga"
+          ]
+        },
+        {
+          "id": "v162_yuqian5",
+          "title": "忠烈记忆不能代替复盘",
+          "text": "纪念裕谦可以保存抵抗者选择，却不应把失败归咎少数怯将。制度需要诚实战报、稳定后勤和专业海军；若只奖励殉难，国家便难从失败中形成持续学习。裕谦与伊里布的分歧也不能只按勇怯解释。速战可能阻止敌军立足，却要求可靠兵力与补给；暂缓进攻可能争取整备，也可能让敌方巩固。两种方案都需要准确情报，而清廷常在报告尚未核实时更换主将。镇海失败后，忠节叙事保存了个人选择，却较少检讨跨省军队如何协同、炮台如何互援。把这些问题补回，才能从失败中获得制度知识。这些判断仍需随新档案继续校正。这些判断仍需随新档案继续校正。现有结论只到证据允许抵达的地方，不用空白补成确定故事。这些判断仍需随新档案继续校正。现有结论只到证据允许抵达的地方，不用空白补成确定故事。现有传记更容易保存殉难时刻，却较少记录普通士兵、民夫和撤离居民；这一空白必须明确留下。",
+          "sources": [
+            "v162_qsg370",
+            "v162_qsg154"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_loyalist_memory"
+          ],
+          "people": [
+            "q162_muzhanga"
+          ]
+        }
+      ],
+      "sources": [
+        "v162_qsg370",
+        "v162_qsg154"
+      ]
+    },
+    {
+      "person": "q162_chenhuacheng",
+      "title": "陈化成：吴淞口的老水师将领",
+      "dek": "他从缉捕海盗成长为提督，1842年的最后防御把个人经验与江南水师积弱同时暴露。",
+      "sections": [
+        {
+          "id": "v162_chenhuacheng1",
+          "title": "海盗战争塑造职业生涯",
+          "text": "陈化成早年随李长庚等在东南海域作战，熟悉追捕、沿岸情报和岛屿水道。对付海盗的经验有价值，却不等同于对抗工业化远征舰队。",
+          "sources": [
+            "v162_qsg372",
+            "v162_sh_wusong"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_wusong_battle"
+          ],
+          "people": [
+            "q162_qiying"
+          ]
+        },
+        {
+          "id": "v162_chenhuacheng2",
+          "title": "调任江南后重整训练",
+          "text": "他到吴淞修炮台、铸炮，并以闽籍亲军训练江南水师。地方军队编制、薪饷和训练长期分散，短期整顿只能改善局部，难以建立统一海防。",
+          "sources": [
+            "v162_qsg372",
+            "v162_sh_wusong"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_coastal_displacement"
+          ],
+          "people": [
+            "q162_qiying"
+          ]
+        },
+        {
+          "id": "v162_chenhuacheng3",
+          "title": "吴淞是长江门户",
+          "text": "英国舰队进入长江后，吴淞炮台关系上海和漕运线安全。陈化成配置火炮并亲驻西炮台，但岸炮射界、弹药和友军配合决定防御持续时间。",
+          "sources": [
+            "v162_qsg372",
+            "v162_sh_wusong"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_city_market_war"
+          ],
+          "people": [
+            "q162_qiying"
+          ]
+        },
+        {
+          "id": "v162_chenhuacheng4",
+          "title": "战死与阵地崩溃并存",
+          "text": "1842年战斗中陈化成阵亡，部分守军继续抵抗，也有部队溃退。忠烈与溃败可以同时发生，不能用一个道德判断覆盖不同单位、不同位置的行为。",
+          "sources": [
+            "v162_qsg372",
+            "v162_sh_wusong"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_loyalist_memory"
+          ],
+          "people": [
+            "q162_qiying"
+          ]
+        },
+        {
+          "id": "v162_chenhuacheng5",
+          "title": "遗址经过后世改建",
+          "text": "今天的吴淞炮台遗址包含后续迁建与修筑层次，不能全部视作1842年原状。遗址仍能帮助理解江海交汇、炮位和城市扩张如何改变战场记忆。吴淞战斗还应放进长江运输网络观察。英军选择进入长江，不只为攻城，也要威胁漕粮、关税与南京政治中心；守军面对的是移动舰队和沿江多个目标。陈化成长期缉盗形成近岸经验，但江南水师的薪饷、船炮与指挥并未因一名提督到任而整体更新。遗址参观若只寻找英雄站立的位置，会错过河口宽度、炮台间距和城市后勤这些决定战局的尺度。这些判断仍需随新档案继续校正。这些判断仍需随新档案继续校正。现有结论只到证据允许抵达的地方，不用空白补成确定故事。这些判断仍需随新档案继续校正。现有结论只到证据允许抵达的地方，不用空白补成确定故事。炮台遗址和褒恤名册能确认部分人员与空间，尚不足以还原每支部队在每个时刻的行动，叙述应克制。",
+          "sources": [
+            "v162_qsg372",
+            "v162_sh_wusong"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_site_memory"
+          ],
+          "people": [
+            "q162_qiying"
+          ]
+        }
+      ],
+      "sources": [
+        "v162_qsg372",
+        "v162_sh_wusong"
+      ]
+    },
+    {
+      "person": "q162_muzhanga",
+      "title": "穆彰阿：中枢信息如何塑造战和判断",
+      "dek": "他长期掌军机与用人，被后世归为主和误国者；更深的问题是奏报过滤、责任政治和皇帝决断。",
+      "sections": [
+        {
+          "id": "v162_muzhanga1",
+          "title": "考试与军机建立人事网络",
+          "text": "穆彰阿长期参与考试、任官和军机事务，门生故旧形成政治影响。网络不等于每项任命都属私党，但它会影响谁的奏报更快被相信、谁承担失败责任。",
+          "sources": [
+            "v162_qsg363",
+            "v162_qsg154"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_wartime_dismissals",
+            "v162_battle_report_filter"
+          ],
+          "people": [
+            "q_daoguang",
+            "q_linzexu",
+            "q_qishan"
+          ]
+        },
+        {
+          "id": "v162_muzhanga2",
+          "title": "皇帝看到的是加工后的战争",
+          "text": "沿海战报经督抚、军机处再到御前，胜负、敌舰数量和交涉条件可能被修饰。穆彰阿处于信息汇聚点，既能比较多省报告，也可能强化符合既有判断的材料。",
+          "sources": [
+            "v162_qsg363",
+            "v162_qsg154"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_dinghai_fall"
+          ],
+          "people": [
+            "q_daoguang",
+            "q_linzexu",
+            "q_qishan"
+          ]
+        },
+        {
+          "id": "v162_muzhanga3",
+          "title": "主和不是单一政策按钮",
+          "text": "战争中止需要了解英国目标、清军能力和条款后果。中枢常把‘抚’理解为恢复旧有贸易秩序，未充分认识平等外交、固定关税和领事制度将改变关系结构。",
+          "sources": [
+            "v162_qsg363",
+            "v162_qsg154"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_war_requisitions"
+          ],
+          "people": [
+            "q_daoguang",
+            "q_linzexu",
+            "q_qishan"
+          ]
+        },
+        {
+          "id": "v162_muzhanga4",
+          "title": "用处分维持决策权威",
+          "text": "林则徐、邓廷桢、琦善等先后获罪，显示政策转向常通过惩处前任来表达。穆彰阿影响人事，但最终诏令由道光帝作出；把全部责任推给一名大学士同样会替皇权和制度卸责。",
+          "sources": [
+            "v162_qsg363",
+            "v162_qsg154"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_memorial_numbers"
+          ],
+          "people": [
+            "q_daoguang",
+            "q_linzexu",
+            "q_qishan"
+          ]
+        },
+        {
+          "id": "v162_muzhanga5",
+          "title": "后世骂名提示结构性问题",
+          "text": "王鼎等人的抗议使穆彰阿成为误国象征。评价其行为应保留道德责任，同时追问为何军机制度无法稳定吸收坏消息、为何议和后仍缺少对条约执行的长期评估。穆彰阿研究最容易落入替罪叙事。档案可以检验他推荐何人、怎样票拟、是否压制异议，但许多御前口头讨论并未完整保存；皇帝朱批与实际命令仍是最终权力证据。所谓主和内部也有差别：有人希望恢复广州旧制，有人接受扩大通商，有人只求暂缓战斗。把不同方案混成一个‘投降派’，会遮住中枢为何始终无法准确理解条约型外交，也无法解释战后制度为何继续运转。这些判断仍需随新档案继续校正。这些判断仍需随新档案继续校正。现有结论只到证据允许抵达的地方，不用空白补成确定故事。",
+          "sources": [
+            "v162_qsg363",
+            "v162_qsg154"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_translation_gap"
+          ],
+          "people": [
+            "q_daoguang",
+            "q_linzexu",
+            "q_qishan"
+          ]
+        }
+      ],
+      "sources": [
+        "v162_qsg363",
+        "v162_qsg154"
+      ]
+    },
+    {
+      "person": "q162_qiying",
+      "title": "耆英：从战时议约到条约秩序执行",
+      "dek": "他获得便宜行事权签订南京条约，随后处理五口通商；议约不是战争结束后的附注，而是新制度的起点。",
+      "sections": [
+        {
+          "id": "v162_qiying1",
+          "title": "宗室身份与临时授权",
+          "text": "战局逼近南京时，耆英奉命与伊里布等议和。便宜行事权让前线能迅速签约，也说明中央来不及逐条控制；授权范围和信息时差影响最终条款。",
+          "sources": [
+            "v162_qsg370",
+            "v162_qsg154"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_nanjing_treaty",
+            "v162_five_port_reallocation",
+            "v162_site_memory"
+          ],
+          "people": [
+            "q_daoguang"
+          ]
+        },
+        {
+          "id": "v162_qiying2",
+          "title": "长江军事压力决定谈判空间",
+          "text": "定海、镇海、吴淞、镇江相继失守，英舰进入南京江面并威胁漕粮运输。谈判发生在明显武力不对称下，不能描述成双方从容选择的普通通商协定。",
+          "sources": [
+            "v162_qsg370",
+            "v162_qsg154"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_treaty_implementation",
+            "v162_city_market_war"
+          ],
+          "people": [
+            "q_daoguang"
+          ]
+        },
+        {
+          "id": "v162_qiying3",
+          "title": "条约条款重组沿海制度",
+          "text": "南京条约涉及香港、赔款、五口通商和废除行商专管。文本很短，却需要海关、地方官、商人和领事在不同城市解释执行，冲突从战场转入制度细节。",
+          "sources": [
+            "v162_qsg370",
+            "v162_qsg154"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_wusong_battle",
+            "v162_treaty_port_labor"
+          ],
+          "people": [
+            "q_daoguang"
+          ]
+        },
+        {
+          "id": "v162_qiying4",
+          "title": "旧有‘抚夷’经验不足以应对",
+          "text": "耆英试图以礼物、私人书信和关系维护降低摩擦，这延续清代边疆与贡使交涉经验。面对常驻领事和成文条约，这套方式有时缓冲冲突，也容易把制度问题个人化。",
+          "sources": [
+            "v162_qsg370",
+            "v162_qsg154"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_coastal_trade_interruptions",
+            "v162_translation_gap"
+          ],
+          "people": [
+            "q_daoguang"
+          ]
+        },
+        {
+          "id": "v162_qiying5",
+          "title": "签约者不是唯一原因",
+          "text": "耆英对条款和后续执行负有责任，但条约形成于战争失败、皇帝授权与中枢判断之下。只把他写成投降者，会遮住国家为何缺乏可接受的外交语言、海防能力和谈判资料。讨论耆英时还要区分三个层次：南京条约的明文、随后通商章程的细则，以及地方官与领事的日常解释。领事裁判、关税和进城等问题并非都在1842年一次写定。私人书信和礼物可以降低一次冲突，却不能代替稳定规则；相反，它们有时令双方误判个人承诺就是国家义务。把签约现场与多年执行并列，才能判断耆英的权宜方式为何一度有效，又为何不断积累新矛盾。这些判断仍需随新档案继续校正。这些判断仍需随新档案继续校正。现有结论只到证据允许抵达的地方，不用空白补成确定故事。",
+          "sources": [
+            "v162_qsg370",
+            "v162_qsg154",
+            "v162_nanjing_treaty"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v162_indemnity_burden",
+            "v162_treaty_text_duality"
+          ],
+          "people": [
+            "q_daoguang"
+          ]
+        }
+      ],
+      "sources": [
+        "v162_qsg370",
+        "v162_qsg154",
+        "v162_nanjing_treaty"
+      ]
     }
   ],
   "portraits": [
@@ -222743,6 +225191,374 @@
       "sources": [
         "v161_qsg342"
       ]
+    },
+    {
+      "from": "q_daoguang",
+      "to": "q162_taoshu",
+      "role": "道光朝关键人物 · 陶澍",
+      "inverse": "道光朝君臣关系",
+      "period": "1820—1850",
+      "note": "从在位背景进入人物长读与具体事件。",
+      "sources": [
+        "v162_qsg122",
+        "v162_qsg123"
+      ]
+    },
+    {
+      "from": "q162_taoshu",
+      "to": "q_daoguang",
+      "role": "在道光朝参与政策、战争或知识生产",
+      "inverse": "道光朝关键人物",
+      "period": "1820—1850",
+      "note": "人物作用须结合制度权限与史料边界理解。",
+      "sources": [
+        "v162_qsg122",
+        "v162_qsg123"
+      ]
+    },
+    {
+      "from": "q_daoguang",
+      "to": "q162_yinghe",
+      "role": "道光朝关键人物 · 英和",
+      "inverse": "道光朝君臣关系",
+      "period": "1820—1850",
+      "note": "从在位背景进入人物长读与具体事件。",
+      "sources": [
+        "v162_qsg363",
+        "v162_qsg122"
+      ]
+    },
+    {
+      "from": "q162_yinghe",
+      "to": "q_daoguang",
+      "role": "在道光朝参与政策、战争或知识生产",
+      "inverse": "道光朝关键人物",
+      "period": "1820—1850",
+      "note": "人物作用须结合制度权限与史料边界理解。",
+      "sources": [
+        "v162_qsg363",
+        "v162_qsg122"
+      ]
+    },
+    {
+      "from": "q_daoguang",
+      "to": "q162_hechangling",
+      "role": "道光朝关键人物 · 贺长龄",
+      "inverse": "道光朝君臣关系",
+      "period": "1820—1850",
+      "note": "从在位背景进入人物长读与具体事件。",
+      "sources": [
+        "v162_qsg122",
+        "v162_dpm_grain_archive"
+      ]
+    },
+    {
+      "from": "q162_hechangling",
+      "to": "q_daoguang",
+      "role": "在道光朝参与政策、战争或知识生产",
+      "inverse": "道光朝关键人物",
+      "period": "1820—1850",
+      "note": "人物作用须结合制度权限与史料边界理解。",
+      "sources": [
+        "v162_qsg122",
+        "v162_dpm_grain_archive"
+      ]
+    },
+    {
+      "from": "q_daoguang",
+      "to": "q162_baoshichen",
+      "role": "道光朝关键人物 · 包世臣",
+      "inverse": "道光朝君臣关系",
+      "period": "1820—1850",
+      "note": "从在位背景进入人物长读与具体事件。",
+      "sources": [
+        "v162_qsg486",
+        "v162_dpm_jianghai"
+      ]
+    },
+    {
+      "from": "q162_baoshichen",
+      "to": "q_daoguang",
+      "role": "在道光朝参与政策、战争或知识生产",
+      "inverse": "道光朝关键人物",
+      "period": "1820—1850",
+      "note": "人物作用须结合制度权限与史料边界理解。",
+      "sources": [
+        "v162_qsg486",
+        "v162_dpm_jianghai"
+      ]
+    },
+    {
+      "from": "q_daoguang",
+      "to": "q162_zhangger",
+      "role": "道光朝关键人物 · 张格尔",
+      "inverse": "道光朝君臣关系",
+      "period": "1820—1850",
+      "note": "从在位背景进入人物长读与具体事件。",
+      "sources": [
+        "v162_qsg367"
+      ]
+    },
+    {
+      "from": "q162_zhangger",
+      "to": "q_daoguang",
+      "role": "在道光朝参与政策、战争或知识生产",
+      "inverse": "道光朝关键人物",
+      "period": "1820—1850",
+      "note": "人物作用须结合制度权限与史料边界理解。",
+      "sources": [
+        "v162_qsg367"
+      ]
+    },
+    {
+      "from": "q_daoguang",
+      "to": "q162_huangjuezi",
+      "role": "道光朝关键人物 · 黄爵滋",
+      "inverse": "道光朝君臣关系",
+      "period": "1820—1850",
+      "note": "从在位背景进入人物长读与具体事件。",
+      "sources": [
+        "v162_qsg378",
+        "v162_dpm_silver"
+      ]
+    },
+    {
+      "from": "q162_huangjuezi",
+      "to": "q_daoguang",
+      "role": "在道光朝参与政策、战争或知识生产",
+      "inverse": "道光朝关键人物",
+      "period": "1820—1850",
+      "note": "人物作用须结合制度权限与史料边界理解。",
+      "sources": [
+        "v162_qsg378",
+        "v162_dpm_silver"
+      ]
+    },
+    {
+      "from": "q_daoguang",
+      "to": "q162_dengtingzhen",
+      "role": "道光朝关键人物 · 邓廷桢",
+      "inverse": "道光朝君臣关系",
+      "period": "1820—1850",
+      "note": "从在位背景进入人物长读与具体事件。",
+      "sources": [
+        "v162_qsg369",
+        "v162_qsl329"
+      ]
+    },
+    {
+      "from": "q162_dengtingzhen",
+      "to": "q_daoguang",
+      "role": "在道光朝参与政策、战争或知识生产",
+      "inverse": "道光朝关键人物",
+      "period": "1820—1850",
+      "note": "人物作用须结合制度权限与史料边界理解。",
+      "sources": [
+        "v162_qsg369",
+        "v162_qsl329"
+      ]
+    },
+    {
+      "from": "q_daoguang",
+      "to": "q162_guantianpei",
+      "role": "道光朝关键人物 · 关天培",
+      "inverse": "道光朝君臣关系",
+      "period": "1820—1850",
+      "note": "从在位背景进入人物长读与具体事件。",
+      "sources": [
+        "v162_qsg372",
+        "v162_chn_humen"
+      ]
+    },
+    {
+      "from": "q162_guantianpei",
+      "to": "q_daoguang",
+      "role": "在道光朝参与政策、战争或知识生产",
+      "inverse": "道光朝关键人物",
+      "period": "1820—1850",
+      "note": "人物作用须结合制度权限与史料边界理解。",
+      "sources": [
+        "v162_qsg372",
+        "v162_chn_humen"
+      ]
+    },
+    {
+      "from": "q_daoguang",
+      "to": "q162_yuqian",
+      "role": "道光朝关键人物 · 裕谦",
+      "inverse": "道光朝君臣关系",
+      "period": "1820—1850",
+      "note": "从在位背景进入人物长读与具体事件。",
+      "sources": [
+        "v162_qsg370",
+        "v162_qsg154"
+      ]
+    },
+    {
+      "from": "q162_yuqian",
+      "to": "q_daoguang",
+      "role": "在道光朝参与政策、战争或知识生产",
+      "inverse": "道光朝关键人物",
+      "period": "1820—1850",
+      "note": "人物作用须结合制度权限与史料边界理解。",
+      "sources": [
+        "v162_qsg370",
+        "v162_qsg154"
+      ]
+    },
+    {
+      "from": "q_daoguang",
+      "to": "q162_chenhuacheng",
+      "role": "道光朝关键人物 · 陈化成",
+      "inverse": "道光朝君臣关系",
+      "period": "1820—1850",
+      "note": "从在位背景进入人物长读与具体事件。",
+      "sources": [
+        "v162_qsg372",
+        "v162_sh_wusong"
+      ]
+    },
+    {
+      "from": "q162_chenhuacheng",
+      "to": "q_daoguang",
+      "role": "在道光朝参与政策、战争或知识生产",
+      "inverse": "道光朝关键人物",
+      "period": "1820—1850",
+      "note": "人物作用须结合制度权限与史料边界理解。",
+      "sources": [
+        "v162_qsg372",
+        "v162_sh_wusong"
+      ]
+    },
+    {
+      "from": "q_daoguang",
+      "to": "q162_muzhanga",
+      "role": "道光朝关键人物 · 穆彰阿",
+      "inverse": "道光朝君臣关系",
+      "period": "1820—1850",
+      "note": "从在位背景进入人物长读与具体事件。",
+      "sources": [
+        "v162_qsg363",
+        "v162_qsg154"
+      ]
+    },
+    {
+      "from": "q162_muzhanga",
+      "to": "q_daoguang",
+      "role": "在道光朝参与政策、战争或知识生产",
+      "inverse": "道光朝关键人物",
+      "period": "1820—1850",
+      "note": "人物作用须结合制度权限与史料边界理解。",
+      "sources": [
+        "v162_qsg363",
+        "v162_qsg154"
+      ]
+    },
+    {
+      "from": "q_daoguang",
+      "to": "q162_qiying",
+      "role": "道光朝关键人物 · 耆英",
+      "inverse": "道光朝君臣关系",
+      "period": "1820—1850",
+      "note": "从在位背景进入人物长读与具体事件。",
+      "sources": [
+        "v162_qsg370",
+        "v162_qsg154"
+      ]
+    },
+    {
+      "from": "q162_qiying",
+      "to": "q_daoguang",
+      "role": "在道光朝参与政策、战争或知识生产",
+      "inverse": "道光朝关键人物",
+      "period": "1820—1850",
+      "note": "人物作用须结合制度权限与史料边界理解。",
+      "sources": [
+        "v162_qsg370",
+        "v162_qsg154"
+      ]
+    },
+    {
+      "from": "q162_taoshu",
+      "to": "q162_yinghe",
+      "role": "海运方案的地方执行者与中枢倡议者",
+      "inverse": "同时代关联",
+      "period": "道光前中期",
+      "note": "从人物长读进入协作与分歧。",
+      "sources": [
+        "v162_qsg122",
+        "v162_qsg363"
+      ]
+    },
+    {
+      "from": "q162_taoshu",
+      "to": "q162_hechangling",
+      "role": "江苏海运与地方财政协作者",
+      "inverse": "同时代关联",
+      "period": "道光前中期",
+      "note": "从人物长读进入协作与分歧。",
+      "sources": [
+        "v162_qsg122",
+        "v162_dpm_jianghai"
+      ]
+    },
+    {
+      "from": "q162_hechangling",
+      "to": "q_weiyuan",
+      "role": "《皇朝经世文编》的主持者与协编者",
+      "inverse": "同时代关联",
+      "period": "道光前中期",
+      "note": "从人物长读进入协作与分歧。",
+      "sources": [
+        "v162_qsg486"
+      ]
+    },
+    {
+      "from": "q162_dengtingzhen",
+      "to": "q_linzexu",
+      "role": "广东禁烟协作者",
+      "inverse": "同时代关联",
+      "period": "道光前中期",
+      "note": "从人物长读进入协作与分歧。",
+      "sources": [
+        "v162_qsg369"
+      ]
+    },
+    {
+      "from": "q162_dengtingzhen",
+      "to": "q162_guantianpei",
+      "role": "总督与水师提督",
+      "inverse": "同时代关联",
+      "period": "道光前中期",
+      "note": "从人物长读进入协作与分歧。",
+      "sources": [
+        "v162_qsg369",
+        "v162_qsg372"
+      ]
+    },
+    {
+      "from": "q162_muzhanga",
+      "to": "q162_qiying",
+      "role": "中枢决策与前线议约关系",
+      "inverse": "同时代关联",
+      "period": "道光前中期",
+      "note": "从人物长读进入协作与分歧。",
+      "sources": [
+        "v162_qsg154",
+        "v162_qsg363"
+      ]
+    },
+    {
+      "from": "q162_yuqian",
+      "to": "q162_chenhuacheng",
+      "role": "浙江与江南沿海守御者",
+      "inverse": "同时代关联",
+      "period": "道光前中期",
+      "note": "从人物长读进入协作与分歧。",
+      "sources": [
+        "v162_qsg370",
+        "v162_qsg372"
+      ]
     }
   ],
   "dynasties": [
@@ -227550,7 +230366,19 @@
         "q161_nayancheng",
         "q161_caozhenyong",
         "q161_tuojin",
-        "q161_fujun"
+        "q161_fujun",
+        "q162_taoshu",
+        "q162_yinghe",
+        "q162_hechangling",
+        "q162_baoshichen",
+        "q162_zhangger",
+        "q162_huangjuezi",
+        "q162_dengtingzhen",
+        "q162_guantianpei",
+        "q162_yuqian",
+        "q162_chenhuacheng",
+        "q162_muzhanga",
+        "q162_qiying"
       ],
       "events": [
         "qev_opium_war_1840",
@@ -227564,7 +230392,52 @@
         "v66q_xingke_records",
         "v161_succession_1820",
         "v161_edict_error",
-        "v161_military_continuity"
+        "v161_military_continuity",
+        "v162_zhangger_governance",
+        "v162_sea_transport_authorization",
+        "v162_opium_relaxation_debate",
+        "v162_huang_memorial",
+        "v162_lin_commission",
+        "v162_fujian_investigation",
+        "v162_wartime_dismissals",
+        "v162_nanjing_treaty",
+        "v162_treaty_implementation",
+        "v162_four_cities_fall",
+        "v162_western_logistics",
+        "v162_four_cities_recovered",
+        "v162_zhangger_captured",
+        "v162_humen_fortification",
+        "v162_dinghai_fall",
+        "v162_humen_fall",
+        "v162_zhenhai_fall",
+        "v162_wusong_battle",
+        "v162_sea_grain_transport",
+        "v162_river_transport_costs",
+        "v162_ticket_salt",
+        "v162_silver_copper_ratio",
+        "v162_opium_credit_network",
+        "v162_coastal_trade_interruptions",
+        "v162_war_requisitions",
+        "v162_indemnity_burden",
+        "v162_five_port_reallocation",
+        "v162_taoshu_relief",
+        "v162_boatmen_transition",
+        "v162_sailor_risk",
+        "v162_opium_households",
+        "v162_enforcement_abuse",
+        "v162_coastal_displacement",
+        "v162_unnamed_defenders",
+        "v162_city_market_war",
+        "v162_treaty_port_labor",
+        "v162_jingshi_wenbian",
+        "v162_jianghai_map",
+        "v162_memorial_numbers",
+        "v162_coastal_mapping",
+        "v162_translation_gap",
+        "v162_battle_report_filter",
+        "v162_loyalist_memory",
+        "v162_treaty_text_duality",
+        "v162_site_memory"
       ],
       "sources": [
         "v5qn_qing_annals",
@@ -227587,7 +230460,29 @@
         "v161_qsg363",
         "v161_qsg367",
         "v161_dpm_succession",
-        "v161_dpm_secret_box"
+        "v161_dpm_secret_box",
+        "v162_qsg122",
+        "v162_qsg123",
+        "v162_qsg154",
+        "v162_qsg363",
+        "v162_qsg367",
+        "v162_qsg369",
+        "v162_qsg370",
+        "v162_qsg372",
+        "v162_qsg378",
+        "v162_qsg486",
+        "v162_dpm_daoguang",
+        "v162_dpm_jianghai",
+        "v162_dpm_grain_archive",
+        "v162_dpm_silver",
+        "v162_chn_humen",
+        "v162_dpm_nanjing",
+        "v162_nanjing_treaty",
+        "v162_qsl297",
+        "v162_qsl329",
+        "v162_ruc_jianghai",
+        "v162_sh_wusong",
+        "v162_jinghaisi"
       ],
       "note": ""
     },

@@ -4814,4 +4814,26 @@ final class MingJiUITests: XCTestCase {
         shot("v161-amherst-dual-archives", embassy)
     }
 
+    @MainActor func testV162EarlyDaoguangConnectsSeaTransportAndLaborCosts() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["--uitesting", "--ui-dynasty", "qing"]
+        app.launch()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        app.buttons.matching(NSPredicate(format: "identifier == %@", "globalSearch")).firstMatch.tap()
+        let search = app.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("陶澍")
+        let result = app.buttons["search_person_q162_taoshu"]
+        XCTAssertTrue(result.waitForExistence(timeout: 8)); Thread.sleep(forTimeInterval: 1); result.tap()
+        if !app.buttons["articleEntry"].waitForExistence(timeout: 5) { app.buttons["search_person_q162_taoshu"].tap() }
+        XCTAssertTrue(app.buttons["articleEntry"].waitForExistence(timeout: 5)); app.buttons["articleEntry"].tap()
+        XCTAssertTrue(app.buttons["articleContents"].waitForExistence(timeout: 5)); app.buttons["articleContents"].tap()
+        let chapter = app.buttons["海运是被河道逼出的试验"]
+        XCTAssertTrue(chapter.exists); chapter.tap()
+        XCTAssertTrue(app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "把风险转给海员与商人")).firstMatch.waitForExistence(timeout: 5))
+        openChapterSources("v162_taoshu2", in: app)
+        XCTAssertTrue(app.descendants(matching: .any)["source_v162_qsg122"].waitForExistence(timeout: 3))
+        app.swipeUp()
+        shot("v162-taoshu-sea-transport-labor", app)
+    }
+
 }

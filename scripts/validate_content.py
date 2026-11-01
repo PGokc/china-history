@@ -3228,3 +3228,29 @@ if d['version'] >= 135:
  assert all(item['sectionID'].startswith('q-jiaqing-') for item in narration['entries'] if item['articleID']=='q_jiaqing')
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将',corpus,re.I)
  print('V135 PASS: twelve late-Jiaqing readings and forty-five events connect the 1803 gate attack, 1813 palace and Huaxian campaigns, river and banner livelihoods, opium enforcement, the Amherst embassy and the 1820 succession with explicit archival and material-evidence limits')
+
+if d['version'] >= 136:
+ v162_people=['q162_taoshu','q162_yinghe','q162_hechangling','q162_baoshichen','q162_zhangger','q162_huangjuezi','q162_dengtingzhen','q162_guantianpei','q162_yuqian','q162_chenhuacheng','q162_muzhanga','q162_qiying']
+ v162_events={item['id'] for item in d['events'] if item['id'].startswith('v162_')}
+ v162_sources={item['id'] for item in d['sources'] if item['id'].startswith('v162_')}
+ v162_objects={item['id'] for item in d['objects'] if item['id'].startswith('v162_')}
+ object_map={item['id']:item for item in d['objects']}
+ assert len(v162_people)==12 and len(v162_events)==45 and len(v162_sources)==22 and len(v162_objects)==5
+ assert {events[e]['category'] for e in v162_events}=={'政治','军事','经济','社会','文化'}
+ for pid in v162_people:
+  ss=articles[pid]['sections']; chars=sum(len(re.findall(r'[\u4e00-\u9fff]',s['text'])) for s in ss)
+  assert len(ss)==5 and chars>=500 and all(s['sources'] and s['events'] for s in ss),(pid,chars)
+  assert set(articles[pid]['sources'])=={source for s in ss for source in s['sources']}
+ assert all(set(events[e]['people'])<=people.keys() and set(events[e]['sources'])<=sources.keys() for e in v162_events)
+ assert all(object_map[o]['dynasties']==['qing'] and object_map[o]['people'] and object_map[o]['sources'] for o in v162_objects)
+ corpus=json.dumps([articles[p] for p in v162_people]+[events[e] for e in v162_events]+[object_map[o] for o in v162_objects],ensure_ascii=False)
+ for term in ['沙船','票盐','张格尔','银贵钱贱','趸船','快蟹','虎门','镇海','吴淞','五口通商','《皇朝经世文编》','《江海全图》']:
+  assert term in corpus,('missing early-Daoguang evidence term',term)
+ for boundary in ['不能把所有当地居民视为同一阵营','不能当成全国统一统计','不能把功劳归给单一首倡者','不能把所有吸食者写成同一种道德形象','现存炮台包含同治以后迁建层次']:
+  assert boundary in corpus,('missing early-Daoguang evidence boundary',boundary)
+ ctx=next(item for item in d['reignContexts'] if item['person']=='q_daoguang')
+ assert set(v162_people)<=set(ctx['people']) and v162_events<=set(ctx['events']) and v162_sources<=set(ctx['sources'])
+ assert {('q_daoguang',p) for p in v162_people}<={(a['from'],a['to']) for a in d['associations']}
+ assert all(item['sectionID'].startswith('q-daoguang-') for item in narration['entries'] if item['articleID']=='q_daoguang')
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将',corpus,re.I)
+ print('V136 PASS: twelve early-Daoguang readings and forty-five events connect sea transport, ticket salt, Xinjiang war, silver pressure, opium enforcement, coastal defense, ordinary labor and treaty implementation with explicit evidence limits')
