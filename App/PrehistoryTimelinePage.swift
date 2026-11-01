@@ -19,9 +19,9 @@ struct PrehistoryPage: View {
     private var next: Double? { positions.first { $0 < age - 1 } }
     private var guideGroups: [(title: String, note: String, ids: [String])] {
         [
-            ("远古人类", "从最早活动线索到现代人扩散", ["shangchen", "nihewan", "yuanmou", "lantian", "zhoukoudian", "dingcun", "jinniushan", "tianyuan", "shandingdong"]),
-            ("定居与农业", "陶器、稻粟栽培与村落生活", ["xianrendong", "shangshan", "jiahu", "hemudu", "banpo", "chengtoushan"]),
-            ("复杂聚落", "区域中心、城址与早期国家线索", ["dawenkou", "niuheliang", "liangzhu", "majiayao", "taosi", "shimao"]),
+            ("远古人类", "从最早活动线索到现代人扩散", ["shangchen", "nihewan", "yuanmou", "lantian", "yunxian", "zhoukoudian", "dingcun", "jinniushan", "baishiya", "tianyuan", "shuidonggou", "shandingdong"]),
+            ("定居与农业", "陶器、沿海生计、稻粟栽培与村落生活", ["xianrendong", "nanzhuangtou", "shangshan", "jiahu", "jingtoushan", "peiligang", "hemudu", "banpo", "chengtoushan"]),
+            ("复杂聚落", "区域中心、公共工程、专业生产与早期国家线索", ["dawenkou", "shijiahe", "lingjiatan", "niuheliang", "liangzhu", "majiayao", "taosi", "shimao"]),
         ]
     }
     private func open(_ id: String) { selectedSiteID = id; showingSite = true }
@@ -101,7 +101,7 @@ struct PrehistoryPage: View {
                             Text("遗址导览")
                                 .font(.system(.title2, design: .serif).weight(.medium)).foregroundStyle(Theme.ink)
                                 .accessibilityIdentifier("prehistorySiteGuide")
-                            Text("21处遗址按历史问题分成三段；地图负责比较时间与位置，列表负责进入详细阅读。")
+                            Text("29处遗址按历史问题分成三段；地图负责比较时间与位置，列表负责进入详细阅读。")
                                 .font(.subheadline).foregroundStyle(Theme.muted).lineSpacing(4)
                         }
                         ForEach(Array(guideGroups.enumerated()), id: \.offset) { _, group in

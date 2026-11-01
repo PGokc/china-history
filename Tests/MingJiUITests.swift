@@ -5097,4 +5097,44 @@ final class MingJiUITests: XCTestCase {
         shot("v171-yuxian-source-ending-above-bars", app)
     }
 
+    @MainActor func testV172PrehistoryMapAddsEvidenceBoundedMissingSites() throws {
+        let app = launch(enterFamily: false)
+        XCTAssertTrue(app.buttons["dynasty_prehistory"].waitForExistence(timeout: 5))
+        app.buttons["dynasty_prehistory"].tap()
+        XCTAssertTrue(app.descendants(matching: .any)["prehistoryPage"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.descendants(matching: .any)["prehistoryTimeMap"].exists)
+        XCTAssertTrue(app.sliders["historyTimeSlider"].exists)
+        shot("v172-prehistory-map-first", app)
+
+        let countNote = app.staticTexts["29处遗址按历史问题分成三段；地图负责比较时间与位置，列表负责进入详细阅读。"]
+        reach(countNote, in: app, attempts: 16)
+        XCTAssertTrue(countNote.exists)
+        let baishiya = app.buttons["prehistoricGuide_baishiya"]
+        reach(baishiya, in: app, attempts: 16)
+        XCTAssertTrue(baishiya.isHittable)
+        shot("v172-prehistory-expanded-guide", app)
+        baishiya.tap()
+
+        XCTAssertTrue(app.descendants(matching: .any)["prehistorySiteDetail_baishiya"].waitForExistence(timeout: 5))
+        for title in ["一件下颌骨怎样获得身份", "从一件化石回到地层", "肋骨补上晚期证据", "高海拔生存不是一句适应", "丹尼索瓦贡献不等于直系族谱"] {
+            XCTAssertTrue(app.staticTexts[title].exists, title)
+        }
+        shot("v172-baishiya-reading-opening", app)
+        let finalSection = app.staticTexts["丹尼索瓦贡献不等于直系族谱"]
+        reach(finalSection, in: app, attempts: 20)
+        XCTAssertTrue(finalSection.isHittable)
+        let evidence = app.staticTexts["证据如何解读"]
+        reach(evidence, in: app, attempts: 8)
+        XCTAssertTrue(evidence.isHittable)
+        reach(app.buttons["资料与出处"], in: app, attempts: 8)
+        XCTAssertTrue(app.buttons["资料与出处"].isHittable)
+        app.buttons["资料与出处"].tap()
+        let firstSource = app.buttons["source_v172_itpcas_baishiya2020"]
+        XCTAssertTrue(firstSource.waitForExistence(timeout: 5))
+        XCTAssertTrue(app.buttons["source_v172_itpcas_baishiya2024"].exists)
+        reach(firstSource, in: app, attempts: 6)
+        XCTAssertTrue(firstSource.isHittable)
+        shot("v172-baishiya-evidence-and-sources", app)
+    }
+
 }

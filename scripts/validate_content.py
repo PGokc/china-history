@@ -1386,7 +1386,7 @@ if d['version'] >= 56:
 if d['version'] >= 57:
  sites={site['id']:site for site in d['prehistorySites']}
  required={'shangchen','nihewan','yuanmou','lantian','zhoukoudian','dingcun','jinniushan','tianyuan','shandingdong','xianrendong','shangshan','jiahu','hemudu','banpo','chengtoushan','dawenkou','niuheliang','majiayao','liangzhu','taosi','shimao'}
- assert required==sites.keys() and len(sites)==21
+ assert required<=sites.keys() and len(sites)==(29 if d['version']>=146 else 21)
  assert sites['zhoukoudian']['name']=='北京人遗址（周口店第一地点）'
  assert {'北京人','周口店北京人','北京猿人'}<=set(sites['zhoukoudian']['aliases'])
  for site in sites.values():
@@ -1404,7 +1404,7 @@ if d['version'] >= 57:
  corpus=json.dumps([profile]+list(sites.values()),ensure_ascii=False)
  assert all(term in corpus for term in ['北京人遗址（周口店第一地点）','战前发现的多件重要化石原件在转移中失踪','制造者种属不能由石器直接确定','不能直接称为成熟文字','城市定义'])
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback',corpus,re.I)
- print('V57 PASS: the prehistory overview and 21 layered site readings expose landmark discoveries, methods and evidence boundaries')
+ print(f"V57 PASS: the prehistory overview and {len(sites)} layered site readings expose landmark discoveries, methods and evidence boundaries")
 
 if d['version'] >= 58:
  assert set(people)==articles.keys(),('people without layered readings',set(people)-articles.keys())
@@ -3590,3 +3590,31 @@ if d['version'] >= 145:
  assert {('q171_yikuang','q_yuanshikai'),('q171_liukunyi','q_zhangzhidong'),('q171_duanfang','q171_zaize'),('q171_wutingfang','q171_tangshaoyi'),('q171_liyuanhong','q_huangxing'),('q171_songjiaoren','q171_liyuanhong'),('q171_zhangbaixi','q170_zhangyuanji'),('q171_yuxian','q170_gangyi')}<=pairset
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将|产品采用',corpus,re.I)
  print('V145 PASS: ten late-Qing readings and forty balanced events connect Boxer violence, occupation, treaty burdens, New Policies, education, constitutional preparation, railway conflict, Wuchang and negotiated abdication with separate court, local and civilian perspectives')
+
+if d['version'] >= 146:
+ v172_site_ids={'yunxian','baishiya','shuidonggou','nanzhuangtou','jingtoushan','peiligang','lingjiatan','shijiahe'}
+ v172_source_ids={item['id'] for item in d['sources'] if item['id'].startswith('v172_')}
+ site_map={item['id']:item for item in d['prehistorySites']}
+ assert len(d['prehistorySites'])==29 and v172_site_ids<=site_map.keys()
+ assert len(v172_source_ids)==13 and v172_source_ids<=sources.keys()
+ for site_id in v172_site_ids:
+  site=site_map[site_id]
+  sections=site['sections']
+  chars=sum(len(re.findall(r'[\u4e00-\u9fff]',section['text'])) for section in sections)
+  assert len(sections)==5 and chars>=600,(site_id,chars)
+  assert len(site['sources'])>=3 and set(site['sources'])<=sources.keys()
+  assert len(site['aliases'])>=2 and site['evidenceNote']
+  assert site['dating']['older']>=site['dating']['younger'] and set(site['dating']['sources'])<=sources.keys()
+  assert all(section['id'].startswith('v172_') and section['title'] and section['text'] for section in sections)
+ corpus=json.dumps([site_map[site_id] for site_id in v172_site_ids]+[sources[source_id] for source_id in v172_source_ids],ensure_ascii=False)
+ for term in ['数字重建','沉积物DNA','石叶','磨盘磨棒','贝丘','旧石器晚期连续堆积','大型公共建筑','专业制陶']:
+  assert term in corpus,('missing prehistory evidence term',term)
+ for boundary in ['不能把一项新分类直接套在全部个体上','不能假定属于同一个个体或连续不间断居住','不能单凭技术风格认定制造者来自某一地区','磨盘磨棒也不能单独证明已经种植谷物','不等于居民只依靠海产或已经从事远洋航行','空间重合，不证明居民连续不间断','不等于已经知道其国名、王名或疆界','不代表已知王朝首都']:
+  assert boundary in corpus,('missing prehistory evidence boundary',boundary)
+ profile=next(item for item in d['dynastyProfiles'] if item['id']=='prehistory')
+ assert v172_source_ids&set(profile['sources']) and all(term in profile['overview'] for term in ['郧县','白石崖','水洞沟','南庄头','井头山','裴李岗','凌家滩','石家河'])
+ guide=(R/'App/PrehistoryTimelinePage.swift').read_text()
+ assert '29处遗址按历史问题分成三段' in guide
+ assert all(f'"{site_id}"' in guide for site_id in v172_site_ids)
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将|产品采用',corpus,re.I)
+ print('V146 PASS: eight five-layer prehistory readings connect million-year human fossils, Denisovan evidence, lithic exchange, coastal adaptation, early food production and regional centers without collapsing sites into a single ancestry or dynasty')
