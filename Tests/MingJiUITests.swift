@@ -5795,4 +5795,51 @@ final class MingJiUITests: XCTestCase {
         shot("v190-feng-yi-primary-source-and-safe-ending", reading)
     }
 
+    @MainActor func testV191MingZhangCourtCaseAndWesternRegionsEvidence() throws {
+        let reading = XCUIApplication()
+        reading.launchArguments = ["--uitesting", "--ui-dynasty", "han"]
+        reading.launch()
+        XCTAssertTrue(reading.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        XCTAssertFalse(reading.staticTexts["从这里继续"].exists)
+        reading.buttons["globalSearch"].tap()
+        let search = reading.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("刘英")
+        let chuKing = reading.buttons["search_person_han_chuwang_ying"]
+        XCTAssertTrue(chuKing.waitForExistence(timeout: 5)); chuKing.tap()
+        XCTAssertTrue(reading.buttons["articleEntry"].waitForExistence(timeout: 5))
+        openArticle(in: reading)
+        reading.buttons["articleContents"].tap()
+        let caseAfterDeath = reading.buttons["宗王死后，审讯为何没有停止"]
+        XCTAssertTrue(caseAfterDeath.exists); caseAfterDeath.tap()
+        let caseBoundary = reading.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不能当作已经清点无误的名单")).firstMatch
+        XCTAssertTrue(caseBoundary.waitForExistence(timeout: 5))
+        shot("v191-chu-king-case-expansion-and-evidence", reading)
+        openChapterSources("han_chuwang_ying_4", in: reading)
+        let source = reading.descendants(matching: .any)["source_v191_houhanshu42"]
+        reach(source, in: reading, attempts: 8)
+        XCTAssertTrue(source.exists)
+        XCTAssertLessThanOrEqual(source.frame.maxY, reading.tabBars.firstMatch.frame.minY - 16)
+        shot("v191-chu-king-primary-source-and-safe-ending", reading)
+        reading.terminate()
+
+        let western = XCUIApplication()
+        western.launchArguments = ["--uitesting", "--ui-dynasty", "han"]
+        western.launch()
+        XCTAssertTrue(western.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        western.buttons["globalSearch"].tap()
+        let westernSearch = western.searchFields.firstMatch
+        XCTAssertTrue(westernSearch.waitForExistence(timeout: 5)); westernSearch.tap(); westernSearch.typeText("班超")
+        let banChao = western.buttons["search_person_han_banchao"]
+        XCTAssertTrue(banChao.waitForExistence(timeout: 5)); banChao.tap()
+        XCTAssertTrue(western.buttons["articleEntry"].waitForExistence(timeout: 5))
+        openArticle(in: western)
+        western.buttons["articleContents"].tap()
+        let shanshan = western.buttons["鄯善夜袭是决断，也是越权暴力"]
+        XCTAssertTrue(shanshan.exists); shanshan.tap()
+        let violenceBoundary = western.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不能把袭杀外交使团改写成无风险的友好交往")).firstMatch
+        XCTAssertTrue(violenceBoundary.waitForExistence(timeout: 5))
+        XCTAssertFalse(western.staticTexts["从这里继续"].exists)
+        shot("v191-ban-chao-shanshan-violence-boundary", western)
+    }
+
 }

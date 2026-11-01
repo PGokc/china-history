@@ -4206,3 +4206,50 @@ if d['version'] >= 164:
  overview_source=(R/'App/DynastyViews.swift').read_text()
  assert '从这里继续' not in overview_source and 'DynastyContinuationGuide' not in overview_source
  print('V164 PASS: Gengshi, Chimei and Eastern Han founding networks now include seven full readings, three linked events, military logistics, coercion and evidence boundaries without restoring the duplicate dynasty guide')
+
+if d['version'] >= 165:
+ ming_zhang_people={'han_ming','han_zhang','han_mingde_ma','han_chuwang_ying','han_dougu','han_banchao','han_bangu'}
+ ming_zhang_sources={'v191_houhanshu2','v191_houhanshu3','v191_houhanshu10a','v191_houhanshu23','v191_houhanshu40a','v191_houhanshu40b','v191_houhanshu42','v191_houhanshu47'}
+ ming_zhang_events={'v49h_ming_accession','v49h_ming_theme','v49h_zhang_accession','v49h_zhang_theme','v49h_western','v96h_ming_education','v96h_ming_chu_case','v96h_zhang_relief','v101h_zhang_agriculture','v191_ming_land_border'}
+ assert ming_zhang_people<=people.keys() and ming_zhang_sources<=sources.keys()
+ event_map={event['id']:event for event in d['events']}
+ assert ming_zhang_events<=event_map.keys()
+ target_articles={article['person']:article for article in d['articles'] if article['person'] in ming_zhang_people}
+ assert target_articles.keys()==ming_zhang_people
+ for person_id,article in target_articles.items():
+  text=''.join(section['text'] for section in article['sections'])
+  chars=len(re.findall(r'[\u4e00-\u9fff]',text))
+  assert len(article['sections'])==5 and chars>=650,(person_id,chars)
+  assert len({section['id'] for section in article['sections']})==5
+  assert all(len(re.findall(r'[\u4e00-\u9fff]',section['text']))>=125 for section in article['sections']),(person_id,'thin section')
+  assert set(article['sources'])<=ming_zhang_sources and len(article['sources'])>=2
+  for section in article['sections']:
+   assert set(section['sources'])<=sources.keys()
+   assert set(section['sources']) & (ming_zhang_sources|{'v107_houhanshu_79a'})
+   assert set(section.get('events',[]))<=event_map.keys()
+   assert set(section.get('people',[]))<=people.keys()
+ for event_id in ming_zhang_events:
+  event=event_map[event_id]
+  assert len(re.findall(r'[\u4e00-\u9fff]',event['body']))>=90,(event_id,'body')
+  assert len(re.findall(r'[\u4e00-\u9fff]',event['impact']))>=70,(event_id,'impact')
+  assert set(event['sources'])<=(ming_zhang_sources|{'v107_houhanshu_79a'})
+  assert set(event['sources']) & ming_zhang_sources
+  assert set(event['people'])==set(event['peopleRoles']),(event_id,'person-role mismatch')
+ association_pairs={(item['from'],item['to']) for item in d['associations']}
+ assert {('han_ming','han_dougu'),('han_ming','han_banchao'),('han_ming','han_mingde_ma'),('han_ming','han_chuwang_ying'),('han_zhang','han_banchao'),('han_zhang','han_bangu'),('han_zhang','han_mingde_ma')}<=association_pairs
+ family_pairs={(item['from'],item['to'],item['kind']) for item in d['familyLinks']}
+ assert {('han_mingde_ma','han_ming','spouse'),('han_zhang','han_mingde_ma','adoptiveMother'),('han_chuwang_ying','han_guangwu','father')}<=family_pairs
+ context_map={context['person']:context for context in d['reignContexts']}
+ assert {'han_dougu','han_banchao','han_mingde_ma','han_chuwang_ying'}<=set(context_map['han_ming']['people'])
+ assert {'han_banchao','han_bangu','han_mingde_ma'}<=set(context_map['han_zhang']['people'])
+ assert {'v191_ming_land_border','v96h_ming_chu_case'}<=set(context_map['han_ming']['events'])
+ corpus=json.dumps(list(target_articles.values())+[event_map[event_id] for event_id in ming_zhang_events]+d['associations'],ensure_ascii=False)
+ for term in ['四路北征不是一条胜利线','白虎观不是经学终局','拒封马氏不等于外戚没有权力','宗王死后，审讯为何没有停止','鄯善夜袭是决断，也是越权暴力','《汉书》不是班固一人从零写成']:
+  assert term in corpus,('missing Ming-Zhang term',term)
+ for boundary in ['不能把每名被告都认定为同一谋反组织','不是现代意义上向全民开放的教育','不能当作已经清点无误的名单','不能把袭杀外交使团改写成无风险的友好交往','现存文本不应无条件视作会议录音']:
+  assert boundary in corpus,('missing Ming-Zhang evidence boundary',boundary)
+ assert len({section['text'] for article in target_articles.values() for section in article['sections']})==35
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品不用|产品将|产品采用',corpus,re.I)
+ overview_source=(R/'App/DynastyViews.swift').read_text()
+ assert '从这里继续' not in overview_source and 'DynastyContinuationGuide' not in overview_source
+ print('V165 PASS: Ming and Zhang reigns now connect court education, the Chu case, frontier expeditions, Western Regions choices, relief, scholarship and succession while every dynasty overview keeps only the four fixed tab destinations')
