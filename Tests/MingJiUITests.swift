@@ -5589,4 +5589,50 @@ final class MingJiUITests: XCTestCase {
         shot("v185-dou-court-power-and-thought-boundary", court)
     }
 
+    @MainActor func testV186MiddleLateWuMilitaryCourtRecruitmentAndDiplomacy() throws {
+        let frontier = XCUIApplication()
+        frontier.launchArguments = ["--uitesting", "--ui-dynasty", "han"]
+        frontier.launch()
+        XCTAssertTrue(frontier.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        frontier.buttons["globalSearch"].tap()
+        let frontierSearch = frontier.searchFields.firstMatch
+        XCTAssertTrue(frontierSearch.waitForExistence(timeout: 5)); frontierSearch.tap(); frontierSearch.typeText("李广")
+        let liGuang = frontier.buttons["search_person_han_liguang"]
+        XCTAssertTrue(liGuang.waitForExistence(timeout: 5)); liGuang.tap()
+        XCTAssertTrue(frontier.buttons["articleEntry"].waitForExistence(timeout: 5))
+        openArticle(in: frontier)
+        frontier.buttons["articleContents"].tap()
+        let lostRoad = frontier.buttons["漠北失道不是一句‘命不好’"]
+        XCTAssertTrue(lostRoad.exists); lostRoad.tap()
+        let commandBoundary = frontier.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不能只以‘数奇’或私人排挤解释")).firstMatch
+        XCTAssertTrue(commandBoundary.waitForExistence(timeout: 5))
+        shot("v186-li-guang-command-and-accountability", frontier)
+        reach(frontier.buttons["资料与出处"], in: frontier, attempts: 18)
+        XCTAssertTrue(frontier.buttons["资料与出处"].isHittable); frontier.buttons["资料与出处"].tap()
+        let source = frontier.descendants(matching: .any)["source_v186_shiji109"]
+        reach(source, in: frontier, attempts: 8)
+        XCTAssertTrue(source.exists)
+        XCTAssertLessThanOrEqual(source.frame.maxY, frontier.tabBars.firstMatch.frame.minY - 16)
+        shot("v186-li-guang-sources-and-safe-ending", frontier)
+        frontier.terminate()
+
+        let court = XCUIApplication()
+        court.launchArguments = ["--uitesting", "--ui-dynasty", "han"]
+        court.launch()
+        XCTAssertTrue(court.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        court.buttons["globalSearch"].tap()
+        let courtSearch = court.searchFields.firstMatch
+        XCTAssertTrue(courtSearch.waitForExistence(timeout: 5)); courtSearch.tap(); courtSearch.typeText("卫子夫")
+        let empress = court.buttons["search_person_han_weizifu"]
+        XCTAssertTrue(empress.waitForExistence(timeout: 5)); empress.tap()
+        XCTAssertTrue(court.buttons["articleEntry"].waitForExistence(timeout: 5))
+        openArticle(in: court)
+        court.buttons["articleContents"].tap()
+        let silence = court.buttons["三十八年为何只剩几个节点"]
+        XCTAssertTrue(silence.exists); silence.tap()
+        let evidenceBoundary = court.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不能允许我们凭想象补足")).firstMatch
+        XCTAssertTrue(evidenceBoundary.waitForExistence(timeout: 5))
+        shot("v186-empress-wei-record-silence", court)
+    }
+
 }

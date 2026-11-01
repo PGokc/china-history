@@ -120,7 +120,12 @@ struct ArticleReader: View {
                                 }
                             }
                         }
-                        SourcesView(store: store, ids: article.sources)
+                        SourcesView(store: store, ids: article.sources, onExpand: {
+                            withAnimation(.easeOut(duration: 0.24)) {
+                                proxy.scrollTo("articleSources", anchor: .top)
+                            }
+                        })
+                        .id("articleSources")
                     }.padding(24).padding(.bottom, Theme.pageBottomAfterStandardPadding)
                 }.coordinateSpace(name: "reading").background(Theme.paper).foregroundStyle(Theme.text)
                     .onPreferenceChange(ReadingPositions.self) { value in

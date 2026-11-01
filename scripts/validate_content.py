@@ -3978,3 +3978,48 @@ if d['version'] >= 159:
  assert len({section['text'] for article in middle_han_articles.values() for section in article['sections']})==20
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品不用|产品将|产品采用',corpus,re.I)
  print('V159 PASS: Empress Dowager Dou, Liu Pi, Dou Ying and Tian Fen now connect kingdom finance, the Seven Kingdoms war, early-Wu court politics, documentary procedure and evidence limits')
+
+if d['version'] >= 160:
+ late_wu_people={'han_liguang','han_weizifu','han_gongsunhong','han_suwu'}
+ late_wu_sources={'v186_shiji30','v186_shiji109','v186_shiji111','v186_shiji112','v186_hanshu54','v186_hanshu97a'}
+ late_wu_events={'v49h_wu_theme','v186_shuofang_supply','v186_caju_gongsun','v186_suanmin_gaomin','v186_liguang_mobei','v186_wei_crown_crisis','v186_suwu_mission'}
+ assert late_wu_people<=people.keys() and late_wu_sources<=sources.keys()
+ assert all(people[person_id]['dynasty']=='han' for person_id in late_wu_people)
+ event_map={event['id']:event for event in d['events']}
+ late_wu_articles={article['person']:article for article in d['articles'] if article['person'] in late_wu_people}
+ assert late_wu_articles.keys()==late_wu_people
+ for person_id,article in late_wu_articles.items():
+  chars=len(re.findall(r'[\u4e00-\u9fff]',''.join(section['text'] for section in article['sections'])))
+  assert len(article['sections'])==5 and chars>=600,(person_id,chars)
+  assert len({section['id'] for section in article['sections']})==5
+  assert len(article['sources'])>=3 and set(article['sources'])<=sources.keys()
+  for section in article['sections']:
+   assert len(re.findall(r'[\u4e00-\u9fff]',section['text']))>=115,(person_id,section['id'])
+   assert set(section['sources'])<=sources.keys()
+   assert set(section.get('events',[]))<=event_map.keys()
+   assert set(section.get('people',[]))<=people.keys()
+ wu_article=next(article for article in d['articles'] if article['person']=='han_wu')
+ wu_chars=len(re.findall(r'[\u4e00-\u9fff]',''.join(section['text'] for section in wu_article['sections'])))
+ assert len(wu_article['sections'])==6 and wu_chars>=800
+ assert len({section['id'] for section in wu_article['sections']})==6
+ for event_id in late_wu_events:
+  event=event_map[event_id]
+  assert len(re.findall(r'[\u4e00-\u9fff]',event['body']))>=90,(event_id,'body')
+  assert len(re.findall(r'[\u4e00-\u9fff]',event['impact']))>=80,(event_id,'impact')
+  assert len(event['sources'])>=3 and set(event['sources'])<=sources.keys()
+  assert set(event['people'])==set(event['peopleRoles']),(event_id,'person-role mismatch')
+ direct_links={person_id for event_id in late_wu_events for person_id in event_map[event_id]['people']}
+ assert late_wu_people<=direct_links
+ assert any(link['from']=='han_weizifu' and link['to']=='han_wu' and link['kind']=='spouse' for link in d['familyLinks'])
+ association_pairs={(item['from'],item['to']) for item in d['associations']}
+ assert {('han_wu','han_liguang'),('han_wu','han_weizifu'),('han_wu','han_gongsunhong'),('han_wu','han_suwu'),('han_weizifu','han_weiqing')}<=association_pairs
+ wu_context=next(context for context in d['reignContexts'] if context['person']=='han_wu')
+ assert late_wu_people<=set(wu_context['people']) and late_wu_events<=set(wu_context['events'])
+ corpus=json.dumps(list(late_wu_articles.values())+[wu_article]+[event_map[event_id] for event_id in late_wu_events]+[sources[source_id] for source_id in late_wu_sources],ensure_ascii=False)
+ for term in ['李广与程不识代表两种治军选择','漠北失道不是一句‘命不好’','三十八年为何只剩几个节点','巫蛊危机中她作出了政治选择','第一次出使失败，第二次对策才入选','朔方争论显示政策意见会改变','出使首先是一项有层级的集体任务','归汉依靠谈判，不是个人逃亡','算缗、告缗与战争财政']:
+  assert term in corpus,('missing middle-late Wu term',term)
+ for boundary in ['不等于他的方式在任何环境都更安全','不能只以‘数奇’或私人排挤解释','不能允许我们凭想象补足','不能把所有升迁归于裙带或全归于能力','不能直接读出全部私人动机','不能证明确有鸿雁传书奇迹','不能当作完整户籍统计','不能只挑胜利数字充当完整战果']:
+  assert boundary in corpus,('missing middle-late Wu evidence boundary',boundary)
+ assert len({section['text'] for article in late_wu_articles.values() for section in article['sections']})==20
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品不用|产品将|产品采用',corpus,re.I)
+ print('V160 PASS: Li Guang, Empress Wei, Gongsun Hong and Su Wu now connect military accountability, succession, recruitment, diplomacy, frontier labor and wartime finance with explicit evidence limits')
