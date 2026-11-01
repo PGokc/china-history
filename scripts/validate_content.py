@@ -4631,3 +4631,55 @@ if d['version'] >= 173:
  assert '从这里继续' not in overview_source and 'DynastyContinuationGuide' not in overview_source
  assert overview_source.count('DynastyOverviewBlock(title: "朝代总览", text: profile.overview)')==1
  print('V173 PASS: early Eastern Jin formation now connects migration, refugee registration, court institutions, regional armies, capital violence, material transport and evidence limits while every dynasty overview keeps only the four fixed tab destinations')
+
+if d['version'] >= 174:
+ mid_eastern_jin_new_people={'jin_chusuanzi','jin_hechong','jin_yubing','jin_yuyi','jin_chupou','jin_yinhao'}
+ mid_eastern_jin_people=mid_eastern_jin_new_people|{'jin_kangdi','jin_mudi','jin_aidi','jin_feidi','jin_jianwendi','jin_huanwen'}
+ mid_eastern_jin_emperors={'jin_kangdi','jin_mudi','jin_aidi','jin_feidi','jin_jianwendi'}
+ mid_eastern_jin_sources={f'v200_js{volume}' for volume in [7,8,9,26,32,73,77,79,80,81,82,98]}
+ assert mid_eastern_jin_new_people<=people.keys() and mid_eastern_jin_sources<=sources.keys()
+ assert all(people[pid]['dynasty']=='jin' for pid in mid_eastern_jin_people)
+ event_map={event['id']:event for event in d['events']}
+ mid_eastern_jin_events={eid for eid in event_map if eid.startswith('v200_')}
+ assert len(mid_eastern_jin_events)==30,(len(mid_eastern_jin_events),'middle Eastern Jin event count')
+ category_counts={category:sum(event_map[eid]['category']==category for eid in mid_eastern_jin_events) for category in ['政治','军事','文化','经济','社会']}
+ assert category_counts=={'政治':6,'军事':6,'文化':6,'经济':6,'社会':6},category_counts
+ target_articles={article['person']:article for article in d['articles'] if article['person'] in mid_eastern_jin_people}
+ assert target_articles.keys()==mid_eastern_jin_people
+ for person_id,article in target_articles.items():
+  chars=len(re.findall(r'[\u4e00-\u9fff]',''.join(section['text'] for section in article['sections'])))
+  minimum=750 if person_id in mid_eastern_jin_emperors else 520
+  assert len(article['sections'])==5 and chars>=minimum,(person_id,chars)
+  assert len({section['id'] for section in article['sections']})==5
+  assert all(len(re.findall(r'[\u4e00-\u9fff]',section['text']))>=90 for section in article['sections']),(person_id,'thin section')
+  assert set(article['sources'])<=sources.keys() and set(article['sources'])&mid_eastern_jin_sources
+  for section in article['sections']:
+   assert set(section['sources'])<=sources.keys() and set(section['sources'])&mid_eastern_jin_sources
+   assert set(section.get('events',[]))<=event_map.keys() and section.get('events')
+   assert set(section.get('people',[]))<=people.keys() and section.get('people')
+ for event_id in mid_eastern_jin_events:
+  event=event_map[event_id]
+  assert len(re.findall(r'[\u4e00-\u9fff]',event['body']))>=50,(event_id,'body')
+  assert len(re.findall(r'[\u4e00-\u9fff]',event['impact']))>=45,(event_id,'impact')
+  assert set(event['people'])==set(event['peopleRoles']),(event_id,'person-role mismatch')
+  assert set(event['sources'])<=sources.keys() and set(event['sources'])&mid_eastern_jin_sources,(event_id,'sources')
+ family_pairs={(link['from'],link['to'],link['kind']) for link in d['familyLinks']}
+ assert {('jin_kangdi','jin_mingdi','father'),('jin_mudi','jin_kangdi','father'),('jin_mudi','jin_chusuanzi','mother'),('jin_aidi','jin_chengdi','father'),('jin_feidi','jin_chengdi','father'),('jin_jianwendi','jin_yuandi','father'),('jin_chusuanzi','jin_chupou','father'),('jin_kangdi','jin_chusuanzi','spouse')}<=family_pairs
+ association_pairs={(item['from'],item['to']) for item in d['associations']}
+ assert {('jin_kangdi','jin_yubing'),('jin_kangdi','jin_hechong'),('jin_mudi','jin_chusuanzi'),('jin_mudi','jin_chupou'),('jin_mudi','jin_yinhao'),('jin_jianwendi','jin_yinhao'),('jin_huanwen','jin_yinhao'),('jin_huanwen','jin_hechong'),('jin_chusuanzi','jin_chupou')}<=association_pairs
+ context_map={context['person']:context for context in d['reignContexts']}
+ assert {'jin_yubing','jin_hechong','jin_yuyi','jin_chusuanzi'}<=set(context_map['jin_kangdi']['people'])
+ assert {'jin_chusuanzi','jin_hechong','jin_yuyi','jin_chupou','jin_yinhao','jin_huanwen','jin_jianwendi'}<=set(context_map['jin_mudi']['people'])
+ assert {'v200_brother_succession','v200_yuyi_xiangyang','v200_seven_temples','v200_slave_conscription'}<=set(context_map['jin_kangdi']['events'])
+ assert {'v200_chu_regency','v200_chenghan_conquest','v200_yinhao_campaigns','v200_wangxizhi_warning','v200_shouchun_fields','v200_northern_refugees_349'}<=set(context_map['jin_mudi']['events'])
+ assert {'v200_feidi_deposition','v200_haixi_surveillance'}<=set(context_map['jin_jianwendi']['events'])
+ corpus=json.dumps(list(target_articles.values())+[event_map[event_id] for event_id in mid_eastern_jin_events],ensure_ascii=False)
+ for term in ['成帝越过幼子立弟弟司马岳','何充否决世袭军府并任桓温镇荆州','殷浩北伐因姚襄倒戈和指挥失序崩溃','枋头北伐因水路、石门和粮运失败','父女相见礼暴露太后身份的双重性','正土断白籍把侨民重新纳入属地户籍']:
+  assert term in corpus,('missing middle Eastern Jin term',term)
+ for boundary in ['不能当作医学事实或亲子鉴定','不能只归结为殷浩善谈玄理','不能全部转嫁给袁真','不能证明每户当年实收都下降三分之一','不宜当作逐人核准的伤亡名册','不能机械转述或猎奇传播']:
+  assert boundary in corpus,('missing middle Eastern Jin evidence boundary',boundary)
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品不用|产品将|产品采用|人物页面|页面采用|页面因此',corpus,re.I)
+ overview_source=(R/'App/DynastyViews.swift').read_text()
+ assert '从这里继续' not in overview_source and 'DynastyContinuationGuide' not in overview_source
+ assert overview_source.count('DynastyOverviewBlock(title: "朝代总览", text: profile.overview)')==1
+ print('V174 PASS: 329-372 Eastern Jin history now links disputed succession, repeated regency, regional armies, taxation, forced service, migration, historical writing, northern expeditions and the coercive 371 deposition without restoring the duplicate dynasty guide')

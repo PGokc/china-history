@@ -6244,4 +6244,51 @@ final class MingJiUITests: XCTestCase {
         shot("v199-chengdi-child-emperor-responsibility-boundary", childEmperor)
     }
 
+    @MainActor func testV200MiddleEasternJinRegencyAndDepositionBoundaries() throws {
+        let regency = XCUIApplication()
+        regency.launchArguments = ["--uitesting", "--ui-dynasty", "jin"]
+        regency.launch()
+        XCTAssertTrue(regency.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        XCTAssertFalse(regency.staticTexts["从这里继续"].exists)
+        regency.buttons["globalSearch"].tap()
+        let regencySearch = regency.searchFields.firstMatch
+        XCTAssertTrue(regencySearch.waitForExistence(timeout: 5)); regencySearch.tap(); regencySearch.typeText("褚蒜子")
+        let empress = regency.buttons["search_person_jin_chusuanzi"]
+        XCTAssertTrue(empress.waitForExistence(timeout: 5)); empress.tap()
+        XCTAssertTrue(regency.buttons["articleEntry"].waitForExistence(timeout: 5))
+        openArticle(in: regency)
+        regency.buttons["articleContents"].tap()
+        let regencyChapter = regency.buttons["临朝是制度位置而不是个人独裁的同义词"]
+        XCTAssertTrue(regencyChapter.exists); regencyChapter.tap()
+        let sharedPower = regency.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "材料不足以把每次任命、战争和税令都写成她的个人政策")).firstMatch
+        XCTAssertTrue(sharedPower.waitForExistence(timeout: 5))
+        shot("v200-chu-suanzi-regency-is-not-personal-rule", regency)
+        openChapterSources("jin_chusuanzi_2", in: regency)
+        let empressSource = regency.descendants(matching: .any)["source_v200_js32"]
+        reach(empressSource, in: regency, attempts: 8)
+        XCTAssertTrue(empressSource.exists)
+        XCTAssertLessThanOrEqual(empressSource.frame.maxY, regency.tabBars.firstMatch.frame.minY - 16)
+        shot("v200-chu-suanzi-source-and-safe-ending", regency)
+        regency.terminate()
+
+        let deposition = XCUIApplication()
+        deposition.launchArguments = ["--uitesting", "--ui-dynasty", "jin"]
+        deposition.launch()
+        XCTAssertTrue(deposition.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        deposition.buttons["globalSearch"].tap()
+        let depositionSearch = deposition.searchFields.firstMatch
+        XCTAssertTrue(depositionSearch.waitForExistence(timeout: 5)); depositionSearch.tap(); depositionSearch.typeText("司马奕")
+        let deposedEmperor = deposition.buttons["search_person_jin_feidi"]
+        XCTAssertTrue(deposedEmperor.waitForExistence(timeout: 5)); deposedEmperor.tap()
+        XCTAssertTrue(deposition.buttons["articleEntry"].waitForExistence(timeout: 5))
+        openArticle(in: deposition)
+        deposition.buttons["articleContents"].tap()
+        let depositionChapter = deposition.buttons["废立罪状集中攻击生育与亲子身份"]
+        XCTAssertTrue(depositionChapter.exists); depositionChapter.tap()
+        let medicalBoundary = deposition.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不是医学检查或亲子鉴定")).firstMatch
+        XCTAssertTrue(medicalBoundary.waitForExistence(timeout: 5))
+        XCTAssertFalse(deposition.staticTexts["从这里继续"].exists)
+        shot("v200-haixi-deposition-evidence-boundary", deposition)
+    }
+
 }
