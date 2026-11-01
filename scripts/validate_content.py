@@ -4730,3 +4730,18 @@ if d['version'] >= 175:
  assert '从这里继续' not in overview_source and 'DynastyContinuationGuide' not in overview_source
  assert overview_source.count('DynastyOverviewBlock(title: "朝代总览", text: profile.overview)')==1
  print('V175 PASS: 372-383 Eastern Jin and Former Qin history now links court-military rebalancing, northern unification, Xiangyang and Huainan wars, Beifu formation, logistics, disaster relief, religious mobility and Feishui without reducing victory to a single hero or restoring the duplicate dynasty guide')
+
+if d['version'] >= 176:
+ v176_people={'jin_andi','jin_gongdi','jin_simadaozi','jin_simayuanxian','jin_wanggong','jin_yinzhongkan','jin_yangquanqi','jin_sunen','jin_luxun','jin_huanxuan','jin_liuyi','jin_hewuji','jin_liumuzhi','jin_liuyu'}
+ v176_sources={item['id'] for item in d['sources'] if item['id'].startswith('v202_')}
+ v176_events=[item for item in d['events'] if item['id'].startswith('v202_')]
+ assert len(v176_sources)==10 and v176_sources<=sources.keys()
+ assert len(v176_events)==30 and Counter(item['category'] for item in v176_events)=={'政治':6,'军事':6,'文化':6,'经济':6,'社会':6}
+ assert len({item['body'] for item in v176_events})==30 and len({item['impact'] for item in v176_events})==30
+ assert all(set(item['people'])<=people.keys() and set(item['sources'])<=v176_sources for item in v176_events)
+ for pid in v176_people:
+  article=next(item for item in d['articles'] if item['person']==pid)
+  assert len(article['sections'])==6 and set(article['sources'])<=v176_sources
+  assert all(section['events'] and section['sources'] and set(section['events'])<={event['id'] for event in v176_events} for section in article['sections'])
+ assert all('从这里继续' not in json.dumps(profile,ensure_ascii=False) for profile in d['dynastyProfiles'])
+ print('V176 PASS: 396-420 late Eastern Jin now connects regency, Jingkou and Jingzhou military regions, the Sun En-Lu Xun wars, Huan Xuan, the restoration coalition, northern expeditions, civilian costs and the Jin-Song transition without restoring the duplicate dynasty guide')

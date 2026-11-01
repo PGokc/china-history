@@ -6338,4 +6338,51 @@ final class MingJiUITests: XCTestCase {
         shot("v201-zhu-xu-captive-service-boundary", captive)
     }
 
+    @MainActor func testV202LateEasternJinConnectsRegionalWarAndJinSongTransition() throws {
+        let huanChu = XCUIApplication()
+        huanChu.launchArguments = ["--uitesting", "--ui-dynasty", "jin"]
+        huanChu.launch()
+        XCTAssertTrue(huanChu.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        XCTAssertFalse(huanChu.staticTexts["从这里继续"].exists)
+        huanChu.buttons["globalSearch"].tap()
+        let huanSearch = huanChu.searchFields.firstMatch
+        XCTAssertTrue(huanSearch.waitForExistence(timeout: 5)); huanSearch.tap(); huanSearch.typeText("桓玄")
+        let huanXuan = huanChu.buttons["search_person_jin_huanxuan"]
+        XCTAssertTrue(huanXuan.waitForExistence(timeout: 5)); huanXuan.tap()
+        XCTAssertTrue(huanChu.buttons["articleEntry"].waitForExistence(timeout: 5))
+        openArticle(in: huanChu)
+        huanChu.buttons["articleContents"].tap()
+        let aftermath = huanChu.buttons["败亡之后战争又持续一年"]
+        XCTAssertTrue(aftermath.exists); aftermath.tap()
+        let networkBoundary = huanChu.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "清除它远比刺杀一人复杂")).firstMatch
+        XCTAssertTrue(networkBoundary.waitForExistence(timeout: 5))
+        shot("v202-huan-xuan-network-and-war-aftermath", huanChu)
+        openChapterSources("jin_huanxuan_v202_6", in: huanChu)
+        let huanSource = huanChu.descendants(matching: .any)["source_v202_js85"]
+        reach(huanSource, in: huanChu, attempts: 8)
+        XCTAssertTrue(huanSource.exists)
+        XCTAssertLessThanOrEqual(huanSource.frame.maxY, huanChu.tabBars.firstMatch.frame.minY - 16)
+        shot("v202-huan-xuan-source-and-safe-ending", huanChu)
+        huanChu.terminate()
+
+        let transition = XCUIApplication()
+        transition.launchArguments = ["--uitesting", "--ui-dynasty", "jin"]
+        transition.launch()
+        XCTAssertTrue(transition.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        transition.buttons["globalSearch"].tap()
+        let transitionSearch = transition.searchFields.firstMatch
+        XCTAssertTrue(transitionSearch.waitForExistence(timeout: 5)); transitionSearch.tap(); transitionSearch.typeText("晋恭帝")
+        let gongdi = transition.buttons["search_person_jin_gongdi"]
+        XCTAssertTrue(gongdi.waitForExistence(timeout: 5)); gongdi.tap()
+        XCTAssertTrue(transition.buttons["articleEntry"].waitForExistence(timeout: 5))
+        openArticle(in: transition)
+        transition.buttons["articleContents"].tap()
+        let transitionChapter = transition.buttons["东晋终结要从制度空心化理解"]
+        XCTAssertTrue(transitionChapter.exists); transitionChapter.tap()
+        let transitionBoundary = transition.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "实际权力转移早已分阶段完成")).firstMatch
+        XCTAssertTrue(transitionBoundary.waitForExistence(timeout: 5))
+        XCTAssertFalse(transition.staticTexts["从这里继续"].exists)
+        shot("v202-gongdi-transition-is-not-one-night-collapse", transition)
+    }
+
 }
