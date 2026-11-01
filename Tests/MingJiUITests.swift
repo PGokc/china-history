@@ -5256,4 +5256,29 @@ final class MingJiUITests: XCTestCase {
         shot("v175-he-zun-sources-and-page-ending", collection)
     }
 
+    @MainActor func testV176GuodianKeepsManuscriptOrderAndTextualClaimsBounded() throws {
+        let collection = XCUIApplication()
+        collection.launchArguments = ["--uitesting", "--ui-dynasty", "zhou"]
+        collection.launch()
+        XCTAssertTrue(collection.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        collection.tabBars.buttons["遗珍"].tap()
+        XCTAssertTrue(collection.descendants(matching: .any)["collectionPage_zhou"].waitForExistence(timeout: 5))
+        collection.buttons["collectionCategory_texts"].tap()
+        XCTAssertTrue(collection.descendants(matching: .any)["collectionCategoryPage_texts"].waitForExistence(timeout: 5))
+        let guodian = collection.buttons["artifact_v58_obj_guodian"]
+        XCTAssertTrue(guodian.waitForExistence(timeout: 5)); guodian.tap()
+        XCTAssertTrue(collection.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "1993年")).firstMatch.waitForExistence(timeout: 5))
+        XCTAssertTrue(collection.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不能据此宣布传世《老子》为伪书")).firstMatch.exists)
+        shot("v176-guodian-manuscript-order-and-text-boundary", collection)
+        reach(collection.buttons["资料与出处"], in: collection, attempts: 20)
+        XCTAssertTrue(collection.buttons["资料与出处"].isHittable); collection.buttons["资料与出处"].tap()
+        XCTAssertTrue(collection.descendants(matching: .any)["source_v176_hubei_guodian"].waitForExistence(timeout: 5))
+        let finalSource = collection.descendants(matching: .any)["source_v58_topic_laozi_1"]
+        reach(finalSource, in: collection, attempts: 8)
+        for _ in 0..<3 { collection.swipeUp() }
+        XCTAssertTrue(finalSource.isHittable)
+        XCTAssertLessThanOrEqual(finalSource.frame.maxY, collection.tabBars.firstMatch.frame.minY - 16)
+        shot("v176-guodian-sources-and-page-ending", collection)
+    }
+
 }

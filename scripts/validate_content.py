@@ -3705,3 +3705,23 @@ if d['version'] >= 149:
   assert boundary in corpus,('missing Western Zhou evidence boundary',boundary)
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将|产品采用',corpus,re.I)
  print('V149 PASS: eight Western Zhou inscriptions and capitals now read in three evidence layers; fifty Zhou thematic events replace generic bodies and impacts with distinct mechanisms, social costs and source limits')
+
+if d['version'] >= 150:
+ v176_object_ids={'v58_obj_chengzhou','v58_obj_houma','v58_obj_coins','v58_obj_zenghouyi','v58_obj_guodian','v58_obj_dujiangyan'}
+ v176_source_ids={item['id'] for item in d['sources'] if item['id'].startswith('v176_')}
+ object_map={item['id']:item for item in d['objects']}
+ assert len(v176_source_ids)==11 and v176_source_ids<=sources.keys()
+ assert v176_object_ids<=object_map.keys()
+ for object_id in v176_object_ids:
+  item=object_map[object_id]
+  chars=len(re.findall(r'[\u4e00-\u9fff]',item['body']+item['note']))
+  assert chars>=300 and item['body'].count('\n\n')>=2,(object_id,chars)
+  assert item['dynasties']==['zhou'] and len(item['sources'])>=3
+  assert set(item['sources'])<=sources.keys() and set(item['people'])<=people.keys()
+ corpus=json.dumps([object_map[object_id] for object_id in v176_object_ids]+[sources[source_id] for source_id in v176_source_ids],ensure_ascii=False)
+ for term in ['“蔺”字钱范','朱砂或墨','三层八组','三千七百五十五字','三组《老子》','鱼嘴、飞沙堰、宝瓶口']:
+  assert term in corpus,('missing Eastern Zhou material-history term',term)
+ for boundary in ['不能把洛阳一处遗址等同完整成周','盟誓文本不是平等自愿合同','不能由墓葬或窖藏数量直接换算市场占有率','整套编钟并非全部由楚王赠送','不能据此宣布传世《老子》为伪书','现存渠首不是战国工程原样冻结']:
+  assert boundary in corpus,('missing Eastern Zhou evidence boundary',boundary)
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将|产品采用',corpus,re.I)
+ print('V150 PASS: six Eastern Zhou cities, ritual texts, currencies, instruments, manuscripts and waterworks now carry three evidence layers and explicit interpretive boundaries')
