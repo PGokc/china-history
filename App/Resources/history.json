@@ -1,5 +1,5 @@
 {
-  "version": 142,
+  "version": 143,
   "reviewed": "2026-11-01",
   "people": [
     {
@@ -20166,6 +20166,212 @@
       "kind": "重要人物",
       "note": "在南海创办继昌隆机器缫丝厂，把海外技术带入乡村产业；女工劳动、金融风险和机器冲突同样重要。",
       "dynasty": "qing"
+    },
+    {
+      "id": "q169_dengshichang",
+      "name": "邓世昌",
+      "call": "致远舰管带",
+      "temple": "",
+      "era": "1849—1894",
+      "reign": "光绪中期",
+      "summary": "北洋海军将领，在黄海海战中与致远舰官兵共同阵亡；撞击、救援与义犬细节应区分官修记载和后世纪念。",
+      "parent": null,
+      "sources": [
+        "v169_qsg460",
+        "v169_mfa_yellowsea",
+        "v169_deng_gd"
+      ],
+      "kind": "重要人物",
+      "note": "北洋海军将领，在黄海海战中与致远舰官兵共同阵亡；撞击、救援与义犬细节应区分官修记载和后世纪念。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q169_liubuchan",
+      "name": "刘步蟾",
+      "call": "定远舰管带",
+      "temple": "",
+      "era": "1852—1895",
+      "reign": "光绪中期",
+      "summary": "船政学堂出身的北洋海军高级军官，参与舰队建设、黄海作战与威海防守；战后指控需放回命令链和史料来源。",
+      "parent": null,
+      "sources": [
+        "v169_qsg460",
+        "v169_qsg136"
+      ],
+      "kind": "重要人物",
+      "note": "船政学堂出身的北洋海军高级军官，参与舰队建设、黄海作战与威海防守；战后指控需放回命令链和史料来源。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q169_linyongsheng",
+      "name": "林永升",
+      "call": "经远舰管带",
+      "temple": "",
+      "era": "1853—1894",
+      "reign": "光绪中期",
+      "summary": "船政系统培养的海军军官，在黄海海战中随经远舰阵亡；其经历连接教育、舰艇技术与普通官兵。",
+      "parent": null,
+      "sources": [
+        "v169_qsg460",
+        "v169_mfa_yellowsea"
+      ],
+      "kind": "重要人物",
+      "note": "船政系统培养的海军军官，在黄海海战中随经远舰阵亡；其经历连接教育、舰艇技术与普通官兵。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q169_zuobaogui",
+      "name": "左宝贵",
+      "call": "奉军将领",
+      "temple": "",
+      "era": "1837—1894",
+      "reign": "光绪中期",
+      "summary": "平壤战役中守玄武门一带并阵亡；个人勇战不能遮蔽清军多头指挥、撤退和朝鲜居民处境。",
+      "parent": null,
+      "sources": [
+        "v169_qsg460",
+        "v169_qsg23"
+      ],
+      "kind": "重要人物",
+      "note": "平壤战役中守玄武门一带并阵亡；个人勇战不能遮蔽清军多头指挥、撤退和朝鲜居民处境。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q169_yezhichao",
+      "name": "叶志超",
+      "call": "直隶提督",
+      "temple": "",
+      "era": "1838—1901",
+      "reign": "光绪中期",
+      "summary": "朝鲜战场清军统将之一，成欢、平壤失利和撤军后被追责；不能把体系失败全部归给一名败将。",
+      "parent": null,
+      "sources": [
+        "v169_qsg462",
+        "v169_qsg23"
+      ],
+      "kind": "重要人物",
+      "note": "朝鲜战场清军统将之一，成欢、平壤失利和撤军后被追责；不能把体系失败全部归给一名败将。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q169_songqing",
+      "name": "宋庆",
+      "call": "毅军统帅",
+      "temple": "",
+      "era": "1820—1902",
+      "reign": "光绪中期",
+      "summary": "老将宋庆率部转战辽东，参与鸭绿江、辽南与田庄台战事；旧军网络、临时拼军与后勤共同限制指挥。",
+      "parent": null,
+      "sources": [
+        "v169_qsg461",
+        "v169_qsg23"
+      ],
+      "kind": "重要人物",
+      "note": "老将宋庆率部转战辽东，参与鸭绿江、辽南与田庄台战事；旧军网络、临时拼军与后勤共同限制指挥。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q169_xubangdao",
+      "name": "徐邦道",
+      "call": "旅顺守将",
+      "temple": "",
+      "era": "1837—1895",
+      "reign": "光绪中期",
+      "summary": "在旅顺外围率部作战，清军撤乱后继续抵抗；其战斗不能被写成旅顺防务完整而有统一指挥。",
+      "parent": null,
+      "sources": [
+        "v169_qsg461",
+        "v169_cssn_portarthur"
+      ],
+      "kind": "重要人物",
+      "note": "在旅顺外围率部作战，清军撤乱后继续抵抗；其战斗不能被写成旅顺防务完整而有统一指挥。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q169_mayukun",
+      "name": "马玉昆",
+      "call": "淮军将领",
+      "temple": "",
+      "era": "1837—1908",
+      "reign": "光绪中期",
+      "summary": "率部参与平壤、辽东与田庄台等战事，在多次退却中维持部分战斗力；评价须区分局部行动与全局失败。",
+      "parent": null,
+      "sources": [
+        "v169_qsg461",
+        "v169_qsg23"
+      ],
+      "kind": "重要人物",
+      "note": "率部参与平壤、辽东与田庄台等战事，在多次退却中维持部分战斗力；评价须区分局部行动与全局失败。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q169_libingheng",
+      "name": "李秉衡",
+      "call": "山东巡抚",
+      "temple": "",
+      "era": "1830—1900",
+      "reign": "光绪中期",
+      "summary": "主持山东海防和威海后方军务，与北洋系统既协作又有权责缝隙；援军迟滞不能只归为个人拒援。",
+      "parent": null,
+      "sources": [
+        "v169_qsg467",
+        "v169_qsg23"
+      ],
+      "kind": "重要人物",
+      "note": "主持山东海防和威海后方军务，与北洋系统既协作又有权责缝隙；援军迟滞不能只归为个人拒援。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q169_nieshicheng",
+      "name": "聂士成",
+      "call": "芦榆防军将领",
+      "temple": "",
+      "era": "1836—1900",
+      "reign": "光绪中期",
+      "summary": "在朝鲜牙山、辽东等地作战并记录战事；其部队表现较整齐，也未能脱离整体部署和补给困局。",
+      "parent": null,
+      "sources": [
+        "v169_qsg467",
+        "v169_qsg23"
+      ],
+      "kind": "重要人物",
+      "note": "在朝鲜牙山、辽东等地作战并记录战事；其部队表现较整齐，也未能脱离整体部署和补给困局。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q169_qiufengjia",
+      "name": "丘逢甲",
+      "call": "反割台倡议者",
+      "temple": "",
+      "era": "1864—1912",
+      "reign": "光绪中期",
+      "summary": "参与反割台请愿和台湾民主国筹组，局势恶化后离台；其角色重要，却不是此后各地抵抗的唯一指挥者。",
+      "parent": null,
+      "sources": [
+        "v169_qiu_tw",
+        "v169_qiu_jiaoling",
+        "v169_taiwan_archives"
+      ],
+      "kind": "重要人物",
+      "note": "参与反割台请愿和台湾民主国筹组，局势恶化后离台；其角色重要，却不是此后各地抵抗的唯一指挥者。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q169_xuxiang",
+      "name": "徐骧",
+      "call": "台湾抗日首领",
+      "temple": "",
+      "era": "1858—1895",
+      "reign": "光绪中期",
+      "summary": "组织地方力量参加乙未抗战并战死；关于言行的著名语句多见于后世叙述，应与可核行动分开。",
+      "parent": null,
+      "sources": [
+        "v169_taiwan_resistance",
+        "v169_taiwan_history"
+      ],
+      "kind": "重要人物",
+      "note": "组织地方力量参加乙未抗战并战死；关于言行的著名语句多见于后世叙述，应与可核行动分开。",
+      "dynasty": "qing"
     }
   ],
   "sources": [
@@ -28334,6 +28540,150 @@
       "title": "江苏省纪委监委：吴大澂与黄河工程",
       "url": "https://www.jssjw.gov.cn/art/2016/11/29/art_437_31440.html",
       "note": "核对河工组织、边界勘定与吴大澂经历。"
+    },
+    {
+      "id": "v169_qsg23",
+      "title": "《清史稿》卷二十三·德宗本纪",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷23",
+      "note": "核对光绪二十年至二十一年战事、议和与处分的官修时间线；本纪压缩前线过程，需与人物传和条约互证。"
+    },
+    {
+      "id": "v169_qsg136",
+      "title": "《清史稿》卷一百三十六·海军",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷136",
+      "note": "核对北洋海军建制、舰队与基地；官修制度史不能替代对训练、维修和实际作战状态的分析。"
+    },
+    {
+      "id": "v169_qsg460",
+      "title": "《清史稿》卷四百六十·左宝贵、邓世昌、刘步蟾等",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷460",
+      "note": "核对左宝贵、邓世昌、刘步蟾、林永升履历及阵亡记载；忠烈书写与战术复原应分别阅读。"
+    },
+    {
+      "id": "v169_qsg461",
+      "title": "《清史稿》卷四百六十一·宋庆、徐邦道、马玉昆等",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷461",
+      "note": "核对辽东诸将经历、调度与战后叙述；传记突出个人战功，须放回共同指挥与补给条件。"
+    },
+    {
+      "id": "v169_qsg462",
+      "title": "《清史稿》卷四百六十二·丁汝昌、叶志超等",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷462",
+      "note": "核对叶志超在朝鲜战场的行动、处分和丁汝昌结局；追责文字不等于完整战场记录。"
+    },
+    {
+      "id": "v169_qsg467",
+      "title": "《清史稿》卷四百六十七·李秉衡、聂士成等",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷467",
+      "note": "核对李秉衡、聂士成的地方军政和甲午经历；官修褒贬须与战时命令互证。"
+    },
+    {
+      "id": "v169_treaty",
+      "title": "《马关条约》文本",
+      "url": "https://zh.wikisource.org/zh-hans/马关条约",
+      "note": "核对朝鲜、割地、赔款、通商与设厂条款；条约文本说明法律结果，不说明谈判压力和地方社会如何承受。"
+    },
+    {
+      "id": "v169_mfa_yellowsea",
+      "title": "外交部历史上的今天：黄海海战",
+      "url": "https://www.mfa.gov.cn/web/ziliao_674904/historytoday_674971/200309/t20030917_9284644.shtml",
+      "note": "核对黄海海战日期、参战舰只与主要损失；纪念性叙述需与舰队制度材料并读。"
+    },
+    {
+      "id": "v169_cssn_impact",
+      "title": "中国社会科学网：全方位剖析甲午战争历史影响",
+      "url": "https://www.cssn.cn/skgz/bwyc/202412/t20241204_5811359.shtml",
+      "note": "用于从政治、经济、外交、军事与社会多个维度理解战争，不把失败归结为一人或一种武器。"
+    },
+    {
+      "id": "v169_cssn_memory",
+      "title": "中国社会科学网：让历史照亮未来——甲午战争一百二十周年祭",
+      "url": "https://lishisuo.cssn.cn/xsyj/qs/201901/t20190102_4805230.shtml",
+      "note": "用于核对战争的制度背景和后续影响；评论性文章不替代原始条约与战报。"
+    },
+    {
+      "id": "v169_cssn_portarthur",
+      "title": "中国社会科学网：西方人士目睹的日军旅顺暴行",
+      "url": "https://jds.cssn.cn/newzxdt/202101/t20210128_5304071.shtml",
+      "note": "用于说明旅顺平民暴行的见证材料与传播；死亡人数存在不同统计，不采用无来源的单一数字。"
+    },
+    {
+      "id": "v169_deng_gd",
+      "title": "广东侨网：邓世昌蹈海殉国一百三十载",
+      "url": "https://www.qb.gd.gov.cn/jrqx/content/post_1249200.html",
+      "note": "补充邓世昌生平、黄海作战与纪念脉络；地方纪念资料须与官修传记区分。"
+    },
+    {
+      "id": "v169_sailors_sd",
+      "title": "山东宣传网：北洋水手——位卑未敢忘忧国",
+      "url": "https://www.sdxc.gov.cn/whql/whqlsy/202408/t20240820_14674682.htm",
+      "note": "补充普通舰员、训练与牺牲，使舰队史不只剩提督和管带。"
+    },
+    {
+      "id": "v169_qiu_tw",
+      "title": "中国台湾网：抗日护台——丘逢甲",
+      "url": "https://big5.gwytb.gov.cn/gate/big5/culture.taiwan.cn/2013/lsmr/ls/201309/t20130903_4822739.htm",
+      "note": "核对丘逢甲参与反割台活动及其离台；不把短期政权和多地抗战压缩成单一领导链。"
+    },
+    {
+      "id": "v169_qiu_jiaoling",
+      "title": "蕉岭县政府：丘逢甲",
+      "url": "https://www.jiaoling.gov.cn/zjjl/jlmr/content/post_2713002.html",
+      "note": "补充丘逢甲生平与教育活动；地方人物纪念需与其在台行动时序互证。"
+    },
+    {
+      "id": "v169_taiwan_archives",
+      "title": "国家档案局：抗日保台及台湾光复档案",
+      "url": "https://www.saac.gov.cn/daj/c100235/202511/7bffaed33fab46bf8c2a4eb7cd2d9ade.shtml",
+      "note": "用于提示反割台档案的多机构保存和证据层次，不将后来的纪念语言倒写为当时统一口号。"
+    },
+    {
+      "id": "v169_taiwan_resistance",
+      "title": "中央统战部：从台湾抗日历程看台胞爱国传统",
+      "url": "https://www.zytzb.gov.cn/zytzb/2025-10/28/article_2025102810200327486.shtml",
+      "note": "核对台湾军民反割台和持续抵抗概况；纪念性综合资料与具体战役材料分开使用。"
+    },
+    {
+      "id": "v169_loc_war",
+      "title": "美国国会图书馆：中日战争版画专题",
+      "url": "https://www.loc.gov/pictures/collection/jpd/",
+      "note": "观察战时版画如何塑造胜利、敌我和现代战争形象；图像是传播材料，不是现场照片。"
+    },
+    {
+      "id": "v169_britannica_war",
+      "title": "Encyclopaedia Britannica: First Sino-Japanese War",
+      "url": "https://www.britannica.com/event/First-Sino-Japanese-War-1894-1895",
+      "note": "辅助校对跨国战争时序与国际结果；人物细节仍以中文原始史料为主。"
+    },
+    {
+      "id": "v169_britannica_treaty",
+      "title": "Encyclopaedia Britannica: Treaty of Shimonoseki",
+      "url": "https://www.britannica.com/event/Treaty-of-Shimonoseki",
+      "note": "辅助理解条约、辽东半岛与三国干涉的国际背景。"
+    },
+    {
+      "id": "v169_yale_treaty",
+      "title": "The Avalon Project: Treaty of Shimonoseki",
+      "url": "https://avalon.law.yale.edu/19th_century/shimonoseki.asp",
+      "note": "以英文条约文本互校主要条款，避免把后世概括误写成原文。"
+    },
+    {
+      "id": "v169_donghak",
+      "title": "韩国学中央研究院：东学农民运动",
+      "url": "https://encykorea.aks.ac.kr/Article/E0016650",
+      "note": "用于说明东学农民运动的韩国社会、宗教与土地背景，避免只写成中日开战借口。"
+    },
+    {
+      "id": "v169_taiwan_history",
+      "title": "台湾大百科全书：乙未战争",
+      "url": "https://nrch.culture.tw/twpedia.aspx?id=3550",
+      "note": "辅助核对台湾各地抵抗的阶段和参与者；不同地区并非由单一中枢持续指挥。"
+    },
+    {
+      "id": "v169_royal_museum",
+      "title": "故宫博物院：光绪朝历史资料",
+      "url": "https://www.dpm.org.cn/lemmas/243304.html",
+      "note": "用于将战争决策放回光绪亲政、宫廷与军机制度，不以个人意志解释全部前线结果。"
     }
   ],
   "relations": [
@@ -30645,14 +30995,26 @@
       "id": "qev_sino_japanese_war_1894",
       "year": "1894—1895",
       "title": "甲午战争与马关条约",
-      "body": "清日在朝鲜及黄海、辽东等地交战，清军战败，次年签订马关条约。",
-      "impact": "清军战败、北洋舰队覆没，《马关条约》带来割地、巨额赔款等后果，刺激列强竞争，也推动维新与革命思潮扩展。",
+      "body": "东学农民运动和朝鲜政局危机中，清日相继派兵并走向战争；战场扩展到朝鲜、黄海、辽东、山东和台湾。",
+      "impact": "清军战败、北洋海军在威海终结，《马关条约》造成割地、赔款与通商设厂权扩张；三国干涉还辽、台湾抵抗及战后变法讨论又开启新的危机。",
       "people": [
         "q_guangxu",
         "q_cixi",
         "q_yixin",
         "q_lihongzhang",
-        "q_dingruchang"
+        "q_dingruchang",
+        "q169_dengshichang",
+        "q169_liubuchan",
+        "q169_linyongsheng",
+        "q169_zuobaogui",
+        "q169_yezhichao",
+        "q169_songqing",
+        "q169_xubangdao",
+        "q169_mayukun",
+        "q169_libingheng",
+        "q169_nieshicheng",
+        "q169_qiufengjia",
+        "q169_xuxiang"
       ],
       "peopleRoles": {
         "q_guangxu": "在位君主",
@@ -30661,7 +31023,10 @@
       },
       "sources": [
         "v5qn_qing_annals",
-        "v41q_qsg462"
+        "v41q_qsg462",
+        "v169_qsg23",
+        "v169_treaty",
+        "v169_cssn_impact"
       ],
       "kind": "历史事件",
       "category": "军事"
@@ -83095,6 +83460,814 @@
       ],
       "kind": "史实与解读",
       "category": "文化"
+    },
+    {
+      "id": "v169_donghak_petitions",
+      "year": "1894",
+      "title": "东学农民诉求与地方危机",
+      "body": "全罗道农民以反腐、减负和宗教网络组织行动，朝鲜政府镇压失利。",
+      "impact": "这是朝鲜内部社会政治危机，不只是中日开战的借口。",
+      "kind": "历史事件",
+      "sortYear": 1894,
+      "category": "政治",
+      "people": [
+        "q169_nieshicheng"
+      ],
+      "sources": [
+        "v169_donghak"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v169_qing_troops_korea",
+      "year": "1894",
+      "title": "清廷应请向朝鲜派兵",
+      "body": "朝鲜政府求援后，清军进入牙山，中日依天津条约互相通报。",
+      "impact": "派兵带有宗藩秩序惯性，也给日本扩大军事介入提供契机。",
+      "kind": "历史事件",
+      "sortYear": 1894,
+      "category": "政治",
+      "people": [
+        "q169_yezhichao",
+        "q169_nieshicheng"
+      ],
+      "sources": [
+        "v169_qsg23",
+        "v169_donghak"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v169_japan_seizes_palace",
+      "year": "1894",
+      "title": "日军控制朝鲜宫廷与政府",
+      "body": "日军进入汉城并控制王宫，推动亲日政府和改革。",
+      "impact": "朝鲜并非无主棋盘，宫廷胁迫改变了战争的政治前提。",
+      "kind": "历史事件",
+      "sortYear": 1894,
+      "category": "政治",
+      "people": [],
+      "sources": [
+        "v169_cssn_impact",
+        "v169_donghak"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v169_war_declarations",
+      "year": "1894",
+      "title": "中日相继宣战",
+      "body": "丰岛海战和朝鲜地面冲突后，清日发布宣战文告。",
+      "impact": "宣战把既成冲突纳入国家战争，也各自建构正当性叙事。",
+      "kind": "历史事件",
+      "sortYear": 1894,
+      "category": "政治",
+      "people": [
+        "q169_yezhichao"
+      ],
+      "sources": [
+        "v169_qsg23",
+        "v169_cssn_impact"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v169_wartime_command",
+      "year": "1894",
+      "title": "战时统筹仍分属多套系统",
+      "body": "北洋、各省援军、海军与中央谕令并未形成稳定联合指挥。",
+      "impact": "兵力总数不能直接换算为协同能力。",
+      "kind": "历史事件",
+      "sortYear": 1894,
+      "category": "政治",
+      "people": [
+        "q169_songqing",
+        "q169_libingheng"
+      ],
+      "sources": [
+        "v169_qsg23",
+        "v169_qsg461",
+        "v169_qsg467"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v169_peace_mission",
+      "year": "1895",
+      "title": "清廷转向议和",
+      "body": "辽东、威海失守后，清廷派李鸿章赴日谈判。",
+      "impact": "议和发生在军事劣势下，谈判空间由战场和列强关系共同限定。",
+      "kind": "历史事件",
+      "sortYear": 1895,
+      "category": "政治",
+      "people": [],
+      "sources": [
+        "v169_qsg23",
+        "v169_treaty"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v169_shimonoseki_signed",
+      "year": "1895",
+      "title": "《马关条约》签订",
+      "body": "条约确认朝鲜独立、割让辽东台湾澎湖、赔款并扩大通商设厂权。",
+      "impact": "它重塑东亚秩序，并把战争成本长期转入财政和地方社会。",
+      "kind": "历史事件",
+      "sortYear": 1895,
+      "category": "政治",
+      "people": [
+        "q169_qiufengjia"
+      ],
+      "sources": [
+        "v169_treaty",
+        "v169_yale_treaty"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v169_triple_intervention",
+      "year": "1895",
+      "title": "俄德法三国干涉还辽",
+      "body": "三国以联合压力要求日本放弃辽东，日本随后索取追加偿金。",
+      "impact": "辽东并非无偿归还，列强干涉也加剧了此后的争夺。",
+      "kind": "历史事件",
+      "sortYear": 1895,
+      "category": "政治",
+      "people": [],
+      "sources": [
+        "v169_britannica_treaty",
+        "v169_qsg23"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v169_taiwan_emergency_rule",
+      "year": "1895",
+      "title": "台湾民主国的临时筹组",
+      "body": "官绅在割台危机中筹组短期政权，试图争取外援并组织防守。",
+      "impact": "它是应急安排而非稳定现代国家，各地抵抗也不始终受其统一指挥。",
+      "kind": "历史事件",
+      "sortYear": 1895,
+      "category": "政治",
+      "people": [
+        "q169_qiufengjia",
+        "q169_xuxiang"
+      ],
+      "sources": [
+        "v169_qiu_tw",
+        "v169_taiwan_history"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v169_seonghwan",
+      "year": "1894",
+      "title": "成欢与牙山失利",
+      "body": "日军进攻牙山附近清军，清军败退，聂士成等率余部转移。",
+      "impact": "局部部队保持秩序不等于部署成功，海陆通信和增援均受限制。",
+      "kind": "历史事件",
+      "sortYear": 1894,
+      "category": "军事",
+      "people": [
+        "q169_yezhichao",
+        "q169_nieshicheng"
+      ],
+      "sources": [
+        "v169_qsg462",
+        "v169_qsg467"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v169_kowshing",
+      "year": "1894",
+      "title": "高升号沉没",
+      "body": "运兵船高升号在丰岛附近被日本军舰击沉，船上清军大量伤亡。",
+      "impact": "事件牵涉中立船旗、海战法与士兵生命，不能只作开战序幕。",
+      "kind": "历史事件",
+      "sortYear": 1894,
+      "category": "军事",
+      "people": [
+        "q169_nieshicheng"
+      ],
+      "sources": [
+        "v169_cssn_impact",
+        "v169_britannica_war"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v169_pyongyang",
+      "year": "1894",
+      "title": "平壤战役与清军撤退",
+      "body": "多路日军攻平壤，左宝贵阵亡，清军夜间撤过鸭绿江。",
+      "impact": "个人死守与全军撤退并存，多头指挥和防线配置须一并说明。",
+      "kind": "历史事件",
+      "sortYear": 1894,
+      "category": "军事",
+      "people": [
+        "q169_zuobaogui",
+        "q169_yezhichao",
+        "q169_mayukun"
+      ],
+      "sources": [
+        "v169_qsg460",
+        "v169_qsg462"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v169_yellow_sea",
+      "year": "1894",
+      "title": "黄海海战",
+      "body": "北洋舰队护送后与日本联合舰队交战，经远、致远等舰沉没。",
+      "impact": "舰队并非当日全灭，但损失主力舰并失去主动，随后行动更趋受限。",
+      "kind": "历史事件",
+      "sortYear": 1894,
+      "category": "军事",
+      "people": [
+        "q169_dengshichang",
+        "q169_liubuchan",
+        "q169_linyongsheng"
+      ],
+      "sources": [
+        "v169_mfa_yellowsea",
+        "v169_qsg460"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v169_yalu_crossing",
+      "year": "1894",
+      "title": "鸭绿江防线被突破",
+      "body": "平壤撤军后清军在鸭绿江一线重新布防，仍被日军突破。",
+      "impact": "仓促集结的多省军队缺少统一训练、通信和补给。",
+      "kind": "历史事件",
+      "sortYear": 1894,
+      "category": "军事",
+      "people": [
+        "q169_songqing",
+        "q169_mayukun",
+        "q169_nieshicheng"
+      ],
+      "sources": [
+        "v169_qsg461",
+        "v169_qsg467"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v169_jinzhou_portarthur",
+      "year": "1894",
+      "title": "金州、大连与旅顺相继失守",
+      "body": "日军由辽东登陆推进，清军外围抵抗后多处溃散，徐邦道部曾作战。",
+      "impact": "局部抵抗不能掩盖基地防御体系和撤退组织的崩溃。",
+      "kind": "历史事件",
+      "sortYear": 1894,
+      "category": "军事",
+      "people": [
+        "q169_xubangdao",
+        "q169_songqing"
+      ],
+      "sources": [
+        "v169_qsg461",
+        "v169_cssn_portarthur"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v169_weihai",
+      "year": "1895",
+      "title": "威海卫围困与北洋舰队终局",
+      "body": "日军从陆上夺取炮台并封锁港湾，残存北洋舰队陷入内外夹击。",
+      "impact": "海军覆败与岸防失守互相作用，不能只归结为舰上将领。",
+      "kind": "历史事件",
+      "sortYear": 1895,
+      "category": "军事",
+      "people": [
+        "q169_liubuchan",
+        "q169_libingheng"
+      ],
+      "sources": [
+        "v169_qsg136",
+        "v169_qsg467"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v169_yingkou_tianzhuangtai",
+      "year": "1895",
+      "title": "营口与田庄台战事",
+      "body": "清军在辽河下游继续抵抗，宋庆、马玉昆等部参与，最终仍告失利。",
+      "impact": "战事延续到议和前夕，说明失败并非一场决战瞬间造成。",
+      "kind": "历史事件",
+      "sortYear": 1895,
+      "category": "军事",
+      "people": [
+        "q169_songqing",
+        "q169_mayukun"
+      ],
+      "sources": [
+        "v169_qsg461",
+        "v169_qsg23"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v169_taiwan_campaign",
+      "year": "1895",
+      "title": "乙未战争与地方抵抗",
+      "body": "日军接收台湾时遭遇由旧军、团练和地方民众组成的持续抵抗。",
+      "impact": "各地组织、目标和持续时间不同，不宜写成一支军队的单线战史。",
+      "kind": "历史事件",
+      "sortYear": 1895,
+      "category": "军事",
+      "people": [
+        "q169_qiufengjia",
+        "q169_xuxiang"
+      ],
+      "sources": [
+        "v169_taiwan_resistance",
+        "v169_taiwan_history"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v169_war_borrowing",
+      "year": "1894—1895",
+      "title": "战费推动内外借款",
+      "body": "清廷为军费、运输和购械筹款，依赖关税、地方解款和借款。",
+      "impact": "筹得银两不等于前线及时得到适用物资。",
+      "kind": "历史事件",
+      "sortYear": 1894,
+      "category": "经济",
+      "people": [],
+      "sources": [
+        "v169_cssn_impact",
+        "v169_cssn_memory"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v169_customs_security",
+      "year": "1895以后",
+      "title": "海关收入成为赔款信用基础",
+      "body": "巨额赔款迫使清廷以海关等稳定收入安排借款偿付。",
+      "impact": "国家信用更深嵌入列强金融体系，财政自主空间收缩。",
+      "kind": "历史事件",
+      "sortYear": 1895,
+      "category": "经济",
+      "people": [],
+      "sources": [
+        "v169_treaty",
+        "v169_cssn_impact"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v169_indemnity_burden",
+      "year": "1895",
+      "title": "两亿两赔款形成长期负担",
+      "body": "《马关条约》规定巨额赔款，另有辽东赎款等后续支出。",
+      "impact": "负担最终通过借款、税收和地方摊派扩散，不能只写成国库数字。",
+      "kind": "历史事件",
+      "sortYear": 1895,
+      "category": "经济",
+      "people": [],
+      "sources": [
+        "v169_treaty",
+        "v169_britannica_treaty"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v169_shipping_disruption",
+      "year": "1894—1895",
+      "title": "海运与保险风险上升",
+      "body": "战争使黄海、渤海航运承受征用、封锁和保险成本。",
+      "impact": "商船、船员和沿海市场承担了舰队之外的战争代价。",
+      "kind": "历史事件",
+      "sortYear": 1894,
+      "category": "经济",
+      "people": [],
+      "sources": [
+        "v169_cssn_impact",
+        "v169_britannica_war"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v169_arsenal_supply",
+      "year": "1894",
+      "title": "军械采购与弹药适配暴露问题",
+      "body": "不同来源舰炮、步枪和弹药增加供应、识别与维修难度。",
+      "impact": "不能把败因简化为“没有炮弹”，制度化保障比购买数量更重要。",
+      "kind": "历史事件",
+      "sortYear": 1894,
+      "category": "经济",
+      "people": [
+        "q169_liubuchan"
+      ],
+      "sources": [
+        "v169_qsg136",
+        "v169_cssn_memory"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v169_naval_maintenance",
+      "year": "1890—1894",
+      "title": "舰艇维护与更新受限",
+      "body": "北洋舰队在和平时期仍需坞修、锅炉、炮械与训练经费，更新速度放缓。",
+      "impact": "经费争论存在账目边界，不能使用未经核实的单一挪款数字。",
+      "kind": "历史事件",
+      "sortYear": 1890,
+      "category": "经济",
+      "people": [
+        "q169_dengshichang",
+        "q169_linyongsheng"
+      ],
+      "sources": [
+        "v169_qsg136",
+        "v169_cssn_memory"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v169_korean_requisitions",
+      "year": "1894",
+      "title": "朝鲜战区军需征发",
+      "body": "中日军队的粮秣、运输和宿营增加朝鲜地方负担。",
+      "impact": "军事行动依赖村镇资源，朝鲜居民并非战场背景。",
+      "kind": "历史事件",
+      "sortYear": 1894,
+      "category": "经济",
+      "people": [
+        "q169_zuobaogui"
+      ],
+      "sources": [
+        "v169_donghak",
+        "v169_cssn_impact"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v169_taiwan_trade_shock",
+      "year": "1895",
+      "title": "割台改变台湾贸易与税制预期",
+      "body": "政权更替和战事冲击港口、茶糖樟脑贸易及地方税收。",
+      "impact": "条约交割并非经济生活即时平稳切换。",
+      "kind": "历史事件",
+      "sortYear": 1895,
+      "category": "经济",
+      "people": [
+        "q169_qiufengjia"
+      ],
+      "sources": [
+        "v169_taiwan_history",
+        "v169_treaty"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v169_foreign_factories",
+      "year": "1895以后",
+      "title": "通商口岸设厂权扩大",
+      "body": "条约允许日本臣民在通商口岸从事制造，并享受相关运输待遇。",
+      "impact": "条款推动外资制造进入，也改变本地工商业竞争环境。",
+      "kind": "历史事件",
+      "sortYear": 1895,
+      "category": "经济",
+      "people": [],
+      "sources": [
+        "v169_treaty",
+        "v169_yale_treaty"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v169_donghak_villages",
+      "year": "1894",
+      "title": "东学运动中的乡村动员",
+      "body": "农民组织结合宗教、乡里和对地方官吏的不满，形成大规模行动。",
+      "impact": "应先理解其韩国社会根源，再讨论中日介入。",
+      "kind": "历史事件",
+      "sortYear": 1894,
+      "category": "社会",
+      "people": [],
+      "sources": [
+        "v169_donghak"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v169_korean_civilians",
+      "year": "1894",
+      "title": "朝鲜居民承受多军占领",
+      "body": "战斗、征粮、道路使用和政权更替打乱城镇与乡村生活。",
+      "impact": "只列中日胜负会让朝鲜人的经验消失。",
+      "kind": "历史事件",
+      "sortYear": 1894,
+      "category": "社会",
+      "people": [
+        "q169_yezhichao"
+      ],
+      "sources": [
+        "v169_donghak",
+        "v169_cssn_impact"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v169_sailor_families",
+      "year": "1894—1895",
+      "title": "海军伤亡留下舰员家庭",
+      "body": "沉舰和威海覆败造成军官、水手、轮机人员大量伤亡。",
+      "impact": "纪念名将之外，还需看普通舰员、遗属与抚恤。",
+      "kind": "历史事件",
+      "sortYear": 1894,
+      "category": "社会",
+      "people": [
+        "q169_dengshichang",
+        "q169_linyongsheng",
+        "q169_liubuchan"
+      ],
+      "sources": [
+        "v169_sailors_sd",
+        "v169_qsg460"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v169_portarthur_massacre",
+      "year": "1894",
+      "title": "旅顺平民遭日军暴行",
+      "body": "日军占领旅顺后发生大规模杀戮，外国记者和观察者留下见证。",
+      "impact": "暴行事实有多方材料，具体死亡总数仍应说明统计差异。",
+      "kind": "历史事件",
+      "sortYear": 1894,
+      "category": "社会",
+      "people": [
+        "q169_xubangdao"
+      ],
+      "sources": [
+        "v169_cssn_portarthur"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v169_liaodong_refugees",
+      "year": "1894—1895",
+      "title": "辽东居民逃难与生计中断",
+      "body": "登陆、攻城和反复调兵迫使居民迁避，粮食、房屋和运输被卷入。",
+      "impact": "将领传记很少记录普通人的损失，需从战区材料谨慎重建。",
+      "kind": "历史事件",
+      "sortYear": 1894,
+      "category": "社会",
+      "people": [
+        "q169_songqing",
+        "q169_mayukun"
+      ],
+      "sources": [
+        "v169_qsg461",
+        "v169_cssn_impact"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v169_weihai_community",
+      "year": "1895",
+      "title": "威海军港社区随舰队崩解",
+      "body": "炮台、船坞、军眷和地方劳工共同构成基地社会，围困使其瓦解。",
+      "impact": "北洋覆亡不只是舰只清单变化。",
+      "kind": "历史事件",
+      "sortYear": 1895,
+      "category": "社会",
+      "people": [
+        "q169_libingheng",
+        "q169_liubuchan"
+      ],
+      "sources": [
+        "v169_qsg136",
+        "v169_sailors_sd"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v169_taiwan_mobilization",
+      "year": "1895",
+      "title": "台湾团练与地方网络动员",
+      "body": "官兵撤留不一，各地绅民、团练和民勇按地方关系组织抵抗。",
+      "impact": "地方主动性重要，也不能抹平内部利益和组织差异。",
+      "kind": "历史事件",
+      "sortYear": 1895,
+      "category": "社会",
+      "people": [
+        "q169_qiufengjia",
+        "q169_xuxiang"
+      ],
+      "sources": [
+        "v169_taiwan_archives",
+        "v169_taiwan_history"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v169_taiwan_casualties",
+      "year": "1895",
+      "title": "乙未战事造成伤亡与迁徙",
+      "body": "北部至南部的战斗波及市镇、农田与家庭，一些人员渡海或离乡。",
+      "impact": "宏大爱国叙事仍须保留个体代价。",
+      "kind": "历史事件",
+      "sortYear": 1895,
+      "category": "社会",
+      "people": [
+        "q169_xuxiang"
+      ],
+      "sources": [
+        "v169_taiwan_resistance",
+        "v169_taiwan_history"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v169_veterans_memory",
+      "year": "1895以后",
+      "title": "战败军人与遗属进入纪念叙事",
+      "body": "阵亡者被追恤、建祠或写入传记，败退者则常承受集中责难。",
+      "impact": "纪念保存情感，也会重新安排责任和可见度。",
+      "kind": "历史事件",
+      "sortYear": 1895,
+      "category": "社会",
+      "people": [
+        "q169_dengshichang",
+        "q169_zuobaogui",
+        "q169_yezhichao"
+      ],
+      "sources": [
+        "v169_qsg460",
+        "v169_qsg462"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v169_war_telegrams",
+      "year": "1894—1895",
+      "title": "电报加快战报与命令流动",
+      "body": "前线消息更快抵达天津、京师和报馆，但误报与迟报仍多。",
+      "impact": "通信速度提高不等于信息准确或指挥统一。",
+      "kind": "历史事件",
+      "sortYear": 1894,
+      "category": "文化",
+      "people": [],
+      "sources": [
+        "v169_cssn_impact",
+        "v169_cssn_memory"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v169_newspaper_debate",
+      "year": "1894—1895",
+      "title": "报刊讨论战争与制度",
+      "body": "中文报刊转述战况、外交和军政议论，形成跨地域公共讨论。",
+      "impact": "即时报道受消息源与审查限制，不能直接当作最终战史。",
+      "kind": "历史事件",
+      "sortYear": 1894,
+      "category": "文化",
+      "people": [],
+      "sources": [
+        "v169_cssn_memory",
+        "v169_loc_war"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v169_japanese_prints",
+      "year": "1894—1895",
+      "title": "战争版画制造现代胜利形象",
+      "body": "日本版画把火炮、军舰和英雄姿态组合成可复制的战争景观。",
+      "impact": "图像服务动员与消费，不是中立的现场记录。",
+      "kind": "历史事件",
+      "sortYear": 1894,
+      "category": "文化",
+      "people": [
+        "q169_dengshichang",
+        "q169_zuobaogui"
+      ],
+      "sources": [
+        "v169_loc_war"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v169_naval_schooling",
+      "year": "1860年代—1894",
+      "title": "船政教育形成海军军官群体",
+      "body": "船政学堂、出洋学习和舰上训练培养刘步蟾、邓世昌、林永升等。",
+      "impact": "战败不能倒推教育毫无成效，组织运用与持续保障同样关键。",
+      "kind": "历史事件",
+      "sortYear": 1860,
+      "category": "文化",
+      "people": [
+        "q169_dengshichang",
+        "q169_liubuchan",
+        "q169_linyongsheng"
+      ],
+      "sources": [
+        "v169_qsg136",
+        "v169_qsg460"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v169_battle_diaries",
+      "year": "1894—1895",
+      "title": "战地日记与禀报留下不同视角",
+      "body": "将领记录、朝廷奏报和外国见闻对同一败退常有不同解释。",
+      "impact": "互证能够识别自辩、追责与观察位置。",
+      "kind": "历史事件",
+      "sortYear": 1894,
+      "category": "文化",
+      "people": [
+        "q169_nieshicheng",
+        "q169_yezhichao"
+      ],
+      "sources": [
+        "v169_qsg462",
+        "v169_qsg467"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v169_gongche",
+      "year": "1895",
+      "title": "公车上书汇聚变法诉求",
+      "body": "条约消息传到京师后，康有为等举人联名陈请拒和、迁都、练兵与变法。",
+      "impact": "参与规模和递交过程有研究争议，不应把后来组织神话当作单一现场。",
+      "kind": "历史事件",
+      "sortYear": 1895,
+      "category": "文化",
+      "people": [],
+      "sources": [
+        "v169_cssn_impact",
+        "v169_cssn_memory"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v169_reform_translation",
+      "year": "1895以后",
+      "title": "战败推动日本与西学信息输入",
+      "body": "知识人更密集讨论日本制度、军事教育和西方政治经济。",
+      "impact": "学习对象并非简单复制，翻译本身带有筛选。",
+      "kind": "历史事件",
+      "sortYear": 1895,
+      "category": "文化",
+      "people": [],
+      "sources": [
+        "v169_cssn_impact"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v169_hero_memory",
+      "year": "1894以后",
+      "title": "邓世昌等进入忠烈记忆",
+      "body": "官修传记、祠祀、教材和文艺不断重述海战英雄。",
+      "impact": "撞舰行动有史料依据，拒救、义犬等细节则有不同叙述层次。",
+      "kind": "历史事件",
+      "sortYear": 1894,
+      "category": "文化",
+      "people": [
+        "q169_dengshichang",
+        "q169_linyongsheng"
+      ],
+      "sources": [
+        "v169_qsg460",
+        "v169_deng_gd"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v169_taiwan_poetry",
+      "year": "1895以后",
+      "title": "反割台诗文保存失土经验",
+      "body": "丘逢甲等人的诗文与后世纪念连接割台、离散和抗争。",
+      "impact": "文学表达能呈现情感，却不能替代对行动时序和责任的核对。",
+      "kind": "历史事件",
+      "sortYear": 1895,
+      "category": "文化",
+      "people": [
+        "q169_qiufengjia",
+        "q169_xuxiang"
+      ],
+      "sources": [
+        "v169_qiu_jiaoling",
+        "v169_taiwan_archives"
+      ],
+      "peopleRoles": {}
     }
   ],
   "objects": [
@@ -89188,6 +90361,120 @@
       ],
       "sources": [
         "v168_chenqiyuan"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v169_obj_treaty",
+      "title": "《马关条约》文本",
+      "subtitle": "割地、赔款与设厂权的法律记录",
+      "symbol": "doc.text",
+      "image": null,
+      "body": "条约条款把战败转化为长期财政、领土和通商后果。",
+      "note": "阅读原文时应区分条约规定、谈判压力与地方社会反应。",
+      "people": [
+        "q169_qiufengjia"
+      ],
+      "sources": [
+        "v169_treaty",
+        "v169_yale_treaty"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v169_obj_zhiyuan",
+      "title": "致远舰与黄海海战记忆",
+      "subtitle": "沉舰、舰员与英雄叙事",
+      "symbol": "ferry",
+      "image": null,
+      "body": "舰船图像连接真实作战、官兵牺牲与后世纪念。",
+      "note": "现存图像和模型多为战前照片或后世复原，不等同沉没现场影像。",
+      "people": [
+        "q169_dengshichang"
+      ],
+      "sources": [
+        "v169_mfa_yellowsea",
+        "v169_deng_gd"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v169_obj_dingyuan",
+      "title": "定远舰与威海基地",
+      "subtitle": "铁甲舰必须依赖港口、坞修与岸防",
+      "symbol": "ferry",
+      "image": null,
+      "body": "定远的经历显示购买主力舰只是海军体系的一部分。",
+      "note": "舰队终局由海战损伤、陆防失守和港内封锁共同造成。",
+      "people": [
+        "q169_liubuchan"
+      ],
+      "sources": [
+        "v169_qsg136",
+        "v169_qsg460"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v169_obj_war_prints",
+      "title": "甲午战争版画",
+      "subtitle": "可复制的胜利、敌我与现代武器",
+      "symbol": "photo.on.rectangle.angled",
+      "image": null,
+      "body": "彩色版画迅速传播战况想象，塑造公众对战争的视觉记忆。",
+      "note": "图像带有宣传、商业与审美选择，不可当作照相式证据。",
+      "people": [
+        "q169_dengshichang",
+        "q169_zuobaogui"
+      ],
+      "sources": [
+        "v169_loc_war"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v169_obj_portarthur_witness",
+      "title": "旅顺暴行见证材料",
+      "subtitle": "记者、观察者与不同死亡统计",
+      "symbol": "book.closed",
+      "image": null,
+      "body": "外国观察与新闻报道保存了日军杀戮平民和俘虏的证据。",
+      "note": "暴行事实明确，具体数字因范围和统计方式不同而有差异。",
+      "people": [
+        "q169_xubangdao"
+      ],
+      "sources": [
+        "v169_cssn_portarthur"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v169_obj_taiwan_archives",
+      "title": "反割台与乙未抗战档案",
+      "subtitle": "请愿、临时政权与地方抵抗",
+      "symbol": "archivebox",
+      "image": null,
+      "body": "档案显示条约签署后，台湾社会并非被动等待交割。",
+      "note": "各地抵抗多中心发展，不能归入一位人物或一个机构的连续指挥。",
+      "people": [
+        "q169_qiufengjia",
+        "q169_xuxiang"
+      ],
+      "sources": [
+        "v169_taiwan_archives",
+        "v169_taiwan_history"
       ],
       "dynasties": [
         "qing"
@@ -102217,7 +103504,11 @@
           "text": "载湉生于1871年，父亲奕譞是道光帝第七子，母亲叶赫那拉氏是慈禧太后之妹。1875年同治帝无子而逝，三岁的载湉被选为皇帝，次年改元光绪。按血缘他是同治堂弟，不是其子；朝廷让他入承咸丰一系，以维持皇统名义。慈安、慈禧再次垂帘，1881年慈安去世后，慈禧成为最主要的最高决策者。",
           "sources": [
             "v5qe_qsg23_24",
-            "v5qe_dpm_lineage"
+            "v5qe_dpm_lineage",
+            "v169_qsg23",
+            "v169_mfa_yellowsea",
+            "v169_qiu_jiaoling",
+            "v169_donghak"
           ],
           "kind": "史实与解读",
           "events": [
@@ -102311,7 +103602,14 @@
             "v168_taiwan_knowledge",
             "v168_sericulture_book",
             "v168_epigraphy_maps",
-            "v168_wedding_archives"
+            "v168_wedding_archives",
+            "v169_donghak_petitions",
+            "v169_triple_intervention",
+            "v169_jinzhou_portarthur",
+            "v169_shipping_disruption",
+            "v169_korean_civilians",
+            "v169_veterans_memory",
+            "v169_reform_translation"
           ],
           "people": [
             "q_zengjize",
@@ -102337,7 +103635,9 @@
             "q168_tangjingsong",
             "q168_wuchangqing",
             "q168_wudacheng",
-            "q168_chenqiyuan"
+            "q168_chenqiyuan",
+            "q169_dengshichang",
+            "q169_mayukun"
           ]
         },
         {
@@ -102346,13 +103646,27 @@
           "text": "1889年光绪帝大婚并名义亲政，慈禧宣布归政，但重大军政人事仍受她和既有权力网络影响。皇后隆裕是慈禧侄女，婚姻也连接政治关系。光绪开始批阅奏章、任免官员，不能说完全没有实权；他又难以像成熟皇帝那样独立控制军机、军队和宫廷。理解晚清政治，需要避免“傀儡”与“完全掌权”两种绝对说法，具体看每项决策如何形成。",
           "sources": [
             "v5qe_qsg23_24",
-            "v5qe_dpm_reader"
+            "v5qe_dpm_reader",
+            "v169_qsg136",
+            "v169_cssn_impact",
+            "v169_taiwan_archives",
+            "v169_taiwan_history"
           ],
           "kind": "史实与解读",
           "events": [
-            "v65q_famine"
+            "v65q_famine",
+            "v169_qing_troops_korea",
+            "v169_taiwan_emergency_rule",
+            "v169_weihai",
+            "v169_arsenal_supply",
+            "v169_sailor_families",
+            "v169_war_telegrams",
+            "v169_hero_memory"
           ],
-          "people": []
+          "people": [
+            "q169_liubuchan",
+            "q169_libingheng"
+          ]
         },
         {
           "id": "q-guangxu-3",
@@ -102360,16 +103674,29 @@
           "text": "1894年中日甲午战争爆发。清朝陆海军在朝鲜、黄海和辽东等战场失利，北洋舰队最终覆没。1895年签订《马关条约》，清政府割让台湾、澎湖及辽东半岛，赔款并增开通商；辽东后来因三国干涉还辽而赎回。战败暴露洋务建设在财政、指挥、训练和国家协调上的缺陷，也促使士人和官员要求更广泛改革。光绪支持作战与后续改革，但不能独自控制战争机器。",
           "sources": [
             "v5qe_qsg23_24",
-            "v41q_qsg462"
+            "v41q_qsg462",
+            "v169_qsg460",
+            "v169_cssn_memory",
+            "v169_taiwan_resistance",
+            "v169_royal_museum"
           ],
           "kind": "史实与解读",
           "events": [
             "qev_sino_japanese_war_1894",
             "v41q_beiyang",
-            "v41q_weihai"
+            "v41q_weihai",
+            "v169_japan_seizes_palace",
+            "v169_seonghwan",
+            "v169_yingkou_tianzhuangtai",
+            "v169_naval_maintenance",
+            "v169_portarthur_massacre",
+            "v169_newspaper_debate",
+            "v169_taiwan_poetry"
           ],
           "people": [
-            "q_dingruchang"
+            "q_dingruchang",
+            "q169_linyongsheng",
+            "q169_nieshicheng"
           ]
         },
         {
@@ -102379,17 +103706,28 @@
           "sources": [
             "v5qe_qsg23_24",
             "v41q_liang_press",
-            "v41q_tianyan"
+            "v41q_tianyan",
+            "v169_qsg461",
+            "v169_cssn_portarthur",
+            "v169_loc_war"
           ],
           "kind": "史实与解读",
           "events": [
             "qev_hundred_days_1898",
             "v41q_shiwu",
-            "v41q_tianyan"
+            "v41q_tianyan",
+            "v169_war_declarations",
+            "v169_kowshing",
+            "v169_taiwan_campaign",
+            "v169_korean_requisitions",
+            "v169_liaodong_refugees",
+            "v169_japanese_prints"
           ],
           "people": [
             "q_liangqichao",
-            "q_yanfu"
+            "q_yanfu",
+            "q169_zuobaogui",
+            "q169_qiufengjia"
           ]
         },
         {
@@ -102397,11 +103735,24 @@
           "title": "政变与瀛台禁锢",
           "text": "围绕改革节奏、权力和军队控制的矛盾激化。慈禧发动政变，光绪帝被禁于中南海瀛台，谭嗣同等六人被杀，康有为、梁启超逃亡。此后诏令仍以皇帝名义颁布，但光绪的人身与政治自由受到严格限制。关于变法者是否计划包围颐和园等细节，史料长期争议；可以确定的是皇帝试图借袁世凯等改变权力格局，而未掌握可靠军事力量。",
           "sources": [
-            "v5qe_qsg23_24"
+            "v5qe_qsg23_24",
+            "v169_qsg462",
+            "v169_deng_gd",
+            "v169_britannica_war"
           ],
           "kind": "史实与解读",
-          "events": [],
-          "people": []
+          "events": [
+            "v169_wartime_command",
+            "v169_pyongyang",
+            "v169_war_borrowing",
+            "v169_taiwan_trade_shock",
+            "v169_weihai_community",
+            "v169_naval_schooling"
+          ],
+          "people": [
+            "q169_yezhichao",
+            "q169_xuxiang"
+          ]
         },
         {
           "id": "q-guangxu-6",
@@ -102412,7 +103763,10 @@
             "v26_guangxu",
             "v40q_qsg412",
             "v40q_qsg437",
-            "v40q_tongmenghui"
+            "v40q_tongmenghui",
+            "v169_qsg467",
+            "v169_sailors_sd",
+            "v169_britannica_treaty"
           ],
           "kind": "史实与解读",
           "events": [
@@ -102425,7 +103779,13 @@
             "v66q_women_schools",
             "v66q_womens_journal",
             "v66q_women_normal",
-            "v66q_ningbo_charity"
+            "v66q_ningbo_charity",
+            "v169_peace_mission",
+            "v169_yellow_sea",
+            "v169_customs_security",
+            "v169_foreign_factories",
+            "v169_taiwan_mobilization",
+            "v169_battle_diaries"
           ],
           "people": [
             "q_lihongzhang",
@@ -102434,7 +103794,8 @@
             "q_kangyouwei",
             "q_yuanshikai",
             "q_sunyatsen",
-            "q_qiujin"
+            "q_qiujin",
+            "q169_songqing"
           ]
         },
         {
@@ -102443,11 +103804,23 @@
           "text": "1908年11月14日光绪帝去世，次日慈禧太后去世。后来对遗发、衣物等样品的检测支持其死于急性砷中毒，但投毒者和命令链仍无确证，不宜指定凶手。慈禧临终前选择醇亲王载沣之子溥仪继位。光绪葬清西陵崇陵，庙号德宗。他有改革意愿，也受宫廷结构与政治判断限制；他的悲剧不能替代对甲午、变法、庚子和新政各自复杂原因的分析。\n\n改革愿望与国家能力的距离。光绪朝出现报刊、学会、新式学校、铁路、电报与近代企业，社会变化并不全由宫廷推动。甲午后各地士绅、商人和学生讨论救亡，康梁只是其中一支。光绪帝在短期内发布大量上谕，依赖少数新进人士，却没有先建立稳定执行队伍，也未掌握北洋等军队。慈禧及保守官员担心权力和秩序失控，改革者内部对渐进或迅速改变也有差异。政变之后，清廷在庚子失败压力下实行幅度更大的新政，说明不少改革议题已无法回避。百日维新失败既有宫廷权斗，也有制度设计、执行能力和政治联盟不足，不能只解释成光明与黑暗两个人物对决。\n\n光绪死因研究能说明证据边界。现代检测发现相关样品砷含量异常，为急性砷中毒提供物证；样品传承、污染排查和多种检测增加可信度。但科学检测回答的是死亡机制，不会自动写出投毒者姓名。宫廷中慈禧、袁世凯、李莲英等人都曾被传说指认，缺少能闭合命令与实施链条的一手证据时，只能保留未决。",
           "sources": [
             "v5qe_qsg23_24",
-            "v5qe_dpm_lineage"
+            "v5qe_dpm_lineage",
+            "v169_treaty",
+            "v169_qiu_tw",
+            "v169_yale_treaty"
           ],
           "kind": "史实与解读",
-          "events": [],
-          "people": []
+          "events": [
+            "v169_shimonoseki_signed",
+            "v169_yalu_crossing",
+            "v169_indemnity_burden",
+            "v169_donghak_villages",
+            "v169_taiwan_casualties",
+            "v169_gongche"
+          ],
+          "people": [
+            "q169_xubangdao"
+          ]
         }
       ],
       "sources": [
@@ -102508,7 +103881,31 @@
         "v168_korea",
         "v168_korea_crises",
         "v168_yellow_river",
-        "v168_wudacheng"
+        "v168_wudacheng",
+        "v169_qsg23",
+        "v169_qsg136",
+        "v169_qsg460",
+        "v169_qsg461",
+        "v169_qsg462",
+        "v169_qsg467",
+        "v169_treaty",
+        "v169_mfa_yellowsea",
+        "v169_cssn_impact",
+        "v169_cssn_memory",
+        "v169_cssn_portarthur",
+        "v169_deng_gd",
+        "v169_sailors_sd",
+        "v169_qiu_tw",
+        "v169_qiu_jiaoling",
+        "v169_taiwan_archives",
+        "v169_taiwan_resistance",
+        "v169_loc_war",
+        "v169_britannica_war",
+        "v169_britannica_treaty",
+        "v169_yale_treaty",
+        "v169_donghak",
+        "v169_taiwan_history",
+        "v169_royal_museum"
       ]
     },
     {
@@ -214843,6 +216240,1017 @@
       "sources": [
         "v168_chenqiyuan"
       ]
+    },
+    {
+      "person": "q169_dengshichang",
+      "title": "邓世昌：致远舰沉没之后的多层记忆",
+      "dek": "他的勇气属于真实战场，英雄形象又经历官修、纪念与文艺不断重塑。",
+      "sections": [
+        {
+          "id": "v169_dengshichang_1",
+          "title": "船政训练塑造的舰长",
+          "text": "邓世昌由福州船政后学堂进入海军，经历舰上实习、接舰和长期操练。近代军官能力不只表现为临阵勇敢，还包括测绘、轮机协同、炮术和管理舰员。把他仅写成殉国瞬间，会抹去中国海军人才培养的长期积累。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qsg460",
+            "v169_mfa_yellowsea",
+            "v169_deng_gd"
+          ],
+          "people": [],
+          "events": [
+            "v169_yellow_sea",
+            "v169_naval_maintenance"
+          ]
+        },
+        {
+          "id": "v169_dengshichang_2",
+          "title": "黄海舰队不是一开战便崩溃",
+          "text": "1894年9月北洋舰队护送陆军后，在黄海遭遇日本联合舰队。双方以不同队形、火炮和航速交战。北洋舰队并非当场全灭，但经远、致远等舰沉没，多舰受创，海上主动权明显削弱；海战结果须与之后基地防御分开。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qsg460",
+            "v169_mfa_yellowsea",
+            "v169_deng_gd"
+          ],
+          "people": [],
+          "events": [
+            "v169_sailor_families",
+            "v169_veterans_memory"
+          ]
+        },
+        {
+          "id": "v169_dengshichang_3",
+          "title": "致远冲击与证据边界",
+          "text": "致远舰受创后向日舰方向突进，官修传记以冲击敌舰记载，随后中雷或受炮击沉没，具体毁伤机制仍有讨论。邓世昌与多数舰员阵亡可以确认；拒绝救援、义犬相随等细节在后世叙述中层累，不宜全部当作同等可靠的现场记录。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qsg460",
+            "v169_mfa_yellowsea",
+            "v169_deng_gd"
+          ],
+          "people": [],
+          "events": [
+            "v169_japanese_prints",
+            "v169_naval_schooling"
+          ]
+        },
+        {
+          "id": "v169_dengshichang_4",
+          "title": "舰长之外还有整舰官兵",
+          "text": "轮机、锅炉、炮位、信号与损管由不同岗位共同完成。只看邓世昌会使普通水手和技术人员再次沉没在统计中。纪念核心人物并不妨碍恢复集体行动，反而说明一艘军舰如何依靠训练和信任维持战斗。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qsg460",
+            "v169_mfa_yellowsea",
+            "v169_deng_gd"
+          ],
+          "people": [],
+          "events": [
+            "v169_hero_memory"
+          ]
+        },
+        {
+          "id": "v169_dengshichang_5",
+          "title": "英雄记忆不能代替败因分析",
+          "text": "邓世昌成为近代忠烈象征，回应了战败社会寻找尊严的需要。但个人勇气无法弥补战略、维修、弹药、通信和联合指挥的问题。最稳妥的纪念，是同时保留他的选择、全舰牺牲与制度失灵，而非用英雄遮住复杂失败。\n\n史料阅读还应注意，北洋海军官兵的姓名、岗位和抚恤记录分散在军政档案与地方纪念中。把这些微小证据重新拼合，才能知道所谓一舰殉国包含哪些不同生命，而不是让他们只成为名将故事的背景。\n\n因此，这一人物页把“可确认的行动”“同时代记载”和“后世纪念”分层呈现。读者既能理解为何他成为象征，也能知道象征不能独自回答海战如何失败。\n\n与丁汝昌、刘步蟾和林永升的条目交叉阅读，可以进一步区分舰队统帅、旗舰管带和巡洋舰管带各自拥有的权限。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qsg460",
+            "v169_mfa_yellowsea",
+            "v169_deng_gd"
+          ],
+          "people": [],
+          "events": [
+            "v169_peace_mission"
+          ]
+        }
+      ],
+      "sources": [
+        "v169_qsg460",
+        "v169_mfa_yellowsea",
+        "v169_deng_gd"
+      ]
+    },
+    {
+      "person": "q169_liubuchan",
+      "title": "刘步蟾：定远舰上的技术与责任",
+      "dek": "理解这位高级军官，需要穿过战后指控，回到舰队建制、战术命令和威海困局。",
+      "sections": [
+        {
+          "id": "v169_liubuchan_1",
+          "title": "从船政学生到旗舰管带",
+          "text": "刘步蟾受船政教育并有海外经历，后来长期管理定远舰。铁甲舰需要航海、炮术、轮机、纪律和补给协同，管带既是战斗指挥者，也是复杂技术组织的负责人。他的升迁说明清廷已形成一批职业海军军官，却没有完成稳定的联合参谋体系。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qsg460",
+            "v169_qsg136"
+          ],
+          "people": [],
+          "events": [
+            "v169_yellow_sea",
+            "v169_weihai"
+          ]
+        },
+        {
+          "id": "v169_liubuchan_2",
+          "title": "黄海海战的旗舰现场",
+          "text": "黄海交战时定远处于舰队核心，开战不久指挥设施受损，丁汝昌负伤，信号和队形控制更加困难。刘步蟾须在旗舰作战、舰队命令和损管之间权衡。后世关于阵形变动和个人责任有相互冲突叙述，应避免把复杂海战缩成一项性格指控。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qsg460",
+            "v169_qsg136"
+          ],
+          "people": [],
+          "events": [
+            "v169_arsenal_supply",
+            "v169_sailor_families"
+          ]
+        },
+        {
+          "id": "v169_liubuchan_3",
+          "title": "坚持作战不等于战术无误",
+          "text": "定远承受大量炮击仍未沉没，显示装甲和舰员处置的作用；主炮射速、弹药效果和航速差距又限制反击。肯定官兵坚持，并不意味着每项命令正确。军事评价必须同时问：可获得的信息是什么、命令如何传达、舰只还能完成什么。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qsg460",
+            "v169_qsg136"
+          ],
+          "people": [],
+          "events": [
+            "v169_weihai_community",
+            "v169_naval_schooling"
+          ]
+        },
+        {
+          "id": "v169_liubuchan_4",
+          "title": "威海是海陆共同失守",
+          "text": "旅顺陷落后舰队退守威海。日军从陆上夺取岸炮，港内舰船反被原有炮台威胁，鱼雷艇也进入攻击。舰队结局不能只解释为“不敢出海”，还要看到受损舰只、封锁、援军、港口出口和陆防崩溃共同形成的困局。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qsg460",
+            "v169_qsg136"
+          ],
+          "people": [],
+          "events": [
+            "v169_peace_mission"
+          ]
+        },
+        {
+          "id": "v169_liubuchan_5",
+          "title": "自尽与战后叙事",
+          "text": "定远受创后，刘步蟾在舰队投降前自尽。官修传记给予忠烈位置，另一些战后叙述又集中批评其指挥。死亡不自动证明所有决策正确，失败也不允许任意指控；应把同代证词、命令链和技术状态逐项对照。\n\n对于所谓降旗、炸舰和自尽前后的细节，不同参与者回忆并不一致。这里采用可互证的最低限度叙述，不以戏剧性越强便越可信。舰队失败后的互相归责，本身也是需要分析的战后政治。\n\n这种处理保留战后争议，不替任何一方预先宣判；能够确认的履历、舰况和时间线优先，无法互证的动机判断只作为争议提示。\n\n与威海陆防条目互读，还能看清港内舰长并不能决定援军、岸炮和整个北洋战略，个人权限始终存在明确边界。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qsg460",
+            "v169_qsg136"
+          ],
+          "people": [],
+          "events": [
+            "v169_shimonoseki_signed"
+          ]
+        }
+      ],
+      "sources": [
+        "v169_qsg460",
+        "v169_qsg136"
+      ]
+    },
+    {
+      "person": "q169_linyongsheng",
+      "title": "林永升：经远舰与被忽略的职业军官",
+      "dek": "他的生涯短于记忆中的英雄叙事，却能看见船政教育如何真正进入战场。",
+      "sections": [
+        {
+          "id": "v169_linyongsheng_1",
+          "title": "职业海军的一代",
+          "text": "林永升由船政系统受训，经历舰船学习与任职，成为经远舰管带。与传统以营勇关系组织的陆军不同，新式海军要求军官掌握航海、火炮和机械知识。职业化已开始，但晋升、经费和舰队指挥仍嵌在北洋及官僚网络中。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qsg460",
+            "v169_mfa_yellowsea"
+          ],
+          "people": [],
+          "events": [
+            "v169_yellow_sea",
+            "v169_naval_maintenance"
+          ]
+        },
+        {
+          "id": "v169_linyongsheng_2",
+          "title": "经远舰的战术位置",
+          "text": "黄海交战中，经远属于装甲巡洋舰，性能、火力与防护有自身边界。战斗后段队形分散，多舰遭日舰集中攻击。讨论林永升的选择，须先理解舰只速度、受伤状态和邻舰位置，不能用后来绘图中的整齐战线替代混乱现场。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qsg460",
+            "v169_mfa_yellowsea"
+          ],
+          "people": [],
+          "events": [
+            "v169_sailor_families",
+            "v169_naval_schooling"
+          ]
+        },
+        {
+          "id": "v169_linyongsheng_3",
+          "title": "沉舰不是一个人的一瞬",
+          "text": "经远遭受围攻后沉没，林永升与大量官兵阵亡。舰长是可见的名字，轮机兵、炮手和水手却多只以总数出现。舰史若只写最后命令，就会忽略训练如何让不同岗位在火灾、进水和通信中继续协作。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qsg460",
+            "v169_mfa_yellowsea"
+          ],
+          "people": [],
+          "events": [
+            "v169_hero_memory"
+          ]
+        },
+        {
+          "id": "v169_linyongsheng_4",
+          "title": "海战损失与舰队后续",
+          "text": "经远、致远等舰损失使北洋舰队的巡洋力量锐减，但定远、镇远等仍返港。此后舰队行动受到修理、战略约束和基地安全影响。“黄海一战全军覆没”并不准确；真正的终局要到威海陆海防线同时崩解。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qsg460",
+            "v169_mfa_yellowsea"
+          ],
+          "people": [],
+          "events": [
+            "v169_shimonoseki_signed"
+          ]
+        },
+        {
+          "id": "v169_linyongsheng_5",
+          "title": "从忠烈名录回到制度史",
+          "text": "林永升被追恤并进入海军忠烈叙事，知名度却低于邓世昌。恢复他的经历不是增加另一座个人纪念碑，而是看见职业军官群体、舰员劳动和技术训练。它们存在过，仍不足以单独抵消制度和战略差距。\n\n经远舰残骸的后续调查可以帮助认识舰体受创，但考古发现与文字记载的对应仍须专业判断，不能由一处破损直接还原全部战术。将技术证据、人员记录和战场时序并置，结论才不会过度。\n\n林永升页面因此不追求补齐每一句临终言语，而重建可核的教育、岗位、交战和阵亡链条。沉默处明确留白，比用传奇填满更尊重本人和舰员。\n\n页面同时保留普通舰员入口，使读者从一名管带继续走向轮机、炮手和水手，而不是把海军史停在官阶最高者。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qsg460",
+            "v169_mfa_yellowsea"
+          ],
+          "people": [],
+          "events": [
+            "v169_triple_intervention"
+          ]
+        }
+      ],
+      "sources": [
+        "v169_qsg460",
+        "v169_mfa_yellowsea"
+      ]
+    },
+    {
+      "person": "q169_zuobaogui",
+      "title": "左宝贵：平壤死守与多头指挥",
+      "dek": "他的阵亡足以被铭记，却不能替清军在朝鲜的部署、撤退与责任作总括。",
+      "sections": [
+        {
+          "id": "v169_zuobaogui_1",
+          "title": "从地方军旅进入朝鲜战场",
+          "text": "左宝贵长期在清军体系任职，甲午危机中率奉军入朝。不同部队来自各地，编制、武器和供给不一，又受多名统将节制。将领个人威望能够稳定本部，却难以自动形成跨军协同。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qsg460",
+            "v169_qsg23"
+          ],
+          "people": [],
+          "events": [
+            "v169_pyongyang",
+            "v169_korean_requisitions"
+          ]
+        },
+        {
+          "id": "v169_zuobaogui_2",
+          "title": "平壤防线如何分配",
+          "text": "清军在平壤周边布防，面对日军多路进攻。左宝贵负责玄武门一带，战场包含城墙、山地与河道。防守成败不能只看兵力相加，还取决于侦察、预备队、命令传递和退路安排。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qsg460",
+            "v169_qsg23"
+          ],
+          "people": [],
+          "events": [
+            "v169_veterans_memory",
+            "v169_japanese_prints"
+          ]
+        },
+        {
+          "id": "v169_zuobaogui_3",
+          "title": "阵亡与全军撤退并存",
+          "text": "战斗中左宝贵在前线阵亡，成为清军抵抗的重要象征；当夜其他部队撤离平壤并越过鸭绿江。勇战和失败并不矛盾。若用他的牺牲证明整体部署有效，或用整体败退否定他的行动，都会损害历史解释。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qsg460",
+            "v169_qsg23"
+          ],
+          "people": [],
+          "events": [
+            "v169_shimonoseki_signed"
+          ]
+        },
+        {
+          "id": "v169_zuobaogui_4",
+          "title": "朝鲜不是空白战场",
+          "text": "平壤居民要面对守军驻扎、日军进攻、粮秣征用与战后秩序改变。中日双方的国家叙事常把朝鲜写成争夺对象，忽略当地政府、农民运动和城镇社会。阅读左宝贵，也应把镜头移到战场周围的人。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qsg460",
+            "v169_qsg23"
+          ],
+          "people": [],
+          "events": [
+            "v169_triple_intervention"
+          ]
+        },
+        {
+          "id": "v169_zuobaogui_5",
+          "title": "忠烈传记与军事复盘",
+          "text": "《清史稿》以殉国结构书写左宝贵，保存其履历和战死事实，也倾向用道德品格组织全文。军事复盘还需追问叶志超等统将、部队关系和撤退命令。纪念忠勇与分析系统问题应同时成立。\n\n左宝贵的回民身份、地方军旅和跨区域任职，也提示晚清军队并非单一文化群体。过度标准化的忠烈画像会抹去这种社会背景；保留其来路，才能理解个人如何获得部众信任并进入国家战争。\n\n对其阵亡地点和战斗过程，也以官修记载与整体战局互证，不复述缺少同期依据的戏剧化对白。忠勇事实无需依靠虚构细节才能成立。\n\n与平壤居民、朝鲜政局和东学运动相连后，这场战斗也不再只是中日军队的竞赛，而是发生在他国社会中的战争。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qsg460",
+            "v169_qsg23"
+          ],
+          "people": [],
+          "events": [
+            "v169_taiwan_emergency_rule"
+          ]
+        }
+      ],
+      "sources": [
+        "v169_qsg460",
+        "v169_qsg23"
+      ]
+    },
+    {
+      "person": "q169_yezhichao",
+      "title": "叶志超：败将标签之外的朝鲜战场",
+      "dek": "处分文书给出清晰罪名，真正的战场却由错误情报、多头统军和连续退却构成。",
+      "sections": [
+        {
+          "id": "v169_yezhichao_1",
+          "title": "牙山部署的先天局限",
+          "text": "清军应朝鲜政府请求进入牙山，叶志超参与统率。部队分散、海上交通易受日本舰队威胁，朝鲜宫廷又被日军控制。清廷仍以有限冲突和交涉思路调兵，前线却已接近全面战争。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qsg462",
+            "v169_qsg23"
+          ],
+          "people": [],
+          "events": [
+            "v169_qing_troops_korea",
+            "v169_war_declarations"
+          ]
+        },
+        {
+          "id": "v169_yezhichao_2",
+          "title": "成欢败退不是最终答案",
+          "text": "成欢战斗后清军退却，部分部队保持建制转往平壤。叶志超对战况的报告和处置后来受到严厉批评。判断是否隐瞒军情，应区分当时奏报、事后审讯和后世转述，不能把最尖锐的罪名直接当作完整事实。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qsg462",
+            "v169_qsg23"
+          ],
+          "people": [],
+          "events": [
+            "v169_seonghwan",
+            "v169_pyongyang"
+          ]
+        },
+        {
+          "id": "v169_yezhichao_3",
+          "title": "平壤的名义统帅困境",
+          "text": "平壤守军来自多支系统，叶志超虽居统将位置，对各军控制并不等同现代统一司令。命令权含混不能免除其部署和撤退责任，却说明责任并非独占。左宝贵的死守与马玉昆等部行动也应放在同一图景。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qsg462",
+            "v169_qsg23"
+          ],
+          "people": [],
+          "events": [
+            "v169_korean_civilians",
+            "v169_veterans_memory"
+          ]
+        },
+        {
+          "id": "v169_yezhichao_4",
+          "title": "从平壤退到鸭绿江",
+          "text": "夜间撤退使清军失去朝鲜主要据点，士气、物资和队形继续受损。退却或可保存部分兵力，但缺乏有序后卫和新防线准备会把一次败仗放大。战史需要评价具体选择，而非只用“怯懦”解释。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qsg462",
+            "v169_qsg23"
+          ],
+          "people": [],
+          "events": [
+            "v169_battle_diaries"
+          ]
+        },
+        {
+          "id": "v169_yezhichao_5",
+          "title": "追责为何集中在一人",
+          "text": "战败后清廷需要明确责任者，叶志超被逮问、定罪，成为朝鲜战场失败的代表。追责可以指出失职，也可能让派兵目标、情报误判和指挥结构退到背景。理解败将不是替他翻案，而是防止制度借个人承担全部失败。\n\n败将材料往往在审讯和处分框架中保存，胜者与追责者拥有更强的话语权。阅读叶志超不是反向制造受害者形象，而是把可核失误、制度约束和后来夸张分别标注，让责任落在证据能够支持的位置。\n\n这种分层也便于与左宝贵、聂士成等人的页面互读：同一战场可以出现勇战、保存部队、错误报告和组织崩溃，彼此并不互相取消。\n\n这种责任分析不是平均分摊过错，而是让每一项判断对应可见的权限、命令和结果，避免道德标签取代证据。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qsg462",
+            "v169_qsg23"
+          ],
+          "people": [],
+          "events": [
+            "v169_seonghwan"
+          ]
+        }
+      ],
+      "sources": [
+        "v169_qsg462",
+        "v169_qsg23"
+      ]
+    },
+    {
+      "person": "q169_songqing",
+      "title": "宋庆：辽东拼军中的老将",
+      "dek": "从鸭绿江到田庄台，他面对的不是一支完整新军，而是不断重组、退却和补充的战时联合体。",
+      "sections": [
+        {
+          "id": "v169_songqing_1",
+          "title": "危局中再被倚重",
+          "text": "宋庆有长期军旅经历，战争扩大后奉命统率或协调辽东部队。老将经验有助于整顿营伍，但各军饷械、训练和隶属不同，中央临时任命不能立即变成有效参谋与后勤系统。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qsg461",
+            "v169_qsg23"
+          ],
+          "people": [],
+          "events": [
+            "v169_wartime_command",
+            "v169_yalu_crossing"
+          ]
+        },
+        {
+          "id": "v169_songqing_2",
+          "title": "鸭绿江后的连续退却",
+          "text": "平壤失守后，清军试图在鸭绿江和辽东重新组织防线。日军推进、情报不清与部队疲惫叠加，防线接连后移。宋庆的责任应落实到具体部署，同时也要看到他接手的是已受重创的战局。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qsg461",
+            "v169_qsg23"
+          ],
+          "people": [],
+          "events": [
+            "v169_jinzhou_portarthur",
+            "v169_yingkou_tianzhuangtai"
+          ]
+        },
+        {
+          "id": "v169_songqing_3",
+          "title": "辽南基地与交通线",
+          "text": "金州、大连、旅顺关系到港口、道路和北洋基地。陆军防线失守使海军港口暴露，说明海陆防务不可分割。宋庆等部在不同方向调动，常面临到达迟、补给断和命令改变。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qsg461",
+            "v169_qsg23"
+          ],
+          "people": [],
+          "events": [
+            "v169_liaodong_refugees"
+          ]
+        },
+        {
+          "id": "v169_songqing_4",
+          "title": "田庄台不是多余尾声",
+          "text": "1895年清军仍在营口、田庄台一带作战。局部抵抗未能逆转全局，却说明战争并未在黄海或旅顺一役后立即结束。将所有失败压成一场决战，会忽略部队重组和当地居民持续承受的征发与战火。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qsg461",
+            "v169_qsg23"
+          ],
+          "people": [],
+          "events": [
+            "v169_seonghwan"
+          ]
+        },
+        {
+          "id": "v169_songqing_5",
+          "title": "评价老将要看组织条件",
+          "text": "官修传记容易以进退奖惩串联将领生涯，现代叙述又可能用“旧式将领”概括无能。宋庆既有个人判断和责任，也受制于拼军结构。分析他的价值，在于观察经验能做什么、不能替代什么。\n\n战区图上的箭头看似连续，真实行军却被河流、道路、天气、马匹和粮运切碎。宋庆所能调动的名册兵力与实际到位人数并不相同。把后勤写入人物页，能解释命令为何经常晚于战局变化。\n\n因此页面不以“老将无能”或“临危受命”作结，而把他每次受命对应到当时防线、可用军队和实际结果，读者可据此形成自己的判断。\n\n他与马玉昆等人的关联页还能呈现同一防线内部不同部队的行动，避免把联合战场错误压缩为单一将领传。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qsg461",
+            "v169_qsg23"
+          ],
+          "people": [],
+          "events": [
+            "v169_kowshing"
+          ]
+        }
+      ],
+      "sources": [
+        "v169_qsg461",
+        "v169_qsg23"
+      ]
+    },
+    {
+      "person": "q169_xubangdao",
+      "title": "徐邦道：旅顺失守中的局部抵抗",
+      "dek": "一个守将的战斗不能洗白整体溃散，也不应被整体失败完全抹去。",
+      "sections": [
+        {
+          "id": "v169_xubangdao_1",
+          "title": "旅顺并非没有防御",
+          "text": "旅顺拥有炮台、港池和驻军，是北洋海军重要基地。防御资源看似集中，陆路外围、部队协同和撤退计划却存在缺口。徐邦道率部在外围作战，说明守军并非全无抵抗。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qsg461",
+            "v169_cssn_portarthur"
+          ],
+          "people": [],
+          "events": [
+            "v169_jinzhou_portarthur",
+            "v169_portarthur_massacre"
+          ]
+        },
+        {
+          "id": "v169_xubangdao_2",
+          "title": "土城子等战斗的尺度",
+          "text": "徐邦道部曾在旅顺外围与日军交战并造成压力。局部战果应按地点和时间理解，不能由一次战斗推导整个要塞体系有效。日军继续推进时，其他部队和指挥者的行动决定防线能否衔接。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qsg461",
+            "v169_cssn_portarthur"
+          ],
+          "people": [],
+          "events": [
+            "v169_taiwan_emergency_rule"
+          ]
+        },
+        {
+          "id": "v169_xubangdao_3",
+          "title": "失守来自组织崩解",
+          "text": "随着日军逼近，清军指挥混乱、部分将领先退，城防迅速瓦解。徐邦道继续抵抗的记载值得重视，但“独守”式叙述容易把其他官兵简化为逃兵，也遮蔽制度没有形成统一守城方案。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qsg461",
+            "v169_cssn_portarthur"
+          ],
+          "people": [],
+          "events": [
+            "v169_seonghwan"
+          ]
+        },
+        {
+          "id": "v169_xubangdao_4",
+          "title": "暴行使战史超出将领成败",
+          "text": "日军占领旅顺后发生针对平民和俘虏的大规模杀戮，外国记者留下见证。不同材料对人数统计有差异，暴行事实则不应被含混。旅顺历史不能停在谁守谁逃，还必须面对占领者责任和受害者。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qsg461",
+            "v169_cssn_portarthur"
+          ],
+          "people": [],
+          "events": [
+            "v169_kowshing"
+          ]
+        },
+        {
+          "id": "v169_xubangdao_5",
+          "title": "英雄与受害者都要被看见",
+          "text": "纪念徐邦道的抵抗有助于纠正“全城不战而逃”的扁平印象，但更完整的页面应并列守军行动、指挥失败、平民遭遇与史料分歧。这样既不制造万能英雄，也不让受害者沦为战争背景。\n\n旅顺事件还要求区分战斗伤亡、被俘者和占领后的平民死难。各种见证的观察范围不同，数字不能简单相加。说明统计边界并不会削弱暴行判断，反而使对加害责任的陈述更经得起核查。\n\n将这些层次并列后，旅顺不再只是地图上一个迅速变色的港口，而成为防御失灵、个体抵抗、占领暴行和国际舆论同时发生的历史现场。\n\n来源页并列官修传记与暴行研究，让读者知道二者回答的是不同问题，不能互相替代，也不应混成一个证据等级。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qsg461",
+            "v169_cssn_portarthur"
+          ],
+          "people": [],
+          "events": [
+            "v169_pyongyang"
+          ]
+        }
+      ],
+      "sources": [
+        "v169_qsg461",
+        "v169_cssn_portarthur"
+      ]
+    },
+    {
+      "person": "q169_mayukun",
+      "title": "马玉昆：从平壤到田庄台的持续作战",
+      "dek": "他的部队在败局中多次出现，适合用来观察清军如何撤退、重组并继续战斗。",
+      "sections": [
+        {
+          "id": "v169_mayukun_1",
+          "title": "跨区域军队的现实",
+          "text": "马玉昆出身淮军系统，甲午战争中随军赴朝。部队离开原驻地后，粮饷、弹药、翻译和道路都需重新安排。将领能控制本部，却不必然能与其他系统共享侦察和命令。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qsg461",
+            "v169_qsg23"
+          ],
+          "people": [],
+          "events": [
+            "v169_pyongyang",
+            "v169_yalu_crossing"
+          ]
+        },
+        {
+          "id": "v169_mayukun_2",
+          "title": "平壤战场的一个侧面",
+          "text": "平壤防御由多军分区承担，马玉昆部参与作战。左宝贵阵亡最为人熟知，但其他部队的抵抗、退却和伤亡同样影响结果。人物史不应把所有人都写成一个英雄的陪衬。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qsg461",
+            "v169_qsg23"
+          ],
+          "people": [],
+          "events": [
+            "v169_yingkou_tianzhuangtai",
+            "v169_liaodong_refugees"
+          ]
+        },
+        {
+          "id": "v169_mayukun_3",
+          "title": "退却中的战斗力保存",
+          "text": "从朝鲜撤入辽东后，一些部队严重散乱，马玉昆部仍参与后续防线。保存建制是一种军事能力，却不能自动解决总体战略和补给。局部表现较好与战争持续失利可以同时成立。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qsg461",
+            "v169_qsg23"
+          ],
+          "people": [],
+          "events": [
+            "v169_kowshing"
+          ]
+        },
+        {
+          "id": "v169_mayukun_4",
+          "title": "辽东战事的多次重组",
+          "text": "鸭绿江、辽阳方向、营口和田庄台之间，清军不断调整指挥和兵力。临时拼接让命令层级反复变化，前线将领也会以本部安全优先。理解马玉昆，须把每次行动放入当时可用兵力和任务。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qsg461",
+            "v169_qsg23"
+          ],
+          "people": [],
+          "events": [
+            "v169_pyongyang"
+          ]
+        },
+        {
+          "id": "v169_mayukun_5",
+          "title": "不以胜败二分人物",
+          "text": "官修传记通过战功、处分和升迁评价将领，后世叙述常把甲午人物分为忠勇与怯懦。马玉昆的经历更接近灰度：有抵抗，也有退却；有个人能力，也无法扭转体系。这样的复杂性更接近战争。\n\n他的传记也提醒我们，晚清军队并非只分新旧两类。旧有营制可以吸收新枪械，受过战阵训练的部队仍可能因战略和供应失败而退却。装备、组织与作战意志应分别评价，不能互相替代。\n\n人物页也避免把后来升迁当作甲午表现的自动证明。战后奖叙有组织维持和政治安置的因素，仍须回到每场战斗的同期材料判断。\n\n把他与宋庆、聂士成和左宝贵并列，读者可比较部队建制、任务和结局，理解“清军”内部其实差异很大。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qsg461",
+            "v169_qsg23"
+          ],
+          "people": [],
+          "events": [
+            "v169_yellow_sea"
+          ]
+        }
+      ],
+      "sources": [
+        "v169_qsg461",
+        "v169_qsg23"
+      ]
+    },
+    {
+      "person": "q169_libingheng",
+      "title": "李秉衡：山东海防与威海权责缝隙",
+      "dek": "威海覆败提醒人们，舰队、基地、省级官员和北洋大臣之间并不是一条顺畅命令链。",
+      "sections": [
+        {
+          "id": "v169_libingheng_1",
+          "title": "山东巡抚的海防职责",
+          "text": "李秉衡任山东巡抚，战争中需筹办沿海防务、兵饷和援军。威海虽驻北洋舰队，陆上行政与兵力又落在山东范围。地理集中并未带来权责完全统一。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qsg467",
+            "v169_qsg23"
+          ],
+          "people": [],
+          "events": [
+            "v169_wartime_command",
+            "v169_weihai"
+          ]
+        },
+        {
+          "id": "v169_libingheng_2",
+          "title": "地方防务不等于舰队指挥",
+          "text": "北洋海军由丁汝昌统率并受李鸿章节制，山东方面掌握部分陆军和地方资源。双方需要协同港口外线、炮台和增援。制度缝隙使每一方都可能认为关键任务属于另一方。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qsg467",
+            "v169_qsg23"
+          ],
+          "people": [],
+          "events": [
+            "v169_weihai_community"
+          ]
+        },
+        {
+          "id": "v169_libingheng_3",
+          "title": "援军问题不能只看一道命令",
+          "text": "威海受围时，援军集结、道路、战力和日军阻截共同影响解围。李秉衡是否积极、判断是否失误，应结合具体电报和兵力，而不是仅凭“见死不救”的道德标签。权责含混不等于个人无责。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qsg467",
+            "v169_qsg23"
+          ],
+          "people": [],
+          "events": [
+            "v169_pyongyang"
+          ]
+        },
+        {
+          "id": "v169_libingheng_4",
+          "title": "岸炮失守改变海军处境",
+          "text": "日军从陆路攻占威海炮台后，可用岸上火力威胁港内舰队。海军基地若没有可靠陆防，再强舰只也会被困。李秉衡的经历因此连接地方行政、陆军防御与海军终局。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qsg467",
+            "v169_qsg23"
+          ],
+          "people": [],
+          "events": [
+            "v169_yellow_sea"
+          ]
+        },
+        {
+          "id": "v169_libingheng_5",
+          "title": "战后褒贬的政治结构",
+          "text": "官修传记保留李秉衡后续仕途和评价，甲午责任则与北洋系统争论交织。阅读时应警惕派系叙事把责任互相推出。真正重要的问题是哪些命令、资源和时间窗口没有被有效连接。\n\n省级档案、北洋电报和官修传记往往从不同机构立场陈述同一援军问题。若只采用一方材料，容易把行政摩擦写成个人恩怨。更可靠的做法是比较发令、收令、出发和实际接敌的时间。\n\n同样，李秉衡后来在庚子年的选择不能反向决定甲午评价。两个阶段的权力位置、任务和证据不同，应按阶段分别呈现，不用一生结局覆盖前段。\n\n人物页因此把可执行权限放在显眼位置：谁能调舰、谁能调陆军、谁负责地方筹饷，责任判断才有可靠起点。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qsg467",
+            "v169_qsg23"
+          ],
+          "people": [],
+          "events": [
+            "v169_yalu_crossing"
+          ]
+        }
+      ],
+      "sources": [
+        "v169_qsg467",
+        "v169_qsg23"
+      ]
+    },
+    {
+      "person": "q169_nieshicheng",
+      "title": "聂士成：牙山退军与战地记录",
+      "dek": "相对整齐的部队表现值得说明，但不能由此制造一位脱离全局限制的完美将领。",
+      "sections": [
+        {
+          "id": "v169_nieshicheng_1",
+          "title": "进入朝鲜的先遣部队",
+          "text": "聂士成率部随清军进入朝鲜，处在牙山方向。最初任务带有平乱和威慑性质，随后迅速转为对日作战。任务变化快于兵力、情报和交通准备，是前线困局的重要来源。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qsg467",
+            "v169_qsg23"
+          ],
+          "people": [],
+          "events": [
+            "v169_donghak_petitions",
+            "v169_qing_troops_korea"
+          ]
+        },
+        {
+          "id": "v169_nieshicheng_2",
+          "title": "成欢战斗与有序退却",
+          "text": "日军进攻成欢一线后，清军失利。聂士成部在撤退中仍维持部分秩序并转往平壤，这与彻底溃散不同。但保存部队不代表原部署合理，也不能取消其他部队的牺牲。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qsg467",
+            "v169_qsg23"
+          ],
+          "people": [],
+          "events": [
+            "v169_seonghwan",
+            "v169_kowshing"
+          ]
+        },
+        {
+          "id": "v169_nieshicheng_3",
+          "title": "战地文字的价值与局限",
+          "text": "聂士成留下战事相关记录，为理解路线、接触和军中观察提供材料。亲历者更接近现场，也可能为本部解释和自辩。将其与奏报、日方记录和朝鲜材料互证，才能避免把一方视角当作全景。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qsg467",
+            "v169_qsg23"
+          ],
+          "people": [],
+          "events": [
+            "v169_yalu_crossing",
+            "v169_battle_diaries"
+          ]
+        },
+        {
+          "id": "v169_nieshicheng_4",
+          "title": "辽东防线继续暴露问题",
+          "text": "回到辽东后，聂士成仍参与防务。前线部队面对仓促调动、不同枪械和补给短缺。单部训练较好能够改善局部行动，却无法替代统一战略、可靠通信和持续后勤。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qsg467",
+            "v169_qsg23"
+          ],
+          "people": [],
+          "events": [
+            "v169_yalu_crossing"
+          ]
+        },
+        {
+          "id": "v169_nieshicheng_5",
+          "title": "后来声名不应倒写甲午",
+          "text": "聂士成在庚子年间的结局进一步塑造其忠勇形象。评价甲午阶段，应只使用当时行动和材料，不能用后来殉职证明早年所有判断正确。人物生命有连续性，历史解释仍需按阶段。\n\n个人日记和军中记事还能显示士兵如何看待道路、天气、村庄与敌情，这些内容常被宏大战史删去。它们不天然客观，却能补充官方奏报的格式化语言，让一次退军恢复为连续的人群行动。\n\n这种写法既承认聂部在若干撤退中的秩序，也不把相对表现转化为神化。个别部队的韧性，正好反衬联合指挥和国家保障仍然薄弱。\n\n相关事件按朝鲜与辽东分段，避免把数月行动揉成一段“转战有功”，也让撤退和继续防守之间的变化可被核查。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qsg467",
+            "v169_qsg23"
+          ],
+          "people": [],
+          "events": [
+            "v169_jinzhou_portarthur"
+          ]
+        }
+      ],
+      "sources": [
+        "v169_qsg467",
+        "v169_qsg23"
+      ]
+    },
+    {
+      "person": "q169_qiufengjia",
+      "title": "丘逢甲：反割台动员与离台争议",
+      "dek": "请愿、临时政权、离台和后来诗文共同构成其经历，任何单一标签都不够。",
+      "sections": [
+        {
+          "id": "v169_qiufengjia_1",
+          "title": "割台消息为何引发动员",
+          "text": "《马关条约》将台湾、澎湖割让日本，岛内官绅和居民面临未经同意的主权转移。丘逢甲参与联名请愿和筹防，反割台不是抽象民族口号，也包含家园、财产和地方秩序的直接危机。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qiu_tw",
+            "v169_qiu_jiaoling",
+            "v169_taiwan_archives"
+          ],
+          "people": [],
+          "events": [
+            "v169_shimonoseki_signed",
+            "v169_taiwan_emergency_rule"
+          ]
+        },
+        {
+          "id": "v169_qiufengjia_2",
+          "title": "台湾民主国是应急安排",
+          "text": "官绅筹组台湾民主国，希望以名义变化争取列强注意并维持防守。它存续短、财政军令不稳，与现代成熟共和国不同。丘逢甲在其中发挥作用，但不能被写成始终控制全岛的政府首脑。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qiu_tw",
+            "v169_qiu_jiaoling",
+            "v169_taiwan_archives"
+          ],
+          "people": [],
+          "events": [
+            "v169_taiwan_campaign",
+            "v169_taiwan_trade_shock"
+          ]
+        },
+        {
+          "id": "v169_qiufengjia_3",
+          "title": "离台必须放回崩解时刻",
+          "text": "日军登陆、台北秩序变化后，丘逢甲离开台湾。后世或以筹防者纪念，或以离台批评。评价应核对时间、可用兵力和组织崩解，也应承认他离开后许多地方力量仍继续作战。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qiu_tw",
+            "v169_qiu_jiaoling",
+            "v169_taiwan_archives"
+          ],
+          "people": [],
+          "events": [
+            "v169_taiwan_mobilization",
+            "v169_taiwan_poetry"
+          ]
+        },
+        {
+          "id": "v169_qiufengjia_4",
+          "title": "地方抵抗不是一条命令链",
+          "text": "从北部到中南部，旧军、义军、团练和居民依各自网络抵抗。徐骧等人的行动不应全部纳入丘逢甲指挥。恢复多中心结构，才能看见台湾社会的主动性，而不是只讲少数精英。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qiu_tw",
+            "v169_qiu_jiaoling",
+            "v169_taiwan_archives"
+          ],
+          "people": [],
+          "events": [
+            "v169_jinzhou_portarthur"
+          ]
+        },
+        {
+          "id": "v169_qiufengjia_5",
+          "title": "诗文与教育延长了记忆",
+          "text": "离台后丘逢甲从事教育、诗文和政治活动，反割台经验成为其自我叙述的重要部分。文学保存失土情感，却会凝练和象征化现场。把诗与档案并读，既能理解感受，也能守住事实边界。\n\n丘逢甲后来参与近代教育和地方公共事务，使其形象不止停留在1895年。后续成就仍应与当年行动分开评价：后来贡献不能取消离台争议，离台争议也不应抹去其早期动员和终身文化工作。\n\n反割台的价值也不依赖把人物写得毫无矛盾。面对崩解局势时的动员、判断和退却都是真实历史，保留张力比制造一贯正确的英雄更有教育意义。\n\n人物页还将请愿、筹组、离台和后续教育分成章节，不让一句褒贬覆盖不同阶段，也不回避最受争议的转折。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_qiu_tw",
+            "v169_qiu_jiaoling",
+            "v169_taiwan_archives"
+          ],
+          "people": [],
+          "events": [
+            "v169_weihai"
+          ]
+        }
+      ],
+      "sources": [
+        "v169_qiu_tw",
+        "v169_qiu_jiaoling",
+        "v169_taiwan_archives"
+      ]
+    },
+    {
+      "person": "q169_xuxiang",
+      "title": "徐骧：乙未抗战中的地方力量",
+      "dek": "他不是传奇口号的化身，而是地方组织在国家交割后继续抵抗的一个具体节点。",
+      "sections": [
+        {
+          "id": "v169_xuxiang_1",
+          "title": "条约之后战争没有结束",
+          "text": "清廷签约并准备撤离官员后，日本接收台湾仍遭抵抗。对当地居民而言，条约文本没有自动结束风险。徐骧参与组织地方力量，说明主权交割与实际控制之间存在漫长而暴力的过程。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_taiwan_resistance",
+            "v169_taiwan_history"
+          ],
+          "people": [],
+          "events": [
+            "v169_taiwan_emergency_rule",
+            "v169_taiwan_campaign"
+          ]
+        },
+        {
+          "id": "v169_xuxiang_2",
+          "title": "义军来自地方社会",
+          "text": "地方武装依赖乡里、宗族、绅民、旧军与临时筹饷，熟悉道路和地形是优势，武器、训练和持续补给则有限。称为“义军”能表达立场，却不能假定所有队伍有统一编制和完全一致目标。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_taiwan_resistance",
+            "v169_taiwan_history"
+          ],
+          "people": [],
+          "events": [
+            "v169_taiwan_mobilization",
+            "v169_taiwan_casualties"
+          ]
+        },
+        {
+          "id": "v169_xuxiang_3",
+          "title": "多地转战的条件",
+          "text": "乙未战事由北向南推进，抵抗力量随战局移动、重组。徐骧的行动需与具体战场和伙伴连接，不应写成单人率领全岛抗战。地方知识能延缓推进，却难以抵消日军组织和火力优势。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_taiwan_resistance",
+            "v169_taiwan_history"
+          ],
+          "people": [],
+          "events": [
+            "v169_taiwan_poetry"
+          ]
+        },
+        {
+          "id": "v169_xuxiang_4",
+          "title": "战死事实与名言层累",
+          "text": "徐骧在抗战中阵亡，成为台湾抗日记忆的重要人物。流传甚广的临阵话语多经后来记述和文学转写，精神意义不必否定，文本却不能无条件当作逐字现场录音。页面应明确这种证据差异。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_taiwan_resistance",
+            "v169_taiwan_history"
+          ],
+          "people": [],
+          "events": [
+            "v169_weihai"
+          ]
+        },
+        {
+          "id": "v169_xuxiang_5",
+          "title": "把英雄放回普通人中",
+          "text": "徐骧值得纪念，但其周围还有无名民勇、运粮者、家属与受战火波及的居民。地方抵抗史若只保留几个名字，会再次让多数参与者消失。英雄的意义，正在于帮助我们进入更广阔的共同经验。\n\n关于徐骧的生平资料相对零散，地方记忆与后世传记承担了重要保存作用，也增加了细节层累的可能。遇到缺少同期文件的场景，页面宁可明确“后世多有此说”，也不把动人叙述伪装成确定事实。\n\n还应把他与丘逢甲并列而非从属：一人侧重前期政治动员，一人体现地方武装继续抵抗。两条路径交叉，却不能合并成虚构的统一指挥链。\n\n当来源不足以确认某次具体战斗的个人指挥时，只叙述其参与范围，不凭纪念文字补造命令、对白或精确位置。",
+          "kind": "史实与解读",
+          "sources": [
+            "v169_taiwan_resistance",
+            "v169_taiwan_history"
+          ],
+          "people": [],
+          "events": [
+            "v169_yingkou_tianzhuangtai"
+          ]
+        }
+      ],
+      "sources": [
+        "v169_taiwan_resistance",
+        "v169_taiwan_history"
+      ]
     }
   ],
   "portraits": [
@@ -241768,6 +244176,209 @@
         "v168_taiwan",
         "v168_war_records"
       ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q169_dengshichang",
+      "role": "光绪中期人物",
+      "inverse": "在光绪朝活动",
+      "period": "1890—1895",
+      "note": "邓世昌的经历连接甲午战争及其前后制度、社会与记忆。",
+      "sources": [
+        "v169_qsg460",
+        "v169_mfa_yellowsea"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q169_liubuchan",
+      "role": "光绪中期人物",
+      "inverse": "在光绪朝活动",
+      "period": "1890—1895",
+      "note": "刘步蟾的经历连接甲午战争及其前后制度、社会与记忆。",
+      "sources": [
+        "v169_qsg460",
+        "v169_qsg136"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q169_linyongsheng",
+      "role": "光绪中期人物",
+      "inverse": "在光绪朝活动",
+      "period": "1890—1895",
+      "note": "林永升的经历连接甲午战争及其前后制度、社会与记忆。",
+      "sources": [
+        "v169_qsg460",
+        "v169_mfa_yellowsea"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q169_zuobaogui",
+      "role": "光绪中期人物",
+      "inverse": "在光绪朝活动",
+      "period": "1890—1895",
+      "note": "左宝贵的经历连接甲午战争及其前后制度、社会与记忆。",
+      "sources": [
+        "v169_qsg460",
+        "v169_qsg23"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q169_yezhichao",
+      "role": "光绪中期人物",
+      "inverse": "在光绪朝活动",
+      "period": "1890—1895",
+      "note": "叶志超的经历连接甲午战争及其前后制度、社会与记忆。",
+      "sources": [
+        "v169_qsg462",
+        "v169_qsg23"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q169_songqing",
+      "role": "光绪中期人物",
+      "inverse": "在光绪朝活动",
+      "period": "1890—1895",
+      "note": "宋庆的经历连接甲午战争及其前后制度、社会与记忆。",
+      "sources": [
+        "v169_qsg461",
+        "v169_qsg23"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q169_xubangdao",
+      "role": "光绪中期人物",
+      "inverse": "在光绪朝活动",
+      "period": "1890—1895",
+      "note": "徐邦道的经历连接甲午战争及其前后制度、社会与记忆。",
+      "sources": [
+        "v169_qsg461",
+        "v169_cssn_portarthur"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q169_mayukun",
+      "role": "光绪中期人物",
+      "inverse": "在光绪朝活动",
+      "period": "1890—1895",
+      "note": "马玉昆的经历连接甲午战争及其前后制度、社会与记忆。",
+      "sources": [
+        "v169_qsg461",
+        "v169_qsg23"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q169_libingheng",
+      "role": "光绪中期人物",
+      "inverse": "在光绪朝活动",
+      "period": "1890—1895",
+      "note": "李秉衡的经历连接甲午战争及其前后制度、社会与记忆。",
+      "sources": [
+        "v169_qsg467",
+        "v169_qsg23"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q169_nieshicheng",
+      "role": "光绪中期人物",
+      "inverse": "在光绪朝活动",
+      "period": "1890—1895",
+      "note": "聂士成的经历连接甲午战争及其前后制度、社会与记忆。",
+      "sources": [
+        "v169_qsg467",
+        "v169_qsg23"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q169_qiufengjia",
+      "role": "光绪中期人物",
+      "inverse": "在光绪朝活动",
+      "period": "1890—1895",
+      "note": "丘逢甲的经历连接甲午战争及其前后制度、社会与记忆。",
+      "sources": [
+        "v169_qiu_tw",
+        "v169_qiu_jiaoling"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q169_xuxiang",
+      "role": "光绪中期人物",
+      "inverse": "在光绪朝活动",
+      "period": "1890—1895",
+      "note": "徐骧的经历连接甲午战争及其前后制度、社会与记忆。",
+      "sources": [
+        "v169_taiwan_resistance",
+        "v169_taiwan_history"
+      ]
+    },
+    {
+      "from": "q169_dengshichang",
+      "to": "q169_liubuchan",
+      "role": "北洋海军同僚",
+      "inverse": "同为北洋海军高级军官",
+      "period": "1894—1895",
+      "note": "分别统带致远与定远，权限和战位不同。",
+      "sources": [
+        "v169_qsg460",
+        "v169_qsg136"
+      ]
+    },
+    {
+      "from": "q169_dengshichang",
+      "to": "q169_linyongsheng",
+      "role": "黄海同袍",
+      "inverse": "同在黄海海战阵亡",
+      "period": "1894",
+      "note": "分别随致远、经远沉没，不能用一人的故事替代另一舰官兵。",
+      "sources": [
+        "v169_qsg460",
+        "v169_mfa_yellowsea"
+      ]
+    },
+    {
+      "from": "q169_zuobaogui",
+      "to": "q169_yezhichao",
+      "role": "平壤守将与统将",
+      "inverse": "统将与前线守将",
+      "period": "1894",
+      "note": "左宝贵前线阵亡，叶志超参与整体部署与撤退。",
+      "sources": [
+        "v169_qsg460",
+        "v169_qsg462"
+      ]
+    },
+    {
+      "from": "q169_songqing",
+      "to": "q169_mayukun",
+      "role": "辽东协同将领",
+      "inverse": "同在辽东多线作战",
+      "period": "1894—1895",
+      "note": "二人所部多次重组协同，不能当作一支同质军队。",
+      "sources": [
+        "v169_qsg461"
+      ]
+    },
+    {
+      "from": "q169_qiufengjia",
+      "to": "q169_xuxiang",
+      "role": "政治动员与地方抵抗",
+      "inverse": "地方抵抗与前期动员",
+      "period": "1895",
+      "note": "两条行动路径相接但不存在稳定的单一指挥关系。",
+      "sources": [
+        "v169_taiwan_archives",
+        "v169_taiwan_history"
+      ]
     }
   ],
   "dynasties": [
@@ -247148,7 +249759,19 @@
         "q168_tangjingsong",
         "q168_wuchangqing",
         "q168_wudacheng",
-        "q168_chenqiyuan"
+        "q168_chenqiyuan",
+        "q169_dengshichang",
+        "q169_liubuchan",
+        "q169_linyongsheng",
+        "q169_zuobaogui",
+        "q169_yezhichao",
+        "q169_songqing",
+        "q169_xubangdao",
+        "q169_mayukun",
+        "q169_libingheng",
+        "q169_nieshicheng",
+        "q169_qiufengjia",
+        "q169_xuxiang"
       ],
       "events": [
         "qev_guangxu_accession_1875",
@@ -247262,7 +249885,52 @@
         "v168_taiwan_knowledge",
         "v168_sericulture_book",
         "v168_epigraphy_maps",
-        "v168_wedding_archives"
+        "v168_wedding_archives",
+        "v169_donghak_petitions",
+        "v169_qing_troops_korea",
+        "v169_japan_seizes_palace",
+        "v169_war_declarations",
+        "v169_wartime_command",
+        "v169_peace_mission",
+        "v169_shimonoseki_signed",
+        "v169_triple_intervention",
+        "v169_taiwan_emergency_rule",
+        "v169_seonghwan",
+        "v169_kowshing",
+        "v169_pyongyang",
+        "v169_yellow_sea",
+        "v169_yalu_crossing",
+        "v169_jinzhou_portarthur",
+        "v169_weihai",
+        "v169_yingkou_tianzhuangtai",
+        "v169_taiwan_campaign",
+        "v169_war_borrowing",
+        "v169_customs_security",
+        "v169_indemnity_burden",
+        "v169_shipping_disruption",
+        "v169_arsenal_supply",
+        "v169_naval_maintenance",
+        "v169_korean_requisitions",
+        "v169_taiwan_trade_shock",
+        "v169_foreign_factories",
+        "v169_donghak_villages",
+        "v169_korean_civilians",
+        "v169_sailor_families",
+        "v169_portarthur_massacre",
+        "v169_liaodong_refugees",
+        "v169_weihai_community",
+        "v169_taiwan_mobilization",
+        "v169_taiwan_casualties",
+        "v169_veterans_memory",
+        "v169_war_telegrams",
+        "v169_newspaper_debate",
+        "v169_japanese_prints",
+        "v169_naval_schooling",
+        "v169_battle_diaries",
+        "v169_gongche",
+        "v169_reform_translation",
+        "v169_hero_memory",
+        "v169_taiwan_poetry"
       ],
       "sources": [
         "v5qn_qsg221",
@@ -247343,7 +250011,31 @@
         "v168_korea",
         "v168_korea_crises",
         "v168_yellow_river",
-        "v168_wudacheng"
+        "v168_wudacheng",
+        "v169_qsg23",
+        "v169_qsg136",
+        "v169_qsg460",
+        "v169_qsg461",
+        "v169_qsg462",
+        "v169_qsg467",
+        "v169_treaty",
+        "v169_mfa_yellowsea",
+        "v169_cssn_impact",
+        "v169_cssn_memory",
+        "v169_cssn_portarthur",
+        "v169_deng_gd",
+        "v169_sailors_sd",
+        "v169_qiu_tw",
+        "v169_qiu_jiaoling",
+        "v169_taiwan_archives",
+        "v169_taiwan_resistance",
+        "v169_loc_war",
+        "v169_britannica_war",
+        "v169_britannica_treaty",
+        "v169_yale_treaty",
+        "v169_donghak",
+        "v169_taiwan_history",
+        "v169_royal_museum"
       ],
       "note": "光绪前期由再度垂帘、新疆战事与灾荒进入中法战争、朝鲜危机、台湾建省和分阶段亲政。战场胜负、条约结果、海军制度、基础设施与普通人的税役、迁徙和土地代价必须并读。"
     },

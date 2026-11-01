@@ -3478,3 +3478,39 @@ if d['version'] >= 142:
  assert all(item['sectionID'].startswith('q-guangxu-') for item in narration['entries'] if item['articleID']=='q_guangxu')
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将',corpus,re.I)
  print('V142 PASS: twelve middle-Guangxu readings and forty-five balanced events connect the Korea crises, Sino-French War, Taiwan province, naval institutions, Yellow River flood, machine silk and staged personal rule without collapsing battles, treaties or modernization into slogans')
+
+if d['version'] >= 143:
+ v169_people=['q169_dengshichang','q169_liubuchan','q169_linyongsheng','q169_zuobaogui','q169_yezhichao','q169_songqing','q169_xubangdao','q169_mayukun','q169_libingheng','q169_nieshicheng','q169_qiufengjia','q169_xuxiang']
+ v169_events={item['id'] for item in d['events'] if item['id'].startswith('v169_')}
+ v169_sources={item['id'] for item in d['sources'] if item['id'].startswith('v169_')}
+ v169_objects={item['id'] for item in d['objects'] if item['id'].startswith('v169_')}
+ object_map={item['id']:item for item in d['objects']}
+ assert len(v169_people)==12 and len(v169_events)==45 and len(v169_sources)==24 and len(v169_objects)==6
+ assert set(v169_people)<=people.keys() and set(v169_people)<=articles.keys()
+ assert all(sum(events[event_id]['category']==category for event_id in v169_events)==9 for category in ['政治','军事','经济','社会','文化'])
+ for pid in v169_people:
+  reading=articles[pid]; ss=reading['sections']
+  chars=sum(len(re.findall(r'[\u4e00-\u9fff]',section['text'])) for section in ss)
+  assert len(ss)==5 and chars>=500 and all(section['sources'] and section['events'] for section in ss),(pid,chars)
+  assert all(set(section['sources'])<=sources.keys() and set(section['events'])<=events.keys() and set(section.get('people',[]))<=people.keys() for section in ss)
+  assert set(reading['sources'])=={source for section in ss for source in section['sources']}
+ assert all(set(events[event_id]['people'])<=people.keys() and set(events[event_id]['sources'])<=sources.keys() for event_id in v169_events)
+ for object_id in v169_objects:
+  item=object_map[object_id]
+  assert item['dynasties']==['qing'] and item['people'] and item['sources']
+  assert set(item['people'])<=people.keys() and set(item['sources'])<=sources.keys()
+ corpus=json.dumps([articles[pid] for pid in v169_people]+[events[event_id] for event_id in v169_events]+[object_map[object_id] for object_id in v169_objects]+[sources[source_id] for source_id in v169_sources],ensure_ascii=False)
+ for term in ['东学农民','成欢','平壤','黄海海战','鸭绿江','旅顺','威海','田庄台','马关条约','三国干涉','台湾民主国','乙未战争','公车上书']:
+  assert term in corpus,('missing Jiawu evidence term',term)
+ for boundary in ['朝鲜并非无主棋盘','舰队并非当日全灭','不能把败因简化为“没有炮弹”','具体死亡总数仍应说明统计差异','与现代成熟共和国不同','各地抵抗多中心发展','不是现场照片','不能使用未经核实的单一挪款数字']:
+  assert boundary in corpus,('missing Jiawu evidence boundary',boundary)
+ ctx=next(item for item in d['reignContexts'] if item['person']=='q_guangxu')
+ assert set(v169_people)<=set(ctx['people']) and v169_events<=set(ctx['events']) and v169_sources<=set(ctx['sources'])
+ pairset={(item['from'],item['to']) for item in d['associations']}
+ assert {('q_guangxu',pid) for pid in v169_people}<=pairset
+ assert {('q169_dengshichang','q169_liubuchan'),('q169_dengshichang','q169_linyongsheng'),('q169_zuobaogui','q169_yezhichao'),('q169_songqing','q169_mayukun'),('q169_qiufengjia','q169_xuxiang')}<=pairset
+ emperor=articles['q_guangxu']
+ assert v169_events<={event_id for section in emperor['sections'] for event_id in section.get('events',[])}
+ assert set(v169_people)<={person_id for section in emperor['sections'] for person_id in section.get('people',[])}
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品采用|产品在来源页|产品将|产品仍|产品还会',corpus,re.I)
+ print('V143 PASS: twelve Jiawu-era readings and forty-five balanced events connect Korea, the Yellow Sea, Liaodong, Weihai, Shimonoseki, war finance, civilians, media and Taiwan resistance with explicit source and casualty boundaries')

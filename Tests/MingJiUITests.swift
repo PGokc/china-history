@@ -5000,4 +5000,42 @@ final class MingJiUITests: XCTestCase {
         shot("v168-liu-mingchuan-land-and-indigenous-sources", app)
     }
 
+    @MainActor func testV169OverviewOmitsGuideAndDengShichangSeparatesMemoryFromEvidence() throws {
+        let overview = XCUIApplication()
+        overview.launchArguments = ["--uitesting", "--ui-dynasty", "qing"]
+        overview.launch()
+        XCTAssertTrue(overview.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        reach(overview.buttons["dynasty_qing"], in: overview, attempts: 14)
+        overview.buttons["dynasty_qing"].tap()
+        XCTAssertTrue(overview.staticTexts["朝代总览"].waitForExistence(timeout: 5))
+        XCTAssertFalse(overview.staticTexts["从这里继续"].exists)
+        XCTAssertFalse(overview.buttons["dynastySequence_qing"].exists)
+        XCTAssertFalse(overview.buttons["dynastyFamily_qing"].exists)
+        XCTAssertFalse(overview.buttons["dynastyCollection_qing"].exists)
+        shot("v169-qing-overview-without-text-guide", overview)
+        overview.terminate()
+
+        let app = XCUIApplication()
+        app.launchArguments = ["--uitesting", "--ui-dynasty", "qing"]
+        app.launch()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        app.buttons.matching(NSPredicate(format: "identifier == %@", "globalSearch")).firstMatch.tap()
+        let search = app.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("邓世昌")
+        let result = app.buttons["search_person_q169_dengshichang"]
+        XCTAssertTrue(result.waitForExistence(timeout: 8)); Thread.sleep(forTimeInterval: 1); result.tap()
+        if !app.buttons["articleEntry"].waitForExistence(timeout: 5) { app.buttons["search_person_q169_dengshichang"].tap() }
+        XCTAssertTrue(app.buttons["articleEntry"].waitForExistence(timeout: 5)); app.buttons["articleEntry"].tap()
+        XCTAssertTrue(app.buttons["articleContents"].waitForExistence(timeout: 5)); app.buttons["articleContents"].tap()
+        let chapter = app.buttons["致远冲击与证据边界"]
+        XCTAssertTrue(chapter.exists); chapter.tap()
+        XCTAssertTrue(app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "后世叙述中层累")).firstMatch.waitForExistence(timeout: 5))
+        shot("v169-deng-shichang-evidence-boundary", app)
+        openChapterSources("v169_dengshichang_3", in: app)
+        XCTAssertTrue(app.descendants(matching: .any)["source_v169_qsg460"].waitForExistence(timeout: 3))
+        shot("v169-deng-shichang-source-cards", app)
+        app.swipeUp()
+        shot("v169-deng-shichang-sources", app)
+    }
+
 }
