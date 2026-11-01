@@ -1,5 +1,5 @@
 {
-  "version": 132,
+  "version": 133,
   "reviewed": "2026-10-31",
   "people": [
     {
@@ -18173,6 +18173,182 @@
       "kind": "和卓家族首领",
       "note": "不能把天山南路不同城镇、伯克与居民视为对兄弟二人一致支持，也不能只沿用“叛乱”标签。",
       "dynasty": "qing"
+    },
+    {
+      "id": "q159_fukangan",
+      "name": "福康安",
+      "call": "边疆统帅与封疆大吏",
+      "temple": "",
+      "era": "乾隆中后期",
+      "reign": "约1754—1796年",
+      "summary": "由亲贵侍卫升为统帅，参与金川、台湾、廓尔喀和苗疆战争；战功、皇恩与军中争议始终并存。",
+      "parent": null,
+      "sources": [
+        "v159_qsg330",
+        "v159_dpm_taiwan_art",
+        "v159_cambridge_military"
+      ],
+      "kind": "满洲镶黄旗将领",
+      "note": "傅恒之子。台湾战后善后、柴大纪案与战争图像，显示凯旋叙事之外仍有地方治理和功臣竞争。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q159_hailancha",
+      "name": "海兰察",
+      "call": "索伦将领与参赞大臣",
+      "temple": "",
+      "era": "乾隆中后期",
+      "reign": "18世纪—1793年",
+      "summary": "由骑兵侍卫成长为前线将领，转战金川、台湾与后藏；个人勇战无法替代粮运、兵种协同和地方向导。",
+      "parent": null,
+      "sources": [
+        "v159_qsg331",
+        "v159_dpm_taiwan_art",
+        "v159_tuebingen_jinchuan"
+      ],
+      "kind": "索伦将领",
+      "note": "官修传记强调冲锋与斩获，本页同时保留伤病、地形和随军群体的作用。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q159_sunshiyi",
+      "name": "孙士毅",
+      "call": "两广总督与安南统帅",
+      "temple": "",
+      "era": "乾隆中后期",
+      "reign": "1720—1796年",
+      "summary": "办理四库、边务与地方财政，1788年率军进入安南，次年遭阮惠军突袭败退。",
+      "parent": null,
+      "sources": [
+        "v159_qsg330",
+        "v159_qsg527",
+        "v159_cambridge_military"
+      ],
+      "kind": "汉军旗大臣",
+      "note": "清军初入升龙与春节前后的撤退不可拆成两个互不相干的故事；藩属复国名义也不等于安南社会一致支持。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q159_lishiyao",
+      "name": "李侍尧",
+      "call": "督抚与军需大臣",
+      "temple": "",
+      "era": "乾隆中后期",
+      "reign": "乾隆中后期—1788年",
+      "summary": "长期任云贵、两广和闽浙督抚，既处理边贸军需，也因贪污受审后反复起复。",
+      "parent": null,
+      "sources": [
+        "v159_qsg323",
+        "v159_cambridge_burma",
+        "v159_cambridge_military"
+      ],
+      "kind": "汉军旗督抚",
+      "note": "处死改监候、释出再任体现乾隆用人逻辑；不能写成现代意义上的司法纠错。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q159_linshuangwen",
+      "name": "林爽文",
+      "call": "台湾天地会首领",
+      "temple": "",
+      "era": "乾隆中后期",
+      "reign": "约18世纪中期—1788年",
+      "summary": "在官府查捕天地会背景下起事，迅速扩展到台湾多地，最终被清军与地方武装合围捕获。",
+      "parent": null,
+      "sources": [
+        "v159_dpm_taiwan_art",
+        "v159_ntu_taiwan",
+        "v159_qsyj_lin"
+      ],
+      "kind": "台湾民变首领",
+      "note": "参与者来源、族群与动机并不一致；‘起义’‘民变’‘叛乱’各有叙事立场，本页说明而不偷换。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q159_nguyenhue",
+      "name": "阮惠",
+      "call": "西山军领袖与光中帝",
+      "temple": "",
+      "era": "乾隆中后期",
+      "reign": "1753—1792年",
+      "summary": "西山运动领袖，推翻郑氏、击败清军并建立政权；随后通过使节与册封重新安排清越关系。",
+      "parent": null,
+      "sources": [
+        "v159_qsg527",
+        "v159_qsg330"
+      ],
+      "kind": "越南西山政权君主",
+      "note": "清方文献常写作阮光平并以藩属语言叙述；其国内改革和合法性不能只从清廷册封观察。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q159_daizhen",
+      "name": "戴震",
+      "call": "考据学者与思想家",
+      "temple": "",
+      "era": "乾隆中后期",
+      "reign": "1724—1777年",
+      "summary": "以文字、音韵、历算和制度考证进入四库馆，也借训诂讨论情欲、理与社会判断。",
+      "parent": null,
+      "sources": [
+        "v159_qsg481",
+        "v159_qsg145",
+        "v159_nmc_siku"
+      ],
+      "kind": "徽州学者",
+      "note": "‘考据’不是只校几个字；由证据通向义理的方式，才是其学术张力。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q159_qiandaxin",
+      "name": "钱大昕",
+      "call": "史学家与金石学者",
+      "temple": "",
+      "era": "乾隆中后期",
+      "reign": "1728—1804年",
+      "summary": "以历法、年代、官制、金石和多史互证推进史学，曾参与多项官修工程，后长期讲学著述。",
+      "parent": null,
+      "sources": [
+        "v159_qsg481",
+        "v159_qsg145"
+      ],
+      "kind": "嘉定学者",
+      "note": "官修与私家研究并行；后人归纳的乾嘉学派边界不能反过来抹平他的多种方法。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q159_wangxihou",
+      "name": "王锡侯",
+      "call": "《字贯》作者",
+      "temple": "",
+      "era": "乾隆中后期",
+      "reign": "约1713—1777年",
+      "summary": "因批评《康熙字典》并在《字贯》凡例列写帝王庙讳、御名而被判重罪，著作和家属亦受牵连。",
+      "parent": null,
+      "sources": [
+        "v159_dpm_text_cases",
+        "v157_dpm_archives"
+      ],
+      "kind": "江西举人",
+      "note": "案卷中的‘悖逆’是审判语言，不是作者动机的自动证明；避讳、钦定知识与皇权尊严在此重叠。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q159_xushukui",
+      "name": "徐述夔",
+      "call": "《一柱楼诗》作者",
+      "temple": "",
+      "era": "乾隆中后期",
+      "reign": "乾隆朝，身后兴狱",
+      "summary": "其诗文在身后被检举、层层解释为影射清廷，案件牵连子孙、校订者与地方官。",
+      "parent": null,
+      "sources": [
+        "v159_dpm_text_cases",
+        "v157_dpm_archives"
+      ],
+      "kind": "江苏文人",
+      "note": "诗句原意、检举者解释和皇帝定罪必须分层；不能把办案者的谐音推断直接当作作者自白。",
+      "dynasty": "qing"
     }
   ],
   "sources": [
@@ -25021,6 +25197,114 @@
       "title": "Cambridge University Press · The Qing Extermination of the Zünghars",
       "url": "https://www.cambridge.org/core/books/abs/cambridge-world-history-of-genocide/qing-extermination-of-the-zunghars/6D038CADD0F808459451175C1CAD6DC5",
       "note": "用于核对持续杀戮、饥荒与疾病共同造成准噶尔社会毁灭的研究判断；确切人口比例仍受史料与估算方法限制。"
+    },
+    {
+      "id": "v159_qsg330",
+      "title": "《清史稿》卷330 · 福康安、孙士毅、明亮传",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷330",
+      "note": "用于福康安、孙士毅及金川、台湾、安南军务。此书为未定稿，功臣传中的斩获、褒奖与对手称谓带有胜利王朝立场。"
+    },
+    {
+      "id": "v159_qsg331",
+      "title": "《清史稿》卷331 · 海兰察等传",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷331",
+      "note": "用于海兰察在金川、台湾与廓尔喀战事中的经历。军功数字不能直接当作现代战场统计。"
+    },
+    {
+      "id": "v159_qsg323",
+      "title": "《清史稿》卷323 · 李侍尧传",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷323",
+      "note": "用于李侍尧的地方任职、贪污审讯、军需调度与反复起复。皇帝宽宥不等于案件获得独立司法复核。"
+    },
+    {
+      "id": "v159_qsg481",
+      "title": "《清史稿》卷481 · 戴震、钱大昕等儒林传",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷481",
+      "note": "用于戴震、钱大昕的治学、任官与著述。传记的学派谱系是后出整理，不能替代逐部著作判断。"
+    },
+    {
+      "id": "v159_qsg527",
+      "title": "《清史稿》卷527 · 安南传",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷527",
+      "note": "用于黎维祁、阮惠与清军入越、撤退及册封交涉。清方藩属语言不能直接替代越南内部政治视角。"
+    },
+    {
+      "id": "v159_qsg145",
+      "title": "《清史稿》卷145 · 艺文志与四库馆",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷145",
+      "note": "用于四库馆组织、参与人数与抄藏工程。艺文志能说明书目编制，不能量化所有散佚和禁毁后果。"
+    },
+    {
+      "id": "v159_dpm_siku_removed",
+      "title": "故宫博物院 · 《四库全书》撤出本",
+      "url": "https://www.dpm.org.cn/lemmas/243627.html",
+      "note": "用于1787年重检、撤出李清等人著作及删除提要；显示审查在成书后仍继续。"
+    },
+    {
+      "id": "v159_dpm_siku_destroy",
+      "title": "故宫博物院 · 《抽毁书目》",
+      "url": "https://www.dpm.org.cn/lemmas/244438.html",
+      "note": "馆方介绍四库征书中的禁毁及乾隆四十七年奏准抽毁书目。三千余种为馆方概述，不扩写成逐册精确总数。"
+    },
+    {
+      "id": "v159_dpm_text_cases",
+      "title": "故宫博物院院刊 · 乾隆朝文字狱研究资料",
+      "url": "https://www.dpm.org.cn/Uploads/pdf/1572/T00078_00.pdf",
+      "note": "用于王锡侯《字贯》案、徐述夔案及御名避讳的政治化。案件结论来自君主裁断和官僚审讯，不当作自由供述。"
+    },
+    {
+      "id": "v159_nmc_southtour",
+      "title": "中国国家博物馆 · 《乾隆南巡图》数字展",
+      "url": "https://www.chnmuseum.cn/Portals/0/web/zt/digitalexhi/",
+      "note": "用于1751年第一次南巡的路线、日程与十二卷图像。宫廷画卷经过选择和编排，不是全程写实录像。"
+    },
+    {
+      "id": "v159_dpm_taiwan_art",
+      "title": "故宫博物院 · 《平定台湾得胜图》",
+      "url": "https://www.dpm.org.cn/ancient/yuanmingqing/163517.html",
+      "note": "用于十二幅铜版战图的制作、题材与时间。画面集中表现清军取胜，不代表事件全部阶段和各方经验。"
+    },
+    {
+      "id": "v159_dpm_jinchuan_art",
+      "title": "故宫博物院 · 《平定两金川得胜图》",
+      "url": "https://www.dpm.org.cn/ancient/yuanmingqing/159974.html",
+      "note": "用于两次金川战役及宫廷纪功图像。馆方旧式‘叛乱’表述须与地方土司、战争后勤和居民处境一并解释。"
+    },
+    {
+      "id": "v159_cambridge_burma",
+      "title": "Modern Asian Studies · A Disguised Defeat: The Myanmar Campaign of the Qing Dynasty",
+      "url": "https://www.cambridge.org/core/journals/modern-asian-studies/article/abs/disguised-defeat-the-myanmar-campaign-of-the-qing-dynasty/63CA69CE98806A12469BA642B1306CF7",
+      "note": "用于清缅战争升级、疾病、撤退、边贸长期中断及朝廷胜利叙事。"
+    },
+    {
+      "id": "v159_cambridge_military",
+      "title": "Journal of Chinese History · Qing Military Institutions and Their Effects on Government, Economy, and Society",
+      "url": "https://www.cambridge.org/core/journals/journal-of-chinese-history/article/qing-military-institutions-and-their-effects-on-government-economy-and-society-16401800/E1FDAA965C5B67C12274B2B3408AE206",
+      "note": "用于战争财政、地方后勤外包、军需腐败与金川战费。文中约数用于说明量级，不伪装成逐笔决算。"
+    },
+    {
+      "id": "v159_tuebingen_jinchuan",
+      "title": "图宾根大学 · The Second Jinchuan Campaign: Economic, Social and Political Aspects",
+      "url": "https://publikationen.uni-tuebingen.de/xmlui/handle/10900/46846?show=full",
+      "note": "用于第二次金川战争的军需组织、脚夫工匠、商人和地方财政负担。"
+    },
+    {
+      "id": "v159_ntu_taiwan",
+      "title": "台湾大学 · 清帝国边疆治理与林爽文事件后土地开发研究",
+      "url": "https://scholars.lib.ntu.edu.tw/entities/publication/15ebecbc-be54-4912-9096-abb0a25429cb",
+      "note": "用于事件后屯番、隘制与越界开垦关系。制度意图与实际执行后果须分开。"
+    },
+    {
+      "id": "v159_qsyj_lin",
+      "title": "《清史研究》· 林爽文起义原因新论",
+      "url": "https://qsyj.ruc.edu.cn/CN/Y2000/V0/I2/92",
+      "note": "用于移民社会、会党、族群械斗等多重背景，避免用单一阶级或族群原因解释全岛动乱。"
+    },
+    {
+      "id": "v159_nmc_siku",
+      "title": "中国国家博物馆 · 《四库全书》与南北七阁",
+      "url": "https://en.chnmuseum.cn/Portals/0/web/exhibition/exhibitions/161120Chines-Epic/",
+      "note": "用于编纂时间、收书规模与七阁分藏。馆方数字为工程概述，不等于现存完整册数。"
     }
   ],
   "relations": [
@@ -72090,6 +72374,616 @@
       ],
       "category": "文化",
       "kind": "历史事件"
+    },
+    {
+      "id": "v159_second_secret_heir",
+      "year": "1773年",
+      "title": "再次秘密建储指向永琰",
+      "body": "乾隆在永琏、永琮先后早逝后再次密定皇十五子永琰为储君，储名仍按制度封存。",
+      "impact": "它维持了继承安排的秘密性，却没有消除皇子、近臣对未来权力重组的判断；不能直接等同现代制度化接班。",
+      "people": [
+        "q_qianlong",
+        "q_jiaqing"
+      ],
+      "sources": [
+        "v5qe_dpm_qianlong",
+        "v5qe_qsg10_15"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v159_heshen_rise",
+      "year": "1776—1780年代",
+      "title": "和珅由侍卫进入军机与财政中枢",
+      "body": "和珅获任军机大臣，继而兼掌户部、内务府和多项临时差使，奏报、钱粮与宫廷供给逐渐交汇。",
+      "impact": "权力不是某日突然完成，而由皇帝持续授差、婚姻关系与人事网络累积；‘善于奉承’不足以解释制度条件。",
+      "people": [
+        "q_heshen",
+        "q_qianlong"
+      ],
+      "sources": [
+        "v40q_qsg319"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v159_lishiyao_case",
+      "year": "1780—1781年",
+      "title": "李侍尧贪污案从死罪转为再任",
+      "body": "李侍尧因勒索、纳贿等罪受审，拟斩后改监候，随后获释并再次承担地方军政事务。",
+      "impact": "案件显示皇帝可以在惩贪、惜才和边疆用人之间反复调整；宽免不是现代司法中的无罪判决。",
+      "people": [
+        "q159_lishiyao",
+        "q_qianlong",
+        "q_heshen"
+      ],
+      "sources": [
+        "v159_qsg323"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v159_wang_xihou_case",
+      "year": "1777年",
+      "title": "《字贯》案把字书凡例升级为政治重罪",
+      "body": "江西举人王锡侯批评《康熙字典》并在凡例开列帝王名讳，乾隆将其认定为冒犯御名，案件牵连家属和官员。",
+      "impact": "知识批评、避讳格式与皇权尊严被捆在同一审判中；定罪文书不能自动证明作者有反清计划。",
+      "people": [
+        "q159_wangxihou",
+        "q_qianlong"
+      ],
+      "sources": [
+        "v159_dpm_text_cases",
+        "v157_dpm_archives"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v159_xu_shukui_case",
+      "year": "1778—1779年",
+      "title": "徐述夔诗案在作者身后扩大株连",
+      "body": "地方检举《一柱楼诗》中的字句，官员以谐音和朝代联想解释为悖逆，已故作者及其家属、校订者和失察官员受到追究。",
+      "impact": "诗句、办案推断和皇帝裁决不是同一层证据；不能把审讯结论倒写成作者生前公开政治宣言。",
+      "people": [
+        "q159_xushukui",
+        "q_qianlong"
+      ],
+      "sources": [
+        "v159_dpm_text_cases",
+        "v157_dpm_archives"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v159_taiwan_postwar_rules",
+      "year": "1788年以后",
+      "title": "台湾善后章程重排军政与基层控制",
+      "body": "战后清廷清查吏治、增设控制措施，并以屯番、隘制等办法重组边缘地区秩序。",
+      "impact": "制度意在防乱和限制越界，执行中却可能承认既成开垦并推动土地再分配；不能把章程直接写成已在全岛落实。",
+      "people": [
+        "q159_fukangan",
+        "q159_linshuangwen",
+        "q159_lishiyao"
+      ],
+      "sources": [
+        "v159_dpm_taiwan_art",
+        "v159_ntu_taiwan"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v159_vietnam_settlement",
+      "year": "1789—1790年",
+      "title": "清廷由军事复黎转向册封阮惠",
+      "body": "清军败退后，阮惠以阮光平名义遣使，清廷不再继续大规模用兵并予册封，黎维祁流亡中国。",
+      "impact": "册封恢复了外交秩序，却不等于清廷重新控制安南，也不能抹去前一年用兵失败。",
+      "people": [
+        "q159_nguyenhue",
+        "q159_sunshiyi",
+        "q_qianlong"
+      ],
+      "sources": [
+        "v159_qsg527",
+        "v159_qsg330"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v159_burma_escalation",
+      "year": "1765—1766年",
+      "title": "云南边境冲突升级为清缅战争",
+      "body": "土司、边民与缅甸贡榜王朝之间的边境冲突不断升级，地方绿营失败后，乾隆投入更大规模军队。",
+      "impact": "战争并非单一入贡纠纷，也不能只用‘蛮夷抗命’解释；边界权利、地方报功和皇帝误判共同推动升级。",
+      "people": [
+        "q159_lishiyao",
+        "q_qianlong"
+      ],
+      "sources": [
+        "v159_cambridge_burma",
+        "v159_qsg323"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v159_burma_disease",
+      "year": "1767—1768年",
+      "title": "热带疾病与补给线重创清军",
+      "body": "清军深入缅北后遭遇疾病、雨季、道路和补给困难，多任统帅受挫，前线减员不能仅按战斗阵亡理解。",
+      "impact": "精锐八旗与索伦兵也不能摆脱环境约束；把失败归咎个别将领会遮蔽战略和后勤问题。",
+      "people": [
+        "q158_fuheng",
+        "q159_lishiyao",
+        "q_qianlong"
+      ],
+      "sources": [
+        "v159_cambridge_burma",
+        "v158_qsg301"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v159_burma_truce",
+      "year": "1769年",
+      "title": "前线议和后清军撤出缅甸",
+      "body": "傅恒最后一次进军仍未迫使缅甸屈服，双方前线将领议和，清军撤回；朝廷随后长期保持备战姿态。",
+      "impact": "官方纪功没有改变未能征服缅甸的结果。议和也未立即恢复正常边贸，胜负、外交措辞与实际撤军须分开。",
+      "people": [
+        "q158_fuheng",
+        "q159_lishiyao",
+        "q_qianlong"
+      ],
+      "sources": [
+        "v159_cambridge_burma",
+        "v158_qsg301"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v159_jinchuan_muguomu",
+      "year": "1773年",
+      "title": "木果木失利迫使金川战事重组指挥",
+      "body": "温福军在木果木遭受重大失败，粮台与营垒崩溃，乾隆重新任阿桂统军，福康安、海兰察等参与后续进攻。",
+      "impact": "失利说明碉寨地形、分兵和补给体系均有问题，不能只用临阵勇怯解释；清方伤亡数字也并不完整。",
+      "people": [
+        "q_agui",
+        "q159_fukangan",
+        "q159_hailancha",
+        "q_qianlong"
+      ],
+      "sources": [
+        "v159_qsg330",
+        "v159_qsg331",
+        "v159_tuebingen_jinchuan"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v159_jinchuan_end",
+      "year": "1776年",
+      "title": "第二次金川战争结束并改设治理",
+      "body": "索诺木投降后战争结束，清廷处置土司上层，在当地设置官员、驻军与屯垦安排。",
+      "impact": "军事终结不等于地方社会即时稳定；人口迁移、驻防供给和原有政治关系的破坏仍需另行观察。",
+      "people": [
+        "q_agui",
+        "q159_fukangan",
+        "q159_hailancha",
+        "q_qianlong"
+      ],
+      "sources": [
+        "v159_qsg330",
+        "v159_qsg331",
+        "v159_dpm_jinchuan_art"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v159_lin_revolt",
+      "year": "1786—1787年",
+      "title": "林爽文事件从查捕会党扩展为全岛性动乱",
+      "body": "官府查捕天地会触发冲突，林爽文部众攻占彰化等地，庄大田等力量在南部响应，械斗与地方对立交织。",
+      "impact": "参加和反对者都不是单一族群或阶层。把事件只写成反清革命或单纯盗乱，都会删去移民社会的复杂联盟。",
+      "people": [
+        "q159_linshuangwen",
+        "q_qianlong"
+      ],
+      "sources": [
+        "v159_qsyj_lin",
+        "v159_ntu_taiwan"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v159_taiwan_counteroffensive",
+      "year": "1787—1788年",
+      "title": "跨海增兵与地方协力改变台湾战局",
+      "body": "福康安、海兰察率军渡海，在清军、义民及部分原住民社群协同下解嘉义之围并追捕林爽文、庄大田。",
+      "impact": "宫廷战图集中表现凯旋，不能当作完整战场记录；地方协力也有利益、强制和既有冲突等不同背景。",
+      "people": [
+        "q159_fukangan",
+        "q159_hailancha",
+        "q159_linshuangwen",
+        "q159_lishiyao"
+      ],
+      "sources": [
+        "v159_qsg330",
+        "v159_qsg331",
+        "v159_dpm_taiwan_art"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v159_vietnam_advance",
+      "year": "1788年末",
+      "title": "孙士毅军进入升龙扶立黎维祁",
+      "body": "清廷以恢复黎朝为名，由广西、云南出兵，孙士毅部迅速进入升龙并扶黎维祁复位。",
+      "impact": "快速推进造成胜利已经完成的错觉；当地支持结构、清军补给和阮惠主力动向都没有因此消失。",
+      "people": [
+        "q159_sunshiyi",
+        "q159_nguyenhue",
+        "q_qianlong"
+      ],
+      "sources": [
+        "v159_qsg330",
+        "v159_qsg527"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v159_vietnam_retreat",
+      "year": "1789年",
+      "title": "阮惠春节攻势击溃清军",
+      "body": "阮惠率西山军北上，在春节前后迅速击败清军，孙士毅仓促撤过富良江，许世亨等多名将领战死。",
+      "impact": "清方文献将责任集中到孙士毅轻敌，但败退还涉及兵力分散、情报、补给和当地政治支持；不能写成单人失误。",
+      "people": [
+        "q159_sunshiyi",
+        "q159_nguyenhue",
+        "q_qianlong"
+      ],
+      "sources": [
+        "v159_qsg330",
+        "v159_qsg527"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v159_jinchuan_cost",
+      "year": "1771—1776年",
+      "title": "第二次金川战费推高到数千万两量级",
+      "body": "长期山地战争动员多省银粮，研究据军需档案估算支出约六千万两，并形成大量转运、采购和报销链条。",
+      "impact": "这一数字说明量级而非逐笔现代决算；中央拨款也不能证明脚夫、村寨与地方市场没有承担额外成本。",
+      "people": [
+        "q_agui",
+        "q159_fukangan",
+        "q159_hailancha"
+      ],
+      "sources": [
+        "v159_cambridge_military",
+        "v159_tuebingen_jinchuan"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v159_jinchuan_transport",
+      "year": "1771—1776年",
+      "title": "军粮从四川盆地接力运向高山营地",
+      "body": "粮食、火药、木料和军械经水陆站点层层转运，大量脚夫、牲畜、工匠、商人和地方官吏被卷入。",
+      "impact": "银两流入也带来贸易机会，但强制差役、物价波动、侵冒和途中损耗并存，不能只写成战争刺激市场。",
+      "people": [
+        "q_agui",
+        "q159_fukangan",
+        "q159_hailancha"
+      ],
+      "sources": [
+        "v159_tuebingen_jinchuan",
+        "v159_cambridge_military"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v159_burma_trade_ban",
+      "year": "1769年以后",
+      "title": "清缅停战后边贸仍长期受限",
+      "body": "清军撤退后，朝廷在云南边境维持军事戒备并限制跨境贸易，正式关系恢复晚于战场停火。",
+      "impact": "禁贸影响边民、商人和土司网络；不能把一次议和写成边境生活立刻恢复常态。",
+      "people": [
+        "q159_lishiyao",
+        "q_qianlong"
+      ],
+      "sources": [
+        "v159_cambridge_burma",
+        "v159_qsg323"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v159_southtour_finance",
+      "year": "1751—1784年",
+      "title": "六次南巡把河工、仪典与地方筹办绑在一起",
+      "body": "南巡兼有视河、阅兵、祭祀和政治展示，沿途行宫、道路、船只、供给常由地方官员与盐商等共同筹办。",
+      "impact": "皇帝强调不扰民、并有蠲免，但商人捐输与地方转嫁难以完整入账；不能以国库支出较少推定社会成本很低。",
+      "people": [
+        "q_qianlong",
+        "q159_lishiyao"
+      ],
+      "sources": [
+        "v159_nmc_southtour",
+        "v5qe_dpm_qianlong"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v159_population_pressure",
+      "year": "1760—1795年",
+      "title": "人口增长把粮价、垦殖与流动压力推向地方",
+      "body": "人口登记和耕地扩展继续增长，山区、边疆和海岛吸收移民，粮食供应、土地契约与基层治理承受更大压力。",
+      "impact": "册报人口不是现代普查，增长也不能只归因一种作物或‘盛世’；区域差异、灾害和流动人口都需保留。",
+      "people": [
+        "q_qianlong",
+        "q159_linshuangwen"
+      ],
+      "sources": [
+        "v5qe_qsg10_15",
+        "v159_ntu_taiwan"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v159_taiwan_land_afterwar",
+      "year": "1788年以后",
+      "title": "台湾战后屯番与隘制改变土地开发边界",
+      "body": "清廷试图借原住民屯丁和隘线控制越界开垦、维持山前秩序，实际执行又吸收部分既成开发。",
+      "impact": "图上的界线不是无人土地边缘，也不是一道命令便能固定；不同社群对土地、租佃和守隘的权利并不相等。",
+      "people": [
+        "q159_fukangan",
+        "q159_linshuangwen"
+      ],
+      "sources": [
+        "v159_ntu_taiwan"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v159_jinchuan_labor",
+      "year": "1771—1776年",
+      "title": "脚夫、工匠与沿线村落构成金川战争的隐形军队",
+      "body": "前线之外，大批民夫负责背运、修路、架桥、建营和照料牲畜，商人和手工业者供应粮械。",
+      "impact": "官修功臣传很少逐名记录这些人。没有名册不等于没有劳动，也不能据总额精确反推每户负担。",
+      "people": [
+        "q_agui",
+        "q159_fukangan",
+        "q159_hailancha"
+      ],
+      "sources": [
+        "v159_tuebingen_jinchuan",
+        "v159_cambridge_military"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v159_burma_sickness_society",
+      "year": "1765—1769年",
+      "title": "疫病改变清缅战争中的军营与边地生活",
+      "body": "疟疾等地方性疾病造成大量减员，病兵转运、药材、埋葬和补充兵源持续影响云南沿线。",
+      "impact": "‘非战斗减员’不是无关战争的自然背景，而是远征决策的组成部分；现有材料不足以恢复每批士兵死因。",
+      "people": [
+        "q158_fuheng",
+        "q159_lishiyao"
+      ],
+      "sources": [
+        "v159_cambridge_burma"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v159_southtour_requisition",
+      "year": "1751—1784年",
+      "title": "接驾秩序深入沿途城市与日常劳作",
+      "body": "道路整修、船只调集、警卫、住宿、食物和陈设需要官吏、差役、工匠、商人及居民共同完成。",
+      "impact": "宫廷画卷展示整齐繁盛，却不自动呈现停业、差派与筹办压力；图像能证明选择了什么，不能证明遗漏的生活不存在。",
+      "people": [
+        "q_qianlong"
+      ],
+      "sources": [
+        "v159_nmc_southtour"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v159_taiwan_factions",
+      "year": "1786—1788年",
+      "title": "会党、籍贯械斗与地方自保交错扩大战乱",
+      "body": "台湾移民社会中的会党网络、漳泉粤籍关系、地方豪强和官府查捕相互作用，不同村庄随形势结盟或自保。",
+      "impact": "族群标签不能解释每个人选择，也不能把所有冲突都化约为单一阶级斗争；区域和时段差异必须保留。",
+      "people": [
+        "q159_linshuangwen"
+      ],
+      "sources": [
+        "v159_qsyj_lin",
+        "v159_ntu_taiwan"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v159_taiwan_indigenous",
+      "year": "1787—1788年",
+      "title": "原住民社群以不同方式卷入林爽文事件",
+      "body": "部分平埔与山地社群参与追捕、守隘或提供路径，也有人被双方动员，土地边界和既有关系影响选择。",
+      "impact": "官军战图中的协力场面不能代表所有社群一致站队；清代‘生番’‘熟番’是治理分类，不是今天可直接沿用的族名。",
+      "people": [
+        "q159_fukangan",
+        "q159_hailancha",
+        "q159_linshuangwen"
+      ],
+      "sources": [
+        "v159_dpm_taiwan_art",
+        "v159_ntu_taiwan"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v159_book_collection_local",
+      "year": "1772年以后",
+      "title": "征书任务从中央馆局传到藏书家与地方官",
+      "body": "各省搜访、进呈和抄录典籍，藏书家既获得保存、著录机会，也面对审查、撤书和文字牵连风险。",
+      "impact": "‘献书’不能一概理解为自愿捐赠，未进四库也不等于没有价值；地方执行强度并不完全一致。",
+      "people": [
+        "q_jiyun",
+        "q159_daizhen",
+        "q159_qiandaxin"
+      ],
+      "sources": [
+        "v159_nmc_siku",
+        "v159_dpm_siku_destroy"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v159_siku_collection",
+      "year": "1772—1782年",
+      "title": "四库馆征书、辑佚、校勘并缮写分藏",
+      "body": "朝廷设馆汇集经史子集，馆臣从《永乐大典》等书辑出佚文，形成总目、抄本并分藏多阁。",
+      "impact": "工程保存和整理大量文献，但‘收入’不是原本原样复制，馆臣校改、分类和提要同样塑造后世阅读。",
+      "people": [
+        "q_jiyun",
+        "q159_daizhen",
+        "q159_qiandaxin",
+        "q_qianlong"
+      ],
+      "sources": [
+        "v159_qsg145",
+        "v159_nmc_siku"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v159_siku_bans",
+      "year": "1770—1780年代",
+      "title": "征书与禁毁沿同一行政网络展开",
+      "body": "四库馆和各省审查所谓违碍书籍，对部分作品全毁、抽毁、改字或不予收录，作者家族与地方官也可能受追究。",
+      "impact": "保存与控制不是两个互不相干的工程。禁毁数字来自不同口径，不宜拼成看似精确的唯一总数。",
+      "people": [
+        "q_jiyun",
+        "q159_wangxihou",
+        "q159_xushukui",
+        "q_qianlong"
+      ],
+      "sources": [
+        "v159_dpm_siku_destroy",
+        "v159_dpm_text_cases"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v159_siku_recheck",
+      "year": "1787年以后",
+      "title": "成书后的重检又撤出已收著作",
+      "body": "军机大臣发现李清著作被认为有违碍之处，朝廷复查各阁，撤出多种书及相关提要。",
+      "impact": "七阁抄成不等于文本定型；撤出本说明审查可以逆向改写已经完成的知识工程。",
+      "people": [
+        "q_jiyun",
+        "q_heshen",
+        "q_qianlong"
+      ],
+      "sources": [
+        "v159_dpm_siku_removed"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v159_dai_method",
+      "year": "1750—1777年",
+      "title": "戴震以训诂、历算和制度证据进入义理问题",
+      "body": "戴震考证古音、名物、历算与经典语义，并由词义讨论理、欲和人的生活判断。",
+      "impact": "考据不是回避思想，也不能把他的全部著述压成反理学口号；每一结论仍需回到文本与证据链。",
+      "people": [
+        "q159_daizhen",
+        "q_jiyun"
+      ],
+      "sources": [
+        "v159_qsg481"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v159_qian_method",
+      "year": "1760—1795年",
+      "title": "钱大昕用金石、历日与多史互证校正史书",
+      "body": "钱大昕核对碑刻、官制、地名、年代和朔闰，比较正史与其他材料，形成可复查的史学判断。",
+      "impact": "金石材料并不天然比文献真实；价值在于来源不同、可相互校验，而不是以一块碑推翻全部记载。",
+      "people": [
+        "q159_qiandaxin"
+      ],
+      "sources": [
+        "v159_qsg481"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v159_victory_images",
+      "year": "1776—1790年",
+      "title": "金川与台湾战图把复杂战争编排为凯旋系列",
+      "body": "宫廷画师选择进攻、擒获、献俘和赐宴等场面，配合御制诗与紫光阁纪功空间，形成可观看的武功秩序。",
+      "impact": "战图是重要史料，却是事后选择的国家图像；没有画出的败退、疾病、运输与地方伤亡不能因此消失。",
+      "people": [
+        "q_qianlong",
+        "q159_fukangan",
+        "q159_hailancha",
+        "q159_linshuangwen"
+      ],
+      "sources": [
+        "v159_dpm_taiwan_art",
+        "v159_dpm_jinchuan_art"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v159_southtour_images",
+      "year": "1764—1776年",
+      "title": "《乾隆南巡图》在出巡多年后组织为十二卷",
+      "body": "徐扬等宫廷画家依御制诗和既定行程描绘第一次南巡，画面兼收城市、河工、礼仪与各业人物。",
+      "impact": "长卷保留丰富空间信息，却不是同步新闻摄影；整齐队伍与繁华街市是宫廷叙事选择。",
+      "people": [
+        "q_qianlong"
+      ],
+      "sources": [
+        "v159_nmc_southtour"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
     }
   ],
   "objects": [
@@ -77150,6 +78044,88 @@
       ],
       "sources": [
         "v5qp_qianlong"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v159_obj_southtour",
+      "title": "徐扬等《乾隆南巡图》",
+      "subtitle": "十二卷长图里的河工、城市与被安排的巡幸秩序",
+      "symbol": "scroll",
+      "image": null,
+      "body": "画卷依第一次南巡路线组织京师启跸、渡黄河、阅河工、驻跸江南和回銮等场景，提供城市、交通、行业与礼仪的丰富细节。它在出巡多年后依御制诗和宫廷要求绘成，因此既是社会图像资料，也是皇权如何选择并排列‘所见’的作品。",
+      "note": "图中繁华与整齐不能证明沿途没有差役、捐输和停业压力；长卷不是同步现场摄影。",
+      "people": [
+        "q_qianlong"
+      ],
+      "sources": [
+        "v159_nmc_southtour"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v159_obj_siku_removed",
+      "title": "《四库全书》撤出本与抽毁书目",
+      "subtitle": "已经抄成的知识仍会被重新审查",
+      "symbol": "book.closed",
+      "image": null,
+      "body": "四库工程并未在第一批抄本完成时冻结。1787年前后，军机与馆臣因李清等著作被认定有违碍内容，复查各阁、撤出书籍并删除提要；抽毁书目又保存了一部分禁书行政痕迹。",
+      "note": "这些目录证明具体撤毁行为，但不同统计口径不能拼成一个绝对精确的禁书总数。",
+      "people": [
+        "q_qianlong",
+        "q_jiyun",
+        "q_heshen"
+      ],
+      "sources": [
+        "v159_dpm_siku_removed",
+        "v159_dpm_siku_destroy"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v159_obj_taiwan_battles",
+      "title": "《平定台湾得胜图》",
+      "subtitle": "十二幅凯旋图没有画出整场林爽文事件",
+      "symbol": "photo.on.rectangle.angled",
+      "image": null,
+      "body": "内府铜版画选择大埔林、斗六门、擒获林爽文与庄大田、渡海凯旋和赐宴等场面，配御制诗文，把分散战斗编成胜利序列。画中可见军队、村落和山地，却主要从清廷统帅和纪功角度组织。",
+      "note": "战图不是连续现场记录，也不能代表不同移民与原住民社群的共同视角。",
+      "people": [
+        "q159_fukangan",
+        "q159_hailancha",
+        "q159_linshuangwen",
+        "q_qianlong"
+      ],
+      "sources": [
+        "v159_dpm_taiwan_art"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v159_obj_jinchuan_battles",
+      "title": "《平定两金川得胜图》",
+      "subtitle": "碉寨、山路与被移出画面的军需劳动",
+      "symbol": "mountain.2",
+      "image": null,
+      "body": "战图把攻碉、进军、献俘与赐宴转成可收藏的宫廷系列，保留山地工事和军队行动的视觉线索。与军需材料对读，才会看见画外的粮站、脚夫、工匠、商人和数年财政动员。",
+      "note": "事后纪功图可以核对朝廷选择的关键场面，不能用来精确统计伤亡或证明战争成本合理。",
+      "people": [
+        "q_agui",
+        "q159_fukangan",
+        "q159_hailancha",
+        "q_qianlong"
+      ],
+      "sources": [
+        "v159_dpm_jinchuan_art",
+        "v159_tuebingen_jinchuan"
       ],
       "dynasties": [
         "qing"
@@ -88638,19 +89614,39 @@
             "v158_dpm_sanxi",
             "v158_dpm_western",
             "v158_dpm_shengjing",
-            "v158_cambridge_dzungar"
+            "v158_cambridge_dzungar",
+            "v159_qsg330",
+            "v159_qsg331",
+            "v159_qsg323",
+            "v159_qsg481",
+            "v159_qsg527",
+            "v159_qsg145",
+            "v159_dpm_siku_removed",
+            "v159_dpm_siku_destroy",
+            "v159_dpm_text_cases",
+            "v159_nmc_southtour",
+            "v159_dpm_taiwan_art",
+            "v159_dpm_jinchuan_art",
+            "v159_cambridge_burma",
+            "v159_cambridge_military",
+            "v159_tuebingen_jinchuan",
+            "v159_ntu_taiwan",
+            "v159_qsyj_lin",
+            "v159_nmc_siku"
           ],
           "kind": "史实与解读",
           "events": [
             "qev_qianlong_accession_1735",
             "v158_initial_council",
             "v158_secret_heir",
-            "v158_sun_forgery"
+            "v158_sun_forgery",
+            "v159_second_secret_heir"
           ],
           "people": [
             "q158_fuheng",
             "q158_liutongxun",
-            "q158_sunjiagan"
+            "q158_sunjiagan",
+            "q_jiaqing"
           ]
         },
         {
@@ -88672,7 +89668,25 @@
             "v158_dpm_sanxi",
             "v158_dpm_western",
             "v158_dpm_shengjing",
-            "v158_cambridge_dzungar"
+            "v158_cambridge_dzungar",
+            "v159_qsg330",
+            "v159_qsg331",
+            "v159_qsg323",
+            "v159_qsg481",
+            "v159_qsg527",
+            "v159_qsg145",
+            "v159_dpm_siku_removed",
+            "v159_dpm_siku_destroy",
+            "v159_dpm_text_cases",
+            "v159_nmc_southtour",
+            "v159_dpm_taiwan_art",
+            "v159_dpm_jinchuan_art",
+            "v159_cambridge_burma",
+            "v159_cambridge_military",
+            "v159_tuebingen_jinchuan",
+            "v159_ntu_taiwan",
+            "v159_qsyj_lin",
+            "v159_nmc_siku"
           ],
           "kind": "史实与解读",
           "events": [
@@ -88690,7 +89704,19 @@
             "v158_black_river",
             "v158_altishahr_war",
             "v158_badakhshan",
-            "v158_altishahr_tax_coin"
+            "v158_altishahr_tax_coin",
+            "v159_burma_escalation",
+            "v159_burma_disease",
+            "v159_burma_truce",
+            "v159_jinchuan_muguomu",
+            "v159_jinchuan_end",
+            "v159_lin_revolt",
+            "v159_taiwan_counteroffensive",
+            "v159_vietnam_advance",
+            "v159_vietnam_retreat",
+            "v159_vietnam_settlement",
+            "v159_victory_images",
+            "v159_taiwan_postwar_rules"
           ],
           "people": [
             "q_agui",
@@ -88701,7 +89727,13 @@
             "q158_amursana",
             "q158_dawaci",
             "q158_burhan",
-            "q158_khoja_jahan"
+            "q158_khoja_jahan",
+            "q159_fukangan",
+            "q159_hailancha",
+            "q159_sunshiyi",
+            "q159_lishiyao",
+            "q159_linshuangwen",
+            "q159_nguyenhue"
           ]
         },
         {
@@ -88721,7 +89753,25 @@
             "v158_dpm_sanxi",
             "v158_dpm_western",
             "v158_dpm_shengjing",
-            "v158_cambridge_dzungar"
+            "v158_cambridge_dzungar",
+            "v159_qsg330",
+            "v159_qsg331",
+            "v159_qsg323",
+            "v159_qsg481",
+            "v159_qsg527",
+            "v159_qsg145",
+            "v159_dpm_siku_removed",
+            "v159_dpm_siku_destroy",
+            "v159_dpm_text_cases",
+            "v159_nmc_southtour",
+            "v159_dpm_taiwan_art",
+            "v159_dpm_jinchuan_art",
+            "v159_cambridge_burma",
+            "v159_cambridge_military",
+            "v159_tuebingen_jinchuan",
+            "v159_ntu_taiwan",
+            "v159_qsyj_lin",
+            "v159_nmc_siku"
           ],
           "kind": "史实与解读",
           "events": [
@@ -88733,13 +89783,29 @@
             "v158_gaoyou_breach",
             "v158_erongan_sea_grain",
             "v158_chen_granaries",
-            "v158_tour_contributions"
+            "v158_tour_contributions",
+            "v159_jinchuan_cost",
+            "v159_jinchuan_transport",
+            "v159_burma_trade_ban",
+            "v159_southtour_finance",
+            "v159_population_pressure",
+            "v159_taiwan_land_afterwar",
+            "v159_jinchuan_labor",
+            "v159_burma_sickness_society",
+            "v159_southtour_requisition",
+            "v159_taiwan_factions",
+            "v159_taiwan_indigenous"
           ],
           "people": [
             "q158_gaobin",
             "q158_liutongxun",
             "q158_chenhongmou",
-            "q158_erongan"
+            "q158_erongan",
+            "q159_fukangan",
+            "q159_hailancha",
+            "q159_lishiyao",
+            "q159_linshuangwen",
+            "q_agui"
           ]
         },
         {
@@ -88760,7 +89826,25 @@
             "v158_dpm_sanxi",
             "v158_dpm_western",
             "v158_dpm_shengjing",
-            "v158_cambridge_dzungar"
+            "v158_cambridge_dzungar",
+            "v159_qsg330",
+            "v159_qsg331",
+            "v159_qsg323",
+            "v159_qsg481",
+            "v159_qsg527",
+            "v159_qsg145",
+            "v159_dpm_siku_removed",
+            "v159_dpm_siku_destroy",
+            "v159_dpm_text_cases",
+            "v159_nmc_southtour",
+            "v159_dpm_taiwan_art",
+            "v159_dpm_jinchuan_art",
+            "v159_cambridge_burma",
+            "v159_cambridge_military",
+            "v159_tuebingen_jinchuan",
+            "v159_ntu_taiwan",
+            "v159_qsyj_lin",
+            "v159_nmc_siku"
           ],
           "kind": "史实与解读",
           "events": [
@@ -88770,12 +89854,27 @@
             "v158_shengjing_fu",
             "v158_sanxitang",
             "v158_western_geography",
-            "v158_battle_images"
+            "v158_battle_images",
+            "v159_wang_xihou_case",
+            "v159_xu_shukui_case",
+            "v159_book_collection_local",
+            "v159_siku_collection",
+            "v159_siku_bans",
+            "v159_siku_recheck",
+            "v159_dai_method",
+            "v159_qian_method",
+            "v159_southtour_images"
           ],
           "people": [
             "q_wangzhenyi",
             "q158_fuheng",
-            "q158_sunjiagan"
+            "q158_sunjiagan",
+            "q_jiyun",
+            "q159_daizhen",
+            "q159_qiandaxin",
+            "q159_wangxihou",
+            "q159_xushukui",
+            "q_heshen"
           ]
         },
         {
@@ -88798,18 +89897,41 @@
             "v158_dpm_sanxi",
             "v158_dpm_western",
             "v158_dpm_shengjing",
-            "v158_cambridge_dzungar"
+            "v158_cambridge_dzungar",
+            "v159_qsg330",
+            "v159_qsg331",
+            "v159_qsg323",
+            "v159_qsg481",
+            "v159_qsg527",
+            "v159_qsg145",
+            "v159_dpm_siku_removed",
+            "v159_dpm_siku_destroy",
+            "v159_dpm_text_cases",
+            "v159_nmc_southtour",
+            "v159_dpm_taiwan_art",
+            "v159_dpm_jinchuan_art",
+            "v159_cambridge_burma",
+            "v159_cambridge_military",
+            "v159_tuebingen_jinchuan",
+            "v159_ntu_taiwan",
+            "v159_qsyj_lin",
+            "v159_nmc_siku"
           ],
           "kind": "史实与解读",
           "events": [
             "v26_macartney",
             "v42q_kyakhta_negotiation",
-            "v158_tibet_1751"
+            "v158_tibet_1751",
+            "v159_burma_trade_ban",
+            "v159_vietnam_settlement"
           ],
           "people": [
             "q_songyun",
             "q158_bandi",
-            "q158_zhaohui"
+            "q158_zhaohui",
+            "q159_sunshiyi",
+            "q159_nguyenhue",
+            "q159_lishiyao"
           ]
         },
         {
@@ -88832,20 +89954,41 @@
             "v158_dpm_sanxi",
             "v158_dpm_western",
             "v158_dpm_shengjing",
-            "v158_cambridge_dzungar"
+            "v158_cambridge_dzungar",
+            "v159_qsg330",
+            "v159_qsg331",
+            "v159_qsg323",
+            "v159_qsg481",
+            "v159_qsg527",
+            "v159_qsg145",
+            "v159_dpm_siku_removed",
+            "v159_dpm_siku_destroy",
+            "v159_dpm_text_cases",
+            "v159_nmc_southtour",
+            "v159_dpm_taiwan_art",
+            "v159_dpm_jinchuan_art",
+            "v159_cambridge_burma",
+            "v159_cambridge_military",
+            "v159_tuebingen_jinchuan",
+            "v159_ntu_taiwan",
+            "v159_qsyj_lin",
+            "v159_nmc_siku"
           ],
           "kind": "史实与解读",
           "events": [
             "qev_white_lotus_1796",
             "v40q_guotai",
-            "v42q_gansu_relief_fraud"
+            "v42q_gansu_relief_fraud",
+            "v159_heshen_rise",
+            "v159_lishiyao_case"
           ],
           "people": [
             "q_heshen",
             "q_jiyun",
             "q_liuyong",
             "q_zhangtingyu",
-            "q_agui"
+            "q_agui",
+            "q159_lishiyao"
           ]
         },
         {
@@ -88866,25 +90009,43 @@
             "v158_dpm_sanxi",
             "v158_dpm_western",
             "v158_dpm_shengjing",
-            "v158_cambridge_dzungar"
+            "v158_cambridge_dzungar",
+            "v159_qsg330",
+            "v159_qsg331",
+            "v159_qsg323",
+            "v159_qsg481",
+            "v159_qsg527",
+            "v159_qsg145",
+            "v159_dpm_siku_removed",
+            "v159_dpm_siku_destroy",
+            "v159_dpm_text_cases",
+            "v159_nmc_southtour",
+            "v159_dpm_taiwan_art",
+            "v159_dpm_jinchuan_art",
+            "v159_cambridge_burma",
+            "v159_cambridge_military",
+            "v159_tuebingen_jinchuan",
+            "v159_ntu_taiwan",
+            "v159_qsyj_lin",
+            "v159_nmc_siku"
           ],
           "kind": "史实与解读",
           "events": [
-            "qev_qianlong_abdication_1796"
+            "qev_qianlong_abdication_1796",
+            "v159_second_secret_heir"
           ],
-          "people": []
+          "people": [
+            "q_jiaqing",
+            "q_heshen"
+          ]
         }
       ],
       "sources": [
-        "v5qe_qsg10_15",
-        "v5qe_dpm_lineage",
-        "v5qe_dpm_qianlong",
-        "v5qe_dpm_reader",
-        "v26_qianlong",
-        "v40q_qsg319",
-        "v40q_qsg302",
-        "v42q_qsg318",
-        "v42q_qsg342",
+        "v158_cambridge_dzungar",
+        "v158_dpm_sanxi",
+        "v158_dpm_shengjing",
+        "v158_dpm_western",
+        "v158_qingshilu597",
         "v158_qsg301",
         "v158_qsg303",
         "v158_qsg307",
@@ -88892,11 +90053,33 @@
         "v158_qsg312",
         "v158_qsg313",
         "v158_qsg523",
-        "v158_qingshilu597",
-        "v158_dpm_sanxi",
-        "v158_dpm_western",
-        "v158_dpm_shengjing",
-        "v158_cambridge_dzungar"
+        "v159_cambridge_burma",
+        "v159_cambridge_military",
+        "v159_dpm_jinchuan_art",
+        "v159_dpm_siku_destroy",
+        "v159_dpm_siku_removed",
+        "v159_dpm_taiwan_art",
+        "v159_dpm_text_cases",
+        "v159_nmc_siku",
+        "v159_nmc_southtour",
+        "v159_ntu_taiwan",
+        "v159_qsg145",
+        "v159_qsg323",
+        "v159_qsg330",
+        "v159_qsg331",
+        "v159_qsg481",
+        "v159_qsg527",
+        "v159_qsyj_lin",
+        "v159_tuebingen_jinchuan",
+        "v26_qianlong",
+        "v40q_qsg302",
+        "v40q_qsg319",
+        "v42q_qsg318",
+        "v42q_qsg342",
+        "v5qe_dpm_lineage",
+        "v5qe_dpm_qianlong",
+        "v5qe_dpm_reader",
+        "v5qe_qsg10_15"
       ]
     },
     {
@@ -94955,150 +96138,298 @@
     },
     {
       "person": "q_heshen",
-      "title": "和珅：从侍卫进入权力中心",
-      "dek": "兼掌军机、财政和内务事务，凭皇帝信任扩大权势；1799年嘉庆亲政后被治罪。",
+      "title": "和珅：皇帝信任如何变成跨部门权力",
+      "dek": "把他只写成巨贪，会漏掉权力怎样由军机、户部、内务府、差使和婚姻关系逐层汇集。",
       "sections": [
         {
-          "id": "v40q_heshen_1",
-          "title": "从侍卫进入权力中心",
-          "text": "和珅由世职和侍卫系统起步，乾隆晚年迅速升迁。1776年他进入军机处，同时兼任户部、内务府等方面职务，后来又成为大学士。财政、宫廷供给与机密文书汇集于一身，使他能够接近皇帝并影响奏报流转。乾隆不仅任用他办事，还将女儿和孝公主许配给其子丰绅殷德，政治信任与婚姻关系进一步重叠。理解其得势，不能只讲奉承或巧言：皇帝长期授予的多项差使，才是他支配资源的制度条件。侍从身份与行政职位相互叠加，也使一般的同僚监督更加困难。",
-          "kind": "史实与解读",
+          "id": "v159_hs1",
+          "title": "侍卫身份提供接近皇帝的起点，连续授差才形成权力",
+          "text": "和珅由世职、侍卫进入御前，1776年前后快速升入军机。接近皇帝使他更早获得信息和表现机会，但真正的权力来自持续兼任：机密文书、财政、内务府和临时查案逐渐叠加。‘会说满语’或‘长相受宠’等流行解释证据薄弱，也无法说明他为何能调动机构。应从任命链而非宫廷轶闻解释崛起。",
+          "kind": "侍从与中枢",
           "sources": [
             "v40q_qsg319"
+          ],
+          "events": [
+            "v159_heshen_rise"
+          ],
+          "people": [
+            "q_qianlong"
+          ]
+        },
+        {
+          "id": "v159_hs2",
+          "title": "查办李侍尧等案既展示反贪能力，也扩大人事依附",
+          "text": "和珅曾奉命查办督抚财政案件，能迅速掌握账册和官场关系。查贪并不与自身网络矛盾：每次审讯都可能清除对手、建立被宽免者的依附，并向皇帝证明办事效率。李侍尧拟斩后获宽再任，说明最终尺度仍在乾隆。不能把一切案件都说成和珅设计，也不能把他写成早年清官、后来突然变坏的两段人生。",
+          "kind": "查案与网络",
+          "sources": [
+            "v40q_qsg319",
+            "v159_qsg323"
+          ],
+          "events": [
+            "v159_lishiyao_case",
+            "v159_heshen_rise"
+          ],
+          "people": [
+            "q159_lishiyao",
+            "q_liuyong"
+          ]
+        },
+        {
+          "id": "v159_hs3",
+          "title": "财政、内务府和议罪银让公私边界更难监督",
+          "text": "乾隆晚年，和珅兼掌多个财政入口，宫廷支用、官员处分和捐纳等资源彼此连通。传统账册并非全无审核，但皇帝直接信任、差使交叉和同僚依赖削弱了外部制衡。后来抄没数字在不同材料中差异很大，不应沿用‘富可敌国’的固定倍数；能够确认的是财产远超正常俸禄，并与权力网络相连。",
+          "kind": "财政与寻租",
+          "sources": [
+            "v40q_qsg319",
+            "v159_cambridge_military"
+          ],
+          "events": [
+            "v159_jinchuan_cost",
+            "v159_southtour_finance"
+          ],
+          "people": [
+            "q_qianlong",
+            "q_agui"
+          ]
+        },
+        {
+          "id": "v159_hs4",
+          "title": "四库重检与宫廷文化显示他不只是财政官",
+          "text": "和珅参与军机与文化项目管理，四库成书后的撤书重检也经中枢推进。文化审查不是纪昀等馆臣的孤立学术判断，而由皇帝、军机、馆局和地方共同执行。把和珅只放在贪腐页，会看不见权力如何进入目录和版本；反过来，也不能因他参与修书便赋予独立学术贡献。",
+          "kind": "文化治理",
+          "sources": [
+            "v159_dpm_siku_removed",
+            "v40q_qsg319"
+          ],
+          "events": [
+            "v159_siku_recheck",
+            "v159_siku_bans"
+          ],
+          "people": [
+            "q_jiyun",
+            "q159_wangxihou"
+          ]
+        },
+        {
+          "id": "v159_hs5",
+          "title": "乾隆去世后数日即被清算，说明网络高度依附单一授权",
+          "text": "嘉庆受禅后长期受太上皇约束，乾隆去世才迅速拘捕和珅、列罪令其自尽。清算速度说明其权力主要来自个人授权而非可独立延续的机构职位。嘉庆以巨额财产和罪款重整政治，但处置和珅不等于所有积弊立刻消失。把结局讲成‘天网恢恢’会忽略为何同一体系此前难以问责。",
+          "kind": "清算与制度",
+          "sources": [
+            "v40q_qsg319",
+            "v5qe_qsg10_15"
+          ],
+          "events": [
+            "qev_heshen_fall_1799",
+            "qev_jiaqing_rule_1799"
           ],
           "people": [
             "q_qianlong",
             "q_jiaqing"
-          ],
-          "events": []
-        },
-        {
-          "id": "v40q_heshen_2",
-          "title": "查贪者与庇护网络",
-          "text": "和珅曾奉命查办云南总督李侍尧贪污，并因办案受到嘉奖；然而在山东国泰案中，史稿又记他有袒护被查官员的行为。这样的反差说明查贪本身不必然阻止新的权力庇护。他身边的亲信、家人和依附官员进入财政及人事网络，投诉者则可能遭到反击。乾隆并非从未斥责他，某些办事失误、任用不当和隐瞒军情也曾受到处分，但长期宠任没有因此终止。史书中的具体案件比民间传说的巨大财产数字更能说明问题：谁能接近皇帝、谁能压下奏报，往往直接影响监督是否有效。",
-          "kind": "史实与解读",
-          "sources": [
-            "v40q_qsg319"
-          ],
-          "people": [],
-          "events": [
-            "v40q_guotai"
-          ]
-        },
-        {
-          "id": "v40q_heshen_3",
-          "title": "嘉庆亲政后的迅速清算",
-          "text": "1796年嘉庆已经登基，乾隆仍以太上皇身份掌握重大决策，和珅继续居于权力核心。1799年乾隆去世后，嘉庆迅速逮治和珅，公布罪状并命其自尽。朝廷随后纠正部分被改变的奏事和财政规则，同时宣布不普遍追究曾受和珅举荐者，以免扩大震荡。案中指控应注明出自当时诏令，不宜把每项财产估值当作现代审计结论。和珅失势标志嘉庆摆脱上一朝权力安排的重要一步，但单个权臣被除，并没有自动解决军费、亏空与地方吏治问题；这正是嘉庆此后继续面对的治理难题。",
-          "kind": "史实与解读",
-          "sources": [
-            "v40q_qsg319"
-          ],
-          "people": [],
-          "events": [
-            "qev_heshen_fall_1799"
           ]
         }
       ],
       "sources": [
-        "v40q_qsg319"
+        "v159_cambridge_military",
+        "v159_dpm_siku_removed",
+        "v159_qsg323",
+        "v40q_qsg319",
+        "v5qe_qsg10_15"
       ]
     },
     {
       "person": "q_jiyun",
-      "title": "纪昀：翰林学者的起落",
-      "dek": "以目录、校勘和学术判断参与大型修书工程；编书的成就与政治审查须同时理解。",
+      "title": "纪昀：总纂官如何在整理典籍与政治审查之间工作",
+      "dek": "总纂不是独自编成四库，也不是无责抄书；目录判断、文字校改和制度服从同时构成他的工作。",
       "sections": [
         {
-          "id": "v40q_jiyun_1",
-          "title": "翰林学者的起落",
-          "text": "纪昀字晓岚，乾隆十九年进士，进入翰林后担任编修等职。他并非一直安稳地居于书馆：因向有姻亲关系的卢见曾泄露案件消息，被夺职并遣往乌鲁木齐，后来获释回京。仕途变化说明文臣与亲属、地方官员的联系也可能成为获罪原因。乾隆重新任用他，主要看重其学问和文字能力。后世常把纪晓岚写成与和珅日常斗智的喜剧人物，但真实履历的中心是修书、典礼、考试与官僚事务；没有可靠证据的机锋故事，不宜代替对其学术工作的介绍。",
-          "kind": "史实与解读",
+          "id": "v159_jy1",
+          "title": "翰林起落说明学术声望并不能隔绝官场处分",
+          "text": "纪昀由科举进入翰林，曾因案件牵连被发往乌鲁木齐，后又召回参与修书。流放与复出使其更熟悉帝国地理和官场风险，但不能浪漫化成必然造就名著。作为官员，他受考成、亲属关系和皇帝裁量约束；作为学者，他又以目录和辨伪能力获得不可替代的位置。",
+          "kind": "仕途与处分",
           "sources": [
             "v40q_qsg320"
+          ],
+          "events": [
+            "v159_siku_collection"
           ],
           "people": [
-            "q_qianlong",
-            "q_jiaqing"
-          ],
-          "events": []
-        },
-        {
-          "id": "v40q_jiyun_2",
-          "title": "总纂不等于独自编成",
-          "text": "1773年四库全书馆开设，纪昀与陆锡熊等担任总纂，阅读各地进呈书籍，整理散佚文献，撰写提要并讨论著录取舍。总纂要协调大量馆臣的工作，而非一人写出全部卷册。《四库全书总目》所呈现的分类和评论，对后世认识古籍影响很深。但修书同时处于乾隆的文化控制之下，征书、审查和禁毁并行，不能只称其为无损保存古书的工程。学术判断与政治尺度会共同影响书籍的命运；纪昀作为主事者的才能，也必须放在这样的制度条件中评价。",
-          "kind": "史实与解读",
-          "sources": [
-            "v40q_qsg320"
-          ],
-          "people": [],
-          "events": [
-            "v12_qianlong_siku"
+            "q_qianlong"
           ]
         },
         {
-          "id": "v40q_jiyun_3",
-          "title": "修书之外的政务",
-          "text": "纪昀后来担任都御史、尚书等职。畿辅灾荒时，他曾建议提前开设京师饭厂，延长对就食饥民的救济；考试经义采用何种注解，也在其建议范围之内。进入嘉庆朝，他继续任职，并提出对遭强暴妇女的旌表办法作调整。此类建议仍在当时礼法框架内，不能直接等同于现代权利观念，却能显示官员如何处理具体社会问题。嘉庆十年他去世。比起简单的聪明文人形象，书籍取舍、赈济安排与礼制争议更能呈现纪昀的一生：他的知识进入国家制度，同时也受国家制度约束。",
-          "kind": "史实与解读",
+          "id": "v159_jy2",
+          "title": "总纂官组织提要、校勘与分类，不是一个人读完七万余卷",
+          "text": "四库馆参与者众多，收书、辑佚、校阅、缮写和复校由不同人员分工。纪昀主持总纂和目录文字，对书籍源流、版本和价值作判断。‘纪晓岚编四库’便于记忆，却抹去馆臣、抄手、藏书家和地方官；反过来，他的总纂责任也不能被集体工程完全稀释。",
+          "kind": "大型修书",
           "sources": [
+            "v40q_qsg320",
+            "v159_qsg145",
+            "v159_nmc_siku"
+          ],
+          "events": [
+            "v159_siku_collection",
+            "v159_book_collection_local"
+          ],
+          "people": [
+            "q159_daizhen",
+            "q159_qiandaxin"
+          ]
+        },
+        {
+          "id": "v159_jy3",
+          "title": "目录提要保存学术线索，也以‘雅正’标准安排知识等级",
+          "text": "《四库全书总目》记录许多未收或已失书籍的信息，辨章学术、考镜源流的价值很高。提要同时服务钦定文化秩序，对作者、学派和历史忠诚作规范化评价。读者应区分版本考证与政治褒贬，不能把所有提要当中立书评，也不能因有审查就否定其中可核查的目录成果。",
+          "kind": "目录与评价",
+          "sources": [
+            "v40q_qsg320",
+            "v159_qsg145"
+          ],
+          "events": [
+            "v159_siku_collection",
+            "v159_siku_bans"
+          ],
+          "people": [
+            "q_qianlong"
+          ]
+        },
+        {
+          "id": "v159_jy4",
+          "title": "禁毁与撤书发生在同一馆局，‘只负责编书’并不足以免责",
+          "text": "征书过程中，馆臣要标识违碍内容，部分书被全毁、抽毁或改写。1787年后已入阁书仍被重检撤出，纪昀参与执行相关处置。最终命令来自乾隆和军机，馆臣仍是审查链条的一环。不能把纪昀塑造成秘密保护全部古籍的英雄，也不应在无具体文书时把每一次毁书都归为他个人主动。",
+          "kind": "审查责任",
+          "sources": [
+            "v159_dpm_siku_destroy",
+            "v159_dpm_siku_removed",
             "v40q_qsg320"
           ],
-          "people": [],
-          "events": []
+          "events": [
+            "v159_siku_bans",
+            "v159_siku_recheck"
+          ],
+          "people": [
+            "q_heshen",
+            "q159_wangxihou",
+            "q159_xushukui"
+          ]
+        },
+        {
+          "id": "v159_jy5",
+          "title": "轶闻中的机智形象遮蔽了一个谨慎而复杂的官僚学者",
+          "text": "后世笔记、电视剧常把纪昀写成与和珅针锋相对的幽默清官，可靠材料并不支持这种固定搭档。两人职掌、资历和与皇帝关系并不对等，也曾共同处在国家工程中。认识纪昀，应从具体提要、奏办和处分出发：他既贡献目录学与校勘，也在审查制度内工作。这种矛盾比机智段子更有解释力。",
+          "kind": "形象与证据",
+          "sources": [
+            "v40q_qsg320",
+            "v159_dpm_siku_removed"
+          ],
+          "events": [
+            "v159_siku_recheck",
+            "v159_heshen_rise"
+          ],
+          "people": [
+            "q_heshen",
+            "q_qianlong"
+          ]
         }
       ],
       "sources": [
+        "v159_dpm_siku_destroy",
+        "v159_dpm_siku_removed",
+        "v159_nmc_siku",
+        "v159_qsg145",
         "v40q_qsg320"
       ]
     },
     {
       "person": "q_liuyong",
-      "title": "刘墉：家世与地方任职",
-      "dek": "历任学政、地方官和中枢大臣，参与国泰案调查及漕政议论；清名之外也有失察和处分。",
+      "title": "刘墉：清名、查案与失察为何可以同时成立",
+      "dek": "书法名声和民间清官故事之外，他是一个在地方考成、财政案件与中枢妥协中反复受评的官员。",
       "sections": [
         {
-          "id": "v40q_liuyong_1",
-          "title": "家世与地方任职",
-          "text": "刘墉是大学士刘统勋之子，乾隆十六年中进士，早期在翰林任职，后督安徽、江苏学政。他曾因父亲获罪受到牵连，又在地方任职时因失察属员侵亏公款被处分。家世既提供进入政治网络的条件，也带来连带风险。重新任官以后，他在江宁等地获得清名，逐渐进入巡抚和部院大臣的行列。这条履历有任用、失误与复起，不能压缩成始终不受挫折的清官传奇。学政对生员的约束、地方官对钱粮的监督，都是其工作中比外貌传说更重要的部分。",
-          "kind": "史实与解读",
+          "id": "v159_ly1",
+          "title": "名臣之子提供教育与网络，也带来更高政治期待",
+          "text": "刘墉是刘统勋之子，由科举进入仕途。家世使他熟悉中枢规则并获得声望，但不能把任官都归为父荫；同样，父亲清名也让后人更容易把儿子塑成固定清官。判断具体政绩应回到学政、知府、巡抚和中枢各阶段，区分实际差使、处分与后世传说。",
+          "kind": "家世与仕途",
           "sources": [
             "v40q_qsg302"
+          ],
+          "events": [
+            "v159_heshen_rise"
           ],
           "people": [
-            "q_qianlong",
-            "q_jiaqing"
-          ],
-          "events": []
-        },
-        {
-          "id": "v40q_liuyong_2",
-          "title": "国泰案中的共同调查",
-          "text": "1782年山东巡抚国泰受到贪纵指控，刘墉与和珅等奉命前往调查。案件涉及地方库银与官员舞弊，最终查实被告罪行。刘墉在这一事件中与和珅有实际公务接触，但这不等于后世戏说中多年不断的私下较量。调查依靠奏报、盘库和证据，功劳也不能只归于某一位官员。刘墉后来承担上书房等差使，也曾因履职不勤受到降调。史料中的清名与处分可以同时成立：一个官员在某些案件中尽责，并不意味着他在全部事务中都没有疏失。",
-          "kind": "史实与解读",
-          "sources": [
-            "v40q_qsg302"
-          ],
-          "people": [],
-          "events": [
-            "v40q_guotai"
+            "q158_liutongxun",
+            "q_qianlong"
           ]
         },
         {
-          "id": "v40q_liuyong_3",
-          "title": "嘉庆朝的漕运议论",
-          "text": "嘉庆二年刘墉拜大学士，随后继续参与案件审理和河工考察。他又讨论漕运中的水手选择、途中盗米和船只损坏，提出应谨慎选取承担漕运责任的人户。这些建议说明，运粮问题不只是水道是否畅通，也涉及人员、费用与监督。嘉庆九年他去世，获谥文清。他的书法也享有声誉，但传记不应把书名与官声变成无所不能的证明。刘墉最有价值的观察角度，是看一位拥有家世资源的官员，怎样在清代考试、地方行政、重大查案和中枢议政之间流动，并受到同一套官僚规则的升黜约束。",
-          "kind": "史实与解读",
+          "id": "v159_ly2",
+          "title": "学政与地方官的核心是考试、钱粮和司法，不只是题字",
+          "text": "刘墉历任学政与地方官，工作包括整顿考试、处理案件、征收和赈务。书法成为其最持久的文化形象，却容易遮蔽行政判断。地方官材料多由上级考语和自陈构成，‘清廉’不能只凭赞语；处分记录也不必自动推成全面无能。需要逐项看他在何事失察、何事得到认可。",
+          "kind": "地方行政",
           "sources": [
             "v40q_qsg302"
           ],
-          "people": [],
           "events": [
-            "v40q_jiaqing_grain"
+            "v159_population_pressure"
+          ],
+          "people": [
+            "q159_qiandaxin"
+          ]
+        },
+        {
+          "id": "v159_ly3",
+          "title": "国泰案是多人共同调查，不是刘墉单骑扳倒贪官",
+          "text": "山东巡抚国泰等亏空案中，刘墉参与查库和审讯，案件还依赖和珅等钦差及地方账册。民间故事常把他与和珅塑成正邪对决，实际二人同奉皇命工作，结论由乾隆裁定。刘墉在查案中有作用，但不能据此推导他终身公开对抗和珅；制度问题也不因处死一名督抚而结束。",
+          "kind": "财政查案",
+          "sources": [
+            "v40q_qsg302",
+            "v40q_qsg319"
+          ],
+          "events": [
+            "v40q_guotai",
+            "v159_heshen_rise"
+          ],
+          "people": [
+            "q_heshen",
+            "q_qianlong"
+          ]
+        },
+        {
+          "id": "v159_ly4",
+          "title": "多次失察与降黜提醒我们，清名不是免检标签",
+          "text": "刘墉仕途中也因考试、案件或办事迟误受处分。乾隆对大臣的褒贬随任务和政治需要变化，后世选取褒奖便形成清官传，选取处分又可写成庸臣。较可靠的方法是把处分原因、证据范围和后续任用并列，不把皇帝一时评价当人格总判决。",
+          "kind": "处分与复出",
+          "sources": [
+            "v40q_qsg302"
+          ],
+          "events": [
+            "v159_lishiyao_case"
+          ],
+          "people": [
+            "q_qianlong"
+          ]
+        },
+        {
+          "id": "v159_ly5",
+          "title": "嘉庆朝继续任用，说明他的价值在熟悉制度而非戏剧化抗权",
+          "text": "乾隆晚年到嘉庆初，刘墉仍参与中枢和漕运等议论。和珅倒台后他并未因此成为唯一改革主角，清理积弊需要多部门持续办理。书法、清名和机智故事可以作为文化记忆研究，却不能替代官历。一个更可信的刘墉，是有能力、有局限、在皇权结构中谨慎行动的资深官员。",
+          "kind": "晚年与记忆",
+          "sources": [
+            "v40q_qsg302"
+          ],
+          "events": [
+            "qev_heshen_fall_1799",
+            "qev_jiaqing_rule_1799"
+          ],
+          "people": [
+            "q_heshen",
+            "q_jiaqing"
           ]
         }
       ],
       "sources": [
-        "v40q_qsg302"
+        "v40q_qsg302",
+        "v40q_qsg319"
       ]
     },
     {
@@ -97499,59 +98830,106 @@
     },
     {
       "person": "q_agui",
-      "title": "阿桂：驻军之后如何供粮",
-      "dek": "军事指挥之外，参与伊犁屯田、河工与赈务案件调查，连接清代扩张、财政和地方治理。",
+      "title": "阿桂：从伊犁屯田到金川军需，胜利如何依赖行政能力",
+      "dek": "他不是只在战场上冲锋的名将，而是把军粮、道路、驻防、河工和财政调查连接起来的高级执行者。",
       "sections": [
         {
-          "id": "v42q_agui_1",
-          "title": "驻军之后如何供粮",
-          "text": "阿桂参与乾隆朝西北军事行动，1760年移驻伊犁，筹办屯田与营造。他把粮食供应看作长期驻军的前提，提出调集熟悉耕作的人口、制造农具、增设驻防，并安排驿路和牲畜。官修《新疆识略》区分兵屯、回屯、户屯与后来发展起来的旗屯，说明伊犁农业不是由同一种身份的人共同承担的单一项目。部分人口由南疆各地调迁，流放者和军士也进入生产与营造体系；开垦因此同时包含供给、迁徙和身份管理。不能仅凭官方称颂，便认为所有参与者都自由选择迁居或同等受益。阿桂的经历显示，军事占领之后，朝廷还必须不断组织粮食、劳动力和道路，才能维持它所建立的驻防秩序。",
-          "kind": "史实与解读",
+          "id": "v159_ag1",
+          "title": "伊犁驻军之后，能否种粮决定征服能否转成长期统治",
+          "text": "准噶尔战争后，阿桂参与伊犁屯田与驻防安排。调兵占领只是开始，驻军、移民、农具、种子和水利要持续供给。屯田能降低长途运输压力，也改变当地土地和人口关系。官修材料以收获和建置衡量成效，不能把土地写成无人荒地，更不能忽略此前战争造成的死亡与迁徙。",
+          "kind": "屯田与驻防",
           "sources": [
             "v42q_qsg318",
             "v42q_xinjiang_tun"
           ],
-          "people": [
-            "q_qianlong",
-            "q_songyun"
-          ],
           "events": [
-            "v42q_ili_tun"
-          ]
-        },
-        {
-          "id": "v42q_agui_2",
-          "title": "第二次金川战争的代价",
-          "text": "1773年清军在木果木失利、温福战死后，阿桂被授予定西将军，重新组织对大小金川的进攻。战争依靠不同路军协同、山地运输和对碉寨的持续攻坚，不能归结为单个将领的一次奇谋。1776年索诺木投降，清廷在战后设置驻军与官员，并安排屯务，地方权力结构随之改变。阿桂因此获封爵并进入更高的中枢职位。《清史稿》的纪功叙事主要追踪清军胜败，对当地居民的损失记录有限；战斗、毁寨和人口迁置造成的伤害不能从故事中省去。对于这场战争，既要知道军事结果，也应追问长期投入的财政与人力，以及战后治理为何仍需另行安排。",
-          "kind": "史实与解读",
-          "sources": [
-            "v42q_qsg318"
+            "v42q_ili_tun",
+            "v158_dzungar_destruction"
           ],
           "people": [
+            "q158_zhaohui",
             "q_qianlong"
-          ],
-          "events": [
-            "v42q_second_jinchuan"
           ]
         },
         {
-          "id": "v42q_agui_3",
-          "title": "军功之外的财政问责",
-          "text": "阿桂后来多次奉命勘查河工、核办地方案件。1781年甘肃冒赈案发，他受命参与查办地方官利用赈务舞弊，随后建议增设仓储、储粮济民。查案与恢复救灾能力应当分开看：惩罚官员并不自动补回百姓需要的粮食。河南青龙冈堵口时，他也曾催促合龙，工程却再次决开，后来调整方案才告完成。这些经历说明，将领获得的政治信任可以把他推向河工与财政任务，却不意味着他在每个专业领域都判断无误。阿桂与和珅同时处在乾隆晚年的中枢，其传记虽强调两人不合，却不能据此推断他主导了1799年的和珅案；阿桂在1797年已经去世，相关时间应严格区分。",
-          "kind": "史实与解读",
+          "id": "v159_ag2",
+          "title": "木果木之后接掌全局，首要任务是修复破裂的军令和粮台",
+          "text": "第二次金川战争中，温福部在木果木失利，阿桂重新受命统军。他调整进攻路线、各路协同和后勤站点，福康安、海兰察等执行山地作战。把胜利归于一名统帅会忽略数年军需，完全把个人淹没在结构中也不对：路线和责任重组确实改变战局。应把决策与资源放在同一层评价。",
+          "kind": "重组金川战局",
+          "sources": [
+            "v42q_qsg318",
+            "v159_tuebingen_jinchuan",
+            "v159_qsg330"
+          ],
+          "events": [
+            "v159_jinchuan_muguomu",
+            "v159_jinchuan_end"
+          ],
+          "people": [
+            "q159_fukangan",
+            "q159_hailancha"
+          ]
+        },
+        {
+          "id": "v159_ag3",
+          "title": "六千万两量级战费背后是跨省运输、脚夫和腐败空间",
+          "text": "金川军需从中央和多省汇集，账面支出达到极高量级。阿桂既要推进军事，也要处理粮台、报销和侵冒。总额能说明国家动员能力，不能证明每笔银都到前线；地方脚夫、牲畜和物价压力也未必完整入账。胜利提高了统帅声望，却不自动证明成本适当。",
+          "kind": "战争财政",
+          "sources": [
+            "v42q_qsg318",
+            "v159_cambridge_military",
+            "v159_tuebingen_jinchuan"
+          ],
+          "events": [
+            "v159_jinchuan_cost",
+            "v159_jinchuan_transport",
+            "v159_jinchuan_labor"
+          ],
+          "people": [
+            "q159_fukangan"
+          ]
+        },
+        {
+          "id": "v159_ag4",
+          "title": "河工、赈务和甘肃冒赈案说明名将也长期处理文官事务",
+          "text": "战争之外，阿桂参与河工、灾赈与甘肃冒赈案调查。这些任务同样需要核对银粮、地方报告和官员责任。军事威望可能增强调查权威，却不保证技术方案永远正确。把他归为武将会遗漏清代高级大臣跨部门办差的常态，也会看不见军需审计经验怎样进入财政案件。",
+          "kind": "跨部门差使",
           "sources": [
             "v42q_qsg318"
           ],
+          "events": [
+            "v42q_gansu_relief_fraud",
+            "v158_gaoyou_breach"
+          ],
           "people": [
-            "q_qianlong",
+            "q158_liutongxun",
             "q_heshen"
+          ]
+        },
+        {
+          "id": "v159_ag5",
+          "title": "与和珅并朝而少依附，并不等于存在现代反对党",
+          "text": "阿桂在乾隆晚年地位很高，与和珅关系和权力来源并不相同，后世常把两人写成正邪对立。现有材料可以显示他较少依附和珅、承担独立差使，却不能据此构造持续公开对抗。两人都在皇帝授权下工作。阿桂的价值在可调动军事与行政资源，其局限也来自同一高度集中的决策结构。",
+          "kind": "晚年中枢",
+          "sources": [
+            "v42q_qsg318",
+            "v40q_qsg319"
           ],
           "events": [
-            "v42q_gansu_relief_fraud"
+            "v159_heshen_rise",
+            "v159_jinchuan_cost"
+          ],
+          "people": [
+            "q_heshen",
+            "q_qianlong"
           ]
         }
       ],
       "sources": [
+        "v159_cambridge_military",
+        "v159_qsg330",
+        "v159_tuebingen_jinchuan",
+        "v40q_qsg319",
         "v42q_qsg318",
         "v42q_xinjiang_tun"
       ]
@@ -190213,6 +191591,982 @@
         "v158_qingshilu597",
         "v158_qsg313"
       ]
+    },
+    {
+      "person": "q159_fukangan",
+      "title": "福康安：亲贵统帅如何穿过四场战争",
+      "dek": "皇帝的信任给他跨越资历的通道，前线表现、后勤权力与功臣竞争则决定这条通道如何运作。",
+      "sections": [
+        {
+          "id": "v159_fk1",
+          "title": "傅恒之子从侍卫起步，亲贵身份直接缩短升迁路径",
+          "text": "福康安是傅恒之子，自侍卫与世职进入军政体系。父亲的外戚和军功地位，使他比普通官员更早接近皇帝、接触前线。但‘靠父荫’不能概括其后数十年：从金川山地到台湾海峡、再到后藏，他持续承担高风险任务。需要同时看到的是，皇帝把年轻亲信直接放入战场，本身也是控制将领、绕开资历秩序的一种方式。个人勇武评价来自功臣传和褒奖文书，不能替代对指挥、军需和责任分配的核查。",
+          "kind": "亲贵与仕途",
+          "sources": [
+            "v159_qsg330"
+          ],
+          "events": [
+            "v159_jinchuan_muguomu"
+          ],
+          "people": [
+            "q158_fuheng",
+            "q_qianlong"
+          ]
+        },
+        {
+          "id": "v159_fk2",
+          "title": "金川胜利来自重建军令与补给，不是单骑破碉",
+          "text": "木果木失利后，阿桂重组各路，福康安、海兰察负责攻碉、援营和山地迂回。官修传记把破寨、斩获连续排列，容易形成一个人不断冲锋的印象；实际上数年战争依赖粮台、道路、火器、脚夫和多路协同。福康安的前线能力应当承认，数千万两量级的军需和大量无名劳动也不能隐去。清军最终取胜不证明最初决策成本合理，更不能把土司地区写成等待征服的空地。",
+          "kind": "山地战争",
+          "sources": [
+            "v159_qsg330",
+            "v159_tuebingen_jinchuan",
+            "v159_cambridge_military"
+          ],
+          "events": [
+            "v159_jinchuan_muguomu",
+            "v159_jinchuan_end",
+            "v159_jinchuan_labor"
+          ],
+          "people": [
+            "q_agui",
+            "q159_hailancha"
+          ]
+        },
+        {
+          "id": "v159_fk3",
+          "title": "台湾凯旋之后，柴大纪案暴露功臣之间并非一体",
+          "text": "福康安渡台后迅速解嘉义之围并追捕林爽文，战后获极高褒奖。但他与守城将领柴大纪因礼节、战功和罪状发生冲突，皇帝一度指出其可能挟嫌，柴大纪最终仍被治罪。胜利阵营内部也存在名次、奏报与保护关系，不能用‘众志成城’抹平。台湾善后更牵涉吏治、屯番、土地与地方武装，远比擒获首领复杂。",
+          "kind": "台湾与功臣竞争",
+          "sources": [
+            "v159_qsg330",
+            "v159_dpm_taiwan_art",
+            "v159_ntu_taiwan"
+          ],
+          "events": [
+            "v159_taiwan_counteroffensive",
+            "v159_taiwan_postwar_rules",
+            "v159_taiwan_land_afterwar"
+          ],
+          "people": [
+            "q159_linshuangwen",
+            "q159_lishiyao"
+          ]
+        },
+        {
+          "id": "v159_fk4",
+          "title": "跨地区用兵形成经验，也让军事解决成为惯性",
+          "text": "金川和台湾成功后，福康安又受命处理廓尔喀等战事。朝廷偏好把曾经奏效的统帅、索伦兵和巴图鲁侍卫重新组合，形成可快速调用的远征班底。经验能够提高组织效率，却不能消除高原、海峡和地方社会的差异。功臣画像、战图和赐宴把不同战争并列进‘武功’，阅读时应把每场战争的原因、对手和善后重新拆开。",
+          "kind": "远征体制",
+          "sources": [
+            "v159_qsg330",
+            "v159_dpm_taiwan_art",
+            "v159_dpm_jinchuan_art"
+          ],
+          "events": [
+            "v159_victory_images",
+            "v159_taiwan_indigenous"
+          ],
+          "people": [
+            "q159_hailancha",
+            "q_qianlong"
+          ]
+        },
+        {
+          "id": "v159_fk5",
+          "title": "身后追封不能替代对战争责任和地方后果的评价",
+          "text": "福康安在苗疆军中去世后获追封郡王，恩遇在异姓大臣中极高。纪功体系把忠勤、皇恩与帝国扩张连成一条线；史家还需追问战争支出、地方劳役、战后土地安排和被压低的异议。既不能因亲贵身份否定其具体能力，也不能用军功抵销柴大纪案、军需竞争和居民代价。把荣典与后果同时陈列，才比传奇式名将故事更接近历史。",
+          "kind": "荣典与责任",
+          "sources": [
+            "v159_qsg330",
+            "v159_cambridge_military"
+          ],
+          "events": [
+            "v159_jinchuan_cost",
+            "v159_taiwan_postwar_rules",
+            "v159_victory_images"
+          ],
+          "people": [
+            "q_qianlong",
+            "q159_sunshiyi"
+          ]
+        }
+      ],
+      "sources": [
+        "v159_cambridge_military",
+        "v159_dpm_jinchuan_art",
+        "v159_dpm_taiwan_art",
+        "v159_ntu_taiwan",
+        "v159_qsg330",
+        "v159_tuebingen_jinchuan"
+      ]
+    },
+    {
+      "person": "q159_hailancha",
+      "title": "海兰察：冲锋叙事背后的兵种、地形与向导",
+      "dek": "官修传记把他写成勇将；把每次冲锋放回补给、地方协力和伤病环境，才能看见真正的战争结构。",
+      "sections": [
+        {
+          "id": "v159_hl1",
+          "title": "由索伦骑兵进入侍卫系统，能力与族群征调同时发生",
+          "text": "海兰察出自索伦群体，由军旅进入侍卫和前线体系。清廷长期征调东北边疆骑射人群，个人勇武与国家分类、兵役网络相互依存。他的升迁既有战场表现，也建立在朝廷能够跨区域抽调兵员的制度上。把他写成天生善战的族群英雄，会把训练、编制和强制征调自然化；完全忽略个人判断，也同样失真。",
+          "kind": "兵源与身份",
+          "sources": [
+            "v159_qsg331"
+          ],
+          "events": [
+            "v159_jinchuan_muguomu"
+          ],
+          "people": [
+            "q_qianlong"
+          ]
+        },
+        {
+          "id": "v159_hl2",
+          "title": "金川山地让骑兵转换为攀崖、夺碉和夜战力量",
+          "text": "在金川，传统骑兵优势受到山岭、碉寨和狭路限制。海兰察参与攀崖、迂回、夺卡，与福康安等合兵推进。传记中的斩获数字来自报功系统，不能直接当现代战场统计；更重要的是，任何夜袭都依靠侦察、向导、粮站和后续守备。木果木失利已证明，局部勇战不能挽救失效的整体部署。",
+          "kind": "山地适应",
+          "sources": [
+            "v159_qsg331",
+            "v159_tuebingen_jinchuan"
+          ],
+          "events": [
+            "v159_jinchuan_muguomu",
+            "v159_jinchuan_transport",
+            "v159_jinchuan_labor"
+          ],
+          "people": [
+            "q159_fukangan",
+            "q_agui"
+          ]
+        },
+        {
+          "id": "v159_hl3",
+          "title": "台湾追捕依赖路线知识，也卷入原住民与地方武装",
+          "text": "海兰察在台湾参与解围、追击和山地搜捕。官修材料把渡溪、破寨和擒首连成军事推进，实际路线穿过多种社群控制的空间，需要地方向导、义民和部分原住民协力。协力不意味着所有人共享同一政治目标，也可能夹带自保、土地和旧怨。战图能展示朝廷如何想象合作，却不能代表所有参与者发言。",
+          "kind": "海岛与地方协力",
+          "sources": [
+            "v159_qsg331",
+            "v159_dpm_taiwan_art",
+            "v159_ntu_taiwan"
+          ],
+          "events": [
+            "v159_taiwan_counteroffensive",
+            "v159_taiwan_indigenous",
+            "v159_taiwan_factions"
+          ],
+          "people": [
+            "q159_fukangan",
+            "q159_linshuangwen"
+          ]
+        },
+        {
+          "id": "v159_hl4",
+          "title": "从台湾到后藏，重复使用精锐也累积伤病风险",
+          "text": "台湾之后，海兰察又随福康安赴后藏对廓尔喀作战。朝廷复用熟悉的将领和兵种，减少重新磨合，却把个人长期置于气候、地形和远距离运输风险中。传记记其冒险负伤，也记皇帝告诫持重，这说明勇武既受奖励也需被约束。不能把每场战役都写成相同的冲锋模板。",
+          "kind": "远征与伤病",
+          "sources": [
+            "v159_qsg331"
+          ],
+          "events": [
+            "v159_victory_images"
+          ],
+          "people": [
+            "q159_fukangan"
+          ]
+        },
+        {
+          "id": "v159_hl5",
+          "title": "功臣图像留下姓名，无名搬运者仍构成同一战争",
+          "text": "海兰察得以进入紫光阁画像和功臣传，脚夫、工匠、翻译、医者及地方向导多数只以总数或职类出现。两者不是彼此排斥的记忆：将领决策确实影响战局，无名劳动同样决定军队能否抵达。阅读他的生平，应从一张英雄肖像向外展开到粮价、道路、村寨与战后驻防，而不是用今天的反英雄姿态简单抹去个人功绩。",
+          "kind": "谁被记住",
+          "sources": [
+            "v159_qsg331",
+            "v159_cambridge_military",
+            "v159_tuebingen_jinchuan"
+          ],
+          "events": [
+            "v159_jinchuan_cost",
+            "v159_jinchuan_labor",
+            "v159_victory_images"
+          ],
+          "people": [
+            "q159_fukangan",
+            "q_agui"
+          ]
+        }
+      ],
+      "sources": [
+        "v159_cambridge_military",
+        "v159_dpm_taiwan_art",
+        "v159_ntu_taiwan",
+        "v159_qsg331",
+        "v159_tuebingen_jinchuan"
+      ]
+    },
+    {
+      "person": "q159_sunshiyi",
+      "title": "孙士毅：快速进军安南为何转成春节败退",
+      "dek": "复立黎朝的名义、边疆督抚的报捷和阮惠的国内动员，共同塑造了这场短促而剧烈的战争。",
+      "sections": [
+        {
+          "id": "v159_ss1",
+          "title": "馆臣与督抚经历并不自动转化为跨境统帅能力",
+          "text": "孙士毅由文官系统历任地方，参与四库等事务，后任两广总督。边疆督抚需要处理军需、奏报、属国交涉与地方财政，但这不等于具备所有前线判断。乾隆选择他统兵，既因地理管辖和行政经验，也因朝廷低估阮惠力量。把败因只写成文官不知兵，会遗漏皇帝决策和整个报功体系。",
+          "kind": "文官统兵",
+          "sources": [
+            "v159_qsg330",
+            "v159_qsg145"
+          ],
+          "events": [
+            "v159_vietnam_advance"
+          ],
+          "people": [
+            "q_qianlong"
+          ]
+        },
+        {
+          "id": "v159_ss2",
+          "title": "扶黎名义掩盖了安南内部合法性已在重组",
+          "text": "黎维祁逃入清境后，清廷以恢复旧王朝为名出兵。对清廷而言，这是维护册封秩序；对安南各政治力量而言，黎氏、郑氏遗产与西山军的关系早已变化。‘属国请求’不能代表当地社会一致意愿。孙士毅的进军越顺利，越容易把迎降、观望和真正支持混为一体。",
+          "kind": "藩属与内政",
+          "sources": [
+            "v159_qsg527",
+            "v159_qsg330"
+          ],
+          "events": [
+            "v159_vietnam_advance",
+            "v159_vietnam_settlement"
+          ],
+          "people": [
+            "q159_nguyenhue"
+          ]
+        },
+        {
+          "id": "v159_ss3",
+          "title": "进入升龙不是战争结束，分营过冬反而放大风险",
+          "text": "清军渡河进入升龙后，孙士毅报捷并安排驻守，部队分散、补给线拉长。阮惠主力仍在，春节休整的判断给对方集中兵力创造机会。官修传记把败退归为轻敌有依据，却不能停在性格批评：情报、营地间距、桥梁、当地动员和撤退路线共同决定灾难规模。",
+          "kind": "胜利错觉",
+          "sources": [
+            "v159_qsg330",
+            "v159_qsg527"
+          ],
+          "events": [
+            "v159_vietnam_advance",
+            "v159_vietnam_retreat"
+          ],
+          "people": [
+            "q159_nguyenhue",
+            "q_qianlong"
+          ]
+        },
+        {
+          "id": "v159_ss4",
+          "title": "仓促过河造成连锁崩溃，不能用‘损兵折将’四字略过",
+          "text": "阮惠军快速北上后，清军多处营地被击破，孙士毅撤向边境，浮桥与渡河秩序崩溃，多名将领和士兵死亡。清方材料详记官员姓名，却难以恢复所有普通军士、随军夫役和当地居民损失。败退不是宫廷叙事中的一个污点，而是此前战略判断的实际后果。",
+          "kind": "撤退与死亡",
+          "sources": [
+            "v159_qsg330",
+            "v159_qsg527"
+          ],
+          "events": [
+            "v159_vietnam_retreat"
+          ],
+          "people": [
+            "q159_nguyenhue"
+          ]
+        },
+        {
+          "id": "v159_ss5",
+          "title": "战后未被彻底弃用，说明乾隆更重视可控责任叙事",
+          "text": "孙士毅败后受处分，后来仍获起用并在苗疆军中去世。乾隆一面归责统帅，一面接受阮惠遣使和册封，把军事失败重新包装为秩序恢复。个人复出不能证明前案被推翻，而显示皇帝在责任、人才和外交体面之间重新配置。阅读孙士毅，不应止于‘常胜将军轻敌’，更不能把阮惠朝贡写成清军获胜。",
+          "kind": "处分与再用",
+          "sources": [
+            "v159_qsg330",
+            "v159_qsg527"
+          ],
+          "events": [
+            "v159_vietnam_settlement"
+          ],
+          "people": [
+            "q159_nguyenhue",
+            "q_qianlong",
+            "q159_fukangan"
+          ]
+        }
+      ],
+      "sources": [
+        "v159_qsg145",
+        "v159_qsg330",
+        "v159_qsg527"
+      ]
+    },
+    {
+      "person": "q159_lishiyao",
+      "title": "李侍尧：惩贪、惜才与边疆军需为何能同时存在",
+      "dek": "他的反复沉浮不是简单的宠臣传奇，而是乾隆以个人裁断管理督抚、财政和边疆任务的缩影。",
+      "sections": [
+        {
+          "id": "v159_ls1",
+          "title": "长期督抚积累的是信息、财源与人事控制力",
+          "text": "李侍尧长期任职云贵、两广等地，熟悉边贸、盐政、关税、军需和属员任用。边疆督抚既向中央提供信息，也控制运输和采购接口，能力与寻租风险由此同时增长。传记中的‘干练’不是纯性格评价，而来自能迅速筹饷调兵；同一网络也使勒索、馈送和包庇更难被日常监督。",
+          "kind": "督抚网络",
+          "sources": [
+            "v159_qsg323",
+            "v159_cambridge_military"
+          ],
+          "events": [
+            "v159_burma_escalation",
+            "v159_burma_trade_ban"
+          ],
+          "people": [
+            "q_qianlong"
+          ]
+        },
+        {
+          "id": "v159_ls2",
+          "title": "清缅战争把地方冲突、夸大战报和皇帝预期层层放大",
+          "text": "云南边境冲突初起时，地方官希望迅速报功，朝廷又低估缅甸贡榜王朝，战事从绿营行动扩大为全国调兵。李侍尧参与地方调度，却不能独自决定战略。疾病和道路使精锐持续减员，说明督抚提供的粮台与情报再高效，也无法挽救错误目标。将失败全归统帅或地方官，会放过最高决策。",
+          "kind": "清缅战争",
+          "sources": [
+            "v159_cambridge_burma",
+            "v159_qsg323"
+          ],
+          "events": [
+            "v159_burma_escalation",
+            "v159_burma_disease",
+            "v159_burma_truce"
+          ],
+          "people": [
+            "q158_fuheng"
+          ]
+        },
+        {
+          "id": "v159_ls3",
+          "title": "拟斩、监候、释放和再任是一条皇权裁量链",
+          "text": "1780年李侍尧因纳贿勒索等问题受审，罪至拟斩，乾隆改为监候，后来又释放任用。和珅参与查办并不等于形成独立反腐机制；皇帝既可严惩，也可因边疆经验而宽免。不能把重新任职写成洗清罪名，也不能只说‘戴罪立功’而忽略受害属员和财政损失难以追复。",
+          "kind": "贪污案与裁量",
+          "sources": [
+            "v159_qsg323"
+          ],
+          "events": [
+            "v159_lishiyao_case",
+            "v159_heshen_rise"
+          ],
+          "people": [
+            "q_heshen",
+            "q_qianlong"
+          ]
+        },
+        {
+          "id": "v159_ls4",
+          "title": "台湾军需显示不渡海的督抚也能决定战局节奏",
+          "text": "林爽文事件期间，李侍尧在福建沿海筹兵、船只、粮械和港口防务，并判断如何传达撤换统帅的密旨。前线胜利依赖跨海运输，后方官员因此也进入功臣排序。军需办得快不能自动抵销此前罪案；反过来，以贪官标签否定所有调度事实，也会看不见战争行政如何运转。",
+          "kind": "海峡后勤",
+          "sources": [
+            "v159_qsg323",
+            "v159_dpm_taiwan_art"
+          ],
+          "events": [
+            "v159_taiwan_counteroffensive",
+            "v159_taiwan_postwar_rules"
+          ],
+          "people": [
+            "q159_fukangan",
+            "q159_linshuangwen"
+          ]
+        },
+        {
+          "id": "v159_ls5",
+          "title": "反复起复提高短期办事能力，也削弱稳定问责边界",
+          "text": "乾隆晚年多次在重罪和再用之间调整李侍尧，说明高度个人化用人可以迅速调用熟练官员，却让处分标准依赖皇帝判断。‘能臣’与‘贪臣’不是二选一标签：同一套地方网络既能供应战争，也能积累私人利益。评价他应分别核对具体任务、罪证与宽免理由，而不是用后来戏剧化的清官贪官对立替代制度分析。",
+          "kind": "用人与问责",
+          "sources": [
+            "v159_qsg323",
+            "v159_cambridge_military"
+          ],
+          "events": [
+            "v159_lishiyao_case",
+            "v159_burma_trade_ban"
+          ],
+          "people": [
+            "q_qianlong",
+            "q_heshen"
+          ]
+        }
+      ],
+      "sources": [
+        "v159_cambridge_burma",
+        "v159_cambridge_military",
+        "v159_dpm_taiwan_art",
+        "v159_qsg323"
+      ]
+    },
+    {
+      "person": "q159_linshuangwen",
+      "title": "林爽文：一场全岛动乱不能只有‘起义’或‘叛乱’",
+      "dek": "会党查捕、移民社会、族群冲突、土地边界与国家镇压同时存在，单一标签无法替代过程。",
+      "sections": [
+        {
+          "id": "v159_lsw1",
+          "title": "天地会网络提供组织条件，起事原因却不止秘密结社",
+          "text": "林爽文来自福建移民社会，参与天地会。官府查捕使网络迅速转入武装对抗，但会党并非唯一原因：基层吏治、土地竞争、械斗和地方权力关系共同塑造响应范围。把所有参与者视为有统一反清纲领，会高估组织一致性；把他们只称盗贼，又会删除官府行动和社会矛盾。",
+          "kind": "会党与地方社会",
+          "sources": [
+            "v159_qsyj_lin",
+            "v159_ntu_taiwan"
+          ],
+          "events": [
+            "v159_lin_revolt",
+            "v159_taiwan_factions"
+          ],
+          "people": [
+            "q_qianlong"
+          ]
+        },
+        {
+          "id": "v159_lsw2",
+          "title": "攻占县城后联盟迅速扩大，也随地域与籍贯重新分化",
+          "text": "起事力量攻占彰化等地，南部又有庄大田等响应。参与者可能因会党、籍贯、村庄安全、机会和强迫而加入，反对者也以义民、团练或官军协力者出现。漳、泉、粤等标签影响冲突，却不能预测每个村庄站队。全岛性规模来自多条地方冲突汇流，并非一支现代军队统一推进。",
+          "kind": "联盟与分裂",
+          "sources": [
+            "v159_qsyj_lin",
+            "v159_dpm_taiwan_art"
+          ],
+          "events": [
+            "v159_lin_revolt",
+            "v159_taiwan_factions"
+          ],
+          "people": [
+            "q159_fukangan"
+          ]
+        },
+        {
+          "id": "v159_lsw3",
+          "title": "嘉义久围和跨海增兵让战争进入帝国资源对抗阶段",
+          "text": "地方官军久未平定后，清廷调福康安、海兰察和各地兵力跨海。林爽文力量能围城、转入山地，却难以长期对抗中央持续投入的船运、粮械和精锐。宫廷后来把诸罗改名嘉义、绘制战图，形成忠诚与凯旋秩序；这些纪念不能替代城内外平民经历。",
+          "kind": "围城与远征",
+          "sources": [
+            "v159_dpm_taiwan_art",
+            "v159_qsg330",
+            "v159_qsg331"
+          ],
+          "events": [
+            "v159_taiwan_counteroffensive",
+            "v159_victory_images"
+          ],
+          "people": [
+            "q159_fukangan",
+            "q159_hailancha"
+          ]
+        },
+        {
+          "id": "v159_lsw4",
+          "title": "逃入内山后的追捕依赖原住民社群，却非所有社群一致协力",
+          "text": "林爽文败退后进入山地，清军借助道路知识和部分社群协助追捕。清代档案用‘生番’‘熟番’分类，将不同族群纳入国家视角；今天不能把这些词直接当自我认同。有人守隘、有人提供信息、有人被卷入，动机与土地关系各异。战图中的合围是结果性构图，不是全岛原住民共同选择。",
+          "kind": "山地与原住民",
+          "sources": [
+            "v159_ntu_taiwan",
+            "v159_dpm_taiwan_art"
+          ],
+          "events": [
+            "v159_taiwan_indigenous",
+            "v159_taiwan_counteroffensive"
+          ],
+          "people": [
+            "q159_hailancha"
+          ]
+        },
+        {
+          "id": "v159_lsw5",
+          "title": "处决首领没有终结土地、吏治与边界问题",
+          "text": "林爽文被押解处死后，清廷颁善后章程、调整吏治与边疆控制，设置屯番、隘制等安排。政策吸收了部分既成开垦，也重新分配守隘和土地利益。事件不能只以‘平定’收尾：后续治理既强化国家存在，也制造新的边界矛盾。用‘起义英雄’或‘乱民首领’给人物盖棺，都不足以解释参与者为何来去。",
+          "kind": "善后与记忆",
+          "sources": [
+            "v159_ntu_taiwan",
+            "v159_dpm_taiwan_art"
+          ],
+          "events": [
+            "v159_taiwan_postwar_rules",
+            "v159_taiwan_land_afterwar"
+          ],
+          "people": [
+            "q159_fukangan",
+            "q159_lishiyao"
+          ]
+        }
+      ],
+      "sources": [
+        "v159_dpm_taiwan_art",
+        "v159_ntu_taiwan",
+        "v159_qsg330",
+        "v159_qsg331",
+        "v159_qsyj_lin"
+      ]
+    },
+    {
+      "person": "q159_nguyenhue",
+      "title": "阮惠：击败清军之后，册封如何重组清越关系",
+      "dek": "他的胜利来自安南内部政治动员；接受册封则是战后外交选择，两者不应被写成互相取消。",
+      "sections": [
+        {
+          "id": "v159_nh1",
+          "title": "西山运动先改变安南内部格局，清军才进入这个已变化的世界",
+          "text": "阮惠与西山力量兴起时，安南原有黎王、郑氏等政治结构已深刻动摇。他北上击败对手、控制升龙，不是因清军介入才突然出现。清方《安南传》从黎维祁求援开始叙事，容易把阮惠压成逐君权臣；理解战争必须先承认当地合法性和军事力量正在重组。",
+          "kind": "安南内部变局",
+          "sources": [
+            "v159_qsg527"
+          ],
+          "events": [
+            "v159_vietnam_advance"
+          ],
+          "people": [
+            "q159_sunshiyi"
+          ]
+        },
+        {
+          "id": "v159_nh2",
+          "title": "孙士毅快速入城没有摧毁西山军的组织能力",
+          "text": "清军越过边境并进入升龙时，阮惠主力后撤集结。表面上的城市易手让清廷和黎维祁高估胜局，却给西山军留下动员空间。当地官民对黎氏与西山的态度并不一致，也不能从清方迎降奏报直接推算。阮惠的反攻不是凭空奇袭，而建立在仍然存在的政治和军事网络上。",
+          "kind": "撤退与集结",
+          "sources": [
+            "v159_qsg527",
+            "v159_qsg330"
+          ],
+          "events": [
+            "v159_vietnam_advance"
+          ],
+          "people": [
+            "q159_sunshiyi"
+          ]
+        },
+        {
+          "id": "v159_nh3",
+          "title": "春节攻势利用分营、情报与速度，清军败退不是神话式以少胜多",
+          "text": "阮惠在春节前后北进，连续攻击清军据点，迫使孙士毅撤退。清方记载强调统帅轻敌和浮桥崩溃，越南记忆又容易突出民族英雄。可靠叙述应保留兵力数字不确定，关注营地分散、补给线、当地情报和突击节奏。胜利确凿，不需要再用未经核实的夸张斩获增加光环。",
+          "kind": "春节战役",
+          "sources": [
+            "v159_qsg527",
+            "v159_qsg330"
+          ],
+          "events": [
+            "v159_vietnam_retreat"
+          ],
+          "people": [
+            "q159_sunshiyi"
+          ]
+        },
+        {
+          "id": "v159_nh4",
+          "title": "遣使和受封是避免再战的外交安排，不是承认此前清军胜利",
+          "text": "清军退回后，阮惠以阮光平名义遣使，清廷接受新的现实并册封。朝贡和册封提供双方都能使用的语言：清廷维护天下秩序体面，西山政权获得北方边界稳定与外部承认。不能把受封解释为投降，也不能因军事胜利否定他需要外交妥协。",
+          "kind": "战后外交",
+          "sources": [
+            "v159_qsg527"
+          ],
+          "events": [
+            "v159_vietnam_settlement"
+          ],
+          "people": [
+            "q_qianlong"
+          ]
+        },
+        {
+          "id": "v159_nh5",
+          "title": "清方文献足以核对交涉，却不足以独占阮惠生平解释权",
+          "text": "《清史稿》和实录保存出兵、败退、使节和册封材料，但词汇把安南放进藩属秩序，对西山内部制度、税役与社会支持记录有限。本页因此只在证据足够处叙述清越战争，不用清廷的‘叛’‘贡’替代越南史。阮惠也不应只在中国史中作为击败孙士毅的人出现；他的政权建设仍需越南材料继续展开。",
+          "kind": "来源边界",
+          "sources": [
+            "v159_qsg527",
+            "v159_qsg330"
+          ],
+          "events": [
+            "v159_vietnam_settlement"
+          ],
+          "people": [
+            "q159_sunshiyi"
+          ]
+        }
+      ],
+      "sources": [
+        "v159_qsg330",
+        "v159_qsg527"
+      ]
+    },
+    {
+      "person": "q159_daizhen",
+      "title": "戴震：从一个字的古义走向人的情欲与社会判断",
+      "dek": "他的学问把语言证据、历算精度和义理批评连在一起，不能拆成‘考据家’与‘思想家’两个人。",
+      "sections": [
+        {
+          "id": "v159_dz1",
+          "title": "徽州求学与贫寒叙事不能代替具体知识训练",
+          "text": "戴震早年在徽州及江南学术网络中学习经史、音韵、算学与历法，长期以授徒、著述维持生活。后世常用勤学传奇开篇，但真正重要的是他把不同知识工具放在同一问题中：字音、度量、天文和制度都需要可核对证据。贫寒说明仕途条件，不自动证明每个学术结论更接近真理。",
+          "kind": "求学与工具",
+          "sources": [
+            "v159_qsg481"
+          ],
+          "events": [
+            "v159_dai_method"
+          ],
+          "people": [
+            "q159_qiandaxin"
+          ]
+        },
+        {
+          "id": "v159_dz2",
+          "title": "进入四库馆既提供文献条件，也把学者放进国家工程",
+          "text": "戴震以举人身份获召入四库馆，参与校理并借此接触大量典籍，后来获进士名分。馆局让学者合作辑佚、校勘和分类，同时必须服从钦定目录和审查边界。不能把四库馆写成纯粹学术研究院，也不能因政治控制否定馆臣每一次校勘成果。国家资源与国家限制在同一张书桌上。",
+          "kind": "四库馆",
+          "sources": [
+            "v159_qsg145",
+            "v159_nmc_siku"
+          ],
+          "events": [
+            "v159_siku_collection",
+            "v159_book_collection_local"
+          ],
+          "people": [
+            "q_jiyun",
+            "q_qianlong"
+          ]
+        },
+        {
+          "id": "v159_dz3",
+          "title": "训诂不是字面游戏，而是防止用后世概念覆盖古人",
+          "text": "戴震考察古音、字义和名物，要求解释能在经文互证中成立。一个字在不同时代含义变化，若只凭当代直觉读经典，容易把自己的道德语言投射回去。方法的价值在可复查，也有边界：字源和训诂不能单独决定历史事实，更不能替代社会经验。考据是一种约束解释的程序，不是拒绝解释。",
+          "kind": "语言证据",
+          "sources": [
+            "v159_qsg481"
+          ],
+          "events": [
+            "v159_dai_method"
+          ],
+          "people": [
+            "q159_qiandaxin"
+          ]
+        },
+        {
+          "id": "v159_dz4",
+          "title": "讨论‘理’与‘欲’，是要追问道德判断如何落到活人身上",
+          "text": "戴震反对把抽象天理与人的情欲简单对立，担心掌握道德话语者以‘理’压制他人。他并非主张欲望无限，也不是现代个人主义者；论证仍在经典和人性框架中展开。把他只写成反朱熹斗士，会把复杂文本变成阵营口号。需要看到的是，精密训诂最终被用于质疑现实中的任意裁断。",
+          "kind": "义理与人",
+          "sources": [
+            "v159_qsg481"
+          ],
+          "events": [
+            "v159_dai_method"
+          ],
+          "people": [
+            "q159_qiandaxin"
+          ]
+        },
+        {
+          "id": "v159_dz5",
+          "title": "考据学的公共价值在展示证据链，而非制造无争议结论",
+          "text": "戴震去世后，著作和门人传播使其影响扩大。乾嘉学术常被概括为远离政治，实际既有国家修书提供条件，也有人借证据方法讨论制度和伦理。学术共同体能够校正错误，却不脱离出版、官职和审查。阅读戴震最值得保留的不是‘博学’赞语，而是一个判断如何从材料、比较和反驳中形成。",
+          "kind": "学术遗产",
+          "sources": [
+            "v159_qsg481",
+            "v159_dpm_siku_destroy"
+          ],
+          "events": [
+            "v159_siku_bans",
+            "v159_qian_method"
+          ],
+          "people": [
+            "q159_qiandaxin",
+            "q_jiyun"
+          ]
+        }
+      ],
+      "sources": [
+        "v159_dpm_siku_destroy",
+        "v159_nmc_siku",
+        "v159_qsg145",
+        "v159_qsg481"
+      ]
+    },
+    {
+      "person": "q159_qiandaxin",
+      "title": "钱大昕：用年代、官制与金石把历史重新校准",
+      "dek": "他没有一把万能钥匙，而是把不同材料放到同一张可检验的时间与制度网中。",
+      "sections": [
+        {
+          "id": "v159_qdx1",
+          "title": "翰林仕途给他官修机会，家学与同辈讨论提供方法训练",
+          "text": "钱大昕由科举进入翰林，参与多种官修书籍，也学习天文历算、音韵和经史。官职使他接触档案与大型编纂，不等于所有成果都是奉旨完成；离开官场后的讲学和私著同样重要。把学术只归功天赋会抹去资料条件，把它只归功国家工程又会抹去个人选择和同辈批评。",
+          "kind": "仕途与学术网络",
+          "sources": [
+            "v159_qsg481"
+          ],
+          "events": [
+            "v159_qian_method"
+          ],
+          "people": [
+            "q159_daizhen"
+          ]
+        },
+        {
+          "id": "v159_qdx2",
+          "title": "校年代先要处理历法，不是把公元年份套进古书",
+          "text": "他研究朔闰、年号和不同史书的纪日差异，用历算核对事件先后。古代日期转换涉及历法体系、抄写和纪年差错，不能看到两个日期不同便立即判一方造假。钱大昕的方法要求先建立时间规则，再谈因果。这类基础工作看似细碎，却能防止把相隔数年的事件误接成一条故事。",
+          "kind": "历日与年代",
+          "sources": [
+            "v159_qsg481"
+          ],
+          "events": [
+            "v159_qian_method"
+          ],
+          "people": [
+            "q159_daizhen"
+          ]
+        },
+        {
+          "id": "v159_qdx3",
+          "title": "碑刻提供独立材料，但石头也会错、会被重刻",
+          "text": "钱大昕广泛利用碑铭和金石文字核对人名、官职、地名与年代。金石常保存正史未载信息，仍需判断立碑时间、撰者目的、拓本真伪和后世重刻。‘以碑证史’不是让石刻自动胜过文献，而是让来源不同的材料彼此限制。证据越多，结论有时反而应更谨慎。",
+          "kind": "金石互证",
+          "sources": [
+            "v159_qsg481"
+          ],
+          "events": [
+            "v159_qian_method"
+          ],
+          "people": [
+            "q159_daizhen"
+          ]
+        },
+        {
+          "id": "v159_qdx4",
+          "title": "官制与地理考证把人物放回当时可行动的制度空间",
+          "text": "同一官名在不同朝代权限不同，地名也会迁移。钱大昕比较职官、氏族、舆地和多部正史，使人物经历不再只是传记片段。制度考证不是无关宏旨：若误认官职权力，就会误判谁能决策；若误定路线，就会误判战争和交通。宏大叙事需要这些细部约束。",
+          "kind": "制度与空间",
+          "sources": [
+            "v159_qsg481"
+          ],
+          "events": [
+            "v159_qian_method"
+          ],
+          "people": [
+            "q159_daizhen"
+          ]
+        },
+        {
+          "id": "v159_qdx5",
+          "title": "乾嘉学术不是整齐同盟，‘考据’也不等于没有价值判断",
+          "text": "钱大昕与戴震等人共享重证据的风气，研究对象、哲学立场和仕途经历并不相同。后人使用‘乾嘉学派’便于理解，却可能制造一致性。他参与官修工程，也保有私家校勘和批评；清廷文化控制与学者专业化同时发生。认识这个张力，比把一代学者写成盛世装饰或沉默避祸更准确。",
+          "kind": "学派边界",
+          "sources": [
+            "v159_qsg481",
+            "v159_qsg145",
+            "v159_dpm_siku_destroy"
+          ],
+          "events": [
+            "v159_siku_collection",
+            "v159_siku_bans",
+            "v159_book_collection_local"
+          ],
+          "people": [
+            "q159_daizhen",
+            "q_jiyun"
+          ]
+        }
+      ],
+      "sources": [
+        "v159_dpm_siku_destroy",
+        "v159_qsg145",
+        "v159_qsg481"
+      ]
+    },
+    {
+      "person": "q159_wangxihou",
+      "title": "王锡侯：《字贯》案如何把字书问题变成死罪",
+      "dek": "案件不是‘写错一个字’的笑谈，而是钦定知识、避讳制度、检举和君主裁断共同运作的结果。",
+      "sections": [
+        {
+          "id": "v159_wxh1",
+          "title": "编《字贯》源于对字典体例不满，不等于先有政治谋反计划",
+          "text": "王锡侯认为《康熙字典》等工具仍有不便，编写《字贯》尝试调整分类和释义。批评钦定字典在当时具有政治风险，但学术批评与推翻政权不是同一件事。现存定罪材料由办案者筛选，不能反向证明作者写书时已有‘悖逆’动机。应先区分著述目的、形式失讳与国家赋予的罪名。",
+          "kind": "字书与著述",
+          "sources": [
+            "v159_dpm_text_cases"
+          ],
+          "events": [
+            "v159_wang_xihou_case"
+          ],
+          "people": [
+            "q_qianlong"
+          ]
+        },
+        {
+          "id": "v159_wxh2",
+          "title": "凡例列出庙讳御名，触碰的是皇权要求人人识别的文字秩序",
+          "text": "《字贯》凡例开列帝王庙讳、御名，被乾隆视为不敬。避讳不仅禁止直接书写某些字，也训练官民在文字中不断确认君主位置。王锡侯可能意在说明用字规则，皇帝却把完整列写本身视为冒犯。意图和效果因此被裁判权强行合并，案件从书籍审查升级为身份与生命的惩罚。",
+          "kind": "避讳与尊严",
+          "sources": [
+            "v159_dpm_text_cases",
+            "v157_dpm_archives"
+          ],
+          "events": [
+            "v159_wang_xihou_case"
+          ],
+          "people": [
+            "q_qianlong"
+          ]
+        },
+        {
+          "id": "v159_wxh3",
+          "title": "地方检举、巡抚审讯与皇帝加重构成层层升级链条",
+          "text": "案件由地方发现上报，巡抚审讯并提出处分，乾隆亲自阅读后加重判断。中央并非被动接收地方结论，地方官也会预判皇帝对文字的敏感而趋严。档案保留多级文书，却主要是权力机构声音；供词是在拘押审讯中形成，不是自由对话。不能从一致措辞推定事实已被多方独立验证。",
+          "kind": "办案链条",
+          "sources": [
+            "v159_dpm_text_cases",
+            "v157_dpm_archives"
+          ],
+          "events": [
+            "v159_wang_xihou_case"
+          ],
+          "people": [
+            "q_qianlong"
+          ]
+        },
+        {
+          "id": "v159_wxh4",
+          "title": "株连家属和处分官员，使审查风险扩散到出版与地方治理",
+          "text": "王锡侯本人被判重罪，家属、书板和相关官员也受牵连。惩罚对象超出作者，迫使刻书者、藏书家与官员主动筛查。文字狱的影响不只看处死人数，还包括人们不再抄录、收藏或讨论哪些内容；这类自我约束难以精确统计，不能随意给出全国统一程度。",
+          "kind": "株连与寒蝉",
+          "sources": [
+            "v159_dpm_text_cases",
+            "v159_dpm_siku_destroy"
+          ],
+          "events": [
+            "v159_siku_bans",
+            "v159_book_collection_local"
+          ],
+          "people": [
+            "q159_xushukui"
+          ]
+        },
+        {
+          "id": "v159_wxh5",
+          "title": "把案件写成皇帝不懂字书，同样会失去制度解释力",
+          "text": "乾隆是否认同具体字书批评并非案件核心，核心是钦定经典和御名被置于不可公开冒犯的位置。君主以解释权决定哪些文字越界，官僚以审查证明忠诚。个案有偶然检举，惩罚却产生普遍信号。今天应避免用段子化的‘因字获罪’替代原始材料，也不把办案语言中的反逆定性直接沿用。",
+          "kind": "知识与权力",
+          "sources": [
+            "v159_dpm_text_cases",
+            "v159_dpm_siku_destroy"
+          ],
+          "events": [
+            "v159_wang_xihou_case",
+            "v159_siku_bans"
+          ],
+          "people": [
+            "q159_xushukui",
+            "q_jiyun"
+          ]
+        }
+      ],
+      "sources": [
+        "v157_dpm_archives",
+        "v159_dpm_siku_destroy",
+        "v159_dpm_text_cases"
+      ]
+    },
+    {
+      "person": "q159_xushukui",
+      "title": "徐述夔：身后诗句如何被重新解释并扩大株连",
+      "dek": "文字狱最危险之处，不只是作者写了什么，还包括多年后谁有权把字句解释成什么。",
+      "sections": [
+        {
+          "id": "v159_xs1",
+          "title": "案件发生在作者身后，检举与重读改变了作品的政治含义",
+          "text": "徐述夔去世后，其诗文被地方检举。办案者从‘明’‘清’等字的多义、谐音和句法中寻找影射，将文学表达重新组织为反清证据。作者无法在审判中完整回应，现存解释主要来自检举与定罪机关。不能因为判决反复引用某几句，就推定这些句子在写作和流传时始终只有一个政治含义。",
+          "kind": "身后兴狱",
+          "sources": [
+            "v159_dpm_text_cases",
+            "v157_dpm_archives"
+          ],
+          "events": [
+            "v159_xu_shukui_case"
+          ],
+          "people": [
+            "q_qianlong"
+          ]
+        },
+        {
+          "id": "v159_xs2",
+          "title": "谐音推断让解释几乎可以无限延伸，皇帝裁决才使其固定",
+          "text": "办案材料把部分词语转读为族群或朝代暗示，并据上下句建立‘悖逆’叙事。语言确可含讽刺，是否成立应靠语境、版本和同时代使用互证；在文字狱中，最终标准却是皇帝是否接受解释。权力不是发现了唯一意义，而是选择一种意义并把它变成刑罚事实。",
+          "kind": "解释与裁断",
+          "sources": [
+            "v159_dpm_text_cases"
+          ],
+          "events": [
+            "v159_xu_shukui_case"
+          ],
+          "people": [
+            "q159_wangxihou"
+          ]
+        },
+        {
+          "id": "v159_xs3",
+          "title": "家属、校订者和失察官员被纳入同案，责任沿传播链扩散",
+          "text": "案件追究作者后代、参与校订刊刻者以及未能及早发现的地方官。一本书由写作、抄刻、收藏、阅读多环节组成，株连把每一环都转成风险点。这样形成的控制不必每天查禁所有书，人们也会主动回避可能被重新解释的文本。寒蝉效应真实存在，范围却难以用单一数字衡量。",
+          "kind": "传播链株连",
+          "sources": [
+            "v159_dpm_text_cases",
+            "v159_dpm_siku_destroy"
+          ],
+          "events": [
+            "v159_xu_shukui_case",
+            "v159_book_collection_local"
+          ],
+          "people": [
+            "q159_wangxihou"
+          ]
+        },
+        {
+          "id": "v159_xs4",
+          "title": "诗案与四库禁毁互相强化，但不是所有未收书都因文字狱消失",
+          "text": "同一时期，四库征书网络识别所谓违碍文本，地方官也因诗案加紧审查。个案处罚向藏书和目录工程释放信号，禁毁又为个案提供分类语言。但未收入四库可能因为质量、体例、未进呈等多种原因，不能把所有缺书都归因文字狱；反之，入选四库也不保证永不撤出。",
+          "kind": "诗案与书禁",
+          "sources": [
+            "v159_dpm_siku_destroy",
+            "v159_dpm_siku_removed"
+          ],
+          "events": [
+            "v159_siku_bans",
+            "v159_siku_recheck"
+          ],
+          "people": [
+            "q_jiyun"
+          ]
+        },
+        {
+          "id": "v159_xs5",
+          "title": "史实核查要把原诗、检举、供词与判决分开放置",
+          "text": "徐述夔案常被概述成几句诗招致灭门，容易重复办案者挑出的字句而忽略版本和程序。可靠叙述应标明每句话来自哪里、谁作解释、在何种审讯条件下形成。我们可以确认国家施加了严厉追究，却不能据此无缝重建作者全部思想。承认未知，不会减轻文字狱暴力，反而阻止再次把权力结论当事实。",
+          "kind": "证据边界",
+          "sources": [
+            "v159_dpm_text_cases",
+            "v157_dpm_archives"
+          ],
+          "events": [
+            "v159_xu_shukui_case"
+          ],
+          "people": [
+            "q159_wangxihou",
+            "q_qianlong"
+          ]
+        }
+      ],
+      "sources": [
+        "v157_dpm_archives",
+        "v159_dpm_siku_destroy",
+        "v159_dpm_siku_removed",
+        "v159_dpm_text_cases"
+      ]
     }
   ],
   "portraits": [
@@ -214620,6 +216974,226 @@
         "v158_qsg313",
         "v158_qingshilu597"
       ]
+    },
+    {
+      "from": "q_qianlong",
+      "to": "q159_fukangan",
+      "role": "在位时期的关键人物",
+      "inverse": "面对乾隆朝最高决策",
+      "period": "乾隆中后期",
+      "note": "具体关系随任官、战争或案件变化，不能统一写成君臣亲信。",
+      "sources": [
+        "v159_qsg330",
+        "v159_dpm_taiwan_art",
+        "v159_cambridge_military"
+      ]
+    },
+    {
+      "from": "q_qianlong",
+      "to": "q159_hailancha",
+      "role": "在位时期的关键人物",
+      "inverse": "面对乾隆朝最高决策",
+      "period": "乾隆中后期",
+      "note": "具体关系随任官、战争或案件变化，不能统一写成君臣亲信。",
+      "sources": [
+        "v159_qsg331",
+        "v159_dpm_taiwan_art",
+        "v159_tuebingen_jinchuan"
+      ]
+    },
+    {
+      "from": "q_qianlong",
+      "to": "q159_sunshiyi",
+      "role": "在位时期的关键人物",
+      "inverse": "面对乾隆朝最高决策",
+      "period": "乾隆中后期",
+      "note": "具体关系随任官、战争或案件变化，不能统一写成君臣亲信。",
+      "sources": [
+        "v159_qsg330",
+        "v159_qsg527",
+        "v159_cambridge_military"
+      ]
+    },
+    {
+      "from": "q_qianlong",
+      "to": "q159_lishiyao",
+      "role": "在位时期的关键人物",
+      "inverse": "面对乾隆朝最高决策",
+      "period": "乾隆中后期",
+      "note": "具体关系随任官、战争或案件变化，不能统一写成君臣亲信。",
+      "sources": [
+        "v159_qsg323",
+        "v159_cambridge_burma",
+        "v159_cambridge_military"
+      ]
+    },
+    {
+      "from": "q_qianlong",
+      "to": "q159_linshuangwen",
+      "role": "在位时期的关键人物",
+      "inverse": "面对乾隆朝最高决策",
+      "period": "乾隆中后期",
+      "note": "具体关系随任官、战争或案件变化，不能统一写成君臣亲信。",
+      "sources": [
+        "v159_dpm_taiwan_art",
+        "v159_ntu_taiwan",
+        "v159_qsyj_lin"
+      ]
+    },
+    {
+      "from": "q_qianlong",
+      "to": "q159_nguyenhue",
+      "role": "在位时期的关键人物",
+      "inverse": "面对乾隆朝最高决策",
+      "period": "乾隆中后期",
+      "note": "具体关系随任官、战争或案件变化，不能统一写成君臣亲信。",
+      "sources": [
+        "v159_qsg527",
+        "v159_qsg330"
+      ]
+    },
+    {
+      "from": "q_qianlong",
+      "to": "q159_daizhen",
+      "role": "在位时期的关键人物",
+      "inverse": "面对乾隆朝最高决策",
+      "period": "乾隆中后期",
+      "note": "具体关系随任官、战争或案件变化，不能统一写成君臣亲信。",
+      "sources": [
+        "v159_qsg481",
+        "v159_qsg145",
+        "v159_nmc_siku"
+      ]
+    },
+    {
+      "from": "q_qianlong",
+      "to": "q159_qiandaxin",
+      "role": "在位时期的关键人物",
+      "inverse": "面对乾隆朝最高决策",
+      "period": "乾隆中后期",
+      "note": "具体关系随任官、战争或案件变化，不能统一写成君臣亲信。",
+      "sources": [
+        "v159_qsg481",
+        "v159_qsg145"
+      ]
+    },
+    {
+      "from": "q_qianlong",
+      "to": "q159_wangxihou",
+      "role": "在位时期的关键人物",
+      "inverse": "面对乾隆朝最高决策",
+      "period": "乾隆中后期",
+      "note": "具体关系随任官、战争或案件变化，不能统一写成君臣亲信。",
+      "sources": [
+        "v159_dpm_text_cases",
+        "v157_dpm_archives"
+      ]
+    },
+    {
+      "from": "q_qianlong",
+      "to": "q159_xushukui",
+      "role": "在位时期的关键人物",
+      "inverse": "面对乾隆朝最高决策",
+      "period": "乾隆中后期",
+      "note": "具体关系随任官、战争或案件变化，不能统一写成君臣亲信。",
+      "sources": [
+        "v159_dpm_text_cases",
+        "v157_dpm_archives"
+      ]
+    },
+    {
+      "from": "q158_fuheng",
+      "to": "q159_fukangan",
+      "role": "父子；前后参与边疆战争",
+      "inverse": "傅恒之父",
+      "period": "乾隆朝",
+      "note": "家族恩遇延续，但两人承担的战场与官职不同。",
+      "sources": [
+        "v158_qsg301",
+        "v159_qsg330"
+      ]
+    },
+    {
+      "from": "q159_fukangan",
+      "to": "q159_hailancha",
+      "role": "多次共同统军",
+      "inverse": "随福康安出征的参赞将领",
+      "period": "金川、台湾、后藏",
+      "note": "协同作战不抹去具体指挥和战后责任。",
+      "sources": [
+        "v159_qsg330",
+        "v159_qsg331"
+      ]
+    },
+    {
+      "from": "q159_fukangan",
+      "to": "q159_linshuangwen",
+      "role": "奉命追剿并捕获其部众",
+      "inverse": "清军统帅",
+      "period": "1787—1788年",
+      "note": "双方关系主要来自清方军事与审讯记录。",
+      "sources": [
+        "v159_dpm_taiwan_art",
+        "v159_qsg330"
+      ]
+    },
+    {
+      "from": "q159_sunshiyi",
+      "to": "q159_nguyenhue",
+      "role": "率清军入安南，后被其击败",
+      "inverse": "击败清军并随后遣使交涉",
+      "period": "1788—1789年",
+      "note": "战争与战后册封是两个阶段。",
+      "sources": [
+        "v159_qsg330",
+        "v159_qsg527"
+      ]
+    },
+    {
+      "from": "q159_daizhen",
+      "to": "q159_qiandaxin",
+      "role": "同代考据学者",
+      "inverse": "同代考据学者",
+      "period": "乾隆中后期",
+      "note": "方法有交集，不等于组成观点一致的固定派别。",
+      "sources": [
+        "v159_qsg481"
+      ]
+    },
+    {
+      "from": "q159_wangxihou",
+      "to": "q159_xushukui",
+      "role": "并列于乾隆文字狱记忆",
+      "inverse": "并列于乾隆文字狱记忆",
+      "period": "1770年代",
+      "note": "两案证据、程序与当事人处境各不相同。",
+      "sources": [
+        "v159_dpm_text_cases"
+      ]
+    },
+    {
+      "from": "q_jiyun",
+      "to": "q159_daizhen",
+      "role": "四库馆总纂与馆臣",
+      "inverse": "参与四库馆校理",
+      "period": "1770年代",
+      "note": "馆局合作不代表所有学术判断一致。",
+      "sources": [
+        "v159_qsg145",
+        "v159_qsg481"
+      ]
+    },
+    {
+      "from": "q_jiyun",
+      "to": "q159_qiandaxin",
+      "role": "官修工程中的同代学者",
+      "inverse": "同代馆臣与学者",
+      "period": "乾隆中后期",
+      "note": "各自参与范围和私家著述需分开。",
+      "sources": [
+        "v159_qsg145",
+        "v159_qsg481"
+      ]
     }
   ],
   "dynasties": [
@@ -219078,7 +221652,17 @@
         "q158_amursana",
         "q158_dawaci",
         "q158_burhan",
-        "q158_khoja_jahan"
+        "q158_khoja_jahan",
+        "q159_fukangan",
+        "q159_hailancha",
+        "q159_sunshiyi",
+        "q159_lishiyao",
+        "q159_linshuangwen",
+        "q159_nguyenhue",
+        "q159_daizhen",
+        "q159_qiandaxin",
+        "q159_wangxihou",
+        "q159_xushukui"
       ],
       "events": [
         "qev_qianlong_accession_1735",
@@ -219125,7 +221709,42 @@
         "v158_shengjing_fu",
         "v158_sanxitang",
         "v158_western_geography",
-        "v158_battle_images"
+        "v158_battle_images",
+        "v159_second_secret_heir",
+        "v159_heshen_rise",
+        "v159_lishiyao_case",
+        "v159_wang_xihou_case",
+        "v159_xu_shukui_case",
+        "v159_taiwan_postwar_rules",
+        "v159_vietnam_settlement",
+        "v159_burma_escalation",
+        "v159_burma_disease",
+        "v159_burma_truce",
+        "v159_jinchuan_muguomu",
+        "v159_jinchuan_end",
+        "v159_lin_revolt",
+        "v159_taiwan_counteroffensive",
+        "v159_vietnam_advance",
+        "v159_vietnam_retreat",
+        "v159_jinchuan_cost",
+        "v159_jinchuan_transport",
+        "v159_burma_trade_ban",
+        "v159_southtour_finance",
+        "v159_population_pressure",
+        "v159_taiwan_land_afterwar",
+        "v159_jinchuan_labor",
+        "v159_burma_sickness_society",
+        "v159_southtour_requisition",
+        "v159_taiwan_factions",
+        "v159_taiwan_indigenous",
+        "v159_book_collection_local",
+        "v159_siku_collection",
+        "v159_siku_bans",
+        "v159_siku_recheck",
+        "v159_dai_method",
+        "v159_qian_method",
+        "v159_victory_images",
+        "v159_southtour_images"
       ],
       "sources": [
         "v5qn_qing_annals",
@@ -219159,9 +221778,27 @@
         "v158_dpm_sanxi",
         "v158_dpm_western",
         "v158_dpm_shengjing",
-        "v158_cambridge_dzungar"
+        "v158_cambridge_dzungar",
+        "v159_qsg330",
+        "v159_qsg331",
+        "v159_qsg323",
+        "v159_qsg481",
+        "v159_qsg527",
+        "v159_qsg145",
+        "v159_dpm_siku_removed",
+        "v159_dpm_siku_destroy",
+        "v159_dpm_text_cases",
+        "v159_nmc_southtour",
+        "v159_dpm_taiwan_art",
+        "v159_dpm_jinchuan_art",
+        "v159_cambridge_burma",
+        "v159_cambridge_military",
+        "v159_tuebingen_jinchuan",
+        "v159_ntu_taiwan",
+        "v159_qsyj_lin",
+        "v159_nmc_siku"
       ],
-      "note": "按1735—1760年前期、1760—1775中期、1775—1796后期分层阅读；当前前期重点连接中枢、河工、地方社会与西北战争，禅位后的太上皇经历另见生平事件。"
+      "note": "按1735—1760前期、1760—1776中期、1776—1796后期分层阅读；前期连接中枢、河工与西北战争，中后期继续追踪金川和缅甸军需、台湾与安南、南巡筹办、四库禁毁及乾嘉学术。"
     },
     {
       "person": "q_jiaqing",

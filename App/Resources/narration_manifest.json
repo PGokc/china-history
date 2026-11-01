@@ -3057,69 +3057,6 @@
       "audioHash": "7942ef77fc62fd702507a49063a82e01be056d7582a4e9aab680fbd9b9f65bc3"
     },
     {
-      "articleID": "q_heshen",
-      "sectionID": "v40q_heshen_1",
-      "path": "qing-q_heshen-v40q_heshen_1-302935ae6288.mp3",
-      "textHash": "302935ae62881e76cbeabf46aa3f50b84f1efd3d111f5bed5ef0e61f557685ab",
-      "audioHash": "c2497a97c83df14cff430fc77d5fd4b2c1f909a66015161f254bccbcd9551613"
-    },
-    {
-      "articleID": "q_heshen",
-      "sectionID": "v40q_heshen_2",
-      "path": "qing-q_heshen-v40q_heshen_2-c8e6c3b2dd54.mp3",
-      "textHash": "c8e6c3b2dd54322c477686d826eb6fdbc475a3ba4bfc6661cf725dcdcc40026c",
-      "audioHash": "54141e20a6132d13fd5335604822d5b0f52dbd50d9080d96a9cd4c4e44c73f8d"
-    },
-    {
-      "articleID": "q_heshen",
-      "sectionID": "v40q_heshen_3",
-      "path": "qing-q_heshen-v40q_heshen_3-13f5f2453156.mp3",
-      "textHash": "13f5f24531562792bfe603fd5ad0e06491d98b6976b1c16b0beac52d4d945eb0",
-      "audioHash": "273eb627f1456181bf0f7acadc97306c0ae4154aab88334a0186b993f8e4f0a0"
-    },
-    {
-      "articleID": "q_jiyun",
-      "sectionID": "v40q_jiyun_1",
-      "path": "qing-q_jiyun-v40q_jiyun_1-a9cee285d490.mp3",
-      "textHash": "a9cee285d4908bf04ffb153530ca9607a160b245fce02eaeb2bd1a60e4cfe2df",
-      "audioHash": "f32b708a1df4e4f925b03796754672660d0ef1b2d6ce7e8021ada09a302ee34e"
-    },
-    {
-      "articleID": "q_jiyun",
-      "sectionID": "v40q_jiyun_2",
-      "path": "qing-q_jiyun-v40q_jiyun_2-4312ce81d647.mp3",
-      "textHash": "4312ce81d647885fa4277bf4b33d3663c6ec013d3da4521e8632526e9ebea80e",
-      "audioHash": "acd6fc733d52543e7af9c603a2b11aee199c7f563b8624c21cdb743b49167ef0"
-    },
-    {
-      "articleID": "q_jiyun",
-      "sectionID": "v40q_jiyun_3",
-      "path": "qing-q_jiyun-v40q_jiyun_3-2abb80700e7f.mp3",
-      "textHash": "2abb80700e7fdfba9a816c0a7fbfc9b252110efaa01ec1a8e0a5c46bf11e07a7",
-      "audioHash": "7dc5e87eee3cd4e7be56bf61f3c620e04beb37d0e4a5b8c13f3d4af039cee9ed"
-    },
-    {
-      "articleID": "q_liuyong",
-      "sectionID": "v40q_liuyong_1",
-      "path": "qing-q_liuyong-v40q_liuyong_1-166d81111acf.mp3",
-      "textHash": "166d81111acfc13a876cfb46fc52fd1d7a598739887f818dd51968a11157d7d4",
-      "audioHash": "06bb9ddd9d0362e48f45448fc1d1731232e7c037a09d8856da60ae4a6f55db00"
-    },
-    {
-      "articleID": "q_liuyong",
-      "sectionID": "v40q_liuyong_2",
-      "path": "qing-q_liuyong-v40q_liuyong_2-4cb5dea9ba05.mp3",
-      "textHash": "4cb5dea9ba05b16dd0865bae1fbbc618fd881253bb1631ef1f5462be5b15e6eb",
-      "audioHash": "c7932dc8eff5ab1ea9c7053ecbede7024eba9b14b241a3a17d3825f0227afbc3"
-    },
-    {
-      "articleID": "q_liuyong",
-      "sectionID": "v40q_liuyong_3",
-      "path": "qing-q_liuyong-v40q_liuyong_3-9d6b4236b45e.mp3",
-      "textHash": "9d6b4236b45e6332889bc082b265a75483b14dd76e60043c26f9e515c41f00da",
-      "audioHash": "e96d939262c82224a4a640af4dfef10b5d28bbbf2af784535a762e1aa5d8d971"
-    },
-    {
       "articleID": "q_linzexu",
       "sectionID": "v54_q_linzexu_1",
       "path": "qing-q_linzexu-v54_q_linzexu_1-b474538fe1d2.mp3",
@@ -3734,27 +3671,6 @@
       "path": "qing-q_yuchenglong-v42q_yuchenglong_3-9b37d3e2be19.mp3",
       "textHash": "9b37d3e2be19db05b5a9dcbeeb444e27e9f6801edb9c84af6018e307a9e4c415",
       "audioHash": "b99a691a7c12cbbed106b07641e8862ec05d5fe1be7b1d0c984ef01dfd195b45"
-    },
-    {
-      "articleID": "q_agui",
-      "sectionID": "v42q_agui_1",
-      "path": "qing-q_agui-v42q_agui_1-54a52ca1c31e.mp3",
-      "textHash": "54a52ca1c31e9f3de72e6125bc578dbe4ec0002f5896a9b93f497795aa08266b",
-      "audioHash": "19a93208a03eb4b6181c7ea4ce62aeb52619e0c637c232cca2ba18c1b8a9d0bb"
-    },
-    {
-      "articleID": "q_agui",
-      "sectionID": "v42q_agui_2",
-      "path": "qing-q_agui-v42q_agui_2-2a8201c1b9bf.mp3",
-      "textHash": "2a8201c1b9bf5eafa12fff33f44adcf2e09e2f830ab0e1946fce2d05ecaf65f4",
-      "audioHash": "ab0d5fc8918fcee8681ba632e0b713945ffcf1e2c67e20d42f7ba919fa8ac1bb"
-    },
-    {
-      "articleID": "q_agui",
-      "sectionID": "v42q_agui_3",
-      "path": "qing-q_agui-v42q_agui_3-b603299f36ac.mp3",
-      "textHash": "b603299f36ac61f4f7aa3e3903260cfd60de0de217fbffe22bfb6a27fbc00d2e",
-      "audioHash": "ca4b58260145c355900f60c73668c72f9d850a85c36f560a47dbc3baf24215fb"
     },
     {
       "articleID": "q_songyun",

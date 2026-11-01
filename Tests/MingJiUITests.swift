@@ -4687,4 +4687,45 @@ final class MingJiUITests: XCTestCase {
         shot("v158-amursana-four-khans-alliance-breakdown", alliance)
     }
 
+    @MainActor func testV159MiddleLateQianlongSeparatesLocalVoicesAndCoercedEvidence() throws {
+        let taiwan = XCUIApplication()
+        taiwan.launchArguments = ["--uitesting", "--ui-dynasty", "qing"]
+        taiwan.launch()
+        XCTAssertTrue(taiwan.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        taiwan.buttons.matching(NSPredicate(format: "identifier == %@", "globalSearch")).firstMatch.tap()
+        let search = taiwan.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("林爽文")
+        let result = taiwan.buttons["search_person_q159_linshuangwen"]
+        XCTAssertTrue(result.waitForExistence(timeout: 5)); result.tap()
+        XCTAssertTrue(taiwan.buttons["articleEntry"].waitForExistence(timeout: 5)); taiwan.buttons["articleEntry"].tap()
+        XCTAssertTrue(taiwan.buttons["articleContents"].waitForExistence(timeout: 5)); taiwan.buttons["articleContents"].tap()
+        let communities = taiwan.buttons["逃入内山后的追捕依赖原住民社群，却非所有社群一致协力"]
+        XCTAssertTrue(communities.exists); communities.tap()
+        XCTAssertTrue(taiwan.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不是全岛原住民共同选择")).firstMatch.waitForExistence(timeout: 5))
+        openChapterSources("v159_lsw4", in: taiwan)
+        XCTAssertTrue(taiwan.descendants(matching: .any)["source_v159_ntu_taiwan"].waitForExistence(timeout: 3))
+        taiwan.swipeUp()
+        shot("v159-lin-shuangwen-indigenous-communities", taiwan)
+        taiwan.terminate()
+
+        let evidence = XCUIApplication()
+        evidence.launchArguments = ["--uitesting", "--ui-dynasty", "qing"]
+        evidence.launch()
+        XCTAssertTrue(evidence.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        evidence.buttons.matching(NSPredicate(format: "identifier == %@", "globalSearch")).firstMatch.tap()
+        let evidenceSearch = evidence.searchFields.firstMatch
+        XCTAssertTrue(evidenceSearch.waitForExistence(timeout: 5)); evidenceSearch.tap(); evidenceSearch.typeText("锡侯")
+        let evidenceResult = evidence.buttons["search_person_q159_wangxihou"]
+        XCTAssertTrue(evidenceResult.waitForExistence(timeout: 5)); evidenceResult.tap()
+        XCTAssertTrue(evidence.buttons["articleEntry"].waitForExistence(timeout: 5)); evidence.buttons["articleEntry"].tap()
+        XCTAssertTrue(evidence.buttons["articleContents"].waitForExistence(timeout: 5)); evidence.buttons["articleContents"].tap()
+        let procedure = evidence.buttons["地方检举、巡抚审讯与皇帝加重构成层层升级链条"]
+        XCTAssertTrue(procedure.exists); procedure.tap()
+        XCTAssertTrue(evidence.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "供词是在拘押审讯中形成")).firstMatch.waitForExistence(timeout: 5))
+        openChapterSources("v159_wxh3", in: evidence)
+        XCTAssertTrue(evidence.descendants(matching: .any)["source_v159_dpm_text_cases"].waitForExistence(timeout: 3))
+        evidence.swipeUp()
+        shot("v159-wang-xihou-coerced-evidence", evidence)
+    }
+
 }

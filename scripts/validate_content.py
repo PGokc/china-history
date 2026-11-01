@@ -3107,3 +3107,43 @@ if d['version'] >= 132:
  assert {('q158_amursana','q158_dawaci'),('q158_burhan','q158_khoja_jahan'),('q158_gaobin','q158_liutongxun'),('q158_zhaohui','q158_burhan'),('q158_zhaohui','q158_khoja_jahan')}<=pairset
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将',corpus,re.I)
  print('V132 PASS: twelve early-Qianlong readings and twenty-eight events connect succession, river labour, disaster relief, Jinchuan logistics, Dzungar destruction, Altishahr governance and court visual culture without reducing the period to victorious expansion')
+
+if d['version'] >= 133:
+ v159_people=['q159_fukangan','q159_hailancha','q159_sunshiyi','q159_lishiyao','q159_linshuangwen','q159_nguyenhue','q159_daizhen','q159_qiandaxin','q159_wangxihou','q159_xushukui']
+ v159_rewritten=['q_heshen','q_jiyun','q_liuyong','q_agui']
+ v159_events={item['id'] for item in d['events'] if item['id'].startswith('v159_')}
+ v159_sources={item['id'] for item in d['sources'] if item['id'].startswith('v159_')}
+ v159_objects={item['id'] for item in d['objects'] if item['id'].startswith('v159_')}
+ v159_object_map={item['id']:item for item in d['objects']}
+ assert len(v159_people)==10 and len(v159_events)==35 and len(v159_sources)==18 and len(v159_objects)==4
+ assert set(v159_people+v159_rewritten)<=people.keys() and set(v159_people+v159_rewritten)<=articles.keys()
+ assert {events[event_id]['category'] for event_id in v159_events}=={'政治','军事','文化','经济','社会'}
+ for pid in v159_people+v159_rewritten:
+  reading=articles[pid]; ss=reading['sections']
+  assert len(ss)==5 and all(item['sources'] and item['events'] for item in ss),(pid,'incomplete middle-late Qianlong five-layer reading')
+  chars=sum(len(re.findall(r'[\u4e00-\u9fff]',item['text'])) for item in ss)
+  assert chars>=500,(pid,'middle-late Qianlong reading remains too short',chars)
+  assert all(set(item['sources'])<=sources.keys() and set(item['events'])<=events.keys() and set(item.get('people',[]))<=people.keys() for item in ss)
+  assert set(reading['sources'])=={source for item in ss for source in item['sources']}
+ assert all(set(events[event_id]['people'])<=people.keys() and set(events[event_id]['sources'])<=sources.keys() for event_id in v159_events)
+ for object_id in v159_objects:
+  item=v159_object_map[object_id]
+  assert item['dynasties']==['qing'] and item['people'] and item['sources']
+  assert set(item['people'])<=people.keys() and set(item['sources'])<=sources.keys()
+ corpus=json.dumps([people[pid] for pid in v159_people+v159_rewritten]+[articles[pid] for pid in v159_people+v159_rewritten]+[events[event_id] for event_id in v159_events]+[v159_object_map[object_id] for object_id in v159_objects],ensure_ascii=False)
+ for term in ['木果木','脚夫','缅甸','疾病','边贸','林爽文','天地会','原住民','阮惠','升龙','浮桥','南巡','盐商','字贯','一柱楼诗','四库全书','撤出本','金石','朔闰','柴大纪']:
+  assert term in corpus,('missing middle-late Qianlong evidence term',term)
+ for boundary in ['不能直接等同现代制度化接班','不能直接当现代战场统计','不能把一次议和写成边境生活立刻恢复常态','不能以国库支出较少推定社会成本很低','不能把章程直接写成已在全岛落实','不能代表所有社群一致站队','不能把受封解释为投降','供词是在拘押审讯中形成，不是自由对话','不能据此无缝重建作者全部思想','不是同步现场摄影','不能拼成一个绝对精确的禁书总数']:
+  assert boundary in corpus,('missing middle-late Qianlong evidence boundary',boundary)
+ qianlong=next(item for item in d['reignContexts'] if item['person']=='q_qianlong')
+ assert set(v159_people+v159_rewritten)<=set(qianlong['people']) and v159_events<=set(qianlong['events']) and v159_sources<=set(qianlong['sources'])
+ emperor=articles['q_qianlong']
+ linked_people={person_id for section in emperor['sections'] for person_id in section.get('people',[])}
+ linked_events={event_id for section in emperor['sections'] for event_id in section.get('events',[])}
+ assert set(v159_people+v159_rewritten)<=linked_people and v159_events<=linked_events
+ pairset={(item['from'],item['to']) for item in d['associations']}
+ assert {('q_qianlong',pid) for pid in v159_people}<=pairset
+ assert {('q158_fuheng','q159_fukangan'),('q159_fukangan','q159_hailancha'),('q159_fukangan','q159_linshuangwen'),('q159_sunshiyi','q159_nguyenhue'),('q159_daizhen','q159_qiandaxin'),('q159_wangxihou','q159_xushukui'),('q_jiyun','q159_daizhen'),('q_jiyun','q159_qiandaxin')}<=pairset
+ assert not any(item['articleID'] in set(v159_rewritten) for item in narration['entries'])
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将',corpus,re.I)
+ print('V133 PASS: ten new and four rewritten middle-late Qianlong readings connect Burma, Jinchuan, Taiwan, Vietnam, southern-tour finance, literary inquisition, Siku censorship and evidential scholarship with explicit evidence boundaries')
