@@ -3363,3 +3363,41 @@ if d['version'] >= 139:
  assert all(item['sectionID'].startswith('q-tongzhi-') for item in narration['entries'] if item['articleID']=='q_tongzhi')
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将',corpus,re.I)
  print('V139 PASS: twelve early-Tongzhi readings and forty-five balanced events connect joint regency, the final Taiping campaigns, regional armies, postwar livelihoods, arsenals, translation and northwest displacement without turning restoration into a cost-free success story')
+
+if d['version'] >= 140:
+ v166_people=['q166_alute','q166_wengtonghe','q166_lihongzao','q166_maxinyi','q166_chonghou','q166_mahualong','q166_duwenxiu','q166_liusongshan','q166_chenlanbin','q166_tangtingshu','q166_fulanya','q166_dingweiliang']
+ v166_events={item['id'] for item in d['events'] if item['id'].startswith('v166_')}
+ v166_sources={item['id'] for item in d['sources'] if item['id'].startswith('v166_')}
+ v166_objects={item['id'] for item in d['objects'] if item['id'].startswith('v166_')}
+ object_map={item['id']:item for item in d['objects']}
+ assert len(v166_people)==12 and len(v166_events)==45 and len(v166_sources)==24 and len(v166_objects)==6
+ assert set(v166_people)<=people.keys() and set(v166_people)<=articles.keys()
+ assert {events[event_id]['category'] for event_id in v166_events}=={'政治','军事','经济','社会','文化'}
+ assert all(sum(events[event_id]['category']==category for event_id in v166_events)==9 for category in ['政治','军事','经济','社会','文化'])
+ for pid in v166_people:
+  reading=articles[pid]; ss=reading['sections']
+  chars=sum(len(re.findall(r'[\u4e00-\u9fff]',section['text'])) for section in ss)
+  assert len(ss)==5 and chars>=500 and all(section['sources'] and section['events'] for section in ss),(pid,chars)
+  assert all(set(section['sources'])<=sources.keys() and set(section['events'])<=events.keys() and set(section.get('people',[]))<=people.keys() for section in ss)
+  assert set(reading['sources'])=={source for section in ss for source in section['sources']}
+ assert all(set(events[event_id]['people'])<=people.keys() and set(events[event_id]['sources'])<=sources.keys() for event_id in v166_events)
+ for object_id in v166_objects:
+  item=object_map[object_id]
+  assert item['dynasties']==['qing'] and item['people'] and item['sources']
+  assert set(item['people'])<=people.keys() and set(item['sources'])<=sources.keys()
+ corpus=json.dumps([articles[pid] for pid in v166_people]+[events[event_id] for event_id in v166_events]+[object_map[object_id] for object_id in v166_objects]+[sources[source_id] for source_id in v166_sources],ensure_ascii=False)
+ for term in ['天津教案','金积堡','马化龙','大理','杜文秀','同治大婚','亲政','留美幼童','轮船招商局','万年清','官督商办','《万国公法》','傅兰雅','翁同龢日记','台湾']:
+  assert term in corpus,('missing late-Tongzhi evidence term',term)
+ for boundary in ['不能据后出回忆断言每次宫廷争执','不能用小说式叙事填满档案沉默','不能反过来充当史证','不能被简化为单纯外交冲突','不能只用恢复秩序概括','不能简单写成两个固定民族集团对阵','阅读同治末期，应聚焦创办','不能只列外籍译者']:
+  assert boundary in corpus,('missing late-Tongzhi evidence boundary',boundary)
+ ctx=next(item for item in d['reignContexts'] if item['person']=='q_tongzhi')
+ assert set(v166_people)<=set(ctx['people']) and v166_events<=set(ctx['events']) and v166_sources<=set(ctx['sources'])
+ pairset={(item['from'],item['to']) for item in d['associations']}
+ assert {('q_tongzhi',pid) for pid in v166_people}<=pairset
+ assert {('q166_chenlanbin','q165_yungrong'),('q166_tangtingshu','q_lihongzhang'),('q166_fulanya','q165_xushou'),('q166_liusongshan','q_liujintang')}<=pairset
+ emperor=articles['q_tongzhi']
+ assert v166_events<={event_id for section in emperor['sections'] for event_id in section.get('events',[])}
+ assert set(v166_people)<={person_id for section in emperor['sections'] for person_id in section.get('people',[])}
+ assert all(item['sectionID'].startswith('q-tongzhi-') for item in narration['entries'] if item['articleID']=='q_tongzhi')
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将',corpus,re.I)
+ print('V140 PASS: twelve late-Tongzhi readings and forty-five balanced events connect Tianjin, Jinjibao, Dali, the imperial wedding, personal rule, overseas education, shipping enterprise and Taiwan without hiding civilian costs or source disagreement')

@@ -1,5 +1,5 @@
 {
-  "version": 139,
+  "version": 140,
   "reviewed": "2026-10-31",
   "people": [
     {
@@ -19602,6 +19602,214 @@
       "kind": "重要人物",
       "note": "由安徽团练进入淮军，在苏南和捻军战事中升迁；后来的台湾治理不应倒过来遮蔽早年战争经验。",
       "dynasty": "qing"
+    },
+    {
+      "id": "q166_alute",
+      "name": "阿鲁特氏",
+      "call": "孝哲毅皇后",
+      "temple": "",
+      "era": "1854—1875",
+      "reign": "同治十一年至光绪元年",
+      "summary": "同治帝皇后；她的册立有清宫档案可证，围绕婆媳冲突和死因的戏剧化故事则须谨慎。",
+      "parent": null,
+      "sources": [
+        "v166_dpm_marriage",
+        "v166_dpm_wedding_ritual",
+        "v166_dpm_wedding_ceramics"
+      ],
+      "kind": "重要人物",
+      "note": "同治帝皇后；她的册立有清宫档案可证，围绕婆媳冲突和死因的戏剧化故事则须谨慎。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q166_wengtonghe",
+      "name": "翁同龢",
+      "call": "帝师与日记作者",
+      "temple": "",
+      "era": "1830—1904",
+      "reign": "同治至光绪时期",
+      "summary": "同治帝师，日记保存了课堂、召见与中枢观察；个人记录仍需与官书和奏折互证。",
+      "parent": null,
+      "sources": [
+        "v166_qsg_weng",
+        "v166_dpm_tongzhi"
+      ],
+      "kind": "重要人物",
+      "note": "同治帝师，日记保存了课堂、召见与中枢观察；个人记录仍需与官书和奏折互证。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q166_lihongzao",
+      "name": "李鸿藻",
+      "call": "帝师与军机大臣",
+      "temple": "",
+      "era": "1820—1897",
+      "reign": "同治至光绪时期",
+      "summary": "兼具帝师与军机身份，在宫廷教育和中枢文书之间搭桥；不宜仅以“清流领袖”概括。",
+      "parent": null,
+      "sources": [
+        "v166_qsg_lihongzao",
+        "v166_dpm_tongzhi"
+      ],
+      "kind": "重要人物",
+      "note": "兼具帝师与军机身份，在宫廷教育和中枢文书之间搭桥；不宜仅以“清流领袖”概括。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q166_maxinyi",
+      "name": "马新贻",
+      "call": "两江总督",
+      "temple": "",
+      "era": "1821—1870",
+      "reign": "同治时期",
+      "summary": "两江总督任内遇刺，案件震动朝廷；刺客身份明确，动机和幕后关系却被传奇长期放大。",
+      "parent": null,
+      "sources": [
+        "v166_qsg_maxinyi",
+        "v166_dpm_tongzhi"
+      ],
+      "kind": "重要人物",
+      "note": "两江总督任内遇刺，案件震动朝廷；刺客身份明确，动机和幕后关系却被传奇长期放大。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q166_chonghou",
+      "name": "崇厚",
+      "call": "三口通商大臣与外交使臣",
+      "temple": "",
+      "era": "1826—1893",
+      "reign": "同治至光绪时期",
+      "summary": "天津教案后奉使法国交涉；其经历显示地方通商官、总理衙门与驻外外交尚在磨合。",
+      "parent": null,
+      "sources": [
+        "v166_qsg_chonghou",
+        "v166_cssn_tianjin"
+      ],
+      "kind": "重要人物",
+      "note": "天津教案后奉使法国交涉；其经历显示地方通商官、总理衙门与驻外外交尚在磨合。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q166_mahualong",
+      "name": "马化龙",
+      "call": "金积堡首领",
+      "temple": "",
+      "era": "约1810—1871",
+      "reign": "同治时期",
+      "summary": "金积堡回民武装首领；投降后被清军处决，相关官书用语必须与战争、围城和迁徙事实分开阅读。",
+      "parent": null,
+      "sources": [
+        "v166_sinica_jinji",
+        "v166_qsg_liusongshan"
+      ],
+      "kind": "重要人物",
+      "note": "金积堡回民武装首领；投降后被清军处决，相关官书用语必须与战争、围城和迁徙事实分开阅读。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q166_duwenxiu",
+      "name": "杜文秀",
+      "call": "大理政权领袖",
+      "temple": "",
+      "era": "1823—1872",
+      "reign": "咸丰至同治时期",
+      "summary": "以大理为中心建立政权，参与者并非单一族群；1872年大理失守，关于死亡和屠杀规模须区分材料。",
+      "parent": null,
+      "sources": [
+        "v166_dpm_yunnan",
+        "v166_yn_du"
+      ],
+      "kind": "重要人物",
+      "note": "以大理为中心建立政权，参与者并非单一族群；1872年大理失守，关于死亡和屠杀规模须区分材料。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q166_liusongshan",
+      "name": "刘松山",
+      "call": "湘军将领",
+      "temple": "",
+      "era": "1833—1870",
+      "reign": "咸丰至同治时期",
+      "summary": "由湘军系统转战捻军与西北，围攻金积堡时阵亡；其军功与战争造成的地方破坏应并置。",
+      "parent": null,
+      "sources": [
+        "v166_qsg_liusongshan",
+        "v166_sinica_jinji"
+      ],
+      "kind": "重要人物",
+      "note": "由湘军系统转战捻军与西北，围攻金积堡时阵亡；其军功与战争造成的地方破坏应并置。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q166_chenlanbin",
+      "name": "陈兰彬",
+      "call": "留美幼童正监督",
+      "temple": "",
+      "era": "1816—1895",
+      "reign": "同治时期",
+      "summary": "主持首批留美幼童出洋，处在朝廷规范、家庭期待与美国学校制度之间。",
+      "parent": null,
+      "sources": [
+        "v166_nopss_students",
+        "v166_wuchuan_chen",
+        "v166_sh_archive_students"
+      ],
+      "kind": "重要人物",
+      "note": "主持首批留美幼童出洋，处在朝廷规范、家庭期待与美国学校制度之间。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q166_tangtingshu",
+      "name": "唐廷枢",
+      "call": "轮船招商局总办",
+      "temple": "",
+      "era": "1832—1892",
+      "reign": "同治至光绪时期",
+      "summary": "从洋行买办转入官督商办企业，以商业经验整顿招商局；官与商的边界始终紧张。",
+      "parent": null,
+      "sources": [
+        "v166_gd_tang",
+        "v166_sasac_cmsn",
+        "v166_nopss_cmsn"
+      ],
+      "kind": "重要人物",
+      "note": "从洋行买办转入官督商办企业，以商业经验整顿招商局；官与商的边界始终紧张。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q166_fulanya",
+      "name": "傅兰雅",
+      "call": "翻译者与科学传播者",
+      "temple": "",
+      "era": "1839—1928",
+      "reign": "同治至民国时期",
+      "summary": "同治时期进入江南制造局翻译馆，与中国学者合译科技书；译著不是个人单向输入。",
+      "parent": null,
+      "sources": [
+        "v166_shm_translation",
+        "v165_cssn_translation"
+      ],
+      "kind": "重要人物",
+      "note": "同治时期进入江南制造局翻译馆，与中国学者合译科技书；译著不是个人单向输入。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q166_dingweiliang",
+      "name": "丁韪良",
+      "call": "同文馆总教习",
+      "temple": "",
+      "era": "1827—1916",
+      "reign": "同治至民国时期",
+      "summary": "译《万国公法》并任同文馆总教习，把语言、国际法和近代课程带入官学争论。",
+      "parent": null,
+      "sources": [
+        "v166_martin_law",
+        "v165_dpm_lecture",
+        "v165_qsg448"
+      ],
+      "kind": "重要人物",
+      "note": "译《万国公法》并任同文馆总教习，把语言、国际法和近代课程带入官学争论。",
+      "dynasty": "qing"
     }
   ],
   "sources": [
@@ -27338,6 +27546,150 @@
       "title": "中国人民大学清史研究所：同治西北战争后的回民社会经济",
       "url": "https://iqh.ruc.edu.cn/old/qdshsyj/shyjj/727d799a73434da2af00a78c9b8024bb.htm",
       "note": "讨论战争、迁徙、农业商业结构和战后管制；避免把多方暴力简化为单一族群的固定行为。"
+    },
+    {
+      "id": "v166_dpm_tongzhi",
+      "title": "故宫博物院：同治皇帝年表",
+      "url": "https://www.dpm.org.cn/court/lineage/226248.html",
+      "note": "核对天津教案、轮船招商局、大婚、亲政、台湾事件、同治帝去世与光绪继承等纪年。"
+    },
+    {
+      "id": "v166_dpm_marriage",
+      "title": "故宫博物院：同治皇帝的婚姻档案",
+      "url": "https://www.dpm.org.cn/Uploads/pdf/5066/T00008_00.pdf",
+      "note": "据清宫档案梳理阿鲁特氏册立及同治后妃；对宫闱传说与档案事实作区分。"
+    },
+    {
+      "id": "v166_dpm_wedding_ritual",
+      "title": "故宫博物院：同治大婚礼仪",
+      "url": "https://www.dpm.org.cn/Uploads/pdf/1568/T00041_00.pdf",
+      "note": "说明纳采、册立、奉迎与合卺等程序，展示皇帝大婚作为国家礼仪工程的运作。"
+    },
+    {
+      "id": "v166_dpm_wedding_ceramics",
+      "title": "故宫博物院：同治帝大婚瓷器的再认识",
+      "url": "https://www.dpm.org.cn/Uploads/File/2020/11/13/u5fae1d4d24a6f.pdf",
+      "note": "利用造办处档案与实物研究大婚瓷的画样、烧造、款识和制度用途。"
+    },
+    {
+      "id": "v166_cssn_tianjin",
+      "title": "中国社会科学网：天津教案与晚清外交",
+      "url": "https://www.cssn.cn/dkzgxp/zgxp_zgshkx/2023nd8q/202310/t20231013_5690384.shtml",
+      "note": "讨论1870年天津教案的案件处置、崇厚赴法交涉及中外外交分歧。"
+    },
+    {
+      "id": "v166_sinica_jinji",
+      "title": "中央研究院近代史研究所：左宗棠与金积堡之役研究",
+      "url": "https://www.mh.sinica.edu.tw/MHDocument/PublicationDetail/PublicationDetail_1124.pdf",
+      "note": "依据左宗棠文集等材料讨论围城、投降、处决、迁徙与安插；保留官军奏报的立场边界。"
+    },
+    {
+      "id": "v166_dpm_yunnan",
+      "title": "故宫博物院：云南回民起义",
+      "url": "https://www.dpm.org.cn/lemmas/241756.html",
+      "note": "概述杜文秀大理政权及云南各支起事；名称沿用馆方条目，正文补充多族群参与和材料立场。"
+    },
+    {
+      "id": "v166_yn_du",
+      "title": "云南省民族宗教事务委员会：杜文秀",
+      "url": "https://mzzj.yn.gov.cn/html/2002/yunnanlishiminzurenwu_0101/8346.html",
+      "note": "记录大理政权的行政、税赋、贸易与教育措施及1872年大理失守。"
+    },
+    {
+      "id": "v166_fuzhou_shipyard",
+      "title": "福州市档案馆：福建水师与船政轮船水师",
+      "url": "https://daj.fuzhou.gov.cn/zz/wszt/tslm/shqw/202306/t20230621_4624716.htm",
+      "note": "核对万年清下水、轮船训练章程、船政早期造船规模与中国人员训练。"
+    },
+    {
+      "id": "v166_nopss_students",
+      "title": "全国哲学社会科学工作办公室：容闳与留美幼童",
+      "url": "https://www.nopss.gov.cn/GB/219470/17720201.html",
+      "note": "核对清廷批准、曾国藩李鸿章奏议、陈兰彬与容闳分工及1872年首批学生赴美。"
+    },
+    {
+      "id": "v166_wuchuan_chen",
+      "title": "吴川市人民政府：陈兰彬",
+      "url": "https://www.gdwc.gov.cn/bmzz/wcsrmzfw/zjwc/wcmp/lsmr/content/post_373593.html",
+      "note": "补充陈兰彬履历、留学监督工作及四批幼童派遣情况；地方人物条目需与奏议互证。"
+    },
+    {
+      "id": "v166_sh_archive_students",
+      "title": "上海市虹口区档案馆：近代留学与上海",
+      "url": "https://hkda.shhk.gov.cn/hkda/gzdt/20241204/0f7684fd-5ad0-4171-87c2-76a643a9c963.html",
+      "note": "核对1872至1875年四批共120名留美幼童及上海出发的城市空间。"
+    },
+    {
+      "id": "v166_sasac_cmsn",
+      "title": "国务院国资委：1872年招商局前身成立",
+      "url": "https://wap.sasac.gov.cn/n2588025/n2649281/n10784966/c13255327/content.html",
+      "note": "确认招商局创办年代及近代民族航运企业的制度延续。"
+    },
+    {
+      "id": "v166_nopss_cmsn",
+      "title": "全国哲学社会科学工作办公室：轮船招商局早期公开账目",
+      "url": "https://www.nopss.gov.cn/n/2014/0306/c373410-24542823.html",
+      "note": "讨论股份机制、首届营业账略与1875年公开账目，避免把后来的扩张提前到创办初年。"
+    },
+    {
+      "id": "v166_gd_tang",
+      "title": "珠海高新区：唐廷枢与轮船招商局",
+      "url": "https://www.zhuhai-hitech.gov.cn/gxxw/mtkt/content/mpost_3472683.html",
+      "note": "用于唐廷枢从洋行买办到招商局总办的履历；轶事部分不作为确定史实采用。"
+    },
+    {
+      "id": "v166_qsg_weng",
+      "title": "《清史稿》翁同龢传",
+      "url": "https://zh.wikisource.org/wiki/清史稿/卷436",
+      "note": "核对翁同龢入值弘德殿、帝师与中枢经历；官修传记的褒贬须与日记等材料互读。"
+    },
+    {
+      "id": "v166_qsg_lihongzao",
+      "title": "《清史稿》李鸿藻传",
+      "url": "https://zh.wikisource.org/wiki/清史稿/卷436",
+      "note": "核对李鸿藻帝师、军机与晚清中枢经历；不以派系标签代替具体奏议。"
+    },
+    {
+      "id": "v166_qsg_maxinyi",
+      "title": "《清史稿》马新贻传",
+      "url": "https://zh.wikisource.org/wiki/清史稿/卷426",
+      "note": "核对两江总督任内遇刺及朝廷查办；关于刺案动机只保留可证部分。"
+    },
+    {
+      "id": "v166_qsg_chonghou",
+      "title": "《清史稿》崇厚传",
+      "url": "https://zh.wikisource.org/wiki/清史稿/卷446",
+      "note": "核对三口通商事务、天津教案交涉及其外交经历。"
+    },
+    {
+      "id": "v166_qsg_liusongshan",
+      "title": "《清史稿》刘松山传",
+      "url": "https://zh.wikisource.org/wiki/清史稿/卷409",
+      "note": "核对刘松山由湘军系统转战捻军、西北与金积堡阵亡经过；战功叙述来自官军一方。"
+    },
+    {
+      "id": "v166_shm_translation",
+      "title": "上海博物馆：江南制造局翻译馆与近代译书",
+      "url": "https://www.shanghaimuseum.net/mu/frontend/pg/article/id/CI00006180",
+      "note": "说明傅兰雅等外籍口译者与中国笔述者合作、译书出版和术语生成。"
+    },
+    {
+      "id": "v166_martin_law",
+      "title": "中国社会科学网：丁韪良与《万国公法》",
+      "url": "https://www.cssn.cn/skgz/bwyc/202208/t20220803_5448983.shtml",
+      "note": "用于丁韪良翻译国际法及同文馆教学的知识背景；不把译名等同于制度已被完全接受。"
+    },
+    {
+      "id": "v166_dpm_succession",
+      "title": "故宫博物院：同治帝去世与光绪继统纪事",
+      "url": "https://www.dpm.org.cn/court/lineage/226248.html",
+      "note": "据宫廷年表核对1875年载湉入承大统、两宫再次垂帘及未来再承同治之嗣的安排。"
+    },
+    {
+      "id": "v166_dpm_taiwan",
+      "title": "故宫博物院同治年表：1874年日本出兵台湾",
+      "url": "https://www.dpm.org.cn/court/lineage/226248.html",
+      "note": "核对日本出兵台湾与清廷应对纪年；进一步细节与沈葆桢相关材料互证。"
     }
   ],
   "relations": [
@@ -79797,6 +80149,772 @@
       ],
       "kind": "史实与解读",
       "category": "文化"
+    },
+    {
+      "id": "v166_tianjin_investigation",
+      "year": "1870年",
+      "sortYear": 1870,
+      "title": "天津教案由地方冲突升级为中央与列强交涉",
+      "body": "法国领事、传教人员、中国教民等遇害后，清廷派员查办，地方司法迅速承受外交压力。",
+      "impact": "案件将证据审理、惩办人数、官员责任与条约关系缠在一起。",
+      "people": [
+        "q166_chonghou",
+        "q166_maxinyi"
+      ],
+      "sources": [
+        "v166_cssn_tianjin"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v166_chonghou_france",
+      "year": "1870—1871年",
+      "sortYear": 1870,
+      "title": "崇厚奉使法国处理天津教案善后",
+      "body": "崇厚携国书赴法，就致歉、惩办、赔偿与安全保证交涉。",
+      "impact": "临时使团暴露清廷驻外信息和授权机制尚不成熟。",
+      "people": [
+        "q166_chonghou"
+      ],
+      "sources": [
+        "v166_cssn_tianjin"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v166_maxinyi_case",
+      "year": "1870年",
+      "sortYear": 1870,
+      "title": "马新贻遇刺触发跨省会审",
+      "body": "两江总督马新贻在南京遇刺，朝廷派员调查，刺客张汶祥受审伏法。",
+      "impact": "公开档案不能证明流行传奇中的全部幕后关系。",
+      "people": [
+        "q166_maxinyi"
+      ],
+      "sources": [
+        "v166_qsg_maxinyi"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v166_wedding_state",
+      "year": "1872年",
+      "sortYear": 1872,
+      "title": "同治大婚以国家礼仪工程组织",
+      "body": "清廷按成案设礼仪处，完成阿鲁特氏册立、奉迎及相关典礼。",
+      "impact": "婚姻成为亲政前的制度节点，并动员中央与地方大量行政资源。",
+      "people": [
+        "q166_alute"
+      ],
+      "sources": [
+        "v166_dpm_wedding_ritual"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v166_personal_rule",
+      "year": "1873年",
+      "sortYear": 1873,
+      "title": "两宫归政与同治亲政",
+      "body": "大婚后按既定安排举行亲政典礼，两宫训谕皇帝勤学、用人与行政。",
+      "impact": "名义归政并未让太后、军机和帝师网络立即退出政治。",
+      "people": [
+        "q166_wengtonghe",
+        "q166_lihongzao",
+        "q166_alute"
+      ],
+      "sources": [
+        "v166_dpm_tongzhi"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v166_yuanmingyuan_remonstrance",
+      "year": "1873—1874年",
+      "sortYear": 1873,
+      "title": "重修园工引发财政与君德争论",
+      "body": "同治帝提出修治园庭，朝臣以财用、民力和时局进谏。",
+      "impact": "争论体现亲政皇帝个人意志仍受经筵、奏折与财政现实约束。",
+      "people": [
+        "q166_wengtonghe",
+        "q166_lihongzao"
+      ],
+      "sources": [
+        "v166_dpm_tongzhi"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v166_gong_prince_1874",
+      "year": "1874年",
+      "sortYear": 1874,
+      "title": "恭亲王处分风波暴露亲政后的权力摩擦",
+      "body": "同治帝一度严厉处分恭亲王等，后在两宫干预下调整。",
+      "impact": "事件显示亲政不是中枢联盟稳定完成的终点。",
+      "people": [
+        "q166_wengtonghe",
+        "q166_lihongzao"
+      ],
+      "sources": [
+        "v166_dpm_tongzhi"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v166_taiwan_diplomacy",
+      "year": "1874年",
+      "sortYear": 1874,
+      "title": "日本出兵台湾引发海防与主权交涉",
+      "body": "日本以琉球船民事件为由出兵台湾，清廷调沈葆桢办理防务并与日方交涉。",
+      "impact": "东亚秩序、台湾治理与近代国际法话语在同一危机中碰撞。",
+      "people": [
+        "q165_shenbaozhen",
+        "q166_dingweiliang"
+      ],
+      "sources": [
+        "v166_dpm_taiwan"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v166_succession_1875",
+      "year": "1875年",
+      "sortYear": 1875,
+      "title": "载湉入继大统并再次垂帘",
+      "body": "同治帝无子去世，载湉被迎入宫为帝，并安排其将来之子再承同治之嗣。",
+      "impact": "选择解决了即时皇位空缺，却留下宗法继承和两宫再度听政问题。",
+      "people": [
+        "q166_alute",
+        "q166_wengtonghe",
+        "q166_lihongzao"
+      ],
+      "sources": [
+        "v166_dpm_succession"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v166_jinji_siege",
+      "year": "1869—1870年",
+      "sortYear": 1869,
+      "title": "金积堡围攻成为西北战争最惨烈阶段之一",
+      "body": "刘松山、刘锦棠等部逐步合围金积堡，长期作战伴随断粮和大量伤亡。",
+      "impact": "战役不能只以攻克节点概括，堡民和周边社会同样承受灾难。",
+      "people": [
+        "q166_mahualong",
+        "q166_liusongshan",
+        "q_liujintang"
+      ],
+      "sources": [
+        "v166_sinica_jinji"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v166_liusongshan_death",
+      "year": "1870年",
+      "sortYear": 1870,
+      "title": "刘松山攻马五寨中炮身亡",
+      "body": "清军围攻金积堡外围寨堡时，刘松山阵亡，部队由刘锦棠接统。",
+      "impact": "私人营制在亲属接替中延续，也加深军队与将领网络的绑定。",
+      "people": [
+        "q166_liusongshan",
+        "q_liujintang",
+        "q166_mahualong"
+      ],
+      "sources": [
+        "v166_qsg_liusongshan",
+        "v166_sinica_jinji"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v166_ma_surrender",
+      "year": "1870—1871年",
+      "sortYear": 1870,
+      "title": "马化龙出降后被处决",
+      "body": "金积堡陷入绝境后马化龙投降，清军随后以藏械等理由处决其家族和部属。",
+      "impact": "投降、问责与大规模杀戮的边界，是必须揭示的史料争议。",
+      "people": [
+        "q166_mahualong",
+        "q_liujintang"
+      ],
+      "sources": [
+        "v166_sinica_jinji"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v166_hezhou_settlement",
+      "year": "1872年",
+      "sortYear": 1872,
+      "title": "河州受抚改变西北战场力量配置",
+      "body": "马占鳌等在河州转而接受清廷招抚，并被纳入地方军事秩序。",
+      "impact": "招抚既减少一处战线，也把原武装首领转化为国家军事代理人。",
+      "people": [
+        "q_zuozongtang"
+      ],
+      "sources": [
+        "v165_ruc_northwest"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v166_hexi_campaign",
+      "year": "1872—1873年",
+      "sortYear": 1872,
+      "title": "清军沿河西走廊推进至肃州",
+      "body": "西宁、河西等地战事相继推进，清军最终攻克肃州。",
+      "impact": "战场向西移动，为其后进军新疆创造条件，也带来新一轮迁徙。",
+      "people": [
+        "q_zuozongtang",
+        "q_liujintang"
+      ],
+      "sources": [
+        "v165_ruc_northwest"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v166_dali_siege",
+      "year": "1872年",
+      "sortYear": 1872,
+      "title": "清军围逼大理并切断外援",
+      "body": "岑毓英等部攻占关隘，长期存在的大理政权进入最后围城。",
+      "impact": "攻守双方均有多族群成员，不能简单写成两个固定民族集团对阵。",
+      "people": [
+        "q166_duwenxiu"
+      ],
+      "sources": [
+        "v166_dpm_yunnan",
+        "v166_yn_du"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v166_dali_fall",
+      "year": "1872—1873年",
+      "sortYear": 1872,
+      "title": "大理失守与杜文秀死亡",
+      "body": "杜文秀服毒后赴清营并死亡，清军进入大理，后续处置伴随大规模杀戮记载。",
+      "impact": "死亡方式和伤亡数字材料不一，但战争造成严重人口损失并无疑义。",
+      "people": [
+        "q166_duwenxiu"
+      ],
+      "sources": [
+        "v166_dpm_yunnan",
+        "v166_yn_du"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v166_shipyard_navy",
+      "year": "1869—1874年",
+      "sortYear": 1869,
+      "title": "船政造舰逐步转化为轮船水师训练",
+      "body": "万年清下水后，船政制定训练章程并组织中国官兵驾驶操炮。",
+      "impact": "造出轮船只是起点，人员训练、维修与指挥体系决定实际战力。",
+      "people": [
+        "q165_shenbaozhen"
+      ],
+      "sources": [
+        "v166_fuzhou_shipyard"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v166_taiwan_defense",
+      "year": "1874年",
+      "sortYear": 1874,
+      "title": "沈葆桢赴台组织海防与行政应变",
+      "body": "面对日军登陆，清廷派沈葆桢筹防、调兵、修筑并交涉。",
+      "impact": "危机推动台湾防务和治理议程上升，但改革规模不能倒推为即时完成。",
+      "people": [
+        "q165_shenbaozhen"
+      ],
+      "sources": [
+        "v166_dpm_taiwan",
+        "v166_fuzhou_shipyard"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v166_shipyard_cost",
+      "year": "1869—1874年",
+      "sortYear": 1869,
+      "title": "船政由建厂投入转向连续造舰费用",
+      "body": "船体、轮机、燃料、外籍人员和学堂共同构成长期开支。",
+      "impact": "近代工厂不是一次购机即可自立，财政持续性与人才训练同样关键。",
+      "people": [
+        "q165_shenbaozhen",
+        "q166_fulanya"
+      ],
+      "sources": [
+        "v166_fuzhou_shipyard"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v166_cmsn_founded",
+      "year": "1872年",
+      "sortYear": 1872,
+      "title": "轮船招商局在上海创办",
+      "body": "李鸿章推动官办轮运转向招集商股，尝试承运漕粮并与外商轮船竞争。",
+      "impact": "它开辟官督商办路径，但初创资本、船只与管理都很有限。",
+      "people": [
+        "q_lihongzhang",
+        "q166_tangtingshu"
+      ],
+      "sources": [
+        "v166_sasac_cmsn"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v166_tang_reorganizes",
+      "year": "1873年",
+      "sortYear": 1873,
+      "title": "唐廷枢等改组招商局经营",
+      "body": "唐廷枢、徐润进入管理层，借商界信用招股并调整航运业务。",
+      "impact": "商业经理人的知识成为国家洋务项目能否运转的关键资源。",
+      "people": [
+        "q166_tangtingshu"
+      ],
+      "sources": [
+        "v166_gd_tang"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v166_official_merchant",
+      "year": "1873—1875年",
+      "sortYear": 1873,
+      "title": "官督商办形成不稳定的权责组合",
+      "body": "官方给予政策与运输资源，商人出资经营，但人事和收益分配仍受官场影响。",
+      "impact": "制度同时降低创业门槛并制造干预风险。",
+      "people": [
+        "q166_tangtingshu",
+        "q_lihongzhang"
+      ],
+      "sources": [
+        "v166_sasac_cmsn",
+        "v166_nopss_cmsn"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v166_cmsn_accounts",
+      "year": "1874—1875年",
+      "sortYear": 1874,
+      "title": "招商局刊布账略建立股东信用",
+      "body": "企业把营业收支通过报刊等渠道公开，回应商股对财务的关切。",
+      "impact": "这不是成熟证券监管，却是近代公司信息公开的重要试验。",
+      "people": [
+        "q166_tangtingshu"
+      ],
+      "sources": [
+        "v166_nopss_cmsn"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v166_war_remittance_late",
+      "year": "1869—1873年",
+      "sortYear": 1869,
+      "title": "西北军费依赖跨省协饷和借款",
+      "body": "长距离运输使军粮、马匹和饷银成本高昂，左宗棠持续依赖东南省份支持。",
+      "impact": "统一军事行动建立在地方财政重新分配之上。",
+      "people": [
+        "q_zuozongtang",
+        "q166_liusongshan"
+      ],
+      "sources": [
+        "v165_ruc_northwest"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v166_postwar_nw_land",
+      "year": "1871—1875年",
+      "sortYear": 1871,
+      "title": "迁民安插重塑西北土地和市场",
+      "body": "金积堡等地幸存者被迁往化平川、固原等处，土地、灌溉和商业网络随之改变。",
+      "impact": "恢复生产与强制隔离并存，不能只称“善后”。",
+      "people": [
+        "q166_mahualong"
+      ],
+      "sources": [
+        "v166_sinica_jinji",
+        "v165_ruc_hui_society"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v166_dali_reconstruction",
+      "year": "1873—1875年",
+      "sortYear": 1873,
+      "title": "大理失守后重新编户与恢复赋役",
+      "body": "清方在长期战争后的云南重建行政、田赋与交通。",
+      "impact": "人口锐减和土地荒芜使纸面制度恢复远快于地方生活。",
+      "people": [
+        "q166_duwenxiu"
+      ],
+      "sources": [
+        "v166_yn_du"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v166_cem_budget",
+      "year": "1872—1875年",
+      "sortYear": 1872,
+      "title": "留美幼童计划形成长期官费承诺",
+      "body": "出洋局承担旅费、学费、生活与监督费用，并按年续派学生。",
+      "impact": "教育投资跨越任期和海洋，稳定拨款与政治信任同样重要。",
+      "people": [
+        "q166_chenlanbin",
+        "q165_yungrong"
+      ],
+      "sources": [
+        "v166_nopss_students",
+        "v166_sh_archive_students"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v166_tianjin_rumor",
+      "year": "1870年",
+      "sortYear": 1870,
+      "title": "育婴堂谣言与地方恐慌累积",
+      "body": "拐卖、药害等传言在天津扩散，与教会隔离、领事特权和地方积怨交织。",
+      "impact": "谣言不是事实，却能在信息不透明与制度不信任中引发真实暴力。",
+      "people": [
+        "q166_chonghou"
+      ],
+      "sources": [
+        "v166_cssn_tianjin"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v166_tianjin_victims",
+      "year": "1870年",
+      "sortYear": 1870,
+      "title": "天津暴力造成中外多类受害者",
+      "body": "法国领事、修女、传教士、中国教民及相关人员遇害，教堂与机构被毁。",
+      "impact": "只写“反洋”会抹去中国教民和具体受害者。",
+      "people": [
+        "q166_chonghou"
+      ],
+      "sources": [
+        "v166_cssn_tianjin"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v166_jinji_starvation",
+      "year": "1869—1870年",
+      "sortYear": 1869,
+      "title": "金积堡围城使军民陷入饥饿与疾病",
+      "body": "交通封锁和长期作战压缩粮食来源，堡内外平民与作战人员共同承受生存危机。",
+      "impact": "战役地图上的合围线对应的是日常生活崩解。",
+      "people": [
+        "q166_mahualong",
+        "q166_liusongshan"
+      ],
+      "sources": [
+        "v166_sinica_jinji"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v166_northwest_relocation",
+      "year": "1871—1875年",
+      "sortYear": 1871,
+      "title": "西北战后强制迁徙改变聚落格局",
+      "body": "大批回民被分批迁移安插，原有家族、市场和灌溉关系被切断。",
+      "impact": "迁徙既是惩罚和管控，也是清廷重建地方秩序的手段。",
+      "people": [
+        "q166_mahualong"
+      ],
+      "sources": [
+        "v166_sinica_jinji",
+        "v165_ruc_hui_society"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v166_yunnan_population",
+      "year": "1872—1875年",
+      "sortYear": 1872,
+      "title": "云南长期战争留下人口与聚落创伤",
+      "body": "大理失守前后存在杀戮、逃亡、疫病和土地荒芜。",
+      "impact": "确切数字需谨慎，但不能以政权覆灭替代对社会后果的说明。",
+      "people": [
+        "q166_duwenxiu"
+      ],
+      "sources": [
+        "v166_yn_du"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v166_wedding_labor",
+      "year": "1869—1872年",
+      "sortYear": 1869,
+      "title": "大婚筹备调动工匠、关税与地方采办",
+      "body": "瓷器、钟表、服饰、仪仗和宫殿陈设由多机构多年筹办。",
+      "impact": "宏大礼仪背后是工匠劳动、物资运输和财政选择。",
+      "people": [
+        "q166_alute"
+      ],
+      "sources": [
+        "v166_dpm_wedding_ceramics",
+        "v166_dpm_wedding_ritual"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v166_cem_family_separation",
+      "year": "1872—1875年",
+      "sortYear": 1872,
+      "title": "留美幼童家庭承担长期离散",
+      "body": "年龄尚小的学生跨洋生活，父母把教育期待与风险一并交给国家计划。",
+      "impact": "名人成功叙事不应遮蔽普通学生的适应、疾病与回国压力。",
+      "people": [
+        "q166_chenlanbin",
+        "q165_yungrong"
+      ],
+      "sources": [
+        "v166_nopss_students"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v166_cem_host_families",
+      "year": "1872—1875年",
+      "sortYear": 1872,
+      "title": "学生分住美国家庭并进入当地学校",
+      "body": "分散寄宿帮助语言学习，也让服饰、宗教、纪律和身份认同成为持续争议。",
+      "impact": "跨文化教育发生在家庭日常，而不只在课堂。",
+      "people": [
+        "q166_chenlanbin",
+        "q165_yungrong"
+      ],
+      "sources": [
+        "v166_nopss_students"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v166_shipyard_workers",
+      "year": "1869—1874年",
+      "sortYear": 1869,
+      "title": "船政形成工匠、学生与水手的新型劳动群体",
+      "body": "造船需要木工、铁工、机器操作、绘图、翻译与驾驶等分工。",
+      "impact": "技术转移依靠组织化劳动，不是少数官员购买机器的结果。",
+      "people": [
+        "q165_shenbaozhen",
+        "q166_fulanya"
+      ],
+      "sources": [
+        "v166_fuzhou_shipyard"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v166_wedding_material",
+      "year": "1872年",
+      "sortYear": 1872,
+      "title": "大婚器物把礼制转化为可见秩序",
+      "body": "大婚瓷按画样、款识和用途烧造，妆奁与仪仗依等级配置。",
+      "impact": "器物能校正只讲宫闱故事的叙述，显示礼制如何进入生产。",
+      "people": [
+        "q166_alute"
+      ],
+      "sources": [
+        "v166_dpm_wedding_ceramics"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v166_imperial_tutors",
+      "year": "1869—1874年",
+      "sortYear": 1869,
+      "title": "翁同龢与李鸿藻参与同治帝经筵教育",
+      "body": "帝师讲授经典、记录进讲并规劝勤学，亲政能力在日常课程中被塑造。",
+      "impact": "课堂不是政策本身，却影响皇帝理解君德与用人的语言。",
+      "people": [
+        "q166_wengtonghe",
+        "q166_lihongzao"
+      ],
+      "sources": [
+        "v166_qsg_weng",
+        "v166_qsg_lihongzao"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v166_weng_diary",
+      "year": "1869—1875年",
+      "sortYear": 1869,
+      "title": "帝师日记留下宫廷日常的近距离记录",
+      "body": "翁同龢按日记录进讲、召见、疾病及所闻政事。",
+      "impact": "私人日记具有即时性，也有自我修饰和信息边界。",
+      "people": [
+        "q166_wengtonghe"
+      ],
+      "sources": [
+        "v166_qsg_weng"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v166_fryer_translation",
+      "year": "1868—1875年",
+      "sortYear": 1868,
+      "title": "傅兰雅与中国学者持续合译科技书",
+      "body": "翻译馆以口译、笔述、校订和刻印合作处理机械、化学、数学知识。",
+      "impact": "译书作者权属于协作网络，不能只列外籍译者。",
+      "people": [
+        "q166_fulanya",
+        "q165_xushou",
+        "q165_huahengfang"
+      ],
+      "sources": [
+        "v166_shm_translation",
+        "v165_cssn_translation"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v166_technical_terms",
+      "year": "1868—1875年",
+      "sortYear": 1868,
+      "title": "新学术语在合译与教学中反复磨合",
+      "body": "译者以旧词、新造词和音译表达陌生概念，并由读者使用检验。",
+      "impact": "术语稳定是长期社会过程，不是一部书一次完成。",
+      "people": [
+        "q166_fulanya",
+        "q166_dingweiliang"
+      ],
+      "sources": [
+        "v166_shm_translation",
+        "v166_martin_law"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v166_martin_tongwen",
+      "year": "1869—1875年",
+      "sortYear": 1869,
+      "title": "丁韪良任同文馆总教习扩展课程",
+      "body": "同文馆在外语之外推进算学、天文与国际法等内容，并训练翻译人才。",
+      "impact": "新课程仍受招生、科举衔接和政治争议限制。",
+      "people": [
+        "q166_dingweiliang"
+      ],
+      "sources": [
+        "v166_martin_law",
+        "v165_dpm_lecture"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v166_international_law_use",
+      "year": "1870—1874年",
+      "sortYear": 1870,
+      "title": "国际法译语进入外交危机讨论",
+      "body": "天津教案和台湾事件让官员更频繁面对领事、国书、赔偿与主权用语。",
+      "impact": "掌握译语不等于改变列强优势，却提供了新的论辩工具。",
+      "people": [
+        "q166_dingweiliang",
+        "q166_chonghou"
+      ],
+      "sources": [
+        "v166_cssn_tianjin",
+        "v166_martin_law"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v166_cem_first_cohort",
+      "year": "1872年",
+      "sortYear": 1872,
+      "title": "首批留美幼童从上海启程",
+      "body": "约三十名学生在陈兰彬、容闳等安排下赴美，随后三年继续派遣。",
+      "impact": "这是制度化海外教育的开端，不应只以詹天佑等后来名人代替群体。",
+      "people": [
+        "q166_chenlanbin",
+        "q165_yungrong"
+      ],
+      "sources": [
+        "v166_nopss_students",
+        "v166_sh_archive_students"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v166_cem_four_cohorts",
+      "year": "1872—1875年",
+      "sortYear": 1872,
+      "title": "四批幼童构成持续而非一次性的教育计划",
+      "body": "四年间共派出120名官费幼童，监督、寄宿和经费机制随之成形。",
+      "impact": "持续派遣说明朝廷曾作长期投入，也为后来撤回争议埋下制度矛盾。",
+      "people": [
+        "q166_chenlanbin",
+        "q165_yungrong"
+      ],
+      "sources": [
+        "v166_sh_archive_students",
+        "v166_wuchuan_chen"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
     }
   ],
   "objects": [
@@ -85549,6 +86667,119 @@
       "sources": [
         "v165_cssn_translation",
         "v165_shm_translation"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v166_obj_wedding_porcelain",
+      "title": "同治大婚瓷",
+      "subtitle": "画样、烧造与中宫礼制",
+      "symbol": "cup.and.saucer",
+      "image": null,
+      "body": "造办处传办画样，九江关监督烧造多类色地粉彩器，款识与纹样服务皇后妆奁及大婚礼仪。",
+      "note": "实物能确认制作与使用制度；不能凭吉祥纹样证明宫廷人物感情。",
+      "people": [
+        "q166_alute"
+      ],
+      "sources": [
+        "v166_dpm_wedding_ceramics"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v166_obj_weng_diary",
+      "title": "翁同龢日记",
+      "subtitle": "帝师视角下的课堂与召见",
+      "symbol": "book.closed",
+      "image": null,
+      "body": "按日记录进讲、请安、召见与所闻政务，为同治亲政前后的宫廷节奏提供连续线索。",
+      "note": "日记是个人记录，不能取代诏令、奏折和他人材料。",
+      "people": [
+        "q166_wengtonghe",
+        "q166_lihongzao"
+      ],
+      "sources": [
+        "v166_qsg_weng"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v166_obj_wannianqing",
+      "title": "万年清轮船",
+      "subtitle": "船政首艘大型轮船的训练起点",
+      "symbol": "ferry",
+      "image": null,
+      "body": "1869年下水后继续舾装，并组织中国水手练习驾驶与炮械，显示造船、训练和编制必须同步。",
+      "note": "“第一艘”称谓需限定船政体系和船型，不与更早外购或小型轮船混用。",
+      "people": [
+        "q165_shenbaozhen"
+      ],
+      "sources": [
+        "v166_fuzhou_shipyard"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v166_obj_cmsn_accounts",
+      "title": "轮船招商局营业账略",
+      "subtitle": "向商股展示经营信息的早期尝试",
+      "symbol": "doc.text",
+      "image": null,
+      "body": "招商局在报刊刊布营业账目，借公开收支建立股东信用并继续招集资本。",
+      "note": "账略公开不等同现代审计制度，仍须放在官督商办框架内理解。",
+      "people": [
+        "q166_tangtingshu",
+        "q_lihongzhang"
+      ],
+      "sources": [
+        "v166_nopss_cmsn"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v166_obj_cem_photo",
+      "title": "留美幼童合影",
+      "subtitle": "跨洋教育计划中的群体面孔",
+      "symbol": "person.3",
+      "image": null,
+      "body": "学生以清式服装在上海或美国留下合影，照片同时记录国家计划、家庭离散与新的学校生活。",
+      "note": "照片中的个体辨认需依据可靠题注，不能用少数名人覆盖全体。",
+      "people": [
+        "q166_chenlanbin",
+        "q165_yungrong"
+      ],
+      "sources": [
+        "v166_sh_archive_students",
+        "v166_nopss_students"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v166_obj_wanguogongfa",
+      "title": "《万国公法》译本",
+      "subtitle": "进入晚清外交语言的国际法词汇",
+      "symbol": "books.vertical",
+      "image": null,
+      "body": "丁韪良译本为总理衙门及同文馆提供讨论使节、战争、主权与条约的新词汇。",
+      "note": "译本被使用不代表列强与清廷已处于平等权力结构。",
+      "people": [
+        "q166_dingweiliang",
+        "q166_chonghou"
+      ],
+      "sources": [
+        "v166_martin_law"
       ],
       "dynasties": [
         "qing"
@@ -98356,11 +99587,68 @@
             "v165_woren_debate",
             "v165_translation_hall",
             "v165_translation_workflow",
-            "v165_technical_printing"
+            "v165_technical_printing",
+            "v166_tianjin_investigation",
+            "v166_chonghou_france",
+            "v166_maxinyi_case",
+            "v166_wedding_state",
+            "v166_personal_rule",
+            "v166_yuanmingyuan_remonstrance",
+            "v166_gong_prince_1874",
+            "v166_taiwan_diplomacy",
+            "v166_succession_1875",
+            "v166_jinji_siege",
+            "v166_liusongshan_death",
+            "v166_ma_surrender",
+            "v166_hezhou_settlement",
+            "v166_hexi_campaign",
+            "v166_dali_siege",
+            "v166_dali_fall",
+            "v166_shipyard_navy",
+            "v166_taiwan_defense",
+            "v166_shipyard_cost",
+            "v166_cmsn_founded",
+            "v166_tang_reorganizes",
+            "v166_official_merchant",
+            "v166_cmsn_accounts",
+            "v166_war_remittance_late",
+            "v166_postwar_nw_land",
+            "v166_dali_reconstruction",
+            "v166_cem_budget",
+            "v166_tianjin_rumor",
+            "v166_tianjin_victims",
+            "v166_jinji_starvation",
+            "v166_northwest_relocation",
+            "v166_yunnan_population",
+            "v166_wedding_labor",
+            "v166_cem_family_separation",
+            "v166_cem_host_families",
+            "v166_shipyard_workers",
+            "v166_wedding_material",
+            "v166_imperial_tutors",
+            "v166_weng_diary",
+            "v166_fryer_translation",
+            "v166_technical_terms",
+            "v166_martin_tongwen",
+            "v166_international_law_use",
+            "v166_cem_first_cohort",
+            "v166_cem_four_cohorts"
           ],
           "people": [
             "q165_cian",
-            "q165_woren"
+            "q165_woren",
+            "q166_alute",
+            "q166_wengtonghe",
+            "q166_lihongzao",
+            "q166_maxinyi",
+            "q166_chonghou",
+            "q166_mahualong",
+            "q166_duwenxiu",
+            "q166_liusongshan",
+            "q166_chenlanbin",
+            "q166_tangtingshu",
+            "q166_fulanya",
+            "q166_dingweiliang"
           ]
         }
       ],
@@ -98378,7 +99666,31 @@
         "v165_ruc_politics",
         "v165_dpm_restoration",
         "v165_ruc_recovery",
-        "v165_ruc_northwest"
+        "v165_ruc_northwest",
+        "v166_dpm_tongzhi",
+        "v166_dpm_marriage",
+        "v166_dpm_wedding_ritual",
+        "v166_dpm_wedding_ceramics",
+        "v166_cssn_tianjin",
+        "v166_sinica_jinji",
+        "v166_dpm_yunnan",
+        "v166_yn_du",
+        "v166_fuzhou_shipyard",
+        "v166_nopss_students",
+        "v166_wuchuan_chen",
+        "v166_sh_archive_students",
+        "v166_sasac_cmsn",
+        "v166_nopss_cmsn",
+        "v166_gd_tang",
+        "v166_qsg_weng",
+        "v166_qsg_lihongzao",
+        "v166_qsg_maxinyi",
+        "v166_qsg_chonghou",
+        "v166_qsg_liusongshan",
+        "v166_shm_translation",
+        "v166_martin_law",
+        "v166_dpm_succession",
+        "v166_dpm_taiwan"
       ]
     },
     {
@@ -207653,6 +208965,1117 @@
         "v165_qsg416",
         "v165_nmc_army_pay"
       ]
+    },
+    {
+      "person": "q166_alute",
+      "title": "阿鲁特氏：孝哲毅皇后",
+      "dek": "同治帝皇后；她的册立有清宫档案可证，围绕婆媳冲突和死因的戏剧化故事则须谨慎。",
+      "sections": [
+        {
+          "id": "v166_alute_1",
+          "title": "册立以前",
+          "text": "她出身蒙古正蓝旗，父亲崇绮为清代少见的旗人状元。1872年两宫皇太后颁旨选立她为皇后。档案能确认家世、选立与礼仪，不能据后出回忆断言每次宫廷争执。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_dpm_marriage",
+            "v166_dpm_wedding_ritual",
+            "v166_dpm_wedding_ceramics"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_wedding_state",
+            "v166_personal_rule",
+            "v166_succession_1875"
+          ],
+          "people": []
+        },
+        {
+          "id": "v166_alute_2",
+          "title": "大婚是国家工程",
+          "text": "纳采、册立、奉迎、合卺牵动礼部、内务府、工部与地方采办。皇后个人婚姻被纳入皇权礼制，大婚瓷、妆奁和仪仗都体现制度，而非单纯私生活。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_dpm_marriage",
+            "v166_dpm_wedding_ritual",
+            "v166_dpm_wedding_ceramics"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_wedding_state",
+            "v166_personal_rule",
+            "v166_succession_1875"
+          ],
+          "people": []
+        },
+        {
+          "id": "v166_alute_3",
+          "title": "短暂的中宫生活",
+          "text": "大婚后居储秀宫，同治帝亲政不久即病逝。她在位时间很短，留下的自述极少，不能用小说式叙事填满档案沉默。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_dpm_marriage",
+            "v166_dpm_wedding_ritual",
+            "v166_dpm_wedding_ceramics"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_wedding_state",
+            "v166_personal_rule",
+            "v166_succession_1875"
+          ],
+          "people": []
+        },
+        {
+          "id": "v166_alute_4",
+          "title": "光绪元年的去世",
+          "text": "同治帝去世后她被尊为嘉顺皇后，数月后去世。关于绝食、服毒或太后逼迫等说法流传甚广，证据层级不同，应用“传闻”“记载不一”标识。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_dpm_marriage",
+            "v166_dpm_wedding_ritual",
+            "v166_dpm_wedding_ceramics"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_wedding_state",
+            "v166_personal_rule",
+            "v166_succession_1875"
+          ],
+          "people": []
+        },
+        {
+          "id": "v166_alute_5",
+          "title": "如何阅读她",
+          "text": "阿鲁特氏的重要性不仅在悲剧故事。她连接了皇帝大婚、亲政、中宫名位和无嗣继承等制度节点，也提醒读者宫廷女性常被后世传闻覆盖。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_dpm_marriage",
+            "v166_dpm_wedding_ritual",
+            "v166_dpm_wedding_ceramics"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_wedding_state",
+            "v166_personal_rule",
+            "v166_succession_1875"
+          ],
+          "people": []
+        }
+      ],
+      "sources": [
+        "v166_dpm_marriage",
+        "v166_dpm_wedding_ritual",
+        "v166_dpm_wedding_ceramics"
+      ]
+    },
+    {
+      "person": "q166_wengtonghe",
+      "title": "翁同龢：帝师与日记作者",
+      "dek": "同治帝师，日记保存了课堂、召见与中枢观察；个人记录仍需与官书和奏折互证。",
+      "sections": [
+        {
+          "id": "v166_wengtonghe_1",
+          "title": "状元入值",
+          "text": "翁同龢由翰林进入宫廷教育体系，参与同治帝读书与经史讲习。帝师身份带来接近皇帝的机会，却不等于能独自决定政策。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_qsg_weng",
+            "v166_dpm_tongzhi"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_personal_rule",
+            "v166_yuanmingyuan_remonstrance",
+            "v166_gong_prince_1874"
+          ],
+          "people": []
+        },
+        {
+          "id": "v166_wengtonghe_2",
+          "title": "课堂中的少年皇帝",
+          "text": "日记记录进讲、请安、疾病和召见，为理解亲政前后的日常节奏提供罕见窗口。记录者也会筛选言辞，沉默处不应被想象补齐。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_qsg_weng",
+            "v166_dpm_tongzhi"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_personal_rule",
+            "v166_yuanmingyuan_remonstrance",
+            "v166_gong_prince_1874"
+          ],
+          "people": []
+        },
+        {
+          "id": "v166_wengtonghe_3",
+          "title": "亲政后的谏诤",
+          "text": "1873年亲政后，翁同龢继续在弘德殿近侍。围绕读书、园工和用人，他代表的是经筵与士大夫劝诫传统，其实际效果受皇帝、太后和中枢关系制约。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_qsg_weng",
+            "v166_dpm_tongzhi"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_personal_rule",
+            "v166_yuanmingyuan_remonstrance",
+            "v166_gong_prince_1874"
+          ],
+          "people": []
+        },
+        {
+          "id": "v166_wengtonghe_4",
+          "title": "日记的史料价值",
+          "text": "日记按日累积，能校正后来回忆的整齐叙事；但它是私人视角，涉及他人动机时仍需与档案互证。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_qsg_weng",
+            "v166_dpm_tongzhi"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_personal_rule",
+            "v166_yuanmingyuan_remonstrance",
+            "v166_gong_prince_1874"
+          ],
+          "people": []
+        },
+        {
+          "id": "v166_wengtonghe_5",
+          "title": "跨越两朝的影响",
+          "text": "他后来又参与光绪朝中枢。阅读同治时期时，应避免用甲午、变法后的名声倒推早年的每一项选择。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_qsg_weng",
+            "v166_dpm_tongzhi"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_personal_rule",
+            "v166_yuanmingyuan_remonstrance",
+            "v166_gong_prince_1874"
+          ],
+          "people": []
+        }
+      ],
+      "sources": [
+        "v166_qsg_weng",
+        "v166_dpm_tongzhi"
+      ]
+    },
+    {
+      "person": "q166_lihongzao",
+      "title": "李鸿藻：帝师与军机大臣",
+      "dek": "兼具帝师与军机身份，在宫廷教育和中枢文书之间搭桥；不宜仅以“清流领袖”概括。",
+      "sections": [
+        {
+          "id": "v166_lihongzao_1",
+          "title": "从翰林到帝师",
+          "text": "李鸿藻以文学与经学资历进入幼帝教育。进讲不是装饰，它把经典中的君臣伦理、用人标准和勤政要求带进宫廷。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_qsg_lihongzao",
+            "v166_dpm_tongzhi"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_personal_rule",
+            "v166_yuanmingyuan_remonstrance",
+            "v166_gong_prince_1874"
+          ],
+          "people": []
+        },
+        {
+          "id": "v166_lihongzao_2",
+          "title": "进入军机处",
+          "text": "他又参与军机事务，身份比一般讲官更接近决策流程。奏折摘要、上谕草拟和召见共同构成中枢运转，个人意见必须经过集体与名位结构。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_qsg_lihongzao",
+            "v166_dpm_tongzhi"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_personal_rule",
+            "v166_yuanmingyuan_remonstrance",
+            "v166_gong_prince_1874"
+          ],
+          "people": []
+        },
+        {
+          "id": "v166_lihongzao_3",
+          "title": "亲政交接",
+          "text": "两宫归政时，帝师承担劝学和规范君德的责任。亲政并非某日突然获得完整能力，而是课堂、召见与文书经验长期累积的结果。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_qsg_lihongzao",
+            "v166_dpm_tongzhi"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_personal_rule",
+            "v166_yuanmingyuan_remonstrance",
+            "v166_gong_prince_1874"
+          ],
+          "people": []
+        },
+        {
+          "id": "v166_lihongzao_4",
+          "title": "不能只看派系",
+          "text": "后世常以清流、北派等标签组织人物。标签有助理解网络，却会遮蔽他在不同案件中的务实权衡。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_qsg_lihongzao",
+            "v166_dpm_tongzhi"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_personal_rule",
+            "v166_yuanmingyuan_remonstrance",
+            "v166_gong_prince_1874"
+          ],
+          "people": []
+        },
+        {
+          "id": "v166_lihongzao_5",
+          "title": "史料边界",
+          "text": "官修传记强调忠直，私人笔记又可能强化党争。较稳妥的读法是把具体奏议放回时点，不为人物预设固定立场。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_qsg_lihongzao",
+            "v166_dpm_tongzhi"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_personal_rule",
+            "v166_yuanmingyuan_remonstrance",
+            "v166_gong_prince_1874"
+          ],
+          "people": []
+        }
+      ],
+      "sources": [
+        "v166_qsg_lihongzao",
+        "v166_dpm_tongzhi"
+      ]
+    },
+    {
+      "person": "q166_maxinyi",
+      "title": "马新贻：两江总督",
+      "dek": "两江总督任内遇刺，案件震动朝廷；刺客身份明确，动机和幕后关系却被传奇长期放大。",
+      "sections": [
+        {
+          "id": "v166_maxinyi_1",
+          "title": "战乱中的升迁",
+          "text": "马新贻在安徽等地处理军务与地方行政，内战经验使他进入封疆大吏序列。战功叙述多来自官书，需看见地方社会承受的征发。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_qsg_maxinyi",
+            "v166_dpm_tongzhi"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_tianjin_investigation",
+            "v166_maxinyi_case"
+          ],
+          "people": []
+        },
+        {
+          "id": "v166_maxinyi_2",
+          "title": "两江总督的难题",
+          "text": "他接管战后江南，面对裁军、财政、盐务、治安与湘军网络。总督权力很大，却依赖地方官、军队和绅商协作。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_qsg_maxinyi",
+            "v166_dpm_tongzhi"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_tianjin_investigation",
+            "v166_maxinyi_case"
+          ],
+          "people": []
+        },
+        {
+          "id": "v166_maxinyi_3",
+          "title": "督署门前遇刺",
+          "text": "1870年马新贻在南京校场遇刺身亡，刺客张汶祥被捕。公开事实止于刺杀、审讯和处决，流行的“刺马案”故事加入了大量未经证实情节。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_qsg_maxinyi",
+            "v166_dpm_tongzhi"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_tianjin_investigation",
+            "v166_maxinyi_case"
+          ],
+          "people": []
+        },
+        {
+          "id": "v166_maxinyi_4",
+          "title": "朝廷为何重视",
+          "text": "中央派员会审，既要查凶案，也要维持两江权力秩序。案件反映战后地方军事集团、官僚制度和舆论想象之间的不信任。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_qsg_maxinyi",
+            "v166_dpm_tongzhi"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_tianjin_investigation",
+            "v166_maxinyi_case"
+          ],
+          "people": []
+        },
+        {
+          "id": "v166_maxinyi_5",
+          "title": "传奇不等于结论",
+          "text": "戏曲、小说和电影让案件家喻户晓，却不能反过来充当史证。阅读时应明确区分判牍可证、官书解释与民间推测。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_qsg_maxinyi",
+            "v166_dpm_tongzhi"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_tianjin_investigation",
+            "v166_maxinyi_case"
+          ],
+          "people": []
+        }
+      ],
+      "sources": [
+        "v166_qsg_maxinyi",
+        "v166_dpm_tongzhi"
+      ]
+    },
+    {
+      "person": "q166_chonghou",
+      "title": "崇厚：三口通商大臣与外交使臣",
+      "dek": "天津教案后奉使法国交涉；其经历显示地方通商官、总理衙门与驻外外交尚在磨合。",
+      "sections": [
+        {
+          "id": "v166_chonghou_1",
+          "title": "通商口岸官员",
+          "text": "崇厚长期处理北方口岸和洋务，所面对的不只是条约文本，还有地方谣言、教会纠纷、治安与领事压力。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_qsg_chonghou",
+            "v166_cssn_tianjin"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_tianjin_investigation",
+            "v166_chonghou_france",
+            "v166_tianjin_rumor"
+          ],
+          "people": []
+        },
+        {
+          "id": "v166_chonghou_2",
+          "title": "天津教案骤发",
+          "text": "1870年天津冲突中法国领事、传教人员和中国教民等遇害。崇厚参与善后，案件不能被简化为单纯外交冲突或自发民愤。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_qsg_chonghou",
+            "v166_cssn_tianjin"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_tianjin_investigation",
+            "v166_chonghou_france",
+            "v166_tianjin_rumor"
+          ],
+          "people": []
+        },
+        {
+          "id": "v166_chonghou_3",
+          "title": "奉使法国",
+          "text": "清廷派他赴法致歉与交涉。出使既有礼仪任务，也要就惩办、赔偿和安全承诺反复谈判，显示常驻外交建立前的临时性。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_qsg_chonghou",
+            "v166_cssn_tianjin"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_tianjin_investigation",
+            "v166_chonghou_france",
+            "v166_tianjin_rumor"
+          ],
+          "people": []
+        },
+        {
+          "id": "v166_chonghou_4",
+          "title": "多重问责",
+          "text": "外国政府要求严惩，中国官员则顾虑证据、民情与主权。崇厚处在中枢命令、地方执行和外方压力之间。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_qsg_chonghou",
+            "v166_cssn_tianjin"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_tianjin_investigation",
+            "v166_chonghou_france",
+            "v166_tianjin_rumor"
+          ],
+          "people": []
+        },
+        {
+          "id": "v166_chonghou_5",
+          "title": "不以成败定人",
+          "text": "他后来因另一项条约受到重责，容易让后人倒推其早年“无能”。评价天津交涉应回到当时信息、授权与制度条件。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_qsg_chonghou",
+            "v166_cssn_tianjin"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_tianjin_investigation",
+            "v166_chonghou_france",
+            "v166_tianjin_rumor"
+          ],
+          "people": []
+        }
+      ],
+      "sources": [
+        "v166_qsg_chonghou",
+        "v166_cssn_tianjin"
+      ]
+    },
+    {
+      "person": "q166_mahualong",
+      "title": "马化龙：金积堡首领",
+      "dek": "金积堡回民武装首领；投降后被清军处决，相关官书用语必须与战争、围城和迁徙事实分开阅读。",
+      "sections": [
+        {
+          "id": "v166_mahualong_1",
+          "title": "金积堡的区域网络",
+          "text": "马化龙依托宁夏平原商贸、宗教与堡寨网络形成影响。把他只写成官书中的“匪首”，会遮蔽地方权力和回汉冲突的长期背景。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_sinica_jinji",
+            "v166_qsg_liusongshan"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_jinji_siege",
+            "v166_liusongshan_death",
+            "v166_ma_surrender"
+          ],
+          "people": []
+        },
+        {
+          "id": "v166_mahualong_2",
+          "title": "围城与军粮",
+          "text": "左宗棠部署各路进军，刘松山部围攻金积堡。围城持续时间长，军队与堡民都承受饥饿、伤亡和交通断绝。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_sinica_jinji",
+            "v166_qsg_liusongshan"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_jinji_siege",
+            "v166_liusongshan_death",
+            "v166_ma_surrender"
+          ],
+          "people": []
+        },
+        {
+          "id": "v166_mahualong_3",
+          "title": "投降并未止杀",
+          "text": "马化龙出降后，清军以查获武器等为由处决其家族和部属。投降条件、责任认定与后续杀戮在不同材料中叙述不一。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_sinica_jinji",
+            "v166_qsg_liusongshan"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_jinji_siege",
+            "v166_liusongshan_death",
+            "v166_ma_surrender"
+          ],
+          "people": []
+        },
+        {
+          "id": "v166_mahualong_4",
+          "title": "迁徙与安插",
+          "text": "大量幸存者被迁往化平川、固原等地。所谓“安插”同时包含强制迁徙、土地重分配与严密管控，不能只用恢复秩序概括。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_sinica_jinji",
+            "v166_qsg_liusongshan"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_jinji_siege",
+            "v166_liusongshan_death",
+            "v166_ma_surrender"
+          ],
+          "people": []
+        },
+        {
+          "id": "v166_mahualong_5",
+          "title": "名称与立场",
+          "text": "清方档案常用贬称，后来叙事又可能将其完全英雄化。较可靠的方法是分别呈现组织、战争、投降、处决和民众后果。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_sinica_jinji",
+            "v166_qsg_liusongshan"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_jinji_siege",
+            "v166_liusongshan_death",
+            "v166_ma_surrender"
+          ],
+          "people": []
+        }
+      ],
+      "sources": [
+        "v166_sinica_jinji",
+        "v166_qsg_liusongshan"
+      ]
+    },
+    {
+      "person": "q166_duwenxiu",
+      "title": "杜文秀：大理政权领袖",
+      "dek": "以大理为中心建立政权，参与者并非单一族群；1872年大理失守，关于死亡和屠杀规模须区分材料。",
+      "sections": [
+        {
+          "id": "v166_duwenxiu_1",
+          "title": "冲突从何而来",
+          "text": "云南回汉矛盾、矿业与市场竞争、地方官处置失当交织，1850年代爆发长期战争。杜文秀在大理形成政治中心。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_dpm_yunnan",
+            "v166_yn_du"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_dali_siege",
+            "v166_dali_fall",
+            "v166_dali_reconstruction"
+          ],
+          "people": []
+        },
+        {
+          "id": "v166_duwenxiu_2",
+          "title": "不是单一族群政权",
+          "text": "其政权吸纳回、汉及其他族群成员，设置官职、征税并维持贸易。口号与制度在不同史料中有差异，不能把复杂联盟压成宗教战争。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_dpm_yunnan",
+            "v166_yn_du"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_dali_siege",
+            "v166_dali_fall",
+            "v166_dali_reconstruction"
+          ],
+          "people": []
+        },
+        {
+          "id": "v166_duwenxiu_3",
+          "title": "大理的治理",
+          "text": "材料记载减税、农桑、贸易和教育措施，也记录战争征发。政权在军事动员与地方治理之间如何平衡，仍需更多地方文书。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_dpm_yunnan",
+            "v166_yn_du"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_dali_siege",
+            "v166_dali_fall",
+            "v166_dali_reconstruction"
+          ],
+          "people": []
+        },
+        {
+          "id": "v166_duwenxiu_4",
+          "title": "1872年失守",
+          "text": "清军逼近大理，杜文秀服毒后被送至军前，旋即死亡。关于他主动求死、被杀及城内后续屠戮的细节，叙述互有出入。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_dpm_yunnan",
+            "v166_yn_du"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_dali_siege",
+            "v166_dali_fall",
+            "v166_dali_reconstruction"
+          ],
+          "people": []
+        },
+        {
+          "id": "v166_duwenxiu_5",
+          "title": "书写云南战争",
+          "text": "应用“云南回民起义”“滇西战争”“大理政权”等多个检索词互证，并说明清方、地方记忆和后世民族史叙述的立场差异。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_dpm_yunnan",
+            "v166_yn_du"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_dali_siege",
+            "v166_dali_fall",
+            "v166_dali_reconstruction"
+          ],
+          "people": []
+        }
+      ],
+      "sources": [
+        "v166_dpm_yunnan",
+        "v166_yn_du"
+      ]
+    },
+    {
+      "person": "q166_liusongshan",
+      "title": "刘松山：湘军将领",
+      "dek": "由湘军系统转战捻军与西北，围攻金积堡时阵亡；其军功与战争造成的地方破坏应并置。",
+      "sections": [
+        {
+          "id": "v166_liusongshan_1",
+          "title": "从湘军体系起步",
+          "text": "刘松山随军参加太平军、捻军战事，依靠营制、将领私人关系和战功升迁。这样的军队既受朝廷调遣，也保留强烈的将领网络。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_qsg_liusongshan",
+            "v166_sinica_jinji"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_jinji_siege",
+            "v166_liusongshan_death",
+            "v166_war_remittance_late"
+          ],
+          "people": []
+        },
+        {
+          "id": "v166_liusongshan_2",
+          "title": "北路进入西北",
+          "text": "左宗棠令其从陕北、花马池方向逼近宁夏，目标是切断金积堡外援。行军首先是粮饷、道路与驻防问题，不只是战场推进。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_qsg_liusongshan",
+            "v166_sinica_jinji"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_jinji_siege",
+            "v166_liusongshan_death",
+            "v166_war_remittance_late"
+          ],
+          "people": []
+        },
+        {
+          "id": "v166_liusongshan_3",
+          "title": "金积堡围攻",
+          "text": "清军逐堡攻击，战斗惨烈。刘松山在攻马五寨时中炮身亡，部队随后由刘锦棠接续。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_qsg_liusongshan",
+            "v166_sinica_jinji"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_jinji_siege",
+            "v166_liusongshan_death",
+            "v166_war_remittance_late"
+          ],
+          "people": []
+        },
+        {
+          "id": "v166_liusongshan_4",
+          "title": "将领更替与军队延续",
+          "text": "私人营制下，统帅阵亡可能造成溃散；由亲属刘锦棠接掌反映军队人身网络，也经朝廷与左宗棠认可。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_qsg_liusongshan",
+            "v166_sinica_jinji"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_jinji_siege",
+            "v166_liusongshan_death",
+            "v166_war_remittance_late"
+          ],
+          "people": []
+        },
+        {
+          "id": "v166_liusongshan_5",
+          "title": "两面观看军功",
+          "text": "官书赞扬其忠勇，地方社会看到的却包括围城、征粮与人口迁移。人物页同时保留两种尺度，避免战争只剩将领履历。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_qsg_liusongshan",
+            "v166_sinica_jinji"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_jinji_siege",
+            "v166_liusongshan_death",
+            "v166_war_remittance_late"
+          ],
+          "people": []
+        }
+      ],
+      "sources": [
+        "v166_qsg_liusongshan",
+        "v166_sinica_jinji"
+      ]
+    },
+    {
+      "person": "q166_chenlanbin",
+      "title": "陈兰彬：留美幼童正监督",
+      "dek": "主持首批留美幼童出洋，处在朝廷规范、家庭期待与美国学校制度之间。",
+      "sections": [
+        {
+          "id": "v166_chenlanbin_1",
+          "title": "官员与教育试验",
+          "text": "陈兰彬有翰林与地方经历，受命担任留美幼童正监督。计划不是私人游学，而是由总理衙门、地方督抚和出洋局共同承担的国家试验。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_nopss_students",
+            "v166_wuchuan_chen",
+            "v166_sh_archive_students"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_cem_budget",
+            "v166_cem_family_separation",
+            "v166_cem_host_families"
+          ],
+          "people": []
+        },
+        {
+          "id": "v166_chenlanbin_2",
+          "title": "1872年启程",
+          "text": "首批约三十名幼童从上海出发，之后至1875年分四批派遣。名单、年龄和批次应以档案核对，不能把后来名人的经历代表全部学生。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_nopss_students",
+            "v166_wuchuan_chen",
+            "v166_sh_archive_students"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_cem_budget",
+            "v166_cem_family_separation",
+            "v166_cem_host_families"
+          ],
+          "people": []
+        },
+        {
+          "id": "v166_chenlanbin_3",
+          "title": "监督什么",
+          "text": "监督既管理经费、学业和住处，也维护服饰、礼仪与经典学习。学生分住美国家庭并入学校，日常生活远超传统官学规范。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_nopss_students",
+            "v166_wuchuan_chen",
+            "v166_sh_archive_students"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_cem_budget",
+            "v166_cem_family_separation",
+            "v166_cem_host_families"
+          ],
+          "people": []
+        },
+        {
+          "id": "v166_chenlanbin_4",
+          "title": "冲突早已埋下",
+          "text": "技术学习、美国教育和清廷伦理目标并不完全一致。陈兰彬既非单纯保守阻挠者，也不是无条件西化推动者。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_nopss_students",
+            "v166_wuchuan_chen",
+            "v166_sh_archive_students"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_cem_budget",
+            "v166_cem_family_separation",
+            "v166_cem_host_families"
+          ],
+          "people": []
+        },
+        {
+          "id": "v166_chenlanbin_5",
+          "title": "计划的长期意义",
+          "text": "项目后来被提前撤回，但铁路、外交、工程等领域出现多位参与者。评价不能只按名人成材率，也要看家庭分离、文化适应和制度成本。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_nopss_students",
+            "v166_wuchuan_chen",
+            "v166_sh_archive_students"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_cem_budget",
+            "v166_cem_family_separation",
+            "v166_cem_host_families"
+          ],
+          "people": []
+        }
+      ],
+      "sources": [
+        "v166_nopss_students",
+        "v166_wuchuan_chen",
+        "v166_sh_archive_students"
+      ]
+    },
+    {
+      "person": "q166_tangtingshu",
+      "title": "唐廷枢：轮船招商局总办",
+      "dek": "从洋行买办转入官督商办企业，以商业经验整顿招商局；官与商的边界始终紧张。",
+      "sections": [
+        {
+          "id": "v166_tangtingshu_1",
+          "title": "跨语言商业经验",
+          "text": "唐廷枢熟悉英语、契约、航运和上海商界。买办身份既提供跨制度能力，也使他处在外资网络与中国商人利益之间。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_gd_tang",
+            "v166_sasac_cmsn",
+            "v166_nopss_cmsn"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_cmsn_founded",
+            "v166_tang_reorganizes",
+            "v166_official_merchant"
+          ],
+          "people": []
+        },
+        {
+          "id": "v166_tangtingshu_2",
+          "title": "接掌招商局",
+          "text": "招商局1872年创办，初期招商和经营困难。唐廷枢次年任总办，与徐润等引入商股和更系统的航运经营。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_gd_tang",
+            "v166_sasac_cmsn",
+            "v166_nopss_cmsn"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_cmsn_founded",
+            "v166_tang_reorganizes",
+            "v166_official_merchant"
+          ],
+          "people": []
+        },
+        {
+          "id": "v166_tangtingshu_3",
+          "title": "官督商办如何运作",
+          "text": "官方给予漕运等资源和政治保护，商人募集资本、经营船队。权责并不清晰，优势与干预同时来自官府。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_gd_tang",
+            "v166_sasac_cmsn",
+            "v166_nopss_cmsn"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_cmsn_founded",
+            "v166_tang_reorganizes",
+            "v166_official_merchant"
+          ],
+          "people": []
+        },
+        {
+          "id": "v166_tangtingshu_4",
+          "title": "公开账目的意义",
+          "text": "招商局刊布营业账略，试图向股东展示收支和信用。公开不等于现代公司治理已经成熟，但改变了资金动员方式。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_gd_tang",
+            "v166_sasac_cmsn",
+            "v166_nopss_cmsn"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_cmsn_founded",
+            "v166_tang_reorganizes",
+            "v166_official_merchant"
+          ],
+          "people": []
+        },
+        {
+          "id": "v166_tangtingshu_5",
+          "title": "不要提前写入后来的成功",
+          "text": "收购旗昌、开平矿务等多发生于光绪初年以后。阅读同治末期，应聚焦创办、改组、招股与航线起步。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_gd_tang",
+            "v166_sasac_cmsn",
+            "v166_nopss_cmsn"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_cmsn_founded",
+            "v166_tang_reorganizes",
+            "v166_official_merchant"
+          ],
+          "people": []
+        }
+      ],
+      "sources": [
+        "v166_gd_tang",
+        "v166_sasac_cmsn",
+        "v166_nopss_cmsn"
+      ]
+    },
+    {
+      "person": "q166_fulanya",
+      "title": "傅兰雅：翻译者与科学传播者",
+      "dek": "同治时期进入江南制造局翻译馆，与中国学者合译科技书；译著不是个人单向输入。",
+      "sections": [
+        {
+          "id": "v166_fulanya_1",
+          "title": "进入翻译馆",
+          "text": "傅兰雅具教育与中文经验，1868年后在江南制造局翻译馆长期工作。机构因制造与教学需求而设，翻译与工场并非两条孤立路线。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_shm_translation",
+            "v165_cssn_translation"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_shipyard_cost",
+            "v166_shipyard_workers",
+            "v166_fryer_translation"
+          ],
+          "people": []
+        },
+        {
+          "id": "v166_fulanya_2",
+          "title": "口译与笔述合作",
+          "text": "常见流程是外籍译者口述，中国学者笔述、润色和校订。徐寿、华蘅芳等人的数学与技术知识决定译文能否成立。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_shm_translation",
+            "v165_cssn_translation"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_shipyard_cost",
+            "v166_shipyard_workers",
+            "v166_fryer_translation"
+          ],
+          "people": []
+        },
+        {
+          "id": "v166_fulanya_3",
+          "title": "新术语的生成",
+          "text": "机械、化学和数学概念需要在旧词、新造词与音译间选择。术语并非一次定型，而在教材、译书和使用中逐渐稳定。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_shm_translation",
+            "v165_cssn_translation"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_shipyard_cost",
+            "v166_shipyard_workers",
+            "v166_fryer_translation"
+          ],
+          "people": []
+        },
+        {
+          "id": "v166_fulanya_4",
+          "title": "出版与读者",
+          "text": "译书通过刻印传播到学堂与地方士人，但价格、基础训练和实验条件限制受众。书被印出不等于技术立即转化。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_shm_translation",
+            "v165_cssn_translation"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_shipyard_cost",
+            "v166_shipyard_workers",
+            "v166_fryer_translation"
+          ],
+          "people": []
+        },
+        {
+          "id": "v166_fulanya_5",
+          "title": "传教士身份与知识工作",
+          "text": "傅兰雅的传教背景、职业目标与清朝机构需求交织。既不能抹去权力背景，也不能因此否认合译成果的具体价值。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_shm_translation",
+            "v165_cssn_translation"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_shipyard_cost",
+            "v166_shipyard_workers",
+            "v166_fryer_translation"
+          ],
+          "people": []
+        }
+      ],
+      "sources": [
+        "v166_shm_translation",
+        "v165_cssn_translation"
+      ]
+    },
+    {
+      "person": "q166_dingweiliang",
+      "title": "丁韪良：同文馆总教习",
+      "dek": "译《万国公法》并任同文馆总教习，把语言、国际法和近代课程带入官学争论。",
+      "sections": [
+        {
+          "id": "v166_dingweiliang_1",
+          "title": "从传教到译书",
+          "text": "丁韪良长期在华，参与语言、宗教和外交知识活动。《万国公法》译本进入总理衙门视野，提供新的国际关系词汇。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_martin_law",
+            "v165_dpm_lecture",
+            "v165_qsg448"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_taiwan_diplomacy",
+            "v166_technical_terms",
+            "v166_martin_tongwen"
+          ],
+          "people": []
+        },
+        {
+          "id": "v166_dingweiliang_2",
+          "title": "译名不是照搬",
+          "text": "国际法概念需要用中国政治语言重组。译本帮助官员讨论主权、使节和战争，但条约体系中的权力不平等没有因译书消失。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_martin_law",
+            "v165_dpm_lecture",
+            "v165_qsg448"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_taiwan_diplomacy",
+            "v166_technical_terms",
+            "v166_martin_tongwen"
+          ],
+          "people": []
+        },
+        {
+          "id": "v166_dingweiliang_3",
+          "title": "同文馆总教习",
+          "text": "他任总教习后参与课程和教师管理。同文馆由外语训练扩向天文、算学等，遭遇倭仁等人的制度质疑。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_martin_law",
+            "v165_dpm_lecture",
+            "v165_qsg448"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_taiwan_diplomacy",
+            "v166_technical_terms",
+            "v166_martin_tongwen"
+          ],
+          "people": []
+        },
+        {
+          "id": "v166_dingweiliang_4",
+          "title": "课堂与外交相连",
+          "text": "学生可能进入翻译和外交岗位，课程因此服务具体行政需要。招生、升迁与传统科举之间仍缺少稳定通道。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_martin_law",
+            "v165_dpm_lecture",
+            "v165_qsg448"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_taiwan_diplomacy",
+            "v166_technical_terms",
+            "v166_martin_tongwen"
+          ],
+          "people": []
+        },
+        {
+          "id": "v166_dingweiliang_5",
+          "title": "评价的两条边界",
+          "text": "不能把丁韪良写成单独开启近代知识的人，也不能因传教士身份抹去译书影响。应把他放进中国合作者和机构选择之中。\n\n阅读这一节点时，应把官书、档案、私人记录和后来的地方记忆分开：它们回答的问题不同，使用的称谓也不同。能够确认的时间、职务与行动应明确陈述；涉及动机、密谈、死亡细节或伤亡规模而证据不足的部分，则应保留不确定性。这样才能既看见个人选择，也不让一个人物替制度、战争或社会后果承担全部解释。",
+          "sources": [
+            "v166_martin_law",
+            "v165_dpm_lecture",
+            "v165_qsg448"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_taiwan_diplomacy",
+            "v166_technical_terms",
+            "v166_martin_tongwen"
+          ],
+          "people": []
+        }
+      ],
+      "sources": [
+        "v166_martin_law",
+        "v165_dpm_lecture",
+        "v165_qsg448"
+      ]
     }
   ],
   "portraits": [
@@ -233960,6 +236383,199 @@
         "v165_qsg416",
         "v165_qsg475"
       ]
+    },
+    {
+      "from": "q_tongzhi",
+      "to": "q166_alute",
+      "role": "同治时期的重要人物",
+      "inverse": "所处朝代的皇帝",
+      "period": "同治时期",
+      "note": "阿鲁特氏的经历连接同治后期的孝哲毅皇后议题。",
+      "sources": [
+        "v166_dpm_marriage",
+        "v166_dpm_wedding_ritual",
+        "v166_dpm_wedding_ceramics"
+      ]
+    },
+    {
+      "from": "q_tongzhi",
+      "to": "q166_wengtonghe",
+      "role": "同治时期的重要人物",
+      "inverse": "所处朝代的皇帝",
+      "period": "同治时期",
+      "note": "翁同龢的经历连接同治后期的帝师与日记作者议题。",
+      "sources": [
+        "v166_qsg_weng",
+        "v166_dpm_tongzhi"
+      ]
+    },
+    {
+      "from": "q_tongzhi",
+      "to": "q166_lihongzao",
+      "role": "同治时期的重要人物",
+      "inverse": "所处朝代的皇帝",
+      "period": "同治时期",
+      "note": "李鸿藻的经历连接同治后期的帝师与军机大臣议题。",
+      "sources": [
+        "v166_qsg_lihongzao",
+        "v166_dpm_tongzhi"
+      ]
+    },
+    {
+      "from": "q_tongzhi",
+      "to": "q166_maxinyi",
+      "role": "同治时期的重要人物",
+      "inverse": "所处朝代的皇帝",
+      "period": "同治时期",
+      "note": "马新贻的经历连接同治后期的两江总督议题。",
+      "sources": [
+        "v166_qsg_maxinyi",
+        "v166_dpm_tongzhi"
+      ]
+    },
+    {
+      "from": "q_tongzhi",
+      "to": "q166_chonghou",
+      "role": "同治时期的重要人物",
+      "inverse": "所处朝代的皇帝",
+      "period": "同治时期",
+      "note": "崇厚的经历连接同治后期的三口通商大臣与外交使臣议题。",
+      "sources": [
+        "v166_qsg_chonghou",
+        "v166_cssn_tianjin"
+      ]
+    },
+    {
+      "from": "q_tongzhi",
+      "to": "q166_mahualong",
+      "role": "同治时期的重要人物",
+      "inverse": "所处朝代的皇帝",
+      "period": "同治时期",
+      "note": "马化龙的经历连接同治后期的金积堡首领议题。",
+      "sources": [
+        "v166_sinica_jinji",
+        "v166_qsg_liusongshan"
+      ]
+    },
+    {
+      "from": "q_tongzhi",
+      "to": "q166_duwenxiu",
+      "role": "同治时期的重要人物",
+      "inverse": "所处朝代的皇帝",
+      "period": "同治时期",
+      "note": "杜文秀的经历连接同治后期的大理政权领袖议题。",
+      "sources": [
+        "v166_dpm_yunnan",
+        "v166_yn_du"
+      ]
+    },
+    {
+      "from": "q_tongzhi",
+      "to": "q166_liusongshan",
+      "role": "同治时期的重要人物",
+      "inverse": "所处朝代的皇帝",
+      "period": "同治时期",
+      "note": "刘松山的经历连接同治后期的湘军将领议题。",
+      "sources": [
+        "v166_qsg_liusongshan",
+        "v166_sinica_jinji"
+      ]
+    },
+    {
+      "from": "q_tongzhi",
+      "to": "q166_chenlanbin",
+      "role": "同治时期的重要人物",
+      "inverse": "所处朝代的皇帝",
+      "period": "同治时期",
+      "note": "陈兰彬的经历连接同治后期的留美幼童正监督议题。",
+      "sources": [
+        "v166_nopss_students",
+        "v166_wuchuan_chen",
+        "v166_sh_archive_students"
+      ]
+    },
+    {
+      "from": "q_tongzhi",
+      "to": "q166_tangtingshu",
+      "role": "同治时期的重要人物",
+      "inverse": "所处朝代的皇帝",
+      "period": "同治时期",
+      "note": "唐廷枢的经历连接同治后期的轮船招商局总办议题。",
+      "sources": [
+        "v166_gd_tang",
+        "v166_sasac_cmsn",
+        "v166_nopss_cmsn"
+      ]
+    },
+    {
+      "from": "q_tongzhi",
+      "to": "q166_fulanya",
+      "role": "同治时期的重要人物",
+      "inverse": "所处朝代的皇帝",
+      "period": "同治时期",
+      "note": "傅兰雅的经历连接同治后期的翻译者与科学传播者议题。",
+      "sources": [
+        "v166_shm_translation",
+        "v165_cssn_translation"
+      ]
+    },
+    {
+      "from": "q_tongzhi",
+      "to": "q166_dingweiliang",
+      "role": "同治时期的重要人物",
+      "inverse": "所处朝代的皇帝",
+      "period": "同治时期",
+      "note": "丁韪良的经历连接同治后期的同文馆总教习议题。",
+      "sources": [
+        "v166_martin_law",
+        "v165_dpm_lecture",
+        "v165_qsg448"
+      ]
+    },
+    {
+      "from": "q166_chenlanbin",
+      "to": "q165_yungrong",
+      "role": "留美幼童监督搭档",
+      "inverse": "留学计划推动者",
+      "period": "1872—1875年",
+      "note": "陈兰彬任正监督，容闳任副监督，分工与教育理念并非始终一致。",
+      "sources": [
+        "v166_nopss_students"
+      ]
+    },
+    {
+      "from": "q166_tangtingshu",
+      "to": "q_lihongzhang",
+      "role": "招商局总办",
+      "inverse": "洋务督办者",
+      "period": "1873年起",
+      "note": "李鸿章提供官府支持，唐廷枢等承担商股与日常经营。",
+      "sources": [
+        "v166_gd_tang",
+        "v166_sasac_cmsn"
+      ]
+    },
+    {
+      "from": "q166_fulanya",
+      "to": "q165_xushou",
+      "role": "合译者",
+      "inverse": "合译者",
+      "period": "同治时期",
+      "note": "翻译馆采用口译、笔述与校订协作。",
+      "sources": [
+        "v166_shm_translation"
+      ]
+    },
+    {
+      "from": "q166_liusongshan",
+      "to": "q_liujintang",
+      "role": "叔侄与军队前后任统帅",
+      "inverse": "继任统帅",
+      "period": "1870年",
+      "note": "刘松山阵亡后，刘锦棠接统其部。",
+      "sources": [
+        "v166_qsg_liusongshan"
+      ]
     }
   ],
   "dynasties": [
@@ -239117,7 +241733,19 @@
         "q165_huahengfang",
         "q165_yungrong",
         "q165_laiwenguang",
-        "q165_liumingchuan"
+        "q165_liumingchuan",
+        "q166_alute",
+        "q166_wengtonghe",
+        "q166_lihongzao",
+        "q166_maxinyi",
+        "q166_chonghou",
+        "q166_mahualong",
+        "q166_duwenxiu",
+        "q166_liusongshan",
+        "q166_chenlanbin",
+        "q166_tangtingshu",
+        "q166_fulanya",
+        "q166_dingweiliang"
       ],
       "events": [
         "qev_tongzhi_restoration_1861",
@@ -239172,7 +241800,52 @@
         "v165_woren_debate",
         "v165_translation_hall",
         "v165_translation_workflow",
-        "v165_technical_printing"
+        "v165_technical_printing",
+        "v166_tianjin_investigation",
+        "v166_chonghou_france",
+        "v166_maxinyi_case",
+        "v166_wedding_state",
+        "v166_personal_rule",
+        "v166_yuanmingyuan_remonstrance",
+        "v166_gong_prince_1874",
+        "v166_taiwan_diplomacy",
+        "v166_succession_1875",
+        "v166_jinji_siege",
+        "v166_liusongshan_death",
+        "v166_ma_surrender",
+        "v166_hezhou_settlement",
+        "v166_hexi_campaign",
+        "v166_dali_siege",
+        "v166_dali_fall",
+        "v166_shipyard_navy",
+        "v166_taiwan_defense",
+        "v166_shipyard_cost",
+        "v166_cmsn_founded",
+        "v166_tang_reorganizes",
+        "v166_official_merchant",
+        "v166_cmsn_accounts",
+        "v166_war_remittance_late",
+        "v166_postwar_nw_land",
+        "v166_dali_reconstruction",
+        "v166_cem_budget",
+        "v166_tianjin_rumor",
+        "v166_tianjin_victims",
+        "v166_jinji_starvation",
+        "v166_northwest_relocation",
+        "v166_yunnan_population",
+        "v166_wedding_labor",
+        "v166_cem_family_separation",
+        "v166_cem_host_families",
+        "v166_shipyard_workers",
+        "v166_wedding_material",
+        "v166_imperial_tutors",
+        "v166_weng_diary",
+        "v166_fryer_translation",
+        "v166_technical_terms",
+        "v166_martin_tongwen",
+        "v166_international_law_use",
+        "v166_cem_first_cohort",
+        "v166_cem_four_cohorts"
       ],
       "sources": [
         "v5qn_qsg221",
@@ -239211,9 +241884,33 @@
         "v165_zhongshan_yung",
         "v165_ruc_recovery",
         "v165_ruc_northwest",
-        "v165_ruc_hui_society"
+        "v165_ruc_hui_society",
+        "v166_dpm_tongzhi",
+        "v166_dpm_marriage",
+        "v166_dpm_wedding_ritual",
+        "v166_dpm_wedding_ceramics",
+        "v166_cssn_tianjin",
+        "v166_sinica_jinji",
+        "v166_dpm_yunnan",
+        "v166_yn_du",
+        "v166_fuzhou_shipyard",
+        "v166_nopss_students",
+        "v166_wuchuan_chen",
+        "v166_sh_archive_students",
+        "v166_sasac_cmsn",
+        "v166_nopss_cmsn",
+        "v166_gd_tang",
+        "v166_qsg_weng",
+        "v166_qsg_lihongzao",
+        "v166_qsg_maxinyi",
+        "v166_qsg_chonghou",
+        "v166_qsg_liusongshan",
+        "v166_shm_translation",
+        "v166_martin_law",
+        "v166_dpm_succession",
+        "v166_dpm_taiwan"
       ],
-      "note": "同治初年由慈安、慈禧两宫垂帘，奕訢及军机、总理衙门参与中枢，曾国藩、李鸿章等督抚掌握区域军政。幼帝在1873年亲政前不是多数政策的直接决策者；所谓‘同治中兴’须与内战、西北战争、战后迁徙和地方权力扩张并读。"
+      "note": "同治后期不能只用“中兴”概括：1870年天津教案、西北金积堡与云南大理的战争结局，与1872年大婚、1873年亲政、留美幼童、轮船招商局和1874年台湾危机同时发生。宫廷归政、地方军政、强制迁徙和近代教育企业必须并读。"
     },
     {
       "person": "q_guangxu",

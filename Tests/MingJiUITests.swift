@@ -4933,4 +4933,26 @@ final class MingJiUITests: XCTestCase {
         shot("v165-cian-joint-regency-document-procedure", app)
     }
 
+    @MainActor func testV166LateTongzhiSeparatesWeddingArchiveFromPalaceLegend() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["--uitesting", "--ui-dynasty", "qing"]
+        app.launch()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        app.buttons.matching(NSPredicate(format: "identifier == %@", "globalSearch")).firstMatch.tap()
+        let search = app.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("阿鲁特氏")
+        let result = app.buttons["search_person_q166_alute"]
+        XCTAssertTrue(result.waitForExistence(timeout: 8)); Thread.sleep(forTimeInterval: 1); result.tap()
+        if !app.buttons["articleEntry"].waitForExistence(timeout: 5) { app.buttons["search_person_q166_alute"].tap() }
+        XCTAssertTrue(app.buttons["articleEntry"].waitForExistence(timeout: 5)); app.buttons["articleEntry"].tap()
+        XCTAssertTrue(app.buttons["articleContents"].waitForExistence(timeout: 5)); app.buttons["articleContents"].tap()
+        let chapter = app.buttons["光绪元年的去世"]
+        XCTAssertTrue(chapter.exists); chapter.tap()
+        XCTAssertTrue(app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "证据层级不同")).firstMatch.waitForExistence(timeout: 5))
+        openChapterSources("v166_alute_4", in: app)
+        XCTAssertTrue(app.descendants(matching: .any)["source_v166_dpm_marriage"].waitForExistence(timeout: 3))
+        app.swipeUp()
+        shot("v166-alute-archive-and-palace-legend", app)
+    }
+
 }
