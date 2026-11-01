@@ -1,5 +1,5 @@
 {
-  "version": 133,
+  "version": 134,
   "reviewed": "2026-10-31",
   "people": [
     {
@@ -18349,6 +18349,211 @@
       "kind": "江苏文人",
       "note": "诗句原意、检举者解释和皇帝定罪必须分层；不能把办案者的谐音推断直接当作作者自白。",
       "dynasty": "qing"
+    },
+    {
+      "id": "q160_eledengbao",
+      "name": "额勒登保",
+      "call": "从苗疆到川楚陕的前线统帅",
+      "temple": "",
+      "era": "嘉庆前中期",
+      "reign": "约1748—1805年",
+      "summary": "由普通马甲升至经略，长期追击流动起事队伍；战功背后是军需、堡寨与地方动员。",
+      "parent": null,
+      "sources": [
+        "v160_qsg344",
+        "v160_cambridge_military"
+      ],
+      "kind": "满洲正黄旗将领",
+      "note": "官修传以忠勇廉洁概括其人，产品同时呈现战争对地方社会的成本。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q160_delengtai",
+      "name": "德楞泰",
+      "call": "连续作战与招抚之间的将领",
+      "temple": "",
+      "era": "嘉庆前中期",
+      "reign": "约1747—1809年",
+      "summary": "参加金川、台湾、廓尔喀、苗疆和白莲教战争，在追击、攻寨与处置俘虏之间承担前线决策。",
+      "parent": null,
+      "sources": [
+        "v160_qsg344",
+        "v160_cambridge_military"
+      ],
+      "kind": "蒙古正黄旗将领",
+      "note": "战功数字来自官军报告，不作现代统计使用。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q160_lebao",
+      "name": "勒保",
+      "call": "把坚壁清野推向三省的经略",
+      "temple": "",
+      "era": "嘉庆前中期",
+      "reign": "1740—1819年",
+      "summary": "多次升降后主持四川军务，推动堡寨清野；策略奏效，也把迁居和供给压力转给乡里。",
+      "parent": null,
+      "sources": [
+        "v160_qsg344",
+        "v160_cambridge_militia"
+      ],
+      "kind": "满洲镶红旗大臣",
+      "note": "不能把战争结束单归于一项政策或一位统帅。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q160_funai",
+      "name": "傅鼐",
+      "call": "苗疆战后屯防与地方治理者",
+      "temple": "",
+      "era": "嘉庆前中期",
+      "reign": "1758—1811年",
+      "summary": "在湘西苗疆推行碉堡、屯田、练兵、学校与诉讼安排，连接战后恢复和族群分隔。",
+      "parent": null,
+      "sources": [
+        "v160_qsg361",
+        "v160_dpm_miao_art"
+      ],
+      "kind": "地方官",
+      "note": "官修政绩数字不能证明政策得到各群体一致接受。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q160_wangconger",
+      "name": "王聪儿",
+      "call": "官书称‘齐王氏’的女性起事领导者",
+      "temple": "",
+      "era": "嘉庆前中期",
+      "reign": "约18世纪后期—1798年",
+      "summary": "与姚之富等率众转战湖北、陕西，成为白莲教战争中少见被记录的女性领导者。",
+      "parent": null,
+      "sources": [
+        "v160_qsg344",
+        "v160_dpm_jiaqing_study"
+      ],
+      "kind": "民间武装领导者",
+      "note": "通行姓名王聪儿不见于同层官修记载；婚姻、年龄和武艺传说不作定论。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q160_yaozhifu",
+      "name": "姚之富",
+      "call": "跨省转战的教门与武装领导者",
+      "temple": "",
+      "era": "嘉庆前中期",
+      "reign": "约18世纪后期—1798年",
+      "summary": "与齐王氏共同在鄂豫陕山地流动作战，最终在清军与乡勇围追中死亡。",
+      "parent": null,
+      "sources": [
+        "v160_qsg344",
+        "v160_dpm_jiaqing_study"
+      ],
+      "kind": "民间武装领导者",
+      "note": "官书主要从追捕者角度记录，组织内部声音极少。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q160_wangsanhuai",
+      "name": "王三槐",
+      "call": "川东起事队伍领导者",
+      "temple": "",
+      "era": "嘉庆前中期",
+      "reign": "约18世纪后期—1798年",
+      "summary": "在川东组织队伍，后经地方官刘清接触而进入勒保营中被捕；其死未立即终结战争。",
+      "parent": null,
+      "sources": [
+        "v160_qsg344",
+        "v160_dpm_jiaqing_study"
+      ],
+      "kind": "民间武装领导者",
+      "note": "招抚与诱捕经过主要由官员传记保存，需标明信息立场。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q160_hongliangji",
+      "name": "洪亮吉",
+      "call": "把学术、舆地与直言连接起来的学者",
+      "temple": "",
+      "era": "嘉庆前中期",
+      "reign": "1746—1809年",
+      "summary": "乾嘉学者与官员，嘉庆亲政初年上书批评吏治和信息壅塞，遭遣戍后获释。",
+      "parent": null,
+      "sources": [
+        "v160_qsg356",
+        "v160_dpm_jiaqing"
+      ],
+      "kind": "学者与官员",
+      "note": "奏议是重要同时代批评，不是全国逐项审计。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q160_lichanggeng",
+      "name": "李长庚",
+      "call": "以船炮和协同追击海上集团的水师将领",
+      "temple": "",
+      "era": "嘉庆前中期",
+      "reign": "1751—1807年",
+      "summary": "长期统率闽浙水师追击蔡牵，推动霆船与炮械建设，最终在海战中受伤去世。",
+      "parent": null,
+      "sources": [
+        "v160_qsg350",
+        "v160_dpm_ruanyuan"
+      ],
+      "kind": "水师将领",
+      "note": "个人勇战不能遮住省际协同与岸上补给的制度问题。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q160_caiqian",
+      "name": "蔡牵",
+      "call": "在闽浙粤与台湾之间活动的海上领导者",
+      "temple": "",
+      "era": "嘉庆前中期",
+      "reign": "1761—1809年",
+      "summary": "整合多支海上队伍，袭击商船、争夺港湾并进攻台湾，最终在闽浙水师合击中死亡。",
+      "parent": null,
+      "sources": [
+        "v160_qsg350",
+        "v160_qsl218",
+        "v160_qsg359"
+      ],
+      "kind": "海上武装领导者",
+      "note": "既不能浪漫化为纯粹反抗，也不能把所有船民与其集团等同。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q160_wangdelu",
+      "name": "王得禄",
+      "call": "从台湾军旅到闽浙海战的将领",
+      "temple": "",
+      "era": "嘉庆前中期",
+      "reign": "1770—1842年",
+      "summary": "参与林爽文事件后升迁，嘉庆十四年与邱良功合击蔡牵，后来继续承担台湾和海防事务。",
+      "parent": null,
+      "sources": [
+        "v160_qsg350",
+        "v160_qsl218"
+      ],
+      "kind": "台湾籍水师将领",
+      "note": "海战经过依赖官军奏报和俘虏供词，功劳排序不作唯一结论。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q160_ruanyuan",
+      "name": "阮元",
+      "call": "把经学教育、地方行政和海防放在一生中的大臣",
+      "temple": "",
+      "era": "嘉庆前中期",
+      "reign": "1764—1849年",
+      "summary": "浙江巡抚任内主持防海、支持李长庚，也创办诂经精舍并整理文献，后来历任封疆。",
+      "parent": null,
+      "sources": [
+        "v160_qsg364",
+        "v160_dpm_ruanyuan"
+      ],
+      "kind": "学者与封疆大吏",
+      "note": "学术成就与军事行政均需具体评价，不能只以乾嘉学者概括。",
+      "dynasty": "qing"
     }
   ],
   "sources": [
@@ -25305,6 +25510,90 @@
       "title": "中国国家博物馆 · 《四库全书》与南北七阁",
       "url": "https://en.chnmuseum.cn/Portals/0/web/exhibition/exhibitions/161120Chines-Epic/",
       "note": "用于编纂时间、收书规模与七阁分藏。馆方数字为工程概述，不等于现存完整册数。"
+    },
+    {
+      "id": "v160_qsg344",
+      "title": "《清史稿》卷344 · 勒保、额勒登保、德楞泰传",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷344",
+      "note": "核对白莲教战争指挥、苗疆经历、堡寨清野与将领奖惩。列传从清廷平乱立场编写，战果数字与人物品评不能直接当作完整战场记录。"
+    },
+    {
+      "id": "v160_qsg350",
+      "title": "《清史稿》卷350 · 李长庚、王得禄等传",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷350",
+      "note": "核对嘉庆海上战争、霆船、水师协同及李长庚战殁。官修传记突出将领功绩，海上群体的生计与政治诉求需另行说明。"
+    },
+    {
+      "id": "v160_qsg356",
+      "title": "《清史稿》卷356 · 洪亮吉传",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷356",
+      "note": "核对洪亮吉任职、上书、遣戍与获释。传中保留奏议长文，但奏议是政治批评与信息来源，不是逐项审计结论。"
+    },
+    {
+      "id": "v160_qsg359",
+      "title": "《清史稿》卷359 · 张师诚等传",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷359",
+      "note": "核对闽浙协同、断绝岸上接济、蔡牵战败和海上善后。列传以官军成功为主线，不能据此把沿海居民整体视为接济者。"
+    },
+    {
+      "id": "v160_qsg361",
+      "title": "《清史稿》卷361 · 傅鼐传",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷361",
+      "note": "核对苗疆屯田、碉堡、练兵和学校等措施。土地与户口数字来自官修履历，不能直接等同公平分配或苗民一致接受。"
+    },
+    {
+      "id": "v160_qsg364",
+      "title": "《清史稿》卷364 · 阮元传",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷364",
+      "note": "核对阮元浙江防海、支持李长庚、诂经精舍与文献整理。传记赞誉需与具体政策、处分和地方成本分开。"
+    },
+    {
+      "id": "v160_dpm_jiaqing",
+      "title": "故宫博物院 · 嘉庆皇帝年表",
+      "url": "https://www.dpm.org.cn/court/lineage/226238.html",
+      "note": "核对受禅、亲政、白莲教战争、蔡牵、天理教与宫廷大事。网页为通史年表，军费总数等仍需结合研究范围辨析。"
+    },
+    {
+      "id": "v160_dpm_miao_art",
+      "title": "故宫博物院 · 《平定苗疆得胜图》",
+      "url": "https://www.dpm.org.cn/ancient/yuanmingqing/163532.html",
+      "note": "核对内府铜版画年代、题名和图像性质。作品是凯旋纪功图，不是连续现场摄影，也不代表苗人视角。"
+    },
+    {
+      "id": "v160_dpm_jiaqing_study",
+      "title": "故宫博物院 · 嘉庆朝社会与政治研究",
+      "url": "https://www.dpm.org.cn/Uploads/File/pdf/a3/a3/a0/a3a3a015122d9b5d7003c561380d6d90.pdf",
+      "note": "用于白莲教战争的流动战术、军中积弊与嘉庆整顿。论文沿用部分传统叛乱称谓，产品改为中性叙述。"
+    },
+    {
+      "id": "v160_dpm_ruanyuan",
+      "title": "故宫博物院 · 阮元研究",
+      "url": "https://www.dpm.org.cn/Uploads/pdf/1533/T00019_00.pdf",
+      "note": "核对诂经精舍、霆船、闽浙水师与蔡牵战争。文章观点和引述需与本传、实录互证。"
+    },
+    {
+      "id": "v160_qsl218",
+      "title": "《仁宗睿皇帝实录》卷218",
+      "url": "https://zh.wikisource.org/wiki/清實錄/仁宗睿皇帝實錄/卷二百十八",
+      "note": "核对1809年王得禄、邱良功追击蔡牵的当日奏报与奖叙。奏报中的供词、战果和死亡判断是官军信息链，不是独立海难调查。"
+    },
+    {
+      "id": "v160_cambridge_military",
+      "title": "Journal of Chinese History · Qing Military Institutions",
+      "url": "https://www.cambridge.org/core/journals/journal-of-chinese-history/article/qing-military-institutions-and-their-effects-on-government-economy-and-society-16401800/E1FDAA965C5B67C12274B2B3408AE206",
+      "note": "研究白莲教战争中的军需、驮畜、跨省财政和地方行政动员，帮助把战役与民众负担放在同一结构中。"
+    },
+    {
+      "id": "v160_cambridge_fiscal",
+      "title": "Financial History Review · Austerity in Times of War",
+      "url": "https://www.cambridge.org/core/journals/financial-history-review/article/abs/austerity-in-times-of-war-government-finance-in-early-nineteenthcentury-china/786CA3B86A8A76FE0BFB9FEF28F591A3",
+      "note": "分析白莲教战争后嘉庆以紧缩和加强控制应对财政压力，避免把个人节俭写成现代财政制度改革。"
+    },
+    {
+      "id": "v160_cambridge_militia",
+      "title": "Journal of Institutional Economics · Regional Armies and the White Lotus War",
+      "url": "https://www.cambridge.org/core/journals/journal-of-institutional-economics/article/last-guardian-of-the-throne-the-regional-army-in-the-late-qing-dynasty/BA85E0DB84C8174D815F9DC2E59A635E",
+      "note": "用于堡寨、团练与乡勇的组织关系。嘉庆时期地方武装仍受官僚体系约束，不能直接等同后来湘军。"
     }
   ],
   "relations": [
@@ -72984,6 +73273,587 @@
       ],
       "kind": "史实与解读",
       "category": "文化"
+    },
+    {
+      "id": "v160_power_split",
+      "year": "1796—1799年",
+      "title": "受禅没有立即完成权力交接",
+      "body": "颙琰改元嘉庆并举行皇帝礼仪，乾隆则以太上皇继续裁断重大政务，和珅仍掌中枢信息。",
+      "impact": "年号与实际决策权存在三年错位；不能把这段时期的命令全部归为嘉庆独立选择。",
+      "people": [
+        "q_jiaqing",
+        "q_qianlong",
+        "q_heshen"
+      ],
+      "sources": [
+        "v5qe_qsg16",
+        "v160_dpm_jiaqing"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v160_heshen_network",
+      "year": "1799年",
+      "title": "查办和珅重组中枢，却未清除制度性积弊",
+      "body": "乾隆去世后嘉庆拘捕和珅、公布罪款并籍没家产，同时调整军机与部院人员。",
+      "impact": "权臣倒台改变人事和财富分配，却没有自动消除馈赠、亏空、捐纳与军需冒销。",
+      "people": [
+        "q_jiaqing",
+        "q_heshen",
+        "q_liuyong"
+      ],
+      "sources": [
+        "v5qe_qsg16",
+        "v40q_qsg319"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v160_hong_memorial",
+      "year": "1799年",
+      "title": "洪亮吉上书直指吏治和信息壅塞",
+      "body": "洪亮吉批评权臣遗留网络、官场夤缘、州县加派和言路不畅，奏书经成亲王转呈。",
+      "impact": "奏书保存了同时代批评，但不能把一人观察当成全国逐县调查；它更能说明中央为何难获真实信息。",
+      "people": [
+        "q160_hongliangji",
+        "q_jiaqing",
+        "q_heshen"
+      ],
+      "sources": [
+        "v160_qsg356",
+        "v160_dpm_jiaqing"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v160_hong_exile",
+      "year": "1799—1800年",
+      "title": "遣戍与赦还暴露求言边界",
+      "body": "嘉庆先以措辞冒犯治洪亮吉罪、改为遣戍伊犁，次年又承认处罚使群臣缄默并释放他。",
+      "impact": "皇帝可以纠正处分，但言官能否安全批评仍取决于君主判断，不是稳定的表达保障。",
+      "people": [
+        "q160_hongliangji",
+        "q_jiaqing",
+        "q_songyun"
+      ],
+      "sources": [
+        "v160_qsg356"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v160_no_general_manager",
+      "year": "1799年",
+      "title": "罢宗室总理部务以防新的权力集中",
+      "body": "亲政后嘉庆撤销部分宗室总理部务安排，强调六部各有专司，不设超越常制的总理名目。",
+      "impact": "这是对乾隆晚年权力结构的修正，却没有改变军机、差使和皇帝授权仍可高度集中资源。",
+      "people": [
+        "q_jiaqing"
+      ],
+      "sources": [
+        "v160_dpm_jiaqing"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v160_miao_land_conflict",
+      "year": "1795—1797年",
+      "title": "湘黔苗疆战争由土地、官府与族群边界交织而起",
+      "body": "石柳邓、石三保等在黔东、湘西起事，冲突涉及屯垦扩张、土地侵占、官役与长期不平等，并迅速跨越厅县边界。",
+      "impact": "不能把战争只解释为少数首领煽动；官书的‘苗匪’是治理分类，不是对所有苗人的中性总称。",
+      "people": [
+        "q_jiaqing",
+        "q159_fukangan",
+        "q160_eledengbao",
+        "q160_delengtai"
+      ],
+      "sources": [
+        "v160_qsg344",
+        "v160_dpm_miao_art"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v160_miao_campaign",
+      "year": "1795—1797年",
+      "title": "苗疆攻寨与反攻延续到嘉庆初年",
+      "body": "福康安、和琳先后去世后，额勒登保、德楞泰、明亮等继续攻取山寨、截断通路并追捕首领。",
+      "impact": "清廷胜利依赖多路军队、地方向导和持续补给；得胜图选择的场面不能覆盖全部伤亡与迁徙。",
+      "people": [
+        "q159_fukangan",
+        "q160_eledengbao",
+        "q160_delengtai",
+        "q_jiaqing"
+      ],
+      "sources": [
+        "v160_qsg344",
+        "v160_dpm_miao_art"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v160_white_lotus_outbreak",
+      "year": "1796年",
+      "title": "湖北起事扩展为川楚陕长期战争",
+      "body": "王聪儿、姚之富、王三槐等不同队伍利用教门网络和山区交通活动，战争从湖北扩展到四川、陕西等地。",
+      "impact": "参与者并非统一中央领导的单一军队；宗教信念、逃难、土地与官府压迫在不同地区组合不同。",
+      "people": [
+        "q160_wangconger",
+        "q160_yaozhifu",
+        "q160_wangsanhuai",
+        "q_jiaqing"
+      ],
+      "sources": [
+        "v5qe_qsg16",
+        "v160_dpm_jiaqing_study"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v160_mobile_war",
+      "year": "1796—1800年",
+      "title": "流动作战使省界防务反复失效",
+      "body": "起事队伍分合转移、穿越山地与省界，官军往往尾追而难以阻截；将领之间还发生推诿与争功。",
+      "impact": "战事拖延不能只归因一名将领无能，地形、情报、军纪、补给和跨省指挥共同决定速度。",
+      "people": [
+        "q160_lebao",
+        "q160_eledengbao",
+        "q160_delengtai",
+        "q160_wangconger"
+      ],
+      "sources": [
+        "v160_qsg344",
+        "v160_dpm_jiaqing_study"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v160_command_changes",
+      "year": "1799—1800年",
+      "title": "嘉庆亲政后连续更换经略与将领",
+      "body": "勒保因战事与军需问题一度被逮，明亮、额勒登保等先后承担统筹，奖惩随前线报告不断变化。",
+      "impact": "频繁换帅表现中央试图纠偏，也可能破坏指挥连续性；诏书中的罪功评价不是完整战场审计。",
+      "people": [
+        "q_jiaqing",
+        "q160_lebao",
+        "q160_eledengbao",
+        "q160_delengtai"
+      ],
+      "sources": [
+        "v160_qsg344",
+        "v5qe_qsg16"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v160_forts_clear",
+      "year": "1799—1804年",
+      "title": "堡寨与清野改变战争空间",
+      "body": "官府推动居民入堡、编练团勇、储粮守隘，并限制起事队伍获得粮食和人员，逐渐压缩其活动范围。",
+      "impact": "策略有效不等于居民自愿；迁居、修堡、供粮与相互识别的成本由地方家庭承担。",
+      "people": [
+        "q160_lebao",
+        "q160_eledengbao",
+        "q_jiaqing"
+      ],
+      "sources": [
+        "v160_qsg344",
+        "v160_cambridge_militia"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v160_wangyao_end",
+      "year": "1798年",
+      "title": "王聪儿与姚之富在追击中死亡",
+      "body": "清军与乡勇在三岔河一带合围，官修材料称齐王氏、姚之富投崖，随后传首各省。",
+      "impact": "死亡经过主要来自胜方军报；‘王聪儿’这一通行姓名与官书‘齐王氏’的差异也应保留。",
+      "people": [
+        "q160_wangconger",
+        "q160_yaozhifu",
+        "q160_delengtai"
+      ],
+      "sources": [
+        "v160_qsg344"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v160_wangsanhuai_capture",
+      "year": "1798年",
+      "title": "王三槐被诱捕没有立即结束川东战争",
+      "body": "地方官刘清与王三槐接触后将其带入勒保营中，清廷拘捕并处死王三槐，余部仍继续活动。",
+      "impact": "首领被捕削弱一支队伍，却不能证明参与者同时解除武装；招抚、欺骗与强制的边界需要明示。",
+      "people": [
+        "q160_wangsanhuai",
+        "q160_lebao"
+      ],
+      "sources": [
+        "v160_qsg344",
+        "v160_dpm_jiaqing_study"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v160_white_lotus_end",
+      "year": "1804年",
+      "title": "大规模战事结束后仍需搜捕、安置与重建",
+      "body": "到嘉庆九年，清廷宣布川楚陕白莲教战争基本结束，残余搜捕和地方重建仍延续。",
+      "impact": "‘平定’是朝廷军事节点，不代表难民即时返乡、田地复耕、债务消失或秘密结社停止。",
+      "people": [
+        "q_jiaqing",
+        "q160_eledengbao",
+        "q160_delengtai",
+        "q160_lebao"
+      ],
+      "sources": [
+        "v160_dpm_jiaqing",
+        "v160_qsg344"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v160_mule_cost",
+      "year": "1796—1804年",
+      "title": "驮畜和运输成为巨额军需",
+      "body": "山区战争需要骡马、脚夫、粮台与道路，研究显示驮畜短缺和经手舞弊显著抬高租用价格。",
+      "impact": "军费不只发生在战场；一头骡的月租、一次转运和一次征役都会重排地方市场与家庭劳动。",
+      "people": [
+        "q160_lebao",
+        "q160_eledengbao"
+      ],
+      "sources": [
+        "v160_cambridge_military"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v160_war_cost",
+      "year": "1796—1804年",
+      "title": "白莲教战争耗尽盛期积储",
+      "body": "长期调兵、粮运、堡寨与赏恤迫使中央动用库存并向富省、商人及民间筹集资源。",
+      "impact": "常见‘二亿两’是特定史料和研究口径下的总数，不能当现代决算精确值；可确认的是财政压力异常巨大。",
+      "people": [
+        "q_jiaqing"
+      ],
+      "sources": [
+        "v160_dpm_jiaqing",
+        "v160_cambridge_military",
+        "v160_cambridge_fiscal"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v160_provincial_arrears",
+      "year": "1796—1804年",
+      "title": "跨省协饷加剧库存与欠解压力",
+      "body": "中央要求多省调银供军，部分省份动用本地储备，战后仍面对欠解、亏空与地方开支。",
+      "impact": "从富省调款不是无成本资金，它会挤压赈济、工程和日常行政；账面总额也不能显示成本落到哪些家庭。",
+      "people": [
+        "q_jiaqing",
+        "q160_hongliangji"
+      ],
+      "sources": [
+        "v160_cambridge_military",
+        "v160_cambridge_fiscal"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v160_fort_household_cost",
+      "year": "1799—1804年",
+      "title": "筑堡与团勇把国防支出分散到乡里",
+      "body": "地方绅民筹粮、筑墙、守寨并供养团勇，官府则登记、调度和奖惩。",
+      "impact": "这些力量仍受州县和兵部体系约束，不能直接称为后来湘军；民间出资也不等于完全自愿。",
+      "people": [
+        "q160_lebao"
+      ],
+      "sources": [
+        "v160_cambridge_militia"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v160_naval_building",
+      "year": "1800年代",
+      "title": "霆船、火炮与省际经费重塑水师竞争",
+      "body": "阮元筹资支持李长庚造大船、配重炮，闽浙粤水师还需协调巡洋、补给和情报。",
+      "impact": "装备优势需要维修、训练与稳定指挥，不能用几艘新船解释全部胜负；造船经费也来自具体财政来源。",
+      "people": [
+        "q160_ruanyuan",
+        "q160_lichanggeng",
+        "q160_caiqian"
+      ],
+      "sources": [
+        "v160_qsg350",
+        "v160_qsg364",
+        "v160_dpm_ruanyuan"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v160_coastal_blockade",
+      "year": "1800—1809年",
+      "title": "断绝岸上接济同时压缩沿海交易",
+      "body": "清廷要求查禁粮食、火药和船料流向海上集团，并加强港口、岛屿和渔船控制。",
+      "impact": "官府所谓‘接济’可能包括自愿交易、胁迫供给与普通贸易；严禁措施也会影响未参与战斗的渔民和商人。",
+      "people": [
+        "q160_lichanggeng",
+        "q160_caiqian",
+        "q160_ruanyuan"
+      ],
+      "sources": [
+        "v160_qsg359",
+        "v160_qsg350"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v160_migrant_frontier",
+      "year": "1790—1804年",
+      "title": "川楚陕交界的移民、土地与基层控制相互挤压",
+      "body": "人口流动把棚民、佣工、佃户和商贩带入山区，行政边界与土地权属却未同步清晰。",
+      "impact": "流动人口不是天然反叛者；缺乏稳定土地、救济和司法渠道，才使秘密网络更具吸引力。",
+      "people": [
+        "q160_wangconger",
+        "q160_yaozhifu",
+        "q160_wangsanhuai"
+      ],
+      "sources": [
+        "v160_dpm_jiaqing_study",
+        "v160_cambridge_militia"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v160_religious_networks",
+      "year": "1790—1804年",
+      "title": "教门既提供信仰互助，也可能转为军事组织",
+      "body": "不同支派以斋戒、治病、劫变预言和师徒关系建立联系，起事后又吸纳未必原先入教的人群。",
+      "impact": "‘白莲教’是官府汇总标签，不能假定各支派教义、组织与目标完全相同，更不能把民间宗教一概等同武装叛乱。",
+      "people": [
+        "q160_wangconger",
+        "q160_yaozhifu",
+        "q160_wangsanhuai"
+      ],
+      "sources": [
+        "v160_dpm_jiaqing_study"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v160_women_war",
+      "year": "1796—1798年",
+      "title": "王聪儿让女性领导者进入战争记录",
+      "body": "官书以‘齐王氏’记载她与姚之富共同转战，后世则通称王聪儿，并附会许多身世细节。",
+      "impact": "可以确认其领导地位与死亡节点；姓名、年龄、婚姻和武艺故事若缺少早期材料，不写成确定事实。",
+      "people": [
+        "q160_wangconger",
+        "q160_yaozhifu"
+      ],
+      "sources": [
+        "v160_qsg344"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v160_miao_postwar",
+      "year": "1797—1811年",
+      "title": "苗疆善后以碉堡、屯田和族群分隔重排空间",
+      "body": "傅鼐主持屯田、练兵、学校与诉讼，并推动土地清理和边界规则，形成战后长期治理。",
+      "impact": "官修传中的垦田、收恤数字是政绩表述，不能证明土地归还公平，也不能代表苗人普遍同意分隔治理。",
+      "people": [
+        "q160_funai",
+        "q_jiaqing"
+      ],
+      "sources": [
+        "v160_qsg361"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v160_refugee_return",
+      "year": "1799—1809年",
+      "title": "难民返乡与复耕并不等于社会恢复原状",
+      "body": "官府招抚、给种、安排屯守并核查户口，许多家庭面对房屋焚毁、亲属失散和债务。",
+      "impact": "‘安插’一词遮住不同处境；返回、迁入堡寨与编入团练对每个家庭并非同一种选择。",
+      "people": [
+        "q160_lebao",
+        "q160_funai"
+      ],
+      "sources": [
+        "v160_qsg361",
+        "v160_cambridge_military"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v160_coastal_society",
+      "year": "1800—1809年",
+      "title": "海上集团连接渔民、商贩、逃亡者与地方势力",
+      "body": "蔡牵等依靠船队、港湾和岸上交易活动，也胁迫船民、袭击商船并一度进攻台湾。",
+      "impact": "不能浪漫化为纯粹海上反抗，也不能把所有船民写成海盗；合作、被迫和避乱同时存在。",
+      "people": [
+        "q160_caiqian",
+        "q160_lichanggeng",
+        "q160_wangdelu"
+      ],
+      "sources": [
+        "v160_qsg350",
+        "v160_qsg359",
+        "v160_qsl218"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v160_labels",
+      "year": "1796—1820年",
+      "title": "‘邪教’‘苗匪’‘海盗’是国家治理语言",
+      "body": "本纪、奏折和纪功图用定罪性称谓组织事件，使不同群体在进入档案时先被归入可镇压类别。",
+      "impact": "产品保留原词只用于解释史料立场，不把官府标签当成参与者自我认同或历史结论。",
+      "people": [
+        "q_jiaqing",
+        "q160_wangconger",
+        "q160_caiqian"
+      ],
+      "sources": [
+        "v5qe_qsg16",
+        "v160_dpm_miao_art",
+        "v160_qsl218"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v160_hong_geography",
+      "year": "1780—1809年",
+      "title": "洪亮吉把经史校勘、舆地与现实批评连接起来",
+      "body": "洪亮吉长期整理古籍、研究地理，也把人口、吏治和地方信息写入议论。",
+      "impact": "学术与政治并非互不相干；但后世人口论解释不能倒置为他已拥有现代统计调查。",
+      "people": [
+        "q160_hongliangji"
+      ],
+      "sources": [
+        "v160_qsg356"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v160_gujing_academy",
+      "year": "1801年",
+      "title": "诂经精舍建立经史与校勘训练路径",
+      "body": "阮元在杭州设诂经精舍，延请学者，以经典、文字、制度和史地研究培养学生。",
+      "impact": "书院教育扩大考据方法的传播，却不代表全国学术只有汉学一种方向，也不是脱离地方财政的纯私人空间。",
+      "people": [
+        "q160_ruanyuan",
+        "q159_daizhen",
+        "q159_qiandaxin"
+      ],
+      "sources": [
+        "v160_qsg364",
+        "v160_dpm_ruanyuan"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v160_victory_images",
+      "year": "1795—1797年",
+      "title": "《平定苗疆得胜图》把复杂战争编成凯旋序列",
+      "body": "内府铜版画选取攻寨、擒获与受降场面，为宫廷纪功和展示服务。",
+      "impact": "图像能研究军装、地形想象与政治叙事，却不是连续现场记录，也没有给被征服者平等发言位置。",
+      "people": [
+        "q159_fukangan",
+        "q160_eledengbao",
+        "q160_delengtai"
+      ],
+      "sources": [
+        "v160_dpm_miao_art"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v160_war_chronicle",
+      "year": "1796—1804年",
+      "title": "《钦定平定教匪纪略》固定朝廷版本的战争次序",
+      "body": "军机与史馆汇集诏旨、奏报编成纪略，把分散战事按皇帝决策和官军进展排列。",
+      "impact": "编纂保存大量材料，也经过筛选和命名；不能据此无缝复原起事者内部讨论或普通村民经验。",
+      "people": [
+        "q_jiaqing",
+        "q160_eledengbao",
+        "q160_lebao"
+      ],
+      "sources": [
+        "v160_dpm_jiaqing_study",
+        "v5qe_qsg16"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v160_lichanggeng_death",
+      "year": "1807年",
+      "title": "李长庚追击蔡牵时中弹身亡",
+      "body": "李长庚在广东外海追击蔡牵船队，战斗中受伤去世，水师统筹随后转由其他将领承担。",
+      "impact": "将领战殁不能只写成忠勇故事，它也暴露跨省指挥、上司掣肘和长期海上补给的困难。",
+      "people": [
+        "q160_lichanggeng",
+        "q160_caiqian",
+        "q160_ruanyuan"
+      ],
+      "sources": [
+        "v160_qsg350",
+        "v160_qsg359"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v160_caiqian_end",
+      "year": "1809年",
+      "title": "王得禄、邱良功合击蔡牵船队",
+      "body": "闽浙水师在渔山外洋围攻蔡牵主船，实录据获俘供词称蔡牵受伤落海，清廷随后大规模奖叙。",
+      "impact": "供词来自战后拘押与官军奏报，不能当作独立法医学记录；但可确认蔡牵集团由此失去核心。",
+      "people": [
+        "q160_caiqian",
+        "q160_wangdelu",
+        "q160_ruanyuan"
+      ],
+      "sources": [
+        "v160_qsl218",
+        "v160_qsg359",
+        "v160_qsg364"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
     }
   ],
   "objects": [
@@ -78126,6 +78996,87 @@
       "sources": [
         "v159_dpm_jinchuan_art",
         "v159_tuebingen_jinchuan"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v160_obj_miao_victory",
+      "title": "《平定苗疆得胜图》",
+      "subtitle": "宫廷凯旋序列之外还有土地与迁徙",
+      "symbol": "photo.on.rectangle.angled",
+      "image": null,
+      "body": "冯宁绘制的内府铜版画以攻寨、擒获和受降组织战争场面，服务乾隆末至嘉庆初的纪功。它能观察宫廷如何想象地形、军队和胜利，却没有连续呈现苗寨家庭、迁徙与战后土地重排。",
+      "note": "不是连续现场摄影，也不能代表苗人共同视角。",
+      "people": [
+        "q159_fukangan",
+        "q160_eledengbao",
+        "q160_delengtai"
+      ],
+      "sources": [
+        "v160_dpm_miao_art"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v160_obj_war_chronicle",
+      "title": "《钦定平定教匪纪略》",
+      "subtitle": "奏报汇编成的国家战争记忆",
+      "symbol": "books.vertical",
+      "image": null,
+      "body": "官修纪略把诏旨、军报和处分按时间编排，形成白莲教战争的朝廷版本。它保存大量具体地点和行动，也把参与者预先放入‘教匪’分类，并以皇帝决策和官军进展组织因果。",
+      "note": "可用于核对官方信息链，不能无缝复原起事者内部与普通村民经验。",
+      "people": [
+        "q_jiaqing",
+        "q160_eledengbao",
+        "q160_lebao"
+      ],
+      "sources": [
+        "v160_dpm_jiaqing_study",
+        "v5qe_qsg16"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v160_obj_hong_memorial",
+      "title": "洪亮吉上军机王大臣书",
+      "subtitle": "求言、获罪与赦还集中在一份奏议周围",
+      "symbol": "doc.text",
+      "image": null,
+      "body": "奏议批评权臣遗留网络、言路、吏治与地方加派，经成亲王转呈后引发重罚。嘉庆次年又承认处分造成缄默并释放洪亮吉，使同一文本成为观察君主求言边界的材料。",
+      "note": "奏议是政治批评和同时代证词，不是全国逐项审计报告。",
+      "people": [
+        "q160_hongliangji",
+        "q_jiaqing",
+        "q_heshen"
+      ],
+      "sources": [
+        "v160_qsg356"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v160_obj_caiqian_report",
+      "title": "嘉庆十四年歼蔡牵奏报",
+      "subtitle": "海战事实、俘虏供词与封赏程序写在同一文本",
+      "symbol": "scroll",
+      "image": null,
+      "body": "《仁宗实录》卷218记录王得禄、邱良功围攻蔡牵主船、使用火器及战后审讯，并紧接将领封赏。文本既提供战术细节，也展示军报如何把供词转成确定战果。",
+      "note": "供词形成于拘押和奏功流程，不能当作独立现场调查。",
+      "people": [
+        "q160_caiqian",
+        "q160_wangdelu",
+        "q160_lichanggeng"
+      ],
+      "sources": [
+        "v160_qsl218"
       ],
       "dynasties": [
         "qing"
@@ -90093,11 +91044,17 @@
           "text": "颙琰生于1760年，是乾隆帝第十五子，早年由秘密建储确定为继承人。1796年乾隆禅位，他即皇帝位，改元嘉庆；但乾隆以太上皇身份继续掌握重大决策，和珅仍是权力中枢。嘉庆前三年因此存在名义皇帝与实际最高统治者并存的局面。礼仪上的禅让并未立即完成政治交接，评价这三年政策不能只按年号归给嘉庆个人。",
           "sources": [
             "v5qe_qsg16",
-            "v5qe_dpm_lineage"
+            "v5qe_dpm_lineage",
+            "v160_dpm_jiaqing"
           ],
           "kind": "史实与解读",
           "events": [
-            "qev_qianlong_abdication_1796"
+            "qev_qianlong_abdication_1796",
+            "v160_power_split"
+          ],
+          "people": [
+            "q_qianlong",
+            "q_heshen"
           ]
         },
         {
@@ -90106,18 +91063,26 @@
           "text": "1799年乾隆去世后，嘉庆帝迅速拘捕和珅，列罪令其自尽，籍没家产，并调整亲信网络。处置和珅具有清理晚年政治、宣示新君权威的作用，也为财政带来一次性收入；它没有建立长期防腐机制。地方亏空、捐纳、人情馈赠和军需侵蚀仍然存在。把国家问题归咎一个权臣，容易忽略让权力和财富得以聚集的制度环境。",
           "sources": [
             "v5qe_qsg16",
-            "v40q_qsg302"
+            "v40q_qsg302",
+            "v40q_qsg319",
+            "v160_qsg356",
+            "v160_dpm_jiaqing"
           ],
           "kind": "史实与解读",
           "events": [
             "qev_jiaqing_rule_1799",
             "qev_heshen_fall_1799",
-            "v40q_jiaqing_grain"
+            "v40q_jiaqing_grain",
+            "v160_heshen_network",
+            "v160_hong_memorial",
+            "v160_hong_exile",
+            "v160_no_general_manager"
           ],
           "people": [
             "q_heshen",
             "q_liuyong",
-            "q_jiyun"
+            "q_jiyun",
+            "q160_hongliangji"
           ]
         },
         {
@@ -90125,11 +91090,41 @@
           "title": "白莲教战争的消耗",
           "text": "川楚陕白莲教起事从1796年延续到1804年。地方民众在移民、土地、赋役和秘密宗教网络中形成反抗，清廷依赖绿营、乡勇与坚壁清野等办法镇压。军费巨大，冒领、虚报与养寇自重等弊端暴露八旗和绿营战斗力下降。嘉庆亲政后整顿军纪并更换将领，最终结束大规模战争，但社会创伤、财政损失和地方武装化影响延续。",
           "sources": [
-            "v5qe_qsg16"
+            "v5qe_qsg16",
+            "v160_dpm_jiaqing_study",
+            "v160_qsg344",
+            "v160_cambridge_militia",
+            "v160_dpm_jiaqing",
+            "v160_cambridge_military",
+            "v160_cambridge_fiscal",
+            "v160_qsg361"
           ],
           "kind": "史实与解读",
           "events": [
-            "qev_white_lotus_1796"
+            "qev_white_lotus_1796",
+            "v160_white_lotus_outbreak",
+            "v160_mobile_war",
+            "v160_command_changes",
+            "v160_forts_clear",
+            "v160_wangyao_end",
+            "v160_wangsanhuai_capture",
+            "v160_white_lotus_end",
+            "v160_mule_cost",
+            "v160_war_cost",
+            "v160_provincial_arrears",
+            "v160_fort_household_cost",
+            "v160_migrant_frontier",
+            "v160_religious_networks",
+            "v160_women_war",
+            "v160_refugee_return"
+          ],
+          "people": [
+            "q160_eledengbao",
+            "q160_delengtai",
+            "q160_lebao",
+            "q160_wangconger",
+            "q160_yaozhifu",
+            "q160_wangsanhuai"
           ]
         },
         {
@@ -90140,15 +91135,32 @@
             "v5qe_qsg16",
             "v5qe_dpm_reader",
             "v42q_qsg342",
-            "v42q_xinjiang_tun"
+            "v42q_xinjiang_tun",
+            "v160_qsg344",
+            "v160_dpm_miao_art",
+            "v160_qsg361",
+            "v160_qsg356",
+            "v160_qsg364",
+            "v160_dpm_ruanyuan",
+            "v160_dpm_jiaqing_study"
           ],
           "kind": "史实与解读",
           "events": [
             "v42q_ili_canals",
-            "v42q_xinjiang_budget"
+            "v42q_xinjiang_budget",
+            "v160_miao_land_conflict",
+            "v160_miao_campaign",
+            "v160_miao_postwar",
+            "v160_victory_images",
+            "v160_hong_geography",
+            "v160_gujing_academy",
+            "v160_war_chronicle"
           ],
           "people": [
-            "q_songyun"
+            "q_songyun",
+            "q160_funai",
+            "q160_hongliangji",
+            "q160_ruanyuan"
           ]
         },
         {
@@ -90156,11 +91168,18 @@
           "title": "宫门遇袭与秩序裂缝",
           "text": "1813年天理教徒在内应协助下攻入紫禁城，虽然很快被镇压，却使皇权中心的防卫漏洞暴露。嘉庆帝当时在热河，返京后承认事出有因，并处分失职人员。袭击不是全国政权即将崩溃的证明，却显示秘密结社、地方不满与宫廷管理能够意外交会。朝廷随后加强查禁和保甲，安全控制更加严密，社会问题本身并未因此消失。",
           "sources": [
-            "v5qe_qsg16"
+            "v5qe_qsg16",
+            "v160_dpm_miao_art",
+            "v160_qsl218"
           ],
           "kind": "史实与解读",
           "events": [
-            "v12_jiaqing_palace_attack"
+            "v12_jiaqing_palace_attack",
+            "v160_labels"
+          ],
+          "people": [
+            "q160_wangconger",
+            "q160_caiqian"
           ]
         },
         {
@@ -90168,10 +91187,27 @@
           "title": "海疆与对外贸易",
           "text": "嘉庆朝继续限制民间海上活动，镇压华南海盗，并维持广州贸易体制。英国使团再次来华时，礼仪和通商要求仍无结果。清廷并非完全不知道海外变化，但获取信息常经过地方官与既有朝贡框架，难以形成持续的海防、财政和外交调整。鸦片输入与白银流动问题逐渐严重，为道光朝危机累积条件。这里更像制度反应迟缓，而非某次会见的单一失误。",
           "sources": [
-            "v5qe_qsg16"
+            "v5qe_qsg16",
+            "v160_qsg350",
+            "v160_qsg364",
+            "v160_dpm_ruanyuan",
+            "v160_qsg359",
+            "v160_qsl218"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [
+            "v160_naval_building",
+            "v160_coastal_blockade",
+            "v160_coastal_society",
+            "v160_lichanggeng_death",
+            "v160_caiqian_end"
+          ],
+          "people": [
+            "q160_lichanggeng",
+            "q160_caiqian",
+            "q160_wangdelu",
+            "q160_ruanyuan"
+          ]
         },
         {
           "id": "q-jiaqing-7",
@@ -90179,19 +91215,47 @@
           "text": "1820年嘉庆帝在承德避暑山庄去世，终年六十一岁。密建皇储诏书一度寻找周折，最终由旻宁继位。颙琰葬清西陵昌陵，庙号仁宗。他亲政后二十一年，结束白莲教战争、惩治和珅并削减部分浮费，但国家仍面对财政紧张、军队衰弱、河工负担和鸦片贸易。嘉庆不是毫无作为的过渡人物，他的局限恰好说明个别整顿难以替代结构改革。\n\n皇权安全与民间社会之间。白莲教战争和天理教入宫之后，嘉庆朝加强对结社、宗教活动、户籍和流动人口的查禁。秘密宗教为一些移民和贫困群体提供互助、信念和组织，也可能转化为武装反抗；官府往往把不同活动一并归为邪教，造成扩大追捕。嘉庆帝屡次要求官员不准讳报灾情和案件，说明信息被层层过滤是持续问题。地方官若早报可能承担失察责任，迟报又会让事态扩大，这种激励使中央命令难以自动改善治理。与此同时，人口继续增长，旗人生计、河工和漕运费用没有根本解决。国家强化控制能暂时压低事件，却未必减少民众加入结社的社会原因。\n\n嘉庆朝还面对皇族与旗人生计问题。八旗人口增加，固定俸饷、土地和差使难以覆盖所有成员，部分旗人贫困加深。朝廷尝试限制奢侈、清理债务和安排生计，但旗籍特权与财政负担彼此牵连，很难彻底改革。这个问题延续到晚清，也说明清朝统治核心群体内部并非人人富足，身份优势和生活困境可以同时存在。",
           "sources": [
             "v5qe_qsg16",
-            "v5qe_dpm_lineage"
+            "v5qe_dpm_lineage",
+            "v160_dpm_jiaqing",
+            "v160_qsg344",
+            "v160_cambridge_military",
+            "v160_cambridge_fiscal",
+            "v160_qsg361"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [
+            "v160_white_lotus_end",
+            "v160_war_cost",
+            "v160_refugee_return"
+          ],
+          "people": [
+            "q160_eledengbao",
+            "q160_funai"
+          ]
         }
       ],
       "sources": [
         "v5qe_qsg16",
         "v5qe_dpm_lineage",
-        "v5qe_dpm_reader",
+        "v160_dpm_jiaqing",
         "v40q_qsg302",
+        "v40q_qsg319",
+        "v160_qsg356",
+        "v160_dpm_jiaqing_study",
+        "v160_qsg344",
+        "v160_cambridge_militia",
+        "v160_cambridge_military",
+        "v160_cambridge_fiscal",
+        "v160_qsg361",
+        "v5qe_dpm_reader",
         "v42q_qsg342",
-        "v42q_xinjiang_tun"
+        "v42q_xinjiang_tun",
+        "v160_dpm_miao_art",
+        "v160_qsg364",
+        "v160_dpm_ruanyuan",
+        "v160_qsl218",
+        "v160_qsg350",
+        "v160_qsg359"
       ]
     },
     {
@@ -192567,6 +193631,1154 @@
         "v159_dpm_siku_removed",
         "v159_dpm_text_cases"
       ]
+    },
+    {
+      "person": "q160_eledengbao",
+      "title": "额勒登保：追击之外还有军需和村寨",
+      "dek": "从普通马甲到经略大臣，他的升迁说明战争机器如何选拔将领，也显示胜利怎样依赖地方社会。",
+      "sections": [
+        {
+          "id": "v160_eledengbao1",
+          "title": "从边疆战事进入嘉庆危机",
+          "text": "额勒登保早年以马甲参加缅甸、金川、台湾和廓尔喀等战争，逐步升任侍卫与都统。乾隆末年苗疆战争爆发，他与德楞泰随福康安赴前线。长期边疆经验使他熟悉攻寨、山地行军和多路协同，却不能把这些战场视为相同环境：苗疆、川楚陕山区与西南边界各有道路、语言和补给条件。官修传把连续升迁解释为勇略，实际还包括皇帝赏罚、统帅举荐和组织对熟练军官的依赖。",
+          "sources": [
+            "v160_qsg344"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_miao_campaign"
+          ],
+          "people": [
+            "q160_delengtai",
+            "q159_fukangan"
+          ]
+        },
+        {
+          "id": "v160_eledengbao2",
+          "title": "流动战使追击变成消耗",
+          "text": "白莲教战争中，额勒登保面对的是分散、重组并穿越省界的队伍。官军即使赢下一场战斗，也可能因道路、粮台和情报迟滞失去目标。他后来接任经略并强化多路堵截，不是简单凭勇气获得胜利。驮畜价格、脚夫供给、地方官办粮与伤病安置共同决定部队能走多远。将传中的日行里数和斩获数量属于军报体系，不能直接当现代战场统计。",
+          "sources": [
+            "v160_qsg344",
+            "v160_cambridge_military"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_mobile_war",
+            "v160_mule_cost"
+          ],
+          "people": [
+            "q160_lebao"
+          ]
+        },
+        {
+          "id": "v160_eledengbao3",
+          "title": "堡寨改变的是人与粮食的去向",
+          "text": "战争后期，官军以堡寨、团勇和清野压缩起事队伍的补给。额勒登保的追击因此与州县登记、乡里守隘和居民迁入堡寨结合。它有效阻止流动队伍得到粮食，却把筑墙、轮守、运粮和辨认陌生人的责任交给村社。参与团勇不一定来自自由选择，拒绝迁入也可能被视为可疑。军事成效与社会强制必须同时呈现。",
+          "sources": [
+            "v160_qsg344",
+            "v160_cambridge_militia"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_forts_clear",
+            "v160_fort_household_cost"
+          ],
+          "people": [
+            "q160_lebao"
+          ]
+        },
+        {
+          "id": "v160_eledengbao4",
+          "title": "平定日期不是恢复日期",
+          "text": "1804年前后大规模战事结束，额勒登保获得封爵和纪功。对朝廷而言，首领被擒、队伍解散和州县重新报平构成胜利；对普通家庭而言，返乡、找回田地、偿还债务和重建房屋可能持续更久。档案较多记录统帅与战果，较少连续追踪妇女、儿童、逃户和被征调者。因而不能以一项封赏替代整个地区的战后史。",
+          "sources": [
+            "v160_qsg344",
+            "v160_cambridge_military"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_white_lotus_end",
+            "v160_refugee_return"
+          ],
+          "people": [
+            "q_jiaqing"
+          ]
+        },
+        {
+          "id": "v160_eledengbao5",
+          "title": "功臣叙事之外的制度问题",
+          "text": "额勒登保1805年去世，官修传以忠廉和战功收束一生。他确是战争后期的重要统帅，但胜利也依靠德楞泰、勒保、地方官、乡勇、脚夫和被迫迁入堡寨的居民。白莲教战争耗费巨大，暴露军纪、虚报和跨省财政问题。把他写成个人英雄会遗漏真正值得学习的部分：国家如何动员资源，以及这套动员为何在取胜同时削弱财政。",
+          "sources": [
+            "v160_qsg344",
+            "v160_cambridge_fiscal"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_war_cost",
+            "v160_provincial_arrears"
+          ],
+          "people": [
+            "q160_delengtai",
+            "q160_lebao"
+          ]
+        }
+      ],
+      "sources": [
+        "v160_qsg344",
+        "v160_cambridge_military",
+        "v160_cambridge_militia",
+        "v160_cambridge_fiscal"
+      ]
+    },
+    {
+      "person": "q160_delengtai",
+      "title": "德楞泰：战功、俘虏与山地战争",
+      "dek": "他几乎参加乾嘉之际所有重要战事；真正的历史问题不是勇猛标签，而是连续战争怎样塑造决策。",
+      "sections": [
+        {
+          "id": "v160_delengtai1",
+          "title": "一名职业军人的形成",
+          "text": "德楞泰从前锋、蓝翎长起步，先后参加金川、台湾和廓尔喀战争，乾隆末年又进入苗疆。他的履历说明清代精锐将领依靠跨战区调动积累经验，也长期依赖皇帝赏赐与统帅评价。宫廷纪功画把不同战争压缩为连续胜利，实际每次调动都伴随新的地形、补给和地方关系。",
+          "sources": [
+            "v160_qsg344",
+            "v160_dpm_miao_art"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_miao_campaign"
+          ],
+          "people": [
+            "q160_eledengbao"
+          ]
+        },
+        {
+          "id": "v160_delengtai2",
+          "title": "追击王聪儿与姚之富",
+          "text": "1798年，德楞泰等追击齐王氏、姚之富，官军与乡勇在山地夹击，官书称二人投崖。这个节点打击了一支重要队伍，却没有结束川楚陕战事。死亡经过来自追击者报告，后世通行的王聪儿姓名、年龄和武艺故事并非都能在同层材料得到证明。对手不是无名背景，而是解释战争组织不可缺少的人。",
+          "sources": [
+            "v160_qsg344"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_wangyao_end",
+            "v160_women_war"
+          ],
+          "people": [
+            "q160_wangconger",
+            "q160_yaozhifu"
+          ]
+        },
+        {
+          "id": "v160_delengtai3",
+          "title": "攻寨胜利也可能伴随惩罚失衡",
+          "text": "德楞泰多次攻取山寨、救援受困官军，也在招抚和处置俘虏中作出选择。列传强调其‘仁及俘虏’，这是一种官方人物评价，不足以覆盖部队对沿途居民的征用和报复。战争中的投降、被俘、迁入堡寨与普通避难身份可能重叠，不能只靠官军标签判定每个人。",
+          "sources": [
+            "v160_qsg344",
+            "v160_cambridge_military"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_mobile_war",
+            "v160_refugee_return"
+          ],
+          "people": [
+            "q160_wangsanhuai"
+          ]
+        },
+        {
+          "id": "v160_delengtai4",
+          "title": "军粮决定山路上的速度",
+          "text": "官修传喜写疾驰和突袭，但数千人的行动依赖粮台、骡马、桥路和地方差役。白莲教战争中驮畜租价上涨，一部分来自短缺，一部分来自经手舞弊。将领是否能追上对手，与能否及时付饷、补充鞋衣、安置伤员直接相关。勇敢是事实的一部分，组织条件才解释为什么同一支军队时胜时败。",
+          "sources": [
+            "v160_cambridge_military",
+            "v160_qsg344"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_mule_cost",
+            "v160_provincial_arrears"
+          ],
+          "people": [
+            "q160_eledengbao"
+          ]
+        },
+        {
+          "id": "v160_delengtai5",
+          "title": "从胜利者传记回到战争全景",
+          "text": "德楞泰后来获封，继续任军政要职。清廷把他与额勒登保、勒保并列为平乱功臣，这种排序反映朝廷奖励体系，不是对所有参战者贡献和损失的完整衡量。理解他，需要把苗疆图像、川楚陕军报与财政研究放在一起：将领的判断重要，乡勇与居民的劳动同样构成结果，战争结束也没有让地方生活立即复原。",
+          "sources": [
+            "v160_qsg344",
+            "v160_cambridge_fiscal"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_white_lotus_end",
+            "v160_war_cost"
+          ],
+          "people": [
+            "q160_eledengbao",
+            "q160_lebao"
+          ]
+        }
+      ],
+      "sources": [
+        "v160_qsg344",
+        "v160_dpm_miao_art",
+        "v160_cambridge_military",
+        "v160_cambridge_fiscal"
+      ]
+    },
+    {
+      "person": "q160_lebao",
+      "title": "勒保：堡寨策略的成效与代价",
+      "dek": "他不是简单的败将或功臣；多次升降背后，是中央如何在战争失控时寻找可执行方案。",
+      "sections": [
+        {
+          "id": "v160_lebao1",
+          "title": "从封疆到川楚军务",
+          "text": "勒保出身费莫氏，历任地方与军政职务。白莲教战争初期，他在川东承担招抚和作战，既有擒获王三槐的功劳，也因进展、奏报和军需问题受到严厉处分。多次起落说明嘉庆初年的指挥体系缺乏稳定答案，皇帝依据不断变化的报告决定奖惩，不能把每次撤换都当成已经完成的责任审判。",
+          "sources": [
+            "v160_qsg344",
+            "v5qe_qsg16"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_command_changes"
+          ],
+          "people": [
+            "q_jiaqing",
+            "q160_wangsanhuai"
+          ]
+        },
+        {
+          "id": "v160_lebao2",
+          "title": "王三槐被捕后的未完战争",
+          "text": "地方官刘清进入起事者活动区，与王三槐建立接触，随后王三槐进入勒保营中被拘。官修传把这写成招抚与擒获之功，但从当事者角度看也包含信任、诱导和强制。首领被处死后余部继续活动，证明组织不是只有一个中心。把‘擒首即平乱’写成直线因果，会抹去地区网络和民众选择。",
+          "sources": [
+            "v160_qsg344",
+            "v160_dpm_jiaqing_study"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_wangsanhuai_capture"
+          ],
+          "people": [
+            "q160_wangsanhuai"
+          ]
+        },
+        {
+          "id": "v160_lebao3",
+          "title": "坚壁清野为何奏效",
+          "text": "勒保推动居民集中入堡、训练团勇、储存粮食并封锁通道，使流动队伍越来越难获得补给与新成员。策略从军事角度有效，也改变村庄生活：家庭要搬迁、筑墙、轮守，田地可能远离住所，陌生人与逃难者更容易被怀疑。国家把部分战争成本转移到乡里，地方绅民也由此获得新的组织资源。成效与代价不能拆开。",
+          "sources": [
+            "v160_qsg344",
+            "v160_cambridge_militia"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_forts_clear",
+            "v160_fort_household_cost"
+          ],
+          "people": [
+            "q160_eledengbao"
+          ]
+        },
+        {
+          "id": "v160_lebao4",
+          "title": "经略不是独自指挥全部前线",
+          "text": "勒保需要协调额勒登保、德楞泰、州县官、粮台和乡勇。山地道路使命令与实情存在时差，军报还可能夸大战果、隐藏亏空。嘉庆亲政后加强问责，并未自动获得透明信息。洪亮吉对吏治和层层加派的批评，恰好说明战争行政如何嵌入既有官场。统帅可以调整部署，却无法一人改造整套财政和监察。",
+          "sources": [
+            "v160_qsg344",
+            "v160_qsg356"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_hong_memorial",
+            "v160_provincial_arrears"
+          ],
+          "people": [
+            "q160_hongliangji"
+          ]
+        },
+        {
+          "id": "v160_lebao5",
+          "title": "功劳排序不能代替社会史",
+          "text": "战后官修传把额勒登保列第一、德楞泰次之、勒保再次，并称三者相辅。这样的评价解释了朝廷如何纪功，却没有记录被迁入堡寨者、运输者和返乡难民的全部经验。勒保的重要性正在于，他让我们看见一项有效政策如何同时扩大基层控制。历史评价不需要否定军事成效，而要把谁承担了成效的成本说清楚。",
+          "sources": [
+            "v160_qsg344",
+            "v160_cambridge_military"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_white_lotus_end",
+            "v160_refugee_return"
+          ],
+          "people": [
+            "q160_eledengbao",
+            "q160_delengtai"
+          ]
+        }
+      ],
+      "sources": [
+        "v160_qsg344",
+        "v5qe_qsg16",
+        "v160_dpm_jiaqing_study",
+        "v160_cambridge_militia",
+        "v160_qsg356",
+        "v160_cambridge_military"
+      ]
+    },
+    {
+      "person": "q160_funai",
+      "title": "傅鼐：苗疆善后不是战争脚注",
+      "dek": "屯田、碉堡、学校和诉讼共同重画地方秩序；这些措施既有恢复，也有强制分隔。",
+      "sections": [
+        {
+          "id": "v160_funai1",
+          "title": "战争结束之后仍有十余年工作",
+          "text": "傅鼐在苗疆长期任职，面对的不是一张已经恢复平静的地图。村寨被毁、人口迁徙、土地争议和武器收缴持续存在。他设置诉讼渠道、处理民苗纠纷并组织屯防，说明所谓善后包含日常行政，而不只是奖赏战功。官修传以能员叙述其成果，实际执行还依赖当地通事、屯丁、寨首和普通家庭。",
+          "sources": [
+            "v160_qsg361"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_miao_postwar",
+            "v160_refugee_return"
+          ],
+          "people": [
+            "q_jiaqing"
+          ]
+        },
+        {
+          "id": "v160_funai2",
+          "title": "屯田和碉堡重排土地",
+          "text": "傅鼐推动官垦、官赎与屯丁田，并修筑大量碉堡。它们为驻防和粮食提供基础，也重新规定哪些土地属于屯防、民户或苗寨。官书记录的亩数反映行政目标和政绩呈报，不能直接证明边界测量无误、补偿公平或旧有使用权得到承认。‘垦荒’也不等于此前无人使用。",
+          "sources": [
+            "v160_qsg361"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_miao_postwar"
+          ],
+          "people": [
+            "q160_lebao"
+          ]
+        },
+        {
+          "id": "v160_funai3",
+          "title": "学校与禁令并存",
+          "text": "傅鼐兴办书院、义学并增加考试名额，同时要求限制被官府视为耗财或滋事的仪式和武器。教育提供新的晋升路径，也把国家认可的文字、礼俗和身份标准带入地方。不能只用教化进步概括，因为同一政策还包含监控、分类和改变生活方式。苗人入学的个案不代表所有村寨都接受相同安排。",
+          "sources": [
+            "v160_qsg361"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_labels",
+            "v160_miao_postwar"
+          ],
+          "people": []
+        },
+        {
+          "id": "v160_funai4",
+          "title": "‘民苗为二’不是自然边界",
+          "text": "官修传称傅鼐希望兵农相卫、民苗分治，这显示国家试图减少冲突，也把族群身份固定为治理边界。现实中的土地租佃、婚姻、市场和劳动往来不会因一条章程完全分开。战争后的安全需要与长期交往并存，若把分类当成天然事实，就会遮住地方社会原有的混合关系。",
+          "sources": [
+            "v160_qsg361",
+            "v160_dpm_miao_art"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_miao_land_conflict",
+            "v160_labels"
+          ],
+          "people": []
+        },
+        {
+          "id": "v160_funai5",
+          "title": "政绩数字需要保留出处边界",
+          "text": "列传列出碉堡、屯田、难民、练兵和学校数量，并引用皇帝褒奖。这些数字可以说明政策规模，却不是现代独立审计，更不能证明每户获得同等收益。傅鼐的价值，在于把战后治理的多个层面留下记录；其局限，也在以国家安全和分隔秩序为中心。阅读时应同时追问土地由谁让出、劳役由谁承担、申诉是否真正可达。",
+          "sources": [
+            "v160_qsg361"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_miao_postwar",
+            "v160_refugee_return"
+          ],
+          "people": [
+            "q_jiaqing"
+          ]
+        }
+      ],
+      "sources": [
+        "v160_qsg361",
+        "v160_dpm_miao_art"
+      ]
+    },
+    {
+      "person": "q160_wangconger",
+      "title": "王聪儿：从‘齐王氏’残片中辨认女性领导者",
+      "dek": "可靠材料确认她参与领导和转战，却没有支持所有后世传奇。",
+      "sections": [
+        {
+          "id": "v160_wangconger1",
+          "title": "名字本身就是史料问题",
+          "text": "官修传多称她为‘齐王氏’，后世通行‘王聪儿’。可以确认的是，她与姚之富共同领导湖北起事队伍，并在省界山地转战；至于出生地、确切年龄、婚姻和幼年习武等故事，材料层次并不一致。产品保留通行姓名便于寻找，同时在正文说明官书称谓，避免把流行传说伪装成档案事实。",
+          "sources": [
+            "v160_qsg344"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_women_war"
+          ],
+          "people": [
+            "q160_yaozhifu"
+          ]
+        },
+        {
+          "id": "v160_wangconger2",
+          "title": "宗教网络不是唯一解释",
+          "text": "参与者借助教门师徒、斋戒和劫变信念建立联系，但队伍还吸收逃难者、佃户、佣工和被战事卷入的人。把王聪儿只写成邪教首领，会重复清廷定罪语言；把她只写成农民英雄，也会忽略队伍征粮、武装冲突和内部差异。更可靠的做法，是区分信仰组织、社会压力与战争行动。",
+          "sources": [
+            "v160_dpm_jiaqing_study"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_religious_networks",
+            "v160_migrant_frontier"
+          ],
+          "people": [
+            "q160_wangsanhuai"
+          ]
+        },
+        {
+          "id": "v160_wangconger3",
+          "title": "流动战术来自地理和组织",
+          "text": "王聪儿、姚之富率队穿越湖北、河南、陕西等地，在山路和省界间避开重兵。分散、合并与快速转移使官军难以围堵，也让补给依赖沿途居民、教门网络和夺取资源。机动并非浪漫的游侠生活，伤病、饥饿、家庭离散和追兵同样伴随行军。官军报告关注追剿，很少留下队伍内部的日常记录。",
+          "sources": [
+            "v160_qsg344",
+            "v160_dpm_jiaqing_study"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_white_lotus_outbreak",
+            "v160_mobile_war"
+          ],
+          "people": [
+            "q160_yaozhifu",
+            "q160_delengtai"
+          ]
+        },
+        {
+          "id": "v160_wangconger4",
+          "title": "1798年的死亡仍由胜方叙述",
+          "text": "德楞泰等与乡勇合围后，官书称齐王氏、姚之富投崖而死，并传首三省。这个节点可以作为一支队伍瓦解的时间，但具体死亡过程来自追击者军报，无法像现代调查那样独立复核。首领死亡后战争仍延续多年，也说明起事不是由两个人遥控的单一组织。",
+          "sources": [
+            "v160_qsg344"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_wangyao_end",
+            "v160_white_lotus_end"
+          ],
+          "people": [
+            "q160_delengtai"
+          ]
+        },
+        {
+          "id": "v160_wangconger5",
+          "title": "她为何值得单列",
+          "text": "女性在战争中还承担运输、照料、逃难和维持家庭等角色，却很少以姓名进入档案。王聪儿之所以突出，一方面因为确实进入领导层，另一方面因为清廷需要标识重要追捕对象。单列她不是为了制造传奇，而是提醒读者：档案可见性由权力和异常性决定。她的传记必须同时展示能确认的行动、不能确认的细节与官书命名的限制。",
+          "sources": [
+            "v160_qsg344",
+            "v160_dpm_jiaqing_study"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_women_war",
+            "v160_labels"
+          ],
+          "people": [
+            "q160_yaozhifu"
+          ]
+        }
+      ],
+      "sources": [
+        "v160_qsg344",
+        "v160_dpm_jiaqing_study"
+      ]
+    },
+    {
+      "person": "q160_yaozhifu",
+      "title": "姚之富：被追击记录照亮的组织者",
+      "dek": "关于他的材料主要来自敌方军报，因此每一项结论都要区分行动与评价。",
+      "sections": [
+        {
+          "id": "v160_yaozhifu1",
+          "title": "从教门关系进入战争",
+          "text": "姚之富与齐王氏共同领导湖北起事力量，随后跨越豫陕山地活动。现存官修材料重在追捕路线、战斗和家属被获，较少说明其早年生活和内部职务。可以确认的，是他在多支队伍协调和转移中发挥作用；不能凭‘教首’一词推断所有参与者对他绝对服从。",
+          "sources": [
+            "v160_qsg344"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_white_lotus_outbreak"
+          ],
+          "people": [
+            "q160_wangconger"
+          ]
+        },
+        {
+          "id": "v160_yaozhifu2",
+          "title": "家属被捕也是战争手段",
+          "text": "官军追击中捕获姚之富的母亲、儿媳和孙辈，这些记载表明战争把家庭关系纳入情报和压力体系。官书通常把家属作为战果附带记录，却很少描述她们是否参与、如何被讯问及后来命运。不能因为与首领有亲属关系，就自动把所有家庭成员写成同等责任人。",
+          "sources": [
+            "v160_qsg344"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_mobile_war",
+            "v160_labels"
+          ],
+          "people": [
+            "q160_delengtai"
+          ]
+        },
+        {
+          "id": "v160_yaozhifu3",
+          "title": "跨省移动带来补给与风险",
+          "text": "姚之富所部在湖北、河南、陕西之间转移，试图避开围堵并寻找粮食和新成员。山区给了隐蔽，也造成道路狭窄、粮食不足和伤病难治。沿途居民可能主动支持、被迫供给或躲入堡寨，三种状态不能混成一个‘群众基础’。同一移动策略既延长抵抗，也扩大地方社会承受的战争范围。",
+          "sources": [
+            "v160_dpm_jiaqing_study",
+            "v160_cambridge_military"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_mobile_war",
+            "v160_forts_clear"
+          ],
+          "people": [
+            "q160_eledengbao"
+          ]
+        },
+        {
+          "id": "v160_yaozhifu4",
+          "title": "与王聪儿共同死亡的证据边界",
+          "text": "1798年官军和乡勇在山地合围，列传称二人投崖。由于材料来自胜方，能够确认的是他们在这一阶段退出战争、清廷随后展示首级；难以确认的是最后时刻的全部细节。后世把两人关系写成固定夫妻搭档，也需要区分通行叙述与早期记载。",
+          "sources": [
+            "v160_qsg344"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_wangyao_end"
+          ],
+          "people": [
+            "q160_wangconger",
+            "q160_delengtai"
+          ]
+        },
+        {
+          "id": "v160_yaozhifu5",
+          "title": "首领死亡没有结束结构性问题",
+          "text": "姚之富死后，川楚陕仍有多支队伍活动，官军继续依靠堡寨、团勇和巨额军需。由此可见，战争并非清除几名首领即可解决。移民土地、基层勒索、宗教网络和军事化已经彼此嵌合。人物传记的作用，是帮助定位一条行动路径，而不是把整场战争缩成个人成败。",
+          "sources": [
+            "v160_cambridge_militia",
+            "v160_cambridge_fiscal"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_white_lotus_end",
+            "v160_migrant_frontier"
+          ],
+          "people": [
+            "q_jiaqing"
+          ]
+        }
+      ],
+      "sources": [
+        "v160_qsg344",
+        "v160_dpm_jiaqing_study",
+        "v160_cambridge_military",
+        "v160_cambridge_militia",
+        "v160_cambridge_fiscal"
+      ]
+    },
+    {
+      "person": "q160_wangsanhuai",
+      "title": "王三槐：招抚、诱捕与川东战争",
+      "dek": "他的结局揭示‘招抚’既是谈判渠道，也可能成为国家战争技术。",
+      "sections": [
+        {
+          "id": "v160_wangsanhuai1",
+          "title": "川东队伍不是湖北起事的简单分支",
+          "text": "王三槐在川东活动，与当地教门、移民和山地社会结合。白莲教战争被后世统称为一场起义，但不同地区的首领、路线和诉求并不完全一致。官书以统一的贼目名单便于追捕，不能因此假定存在一个命令全国的中央。川东的道路、场镇和边界，使队伍既能转移，也依赖具体社区。",
+          "sources": [
+            "v160_dpm_jiaqing_study"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_white_lotus_outbreak",
+            "v160_migrant_frontier"
+          ],
+          "people": [
+            "q160_wangconger"
+          ]
+        },
+        {
+          "id": "v160_wangsanhuai2",
+          "title": "刘清接触与进入军营",
+          "text": "地方官刘清凭借地方声望与王三槐接触，随后王三槐随其进入勒保营中，被拘押并送往处置。清方记载把过程归为擒获功劳，却也显示谈判建立在不对称权力与人质风险之上。把它只称为主动投降或纯粹诱骗都过于简单，现有材料不足以复原双方全部承诺。",
+          "sources": [
+            "v160_qsg344"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_wangsanhuai_capture"
+          ],
+          "people": [
+            "q160_lebao"
+          ]
+        },
+        {
+          "id": "v160_wangsanhuai3",
+          "title": "首领被捕与余部延续",
+          "text": "王三槐被捕处死后，相关队伍没有同时消失。成员可能转入其他首领、回乡、藏匿或被编入招抚安排。官军继续追剿多年，说明组织具有流动和分散特征。国家展示首领伏法有政治意义，却不能当作基层秩序已经恢复的证据。",
+          "sources": [
+            "v160_qsg344",
+            "v160_dpm_jiaqing_study"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_white_lotus_end",
+            "v160_refugee_return"
+          ],
+          "people": [
+            "q160_eledengbao"
+          ]
+        },
+        {
+          "id": "v160_wangsanhuai4",
+          "title": "战区居民处在多重压力之间",
+          "text": "川东家庭可能同时面对起事队伍征粮、官军搜捕、迁入堡寨和团勇差役。谁与王三槐有联系，往往由口供、邻里指认和官府分类决定。秘密宗教成员、普通亲属与被迫供给者不应自动并案理解。史料中的定罪名称可以说明国家如何治理，却不足以还原每个个体的责任。",
+          "sources": [
+            "v160_cambridge_militia",
+            "v160_dpm_jiaqing_study"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_religious_networks",
+            "v160_labels"
+          ],
+          "people": []
+        },
+        {
+          "id": "v160_wangsanhuai5",
+          "title": "从一场诱捕看国家能力",
+          "text": "王三槐事件说明清廷不仅依靠正规军，也利用地方官声望、谈判和信息网络。后来堡寨清野进一步把村社纳入战争体系。国家能力因此既表现为调兵，也表现为重新组织地方生活。它最终帮助结束战争，却留下财政亏空、武装化和信任破裂。人物的失败不是故事终点，而是理解这些制度后果的入口。",
+          "sources": [
+            "v160_qsg344",
+            "v160_cambridge_fiscal"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_forts_clear",
+            "v160_war_cost"
+          ],
+          "people": [
+            "q_jiaqing",
+            "q160_lebao"
+          ]
+        }
+      ],
+      "sources": [
+        "v160_dpm_jiaqing_study",
+        "v160_qsg344",
+        "v160_cambridge_militia",
+        "v160_cambridge_fiscal"
+      ]
+    },
+    {
+      "person": "q160_hongliangji",
+      "title": "洪亮吉：求言时代的直言代价",
+      "dek": "他的奏书既是政治行动，也是观察嘉庆初年官场和地方困境的一扇窗。",
+      "sections": [
+        {
+          "id": "v160_hongliangji1",
+          "title": "学者并非只在书斋",
+          "text": "洪亮吉早年参与校书，精于经史、舆地与目录，乾隆末年入翰林。嘉庆三年考试时，他已借‘征邪教’题目讨论内外弊政。学术训练让他重视制度沿革和地方信息，但不能因此把所有议论当成现代社会科学调查。其材料来自仕宦见闻、文书与交游，也有可见范围。",
+          "sources": [
+            "v160_qsg356"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_hong_geography"
+          ],
+          "people": [
+            "q159_qiandaxin"
+          ]
+        },
+        {
+          "id": "v160_hongliangji2",
+          "title": "亲政后的上书为何尖锐",
+          "text": "1799年嘉庆亲政，和珅被处置，朝廷公开求言。洪亮吉却指出权臣网络尚未尽改、官员夤缘、州县层层加派、上控难以伸冤。他没有把问题归结为和珅一人，而是追问信息和利益怎样沿官僚层级被扭曲。奏书是同时代批评，不是全国每项指控已逐案核实的判决。",
+          "sources": [
+            "v160_qsg356",
+            "v160_dpm_jiaqing"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_hong_memorial",
+            "v160_heshen_network"
+          ],
+          "people": [
+            "q_heshen",
+            "q_jiaqing"
+          ]
+        },
+        {
+          "id": "v160_hongliangji3",
+          "title": "遣戍说明求言有边界",
+          "text": "奏书经成亲王转呈后，嘉庆震怒，洪亮吉被定重罪，后免死遣戍伊犁。皇帝允许批评并不意味着臣下能预知何种措辞安全。案件也不能被浪漫化为现代言论自由斗争：洪亮吉仍在君主政治内部援引祖宗与君德，希望通过皇帝纠正官僚。",
+          "sources": [
+            "v160_qsg356"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_hong_exile"
+          ],
+          "people": [
+            "q_jiaqing",
+            "q_songyun"
+          ]
+        },
+        {
+          "id": "v160_hongliangji4",
+          "title": "赦还既是纠错也是皇权展示",
+          "text": "次年嘉庆称处罚洪亮吉后言路更塞，释放他并将奏书置于座右。承认过失有实质意义，却仍由皇帝决定何时定罪、何时赦免。奏书能否进入政策，还取决于地方预算、监察和任官结构。个人谦抑或节俭不能替代稳定的信息制度。",
+          "sources": [
+            "v160_qsg356",
+            "v160_cambridge_fiscal"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_hong_exile",
+            "v160_no_general_manager"
+          ],
+          "people": [
+            "q_jiaqing"
+          ]
+        },
+        {
+          "id": "v160_hongliangji5",
+          "title": "地理、人口与现实关怀",
+          "text": "洪亮吉后来退居著述，其地理研究和人口议论常被视为有预见性。更稳妥的读法，是看他如何从文献与现实经验意识到人口、土地和行政能力之间的张力，而不是给他套上现代人口学家称号。他的价值在证据敏感和公共关怀；其局限也来自当时统计与政治表达条件。",
+          "sources": [
+            "v160_qsg356"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_hong_geography",
+            "v160_migrant_frontier"
+          ],
+          "people": [
+            "q160_ruanyuan"
+          ]
+        }
+      ],
+      "sources": [
+        "v160_qsg356",
+        "v160_dpm_jiaqing",
+        "v160_cambridge_fiscal"
+      ]
+    },
+    {
+      "person": "q160_lichanggeng",
+      "title": "李长庚：海战不是只凭一舰勇猛",
+      "dek": "造船、炮械、沿岸情报和跨省指挥，才构成他追击蔡牵的真实世界。",
+      "sections": [
+        {
+          "id": "v160_lichanggeng1",
+          "title": "从武进士到海坛水师",
+          "text": "李长庚由武进士入仕，长期在闽浙沿海任职。乾隆末年安南内乱与华南海上势力交织，他已参与防守福建海面。海上集团并非固定国籍的单一敌人，船队会重组、交易与投靠；水师也受辖区、避籍和省界限制。熟悉风汛、港湾与船型，是他获得重用的重要基础。",
+          "sources": [
+            "v160_qsg350"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_coastal_society"
+          ],
+          "people": [
+            "q160_caiqian"
+          ]
+        },
+        {
+          "id": "v160_lichanggeng2",
+          "title": "阮元支持造霆船",
+          "text": "阮元任浙江巡抚时支持李长庚统筹三镇水师，并筹资建造更大船只、配置重炮。霆船提高火力和续航，却不是决定胜负的神兵：船员训练、木料维修、火药供应和友军配合缺一不可。造船也要解释经费从何而来，而不能把技术升级写成无成本的灵感。",
+          "sources": [
+            "v160_qsg350",
+            "v160_qsg364",
+            "v160_dpm_ruanyuan"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_naval_building"
+          ],
+          "people": [
+            "q160_ruanyuan"
+          ]
+        },
+        {
+          "id": "v160_lichanggeng3",
+          "title": "断接济需要理解岸上社会",
+          "text": "蔡牵等船队依赖港湾、粮水、修船与买卖，官军因此查禁岸上接济。可是在档案中，被称为接济的行为可能是牟利、亲族联系、受胁迫或普通交易。严禁粮料会使海上集团困难，也可能伤及渔民和商船。李长庚的军事任务与地方官的港口管理必须配合，海战从来没有脱离陆地。",
+          "sources": [
+            "v160_qsg359",
+            "v160_qsg350"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_coastal_blockade",
+            "v160_coastal_society"
+          ],
+          "people": [
+            "q160_caiqian"
+          ]
+        },
+        {
+          "id": "v160_lichanggeng4",
+          "title": "跨省掣肘与1807年战殁",
+          "text": "李长庚多次追击蔡牵，也与部分督抚发生意见冲突。1807年在广东外海作战时中弹，随后去世。官修传把坚持追敌写成忠勇，事实背后还有闽浙粤调度、援军是否到位和长期疲劳。不能用一位将领的牺牲解释所有制度问题，也不能反过来因指挥矛盾否定其实际战功。",
+          "sources": [
+            "v160_qsg350",
+            "v160_qsg359"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_lichanggeng_death"
+          ],
+          "people": [
+            "q160_caiqian",
+            "q160_wangdelu"
+          ]
+        },
+        {
+          "id": "v160_lichanggeng5",
+          "title": "继承者完成的胜利",
+          "text": "李长庚去世后，王得禄、邱良功等继续使用既有船队与经验，1809年合击蔡牵。结果属于多阶段积累，不应把功劳只归最后一战。海疆暂时安定后，造船、巡洋、港口与台湾防务仍需持续经费。李长庚的历史意义，在于把技术、组织和海上社会放到同一条因果链。",
+          "sources": [
+            "v160_qsg350",
+            "v160_qsl218"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_caiqian_end",
+            "v160_naval_building"
+          ],
+          "people": [
+            "q160_wangdelu",
+            "q160_ruanyuan"
+          ]
+        }
+      ],
+      "sources": [
+        "v160_qsg350",
+        "v160_qsg364",
+        "v160_dpm_ruanyuan",
+        "v160_qsg359",
+        "v160_qsl218"
+      ]
+    },
+    {
+      "person": "q160_caiqian",
+      "title": "蔡牵：海上秩序竞争中的武装集团",
+      "dek": "他既挑战清廷，也袭击商民；理解其崛起需要离开‘海盗传奇’的单一镜头。",
+      "sections": [
+        {
+          "id": "v160_caiqian1",
+          "title": "从同安出海到整合船队",
+          "text": "蔡牵出身福建同安，乾隆末年进入海上活动，逐渐兼并或联合多支队伍。安南内乱、沿海走私、渔业和省际管辖缝隙提供了活动空间。官书以犯法亡命开篇，较少记录普通成员为何加入。可以说明船队扩张和武装行动，不能凭后世故事补出一套确定的早年传奇。",
+          "sources": [
+            "v160_qsg350",
+            "v160_qsg359"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_coastal_society"
+          ],
+          "people": [
+            "q160_lichanggeng"
+          ]
+        },
+        {
+          "id": "v160_caiqian2",
+          "title": "贸易、勒索与暴力同时存在",
+          "text": "蔡牵集团向商船索取财物、争夺港湾和补给，也依靠岸上交易、亲族与被迫接济。部分沿海家庭可能从贸易获利，另一些遭抢掠或裹挟。把他只写成反清义军会淡化受害者，把所有海上流动人口统称盗匪又会重复国家分类。应按具体行为区分武装攻击、买卖、投靠与生存。",
+          "sources": [
+            "v160_qsg350",
+            "v160_qsg359"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_coastal_blockade",
+            "v160_coastal_society"
+          ],
+          "people": []
+        },
+        {
+          "id": "v160_caiqian3",
+          "title": "进攻台湾扩大政治企图",
+          "text": "蔡牵曾进入台湾海面、攻城并使用王号，试图把海上力量转化为更稳定的据点。台湾地方社会并未因此整体站到同一边；官兵、乡勇、不同移民群体与原住民社群各有行动。海上船队能快速机动，却难长期取得粮食、港口与陆上行政支持。",
+          "sources": [
+            "v160_qsg350",
+            "v160_dpm_jiaqing"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_coastal_society",
+            "v160_naval_building"
+          ],
+          "people": [
+            "q160_wangdelu"
+          ]
+        },
+        {
+          "id": "v160_caiqian4",
+          "title": "与水师的技术竞赛",
+          "text": "清军扩大霆船和火炮后，蔡牵方面也调整大型船只和战法。技术不是单向进步：双方观察对手、争取炮药和熟练水手。官军加强断接济，使补给越来越困难。海战胜负因此来自船炮、风浪、维修、情报与组织的组合，而不是某个英雄单独决定。",
+          "sources": [
+            "v160_qsg350",
+            "v160_dpm_ruanyuan"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_naval_building",
+            "v160_coastal_blockade"
+          ],
+          "people": [
+            "q160_lichanggeng",
+            "q160_ruanyuan"
+          ]
+        },
+        {
+          "id": "v160_caiqian5",
+          "title": "1809年最后一战的证据",
+          "text": "王得禄、邱良功在渔山外洋围攻蔡牵。实录据获俘与难民供词称其受伤落海，朝廷随即封赏。核心集团由此瓦解是可靠节点，但银圆作炮弹、具体伤势和船上最后情景均来自奏报信息链，不能当独立现场录像。蔡牵的结局结束一支大型集团，却没有永久解决沿海走私与贫困。",
+          "sources": [
+            "v160_qsl218",
+            "v160_qsg359"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_caiqian_end"
+          ],
+          "people": [
+            "q160_wangdelu"
+          ]
+        }
+      ],
+      "sources": [
+        "v160_qsg350",
+        "v160_qsg359",
+        "v160_dpm_jiaqing",
+        "v160_dpm_ruanyuan",
+        "v160_qsl218"
+      ]
+    },
+    {
+      "person": "q160_wangdelu",
+      "title": "王得禄：台湾、海战与功臣记忆",
+      "dek": "他的军旅跨越陆上平乱和海上追击，也显示台湾与东南沿海从未彼此隔绝。",
+      "sections": [
+        {
+          "id": "v160_wangdelu1",
+          "title": "从台湾地方军旅起步",
+          "text": "王得禄出身台湾诸罗，早年参与林爽文事件，在地方军功体系中升迁。这个背景使他熟悉台湾海峡与沿岸社会，也把地方乡勇经验带入正规水师。升迁来自战功和上级保举，不能据后来高位倒写成每场战斗都由他主导。台湾籍身份重要，却不意味着他代表所有台湾居民。",
+          "sources": [
+            "v160_qsg350",
+            "v159_dpm_taiwan_art"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v159_lin_revolt",
+            "v159_taiwan_counteroffensive"
+          ],
+          "people": [
+            "q159_linshuangwen"
+          ]
+        },
+        {
+          "id": "v160_wangdelu2",
+          "title": "接续李长庚的组织遗产",
+          "text": "李长庚战殁后，王得禄与邱良功继续承担追击蔡牵。现成船队、炮械、熟练水手和闽浙协同都来自前期积累。最后获胜者常占据纪功叙事中心，但海战不是从1809年才开始。评价王得禄既应承认其实际指挥，也要保留李长庚、阮元和其他水师人员的长期工作。",
+          "sources": [
+            "v160_qsg350",
+            "v160_qsg364"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_lichanggeng_death",
+            "v160_naval_building"
+          ],
+          "people": [
+            "q160_lichanggeng",
+            "q160_ruanyuan"
+          ]
+        },
+        {
+          "id": "v160_wangdelu3",
+          "title": "渔山外洋的合击",
+          "text": "1809年王得禄、邱良功分船围攻蔡牵主船，实录记载接舷、火攻与蔡牵落海。奏报形成于邀功和核奖流程，战果、伤亡与供词都应保留来源边界。它仍能显示清军采取分隔船队、集中主目标的战术，并在长期断接济后取得决定性结果。",
+          "sources": [
+            "v160_qsl218",
+            "v160_qsg359"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_caiqian_end"
+          ],
+          "people": [
+            "q160_caiqian"
+          ]
+        },
+        {
+          "id": "v160_wangdelu4",
+          "title": "封爵背后的海防日常",
+          "text": "王得禄战后获封，但海疆治理不能停在授爵。水师要巡洋、修船、训练、处理走私和救助遇险船只，台湾还面对港口与地方防务。官军打败大型集团不等于海面从此无冲突。功臣传偏重高光战役，产品需要把维护成本和普通官兵补回。",
+          "sources": [
+            "v160_qsg350",
+            "v160_qsl218"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_coastal_blockade",
+            "v160_coastal_society"
+          ],
+          "people": [
+            "q_jiaqing"
+          ]
+        },
+        {
+          "id": "v160_wangdelu5",
+          "title": "人物记忆与传说的距离",
+          "text": "王得禄后来成为台湾重要历史人物，地方记忆、爵位与墓葬强化其形象。记忆可以研究社会如何理解功臣，却不能替代对军报和制度的核查。他连接林爽文事件、蔡牵战争与嘉庆海防，说明同一批地方军事人员会跨事件累积权力。理解这种连续性，比只讲一场传奇海战更接近历史。",
+          "sources": [
+            "v160_qsg350",
+            "v160_dpm_jiaqing"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_labels",
+            "v160_caiqian_end"
+          ],
+          "people": [
+            "q160_caiqian",
+            "q160_lichanggeng"
+          ]
+        }
+      ],
+      "sources": [
+        "v160_qsg350",
+        "v159_dpm_taiwan_art",
+        "v160_qsg364",
+        "v160_qsl218",
+        "v160_qsg359",
+        "v160_dpm_jiaqing"
+      ]
+    },
+    {
+      "person": "q160_ruanyuan",
+      "title": "阮元：经学、海防与地方治理不是三段人生",
+      "dek": "他能校勘经典，也必须筹船炮、查案件和处理财政；这正是清代封疆大吏的复杂尺度。",
+      "sections": [
+        {
+          "id": "v160_ruanyuan1",
+          "title": "从翰林走向浙江",
+          "text": "阮元由进士、翰林和学政升任浙江巡抚，既有经史声望，也进入钱粮、司法与海防的实际行政。官修传以高宗赏识突出才学，但成为封疆并非只靠文章，还要协调下属、筹款和承担处分。嘉庆初年的浙江同时面对海上武装、仓库和教育事务，无法按现代学者与官员职业分开。",
+          "sources": [
+            "v160_qsg364"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_no_general_manager"
+          ],
+          "people": [
+            "q_jiaqing"
+          ]
+        },
+        {
+          "id": "v160_ruanyuan2",
+          "title": "支持李长庚与造船炮",
+          "text": "阮元听取前线意见，支持李长庚统筹三镇水师并筹建霆船。海防政策包括船炮、陆上堵截、港口情报和省际会剿。技术投入确有成效，却需要官俸、捐资和地方财政，不能当作免费创新。督抚与将领互信也很重要，阮元离任后李长庚面对的掣肘说明个人协作仍缺乏稳定制度。",
+          "sources": [
+            "v160_qsg364",
+            "v160_dpm_ruanyuan"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_naval_building",
+            "v160_coastal_blockade"
+          ],
+          "people": [
+            "q160_lichanggeng"
+          ]
+        },
+        {
+          "id": "v160_ruanyuan3",
+          "title": "处分说明能臣也受程序约束",
+          "text": "阮元曾因乡试联号弊案受到劾查和降职，后来再获任用。官修传既记功也记过，提醒读者不要把名臣塑造成永远正确。具体责任需要看命令、经手和审讯，不能用后来的学术声望抵销行政问题，也不能用一次处分否定全部治理。",
+          "sources": [
+            "v160_qsg364"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_heshen_network"
+          ],
+          "people": []
+        },
+        {
+          "id": "v160_ruanyuan4",
+          "title": "诂经精舍的知识网络",
+          "text": "1801年阮元在杭州设诂经精舍，重视文字、音韵、制度、史地和校勘，延续戴震、钱大昕等人的方法传统。书院为学生提供训练和出版网络，却并非全国唯一学术道路。考据也不是逃避现实的同义词：阮元本人同时处理海防和行政，知识方法可进入地图、档案和制度判断。",
+          "sources": [
+            "v160_qsg364",
+            "v160_dpm_ruanyuan"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_gujing_academy",
+            "v160_hong_geography"
+          ],
+          "people": [
+            "q159_daizhen",
+            "q159_qiandaxin",
+            "q160_hongliangji"
+          ]
+        },
+        {
+          "id": "v160_ruanyuan5",
+          "title": "海战胜利后的长期角色",
+          "text": "1809年蔡牵集团瓦解时，阮元再次主持浙江事务，王得禄、邱良功执行合击。此后他还任漕运、两广和云贵等职，持续整理文献与办学。把他只列入思想史会遗漏国家如何使用学者官僚；只列入海防史又会遗漏知识生产。两者结合，才能理解嘉庆朝并非单纯文化停滞或政治衰败。",
+          "sources": [
+            "v160_qsg364",
+            "v160_qsl218"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v160_caiqian_end",
+            "v160_gujing_academy"
+          ],
+          "people": [
+            "q160_wangdelu",
+            "q160_caiqian"
+          ]
+        }
+      ],
+      "sources": [
+        "v160_qsg364",
+        "v160_dpm_ruanyuan",
+        "v160_qsl218"
+      ]
     }
   ],
   "portraits": [
@@ -217194,6 +219406,249 @@
         "v159_qsg145",
         "v159_qsg481"
       ]
+    },
+    {
+      "from": "q_jiaqing",
+      "to": "q160_eledengbao",
+      "role": "经略与统帅",
+      "inverse": "同时代关联",
+      "period": "乾隆末至嘉庆朝",
+      "note": "从人物长读与相关事件进入具体关系。",
+      "sources": [
+        "v160_qsg344",
+        "v160_cambridge_military"
+      ]
+    },
+    {
+      "from": "q_jiaqing",
+      "to": "q160_delengtai",
+      "role": "前线将领",
+      "inverse": "同时代关联",
+      "period": "乾隆末至嘉庆朝",
+      "note": "从人物长读与相关事件进入具体关系。",
+      "sources": [
+        "v160_qsg344",
+        "v160_cambridge_military"
+      ]
+    },
+    {
+      "from": "q_jiaqing",
+      "to": "q160_lebao",
+      "role": "经略大臣",
+      "inverse": "同时代关联",
+      "period": "乾隆末至嘉庆朝",
+      "note": "从人物长读与相关事件进入具体关系。",
+      "sources": [
+        "v160_qsg344",
+        "v160_cambridge_militia"
+      ]
+    },
+    {
+      "from": "q_jiaqing",
+      "to": "q160_funai",
+      "role": "苗疆善后地方官",
+      "inverse": "同时代关联",
+      "period": "乾隆末至嘉庆朝",
+      "note": "从人物长读与相关事件进入具体关系。",
+      "sources": [
+        "v160_qsg361",
+        "v160_dpm_miao_art"
+      ]
+    },
+    {
+      "from": "q_jiaqing",
+      "to": "q160_wangconger",
+      "role": "战争对手",
+      "inverse": "同时代关联",
+      "period": "乾隆末至嘉庆朝",
+      "note": "从人物长读与相关事件进入具体关系。",
+      "sources": [
+        "v160_qsg344",
+        "v160_dpm_jiaqing_study"
+      ]
+    },
+    {
+      "from": "q_jiaqing",
+      "to": "q160_yaozhifu",
+      "role": "战争对手",
+      "inverse": "同时代关联",
+      "period": "乾隆末至嘉庆朝",
+      "note": "从人物长读与相关事件进入具体关系。",
+      "sources": [
+        "v160_qsg344",
+        "v160_dpm_jiaqing_study"
+      ]
+    },
+    {
+      "from": "q_jiaqing",
+      "to": "q160_wangsanhuai",
+      "role": "战争对手",
+      "inverse": "同时代关联",
+      "period": "乾隆末至嘉庆朝",
+      "note": "从人物长读与相关事件进入具体关系。",
+      "sources": [
+        "v160_qsg344",
+        "v160_dpm_jiaqing_study"
+      ]
+    },
+    {
+      "from": "q_jiaqing",
+      "to": "q160_hongliangji",
+      "role": "获罪又获赦的直言者",
+      "inverse": "同时代关联",
+      "period": "乾隆末至嘉庆朝",
+      "note": "从人物长读与相关事件进入具体关系。",
+      "sources": [
+        "v160_qsg356",
+        "v160_dpm_jiaqing"
+      ]
+    },
+    {
+      "from": "q_jiaqing",
+      "to": "q160_lichanggeng",
+      "role": "水师将领",
+      "inverse": "同时代关联",
+      "period": "乾隆末至嘉庆朝",
+      "note": "从人物长读与相关事件进入具体关系。",
+      "sources": [
+        "v160_qsg350",
+        "v160_dpm_ruanyuan"
+      ]
+    },
+    {
+      "from": "q_jiaqing",
+      "to": "q160_caiqian",
+      "role": "海上战争对手",
+      "inverse": "同时代关联",
+      "period": "乾隆末至嘉庆朝",
+      "note": "从人物长读与相关事件进入具体关系。",
+      "sources": [
+        "v160_qsg350",
+        "v160_qsl218",
+        "v160_qsg359"
+      ]
+    },
+    {
+      "from": "q_jiaqing",
+      "to": "q160_wangdelu",
+      "role": "水师功臣",
+      "inverse": "同时代关联",
+      "period": "乾隆末至嘉庆朝",
+      "note": "从人物长读与相关事件进入具体关系。",
+      "sources": [
+        "v160_qsg350",
+        "v160_qsl218"
+      ]
+    },
+    {
+      "from": "q_jiaqing",
+      "to": "q160_ruanyuan",
+      "role": "封疆与学术大臣",
+      "inverse": "同时代关联",
+      "period": "乾隆末至嘉庆朝",
+      "note": "从人物长读与相关事件进入具体关系。",
+      "sources": [
+        "v160_qsg364",
+        "v160_dpm_ruanyuan"
+      ]
+    },
+    {
+      "from": "q160_eledengbao",
+      "to": "q160_delengtai",
+      "role": "共同作战",
+      "inverse": "同时代关联",
+      "period": "乾隆末至嘉庆朝",
+      "note": "从人物长读与相关事件进入具体关系。",
+      "sources": [
+        "v160_qsg344",
+        "v160_cambridge_military"
+      ]
+    },
+    {
+      "from": "q160_eledengbao",
+      "to": "q160_lebao",
+      "role": "经略协同",
+      "inverse": "同时代关联",
+      "period": "乾隆末至嘉庆朝",
+      "note": "从人物长读与相关事件进入具体关系。",
+      "sources": [
+        "v160_qsg344",
+        "v160_cambridge_militia"
+      ]
+    },
+    {
+      "from": "q160_wangconger",
+      "to": "q160_yaozhifu",
+      "role": "共同领导与转战",
+      "inverse": "同时代关联",
+      "period": "乾隆末至嘉庆朝",
+      "note": "从人物长读与相关事件进入具体关系。",
+      "sources": [
+        "v160_qsg344",
+        "v160_dpm_jiaqing_study"
+      ]
+    },
+    {
+      "from": "q160_wangsanhuai",
+      "to": "q160_lebao",
+      "role": "招抚与拘捕",
+      "inverse": "同时代关联",
+      "period": "乾隆末至嘉庆朝",
+      "note": "从人物长读与相关事件进入具体关系。",
+      "sources": [
+        "v160_qsg344",
+        "v160_cambridge_militia"
+      ]
+    },
+    {
+      "from": "q160_lichanggeng",
+      "to": "q160_caiqian",
+      "role": "长期海战对手",
+      "inverse": "同时代关联",
+      "period": "乾隆末至嘉庆朝",
+      "note": "从人物长读与相关事件进入具体关系。",
+      "sources": [
+        "v160_qsg350",
+        "v160_qsl218",
+        "v160_qsg359"
+      ]
+    },
+    {
+      "from": "q160_lichanggeng",
+      "to": "q160_ruanyuan",
+      "role": "将领与支持其海防的巡抚",
+      "inverse": "同时代关联",
+      "period": "乾隆末至嘉庆朝",
+      "note": "从人物长读与相关事件进入具体关系。",
+      "sources": [
+        "v160_qsg364",
+        "v160_dpm_ruanyuan"
+      ]
+    },
+    {
+      "from": "q160_wangdelu",
+      "to": "q160_caiqian",
+      "role": "最后海战对手",
+      "inverse": "同时代关联",
+      "period": "乾隆末至嘉庆朝",
+      "note": "从人物长读与相关事件进入具体关系。",
+      "sources": [
+        "v160_qsg350",
+        "v160_qsl218",
+        "v160_qsg359"
+      ]
+    },
+    {
+      "from": "q160_ruanyuan",
+      "to": "q160_hongliangji",
+      "role": "乾嘉学术与现实政务",
+      "inverse": "同时代关联",
+      "period": "乾隆末至嘉庆朝",
+      "note": "从人物长读与相关事件进入具体关系。",
+      "sources": [
+        "v160_qsg356",
+        "v160_dpm_jiaqing"
+      ]
     }
   ],
   "dynasties": [
@@ -221813,7 +224268,19 @@
         "q_heshen",
         "q_liuyong",
         "q_jiyun",
-        "q_songyun"
+        "q_songyun",
+        "q160_eledengbao",
+        "q160_delengtai",
+        "q160_lebao",
+        "q160_funai",
+        "q160_wangconger",
+        "q160_yaozhifu",
+        "q160_wangsanhuai",
+        "q160_hongliangji",
+        "q160_lichanggeng",
+        "q160_caiqian",
+        "q160_wangdelu",
+        "q160_ruanyuan"
       ],
       "events": [
         "qev_qianlong_abdication_1796",
@@ -221825,7 +224292,40 @@
         "v42q_ili_canals",
         "v42q_xinjiang_budget",
         "v66q_xingke_records",
-        "v90_q_jiaqing_academy"
+        "v90_q_jiaqing_academy",
+        "v160_power_split",
+        "v160_heshen_network",
+        "v160_hong_memorial",
+        "v160_hong_exile",
+        "v160_no_general_manager",
+        "v160_miao_land_conflict",
+        "v160_miao_campaign",
+        "v160_white_lotus_outbreak",
+        "v160_mobile_war",
+        "v160_command_changes",
+        "v160_forts_clear",
+        "v160_wangyao_end",
+        "v160_wangsanhuai_capture",
+        "v160_white_lotus_end",
+        "v160_mule_cost",
+        "v160_war_cost",
+        "v160_provincial_arrears",
+        "v160_fort_household_cost",
+        "v160_naval_building",
+        "v160_coastal_blockade",
+        "v160_migrant_frontier",
+        "v160_religious_networks",
+        "v160_women_war",
+        "v160_miao_postwar",
+        "v160_refugee_return",
+        "v160_coastal_society",
+        "v160_labels",
+        "v160_hong_geography",
+        "v160_gujing_academy",
+        "v160_victory_images",
+        "v160_war_chronicle",
+        "v160_lichanggeng_death",
+        "v160_caiqian_end"
       ],
       "sources": [
         "v5qn_qsg221",
@@ -221839,9 +224339,23 @@
         "v42q_qsg342",
         "v42q_xinjiang_tun",
         "v66_saac_xingke",
-        "v66_fhac_xingke"
+        "v66_fhac_xingke",
+        "v160_qsg344",
+        "v160_qsg350",
+        "v160_qsg356",
+        "v160_qsg359",
+        "v160_qsg361",
+        "v160_qsg364",
+        "v160_dpm_jiaqing",
+        "v160_dpm_miao_art",
+        "v160_dpm_jiaqing_study",
+        "v160_dpm_ruanyuan",
+        "v160_qsl218",
+        "v160_cambridge_military",
+        "v160_cambridge_fiscal",
+        "v160_cambridge_militia"
       ],
-      "note": "1796年即位，1799年起实际亲政；此前仍受太上皇乾隆控制。"
+      "note": "1796年受禅、1799年亲政；以战争财政、苗疆善后、川楚陕地方社会和东南海防区分名义在位与实际治理。"
     },
     {
       "person": "q_daoguang",

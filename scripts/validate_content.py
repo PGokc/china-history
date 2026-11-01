@@ -3147,3 +3147,43 @@ if d['version'] >= 133:
  assert not any(item['articleID'] in set(v159_rewritten) for item in narration['entries'])
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将',corpus,re.I)
  print('V133 PASS: ten new and four rewritten middle-late Qianlong readings connect Burma, Jinchuan, Taiwan, Vietnam, southern-tour finance, literary inquisition, Siku censorship and evidential scholarship with explicit evidence boundaries')
+
+if d['version'] >= 134:
+ v160_people=['q160_eledengbao','q160_delengtai','q160_lebao','q160_funai','q160_wangconger','q160_yaozhifu','q160_wangsanhuai','q160_hongliangji','q160_lichanggeng','q160_caiqian','q160_wangdelu','q160_ruanyuan']
+ v160_events={item['id'] for item in d['events'] if item['id'].startswith('v160_')}
+ v160_sources={item['id'] for item in d['sources'] if item['id'].startswith('v160_')}
+ v160_objects={item['id'] for item in d['objects'] if item['id'].startswith('v160_')}
+ v160_object_map={item['id']:item for item in d['objects']}
+ assert len(v160_people)==12 and len(v160_events)==33 and len(v160_sources)==14 and len(v160_objects)==4
+ assert set(v160_people)<=people.keys() and set(v160_people)<=articles.keys()
+ assert {events[event_id]['category'] for event_id in v160_events}=={'政治','军事','文化','经济','社会'}
+ for pid in v160_people:
+  reading=articles[pid]; ss=reading['sections']
+  assert len(ss)==5 and all(item['sources'] and item['events'] for item in ss),(pid,'incomplete Jiaqing five-layer reading')
+  chars=sum(len(re.findall(r'[\u4e00-\u9fff]',item['text'])) for item in ss)
+  assert chars>=500,(pid,'Jiaqing reading remains too short',chars)
+  assert all(set(item['sources'])<=sources.keys() and set(item['events'])<=events.keys() and set(item.get('people',[]))<=people.keys() for item in ss)
+  assert set(reading['sources'])=={source for item in ss for source in item['sources']}
+ assert all(set(events[event_id]['people'])<=people.keys() and set(events[event_id]['sources'])<=sources.keys() for event_id in v160_events)
+ for object_id in v160_objects:
+  item=v160_object_map[object_id]
+  assert item['dynasties']==['qing'] and item['people'] and item['sources']
+  assert set(item['people'])<=people.keys() and set(item['sources'])<=sources.keys()
+ corpus=json.dumps([people[pid] for pid in v160_people]+[articles[pid] for pid in v160_people]+[events[event_id] for event_id in v160_events]+[v160_object_map[object_id] for object_id in v160_objects],ensure_ascii=False)
+ for term in ['齐王氏','王聪儿','姚之富','王三槐','坚壁清野','堡寨','团勇','脚夫','驮畜','二亿两','傅鼐','屯田','民苗为二','洪亮吉','霆船','蔡牵','王得禄','诂经精舍']:
+  assert term in corpus,('missing Jiaqing evidence term',term)
+ for boundary in ['不能把这段时期的命令全部归为嘉庆独立选择','不能直接当现代战场统计','不等于居民自愿','不能当现代决算精确值','不能直接证明边界测量无误','不能把民间宗教一概等同武装叛乱','不能当作独立法医学记录','不能代表苗人共同视角']:
+  assert boundary in corpus,('missing Jiaqing evidence boundary',boundary)
+ jiaqing=next(item for item in d['reignContexts'] if item['person']=='q_jiaqing')
+ assert set(v160_people)<=set(jiaqing['people']) and v160_events<=set(jiaqing['events']) and v160_sources<=set(jiaqing['sources'])
+ emperor=articles['q_jiaqing']
+ linked_people={person_id for section in emperor['sections'] for person_id in section.get('people',[])}
+ linked_events={event_id for section in emperor['sections'] for event_id in section.get('events',[])}
+ assert set(v160_people)<=linked_people and v160_events<=linked_events
+ pairset={(item['from'],item['to']) for item in d['associations']}
+ assert {('q_jiaqing',pid) for pid in v160_people}<=pairset
+ assert {('q160_eledengbao','q160_delengtai'),('q160_eledengbao','q160_lebao'),('q160_wangconger','q160_yaozhifu'),('q160_wangsanhuai','q160_lebao'),('q160_lichanggeng','q160_caiqian'),('q160_lichanggeng','q160_ruanyuan'),('q160_wangdelu','q160_caiqian'),('q160_ruanyuan','q160_hongliangji')}<=pairset
+ # The emperor's published narration stays valid because only its links changed.
+ assert all(item['sectionID'].startswith('q-jiaqing-') for item in narration['entries'] if item['articleID']=='q_jiaqing')
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将',corpus,re.I)
+ print('V134 PASS: twelve Jiaqing readings and thirty-three events connect the power handoff, Miao postwar governance, White Lotus mobility and forts, war finance, remonstrance, maritime warfare and evidential scholarship with explicit source-position limits')

@@ -4728,4 +4728,46 @@ final class MingJiUITests: XCTestCase {
         shot("v159-wang-xihou-coerced-evidence", evidence)
     }
 
+    @MainActor func testV160JiaqingSeparatesOfficialLabelsAndMaritimeEvidence() throws {
+        let rebellion = XCUIApplication()
+        rebellion.launchArguments = ["--uitesting", "--ui-dynasty", "qing"]
+        rebellion.launch()
+        XCTAssertTrue(rebellion.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        rebellion.buttons.matching(NSPredicate(format: "identifier == %@", "globalSearch")).firstMatch.tap()
+        let search = rebellion.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("聪儿")
+        let result = rebellion.buttons["search_person_q160_wangconger"]
+        XCTAssertTrue(result.waitForExistence(timeout: 5)); result.tap()
+        XCTAssertTrue(rebellion.buttons["articleEntry"].waitForExistence(timeout: 5)); rebellion.buttons["articleEntry"].tap()
+        XCTAssertTrue(rebellion.buttons["articleContents"].waitForExistence(timeout: 5)); rebellion.buttons["articleContents"].tap()
+        let nameEvidence = rebellion.buttons["名字本身就是史料问题"]
+        XCTAssertTrue(nameEvidence.exists); nameEvidence.tap()
+        XCTAssertTrue(rebellion.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "官修传多称她为‘齐王氏’")).firstMatch.waitForExistence(timeout: 5))
+        XCTAssertTrue(rebellion.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "伪装成档案事实")).firstMatch.exists)
+        openChapterSources("v160_wangconger1", in: rebellion)
+        XCTAssertTrue(rebellion.descendants(matching: .any)["source_v160_qsg344"].waitForExistence(timeout: 3))
+        rebellion.swipeUp()
+        shot("v160-wang-conger-name-and-source-boundary", rebellion)
+        rebellion.terminate()
+
+        let maritime = XCUIApplication()
+        maritime.launchArguments = ["--uitesting", "--ui-dynasty", "qing"]
+        maritime.launch()
+        XCTAssertTrue(maritime.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        maritime.buttons.matching(NSPredicate(format: "identifier == %@", "globalSearch")).firstMatch.tap()
+        let maritimeSearch = maritime.searchFields.firstMatch
+        XCTAssertTrue(maritimeSearch.waitForExistence(timeout: 5)); maritimeSearch.tap(); maritimeSearch.typeText("李长庚")
+        let maritimeResult = maritime.buttons["search_person_q160_lichanggeng"]
+        XCTAssertTrue(maritimeResult.waitForExistence(timeout: 5)); maritimeResult.tap()
+        XCTAssertTrue(maritime.buttons["articleEntry"].waitForExistence(timeout: 5)); maritime.buttons["articleEntry"].tap()
+        XCTAssertTrue(maritime.buttons["articleContents"].waitForExistence(timeout: 5)); maritime.buttons["articleContents"].tap()
+        let blockade = maritime.buttons["断接济需要理解岸上社会"]
+        XCTAssertTrue(blockade.exists); blockade.tap()
+        XCTAssertTrue(maritime.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "受胁迫或普通交易")).firstMatch.waitForExistence(timeout: 5))
+        openChapterSources("v160_lichanggeng3", in: maritime)
+        XCTAssertTrue(maritime.descendants(matching: .any)["source_v160_qsg359"].waitForExistence(timeout: 3))
+        maritime.swipeUp()
+        shot("v160-li-changgeng-coastal-society", maritime)
+    }
+
 }
