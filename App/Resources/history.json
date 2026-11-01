@@ -1,5 +1,5 @@
 {
-  "version": 143,
+  "version": 144,
   "reviewed": "2026-11-01",
   "people": [
     {
@@ -20372,6 +20372,216 @@
       "kind": "重要人物",
       "note": "组织地方力量参加乙未抗战并战死；关于言行的著名语句多见于后世叙述，应与可核行动分开。",
       "dynasty": "qing"
+    },
+    {
+      "id": "q170_tansitong",
+      "name": "谭嗣同",
+      "call": "维新思想家",
+      "temple": "",
+      "era": "1865—1898",
+      "reign": "光绪中后期",
+      "summary": "在湖南办学办报，著《仁学》，入军机章京参与新政；赴袁世凯处的行动与临刑名言须区分同期证据和后出叙述。",
+      "parent": null,
+      "sources": [
+        "v170_qsg464",
+        "v170_dpm_tan",
+        "v170_renxue",
+        "v170_dpm_archives",
+        "v170_wuxu_record"
+      ],
+      "kind": "重要人物",
+      "note": "在湖南办学办报，著《仁学》，入军机章京参与新政；赴袁世凯处的行动与临刑名言须区分同期证据和后出叙述。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q170_ronglu",
+      "name": "荣禄",
+      "call": "直隶总督、军机大臣",
+      "temple": "",
+      "era": "1836—1903",
+      "reign": "光绪中后期",
+      "summary": "掌握京畿与北洋军政，是戊戌权力转折的关键人物；关于其预谋政变和具体调兵仍须按时间核对。",
+      "parent": null,
+      "sources": [
+        "v170_qsg437",
+        "v170_dpm_guangxu",
+        "v170_dpm_archives",
+        "v170_wuxu_record"
+      ],
+      "kind": "重要人物",
+      "note": "掌握京畿与北洋军政，是戊戌权力转折的关键人物；关于其预谋政变和具体调兵仍须按时间核对。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q170_gangyi",
+      "name": "刚毅",
+      "call": "协办大学士",
+      "temple": "",
+      "era": "1837—1900",
+      "reign": "光绪中后期",
+      "summary": "由刑名和地方行政进入军机，反对急进改革并参与政变后处置；其1898责任与1900拳乱立场应分期。",
+      "parent": null,
+      "sources": [
+        "v170_qsg465",
+        "v170_qsg464"
+      ],
+      "kind": "重要人物",
+      "note": "由刑名和地方行政进入军机，反对急进改革并参与政变后处置；其1898责任与1900拳乱立场应分期。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q170_zhangyinhuan",
+      "name": "张荫桓",
+      "call": "外交官与总署大臣",
+      "temple": "",
+      "era": "1837—1900",
+      "reign": "光绪中后期",
+      "summary": "有驻外与总理衙门经验，参与外交和改革讨论，政变后被流放，庚子时遇害。",
+      "parent": null,
+      "sources": [
+        "v170_qsg442",
+        "v170_dpm_archives"
+      ],
+      "kind": "重要人物",
+      "note": "有驻外与总理衙门经验，参与外交和改革讨论，政变后被流放，庚子时遇害。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q170_yangrui",
+      "name": "杨锐",
+      "call": "军机章京",
+      "temple": "",
+      "era": "1857—1898",
+      "reign": "光绪中后期",
+      "summary": "张之洞幕府出身，被任命参与新政并收到光绪密诏；主张改革有次第，仍在未经审讯下被杀。",
+      "parent": null,
+      "sources": [
+        "v170_qsg464",
+        "v170_dpm_archives"
+      ],
+      "kind": "重要人物",
+      "note": "张之洞幕府出身，被任命参与新政并收到光绪密诏；主张改革有次第，仍在未经审讯下被杀。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q170_liuguangdi",
+      "name": "刘光第",
+      "call": "军机章京",
+      "temple": "",
+      "era": "1859—1898",
+      "reign": "光绪中后期",
+      "summary": "刑部官员，入军机后处理大量章奏；对急促任用并非毫无保留，却与同僚一同未经审讯被处死。",
+      "parent": null,
+      "sources": [
+        "v170_qsg464",
+        "v170_dpm_archives"
+      ],
+      "kind": "重要人物",
+      "note": "刑部官员，入军机后处理大量章奏；对急促任用并非毫无保留，却与同僚一同未经审讯被处死。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q170_linxu",
+      "name": "林旭",
+      "call": "军机章京",
+      "temple": "",
+      "era": "1875—1898",
+      "reign": "光绪中后期",
+      "summary": "福建举人，参与闽学会、保国会并入荣禄幕，后起草新政诏令；青年身份不等于没有行政作用。",
+      "parent": null,
+      "sources": [
+        "v170_qsg464",
+        "v170_fuzhou_linxu"
+      ],
+      "kind": "重要人物",
+      "note": "福建举人，参与闽学会、保国会并入荣禄幕，后起草新政诏令；青年身份不等于没有行政作用。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q170_yangshenxiu",
+      "name": "杨深秀",
+      "call": "御史",
+      "temple": "",
+      "era": "1849—1898",
+      "reign": "光绪中后期",
+      "summary": "以御史身份支持变法、荐举人才并提出制度主张，政变后列六君子；其奏议与康有为代拟文本须辨来源。",
+      "parent": null,
+      "sources": [
+        "v170_qsg464",
+        "v170_dpm_petitions"
+      ],
+      "kind": "重要人物",
+      "note": "以御史身份支持变法、荐举人才并提出制度主张，政变后列六君子；其奏议与康有为代拟文本须辨来源。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q170_kangguangren",
+      "name": "康广仁",
+      "call": "教育与维新活动者",
+      "temple": "",
+      "era": "1867—1898",
+      "reign": "光绪中后期",
+      "summary": "康有为之弟，参与办学与维新网络，也曾主张先兴学再推进改革；被捕和处死与亲属身份密切相关。",
+      "parent": null,
+      "sources": [
+        "v170_qsg464",
+        "v170_yuexiu_reform"
+      ],
+      "kind": "重要人物",
+      "note": "康有为之弟，参与办学与维新网络，也曾主张先兴学再推进改革；被捕和处死与亲属身份密切相关。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q170_liduanfen",
+      "name": "李端棻",
+      "call": "刑部侍郎、教育倡议者",
+      "temple": "",
+      "era": "1833—1907",
+      "reign": "光绪中后期",
+      "summary": "较早奏请从京师到州县推广学堂，戊戌支持改革后被革职戍边；教育方案不能只算作康梁附属。",
+      "parent": null,
+      "sources": [
+        "v170_qsg464",
+        "v170_dpm_school"
+      ],
+      "kind": "重要人物",
+      "note": "较早奏请从京师到州县推广学堂，戊戌支持改革后被革职戍边；教育方案不能只算作康梁附属。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q170_sunjianai",
+      "name": "孙家鼐",
+      "call": "帝师与管学大臣",
+      "temple": "",
+      "era": "1827—1909",
+      "reign": "光绪中后期",
+      "summary": "在帝师和重臣位置上审核新政、主持京师大学堂筹办，代表并非全盘拒绝改革的审慎官僚路径。",
+      "parent": null,
+      "sources": [
+        "v170_qsg443",
+        "v170_dpm_school",
+        "v170_beijing_school"
+      ],
+      "kind": "重要人物",
+      "note": "在帝师和重臣位置上审核新政、主持京师大学堂筹办，代表并非全盘拒绝改革的审慎官僚路径。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q170_zhangyuanji",
+      "name": "张元济",
+      "call": "翰林与出版家",
+      "temple": "",
+      "era": "1867—1959",
+      "reign": "光绪中后期",
+      "summary": "办通艺学堂、上书改革，政变后革职转入南洋公学译书院，后来以出版与教科书延续教育实践。",
+      "parent": null,
+      "sources": [
+        "v170_cp_zhang",
+        "v170_cp_path"
+      ],
+      "kind": "重要人物",
+      "note": "办通艺学堂、上书改革，政变后革职转入南洋公学译书院，后来以出版与教科书延续教育实践。",
+      "dynasty": "qing"
     }
   ],
   "sources": [
@@ -28684,6 +28894,150 @@
       "title": "故宫博物院：光绪朝历史资料",
       "url": "https://www.dpm.org.cn/lemmas/243304.html",
       "note": "用于将战争决策放回光绪亲政、宫廷与军机制度，不以个人意志解释全部前线结果。"
+    },
+    {
+      "id": "v170_qsg23",
+      "title": "《清史稿》卷二十三·德宗本纪",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷23",
+      "note": "核对1895至1898年上谕、任免、政变和处分时序；本纪只保存朝廷视角，须与档案和人物传互证。"
+    },
+    {
+      "id": "v170_qsg437",
+      "title": "《清史稿》卷四百三十七·荣禄",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷437",
+      "note": "核对荣禄任职、直隶军务与戊戌前后位置；官修传记的褒贬不能替代政变命令链。"
+    },
+    {
+      "id": "v170_qsg442",
+      "title": "《清史稿》卷四百四十二·张荫桓",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷442",
+      "note": "核对张荫桓外交、总理衙门和戊戌处分；传文对同僚关系的评价需谨慎。"
+    },
+    {
+      "id": "v170_qsg443",
+      "title": "《清史稿》卷四百四十三·孙家鼐",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷443",
+      "note": "核对孙家鼐帝师经历、管学与京师大学堂筹办。"
+    },
+    {
+      "id": "v170_qsg464",
+      "title": "《清史稿》卷四百六十四·戊戌人物列传",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷464",
+      "note": "核对李端棻、杨深秀、杨锐、刘光第、谭嗣同、林旭、康广仁等履历和处刑；忠烈结构与具体政见分读。"
+    },
+    {
+      "id": "v170_qsg465",
+      "title": "《清史稿》卷四百六十五·刚毅",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷465",
+      "note": "核对刚毅仕历、财政巡查和后续拳乱立场；不能用1900年结局倒写1898年每项行动。"
+    },
+    {
+      "id": "v170_dpm_guangxu",
+      "title": "故宫博物院：光绪皇帝",
+      "url": "https://www.dpm.org.cn/court/lineage/226254.html",
+      "note": "用于核对光绪亲政、变法与禁锢概况；“帝党”“后党”是分析概括，不能假定两方内部完全一致。"
+    },
+    {
+      "id": "v170_dpm_tan",
+      "title": "故宫博物院：谭嗣同",
+      "url": "https://www.dpm.org.cn/lemmas/239984.html",
+      "note": "核对谭嗣同在湖南、南学会、《湘报》及入京参与新政的基本经历。"
+    },
+    {
+      "id": "v170_dpm_archives",
+      "title": "故宫研究：百日维新档案",
+      "url": "https://img.dpm.org.cn/Uploads/pdf/1765/T00043_00.pdf",
+      "note": "以中国第一历史档案馆所藏诏令、奏折观察政策形成，避免只依后出回忆复原密谋。"
+    },
+    {
+      "id": "v170_dpm_school",
+      "title": "故宫研究：硕果仅存的京师大学堂",
+      "url": "https://www.dpm.org.cn/Uploads/pdf/1765/T00030_00.pdf",
+      "note": "核对李端棻倡议、孙家鼐议复、经费和章程形成；大学堂并非一纸诏令即完备开学。"
+    },
+    {
+      "id": "v170_dpm_weng",
+      "title": "故宫博物院：戊戌变法时翁同龢罢官原由辨析",
+      "url": "https://www.dpm.org.cn/court/talk/204389.html",
+      "note": "用于说明翁同龢罢职存在多重原因和研究争论，不机械写成慈禧先手清洗。"
+    },
+    {
+      "id": "v170_dpm_petitions",
+      "title": "故宫研究：戊戌奏稿与档案材料",
+      "url": "https://www.dpm.org.cn/Uploads/pdf/1607/T00019_00.pdf",
+      "note": "说明现存戊戌奏稿的保存、搜辑和版本边界。"
+    },
+    {
+      "id": "v170_cssn_press",
+      "title": "中国社会科学网：近代报刊“耳目”与“喉舌”功能",
+      "url": "https://cssn.cn/xwcbx/xwx/202401/t20240125_5730694.shtml",
+      "note": "核对《时务报》传播机制、新闻与论说功能；影响不能只按作者自述估算。"
+    },
+    {
+      "id": "v170_cssn_education",
+      "title": "《近代史研究》：戊戌书院改革与学堂转型",
+      "url": "https://jds.cssn.cn/webpic/web/jdsww/UploadFiles/zyqk/2010/12/jdsyj199304.pdf",
+      "note": "核对改书院、设学堂的地方执行差异及政变后延续。"
+    },
+    {
+      "id": "v170_moe_pku",
+      "title": "教育部：从一张试卷看北京大学校史",
+      "url": "https://www.moe.gov.cn/jyb_xwfb/xw_zt/moe_357/2025/2025_zt16/jqwhll/202509/t20250923_1414651.html",
+      "note": "辅助核对京师大学堂延续与课程材料；后世校史认同不等于1898年组织已成熟。"
+    },
+    {
+      "id": "v170_beijing_school",
+      "title": "北京市规划和自然资源委员会：京师大学堂",
+      "url": "https://ghzrzyw.beijing.gov.cn/zhengwuxinxi/zxzt/wsghs/2021dyj/d7j/202103/t20210316_2308708.html",
+      "note": "核对大学堂倡议、章程与中西学课程设想。"
+    },
+    {
+      "id": "v170_fuzhou_linxu",
+      "title": "福州市政府：北大的福州朋友圈",
+      "url": "https://www.fuzhou.gov.cn/zgfzzt/zjrc/mdfc/lswh/202508/t20250808_5059441.htm",
+      "note": "补充林旭、京师大学堂筹办及福州人物网络；地方纪念需与官修传记互证。"
+    },
+    {
+      "id": "v170_yuexiu_reform",
+      "title": "广州市越秀区政府：维新变法",
+      "url": "https://www.yuexiu.gov.cn/zjyx/yxgk/whhs/content/post_3560712.html",
+      "note": "核对万木草堂、强学会、保国会和报刊传播概况；“百日”概称不替代具体诏令日期。"
+    },
+    {
+      "id": "v170_cp_zhang",
+      "title": "商务印书馆：张元济",
+      "url": "https://www.cp.com.cn/Content/2014/07-03/1040509445.html",
+      "note": "核对张元济戊戌处分、南洋公学译书院和后来进入商务的次序。"
+    },
+    {
+      "id": "v170_cp_path",
+      "title": "商务印书馆：张元济与出版道路",
+      "url": "https://www.cp.com.cn/Content/2017/06-15/1003321371.html",
+      "note": "补充通艺学堂、变法奏议与转向翻译出版；后世回忆需与同期材料区分。"
+    },
+    {
+      "id": "v170_wuxu_record",
+      "title": "梁启超《戊戌政变记》",
+      "url": "https://zh.wikisource.org/zh-hans/戊戌政变记",
+      "note": "作为流亡维新派的重要自述和传播文本使用；作者亲历、政治动员与事后整理三层不可混同。"
+    },
+    {
+      "id": "v170_renxue",
+      "title": "谭嗣同《仁学》",
+      "url": "https://zh.wikisource.org/zh-hans/仁學",
+      "note": "用于阅读谭嗣同思想文本；成书和刊行过程与其1898年具体政策权限须分开。"
+    },
+    {
+      "id": "v170_guowenbao",
+      "title": "《国闻报》与天津维新报刊资料",
+      "url": "https://www.nlc.cn/web/dsb_zx/gtxw/20200110_1698732.shtml",
+      "note": "用于理解天津报刊、翻译和公共讨论；报刊立场不能代表全部城市读者。"
+    },
+    {
+      "id": "v170_loc_reform",
+      "title": "美国国会图书馆：中国近代报刊与改革图像资料",
+      "url": "https://www.loc.gov/pictures/search/?q=China%20reform%201898",
+      "note": "作为跨国图像检索入口；图像题名和年代须逐件核对，不把搜索缩略图当作史证。"
     }
   ],
   "relations": [
@@ -31035,13 +31389,25 @@
       "id": "qev_hundred_days_1898",
       "year": "1898",
       "title": "百日维新及政变",
-      "body": "光绪帝颁布一系列变法诏令，慈禧随后发动政变，幽禁皇帝并处死部分维新人士。",
-      "impact": "改革诏令试图调整教育与行政，但在政变后大部被撤销，光绪遭禁锢；维新人士流亡或被杀，改革与权力结构的冲突更加尖锐。",
+      "body": "甲午战败后，学会、报刊、上书与地方新学扩大改革讨论；1898年光绪发布密集诏令，涉及教育、行政、经济和军事，随后慈禧重新训政并幽禁皇帝。",
+      "impact": "部分措施尚未形成执行能力即被撤回，六君子未经常规审讯被杀，多人革职流放；京师大学堂等项目和公共讨论仍以不同方式延续。",
       "people": [
         "q_guangxu",
         "q_cixi",
         "q_kangyouwei",
-        "q_liangqichao"
+        "q_liangqichao",
+        "q170_tansitong",
+        "q170_ronglu",
+        "q170_gangyi",
+        "q170_zhangyinhuan",
+        "q170_yangrui",
+        "q170_liuguangdi",
+        "q170_linxu",
+        "q170_yangshenxiu",
+        "q170_kangguangren",
+        "q170_liduanfen",
+        "q170_sunjianai",
+        "q170_zhangyuanji"
       ],
       "peopleRoles": {
         "q_guangxu": "推行变法的皇帝",
@@ -31051,7 +31417,10 @@
         "v5qn_qsg221",
         "v5qn_qsg214",
         "v5qn_qing_annals",
-        "v41q_liang_ink"
+        "v41q_liang_ink",
+        "v170_qsg23",
+        "v170_dpm_archives",
+        "v170_qsg464"
       ],
       "kind": "历史事件",
       "category": "政治"
@@ -84268,6 +84637,838 @@
         "v169_taiwan_archives"
       ],
       "peopleRoles": {}
+    },
+    {
+      "id": "v170_petition_channels",
+      "year": "1895—1898",
+      "title": "战后上书渠道迅速扩张",
+      "body": "甲午后官员、举人和地方士绅通过奏折、代奏与联名上书提出改革。",
+      "impact": "意见增加不等于决策开放，谁能递交、谁能批答仍由制度位置决定。",
+      "kind": "历史事件",
+      "sortYear": 1895,
+      "category": "政治",
+      "people": [
+        "q170_yangshenxiu",
+        "q170_zhangyuanji"
+      ],
+      "sources": [
+        "v170_dpm_petitions",
+        "v170_qsg23"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v170_qiangxue_politics",
+      "year": "1895—1896",
+      "title": "强学会连接官员与士人",
+      "body": "北京、上海的强学会聚合讲学、译书和报刊网络，也引起结党疑虑。",
+      "impact": "学会不是现代政党，其成员立场和实际参与程度并不一致。",
+      "kind": "历史事件",
+      "sortYear": 1895,
+      "category": "政治",
+      "people": [
+        "q170_liduanfen"
+      ],
+      "sources": [
+        "v170_yuexiu_reform",
+        "v170_cssn_press"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v170_weng_dismissal",
+      "year": "1898",
+      "title": "翁同龢被开缺回籍",
+      "body": "变法初期光绪令翁同龢开缺，长期被解释为帝后斗争的先手。",
+      "impact": "现有研究提示皇帝、财政责任和政策分歧等多重因素，不能用单一密谋概括。",
+      "kind": "历史事件",
+      "sortYear": 1898,
+      "category": "政治",
+      "people": [],
+      "sources": [
+        "v170_dpm_weng",
+        "v170_qsg23"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v170_mingding_guoshi",
+      "year": "1898",
+      "title": "《明定国是诏》开启密集新政",
+      "body": "诏书提出变法图强、用人兴学，随后多项上谕在短期内发布。",
+      "impact": "诏令表达方向，地方财政、人事和执行细则并未同步成熟。",
+      "kind": "历史事件",
+      "sortYear": 1898,
+      "category": "政治",
+      "people": [
+        "q170_tansitong",
+        "q170_liduanfen"
+      ],
+      "sources": [
+        "v170_qsg23",
+        "v170_dpm_archives"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v170_four_secretaries",
+      "year": "1898",
+      "title": "四名军机章京参预新政",
+      "body": "谭嗣同、杨锐、刘光第、林旭以四品卿衔在军机章京上行走。",
+      "impact": "他们能拟稿、阅章并接近皇帝，却没有独立内阁或军队。",
+      "kind": "历史事件",
+      "sortYear": 1898,
+      "category": "政治",
+      "people": [
+        "q170_tansitong",
+        "q170_yangrui",
+        "q170_liuguangdi",
+        "q170_linxu"
+      ],
+      "sources": [
+        "v170_qsg464",
+        "v170_dpm_archives"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v170_rite_ministry_case",
+      "year": "1898",
+      "title": "王照上书案引发礼部六堂官罢免",
+      "body": "礼部压下王照奏折，光绪得知后罢免尚书侍郎多人。",
+      "impact": "事件显示皇帝试图打通言路，也使官僚群体担忧程序和职位骤变。",
+      "kind": "历史事件",
+      "sortYear": 1898,
+      "category": "政治",
+      "people": [
+        "q170_yangrui",
+        "q170_liuguangdi"
+      ],
+      "sources": [
+        "v170_qsg464",
+        "v170_dpm_archives"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v170_secret_edict",
+      "year": "1898",
+      "title": "光绪密诏向杨锐求策",
+      "body": "光绪在权力受限感加深时，令杨锐等筹议如何推进新政又不激化冲突。",
+      "impact": "密诏证明皇帝焦虑，不等于已有成熟军事政变计划。",
+      "kind": "历史事件",
+      "sortYear": 1898,
+      "category": "政治",
+      "people": [
+        "q170_yangrui",
+        "q170_tansitong"
+      ],
+      "sources": [
+        "v170_qsg464",
+        "v170_dpm_archives"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v170_coup",
+      "year": "1898",
+      "title": "慈禧重新训政并幽禁光绪",
+      "body": "慈禧控制宫廷与军政，光绪被禁瀛台，维新官员遭搜捕。",
+      "impact": "改革中止的核心是权力和军队失衡，但过程不能简化为一天内单一告密触发。",
+      "kind": "历史事件",
+      "sortYear": 1898,
+      "category": "政治",
+      "people": [
+        "q170_ronglu",
+        "q170_gangyi",
+        "q170_zhangyinhuan"
+      ],
+      "sources": [
+        "v170_qsg23",
+        "v170_dpm_guangxu"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v170_execution_no_trial",
+      "year": "1898",
+      "title": "六君子未经常规审讯被处死",
+      "body": "杨锐等六人被捕后很快在菜市口处死，未完成通常复审程序。",
+      "impact": "政治镇压不仅终止个人生命，也破坏司法程序和官员安全预期。",
+      "kind": "历史事件",
+      "sortYear": 1898,
+      "category": "政治",
+      "people": [
+        "q170_tansitong",
+        "q170_yangrui",
+        "q170_liuguangdi",
+        "q170_linxu",
+        "q170_yangshenxiu",
+        "q170_kangguangren"
+      ],
+      "sources": [
+        "v170_qsg464",
+        "v170_qsg23"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v170_xiaozhan_training",
+      "year": "1895—1898",
+      "title": "小站练兵扩充新建陆军",
+      "body": "甲午后袁世凯在小站训练新建陆军，采用新编制、操典和军官教育。",
+      "impact": "训练提高组织效率，也使军队与掌兵者的个人网络更紧密。",
+      "kind": "历史事件",
+      "sortYear": 1895,
+      "category": "军事",
+      "people": [
+        "q170_ronglu"
+      ],
+      "sources": [
+        "v170_qsg437",
+        "v170_dpm_guangxu"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v170_beiyang_armies",
+      "year": "1898",
+      "title": "京畿各军整合为武卫军前夜",
+      "body": "荣禄统筹直隶与京畿军队，形成后来武卫军整合的基础。",
+      "impact": "名义整合不代表装备、训练和忠诚立即一致。",
+      "kind": "历史事件",
+      "sortYear": 1898,
+      "category": "军事",
+      "people": [
+        "q170_ronglu"
+      ],
+      "sources": [
+        "v170_qsg437"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v170_military_schools",
+      "year": "1895—1898",
+      "title": "陆军与武备学堂继续扩展",
+      "body": "各地在战败压力下增设武备教育、翻译操典并聘用教习。",
+      "impact": "学堂毕业生数量有限，旧营制与新训练长期并存。",
+      "kind": "历史事件",
+      "sortYear": 1895,
+      "category": "军事",
+      "people": [
+        "q170_liduanfen"
+      ],
+      "sources": [
+        "v170_cssn_education",
+        "v170_dpm_archives"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v170_german_jiaozhou",
+      "year": "1897",
+      "title": "德国占领胶州湾",
+      "body": "德国以教案为由出兵占领胶州湾，并迫使清廷接受租借。",
+      "impact": "事件加速列强租借港湾和划分势力范围，山东社会压力上升。",
+      "kind": "历史事件",
+      "sortYear": 1897,
+      "category": "军事",
+      "people": [
+        "q170_ronglu",
+        "q170_gangyi"
+      ],
+      "sources": [
+        "v170_qsg23",
+        "v170_dpm_archives"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v170_russian_lease",
+      "year": "1898",
+      "title": "俄国租借旅顺大连",
+      "body": "俄国获得旅顺、大连租借权及铁路权益，改变东北海防格局。",
+      "impact": "三国干涉还辽并非保护中国，列强很快把干涉转化为自身扩张。",
+      "kind": "历史事件",
+      "sortYear": 1898,
+      "category": "军事",
+      "people": [
+        "q170_zhangyinhuan"
+      ],
+      "sources": [
+        "v170_qsg23",
+        "v170_qsg442"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v170_british_weihai",
+      "year": "1898",
+      "title": "英国租借威海卫",
+      "body": "英国以平衡俄国为由取得威海卫租借权。",
+      "impact": "甲午旧战场转为列强据点，显示海防失败与国际竞争连续相接。",
+      "kind": "历史事件",
+      "sortYear": 1898,
+      "category": "军事",
+      "people": [
+        "q170_ronglu"
+      ],
+      "sources": [
+        "v170_qsg23"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v170_coastal_alarm",
+      "year": "1898",
+      "title": "沿海防务因租借危机重议",
+      "body": "朝廷要求沿海整顿炮台、团练和筹饷，各省方案差异很大。",
+      "impact": "纸面设防不能替代训练、弹药和跨省协同。",
+      "kind": "历史事件",
+      "sortYear": 1898,
+      "category": "军事",
+      "people": [
+        "q170_gangyi"
+      ],
+      "sources": [
+        "v170_qsg465",
+        "v170_dpm_archives"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v170_reform_drill",
+      "year": "1898",
+      "title": "变法上谕要求改练陆军",
+      "body": "新政提出裁汰旧军、采用新法训练和筹办武备教育。",
+      "impact": "数月诏令不足以完成军制转换，执行深度因地区而异。",
+      "kind": "历史事件",
+      "sortYear": 1898,
+      "category": "军事",
+      "people": [
+        "q170_tansitong",
+        "q170_yangrui"
+      ],
+      "sources": [
+        "v170_dpm_archives",
+        "v170_qsg464"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v170_tianjin_parade_fear",
+      "year": "1898",
+      "title": "天津阅兵传闻放大政变恐惧",
+      "body": "围绕天津阅兵、废立和兵变的传闻在帝后双方网络中流动。",
+      "impact": "许多细节来自事后回忆，不能把传闻直接写成已定行动方案。",
+      "kind": "历史事件",
+      "sortYear": 1898,
+      "category": "军事",
+      "people": [
+        "q170_ronglu",
+        "q170_tansitong"
+      ],
+      "sources": [
+        "v170_wuxu_record",
+        "v170_dpm_guangxu"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v170_indemnity_loans",
+      "year": "1895—1898",
+      "title": "赔款借款持续挤压财政",
+      "body": "清廷以海关等收入担保多次借款支付对日赔款及辽东赎款。",
+      "impact": "债务条件把战败成本延长到未来税收，并扩大列强金融影响。",
+      "kind": "历史事件",
+      "sortYear": 1895,
+      "category": "经济",
+      "people": [
+        "q170_zhangyinhuan",
+        "q170_gangyi"
+      ],
+      "sources": [
+        "v170_qsg23",
+        "v170_qsg442"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v170_railway_concessions",
+      "year": "1896—1898",
+      "title": "铁路借款与权益竞争加剧",
+      "body": "各国资本争取铁路贷款、修筑和沿线权益，清廷在资金与主权间谈判。",
+      "impact": "铁路不是单纯技术输入，合同决定利息、管理和区域影响。",
+      "kind": "历史事件",
+      "sortYear": 1896,
+      "category": "经济",
+      "people": [
+        "q170_zhangyinhuan"
+      ],
+      "sources": [
+        "v170_qsg442",
+        "v170_dpm_archives"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v170_rail_mine_bureau",
+      "year": "1898",
+      "title": "矿务铁路总局进入新政议程",
+      "body": "改革上谕试图设机构统筹路矿、招商和章程。",
+      "impact": "机构名称建立快于调查、资本与专业人才到位。",
+      "kind": "历史事件",
+      "sortYear": 1898,
+      "category": "经济",
+      "people": [
+        "q170_zhangyuanji",
+        "q170_tansitong"
+      ],
+      "sources": [
+        "v170_dpm_archives",
+        "v170_cp_path"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v170_commerce_bureaus",
+      "year": "1898",
+      "title": "各地被要求振兴商务农工",
+      "body": "上谕鼓励设商务局、农务学堂和工艺机构。",
+      "impact": "“振兴实业”包含官办、商办和官商合办多种路径，不能当成统一政策已落地。",
+      "kind": "历史事件",
+      "sortYear": 1898,
+      "category": "经济",
+      "people": [
+        "q170_liduanfen"
+      ],
+      "sources": [
+        "v170_dpm_archives"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v170_hanyang_iron",
+      "year": "1895—1898",
+      "title": "汉阳铁厂经营与债务调整",
+      "body": "铁厂、煤矿和铁路需求相互关联，经营面对燃料、矿石、市场与债务压力。",
+      "impact": "大型机器并不自动产生稳定产能，技术与财务必须共同考察。",
+      "kind": "历史事件",
+      "sortYear": 1895,
+      "category": "经济",
+      "people": [],
+      "sources": [
+        "v170_dpm_archives",
+        "v170_cssn_education"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v170_factory_rights",
+      "year": "1895以后",
+      "title": "通商口岸设厂改变产业竞争",
+      "body": "马关条约后外国在通商口岸设厂权扩大，本地企业面对资本和税制差异。",
+      "impact": "工业增长与主权受限同时存在，不能只用现代化概括。",
+      "kind": "历史事件",
+      "sortYear": 1895,
+      "category": "经济",
+      "people": [
+        "q170_zhangyuanji"
+      ],
+      "sources": [
+        "v170_cp_zhang",
+        "v170_qsg23"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v170_translation_market",
+      "year": "1896—1898",
+      "title": "译书与报刊形成知识市场",
+      "body": "报馆、学堂和译书机构购买、翻译并印刷政治经济知识。",
+      "impact": "读者增加仍受识字、售价、发行和城市网络限制。",
+      "kind": "历史事件",
+      "sortYear": 1896,
+      "category": "经济",
+      "people": [
+        "q170_zhangyuanji",
+        "q170_sunjianai"
+      ],
+      "sources": [
+        "v170_cssn_press",
+        "v170_cp_path"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v170_school_finance",
+      "year": "1896—1898",
+      "title": "学堂经费成为改革瓶颈",
+      "body": "京师大学堂和地方学堂需要馆舍、教师、教材与持续经费。",
+      "impact": "一纸设学诏令无法解决财政来源和地方执行差异。",
+      "kind": "历史事件",
+      "sortYear": 1896,
+      "category": "经济",
+      "people": [
+        "q170_liduanfen",
+        "q170_sunjianai"
+      ],
+      "sources": [
+        "v170_dpm_school",
+        "v170_cssn_education"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v170_postcoup_enterprise",
+      "year": "1898以后",
+      "title": "政变后部分实业议题仍被保留",
+      "body": "政治性机构多被撤销，但铁路、矿务、学校和练兵问题并未消失。",
+      "impact": "后续延续不证明百日诏令已成功，也不能说政变抹去一切变化。",
+      "kind": "历史事件",
+      "sortYear": 1898,
+      "category": "经济",
+      "people": [
+        "q170_sunjianai",
+        "q170_zhangyuanji"
+      ],
+      "sources": [
+        "v170_dpm_school",
+        "v170_cp_zhang"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v170_urban_readers",
+      "year": "1895—1898",
+      "title": "城市读者进入连续政治讨论",
+      "body": "上海、天津、北京等地报刊使战争、外交和改革成为持续话题。",
+      "impact": "读者主要集中于识字城市群体，不能代表全部人口。",
+      "kind": "历史事件",
+      "sortYear": 1895,
+      "category": "社会",
+      "people": [
+        "q170_tansitong",
+        "q170_zhangyuanji"
+      ],
+      "sources": [
+        "v170_cssn_press",
+        "v170_guowenbao"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v170_petition_mobility",
+      "year": "1895—1898",
+      "title": "举人赴京与联名网络扩大",
+      "body": "会试、同乡会馆和邮传帮助各省士人交换消息、组织联名。",
+      "impact": "签名人数和是否正式递呈存在材料争议，不能用一个固定数字代替过程。",
+      "kind": "历史事件",
+      "sortYear": 1895,
+      "category": "社会",
+      "people": [
+        "q170_yangshenxiu",
+        "q170_liduanfen"
+      ],
+      "sources": [
+        "v170_dpm_petitions",
+        "v170_wuxu_record"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v170_women_school",
+      "year": "1898",
+      "title": "经正女学开启城市女子新学试验",
+      "body": "经元善等在上海筹办女学，课程和招生引发社会讨论。",
+      "impact": "它服务少数城市家庭，不能据此推断女性教育已普及。",
+      "kind": "历史事件",
+      "sortYear": 1898,
+      "category": "社会",
+      "people": [],
+      "sources": [
+        "v170_cssn_education",
+        "v170_cssn_press"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v170_hunan_society",
+      "year": "1897—1898",
+      "title": "湖南学会与报刊进入地方社会",
+      "body": "南学会、《湘报》和时务学堂连接士绅、学生与地方官支持。",
+      "impact": "改革网络内部对政治、宗教和地方权力并非意见一致。",
+      "kind": "历史事件",
+      "sortYear": 1897,
+      "category": "社会",
+      "people": [
+        "q170_tansitong"
+      ],
+      "sources": [
+        "v170_dpm_tan",
+        "v170_cssn_press"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v170_mission_tension",
+      "year": "1895—1898",
+      "title": "教案与反教情绪继续累积",
+      "body": "传教、司法特权、土地纠纷和地方谣言在多地形成冲突。",
+      "impact": "反教不能只解释为无知，也不能为袭击平民和教民开脱。",
+      "kind": "历史事件",
+      "sortYear": 1895,
+      "category": "社会",
+      "people": [
+        "q170_gangyi"
+      ],
+      "sources": [
+        "v170_qsg465",
+        "v170_qsg23"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v170_rural_school_limits",
+      "year": "1898",
+      "title": "改书院兴学堂在地方遭遇差异",
+      "body": "部分书院增设西学，另一些因经费、师资或官员抵制进展有限。",
+      "impact": "中央命令与县域课堂之间存在巨大距离。",
+      "kind": "历史事件",
+      "sortYear": 1898,
+      "category": "社会",
+      "people": [
+        "q170_liduanfen",
+        "q170_sunjianai"
+      ],
+      "sources": [
+        "v170_cssn_education",
+        "v170_dpm_school"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v170_coup_families",
+      "year": "1898",
+      "title": "政变处分波及家庭与同乡网络",
+      "body": "处刑、流放、革职和通缉使家属、学生与同乡组织承受压力。",
+      "impact": "“六君子”称号保存核心牺牲，也容易遮蔽其他受处分者。",
+      "kind": "历史事件",
+      "sortYear": 1898,
+      "category": "社会",
+      "people": [
+        "q170_tansitong",
+        "q170_zhangyinhuan",
+        "q170_zhangyuanji"
+      ],
+      "sources": [
+        "v170_qsg464",
+        "v170_qsg442"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v170_exile_routes",
+      "year": "1898以后",
+      "title": "流亡者转向日本与海外网络",
+      "body": "康有为、梁启超等出逃后依赖港口、使馆和海外社群继续活动。",
+      "impact": "流亡叙述带有自我辩护和募款目的，规模与影响需交叉核对。",
+      "kind": "历史事件",
+      "sortYear": 1898,
+      "category": "社会",
+      "people": [],
+      "sources": [
+        "v170_wuxu_record",
+        "v170_qsg23"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v170_execution_public",
+      "year": "1898",
+      "title": "菜市口处刑成为政治震动",
+      "body": "六人公开被杀，围观、传闻和后续文字迅速塑造忠烈记忆。",
+      "impact": "著名临刑语句版本不一，不能全部当作逐字现场记录。",
+      "kind": "历史事件",
+      "sortYear": 1898,
+      "category": "社会",
+      "people": [
+        "q170_tansitong",
+        "q170_yangrui",
+        "q170_liuguangdi",
+        "q170_linxu",
+        "q170_yangshenxiu",
+        "q170_kangguangren"
+      ],
+      "sources": [
+        "v170_qsg464",
+        "v170_wuxu_record"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v170_zhongwai_jiwen",
+      "year": "1895",
+      "title": "《中外纪闻》传播改革信息",
+      "body": "北京维新人士以报刊转译外讯、刊载论说并联络强学会。",
+      "impact": "报刊具有动员目标，选材并非中立世界全景。",
+      "kind": "历史事件",
+      "sortYear": 1895,
+      "category": "文化",
+      "people": [
+        "q170_liduanfen"
+      ],
+      "sources": [
+        "v170_yuexiu_reform",
+        "v170_cssn_press"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v170_shiwu_bao",
+      "year": "1896—1898",
+      "title": "《时务报》形成连续政论空间",
+      "body": "梁启超等通过论说、新闻和译文讨论制度、教育与国际竞争。",
+      "impact": "发行影响显著，但作者、资助者和编辑之间也有路线与权属矛盾。",
+      "kind": "历史事件",
+      "sortYear": 1896,
+      "category": "文化",
+      "people": [
+        "q170_zhangyuanji"
+      ],
+      "sources": [
+        "v170_cssn_press"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v170_guowen_bao",
+      "year": "1897—1898",
+      "title": "《国闻报》在天津译介中外消息",
+      "body": "严复等以报刊和译文讨论国家、社会与国际形势。",
+      "impact": "翻译包含选择和按语，不能当作原著无损复制。",
+      "kind": "历史事件",
+      "sortYear": 1897,
+      "category": "文化",
+      "people": [
+        "q170_ronglu"
+      ],
+      "sources": [
+        "v170_guowenbao",
+        "v170_cssn_press"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v170_xiangbao",
+      "year": "1898",
+      "title": "《湘报》与南学会互相支撑",
+      "body": "谭嗣同等在湖南借报刊、讲会和学堂传播新政主张。",
+      "impact": "地方维新依赖巡抚支持和士绅资源，不能只归功于一名思想家。",
+      "kind": "历史事件",
+      "sortYear": 1898,
+      "category": "文化",
+      "people": [
+        "q170_tansitong"
+      ],
+      "sources": [
+        "v170_dpm_tan",
+        "v170_cssn_press"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v170_renxue_text",
+      "year": "1896—1898",
+      "title": "《仁学》重组平等与伦理语言",
+      "body": "谭嗣同借佛学、儒学和近代知识讨论网罗、名教与平等。",
+      "impact": "思想文本不等于百日维新的官方纲领，刊行过程也跨越政变前后。",
+      "kind": "历史事件",
+      "sortYear": 1896,
+      "category": "文化",
+      "people": [
+        "q170_tansitong"
+      ],
+      "sources": [
+        "v170_renxue",
+        "v170_dpm_tan"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v170_exam_reform",
+      "year": "1898",
+      "title": "科举改试策论并废八股取士",
+      "body": "新政试图让考试转向时务与实学，改变人才评价。",
+      "impact": "考试文本改变快，课程、师资和仕途结构尚未同步。",
+      "kind": "历史事件",
+      "sortYear": 1898,
+      "category": "文化",
+      "people": [
+        "q170_kangguangren",
+        "q170_liduanfen"
+      ],
+      "sources": [
+        "v170_qsg464",
+        "v170_dpm_archives"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v170_pku_charter",
+      "year": "1898",
+      "title": "京师大学堂章程获准并开办",
+      "body": "孙家鼐等拟定章程，大学堂兼具最高学府与教育行政设想。",
+      "impact": "它在政变后保留，但早期规模、课程和管理仍逐步形成。",
+      "kind": "历史事件",
+      "sortYear": 1898,
+      "category": "文化",
+      "people": [
+        "q170_liduanfen",
+        "q170_sunjianai"
+      ],
+      "sources": [
+        "v170_dpm_school",
+        "v170_moe_pku"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v170_tongyi_school",
+      "year": "1897—1898",
+      "title": "通艺学堂教授语言与实学",
+      "body": "张元济等为京官子弟筹办通艺学堂，教授英文、算学等。",
+      "impact": "小规模民间办学不能代表全国教育，却显示改革不只来自诏令。",
+      "kind": "历史事件",
+      "sortYear": 1897,
+      "category": "文化",
+      "people": [
+        "q170_zhangyuanji"
+      ],
+      "sources": [
+        "v170_cp_path"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v170_wuxu_memory",
+      "year": "1898以后",
+      "title": "《戊戌政变记》塑造流亡叙事",
+      "body": "梁启超等迅速记录政变、人物与改革意义，影响后世理解。",
+      "impact": "亲历价值很高，但成书服务政治动员，密谋细节仍需档案互证。",
+      "kind": "历史事件",
+      "sortYear": 1898,
+      "category": "文化",
+      "people": [
+        "q170_tansitong",
+        "q170_ronglu"
+      ],
+      "sources": [
+        "v170_wuxu_record",
+        "v170_dpm_archives"
+      ],
+      "peopleRoles": {}
     }
   ],
   "objects": [
@@ -90475,6 +91676,121 @@
       "sources": [
         "v169_taiwan_archives",
         "v169_taiwan_history"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v170_obj_guoshi",
+      "title": "《明定国是诏》",
+      "subtitle": "改革方向与执行距离",
+      "symbol": "doc.text",
+      "image": null,
+      "body": "诏书宣布变法图强并开启密集新政。",
+      "note": "原文能证明政策方向，不能证明各项措施已经执行。",
+      "people": [
+        "q170_tansitong",
+        "q170_liduanfen"
+      ],
+      "sources": [
+        "v170_qsg23",
+        "v170_dpm_archives"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v170_obj_secret_edict",
+      "title": "光绪致杨锐密诏",
+      "subtitle": "皇权焦虑与渐进回奏",
+      "symbol": "doc.badge.ellipsis",
+      "image": null,
+      "body": "密诏保存光绪对权力受限和新政受阻的直接表达。",
+      "note": "它不能单独证明围园、兵变等后世密谋叙述。",
+      "people": [
+        "q170_yangrui"
+      ],
+      "sources": [
+        "v170_qsg464",
+        "v170_dpm_archives"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v170_obj_shiwu",
+      "title": "《时务报》",
+      "subtitle": "新闻、论说与城市读者",
+      "symbol": "newspaper",
+      "image": null,
+      "body": "报刊把改革从偶发奏折变成连续阅读和争论。",
+      "note": "发行和影响受资助、编辑、售价及城市网络限制。",
+      "people": [
+        "q170_zhangyuanji"
+      ],
+      "sources": [
+        "v170_cssn_press"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v170_obj_renxue",
+      "title": "《仁学》",
+      "subtitle": "思想文本不等于官方纲领",
+      "symbol": "book.closed",
+      "image": null,
+      "body": "谭嗣同以多种思想资源讨论平等、名教与制度。",
+      "note": "成书、刊行与百日新政的具体权限必须分开。",
+      "people": [
+        "q170_tansitong"
+      ],
+      "sources": [
+        "v170_renxue"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v170_obj_pku_charter",
+      "title": "京师大学堂章程与匾额",
+      "subtitle": "从倡议、筹款到开学",
+      "symbol": "building.columns",
+      "image": null,
+      "body": "章程把最高学府与教育行政设想写成制度文本。",
+      "note": "大学堂在政变后保留，但早期组织仍逐步形成。",
+      "people": [
+        "q170_liduanfen",
+        "q170_sunjianai"
+      ],
+      "sources": [
+        "v170_dpm_school",
+        "v170_moe_pku"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v170_obj_archives",
+      "title": "百日维新档案",
+      "subtitle": "诏令、奏折与后出回忆互证",
+      "symbol": "archivebox",
+      "image": null,
+      "body": "档案保存政策形成和批答程序，可校正单线政变故事。",
+      "note": "档案同样不完整，沉默处不能用传奇自动填补。",
+      "people": [
+        "q170_tansitong",
+        "q170_zhangyinhuan"
+      ],
+      "sources": [
+        "v170_dpm_archives",
+        "v170_dpm_petitions"
       ],
       "dynasties": [
         "qing"
@@ -103508,7 +104824,11 @@
             "v169_qsg23",
             "v169_mfa_yellowsea",
             "v169_qiu_jiaoling",
-            "v169_donghak"
+            "v169_donghak",
+            "v170_qsg23",
+            "v170_dpm_tan",
+            "v170_moe_pku",
+            "v170_renxue"
           ],
           "kind": "史实与解读",
           "events": [
@@ -103609,7 +104929,14 @@
             "v169_shipping_disruption",
             "v169_korean_civilians",
             "v169_veterans_memory",
-            "v169_reform_translation"
+            "v169_reform_translation",
+            "v170_petition_channels",
+            "v170_coup",
+            "v170_british_weihai",
+            "v170_commerce_bureaus",
+            "v170_petition_mobility",
+            "v170_execution_public",
+            "v170_pku_charter"
           ],
           "people": [
             "q_zengjize",
@@ -103637,7 +104964,9 @@
             "q168_wudacheng",
             "q168_chenqiyuan",
             "q169_dengshichang",
-            "q169_mayukun"
+            "q169_mayukun",
+            "q170_tansitong",
+            "q170_yangshenxiu"
           ]
         },
         {
@@ -103650,7 +104979,11 @@
             "v169_qsg136",
             "v169_cssn_impact",
             "v169_taiwan_archives",
-            "v169_taiwan_history"
+            "v169_taiwan_history",
+            "v170_qsg437",
+            "v170_dpm_archives",
+            "v170_beijing_school",
+            "v170_guowenbao"
           ],
           "kind": "史实与解读",
           "events": [
@@ -103661,11 +104994,20 @@
             "v169_arsenal_supply",
             "v169_sailor_families",
             "v169_war_telegrams",
-            "v169_hero_memory"
+            "v169_hero_memory",
+            "v170_qiangxue_politics",
+            "v170_execution_no_trial",
+            "v170_coastal_alarm",
+            "v170_hanyang_iron",
+            "v170_women_school",
+            "v170_zhongwai_jiwen",
+            "v170_tongyi_school"
           ],
           "people": [
             "q169_liubuchan",
-            "q169_libingheng"
+            "q169_libingheng",
+            "q170_ronglu",
+            "q170_kangguangren"
           ]
         },
         {
@@ -103678,7 +105020,11 @@
             "v169_qsg460",
             "v169_cssn_memory",
             "v169_taiwan_resistance",
-            "v169_royal_museum"
+            "v169_royal_museum",
+            "v170_qsg442",
+            "v170_dpm_school",
+            "v170_fuzhou_linxu",
+            "v170_loc_reform"
           ],
           "kind": "史实与解读",
           "events": [
@@ -103691,12 +105037,21 @@
             "v169_naval_maintenance",
             "v169_portarthur_massacre",
             "v169_newspaper_debate",
-            "v169_taiwan_poetry"
+            "v169_taiwan_poetry",
+            "v170_weng_dismissal",
+            "v170_xiaozhan_training",
+            "v170_reform_drill",
+            "v170_factory_rights",
+            "v170_hunan_society",
+            "v170_shiwu_bao",
+            "v170_wuxu_memory"
           ],
           "people": [
             "q_dingruchang",
             "q169_linyongsheng",
-            "q169_nieshicheng"
+            "q169_nieshicheng",
+            "q170_gangyi",
+            "q170_liduanfen"
           ]
         },
         {
@@ -103709,7 +105064,10 @@
             "v41q_tianyan",
             "v169_qsg461",
             "v169_cssn_portarthur",
-            "v169_loc_war"
+            "v169_loc_war",
+            "v170_qsg443",
+            "v170_dpm_weng",
+            "v170_yuexiu_reform"
           ],
           "kind": "史实与解读",
           "events": [
@@ -103721,13 +105079,21 @@
             "v169_taiwan_campaign",
             "v169_korean_requisitions",
             "v169_liaodong_refugees",
-            "v169_japanese_prints"
+            "v169_japanese_prints",
+            "v170_mingding_guoshi",
+            "v170_beiyang_armies",
+            "v170_tianjin_parade_fear",
+            "v170_translation_market",
+            "v170_mission_tension",
+            "v170_guowen_bao"
           ],
           "people": [
             "q_liangqichao",
             "q_yanfu",
             "q169_zuobaogui",
-            "q169_qiufengjia"
+            "q169_qiufengjia",
+            "q170_zhangyinhuan",
+            "q170_sunjianai"
           ]
         },
         {
@@ -103738,7 +105104,10 @@
             "v5qe_qsg23_24",
             "v169_qsg462",
             "v169_deng_gd",
-            "v169_britannica_war"
+            "v169_britannica_war",
+            "v170_qsg464",
+            "v170_dpm_petitions",
+            "v170_cp_zhang"
           ],
           "kind": "史实与解读",
           "events": [
@@ -103747,11 +105116,19 @@
             "v169_war_borrowing",
             "v169_taiwan_trade_shock",
             "v169_weihai_community",
-            "v169_naval_schooling"
+            "v169_naval_schooling",
+            "v170_four_secretaries",
+            "v170_military_schools",
+            "v170_indemnity_loans",
+            "v170_school_finance",
+            "v170_rural_school_limits",
+            "v170_xiangbao"
           ],
           "people": [
             "q169_yezhichao",
-            "q169_xuxiang"
+            "q169_xuxiang",
+            "q170_yangrui",
+            "q170_zhangyuanji"
           ]
         },
         {
@@ -103766,7 +105143,10 @@
             "v40q_tongmenghui",
             "v169_qsg467",
             "v169_sailors_sd",
-            "v169_britannica_treaty"
+            "v169_britannica_treaty",
+            "v170_qsg465",
+            "v170_cssn_press",
+            "v170_cp_path"
           ],
           "kind": "史实与解读",
           "events": [
@@ -103785,7 +105165,13 @@
             "v169_customs_security",
             "v169_foreign_factories",
             "v169_taiwan_mobilization",
-            "v169_battle_diaries"
+            "v169_battle_diaries",
+            "v170_rite_ministry_case",
+            "v170_german_jiaozhou",
+            "v170_railway_concessions",
+            "v170_postcoup_enterprise",
+            "v170_coup_families",
+            "v170_renxue_text"
           ],
           "people": [
             "q_lihongzhang",
@@ -103795,7 +105181,8 @@
             "q_yuanshikai",
             "q_sunyatsen",
             "q_qiujin",
-            "q169_songqing"
+            "q169_songqing",
+            "q170_liuguangdi"
           ]
         },
         {
@@ -103807,7 +105194,10 @@
             "v5qe_dpm_lineage",
             "v169_treaty",
             "v169_qiu_tw",
-            "v169_yale_treaty"
+            "v169_yale_treaty",
+            "v170_dpm_guangxu",
+            "v170_cssn_education",
+            "v170_wuxu_record"
           ],
           "kind": "史实与解读",
           "events": [
@@ -103816,10 +105206,17 @@
             "v169_indemnity_burden",
             "v169_donghak_villages",
             "v169_taiwan_casualties",
-            "v169_gongche"
+            "v169_gongche",
+            "v170_secret_edict",
+            "v170_russian_lease",
+            "v170_rail_mine_bureau",
+            "v170_urban_readers",
+            "v170_exile_routes",
+            "v170_exam_reform"
           ],
           "people": [
-            "q169_xubangdao"
+            "q169_xubangdao",
+            "q170_linxu"
           ]
         }
       ],
@@ -103905,7 +105302,31 @@
         "v169_yale_treaty",
         "v169_donghak",
         "v169_taiwan_history",
-        "v169_royal_museum"
+        "v169_royal_museum",
+        "v170_qsg23",
+        "v170_qsg437",
+        "v170_qsg442",
+        "v170_qsg443",
+        "v170_qsg464",
+        "v170_qsg465",
+        "v170_dpm_guangxu",
+        "v170_dpm_tan",
+        "v170_dpm_archives",
+        "v170_dpm_school",
+        "v170_dpm_weng",
+        "v170_dpm_petitions",
+        "v170_cssn_press",
+        "v170_cssn_education",
+        "v170_moe_pku",
+        "v170_beijing_school",
+        "v170_fuzhou_linxu",
+        "v170_yuexiu_reform",
+        "v170_cp_zhang",
+        "v170_cp_path",
+        "v170_wuxu_record",
+        "v170_renxue",
+        "v170_guowenbao",
+        "v170_loc_reform"
       ]
     },
     {
@@ -217251,6 +218672,1047 @@
         "v169_taiwan_resistance",
         "v169_taiwan_history"
       ]
+    },
+    {
+      "person": "q170_tansitong",
+      "title": "谭嗣同：思想、行动与殉难叙事",
+      "dek": "他既是《仁学》的作者、湖南维新网络的组织者，也是短期进入军机的行动者；三种身份不能互相替代。",
+      "sections": [
+        {
+          "id": "v170_tansitong_1",
+          "title": "浏阳家世之外的知识形成",
+          "text": "谭嗣同接触经学、佛学、算学和西学，在游历与交往中形成对名教、制度和国家危机的批判。他的思想不是突然由甲午战败产生，也不能概括成简单“反传统”；《仁学》调动多种资源，内部仍有时代语言和张力。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg464",
+            "v170_dpm_tan",
+            "v170_renxue",
+            "v170_dpm_archives",
+            "v170_wuxu_record"
+          ],
+          "people": [],
+          "events": [
+            "v170_mingding_guoshi",
+            "v170_four_secretaries"
+          ]
+        },
+        {
+          "id": "v170_tansitong_2",
+          "title": "湖南维新依赖地方网络",
+          "text": "1897至1898年，他参与时务学堂、南学会和《湘报》。这些事业依赖陈宝箴、黄遵宪等官员支持，也需要教师、印刷、经费和学生。把湖南经验写成谭嗣同一人启蒙全省，会抹去协作者和地方反对力量。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg464",
+            "v170_dpm_tan",
+            "v170_renxue",
+            "v170_dpm_archives",
+            "v170_wuxu_record"
+          ],
+          "people": [],
+          "events": [
+            "v170_secret_edict",
+            "v170_execution_no_trial"
+          ]
+        },
+        {
+          "id": "v170_tansitong_3",
+          "title": "入京后拥有的是章京权限",
+          "text": "他被授四品卿衔，在军机章京上行走，参与拟稿和讨论。职位让他接近光绪，却没有独立发令或掌军权。密集诏令与真实执行之间存在距离；个人激进主张也不能自动等同皇帝批准的全部政策。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg464",
+            "v170_dpm_tan",
+            "v170_renxue",
+            "v170_dpm_archives",
+            "v170_wuxu_record"
+          ],
+          "people": [],
+          "events": [
+            "v170_reform_drill",
+            "v170_tianjin_parade_fear"
+          ]
+        },
+        {
+          "id": "v170_tansitong_4",
+          "title": "夜访袁世凯与政变时序",
+          "text": "谭嗣同曾争取袁世凯支持，后出回忆把围园杀后、救帝等计划写得极具戏剧性。可以确认维新者试图寻找军事支点，具体谈话、告密时间与政变是否已先发动仍有争论，不能用一份回忆闭合全部因果。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg464",
+            "v170_dpm_tan",
+            "v170_renxue",
+            "v170_dpm_archives",
+            "v170_wuxu_record"
+          ],
+          "people": [],
+          "events": [
+            "v170_rail_mine_bureau",
+            "v170_urban_readers"
+          ]
+        },
+        {
+          "id": "v170_tansitong_5",
+          "title": "赴死选择与名言层累",
+          "text": "政变后他未离京，被捕并在未完成常规审讯时处死。其主动留守和死亡是事实；著名临刑诗句、对白存在不同版本。尊重牺牲不需要把每句话都当作现场逐字记录，更不应让殉难遮蔽他此前复杂思想与组织工作。\n\n阅读谭嗣同还需把三个时间层分开：《仁学》的思想形成、湖南改革实践、北京数十日的政治行动。后世常因其赴死选择，把早年文字都解释成预备牺牲；这种倒叙会把思想探索变成命定结局。同期奏折能确认职位和政策，梁启超等人的记述保存友人视角，官修传记又采用忠烈框架，三者互证而不能互相替代。\n\n与《仁学》、湖南报刊和军机档案交叉阅读，能分别回答他如何思考、如何组织、在北京实际做了什么，避免三者互相冒充证据。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg464",
+            "v170_dpm_tan",
+            "v170_renxue",
+            "v170_dpm_archives",
+            "v170_wuxu_record"
+          ],
+          "people": [],
+          "events": [
+            "v170_hunan_society",
+            "v170_coup_families"
+          ]
+        }
+      ],
+      "sources": [
+        "v170_qsg464",
+        "v170_dpm_tan",
+        "v170_renxue",
+        "v170_dpm_archives",
+        "v170_wuxu_record"
+      ]
+    },
+    {
+      "person": "q170_ronglu",
+      "title": "荣禄：京畿军权与戊戌转折",
+      "dek": "他掌握直隶和京畿军政，是改革者无法绕开的力量；“后党统帅”标签仍不足以解释每一步。",
+      "sections": [
+        {
+          "id": "v170_ronglu_1",
+          "title": "长期军政履历形成资源",
+          "text": "荣禄从神机营、步军统领等职务进入中枢，甲午后出任直隶总督并统筹练兵。他的权力来自旗营、北洋和宫廷信任的叠加，不只是慈禧私人亲信。理解这种组织资源，才能说明光绪为何难以独立调兵。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg437",
+            "v170_dpm_guangxu",
+            "v170_dpm_archives",
+            "v170_wuxu_record"
+          ],
+          "people": [],
+          "events": [
+            "v170_coup",
+            "v170_xiaozhan_training"
+          ]
+        },
+        {
+          "id": "v170_ronglu_2",
+          "title": "新建陆军并非天然维新军",
+          "text": "小站练兵采用新编制和操法，军事现代化与政治效忠却是两回事。荣禄、袁世凯等重视训练和装备，并不意味着支持康梁式制度改革。新军还依赖饷源、军官任命和上下级关系，掌兵者的政治分量反而上升。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg437",
+            "v170_dpm_guangxu",
+            "v170_dpm_archives",
+            "v170_wuxu_record"
+          ],
+          "people": [],
+          "events": [
+            "v170_beiyang_armies",
+            "v170_german_jiaozhou"
+          ]
+        },
+        {
+          "id": "v170_ronglu_3",
+          "title": "租借危机中的直隶职责",
+          "text": "胶州、旅顺大连和威海相继被列强占据或租借，直隶海防与京师安全压力陡增。荣禄要处理练兵、炮台和外交后的防务调整。纸面扩军无法立即补回甲午损失，列强竞争也不是清廷单方面可控。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg437",
+            "v170_dpm_guangxu",
+            "v170_dpm_archives",
+            "v170_wuxu_record"
+          ],
+          "people": [],
+          "events": [
+            "v170_british_weihai",
+            "v170_tianjin_parade_fear"
+          ]
+        },
+        {
+          "id": "v170_ronglu_4",
+          "title": "政变不是一条电报完成",
+          "text": "戊戌年他进入军机并掌握军队，确是慈禧重新控制政局的重要支点。关于天津阅兵、围园和告密的具体次序，后出材料彼此冲突。稳妥结论是改革者缺乏可靠军权，荣禄站在慈禧权力网络一侧，而非虚构一场完全按剧本执行的预谋。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg437",
+            "v170_dpm_guangxu",
+            "v170_dpm_archives",
+            "v170_wuxu_record"
+          ],
+          "people": [],
+          "events": [
+            "v170_guowen_bao",
+            "v170_wuxu_memory"
+          ]
+        },
+        {
+          "id": "v170_ronglu_5",
+          "title": "责任与后来形象分开",
+          "text": "政变后荣禄继续居中枢，参与处分和军政重组，应承担相应政治责任。但他在庚子年间的态度和后世“暗保使馆”说法属于下一阶段，不能倒过来证明1898年温和或开明。人物评价必须逐项对应权限与行为。\n\n荣禄的传记材料还受到政变胜负和庚子评价双重影响。维新派流亡文字倾向把他置于阴谋中心，清廷官书则更强调忠勤与调和。判断具体行为，应比较任命、军队驻地、发令时间和实际调动，不因人物属于某一阵营便预设每项传闻为真。掌军并不等于策划全部镇压，但掌军使政变能够成立，也构成不可回避的结构责任。\n\n因此，人物页把兵权结构置于密谋故事之前：先确认能调动哪些军队、命令何时发出，再讨论回忆中的动机和对白。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg437",
+            "v170_dpm_guangxu",
+            "v170_dpm_archives",
+            "v170_wuxu_record"
+          ],
+          "people": [],
+          "events": [
+            "v170_postcoup_enterprise"
+          ]
+        }
+      ],
+      "sources": [
+        "v170_qsg437",
+        "v170_dpm_guangxu",
+        "v170_dpm_archives",
+        "v170_wuxu_record"
+      ]
+    },
+    {
+      "person": "q170_gangyi",
+      "title": "刚毅：整顿语言、保守政治与程序责任",
+      "dek": "他并非只会喊守旧口号的漫画人物；正因拥有行政履历，其政治选择更需要具体追责。",
+      "sections": [
+        {
+          "id": "v170_gangyi_1",
+          "title": "刑名与地方行政出身",
+          "text": "刚毅由笔帖式、刑部官员历任地方大员，曾处理案件、水利和赈务。官修传记保存这些政绩，提醒我们不能用后来立场抹去早期行政能力；同样，能力也不能抵消其在关键政治镇压中的责任。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg465",
+            "v170_qsg464"
+          ],
+          "people": [],
+          "events": [
+            "v170_coup",
+            "v170_german_jiaozhou"
+          ]
+        },
+        {
+          "id": "v170_gangyi_2",
+          "title": "甲午后以整顿回应危机",
+          "text": "进入军机后，他强调清理财政、筹饷练兵、保甲和仓储。这些主张并非毫无现实问题意识，却更倾向由既有官僚纪律恢复秩序，对快速改变机构、言路和用人格外警惕。改革与保守并不是“做事”和“不做事”的简单对立。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg465",
+            "v170_qsg464"
+          ],
+          "people": [],
+          "events": [
+            "v170_coastal_alarm",
+            "v170_indemnity_loans"
+          ]
+        },
+        {
+          "id": "v170_gangyi_3",
+          "title": "对百日新政的抵制位置",
+          "text": "密集罢官、越级上书和新进章京使旧有大臣感到权限被绕开。刚毅站在反对急变一侧，并在慈禧重新训政后进入核心处置网络。制度顾虑可以讨论，却不能成为未经审讯处死政治对手的理由。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg465",
+            "v170_qsg464"
+          ],
+          "people": [],
+          "events": [
+            "v170_mission_tension"
+          ]
+        },
+        {
+          "id": "v170_gangyi_4",
+          "title": "监斩中的程序问题",
+          "text": "《清史稿》记录刘光第临刑质问为何未讯即诛，刚毅以奉命监刑回应。对白仍来自官修整理，但六人未经常规审讯即处死可以确认。监刑者未必制定全部决策，仍参与了使非常命令落地的程序。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg465",
+            "v170_qsg464"
+          ],
+          "people": [],
+          "events": [
+            "v170_postcoup_enterprise"
+          ]
+        },
+        {
+          "id": "v170_gangyi_5",
+          "title": "不要用庚子倒写戊戌",
+          "text": "1900年刚毅支持利用义和团，进一步固定其顽固形象。两年间立场有连续性，具体权限和事件却不同。戊戌页只根据1898年可核行为评价，不用最终结局替代当时财政、官制与司法问题。\n\n刚毅所代表的保守政治也不能简化为拒绝一切西法。他赞成练兵、筹饷和行政整顿，却反对改革者改变权力分配和用人节奏。问题不在是否使用新工具，而在谁决定、用何程序、是否容许异议。把这一层说清，才能理解一些官员为何能同时主张铁路军备、又支持压制学会报刊；技术更新与政治开放从来不是自动绑定。\n\n这种分层也能解释为何所谓守旧大臣之间并非意见一致，荣禄、刚毅等在练兵、外交和拳乱问题上仍有差别。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg465",
+            "v170_qsg464"
+          ],
+          "people": [],
+          "events": [
+            "v170_urban_readers"
+          ]
+        }
+      ],
+      "sources": [
+        "v170_qsg465",
+        "v170_qsg464"
+      ]
+    },
+    {
+      "person": "q170_zhangyinhuan",
+      "title": "张荫桓：外交经验、改革中介与替罪位置",
+      "dek": "驻外与总署经历使他能连接宫廷和列强，也让他在政变后更容易被指为交通外人。",
+      "sections": [
+        {
+          "id": "v170_zhangyinhuan_1",
+          "title": "从地方财政进入外交",
+          "text": "张荫桓在山东、安徽任职后进入总理衙门，又出使美日秘。他处理华工、赔偿和领事交涉，形成少数官员拥有的跨国经验。外交能力来自长期文书和谈判，不应只以戊戌成败概括。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg442",
+            "v170_dpm_archives"
+          ],
+          "people": [],
+          "events": [
+            "v170_coup",
+            "v170_russian_lease"
+          ]
+        },
+        {
+          "id": "v170_zhangyinhuan_2",
+          "title": "甲午后谈判空间收缩",
+          "text": "战败赔款、借款和列强租借要求让外交官面对高度不对称选择。张荫桓参与外务和赔款借款事务，妥协并不自动等于卖国，具体条款、替代方案和授权边界必须分别核对。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg442",
+            "v170_dpm_archives"
+          ],
+          "people": [],
+          "events": [
+            "v170_indemnity_loans",
+            "v170_railway_concessions"
+          ]
+        },
+        {
+          "id": "v170_zhangyinhuan_3",
+          "title": "改革者与外国使节之间",
+          "text": "他支持部分改革并能沟通外国人士，因而在维新网络中具有中介价值。外使对清廷政治的关注也带来猜疑。与外国人来往是职责的一部分，不能无证据地推导为请外力干预宫廷。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg442",
+            "v170_dpm_archives"
+          ],
+          "people": [],
+          "events": [
+            "v170_coup_families"
+          ]
+        },
+        {
+          "id": "v170_zhangyinhuan_4",
+          "title": "政变后的流放处分",
+          "text": "慈禧重新训政后，张荫桓被革职、流放新疆，并未与六人同日处死。处分显示镇压范围超出军机四章京和康梁亲属。官修材料中的结党指控，应与实际奏折、任职和审讯程序对读。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg442",
+            "v170_dpm_archives"
+          ],
+          "people": [],
+          "events": [
+            "v170_urban_readers"
+          ]
+        },
+        {
+          "id": "v170_zhangyinhuan_5",
+          "title": "庚子遇害属于下一阶段",
+          "text": "1900年他在流放中被杀，命令背景与拳乱政治相连。后来的死亡加深悲剧，却不能倒推1898年全部传闻为真。把外交履历、改革参与、流放和死亡分段，才能避免单一受难叙事。\n\n他还连接了戊戌与列强租借危机。1898年各国使节、借款银行和铁路公司密集进入清廷议程，外交官的日常往来很容易被政治对手解释成私通。外国使节后来为某些受处分官员说情，也不证明他们此前操纵新政。把职责性接触、政策倾向、外国干预和清廷指控分列，才不会用民族主义标签取代档案判断。\n\n流放后他与北京决策隔绝，1900年的处死更显示非常政治如何追索旧案；两次处分应分别说明命令和直接责任。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg442",
+            "v170_dpm_archives"
+          ],
+          "people": [],
+          "events": [
+            "v170_petition_mobility"
+          ]
+        }
+      ],
+      "sources": [
+        "v170_qsg442",
+        "v170_dpm_archives"
+      ]
+    },
+    {
+      "person": "q170_yangrui",
+      "title": "杨锐：密诏中的渐进意见与未经审讯之死",
+      "dek": "他收到最著名的戊戌密诏，却并非只会推动激进变法；奏对显示他努力降低冲突。",
+      "sections": [
+        {
+          "id": "v170_yangrui_1",
+          "title": "张之洞幕府与经世训练",
+          "text": "杨锐出自四川学术环境，后入张之洞幕府，接触教育、财政和地方行政。这样的履历使他与康有为门人不同：支持改革并不意味着共享同一理论或节奏。维新阵营内部始终存在多条路径。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg464",
+            "v170_dpm_archives"
+          ],
+          "people": [],
+          "events": [
+            "v170_four_secretaries",
+            "v170_rite_ministry_case"
+          ]
+        },
+        {
+          "id": "v170_yangrui_2",
+          "title": "四章京中的拟稿工作",
+          "text": "1898年他与刘光第、谭嗣同、林旭进入军机，处理章奏、拟写上谕并接受召见。章京可以影响文本和信息排序，却仍需皇帝裁定，军机大臣和各部执行。所谓参预新政不能夸大为内阁总理。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg464",
+            "v170_dpm_archives"
+          ],
+          "people": [],
+          "events": [
+            "v170_secret_edict",
+            "v170_execution_no_trial"
+          ]
+        },
+        {
+          "id": "v170_yangrui_3",
+          "title": "密诏证明困境而非完整计划",
+          "text": "光绪密令杨锐等设法进用通达之人、推进新政又不触怒慈禧，反映皇权受限。杨锐回奏强调孝道、次第和人事不宜太骤。密诏显示他并非一味冒进，也不能证明已有包围颐和园方案。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg464",
+            "v170_dpm_archives"
+          ],
+          "people": [],
+          "events": [
+            "v170_reform_drill",
+            "v170_execution_public"
+          ]
+        },
+        {
+          "id": "v170_yangrui_4",
+          "title": "相信可审却突然被杀",
+          "text": "被捕后杨锐认为自己可在审讯中说明无罪，次日却与同人被处死。是否有正式供词、罪名如何形成，都受非常程序限制。未经审讯意味着后人更应谨慎，不可拿处刑诏书循环证明指控。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg464",
+            "v170_dpm_archives"
+          ],
+          "people": [],
+          "events": [
+            "v170_petition_mobility"
+          ]
+        },
+        {
+          "id": "v170_yangrui_5",
+          "title": "手诏传出后的历史位置",
+          "text": "宣统年间其家属缴出密诏，成为研究帝后关系的重要材料。文书传承和公布时点需要说明，但其内容可与官修传记互证。杨锐的价值不只在殉难，还在让我们看见温和改革者也被政治清洗吞没。\n\n杨锐与张之洞的关系还说明，地方洋务经验与康梁维新既有重叠也有分歧。兴学、练兵和实业可以获得较广支持，骤然裁官、越级用人和改变宫廷权力则争议更大。杨锐试图在两者间寻找次第，最终仍被视为同党。这不是证明温和必然无效，而是显示非常镇压不会细分被捕者内部立场，集体罪名吞没了个人判断。\n\n密诏原件的后来传出还改变了历史评价，使“激进同党”之外的渐进意见重新可见，也说明新材料能修正官修定性。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg464",
+            "v170_dpm_archives"
+          ],
+          "people": [],
+          "events": [
+            "v170_women_school"
+          ]
+        }
+      ],
+      "sources": [
+        "v170_qsg464",
+        "v170_dpm_archives"
+      ]
+    },
+    {
+      "person": "q170_liuguangdi",
+      "title": "刘光第：刑部经验、批答劳动与司法断裂",
+      "dek": "他以法律官员身份参与新政，最终却在没有常规审讯的情况下被杀。",
+      "sections": [
+        {
+          "id": "v170_liuguangdi_1",
+          "title": "清贫形象之外的刑部工作",
+          "text": "刘光第中进士后任刑部主事，熟悉审案和律例。官修传记强调廉介，是传统人物书写方式；更重要的是法律训练使他知道定罪应有程序，也解释了临刑时为何追问未讯而诛。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg464",
+            "v170_dpm_archives"
+          ],
+          "people": [],
+          "events": [
+            "v170_four_secretaries",
+            "v170_rite_ministry_case"
+          ]
+        },
+        {
+          "id": "v170_liuguangdi_2",
+          "title": "应召并非毫无犹疑",
+          "text": "他受荐进入新政核心时并非主动追逐权位，材料称其一度欲辞。支持救亡、担忧时危与怀疑骤然任用可以并存。把所有六君子写成同一种激进性格，会抹去政治选择的差异。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg464",
+            "v170_dpm_archives"
+          ],
+          "people": [],
+          "events": [
+            "v170_execution_no_trial",
+            "v170_execution_public"
+          ]
+        },
+        {
+          "id": "v170_liuguangdi_3",
+          "title": "大量章奏背后的文书劳动",
+          "text": "言路开放后奏件激增，刘光第参与批答、签注意见，等待皇帝裁定。改革史常列诏令标题，却忽略阅读、分类、核覆和交办的日常劳动；没有这些环节，皇帝意志无法进入官僚系统。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg464",
+            "v170_dpm_archives"
+          ],
+          "people": [],
+          "events": [
+            "v170_petition_mobility"
+          ]
+        },
+        {
+          "id": "v170_liuguangdi_4",
+          "title": "名义权限与现实风险",
+          "text": "四章京接近皇帝，却缺乏稳定官署、资深班底和军事保护。越过部院推动新政提高速度，也让既有大臣感到被排除。刘光第既参与这种快速机制，也无法控制由此激化的反弹。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg464",
+            "v170_dpm_archives"
+          ],
+          "people": [],
+          "events": [
+            "v170_women_school"
+          ]
+        },
+        {
+          "id": "v170_liuguangdi_5",
+          "title": "临刑质问成为制度证词",
+          "text": "官修传记记他拒绝跪听、追问祖制司法程序。对白可能经过整理，六人未经常规审讯即处死则有明确记录。他的死亡揭示戊戌不只是改革失败，也是国家以非常命令突破自身法律程序。\n\n刘光第留下的文字和传记不如谭嗣同丰富，材料沉默不能用整齐的英雄模板填满。可以确认的是他的官职、应召、文书工作、被捕和处死；对于私人心理、每次奏对和临刑细节，应标出来源。将他还原为处理章奏的刑部官员，也能看见改革不是只有演说与思想，国家机器依赖大量阅读、签注和交办劳动。\n\n与杨锐条目互读还能看见四川同乡关系和共同工作，但同乡不等于同一思想；两人的回奏、性格和入局意愿仍有差别。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg464",
+            "v170_dpm_archives"
+          ],
+          "people": [],
+          "events": [
+            "v170_hunan_society"
+          ]
+        }
+      ],
+      "sources": [
+        "v170_qsg464",
+        "v170_dpm_archives"
+      ]
+    },
+    {
+      "person": "q170_linxu",
+      "title": "林旭：青年章京与被压缩的行政劳动",
+      "dek": "二十四岁的年龄使他常被写成天才烈士，但真正值得恢复的是学会、幕府和拟诏工作。",
+      "sections": [
+        {
+          "id": "v170_linxu_1",
+          "title": "科举成功与甲午上书",
+          "text": "林旭年轻中举，甲午期间与同试者上书时事。科举训练提供文书能力，同乡和婚姻网络又连接福建士人。青年士人进入政治并非跳出现有制度，而是利用会试、内阁和学会等通道。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg464",
+            "v170_fuzhou_linxu"
+          ],
+          "people": [],
+          "events": [
+            "v170_four_secretaries",
+            "v170_execution_no_trial"
+          ]
+        },
+        {
+          "id": "v170_linxu_2",
+          "title": "闽学会与保国会网络",
+          "text": "他参与闽学会、保国会，在北京维新组织中活动。学会成员并非都接受康有为全部主张，聚会、讲学、筹款与政治联名也有不同强度。组织名册不能直接等同现代党籍。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg464",
+            "v170_fuzhou_linxu"
+          ],
+          "people": [],
+          "events": [
+            "v170_execution_public"
+          ]
+        },
+        {
+          "id": "v170_linxu_3",
+          "title": "荣禄幕府经历的复杂性",
+          "text": "林旭曾入荣禄幕，后受荐召见。改革者与后来政变核心人物之间存在工作联系，说明“帝党”“后党”不是从一开始就泾渭分明。幕府关系提供机会，也未形成可依赖的政治保护。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg464",
+            "v170_fuzhou_linxu"
+          ],
+          "people": [],
+          "events": [
+            "v170_women_school"
+          ]
+        },
+        {
+          "id": "v170_linxu_4",
+          "title": "起草上谕的实际作用",
+          "text": "进入军机后，他参与拟写新政诏谕。年轻不等于只有象征作用，但文本起草也不等于独自决定政策。上谕还需皇帝裁定、部院接收和地方执行，作者、决策者与执行者须区分。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg464",
+            "v170_fuzhou_linxu"
+          ],
+          "people": [],
+          "events": [
+            "v170_hunan_society"
+          ]
+        },
+        {
+          "id": "v170_linxu_5",
+          "title": "处刑与家属记忆",
+          "text": "政变后林旭被捕处死，年仅二十四。妻族、同乡和诗文保存其记忆，传记也容易把短暂人生写成预定殉道。恢复每一步履历，比补造临刑对白更能说明他为何进入改革核心。\n\n林旭的婚姻与同乡关系常被用来解释其上升，但社会网络不能替代个人能力。他能起草诏令，说明文才和行政训练获得认可；土语造成召见沟通困难的记载，又提醒口头表达、书面能力和皇帝印象并非一回事。青年精英快速进入中枢既扩大机会，也缺乏资历网络保护，是百日新政速度与脆弱性同时存在的缩影。\n\n对其妻子自尽未遂、后来毁卒等记载，也只按来源说明，不把女性亲属的痛苦当成装饰烈士形象的附属情节。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg464",
+            "v170_fuzhou_linxu"
+          ],
+          "people": [],
+          "events": [
+            "v170_mission_tension"
+          ]
+        }
+      ],
+      "sources": [
+        "v170_qsg464",
+        "v170_fuzhou_linxu"
+      ]
+    },
+    {
+      "person": "q170_yangshenxiu",
+      "title": "杨深秀：御史言路、荐举政治与罪名形成",
+      "dek": "他利用御史职位推动改革，也因代拟奏折和结社指控成为镇压对象。",
+      "sections": [
+        {
+          "id": "v170_yangshenxiu_1",
+          "title": "御史身份意味着什么",
+          "text": "杨深秀以言官身份上奏，能够弹劾、荐举和讨论制度。御史并非自由议员，奏折仍受格式、代奏和皇帝批答约束。言路扩大时，他的作用上升，政局逆转后同一文书又可能成为结党证据。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg464",
+            "v170_dpm_petitions"
+          ],
+          "people": [],
+          "events": [
+            "v170_petition_channels",
+            "v170_execution_no_trial"
+          ]
+        },
+        {
+          "id": "v170_yangshenxiu_2",
+          "title": "改革奏议与代拟文本",
+          "text": "戊戌时期奏折常由同道讨论或代拟，康有为等也为官员提供稿件。署名者承担政治责任，文字作者和政策来源却未必完全相同。研究杨深秀，必须区分亲自观点、接受稿件与后来归属。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg464",
+            "v170_dpm_petitions"
+          ],
+          "people": [],
+          "events": [
+            "v170_petition_mobility",
+            "v170_execution_public"
+          ]
+        },
+        {
+          "id": "v170_yangshenxiu_3",
+          "title": "荐举把人才送入中枢",
+          "text": "他支持康有为等改革人物并推动新政建议。荐举是传统制度工具，维新者借它让未处高位者接近皇帝。它能绕开正常资历，也会引发官僚对私人网络和越级用人的警惕。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg464",
+            "v170_dpm_petitions"
+          ],
+          "people": [],
+          "events": [
+            "v170_hunan_society"
+          ]
+        },
+        {
+          "id": "v170_yangshenxiu_4",
+          "title": "保国会指控与政治定性",
+          "text": "反对者以结社、交通内外等罪名攻击维新人士。保国会确有政治动员性质，却不等于已有成熟叛乱组织。政变后的定罪语言服务镇压，不能反过来证明所有指控。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg464",
+            "v170_dpm_petitions"
+          ],
+          "people": [],
+          "events": [
+            "v170_mission_tension"
+          ]
+        },
+        {
+          "id": "v170_yangshenxiu_5",
+          "title": "六君子共同称号的得失",
+          "text": "杨深秀与五人同日被杀，后来共同称为六君子。称号保存牺牲，也让年龄、官职、主张和参与方式被拉平。他的御史角色和奏折网络，应在集体纪念之外单独呈现。\n\n保存下来的奏折还要检查署名、代拟、抄本和刊刻时间。同一篇文字可能先由维新同人讨论，再由御史署名递交，政变后又收入宣传文集。作者问题并非为了取消杨深秀责任，而是准确说明政治合作如何运作。只有区分文字生产与制度递交，才能既看见康有为网络影响，也不把所有建议归给一名领袖。\n\n他的处刑同样绕过正常复审，言官原本用于表达异议的制度身份，最终未能保护其获得公开申辩的机会。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg464",
+            "v170_dpm_petitions"
+          ],
+          "people": [],
+          "events": [
+            "v170_rural_school_limits"
+          ]
+        }
+      ],
+      "sources": [
+        "v170_qsg464",
+        "v170_dpm_petitions"
+      ]
+    },
+    {
+      "person": "q170_kangguangren",
+      "title": "康广仁：兄弟光环之外的教育渐进主张",
+      "dek": "他因康有为之弟而被记住，也因此更需要从亲属标签中恢复自己的办学判断。",
+      "sections": [
+        {
+          "id": "v170_kangguangren_1",
+          "title": "兄弟关系不是完整身份",
+          "text": "康广仁从兄学习并参与万木草堂及维新活动，亲属网络提供资源，也让后世常把他当作康有为附属。现存材料较少，可靠写法应说明可核行动，不用家族关系替他补造完整思想体系。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg464",
+            "v170_yuexiu_reform"
+          ],
+          "people": [],
+          "events": [
+            "v170_execution_no_trial",
+            "v170_execution_public"
+          ]
+        },
+        {
+          "id": "v170_kangguangren_2",
+          "title": "科举与教育改革的次序",
+          "text": "官修传记记他重视先改科举、兴学培养人才，并曾劝兄长在八股调整后南归办学。这个渐进意见说明维新阵营内部对速度有分歧，他并非因亲属身份就必然支持每项急进方案。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg464",
+            "v170_yuexiu_reform"
+          ],
+          "people": [],
+          "events": [
+            "v170_exam_reform"
+          ]
+        },
+        {
+          "id": "v170_kangguangren_3",
+          "title": "办学比宫廷权限更实际",
+          "text": "康广仁没有四章京那样的中枢职位，主要作用在教育、联络和舆论。将所有维新者都写成百日诏令设计者会夸大其权限。地方教学和人才培养是另一种改革路径。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg464",
+            "v170_yuexiu_reform"
+          ],
+          "people": [],
+          "events": [
+            "v170_mission_tension"
+          ]
+        },
+        {
+          "id": "v170_kangguangren_4",
+          "title": "被捕带有亲属连坐色彩",
+          "text": "康有为出逃后，康广仁被捕并列入六人处刑。政变诏书把他与兄长及维新网络合并定罪，未有常规审讯逐项核实。亲属身份、组织参与和具体行为在镇压中被压成一个罪名。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg464",
+            "v170_yuexiu_reform"
+          ],
+          "people": [],
+          "events": [
+            "v170_rural_school_limits"
+          ]
+        },
+        {
+          "id": "v170_kangguangren_5",
+          "title": "临刑言语与材料层级",
+          "text": "传记保存他临刑慨叹改革机会的说法，具有强烈纪念意义。由于缺少独立现场记录，页面不把一句话当作逐字录音。他的价值更在教育主张、速度分歧和被连带处死所揭示的政治逻辑。\n\n康广仁资料尤其容易被兄长回忆与烈士传记覆盖。他是否参与某项具体密谋，若没有同期证据便不作推定；他对先办教育、培养人才的意见，则能由官修记载与维新网络材料互证。这样的保守写法不会削弱人物，反而让他摆脱“领袖之弟、六君子之一”两枚标签，呈现为对改革节奏有自身判断的活动者。\n\n与康有为条目并列时，关系标签明确标注兄弟和教育同道，不把兄长的上书、召见与流亡自动记在他名下。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg464",
+            "v170_yuexiu_reform"
+          ],
+          "people": [],
+          "events": [
+            "v170_coup_families"
+          ]
+        }
+      ],
+      "sources": [
+        "v170_qsg464",
+        "v170_yuexiu_reform"
+      ]
+    },
+    {
+      "person": "q170_liduanfen",
+      "title": "李端棻：从教育方案到戊戌处分",
+      "dek": "京师大学堂不是横空出世；他在1896年提出的学校体系，把教育改革提前变成可讨论的行政方案。",
+      "sections": [
+        {
+          "id": "v170_liduanfen_1",
+          "title": "科举官员为何倡设新学",
+          "text": "李端棻由传统科举进入官僚体系，却看到外交、技术和行政人才不足。他提出从京师到地方设学堂，不意味着抛弃全部旧学，而是试图重新组织课程、选材和国家培养。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg464",
+            "v170_dpm_school"
+          ],
+          "people": [],
+          "events": [
+            "v170_qiangxue_politics",
+            "v170_mingding_guoshi"
+          ]
+        },
+        {
+          "id": "v170_liduanfen_2",
+          "title": "1896年奏折的制度尺度",
+          "text": "他建议京师及省府州县分层设学，并配套藏书、译书、报馆和仪器等。方案范围远大于一所大学，现实却受经费、教师和部院权限限制。倡议被搁置两年，说明好主张不会自动执行。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg464",
+            "v170_dpm_school"
+          ],
+          "people": [],
+          "events": [
+            "v170_military_schools",
+            "v170_commerce_bureaus"
+          ]
+        },
+        {
+          "id": "v170_liduanfen_3",
+          "title": "百日维新中的重新启动",
+          "text": "1898年《明定国是诏》后，大学堂筹办加速，孙家鼐等负责章程与管理。李端棻是重要倡议者，不是唯一创办人；从建议到开学之间有多位官员、教习和财务人员。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg464",
+            "v170_dpm_school"
+          ],
+          "people": [],
+          "events": [
+            "v170_school_finance",
+            "v170_petition_mobility"
+          ]
+        },
+        {
+          "id": "v170_liduanfen_4",
+          "title": "改革网络与处分",
+          "text": "他荐举人才、支持新政，政变后被革职戍边。没有被处死不表示处分轻微，官职、居住和家庭均受影响。镇压范围涵盖倡议者、执行者、亲属和地方官，不只六位烈士。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg464",
+            "v170_dpm_school"
+          ],
+          "people": [],
+          "events": [
+            "v170_rural_school_limits",
+            "v170_zhongwai_jiwen"
+          ]
+        },
+        {
+          "id": "v170_liduanfen_5",
+          "title": "教育议题为何得以延续",
+          "text": "京师大学堂在政变后保留，地方学堂改革也未完全停止。这不证明戊戌成功，而说明教育需求已获得部分官僚共识。李端棻的历史位置正在于连接维新政治与更长期的学校制度转型。\n\n学校方案还涉及谁能入学、毕业后如何任用、中央和地方如何分担费用。早期设计主要面向男性士人和官僚人才，并未实现普遍教育；从京师到州县的整齐层级也大多停留在规划。指出这些限制，不等于否定其先驱意义，而是避免用后来学制和北京大学规模倒投1896年，使一份奏折承担它当时不可能完成的全部结果。\n\n其戍边处分和后来获释也应按时间单列，不能因京师大学堂最终延续，就把个人政治代价写成成功道路上的小插曲。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg464",
+            "v170_dpm_school"
+          ],
+          "people": [],
+          "events": [
+            "v170_exam_reform",
+            "v170_pku_charter"
+          ]
+        }
+      ],
+      "sources": [
+        "v170_qsg464",
+        "v170_dpm_school"
+      ]
+    },
+    {
+      "person": "q170_sunjianai",
+      "title": "孙家鼐：帝师、审慎改革与大学堂筹办",
+      "dek": "他既不是维新派领袖，也不是拒绝新学的顽固派，恰好显示中枢官僚存在中间路径。",
+      "sections": [
+        {
+          "id": "v170_sunjianai_1",
+          "title": "帝师身份带来的接近",
+          "text": "孙家鼐曾在毓庆宫授读，长期官历使他能接近光绪并理解中枢程序。帝师称号不意味着控制皇帝，也不能据此归入固定帝党；具体政策仍看奏折、任命和执行。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg443",
+            "v170_dpm_school",
+            "v170_beijing_school"
+          ],
+          "people": [],
+          "events": [
+            "v170_translation_market",
+            "v170_school_finance"
+          ]
+        },
+        {
+          "id": "v170_sunjianai_2",
+          "title": "1896年议复大学堂",
+          "text": "李端棻提出学校方案后，孙家鼐奉命议复，强调中西课程安排、人才分流和实际用途。其表述带有当时体用框架，但不是简单排斥西学。经费问题使计划一度搁置。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg443",
+            "v170_dpm_school",
+            "v170_beijing_school"
+          ],
+          "people": [],
+          "events": [
+            "v170_postcoup_enterprise",
+            "v170_rural_school_limits"
+          ]
+        },
+        {
+          "id": "v170_sunjianai_3",
+          "title": "管学大臣的核覆工作",
+          "text": "百日维新中，他负责审核兴学、考试、报馆和编书等事项。核覆会减慢速度，却也是把口号转为章程的必要环节。改革者与审查者并非永远对立，制度需要判断可行性。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg443",
+            "v170_dpm_school",
+            "v170_beijing_school"
+          ],
+          "people": [],
+          "events": [
+            "v170_pku_charter"
+          ]
+        },
+        {
+          "id": "v170_sunjianai_4",
+          "title": "政变后大学堂保留",
+          "text": "慈禧重新训政后，大量措施撤回，京师大学堂仍获保留并开办。保留既有实际教育需要，也经过孙家鼐等官员调适。称它为唯一成果过于绝对，至少书院课程和其他新学尝试也在延续。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg443",
+            "v170_dpm_school",
+            "v170_beijing_school"
+          ],
+          "people": [],
+          "events": [
+            "v170_exile_routes"
+          ]
+        },
+        {
+          "id": "v170_sunjianai_5",
+          "title": "审慎不等于无立场",
+          "text": "孙家鼐主张“执两用中”，容易被后世视为模糊。实际中间路线既可能保护部分改革，也可能限制速度。评价应看他具体保留了什么、删改了什么，而不是用激进或保守二分人物。\n\n他主持的章程同时保留经典教育、引入外国语言与专门知识，反映新学并非旧学突然退场。课程选择还关系到教师从哪里来、教材如何翻译、学生毕业后进入何种官职。政变后能够继续办学，部分因为方案经过传统官僚语言调适。制度延续常依赖这种妥协，但妥协也会限制招生、知识范围和自治程度。\n\n这一中间路径也提醒读者，戊戌政治不是改革者与反改革者两个整齐集团，许多官员支持具体项目而拒绝权力急变。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_qsg443",
+            "v170_dpm_school",
+            "v170_beijing_school"
+          ],
+          "people": [],
+          "events": [
+            "v170_execution_public"
+          ]
+        }
+      ],
+      "sources": [
+        "v170_qsg443",
+        "v170_dpm_school",
+        "v170_beijing_school"
+      ]
+    },
+    {
+      "person": "q170_zhangyuanji",
+      "title": "张元济：从翰林奏议到译书出版",
+      "dek": "戊戌处分结束了他的传统仕途，却没有终止改革实践，而是把行动转向学校、翻译和出版。",
+      "sections": [
+        {
+          "id": "v170_zhangyuanji_1",
+          "title": "翰林身份与通艺学堂",
+          "text": "张元济由科举入翰林和总理衙门，接触外交文书。他与同人办通艺学堂，教授英文、算学等。学校规模不大，却显示京官群体可在诏令之外试验课程。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_cp_zhang",
+            "v170_cp_path"
+          ],
+          "people": [],
+          "events": [
+            "v170_petition_channels",
+            "v170_rail_mine_bureau"
+          ]
+        },
+        {
+          "id": "v170_zhangyuanji_2",
+          "title": "改革奏议中的多项关切",
+          "text": "他主张调整官制、科举、商业和满汉界限，显示维新议题并不只来自康有为。不同改革者对节奏和优先次序有分歧；张元济也担忧政治条件不足，不能把他写成完全同质的康党。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_cp_zhang",
+            "v170_cp_path"
+          ],
+          "people": [],
+          "events": [
+            "v170_factory_rights",
+            "v170_translation_market"
+          ]
+        },
+        {
+          "id": "v170_zhangyuanji_3",
+          "title": "政变日的边缘位置",
+          "text": "政变发生时他仍在办学和联络活动，并非宫廷密谋核心。随后被革职永不叙用，说明镇压根据政治网络而非逐人审判。后来的自述很有价值，也需与当时处分记录互证。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_cp_zhang",
+            "v170_cp_path"
+          ],
+          "people": [],
+          "events": [
+            "v170_postcoup_enterprise",
+            "v170_urban_readers"
+          ]
+        },
+        {
+          "id": "v170_zhangyuanji_4",
+          "title": "南洋公学译书院转向",
+          "text": "离京后他进入南洋公学译书院，组织翻译兵政、法律、经济和教育书籍。知识转译需要选题、译者、校对、印刷和发行，是另一种长期制度工作，并非政治失败后的被动退隐。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_cp_zhang",
+            "v170_cp_path"
+          ],
+          "people": [],
+          "events": [
+            "v170_coup_families",
+            "v170_shiwu_bao"
+          ]
+        },
+        {
+          "id": "v170_zhangyuanji_5",
+          "title": "出版事业不是一夜建立",
+          "text": "后来进入商务印书馆、编教科书和整理古籍，使他成为出版史核心人物。但这些成就跨越多年，不能提前算作戊戌成果。人物页按时期区分，才能看见一次政治处分如何改变行动场域。\n\n从译书院到商务印书馆的转向，也不能写成从政治彻底退回文化。选译法律经济、编写教科书、建立发行网络同样改变公共知识，只是权力机制从皇帝诏令变为编辑、学校和市场。印刷企业还受资本、纸张、版权和读者购买力制约。将这些条件写入人物史，可避免把出版救国浪漫化为一位文化英雄凭意志完成的事业。\n\n戊戌经历是转折而非全部解释；他后来整理古籍、经营出版的选择还有商业判断、文化保存和战争破坏等新环境。",
+          "kind": "史实与解读",
+          "sources": [
+            "v170_cp_zhang",
+            "v170_cp_path"
+          ],
+          "people": [],
+          "events": [
+            "v170_tongyi_school"
+          ]
+        }
+      ],
+      "sources": [
+        "v170_cp_zhang",
+        "v170_cp_path"
+      ]
     }
   ],
   "portraits": [
@@ -244379,6 +246841,217 @@
         "v169_taiwan_archives",
         "v169_taiwan_history"
       ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q170_tansitong",
+      "role": "戊戌时期人物",
+      "inverse": "在光绪朝活动",
+      "period": "1895—1898",
+      "note": "谭嗣同的经历连接战后改革、百日新政及政变处分。",
+      "sources": [
+        "v170_qsg464",
+        "v170_dpm_tan"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q170_ronglu",
+      "role": "戊戌时期人物",
+      "inverse": "在光绪朝活动",
+      "period": "1895—1898",
+      "note": "荣禄的经历连接战后改革、百日新政及政变处分。",
+      "sources": [
+        "v170_qsg437",
+        "v170_dpm_guangxu"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q170_gangyi",
+      "role": "戊戌时期人物",
+      "inverse": "在光绪朝活动",
+      "period": "1895—1898",
+      "note": "刚毅的经历连接战后改革、百日新政及政变处分。",
+      "sources": [
+        "v170_qsg465",
+        "v170_qsg464"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q170_zhangyinhuan",
+      "role": "戊戌时期人物",
+      "inverse": "在光绪朝活动",
+      "period": "1895—1898",
+      "note": "张荫桓的经历连接战后改革、百日新政及政变处分。",
+      "sources": [
+        "v170_qsg442",
+        "v170_dpm_archives"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q170_yangrui",
+      "role": "戊戌时期人物",
+      "inverse": "在光绪朝活动",
+      "period": "1895—1898",
+      "note": "杨锐的经历连接战后改革、百日新政及政变处分。",
+      "sources": [
+        "v170_qsg464",
+        "v170_dpm_archives"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q170_liuguangdi",
+      "role": "戊戌时期人物",
+      "inverse": "在光绪朝活动",
+      "period": "1895—1898",
+      "note": "刘光第的经历连接战后改革、百日新政及政变处分。",
+      "sources": [
+        "v170_qsg464",
+        "v170_dpm_archives"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q170_linxu",
+      "role": "戊戌时期人物",
+      "inverse": "在光绪朝活动",
+      "period": "1895—1898",
+      "note": "林旭的经历连接战后改革、百日新政及政变处分。",
+      "sources": [
+        "v170_qsg464",
+        "v170_fuzhou_linxu"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q170_yangshenxiu",
+      "role": "戊戌时期人物",
+      "inverse": "在光绪朝活动",
+      "period": "1895—1898",
+      "note": "杨深秀的经历连接战后改革、百日新政及政变处分。",
+      "sources": [
+        "v170_qsg464",
+        "v170_dpm_petitions"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q170_kangguangren",
+      "role": "戊戌时期人物",
+      "inverse": "在光绪朝活动",
+      "period": "1895—1898",
+      "note": "康广仁的经历连接战后改革、百日新政及政变处分。",
+      "sources": [
+        "v170_qsg464",
+        "v170_yuexiu_reform"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q170_liduanfen",
+      "role": "戊戌时期人物",
+      "inverse": "在光绪朝活动",
+      "period": "1895—1898",
+      "note": "李端棻的经历连接战后改革、百日新政及政变处分。",
+      "sources": [
+        "v170_qsg464",
+        "v170_dpm_school"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q170_sunjianai",
+      "role": "戊戌时期人物",
+      "inverse": "在光绪朝活动",
+      "period": "1895—1898",
+      "note": "孙家鼐的经历连接战后改革、百日新政及政变处分。",
+      "sources": [
+        "v170_qsg443",
+        "v170_dpm_school"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q170_zhangyuanji",
+      "role": "戊戌时期人物",
+      "inverse": "在光绪朝活动",
+      "period": "1895—1898",
+      "note": "张元济的经历连接战后改革、百日新政及政变处分。",
+      "sources": [
+        "v170_cp_zhang",
+        "v170_cp_path"
+      ]
+    },
+    {
+      "from": "q170_tansitong",
+      "to": "q170_yangrui",
+      "role": "同任军机章京",
+      "inverse": "同任军机章京",
+      "period": "1898",
+      "note": "共同参与新政，改革节奏判断并不完全相同",
+      "sources": [
+        "v170_qsg464"
+      ]
+    },
+    {
+      "from": "q170_yangrui",
+      "to": "q170_liuguangdi",
+      "role": "四川同乡与章京同僚",
+      "inverse": "同乡与章京同僚",
+      "period": "1898",
+      "note": "共同处理章奏并同日被杀",
+      "sources": [
+        "v170_qsg464"
+      ]
+    },
+    {
+      "from": "q170_linxu",
+      "to": "q170_ronglu",
+      "role": "曾入幕并受荐",
+      "inverse": "延入幕府并荐举",
+      "period": "1898",
+      "note": "早期工作关系不等于政变时政治同盟",
+      "sources": [
+        "v170_qsg464",
+        "v170_qsg437"
+      ]
+    },
+    {
+      "from": "q170_liduanfen",
+      "to": "q170_sunjianai",
+      "role": "倡议学校体系",
+      "inverse": "议复并主持筹办",
+      "period": "1896—1898",
+      "note": "大学堂从建议到章程经过多环节",
+      "sources": [
+        "v170_dpm_school"
+      ]
+    },
+    {
+      "from": "q170_kangguangren",
+      "to": "q_kangyouwei",
+      "role": "弟弟与教育同道",
+      "inverse": "兄长与维新领袖",
+      "period": "1895—1898",
+      "note": "亲属关系不等于权限和主张完全一致",
+      "sources": [
+        "v170_qsg464"
+      ]
+    },
+    {
+      "from": "q170_zhangyuanji",
+      "to": "q167_shengxuanhuai",
+      "role": "译书院主持者",
+      "inverse": "南洋公学主持者",
+      "period": "1898以后",
+      "note": "政变后经李鸿章推荐进入盛宣怀所办南洋公学",
+      "sources": [
+        "v170_cp_zhang"
+      ]
     }
   ],
   "dynasties": [
@@ -249771,7 +252444,19 @@
         "q169_libingheng",
         "q169_nieshicheng",
         "q169_qiufengjia",
-        "q169_xuxiang"
+        "q169_xuxiang",
+        "q170_tansitong",
+        "q170_ronglu",
+        "q170_gangyi",
+        "q170_zhangyinhuan",
+        "q170_yangrui",
+        "q170_liuguangdi",
+        "q170_linxu",
+        "q170_yangshenxiu",
+        "q170_kangguangren",
+        "q170_liduanfen",
+        "q170_sunjianai",
+        "q170_zhangyuanji"
       ],
       "events": [
         "qev_guangxu_accession_1875",
@@ -249930,7 +252615,52 @@
         "v169_gongche",
         "v169_reform_translation",
         "v169_hero_memory",
-        "v169_taiwan_poetry"
+        "v169_taiwan_poetry",
+        "v170_petition_channels",
+        "v170_qiangxue_politics",
+        "v170_weng_dismissal",
+        "v170_mingding_guoshi",
+        "v170_four_secretaries",
+        "v170_rite_ministry_case",
+        "v170_secret_edict",
+        "v170_coup",
+        "v170_execution_no_trial",
+        "v170_xiaozhan_training",
+        "v170_beiyang_armies",
+        "v170_military_schools",
+        "v170_german_jiaozhou",
+        "v170_russian_lease",
+        "v170_british_weihai",
+        "v170_coastal_alarm",
+        "v170_reform_drill",
+        "v170_tianjin_parade_fear",
+        "v170_indemnity_loans",
+        "v170_railway_concessions",
+        "v170_rail_mine_bureau",
+        "v170_commerce_bureaus",
+        "v170_hanyang_iron",
+        "v170_factory_rights",
+        "v170_translation_market",
+        "v170_school_finance",
+        "v170_postcoup_enterprise",
+        "v170_urban_readers",
+        "v170_petition_mobility",
+        "v170_women_school",
+        "v170_hunan_society",
+        "v170_mission_tension",
+        "v170_rural_school_limits",
+        "v170_coup_families",
+        "v170_exile_routes",
+        "v170_execution_public",
+        "v170_zhongwai_jiwen",
+        "v170_shiwu_bao",
+        "v170_guowen_bao",
+        "v170_xiangbao",
+        "v170_renxue_text",
+        "v170_exam_reform",
+        "v170_pku_charter",
+        "v170_tongyi_school",
+        "v170_wuxu_memory"
       ],
       "sources": [
         "v5qn_qsg221",
@@ -250035,7 +252765,31 @@
         "v169_yale_treaty",
         "v169_donghak",
         "v169_taiwan_history",
-        "v169_royal_museum"
+        "v169_royal_museum",
+        "v170_qsg23",
+        "v170_qsg437",
+        "v170_qsg442",
+        "v170_qsg443",
+        "v170_qsg464",
+        "v170_qsg465",
+        "v170_dpm_guangxu",
+        "v170_dpm_tan",
+        "v170_dpm_archives",
+        "v170_dpm_school",
+        "v170_dpm_weng",
+        "v170_dpm_petitions",
+        "v170_cssn_press",
+        "v170_cssn_education",
+        "v170_moe_pku",
+        "v170_beijing_school",
+        "v170_fuzhou_linxu",
+        "v170_yuexiu_reform",
+        "v170_cp_zhang",
+        "v170_cp_path",
+        "v170_wuxu_record",
+        "v170_renxue",
+        "v170_guowenbao",
+        "v170_loc_reform"
       ],
       "note": "光绪前期由再度垂帘、新疆战事与灾荒进入中法战争、朝鲜危机、台湾建省和分阶段亲政。战场胜负、条约结果、海军制度、基础设施与普通人的税役、迁徙和土地代价必须并读。"
     },

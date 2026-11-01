@@ -5038,4 +5038,26 @@ final class MingJiUITests: XCTestCase {
         shot("v169-deng-shichang-sources", app)
     }
 
+    @MainActor func testV170TanSitongSeparatesActionFromLaterCoupNarrative() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["--uitesting", "--ui-dynasty", "qing"]
+        app.launch()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        app.buttons.matching(NSPredicate(format: "identifier == %@", "globalSearch")).firstMatch.tap()
+        let search = app.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("谭嗣同")
+        let result = app.buttons["search_person_q170_tansitong"]
+        XCTAssertTrue(result.waitForExistence(timeout: 8)); Thread.sleep(forTimeInterval: 1); result.tap()
+        if !app.buttons["articleEntry"].waitForExistence(timeout: 5) { app.buttons["search_person_q170_tansitong"].tap() }
+        XCTAssertTrue(app.buttons["articleEntry"].waitForExistence(timeout: 5)); app.buttons["articleEntry"].tap()
+        XCTAssertTrue(app.buttons["articleContents"].waitForExistence(timeout: 5)); app.buttons["articleContents"].tap()
+        let chapter = app.buttons["夜访袁世凯与政变时序"]
+        XCTAssertTrue(chapter.exists); chapter.tap()
+        XCTAssertTrue(app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "告密时间与政变是否已先发动")).firstMatch.waitForExistence(timeout: 5))
+        shot("v170-tan-sitong-coup-timeline-boundary", app)
+        openChapterSources("v170_tansitong_4", in: app)
+        XCTAssertTrue(app.descendants(matching: .any)["source_v170_wuxu_record"].waitForExistence(timeout: 3))
+        shot("v170-tan-sitong-source-cards", app)
+    }
+
 }
