@@ -6385,4 +6385,39 @@ final class MingJiUITests: XCTestCase {
         shot("v202-gongdi-transition-is-not-one-night-collapse", transition)
     }
 
+    @MainActor func testV203EarlyLiuSongKeepsOverviewLeanAndShowsYuanjiaCosts() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["--uitesting", "--ui-dynasty", "northern_southern"]
+        app.launch()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        app.buttons["dynasty_northern_southern"].tap()
+        let overview = app.descendants(matching: .any)["dynastyDetail_northern_southern"]
+        XCTAssertTrue(overview.waitForExistence(timeout: 5))
+        XCTAssertTrue(overview.staticTexts["朝代总览"].exists)
+        XCTAssertFalse(overview.staticTexts["从这里继续"].exists)
+        shot("v203-dynasty-overview-without-duplicate-guide", app)
+
+        app.navigationBars.buttons.firstMatch.tap()
+        app.buttons["globalSearch"].tap()
+        let search = app.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("刘义隆")
+        let emperor = app.buttons["search_person_ns_song_wen"]
+        XCTAssertTrue(emperor.waitForExistence(timeout: 5)); emperor.tap()
+        XCTAssertTrue(app.buttons["articleEntry"].waitForExistence(timeout: 5))
+        openArticle(in: app)
+        app.buttons["articleContents"].tap()
+        let war = app.buttons["450年大战把治理积累推向边界"]
+        XCTAssertTrue(war.exists); war.tap()
+        let cost = app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "所谓元嘉之治在这里受到真实消耗")).firstMatch
+        XCTAssertTrue(cost.waitForExistence(timeout: 5))
+        XCTAssertFalse(app.staticTexts["从这里继续"].exists)
+        shot("v203-wendi-war-and-civilian-costs", app)
+        openChapterSources("ns_song_wen_v203_5", in: app)
+        let source = app.descendants(matching: .any)["source_v203_ss5"]
+        reach(source, in: app, attempts: 8)
+        XCTAssertTrue(source.exists)
+        XCTAssertLessThanOrEqual(source.frame.maxY, app.tabBars.firstMatch.frame.minY - 16)
+        shot("v203-wendi-source-and-safe-ending", app)
+    }
+
 }

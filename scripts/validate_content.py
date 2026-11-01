@@ -4745,3 +4745,31 @@ if d['version'] >= 176:
   assert all(section['events'] and section['sources'] and set(section['events'])<={event['id'] for event in v176_events} for section in article['sections'])
  assert all('从这里继续' not in json.dumps(profile,ensure_ascii=False) for profile in d['dynastyProfiles'])
  print('V176 PASS: 396-420 late Eastern Jin now connects regency, Jingkou and Jingzhou military regions, the Sun En-Lu Xun wars, Huan Xuan, the restoration coalition, northern expeditions, civilian costs and the Jin-Song transition without restoring the duplicate dynasty guide')
+
+if d['version'] >= 177:
+ v177_people={'ns_song_wu','ns_song_shao','ns_song_wen','ns_xu_xianzhi','ns_fu_liang','ns_xie_hui','ns_tan_daoji','ns_wang_hong','ns_liu_yikang','ns_liu_zhan','ns_wang_xuanmo','ns_he_chengtian','ns_pei_songzhi','ns_fan_ye','ns_liu_shao'}
+ v177_emperors={'ns_song_wu','ns_song_shao','ns_song_wen','ns_liu_shao'}
+ v177_sources={item['id'] for item in d['sources'] if item['id'].startswith('v203_')}
+ v177_events=[item for item in d['events'] if item['id'].startswith('v203_')]
+ assert len(v177_sources)==10 and v177_sources<=sources.keys()
+ assert len(v177_events)==30 and Counter(item['category'] for item in v177_events)=={'政治':6,'军事':6,'文化':6,'经济':6,'社会':6}
+ assert len({item['body'] for item in v177_events})==30 and len({item['impact'] for item in v177_events})==30
+ assert all(set(item['people'])<=people.keys() and set(item['sources'])<=v177_sources for item in v177_events)
+ target_articles={item['person']:item for item in d['articles'] if item['person'] in v177_people}
+ assert target_articles.keys()==v177_people
+ assert all(isinstance(people[pid]['reign'],str) and isinstance(people[pid]['kind'],str) for pid in v177_people)
+ for pid,article in target_articles.items():
+  chars=len(re.findall(r'[\u4e00-\u9fff]',''.join(section['text'] for section in article['sections'])))
+  assert len(article['sections'])==6 and chars>=(750 if pid in v177_emperors else 520),(pid,chars)
+  assert set(article['sources'])<=v177_sources and article['sources']
+  assert all(section['events'] and section['people'] and set(section['sources'])<=v177_sources for section in article['sections'])
+ corpus=json.dumps(list(target_articles.values())+v177_events+[item for item in d['sources'] if item['id'] in v177_sources],ensure_ascii=False)
+ for term in ['顾命授权缺少纠错边界','收复空城不等于建立补给和守备','万里长城是传世控诉而非录音','赋役制度通过年龄登记直接作用于身体和家庭','并列异说能让证据冲突保持可见','宫城控制不足以换取全国承认']:
+  assert term in corpus,('missing early Liu Song term',term)
+ for boundary in ['不宜把所有戏剧化细节写成现场记录','不能据诏令反推每项措施都有效落地','不能当作逐字现场记录','没有完整军需账册互证','案辞和供述不能直接当作无偏事实']:
+  assert boundary in corpus,('missing early Liu Song evidence boundary',boundary)
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品不用|产品将|产品采用|本产品|从产品|人物页面|页面采用|页面因此',corpus,re.I)
+ overview_source=(R/'App/DynastyViews.swift').read_text()
+ assert '从这里继续' not in overview_source and 'DynastyContinuationGuide' not in overview_source
+ assert overview_source.count('DynastyOverviewBlock(title: "朝代总览", text: profile.overview)')==1
+ print('V177 PASS: 420-453 early Liu Song now links regency, deposition, northern expeditions, fiscal relief, knowledge institutions, civilian displacement and the Yuanjia court crisis without restoring the duplicate dynasty guide')
