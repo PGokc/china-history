@@ -3785,3 +3785,23 @@ if d['version'] >= 153:
  assert len({section['text'] for topic in v179_topics.values() for section in topic['sections']})==15
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将|产品采用',corpus,re.I)
  print('V153 PASS: Zhuangzi, Xunzi, Han Fei, Shang Yang and King Wuling now separate biography, doctrine, institutions, textual layers and human costs')
+
+if d['version'] >= 154:
+ zhou_guide=json.loads((R/'App/Resources/zhou_topics.json').read_text())
+ v180_topic_ids={'wu-qi','li-kui','suqin-zhangyi','qu-yuan','li-bing-dujiangyan'}
+ v180_topics={topic['id']:topic for topic in zhou_guide['topics'] if topic['id'] in v180_topic_ids}
+ assert v180_topics.keys()==v180_topic_ids
+ for topic_id,topic in v180_topics.items():
+  chars=len(re.findall(r'[\u4e00-\u9fff]',topic['summary']+''.join(section['text'] for section in topic['sections'])))
+  assert chars>=580,(topic_id,chars)
+  assert len(topic['sections'])==3 and len({section['id'] for section in topic['sections']})==3
+  assert len(topic['sources'])>=3 and all(source['url'].startswith('https://') for source in topic['sources'])
+  assert all(len(re.findall(r'[\u4e00-\u9fff]',section['text']))>=150 for section in topic['sections'])
+ corpus=json.dumps(list(v180_topics.values()),ensure_ascii=False)
+ for term in ['吮卒疽','前381年','五口之家','《晋书·刑法志》','马王堆三号汉墓','世言苏秦多异','汝阴侯墓','《续齐谐记》','凿离堆','岁修']:
+  assert term in corpus,('missing late Warring States evidence term',term)
+ for boundary in ['不能把后世归纳写成一份保存完整的吴起改革纲领','不能等同现代社会保障','不能把教材定论冒充出土原件','不能断言两人必然直接交锋','不能把整部《楚辞》标成屈原一人全集','不是战国竹笼原封不动保存至今']:
+  assert boundary in corpus,('missing late Warring States evidence boundary',boundary)
+ assert len({section['text'] for topic in v180_topics.values() for section in topic['sections']})==15
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将|产品采用',corpus,re.I)
+ print('V154 PASS: Wu Qi, Li Kui, Su Qin and Zhang Yi, Qu Yuan, and Dujiangyan now separate received biography, excavated evidence, institutions, textual formation and long-term maintenance')

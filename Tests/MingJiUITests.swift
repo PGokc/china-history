@@ -5353,4 +5353,28 @@ final class MingJiUITests: XCTestCase {
         shot("v179-wuling-sources-and-page-ending", app)
     }
 
+    @MainActor func testV180DujiangyanSeparatesFoundationFromContinuousMaintenance() throws {
+        let app = launch(enterFamily: false)
+        reach(app.buttons["dynasty_zhou"], in: app, attempts: 8); app.buttons["dynasty_zhou"].tap()
+        reach(app.buttons["zhouGuideEntry"], in: app, attempts: 12); app.buttons["zhouGuideEntry"].tap()
+        XCTAssertTrue(app.descendants(matching: .any)["zhouGuidePage"].waitForExistence(timeout: 5))
+        app.buttons["zhouPeriod_战国"].tap()
+        let topic = app.buttons["zhouTopic_li-bing-dujiangyan"]
+        reach(topic, in: app, attempts: 10); XCTAssertTrue(topic.isHittable); topic.tap()
+        XCTAssertTrue(app.descendants(matching: .any)["eraTopic_li-bing-dujiangyan"].waitForExistence(timeout: 5))
+        let datingBoundary = app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "通行框架而非考古测年到年的结论")).firstMatch
+        reach(datingBoundary, in: app, attempts: 5)
+        XCTAssertTrue(datingBoundary.exists)
+        let maintenanceBoundary = app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不是战国竹笼原封不动保存至今")).firstMatch
+        reach(maintenanceBoundary, in: app, attempts: 8)
+        XCTAssertTrue(maintenanceBoundary.exists)
+        shot("v180-dujiangyan-foundation-and-continuous-maintenance", app)
+        let finalSource = app.staticTexts["zhouSourceKind_2"]
+        reach(finalSource, in: app, attempts: 18)
+        XCTAssertEqual(finalSource.label, "古籍转录　ctext.org")
+        for _ in 0..<3 { app.swipeUp() }
+        XCTAssertLessThanOrEqual(finalSource.frame.maxY, app.tabBars.firstMatch.frame.minY - 16)
+        shot("v180-dujiangyan-sources-and-page-ending", app)
+    }
+
 }
