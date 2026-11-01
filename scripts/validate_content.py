@@ -3254,3 +3254,37 @@ if d['version'] >= 136:
  assert all(item['sectionID'].startswith('q-daoguang-') for item in narration['entries'] if item['articleID']=='q_daoguang')
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将',corpus,re.I)
  print('V136 PASS: twelve early-Daoguang readings and forty-five events connect sea transport, ticket salt, Xinjiang war, silver pressure, opium enforcement, coastal defense, ordinary labor and treaty implementation with explicit evidence limits')
+
+if d['version'] >= 137:
+ v163_people=['q163_yangxiuqing','q163_fengyunshan','q163_xiaochaogui','q163_shidakai','q163_weichanghui','q163_linfengxiang','q163_likaifang','q163_saishanga','q163_xiangrong','q163_wulantai','q163_yemingchen','q163_senggelinqin']
+ v163_events={item['id'] for item in d['events'] if item['id'].startswith('v163_')}
+ v163_sources={item['id'] for item in d['sources'] if item['id'].startswith('v163_')}
+ v163_objects={item['id'] for item in d['objects'] if item['id'].startswith('v163_')}
+ object_map={item['id']:item for item in d['objects']}
+ assert len(v163_people)==12 and len(v163_events)==45 and len(v163_sources)==23 and len(v163_objects)==5
+ assert {events[event_id]['category'] for event_id in v163_events}=={'政治','军事','经济','社会','文化'}
+ assert all(sum(events[event_id]['category']==category for event_id in v163_events)==9 for category in ['政治','军事','经济','社会','文化'])
+ for pid in v163_people:
+  reading=articles[pid]; ss=reading['sections']
+  chars=sum(len(re.findall(r'[\u4e00-\u9fff]',section['text'])) for section in ss)
+  assert len(ss)==5 and chars>=500 and all(section['sources'] and section['events'] for section in ss),(pid,chars)
+  assert all(set(section['sources'])<=sources.keys() and set(section['events'])<=events.keys() and set(section.get('people',[]))<=people.keys() for section in ss)
+  assert set(reading['sources'])=={source for section in ss for source in section['sources']}
+ assert all(set(events[event_id]['people'])<=people.keys() and set(events[event_id]['sources'])<=sources.keys() for event_id in v163_events)
+ for object_id in v163_objects:
+  item=object_map[object_id]
+  assert item['dynasties']==['qing'] and item['people'] and item['sources']
+  assert set(item['people'])<=people.keys() and set(item['sources'])<=sources.keys()
+ corpus=json.dumps([articles[pid] for pid in v163_people]+[events[event_id] for event_id in v163_events]+[object_map[object_id] for object_id in v163_objects]+[sources[source_id] for source_id in v163_sources],ensure_ascii=False)
+ for term in ['金田','永安','蓑衣渡','长沙','武昌','天京','北伐','连镇','江南大营','厘金','男女分营','挑夫','《天朝田亩制度》','太平天国钱币','叶名琛','僧格林沁']:
+  assert term in corpus,('missing early-Xianfeng evidence term',term)
+ for boundary in ['不能把条文直接写成普遍现实','不应把单一数字当作完整人口统计','不能单凭存世币推算','不把愿望当作完成的社会事实','避免用一则故事概括数万人的远征','不能把第二次鸦片战争写成叶名琛一人拒谈导致']:
+  assert boundary in corpus,('missing early-Xianfeng evidence boundary',boundary)
+ ctx=next(item for item in d['reignContexts'] if item['person']=='q_xianfeng')
+ assert set(v163_people)<=set(ctx['people']) and v163_events<=set(ctx['events']) and v163_sources<=set(ctx['sources'])
+ pairset={(item['from'],item['to']) for item in d['associations']}
+ assert {('q_xianfeng',pid) for pid in v163_people}<=pairset
+ assert {('q_hongxiuquan','q163_yangxiuqing'),('q_hongxiuquan','q163_fengyunshan'),('q163_yangxiuqing','q163_shidakai'),('q163_linfengxiang','q163_likaifang'),('q163_saishanga','q163_xiangrong'),('q163_saishanga','q163_wulantai'),('q163_xiangrong','q163_wulantai'),('q163_senggelinqin','q163_linfengxiang')}<=pairset
+ assert all(item['sectionID'].startswith('q-xianfeng-') for item in narration['entries'] if item['articleID']=='q_xianfeng')
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将',corpus,re.I)
+ print('V137 PASS: twelve early-Xianfeng readings and forty-five balanced events connect Guangxi mobilization, Yong’an, the Yangzi advance, Northern Expedition, war finance, ordinary displacement, Tianjing government and evidence-bounded memory')

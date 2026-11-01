@@ -140,10 +140,13 @@ final class MingJiUITests: XCTestCase {
         overview.launch()
         XCTAssertTrue(overview.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
         reach(overview.buttons["dynasty_qing"], in: overview, attempts: 14); overview.buttons["dynasty_qing"].tap()
-        XCTAssertTrue(overview.staticTexts["dynastyDestinationsTitle"].waitForExistence(timeout: 5))
-        XCTAssertTrue(overview.buttons["dynastySequence_qing"].exists)
-        XCTAssertLessThan(overview.staticTexts["dynastyDestinationsTitle"].frame.minY, overview.staticTexts["朝代总览"].frame.minY)
-        shot("v110-dynasty-destinations-first", overview)
+        XCTAssertTrue(overview.staticTexts["朝代总览"].waitForExistence(timeout: 5))
+        XCTAssertFalse(overview.staticTexts["dynastyDestinationsTitle"].exists)
+        XCTAssertFalse(overview.buttons["dynastySequence_qing"].exists)
+        XCTAssertFalse(overview.buttons["dynastyFamily_qing"].exists)
+        XCTAssertFalse(overview.buttons["dynastyCollection_qing"].exists)
+        XCTAssertLessThan(overview.staticTexts["朝代总览"].frame.minY, overview.frame.midY)
+        shot("v163-dynasty-overview-without-duplicate-guide", overview)
         overview.terminate()
 
         let large = launch(true)
@@ -4834,6 +4837,41 @@ final class MingJiUITests: XCTestCase {
         XCTAssertTrue(app.descendants(matching: .any)["source_v162_qsg122"].waitForExistence(timeout: 3))
         app.swipeUp()
         shot("v162-taoshu-sea-transport-labor", app)
+    }
+
+    @MainActor func testV163DynastyOverviewStartsWithHistoryAndEarlyXianfengKeepsEvidenceBoundaries() throws {
+        let overview = XCUIApplication()
+        overview.launchArguments = ["--uitesting", "--ui-dynasty", "qing"]
+        overview.launch()
+        XCTAssertTrue(overview.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        reach(overview.buttons["dynasty_qing"], in: overview, attempts: 14); overview.buttons["dynasty_qing"].tap()
+        XCTAssertTrue(overview.staticTexts["朝代总览"].waitForExistence(timeout: 5))
+        XCTAssertFalse(overview.staticTexts["从这里继续"].exists)
+        XCTAssertFalse(overview.buttons["dynastySequence_qing"].exists)
+        XCTAssertFalse(overview.buttons["dynastyFamily_qing"].exists)
+        XCTAssertFalse(overview.buttons["dynastyCollection_qing"].exists)
+        shot("v163-qing-overview-without-duplicate-guide", overview)
+        overview.terminate()
+
+        let reading = XCUIApplication()
+        reading.launchArguments = ["--uitesting", "--ui-dynasty", "qing"]
+        reading.launch()
+        XCTAssertTrue(reading.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        reading.buttons.matching(NSPredicate(format: "identifier == %@", "globalSearch")).firstMatch.tap()
+        let search = reading.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("杨秀清")
+        let result = reading.buttons["search_person_q163_yangxiuqing"]
+        XCTAssertTrue(result.waitForExistence(timeout: 8)); Thread.sleep(forTimeInterval: 1); result.tap()
+        if !reading.buttons["articleEntry"].waitForExistence(timeout: 5) { reading.buttons["search_person_q163_yangxiuqing"].tap() }
+        XCTAssertTrue(reading.buttons["articleEntry"].waitForExistence(timeout: 5)); reading.buttons["articleEntry"].tap()
+        XCTAssertTrue(reading.buttons["articleContents"].waitForExistence(timeout: 5)); reading.buttons["articleContents"].tap()
+        let chapter = reading.buttons["天京中枢扩大了权力差距"]
+        XCTAssertTrue(chapter.exists); chapter.tap()
+        XCTAssertTrue(reading.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不能证明平等理想已经落实")).firstMatch.waitForExistence(timeout: 5))
+        openChapterSources("v163_yangxiuqing4", in: reading)
+        XCTAssertTrue(reading.descendants(matching: .any)["source_v163_qsg475"].waitForExistence(timeout: 3))
+        reading.swipeUp()
+        shot("v163-yang-xiuqing-power-and-evidence", reading)
     }
 
 }

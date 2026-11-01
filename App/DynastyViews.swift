@@ -16,17 +16,6 @@ struct DynastyDetailPage: View {
                         Text(dynasty.name).font(.system(size: 39, weight: .medium, design: .serif)).foregroundStyle(Theme.ink)
                         Text(profile.subtitle).font(.title3).foregroundStyle(Theme.text).lineSpacing(4)
                     }
-                    if dynasty.selectable {
-                        VStack(alignment: .leading, spacing: 20) {
-                            Text("从这里继续")
-                                .font(.system(.title3, design: .serif).weight(.medium))
-                                .foregroundStyle(Theme.ink)
-                                .accessibilityIdentifier("dynastyDestinationsTitle")
-                            dynastyEntry("帝序与在位人物", subtitle: "收录\(store.sequence(in: dynastyID).count)位，循在位次序读人物与时代", route: .dynastySequence(dynastyID), id: "dynastySequence_" + dynastyID)
-                            dynastyEntry("家族世系", subtitle: "亲属关系与皇位传承", route: .family(store.defaultPerson(in: dynastyID)), id: "dynastyFamily_" + dynastyID)
-                            dynastyEntry("思想与遗珍", subtitle: "收录\(collectionCount)项文物、著述、建筑与陵寝", route: .dynastyCollection(dynastyID), id: "dynastyCollection_" + dynastyID)
-                        }.padding(.vertical, 4)
-                    }
                     DynastyOverviewBlock(title: "朝代总览", text: profile.overview)
                     if let map = store.territoryMap(dynastyID) {
                         TerritoryMapCard(store: store, map: map)
@@ -44,17 +33,6 @@ struct DynastyDetailPage: View {
         } else {
             ContentUnavailableView("尚无朝代介绍", systemImage: "book.closed")
         }
-    }
-    private func dynastyEntry(_ title: String, subtitle: String, route: DetailRoute, id: String) -> some View {
-        NavigationLink(value: route) {
-            VStack(alignment: .leading, spacing: 5) {
-                Text(title).font(.system(.headline, design: .serif)).foregroundStyle(Theme.ink)
-                Text(subtitle).font(.subheadline).foregroundStyle(Theme.muted)
-            }.frame(maxWidth: .infinity, alignment: .leading).contentShape(Rectangle())
-        }.buttonStyle(QuietRowStyle()).accessibilityIdentifier(id)
-    }
-    private var collectionCount: Int {
-        store.objects(in: dynastyID).count + store.tombs(in: dynastyID).count
     }
 }
 

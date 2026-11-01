@@ -1,5 +1,5 @@
 {
-  "version": 136,
+  "version": 137,
   "reviewed": "2026-10-31",
   "people": [
     {
@@ -18969,6 +18969,222 @@
       "kind": "钦差大臣",
       "note": "人物评价须放回具体制度、奏报链和史料立场中理解。",
       "dynasty": "qing"
+    },
+    {
+      "id": "q163_yangxiuqing",
+      "name": "杨秀清",
+      "call": "东王与太平天国前期实际军政中枢",
+      "temple": "",
+      "era": "咸丰前期",
+      "reign": "太平天国前期",
+      "summary": "以代天父传言建立权威，主持早期军事和天京政务，1856年死于内讧。",
+      "parent": null,
+      "sources": [
+        "v163_qsg475",
+        "v163_ruc_religion",
+        "v163_qingji51"
+      ],
+      "kind": "太平天国人物",
+      "note": "人物事迹须结合不同阵营材料阅读，官修史中的敌对称谓不沿用为产品判断。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q163_fengyunshan",
+      "name": "冯云山",
+      "call": "把零散信仰组织成紫荆山网络",
+      "temple": "",
+      "era": "咸丰前期",
+      "reign": "太平天国形成期",
+      "summary": "长期在广西传播拜上帝会，是金田起义前组织网络的重要建设者，1852年在全州战伤去世。",
+      "parent": null,
+      "sources": [
+        "v163_qsg475",
+        "v163_chn_jintian",
+        "v163_qingji51"
+      ],
+      "kind": "太平天国人物",
+      "note": "人物事迹须结合不同阵营材料阅读，官修史中的敌对称谓不沿用为产品判断。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q163_xiaochaogui",
+      "name": "萧朝贵",
+      "call": "西王与长沙攻城指挥者",
+      "temple": "",
+      "era": "咸丰前期",
+      "reign": "太平天国形成期",
+      "summary": "以代天兄传言参与宗教动员，封西王，1852年进攻长沙时中炮身亡。",
+      "parent": null,
+      "sources": [
+        "v163_qsg475",
+        "v163_report_xiao",
+        "v163_qingji51"
+      ],
+      "kind": "太平天国人物",
+      "note": "人物事迹须结合不同阵营材料阅读，官修史中的敌对称谓不沿用为产品判断。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q163_shidakai",
+      "name": "石达开",
+      "call": "从翼王到脱离天京的军事领袖",
+      "temple": "",
+      "era": "咸丰前期",
+      "reign": "1831—1863",
+      "summary": "参加金田起义和沿江进军，天京事变后短暂回京主政，随后率部远征，1863年在大渡河地区失败。",
+      "parent": null,
+      "sources": [
+        "v163_qsg475",
+        "v163_chn_jintian",
+        "v163_qingji51"
+      ],
+      "kind": "太平天国人物",
+      "note": "人物事迹须结合不同阵营材料阅读，官修史中的敌对称谓不沿用为产品判断。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q163_weichanghui",
+      "name": "韦昌辉",
+      "call": "北王与天京事变的执行者",
+      "temple": "",
+      "era": "咸丰前期",
+      "reign": "太平天国前期",
+      "summary": "以地方资源加入起义，封北王；1856年奉召杀杨秀清并扩大屠杀，继而被洪秀全处死。",
+      "parent": null,
+      "sources": [
+        "v163_qsg475",
+        "v163_qingji51",
+        "v163_ruc_memory"
+      ],
+      "kind": "太平天国人物",
+      "note": "人物事迹须结合不同阵营材料阅读，官修史中的敌对称谓不沿用为产品判断。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q163_linfengxiang",
+      "name": "林凤祥",
+      "call": "北伐军主要统帅",
+      "temple": "",
+      "era": "咸丰前期",
+      "reign": "太平天国前期",
+      "summary": "从广西一路参与北上和沿江作战，1853年率北伐军进入直隶，受困连镇后于1855年被俘。",
+      "parent": null,
+      "sources": [
+        "v163_qsg475",
+        "v163_qsg404",
+        "v163_qsg388"
+      ],
+      "kind": "太平天国人物",
+      "note": "人物事迹须结合不同阵营材料阅读，官修史中的敌对称谓不沿用为产品判断。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q163_likaifang",
+      "name": "李开芳",
+      "call": "从沿江作战到高唐冯官屯的北伐将领",
+      "temple": "",
+      "era": "咸丰前期",
+      "reign": "太平天国前期",
+      "summary": "参与长沙、武汉和北伐，分兵南下接应援军后被围，1855年在冯官屯失败被俘。",
+      "parent": null,
+      "sources": [
+        "v163_qsg475",
+        "v163_qsg404",
+        "v163_report_xiao"
+      ],
+      "kind": "太平天国人物",
+      "note": "人物事迹须结合不同阵营材料阅读，官修史中的敌对称谓不沿用为产品判断。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q163_saishanga",
+      "name": "赛尚阿",
+      "call": "被派往广西却无法整合诸军的钦差大臣",
+      "temple": "",
+      "era": "咸丰前期",
+      "reign": "咸丰前期",
+      "summary": "由军机与部院高官转任广西钦差，面对将帅不和、道路和情报问题，太平军突围北上后被革职治罪。",
+      "parent": null,
+      "sources": [
+        "v163_qsg392",
+        "v163_qsg20",
+        "v163_qsl"
+      ],
+      "kind": "清朝官员",
+      "note": "人物事迹须结合不同阵营材料阅读，官修史中的敌对称谓不沿用为产品判断。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q163_xiangrong",
+      "name": "向荣",
+      "call": "从广西追击到江南大营的绿营统帅",
+      "temple": "",
+      "era": "咸丰前期",
+      "reign": "咸丰前期",
+      "summary": "长期追击太平军，1853年在天京城外经营江南大营，1856年营垒崩溃后去世。",
+      "parent": null,
+      "sources": [
+        "v163_qsg401",
+        "v163_qsg20",
+        "v163_qsg475"
+      ],
+      "kind": "清朝官员",
+      "note": "人物事迹须结合不同阵营材料阅读，官修史中的敌对称谓不沿用为产品判断。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q163_wulantai",
+      "name": "乌兰泰",
+      "call": "重视火器训练并直陈军中矛盾的将领",
+      "temple": "",
+      "era": "咸丰前期",
+      "reign": "咸丰前期",
+      "summary": "率火器营与广东兵入广西，屡次指出指挥分歧，1852年追击太平军时受炮伤去世。",
+      "parent": null,
+      "sources": [
+        "v163_qsg402",
+        "v163_qsg392",
+        "v163_qsg20"
+      ],
+      "kind": "清朝官员",
+      "note": "人物事迹须结合不同阵营材料阅读，官修史中的敌对称谓不沿用为产品判断。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q163_yemingchen",
+      "name": "叶名琛",
+      "call": "广州交涉与战争危机中的两广总督",
+      "temple": "",
+      "era": "咸丰前期",
+      "reign": "1807—1859",
+      "summary": "长期主持广东政务，在修约和入城争议中采取强硬立场，广州失守后被英军俘往印度并死于当地。",
+      "parent": null,
+      "sources": [
+        "v163_qsg154",
+        "v163_dpm_xianfeng",
+        "v163_qsl"
+      ],
+      "kind": "清朝官员",
+      "note": "人物事迹须结合不同阵营材料阅读，官修史中的敌对称谓不沿用为产品判断。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q163_senggelinqin",
+      "name": "僧格林沁",
+      "call": "从阻击北伐到大沽海防的蒙古王公",
+      "temple": "",
+      "era": "咸丰前期",
+      "reign": "1811—1865",
+      "summary": "负责京畿防务并击败北伐军，后主持大沽防御；1859年获胜、1860年战败，不能以一次胜负概括其军事生涯。",
+      "parent": null,
+      "sources": [
+        "v163_qsg404",
+        "v163_qsg154",
+        "v163_qsg388"
+      ],
+      "kind": "清朝官员",
+      "note": "人物事迹须结合不同阵营材料阅读，官修史中的敌对称谓不沿用为产品判断。",
+      "dynasty": "qing"
     }
   ],
   "sources": [
@@ -26285,6 +26501,144 @@
       "title": "南京静海寺纪念馆 · 《南京条约》史料陈列",
       "url": "https://njjhs.cn/zh-CN/",
       "note": "核对议约地点记忆与当代陈列，区分遗址纪念和条约原件。"
+    },
+    {
+      "id": "v163_qsg20",
+      "title": "《清史稿》卷20 · 文宗本纪",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷20",
+      "note": "核对咸丰即位、广西军务、太平军沿江推进及朝廷任免。官修本纪以清廷决策为中心，不能代替地方与太平天国一方材料。"
+    },
+    {
+      "id": "v163_qsg392",
+      "title": "《清史稿》卷392 · 赛尚阿传",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷392",
+      "note": "核对赛尚阿督办广西军务、永安突围及革职审讯。传记中的功罪判断仍属官修史立场。"
+    },
+    {
+      "id": "v163_qsg401",
+      "title": "《清史稿》卷401 · 向荣传",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷401",
+      "note": "核对向荣从广西追击到江南大营的经历、将帅矛盾及1856年营溃。"
+    },
+    {
+      "id": "v163_qsg402",
+      "title": "《清史稿》卷402 · 乌兰泰传",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷402",
+      "note": "核对乌兰泰的火器训练、广西战事、对指挥体系的批评及受伤去世。"
+    },
+    {
+      "id": "v163_qsg404",
+      "title": "《清史稿》卷404 · 僧格林沁传",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷404",
+      "note": "核对北伐军进入直隶、连镇高唐作战及僧格林沁后续海防经历。"
+    },
+    {
+      "id": "v163_qsg475",
+      "title": "《清史稿》卷475 · 洪秀全与太平天国",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷475",
+      "note": "核对早期领袖、永安建制、沿江进军、北伐与天京事变。该卷大量使用敌对称谓，事实线索与价值判断须分开阅读。"
+    },
+    {
+      "id": "v163_qsg154",
+      "title": "《清史稿》卷154 · 邦交志",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷154",
+      "note": "核对修约交涉、广州冲突与第二次鸦片战争前期。条约关系还须对照各方文本。"
+    },
+    {
+      "id": "v163_qsg388",
+      "title": "《清史稿》卷388 · 桂良传",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷388",
+      "note": "核对北伐军被击败、1854年天津交涉及1858年议约环境。"
+    },
+    {
+      "id": "v163_qsl",
+      "title": "《清实录·文宗显皇帝实录》",
+      "url": "https://zh.wikisource.org/zh-hans/清實錄/文宗顯皇帝實錄",
+      "note": "逐日诏令可观察朝廷收到消息、调兵筹饷和处分官员的过程，但它记录的是官方信息链。"
+    },
+    {
+      "id": "v163_chn_jintian",
+      "title": "中国国家博物馆 · 金田起义",
+      "url": "https://www.chnmuseum.cn/zp/zpml/ysp/202012/t20201214_248369.shtml",
+      "note": "核对金田起义主要参与者、时间和太平天国战争的基本进程；页面展示的是后世历史画。"
+    },
+    {
+      "id": "v163_chn_seal",
+      "title": "中国国家博物馆 · 太平天国天王洪秀全玉玺",
+      "url": "https://www.chnmuseum.cn/zp/zpml/gmww/202112/t20211214_253202.shtml",
+      "note": "核对玉玺流传、天京政权和《天朝田亩制度》的历史背景。"
+    },
+    {
+      "id": "v163_chn_coin",
+      "title": "中国国家博物馆 · 太平天国钱币",
+      "url": "https://www.chnmuseum.cn/zp/zpml/hb/202210/t20221018_257507.shtml",
+      "note": "核对1853年后铸钱衙、流通钱与礼仪性大花钱；钱币存在不能直接证明制度在全境均匀执行。"
+    },
+    {
+      "id": "v163_dpm_xianfeng",
+      "title": "故宫博物院 · 咸丰皇帝",
+      "url": "https://www.dpm.org.cn/court/lineage/226247.html",
+      "note": "核对咸丰朝内战、修约与第二次鸦片战争的宫廷年表。"
+    },
+    {
+      "id": "v163_dpm_qingshi",
+      "title": "故宫博物院 · 《清史图典》咸丰同治朝",
+      "url": "https://www.dpm.org.cn/journal_detail/108071.html",
+      "note": "提供咸同军政、经济、文化与物证的综合线索，具体事实仍回到原始文献核对。"
+    },
+    {
+      "id": "v163_ruc_memory",
+      "title": "中国人民大学清史研究所 · 战争苦难与太平天国记忆",
+      "url": "https://iqh.ruc.edu.cn/old/xwdt/0dfad64b54724b20823ab7e785edeeb5.htm",
+      "note": "用于把普通人的身体、损失和社会关系纳入战争叙事，并提醒忠义名册与个人经历并不等同。"
+    },
+    {
+      "id": "v163_ruc_religion",
+      "title": "中国人民大学清史研究所 · 太平天国宗教研究述评",
+      "url": "https://iqh.ruc.edu.cn/old/jsmmhsymjjpyj/mjzj/84a04f54755c41c28d84689cd819bde4.htm",
+      "note": "核对拜上帝会的文本传播、宗教规训及材料散失造成的研究边界。"
+    },
+    {
+      "id": "v163_ruc_women",
+      "title": "《清史研究》· 太平天国妇女地位问题再研究",
+      "url": "https://qsyj.ruc.edu.cn/CN/abstract/abstract998.shtml",
+      "note": "提醒不能把男女分营、禁缠足等措施直接等同于近代男女平等，制度、实践与宫廷等级须分别讨论。"
+    },
+    {
+      "id": "v163_pku_rural",
+      "title": "北京大学 · 太平天国占领区苏浙农村社会经济秩序研究",
+      "url": "https://fh.pku.edu.cn/docs/2023-01/20230112203302509564.pdf",
+      "note": "用于理解拉锯战下乡村征粮、赋税与基层控制的局限，避免把制度文本当成全面实施结果。"
+    },
+    {
+      "id": "v163_report_xiao",
+      "title": "曾水源、林凤祥、李开芳禀报萧朝贵中炮",
+      "url": "https://zh.wikisource.org/zh-hans/曾水源林鳳祥李開芳報告西王蕭朝貴中炮傷重上東王楊秀清等稟報",
+      "note": "太平军一方的近时文书，记录长沙战场、军粮与萧朝贵受伤；夸大战果的修辞仍需识别。"
+    },
+    {
+      "id": "v163_qingji51",
+      "title": "《清史纪事本末》卷51 · 太平天国之兴亡",
+      "url": "https://zh.wikisource.org/zh-hans/清史紀事本末/卷五十一",
+      "note": "串联金田、永安、进军和天京事变的后出编年叙事，不能替代同时代档案。"
+    },
+    {
+      "id": "v163_ruc_lijin",
+      "title": "中国人民大学清史研究所 · 厘金与战争财政",
+      "url": "https://iqh.ruc.edu.cn/old/jssxwhsyj/xsqyyllyj/sx_qyxl/9296a6e7a2d34fe28d69e194e9abe098.htm",
+      "note": "核对咸丰三年以后抽厘济饷及商民承担的通行成本。"
+    },
+    {
+      "id": "v163_sh_nanjing",
+      "title": "《社会科学辑刊》· 太平天国统治下的南京",
+      "url": "https://www.shkxjk.com/CN/abstract/abstract3202.shtml",
+      "note": "用于理解天京的城市治理和社会经济，具体人口数字与执行范围存在材料差异。"
+    },
+    {
+      "id": "v163_tianchao",
+      "title": "《天朝田亩制度》原文",
+      "url": "https://zh.wikisource.org/zh-hans/天朝田畝制度",
+      "note": "制度文本表达理想秩序，不等于占领区已经按条文普遍分田和组织生产。"
     }
   ],
   "relations": [
@@ -76186,6 +76540,903 @@
       ],
       "kind": "史实与解读",
       "category": "文化"
+    },
+    {
+      "id": "v163_accession_crisis",
+      "year": "1850年",
+      "sortYear": 1850,
+      "title": "咸丰接手的不是一张空白账本",
+      "body": "咸丰即位时，财政积弱、河工与边防开支延续，广西会党和拜上帝会冲突正在扩大。新君鼓励进言，却仍依赖逐级上报理解地方。",
+      "impact": "决策速度受消息往返和官员互相推责影响，不能把随后危机全归因于一位君主的性格。",
+      "people": [
+        "q_xianfeng",
+        "q163_saishanga"
+      ],
+      "sources": [
+        "v163_qsg20",
+        "v163_qsl"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v163_guangxi_command",
+      "year": "1850—1851年",
+      "sortYear": 1850,
+      "title": "广西军务在巡抚、提督和钦差之间反复转手",
+      "body": "林则徐病逝后，李星沅、周天爵、赛尚阿先后承担重任，向荣、乌兰泰又各有兵力和判断。",
+      "impact": "多头指挥消耗时间；失败既有个人责任，也有财政、道路、兵源和情报结构问题。",
+      "people": [
+        "q_xianfeng",
+        "q163_saishanga",
+        "q163_xiangrong",
+        "q163_wulantai"
+      ],
+      "sources": [
+        "v163_qsg20",
+        "v163_qsg392",
+        "v163_qsg401",
+        "v163_qsg402"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v163_yongan_kings",
+      "year": "1851年",
+      "sortYear": 1851,
+      "title": "永安封王把信仰共同体改造成权力层级",
+      "body": "洪秀全称天王，杨秀清、萧朝贵、冯云山、韦昌辉、石达开分别受封，军政职掌逐渐集中。",
+      "impact": "封王帮助维持被围队伍，也形成此后相互制衡和冲突的等级结构。",
+      "people": [
+        "q_hongxiuquan",
+        "q163_yangxiuqing",
+        "q163_fengyunshan",
+        "q163_xiaochaogui",
+        "q163_shidakai",
+        "q163_weichanghui"
+      ],
+      "sources": [
+        "v163_qsg475",
+        "v163_qingji51"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v163_saishanga_accountability",
+      "year": "1852年",
+      "sortYear": 1852,
+      "title": "赛尚阿因调度失当被逮问",
+      "body": "太平军由永安突围、进入湖南后，朝廷认定赛尚阿号令不明、劳师糜饷，将其革职押京。",
+      "impact": "处分提供了明确责任人，却没有自动修复跨省追击、军饷和将帅协同。",
+      "people": [
+        "q_xianfeng",
+        "q163_saishanga",
+        "q163_xiangrong",
+        "q163_wulantai"
+      ],
+      "sources": [
+        "v163_qsg392",
+        "v163_qsg20"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v163_tianjing_government",
+      "year": "1853年",
+      "sortYear": 1853,
+      "title": "定都天京后建立中央军政机构",
+      "body": "太平军占领南京、改称天京，王府、官职和文书体系随之扩展。",
+      "impact": "流动作战组织开始管理城市和占领区，权力、供给与居民治理成为新的考验。",
+      "people": [
+        "q_hongxiuquan",
+        "q163_yangxiuqing",
+        "q163_shidakai",
+        "q163_weichanghui"
+      ],
+      "sources": [
+        "v163_chn_jintian",
+        "v163_chn_seal",
+        "v163_sh_nanjing"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v163_land_program",
+      "year": "1853年",
+      "sortYear": 1853,
+      "title": "《天朝田亩制度》提出平均与共同体蓝图",
+      "body": "文本以土地等级、家庭人口和基层组织描述理想分配，也规定生产与储存秩序。",
+      "impact": "它是理解政治理想的重要文本，但战争中的实际分田范围有限，不能把条文直接写成普遍现实。",
+      "people": [
+        "q_hongxiuquan",
+        "q163_yangxiuqing"
+      ],
+      "sources": [
+        "v163_tianchao",
+        "v163_chn_seal",
+        "v163_pku_rural"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v163_jiangnan_camp",
+      "year": "1853年",
+      "sortYear": 1853,
+      "title": "向荣在天京城外建立江南大营",
+      "body": "清廷任向荣为钦差，绿营在孝陵卫等地构筑营垒，企图长期封锁天京。",
+      "impact": "固定大营牵制太平军，也暴露兵饷、营垒间距和长期疲惫问题。",
+      "people": [
+        "q_xianfeng",
+        "q163_xiangrong",
+        "q163_yangxiuqing"
+      ],
+      "sources": [
+        "v163_qsg401",
+        "v163_qsg475"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v163_northern_command",
+      "year": "1853年",
+      "sortYear": 1853,
+      "title": "北伐被赋予直取京畿的战略任务",
+      "body": "林凤祥、李开芳等由天京北上，兵力与补给主要依靠沿途获得，未形成稳定后方。",
+      "impact": "大胆推进震动京师，但战略目标、援军和冬季补给之间并不匹配。",
+      "people": [
+        "q163_yangxiuqing",
+        "q163_linfengxiang",
+        "q163_likaifang",
+        "q163_senggelinqin"
+      ],
+      "sources": [
+        "v163_qsg475",
+        "v163_qsg404"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v163_tianjing_incident",
+      "year": "1856年",
+      "sortYear": 1856,
+      "title": "天京事变摧毁前期权力核心",
+      "body": "洪秀全召韦昌辉处置杨秀清，杀戮扩大；石达开家属被害，韦昌辉随后又被处死。",
+      "impact": "这不是抽象的“内讧”二字：高层互杀波及大量部属和家庭，并使军事指挥断裂。",
+      "people": [
+        "q_hongxiuquan",
+        "q163_yangxiuqing",
+        "q163_weichanghui",
+        "q163_shidakai"
+      ],
+      "sources": [
+        "v163_qsg475",
+        "v163_qingji51",
+        "v163_ruc_memory"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v163_jintian_mobilization",
+      "year": "1851年1月",
+      "sortYear": 1851,
+      "title": "金田起义公开建立武装共同体",
+      "body": "洪秀全、杨秀清、萧朝贵、冯云山、韦昌辉、石达开等在桂平金田聚众起事。",
+      "impact": "参与者来自不同村落、宗族与职业网络；约两万人的馆藏说明是概数，不宜当作精确点名册。",
+      "people": [
+        "q_hongxiuquan",
+        "q163_yangxiuqing",
+        "q163_fengyunshan",
+        "q163_xiaochaogui",
+        "q163_shidakai",
+        "q163_weichanghui"
+      ],
+      "sources": [
+        "v163_chn_jintian",
+        "v163_qsg475"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v163_yongan_breakout",
+      "year": "1852年春",
+      "sortYear": 1852,
+      "title": "永安突围突破长期围攻",
+      "body": "被围太平军利用雨夜和山路突围，乌兰泰追击受创，队伍继而转向桂林和湖南。",
+      "impact": "围城失败显示清军兵力不少却协同薄弱；突围成功也伴随伤亡与强征运输。",
+      "people": [
+        "q163_yangxiuqing",
+        "q163_shidakai",
+        "q163_wulantai",
+        "q163_saishanga"
+      ],
+      "sources": [
+        "v163_qsg392",
+        "v163_qsg402",
+        "v163_qsg475"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v163_quanzhou_feng",
+      "year": "1852年6月",
+      "sortYear": 1852,
+      "title": "全州蓑衣渡战斗中冯云山去世",
+      "body": "太平军北行全州时遭江忠源等阻击，冯云山战伤后去世。",
+      "impact": "早期组织者退出，使宗教网络建设的经验难以继续；具体中炮与死亡过程在不同记载中有差异。",
+      "people": [
+        "q163_fengyunshan",
+        "q163_yangxiuqing"
+      ],
+      "sources": [
+        "v163_qsg392",
+        "v163_qsg475",
+        "v163_qingji51"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v163_changsha_xiao",
+      "year": "1852年9月",
+      "sortYear": 1852,
+      "title": "萧朝贵在长沙攻城中中炮",
+      "body": "萧朝贵率军急攻长沙，太平军禀报记录其在接近城垣作战时中炮重伤，随后去世。",
+      "impact": "近时禀报能补官修史，但其中歼敌与缴获数字带有战报修辞，不宜照录为定数。",
+      "people": [
+        "q163_xiaochaogui",
+        "q163_linfengxiang",
+        "q163_likaifang"
+      ],
+      "sources": [
+        "v163_report_xiao",
+        "v163_qsg475"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v163_wuchang_capture",
+      "year": "1853年1月",
+      "sortYear": 1853,
+      "title": "太平军以地道与舟桥攻占武昌",
+      "body": "太平军利用冬季水位、船只和地道攻城，随后沿长江东下。",
+      "impact": "攻城能力来自工程、船只和沿途物资，不只是人数优势；城市居民则承受征发、战斗和政权更替。",
+      "people": [
+        "q163_yangxiuqing",
+        "q163_shidakai",
+        "q163_linfengxiang",
+        "q163_likaifang",
+        "q163_xiangrong"
+      ],
+      "sources": [
+        "v163_qsg475",
+        "v163_qsg401"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v163_nanjing_capture",
+      "year": "1853年3月",
+      "sortYear": 1853,
+      "title": "南京陷落与满城、居民的大规模死亡",
+      "body": "太平军地道攻城后占领南京，清军将领、旗人及大量居民死亡，幸存者面对迁徙和新政权。",
+      "impact": "双方文献常用立场化数字和称谓；可以确认暴力严重，却不应把单一数字当作完整人口统计。",
+      "people": [
+        "q163_yangxiuqing",
+        "q163_shidakai",
+        "q163_weichanghui",
+        "q163_xiangrong"
+      ],
+      "sources": [
+        "v163_qsg475",
+        "v163_ruc_memory",
+        "v163_sh_nanjing"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v163_northern_advance",
+      "year": "1853年5—10月",
+      "sortYear": 1853,
+      "title": "北伐军穿过河南进入直隶",
+      "body": "林凤祥、李开芳部远离天京，经安徽、河南向北推进，一度逼近天津外围。",
+      "impact": "快速推进制造政治震动，却使军队进入陌生气候和缺乏稳定补给的地区。",
+      "people": [
+        "q163_linfengxiang",
+        "q163_likaifang",
+        "q163_senggelinqin"
+      ],
+      "sources": [
+        "v163_qsg475",
+        "v163_qsg404"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v163_lianzhen_gaotang",
+      "year": "1854—1855年",
+      "sortYear": 1854,
+      "title": "连镇与高唐围困终结北伐",
+      "body": "北伐军分驻连镇、高唐和冯官屯，僧格林沁等以壕沟、围困和持续增兵压缩其活动空间。",
+      "impact": "林凤祥、李开芳先后被俘处死；失败与孤军深入、严冬、疫病和援军中断共同相关。",
+      "people": [
+        "q163_linfengxiang",
+        "q163_likaifang",
+        "q163_senggelinqin",
+        "q_xianfeng"
+      ],
+      "sources": [
+        "v163_qsg404",
+        "v163_qsg388",
+        "v163_qsg475"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v163_jiangnan_collapse",
+      "year": "1856年6月",
+      "sortYear": 1856,
+      "title": "太平军击溃第一次江南大营",
+      "body": "杨秀清调动石达开、秦日纲等部攻击清军营垒，向荣部退往丹阳，长期封锁瓦解。",
+      "impact": "营垒数量不等于有效战力；军饷拖欠、疲劳和防线过长会在一次突破中集中暴露。",
+      "people": [
+        "q163_yangxiuqing",
+        "q163_shidakai",
+        "q163_xiangrong"
+      ],
+      "sources": [
+        "v163_qsg401",
+        "v163_qsg475",
+        "v163_qingji51"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v163_guangxi_burdens",
+      "year": "1840年代末—1851年",
+      "sortYear": 1848,
+      "title": "广西基层在税役、治安与资源竞争中承压",
+      "body": "鸦片战争后财政压力、土地关系、矿工与流动人口、宗族冲突共同构成动员背景。",
+      "impact": "这些因素因地区而异，不能用单一的“贫困”或“客家冲突”解释所有参与者。",
+      "people": [
+        "q_hongxiuquan",
+        "q163_fengyunshan",
+        "q163_yangxiuqing"
+      ],
+      "sources": [
+        "v163_chn_jintian",
+        "v163_ruc_religion"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v163_mobile_requisition",
+      "year": "1851—1853年",
+      "sortYear": 1851,
+      "title": "流动作战依赖沿途粮船、牲畜与器械",
+      "body": "太平军在广西、湖南、湖北转战时征集船只、粮食、火药和骡马，清军同样需要地方筹解。",
+      "impact": "军事速度建立在居民、船户和店铺提供物资之上，自愿投附、购买与强制征取在材料中不易完全分开。",
+      "people": [
+        "q163_yangxiuqing",
+        "q163_xiaochaogui",
+        "q163_linfengxiang",
+        "q163_likaifang"
+      ],
+      "sources": [
+        "v163_report_xiao",
+        "v163_qsg475",
+        "v163_ruc_memory"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v163_yangtze_fiscal_break",
+      "year": "1853年起",
+      "sortYear": 1853,
+      "title": "长江战争切断漕粮与常规税收链",
+      "body": "武昌、安庆、南京等地易手，使漕运、盐务和地方解款路线受阻。",
+      "impact": "清廷不只是少收银两，还失去按旧程序转运粮饷的能力，地方临时筹款因而扩张。",
+      "people": [
+        "q_xianfeng",
+        "q163_xiangrong",
+        "q163_yangxiuqing"
+      ],
+      "sources": [
+        "v163_qsg20",
+        "v163_dpm_xianfeng",
+        "v163_ruc_lijin"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v163_taiping_mint",
+      "year": "1853年以后",
+      "sortYear": 1853,
+      "title": "天京设铸钱衙发行太平天国钱币",
+      "body": "太平天国铸造流通钱，也制作镇库钱和用于赏赐、交往的大花钱。",
+      "impact": "钱币能证明政权主权表达和铸造活动，不能单凭存世币推算实际货币覆盖率。",
+      "people": [
+        "q_hongxiuquan",
+        "q163_yangxiuqing"
+      ],
+      "sources": [
+        "v163_chn_coin",
+        "v163_sh_nanjing"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v163_sacred_treasury",
+      "year": "1851—1856年",
+      "sortYear": 1851,
+      "title": "圣库把军需集中与个人财产规训连在一起",
+      "body": "太平军以共同储存供应军队和家庭，进入天京后又形成王府与各机构的分配体系。",
+      "impact": "共同体供给并非绝对平均；等级、军功和权力会改变获得资源的机会，实际执行也随地区变化。",
+      "people": [
+        "q_hongxiuquan",
+        "q163_yangxiuqing",
+        "q163_weichanghui"
+      ],
+      "sources": [
+        "v163_tianchao",
+        "v163_ruc_women",
+        "v163_sh_nanjing"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v163_lijin_yangzhou",
+      "year": "1853年",
+      "sortYear": 1853,
+      "title": "扬州周边开始抽厘济饷",
+      "body": "地方在商品运输环节抽取厘金以支持军费，后来逐渐推广。",
+      "impact": "它提供现金，也增加商人、船户和消费者的层层通行成本，并推动财政权向地方移动。",
+      "people": [
+        "q_xianfeng",
+        "q_zengguofan",
+        "q163_xiangrong"
+      ],
+      "sources": [
+        "v163_ruc_lijin",
+        "v163_qsg20"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v163_donation_finance",
+      "year": "1851—1856年",
+      "sortYear": 1851,
+      "title": "捐纳与地方劝捐填补军饷缺口",
+      "body": "中央和地方通过捐输、劝捐、预征等方式筹款，官位和资格也进入财政交换。",
+      "impact": "临时手段能维持军队，却把负担和行政机会重新分配，并难以形成透明账目。",
+      "people": [
+        "q_xianfeng",
+        "q163_saishanga",
+        "q163_xiangrong"
+      ],
+      "sources": [
+        "v163_qsg20",
+        "v163_qsl"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v163_shanghai_customs",
+      "year": "1854年",
+      "sortYear": 1854,
+      "title": "上海海关在战乱中改由外国税务司参与管理",
+      "body": "小刀会战事和租界贸易改变原有征税条件，上海形成由外国人参与关税征管的安排。",
+      "impact": "稳定税收与主权受限同时出现；制度形成有具体地方过程，不应倒写成一开始就完整设计。",
+      "people": [
+        "q_xianfeng",
+        "q163_yemingchen"
+      ],
+      "sources": [
+        "v163_qsg154",
+        "v163_dpm_qingshi"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v163_campaign_wages",
+      "year": "1851—1856年",
+      "sortYear": 1851,
+      "title": "兵勇口粮与欠饷改变战斗和地方市场",
+      "body": "绿营、临时勇丁和运输夫役需要银钱与粮食，饷源延误会造成逃亡、扰民和抢购。",
+      "impact": "战报里的兵数不等于持续在营人数，后勤账册与居民记忆才能补足战争成本。",
+      "people": [
+        "q163_saishanga",
+        "q163_xiangrong",
+        "q163_wulantai",
+        "q163_senggelinqin"
+      ],
+      "sources": [
+        "v163_qsg392",
+        "v163_qsg401",
+        "v163_qsg402",
+        "v163_ruc_memory"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v163_congregation_families",
+      "year": "1840年代末—1851年",
+      "sortYear": 1848,
+      "title": "拜上帝会通过家庭与村落关系扩展",
+      "body": "冯云山等在紫荆山一带建立会众网络，信仰、互助和自卫把不同家庭连接起来。",
+      "impact": "组织并非仅靠洪秀全个人号召；具体参加动机多样，后出传记无法还原每个普通成员。",
+      "people": [
+        "q_hongxiuquan",
+        "q163_fengyunshan",
+        "q163_yangxiuqing"
+      ],
+      "sources": [
+        "v163_ruc_religion",
+        "v163_chn_jintian"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v163_gender_camps",
+      "year": "1851—1853年",
+      "sortYear": 1851,
+      "title": "男女分营同时包含动员、保护与强制",
+      "body": "太平军早期把男性和女性编入不同营伍，禁止家庭自由同居，并对性行为严厉规训。",
+      "impact": "女性参与劳动和守城不等于已经获得平等权利；宫廷等级与婚姻实践形成明显张力。",
+      "people": [
+        "q_hongxiuquan",
+        "q163_yangxiuqing",
+        "q163_weichanghui"
+      ],
+      "sources": [
+        "v163_ruc_women",
+        "v163_ruc_religion"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v163_boat_families",
+      "year": "1852—1853年",
+      "sortYear": 1852,
+      "title": "沿江船队载着军人、妇孺与缴获物资移动",
+      "body": "太平军进入长江后集中大量民船，船上既有战斗人员，也有家庭、粮食、器械和财物。",
+      "impact": "船户是否自愿、多少人被裹挟难以统计；官修史把复杂人群一概归为敌军，需要谨慎拆读。",
+      "people": [
+        "q163_yangxiuqing",
+        "q163_linfengxiang",
+        "q163_likaifang"
+      ],
+      "sources": [
+        "v163_qsg475",
+        "v163_ruc_memory"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v163_city_displacement",
+      "year": "1853年起",
+      "sortYear": 1853,
+      "title": "武昌、安庆与南京居民经历死亡、逃难和重新登记",
+      "body": "城市反复易手时，居民可能逃往乡村、租界或亲族所在地，也可能被征役、留城或卷入战斗。",
+      "impact": "人口损失巨大可以确认，但跨城、跨年的精确死亡总数缺乏一致档案。",
+      "people": [
+        "q163_yangxiuqing",
+        "q163_shidakai",
+        "q163_xiangrong"
+      ],
+      "sources": [
+        "v163_ruc_memory",
+        "v163_sh_nanjing",
+        "v163_qsg475"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v163_tuanlian_expansion",
+      "year": "1851—1856年",
+      "sortYear": 1851,
+      "title": "团练把地方绅士、宗族与武装连接起来",
+      "body": "常规军不足时，各地以保卫乡里名义组织团练、筹款和修筑寨堡。",
+      "impact": "团练能抵御进攻，也可能加剧宗族冲突、摊派和地方强人控制，不能只作为“自卫”赞颂。",
+      "people": [
+        "q_xianfeng",
+        "q_zengguofan",
+        "q163_senggelinqin"
+      ],
+      "sources": [
+        "v163_qsg20",
+        "v163_ruc_memory"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v163_porters_labor",
+      "year": "1851—1856年",
+      "sortYear": 1851,
+      "title": "夫役、挑夫和挖壕者维持双方军队",
+      "body": "围城和远征需要运输粮炮、修路、挖壕、架桥和埋葬死者，大量劳动没有进入将领传记。",
+      "impact": "役夫可能来自雇募、差派或俘获，笼统的兵力数字会遮蔽他们的风险。",
+      "people": [
+        "q163_xiangrong",
+        "q163_wulantai",
+        "q163_senggelinqin",
+        "q163_linfengxiang"
+      ],
+      "sources": [
+        "v163_qsg401",
+        "v163_qsg402",
+        "v163_qsg404",
+        "v163_ruc_memory"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v163_market_survival",
+      "year": "1853—1856年",
+      "sortYear": 1853,
+      "title": "围城中的米价、燃料和住房成为生存问题",
+      "body": "天京和清军大营需要持续供给，封锁、征粮和人口流动改变周边市场。",
+      "impact": "宏大制度无法直接说明一户人怎样活下去；地方账簿和个人记述仍有大量空白。",
+      "people": [
+        "q163_yangxiuqing",
+        "q163_xiangrong",
+        "q163_shidakai"
+      ],
+      "sources": [
+        "v163_sh_nanjing",
+        "v163_pku_rural",
+        "v163_ruc_memory"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v163_captive_choices",
+      "year": "1851—1856年",
+      "sortYear": 1851,
+      "title": "被俘者在加入、逃亡和处决之间选择",
+      "body": "双方都吸收降兵、俘虏和地方武装，也都实施惩罚与处决。",
+      "impact": "档案常把转变写成忠逆选择，实际还包括求生、家庭牵连和强迫，个体动机通常无法确证。",
+      "people": [
+        "q163_yangxiuqing",
+        "q163_xiangrong",
+        "q163_wulantai"
+      ],
+      "sources": [
+        "v163_qsg402",
+        "v163_qsg475",
+        "v163_ruc_memory"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v163_internal_massacre",
+      "year": "1856年",
+      "sortYear": 1856,
+      "title": "天京事变的死者不止几位王",
+      "body": "杨秀清、韦昌辉及其部属、家属和被聚集者相继被杀，石达开家属亦遭难。",
+      "impact": "不同文献给出的死亡人数差异很大；应确认大规模杀戮，而不制造虚假的精确数字。",
+      "people": [
+        "q163_yangxiuqing",
+        "q163_weichanghui",
+        "q163_shidakai",
+        "q_hongxiuquan"
+      ],
+      "sources": [
+        "v163_qsg475",
+        "v163_qingji51",
+        "v163_ruc_memory"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v163_religious_texts",
+      "year": "1840年代—1851年",
+      "sortYear": 1847,
+      "title": "通俗宗教文本被重新解释为动员语言",
+      "body": "洪秀全接触布道书后形成自己的天父天兄叙事，冯云山等通过讲说、规条和歌诀传播。",
+      "impact": "它借用基督教语汇，却形成独特体系；清方称其为邪术同样是政治化分类。",
+      "people": [
+        "q_hongxiuquan",
+        "q163_fengyunshan",
+        "q163_yangxiuqing",
+        "q163_xiaochaogui"
+      ],
+      "sources": [
+        "v163_ruc_religion",
+        "v163_qsg475"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v163_spirit_authority",
+      "year": "1848—1856年",
+      "sortYear": 1848,
+      "title": "代天父、代天兄传言成为权力程序",
+      "body": "杨秀清和萧朝贵分别以天父、天兄下凡传言裁决事务，为信仰共同体提供即时命令。",
+      "impact": "这种权威帮助整合队伍，也使宗教话语进入人事和刑罚，最终加剧最高权力冲突。",
+      "people": [
+        "q163_yangxiuqing",
+        "q163_xiaochaogui",
+        "q_hongxiuquan"
+      ],
+      "sources": [
+        "v163_qsg475",
+        "v163_ruc_religion"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v163_calendar_ritual",
+      "year": "1851年以后",
+      "sortYear": 1851,
+      "title": "新历法、称谓和礼仪标记政权边界",
+      "body": "太平天国改变年号、避讳、服饰与礼拜规范，以日常仪式区别清朝秩序。",
+      "impact": "制度文本能看到规范目标，居民接受、调整或抵触的程度随时间与地区变化。",
+      "people": [
+        "q_hongxiuquan",
+        "q163_yangxiuqing",
+        "q163_fengyunshan"
+      ],
+      "sources": [
+        "v163_qsg475",
+        "v163_ruc_religion",
+        "v163_tianchao"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v163_proclamations",
+      "year": "1852—1853年",
+      "sortYear": 1852,
+      "title": "檄文与沿途演说争夺政治解释权",
+      "body": "太平军以吊民伐罪、兄弟姊妹等语言解释战争，清廷则以逆、匪等词汇定义镇压。",
+      "impact": "双方文本都是行动工具；阅读时必须区分可核事实、动员口号与污名化称谓。",
+      "people": [
+        "q163_yangxiuqing",
+        "q163_shidakai",
+        "q163_linfengxiang"
+      ],
+      "sources": [
+        "v163_qsg475",
+        "v163_report_xiao",
+        "v163_qsl"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v163_land_text_reality",
+      "year": "1853年",
+      "sortYear": 1853,
+      "title": "理想土地文本与占领区实践并不同步",
+      "body": "《天朝田亩制度》描述平均分配和基层组织，现有研究却难证明在广阔占领区按统一尺度落实。",
+      "impact": "把理想与执行分开，既不抹去改革愿望，也不把愿望当作完成的社会事实。",
+      "people": [
+        "q_hongxiuquan",
+        "q163_yangxiuqing"
+      ],
+      "sources": [
+        "v163_tianchao",
+        "v163_pku_rural",
+        "v163_chn_seal"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v163_exam_printing",
+      "year": "1853年以后",
+      "sortYear": 1853,
+      "title": "天京以考试、刊印和官书塑造新秩序",
+      "body": "政权通过印刷诏书、宗教读本和制度文书传播规范，也尝试以考试选取人员。",
+      "impact": "存世印本多经战争散失和后世收集，刊行不等于所有基层居民均能阅读。",
+      "people": [
+        "q_hongxiuquan",
+        "q163_yangxiuqing"
+      ],
+      "sources": [
+        "v163_ruc_religion",
+        "v163_dpm_qingshi"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v163_temple_change",
+      "year": "1851—1856年",
+      "sortYear": 1851,
+      "title": "寺庙与地方祭祀在宗教改革中被改造或破坏",
+      "body": "太平军反对偶像崇拜，进入一些地区后毁坏神像、寺庙或改作其他用途。",
+      "impact": "执行强度并不一致；地方信仰损失与居民反应不能只从政权禁令推断。",
+      "people": [
+        "q163_yangxiuqing",
+        "q163_shidakai",
+        "q163_weichanghui"
+      ],
+      "sources": [
+        "v163_ruc_religion",
+        "v163_ruc_memory"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v163_battle_language",
+      "year": "1851—1856年",
+      "sortYear": 1851,
+      "title": "战报数字和敌我称谓塑造后世记忆",
+      "body": "清军奏报与太平军禀报都强调胜利、缴获和正当性，失败常被归咎他人。",
+      "impact": "同一场战斗应对读多方文书；无法互证的歼敌数、军队总数和动机要保留不确定性。",
+      "people": [
+        "q163_saishanga",
+        "q163_xiangrong",
+        "q163_xiaochaogui",
+        "q163_linfengxiang"
+      ],
+      "sources": [
+        "v163_report_xiao",
+        "v163_qsl",
+        "v163_qsg392"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v163_memory_frames",
+      "year": "1850年代以后",
+      "sortYear": 1856,
+      "title": "忠烈、革命与苦难构成不同记忆框架",
+      "body": "清方立传和祠祀强调殉难，后来的革命叙事突出反清与制度理想，地方记忆则保存逃难和亲人死亡。",
+      "impact": "三种框架各自照亮一部分，也都可能遮蔽不合叙事的普通人经历。",
+      "people": [
+        "q_hongxiuquan",
+        "q163_yangxiuqing",
+        "q163_xiangrong",
+        "q163_wulantai"
+      ],
+      "sources": [
+        "v163_ruc_memory",
+        "v163_chn_jintian",
+        "v163_dpm_qingshi"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
     }
   ],
   "objects": [
@@ -81617,6 +82868,109 @@
         "v162_nanjing_treaty",
         "v162_dpm_nanjing",
         "v162_jinghaisi"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v163_obj_jintian",
+      "title": "《金田起义》历史画",
+      "subtitle": "后世视觉叙事，不是1851年的现场图像",
+      "symbol": "photo.artframe",
+      "image": null,
+      "body": "画面将洪秀全等领袖和群众集中呈现，帮助公共记忆识别起义时刻。它由后世画家创作，服饰、站位和气氛属于历史再现。",
+      "note": "不能据画面推断当天准确人数、人物位置或具体动作。",
+      "people": [
+        "q_hongxiuquan",
+        "q163_yangxiuqing",
+        "q163_fengyunshan",
+        "q163_xiaochaogui",
+        "q163_shidakai",
+        "q163_weichanghui"
+      ],
+      "sources": [
+        "v163_chn_jintian"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v163_obj_seal",
+      "title": "太平天国天王洪秀全玉玺",
+      "subtitle": "政权权威的物质标志，也有战后缴获史",
+      "symbol": "seal",
+      "image": null,
+      "body": "玉玺用于体现天王和天京政权的政治权威。1864年天京陷落后被湘军取得并送交清廷，其流传本身连接胜者档案和失败政权遗物。",
+      "note": "器物存在能够确认制度象征，不能单独证明每项诏令的实际执行。",
+      "people": [
+        "q_hongxiuquan",
+        "q163_yangxiuqing"
+      ],
+      "sources": [
+        "v163_chn_seal"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v163_obj_coin",
+      "title": "太平天国钱币",
+      "subtitle": "流通、礼仪和主权表达并存",
+      "symbol": "circle.circle",
+      "image": null,
+      "body": "天京铸钱衙铸有太平天国、太平圣宝等钱文，也制作镇库钱和大花钱。材质、尺寸与出土流传可帮助辨认使用层次。",
+      "note": "存世数量受收藏和战乱影响，不能直接换算当时货币发行总量。",
+      "people": [
+        "q_hongxiuquan",
+        "q163_yangxiuqing"
+      ],
+      "sources": [
+        "v163_chn_coin"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v163_obj_xiao_report",
+      "title": "萧朝贵长沙中炮禀报",
+      "subtitle": "太平军内部近时文书留下战场位置与补给线索",
+      "symbol": "doc.text",
+      "image": null,
+      "body": "曾水源、林凤祥、李开芳向诸王禀报行军、粮谷、缴获及萧朝贵中炮。它比后出传记更接近事件，却仍是一份争取认可的战报。",
+      "note": "可核对时间和行动，不应照录其中未经互证的歼敌、缴获数字。",
+      "people": [
+        "q163_xiaochaogui",
+        "q163_linfengxiang",
+        "q163_likaifang",
+        "q163_yangxiuqing"
+      ],
+      "sources": [
+        "v163_report_xiao"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v163_obj_tianchao",
+      "title": "《天朝田亩制度》",
+      "subtitle": "理解制度理想，也要追问战时执行",
+      "symbol": "book.closed",
+      "image": null,
+      "body": "文本以土地、人口、基层编组和共同储存描绘理想社会秩序，是太平天国政治主张的重要文献。占领区的赋税与土地实践却随战局变化。",
+      "note": "制度文本与实施证据须分别阅读，不能把颁布等同于普遍落实。",
+      "people": [
+        "q_hongxiuquan",
+        "q163_yangxiuqing"
+      ],
+      "sources": [
+        "v163_tianchao",
+        "v163_pku_rural",
+        "v163_chn_seal"
       ],
       "dynasties": [
         "qing"
@@ -94072,10 +95426,15 @@
           "text": "奕詝生于1831年，是道光帝第四子。1850年道光去世，遗诏立他为皇太子并即位，次年改元咸丰。关于他以仁孝胜过六弟奕䜣而得位的故事多来自后人笔记，不能替代正式传位记录。即位后他罢黜穆彰阿、起用敢言官员，显示整顿意图；但广西起事、财政亏空和海防困境很快压过宫廷人事调整。",
           "sources": [
             "v5qe_qsg20",
-            "v5qe_dpm_lineage"
+            "v5qe_dpm_lineage",
+            "v163_qsg20",
+            "v163_dpm_xianfeng"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [
+            "v163_accession_crisis",
+            "v163_guangxi_command"
+          ]
         },
         {
           "id": "q-xianfeng-2",
@@ -94087,13 +95446,18 @@
             "v40q_hong_seal",
             "v40q_hong_army",
             "v40q_qsg475",
-            "v40q_qsg405"
+            "v40q_qsg405",
+            "v163_qsg20",
+            "v163_dpm_xianfeng"
           ],
           "kind": "史实与解读",
           "events": [
             "qev_taiping_1851",
             "v40q_tianjing_capital",
-            "v40q_xiang_army"
+            "v40q_xiang_army",
+            "v163_jintian_mobilization",
+            "v163_tianjing_government",
+            "v163_city_displacement"
           ],
           "people": [
             "q_hongxiuquan",
@@ -94108,11 +95472,16 @@
           "title": "财政为战争改变",
           "text": "长期内战迫使朝廷开征厘金、扩大捐纳，并大量铸发高面值铜钱和纸钞。厘金最初作为临时军费，对商品流通层层抽税，后来长期存在；通货措施则带来价格混乱和信用问题。军费越来越依赖地方筹集，中央难以统一控制。战争不仅发生在战场，也通过税收、运输、物价和征兵进入普通家庭生活。咸丰朝财政变化是应急选择，却塑造了此后数十年的国家结构。",
           "sources": [
-            "v5qe_qsg20"
+            "v5qe_qsg20",
+            "v163_qsg20",
+            "v163_dpm_xianfeng"
           ],
           "kind": "史实与解读",
           "events": [
-            "v12_xianfeng_lijin"
+            "v12_xianfeng_lijin",
+            "v163_yangtze_fiscal_break",
+            "v163_lijin_yangzhou",
+            "v163_campaign_wages"
           ]
         },
         {
@@ -94120,11 +95489,15 @@
           "title": "第二次鸦片战争",
           "text": "1856年英法发动第二次鸦片战争，广州、天津等地先后遭战火。1858年《天津条约》签订后，清廷对使节驻京等条款仍有抵触，冲突再起。1860年英法联军进入北京并焚毁圆明园，咸丰帝以北狩名义避往承德，恭亲王奕䜣留京议和，签订《北京条约》。首都失守和皇家园林被毁，是军事失败，也是旧外交秩序无法继续维持的标志。",
           "sources": [
-            "v5qe_qsg20"
+            "v5qe_qsg20",
+            "v163_qsg20",
+            "v163_dpm_xianfeng"
           ],
           "kind": "史实与解读",
           "events": [
-            "qev_second_opium_war_1856"
+            "qev_second_opium_war_1856",
+            "v163_shanghai_customs",
+            "v163_battle_language"
           ]
         },
         {
@@ -94132,11 +95505,15 @@
           "title": "外交新机构的开端",
           "text": "战后奕䜣等主持设立总理各国事务衙门，处理条约、使节与通商事务；这不是成熟外交部，却承认对外交涉需要常设机构。海关税务、翻译和外国知识也更重要。咸丰帝在承德批准相关安排，但未返回北京。制度改变出自战败压力和实际事务需要，不能只说成主动开放，也不能把所有后续洋务事业都算作咸丰个人规划。",
           "sources": [
-            "v5qe_qsg20"
+            "v5qe_qsg20",
+            "v163_qsg20",
+            "v163_dpm_xianfeng"
           ],
           "kind": "史实与解读",
           "events": [
-            "v13_xianfeng_zongli"
+            "v13_xianfeng_zongli",
+            "v163_land_program",
+            "v163_exam_printing"
           ]
         },
         {
@@ -94145,10 +95522,15 @@
           "text": "咸丰帝在避暑山庄处理政务时，京城由恭亲王等应对外国军队，南方战争则依赖曾国藩、胡林翼等督抚。最高权力仍能任命与发令，实际执行却越来越分散。懿贵妃叶赫那拉氏生下皇子载淳，在宫廷中地位上升。皇后钮祜禄氏与懿贵妃后来分别成为慈安、慈禧太后。外战、内战与继承安排在热河交汇，为咸丰死后的政变埋下条件。",
           "sources": [
             "v5qe_qsg20",
-            "v5qe_dpm_life"
+            "v5qe_dpm_life",
+            "v163_qsg20",
+            "v163_dpm_xianfeng"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [
+            "v163_tuanlian_expansion",
+            "v163_market_survival"
+          ]
         },
         {
           "id": "q-xianfeng-7",
@@ -94156,10 +95538,15 @@
           "text": "1861年咸丰帝病逝于承德，年仅三十一岁，遗命载垣、端华、肃顺等八大臣辅佐六岁的载淳，并给皇后、皇子生母留下代表权力的印章。慈安、慈禧联合恭亲王发动政变，辅政安排迅速被推翻。咸丰葬清东陵定陵，庙号文宗。他面对的危机规模远超前朝，频繁失策负有责任；地方军兴和外交机构也在危机中形成，成为后继统治的工具。\n\n同一危机催生相反变化。咸丰朝一方面加强镇压与筹饷，另一方面不得不接纳新式武器、外国雇员和地方自主。湘军以将领私人关系组织，作战效率有时高于绿营，却也削弱国家军队统一性；海关在外国人参与管理下增加稳定税收，同时受列强条约约束。总理衙门使外交事务常设化，却仍位于传统官制边缘。皇帝对这些变化有批准、任免和资源分配责任，许多具体方案则来自奕䜣、文祥、曾国藩等人。危机没有自动产生现代化，它只迫使不同群体尝试工具性的调整。后来把这些开端称为洋务运动，是对跨越数朝实践的概括，不应倒写成咸丰初年已有统一计划。\n\n咸丰死后的辛酉政变还改变了遗命含义。八大臣拥有赞襄政务名义，两宫太后持有印章，恭亲王掌握北京交涉与部分军政资源，任何一方都难独立控制全局。慈安、慈禧与奕䜣结盟后才迅速制胜。政变建立的新格局延续到同治、光绪两朝，咸丰末年的继承安排因而成为晚清半个世纪权力结构的起点。",
           "sources": [
             "v5qe_qsg20",
-            "v5qe_dpm_life"
+            "v5qe_dpm_life",
+            "v163_qsg20",
+            "v163_dpm_xianfeng"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [
+            "v163_tianjing_incident",
+            "v163_memory_frames"
+          ]
         }
       ],
       "sources": [
@@ -94170,7 +95557,10 @@
         "v40q_hong_seal",
         "v40q_hong_army",
         "v40q_qsg475",
-        "v40q_qsg405"
+        "v40q_qsg405",
+        "v163_qsg20",
+        "v163_dpm_xianfeng",
+        "v163_ruc_memory"
       ]
     },
     {
@@ -199999,6 +201389,1297 @@
         "v162_qsg154",
         "v162_nanjing_treaty"
       ]
+    },
+    {
+      "person": "q163_yangxiuqing",
+      "title": "杨秀清：神权、军令与失控的中枢",
+      "dek": "从紫荆山会众到天京东王，权威既来自组织能力，也来自代天父传言；二者最终难以被制度约束。",
+      "sections": [
+        {
+          "id": "v163_yangxiuqing1",
+          "title": "会众网络不是凭空出现",
+          "text": "杨秀清来自广西桂平一带，早期生活材料零碎，官修史又以敌对语气书写。可以确认的是，他进入拜上帝会后，与冯云山等人的基层组织结合，在金田起义前后迅速成为核心。把这一过程只写成个人野心，会忽略村落互助、自卫需求和信仰仪式如何把分散家庭组织起来。",
+          "sources": [
+            "v163_qsg475",
+            "v163_ruc_religion",
+            "v163_qingji51"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_congregation_families",
+            "v163_jintian_mobilization"
+          ],
+          "people": [
+            "q_hongxiuquan",
+            "q163_fengyunshan"
+          ]
+        },
+        {
+          "id": "v163_yangxiuqing2",
+          "title": "代天父传言既是信仰也是程序",
+          "text": "杨秀清以天父下凡传言处理内部争议、发布命令。它为缺乏稳定官僚机构的队伍提供即时裁决，也使他的声音获得超越一般王爵的地位。现存清方记载常直接称其欺骗，宗教史研究则提醒我们观察会众为何接受这种形式；信仰经验不能只用真伪二分解释。",
+          "sources": [
+            "v163_qsg475",
+            "v163_ruc_religion",
+            "v163_qingji51"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_spirit_authority",
+            "v163_religious_texts"
+          ],
+          "people": [
+            "q163_xiaochaogui",
+            "q_hongxiuquan"
+          ]
+        },
+        {
+          "id": "v163_yangxiuqing3",
+          "title": "沿江进军把军令变成后勤",
+          "text": "永安突围后，杨秀清逐渐主持军令。全州、长沙、武昌到南京的推进，依赖船只、粮食、火药、工程人员和沿途加入者。官修史把一切行动浓缩为首领命令，实际执行却来自林凤祥、李开芳、石达开等将领和大量无名船户、役夫。胜利也伴随征取与居民流离。",
+          "sources": [
+            "v163_qsg475",
+            "v163_ruc_religion",
+            "v163_qingji51"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_yongan_breakout",
+            "v163_wuchang_capture",
+            "v163_mobile_requisition"
+          ],
+          "people": [
+            "q163_shidakai",
+            "q163_linfengxiang",
+            "q163_likaifang"
+          ]
+        },
+        {
+          "id": "v163_yangxiuqing4",
+          "title": "天京中枢扩大了权力差距",
+          "text": "定都天京后，军政文报多先经东王府，杨秀清同时参与北伐、西征和城防调度。《天朝田亩制度》与钱币展示了新政权建制，却不能证明平等理想已经落实。王府等级、资源分配和宗教裁决叠加，使早期共同体中的兄弟姊妹语言与现实权力距离越来越大。",
+          "sources": [
+            "v163_qsg475",
+            "v163_ruc_religion",
+            "v163_qingji51"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_tianjing_government",
+            "v163_land_program",
+            "v163_taiping_mint"
+          ],
+          "people": [
+            "q163_weichanghui",
+            "q163_shidakai"
+          ]
+        },
+        {
+          "id": "v163_yangxiuqing5",
+          "title": "1856年不能只写成一场宫廷内讧",
+          "text": "江南大营被击溃后，杨秀清权势达到高点，随后洪秀全召韦昌辉回京。杨被杀后，屠杀扩展到部属和家属，死亡数在文献中差异很大。其个人专权、天王与东王的结构性冲突以及缺乏和平更替程序相互作用。清方材料提供线索，却以胜者和敌对视角塑形，阅读时必须保留边界。进一步核查时，应把东王府命令、清军奏报、太平天国印书和居民记忆分层使用：前两类都带有强烈政治目的，器物能证明制度存在，却不能自动说明执行范围。",
+          "sources": [
+            "v163_qsg475",
+            "v163_ruc_religion",
+            "v163_qingji51"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_jiangnan_collapse",
+            "v163_tianjing_incident",
+            "v163_internal_massacre"
+          ],
+          "people": [
+            "q_hongxiuquan",
+            "q163_weichanghui",
+            "q163_shidakai"
+          ]
+        }
+      ],
+      "sources": [
+        "v163_qsg475",
+        "v163_ruc_religion",
+        "v163_qingji51"
+      ]
+    },
+    {
+      "person": "q163_fengyunshan",
+      "title": "冯云山：组织者比口号更接近起点",
+      "dek": "若没有长期驻村、讲说、互助和处理冲突，洪秀全的宗教解释不会自然变成一支跨村落队伍。",
+      "sections": [
+        {
+          "id": "v163_fengyunshan1",
+          "title": "从广东同伴到广西驻村者",
+          "text": "冯云山与洪秀全早年相识，后来长期进入广西紫荆山一带活动。关于拜上帝会创立的后出叙述互有差异，但他比洪秀全更持续地留在当地、接触烧炭者和村民，这是组织形成的关键。个人传记材料稀少，不能把每一项教义和招募都归到他一人。",
+          "sources": [
+            "v163_qsg475",
+            "v163_chn_jintian",
+            "v163_qingji51"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_religious_texts",
+            "v163_congregation_families"
+          ],
+          "people": [
+            "q_hongxiuquan",
+            "q163_yangxiuqing"
+          ]
+        },
+        {
+          "id": "v163_fengyunshan2",
+          "title": "信仰通过日常关系扩散",
+          "text": "会众需要共同礼拜，也需要在宗族冲突、治安不稳和经济压力中互相支持。冯云山的作用更像连接者：把文本讲成可理解的规条，把分散信徒组织成可以通信和自卫的群体。这种网络既包含主动认同，也可能给家庭成员带来从众压力，普通参加者的动机无法由领袖文书代替。",
+          "sources": [
+            "v163_qsg475",
+            "v163_chn_jintian",
+            "v163_qingji51"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_guangxi_burdens",
+            "v163_congregation_families"
+          ],
+          "people": [
+            "q163_yangxiuqing",
+            "q163_xiaochaogui"
+          ]
+        },
+        {
+          "id": "v163_fengyunshan3",
+          "title": "被捕事件暴露组织与地方权力的碰撞",
+          "text": "冯云山曾在广西被捕，地方会众设法营救和交涉。此事说明拜上帝会已经不是松散讲道小组，也显示县衙、团练、宗族和会众之间关系复杂。后来的革命叙事容易把冲突写成必然起义，实际每一步都包含交涉、释放、再组织和局势升级。",
+          "sources": [
+            "v163_qsg475",
+            "v163_chn_jintian",
+            "v163_qingji51"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_guangxi_command",
+            "v163_battle_language"
+          ],
+          "people": [
+            "q163_saishanga"
+          ]
+        },
+        {
+          "id": "v163_fengyunshan4",
+          "title": "永安封王把组织经验纳入等级",
+          "text": "金田起义后，冯云山受封南王。封王帮助被围队伍明确指挥，却也把原先的传教和互助网络重组为王爵等级。此时军队的粮食、家属编组和纪律都需要制度化；组织能力不再只是发展信徒，而是维持移动共同体。",
+          "sources": [
+            "v163_qsg475",
+            "v163_chn_jintian",
+            "v163_qingji51"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_jintian_mobilization",
+            "v163_yongan_kings",
+            "v163_gender_camps"
+          ],
+          "people": [
+            "q163_shidakai",
+            "q163_weichanghui"
+          ]
+        },
+        {
+          "id": "v163_fengyunshan5",
+          "title": "全州死亡改变了早期领导结构",
+          "text": "1852年太平军北行全州，冯云山在蓑衣渡一带战伤去世。具体中炮和延后死亡的叙述并不完全一致，但早期组织者在进入长江前退出可以确认。此后杨秀清的军政权威更加突出。评价冯云山不能只因他早逝而推测若在会怎样，应把确定贡献和反事实想象分开。认识他的最好方法不是补写缺失的传奇，而是比较会众网络、官府逮捕记录和后来的领袖谱系。没有材料的早年细节应明确留白，组织贡献也不应被洪秀全个人叙事吞没。",
+          "sources": [
+            "v163_qsg475",
+            "v163_chn_jintian",
+            "v163_qingji51"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_quanzhou_feng",
+            "v163_yongan_breakout"
+          ],
+          "people": [
+            "q163_yangxiuqing",
+            "q163_xiangrong"
+          ]
+        }
+      ],
+      "sources": [
+        "v163_qsg475",
+        "v163_chn_jintian",
+        "v163_qingji51"
+      ]
+    },
+    {
+      "person": "q163_xiaochaogui",
+      "title": "萧朝贵：神谕权威与前线冒险",
+      "dek": "他既参与塑造宗教裁决，又亲自承担快速攻城；长沙禀报让我们看到战报语言与个人死亡同时存在。",
+      "sections": [
+        {
+          "id": "v163_xiaochaogui1",
+          "title": "代天兄传言如何进入共同体",
+          "text": "萧朝贵与杨秀清一样，以神灵附体式传言获得权威，所代的是天兄耶稣。清方材料把它视为欺骗，太平天国材料则把它当作命令来源。历史分析应追问这种仪式如何解决争端和动员会众，同时看到少数人垄断神谕带来的权力不对等。",
+          "sources": [
+            "v163_qsg475",
+            "v163_report_xiao",
+            "v163_qingji51"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_spirit_authority",
+            "v163_religious_texts"
+          ],
+          "people": [
+            "q163_yangxiuqing",
+            "q_hongxiuquan"
+          ]
+        },
+        {
+          "id": "v163_xiaochaogui2",
+          "title": "西王身份来自永安危局",
+          "text": "金田起义后，太平军在永安被围。萧朝贵受封西王，王爵不仅是荣誉，也是维持军队层级和派遣作战的制度。围困中的粮食、家属和防御压力促使共同体强化纪律。后世把封王名单当作固定班底，容易忽略当时组织仍在变化。",
+          "sources": [
+            "v163_qsg475",
+            "v163_report_xiao",
+            "v163_qingji51"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_jintian_mobilization",
+            "v163_yongan_kings",
+            "v163_sacred_treasury"
+          ],
+          "people": [
+            "q163_fengyunshan",
+            "q163_shidakai"
+          ]
+        },
+        {
+          "id": "v163_xiaochaogui3",
+          "title": "急行军依靠被忽略的供给者",
+          "text": "永安突围后，萧朝贵率部进入湖南。太平军文书记录长距离行军、粮谷、油盐、火药和骡马，这些细节说明攻城不是单靠勇气。店铺、村民、挑夫和牲畜承担供给，而获得物资究竟来自缴获、购买还是强征，战报往往不会清楚区分。",
+          "sources": [
+            "v163_qsg475",
+            "v163_report_xiao",
+            "v163_qingji51"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_mobile_requisition",
+            "v163_porters_labor"
+          ],
+          "people": [
+            "q163_linfengxiang",
+            "q163_likaifang"
+          ]
+        },
+        {
+          "id": "v163_xiaochaogui4",
+          "title": "长沙攻城与中炮禀报",
+          "text": "1852年萧朝贵率军急攻长沙，在城外作战时中炮重伤并去世。曾水源、林凤祥、李开芳的禀报是太平军内部近时文书，提供日期、距离和补给线索；它同时夸示歼敌与缴获，因此不能把所有数字照单全收。近时材料也需要来源批判。",
+          "sources": [
+            "v163_qsg475",
+            "v163_report_xiao",
+            "v163_qingji51"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_changsha_xiao",
+            "v163_battle_language"
+          ],
+          "people": [
+            "q163_linfengxiang",
+            "q163_likaifang"
+          ]
+        },
+        {
+          "id": "v163_xiaochaogui5",
+          "title": "早逝领袖怎样被不同叙事使用",
+          "text": "太平天国会把萧朝贵放入神圣王统，清方把他列为敌酋，后来的通史则常把他压缩成“长沙战死”。三种写法都可能遮住具体行动：他既参与宗教权威的形成，也选择高风险前线指挥。我们能确认他的角色和死亡，无法从单方文书重建全部动机。萧朝贵没有留下完整自述。产品因此以同时期禀报确定行动坐标，以官修史补结局，再用宗教研究解释权威机制；三者互证不到之处，不写成确定的心理和对白。",
+          "sources": [
+            "v163_qsg475",
+            "v163_report_xiao",
+            "v163_qingji51"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_memory_frames",
+            "v163_proclamations"
+          ],
+          "people": [
+            "q163_yangxiuqing",
+            "q163_fengyunshan"
+          ]
+        }
+      ],
+      "sources": [
+        "v163_qsg475",
+        "v163_report_xiao",
+        "v163_qingji51"
+      ]
+    },
+    {
+      "person": "q163_shidakai",
+      "title": "石达开：翼王、主政者与脱离天京者",
+      "dek": "他的军事声望跨越太平天国前后期，但每一次转折都与组织结构和家属安全相连。",
+      "sections": [
+        {
+          "id": "v163_shidakai1",
+          "title": "年轻翼王并非孤立英雄",
+          "text": "石达开来自广西贵县，参加拜上帝会并在永安受封翼王。后世常突出其年轻和善战，现有材料却更能证明他处在一张地方会众、王爵和将领协作网络中。个人能力重要，但金田到永安的生存依靠整个移动共同体，而非一位名将。",
+          "sources": [
+            "v163_qsg475",
+            "v163_chn_jintian",
+            "v163_qingji51"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_jintian_mobilization",
+            "v163_yongan_kings"
+          ],
+          "people": [
+            "q_hongxiuquan",
+            "q163_yangxiuqing"
+          ]
+        },
+        {
+          "id": "v163_shidakai2",
+          "title": "沿江进军是工程与运输战争",
+          "text": "石达开参与永安突围、武汉和南京等战事。军队需要舟桥、地道、粮船和火药，所谓奇袭背后是无名工匠与役夫。城市陷落给太平军带来物资和政治中心，也使居民遭受死亡、强制和迁徙。把战功与社会成本并列，才能理解军事成功。",
+          "sources": [
+            "v163_qsg475",
+            "v163_chn_jintian",
+            "v163_qingji51"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_yongan_breakout",
+            "v163_wuchang_capture",
+            "v163_nanjing_capture"
+          ],
+          "people": [
+            "q163_linfengxiang",
+            "q163_likaifang"
+          ]
+        },
+        {
+          "id": "v163_shidakai3",
+          "title": "西征与江南大营展示分区指挥",
+          "text": "定都后，石达开在安徽、江西、湖北等地作战，并参与1856年击破江南大营。太平天国的战场已经超出天京直接控制，筹粮、任官和地方关系影响每一次推进。官修史常把行动归于杨秀清一令，实际将领具有相当执行空间。",
+          "sources": [
+            "v163_qsg475",
+            "v163_chn_jintian",
+            "v163_qingji51"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_jiangnan_camp",
+            "v163_jiangnan_collapse",
+            "v163_market_survival"
+          ],
+          "people": [
+            "q163_yangxiuqing",
+            "q163_xiangrong"
+          ]
+        },
+        {
+          "id": "v163_shidakai4",
+          "title": "天京事变首先是一场家庭灾难",
+          "text": "杨秀清被杀后，石达开回京指责韦昌辉扩大屠杀，自己逃离，留在城内的家属遭杀。后来他再度入京主政，却面对洪秀全宗族与兵权疑惧。政治标签中的“出走”不能抹去家属死亡和缺乏安全程序这一背景。",
+          "sources": [
+            "v163_qsg475",
+            "v163_chn_jintian",
+            "v163_qingji51"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_tianjing_incident",
+            "v163_internal_massacre"
+          ],
+          "people": [
+            "q163_weichanghui",
+            "q_hongxiuquan"
+          ]
+        },
+        {
+          "id": "v163_shidakai5",
+          "title": "远征、大渡河与记忆边界",
+          "text": "1857年石达开率部离开天京体系，此后转战多省，1863年在大渡河地区失败被俘处死。关于他是否以自己换取部众、具体谈判承诺等说法存在争议。既不能用悲剧英雄叙事替代证据，也不能因最终失败否定早期组织和军事作用。石达开的材料跨越多个战区，后期供词和地方传说尤其容易被悲剧结局重新塑造。可以确认的路线、任职和战斗与无法确认的承诺、对白必须分开，避免用一则故事概括数万人的远征。",
+          "sources": [
+            "v163_qsg475",
+            "v163_chn_jintian",
+            "v163_qingji51"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_memory_frames",
+            "v163_captive_choices"
+          ],
+          "people": [
+            "q_hongxiuquan",
+            "q163_senggelinqin"
+          ]
+        }
+      ],
+      "sources": [
+        "v163_qsg475",
+        "v163_chn_jintian",
+        "v163_qingji51"
+      ]
+    },
+    {
+      "person": "q163_weichanghui",
+      "title": "韦昌辉：资源、王爵与天京杀戮",
+      "dek": "他不是只在1856年突然出现的反派；地方资源使他进入核心，缺少制衡又让权力竞争走向集体屠杀。",
+      "sections": [
+        {
+          "id": "v163_weichanghui1",
+          "title": "加入起义也包含地方资源",
+          "text": "韦昌辉来自广西桂平一带，家庭条件和地方关系使他能为早期组织提供资源。清方与后出叙述对其家世细节不尽一致，可以确认的是，他并非只靠宗教声望进入核心。起义组织需要粮食、住所、通讯和武器，拥有资源者由此获得位置。",
+          "sources": [
+            "v163_qsg475",
+            "v163_qingji51",
+            "v163_ruc_memory"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_guangxi_burdens",
+            "v163_congregation_families"
+          ],
+          "people": [
+            "q163_fengyunshan",
+            "q163_yangxiuqing"
+          ]
+        },
+        {
+          "id": "v163_weichanghui2",
+          "title": "北王爵位建立上下级关系",
+          "text": "永安受封北王后，韦昌辉处在东王节制之下。兄弟姊妹语言与王爵等级并存，前者强调共同信仰，后者规定命令、仪仗和刑罚。这种双重结构在围城时有利于动员，却没有为最高领导者之间的争议提供独立裁决。",
+          "sources": [
+            "v163_qsg475",
+            "v163_qingji51",
+            "v163_ruc_memory"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_yongan_kings",
+            "v163_calendar_ritual"
+          ],
+          "people": [
+            "q_hongxiuquan",
+            "q163_yangxiuqing"
+          ]
+        },
+        {
+          "id": "v163_weichanghui3",
+          "title": "天京权力差距逐渐扩大",
+          "text": "定都后，杨秀清掌握军政文报，韦昌辉与石达开等虽为王爵，实际位置并不对等。王府资源和宗教裁决使竞争更尖锐。现有材料多从事变结果倒推阴谋，较稳妥的判断是权力高度集中、互不信任和缺乏安全退出共同积累。",
+          "sources": [
+            "v163_qsg475",
+            "v163_qingji51",
+            "v163_ruc_memory"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_tianjing_government",
+            "v163_sacred_treasury"
+          ],
+          "people": [
+            "q163_shidakai",
+            "q163_yangxiuqing"
+          ]
+        },
+        {
+          "id": "v163_weichanghui4",
+          "title": "奉召诛杨迅速变成扩大杀戮",
+          "text": "1856年韦昌辉回天京杀杨秀清，随后屠杀东王部属和被诱集者，并杀害石达开家属。不同资料给出从数千到更高的死亡数，无法精确确认；大规模杀戮及其组织性则没有疑问。把责任全推给一人，也会遗漏洪秀全授权和制度失控。",
+          "sources": [
+            "v163_qsg475",
+            "v163_qingji51",
+            "v163_ruc_memory"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_tianjing_incident",
+            "v163_internal_massacre"
+          ],
+          "people": [
+            "q_hongxiuquan",
+            "q163_shidakai"
+          ]
+        },
+        {
+          "id": "v163_weichanghui5",
+          "title": "被处死没有恢复原有秩序",
+          "text": "洪秀全随后处死韦昌辉，试图平息东王旧部并召回石达开。处置了执行者，却无法复原死亡的家庭、断裂的指挥链和已经消失的信任。清方传记借此证明对手必败，后世道德叙事也易停在恶人伏诛；真正的历史后果是组织能力长期受损。韦昌辉个人资料大多被1856年事变覆盖。判断责任时，应同时读取洪秀全的授权、杨秀清权力扩张、北王部属行动和受害者范围；解释结构不等于减轻执行大规模杀戮的责任。",
+          "sources": [
+            "v163_qsg475",
+            "v163_qingji51",
+            "v163_ruc_memory"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_memory_frames",
+            "v163_internal_massacre"
+          ],
+          "people": [
+            "q163_yangxiuqing",
+            "q163_shidakai"
+          ]
+        }
+      ],
+      "sources": [
+        "v163_qsg475",
+        "v163_qingji51",
+        "v163_ruc_memory"
+      ]
+    },
+    {
+      "person": "q163_linfengxiang",
+      "title": "林凤祥：北伐推进与孤军终局",
+      "dek": "从长沙、武汉到直隶连镇，他的路线说明快速战役如何被补给、季节与距离反噬。",
+      "sections": [
+        {
+          "id": "v163_linfengxiang1",
+          "title": "将领身影来自零散战报",
+          "text": "林凤祥早年材料很少，主要在金田后军事文书中出现。萧朝贵长沙中炮禀报由他与曾水源、李开芳等署名，使我们看到他已承担前线指挥。缺乏家世资料不应由传说填补；能确认的是其职位和行动，而非完整性格。",
+          "sources": [
+            "v163_qsg475",
+            "v163_qsg404",
+            "v163_qsg388"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_changsha_xiao",
+            "v163_battle_language"
+          ],
+          "people": [
+            "q163_xiaochaogui",
+            "q163_likaifang"
+          ]
+        },
+        {
+          "id": "v163_linfengxiang2",
+          "title": "沿江胜利依赖船队和工程",
+          "text": "林凤祥参加武汉、南京等战事。太平军使用舟桥、地道和缴获器械，快速把广西队伍转为长江水陆军。船上也装载妇孺、粮食和财物，军队与移动社会难以分开。将领战功背后，是船户、工匠和被征居民的劳动。",
+          "sources": [
+            "v163_qsg475",
+            "v163_qsg404",
+            "v163_qsg388"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_wuchang_capture",
+            "v163_boat_families"
+          ],
+          "people": [
+            "q163_yangxiuqing",
+            "q163_shidakai"
+          ]
+        },
+        {
+          "id": "v163_linfengxiang3",
+          "title": "北伐目标与后方能力不相称",
+          "text": "1853年林凤祥、李开芳等奉命北上，迅速穿过安徽、河南进入直隶。推进震动北京，但他们没有稳固根据地，天京到前线的信息和补给极不稳定。沿途取得物资可以维持行军，却不能替代冬衣、病患照料和持续援兵。",
+          "sources": [
+            "v163_qsg475",
+            "v163_qsg404",
+            "v163_qsg388"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_northern_command",
+            "v163_northern_advance",
+            "v163_mobile_requisition"
+          ],
+          "people": [
+            "q163_likaifang",
+            "q163_senggelinqin"
+          ]
+        },
+        {
+          "id": "v163_linfengxiang4",
+          "title": "严冬和围困把机动军变成守军",
+          "text": "北伐军在直隶受阻后退守连镇等地。僧格林沁部以壕沟、封锁和增兵围困，寒冷、疫病和粮缺持续削弱队伍。清方传记突出主帅战功，太平军一方材料残缺；较可靠的是围困时间、据点和最终被俘，具体伤亡数字需保留。",
+          "sources": [
+            "v163_qsg475",
+            "v163_qsg404",
+            "v163_qsg388"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_lianzhen_gaotang",
+            "v163_porters_labor"
+          ],
+          "people": [
+            "q163_senggelinqin",
+            "q_xianfeng"
+          ]
+        },
+        {
+          "id": "v163_linfengxiang5",
+          "title": "被俘后的记忆由胜者控制",
+          "text": "1855年连镇失守，林凤祥被俘处死。审讯、押送和处决主要留在清方档案，失败者很少留下自述。把他写成盲目冒进会忽略天京战略决策，把他写成纯粹英雄又会忽略沿途征发和居民成本。北伐应作为战略、后勤与普通人经历共同阅读。北伐军自身档案残存有限，清军围困奏报又有邀功和报捷压力。路线、气候与据点可以互证，具体人数和歼敌数字则应谨慎；没有名字的伤员、家属和役夫也是这场远征的一部分。",
+          "sources": [
+            "v163_qsg475",
+            "v163_qsg404",
+            "v163_qsg388"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_captive_choices",
+            "v163_memory_frames"
+          ],
+          "people": [
+            "q163_likaifang",
+            "q163_yangxiuqing"
+          ]
+        }
+      ],
+      "sources": [
+        "v163_qsg475",
+        "v163_qsg404",
+        "v163_qsg388"
+      ]
+    },
+    {
+      "person": "q163_likaifang",
+      "title": "李开芳：北伐分兵与援军失联",
+      "dek": "他的经历把太平天国最远推进与最脆弱的补给线连接在一起。",
+      "sections": [
+        {
+          "id": "v163_likaifang1",
+          "title": "长沙禀报留下早期坐标",
+          "text": "李开芳早年生平同样模糊，1852年长沙战场禀报证明他已是重要前线将领。文书列出行程、粮食和缴获，也说明指挥者必须不断报告资源。战报有夸功目的，但比后世人物传说更接近现场，使用时应保留其文本立场。",
+          "sources": [
+            "v163_qsg475",
+            "v163_qsg404",
+            "v163_report_xiao"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_changsha_xiao",
+            "v163_battle_language"
+          ],
+          "people": [
+            "q163_xiaochaogui",
+            "q163_linfengxiang"
+          ]
+        },
+        {
+          "id": "v163_likaifang2",
+          "title": "从武汉到南京形成跨区域经验",
+          "text": "李开芳参与沿江进军，在船队、地道和攻城体系中积累经验。南京被占领后，政权需要在定都与继续进攻之间分配精锐。军事史常只画箭头，箭头背后却是船只、粮站、伤员、家属和不断改变的地方关系。",
+          "sources": [
+            "v163_qsg475",
+            "v163_qsg404",
+            "v163_report_xiao"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_wuchang_capture",
+            "v163_nanjing_capture",
+            "v163_boat_families"
+          ],
+          "people": [
+            "q163_yangxiuqing",
+            "q163_shidakai"
+          ]
+        },
+        {
+          "id": "v163_likaifang3",
+          "title": "北伐是没有稳定走廊的远征",
+          "text": "李开芳随林凤祥北上，部队深入直隶。占城与快速通过不能建立持续行政，沿途补给也会使居民承受征取。天京另派援军，但战线过长、清军封锁与信息延迟使会合困难。把失败只归为战术错误，会低估空间距离。",
+          "sources": [
+            "v163_qsg475",
+            "v163_qsg404",
+            "v163_report_xiao"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_northern_advance",
+            "v163_mobile_requisition"
+          ],
+          "people": [
+            "q163_linfengxiang",
+            "q163_senggelinqin"
+          ]
+        },
+        {
+          "id": "v163_likaifang4",
+          "title": "分兵南下没有接通援军",
+          "text": "北伐受阻后，李开芳率部由连镇附近南下，试图与援军会合，辗转高唐、冯官屯。机动作战最后转为据点防御，清军通过围壕和水攻等办法压缩空间。不同记载对兵数和损失差异明显，可靠的是分兵、据守和1855年失败。",
+          "sources": [
+            "v163_qsg475",
+            "v163_qsg404",
+            "v163_report_xiao"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_lianzhen_gaotang",
+            "v163_campaign_wages"
+          ],
+          "people": [
+            "q163_linfengxiang",
+            "q163_senggelinqin"
+          ]
+        },
+        {
+          "id": "v163_likaifang5",
+          "title": "失败者留下的声音太少",
+          "text": "李开芳被俘后处死，其行动主要由清方奏报和传记重建。太平军战报能补早期经历，却不能覆盖终局。阅读他的生平，应同时看到战略执行者的选择、天京决策者的责任、远征军中的普通成员以及沿途居民，而不把整个北伐压缩成个人成败。高唐、冯官屯的终局主要由胜方留下。将地图路线、围壕工程和时间顺序结合，比复述刑讯供词更可靠；对其个人意图和最后谈话，若无相互独立材料便不作确定描述。这也是证据边界的一部分。",
+          "sources": [
+            "v163_qsg475",
+            "v163_qsg404",
+            "v163_report_xiao"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_captive_choices",
+            "v163_memory_frames"
+          ],
+          "people": [
+            "q163_yangxiuqing",
+            "q_xianfeng"
+          ]
+        }
+      ],
+      "sources": [
+        "v163_qsg475",
+        "v163_qsg404",
+        "v163_report_xiao"
+      ]
+    },
+    {
+      "person": "q163_saishanga",
+      "title": "赛尚阿：钦差权力为何没有变成有效指挥",
+      "dek": "皇帝授予名义上的节制权，却无法立即解决将帅互疑、异地兵源和迟缓信息。",
+      "sections": [
+        {
+          "id": "v163_saishanga1",
+          "title": "从中央履历进入陌生战场",
+          "text": "赛尚阿长期任职军机和部院，熟悉中央行政，却不等于熟悉广西山路、地方武装和流动战争。咸丰初年被任命督办军务时，前线已有巡抚、提督和临时调兵，各自拥有信息与责任。钦差关防提供名分，不能自动生成共同判断。",
+          "sources": [
+            "v163_qsg392",
+            "v163_qsg20",
+            "v163_qsl"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_accession_crisis",
+            "v163_guangxi_command"
+          ],
+          "people": [
+            "q_xianfeng",
+            "q163_xiangrong"
+          ]
+        },
+        {
+          "id": "v163_saishanga2",
+          "title": "向荣与乌兰泰的矛盾不是私人小事",
+          "text": "向荣熟悉绿营追击，乌兰泰重视火器和训练，两人对部署和责任多有争执。赛尚阿需要调和，却又在奏报和赏罚上被认为偏向。官修传记把失败归为调度无方，其中确有个人责任，但跨系统军队缺乏统一后勤同样重要。",
+          "sources": [
+            "v163_qsg392",
+            "v163_qsg20",
+            "v163_qsl"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_guangxi_command",
+            "v163_campaign_wages"
+          ],
+          "people": [
+            "q163_xiangrong",
+            "q163_wulantai"
+          ]
+        },
+        {
+          "id": "v163_saishanga3",
+          "title": "永安围城看似占优却未封死出口",
+          "text": "清军长期围困永安，兵力和营垒并不少。太平军在雨夜和复杂山路中突围，乌兰泰追击受伤。围城失效说明哨探、道路控制和各营协同存在空隙。战后奏报互相归责，也提示我们不能只用某次“歼敌数”判断总体态势。",
+          "sources": [
+            "v163_qsg392",
+            "v163_qsg20",
+            "v163_qsl"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_yongan_breakout",
+            "v163_battle_language"
+          ],
+          "people": [
+            "q163_wulantai",
+            "q163_yangxiuqing"
+          ]
+        },
+        {
+          "id": "v163_saishanga4",
+          "title": "跟追进入湖南暴露跨省体制",
+          "text": "太平军离开广西后，赛尚阿仍随军追赶，但地方官、粮饷和军队调遣转入新的省份。中央诏令抵达时，战场可能已经移动。这样的时间差使钦差既被要求迅速负责，又缺少稳定执行链。普通居民则面对双方征粮、夫役和治安破坏。",
+          "sources": [
+            "v163_qsg392",
+            "v163_qsg20",
+            "v163_qsl"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_quanzhou_feng",
+            "v163_porters_labor",
+            "v163_mobile_requisition"
+          ],
+          "people": [
+            "q163_fengyunshan",
+            "q163_xiaochaogui"
+          ]
+        },
+        {
+          "id": "v163_saishanga5",
+          "title": "革职审讯解决了责任归属，却没解决战争",
+          "text": "1852年咸丰帝以号令不明、劳师糜饷等理由将赛尚阿革职逮问，一度拟重罪。处分显示皇权追责，也为前线失败提供明确承受者。此后太平军仍沿长江迅速扩张，说明换掉钦差不能替代财政、兵制和地方协同改革。评价他应同时保留失职与结构限制。赛尚阿传由清廷功罪体系组织，革职判语不能单独说明全部战况。诏令可见皇帝期待，前线传记可见将帅争执，地方与对手材料才可能补足道路、民夫和补给的实际状态。",
+          "sources": [
+            "v163_qsg392",
+            "v163_qsg20",
+            "v163_qsl"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_saishanga_accountability",
+            "v163_yangtze_fiscal_break"
+          ],
+          "people": [
+            "q_xianfeng",
+            "q163_xiangrong"
+          ]
+        }
+      ],
+      "sources": [
+        "v163_qsg392",
+        "v163_qsg20",
+        "v163_qsl"
+      ]
+    },
+    {
+      "person": "q163_xiangrong",
+      "title": "向荣：追击者、筑营者与疲惫的绿营",
+      "dek": "他最早长期跟踪太平军，却没能把经验转化为可持续封锁；江南大营展示了旧军制的韧性与极限。",
+      "sections": [
+        {
+          "id": "v163_xiangrong1",
+          "title": "行伍经验使他成为前线倚重",
+          "text": "向荣从基层军职升迁，经历过多地战事。广西局势扩大后，朝廷认为他熟悉实战，调任提督。早期作战有胜有败，官修传记把胜负集中到将领名下，实际兵丁训练、地形、粮饷和地方向导决定队伍能否持续追击。",
+          "sources": [
+            "v163_qsg401",
+            "v163_qsg20",
+            "v163_qsg475"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_guangxi_command",
+            "v163_campaign_wages"
+          ],
+          "people": [
+            "q_xianfeng",
+            "q163_saishanga"
+          ]
+        },
+        {
+          "id": "v163_xiangrong2",
+          "title": "与乌兰泰不合削弱围堵",
+          "text": "向荣与乌兰泰分别掌握不同兵力，对部署、用兵和奏报有矛盾。赛尚阿名义上节制，却难让两套关系网真正合一。把矛盾写成人品不合过于简单；军功赏罚、兵源隶属和谁为失败负责，都使合作成为政治问题。",
+          "sources": [
+            "v163_qsg401",
+            "v163_qsg20",
+            "v163_qsg475"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_guangxi_command",
+            "v163_yongan_breakout"
+          ],
+          "people": [
+            "q163_wulantai",
+            "q163_saishanga"
+          ]
+        },
+        {
+          "id": "v163_xiangrong3",
+          "title": "一路尾追也一路依赖地方供给",
+          "text": "从广西到湖南、湖北，向荣部跟随太平军移动。远距离追击需要粮饷、船只、夫役和休整，欠饷会导致逃亡与扰民。军队“抵达”某城不等于保持完整战力，战报中的编制数也不能代表实际在营人数。居民同时承受追兵和前军征取。",
+          "sources": [
+            "v163_qsg401",
+            "v163_qsg20",
+            "v163_qsg475"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_mobile_requisition",
+            "v163_porters_labor",
+            "v163_market_survival"
+          ],
+          "people": [
+            "q163_xiaochaogui",
+            "q163_linfengxiang"
+          ]
+        },
+        {
+          "id": "v163_xiangrong4",
+          "title": "江南大营是封锁体系而非一座营盘",
+          "text": "1853年南京陷落后，向荣在天京东南设置营垒并受命长期围堵。大营限制太平军活动，却需要持续军饷、轮换和跨营协调。固定防线让清军不再无休追逐，也使兵力暴露在疲劳、疫病和对手集中突破之下。",
+          "sources": [
+            "v163_qsg401",
+            "v163_qsg20",
+            "v163_qsg475"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_jiangnan_camp",
+            "v163_campaign_wages"
+          ],
+          "people": [
+            "q163_yangxiuqing",
+            "q163_shidakai"
+          ]
+        },
+        {
+          "id": "v163_xiangrong5",
+          "title": "1856年营溃不能只归为一战失误",
+          "text": "太平军集中力量击破江南大营，向荣退往丹阳后去世，记载对死因细节有所差异。营垒崩溃是军饷、士气、防线过长和对手机动共同作用。清方后来以忠勤评价他，太平天国叙事以胜利颂功；两边都容易遮蔽周边居民和普通兵丁的损失。向荣留下的奏稿和官修传记以军事指挥为中心，营外居民、兵丁家属和被征船夫很少具名。评价江南大营时，既要记录他的长期追击，也要把维持营垒的社会成本重新放回画面。",
+          "sources": [
+            "v163_qsg401",
+            "v163_qsg20",
+            "v163_qsg475"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_jiangnan_collapse",
+            "v163_memory_frames"
+          ],
+          "people": [
+            "q163_yangxiuqing",
+            "q163_shidakai"
+          ]
+        }
+      ],
+      "sources": [
+        "v163_qsg401",
+        "v163_qsg20",
+        "v163_qsg475"
+      ]
+    },
+    {
+      "person": "q163_wulantai",
+      "title": "乌兰泰：火器训练、直言与指挥裂缝",
+      "dek": "他重视训练并敢于报告军中矛盾，但个人专业能力仍受多头统辖和崎岖战场限制。",
+      "sections": [
+        {
+          "id": "v163_wulantai1",
+          "title": "火器营经历塑造用兵方法",
+          "text": "乌兰泰出身火器营，以鸟枪护军经历逐步升迁，官修传记特别强调训练和器械。咸丰初年赴广西时，他还选带章京、兵丁和适用装备。专业准备能改善局部战斗，却不能替代地图、粮路和地方情报。",
+          "sources": [
+            "v163_qsg402",
+            "v163_qsg392",
+            "v163_qsg20"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_guangxi_command",
+            "v163_campaign_wages"
+          ],
+          "people": [
+            "q_xianfeng",
+            "q163_saishanga"
+          ]
+        },
+        {
+          "id": "v163_wulantai2",
+          "title": "直陈将帅矛盾也是政治行动",
+          "text": "咸丰帝担忧军中不和，密令乌兰泰据实报告。他指出向荣用人和军心问题，也使双方矛盾公开化。奏报可能包含真实观察，同时关系到功罪和资源分配，不能当作中立调查。前线信息进入皇帝视野前已由当事人选择和组织。",
+          "sources": [
+            "v163_qsg402",
+            "v163_qsg392",
+            "v163_qsg20"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_battle_language",
+            "v163_guangxi_command"
+          ],
+          "people": [
+            "q163_xiangrong",
+            "q163_saishanga"
+          ]
+        },
+        {
+          "id": "v163_wulantai3",
+          "title": "局部胜利没有封住移动路线",
+          "text": "乌兰泰在象州、新墟、紫荆山等地与太平军交战，多次攻占隘口。山地中的一处胜利并不等于摧毁组织，对手可以分路、夜行或转向空虚城镇。清军需要守住道路和补给，而非只统计杀伤。普通村民则反复面对搜粮和侦察。",
+          "sources": [
+            "v163_qsg402",
+            "v163_qsg392",
+            "v163_qsg20"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_jintian_mobilization",
+            "v163_mobile_requisition"
+          ],
+          "people": [
+            "q163_yangxiuqing",
+            "q163_fengyunshan"
+          ]
+        },
+        {
+          "id": "v163_wulantai4",
+          "title": "永安突围检验了围城协同",
+          "text": "围攻永安时，各军营垒分属不同将领。太平军利用大雨和山路突围，乌兰泰追击，在将军桥一带受炮伤。官修史强调其勇战，仍可看出围堵体系存在缝隙。将领亲临前线不能补偿侦察、通信和营间协作不足。",
+          "sources": [
+            "v163_qsg402",
+            "v163_qsg392",
+            "v163_qsg20"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_yongan_breakout",
+            "v163_saishanga_accountability"
+          ],
+          "people": [
+            "q163_saishanga",
+            "q163_xiangrong"
+          ]
+        },
+        {
+          "id": "v163_wulantai5",
+          "title": "战死记忆不应终止战术复盘",
+          "text": "乌兰泰伤重去世后被列入忠烈叙事，个人勇敢得到肯定。若只停在褒扬，就会忽略他本人曾报告的指挥冲突，也看不到火器部队仍受后勤与地形约束。可靠阅读应把传记、诏令和对手行动对照，不虚构其临终言行，也不把失败等同于无能。乌兰泰的忠烈书写保存了履历，也会把失败转化为个人牺牲。其直陈不讳可以从奏报关系确认，但不能据此推定所有建议都正确；专业训练与组织协同是两个不同层面。",
+          "sources": [
+            "v163_qsg402",
+            "v163_qsg392",
+            "v163_qsg20"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_memory_frames",
+            "v163_battle_language"
+          ],
+          "people": [
+            "q163_xiangrong",
+            "q163_saishanga"
+          ]
+        }
+      ],
+      "sources": [
+        "v163_qsg402",
+        "v163_qsg392",
+        "v163_qsg20"
+      ]
+    },
+    {
+      "person": "q163_yemingchen",
+      "title": "叶名琛：强硬交涉不能独自解释一场战争",
+      "dek": "广州入城、修约、海关和军事升级彼此纠缠；个人决策重要，却不能替代列强扩张目标与制度背景。",
+      "sections": [
+        {
+          "id": "v163_yemingchen1",
+          "title": "地方治理建立在复杂广州秩序上",
+          "text": "叶名琛在广东任职多年，面对通商口岸、海关、团练、会党和城内外居民。第一次鸦片战争后的条约留下入城与交涉争议，地方官既要应对列强要求，也担心城市秩序和政治责任。把他简单写成闭目塞听，会抹去所处压力，却不能因此免除判断责任。",
+          "sources": [
+            "v163_qsg154",
+            "v163_dpm_xianfeng",
+            "v163_qsl"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_shanghai_customs",
+            "v163_accession_crisis"
+          ],
+          "people": [
+            "q_xianfeng"
+          ]
+        },
+        {
+          "id": "v163_yemingchen2",
+          "title": "修约要求并非中性技术谈判",
+          "text": "英法等国要求扩大驻使、通商和内地权利，叶名琛多次拒绝。列强利用军力改变既有条约，是战争扩张的重要背景。清廷和地方之间的信息往返、权限边界又使交涉迟缓。拒绝本身不能说明所有策略正确，接受要求也并非没有主权代价。",
+          "sources": [
+            "v163_qsg154",
+            "v163_dpm_xianfeng",
+            "v163_qsl"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_proclamations",
+            "v163_battle_language"
+          ],
+          "people": [
+            "q_xianfeng"
+          ]
+        },
+        {
+          "id": "v163_yemingchen3",
+          "title": "亚罗号事件成为升级借口",
+          "text": "1856年围绕亚罗号的执照、船员和旗帜发生争议，英国以此发动广州军事行动，法国又借马神甫事件加入。事件细节和法律解释长期有争论，但扩大权益的目标早已存在。不能把第二次鸦片战争写成叶名琛一人拒谈导致。",
+          "sources": [
+            "v163_qsg154",
+            "v163_dpm_xianfeng",
+            "v163_qsl"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_memory_frames",
+            "v163_accession_crisis"
+          ],
+          "people": [
+            "q163_senggelinqin"
+          ]
+        },
+        {
+          "id": "v163_yemingchen4",
+          "title": "城防、贸易和居民承受同一场危机",
+          "text": "炮击与封锁影响广州市场、船民和城内居民。叶名琛倚赖防御、团练和政治动员，却未建立足以抗衡海上武力的体系。战争叙事若只写外交照会，会漏掉失业、物价、房屋损毁和被征劳力；这些经验在官方传记中记录有限。",
+          "sources": [
+            "v163_qsg154",
+            "v163_dpm_xianfeng",
+            "v163_qsl"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_market_survival",
+            "v163_porters_labor"
+          ],
+          "people": [
+            "q163_xiangrong"
+          ]
+        },
+        {
+          "id": "v163_yemingchen5",
+          "title": "被俘结局与多重史料立场",
+          "text": "广州失守后叶名琛被英军俘往印度，1859年死于当地。清方可能批评其误国，英国材料也常以傲慢无知塑造对手，两种叙述都服务各自正当性。较稳妥的评价应区分列强发动战争、清廷制度困境和叶个人误判，避免以一个绰号代替历史解释。叶名琛相关材料横跨清廷奏报、英国战争叙事和后世评价，常把复杂冲突人格化。以条约要求、军事行动和地方行政分别核对，才能既确认误判，也不替发动扩张战争的一方转移责任。",
+          "sources": [
+            "v163_qsg154",
+            "v163_dpm_xianfeng",
+            "v163_qsl"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_memory_frames",
+            "v163_battle_language"
+          ],
+          "people": [
+            "q_xianfeng",
+            "q163_senggelinqin"
+          ]
+        }
+      ],
+      "sources": [
+        "v163_qsg154",
+        "v163_dpm_xianfeng",
+        "v163_qsl"
+      ]
+    },
+    {
+      "person": "q163_senggelinqin",
+      "title": "僧格林沁：京畿围困战与海防胜负",
+      "dek": "他能在北伐围困战中发挥骑兵和地方防线优势，却在近代海岸战争中面对不同技术与指挥条件。",
+      "sections": [
+        {
+          "id": "v163_senggelinqin1",
+          "title": "王公身份连接宫廷与军队",
+          "text": "僧格林沁为科尔沁蒙古王公，长期担任御前和旗职，得到道光、咸丰信任。1853年北伐军逼近直隶时，他从京师团防进入前线。亲近皇帝带来调兵权和政治信用，也意味着战果、失误和京城安全紧密相连。",
+          "sources": [
+            "v163_qsg404",
+            "v163_qsg154",
+            "v163_qsg388"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_northern_command",
+            "v163_tuanlian_expansion"
+          ],
+          "people": [
+            "q_xianfeng"
+          ]
+        },
+        {
+          "id": "v163_senggelinqin2",
+          "title": "对北伐军采取围困而非追逐",
+          "text": "林凤祥、李开芳部机动迅速，清军逐渐以壕沟、封锁、村寨防线和持续增援限制其空间。北方骑兵、严冬和熟悉地方供给成为优势。胜利不是一次决战完成，而是长期消耗；挖壕、运输和守卡的普通兵民构成战术基础。",
+          "sources": [
+            "v163_qsg404",
+            "v163_qsg154",
+            "v163_qsg388"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_northern_advance",
+            "v163_lianzhen_gaotang",
+            "v163_porters_labor"
+          ],
+          "people": [
+            "q163_linfengxiang",
+            "q163_likaifang"
+          ]
+        },
+        {
+          "id": "v163_senggelinqin3",
+          "title": "俘获首领不等于解释全部失败",
+          "text": "1855年林凤祥、李开芳先后被俘，京畿压力解除。清方传记把结果集中为僧格林沁军功，北伐失败还与天京援军未至、疾病、严寒和补给线过长有关。对被俘者的审讯和处决又主要由胜者记录，不能由此推断所有人的动机。",
+          "sources": [
+            "v163_qsg404",
+            "v163_qsg154",
+            "v163_qsg388"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_captive_choices",
+            "v163_memory_frames"
+          ],
+          "people": [
+            "q163_linfengxiang",
+            "q163_likaifang"
+          ]
+        },
+        {
+          "id": "v163_senggelinqin4",
+          "title": "大沽胜利容易制造过度信心",
+          "text": "第二次鸦片战争中，僧格林沁主持北方海防。1859年大沽炮台击退英法舰队，防御工事、浅滩和火力准备发挥作用。一次成功证明有条件的防御能力，却也可能使朝廷低估对手下一次调整兵力、登陆路线和联合作战的能力。",
+          "sources": [
+            "v163_qsg404",
+            "v163_qsg154",
+            "v163_qsg388"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_battle_language",
+            "v163_campaign_wages"
+          ],
+          "people": [
+            "q163_yemingchen"
+          ]
+        },
+        {
+          "id": "v163_senggelinqin5",
+          "title": "1860年失败之后仍不能用技术差概括",
+          "text": "英法联军再次进攻时，大沽失守，战事推进到北京，僧格林沁部在八里桥等地失败。武器差距重要，训练、指挥、侦察和战略选择同样关键。他后来继续镇压捻军并于1865年战死。人物评价应跨越胜败，不把忠烈称号替代军事复盘。同一人物在连镇、大沽和八里桥面对的战场完全不同。骑兵围困、炮台防御与近代联军登陆不能套用同一成败尺度；传记中的褒奖、战报中的数字和实际战术条件应分开审视。这也是证据边界的一部分。",
+          "sources": [
+            "v163_qsg404",
+            "v163_qsg154",
+            "v163_qsg388"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v163_memory_frames",
+            "v163_battle_language"
+          ],
+          "people": [
+            "q_xianfeng",
+            "q163_yemingchen"
+          ]
+        }
+      ],
+      "sources": [
+        "v163_qsg404",
+        "v163_qsg154",
+        "v163_qsg388"
+      ]
     }
   ],
   "portraits": [
@@ -225559,6 +228240,282 @@
         "v162_qsg370",
         "v162_qsg372"
       ]
+    },
+    {
+      "from": "q_xianfeng",
+      "to": "q163_yangxiuqing",
+      "role": "太平天国东王与主要对手",
+      "inverse": "在位皇帝或所对抗政权的君主",
+      "period": "咸丰在位时期",
+      "note": "关系按具体任命、战争或政权对抗界定，不表示每项行动都由皇帝直接指挥。",
+      "sources": [
+        "v163_qsg475",
+        "v163_ruc_religion"
+      ]
+    },
+    {
+      "from": "q_xianfeng",
+      "to": "q163_fengyunshan",
+      "role": "拜上帝会组织者与起义领袖",
+      "inverse": "在位皇帝或所对抗政权的君主",
+      "period": "咸丰在位时期",
+      "note": "关系按具体任命、战争或政权对抗界定，不表示每项行动都由皇帝直接指挥。",
+      "sources": [
+        "v163_qsg475",
+        "v163_chn_jintian"
+      ]
+    },
+    {
+      "from": "q_xianfeng",
+      "to": "q163_xiaochaogui",
+      "role": "太平天国西王与前线指挥者",
+      "inverse": "在位皇帝或所对抗政权的君主",
+      "period": "咸丰在位时期",
+      "note": "关系按具体任命、战争或政权对抗界定，不表示每项行动都由皇帝直接指挥。",
+      "sources": [
+        "v163_qsg475",
+        "v163_report_xiao"
+      ]
+    },
+    {
+      "from": "q_xianfeng",
+      "to": "q163_shidakai",
+      "role": "太平天国翼王与军事领袖",
+      "inverse": "在位皇帝或所对抗政权的君主",
+      "period": "咸丰在位时期",
+      "note": "关系按具体任命、战争或政权对抗界定，不表示每项行动都由皇帝直接指挥。",
+      "sources": [
+        "v163_qsg475",
+        "v163_chn_jintian"
+      ]
+    },
+    {
+      "from": "q_xianfeng",
+      "to": "q163_weichanghui",
+      "role": "太平天国北王与天京事变参与者",
+      "inverse": "在位皇帝或所对抗政权的君主",
+      "period": "咸丰在位时期",
+      "note": "关系按具体任命、战争或政权对抗界定，不表示每项行动都由皇帝直接指挥。",
+      "sources": [
+        "v163_qsg475",
+        "v163_qingji51"
+      ]
+    },
+    {
+      "from": "q_xianfeng",
+      "to": "q163_linfengxiang",
+      "role": "太平天国北伐军统帅",
+      "inverse": "在位皇帝或所对抗政权的君主",
+      "period": "咸丰在位时期",
+      "note": "关系按具体任命、战争或政权对抗界定，不表示每项行动都由皇帝直接指挥。",
+      "sources": [
+        "v163_qsg475",
+        "v163_qsg404"
+      ]
+    },
+    {
+      "from": "q_xianfeng",
+      "to": "q163_likaifang",
+      "role": "太平天国北伐将领",
+      "inverse": "在位皇帝或所对抗政权的君主",
+      "period": "咸丰在位时期",
+      "note": "关系按具体任命、战争或政权对抗界定，不表示每项行动都由皇帝直接指挥。",
+      "sources": [
+        "v163_qsg475",
+        "v163_qsg404"
+      ]
+    },
+    {
+      "from": "q_xianfeng",
+      "to": "q163_saishanga",
+      "role": "督办广西军务的钦差大臣",
+      "inverse": "在位皇帝或所对抗政权的君主",
+      "period": "咸丰在位时期",
+      "note": "关系按具体任命、战争或政权对抗界定，不表示每项行动都由皇帝直接指挥。",
+      "sources": [
+        "v163_qsg392",
+        "v163_qsg20"
+      ]
+    },
+    {
+      "from": "q_xianfeng",
+      "to": "q163_xiangrong",
+      "role": "追剿太平军与江南大营统帅",
+      "inverse": "在位皇帝或所对抗政权的君主",
+      "period": "咸丰在位时期",
+      "note": "关系按具体任命、战争或政权对抗界定，不表示每项行动都由皇帝直接指挥。",
+      "sources": [
+        "v163_qsg401",
+        "v163_qsg20"
+      ]
+    },
+    {
+      "from": "q_xianfeng",
+      "to": "q163_wulantai",
+      "role": "广西军务将领",
+      "inverse": "在位皇帝或所对抗政权的君主",
+      "period": "咸丰在位时期",
+      "note": "关系按具体任命、战争或政权对抗界定，不表示每项行动都由皇帝直接指挥。",
+      "sources": [
+        "v163_qsg402",
+        "v163_qsg392"
+      ]
+    },
+    {
+      "from": "q_xianfeng",
+      "to": "q163_yemingchen",
+      "role": "两广总督与广州交涉负责人",
+      "inverse": "在位皇帝或所对抗政权的君主",
+      "period": "咸丰在位时期",
+      "note": "关系按具体任命、战争或政权对抗界定，不表示每项行动都由皇帝直接指挥。",
+      "sources": [
+        "v163_qsg154",
+        "v163_dpm_xianfeng"
+      ]
+    },
+    {
+      "from": "q_xianfeng",
+      "to": "q163_senggelinqin",
+      "role": "京畿防务与海防统帅",
+      "inverse": "在位皇帝或所对抗政权的君主",
+      "period": "咸丰在位时期",
+      "note": "关系按具体任命、战争或政权对抗界定，不表示每项行动都由皇帝直接指挥。",
+      "sources": [
+        "v163_qsg404",
+        "v163_qsg154"
+      ]
+    },
+    {
+      "from": "q_hongxiuquan",
+      "to": "q163_yangxiuqing",
+      "role": "东王与军政中枢",
+      "inverse": "天王",
+      "period": "金田起义至1856年天京事变",
+      "note": "关系依据同时期行动与任命描述，不把后出褒贬当作动机事实。",
+      "sources": [
+        "v163_qsg475"
+      ]
+    },
+    {
+      "from": "q_hongxiuquan",
+      "to": "q163_fengyunshan",
+      "role": "共同传教与南王",
+      "inverse": "天王与早期同伴",
+      "period": "拜上帝会形成至1852年",
+      "note": "关系依据同时期行动与任命描述，不把后出褒贬当作动机事实。",
+      "sources": [
+        "v163_chn_jintian"
+      ]
+    },
+    {
+      "from": "q_hongxiuquan",
+      "to": "q163_xiaochaogui",
+      "role": "西王与代天兄传言者",
+      "inverse": "天王",
+      "period": "金田起义至1852年",
+      "note": "关系依据同时期行动与任命描述，不把后出褒贬当作动机事实。",
+      "sources": [
+        "v163_qsg475"
+      ]
+    },
+    {
+      "from": "q_hongxiuquan",
+      "to": "q163_shidakai",
+      "role": "翼王与军事领袖",
+      "inverse": "天王",
+      "period": "1851—1857年",
+      "note": "关系依据同时期行动与任命描述，不把后出褒贬当作动机事实。",
+      "sources": [
+        "v163_qsg475"
+      ]
+    },
+    {
+      "from": "q_hongxiuquan",
+      "to": "q163_weichanghui",
+      "role": "北王与天京事变执行者",
+      "inverse": "天王与授权者",
+      "period": "1851—1856年",
+      "note": "关系依据同时期行动与任命描述，不把后出褒贬当作动机事实。",
+      "sources": [
+        "v163_qsg475"
+      ]
+    },
+    {
+      "from": "q163_yangxiuqing",
+      "to": "q163_shidakai",
+      "role": "军政上级与翼王",
+      "inverse": "翼王与前线统帅",
+      "period": "永安封王至1856年",
+      "note": "关系依据同时期行动与任命描述，不把后出褒贬当作动机事实。",
+      "sources": [
+        "v163_qsg475"
+      ]
+    },
+    {
+      "from": "q163_yangxiuqing",
+      "to": "q163_linfengxiang",
+      "role": "北伐战略中枢",
+      "inverse": "北伐军统帅",
+      "period": "1853—1855年",
+      "note": "关系依据同时期行动与任命描述，不把后出褒贬当作动机事实。",
+      "sources": [
+        "v163_qsg475"
+      ]
+    },
+    {
+      "from": "q163_linfengxiang",
+      "to": "q163_likaifang",
+      "role": "北伐同军将领",
+      "inverse": "北伐同军将领",
+      "period": "1852—1855年",
+      "note": "关系依据同时期行动与任命描述，不把后出褒贬当作动机事实。",
+      "sources": [
+        "v163_qsg404"
+      ]
+    },
+    {
+      "from": "q163_saishanga",
+      "to": "q163_xiangrong",
+      "role": "钦差与前线提督",
+      "inverse": "受节制将领",
+      "period": "1851—1852年广西军务",
+      "note": "关系依据同时期行动与任命描述，不把后出褒贬当作动机事实。",
+      "sources": [
+        "v163_qsg392"
+      ]
+    },
+    {
+      "from": "q163_saishanga",
+      "to": "q163_wulantai",
+      "role": "钦差与帮办将领",
+      "inverse": "受节制将领",
+      "period": "1851—1852年广西军务",
+      "note": "关系依据同时期行动与任命描述，不把后出褒贬当作动机事实。",
+      "sources": [
+        "v163_qsg402"
+      ]
+    },
+    {
+      "from": "q163_xiangrong",
+      "to": "q163_wulantai",
+      "role": "协同又相互争执的将领",
+      "inverse": "协同又相互争执的将领",
+      "period": "1851—1852年广西军务",
+      "note": "关系依据同时期行动与任命描述，不把后出褒贬当作动机事实。",
+      "sources": [
+        "v163_qsg401"
+      ]
+    },
+    {
+      "from": "q163_senggelinqin",
+      "to": "q163_linfengxiang",
+      "role": "围困北伐军的清军统帅",
+      "inverse": "所对抗的北伐统帅",
+      "period": "1853—1855年",
+      "note": "关系依据同时期行动与任命描述，不把后出褒贬当作动机事实。",
+      "sources": [
+        "v163_qsg404"
+      ]
     }
   ],
   "dynasties": [
@@ -230500,7 +233457,19 @@
         "q_zengguofan",
         "q_zuozongtang",
         "q_lihongzhang",
-        "q_yixin"
+        "q_yixin",
+        "q163_yangxiuqing",
+        "q163_fengyunshan",
+        "q163_xiaochaogui",
+        "q163_shidakai",
+        "q163_weichanghui",
+        "q163_linfengxiang",
+        "q163_likaifang",
+        "q163_saishanga",
+        "q163_xiangrong",
+        "q163_wulantai",
+        "q163_yemingchen",
+        "q163_senggelinqin"
       ],
       "events": [
         "qev_taiping_1851",
@@ -230510,7 +233479,52 @@
         "v40q_tianjing_capital",
         "v40q_xiang_army",
         "v66q_xingke_records",
-        "v90_q_xianfeng_haiguo"
+        "v90_q_xianfeng_haiguo",
+        "v163_accession_crisis",
+        "v163_guangxi_command",
+        "v163_yongan_kings",
+        "v163_saishanga_accountability",
+        "v163_tianjing_government",
+        "v163_land_program",
+        "v163_jiangnan_camp",
+        "v163_northern_command",
+        "v163_tianjing_incident",
+        "v163_jintian_mobilization",
+        "v163_yongan_breakout",
+        "v163_quanzhou_feng",
+        "v163_changsha_xiao",
+        "v163_wuchang_capture",
+        "v163_nanjing_capture",
+        "v163_northern_advance",
+        "v163_lianzhen_gaotang",
+        "v163_jiangnan_collapse",
+        "v163_guangxi_burdens",
+        "v163_mobile_requisition",
+        "v163_yangtze_fiscal_break",
+        "v163_taiping_mint",
+        "v163_sacred_treasury",
+        "v163_lijin_yangzhou",
+        "v163_donation_finance",
+        "v163_shanghai_customs",
+        "v163_campaign_wages",
+        "v163_congregation_families",
+        "v163_gender_camps",
+        "v163_boat_families",
+        "v163_city_displacement",
+        "v163_tuanlian_expansion",
+        "v163_porters_labor",
+        "v163_market_survival",
+        "v163_captive_choices",
+        "v163_internal_massacre",
+        "v163_religious_texts",
+        "v163_spirit_authority",
+        "v163_calendar_ritual",
+        "v163_proclamations",
+        "v163_land_text_reality",
+        "v163_exam_printing",
+        "v163_temple_change",
+        "v163_battle_language",
+        "v163_memory_frames"
       ],
       "sources": [
         "v5qn_qing_annals",
@@ -230525,7 +233539,30 @@
         "v5qn_qsg221",
         "v40q_tianchao",
         "v66_saac_xingke",
-        "v66_fhac_xingke"
+        "v66_fhac_xingke",
+        "v163_qsg20",
+        "v163_qsg392",
+        "v163_qsg401",
+        "v163_qsg402",
+        "v163_qsg404",
+        "v163_qsg475",
+        "v163_qsg154",
+        "v163_qsg388",
+        "v163_qsl",
+        "v163_chn_jintian",
+        "v163_chn_seal",
+        "v163_chn_coin",
+        "v163_dpm_xianfeng",
+        "v163_dpm_qingshi",
+        "v163_ruc_memory",
+        "v163_ruc_religion",
+        "v163_ruc_women",
+        "v163_pku_rural",
+        "v163_report_xiao",
+        "v163_qingji51",
+        "v163_ruc_lijin",
+        "v163_sh_nanjing",
+        "v163_tianchao"
       ],
       "note": ""
     },
