@@ -4770,4 +4770,48 @@ final class MingJiUITests: XCTestCase {
         shot("v160-li-changgeng-coastal-society", maritime)
     }
 
+    @MainActor func testV161LateJiaqingShowsInterrogationAndDualDiplomaticArchives() throws {
+        let palace = XCUIApplication()
+        palace.launchArguments = ["--uitesting", "--ui-dynasty", "qing"]
+        palace.launch()
+        XCTAssertTrue(palace.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        palace.buttons.matching(NSPredicate(format: "identifier == %@", "globalSearch")).firstMatch.tap()
+        let search = palace.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("林清")
+        let result = palace.buttons["search_person_q161_linqing"]
+        XCTAssertTrue(result.waitForExistence(timeout: 5)); Thread.sleep(forTimeInterval: 1); result.tap()
+        if !palace.buttons["articleEntry"].waitForExistence(timeout: 5) { palace.buttons["search_person_q161_linqing"].tap() }
+        XCTAssertTrue(palace.buttons["articleEntry"].waitForExistence(timeout: 5)); palace.buttons["articleEntry"].tap()
+        XCTAssertTrue(palace.buttons["articleContents"].waitForExistence(timeout: 5)); palace.buttons["articleContents"].tap()
+        let interrogation = palace.buttons["被捕与廷讯由胜利者记录"]
+        XCTAssertTrue(interrogation.exists); interrogation.tap()
+        XCTAssertTrue(palace.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不受审讯环境影响")).firstMatch.waitForExistence(timeout: 5))
+        XCTAssertTrue(palace.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不应把其中每项归责")).firstMatch.exists)
+        openChapterSources("v161_linqing4", in: palace)
+        XCTAssertTrue(palace.descendants(matching: .any)["source_v161_qsl275"].waitForExistence(timeout: 3))
+        palace.swipeUp()
+        shot("v161-lin-qing-interrogation-boundary", palace)
+        palace.terminate()
+
+        let embassy = XCUIApplication()
+        embassy.launchArguments = ["--uitesting", "--ui-dynasty", "qing"]
+        embassy.launch()
+        XCTAssertTrue(embassy.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        embassy.buttons.matching(NSPredicate(format: "identifier == %@", "globalSearch")).firstMatch.tap()
+        let embassySearch = embassy.searchFields.firstMatch
+        XCTAssertTrue(embassySearch.waitForExistence(timeout: 5)); embassySearch.tap(); embassySearch.typeText("阿美士德")
+        let embassyResult = embassy.buttons["search_person_q161_amherst"]
+        XCTAssertTrue(embassyResult.waitForExistence(timeout: 5)); Thread.sleep(forTimeInterval: 1); embassyResult.tap()
+        if !embassy.buttons["articleEntry"].waitForExistence(timeout: 5) { embassy.buttons["search_person_q161_amherst"].tap() }
+        XCTAssertTrue(embassy.buttons["articleEntry"].waitForExistence(timeout: 5)); embassy.buttons["articleEntry"].tap()
+        XCTAssertTrue(embassy.buttons["articleContents"].waitForExistence(timeout: 5)); embassy.buttons["articleContents"].tap()
+        let archives = embassy.buttons["疲惫、时间压力与沟通共同失灵"]
+        XCTAssertTrue(archives.exists); archives.tap()
+        XCTAssertTrue(embassy.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "两套记录都服务于本国问责")).firstMatch.waitForExistence(timeout: 5))
+        openChapterSources("v161_amherst3", in: embassy)
+        XCTAssertTrue(embassy.descendants(matching: .any)["source_v161_anu_amherst"].waitForExistence(timeout: 3))
+        embassy.swipeUp()
+        shot("v161-amherst-dual-archives", embassy)
+    }
+
 }

@@ -1,5 +1,5 @@
 {
-  "version": 134,
+  "version": 135,
   "reviewed": "2026-10-31",
   "people": [
     {
@@ -18554,6 +18554,215 @@
       "kind": "学者与封疆大吏",
       "note": "学术成就与军事行政均需具体评价，不能只以乾嘉学者概括。",
       "dynasty": "qing"
+    },
+    {
+      "id": "q161_linqing",
+      "name": "林清",
+      "call": "把京畿教门网络带到紫禁城门前的组织者",
+      "temple": "",
+      "era": "嘉庆后期",
+      "reign": "约18世纪后期—1813年",
+      "summary": "联络直隶、河南、山东部分教门群体，策划1813年京师行动，事败后被捕处死。",
+      "parent": null,
+      "sources": [
+        "v161_dpm_lin",
+        "v161_qsl274",
+        "v161_qsl275"
+      ],
+      "kind": "天理教领导者",
+      "note": "生平主要由审讯与官修材料保存，供词形成环境和清廷定罪语言必须明示。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q161_liwencheng",
+      "name": "李文成",
+      "call": "滑县提前起事后转入区域战争的领导者",
+      "temple": "",
+      "era": "嘉庆后期",
+      "reign": "约18世纪后期—1813年",
+      "summary": "在河南滑县组织教门网络，被捕受刑触发提前起事，后在辉县司寨战死。",
+      "parent": null,
+      "sources": [
+        "v161_qsl277",
+        "v161_qsl279",
+        "v161_qsg367"
+      ],
+      "kind": "天理教领导者",
+      "note": "军报中的人数、裹胁与死亡经过来自镇压一方，不视作无偏统计。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q161_fengkeshan",
+      "name": "冯克善",
+      "call": "史料声量远小于京师与滑县两位同盟者的山东组织者",
+      "temple": "",
+      "era": "嘉庆后期",
+      "reign": "活动于19世纪初",
+      "summary": "与林清、李文成等联络，在山东教门网络中承担组织作用；现存公开材料多为清廷追捕线索。",
+      "parent": null,
+      "sources": [
+        "v161_dpm_lin",
+        "v161_qsl274",
+        "v161_qsl279"
+      ],
+      "kind": "天理教组织者",
+      "note": "出生、分工和结局细节在不同叙述中并不齐整，页面不以传说补空。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q161_nayancheng",
+      "name": "那彦成",
+      "call": "在升降反复中统率滑县战役的钦差",
+      "temple": "",
+      "era": "嘉庆至道光时期",
+      "reign": "1764—1833年",
+      "summary": "阿桂之孙，屡任军机与封疆，1813年统率河南战事；其功名与问责反复相伴。",
+      "parent": null,
+      "sources": [
+        "v161_qsg367",
+        "v161_qsl277",
+        "v161_qsl279"
+      ],
+      "kind": "钦差与封疆大吏",
+      "note": "列传以军功组织叙事，攻城伤亡和居民处境必须另行呈现。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q161_yangyuchun",
+      "name": "杨遇春",
+      "call": "从行伍战术到滑县攻城的前线将领",
+      "temple": "",
+      "era": "乾隆至道光时期",
+      "reign": "1760—1837年",
+      "summary": "长期参加苗疆、白莲教与天理教战争，1813年攻道口、围滑县，后又参与道光朝西北战事。",
+      "parent": null,
+      "sources": [
+        "v161_qsg347",
+        "v161_qsg367"
+      ],
+      "kind": "绿营将领",
+      "note": "‘福将’与单骑勇战属于官修英雄叙事，页面同时追问军需、地道和围城代价。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q161_jiangyouxian",
+      "name": "蒋攸铦",
+      "call": "在吏治、广州贸易与禁烟之间任事的督抚",
+      "temple": "",
+      "era": "嘉庆至道光时期",
+      "reign": "1766—1830年",
+      "summary": "长期任地方督抚，1813年陈言整顿吏治，后在两广处理洋商、澳门与鸦片查禁。",
+      "parent": null,
+      "sources": [
+        "v161_qsg366",
+        "v161_opium_memorial",
+        "v161_opium_edict"
+      ],
+      "kind": "封疆大吏",
+      "note": "禁令与查验章程能说明政策设计，不能据此推断走私已经受控。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q161_bailing",
+      "name": "百龄",
+      "call": "在海疆招抚与黄淮河工之间转换的总督",
+      "temple": "",
+      "era": "嘉庆时期",
+      "reign": "1748—1816年",
+      "summary": "查办地方冤狱、处置华南海上集团，晚年主持两江河工与漕运，也多次卷入弹劾。",
+      "parent": null,
+      "sources": [
+        "v161_qsg343"
+      ],
+      "kind": "总督",
+      "note": "招抚数字与工程成效来自官修传，不能抹去海上群体和沿河居民成本。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q161_caozhenyong",
+      "name": "曹振镛",
+      "call": "从嘉庆中枢走向道光军机的文书型大臣",
+      "temple": "",
+      "era": "嘉庆至道光时期",
+      "reign": "1755—1835年",
+      "summary": "嘉庆后期任尚书、大学士，1820年参与遗诏纠误，随后成为道光朝重要军机大臣。",
+      "parent": null,
+      "sources": [
+        "v161_qsg363",
+        "v161_dpm_succession"
+      ],
+      "kind": "大学士",
+      "note": "后世性格标签不能替代他在制度文书、继位程序与官僚连续性中的具体作用。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q161_tuojin",
+      "name": "托津",
+      "call": "以巡按、军需和紧急差使贯穿嘉庆朝的枢臣",
+      "temple": "",
+      "era": "嘉庆至道光时期",
+      "reign": "1755—1835年",
+      "summary": "多次奉命查案与办理军需，1813年处置京师善后并赴直隶督战，1820年参与启匣继位。",
+      "parent": null,
+      "sources": [
+        "v161_qsg341",
+        "v161_dpm_succession"
+      ],
+      "kind": "军机大臣",
+      "note": "频繁奉差说明中枢依靠少数大臣巡回处置，也暴露常设治理能力的边界。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q161_fujun",
+      "name": "富俊",
+      "call": "把京旗生计问题转成双城堡屯垦实验的边臣",
+      "temple": "",
+      "era": "嘉庆至道光时期",
+      "reign": "1749—1834年",
+      "summary": "任吉林将军时规划双城堡屯田，先训练本地旗丁，再拟迁京旗家庭；早霜、逃亡与财政投入伴随其间。",
+      "parent": null,
+      "sources": [
+        "v161_qsg342",
+        "v161_banner_economy"
+      ],
+      "kind": "边疆大臣",
+      "note": "官修‘安土乐业’不能代表所有屯丁、流民、雇工与既有土地使用者。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q161_chende",
+      "name": "陈德",
+      "call": "在顺贞门持刀犯驾、却难被还原为单一动机的人",
+      "temple": "",
+      "era": "嘉庆时期",
+      "reign": "约18世纪后期—1803年",
+      "summary": "1803年在嘉庆帝入宫时持刀冲出，被侍卫擒获；本人及两子很快被处死。",
+      "parent": null,
+      "sources": [
+        "v161_qsl109",
+        "v161_dpm_longzong"
+      ],
+      "kind": "宫门行刺者",
+      "note": "动机主要来自审讯供述，产品不把贫困、个人怨恨或政治阴谋任一说法写成已证定论。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q161_amherst",
+      "name": "阿美士德",
+      "call": "1816年抵达圆明园门前却未获觐见的英国使节",
+      "temple": "",
+      "era": "嘉庆时期",
+      "reign": "1773—1857年",
+      "summary": "率英国第二次使团来华，因礼仪、时间与外交框架冲突未见嘉庆帝，随后经陆路返回广州。",
+      "parent": null,
+      "sources": [
+        "v161_anu_amherst",
+        "v161_british_letter",
+        "v161_haiguo77"
+      ],
+      "kind": "英国使节",
+      "note": "清英双方都用本国政治语言解释失败，不能把复杂交涉缩成一方‘不懂礼’。",
+      "dynasty": "qing"
     }
   ],
   "sources": [
@@ -25594,6 +25803,150 @@
       "title": "Journal of Institutional Economics · Regional Armies and the White Lotus War",
       "url": "https://www.cambridge.org/core/journals/journal-of-institutional-economics/article/last-guardian-of-the-throne-the-regional-army-in-the-late-qing-dynasty/BA85E0DB84C8174D815F9DC2E59A635E",
       "note": "用于堡寨、团练与乡勇的组织关系。嘉庆时期地方武装仍受官僚体系约束，不能直接等同后来湘军。"
+    },
+    {
+      "id": "v161_qsl109",
+      "title": "《清仁宗实录》卷109 · 陈德犯驾",
+      "url": "https://zh.wikisource.org/zh-hans/清實錄/仁宗睿皇帝實錄/卷一百九",
+      "note": "核对1803年顺贞门事件、会审、门禁处分及陈德父子结局。实录保存皇帝公开解释，不等于未经刑讯环境影响的完整口供。"
+    },
+    {
+      "id": "v161_qsl274",
+      "title": "《清仁宗实录》卷274 · 癸酉之变与罪己诏",
+      "url": "https://zh.wikisource.org/zh-hans/清實錄/仁宗睿皇帝實錄/卷二百七十四",
+      "note": "核对1813年禁城遇袭、皇次子应对与嘉庆罪己诏。人数和战果来自宫廷信息链，不能当作独立现场统计。"
+    },
+    {
+      "id": "v161_qsl275",
+      "title": "《清仁宗实录》卷275 · 林清廷讯与宫内清查",
+      "url": "https://zh.wikisource.org/zh-hans/清實錄/仁宗睿皇帝實錄/卷二百七十五",
+      "note": "用于林清被捕、太监接应与宫门善后；文中‘逆’‘邪’均为清廷定罪语言。"
+    },
+    {
+      "id": "v161_qsl277",
+      "title": "《清仁宗实录》卷277 · 滑县战局奏报",
+      "url": "https://zh.wikisource.org/zh-hans/清實錄/仁宗睿皇帝實錄/卷二百七十七",
+      "note": "用于李文成受刑后起事、滑县与李家庄兵力奏报争议。供词与军报存在夸大、缩小和邀功动机。"
+    },
+    {
+      "id": "v161_qsl279",
+      "title": "《清仁宗实录》卷279 · 司寨与李文成之死",
+      "url": "https://zh.wikisource.org/zh-hans/清實錄/仁宗睿皇帝實錄/卷二百七十九",
+      "note": "核对李文成、刘国明在辉县司寨的最后战斗及官军封赏。死亡经过出自胜利方奏报，不视为独立法医记录。"
+    },
+    {
+      "id": "v161_qsl283",
+      "title": "《清仁宗实录》卷283 · 教门经卷搜缴",
+      "url": "https://zh.wikisource.org/wiki/仁宗睿皇帝實錄/卷283",
+      "note": "用于林清家中经卷搜缴、焚毁和扩大追捕。它能说明国家如何分类知识，却无法复原被毁文本的全部使用方式。"
+    },
+    {
+      "id": "v161_qsg341",
+      "title": "《清史稿》卷341 · 托津传",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷341",
+      "note": "核对军需查办、1813年京师与直隶差使、1820年启匣继位。列传重视忠勤与处分，需结合实录辨析。"
+    },
+    {
+      "id": "v161_qsg342",
+      "title": "《清史稿》卷342 · 富俊传",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷342",
+      "note": "用于双城堡屯垦、京旗移驻、早霜逃亡和政策调整。官修政绩叙事不能代表屯丁、原住居民与雇工的全部经验。"
+    },
+    {
+      "id": "v161_qsg343",
+      "title": "《清史稿》卷343 · 百龄传",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷343",
+      "note": "核对广东海上招抚、官员争议、黄淮运河工程与漕运。海盗人数和工程成效为官修口径。"
+    },
+    {
+      "id": "v161_qsg347",
+      "title": "《清史稿》卷347 · 杨遇春传",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷347",
+      "note": "核对滑县、道口和司寨战事。列传突出个人勇武，不能遮蔽调兵、地方供给与被围居民。"
+    },
+    {
+      "id": "v161_qsg363",
+      "title": "《清史稿》卷363 · 曹振镛传",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷363",
+      "note": "用于嘉庆末中枢任职、遗诏地名错误和道光初军机经历。后世‘多磕头少说话’式概括不能替代具体档案。"
+    },
+    {
+      "id": "v161_qsg366",
+      "title": "《清史稿》卷366 · 蒋攸铦传",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷366",
+      "note": "用于两广吏治、对外贸易限制与地方治理。列传将政策效果集中于督抚，商人、雇工和澳门居民声音不足。"
+    },
+    {
+      "id": "v161_qsg367",
+      "title": "《清史稿》卷367 · 那彦成传",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷367",
+      "note": "核对1813年滑县战役、官军推进、地道攻城及那彦成升降。俘斩数字与功劳排序应视作奏功体系产物。"
+    },
+    {
+      "id": "v161_dpm_lin",
+      "title": "故宫博物院 · 林清",
+      "url": "https://www.dpm.org.cn/lemmas/243899.html",
+      "note": "用于林清、李文成、冯克善联合及紫禁城行动的基础年表。词条为现代概述，具体人数仍以多源互证。"
+    },
+    {
+      "id": "v161_dpm_longzong",
+      "title": "故宫博物院 · 隆宗门",
+      "url": "https://www.dpm.org.cn/explore/building/236500",
+      "note": "用于紫禁城西路空间、隆宗门的制度位置与1813年战斗。建筑遗痕不能单独复原完整行动路线。"
+    },
+    {
+      "id": "v161_dpm_succession",
+      "title": "故宫博物院 · 嘉庆猝死与道光继位之谜",
+      "url": "https://www.dpm.org.cn/explode/others/209799.html",
+      "note": "用于1820年热河猝逝、秘密建储匣与继位程序。文章讨论不同记载，产品不把戏剧化传闻当定论。"
+    },
+    {
+      "id": "v161_dpm_secret_box",
+      "title": "故宫博物院 · 秘密建储匣",
+      "url": "https://www.dpm.org.cn/lemmas/241666.html",
+      "note": "说明秘密建储制度及匣具用途；具体嘉庆继位现场仍须结合实录与列传。"
+    },
+    {
+      "id": "v161_opium_memorial",
+      "title": "蒋攸铦、董教增《奏陈酌定查禁鸦片烟条规片》",
+      "url": "https://zh.wikisource.org/zh-hans/兩廣總督蔣攸銛等奏陳酌定查禁鴉片煙條規片",
+      "note": "1815年禁烟原始奏片，显示查船、奖惩与地方官失察责任。奏定条规不等于走私因此停止。"
+    },
+    {
+      "id": "v161_opium_edict",
+      "title": "嘉庆二十年查禁鸦片上谕",
+      "url": "https://zh.wikisource.org/zh-hans/軍機大臣奉上諭寄兩廣總督廣東巡撫著嚴禁夾帶及私造鴉片煙並令地方官認真查驗",
+      "note": "用于鸦片船货查验、官员激励和澳门管理。上谕表达政策目标，不能证明执行覆盖率。"
+    },
+    {
+      "id": "v161_anu_amherst",
+      "title": "ANU Press · Britain’s Second Embassy to China",
+      "url": "https://press.anu.edu.au/publications/britains-second-embassy-china",
+      "note": "以英方档案重建1816年阿美士德使团、礼仪争议和旅程。该书补足英方视角，也不替代清廷档案。"
+    },
+    {
+      "id": "v161_british_letter",
+      "title": "1816年英吉利摄政王致嘉庆帝国书",
+      "url": "https://zh.wikisource.org/zh-hans/英吉利国太子嗣王致大清国大皇帝国书",
+      "note": "使团携带国书的公开转录，显示英方以君主通信与利益商议理解任务；中文译文亦经过当时翻译环节。"
+    },
+    {
+      "id": "v161_haiguo77",
+      "title": "《海国图志》卷77 · 嘉庆二十一年英使档案",
+      "url": "https://zh.wikisource.org/zh-hans/海國圖志/卷077",
+      "note": "保存清廷敕书和粤方材料。魏源为后来编者，所录档案须与当时记录对读。"
+    },
+    {
+      "id": "v161_banner_economy",
+      "title": "International Review of Social History · Qing Banner Labour and Finance",
+      "url": "https://www.cambridge.org/core/journals/international-review-of-social-history/article/tributary-labour-relations-in-china-during-the-mingqing-transition-seventeenth-to-eighteenth-centuries/7AC034138FC2F5591D10313C256F2E53",
+      "note": "分析八旗人口、俸饷依赖和国家财政负担，帮助解释旗人生计问题；宏观估算不直接套用于每个屯户。"
+    },
+    {
+      "id": "v161_dpm_inventory_correction",
+      "title": "故宫博物院研究 · 陈设档中的‘林清纪略’误题",
+      "url": "https://www.dpm.org.cn/Uploads/File/pdf/ec/00/93/ec00939693d8398cef4329dbe11a4491.pdf",
+      "note": "研究指出陈设档所记《御制剿捕林清逆匪纪略》疑为乾隆朝《钦定剿捕临清逆匪纪略》之误写，不能据此制造一件嘉庆朝书物。"
     }
   ],
   "relations": [
@@ -73854,6 +74207,837 @@
       ],
       "kind": "史实与解读",
       "category": "军事"
+    },
+    {
+      "id": "v161_chende_attack",
+      "year": "1803年",
+      "sortYear": 1803,
+      "title": "陈德在顺贞门犯驾",
+      "body": "嘉庆帝入宫换舆时，陈德持刀冲出，被绵恩等擒获，皇帝未受伤。会审很快集中于是否存在主使与党羽。",
+      "impact": "事件暴露宫门值守问题，也留下动机难以越过审讯材料独立确认的证据边界。",
+      "people": [
+        "q_jiaqing",
+        "q161_chende"
+      ],
+      "sources": [
+        "v161_qsl109"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v161_interrogation_limits",
+      "year": "1803年",
+      "sortYear": 1803,
+      "title": "嘉庆制止陈德案扩大牵连",
+      "body": "廷臣反复追问同谋后，嘉庆称不必以刑求强索党羽，要求释放无关被牵者。",
+      "impact": "限制扩大罗织具有实际意义，但陈德父子仍被处死，‘不株连’与家庭惩罚必须并读。",
+      "people": [
+        "q_jiaqing",
+        "q161_chende"
+      ],
+      "sources": [
+        "v161_qsl109"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v161_self_blame_text",
+      "year": "1813年",
+      "sortYear": 1813,
+      "title": "嘉庆发布癸酉之变罪己诏",
+      "body": "天理教参与者进入禁城后，嘉庆以因循怠玩解释危机，要求臣工尽责并公开自责。",
+      "impact": "罪己诏是政治文本和责任动员，不等于国家已接受起事者对社会问题的解释。",
+      "people": [
+        "q_jiaqing",
+        "q161_linqing"
+      ],
+      "sources": [
+        "v161_qsl274"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v161_palace_security",
+      "year": "1813—1814年",
+      "sortYear": 1813,
+      "title": "禁城值宿与太监管理收紧",
+      "body": "清廷处分失职者，复核宫门、值班与太监来源，并扩大对宫内外联系的清查。",
+      "impact": "安全措施回应真实漏洞，也可能把少数内应扩大为对整个群体的怀疑。",
+      "people": [
+        "q_jiaqing",
+        "q161_linqing",
+        "q161_tuojin"
+      ],
+      "sources": [
+        "v161_qsl275",
+        "v161_dpm_longzong"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v161_bureaucratic_accountability",
+      "year": "1813年后",
+      "sortYear": 1813,
+      "title": "嘉庆把危机归入吏治考核",
+      "body": "宫门与滑县事件后，蒋攸铦等强调地方官平庸、瞒报与执行疲弱，朝廷加重对失职者查办。",
+      "impact": "人事整顿能改变个案，却不能自动解决地方财政、信息激励和人口流动。",
+      "people": [
+        "q_jiaqing",
+        "q161_jiangyouxian",
+        "q161_nayancheng"
+      ],
+      "sources": [
+        "v161_qsg366",
+        "v161_qsg367"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v161_amherst_breakdown",
+      "year": "1816年",
+      "sortYear": 1816,
+      "title": "阿美士德使团未获觐见",
+      "body": "英使到圆明园附近后，清英双方围绕跪叩、觐见时间与身体状况无法达成安排，嘉庆令其返回。",
+      "impact": "失败来自两套外交秩序、翻译和现场时间压力，不宜简化成单一礼仪笑话。",
+      "people": [
+        "q_jiaqing",
+        "q161_amherst",
+        "q161_jiangyouxian"
+      ],
+      "sources": [
+        "v161_anu_amherst",
+        "v161_haiguo77"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v161_succession_1820",
+      "year": "1820年",
+      "sortYear": 1820,
+      "title": "嘉庆猝逝与旻宁继位",
+      "body": "嘉庆在热河去世，中枢与皇族依秘密建储程序确认旻宁继位。不同材料对密匣寻找细节有差异。",
+      "impact": "权力交接总体完成，却显示巡幸途中继位依赖近侍、军机与文书共同运作。",
+      "people": [
+        "q_jiaqing",
+        "q_daoguang",
+        "q161_tuojin",
+        "q161_caozhenyong"
+      ],
+      "sources": [
+        "v161_qsg341",
+        "v161_dpm_succession",
+        "v161_dpm_secret_box"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v161_edict_error",
+      "year": "1820年",
+      "sortYear": 1820,
+      "title": "嘉庆遗诏出现出生地点错误",
+      "body": "匆促草拟的遗诏误写乾隆出生地点，经刘凤诰指出、曹振镛入奏后改正，相关军机大臣受责。",
+      "impact": "权威文本也会出错；校勘与责任链是继位政治的一部分。",
+      "people": [
+        "q_daoguang",
+        "q161_caozhenyong",
+        "q161_tuojin"
+      ],
+      "sources": [
+        "v161_qsg363",
+        "v161_qsg341"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v161_early_outbreak",
+      "year": "1813年九月",
+      "sortYear": 1813,
+      "title": "李文成被捕使滑县提前起事",
+      "body": "李文成在约期前被地方官捕获并受刑，同伴劫狱救出他，河南行动因此提前暴露。",
+      "impact": "刑讯和地方侦缉改变了跨省计划，使各地响应失去同步。",
+      "people": [
+        "q161_liwencheng",
+        "q161_linqing"
+      ],
+      "sources": [
+        "v161_qsl277",
+        "v161_qsl279"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v161_palace_assault",
+      "year": "1813年九月十五日",
+      "sortYear": 1813,
+      "title": "数十名天理教参与者进入禁城",
+      "body": "两路人员在部分太监接应下由宫门突入，战斗延至隆宗门等处，最终被守军镇压。",
+      "impact": "行动规模有限却突破皇权中心，不能据此断言全国政权即将崩溃。",
+      "people": [
+        "q161_linqing",
+        "q_jiaqing",
+        "q_daoguang"
+      ],
+      "sources": [
+        "v161_qsl274",
+        "v161_qsl275",
+        "v161_dpm_longzong"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v161_regional_coordination",
+      "year": "1813年",
+      "sortYear": 1813,
+      "title": "京师、豫北与鲁西网络尝试协同",
+      "body": "林清、李文成、冯克善等试图联络京畿与直鲁豫交界组织，但提前起事、交通和搜捕使行动分散。",
+      "impact": "共同名号不等于统一军队，地方组织能力和节奏差异决定结果。",
+      "people": [
+        "q161_linqing",
+        "q161_liwencheng",
+        "q161_fengkeshan"
+      ],
+      "sources": [
+        "v161_dpm_lin",
+        "v161_qsl277"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v161_daokou_battle",
+      "year": "1813年",
+      "sortYear": 1813,
+      "title": "官军争夺道口与渡船",
+      "body": "杨遇春等进攻道口，控制浮桥与船只，切断滑县外围支援，再推进桃源集等地。",
+      "impact": "河流和交通节点与将领勇战同样关键，战果数字来自官军奏报。",
+      "people": [
+        "q161_yangyuchun",
+        "q161_nayancheng",
+        "q161_liwencheng"
+      ],
+      "sources": [
+        "v161_qsg347",
+        "v161_qsg367"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v161_sizhai_end",
+      "year": "1813年",
+      "sortYear": 1813,
+      "title": "辉县司寨战斗与李文成之死",
+      "body": "李文成等转入辉县山地，官军追至司寨；实录称其在楼中举火后死亡。",
+      "impact": "死亡细节来自得胜方报告，应保留来源立场和战后封赏背景。",
+      "people": [
+        "q161_liwencheng",
+        "q161_yangyuchun",
+        "q161_nayancheng"
+      ],
+      "sources": [
+        "v161_qsl279",
+        "v161_qsg367"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v161_huaxian_siege",
+      "year": "1813年",
+      "sortYear": 1813,
+      "title": "地道爆破攻破滑县",
+      "body": "官军围滑县数旬，最终以地道和火药破城，随后大规模搜捕与处置。",
+      "impact": "攻城是工程、军需和暴力的组合，不能只用一行‘克城’遮住城内外居民。",
+      "people": [
+        "q161_nayancheng",
+        "q161_yangyuchun",
+        "q161_liwencheng"
+      ],
+      "sources": [
+        "v161_qsg347",
+        "v161_qsg367"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v161_linqing_capture",
+      "year": "1813年",
+      "sortYear": 1813,
+      "title": "林清被捕并廷讯处死",
+      "body": "京师行动失败后，林清在城外被捕，清廷迅速廷讯并执行死刑。",
+      "impact": "供词能追索网络，也在高压定罪程序中形成，不能当作自由自传。",
+      "people": [
+        "q161_linqing",
+        "q161_tuojin"
+      ],
+      "sources": [
+        "v161_qsl275",
+        "v161_dpm_lin"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v161_command_pressure",
+      "year": "1813年",
+      "sortYear": 1813,
+      "title": "皇帝催战与钦差会师",
+      "body": "嘉庆不断催促前线，那彦成则担忧队伍遁入太行，先集中兵力再进攻。",
+      "impact": "速度与合围之间的张力反映远程指挥限制，不能只以事后胜负评价。",
+      "people": [
+        "q_jiaqing",
+        "q161_nayancheng",
+        "q161_yangyuchun"
+      ],
+      "sources": [
+        "v161_qsg367"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v161_military_continuity",
+      "year": "1790年代—1820年代",
+      "sortYear": 1813,
+      "title": "嘉庆战场经验延续到道光朝",
+      "body": "杨遇春、那彦成等在苗疆、白莲教和天理教战争中形成的调兵网络，继续用于道光初年西北战事。",
+      "impact": "朝代更替没有重置军队，经验延续也造成对少数宿将的依赖。",
+      "people": [
+        "q161_yangyuchun",
+        "q161_nayancheng",
+        "q_daoguang"
+      ],
+      "sources": [
+        "v161_qsg347",
+        "v161_qsg367"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v161_river_transport",
+      "year": "1811—1816年",
+      "sortYear": 1813,
+      "title": "黄淮工程与漕运渡黄",
+      "body": "百龄主持疏浚、筑堤、修坝，部分年份漕船较早渡黄；水位与淤积仍不断改变。",
+      "impact": "工程效果必须按阶段评价，不能将一次顺运写成永久解决河患。",
+      "people": [
+        "q161_bailing",
+        "q161_jiangyouxian"
+      ],
+      "sources": [
+        "v161_qsg343",
+        "v161_qsg366"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v161_river_risk",
+      "year": "1811—1820年",
+      "sortYear": 1814,
+      "title": "开坝、淤积与下游风险互相转移",
+      "body": "黄河、洪湖、运河和入海口方案各有受益区域与受损区域，官员又围绕责任互相弹劾。",
+      "impact": "治河是风险分配和财政选择，不只是技术对错。",
+      "people": [
+        "q161_bailing",
+        "q_jiaqing"
+      ],
+      "sources": [
+        "v161_qsg343"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v161_opium_rules",
+      "year": "1815年",
+      "sortYear": 1815,
+      "title": "两广拟定逐船查验鸦片章程",
+      "body": "蒋攸铦、董教增建议洋船到澳先报货查验，夹带鸦片者退货逐船，并规定官民奖惩。",
+      "impact": "章程显示清廷认识到海运来源与地方执行问题，但没有因此消除走私网络。",
+      "people": [
+        "q161_jiangyouxian",
+        "q_jiaqing"
+      ],
+      "sources": [
+        "v161_opium_memorial",
+        "v161_opium_edict"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v161_opium_incentives",
+      "year": "1815年",
+      "sortYear": 1815,
+      "title": "禁烟政策调整地方官失察责任",
+      "body": "奏片担心官员怕牵出旧案而不敢查，故区分受贿故纵与普通失察，并设置查获奖励。",
+      "impact": "政策已注意官僚激励，却仍可能诱发邀功、诬拿和选择性执法。",
+      "people": [
+        "q161_jiangyouxian",
+        "q_jiaqing"
+      ],
+      "sources": [
+        "v161_opium_memorial"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v161_opium_trade_structure",
+      "year": "1813—1820年",
+      "sortYear": 1815,
+      "title": "鸦片输入连接海外船运与内地销售",
+      "body": "禁令指出鸦片由海外输入，但奏片也承认内地贩卖、官员包庇和澳门转运共同维持市场。",
+      "impact": "把问题只归外国船或只归中国买家都会遗漏跨境利益链。",
+      "people": [
+        "q161_jiangyouxian",
+        "q161_amherst",
+        "q_jiaqing"
+      ],
+      "sources": [
+        "v161_opium_memorial",
+        "v161_opium_edict",
+        "v161_anu_amherst"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v161_resettlement_cost",
+      "year": "1815—1820年",
+      "sortYear": 1817,
+      "title": "双城堡屯垦需要持续公共投入",
+      "body": "富俊组织测量、建屋、牛具、籽种、口粮和管理人员，为吉林旗丁和未来京旗移驻做准备。",
+      "impact": "迁屯不是无成本释放财政压力，初期反而需要集中投资和风险承担。",
+      "people": [
+        "q161_fujun",
+        "q_songyun",
+        "q_jiaqing"
+      ],
+      "sources": [
+        "v161_qsg342",
+        "v161_banner_economy"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v161_banner_fiscal_cost",
+      "year": "1814—1820年",
+      "sortYear": 1816,
+      "title": "旗口增长与固定俸饷形成生计压力",
+      "body": "旗人家庭扩大而可得差使、俸饷与土地有限，国家又需维持八旗军事和身份制度。",
+      "impact": "身份特权与家庭贫困能够并存，生计问题不能简化成个人奢惰。",
+      "people": [
+        "q161_fujun",
+        "q_jiaqing"
+      ],
+      "sources": [
+        "v161_qsg342",
+        "v161_banner_economy"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v161_trade_limits",
+      "year": "1814—1816年",
+      "sortYear": 1815,
+      "title": "洋商债务与澳门管理收紧",
+      "body": "两广限制内地人为洋人服役、洋行建筑和无资质商人承充，并清查商欠。",
+      "impact": "国家试图降低安全和债务风险，也压缩雇工、通事与商人的选择。",
+      "people": [
+        "q161_jiangyouxian",
+        "q161_amherst"
+      ],
+      "sources": [
+        "v161_qsg366",
+        "v161_haiguo77"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v161_sect_networks",
+      "year": "1790年代—1813年",
+      "sortYear": 1810,
+      "title": "教门提供信仰、互助与动员网络",
+      "body": "京畿和直鲁豫交界的教门沿师徒、亲族、村社与集市扩展，成员加入原因并不一致。",
+      "impact": "宗教网络可转化为政治行动，却不能把所有信徒自动视为武装参与者。",
+      "people": [
+        "q161_linqing",
+        "q161_liwencheng",
+        "q161_fengkeshan"
+      ],
+      "sources": [
+        "v161_dpm_lin",
+        "v161_qsl283"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v161_eunuch_links",
+      "year": "1813年",
+      "sortYear": 1813,
+      "title": "宫内太监为部分行动者引路",
+      "body": "数名宫内太监参与接应，使宫外人员得以穿过禁门。太监并非同质群体，多数人与事件无涉。",
+      "impact": "宫廷劳动者与城市、籍贯社会保持联系；安全清查不应抹平成集体有罪。",
+      "people": [
+        "q161_linqing",
+        "q_jiaqing"
+      ],
+      "sources": [
+        "v161_qsl274",
+        "v161_qsl275"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v161_collective_punishment",
+      "year": "1803—1814年",
+      "sortYear": 1813,
+      "title": "大逆案件牵连家属与关系人",
+      "body": "陈德两子被处死，天理教案又追查家属、接引者、藏书者和未捕成员。具体处置随身份和案情不同。",
+      "impact": "国家强调勿枉无辜，却仍以家庭和关系网扩大责任，形成明显张力。",
+      "people": [
+        "q161_chende",
+        "q161_linqing",
+        "q161_liwencheng"
+      ],
+      "sources": [
+        "v161_qsl109",
+        "v161_qsl275",
+        "v161_qsl283"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v161_local_supply",
+      "year": "1813年",
+      "sortYear": 1813,
+      "title": "滑县战争争夺粮食、道路与村庄",
+      "body": "起事队伍和官军都需粮水、渡船、牲畜与住宿，村民可能主动支持、被迫供应或逃离。",
+      "impact": "军事地图上的据点也是居民生活空间，‘接济’不能自动等同自愿参战。",
+      "people": [
+        "q161_liwencheng",
+        "q161_nayancheng",
+        "q161_yangyuchun"
+      ],
+      "sources": [
+        "v161_qsl277",
+        "v161_qsg367"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v161_postwar_search",
+      "year": "1813年后",
+      "sortYear": 1814,
+      "title": "战后清查延伸到经卷与村落",
+      "body": "清廷按名单追捕未获人员，搜缴经卷并要求地方持续密访，同时声称禁止妄拿无辜。",
+      "impact": "清查有治安目标，也扩大普通信徒与藏书家庭的不确定性。",
+      "people": [
+        "q161_linqing",
+        "q161_fengkeshan",
+        "q_jiaqing"
+      ],
+      "sources": [
+        "v161_qsl283"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v161_banner_livelihood",
+      "year": "1814—1820年",
+      "sortYear": 1816,
+      "title": "京旗移屯被作为生计方案",
+      "body": "朝廷勘吉林荒地，计划把部分京旗闲散家庭迁往双城堡，以农业生产补足俸饷和差使不足。",
+      "impact": "迁居改变家庭职业和空间，也把边地土地纳入新的国家配置。",
+      "people": [
+        "q161_fujun",
+        "q_songyun",
+        "q_jiaqing"
+      ],
+      "sources": [
+        "v161_qsg342",
+        "v161_banner_economy"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v161_frost_escape",
+      "year": "1816年",
+      "sortYear": 1816,
+      "title": "双城堡早霜、住房不足与屯丁逃亡",
+      "body": "开垦初年遭早霜，部分屯丁口粮不足，携家者缺住房并有人逃走，地方随后缓征、添棚和借种。",
+      "impact": "政策执行必须对天气与家庭需求调整，整齐规划不会自动变成稳定社区。",
+      "people": [
+        "q161_fujun",
+        "q_jiaqing"
+      ],
+      "sources": [
+        "v161_qsg342"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v161_intermediaries",
+      "year": "1814—1820年",
+      "sortYear": 1815,
+      "title": "通事、雇工与洋商处在跨文化接触前线",
+      "body": "广州贸易依赖翻译、买办、船工、仆役和洋商担保，官府又担心私交、债务与情报流动。",
+      "impact": "外交不只发生在皇帝与使节之间，基层中介承担机会也承担管制。",
+      "people": [
+        "q161_jiangyouxian",
+        "q161_amherst"
+      ],
+      "sources": [
+        "v161_qsg366",
+        "v161_haiguo77"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v161_land_allocation",
+      "year": "1815—1820年",
+      "sortYear": 1817,
+      "title": "屯垦重新安排边地土地与劳力",
+      "body": "双城堡方案给旗丁划地，并允许雇佣或借助熟悉农业者；官书较少记录原有使用者和雇工议价。",
+      "impact": "垦荒不是无人土地的自然开发，土地权利和劳动关系需要持续追问。",
+      "people": [
+        "q161_fujun",
+        "q_songyun"
+      ],
+      "sources": [
+        "v161_qsg342"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v161_official_labels",
+      "year": "1813年",
+      "sortYear": 1813,
+      "title": "‘邪教’‘逆匪’成为官府统一分类",
+      "body": "实录与奏报用定罪术语指称教门成员、武装参与者和关联文本，便于追捕与论功。",
+      "impact": "这些词能说明国家判断，不能直接代替参与者身份和多样动机。",
+      "people": [
+        "q161_linqing",
+        "q161_liwencheng",
+        "q161_fengkeshan"
+      ],
+      "sources": [
+        "v161_qsl274",
+        "v161_qsl283"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v161_text_destruction",
+      "year": "1814年",
+      "sortYear": 1814,
+      "title": "林清家中经卷被搜出焚毁",
+      "body": "官府搜得被认定为惑众的经卷并追查抄本，命地方继续搜缴销毁。",
+      "impact": "销毁本身成为国家控制知识的证据，却使研究者更难复原文本的实际内容与读法。",
+      "people": [
+        "q161_linqing",
+        "q161_fengkeshan"
+      ],
+      "sources": [
+        "v161_qsl283"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v161_archive_asymmetry",
+      "year": "1813年及以后",
+      "sortYear": 1814,
+      "title": "审讯、军报与封赏塑造事件档案",
+      "body": "今天可见材料大量产生于追捕、会审、奏捷和奖惩程序，普通参与者自述保存极少。",
+      "impact": "史料丰富不等于视角均衡，页面需主动标明声音缺席。",
+      "people": [
+        "q161_linqing",
+        "q161_liwencheng",
+        "q161_fengkeshan",
+        "q161_chende"
+      ],
+      "sources": [
+        "v161_qsl275",
+        "v161_qsl279"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v161_diplomatic_translation",
+      "year": "1816年",
+      "sortYear": 1816,
+      "title": "国书、礼仪与翻译改变外交含义",
+      "body": "英方以平等君主通信描述使团，清廷则以贡使礼序安排行程，通事和译文在两套语言间转换。",
+      "impact": "翻译不仅换词，还决定‘贡’‘使节’‘跪叩’等概念如何被理解。",
+      "people": [
+        "q161_amherst",
+        "q161_jiangyouxian",
+        "q_jiaqing"
+      ],
+      "sources": [
+        "v161_british_letter",
+        "v161_haiguo77",
+        "v161_anu_amherst"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v161_ritual_frames",
+      "year": "1816年",
+      "sortYear": 1816,
+      "title": "叩头争议承载政治地位",
+      "body": "清廷要求来使按既定觐见礼行跪叩，英使担心礼仪被解释为政治从属，双方多次交涉仍未解决。",
+      "impact": "仪式不是无意义形式，但也不应让礼仪争执遮住贸易与帝国竞争。",
+      "people": [
+        "q161_amherst",
+        "q_jiaqing"
+      ],
+      "sources": [
+        "v161_anu_amherst",
+        "v161_haiguo77"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v161_dual_archives",
+      "year": "1816年",
+      "sortYear": 1816,
+      "title": "清英档案留下不同的使团失败现场",
+      "body": "清廷敕书强调英使临门托病失礼，英方日记强调疲惫、赶行和礼仪未定。",
+      "impact": "并读不是各打五十大板，而是区分记录位置、目的与可互证部分。",
+      "people": [
+        "q161_amherst",
+        "q161_caozhenyong"
+      ],
+      "sources": [
+        "v161_anu_amherst",
+        "v161_haiguo77"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v161_gifts_maps",
+      "year": "1816年",
+      "sortYear": 1816,
+      "title": "清廷选择收下地图、画像与铜版画",
+      "body": "使团未获觐见后，嘉庆仍从贡物中选收地图、画像和铜版画，并回赠玉器等物。",
+      "impact": "物品交换保留有限外交关系，也显示双方对礼物价值和政治含义的解释不同。",
+      "people": [
+        "q161_amherst",
+        "q_jiaqing"
+      ],
+      "sources": [
+        "v161_haiguo77",
+        "v161_anu_amherst"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v161_memory_correction",
+      "year": "现代研究",
+      "sortYear": 1813,
+      "title": "‘林清纪略’书名误题得到辨析",
+      "body": "故宫研究比对书目后指出，陈设档中的《御制剿捕林清逆匪纪略》疑为乾隆朝《钦定剿捕临清逆匪纪略》误写。",
+      "impact": "相近地名可能制造假文物关联；产品不把目录误题当作实物存在证明。",
+      "people": [
+        "q161_linqing",
+        "q_jiaqing"
+      ],
+      "sources": [
+        "v161_dpm_inventory_correction"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v161_document_government",
+      "year": "1813—1820年",
+      "sortYear": 1813,
+      "title": "危机通过诏令、奏折与核稿转化为政策",
+      "body": "宫门、滑县、河工、禁烟和使团事务都需经奏报、朱批、廷寄与处分落实。",
+      "impact": "文书制度能保留责任，也会过滤地方经验；曹振镛、托津等人的作用由此可见。",
+      "people": [
+        "q161_caozhenyong",
+        "q161_tuojin",
+        "q161_jiangyouxian"
+      ],
+      "sources": [
+        "v161_qsg341",
+        "v161_qsg363",
+        "v161_qsg366"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v161_secret_box",
+      "year": "1799—1820年",
+      "sortYear": 1820,
+      "title": "秘密建储匣与随驾备份",
+      "body": "嘉庆亲政后依秘密建储确定旻宁，并以密匣保存；巡幸与宫廷安全使备份和携带问题格外重要。",
+      "impact": "器物的制度意义在于降低公开储位争夺，但仍依赖少数人执行和解释。",
+      "people": [
+        "q_jiaqing",
+        "q_daoguang",
+        "q161_tuojin"
+      ],
+      "sources": [
+        "v161_dpm_succession",
+        "v161_dpm_secret_box"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v161_pirate_amnesty",
+      "year": "1810年",
+      "sortYear": 1810,
+      "title": "百龄推动张保等海上队伍受抚",
+      "body": "两广总督百龄在封锁粮水、整顿水师后，与张保等集团谈判受抚，允许大量从众者解散并区别处置首领。官修传所记人数用于论功，不能当作独立人口清册。",
+      "impact": "招抚减少持续海战，也把海上人员重新安置、追责与沿岸生计留给战后治理。",
+      "people": [
+        "q161_bailing",
+        "q160_caiqian",
+        "q160_wangdelu"
+      ],
+      "sources": [
+        "v161_qsg343"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
     }
   ],
   "objects": [
@@ -79077,6 +80261,112 @@
       ],
       "sources": [
         "v160_qsl218"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v161_obj_self_blame",
+      "title": "嘉庆十八年癸酉之变罪己诏",
+      "subtitle": "皇帝自责、官僚动员与未被纳入的起事者声音",
+      "symbol": "doc.text",
+      "image": null,
+      "body": "禁城遇袭后，嘉庆以朱笔发布罪己诏，将危机归因于自身德薄与臣工因循怠玩。文本保存最高统治者公开回应，也参与重新组织责任。",
+      "note": "罪己语言不等于接受参与者的社会诉求，诏书与实际搜捕、惩罚需要并读。",
+      "people": [
+        "q_jiaqing",
+        "q161_linqing",
+        "q161_tuojin"
+      ],
+      "sources": [
+        "v161_qsl274"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v161_obj_longzong",
+      "title": "紫禁城隆宗门",
+      "subtitle": "宫廷空间、值守制度与1813年战斗遗址",
+      "symbol": "building.columns",
+      "image": null,
+      "body": "隆宗门位于乾清门前广场西侧，连接内廷、西路与军机值房附近空间。1813年禁城战斗使这座制度性门禁成为具体历史现场。",
+      "note": "建筑与遗痕能确认空间，不能单独证明每一步行动路线或所有传闻。",
+      "people": [
+        "q161_linqing",
+        "q_jiaqing",
+        "q_daoguang"
+      ],
+      "sources": [
+        "v161_dpm_longzong",
+        "v161_qsl274"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v161_obj_opium_edict",
+      "title": "嘉庆二十年查禁鸦片奏片与上谕",
+      "subtitle": "逐船查验、官员激励和走私现实写在同一政策链",
+      "symbol": "doc.text.magnifyingglass",
+      "image": null,
+      "body": "蒋攸铦、董教增提出澳门洋船报货查验、查获奖励和失察处分方案，军机廷寄随后确认政策。原件让用户看到禁烟并非一句口号，而是关口、官员与商人之间的执行设计。",
+      "note": "成文条规证明政策意图，不证明鸦片输入已经被杜绝。",
+      "people": [
+        "q161_jiangyouxian",
+        "q_jiaqing"
+      ],
+      "sources": [
+        "v161_opium_memorial",
+        "v161_opium_edict"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v161_obj_amherst_letters",
+      "title": "1816年英吉利国书与嘉庆敕书",
+      "subtitle": "同一次使团被写成君主通信与贡使失仪两种故事",
+      "symbol": "doc.on.doc",
+      "image": null,
+      "body": "英方国书以两国君主友好和商议利益表述任务，清廷敕书则按贡使礼序解释来华与遣返。两份文本并读，才能看见翻译和政治框架如何改变同一事件。",
+      "note": "中文转录、后编文献与英方档案均有形成过程，不能把任何一份当透明现场。",
+      "people": [
+        "q161_amherst",
+        "q_jiaqing",
+        "q161_jiangyouxian"
+      ],
+      "sources": [
+        "v161_british_letter",
+        "v161_haiguo77",
+        "v161_anu_amherst"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v161_obj_secret_box",
+      "title": "秘密建储匣",
+      "subtitle": "将继承人名字封存于器物，也把国家安全交给一套程序",
+      "symbol": "archivebox",
+      "image": null,
+      "body": "清代秘密建储把皇帝亲书继承人姓名封存在匣内，并设不同保存安排。嘉庆猝逝后，密诏确认与启匣成为旻宁继位的重要程序。",
+      "note": "现存通用器物说明制度，不能据一只展示匣认定它就是1820年热河现场所启原件。",
+      "people": [
+        "q_jiaqing",
+        "q_daoguang",
+        "q161_tuojin",
+        "q161_caozhenyong"
+      ],
+      "sources": [
+        "v161_dpm_secret_box",
+        "v161_dpm_succession",
+        "v161_qsg341"
       ],
       "dynasties": [
         "qing"
@@ -85937,7 +87227,8 @@
             "v2e_ms3",
             "ms2"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         }
       ],
       "sources": [
@@ -86044,7 +87335,8 @@
             "v2e_ms4",
             "v2e_ms113"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "yunwen-7",
@@ -86053,7 +87345,8 @@
           "sources": [
             "v2e_ms4"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         }
       ],
       "sources": [
@@ -86079,7 +87372,8 @@
             "v2e_ms113",
             "226257"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "di-2",
@@ -86188,7 +87482,8 @@
             "v2e_ms7",
             "226257"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         }
       ],
       "sources": [
@@ -86231,7 +87526,8 @@
             "v2e_ms8",
             "v2e_ms7"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "gaochi-3",
@@ -86290,7 +87586,8 @@
             "v2e_ms8",
             "v2e_ms9"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "gaochi-7",
@@ -86332,7 +87629,8 @@
           "sources": [
             "v2e_ms9"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "zhanji-2",
@@ -86414,7 +87712,8 @@
             "v2e_ms9",
             "v2e_ms113"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "zhanji-7",
@@ -86423,7 +87722,8 @@
           "sources": [
             "v2e_ms9"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         }
       ],
       "sources": [
@@ -86472,7 +87772,8 @@
           "kind": "史实与解读",
           "people": [
             "wangzhen"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "qizhen-3",
@@ -86547,7 +87848,8 @@
             "v2e_ms11",
             "v2e_ms12"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         }
       ],
       "sources": [
@@ -86575,7 +87877,8 @@
             "v2e_ms10",
             "v2e_ms11"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "qiyu-2",
@@ -86786,7 +88089,8 @@
             "v2e_ms113",
             "v2e_ms13"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "jianshen-7",
@@ -86827,7 +88131,8 @@
             "v2l_ms15",
             "226266"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "youtang-2",
@@ -86903,7 +88208,8 @@
             "226266",
             "226241"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "youtang-7",
@@ -86913,7 +88219,8 @@
             "v2l_ms15",
             "226266"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "youtang-8",
@@ -86953,7 +88260,8 @@
             "v2l_ms16",
             "226240"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "houzhao-2",
@@ -87063,7 +88371,8 @@
             "v2l_ms16",
             "226240"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "houzhao-8",
@@ -87147,7 +88456,8 @@
             "v2l_ms17",
             "v2l_ms18"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "houcong-4",
@@ -87466,7 +88776,8 @@
             "v2l_ms213",
             "v2l_sea"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         }
       ],
       "sources": [
@@ -87727,7 +89038,8 @@
             "v2l_ms21",
             "v2l_ms78"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "yijun-8",
@@ -87811,7 +89123,8 @@
           "sources": [
             "v2l_ms21"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "changluo-3",
@@ -87881,7 +89194,8 @@
             "v2l_ms22",
             "226242"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "changluo-8",
@@ -87892,7 +89206,8 @@
             "226243",
             "226246"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         }
       ],
       "sources": [
@@ -88048,7 +89363,8 @@
             "v2l_ms22",
             "v2l_ms78"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "youxiao-7",
@@ -88059,7 +89375,8 @@
             "226243",
             "226246"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "youxiao-8",
@@ -88070,7 +89387,8 @@
             "v2l_ms23",
             "v2l_ms78"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         }
       ],
       "sources": [
@@ -88440,7 +89758,8 @@
           "sources": [
             "v2f_ms127"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "lishanzhang-f2",
@@ -88461,7 +89780,8 @@
           "sources": [
             "v2f_ms127"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "lishanzhang-f4",
@@ -88470,7 +89790,8 @@
           "sources": [
             "v2f_ms127"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "lishanzhang-f5",
@@ -88479,7 +89800,8 @@
           "sources": [
             "v2f_ms127"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         }
       ],
       "sources": [
@@ -88510,7 +89832,8 @@
           "sources": [
             "v2f_ms132"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "lanyu-f3",
@@ -88519,7 +89842,8 @@
           "sources": [
             "v2f_ms132"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "lanyu-f4",
@@ -88528,7 +89852,8 @@
           "sources": [
             "v2f_ms132"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "lanyu-f5",
@@ -88537,7 +89862,8 @@
           "sources": [
             "v2f_ms132"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         }
       ],
       "sources": [
@@ -88556,7 +89882,8 @@
           "sources": [
             "v2f_ms125"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "xuda-f2",
@@ -88565,7 +89892,8 @@
           "sources": [
             "v2f_ms125"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "xuda-f3",
@@ -88587,7 +89915,8 @@
             "v2f_ms125",
             "v2f_ms113"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "xuda-f5",
@@ -88596,7 +89925,8 @@
           "sources": [
             "v2f_ms125"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         }
       ],
       "sources": [
@@ -88616,7 +89946,8 @@
           "sources": [
             "v2f_ms126"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "tanghe-f2",
@@ -88625,7 +89956,8 @@
           "sources": [
             "v2f_ms126"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "tanghe-f3",
@@ -88635,7 +89967,8 @@
             "v2f_ms126",
             "v2f_ms127"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "tanghe-f4",
@@ -88656,7 +89989,8 @@
           "sources": [
             "v2f_ms126"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         }
       ],
       "sources": [
@@ -88676,7 +90010,8 @@
           "sources": [
             "v2f_ms126"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "lijinglong-f2",
@@ -88685,7 +90020,8 @@
           "sources": [
             "v2f_ms126"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "lijinglong-f3",
@@ -88694,7 +90030,8 @@
           "sources": [
             "v2f_ms126"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "lijinglong-f4",
@@ -88703,7 +90040,8 @@
           "sources": [
             "v2f_ms126"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "lijinglong-f5",
@@ -88734,7 +90072,8 @@
           "sources": [
             "v2f_ms122"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "guo-f2",
@@ -88743,7 +90082,8 @@
           "sources": [
             "v2f_ms122"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "guo-f3",
@@ -88752,7 +90092,8 @@
           "sources": [
             "v2f_ms122"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "guo-f4",
@@ -88762,7 +90103,8 @@
             "v2f_ms122",
             "v2f_ms1"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "guo-f5",
@@ -88771,7 +90113,8 @@
           "sources": [
             "v2f_ms122"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         }
       ],
       "sources": [
@@ -91154,13 +92497,19 @@
             "v160_victory_images",
             "v160_hong_geography",
             "v160_gujing_academy",
-            "v160_war_chronicle"
+            "v160_war_chronicle",
+            "v161_banner_livelihood",
+            "v161_frost_escape",
+            "v161_river_transport"
           ],
           "people": [
             "q_songyun",
             "q160_funai",
             "q160_hongliangji",
-            "q160_ruanyuan"
+            "q160_ruanyuan",
+            "q161_fujun",
+            "q161_bailing",
+            "q161_jiangyouxian"
           ]
         },
         {
@@ -91175,11 +92524,24 @@
           "kind": "史实与解读",
           "events": [
             "v12_jiaqing_palace_attack",
-            "v160_labels"
+            "v160_labels",
+            "v161_chende_attack",
+            "v161_palace_assault",
+            "v161_self_blame_text",
+            "v161_palace_security",
+            "v161_huaxian_siege",
+            "v161_postwar_search"
           ],
           "people": [
             "q160_wangconger",
-            "q160_caiqian"
+            "q160_caiqian",
+            "q161_chende",
+            "q161_linqing",
+            "q161_liwencheng",
+            "q161_fengkeshan",
+            "q161_nayancheng",
+            "q161_yangyuchun",
+            "q161_tuojin"
           ]
         },
         {
@@ -91200,13 +92562,20 @@
             "v160_coastal_blockade",
             "v160_coastal_society",
             "v160_lichanggeng_death",
-            "v160_caiqian_end"
+            "v160_caiqian_end",
+            "v161_opium_rules",
+            "v161_opium_incentives",
+            "v161_amherst_breakdown",
+            "v161_diplomatic_translation",
+            "v161_gifts_maps"
           ],
           "people": [
             "q160_lichanggeng",
             "q160_caiqian",
             "q160_wangdelu",
-            "q160_ruanyuan"
+            "q160_ruanyuan",
+            "q161_jiangyouxian",
+            "q161_amherst"
           ]
         },
         {
@@ -91226,11 +92595,18 @@
           "events": [
             "v160_white_lotus_end",
             "v160_war_cost",
-            "v160_refugee_return"
+            "v160_refugee_return",
+            "v161_succession_1820",
+            "v161_edict_error",
+            "v161_secret_box",
+            "v161_banner_fiscal_cost"
           ],
           "people": [
             "q160_eledengbao",
-            "q160_funai"
+            "q160_funai",
+            "q161_caozhenyong",
+            "q161_tuojin",
+            "q161_fujun"
           ]
         }
       ],
@@ -91255,7 +92631,31 @@
         "v160_dpm_ruanyuan",
         "v160_qsl218",
         "v160_qsg350",
-        "v160_qsg359"
+        "v160_qsg359",
+        "v161_qsl109",
+        "v161_qsl274",
+        "v161_qsl275",
+        "v161_qsl277",
+        "v161_qsl279",
+        "v161_qsl283",
+        "v161_qsg341",
+        "v161_qsg342",
+        "v161_qsg343",
+        "v161_qsg347",
+        "v161_qsg363",
+        "v161_qsg366",
+        "v161_qsg367",
+        "v161_dpm_lin",
+        "v161_dpm_longzong",
+        "v161_dpm_succession",
+        "v161_dpm_secret_box",
+        "v161_opium_memorial",
+        "v161_opium_edict",
+        "v161_anu_amherst",
+        "v161_british_letter",
+        "v161_haiguo77",
+        "v161_banner_economy",
+        "v161_dpm_inventory_correction"
       ]
     },
     {
@@ -93278,7 +94678,8 @@
             "v2f_ms125",
             "v15_dpm_hongwu"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "changyuchun-3",
@@ -93300,7 +94701,8 @@
           "sources": [
             "v2f_ms125"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "changyuchun-5",
@@ -93334,7 +94736,8 @@
           "sources": [
             "v2f_ms126"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "liwenzhong-2",
@@ -93446,7 +94849,8 @@
             "v15_ms128",
             "v2f_ms127"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "liuji-5",
@@ -174525,7 +175929,8 @@
           "kind": "史实与解读",
           "people": [
             "sijiu"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "bailiu-e2",
@@ -174538,7 +175943,8 @@
           "kind": "关系与制度",
           "people": [
             "sijiu"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "bailiu-e3",
@@ -174551,7 +175957,8 @@
           "kind": "历史背景",
           "people": [
             "sijiu"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "bailiu-e4",
@@ -174564,7 +175971,8 @@
           "kind": "证据说明",
           "people": [
             "sijiu"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "bailiu-e5",
@@ -174577,7 +175985,8 @@
           "kind": "阅读方法",
           "people": [
             "sijiu"
-          ]
+          ],
+          "events": []
         }
       ],
       "sources": [
@@ -174603,7 +176012,8 @@
           "people": [
             "bailiu",
             "chuyi"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "sijiu-e2",
@@ -174618,7 +176028,8 @@
           "people": [
             "bailiu",
             "chuyi"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "sijiu-e3",
@@ -174633,7 +176044,8 @@
           "people": [
             "bailiu",
             "chuyi"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "sijiu-e4",
@@ -174648,7 +176060,8 @@
           "people": [
             "bailiu",
             "chuyi"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "sijiu-e5",
@@ -174663,7 +176076,8 @@
           "people": [
             "bailiu",
             "chuyi"
-          ]
+          ],
+          "events": []
         }
       ],
       "sources": [
@@ -174689,7 +176103,8 @@
           "people": [
             "sijiu",
             "shizhen"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "chuyi-e2",
@@ -174703,7 +176118,8 @@
           "people": [
             "sijiu",
             "shizhen"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "chuyi-e3",
@@ -174717,7 +176133,8 @@
           "people": [
             "sijiu",
             "shizhen"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "chuyi-e4",
@@ -174731,7 +176148,8 @@
           "people": [
             "sijiu",
             "shizhen"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "chuyi-e5",
@@ -174745,7 +176163,8 @@
           "people": [
             "sijiu",
             "shizhen"
-          ]
+          ],
+          "events": []
         }
       ],
       "sources": [
@@ -174772,7 +176191,8 @@
             "yuanzhang",
             "chuyi",
             "xinglong"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "shizhen-e2",
@@ -174788,7 +176208,8 @@
             "yuanzhang",
             "chuyi",
             "xinglong"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "shizhen-e3",
@@ -174804,7 +176225,8 @@
             "yuanzhang",
             "chuyi",
             "xinglong"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "shizhen-e4",
@@ -174820,7 +176242,8 @@
             "yuanzhang",
             "chuyi",
             "xinglong"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "shizhen-e5",
@@ -174836,7 +176259,8 @@
             "yuanzhang",
             "chuyi",
             "xinglong"
-          ]
+          ],
+          "events": []
         }
       ],
       "sources": [
@@ -174862,7 +176286,8 @@
           "people": [
             "yuanzhang",
             "xinglong"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "chen-e2",
@@ -174876,7 +176301,8 @@
           "people": [
             "yuanzhang",
             "xinglong"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "chen-e3",
@@ -174890,7 +176316,8 @@
           "people": [
             "yuanzhang",
             "xinglong"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "chen-e4",
@@ -174904,7 +176331,8 @@
           "people": [
             "yuanzhang",
             "xinglong"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "chen-e5",
@@ -174918,7 +176346,8 @@
           "people": [
             "yuanzhang",
             "xinglong"
-          ]
+          ],
+          "events": []
         }
       ],
       "sources": [
@@ -174944,7 +176373,8 @@
           "people": [
             "shizhen",
             "chen"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "xinglong-e2",
@@ -174959,7 +176389,8 @@
           "people": [
             "shizhen",
             "chen"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "xinglong-e3",
@@ -174974,7 +176405,8 @@
           "people": [
             "shizhen",
             "chen"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "xinglong-e4",
@@ -174989,7 +176421,8 @@
           "people": [
             "shizhen",
             "chen"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "xinglong-e5",
@@ -175004,7 +176437,8 @@
           "people": [
             "shizhen",
             "chen"
-          ]
+          ],
+          "events": []
         }
       ],
       "sources": [
@@ -175131,7 +176565,8 @@
             "yunwen",
             "yuanzhang",
             "ma"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "biao-e2",
@@ -175147,7 +176582,8 @@
             "yunwen",
             "yuanzhang",
             "ma"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "biao-e3",
@@ -175163,7 +176599,8 @@
             "yunwen",
             "yuanzhang",
             "ma"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "biao-e4",
@@ -175179,7 +176616,8 @@
             "yunwen",
             "yuanzhang",
             "ma"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "biao-e5",
@@ -175195,7 +176633,8 @@
             "yunwen",
             "yuanzhang",
             "ma"
-          ]
+          ],
+          "events": []
         }
       ],
       "sources": [
@@ -175219,7 +176658,8 @@
           "kind": "史实与解读",
           "people": [
             "di"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "gaoxu-e2",
@@ -175231,7 +176671,8 @@
           "kind": "关系与制度",
           "people": [
             "di"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "gaoxu-e3",
@@ -175243,7 +176684,8 @@
           "kind": "历史背景",
           "people": [
             "di"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "gaoxu-e4",
@@ -175255,7 +176697,8 @@
           "kind": "证据说明",
           "people": [
             "di"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "gaoxu-e5",
@@ -175267,7 +176710,8 @@
           "kind": "阅读方法",
           "people": [
             "di"
-          ]
+          ],
+          "events": []
         }
       ],
       "sources": [
@@ -175291,7 +176735,8 @@
           "people": [
             "houcong",
             "jianshen"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "youyuan-e2",
@@ -175305,7 +176750,8 @@
           "people": [
             "houcong",
             "jianshen"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "youyuan-e3",
@@ -175319,7 +176765,8 @@
           "people": [
             "houcong",
             "jianshen"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "youyuan-e4",
@@ -175333,7 +176780,8 @@
           "people": [
             "houcong",
             "jianshen"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "youyuan-e5",
@@ -175347,7 +176795,8 @@
           "people": [
             "houcong",
             "jianshen"
-          ]
+          ],
+          "events": []
         }
       ],
       "sources": [
@@ -175588,7 +177037,8 @@
             "sheng",
             "sheng-study"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "events": []
         },
         {
           "id": "sheng-e2",
@@ -175598,7 +177048,8 @@
             "sheng",
             "sheng-study"
           ],
-          "kind": "关系与制度"
+          "kind": "关系与制度",
+          "events": []
         },
         {
           "id": "sheng-e3",
@@ -175608,7 +177059,8 @@
             "sheng",
             "sheng-study"
           ],
-          "kind": "历史背景"
+          "kind": "历史背景",
+          "events": []
         },
         {
           "id": "sheng-e4",
@@ -175618,7 +177070,8 @@
             "sheng",
             "sheng-study"
           ],
-          "kind": "证据说明"
+          "kind": "证据说明",
+          "events": []
         },
         {
           "id": "sheng-e5",
@@ -175628,7 +177081,8 @@
             "sheng",
             "sheng-study"
           ],
-          "kind": "阅读方法"
+          "kind": "阅读方法",
+          "events": []
         }
       ],
       "sources": [
@@ -175651,7 +177105,8 @@
           "kind": "史实与解读",
           "people": [
             "q_taksi"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_giocangga-e2",
@@ -175663,7 +177118,8 @@
           "kind": "关系与制度",
           "people": [
             "q_taksi"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_giocangga-e3",
@@ -175675,7 +177131,8 @@
           "kind": "历史背景",
           "people": [
             "q_taksi"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_giocangga-e4",
@@ -175687,7 +177144,8 @@
           "kind": "证据说明",
           "people": [
             "q_taksi"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_giocangga-e5",
@@ -175699,7 +177157,8 @@
           "kind": "阅读方法",
           "people": [
             "q_taksi"
-          ]
+          ],
+          "events": []
         }
       ],
       "sources": [
@@ -175722,7 +177181,8 @@
           "people": [
             "q_giocangga",
             "q_nurhaci"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_taksi-e2",
@@ -175735,7 +177195,8 @@
           "people": [
             "q_giocangga",
             "q_nurhaci"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_taksi-e3",
@@ -175748,7 +177209,8 @@
           "people": [
             "q_giocangga",
             "q_nurhaci"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_taksi-e4",
@@ -175761,7 +177223,8 @@
           "people": [
             "q_giocangga",
             "q_nurhaci"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_taksi-e5",
@@ -175774,7 +177237,8 @@
           "people": [
             "q_giocangga",
             "q_nurhaci"
-          ]
+          ],
+          "events": []
         }
       ],
       "sources": [
@@ -175799,7 +177263,8 @@
           "people": [
             "q_yongzheng",
             "q_ulanara"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_honghui-e2",
@@ -175814,7 +177279,8 @@
           "people": [
             "q_yongzheng",
             "q_ulanara"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_honghui-e3",
@@ -175829,7 +177295,8 @@
           "people": [
             "q_yongzheng",
             "q_ulanara"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_honghui-e4",
@@ -175844,7 +177311,8 @@
           "people": [
             "q_yongzheng",
             "q_ulanara"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_honghui-e5",
@@ -175859,7 +177327,8 @@
           "people": [
             "q_yongzheng",
             "q_ulanara"
-          ]
+          ],
+          "events": []
         }
       ],
       "sources": [
@@ -175886,7 +177355,8 @@
           "people": [
             "q_yongzheng",
             "q_lishi"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_hongfen-e2",
@@ -175901,7 +177371,8 @@
           "people": [
             "q_yongzheng",
             "q_lishi"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_hongfen-e3",
@@ -175916,7 +177387,8 @@
           "people": [
             "q_yongzheng",
             "q_lishi"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_hongfen-e4",
@@ -175931,7 +177403,8 @@
           "people": [
             "q_yongzheng",
             "q_lishi"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_hongfen-e5",
@@ -175946,7 +177419,8 @@
           "people": [
             "q_yongzheng",
             "q_lishi"
-          ]
+          ],
+          "events": []
         }
       ],
       "sources": [
@@ -175973,7 +177447,8 @@
           "people": [
             "q_yongzheng",
             "q_lishi"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_hongyun-e2",
@@ -175988,7 +177463,8 @@
           "people": [
             "q_yongzheng",
             "q_lishi"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_hongyun-e3",
@@ -176003,7 +177479,8 @@
           "people": [
             "q_yongzheng",
             "q_lishi"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_hongyun-e4",
@@ -176018,7 +177495,8 @@
           "people": [
             "q_yongzheng",
             "q_lishi"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_hongyun-e5",
@@ -176033,7 +177511,8 @@
           "people": [
             "q_yongzheng",
             "q_lishi"
-          ]
+          ],
+          "events": []
         }
       ],
       "sources": [
@@ -176060,7 +177539,8 @@
           "people": [
             "q_yongzheng",
             "q_nianshi"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_fuyi-e2",
@@ -176075,7 +177555,8 @@
           "people": [
             "q_yongzheng",
             "q_nianshi"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_fuyi-e3",
@@ -176090,7 +177571,8 @@
           "people": [
             "q_yongzheng",
             "q_nianshi"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_fuyi-e4",
@@ -176105,7 +177587,8 @@
           "people": [
             "q_yongzheng",
             "q_nianshi"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_fuyi-e5",
@@ -176120,7 +177603,8 @@
           "people": [
             "q_yongzheng",
             "q_nianshi"
-          ]
+          ],
+          "events": []
         }
       ],
       "sources": [
@@ -176147,7 +177631,8 @@
           "people": [
             "q_yongzheng",
             "q_nianshi"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_fuhui-e2",
@@ -176162,7 +177647,8 @@
           "people": [
             "q_yongzheng",
             "q_nianshi"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_fuhui-e3",
@@ -176177,7 +177663,8 @@
           "people": [
             "q_yongzheng",
             "q_nianshi"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_fuhui-e4",
@@ -176192,7 +177679,8 @@
           "people": [
             "q_yongzheng",
             "q_nianshi"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_fuhui-e5",
@@ -176207,7 +177695,8 @@
           "people": [
             "q_yongzheng",
             "q_nianshi"
-          ]
+          ],
+          "events": []
         }
       ],
       "sources": [
@@ -176234,7 +177723,8 @@
           "people": [
             "q_yongzheng",
             "q_nianshi"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_fupei-e2",
@@ -176249,7 +177739,8 @@
           "people": [
             "q_yongzheng",
             "q_nianshi"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_fupei-e3",
@@ -176264,7 +177755,8 @@
           "people": [
             "q_yongzheng",
             "q_nianshi"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_fupei-e4",
@@ -176279,7 +177771,8 @@
           "people": [
             "q_yongzheng",
             "q_nianshi"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_fupei-e5",
@@ -176294,7 +177787,8 @@
           "people": [
             "q_yongzheng",
             "q_nianshi"
-          ]
+          ],
+          "events": []
         }
       ],
       "sources": [
@@ -176320,7 +177814,8 @@
           "people": [
             "q_honghui",
             "q_yongzheng"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_ulanara-e2",
@@ -176334,7 +177829,8 @@
           "people": [
             "q_honghui",
             "q_yongzheng"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_ulanara-e3",
@@ -176348,7 +177844,8 @@
           "people": [
             "q_honghui",
             "q_yongzheng"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_ulanara-e4",
@@ -176362,7 +177859,8 @@
           "people": [
             "q_honghui",
             "q_yongzheng"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_ulanara-e5",
@@ -176376,7 +177874,8 @@
           "people": [
             "q_honghui",
             "q_yongzheng"
-          ]
+          ],
+          "events": []
         }
       ],
       "sources": [
@@ -176400,7 +177899,8 @@
           "people": [
             "q_qianlong",
             "q_yongzheng"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_niuhuru-e2",
@@ -176413,7 +177913,8 @@
           "people": [
             "q_qianlong",
             "q_yongzheng"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_niuhuru-e3",
@@ -176426,7 +177927,8 @@
           "people": [
             "q_qianlong",
             "q_yongzheng"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_niuhuru-e4",
@@ -176439,7 +177941,8 @@
           "people": [
             "q_qianlong",
             "q_yongzheng"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_niuhuru-e5",
@@ -176452,7 +177955,8 @@
           "people": [
             "q_qianlong",
             "q_yongzheng"
-          ]
+          ],
+          "events": []
         }
       ],
       "sources": [
@@ -176478,7 +177982,8 @@
             "q_hongyun",
             "q_hongshi",
             "q_yongzheng"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_lishi-e2",
@@ -176494,7 +177999,8 @@
             "q_hongyun",
             "q_hongshi",
             "q_yongzheng"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_lishi-e3",
@@ -176510,7 +178016,8 @@
             "q_hongyun",
             "q_hongshi",
             "q_yongzheng"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_lishi-e4",
@@ -176526,7 +178033,8 @@
             "q_hongyun",
             "q_hongshi",
             "q_yongzheng"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_lishi-e5",
@@ -176542,7 +178050,8 @@
             "q_hongyun",
             "q_hongshi",
             "q_yongzheng"
-          ]
+          ],
+          "events": []
         }
       ],
       "sources": [
@@ -176567,7 +178076,8 @@
           "people": [
             "q_hongzhou",
             "q_yongzheng"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_gengshi-e2",
@@ -176581,7 +178091,8 @@
           "people": [
             "q_hongzhou",
             "q_yongzheng"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_gengshi-e3",
@@ -176595,7 +178106,8 @@
           "people": [
             "q_hongzhou",
             "q_yongzheng"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_gengshi-e4",
@@ -176609,7 +178121,8 @@
           "people": [
             "q_hongzhou",
             "q_yongzheng"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_gengshi-e5",
@@ -176623,7 +178136,8 @@
           "people": [
             "q_hongzhou",
             "q_yongzheng"
-          ]
+          ],
+          "events": []
         }
       ],
       "sources": [
@@ -176650,7 +178164,8 @@
             "q_fupei",
             "q_yongzheng",
             "q_nianxialing"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_nianshi-e2",
@@ -176666,7 +178181,8 @@
             "q_fupei",
             "q_yongzheng",
             "q_nianxialing"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_nianshi-e3",
@@ -176682,7 +178198,8 @@
             "q_fupei",
             "q_yongzheng",
             "q_nianxialing"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_nianshi-e4",
@@ -176698,7 +178215,8 @@
             "q_fupei",
             "q_yongzheng",
             "q_nianxialing"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_nianshi-e5",
@@ -176714,7 +178232,8 @@
             "q_fupei",
             "q_yongzheng",
             "q_nianxialing"
-          ]
+          ],
+          "events": []
         }
       ],
       "sources": [
@@ -176738,7 +178257,8 @@
           "people": [
             "q_hongzhan",
             "q_yongzheng"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_liushi-e2",
@@ -176752,7 +178272,8 @@
           "people": [
             "q_hongzhan",
             "q_yongzheng"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_liushi-e3",
@@ -176766,7 +178287,8 @@
           "people": [
             "q_hongzhan",
             "q_yongzheng"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_liushi-e4",
@@ -176780,7 +178302,8 @@
           "people": [
             "q_hongzhan",
             "q_yongzheng"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_liushi-e5",
@@ -176794,7 +178317,8 @@
           "people": [
             "q_hongzhan",
             "q_yongzheng"
-          ]
+          ],
+          "events": []
         }
       ],
       "sources": [
@@ -176821,7 +178345,8 @@
             "q_kangxi",
             "q_yongzheng",
             "q_yinti"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_wuya-e2",
@@ -176837,7 +178362,8 @@
             "q_kangxi",
             "q_yongzheng",
             "q_yinti"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_wuya-e3",
@@ -176853,7 +178379,8 @@
             "q_kangxi",
             "q_yongzheng",
             "q_yinti"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_wuya-e4",
@@ -176869,7 +178396,8 @@
             "q_kangxi",
             "q_yongzheng",
             "q_yinti"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_wuya-e5",
@@ -176885,7 +178413,8 @@
             "q_kangxi",
             "q_yongzheng",
             "q_yinti"
-          ]
+          ],
+          "events": []
         }
       ],
       "sources": [
@@ -176911,7 +178440,8 @@
           "people": [
             "q_kangxi",
             "q_hongzhan"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_yinli-e2",
@@ -176925,7 +178455,8 @@
           "people": [
             "q_kangxi",
             "q_hongzhan"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_yinli-e3",
@@ -176939,7 +178470,8 @@
           "people": [
             "q_kangxi",
             "q_hongzhan"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_yinli-e4",
@@ -176953,7 +178485,8 @@
           "people": [
             "q_kangxi",
             "q_hongzhan"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_yinli-e5",
@@ -176967,7 +178500,8 @@
           "people": [
             "q_kangxi",
             "q_hongzhan"
-          ]
+          ],
+          "events": []
         }
       ],
       "sources": [
@@ -176992,7 +178526,8 @@
           "people": [
             "q_niangengyao",
             "q_nianshi"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_nianxialing-e2",
@@ -177006,7 +178541,8 @@
           "people": [
             "q_niangengyao",
             "q_nianshi"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_nianxialing-e3",
@@ -177020,7 +178556,8 @@
           "people": [
             "q_niangengyao",
             "q_nianshi"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_nianxialing-e4",
@@ -177034,7 +178571,8 @@
           "people": [
             "q_niangengyao",
             "q_nianshi"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "q_nianxialing-e5",
@@ -177048,7 +178586,8 @@
           "people": [
             "q_niangengyao",
             "q_nianshi"
-          ]
+          ],
+          "events": []
         }
       ],
       "sources": [
@@ -177073,7 +178612,8 @@
           "people": [
             "s_taizu",
             "s_taizong"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "s_zhaohongyin-e2",
@@ -177087,7 +178627,8 @@
           "people": [
             "s_taizu",
             "s_taizong"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "s_zhaohongyin-e3",
@@ -177101,7 +178642,8 @@
           "people": [
             "s_taizu",
             "s_taizong"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "s_zhaohongyin-e4",
@@ -177115,7 +178657,8 @@
           "people": [
             "s_taizu",
             "s_taizong"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "s_zhaohongyin-e5",
@@ -177129,7 +178672,8 @@
           "people": [
             "s_taizu",
             "s_taizong"
-          ]
+          ],
+          "events": []
         }
       ],
       "sources": [
@@ -177154,7 +178698,8 @@
           "people": [
             "s_yingzong",
             "s_zhaoyuanfen"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "s_zhaoyunrang-e2",
@@ -177168,7 +178713,8 @@
           "people": [
             "s_yingzong",
             "s_zhaoyuanfen"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "s_zhaoyunrang-e3",
@@ -177182,7 +178728,8 @@
           "people": [
             "s_yingzong",
             "s_zhaoyuanfen"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "s_zhaoyunrang-e4",
@@ -177196,7 +178743,8 @@
           "people": [
             "s_yingzong",
             "s_zhaoyuanfen"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "s_zhaoyunrang-e5",
@@ -177210,7 +178758,8 @@
           "people": [
             "s_yingzong",
             "s_zhaoyuanfen"
-          ]
+          ],
+          "events": []
         }
       ],
       "sources": [
@@ -177234,7 +178783,8 @@
           "people": [
             "s_xiaozong",
             "s_zhaolinghua"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "s_zhaozicheng-e2",
@@ -177247,7 +178797,8 @@
           "people": [
             "s_xiaozong",
             "s_zhaolinghua"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "s_zhaozicheng-e3",
@@ -177260,7 +178811,8 @@
           "people": [
             "s_xiaozong",
             "s_zhaolinghua"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "s_zhaozicheng-e4",
@@ -177273,7 +178825,8 @@
           "people": [
             "s_xiaozong",
             "s_zhaolinghua"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "s_zhaozicheng-e5",
@@ -177286,7 +178839,8 @@
           "people": [
             "s_xiaozong",
             "s_zhaolinghua"
-          ]
+          ],
+          "events": []
         }
       ],
       "sources": [
@@ -177311,7 +178865,8 @@
           "people": [
             "s_lizong",
             "s_zhaoyurui"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "s_zhaoxilu-e2",
@@ -177326,7 +178881,8 @@
           "people": [
             "s_lizong",
             "s_zhaoyurui"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "s_zhaoxilu-e3",
@@ -177341,7 +178897,8 @@
           "people": [
             "s_lizong",
             "s_zhaoyurui"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "s_zhaoxilu-e4",
@@ -177356,7 +178913,8 @@
           "people": [
             "s_lizong",
             "s_zhaoyurui"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "s_zhaoxilu-e5",
@@ -177371,7 +178929,8 @@
           "people": [
             "s_lizong",
             "s_zhaoyurui"
-          ]
+          ],
+          "events": []
         }
       ],
       "sources": [
@@ -177397,7 +178956,8 @@
           "people": [
             "s_duzong",
             "s_zhaoxilu"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "s_zhaoyurui-e2",
@@ -177411,7 +178971,8 @@
           "people": [
             "s_duzong",
             "s_zhaoxilu"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "s_zhaoyurui-e3",
@@ -177425,7 +178986,8 @@
           "people": [
             "s_duzong",
             "s_zhaoxilu"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "s_zhaoyurui-e4",
@@ -177439,7 +179001,8 @@
           "people": [
             "s_duzong",
             "s_zhaoxilu"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "s_zhaoyurui-e5",
@@ -177453,7 +179016,8 @@
           "people": [
             "s_duzong",
             "s_zhaoxilu"
-          ]
+          ],
+          "events": []
         }
       ],
       "sources": [
@@ -177477,7 +179041,8 @@
           "people": [
             "s_taizu",
             "s_zhaoweixian"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "s_zhaodefang-e2",
@@ -177490,7 +179055,8 @@
           "people": [
             "s_taizu",
             "s_zhaoweixian"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "s_zhaodefang-e3",
@@ -177503,7 +179069,8 @@
           "people": [
             "s_taizu",
             "s_zhaoweixian"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "s_zhaodefang-e4",
@@ -177516,7 +179083,8 @@
           "people": [
             "s_taizu",
             "s_zhaoweixian"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "s_zhaodefang-e5",
@@ -177529,7 +179097,8 @@
           "people": [
             "s_taizu",
             "s_zhaoweixian"
-          ]
+          ],
+          "events": []
         }
       ],
       "sources": [
@@ -177552,7 +179121,8 @@
           "people": [
             "s_zhaodefang",
             "s_zhaocongyu"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "s_zhaoweixian-e2",
@@ -177565,7 +179135,8 @@
           "people": [
             "s_zhaodefang",
             "s_zhaocongyu"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "s_zhaoweixian-e3",
@@ -177578,7 +179149,8 @@
           "people": [
             "s_zhaodefang",
             "s_zhaocongyu"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "s_zhaoweixian-e4",
@@ -177591,7 +179163,8 @@
           "people": [
             "s_zhaodefang",
             "s_zhaocongyu"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "s_zhaoweixian-e5",
@@ -177604,7 +179177,8 @@
           "people": [
             "s_zhaodefang",
             "s_zhaocongyu"
-          ]
+          ],
+          "events": []
         }
       ],
       "sources": [
@@ -177627,7 +179201,8 @@
           "people": [
             "s_zhaoweixian",
             "s_zhaoshijiang"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "s_zhaocongyu-e2",
@@ -177640,7 +179215,8 @@
           "people": [
             "s_zhaoweixian",
             "s_zhaoshijiang"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "s_zhaocongyu-e3",
@@ -177653,7 +179229,8 @@
           "people": [
             "s_zhaoweixian",
             "s_zhaoshijiang"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "s_zhaocongyu-e4",
@@ -177666,7 +179243,8 @@
           "people": [
             "s_zhaoweixian",
             "s_zhaoshijiang"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "s_zhaocongyu-e5",
@@ -177679,7 +179257,8 @@
           "people": [
             "s_zhaoweixian",
             "s_zhaoshijiang"
-          ]
+          ],
+          "events": []
         }
       ],
       "sources": [
@@ -177702,7 +179281,8 @@
           "people": [
             "s_zhaocongyu",
             "s_zhaolinghua"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "s_zhaoshijiang-e2",
@@ -177715,7 +179295,8 @@
           "people": [
             "s_zhaocongyu",
             "s_zhaolinghua"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "s_zhaoshijiang-e3",
@@ -177728,7 +179309,8 @@
           "people": [
             "s_zhaocongyu",
             "s_zhaolinghua"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "s_zhaoshijiang-e4",
@@ -177741,7 +179323,8 @@
           "people": [
             "s_zhaocongyu",
             "s_zhaolinghua"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "s_zhaoshijiang-e5",
@@ -177754,7 +179337,8 @@
           "people": [
             "s_zhaocongyu",
             "s_zhaolinghua"
-          ]
+          ],
+          "events": []
         }
       ],
       "sources": [
@@ -177777,7 +179361,8 @@
           "people": [
             "s_zhaozicheng",
             "s_zhaoshijiang"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "s_zhaolinghua-e2",
@@ -177790,7 +179375,8 @@
           "people": [
             "s_zhaozicheng",
             "s_zhaoshijiang"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "s_zhaolinghua-e3",
@@ -177803,7 +179389,8 @@
           "people": [
             "s_zhaozicheng",
             "s_zhaoshijiang"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "s_zhaolinghua-e4",
@@ -177816,7 +179403,8 @@
           "people": [
             "s_zhaozicheng",
             "s_zhaoshijiang"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "s_zhaolinghua-e5",
@@ -177829,7 +179417,8 @@
           "people": [
             "s_zhaozicheng",
             "s_zhaoshijiang"
-          ]
+          ],
+          "events": []
         }
       ],
       "sources": [
@@ -177852,7 +179441,8 @@
           "people": [
             "s_zhaoyunrang",
             "s_taizong"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "s_zhaoyuanfen-e2",
@@ -177865,7 +179455,8 @@
           "people": [
             "s_zhaoyunrang",
             "s_taizong"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "s_zhaoyuanfen-e3",
@@ -177878,7 +179469,8 @@
           "people": [
             "s_zhaoyunrang",
             "s_taizong"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "s_zhaoyuanfen-e4",
@@ -177891,7 +179483,8 @@
           "people": [
             "s_zhaoyunrang",
             "s_taizong"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "s_zhaoyuanfen-e5",
@@ -177904,7 +179497,8 @@
           "people": [
             "s_zhaoyunrang",
             "s_taizong"
-          ]
+          ],
+          "events": []
         }
       ],
       "sources": [
@@ -177927,7 +179521,8 @@
           "kind": "史实与解读",
           "people": [
             "qin_shihuang"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "qin_zhuangxiang-e2",
@@ -177940,7 +179535,8 @@
           "kind": "关系与制度",
           "people": [
             "qin_shihuang"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "qin_zhuangxiang-e3",
@@ -177953,7 +179549,8 @@
           "kind": "历史背景",
           "people": [
             "qin_shihuang"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "qin_zhuangxiang-e4",
@@ -177966,7 +179563,8 @@
           "kind": "证据说明",
           "people": [
             "qin_shihuang"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "qin_zhuangxiang-e5",
@@ -177979,7 +179577,8 @@
           "kind": "阅读方法",
           "people": [
             "qin_shihuang"
-          ]
+          ],
+          "events": []
         }
       ],
       "sources": [
@@ -178003,7 +179602,8 @@
           "kind": "史实与解读",
           "people": [
             "qin_shihuang"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "qin_zhaoji-e2",
@@ -178016,7 +179616,8 @@
           "kind": "关系与制度",
           "people": [
             "qin_shihuang"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "qin_zhaoji-e3",
@@ -178029,7 +179630,8 @@
           "kind": "历史背景",
           "people": [
             "qin_shihuang"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "qin_zhaoji-e4",
@@ -178042,7 +179644,8 @@
           "kind": "证据说明",
           "people": [
             "qin_shihuang"
-          ]
+          ],
+          "events": []
         },
         {
           "id": "qin_zhaoji-e5",
@@ -178055,7 +179658,8 @@
           "kind": "阅读方法",
           "people": [
             "qin_shihuang"
-          ]
+          ],
+          "events": []
         }
       ],
       "sources": [
@@ -194778,6 +196382,1174 @@
         "v160_qsg364",
         "v160_dpm_ruanyuan",
         "v160_qsl218"
+      ]
+    },
+    {
+      "person": "q161_linqing",
+      "title": "林清：从乡村教门到宫门突袭",
+      "dek": "1813年的行动连接京畿村落、城市交通、宫内差役与跨省计划，不能只剩一场传奇。",
+      "sections": [
+        {
+          "id": "v161_linqing1",
+          "title": "教门首先是一张社会关系网",
+          "text": "林清在京南及周边村落活动，通过师徒、亲族、香会和互助关系联络成员。宗教语言提供共同信念，也承担信息与资源动员功能；加入者的动机并不整齐，可能包含信仰、求助、利益和反抗。清廷把多种活动归入‘邪教’，这种分类说明国家立场，不能代替参与者自我理解。",
+          "sources": [
+            "v161_dpm_lin",
+            "v161_qsl283"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_sect_networks",
+            "v161_official_labels"
+          ],
+          "people": [
+            "q161_liwencheng",
+            "q161_fengkeshan"
+          ]
+        },
+        {
+          "id": "v161_linqing2",
+          "title": "跨省约期并不等于统一军队",
+          "text": "林清与李文成、冯克善等曾商议京师、河南、山东相互响应，但交通、地方组织和临时暴露使行动不同步。滑县因李文成被捕而提前起事，京师队伍到宫门时没有得到预期外援。所谓‘天理教’是联络性名号，不宜想成命令能层层直达的现代中央组织。",
+          "sources": [
+            "v161_dpm_lin",
+            "v161_qsl277",
+            "v161_qsl279"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_early_outbreak",
+            "v161_regional_coordination"
+          ],
+          "people": [
+            "q161_liwencheng",
+            "q161_fengkeshan"
+          ]
+        },
+        {
+          "id": "v161_linqing3",
+          "title": "宫内接应让行动穿过禁门",
+          "text": "九月十五日，数十名参与者分路接近东、西华门，部分人在太监接应下进入禁城，战斗延续到隆宗门一带。内应说明宫廷并非与城市社会隔绝：太监的籍贯、差役和宫外联系可能成为通道。行动人数有限，却击穿最高权力空间的安全想象。",
+          "sources": [
+            "v161_qsl274",
+            "v161_qsl275",
+            "v161_dpm_longzong"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_palace_assault",
+            "v161_eunuch_links"
+          ],
+          "people": [
+            "q_daoguang",
+            "q_jiaqing"
+          ]
+        },
+        {
+          "id": "v161_linqing4",
+          "title": "被捕与廷讯由胜利者记录",
+          "text": "宫门行动失败后，林清在京南被捕并受廷讯，很快被处死。现存材料详载官员奖惩和定罪，却极少保存林清不受审讯环境影响的连续自述。供词可帮助复原联络线索，但不应把其中每项归责、神异说法或人数直接当作自由陈述。",
+          "sources": [
+            "v161_qsl275",
+            "v161_dpm_lin"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_linqing_capture",
+            "v161_collective_punishment"
+          ],
+          "people": [
+            "q161_tuojin"
+          ]
+        },
+        {
+          "id": "v161_linqing5",
+          "title": "镇压之后连文本也被追捕",
+          "text": "清廷继续搜查教门经卷、名册与未捕成员，并焚毁被认定为惑众的文本。由此留下的档案偏向搜缴者视角，被毁材料的日常用途与读者经验反而更难得知。今天讲林清，应把宫门战斗、社会网络和史料损失并列，而不是把他塑成单线英雄或怪诞教首。更重要的是，参与者走过的道路、借住的村庄和宫内差役关系，证明政治中心与地方社会之间一直存在人员流动。把这些连接还原出来，才能解释少量人员为何能够抵达禁门。",
+          "sources": [
+            "v161_qsl283",
+            "v161_dpm_inventory_correction"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_text_destruction",
+            "v161_memory_correction"
+          ],
+          "people": [
+            "q161_fengkeshan"
+          ]
+        }
+      ],
+      "sources": [
+        "v161_dpm_lin",
+        "v161_qsl283",
+        "v161_qsl277",
+        "v161_qsl279",
+        "v161_qsl274",
+        "v161_qsl275",
+        "v161_dpm_longzong",
+        "v161_dpm_inventory_correction"
+      ]
+    },
+    {
+      "person": "q161_liwencheng",
+      "title": "李文成：滑县起事为何提前爆发",
+      "dek": "逮捕、刑讯与营救把原定协同行动推入仓促战争，随后才有官军围城和司寨结局。",
+      "sections": [
+        {
+          "id": "v161_liwencheng1",
+          "title": "滑县组织扎根于日常交往",
+          "text": "李文成在豫北教门网络中取得影响，成员分布于村落、集镇和跨省交通线上。宗教结社与地方社会并非两套世界，成员仍要务农、经商、承担差役并处理家庭关系。官书多以‘首逆’开篇，较少说明这些联系怎样在平时形成。",
+          "sources": [
+            "v161_qsl277",
+            "v161_dpm_lin"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_sect_networks",
+            "v161_local_supply"
+          ],
+          "people": [
+            "q161_linqing",
+            "q161_fengkeshan"
+          ]
+        },
+        {
+          "id": "v161_liwencheng2",
+          "title": "被捕受刑改变了时间表",
+          "text": "地方官在约定日期前捕获并刑讯李文成，其同伴劫狱救出他，滑县行动因此提前。提前并不是计划周密的证明，反而让京师、山东与河南难以同步。清廷后来把暴露归为破案功劳，但刑讯、误判和地方报案机制同样塑造了事件路径。",
+          "sources": [
+            "v161_qsl277",
+            "v161_qsl279"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_early_outbreak",
+            "v161_bureaucratic_accountability"
+          ],
+          "people": [
+            "q161_nayancheng"
+          ]
+        },
+        {
+          "id": "v161_liwencheng3",
+          "title": "滑县不是唯一战场",
+          "text": "起事者控制滑县并在道口、桃源集等处活动，又波及直隶、山东交界。队伍包括核心成员、临时加入者和受战争裹挟者，官军奏报常把他们合并为一个总数。交通节点、粮食和渡船决定行动能力，不能只按首领命令解释扩散。",
+          "sources": [
+            "v161_qsl277",
+            "v161_qsg367"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_regional_coordination",
+            "v161_daokou_battle",
+            "v161_local_supply"
+          ],
+          "people": [
+            "q161_yangyuchun",
+            "q161_nayancheng"
+          ]
+        },
+        {
+          "id": "v161_liwencheng4",
+          "title": "司寨死亡来自军报叙事",
+          "text": "李文成离开滑县后转至辉县司寨，官军追围。实录称他在楼中举火并被压死，随即记录歼俘与封赏。这是重要同时代记录，却由得胜方上报；死亡细节、参战人数和是否存在投降机会，都不宜写成毫无疑问的镜头。",
+          "sources": [
+            "v161_qsl279",
+            "v161_qsg367"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_sizhai_end",
+            "v161_archive_asymmetry"
+          ],
+          "people": [
+            "q161_yangyuchun"
+          ]
+        },
+        {
+          "id": "v161_liwencheng5",
+          "title": "围城结束不等于社会复原",
+          "text": "滑县随后被地道攻破，清廷宣布区域战事平定。围困、征粮、搜捕和处置家属对居民造成的影响，远比官修捷报保留得少。李文成的故事既属于反抗史，也属于地方战争史；只有把普通家庭、被迫参与者和战后清查纳入，才不会让‘平定’一词代替全部经历。官军战后留下的是首领、城寨和俘斩数字，地方家庭留下的迁徙、财产损失与关系破裂却很少进入同等篇幅。页面因此不以战争终止日期冒充生活恢复日期。",
+          "sources": [
+            "v161_qsg347",
+            "v161_qsg367"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_huaxian_siege",
+            "v161_postwar_search",
+            "v161_collective_punishment"
+          ],
+          "people": [
+            "q161_nayancheng"
+          ]
+        }
+      ],
+      "sources": [
+        "v161_qsl277",
+        "v161_dpm_lin",
+        "v161_qsl279",
+        "v161_qsg367",
+        "v161_qsg347"
+      ]
+    },
+    {
+      "person": "q161_fengkeshan",
+      "title": "冯克善：档案边缘的一位区域组织者",
+      "dek": "他的记录远少于林清与李文成，恰好提醒我们不要让史料篇幅决定历史重要性。",
+      "sections": [
+        {
+          "id": "v161_fengkeshan1",
+          "title": "山东一线不是空白地带",
+          "text": "现代故宫词条将冯克善列为与林清、李文成联络的山东教门领导者。山东、直隶、河南交界人口往来频繁，教门关系可沿亲族、集市和师徒扩展。现有公开官书对他的个人经历着墨很少，这种沉默不是他没有作用的证明。",
+          "sources": [
+            "v161_dpm_lin",
+            "v161_qsl274"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_regional_coordination",
+            "v161_sect_networks"
+          ],
+          "people": [
+            "q161_linqing",
+            "q161_liwencheng"
+          ]
+        },
+        {
+          "id": "v161_fengkeshan2",
+          "title": "共同名号之下仍有地方差异",
+          "text": "林清、李文成与冯克善的网络使用卦名、教门称谓和末世信念联络，但各地成员、资源与行动节奏不同。把他们写成一个严整组织会高估指挥能力，也会遗漏村庄之间既合作又防备的现实。共同语言能够动员，不等于地方差异消失。",
+          "sources": [
+            "v161_dpm_lin",
+            "v161_qsl277"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_official_labels",
+            "v161_regional_coordination"
+          ],
+          "people": [
+            "q161_linqing",
+            "q161_liwencheng"
+          ]
+        },
+        {
+          "id": "v161_fengkeshan3",
+          "title": "提前暴露打乱山东响应",
+          "text": "滑县提前起事、京师行动迅速失败，使山东一线面对更严密的关卡与搜捕。实录重视何处‘响应’以及官军如何追缉，却很少保留未能行动者、退出者和普通信徒的选择。失败的计划仍能揭示跨省信息怎样传递，也能看见传递的迟滞与断裂。",
+          "sources": [
+            "v161_qsl274",
+            "v161_qsl279"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_early_outbreak",
+            "v161_postwar_search"
+          ],
+          "people": [
+            "q161_nayancheng"
+          ]
+        },
+        {
+          "id": "v161_fengkeshan4",
+          "title": "名字出现不等于生平已经清楚",
+          "text": "冯克善在通史中常被一笔带过，出生、家庭、具体分工和最终遭遇也可能被后世叙述填补。产品只写现有材料能支持的组织位置，不用戏剧化对话和精确心理补空。史料不足本身应当公开呈现，而非伪装成完整人物传。",
+          "sources": [
+            "v161_dpm_lin",
+            "v161_qsl275"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_archive_asymmetry",
+            "v161_official_labels"
+          ],
+          "people": [
+            "q161_linqing"
+          ]
+        },
+        {
+          "id": "v161_fengkeshan5",
+          "title": "从缺页重新理解1813年",
+          "text": "把冯克善纳入关联阅读，不是为了凑齐三位首领，而是让用户看到京师突袭之外还有山东网络和大量无名参与者。清廷档案天然围绕捕获、供词和封赏组织，地方社会留下的声音更碎。可靠的历史内容应同时说明知道什么、不知道什么以及为何不知道。资料出处页同时保留官书与现代研究入口，让读者能够核对名字在哪一层材料中出现。没有一手自述时，明确留白比用通行故事补齐生平更接近史学规范。",
+          "sources": [
+            "v161_qsl283",
+            "v161_dpm_lin"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_archive_asymmetry",
+            "v161_text_destruction"
+          ],
+          "people": [
+            "q161_linqing",
+            "q161_liwencheng"
+          ]
+        }
+      ],
+      "sources": [
+        "v161_dpm_lin",
+        "v161_qsl274",
+        "v161_qsl277",
+        "v161_qsl279",
+        "v161_qsl275",
+        "v161_qsl283"
+      ]
+    },
+    {
+      "person": "q161_nayancheng",
+      "title": "那彦成：滑县胜利与反复问责",
+      "dek": "他不是一路升迁的功臣；军令、等待、围城和后来的财务处分共同构成人物。",
+      "sections": [
+        {
+          "id": "v161_nayancheng1",
+          "title": "阿桂之孙也要在成败间升降",
+          "text": "那彦成出身显赫，早入军机，却在白莲教战争中因判断和指挥受责，之后又多次起用、降职。这样的履历说明清代中枢并非只按门第自动升迁，也说明皇帝对前线官员的评价会随军报与时限急剧变化。列传的升降表需要放回具体任务。",
+          "sources": [
+            "v161_qsg367"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_bureaucratic_accountability"
+          ],
+          "people": [
+            "q_agui",
+            "q160_eledengbao"
+          ]
+        },
+        {
+          "id": "v161_nayancheng2",
+          "title": "1813年再次受命督师",
+          "text": "宫门遇袭和滑县起事后，嘉庆授那彦成钦差大臣，调京兵并统率杨遇春等。皇帝催战甚急，那彦成担心队伍进入太行山区，先会师再推进。等待可能是谨慎，也可能让朝廷感到迁延；不能只按事后胜利判定当时每个选择。",
+          "sources": [
+            "v161_qsg367",
+            "v161_qsl277"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_command_pressure",
+            "v161_regional_coordination"
+          ],
+          "people": [
+            "q161_yangyuchun",
+            "q161_liwencheng"
+          ]
+        },
+        {
+          "id": "v161_nayancheng3",
+          "title": "交通节点决定战役节奏",
+          "text": "道口、桃源集、滑县和辉县构成相互支援的空间。官军需要断桥、控制渡口、运送炮药并防止队伍入山；起事者也依赖道路与村庄补给。那彦成的统帅作用在调兵和合围，不应被缩成一场个人决斗。",
+          "sources": [
+            "v161_qsg367",
+            "v161_qsg347"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_daokou_battle",
+            "v161_sizhai_end",
+            "v161_local_supply"
+          ],
+          "people": [
+            "q161_yangyuchun"
+          ]
+        },
+        {
+          "id": "v161_nayancheng4",
+          "title": "地道攻城不是抽象捷报",
+          "text": "滑县久围后以地道火药破城，官书紧接俘获数字和封爵。工程需要矿掘、火药、士兵与地方劳力，也意味着城内外居民承受爆炸、断粮与清查。官军记录能确认战法和奖惩，却不足以精确重建每一名死伤者身份。",
+          "sources": [
+            "v161_qsg367",
+            "v161_qsg347"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_huaxian_siege",
+            "v161_archive_asymmetry"
+          ],
+          "people": [
+            "q161_liwencheng"
+          ]
+        },
+        {
+          "id": "v161_nayancheng5",
+          "title": "军功没有终止追责",
+          "text": "那彦成因滑县战功获爵，后来又因任陕甘时挪用赈银案被褫职论罪，缴赔后改处。个人既可能在一事中有功，也可能在另一事中承担责任。把他写成单一能臣或单一失败者，都无法说明帝国如何依赖、奖赏又惩戒同一批巡回大员。他的履历还提示一个制度现象：清廷遇到跨省危机时，反复调用熟悉军政的少数大员。这样能迅速集中权力，也会使地方常设官员更依赖钦差到来后再作决断。",
+          "sources": [
+            "v161_qsg367"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_bureaucratic_accountability"
+          ],
+          "people": [
+            "q161_tuojin"
+          ]
+        }
+      ],
+      "sources": [
+        "v161_qsg367",
+        "v161_qsl277",
+        "v161_qsg347"
+      ]
+    },
+    {
+      "person": "q161_yangyuchun",
+      "title": "杨遇春：勇战叙事背后的围城系统",
+      "dek": "个人胆略确实存在，但渡口、地道、军需和部队训练才让战役成为可能。",
+      "sections": [
+        {
+          "id": "v161_yangyuchun1",
+          "title": "从武举到连续战争",
+          "text": "杨遇春由武举入营，先后参加石峰堡、台湾、廓尔喀、苗疆和白莲教战争。长期前线经历使他熟悉山地追击、侦察与降众管理，也意味着其升迁建立在持续战争之上。列传把战功集中于个人，普通士卒和供给者通常只作为背景出现。",
+          "sources": [
+            "v161_qsg347"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_military_continuity"
+          ],
+          "people": [
+            "q159_fukangan",
+            "q160_eledengbao"
+          ]
+        },
+        {
+          "id": "v161_yangyuchun2",
+          "title": "道口战斗依赖侦察与渡河",
+          "text": "1813年杨遇春任参赞，率部侦察道口并攻击渡河队伍，随后控制桥船。勇敢行动影响士气，但道路、河流和船只同样决定双方能否集结。把战役画成将领单骑取胜，会遗漏随行亲兵、后续大军和地方运输。",
+          "sources": [
+            "v161_qsg347",
+            "v161_qsg367"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_daokou_battle",
+            "v161_local_supply"
+          ],
+          "people": [
+            "q161_nayancheng"
+          ]
+        },
+        {
+          "id": "v161_yangyuchun3",
+          "title": "司寨追击与死亡证据",
+          "text": "官军追至辉县司寨后，杨遇春等参与攻击；实录把李文成死亡与将领封赏连续书写。这有助于核对军队行动，却也提醒读者，战果报告服务于奖惩。人物长读保留‘据军报’边界，不把死亡场景渲染成可直接目击的戏剧。",
+          "sources": [
+            "v161_qsl279",
+            "v161_qsg347"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_sizhai_end",
+            "v161_archive_asymmetry"
+          ],
+          "people": [
+            "q161_liwencheng"
+          ]
+        },
+        {
+          "id": "v161_yangyuchun4",
+          "title": "滑县地道连接技术与暴力",
+          "text": "围攻滑县时，官军以地道和火药破城。战法需要工匠、掘进、测距与掩护，也把爆破风险施加于城内人口。杨遇春的军事能力应在组织和训练中评价，而非只用‘福将’神化；无伤传奇更是列传塑造忠勇形象的一部分。",
+          "sources": [
+            "v161_qsg347",
+            "v161_qsg367"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_huaxian_siege",
+            "v161_local_supply"
+          ],
+          "people": [
+            "q161_nayancheng"
+          ]
+        },
+        {
+          "id": "v161_yangyuchun5",
+          "title": "嘉庆经验延续到道光",
+          "text": "嘉庆战事后，杨遇春继续镇守陕甘，并在道光朝参加张格尔战争。前一时期形成的将领网络、绿营训练和跨省调兵继续发挥作用，也暴露军队依赖少数经验将领的问题。人物跨越两朝，能够帮助用户理解制度延续，而不是把1820年当成完全断裂。绿营战斗力并非一条向下直线，训练良好的部队仍能完成复杂行动；问题在于这种能力分布不均，并依赖具体将领和长期磨合。这个判断比笼统的‘军队腐败’更接近材料。",
+          "sources": [
+            "v161_qsg347"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_military_continuity",
+            "v161_succession_1820"
+          ],
+          "people": [
+            "q_daoguang"
+          ]
+        }
+      ],
+      "sources": [
+        "v161_qsg347",
+        "v161_qsg367",
+        "v161_qsl279"
+      ]
+    },
+    {
+      "person": "q161_jiangyouxian",
+      "title": "蒋攸铦：禁烟以前先要看见贸易制度",
+      "dek": "查船、洋商担保、地方官奖惩和澳门雇工限制，构成一套远比一道禁令复杂的治理。",
+      "sections": [
+        {
+          "id": "v161_jiangyouxian1",
+          "title": "由言官走向地方治理",
+          "text": "蒋攸铦早年以敢言受知，后历任江西、江苏、浙江和两广。他处理治安时重视官员能力与基层执行，1813年又把意外之变归因于吏治委靡，而不是只要求加重刑罚。这种判断仍处于君主官僚框架，却看到制度惰性。",
+          "sources": [
+            "v161_qsg366"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_bureaucratic_accountability"
+          ],
+          "people": [
+            "q_jiaqing"
+          ]
+        },
+        {
+          "id": "v161_jiangyouxian2",
+          "title": "广州贸易由许多中介维持",
+          "text": "西洋船、澳门居留者、粤海关、洋商、通事和地方官共同构成贸易链。蒋攸铦限制内地人为洋人服役、洋行建筑与商欠，试图把接触纳入可控边界。这既是安全政策，也改变雇工与商人的谋生空间，不能只写成抽象‘闭关’。",
+          "sources": [
+            "v161_qsg366",
+            "v161_haiguo77"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_trade_limits",
+            "v161_intermediaries"
+          ],
+          "people": [
+            "q161_amherst"
+          ]
+        },
+        {
+          "id": "v161_jiangyouxian3",
+          "title": "1815年禁烟章程设计了激励",
+          "text": "蒋攸铦与董教增建议洋船到澳先报货查验，并对查获官员与民人设奖，对得规放纵者治罪，同时减轻普通失察处分，以免地方官因害怕追责而不敢查。章程显示政策制定者理解执行激励，却不能自动解决隐蔽走私与官商利益。",
+          "sources": [
+            "v161_opium_memorial",
+            "v161_opium_edict"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_opium_rules",
+            "v161_opium_incentives"
+          ],
+          "people": [
+            "q_jiaqing"
+          ]
+        },
+        {
+          "id": "v161_jiangyouxian4",
+          "title": "禁烟与外交交涉互相缠绕",
+          "text": "鸦片来自海外船运，也依赖内地买卖与转运。清廷上谕用道德和法律语言说明危害，英国使团则希望讨论贸易与关系。两者不能简单拼成同一场谈判，但都显示广州制度已承受更大压力。禁令失败不等于制定者完全无知，执行困难也不等于走私没有责任主体。",
+          "sources": [
+            "v161_opium_edict",
+            "v161_british_letter",
+            "v161_anu_amherst"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_opium_trade_structure",
+            "v161_amherst_breakdown"
+          ],
+          "people": [
+            "q161_amherst"
+          ]
+        },
+        {
+          "id": "v161_jiangyouxian5",
+          "title": "一位督抚不能独自改变结构",
+          "text": "蒋攸铦后来继续任四川、直隶和两江总督，处理水灾、河工与海运争论。他的任事能力值得具体评价，但鸦片贸易、洋商债务和跨国力量不可能靠一次查验根治。人物的意义在于让政策设计、地方执行和全球贸易进入同一阅读路径，而不是制造先知式能臣。广州并不是一道封闭海门，而是规则密集、利益交错的接触区。正因人员和货物流动持续存在，清廷才不断追加查验、担保和惩奖，而每项规则又会产生新的规避方法。",
+          "sources": [
+            "v161_qsg366",
+            "v161_anu_amherst"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_trade_limits",
+            "v161_river_transport"
+          ],
+          "people": [
+            "q161_bailing"
+          ]
+        }
+      ],
+      "sources": [
+        "v161_qsg366",
+        "v161_haiguo77",
+        "v161_opium_memorial",
+        "v161_opium_edict",
+        "v161_british_letter",
+        "v161_anu_amherst"
+      ]
+    },
+    {
+      "person": "q161_bailing",
+      "title": "百龄：海上招抚之后又面对黄淮运河",
+      "dek": "地方治理的成败不在一个标签里：司法、海疆、河工与官场问责先后落到同一人身上。",
+      "sections": [
+        {
+          "id": "v161_bailing1",
+          "title": "查冤狱也是国家能力",
+          "text": "百龄任广西巡抚时查办知县诬拟死罪案，任广东又处理胥役私设班馆、羁留无辜。列传以此塑造能吏形象，仍需要注意案件主要留下上级处分结果，受害人生活恢复与地方权力网络记录有限。",
+          "sources": [
+            "v161_qsg343"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_bureaucratic_accountability"
+          ],
+          "people": [
+            "q_jiaqing"
+          ]
+        },
+        {
+          "id": "v161_bailing2",
+          "title": "华南海疆不只有剿与抚二选一",
+          "text": "面对张保等海上集团，百龄撤商船、改盐运、断粮水接济并整顿水师，随后推动招抚。官方称短期内解散大量队伍，数字需要保留来源边界。投降者并非自动成为顺民，沿海贸易和渔业也会承受封锁成本。",
+          "sources": [
+            "v161_qsg343"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_pirate_amnesty",
+            "v160_coastal_society"
+          ],
+          "people": [
+            "q160_caiqian",
+            "q160_lichanggeng"
+          ]
+        },
+        {
+          "id": "v161_bailing3",
+          "title": "招抚需要处理信任与惩罚",
+          "text": "百龄亲赴虎门接受张保投降，同时区别首领、从众与继续抵抗者。此举减少长期海战，却也由官府决定谁可免死、谁被处置。招抚不是纯粹宽仁，也不是纯粹交易，而是军事压力、地方疲惫和生路安排共同作用的结果。",
+          "sources": [
+            "v161_qsg343"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_pirate_amnesty"
+          ],
+          "people": [
+            "q160_wangdelu"
+          ]
+        },
+        {
+          "id": "v161_bailing4",
+          "title": "河工方案是在风险之间选择",
+          "text": "任两江总督后，百龄勘察黄河入海与运河淤塞，反对改走马港，主张疏浚正河、筑堤和修坝。工程一度使漕船较早渡黄，但河势和洪湖水位仍不断变化。阶段成功不能写成驯服黄河，工程也消耗民夫、物料与财政。",
+          "sources": [
+            "v161_qsg343"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_river_transport",
+            "v161_local_supply"
+          ],
+          "people": [
+            "q161_tuojin"
+          ]
+        },
+        {
+          "id": "v161_bailing5",
+          "title": "弹劾提醒我们不要只读政绩表",
+          "text": "百龄仕途中多次被指非刑、勒供和工程处置失当，调查结果又受皇帝信任与官员关系影响。并列政绩与争议，并不是求平均，而是承认地方强力治理可能同时提高效率和扩大伤害。官修传留下可核线索，却不能替读者预先裁判。他从海疆转到河工，也显示督抚并非现代专业官员：同一套行政能力要在司法、军事、财政和工程间切换。经验能够迁移，专业知识不足和权力过大也可能同时出现。比较不同任所的奏案，还能检验同一种强力作风在不同制度环境中为何产生不同结果。",
+          "sources": [
+            "v161_qsg343"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_bureaucratic_accountability",
+            "v161_river_risk"
+          ],
+          "people": [
+            "q161_tuojin"
+          ]
+        }
+      ],
+      "sources": [
+        "v161_qsg343"
+      ]
+    },
+    {
+      "person": "q161_caozhenyong",
+      "title": "曹振镛：朝代更替发生在文书与程序中",
+      "dek": "他最值得读的不是一句性格评语，而是嘉庆末中枢如何把人事、工程和继位写成可执行文件。",
+      "sections": [
+        {
+          "id": "v161_caozhenyong1",
+          "title": "翰林仕途进入部院中枢",
+          "text": "曹振镛出身官宦家庭，经翰林、通政使、侍郎和尚书逐步进入中枢。嘉庆十八年任协办大学士，正值宫门遇袭与地方战事。文官并非置身危机之外，他们负责诏令、任免、审核与工程行政，国家反应要通过文书链才能落实。",
+          "sources": [
+            "v161_qsg363"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_bureaucratic_accountability"
+          ],
+          "people": [
+            "q_jiaqing"
+          ]
+        },
+        {
+          "id": "v161_caozhenyong2",
+          "title": "守程序既能防错也可能僵化",
+          "text": "列传强调曹振镛谨慎守文法，后世又把这种风格简化为少说少错。程序可以限制随意决断、保留责任痕迹，也可能让官员回避实质问题。评价应落到具体案件：哪些核对避免错误，哪些层层签转拖延处置，而不是把个人性格当作王朝衰败原因。",
+          "sources": [
+            "v161_qsg363"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_document_government"
+          ],
+          "people": [
+            "q161_tuojin"
+          ]
+        },
+        {
+          "id": "v161_caozhenyong3",
+          "title": "1820年遗诏出现地点错误",
+          "text": "嘉庆猝逝后，中枢草拟遗诏，误称乾隆生于避暑山庄。编修刘凤诰指出后，曹振镛入奏纠正，相关军机大臣受责。这个细节显示权威文本也会在赶办中出错，校勘不是无关紧要的文事，而直接关系皇统叙述。",
+          "sources": [
+            "v161_qsg363",
+            "v161_dpm_succession"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_edict_error",
+            "v161_succession_1820"
+          ],
+          "people": [
+            "q_daoguang",
+            "q161_tuojin"
+          ]
+        },
+        {
+          "id": "v161_caozhenyong4",
+          "title": "嘉庆旧臣成为道光新枢臣",
+          "text": "道光即位后，曹振镛进入军机，延续前朝行政经验。朝代更替没有让部院人员和档案流程全部重启；政策连续性与新皇帝用人同时存在。把嘉庆写成纯粹过渡，会看不见这批大臣如何把前朝问题带入下一时期。",
+          "sources": [
+            "v161_qsg363"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_succession_1820"
+          ],
+          "people": [
+            "q_daoguang"
+          ]
+        },
+        {
+          "id": "v161_caozhenyong5",
+          "title": "标签化会遮住制度问题",
+          "text": "曹振镛常被用作晚清官僚谨小慎微的象征，但一句轶语难以证明整段政治文化。更可靠的方法是把人物放回公文、核稿、召对和处分记录，区分同时代材料与后世评语。用户由此能理解：制度保守不只是某个人胆小，也与激励和责任结构有关。遗诏纠误还说明，政治权威并不会让错误自行消失，反而需要低阶编修敢于指出、大学士愿意转奏。把这一链条写清，比重复官场轶闻更能解释制度怎样自我修正。",
+          "sources": [
+            "v161_qsg363"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_document_government",
+            "v161_archive_asymmetry"
+          ],
+          "people": [
+            "q161_jiangyouxian"
+          ]
+        }
+      ],
+      "sources": [
+        "v161_qsg363",
+        "v161_dpm_succession"
+      ]
+    },
+    {
+      "person": "q161_tuojin",
+      "title": "托津：被不断派出去的军机大臣",
+      "dek": "查案、军需、河工、禁城善后和继位启匣，显示中枢如何依靠少数巡回大员。",
+      "sections": [
+        {
+          "id": "v161_tuojin1",
+          "title": "军需差使让他认识制度缝隙",
+          "text": "托津早年办理四川军饷，因未能清楚陈述饷数与军情受责，后来又不断奉命查办盐政、钱局、河工和官员案件。他的升降说明钦差不仅代表皇权，也必须把地方复杂信息转换成可供裁决的报告。",
+          "sources": [
+            "v161_qsg341"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_document_government",
+            "v161_bureaucratic_accountability"
+          ],
+          "people": [
+            "q160_lebao"
+          ]
+        },
+        {
+          "id": "v161_tuojin2",
+          "title": "巡回查办弥补常设机构不足",
+          "text": "嘉庆频繁派托津跨省审案，说明皇帝信任其朴诚，也说明地方层级的报告常需中央特使复核。钦差能够打破保护网络，却可能造成地方等候上裁，且调查质量仍依赖随员、口供与账册。个人勤勉不等于制度信息已经可靠。",
+          "sources": [
+            "v161_qsg341"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_document_government",
+            "v161_bureaucratic_accountability"
+          ],
+          "people": [
+            "q161_jiangyouxian",
+            "q161_bailing"
+          ]
+        },
+        {
+          "id": "v161_tuojin3",
+          "title": "1813年先返京再赴前线",
+          "text": "天理教徒进入禁城后，托津奉命回京察治；林清被捕后，他又被派往直隶、河南方向督率军务。危机把宫廷安全、刑案审理和区域战争压到同一名大臣身上。频繁调动提高应急性，也容易让责任在临时差使之间移动。",
+          "sources": [
+            "v161_qsg341",
+            "v161_qsl275"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_palace_security",
+            "v161_command_pressure"
+          ],
+          "people": [
+            "q161_linqing",
+            "q161_nayancheng"
+          ]
+        },
+        {
+          "id": "v161_tuojin4",
+          "title": "1820年启匣属于集体程序",
+          "text": "嘉庆在热河猝逝后，托津与戴均元等参与开启密匣、奉旻宁即位。继位并非一位大臣私自决定，而由皇族、军机、近侍和遗诏程序共同完成。不同记载对密诏寻找过程有差异，页面不采用雷击猝死等未经可靠支持的戏剧说法。",
+          "sources": [
+            "v161_qsg341",
+            "v161_dpm_succession",
+            "v161_dpm_secret_box"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_succession_1820",
+            "v161_secret_box"
+          ],
+          "people": [
+            "q_daoguang"
+          ]
+        },
+        {
+          "id": "v161_tuojin5",
+          "title": "遗诏错误又带来处分",
+          "text": "继位后遗诏出现乾隆出生地点错误，托津等被罢军机、降级。即使核心程序成功，文本错误仍可能成为政治责任。人物长读由此连接两种国家能力：快速完成权力交接，以及核对权威叙事；二者都依靠具体人和可追溯文件。托津的价值也不只在最终裁决，而在把地方账册、供词和现场勘察带回中枢。若材料本身失真，钦差身份并不能自动保证结论正确，这也是阅读清代奏案必须保留的边界。",
+          "sources": [
+            "v161_qsg341",
+            "v161_qsg363"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_edict_error",
+            "v161_document_government"
+          ],
+          "people": [
+            "q161_caozhenyong"
+          ]
+        }
+      ],
+      "sources": [
+        "v161_qsg341",
+        "v161_qsl275",
+        "v161_dpm_succession",
+        "v161_dpm_secret_box",
+        "v161_qsg363"
+      ]
+    },
+    {
+      "person": "q161_fujun",
+      "title": "富俊：双城堡不是一幅安居图",
+      "dek": "旗人生计、东北土地、国家投资和农业技能在一次屯垦实验中碰撞。",
+      "sections": [
+        {
+          "id": "v161_fujun1",
+          "title": "旗人生计是人口与制度问题",
+          "text": "到嘉庆时期，部分京旗家庭依赖有限俸饷与差使，人口增长又使可得职位不足。贫困并不取消旗籍特权，两者可以同时存在。朝廷希望维持军事身份，又需要降低长期供养压力，迁屯因此成为一种制度试验，而非简单扶贫。",
+          "sources": [
+            "v161_qsg342",
+            "v161_banner_economy"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_banner_livelihood",
+            "v161_banner_fiscal_cost"
+          ],
+          "people": [
+            "q_jiaqing"
+          ]
+        },
+        {
+          "id": "v161_fujun2",
+          "title": "先让本地旗丁把荒地种熟",
+          "text": "富俊建议先选吉林闲散旗人开垦、配给银粮牛具，待土地熟化后再迁京旗，并让原屯丁保留部分田地。设计承认京旗家庭缺乏农业经验，需要学习和过渡；它也把边地土地当作国家可配置资源，既有使用者的权利不易在官修传中看见。",
+          "sources": [
+            "v161_qsg342"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_banner_livelihood",
+            "v161_land_allocation"
+          ],
+          "people": [
+            "q_songyun"
+          ]
+        },
+        {
+          "id": "v161_fujun3",
+          "title": "房屋、井、种子和牛具都要钱",
+          "text": "双城堡不是把人送到荒地便会自然成功。测量、伐木、建屋、打井、运输、种子、牲畜与管理人员都需财政投入。官方希望多年后以征粮回收部分成本，但家庭能否撑过前几年，取决于天气、劳力和借给是否到位。",
+          "sources": [
+            "v161_qsg342",
+            "v161_banner_economy"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_resettlement_cost",
+            "v161_banner_fiscal_cost"
+          ],
+          "people": [
+            "q161_tuojin"
+          ]
+        },
+        {
+          "id": "v161_fujun4",
+          "title": "早霜和逃亡拆穿整齐规划",
+          "text": "嘉庆二十一年早霜造成歉收，部分屯丁只能糊口，携家者住房不足，也有人逃亡。富俊因而缓征、添棚并续借种子。政策调整说明地方官确实回应困难，也说明官修规划与现实之间有落差；‘安土乐业’只能描述部分阶段。",
+          "sources": [
+            "v161_qsg342"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_frost_escape"
+          ],
+          "people": [
+            "q_jiaqing"
+          ]
+        },
+        {
+          "id": "v161_fujun5",
+          "title": "长期结果不能只用垦地数字衡量",
+          "text": "双城堡后来继续扩展，并在道光朝计划迁入更多京旗。垦熟面积和户数能够观察规模，却无法单独回答谁失去使用权、雇工关系如何、家庭是否愿意留下。把富俊放进社会史，是为了同时看见国家设计、执行学习与边疆人口重组。屯垦还改变了家庭内部劳动：男性、女性、老人和儿童承担的生产与照料不同，官书却多以‘户’为单位合并呈现。户数增长不等于每个成员都获得同等安全感。",
+          "sources": [
+            "v161_qsg342",
+            "v161_banner_economy"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_land_allocation"
+          ],
+          "people": [
+            "q_daoguang",
+            "q_songyun"
+          ]
+        }
+      ],
+      "sources": [
+        "v161_qsg342",
+        "v161_banner_economy"
+      ]
+    },
+    {
+      "person": "q161_chende",
+      "title": "陈德：一次行刺为何没有唯一解释",
+      "dek": "1803年的宫门暴力很快被审结，留下的却是门禁、刑讯与家庭连坐问题。",
+      "sections": [
+        {
+          "id": "v161_chende1",
+          "title": "顺贞门前的短促事件",
+          "text": "1803年嘉庆帝入顺贞门时，陈德持刀冲出，被定亲王绵恩等擒获，皇帝未受伤。事件持续很短，却暴露随驾侍卫大量旁观和宫门防卫松懈。官书详细记录奖惩，陈德此前生活只通过审讯零散出现。",
+          "sources": [
+            "v161_qsl109",
+            "v161_dpm_longzong"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_chende_attack",
+            "v161_palace_security"
+          ],
+          "people": [
+            "q_jiaqing"
+          ]
+        },
+        {
+          "id": "v161_chende2",
+          "title": "口供不是透明的内心窗口",
+          "text": "军机、刑部与九卿多次会审，官员希望查出主使和党羽。嘉庆随后称不必一味刑求牵连，倾向把事件解释为个人突发。停止扩大罗织值得注意，但并不能使已形成的口供自动成为无压力陈述，动机仍应保持开放。",
+          "sources": [
+            "v161_qsl109"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_interrogation_limits",
+            "v161_bureaucratic_accountability"
+          ],
+          "people": [
+            "q161_tuojin"
+          ]
+        },
+        {
+          "id": "v161_chende3",
+          "title": "不株连的宣言与父子同刑",
+          "text": "嘉庆要求释放无关被牵人员，却又令陈德及其两子伏法。国家一面以避免无辜受累塑造审慎，一面仍按大逆逻辑处罚家庭。两者必须并列，不能只引用皇帝自省文字而忽略实际刑罚。",
+          "sources": [
+            "v161_qsl109"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_collective_punishment",
+            "v161_self_blame_text"
+          ],
+          "people": [
+            "q_jiaqing"
+          ]
+        },
+        {
+          "id": "v161_chende4",
+          "title": "门禁处分没有阻止十年后再破防",
+          "text": "陈德事件后清廷申严门禁、处分失职者，但1813年天理教参与者仍在内应帮助下进入禁城。两次事件性质不同，却共同说明安全制度不能只靠事后惩罚；人员筛选、值班、信息与宫内劳动关系都影响执行。",
+          "sources": [
+            "v161_qsl109",
+            "v161_qsl274",
+            "v161_qsl275"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_palace_security",
+            "v161_eunuch_links"
+          ],
+          "people": [
+            "q161_linqing"
+          ]
+        },
+        {
+          "id": "v161_chende5",
+          "title": "拒绝把贫困写成自动犯罪原因",
+          "text": "陈德常被后世叙述为穷困失业者，这可能来自供词线索，但贫困本身不会自动导致行刺，也不能替个人行动免责。更可靠的页面呈现事件、审讯条件和政策后果，同时明确动机证据不足。历史解释需要因果，不需要替空白编一段心理独白。在资料出处中保留皇帝上谕原文，可以看见朝廷怎样解释事件；人物页则明确这只是权力中心的解释之一。二者分层，能够避免把官方结案直接改写成全知叙事。迅速伏法也压缩了继续取证与公开反驳的可能，这一缺口本身应被看见。",
+          "sources": [
+            "v161_qsl109"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_archive_asymmetry",
+            "v161_collective_punishment"
+          ],
+          "people": [
+            "q161_linqing"
+          ]
+        }
+      ],
+      "sources": [
+        "v161_qsl109",
+        "v161_dpm_longzong",
+        "v161_qsl274",
+        "v161_qsl275"
+      ]
+    },
+    {
+      "person": "q161_amherst",
+      "title": "阿美士德：宫门前失败的两套外交语言",
+      "dek": "叩头争议只是表层；使团目的、翻译、朝贡礼序和英国商业帝国彼此冲突。",
+      "sections": [
+        {
+          "id": "v161_amherst1",
+          "title": "使团带着英国自己的目标出发",
+          "text": "1816年摄政王派阿美士德率第二次使团来华，国书以君主之间通信和商议双方利益的语言陈述任务。英国政府与东印度公司希望改善广州贸易条件，也延续1793年马戛尔尼使团未解决的问题。礼物和国书不是中立物件，而携带英方政治预期。",
+          "sources": [
+            "v161_british_letter",
+            "v161_anu_amherst"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_diplomatic_translation"
+          ],
+          "people": [
+            "q161_jiangyouxian"
+          ]
+        },
+        {
+          "id": "v161_amherst2",
+          "title": "清廷把来使放进朝贡礼序",
+          "text": "清廷将使团称为贡使，按外国使臣入觐礼安排宴赉与跪叩。对嘉庆而言，统一礼仪关系皇权秩序；对阿美士德而言，行礼又涉及是否承认政治从属。双方并非单纯不知道对方要求，而是即使知道也难接受其政治含义。",
+          "sources": [
+            "v161_haiguo77",
+            "v161_anu_amherst"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_ritual_frames",
+            "v161_diplomatic_translation"
+          ],
+          "people": [
+            "q_jiaqing"
+          ]
+        },
+        {
+          "id": "v161_amherst3",
+          "title": "疲惫、时间压力与沟通共同失灵",
+          "text": "使团抵达圆明园附近后，清方要求迅速觐见，英方称正副使疲病且礼仪尚未解决。嘉庆随即遣返。清廷敕书把它写成临门托病失礼，英方记录强调长途赶行和拒绝叩头。两套记录都服务于本国问责，需要并读而非选一套作唯一现场。",
+          "sources": [
+            "v161_haiguo77",
+            "v161_anu_amherst"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_amherst_breakdown",
+            "v161_dual_archives"
+          ],
+          "people": [
+            "q161_caozhenyong"
+          ]
+        },
+        {
+          "id": "v161_amherst4",
+          "title": "未觐见不等于全程没有接触",
+          "text": "清廷仍收取少量地图、画像和铜版画，回赠如意等物，并安排使团南返。沿途旅行让英方成员获得地理、社会和交通观察；这些观察也带有旅行者偏见与帝国竞争眼光。失败的宫廷仪式仍生产了知识和后续政策判断。",
+          "sources": [
+            "v161_haiguo77",
+            "v161_anu_amherst"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_gifts_maps"
+          ],
+          "people": [
+            "q161_jiangyouxian"
+          ]
+        },
+        {
+          "id": "v161_amherst5",
+          "title": "不能倒推成鸦片战争的单一原因",
+          "text": "使团失败加深部分英国人的强硬判断，但1840年战争还涉及鸦片贸易、商业利益、国家武力和其后二十余年政策变化。把战争归咎嘉庆拒见，等于替侵略决策卸责；反过来把清廷写成全然不知世界，也会忽略它对船只、贸易和礼仪的具体判断。使团南返时穿越内地，成员获得大量观察，也把中国社会转译为英国读者可以消费的知识。观察的丰富性与殖民目光可以同时存在，不能因为材料细致便免除立场审查。",
+          "sources": [
+            "v161_anu_amherst",
+            "v161_opium_edict"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v161_dual_archives",
+            "v161_opium_trade_structure"
+          ],
+          "people": [
+            "q_daoguang",
+            "q161_jiangyouxian"
+          ]
+        }
+      ],
+      "sources": [
+        "v161_british_letter",
+        "v161_anu_amherst",
+        "v161_haiguo77",
+        "v161_opium_edict"
       ]
     }
   ],
@@ -219649,6 +222421,328 @@
         "v160_qsg356",
         "v160_dpm_jiaqing"
       ]
+    },
+    {
+      "from": "q_jiaqing",
+      "to": "q161_linqing",
+      "role": "宫门事件中的统治者与组织者",
+      "inverse": "同时代关联",
+      "period": "嘉庆后期及其前后",
+      "note": "从人物长读、事件和资料出处进入具体关系。",
+      "sources": [
+        "v161_qsl274",
+        "v161_dpm_lin"
+      ]
+    },
+    {
+      "from": "q_jiaqing",
+      "to": "q161_liwencheng",
+      "role": "滑县起事与镇压",
+      "inverse": "同时代关联",
+      "period": "嘉庆后期及其前后",
+      "note": "从人物长读、事件和资料出处进入具体关系。",
+      "sources": [
+        "v161_qsl277",
+        "v161_qsl279"
+      ]
+    },
+    {
+      "from": "q161_linqing",
+      "to": "q161_liwencheng",
+      "role": "京师与河南行动的联络者",
+      "inverse": "同时代关联",
+      "period": "嘉庆后期及其前后",
+      "note": "从人物长读、事件和资料出处进入具体关系。",
+      "sources": [
+        "v161_dpm_lin",
+        "v161_qsl279"
+      ]
+    },
+    {
+      "from": "q161_linqing",
+      "to": "q161_fengkeshan",
+      "role": "京畿与山东教门联络",
+      "inverse": "同时代关联",
+      "period": "嘉庆后期及其前后",
+      "note": "从人物长读、事件和资料出处进入具体关系。",
+      "sources": [
+        "v161_dpm_lin"
+      ]
+    },
+    {
+      "from": "q161_nayancheng",
+      "to": "q161_yangyuchun",
+      "role": "钦差与前线参赞",
+      "inverse": "同时代关联",
+      "period": "嘉庆后期及其前后",
+      "note": "从人物长读、事件和资料出处进入具体关系。",
+      "sources": [
+        "v161_qsg367",
+        "v161_qsg347"
+      ]
+    },
+    {
+      "from": "q161_nayancheng",
+      "to": "q161_liwencheng",
+      "role": "围剿与抵抗的对手",
+      "inverse": "同时代关联",
+      "period": "嘉庆后期及其前后",
+      "note": "从人物长读、事件和资料出处进入具体关系。",
+      "sources": [
+        "v161_qsg367",
+        "v161_qsl279"
+      ]
+    },
+    {
+      "from": "q161_yangyuchun",
+      "to": "q161_liwencheng",
+      "role": "道口、司寨与滑县战场对手",
+      "inverse": "同时代关联",
+      "period": "嘉庆后期及其前后",
+      "note": "从人物长读、事件和资料出处进入具体关系。",
+      "sources": [
+        "v161_qsg347",
+        "v161_qsl279"
+      ]
+    },
+    {
+      "from": "q_jiaqing",
+      "to": "q161_jiangyouxian",
+      "role": "整顿吏治与两广政策",
+      "inverse": "同时代关联",
+      "period": "嘉庆后期及其前后",
+      "note": "从人物长读、事件和资料出处进入具体关系。",
+      "sources": [
+        "v161_qsg366",
+        "v161_opium_edict"
+      ]
+    },
+    {
+      "from": "q161_jiangyouxian",
+      "to": "q161_amherst",
+      "role": "广州贸易制度与使团后续",
+      "inverse": "同时代关联",
+      "period": "嘉庆后期及其前后",
+      "note": "从人物长读、事件和资料出处进入具体关系。",
+      "sources": [
+        "v161_qsg366",
+        "v161_anu_amherst"
+      ]
+    },
+    {
+      "from": "q_jiaqing",
+      "to": "q161_amherst",
+      "role": "未能完成觐见的皇帝与使节",
+      "inverse": "同时代关联",
+      "period": "嘉庆后期及其前后",
+      "note": "从人物长读、事件和资料出处进入具体关系。",
+      "sources": [
+        "v161_haiguo77",
+        "v161_anu_amherst"
+      ]
+    },
+    {
+      "from": "q161_bailing",
+      "to": "q161_jiangyouxian",
+      "role": "前后任封疆与海疆河工",
+      "inverse": "同时代关联",
+      "period": "嘉庆后期及其前后",
+      "note": "从人物长读、事件和资料出处进入具体关系。",
+      "sources": [
+        "v161_qsg343",
+        "v161_qsg366"
+      ]
+    },
+    {
+      "from": "q_jiaqing",
+      "to": "q161_tuojin",
+      "role": "多次奉差的军机大臣",
+      "inverse": "同时代关联",
+      "period": "嘉庆后期及其前后",
+      "note": "从人物长读、事件和资料出处进入具体关系。",
+      "sources": [
+        "v161_qsg341"
+      ]
+    },
+    {
+      "from": "q161_tuojin",
+      "to": "q161_caozhenyong",
+      "role": "继位文书与纠误",
+      "inverse": "同时代关联",
+      "period": "嘉庆后期及其前后",
+      "note": "从人物长读、事件和资料出处进入具体关系。",
+      "sources": [
+        "v161_qsg341",
+        "v161_qsg363"
+      ]
+    },
+    {
+      "from": "q_daoguang",
+      "to": "q161_tuojin",
+      "role": "参与确认继位的枢臣",
+      "inverse": "同时代关联",
+      "period": "嘉庆后期及其前后",
+      "note": "从人物长读、事件和资料出处进入具体关系。",
+      "sources": [
+        "v161_qsg341",
+        "v161_dpm_succession"
+      ]
+    },
+    {
+      "from": "q_daoguang",
+      "to": "q161_caozhenyong",
+      "role": "嘉庆旧臣与道光新枢臣",
+      "inverse": "同时代关联",
+      "period": "嘉庆后期及其前后",
+      "note": "从人物长读、事件和资料出处进入具体关系。",
+      "sources": [
+        "v161_qsg363"
+      ]
+    },
+    {
+      "from": "q_jiaqing",
+      "to": "q161_fujun",
+      "role": "双城堡屯垦政策",
+      "inverse": "同时代关联",
+      "period": "嘉庆后期及其前后",
+      "note": "从人物长读、事件和资料出处进入具体关系。",
+      "sources": [
+        "v161_qsg342"
+      ]
+    },
+    {
+      "from": "q_songyun",
+      "to": "q161_fujun",
+      "role": "东北屯垦与旗人生计",
+      "inverse": "同时代关联",
+      "period": "嘉庆后期及其前后",
+      "note": "从人物长读、事件和资料出处进入具体关系。",
+      "sources": [
+        "v161_qsg342"
+      ]
+    },
+    {
+      "from": "q_jiaqing",
+      "to": "q161_chende",
+      "role": "宫门行刺中的皇帝与行刺者",
+      "inverse": "同时代关联",
+      "period": "嘉庆后期及其前后",
+      "note": "从人物长读、事件和资料出处进入具体关系。",
+      "sources": [
+        "v161_qsl109"
+      ]
+    },
+    {
+      "from": "q161_chende",
+      "to": "q161_linqing",
+      "role": "相隔十年的两次宫门安全危机",
+      "inverse": "同时代关联",
+      "period": "嘉庆后期及其前后",
+      "note": "从人物长读、事件和资料出处进入具体关系。",
+      "sources": [
+        "v161_qsl109",
+        "v161_qsl274"
+      ]
+    },
+    {
+      "from": "q161_bailing",
+      "to": "q160_caiqian",
+      "role": "同一海疆危机中的督抚与海上集团",
+      "inverse": "同时代关联",
+      "period": "嘉庆后期及其前后",
+      "note": "从人物长读、事件和资料出处进入具体关系。",
+      "sources": [
+        "v161_qsg343",
+        "v160_qsg350"
+      ]
+    },
+    {
+      "from": "q_jiaqing",
+      "to": "q161_fengkeshan",
+      "role": "山东教门组织者",
+      "inverse": "相关时期的君主",
+      "period": "嘉庆朝",
+      "note": "从人物长读、事件和资料出处进入具体关系。",
+      "sources": [
+        "v161_dpm_lin"
+      ]
+    },
+    {
+      "from": "q_jiaqing",
+      "to": "q161_nayancheng",
+      "role": "滑县战役钦差",
+      "inverse": "相关时期的君主",
+      "period": "嘉庆朝",
+      "note": "从人物长读、事件和资料出处进入具体关系。",
+      "sources": [
+        "v161_qsg367"
+      ]
+    },
+    {
+      "from": "q_jiaqing",
+      "to": "q161_yangyuchun",
+      "role": "滑县战役参赞将领",
+      "inverse": "相关时期的君主",
+      "period": "嘉庆朝",
+      "note": "从人物长读、事件和资料出处进入具体关系。",
+      "sources": [
+        "v161_qsg347"
+      ]
+    },
+    {
+      "from": "q_jiaqing",
+      "to": "q161_bailing",
+      "role": "海疆与河工总督",
+      "inverse": "相关时期的君主",
+      "period": "嘉庆朝",
+      "note": "从人物长读、事件和资料出处进入具体关系。",
+      "sources": [
+        "v161_qsg343"
+      ]
+    },
+    {
+      "from": "q_jiaqing",
+      "to": "q161_caozhenyong",
+      "role": "嘉庆末年大学士",
+      "inverse": "相关时期的君主",
+      "period": "嘉庆朝",
+      "note": "从人物长读、事件和资料出处进入具体关系。",
+      "sources": [
+        "v161_qsg363"
+      ]
+    },
+    {
+      "from": "q_daoguang",
+      "to": "q161_yangyuchun",
+      "role": "道光初年西北宿将",
+      "inverse": "相关时期的君主",
+      "period": "嘉庆末至道光朝",
+      "note": "从人物长读、事件和资料出处进入具体关系。",
+      "sources": [
+        "v161_qsg347"
+      ]
+    },
+    {
+      "from": "q_daoguang",
+      "to": "q161_nayancheng",
+      "role": "道光朝再起用的封疆大臣",
+      "inverse": "相关时期的君主",
+      "period": "嘉庆末至道光朝",
+      "note": "从人物长读、事件和资料出处进入具体关系。",
+      "sources": [
+        "v161_qsg367"
+      ]
+    },
+    {
+      "from": "q_daoguang",
+      "to": "q161_fujun",
+      "role": "延续双城堡屯垦的边臣",
+      "inverse": "相关时期的君主",
+      "period": "嘉庆末至道光朝",
+      "note": "从人物长读、事件和资料出处进入具体关系。",
+      "sources": [
+        "v161_qsg342"
+      ]
     }
   ],
   "dynasties": [
@@ -224280,7 +227374,19 @@
         "q160_lichanggeng",
         "q160_caiqian",
         "q160_wangdelu",
-        "q160_ruanyuan"
+        "q160_ruanyuan",
+        "q161_linqing",
+        "q161_liwencheng",
+        "q161_fengkeshan",
+        "q161_nayancheng",
+        "q161_yangyuchun",
+        "q161_jiangyouxian",
+        "q161_bailing",
+        "q161_caozhenyong",
+        "q161_tuojin",
+        "q161_fujun",
+        "q161_chende",
+        "q161_amherst"
       ],
       "events": [
         "qev_qianlong_abdication_1796",
@@ -224325,7 +227431,51 @@
         "v160_victory_images",
         "v160_war_chronicle",
         "v160_lichanggeng_death",
-        "v160_caiqian_end"
+        "v160_caiqian_end",
+        "v161_chende_attack",
+        "v161_interrogation_limits",
+        "v161_self_blame_text",
+        "v161_palace_security",
+        "v161_bureaucratic_accountability",
+        "v161_amherst_breakdown",
+        "v161_succession_1820",
+        "v161_edict_error",
+        "v161_early_outbreak",
+        "v161_palace_assault",
+        "v161_regional_coordination",
+        "v161_daokou_battle",
+        "v161_sizhai_end",
+        "v161_huaxian_siege",
+        "v161_linqing_capture",
+        "v161_command_pressure",
+        "v161_military_continuity",
+        "v161_river_transport",
+        "v161_river_risk",
+        "v161_opium_rules",
+        "v161_opium_incentives",
+        "v161_opium_trade_structure",
+        "v161_resettlement_cost",
+        "v161_banner_fiscal_cost",
+        "v161_trade_limits",
+        "v161_sect_networks",
+        "v161_eunuch_links",
+        "v161_collective_punishment",
+        "v161_local_supply",
+        "v161_postwar_search",
+        "v161_banner_livelihood",
+        "v161_frost_escape",
+        "v161_intermediaries",
+        "v161_land_allocation",
+        "v161_official_labels",
+        "v161_text_destruction",
+        "v161_archive_asymmetry",
+        "v161_diplomatic_translation",
+        "v161_ritual_frames",
+        "v161_dual_archives",
+        "v161_gifts_maps",
+        "v161_document_government",
+        "v161_secret_box",
+        "v161_pirate_amnesty"
       ],
       "sources": [
         "v5qn_qsg221",
@@ -224353,9 +227503,33 @@
         "v160_qsl218",
         "v160_cambridge_military",
         "v160_cambridge_fiscal",
-        "v160_cambridge_militia"
+        "v160_cambridge_militia",
+        "v161_qsl109",
+        "v161_qsl274",
+        "v161_qsl275",
+        "v161_qsl277",
+        "v161_qsl279",
+        "v161_qsl283",
+        "v161_qsg341",
+        "v161_qsg342",
+        "v161_qsg343",
+        "v161_qsg347",
+        "v161_qsg363",
+        "v161_qsg366",
+        "v161_qsg367",
+        "v161_dpm_lin",
+        "v161_dpm_longzong",
+        "v161_dpm_succession",
+        "v161_dpm_secret_box",
+        "v161_opium_memorial",
+        "v161_opium_edict",
+        "v161_anu_amherst",
+        "v161_british_letter",
+        "v161_haiguo77",
+        "v161_banner_economy",
+        "v161_dpm_inventory_correction"
       ],
-      "note": "1796年受禅、1799年亲政；以战争财政、苗疆善后、川楚陕地方社会和东南海防区分名义在位与实际治理。"
+      "note": "1796年受禅、1799年亲政；连接战争财政、地方社会、海疆贸易、1813年宫门与滑县危机、旗人生计、1816年英使和1820年秘密建储交接，并明确官书标签与证据边界。"
     },
     {
       "person": "q_daoguang",
@@ -224371,7 +227545,12 @@
         "q_weiyuan",
         "q_wangding",
         "q_qishan",
-        "q_songyun"
+        "q_songyun",
+        "q161_yangyuchun",
+        "q161_nayancheng",
+        "q161_caozhenyong",
+        "q161_tuojin",
+        "q161_fujun"
       ],
       "events": [
         "qev_opium_war_1840",
@@ -224382,7 +227561,10 @@
         "v41q_river_audit",
         "v41q_kaifeng_flood",
         "v41q_chuanbi",
-        "v66q_xingke_records"
+        "v66q_xingke_records",
+        "v161_succession_1820",
+        "v161_edict_error",
+        "v161_military_continuity"
       ],
       "sources": [
         "v5qn_qing_annals",
@@ -224398,7 +227580,14 @@
         "v42q_qsg342",
         "v42q_xinjiang_tun",
         "v66_saac_xingke",
-        "v66_fhac_xingke"
+        "v66_fhac_xingke",
+        "v161_qsg341",
+        "v161_qsg342",
+        "v161_qsg347",
+        "v161_qsg363",
+        "v161_qsg367",
+        "v161_dpm_succession",
+        "v161_dpm_secret_box"
       ],
       "note": ""
     },

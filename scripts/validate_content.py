@@ -3187,3 +3187,44 @@ if d['version'] >= 134:
  assert all(item['sectionID'].startswith('q-jiaqing-') for item in narration['entries'] if item['articleID']=='q_jiaqing')
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将',corpus,re.I)
  print('V134 PASS: twelve Jiaqing readings and thirty-three events connect the power handoff, Miao postwar governance, White Lotus mobility and forts, war finance, remonstrance, maritime warfare and evidential scholarship with explicit source-position limits')
+
+if d['version'] >= 135:
+ v161_people=['q161_linqing','q161_liwencheng','q161_fengkeshan','q161_nayancheng','q161_yangyuchun','q161_jiangyouxian','q161_bailing','q161_caozhenyong','q161_tuojin','q161_fujun','q161_chende','q161_amherst']
+ v161_events={item['id'] for item in d['events'] if item['id'].startswith('v161_')}
+ v161_sources={item['id'] for item in d['sources'] if item['id'].startswith('v161_')}
+ v161_objects={item['id'] for item in d['objects'] if item['id'].startswith('v161_')}
+ v161_object_map={item['id']:item for item in d['objects']}
+ assert len(v161_people)==12 and len(v161_events)==45 and len(v161_sources)==24 and len(v161_objects)==5
+ assert set(v161_people)<=people.keys() and set(v161_people)<=articles.keys()
+ assert {events[event_id]['category'] for event_id in v161_events}=={'政治','军事','文化','经济','社会'}
+ for pid in v161_people:
+  reading=articles[pid]; ss=reading['sections']
+  assert len(ss)==5 and all(item['sources'] and item['events'] for item in ss),(pid,'incomplete late-Jiaqing five-layer reading')
+  chars=sum(len(re.findall(r'[\u4e00-\u9fff]',item['text'])) for item in ss)
+  assert chars>=500,(pid,'late-Jiaqing reading remains too short',chars)
+  assert all(set(item['sources'])<=sources.keys() and set(item['events'])<=events.keys() and set(item.get('people',[]))<=people.keys() for item in ss)
+  assert set(reading['sources'])=={source for item in ss for source in item['sources']}
+ assert all(set(events[event_id]['people'])<=people.keys() and set(events[event_id]['sources'])<=sources.keys() for event_id in v161_events)
+ for object_id in v161_objects:
+  item=v161_object_map[object_id]
+  assert item['dynasties']==['qing'] and item['people'] and item['sources']
+  assert set(item['people'])<=people.keys() and set(item['sources'])<=sources.keys()
+ corpus=json.dumps([people[pid] for pid in v161_people]+[articles[pid] for pid in v161_people]+[events[event_id] for event_id in v161_events]+[v161_object_map[object_id] for object_id in v161_objects]+[sources[source_id] for source_id in v161_sources],ensure_ascii=False)
+ for term in ['顺贞门','太监','滑县','地道','道口','司寨','罪己诏','逐船查验','双城堡','早霜','秘密建储匣','阿美士德','跪叩','地图','剿捕临清逆匪纪略']:
+  assert term in corpus,('missing late-Jiaqing evidence term',term)
+ for boundary in ['共同名号不等于统一军队','不能当作独立现场统计','死亡细节来自得胜方报告','不能把所有信徒自动视为武装参与者','不能把任何一份当透明现场','不证明鸦片输入已经被杜绝','不能据一只展示匣认定它就是1820年热河现场所启原件','不能据此制造一件嘉庆朝书物']:
+  assert boundary in corpus,('missing late-Jiaqing evidence boundary',boundary)
+ jiaqing=next(item for item in d['reignContexts'] if item['person']=='q_jiaqing')
+ assert set(v161_people)<=set(jiaqing['people']) and (v161_events-{'v161_memory_correction'})<=set(jiaqing['events']) and v161_sources<=set(jiaqing['sources'])
+ emperor=articles['q_jiaqing']
+ linked_people={person_id for section in emperor['sections'] for person_id in section.get('people',[])}
+ linked_events={event_id for section in emperor['sections'] for event_id in section.get('events',[])}
+ assert set(v161_people)<=linked_people
+ assert {'v161_chende_attack','v161_palace_assault','v161_huaxian_siege','v161_opium_rules','v161_amherst_breakdown','v161_succession_1820'}<=linked_events
+ pairset={(item['from'],item['to']) for item in d['associations']}
+ assert {('q_jiaqing',pid) for pid in v161_people}<=pairset
+ assert {('q161_linqing','q161_liwencheng'),('q161_linqing','q161_fengkeshan'),('q161_nayancheng','q161_yangyuchun'),('q161_jiangyouxian','q161_amherst'),('q161_tuojin','q161_caozhenyong'),('q_songyun','q161_fujun'),('q161_chende','q161_linqing')}<=pairset
+ # Only chapter links changed in the emperor reading, so the published narration remains byte-compatible.
+ assert all(item['sectionID'].startswith('q-jiaqing-') for item in narration['entries'] if item['articleID']=='q_jiaqing')
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将',corpus,re.I)
+ print('V135 PASS: twelve late-Jiaqing readings and forty-five events connect the 1803 gate attack, 1813 palace and Huaxian campaigns, river and banner livelihoods, opium enforcement, the Amherst embassy and the 1820 succession with explicit archival and material-evidence limits')
