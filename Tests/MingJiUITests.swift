@@ -6071,4 +6071,51 @@ final class MingJiUITests: XCTestCase {
         shot("v196-yan-jun-professional-responsibility", responsibility)
     }
 
+    @MainActor func testV197LateThreeKingdomsHistoryAndSourceBoundaries() throws {
+        let historiography = XCUIApplication()
+        historiography.launchArguments = ["--uitesting", "--ui-dynasty", "three_kingdoms"]
+        historiography.launch()
+        XCTAssertTrue(historiography.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        XCTAssertFalse(historiography.staticTexts["从这里继续"].exists)
+        historiography.buttons["globalSearch"].tap()
+        let search = historiography.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("陈寿")
+        let chenShou = historiography.buttons["search_person_tk_chenshou"]
+        XCTAssertTrue(chenShou.waitForExistence(timeout: 5)); chenShou.tap()
+        XCTAssertTrue(historiography.buttons["articleEntry"].waitForExistence(timeout: 5))
+        openArticle(in: historiography)
+        historiography.buttons["articleContents"].tap()
+        let chapter = historiography.buttons["索米与私怨传闻不能用来取消整部史著"]
+        XCTAssertTrue(chapter.exists); chapter.tap()
+        let boundary = historiography.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "缺少可独立核验的同期案卷")).firstMatch
+        XCTAssertTrue(boundary.waitForExistence(timeout: 5))
+        shot("v197-chen-shou-rumor-and-source-boundary", historiography)
+        openChapterSources("tk_chenshou_5", in: historiography)
+        let source = historiography.descendants(matching: .any)["source_v197_jinshu82"]
+        reach(source, in: historiography, attempts: 8)
+        XCTAssertTrue(source.exists)
+        XCTAssertLessThanOrEqual(source.frame.maxY, historiography.tabBars.firstMatch.frame.minY - 16)
+        shot("v197-chen-shou-primary-source-and-safe-ending", historiography)
+        historiography.terminate()
+
+        let nameLayer = XCUIApplication()
+        nameLayer.launchArguments = ["--uitesting", "--ui-dynasty", "three_kingdoms"]
+        nameLayer.launch()
+        XCTAssertTrue(nameLayer.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        nameLayer.buttons["globalSearch"].tap()
+        let nameSearch = nameLayer.searchFields.firstMatch
+        XCTAssertTrue(nameSearch.waitForExistence(timeout: 5)); nameSearch.tap(); nameSearch.typeText("韦昭")
+        let weiZhao = nameLayer.buttons["search_person_tk_weizhao"]
+        XCTAssertTrue(weiZhao.waitForExistence(timeout: 5)); weiZhao.tap()
+        XCTAssertTrue(nameLayer.buttons["articleEntry"].waitForExistence(timeout: 5))
+        openArticle(in: nameLayer)
+        nameLayer.buttons["articleContents"].tap()
+        let nameChapter = nameLayer.buttons["为什么正文叫韦曜，后世多称韦昭"]
+        XCTAssertTrue(nameChapter.exists); nameChapter.tap()
+        let samePerson = nameLayer.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "两种写法指向同一人物")).firstMatch
+        XCTAssertTrue(samePerson.waitForExistence(timeout: 5))
+        XCTAssertFalse(nameLayer.staticTexts["从这里继续"].exists)
+        shot("v197-wei-zhao-name-and-taboo-layer", nameLayer)
+    }
+
 }

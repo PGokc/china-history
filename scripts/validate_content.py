@@ -4487,3 +4487,51 @@ if d['version'] >= 170:
  overview_source=(R/'App/DynastyViews.swift').read_text()
  assert '从这里继续' not in overview_source and 'DynastyContinuationGuide' not in overview_source
  print('V170 PASS: early Three Kingdoms state-builders now connect inherited institutions, border command, food transport, household registration, regional society and evidence limits while dynasty overviews keep only the four fixed tab destinations')
+
+if d['version'] >= 171:
+ late_three_people={'tk_wangling','tk_guanqiujian','tk_wenqin','tk_zhugedan','tk_dongyun','tk_chenzhi','tk_huanghao','tk_luoxian','tk_chenshou','tk_tengyin','tk_sunjun','tk_sunchen','tk_puyangxing','tk_zhangti','tk_weizhao'}
+ late_three_sources={'v197_sgz28','v197_sgz33','v197_sgz39','v197_sgz48','v197_sgz64','v197_sgz65','v197_jinshu57','v197_jinshu82'}
+ assert late_three_people<=people.keys() and late_three_sources<=sources.keys()
+ assert all(people[pid]['dynasty']=='three_kingdoms' for pid in late_three_people)
+ event_map={event['id']:event for event in d['events']}
+ late_three_events={eid for eid in event_map if eid.startswith('v197_')}
+ assert len(late_three_events)==30,(len(late_three_events),'late Three Kingdoms event count')
+ category_counts={category:sum(event_map[eid]['category']==category for eid in late_three_events) for category in ['政治','军事','文化','经济','社会']}
+ assert category_counts=={'政治':6,'军事':6,'文化':6,'经济':6,'社会':6},category_counts
+ target_articles={article['person']:article for article in d['articles'] if article['person'] in late_three_people}
+ assert target_articles.keys()==late_three_people
+ for person_id,article in target_articles.items():
+  chars=len(re.findall(r'[\u4e00-\u9fff]',''.join(section['text'] for section in article['sections'])))
+  assert len(article['sections'])==5 and chars>=520,(person_id,chars)
+  assert len({section['id'] for section in article['sections']})==5
+  assert all(len(re.findall(r'[\u4e00-\u9fff]',section['text']))>=60 for section in article['sections']),(person_id,'thin section')
+  assert set(article['sources'])<=sources.keys() and set(article['sources'])&late_three_sources
+  for section in article['sections']:
+   assert set(section['sources'])<=sources.keys() and set(section['sources'])&late_three_sources
+   assert set(section.get('events',[]))<=event_map.keys() and section.get('events')
+   assert set(section.get('people',[]))<=people.keys() and section.get('people')
+ for event_id in late_three_events:
+  event=event_map[event_id]
+  assert len(re.findall(r'[\u4e00-\u9fff]',event['body']))>=65,(event_id,'body')
+  assert len(re.findall(r'[\u4e00-\u9fff]',event['impact']))>=45,(event_id,'impact')
+  assert set(event['people'])==set(event['peopleRoles']),(event_id,'person-role mismatch')
+  assert set(event['sources'])<=late_three_sources and event['sources'],(event_id,'sources')
+ association_pairs={(item['from'],item['to']) for item in d['associations']}
+ assert {('tk_caofang','tk_wangling'),('tk_simayi','tk_wangling'),('tk_caomao','tk_guanqiujian'),('tk_caomao','tk_wenqin'),('tk_caomao','tk_zhugedan'),('tk_liushan','tk_dongyun'),('tk_liushan','tk_chenzhi'),('tk_liushan','tk_huanghao'),('tk_liushan','tk_luoxian'),('tk_liushan','tk_chenshou'),('tk_sunliang','tk_tengyin'),('tk_sunliang','tk_sunjun'),('tk_sunliang','tk_sunchen'),('tk_sunxiu','tk_sunchen'),('tk_sunxiu','tk_puyangxing'),('tk_sunhao','tk_puyangxing'),('tk_sunhao','tk_zhangti'),('tk_sunhao','tk_weizhao'),('tk_chenshou','tk_weizhao')}<=association_pairs
+ context_map={context['person']:context for context in d['reignContexts']}
+ assert {'tk_wangling','tk_guanqiujian'}<=set(context_map['tk_caofang']['people'])
+ assert {'tk_guanqiujian','tk_wenqin','tk_zhugedan'}<=set(context_map['tk_caomao']['people'])
+ assert {'tk_dongyun','tk_chenzhi','tk_huanghao','tk_luoxian','tk_chenshou'}<=set(context_map['tk_liushan']['people'])
+ assert {'tk_tengyin','tk_sunjun','tk_sunchen'}<=set(context_map['tk_sunliang']['people'])
+ assert {'tk_puyangxing','tk_zhangti','tk_weizhao'}<=set(context_map['tk_sunhao']['people'])
+ for person_id in ['tk_caofang','tk_caomao','tk_liushan','tk_sunxiu','tk_sunhao']:
+  assert {event_map[event_id]['category'] for event_id in context_map[person_id]['events']}=={'政治','军事','文化','经济','社会'}
+ corpus=json.dumps(list(target_articles.values())+[event_map[event_id] for event_id in late_three_events],ensure_ascii=False)
+ for term in ['淮南三叛不应只叫三次叛乱','黄皓控制宫中信息并改变前线预警','经年围城里的疫病不能成为忠烈装饰','六十五篇如何同时保存三国又区分地位','诛诸葛恪是一场皇帝参与的宫廷伏击','韦曜、韦昭与避讳造成的人名层次','吴亡后的降军、官僚与江南户籍进入晋制']:
+  assert term in corpus,('missing late Three Kingdoms term',term)
+ for boundary in ['不能证明扬州军民普遍支持','不是不带立场的调查报告','不能当现场录音','索米传闻缺少旁证','不能拼接成一套无冲突现场','不能视作核准清单']:
+  assert boundary in corpus,('missing late Three Kingdoms evidence boundary',boundary)
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品不用|产品将|产品采用',corpus,re.I)
+ overview_source=(R/'App/DynastyViews.swift').read_text()
+ assert '从这里继续' not in overview_source and 'DynastyContinuationGuide' not in overview_source
+ print('V171 PASS: late Three Kingdoms politics now connect Huainan military regions, Shu information channels, Wu coups, siege society, administrative surrender and the making of historical memory without restoring the duplicate dynasty guide')

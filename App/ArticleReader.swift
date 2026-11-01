@@ -7,19 +7,25 @@ private struct ReadingPositions: PreferenceKey {
 private struct EditorialDisclosure<Content: View>: View {
     let title: String
     let identifier: String?
+    let onExpand: (() -> Void)?
     let content: () -> Content
     @State private var expanded = false
 
-    init(_ title: String, identifier: String? = nil, @ViewBuilder content: @escaping () -> Content) {
+    init(_ title: String, identifier: String? = nil, onExpand: (() -> Void)? = nil, @ViewBuilder content: @escaping () -> Content) {
         self.title = title
         self.identifier = identifier
+        self.onExpand = onExpand
         self.content = content
     }
 
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
             Button {
+                let willExpand = !expanded
                 withAnimation(.easeOut(duration: 0.2)) { expanded.toggle() }
+                if willExpand {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.24) { onExpand?() }
+                }
             } label: {
                 HStack(alignment: .firstTextBaseline) {
                     Text(title)
@@ -39,6 +45,7 @@ private struct EditorialDisclosure<Content: View>: View {
 
             if expanded { content() }
         }
+        .id(identifier)
     }
 }
 struct ArticleReader: View {
@@ -100,7 +107,15 @@ struct ArticleReader: View {
                                     EditorialDisclosure("相关人物与事件", identifier: "chapterLinks_\(section.id)") { chapterLinks(section) }
                                         .font(.subheadline)
                                 }
-                                EditorialDisclosure("本节依据", identifier: "chapterSources_\(section.id)") { SourcesView(store: store, ids: section.sources, compact: true) }
+                                EditorialDisclosure(
+                                    "本节依据",
+                                    identifier: "chapterSources_\(section.id)",
+                                    onExpand: {
+                                        withAnimation(.easeOut(duration: 0.24)) {
+                                            proxy.scrollTo("chapterSources_\(section.id)", anchor: .bottom)
+                                        }
+                                    }
+                                ) { SourcesView(store: store, ids: section.sources, compact: true) }
                                     .font(.caption).foregroundStyle(Theme.muted)
                             }.id(section.id)
                                 .background(GeometryReader { g in Color.clear.preference(key: ReadingPositions.self, value: [section.id: g.frame(in: .named("reading")).minY]) })
