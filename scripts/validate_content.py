@@ -4253,3 +4253,50 @@ if d['version'] >= 165:
  overview_source=(R/'App/DynastyViews.swift').read_text()
  assert '从这里继续' not in overview_source and 'DynastyContinuationGuide' not in overview_source
  print('V165 PASS: Ming and Zhang reigns now connect court education, the Chu case, frontier expeditions, Western Regions choices, relief, scholarship and succession while every dynasty overview keeps only the four fixed tab destinations')
+
+if d['version'] >= 166:
+ middle_han_people={'han_he','han_shang','han_an','han_shun','han_douxian','han_zhengzhong','han_dengzhi','han_suncheng'}
+ middle_han_sources={'v192_houhanshu4','v192_houhanshu5','v192_houhanshu6','v192_houhanshu10a','v192_houhanshu23','v192_houhanshu78','v192_houhanshu87'}
+ rewritten_events={'v49h_he_accession','v49h_he_theme','v49h_shang_accession','v49h_shang_theme','v49h_an_accession','v49h_an_theme','v49h_shun_accession','v49h_shun_theme'}
+ new_events={'v192_he_dou_fall','v192_he_relief','v192_shang_disaster','v192_an_finance','v192_an_relief','v192_an_deng_fall','v192_an_crown_prince','v192_shun_coup','v192_shun_hanyang'}
+ assert middle_han_people<=people.keys() and middle_han_sources<=sources.keys()
+ event_map={event['id']:event for event in d['events']}
+ assert rewritten_events|new_events<=event_map.keys()
+ target_articles={article['person']:article for article in d['articles'] if article['person'] in middle_han_people}
+ assert target_articles.keys()==middle_han_people
+ for person_id,article in target_articles.items():
+  text=''.join(section['text'] for section in article['sections'])
+  chars=len(re.findall(r'[\u4e00-\u9fff]',text))
+  assert len(article['sections'])==5 and chars>=600,(person_id,chars)
+  assert len({section['id'] for section in article['sections']})==5
+  assert all(len(re.findall(r'[\u4e00-\u9fff]',section['text']))>=110 for section in article['sections']),(person_id,'thin section')
+  assert set(article['sources'])<=sources.keys() and set(article['sources'])&middle_han_sources
+  for section in article['sections']:
+   assert set(section['sources'])<=sources.keys()
+   assert set(section.get('events',[]))<=event_map.keys()
+   assert set(section.get('people',[]))<=people.keys()
+ for event_id in rewritten_events|new_events:
+  event=event_map[event_id]
+  assert len(re.findall(r'[\u4e00-\u9fff]',event['body']))>=90,(event_id,'body')
+  assert len(re.findall(r'[\u4e00-\u9fff]',event['impact']))>=70,(event_id,'impact')
+  assert set(event['people'])==set(event['peopleRoles']),(event_id,'person-role mismatch')
+  assert set(event['sources'])<=sources.keys() and set(event['sources'])&middle_han_sources
+ association_pairs={(item['from'],item['to']) for item in d['associations']}
+ assert {('han_he','han_douxian'),('han_he','han_zhengzhong'),('han_shang','han_dengzhi'),('han_an','han_dengzhi'),('han_an','han_suncheng'),('han_shun','han_suncheng')}<=association_pairs
+ context_map={context['person']:context for context in d['reignContexts']}
+ assert {'han_douxian','han_zhengzhong'}<=set(context_map['han_he']['people']) and {'v192_he_dou_fall','v192_he_relief'}<=set(context_map['han_he']['events'])
+ assert 'v49h_shang_theme' not in set(context_map['han_he']['events'])
+ assert {'han_dengzhi','han_suncheng'}<=set(context_map['han_an']['people']) and new_events&set(context_map['han_an']['events'])
+ assert 'han_suncheng' in context_map['han_shun']['people'] and {'v192_shun_coup','v192_shun_hanyang'}<=set(context_map['han_shun']['events'])
+ for person_id in ['han_he','han_an','han_shun']:
+  assert {event_map[event_id]['category'] for event_id in context_map[person_id]['events']}=={'政治','军事','文化','经济','社会'}
+ relevant_associations=[item for item in d['associations'] if item['from'] in {'han_he','han_shang','han_an','han_shun'}]
+ corpus=json.dumps(list(target_articles.values())+[event_map[event_id] for event_id in rewritten_events|new_events]+relevant_associations,ensure_ascii=False)
+ for term in ['燕然纪功背后的多支军队','郑众参与收权不是一次密室传奇','短朝的意义在交接机制，不在政绩排名','羌乱不是一场边将失误','十九名宦官怎样穿过宫门改立皇帝','入钱谷授官爵']:
+  assert term in corpus,('missing middle Han term',term)
+ for boundary in ['把多支盟军、后勤和人群迁徙都归为窦宪一人功劳','不能证明每一郡县足额执行','不能把其中性格描写当作一个固定族群的天性','不能由诏令反推每户实际所得','不能把某一模型当作东汉实物照片','不能视作现代司法确认']:
+  assert boundary in corpus,('missing middle Han evidence boundary',boundary)
+ assert not re.search(r'han_[a-z0-9_]+所代表|关系按同时期职务|本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善',corpus,re.I)
+ overview_source=(R/'App/DynastyViews.swift').read_text()
+ assert '从这里继续' not in overview_source and 'DynastyContinuationGuide' not in overview_source
+ print('V166 PASS: He, Shang, An and Shun reigns now connect regency, frontier war, palace access, disaster relief, fiscal strain, succession and evidence boundaries without restoring the duplicate dynasty guide')

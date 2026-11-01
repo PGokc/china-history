@@ -5842,4 +5842,51 @@ final class MingJiUITests: XCTestCase {
         shot("v191-ban-chao-shanshan-violence-boundary", western)
     }
 
+    @MainActor func testV192MiddleHanRegencyFrontierAndPalaceAccess() throws {
+        let frontier = XCUIApplication()
+        frontier.launchArguments = ["--uitesting", "--ui-dynasty", "han"]
+        frontier.launch()
+        XCTAssertTrue(frontier.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        XCTAssertFalse(frontier.staticTexts["从这里继续"].exists)
+        frontier.buttons["globalSearch"].tap()
+        let search = frontier.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("邓骘")
+        let dengZhi = frontier.buttons["search_person_han_dengzhi"]
+        XCTAssertTrue(dengZhi.waitForExistence(timeout: 5)); dengZhi.tap()
+        XCTAssertTrue(frontier.buttons["articleEntry"].waitForExistence(timeout: 5))
+        openArticle(in: frontier)
+        frontier.buttons["articleContents"].tap()
+        let qiangWar = frontier.buttons["羌战失败不是一名统帅的全部责任"]
+        XCTAssertTrue(qiangWar.exists); qiangWar.tap()
+        let frontierBoundary = frontier.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不能据此把战争写成文明朝廷平定天生好乱的人群")).firstMatch
+        XCTAssertTrue(frontierBoundary.waitForExistence(timeout: 5))
+        shot("v192-deng-zhi-qiang-war-and-source-position", frontier)
+        openChapterSources("han_dengzhi_3", in: frontier)
+        let source = frontier.descendants(matching: .any)["source_v192_houhanshu87"]
+        reach(source, in: frontier, attempts: 8)
+        XCTAssertTrue(source.exists)
+        XCTAssertLessThanOrEqual(source.frame.maxY, frontier.tabBars.firstMatch.frame.minY - 16)
+        shot("v192-deng-zhi-primary-source-and-safe-ending", frontier)
+        frontier.terminate()
+
+        let palace = XCUIApplication()
+        palace.launchArguments = ["--uitesting", "--ui-dynasty", "han"]
+        palace.launch()
+        XCTAssertTrue(palace.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        palace.buttons["globalSearch"].tap()
+        let palaceSearch = palace.searchFields.firstMatch
+        XCTAssertTrue(palaceSearch.waitForExistence(timeout: 5)); palaceSearch.tap(); palaceSearch.typeText("孙程")
+        let sunCheng = palace.buttons["search_person_han_suncheng"]
+        XCTAssertTrue(sunCheng.waitForExistence(timeout: 5)); sunCheng.tap()
+        XCTAssertTrue(palace.buttons["articleEntry"].waitForExistence(timeout: 5))
+        openArticle(in: palace)
+        palace.buttons["articleContents"].tap()
+        let palaceCoup = palace.buttons["十九人依靠的是门禁、刀兵和时间差"]
+        XCTAssertTrue(palaceCoup.exists); palaceCoup.tap()
+        let dialogueBoundary = palace.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不能当作逐字录音")).firstMatch
+        XCTAssertTrue(dialogueBoundary.waitForExistence(timeout: 5))
+        XCTAssertFalse(palace.staticTexts["从这里继续"].exists)
+        shot("v192-sun-cheng-palace-access-and-violence", palace)
+    }
+
 }
