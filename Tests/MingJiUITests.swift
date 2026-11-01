@@ -6024,4 +6024,51 @@ final class MingJiUITests: XCTestCase {
         shot("v195-xun-yu-source-and-safe-ending", reading)
     }
 
+    @MainActor func testV196EarlyThreeKingdomsEvidenceAndOverviewHierarchy() throws {
+        let reading = XCUIApplication()
+        reading.launchArguments = ["--uitesting", "--ui-dynasty", "three_kingdoms"]
+        reading.launch()
+        XCTAssertTrue(reading.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        XCTAssertFalse(reading.staticTexts["从这里继续"].exists)
+        reading.buttons["globalSearch"].tap()
+        let search = reading.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("马谡")
+        let maSu = reading.buttons["search_person_tk_masu"]
+        XCTAssertTrue(maSu.waitForExistence(timeout: 5)); maSu.tap()
+        XCTAssertTrue(reading.buttons["articleEntry"].waitForExistence(timeout: 5))
+        openArticle(in: reading)
+        reading.buttons["articleContents"].tap()
+        let chapter = reading.buttons["死亡方式存在不能抹平的异文"]
+        XCTAssertTrue(chapter.exists); chapter.tap()
+        let evidenceBoundary = reading.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不能当作完整司法记录")).firstMatch
+        XCTAssertTrue(evidenceBoundary.waitForExistence(timeout: 5))
+        shot("v196-ma-su-death-evidence-boundary", reading)
+        openChapterSources("tk_masu_5", in: reading)
+        let source = reading.descendants(matching: .any)["source_v196_sgz39"]
+        reach(source, in: reading, attempts: 8)
+        XCTAssertTrue(source.exists)
+        XCTAssertLessThanOrEqual(source.frame.maxY, reading.tabBars.firstMatch.frame.minY - 16)
+        shot("v196-ma-su-primary-source-and-safe-ending", reading)
+        reading.terminate()
+
+        let responsibility = XCUIApplication()
+        responsibility.launchArguments = ["--uitesting", "--ui-dynasty", "three_kingdoms"]
+        responsibility.launch()
+        XCTAssertTrue(responsibility.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        responsibility.buttons["globalSearch"].tap()
+        let responsibilitySearch = responsibility.searchFields.firstMatch
+        XCTAssertTrue(responsibilitySearch.waitForExistence(timeout: 5)); responsibilitySearch.tap(); responsibilitySearch.typeText("严畯")
+        let yanJun = responsibility.buttons["search_person_tk_yanjun"]
+        XCTAssertTrue(yanJun.waitForExistence(timeout: 5)); yanJun.tap()
+        XCTAssertTrue(responsibility.buttons["articleEntry"].waitForExistence(timeout: 5))
+        openArticle(in: responsibility)
+        responsibility.buttons["articleContents"].tap()
+        let refusal = responsibility.buttons["拒绝接替鲁肃是一种专业责任"]
+        XCTAssertTrue(refusal.exists); refusal.tap()
+        let professionalBoundary = responsibility.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "承认军政专业边界")).firstMatch
+        XCTAssertTrue(professionalBoundary.waitForExistence(timeout: 5))
+        XCTAssertFalse(responsibility.staticTexts["从这里继续"].exists)
+        shot("v196-yan-jun-professional-responsibility", responsibility)
+    }
+
 }

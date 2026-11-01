@@ -4440,3 +4440,50 @@ if d['version'] >= 169:
  assert '从这里继续' not in overview_source and 'DynastyContinuationGuide' not in overview_source
  assert 'DynastyOverviewBlock(title: "朝代总览", text: profile.overview)' in overview_source
  print('V169 PASS: the 195-220 Han-Wei transition now links ten missing people, five balanced event dimensions, material administration, court coercion and evidence limits while every dynasty overview begins directly with its historical overview')
+
+if d['version'] >= 170:
+ early_three_people={'tk_zhongyao','tk_huaxin','tk_wanglang','tk_caozhen','tk_caoxiu','tk_donghe','tk_liyan','tk_maliang','tk_masu','tk_buzhi','tk_yufan','tk_yanjun'}
+ early_three_sources={'v196_sgz2','v196_sgz3','v196_sgz9','v196_sgz13','v196_sgz39','v196_sgz40','v196_sgz52','v196_sgz53','v196_sgz57'}
+ assert early_three_people<=people.keys() and early_three_sources<=sources.keys()
+ assert all(people[pid]['dynasty']=='three_kingdoms' for pid in early_three_people)
+ event_map={event['id']:event for event in d['events']}
+ early_three_events={eid for eid in event_map if eid.startswith('v196_')}
+ assert len(early_three_events)==25,(len(early_three_events),'early Three Kingdoms event count')
+ category_counts={category:sum(event_map[eid]['category']==category for eid in early_three_events) for category in ['政治','军事','文化','经济','社会']}
+ assert category_counts=={'政治':5,'军事':5,'文化':5,'经济':5,'社会':5},category_counts
+ target_articles={article['person']:article for article in d['articles'] if article['person'] in early_three_people}
+ assert target_articles.keys()==early_three_people
+ for person_id,article in target_articles.items():
+  chars=len(re.findall(r'[\u4e00-\u9fff]',''.join(section['text'] for section in article['sections'])))
+  assert len(article['sections'])==5 and chars>=390,(person_id,chars)
+  assert len({section['id'] for section in article['sections']})==5
+  assert all(len(re.findall(r'[\u4e00-\u9fff]',section['text']))>=75 for section in article['sections']),(person_id,'thin section')
+  assert set(article['sources'])<=sources.keys() and set(article['sources'])&early_three_sources
+  for section in article['sections']:
+   assert set(section['sources'])<=sources.keys() and set(section['sources'])&early_three_sources
+   assert set(section.get('events',[]))<=event_map.keys()
+   assert set(section.get('people',[]))<=people.keys()
+ for event_id in early_three_events:
+  event=event_map[event_id]
+  assert len(re.findall(r'[\u4e00-\u9fff]',event['body']))>=75,(event_id,'body')
+  assert len(re.findall(r'[\u4e00-\u9fff]',event['impact']))>=55,(event_id,'impact')
+  assert set(event['people'])==set(event['peopleRoles']),(event_id,'person-role mismatch')
+  assert set(event['sources'])<=early_three_sources and event['sources'],(event_id,'sources')
+ association_pairs={(item['from'],item['to']) for item in d['associations']}
+ assert {('tk_caopi','tk_zhongyao'),('tk_caopi','tk_huaxin'),('tk_caopi','tk_wanglang'),('tk_caorui','tk_caozhen'),('tk_caorui','tk_caoxiu'),('tk_liubei','tk_donghe'),('tk_liubei','tk_liyan'),('tk_liubei','tk_maliang'),('tk_liubei','tk_masu'),('tk_liushan','tk_liyan'),('tk_liushan','tk_masu'),('tk_zhugeliang','tk_masu'),('tk_sunquan','tk_buzhi'),('tk_sunquan','tk_yufan'),('tk_sunquan','tk_yanjun')}<=association_pairs
+ context_map={context['person']:context for context in d['reignContexts']}
+ assert {'tk_zhongyao','tk_huaxin','tk_wanglang','tk_caozhen','tk_caoxiu'}<=set(context_map['tk_caopi']['people'])
+ assert {'tk_liyan','tk_masu'}<=set(context_map['tk_liushan']['people'])
+ assert {'tk_buzhi','tk_yufan','tk_yanjun'}<=set(context_map['tk_sunquan']['people'])
+ for person_id in ['tk_caopi','tk_caorui','tk_liushan','tk_sunquan']:
+  assert {event_map[event_id]['category'] for event_id in context_map[person_id]['events']}=={'政治','军事','文化','经济','社会'}
+ corpus=json.dumps(list(target_articles.values())+[event_map[event_id] for event_id in early_three_events],ensure_ascii=False)
+ for term in ['三公不再等于独立宰相','收捕伏皇后不能被清廉形象抹去','诸葛亮阵前骂死王朗不见于《三国志》','230年伐蜀因霖雨撤回','街亭为何是交通节点而非孤山传奇','拒绝接替鲁肃是一种专业责任','平定叙事之外的交州社会']:
+  assert term in corpus,('missing early Three Kingdoms term',term)
+ for boundary in ['把每件题名作品都判为真迹则超出证据','不能当作完整司法记录','不能直接当作现代伤亡统计','不能替代每场战役评估','不能虚构谈判细节']:
+  assert boundary in corpus,('missing early Three Kingdoms evidence boundary',boundary)
+ assert 'v196_liyan_jiangzhou' not in json.dumps(d['reignContexts'],ensure_ascii=False)
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品不用|产品将|产品采用',corpus,re.I)
+ overview_source=(R/'App/DynastyViews.swift').read_text()
+ assert '从这里继续' not in overview_source and 'DynastyContinuationGuide' not in overview_source
+ print('V170 PASS: early Three Kingdoms state-builders now connect inherited institutions, border command, food transport, household registration, regional society and evidence limits while dynasty overviews keep only the four fixed tab destinations')
