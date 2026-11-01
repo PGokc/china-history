@@ -5635,4 +5635,46 @@ final class MingJiUITests: XCTestCase {
         shot("v186-empress-wei-record-silence", court)
     }
 
+    @MainActor func testV187ZhaoXuanDepositionTuntianAndHaihunEvidence() throws {
+        let person = XCUIApplication()
+        person.launchArguments = ["--uitesting", "--ui-dynasty", "han"]
+        person.launch()
+        XCTAssertTrue(person.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        person.buttons["globalSearch"].tap()
+        let search = person.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("刘贺")
+        let liuHe = person.buttons["search_person_han_liuhe"]
+        XCTAssertTrue(liuHe.waitForExistence(timeout: 5)); liuHe.tap()
+        XCTAssertTrue(person.buttons["articleEntry"].waitForExistence(timeout: 5))
+        openArticle(in: person)
+        person.buttons["articleContents"].tap()
+        let deposition = person.buttons["二十七日记录来自废立文书"]
+        XCTAssertTrue(deposition.exists); deposition.tap()
+        let documentBoundary = person.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不是每天由中立观察者形成的流水账")).firstMatch
+        XCTAssertTrue(documentBoundary.waitForExistence(timeout: 5))
+        shot("v187-liu-he-deposition-document-boundary", person)
+        reach(person.buttons["资料与出处"], in: person, attempts: 18)
+        XCTAssertTrue(person.buttons["资料与出处"].isHittable); person.buttons["资料与出处"].tap()
+        let source = person.descendants(matching: .any)["source_v187_hanshu63"]
+        reach(source, in: person, attempts: 8)
+        XCTAssertTrue(source.exists)
+        XCTAssertLessThanOrEqual(source.frame.maxY, person.tabBars.firstMatch.frame.minY - 16)
+        shot("v187-liu-he-sources-and-safe-ending", person)
+        person.terminate()
+
+        let heritage = XCUIApplication()
+        heritage.launchArguments = ["--uitesting", "--ui-dynasty", "han"]
+        heritage.launch()
+        XCTAssertTrue(heritage.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        heritage.buttons["globalSearch"].tap()
+        let heritageSearch = heritage.searchFields.firstMatch
+        XCTAssertTrue(heritageSearch.waitForExistence(timeout: 5)); heritageSearch.tap(); heritageSearch.typeText("墓园")
+        let object = heritage.buttons["search_object_v187_haihun_cemetery"]
+        XCTAssertTrue(object.waitForExistence(timeout: 5)); object.tap()
+        let evidence = heritage.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "墓葬证据与《汉书》废立叙事回答的是不同问题")).firstMatch
+        reach(evidence, in: heritage, attempts: 10)
+        XCTAssertTrue(evidence.exists)
+        shot("v187-haihun-archaeology-and-text-boundary", heritage)
+    }
+
 }

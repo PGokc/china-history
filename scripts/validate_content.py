@@ -4023,3 +4023,57 @@ if d['version'] >= 160:
  assert len({section['text'] for article in late_wu_articles.values() for section in article['sections']})==20
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品不用|产品将|产品采用',corpus,re.I)
  print('V160 PASS: Li Guang, Empress Wei, Gongsun Hong and Su Wu now connect military accountability, succession, recruitment, diplomacy, frontier labor and wartime finance with explicit evidence limits')
+
+if d['version'] >= 161:
+ zhaoxuan_people={'han_liuhe','han_bingji','han_weixiang','han_zhengji'}
+ zhaoxuan_sources={'v187_hanshu7','v187_hanshu8','v187_hanshu63','v187_hanshu68','v187_hanshu69','v187_hanshu70','v187_hanshu74','v187_yantielun','v187_ndrc_haihun'}
+ zhaoxuan_events={'v49h_zhao_accession','v49h_zhao_theme','v49h_saltiron','v49h_xuan_accession','v49h_xuan_theme','v49h_protectorate','v187_shangguan_coup','v187_zhao_relief','v187_huo_transition','v187_changyi_deposition'}
+ assert zhaoxuan_people<=people.keys() and zhaoxuan_sources<=sources.keys()
+ assert all(people[person_id]['dynasty']=='han' for person_id in zhaoxuan_people)
+ event_map={event['id']:event for event in d['events']}
+ object_map={item['id']:item for item in d['objects']}
+ assert 'v187_haihun_cemetery' in object_map
+ haihun=object_map['v187_haihun_cemetery']
+ assert len(re.findall(r'[\u4e00-\u9fff]',haihun['body']))>=300
+ assert zhaoxuan_people & set(haihun['people']) and set(haihun['sources'])<=zhaoxuan_sources
+ zhaoxuan_articles={article['person']:article for article in d['articles'] if article['person'] in zhaoxuan_people}
+ assert zhaoxuan_articles.keys()==zhaoxuan_people
+ for person_id,article in zhaoxuan_articles.items():
+  chars=len(re.findall(r'[\u4e00-\u9fff]',''.join(section['text'] for section in article['sections'])))
+  assert len(article['sections'])==5 and chars>=500,(person_id,chars)
+  assert len({section['id'] for section in article['sections']})==5
+  assert len(article['sources'])>=3 and set(article['sources'])<=sources.keys()
+  for section in article['sections']:
+   assert len(re.findall(r'[\u4e00-\u9fff]',section['text']))>=95,(person_id,section['id'])
+   assert set(section['sources'])<=sources.keys()
+   assert set(section.get('events',[]))<=event_map.keys()
+   assert set(section.get('people',[]))<=people.keys()
+ zhaoxuan_emperor_articles={emperor_id:next(article for article in d['articles'] if article['person']==emperor_id) for emperor_id in ('han_zhao','han_xuan')}
+ for emperor_id,article in zhaoxuan_emperor_articles.items():
+  chars=len(re.findall(r'[\u4e00-\u9fff]',''.join(section['text'] for section in article['sections'])))
+  assert len(article['sections'])==5 and chars>=650,(emperor_id,chars)
+  assert all(len(re.findall(r'[\u4e00-\u9fff]',section['text']))>=115 for section in article['sections'])
+ for event_id in zhaoxuan_events:
+  event=event_map[event_id]
+  assert len(re.findall(r'[\u4e00-\u9fff]',event['body']))>=70,(event_id,'body')
+  assert len(re.findall(r'[\u4e00-\u9fff]',event['impact']))>=60,(event_id,'impact')
+  assert len(event['sources'])>=3 and set(event['sources'])<=sources.keys()
+  assert set(event['people'])==set(event['peopleRoles']),(event_id,'person-role mismatch')
+ direct_links={person_id for event_id in zhaoxuan_events for person_id in event_map[event_id]['people']}
+ assert zhaoxuan_people<=direct_links
+ association_pairs={(item['from'],item['to']) for item in d['associations']}
+ assert {('han_xuan','han_liuhe'),('han_xuan','han_bingji'),('han_xuan','han_weixiang'),('han_xuan','han_zhengji'),('han_liuhe','han_huoguang')}<=association_pairs
+ zhao_context=next(context for context in d['reignContexts'] if context['person']=='han_zhao')
+ xuan_context=next(context for context in d['reignContexts'] if context['person']=='han_xuan')
+ assert {'han_bingji'}<=set(zhao_context['people']) and {'v187_shangguan_coup','v187_zhao_relief'}<=set(zhao_context['events'])
+ assert zhaoxuan_people<=set(xuan_context['people']) and {'v187_huo_transition','v187_changyi_deposition'}<=set(xuan_context['events'])
+ corpus=json.dumps(list(zhaoxuan_articles.values())+list(zhaoxuan_emperor_articles.values())+[event_map[event_id] for event_id in zhaoxuan_events]+[haihun]+[sources[source_id] for source_id in zhaoxuan_sources],ensure_ascii=False)
+ for term in ['二十七日记录来自废立文书','保护不是一个人的孤胆传奇','副封为什么会阻断皇帝耳目','先有渠犁屯田，后有都护之名','问民疾苦与盐铁会议的政治程序','减漕、免租与旧贷豁免']:
+  assert term in corpus,('missing Zhao-Xuan term',term)
+ for boundary in ['不是每天由中立观察者形成的流水账','不能自动证明废立奏书中的每项指控都是诬陷','精确数字来自奏疏的方案论证','不等于所有西域地区同时改为内地式直接行政','不是现场录音或逐字会议记录']:
+  assert boundary in corpus,('missing Zhao-Xuan evidence boundary',boundary)
+ assert len({section['text'] for article in zhaoxuan_articles.values() for section in article['sections']})==20
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品不用|产品将|产品采用',corpus,re.I)
+ overview_source=(R/'App/DynastyViews.swift').read_text()
+ assert '从这里继续' not in overview_source and 'DynastyContinuationGuide' not in overview_source
+ print('V161 PASS: Zhao-Xuan history now connects regency, Salt-Iron debate, Changyi deposition, document control, Qiang tuntian, Western Regions administration and Haihun archaeology without restoring the duplicate dynasty guide')
