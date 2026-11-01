@@ -5137,4 +5137,45 @@ final class MingJiUITests: XCTestCase {
         shot("v172-baishiya-evidence-and-sources", app)
     }
 
+    @MainActor func testV173XiaOverviewOmitsDuplicateGuideAndObjectsReadInLayers() throws {
+        let overview = XCUIApplication()
+        overview.launchArguments = ["--uitesting", "--ui-dynasty", "xia"]
+        overview.launch()
+        XCTAssertTrue(overview.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        XCTAssertTrue(overview.buttons["dynasty_xia"].waitForExistence(timeout: 5))
+        overview.buttons["dynasty_xia"].tap()
+        XCTAssertTrue(overview.descendants(matching: .any)["dynastyDetail_xia"].waitForExistence(timeout: 5))
+        XCTAssertTrue(overview.staticTexts["朝代总览"].exists)
+        XCTAssertFalse(overview.staticTexts["从这里继续"].exists)
+        XCTAssertFalse(overview.buttons["dynastySequence_xia"].exists)
+        XCTAssertFalse(overview.buttons["dynastyFamily_xia"].exists)
+        XCTAssertFalse(overview.buttons["dynastyCollection_xia"].exists)
+        shot("v173-xia-overview-without-duplicate-guide", overview)
+        overview.terminate()
+
+        let collection = XCUIApplication()
+        collection.launchArguments = ["--uitesting", "--ui-dynasty", "xia"]
+        collection.launch()
+        XCTAssertTrue(collection.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        collection.tabBars.buttons["遗珍"].tap()
+        XCTAssertTrue(collection.descendants(matching: .any)["collectionPage_xia"].waitForExistence(timeout: 5))
+        collection.buttons["collectionCategory_architecture"].tap()
+        XCTAssertTrue(collection.descendants(matching: .any)["collectionCategoryPage_architecture"].waitForExistence(timeout: 5))
+        let erlitou = collection.buttons["artifact_v59_obj_erlitou_site"]
+        XCTAssertTrue(erlitou.waitForExistence(timeout: 5)); erlitou.tap()
+        XCTAssertTrue(collection.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不是一件孤立文物")).firstMatch.waitForExistence(timeout: 5))
+        XCTAssertTrue(collection.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "影响、交换与直接统治不是同一个概念")).firstMatch.exists)
+        shot("v173-erlitou-layered-reading-opening", collection)
+        reach(collection.buttons["资料与出处"], in: collection, attempts: 18)
+        XCTAssertTrue(collection.buttons["资料与出处"].isHittable); collection.buttons["资料与出处"].tap()
+        XCTAssertTrue(collection.descendants(matching: .any)["source_v59_ndrc_erlitou"].waitForExistence(timeout: 5))
+        XCTAssertTrue(collection.descendants(matching: .any)["source_v59_nmc_ancient_state"].exists)
+        let finalSource = collection.descendants(matching: .any)["source_v59_oxford_xia"]
+        reach(finalSource, in: collection, attempts: 8)
+        for _ in 0..<3 { collection.swipeUp() }
+        XCTAssertTrue(finalSource.isHittable)
+        XCTAssertLessThanOrEqual(finalSource.frame.maxY, collection.tabBars.firstMatch.frame.minY - 16)
+        shot("v173-erlitou-sources-and-page-ending", collection)
+    }
+
 }

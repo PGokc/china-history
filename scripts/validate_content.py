@@ -985,7 +985,11 @@ if d['version'] >= 41:
  assert all(e['sources'] and e.get('impact') and e.get('peopleRoles') is not None for e in events)
  objects=[o for o in d['objects'] if o['id'].startswith('v59_obj_')]
  assert len(objects)==16 and all(o['sources'] and o.get('dynasties')==['xia'] for o in objects)
- assert all(len(re.findall(r'[\u4e00-\u9fff]',o['body']))>=55 and '不等于' in o['note'] for o in objects)
+ assert all(
+  len(re.findall(r'[\u4e00-\u9fff]',o['body']))>=55
+  and ('不等于' in o['note'] or (d['version']>=147 and len(re.findall(r'[\u4e00-\u9fff]',o['note']))>=35))
+  for o in objects
+ )
  assert next(x for x in d['dynasties'] if x['id']=='xia')['selectable'] is True
  for pid in xia:
   assert pid in articles,(pid,'missing Xia reading')
@@ -3618,3 +3622,31 @@ if d['version'] >= 146:
  assert all(f'"{site_id}"' in guide for site_id in v172_site_ids)
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将|产品采用',corpus,re.I)
  print('V146 PASS: eight five-layer prehistory readings connect million-year human fossils, Denisovan evidence, lithic exchange, coastal adaptation, early food production and regional centers without collapsing sites into a single ancestry or dynasty')
+
+if d['version'] >= 147:
+ xia_object_ids={
+  'v59_obj_erlitou_site','v59_obj_palace_grid','v59_obj_roads','v59_obj_bronze_workshop',
+  'v59_obj_turquoise_workshop','v59_obj_dragon','v59_obj_plaque','v59_obj_bronze_jue',
+  'v59_obj_jade_knife','v59_obj_yazhang','v59_obj_stone_chime','v59_obj_marks',
+  'v59_obj_xinzhai','v59_obj_wangchenggang','v59_obj_wadian','v59_obj_xiwubi'
+ }
+ object_map={item['id']:item for item in d['objects']}
+ assert xia_object_ids<=object_map.keys() and len(xia_object_ids)==16
+ for object_id in xia_object_ids:
+  item=object_map[object_id]
+  chars=len(re.findall(r'[\u4e00-\u9fff]',item['body']+item['note']))
+  assert chars>=270 and item['body'].count('\n\n')>=2,(object_id,chars)
+  assert item['dynasties']==['xia'] and len(item['sources'])>=2 and set(item['sources'])<=sources.keys()
+ xia_event_ids={f'v59_{prefix}{number:02d}' for prefix in 'pmces' for number in range(1,9)}
+ assert xia_event_ids<=events.keys() and len(xia_event_ids)==40
+ impacts=[events[event_id]['impact'] for event_id in xia_event_ids]
+ assert len(set(impacts))==40 and all(len(re.findall(r'[\u4e00-\u9fff]',impact))>=45 for impact in impacts)
+ corpus=json.dumps([object_map[object_id] for object_id in xia_object_ids]+[events[event_id] for event_id in xia_event_ids],ensure_ascii=False)
+ for term in ['三百万平方米','双轮车辙','复合范','数千片绿松石','六十五厘米','远距离传播','悬挂后敲击','成熟文字','七十万平方米']:
+  assert term in corpus,('missing Xia evidence term',term)
+ for boundary in ['影响、交换与直接统治不是同一个概念','不能仅凭一道痕迹推定','不是出土铭文','不是行政控制证书','不能直接换算成臣属关系']:
+  assert boundary in corpus,('missing Xia evidence boundary',boundary)
+ overview=(R/'App/DynastyViews.swift').read_text()
+ assert '从这里继续' not in overview and 'dynastySequence_' not in overview and 'dynastyFamily_' not in overview and 'dynastyCollection_' not in overview
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将|产品采用',corpus,re.I)
+ print('V147 PASS: sixteen Xia sites and objects now explain context, technology, society and evidence limits; forty thematic events have distinct interpretations; dynasty overviews contain no duplicate destination guide')
