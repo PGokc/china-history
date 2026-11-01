@@ -6182,4 +6182,66 @@ final class MingJiUITests: XCTestCase {
         shot("v198-jiang-tong-policy-and-prophecy-boundary", policy)
     }
 
+    @MainActor func testV199EarlyEasternJinResponsibilityAndOverviewWithoutGuide() throws {
+        let overview = XCUIApplication()
+        overview.launchArguments = ["--uitesting", "--ui-dynasty", "jin"]
+        overview.launch()
+        XCTAssertTrue(overview.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        let jin = overview.buttons["dynasty_jin"]
+        XCTAssertTrue(jin.waitForExistence(timeout: 5)); jin.tap()
+        XCTAssertTrue(overview.descendants(matching: .any)["dynastyDetail_jin"].waitForExistence(timeout: 5))
+        XCTAssertTrue(overview.staticTexts["朝代总览"].exists)
+        XCTAssertFalse(overview.staticTexts["从这里继续"].exists)
+        XCTAssertFalse(overview.staticTexts["帝序与在位人物"].exists)
+        XCTAssertFalse(overview.staticTexts["家族世系"].exists)
+        XCTAssertFalse(overview.staticTexts["思想与遗珍"].exists)
+        XCTAssertEqual(overview.tabBars.buttons.allElementsBoundByIndex.map(\.label), ["朝代", "帝序", "家族", "遗珍"])
+        shot("v199-jin-overview-keeps-only-four-fixed-destinations", overview)
+        overview.terminate()
+
+        let idiom = XCUIApplication()
+        idiom.launchArguments = ["--uitesting", "--ui-dynasty", "jin"]
+        idiom.launch()
+        XCTAssertTrue(idiom.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        idiom.buttons["globalSearch"].tap()
+        let idiomSearch = idiom.searchFields.firstMatch
+        XCTAssertTrue(idiomSearch.waitForExistence(timeout: 5)); idiomSearch.tap(); idiomSearch.typeText("庾亮")
+        let yuLiang = idiom.buttons["search_person_jin_yuliang"]
+        XCTAssertTrue(yuLiang.waitForExistence(timeout: 5)); yuLiang.tap()
+        XCTAssertTrue(idiom.buttons["articleEntry"].waitForExistence(timeout: 5))
+        openArticle(in: idiom)
+        idiom.buttons["articleContents"].tap()
+        let thunderPool = idiom.buttons["‘无过雷池一步’原本是误判中的军令"]
+        XCTAssertTrue(thunderPool.exists); thunderPool.tap()
+        let context = idiom.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "脱离失败决策成为中性格言")).firstMatch
+        XCTAssertTrue(context.waitForExistence(timeout: 5))
+        XCTAssertFalse(idiom.staticTexts["从这里继续"].exists)
+        shot("v199-yu-liang-thunder-pool-context", idiom)
+        openChapterSources("jin_yuliang_3", in: idiom)
+        let source = idiom.descendants(matching: .any)["source_v199_js73"]
+        reach(source, in: idiom, attempts: 8)
+        XCTAssertTrue(source.exists)
+        XCTAssertLessThanOrEqual(source.frame.maxY, idiom.tabBars.firstMatch.frame.minY - 16)
+        shot("v199-yu-liang-source-and-safe-ending", idiom)
+        idiom.terminate()
+
+        let childEmperor = XCUIApplication()
+        childEmperor.launchArguments = ["--uitesting", "--ui-dynasty", "jin"]
+        childEmperor.launch()
+        XCTAssertTrue(childEmperor.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        childEmperor.buttons["globalSearch"].tap()
+        let emperorSearch = childEmperor.searchFields.firstMatch
+        XCTAssertTrue(emperorSearch.waitForExistence(timeout: 5)); emperorSearch.tap(); emperorSearch.typeText("晋成帝")
+        let emperor = childEmperor.buttons["search_person_jin_chengdi"]
+        XCTAssertTrue(emperor.waitForExistence(timeout: 5)); emperor.tap()
+        XCTAssertTrue(childEmperor.buttons["articleEntry"].waitForExistence(timeout: 5))
+        openArticle(in: childEmperor)
+        childEmperor.buttons["articleContents"].tap()
+        let responsibility = childEmperor.buttons["征苏峻是辅政失败而非幼帝个人政策"]
+        XCTAssertTrue(responsibility.exists); responsibility.tap()
+        let boundary = childEmperor.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不能归到没有实际决策能力的儿童皇帝身上")).firstMatch
+        XCTAssertTrue(boundary.waitForExistence(timeout: 5))
+        shot("v199-chengdi-child-emperor-responsibility-boundary", childEmperor)
+    }
+
 }
