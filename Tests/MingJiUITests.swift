@@ -5546,4 +5546,47 @@ final class MingJiUITests: XCTestCase {
         shot("v184-cao-shen-sources-and-page-ending", reading)
     }
 
+    @MainActor func testV185WenJingKingdomFinanceAndEarlyWuCourt() throws {
+        let kingdom = XCUIApplication()
+        kingdom.launchArguments = ["--uitesting", "--ui-dynasty", "han"]
+        kingdom.launch()
+        XCTAssertTrue(kingdom.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        kingdom.buttons["globalSearch"].tap()
+        let kingdomSearch = kingdom.searchFields.firstMatch
+        XCTAssertTrue(kingdomSearch.waitForExistence(timeout: 5)); kingdomSearch.tap(); kingdomSearch.typeText("刘濞")
+        let liuPi = kingdom.buttons["search_person_han_liupi"]
+        XCTAssertTrue(liuPi.waitForExistence(timeout: 5)); liuPi.tap()
+        XCTAssertTrue(kingdom.buttons["articleEntry"].waitForExistence(timeout: 5))
+        openArticle(in: kingdom)
+        kingdom.buttons["articleContents"].tap()
+        XCTAssertTrue(kingdom.buttons["铜山、海盐和轻赋从哪里来"].exists)
+        kingdom.buttons["铜山、海盐和轻赋从哪里来"].tap()
+        let laborBoundary = kingdom.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不能推出居民没有劳役")).firstMatch
+        XCTAssertTrue(laborBoundary.waitForExistence(timeout: 5))
+        shot("v185-liu-pi-copper-salt-labor-boundary", kingdom)
+        reach(kingdom.buttons["资料与出处"], in: kingdom, attempts: 18)
+        XCTAssertTrue(kingdom.buttons["资料与出处"].isHittable); kingdom.buttons["资料与出处"].tap()
+        XCTAssertTrue(kingdom.descendants(matching: .any)["source_v185_shiji106"].waitForExistence(timeout: 5))
+        shot("v185-liu-pi-sources", kingdom)
+        kingdom.terminate()
+
+        let court = XCUIApplication()
+        court.launchArguments = ["--uitesting", "--ui-dynasty", "han"]
+        court.launch()
+        XCTAssertTrue(court.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        court.buttons["globalSearch"].tap()
+        let courtSearch = court.searchFields.firstMatch
+        XCTAssertTrue(courtSearch.waitForExistence(timeout: 5)); courtSearch.tap(); courtSearch.typeText("窦太后")
+        let dou = court.buttons["search_person_han_doutaihou"]
+        XCTAssertTrue(dou.waitForExistence(timeout: 5)); dou.tap()
+        XCTAssertTrue(court.buttons["articleEntry"].waitForExistence(timeout: 5))
+        openArticle(in: court)
+        court.buttons["articleContents"].tap()
+        XCTAssertTrue(court.buttons["建元新政为何遇到东宫"].exists)
+        court.buttons["建元新政为何遇到东宫"].tap()
+        let courtBoundary = court.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不能把这次冲突只写成学派之争")).firstMatch
+        XCTAssertTrue(courtBoundary.waitForExistence(timeout: 5))
+        shot("v185-dou-court-power-and-thought-boundary", court)
+    }
+
 }

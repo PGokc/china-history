@@ -3938,3 +3938,43 @@ if d['version'] >= 158:
  overview_source=(R/'App/DynastyViews.swift').read_text()
  assert '从这里继续' not in overview_source and 'DynastyContinuationGuide' not in overview_source
  print('V158 PASS: the early Han founding coalition now has six five-layer biographies, eight rewritten events, family continuity and no duplicate dynasty-overview guide')
+
+if d['version'] >= 159:
+ middle_han_people={'han_doutaihou','han_liupi','han_douying','han_tianfen'}
+ middle_han_sources={'v185_shiji49','v185_shiji106','v185_shiji107','v185_nmc_qinhan'}
+ middle_han_events={'v49h_jing_accession','v49h_jing_theme','v49h_wu_accession','v49h_seven','v185_dou_huanglao','v185_wu_copper_salt','v185_weiqi_wuan'}
+ assert middle_han_people<=people.keys() and middle_han_sources<=sources.keys()
+ assert all(people[person_id]['dynasty']=='han' for person_id in middle_han_people)
+ middle_han_articles={article['person']:article for article in d['articles'] if article['person'] in middle_han_people}
+ assert middle_han_articles.keys()==middle_han_people
+ event_map={event['id']:event for event in d['events']}
+ for person_id,article in middle_han_articles.items():
+  chars=len(re.findall(r'[\u4e00-\u9fff]',''.join(section['text'] for section in article['sections'])))
+  assert len(article['sections'])==5 and chars>=550,(person_id,chars)
+  assert len({section['id'] for section in article['sections']})==5
+  assert len(article['sources'])>=4 and set(article['sources'])<=sources.keys()
+  for section in article['sections']:
+   assert len(re.findall(r'[\u4e00-\u9fff]',section['text']))>=105,(person_id,section['id'])
+   assert set(section['sources'])<=sources.keys()
+   assert set(section.get('events',[]))<=event_map.keys()
+   assert set(section.get('people',[]))<=people.keys()
+ for event_id in middle_han_events:
+  event=event_map[event_id]
+  assert len(re.findall(r'[\u4e00-\u9fff]',event['body']))>=80,(event_id,'body')
+  assert len(re.findall(r'[\u4e00-\u9fff]',event['impact']))>=70,(event_id,'impact')
+  assert len(event['sources'])>=2 and set(event['sources'])<=sources.keys()
+  assert set(event['people'])==set(event['peopleRoles']),(event_id,'person-role mismatch')
+ direct_links={person_id for event_id in middle_han_events for person_id in event_map[event_id]['people']}
+ assert middle_han_people<=direct_links
+ assert any(link['from']=='han_doutaihou' and link['to']=='han_wen' and link['kind']=='spouse' for link in d['familyLinks'])
+ assert any(link['from']=='han_jing' and link['to']=='han_doutaihou' and link['kind']=='mother' for link in d['familyLinks'])
+ association_pairs={(item['from'],item['to']) for item in d['associations']}
+ assert {('han_jing','han_doutaihou'),('han_jing','han_liupi'),('han_jing','han_douying'),('han_wu','han_doutaihou'),('han_wu','han_douying'),('han_wu','han_tianfen')}<=association_pairs
+ corpus=json.dumps(list(middle_han_articles.values())+[event_map[event_id] for event_id in middle_han_events]+[sources[source_id] for source_id in middle_han_sources],ensure_ascii=False)
+ for term in ['一次宫人分派改变了人生','梁王继承议论中的母亲与太后','铜山、海盐和轻赋从哪里来','七国联盟为何迅速瓦解','荥阳守军与没有入私家的赏金','从救灌夫到遗诏核验','丞相荐人为何让皇帝警觉','疾病与鬼祟不是历史裁判']:
+  assert term in corpus,('missing Wen-Jing or early-Wu term',term)
+ for boundary in ['不能据此补写她当时的完整心理','不能把这次冲突只写成学派之争','不能推出居民没有劳役','不宜视为战场精确点名','不能把窦婴简单写成儒家改革英雄','梦魇、鬼祟和患病不能承担司法证明','不能当作案件翻案证据']:
+  assert boundary in corpus,('missing Wen-Jing evidence boundary',boundary)
+ assert len({section['text'] for article in middle_han_articles.values() for section in article['sections']})==20
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品不用|产品将|产品采用',corpus,re.I)
+ print('V159 PASS: Empress Dowager Dou, Liu Pi, Dou Ying and Tian Fen now connect kingdom finance, the Seven Kingdoms war, early-Wu court politics, documentary procedure and evidence limits')
