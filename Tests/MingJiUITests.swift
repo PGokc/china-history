@@ -4955,4 +4955,26 @@ final class MingJiUITests: XCTestCase {
         shot("v166-alute-archive-and-palace-legend", app)
     }
 
+    @MainActor func testV167EarlyGuangxuShowsReliefRegistrationBoundary() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["--uitesting", "--ui-dynasty", "qing"]
+        app.launch()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        app.buttons.matching(NSPredicate(format: "identifier == %@", "globalSearch")).firstMatch.tap()
+        let search = app.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("经元善")
+        let result = app.buttons["search_person_q167_jingyuanshan"]
+        XCTAssertTrue(result.waitForExistence(timeout: 8)); Thread.sleep(forTimeInterval: 1); result.tap()
+        if !app.buttons["articleEntry"].waitForExistence(timeout: 5) { app.buttons["search_person_q167_jingyuanshan"].tap() }
+        XCTAssertTrue(app.buttons["articleEntry"].waitForExistence(timeout: 5)); app.buttons["articleEntry"].tap()
+        XCTAssertTrue(app.buttons["articleContents"].waitForExistence(timeout: 5)); app.buttons["articleContents"].tap()
+        let chapter = app.buttons["查户与公平的难题"]
+        XCTAssertTrue(chapter.exists); chapter.tap()
+        XCTAssertTrue(app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "妇女儿童")).firstMatch.waitForExistence(timeout: 5))
+        openChapterSources("v167_jingyuanshan_3", in: app)
+        XCTAssertTrue(app.descendants(matching: .any)["source_v167_zhejiang_jing"].waitForExistence(timeout: 3))
+        app.swipeUp()
+        shot("v167-jing-yuanshan-relief-registration-boundary", app)
+    }
+
 }

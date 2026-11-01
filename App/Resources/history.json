@@ -1,5 +1,5 @@
 {
-  "version": 140,
+  "version": 141,
   "reviewed": "2026-10-31",
   "people": [
     {
@@ -2958,18 +2958,19 @@
     {
       "id": "q_liujintang",
       "name": "刘锦棠",
-      "call": "新疆首任巡抚",
+      "call": "西征前线统帅与新疆首任巡抚",
       "temple": "",
-      "era": "",
+      "era": "1844—1894",
       "reign": "同治至光绪时期",
-      "summary": "在左宗棠麾下统军西征，随后参与新疆建省和地方制度重组，经历从战争到行政建设的转变。",
+      "summary": "由金积堡战事进入西征前线，负责北疆、南疆主要战役，后参与建省；军功、处决和战后治理必须并读。",
       "parent": null,
       "sources": [
-        "v41q_qsg454",
-        "v41q_province"
+        "v167_qsg454",
+        "v167_neac_campaign",
+        "v167_neac_xinjiang"
       ],
       "kind": "重要人物",
-      "note": "在左宗棠麾下统军西征，随后参与新疆建省和地方制度重组，经历从战争到行政建设的转变。",
+      "note": "由金积堡战事进入西征前线，负责北疆、南疆主要战役，后参与建省；军功、处决和战后治理必须并读。",
       "dynasty": "qing"
     },
     {
@@ -2977,15 +2978,17 @@
       "name": "曾纪泽",
       "call": "出使英法俄大臣",
       "temple": "",
-      "era": "",
+      "era": "1839—1890",
       "reign": "光绪时期",
-      "summary": "曾国藩之子，长期从事驻外外交，参与重订伊犁条约；其工作体现交涉与军事、财政条件之间的关系。",
+      "summary": "从家学和自学外语进入常驻外交，在伊犁改约中争回部分权益；结果仍包括割地、赔款和贸易特权。",
       "parent": null,
       "sources": [
-        "v41q_qsg446"
+        "v167_qsg446",
+        "v167_mfa_ili",
+        "v167_xinjiang_ili"
       ],
       "kind": "重要人物",
-      "note": "曾国藩之子，长期从事驻外外交，参与重订伊犁条约；其工作体现交涉与军事、财政条件之间的关系。",
+      "note": "从家学和自学外语进入常驻外交，在伊犁改约中争回部分权益；结果仍包括割地、赔款和贸易特权。",
       "dynasty": "qing"
     },
     {
@@ -19810,6 +19813,183 @@
       "kind": "重要人物",
       "note": "译《万国公法》并任同文馆总教习，把语言、国际法和近代课程带入官学争论。",
       "dynasty": "qing"
+    },
+    {
+      "id": "q167_guosongtao",
+      "name": "郭嵩焘",
+      "call": "首任驻英公使",
+      "temple": "",
+      "era": "1818—1891",
+      "reign": "咸丰至光绪时期",
+      "summary": "由湘军与地方官经历转入常驻外交，记录英国政治经济；其观察受到激烈攻讦，也有自身立场和盲区。",
+      "parent": null,
+      "sources": [
+        "v167_qsg446",
+        "v167_embassy_london",
+        "v167_xiangyin_journey"
+      ],
+      "kind": "重要人物",
+      "note": "由湘军与地方官经历转入常驻外交，记录英国政治经济；其观察受到激烈攻讦，也有自身立场和盲区。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q167_aguabai",
+      "name": "阿古柏",
+      "call": "浩罕军事首领",
+      "temple": "",
+      "era": "约1820—1877",
+      "reign": "同治至光绪时期",
+      "summary": "在新疆地方内乱与浩罕势力进入的背景下建立政权，借英俄竞争求生；清军进攻与其死亡共同导致政权崩解。",
+      "parent": null,
+      "sources": [
+        "v167_neac_campaign",
+        "v167_qsg21_22",
+        "v167_qsg412"
+      ],
+      "kind": "重要人物",
+      "note": "在新疆地方内乱与浩罕势力进入的背景下建立政权，借英俄竞争求生；清军进攻与其死亡共同导致政权崩解。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q167_baiyanhu",
+      "name": "白彦虎",
+      "call": "陕甘回民武装首领",
+      "temple": "",
+      "era": "约1840—1882",
+      "reign": "同治至光绪时期",
+      "summary": "由陕甘战争转入新疆，最终率部越境；清方长期以敌对称谓书写，追击与流亡应和西北迁徙连续观察。",
+      "parent": null,
+      "sources": [
+        "v167_qsg21_22",
+        "v167_qsg412",
+        "v167_neac_campaign"
+      ],
+      "kind": "重要人物",
+      "note": "由陕甘战争转入新疆，最终率部越境；清方长期以敌对称谓书写，追击与流亡应和西北迁徙连续观察。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q167_zhangyao",
+      "name": "张曜",
+      "call": "西征将领与新疆帮办",
+      "temple": "",
+      "era": "1832—1891",
+      "reign": "同治至光绪时期",
+      "summary": "从捻军、西北战事进入新疆，率嵩武军参与南疆作战和伊犁备战，后来转任地方行政。",
+      "parent": null,
+      "sources": [
+        "v167_qsg454",
+        "v167_qsg412"
+      ],
+      "kind": "重要人物",
+      "note": "从捻军、西北战事进入新疆，率嵩武军参与南疆作战和伊犁备战，后来转任地方行政。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q167_jinshun",
+      "name": "金顺",
+      "call": "伊犁将军与西征将领",
+      "temple": "",
+      "era": "生卒年待考",
+      "reign": "同治至光绪时期",
+      "summary": "满洲将领，率部参与北疆战事并在伊犁方向承担驻防；其作用常被左宗棠、刘锦棠主线遮蔽。",
+      "parent": null,
+      "sources": [
+        "v167_qsg454",
+        "v167_neac_campaign",
+        "v167_qsg412"
+      ],
+      "kind": "重要人物",
+      "note": "满洲将领，率部参与北疆战事并在伊犁方向承担驻防；其作用常被左宗棠、刘锦棠主线遮蔽。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q167_dingbaozhen",
+      "name": "丁宝桢",
+      "call": "山东巡抚与四川总督",
+      "temple": "",
+      "era": "1820—1886",
+      "reign": "同治至光绪时期",
+      "summary": "在地方财政、黄河治理、赈务和四川机器局间工作；廉吏形象不能代替对政策效果的核查。",
+      "parent": null,
+      "sources": [
+        "v167_qsg447",
+        "v167_cssn_famine"
+      ],
+      "kind": "重要人物",
+      "note": "在地方财政、黄河治理、赈务和四川机器局间工作；廉吏形象不能代替对政策效果的核查。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q167_yanjingming",
+      "name": "阎敬铭",
+      "call": "财政官员",
+      "temple": "",
+      "era": "1817—1892",
+      "reign": "同治至光绪时期",
+      "summary": "以清查和节用著称，参与灾荒与军费压力下的财政整顿；账面节省与地方承受须分别检验。",
+      "parent": null,
+      "sources": [
+        "v167_qsg438",
+        "v167_cssn_famine"
+      ],
+      "kind": "重要人物",
+      "note": "以清查和节用著称，参与灾荒与军费压力下的财政整顿；账面节省与地方承受须分别检验。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q167_shengxuanhuai",
+      "name": "盛宣怀",
+      "call": "电报总局总办",
+      "temple": "",
+      "era": "1844—1916",
+      "reign": "同治至民国时期",
+      "summary": "由李鸿章幕府与招商局进入电报事业，组织津沪线路和电报学堂；后来的庞大企业网络不应提前投射。",
+      "parent": null,
+      "sources": [
+        "v167_qsg471",
+        "v167_gd_telegraph",
+        "v167_shanghai_gazette"
+      ],
+      "kind": "重要人物",
+      "note": "由李鸿章幕府与招商局进入电报事业，组织津沪线路和电报学堂；后来的庞大企业网络不应提前投射。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q167_jingyuanshan",
+      "name": "经元善",
+      "call": "义赈组织者",
+      "temple": "",
+      "era": "1841—1903",
+      "reign": "光绪时期",
+      "summary": "上海绅商，丁戊奇荒期间组织协赈公所、募款与查户放赈，推动跨区域义赈网络。",
+      "parent": null,
+      "sources": [
+        "v167_zhejiang_jing",
+        "v167_cssn_famine",
+        "v167_ruc_relief"
+      ],
+      "kind": "重要人物",
+      "note": "上海绅商，丁戊奇荒期间组织协赈公所、募款与查户放赈，推动跨区域义赈网络。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q167_litimotai",
+      "name": "李提摩太",
+      "call": "传教士与赈灾组织者",
+      "temple": "",
+      "era": "1845—1919",
+      "reign": "同治至民国时期",
+      "summary": "英国浸礼会传教士，在山东、山西饥荒中募款放赈并形成改革主张；救济、人道关怀和传教目标需要同时说明。",
+      "parent": null,
+      "sources": [
+        "v167_timothy_study",
+        "v167_cssn_famine",
+        "v167_shanxi_famine"
+      ],
+      "kind": "重要人物",
+      "note": "英国浸礼会传教士，在山东、山西饥荒中募款放赈并形成改革主张；救济、人道关怀和传教目标需要同时说明。",
+      "dynasty": "qing"
     }
   ],
   "sources": [
@@ -27690,6 +27870,150 @@
       "title": "故宫博物院同治年表：1874年日本出兵台湾",
       "url": "https://www.dpm.org.cn/court/lineage/226248.html",
       "note": "核对日本出兵台湾与清廷应对纪年；进一步细节与沈葆桢相关材料互证。"
+    },
+    {
+      "id": "v167_dpm_guangxu",
+      "title": "故宫博物院：光绪皇帝年表",
+      "url": "https://www.dpm.org.cn/court/lineage/226254.html",
+      "note": "核对光绪入继、再度垂帘、毓庆宫读书、开平矿务局及慈安去世等纪年；馆方概述中的评价与年表事实分开使用。"
+    },
+    {
+      "id": "v167_dpm_yuqing",
+      "title": "故宫博物院：毓庆宫光绪书房的使用与陈设",
+      "url": "https://www.dpm.org.cn/building/talk/253589.html?_list=1",
+      "note": "以宫廷档案和空间复原说明光绪帝读书场所、课程与陈设，不把书房等同于实际决策权。"
+    },
+    {
+      "id": "v167_neac_campaign",
+      "title": "国家民委道中华：左宗棠收复新疆",
+      "url": "https://www.neac.gov.cn/seac/c103391/202308/1166981.shtml",
+      "note": "核对1876至1878年军事进程、先北后南方略及超长补给线；胜利叙事须与清方军报、地方居民和战败者材料互读。"
+    },
+    {
+      "id": "v167_neac_xinjiang",
+      "title": "国家民委：新疆历史沿革",
+      "url": "https://www.neac.gov.cn/seac/ztzl/201806/1066640.shtml",
+      "note": "核对伊犁条约和1884年新疆建省等制度节点。"
+    },
+    {
+      "id": "v167_xinjiang_ili",
+      "title": "新疆地方政府：中俄伊犁条约签订始末",
+      "url": "https://kdjkq.xinjiang.gov.cn/ktdsz/ylz/202303/dd0be0e2958f432e9c05c8e90bf0f2b8.shtml",
+      "note": "梳理崇厚原约、左宗棠备战、曾纪泽改约与条约签订；人物赞誉与可核事实分开。"
+    },
+    {
+      "id": "v167_mfa_ili",
+      "title": "外交部资料：中国近代外交史中的伊犁问题",
+      "url": "https://quiz.hk.ocmfa.gov.cn/chn/dsjzsjs/ckzl2009/200902/t20090223_7421430.htm",
+      "note": "说明改订条约收回伊犁大部，也仍有割地、赔款及贸易特权，避免写成无代价的外交全胜。"
+    },
+    {
+      "id": "v167_qsg446",
+      "title": "《清史稿》卷四四六：郭嵩焘、曾纪泽等传",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷446",
+      "note": "核对驻外使节、伊犁交涉及相关外交官履历；官修传记的褒贬须与日记、条约互证。"
+    },
+    {
+      "id": "v167_qsg454",
+      "title": "《清史稿》卷四五四：刘锦棠、张曜、金顺等传",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷454",
+      "note": "核对西征将领行动与新疆建省经历；军功数字和敌我称谓保留清方立场。"
+    },
+    {
+      "id": "v167_qsg412",
+      "title": "《清史稿》卷四一二：左宗棠传",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷412",
+      "note": "核对海防塞防奏议、西征筹饷、伊犁备战和将领部署。"
+    },
+    {
+      "id": "v167_qsg21_22",
+      "title": "《清史稿》穆宗本纪与德宗本纪",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷22",
+      "note": "用于同治末至光绪初年的诏令、战争和中枢纪年；本纪用语不直接代替事件解释。"
+    },
+    {
+      "id": "v167_qsg447",
+      "title": "《清史稿》卷四四七：丁宝桢等传",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷447",
+      "note": "核对丁宝桢在山东、四川的行政与机器局等经历。"
+    },
+    {
+      "id": "v167_qsg438",
+      "title": "《清史稿》卷四三八：阎敬铭等传",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷438",
+      "note": "核对阎敬铭财政、赈务与中枢履历；廉吏评价不替代账目和制度分析。"
+    },
+    {
+      "id": "v167_qsg471",
+      "title": "《清史稿》卷四七一：盛宣怀等传",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷471",
+      "note": "核对盛宣怀在招商、电报等洋务企业中的履历；后期成就不倒推至光绪初年。"
+    },
+    {
+      "id": "v167_cssn_famine",
+      "title": "中国社会科学院近代史研究所：清季丁戊奇荒的赈济与善后",
+      "url": "https://jds.cssn.cn/webpic/web/jdsww/UploadFiles/zyqk/2010/12/jdsyj199302.pdf",
+      "note": "研究1876至1879年北方大旱、官赈、义赈和善后；死亡估计极高但口径不一。"
+    },
+    {
+      "id": "v167_ruc_relief",
+      "title": "中国人民大学清史研究所：丁戊奇荒的官赈与义赈",
+      "url": "https://qsyj.ruc.edu.cn/CN/abstract/abstract1550.shtml",
+      "note": "讨论传统荒政与新型绅商义赈的并行及社会救济结构变化。"
+    },
+    {
+      "id": "v167_shanxi_famine",
+      "title": "山西大学中国社会史研究中心：丁戊奇荒地方灾情与赈务",
+      "url": "https://gjd.rccsh.sxu.edu.cn/gjdrcshyj/gjdyjdllsy_xrwj_20160825141402237049/136042.htm",
+      "note": "依据碑刻、地方志和区域研究说明山西灾情、官商教联合救济及材料差异。"
+    },
+    {
+      "id": "v167_zhejiang_jing",
+      "title": "浙江省纪委监委：经元善与协赈公所",
+      "url": "https://www.zjsjw.gov.cn/zhuantizhuanlan/qinglianwenhua/jiaguijiaxun/202210/t20221014_7136674_ext.html",
+      "note": "用于经元善停办钱庄、组织义赈与户口查赈等经历；后世道德评价与具体行动分开。"
+    },
+    {
+      "id": "v167_timothy_study",
+      "title": "中国社会科学出版社：李提摩太在华宗教与社会实践研究",
+      "url": "https://www.csspw.com.cn/booksdetail_15923_2065989_1.jhtml",
+      "note": "目录和研究说明覆盖李提摩太在山东、山西赈灾及其后改革观念；并与灾荒研究互证。"
+    },
+    {
+      "id": "v167_nopss_students",
+      "title": "全国哲学社会科学工作办公室：容闳与留美幼童",
+      "url": "https://www.nopss.gov.cn/GB/219470/17720201.html",
+      "note": "核对1881年撤回留美幼童及监督、学生生活和教育目标之间的冲突。"
+    },
+    {
+      "id": "v167_embassy_london",
+      "title": "中国驻英国大使馆：中国历史上第一个驻外外交机构",
+      "url": "https://gb.china-embassy.gov.cn/chn/sgxxx/sgzc/zjsg/202208/t20220805_10735119.htm",
+      "note": "核对郭嵩焘使团抵英、递交国书、公使馆地址和常驻外交制度起点。"
+    },
+    {
+      "id": "v167_xiangyin_journey",
+      "title": "湘阴县政府：《使西纪程》存世本",
+      "url": "https://www.xiangyin.gov.cn/31176/31178/content_970835.html",
+      "note": "说明郭嵩焘奉命记录行程、向总理衙门报送日记及书稿毁版记忆。"
+    },
+    {
+      "id": "v167_hebei_rail",
+      "title": "河北省文化和旅游厅：唐胥铁路与唐山近代工业",
+      "url": "https://whly.hebei.gov.cn/c/2023-08-31/573612.html",
+      "note": "核对1881年唐胥铁路及唐廷枢主持背景；“第一”称谓限定为中国自办标准轨距铁路。"
+    },
+    {
+      "id": "v167_gd_telegraph",
+      "title": "广东政协：天津电报总局创办历程",
+      "url": "https://www.gdszx.gov.cn/zxkw/tzgj/2023/05/content/post_34508.html",
+      "note": "核对李鸿章奏设津沪电线、盛宣怀任总办及沿线分局。"
+    },
+    {
+      "id": "v167_shanghai_gazette",
+      "title": "上海市政府《上海通志》：近代电报机构",
+      "url": "https://www.shanghai.gov.cn/shanghai/newshanghai/上海通志.pdf",
+      "note": "核对1880年津沪电报总局和1881年上海分局等制度节点。"
     }
   ],
   "relations": [
@@ -80915,6 +81239,793 @@
       ],
       "kind": "史实与解读",
       "category": "文化"
+    },
+    {
+      "id": "v167_guangxu_regency",
+      "year": "1875年",
+      "sortYear": 1875,
+      "title": "幼帝即位使两宫再次垂帘",
+      "body": "载湉入继文宗而承大统，慈安、慈禧重新以幼帝名义听政。",
+      "impact": "继承安排解决了皇位空缺，也绕开同治下一代并延长太后权力。",
+      "people": [
+        "q_guangxu",
+        "q165_cian",
+        "q_cixi"
+      ],
+      "sources": [
+        "v167_dpm_guangxu"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v167_defense_debate",
+      "year": "1875年",
+      "sortYear": 1875,
+      "title": "海防与塞防奏议争夺有限财政",
+      "body": "朝廷讨论沿海危机与新疆用兵，左宗棠等主张西征不能放弃，李鸿章强调海防急迫。",
+      "impact": "这不是简单的爱国与卖国之争，而是多重威胁下的资源排序。",
+      "people": [
+        "q_zuozongtang",
+        "q_lihongzhang"
+      ],
+      "sources": [
+        "v167_qsg412"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v167_guo_appointment",
+      "year": "1875—1876年",
+      "sortYear": 1875,
+      "title": "郭嵩焘由谢罪专使转为驻英公使",
+      "body": "马嘉理案善后要求赴英致歉，清廷同时建立常驻使节职位。",
+      "impact": "不平等外交压力与制度创新在同一任命中并存。",
+      "people": [
+        "q167_guosongtao"
+      ],
+      "sources": [
+        "v167_embassy_london",
+        "v167_qsg446"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v167_london_legation",
+      "year": "1877年",
+      "sortYear": 1877,
+      "title": "中国首个常驻海外公使馆在伦敦运作",
+      "body": "郭嵩焘递交国书，租赁馆舍和使团人员开始连续办理外交。",
+      "impact": "常驻机构改善信息来源，但授权、经费和译员体系仍在试验。",
+      "people": [
+        "q167_guosongtao"
+      ],
+      "sources": [
+        "v167_embassy_london"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v167_lividia_treaty",
+      "year": "1879年",
+      "sortYear": 1879,
+      "title": "崇厚签订里瓦几亚条约引发朝野反对",
+      "body": "条约虽名义交还伊犁，却涉及大幅割地、通商和赔款等条件。",
+      "impact": "清廷拒绝批准，显示使臣全权、皇帝批准与国内政治边界尚不清晰。",
+      "people": [
+        "q_zengjize",
+        "q_zuozongtang"
+      ],
+      "sources": [
+        "v167_mfa_ili",
+        "v167_qsg446"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v167_reject_lividia",
+      "year": "1880年",
+      "sortYear": 1880,
+      "title": "清廷拒绝原约并处分崇厚",
+      "body": "京内官员连续反对，崇厚被治罪，同时对俄重新备战和寻求改约。",
+      "impact": "惩办使臣具有对内问责和对外交涉双重风险。",
+      "people": [
+        "q_zengjize",
+        "q_zuozongtang"
+      ],
+      "sources": [
+        "v167_xinjiang_ili",
+        "v167_qsg446"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v167_zeng_renegotiates",
+      "year": "1880—1881年",
+      "sortYear": 1880,
+      "title": "曾纪泽赴俄重开伊犁谈判",
+      "body": "曾纪泽比较条款、交涉土地和通商条件，左宗棠的军事部署构成压力背景。",
+      "impact": "谈判成果来自外交、军事和俄国国际处境共同作用。",
+      "people": [
+        "q_zengjize",
+        "q_zuozongtang",
+        "q_liujintang"
+      ],
+      "sources": [
+        "v167_mfa_ili",
+        "v167_xinjiang_ili"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v167_ili_revised",
+      "year": "1881年",
+      "sortYear": 1881,
+      "title": "《中俄改订条约》收回伊犁大部但保留代价",
+      "body": "新约改善原约部分条款，仍割失土地、增加赔款并保留贸易便利。",
+      "impact": "称为相对改约比无条件外交胜利更准确。",
+      "people": [
+        "q_zengjize"
+      ],
+      "sources": [
+        "v167_mfa_ili"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v167_xinjiang_province_plan",
+      "year": "1882—1884年",
+      "sortYear": 1882,
+      "title": "新疆由军府体制转向建省",
+      "body": "战后朝廷推进州县、财政和巡抚体系，1884年正式建省。",
+      "impact": "行政整合并非战役结束即完成，也改变既有军府与地方权力。",
+      "people": [
+        "q_liujintang",
+        "q167_zhangyao",
+        "q167_jinshun"
+      ],
+      "sources": [
+        "v167_neac_xinjiang",
+        "v167_qsg454"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v167_western_logistics",
+      "year": "1875—1876年",
+      "sortYear": 1875,
+      "title": "西征先以粮台、军械和借款准备",
+      "body": "左宗棠在正式进军前整顿军队、筹集粮饷并把物资转运至河西。",
+      "impact": "缓进急战的前提是多年后勤，不是主帅临阵决断。",
+      "people": [
+        "q_zuozongtang",
+        "q_liujintang"
+      ],
+      "sources": [
+        "v167_neac_campaign",
+        "v167_qsg412"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v167_gumu_dihua",
+      "year": "1876年",
+      "sortYear": 1876,
+      "title": "清军攻取古牧地与迪化",
+      "body": "刘锦棠、金顺等部由东向北疆推进，攻占古牧地和迪化。",
+      "impact": "城池易手伴随战斗、征粮和居民避乱，不能只用“收复”省略过程。",
+      "people": [
+        "q_liujintang",
+        "q167_jinshun"
+      ],
+      "sources": [
+        "v167_neac_campaign",
+        "v167_qsg454"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v167_manas",
+      "year": "1876年",
+      "sortYear": 1876,
+      "title": "玛纳斯围城结束北疆主要抵抗",
+      "body": "清军围攻玛纳斯，攻克后对守军和降者实施处置。",
+      "impact": "官军奏报中的肃清与战俘、平民身份需要分别核查。",
+      "people": [
+        "q167_jinshun",
+        "q_liujintang"
+      ],
+      "sources": [
+        "v167_qsg454"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v167_turpan",
+      "year": "1877年",
+      "sortYear": 1877,
+      "title": "吐鲁番方向突破天山防线",
+      "body": "张曜等部与刘锦棠军协同，推进吐鲁番、达坂城等要点。",
+      "impact": "多路协同和地方向导不应被单一名将叙事遮盖。",
+      "people": [
+        "q167_zhangyao",
+        "q_liujintang"
+      ],
+      "sources": [
+        "v167_qsg454",
+        "v167_neac_campaign"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v167_yaqub_death",
+      "year": "1877年",
+      "sortYear": 1877,
+      "title": "阿古柏在战局恶化中死亡",
+      "body": "清军推进与政权内部危机并行，阿古柏突然死亡。",
+      "impact": "疾病、自杀或被杀等说法不一，政权瓦解不能只归因于死因。",
+      "people": [
+        "q167_aguabai"
+      ],
+      "sources": [
+        "v167_qsg21_22",
+        "v167_neac_campaign"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v167_southern_oases",
+      "year": "1877—1878年",
+      "sortYear": 1877,
+      "title": "清军进入库车、阿克苏与喀什噶尔等地",
+      "body": "西征军沿绿洲交通线推进，阿古柏继承集团迅速失去控制。",
+      "impact": "军事占领与基层恢复、税收重建和居民认同是不同阶段。",
+      "people": [
+        "q_liujintang",
+        "q167_zhangyao",
+        "q167_aguabai"
+      ],
+      "sources": [
+        "v167_neac_campaign",
+        "v167_qsg454"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v167_bai_exile",
+      "year": "1877年",
+      "sortYear": 1877,
+      "title": "白彦虎等部越境进入俄境",
+      "body": "连续退却后，白彦虎率余部出境，部分人员留在中亚。",
+      "impact": "越境同时形成难民、边防和外交问题，不只是追击终点。",
+      "people": [
+        "q167_baiyanhu",
+        "q_liujintang"
+      ],
+      "sources": [
+        "v167_qsg21_22",
+        "v167_qsg412"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v167_ili_preparation",
+      "year": "1880年",
+      "sortYear": 1880,
+      "title": "左宗棠移营哈密准备伊犁交涉破裂后的战争",
+      "body": "清军规划多路进取并加强沿海警备，以防俄国海陆施压。",
+      "impact": "军事准备增强谈判筹码，但真实作战能力仍受财政和距离限制。",
+      "people": [
+        "q_zuozongtang",
+        "q_liujintang",
+        "q167_zhangyao",
+        "q167_jinshun"
+      ],
+      "sources": [
+        "v167_xinjiang_ili",
+        "v167_qsg412"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v167_postwar_garrisons",
+      "year": "1878—1884年",
+      "sortYear": 1878,
+      "title": "新疆战后驻防、裁军与追捕并行",
+      "body": "清军在城镇设防、整顿营伍并处理残余武装和地方治安。",
+      "impact": "战后安全措施也可能带来征粮、报复和持续军事管制。",
+      "people": [
+        "q_liujintang",
+        "q167_zhangyao"
+      ],
+      "sources": [
+        "v167_qsg454",
+        "v167_neac_xinjiang"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v167_western_loans",
+      "year": "1875—1878年",
+      "sortYear": 1875,
+      "title": "西征军费依赖借款、协饷与海关收入",
+      "body": "朝廷和地方为远征筹集巨额银款，东南财源承担西北运输。",
+      "impact": "军事统一的账单跨省分摊，并挤压救灾和其他建设。",
+      "people": [
+        "q_zuozongtang",
+        "q167_yanjingming"
+      ],
+      "sources": [
+        "v167_qsg412",
+        "v167_qsg438"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v167_grain_transport",
+      "year": "1875—1878年",
+      "sortYear": 1875,
+      "title": "从河西到天山的粮运决定进军节奏",
+      "body": "军粮经驼队、车运和沿线粮台长途转输，畜力损耗和季节影响显著。",
+      "impact": "战役速度必须从后勤而非地图距离理解。",
+      "people": [
+        "q_zuozongtang",
+        "q_liujintang"
+      ],
+      "sources": [
+        "v167_neac_campaign"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v167_famine_remission",
+      "year": "1876—1879年",
+      "sortYear": 1876,
+      "title": "灾区蠲缓钱粮与停征难以覆盖全部损失",
+      "body": "各省奏报成灾并申请蠲缓、赈恤，执行依赖州县户籍与查灾。",
+      "impact": "账面减免可能漏掉流民、佃户和无地家庭。",
+      "people": [
+        "q167_dingbaozhen",
+        "q167_yanjingming"
+      ],
+      "sources": [
+        "v167_cssn_famine",
+        "v167_shanxi_famine"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v167_famine_grain_market",
+      "year": "1877—1879年",
+      "sortYear": 1877,
+      "title": "购粮、运粮与粮价成为赈灾瓶颈",
+      "body": "灾区本地粮源枯竭，需要跨省采购，运输成本和商人囤积影响价格。",
+      "impact": "有赈银不等于能及时买到并送达粮食。",
+      "people": [
+        "q167_jingyuanshan",
+        "q167_litimotai"
+      ],
+      "sources": [
+        "v167_cssn_famine"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v167_relief_fundraising",
+      "year": "1877—1881年",
+      "sortYear": 1877,
+      "title": "上海绅商义赈募集跨区域资金",
+      "body": "协赈公所通过同乡、商号、报刊和汇兑网络筹款。",
+      "impact": "商业信用被转化为公共救济能力，也需要账目与征信维持。",
+      "people": [
+        "q167_jingyuanshan"
+      ],
+      "sources": [
+        "v167_zhejiang_jing",
+        "v167_ruc_relief"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v167_kaiping_mine",
+      "year": "1878—1881年",
+      "sortYear": 1878,
+      "title": "开平矿务局从筹办进入出煤",
+      "body": "李鸿章委唐廷枢等筹办煤矿，以供应轮船和机器工业。",
+      "impact": "矿井、机器、技术人员和销路需共同形成，设局不等于立即盈利。",
+      "people": [
+        "q166_tangtingshu",
+        "q167_shengxuanhuai"
+      ],
+      "sources": [
+        "v167_dpm_guangxu",
+        "v167_hebei_rail"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v167_coal_canal",
+      "year": "1881年",
+      "sortYear": 1881,
+      "title": "煤河与装运系统连接矿区和水路",
+      "body": "开平煤炭需要运至胥各庄再接水运，企业先尝试开挖煤河。",
+      "impact": "运输基础设施决定矿产能否进入市场。",
+      "people": [
+        "q166_tangtingshu"
+      ],
+      "sources": [
+        "v167_hebei_rail"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v167_tangxu_rail",
+      "year": "1881年",
+      "sortYear": 1881,
+      "title": "唐胥铁路服务开平运煤",
+      "body": "约十公里标准轨铁路建成，最初围绕矿区运输而非全国客运网络。",
+      "impact": "“中国自办第一条标准轨铁路”需限定口径，不能抹去此前吴淞铁路。",
+      "people": [
+        "q166_tangtingshu"
+      ],
+      "sources": [
+        "v167_hebei_rail"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v167_telegraph_finance",
+      "year": "1880—1881年",
+      "sortYear": 1880,
+      "title": "津沪电报以军用需求和商报收入筹资",
+      "body": "官方推动跨省线路，同时希望商业电报补贴运营。",
+      "impact": "官督商办通信兼具公共基础设施与收费企业性质。",
+      "people": [
+        "q167_shengxuanhuai",
+        "q_lihongzhang"
+      ],
+      "sources": [
+        "v167_gd_telegraph",
+        "v167_shanghai_gazette"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v167_famine_drought",
+      "year": "1876—1879年",
+      "sortYear": 1876,
+      "title": "持续旱灾波及华北多省",
+      "body": "降水不足、粮食歉收与既有贫困、仓储和交通条件叠加，形成特大饥荒。",
+      "impact": "自然灾害不能替代对制度脆弱和资源分配的分析。",
+      "people": [
+        "q167_jingyuanshan",
+        "q167_litimotai"
+      ],
+      "sources": [
+        "v167_cssn_famine",
+        "v167_shanxi_famine"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v167_famine_prices",
+      "year": "1877—1879年",
+      "sortYear": 1877,
+      "title": "粮价与银钱比价剧烈变动",
+      "body": "粮食短缺、运输困难和救济购粮推高价格，不同地区货币兑换也发生变化。",
+      "impact": "灾民拥有银钱仍可能买不到足够粮食。",
+      "people": [
+        "q167_yanjingming",
+        "q167_jingyuanshan"
+      ],
+      "sources": [
+        "v167_cssn_famine"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v167_famine_mortality",
+      "year": "1877—1879年",
+      "sortYear": 1877,
+      "title": "死亡、疫病与失踪形成难以精确统计的灾难",
+      "body": "研究普遍确认死亡规模极大，但官册、地方志和后出估算口径不同。",
+      "impact": "应呈现估计范围和材料限制，不能把单一数字当作精确人口普查。",
+      "people": [
+        "q167_litimotai"
+      ],
+      "sources": [
+        "v167_cssn_famine",
+        "v167_shanxi_famine"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v167_famine_displacement",
+      "year": "1877—1879年",
+      "sortYear": 1877,
+      "title": "逃荒、卖子与家庭离散扩大",
+      "body": "灾民跨县跨省求生，典卖人口、遗弃儿童等记载增多。",
+      "impact": "极端个案反映危机，不应猎奇化，也不能推定每个地区程度相同。",
+      "people": [
+        "q167_jingyuanshan",
+        "q167_litimotai"
+      ],
+      "sources": [
+        "v167_cssn_famine"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v167_official_relief",
+      "year": "1876—1879年",
+      "sortYear": 1876,
+      "title": "官赈在勘灾、蠲免和放粮中仍居核心",
+      "body": "中央与地方动用仓粮、赈银并设局办理，但行政延迟和基层舞弊限制效果。",
+      "impact": "不能因民间义赈兴起就宣称政府完全退出。",
+      "people": [
+        "q167_dingbaozhen",
+        "q167_yanjingming"
+      ],
+      "sources": [
+        "v167_cssn_famine",
+        "v167_ruc_relief"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v167_merchant_relief",
+      "year": "1877—1881年",
+      "sortYear": 1877,
+      "title": "义赈人员跨区域查户散放",
+      "body": "江南绅商赴山东、河南、山西、直隶等地，形成连续赈济网络。",
+      "impact": "查户可改善针对性，也会遗漏流民和无正式身份者。",
+      "people": [
+        "q167_jingyuanshan"
+      ],
+      "sources": [
+        "v167_zhejiang_jing",
+        "v167_ruc_relief"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v167_mission_relief",
+      "year": "1876—1879年",
+      "sortYear": 1876,
+      "title": "传教士参与募款与山东、山西放赈",
+      "body": "李提摩太等向外国社群报告灾情、募集资金并与地方官绅协作。",
+      "impact": "救命效果、传教目的和文化摩擦应同时呈现。",
+      "people": [
+        "q167_litimotai"
+      ],
+      "sources": [
+        "v167_timothy_study",
+        "v167_shanxi_famine"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v167_xinjiang_displacement",
+      "year": "1876—1878年",
+      "sortYear": 1876,
+      "title": "新疆战争造成逃亡、越境和聚落重组",
+      "body": "不同武装、清军推进和报复使居民迁移，部分人员随白彦虎越境。",
+      "impact": "胜利者档案对普通人的损失记录不均，空白不等于没有伤害。",
+      "people": [
+        "q167_aguabai",
+        "q167_baiyanhu",
+        "q_liujintang"
+      ],
+      "sources": [
+        "v167_qsg21_22",
+        "v167_neac_campaign"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v167_students_return",
+      "year": "1881年",
+      "sortYear": 1881,
+      "title": "留美幼童被分批撤回并重新安置",
+      "body": "原定长期学习的学生中断学业返国，随后被分配到翻译、海军、铁路等岗位。",
+      "impact": "撤回不是简单的全盘失败，学生个人经历和后续去向差异很大。",
+      "people": [
+        "q165_yungrong",
+        "q166_chenlanbin"
+      ],
+      "sources": [
+        "v167_nopss_students"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v167_guangxu_school",
+      "year": "1876年起",
+      "sortYear": 1876,
+      "title": "幼帝在毓庆宫开始系统读书",
+      "body": "翁同龢等讲授经史，另有满蒙文字与骑射课程。",
+      "impact": "严格课程能塑造政治语言，却不等于儿童皇帝拥有决策权。",
+      "people": [
+        "q_guangxu",
+        "q166_wengtonghe",
+        "q166_lihongzao"
+      ],
+      "sources": [
+        "v167_dpm_guangxu",
+        "v167_dpm_yuqing"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v167_shixi_jicheng",
+      "year": "1876—1877年",
+      "sortYear": 1876,
+      "title": "《使西纪程》把海外观察送回中枢",
+      "body": "郭嵩焘按日记录航程、城市、技术与政治制度，抄送总理衙门。",
+      "impact": "日记是有立场的观察，不是整个欧洲的透明窗口。",
+      "people": [
+        "q167_guosongtao"
+      ],
+      "sources": [
+        "v167_xiangyin_journey"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v167_legation_knowledge",
+      "year": "1877—1881年",
+      "sortYear": 1877,
+      "title": "常驻使馆形成连续的报刊与制度观察",
+      "body": "使臣、参赞和译员收集新闻、参访机构并处理照会。",
+      "impact": "海外知识由团队筛选翻译，再进入京内决策，传播并非无损。",
+      "people": [
+        "q167_guosongtao",
+        "q_zengjize"
+      ],
+      "sources": [
+        "v167_embassy_london",
+        "v167_qsg446"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v167_students_daily",
+      "year": "1875—1881年",
+      "sortYear": 1875,
+      "title": "留美幼童在寄宿家庭和学校持续适应",
+      "body": "学生学习英文、科学并参与当地社交，同时被要求维持中文经典、衣冠和礼节。",
+      "impact": "文化变化不是简单背叛或完全同化，而是少年生活中的多重压力。",
+      "people": [
+        "q165_yungrong",
+        "q166_chenlanbin"
+      ],
+      "sources": [
+        "v167_nopss_students"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v167_students_debate",
+      "year": "1880—1881年",
+      "sortYear": 1880,
+      "title": "撤回争论围绕成效、纪律与军校准入展开",
+      "body": "监督官、容闳、李鸿章和美国教育界对学生表现和计划目标判断不同。",
+      "impact": "以“保守派反对”一句概括，会漏掉经费、管理和美国军校限制。",
+      "people": [
+        "q165_yungrong",
+        "q166_chenlanbin"
+      ],
+      "sources": [
+        "v167_nopss_students"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v167_famine_press",
+      "year": "1876—1879年",
+      "sortYear": 1876,
+      "title": "报刊把地方灾情转化为跨区域公共议题",
+      "body": "《申报》等刊登灾报、劝捐、捐款明细和灾区来信。",
+      "impact": "媒体扩大救济网络，也可能采用冲击性数字和故事吸引捐款。",
+      "people": [
+        "q167_jingyuanshan",
+        "q167_litimotai"
+      ],
+      "sources": [
+        "v167_cssn_famine",
+        "v167_ruc_relief"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v167_relief_accounts",
+      "year": "1877—1881年",
+      "sortYear": 1877,
+      "title": "赈捐征信与名册强化慈善信用",
+      "body": "义赈组织公开捐款、支出和受赈户口，以证明善款去向。",
+      "impact": "账册提高可核查性，但登记之外的灾民仍可能不可见。",
+      "people": [
+        "q167_jingyuanshan"
+      ],
+      "sources": [
+        "v167_zhejiang_jing"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v167_telegraph_school",
+      "year": "1880年起",
+      "sortYear": 1880,
+      "title": "天津电报学堂培养报务与维修人员",
+      "body": "线路建设同步训练译码、操作和技术人员。",
+      "impact": "学堂规模与课程需按初创阶段理解，不能用后来电报网络倒推。",
+      "people": [
+        "q167_shengxuanhuai"
+      ],
+      "sources": [
+        "v167_gd_telegraph"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v167_industrial_survey",
+      "year": "1878—1881年",
+      "sortYear": 1878,
+      "title": "矿务勘测与铁路工程形成新的实作知识",
+      "body": "开平煤矿测量矿层、购置机器并规划煤河和铁路。",
+      "impact": "外籍工程师、中国商办人员和工匠共同参与，不能归功于单一创办者。",
+      "people": [
+        "q166_tangtingshu",
+        "q167_shengxuanhuai"
+      ],
+      "sources": [
+        "v167_hebei_rail"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
     }
   ],
   "objects": [
@@ -86780,6 +87891,123 @@
       ],
       "sources": [
         "v166_martin_law"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v167_obj_shixi",
+      "title": "《使西纪程》",
+      "subtitle": "常驻外交起点的沿途观察",
+      "symbol": "book.closed",
+      "image": null,
+      "body": "郭嵩焘奉命把上海至伦敦的行程、城市、机器与制度观察按日抄送总理衙门。",
+      "note": "日记保存即时观察，也受作者比较框架限制；毁版记忆不能替代逐页阅读。",
+      "people": [
+        "q167_guosongtao"
+      ],
+      "sources": [
+        "v167_xiangyin_journey"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v167_obj_ili_treaty",
+      "title": "《中俄改订条约》",
+      "subtitle": "相对改约与未消失的代价",
+      "symbol": "doc.text",
+      "image": null,
+      "body": "1881年曾纪泽与俄方签订改订条约，收回伊犁大部并调整原约部分通商条款。",
+      "note": "条约仍包含割地、九百万卢布赔款和贸易便利，不能仅称完整外交胜利。",
+      "people": [
+        "q_zengjize"
+      ],
+      "sources": [
+        "v167_mfa_ili",
+        "v167_xinjiang_ili"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v167_obj_western_dispatches",
+      "title": "西征奏稿与粮台清册",
+      "subtitle": "战场背后的借款、驼队和粮台",
+      "symbol": "scroll",
+      "image": null,
+      "body": "奏稿记录进军、受降和奖叙，粮台清册则揭示跨省协饷、军粮、骡马与运输损耗。",
+      "note": "军报有邀功和敌我称谓偏向，须与地方材料、条约及居民后果互证。",
+      "people": [
+        "q_zuozongtang",
+        "q_liujintang",
+        "q167_zhangyao",
+        "q167_jinshun"
+      ],
+      "sources": [
+        "v167_qsg412",
+        "v167_qsg454"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v167_obj_relief_ledger",
+      "title": "丁戊奇荒赈捐征信录",
+      "subtitle": "捐款、支出与受赈户口的公开记录",
+      "symbol": "list.clipboard",
+      "image": null,
+      "body": "义赈组织以捐款名录、支出和查户结果建立跨区域信用，并通过报刊继续劝募。",
+      "note": "账册提高可核查性，但流民、妇女儿童和未登记家庭仍可能被遗漏。",
+      "people": [
+        "q167_jingyuanshan",
+        "q167_litimotai"
+      ],
+      "sources": [
+        "v167_cssn_famine",
+        "v167_zhejiang_jing"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v167_obj_tangxu",
+      "title": "唐胥铁路与“中国火箭号”机车",
+      "subtitle": "为开平煤炭而建的短程标准轨铁路",
+      "symbol": "tram",
+      "image": null,
+      "body": "1881年唐山至胥各庄约十公里铁路建成，把矿区运输从畜力和河道方案推进到蒸汽铁路。",
+      "note": "“第一”限定为中国自办标准轨铁路；此前已有外商修建后被赎拆的吴淞铁路。",
+      "people": [
+        "q166_tangtingshu"
+      ],
+      "sources": [
+        "v167_hebei_rail"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v167_obj_telegraph",
+      "title": "津沪电报线路与电码本",
+      "subtitle": "把军情、商报和技术训练连成网络",
+      "symbol": "dot.radiowaves.left.and.right",
+      "image": null,
+      "body": "线路经大沽、济宁、清江、镇江、苏州至上海，分局依电码收发汉文信息。",
+      "note": "初创线路覆盖有限、费用较高，不能按后来全国电报网理解1881年的使用范围。",
+      "people": [
+        "q167_shengxuanhuai",
+        "q_lihongzhang"
+      ],
+      "sources": [
+        "v167_gd_telegraph",
+        "v167_shanghai_gazette"
       ],
       "dynasties": [
         "qing"
@@ -93554,7 +94782,8 @@
           "kind": "史实与解读",
           "events": [
             "hunger"
-          ]
+          ],
+          "people": []
         },
         {
           "id": "yuanzhang-2",
@@ -93567,7 +94796,8 @@
           "events": [
             "base",
             "join"
-          ]
+          ],
+          "people": []
         },
         {
           "id": "yuanzhang-3",
@@ -93581,7 +94811,8 @@
           "events": [
             "poyang",
             "founding"
-          ]
+          ],
+          "people": []
         },
         {
           "id": "yuanzhang-4",
@@ -93630,7 +94861,8 @@
           "kind": "史实与解读",
           "events": [
             "heir"
-          ]
+          ],
+          "people": []
         },
         {
           "id": "yuanzhang-7",
@@ -93641,7 +94873,8 @@
             "ms2"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         }
       ],
       "sources": [
@@ -93670,7 +94903,8 @@
           "kind": "史实与解读",
           "events": [
             "heir"
-          ]
+          ],
+          "people": []
         },
         {
           "id": "yunwen-2",
@@ -93738,7 +94972,8 @@
           "kind": "史实与解读",
           "events": [
             "v2f_jinchuan"
-          ]
+          ],
+          "people": []
         },
         {
           "id": "yunwen-6",
@@ -93749,7 +94984,8 @@
             "v2e_ms113"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "yunwen-7",
@@ -93759,7 +94995,8 @@
             "v2e_ms4"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         }
       ],
       "sources": [
@@ -93786,7 +95023,8 @@
             "226257"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "di-2",
@@ -93896,7 +95134,8 @@
             "226257"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         }
       ],
       "sources": [
@@ -93929,7 +95168,8 @@
           "kind": "史实与解读",
           "events": [
             "v2e_yongleend"
-          ]
+          ],
+          "people": []
         },
         {
           "id": "gaochi-2",
@@ -93940,7 +95180,8 @@
             "v2e_ms7"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "gaochi-3",
@@ -94000,7 +95241,8 @@
             "v2e_ms9"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "gaochi-7",
@@ -94043,7 +95285,8 @@
             "v2e_ms9"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "zhanji-2",
@@ -94126,7 +95369,8 @@
             "v2e_ms113"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "zhanji-7",
@@ -94136,7 +95380,8 @@
             "v2e_ms9"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         }
       ],
       "sources": [
@@ -94213,7 +95458,8 @@
           "kind": "史实与解读",
           "events": [
             "v2e_return"
-          ]
+          ],
+          "people": []
         },
         {
           "id": "qizhen-5",
@@ -94250,7 +95496,8 @@
           "kind": "史实与解读",
           "events": [
             "v2e_sacrifice"
-          ]
+          ],
+          "people": []
         },
         {
           "id": "qizhen-7",
@@ -94262,7 +95509,8 @@
             "v2e_ms12"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         }
       ],
       "sources": [
@@ -94291,7 +95539,8 @@
             "v2e_ms11"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "qiyu-2",
@@ -94345,7 +95594,8 @@
           "kind": "史实与解读",
           "events": [
             "v2e_return"
-          ]
+          ],
+          "people": []
         },
         {
           "id": "qiyu-5",
@@ -94358,7 +95608,8 @@
           "kind": "史实与解读",
           "events": [
             "v2e_changeheir"
-          ]
+          ],
+          "people": []
         },
         {
           "id": "qiyu-6",
@@ -94371,7 +95622,8 @@
           "kind": "史实与解读",
           "events": [
             "v2e_restoration"
-          ]
+          ],
+          "people": []
         },
         {
           "id": "qiyu-7",
@@ -94384,7 +95636,8 @@
           "kind": "史实与解读",
           "events": [
             "v2e_jingrestore"
-          ]
+          ],
+          "people": []
         }
       ],
       "sources": [
@@ -94414,7 +95667,8 @@
           "kind": "史实与解读",
           "events": [
             "v2e_changeheir"
-          ]
+          ],
+          "people": []
         },
         {
           "id": "jianshen-2",
@@ -94449,7 +95703,8 @@
           "kind": "史实与解读",
           "events": [
             "v2e_yunyang"
-          ]
+          ],
+          "people": []
         },
         {
           "id": "jianshen-4",
@@ -94503,7 +95758,8 @@
             "v2e_ms13"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "jianshen-7",
@@ -94517,7 +95773,8 @@
             "v14_chenghua_doucai",
             "v65m_silver",
             "v65m_shecang"
-          ]
+          ],
+          "people": []
         }
       ],
       "sources": [
@@ -94545,7 +95802,8 @@
             "226266"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "youtang-2",
@@ -94557,7 +95815,8 @@
           "kind": "史实与解读",
           "events": [
             "v2l_hongzhi"
-          ]
+          ],
+          "people": []
         },
         {
           "id": "youtang-3",
@@ -94595,7 +95854,8 @@
           "kind": "史实与解读",
           "events": [
             "v2l_rivers"
-          ]
+          ],
+          "people": []
         },
         {
           "id": "youtang-5",
@@ -94622,7 +95882,8 @@
             "226241"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "youtang-7",
@@ -94633,7 +95894,8 @@
             "226266"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "youtang-8",
@@ -94647,7 +95909,8 @@
           "events": [
             "v65m_silver",
             "v65m_shecang"
-          ]
+          ],
+          "people": []
         }
       ],
       "sources": [
@@ -94674,7 +95937,8 @@
             "226240"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "houzhao-2",
@@ -94734,7 +95998,8 @@
           "kind": "史实与解读",
           "events": [
             "v2l_yingzhou"
-          ]
+          ],
+          "people": []
         },
         {
           "id": "houzhao-5",
@@ -94785,7 +96050,8 @@
             "226240"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "houzhao-8",
@@ -94870,7 +96136,8 @@
             "v2l_ms18"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "houcong-4",
@@ -95190,7 +96457,8 @@
             "v2l_sea"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         }
       ],
       "sources": [
@@ -95452,7 +96720,8 @@
             "v2l_ms78"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "yijun-8",
@@ -95527,7 +96796,8 @@
           "kind": "史实与解读",
           "events": [
             "v2l_crown"
-          ]
+          ],
+          "people": []
         },
         {
           "id": "changluo-2",
@@ -95537,7 +96807,8 @@
             "v2l_ms21"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "changluo-3",
@@ -95550,7 +96821,8 @@
           "kind": "史实与解读",
           "events": [
             "v2l_tingji"
-          ]
+          ],
+          "people": []
         },
         {
           "id": "changluo-4",
@@ -95596,7 +96868,8 @@
           "kind": "史实与解读",
           "events": [
             "v2l_yigong"
-          ]
+          ],
+          "people": []
         },
         {
           "id": "changluo-7",
@@ -95608,7 +96881,8 @@
             "226242"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "changluo-8",
@@ -95620,7 +96894,8 @@
             "226246"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         }
       ],
       "sources": [
@@ -95647,7 +96922,8 @@
           "kind": "史实与解读",
           "events": [
             "v2l_yigong"
-          ]
+          ],
+          "people": []
         },
         {
           "id": "youxiao-2",
@@ -95777,7 +97053,8 @@
             "v2l_ms78"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "youxiao-7",
@@ -95789,7 +97066,8 @@
             "226246"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "youxiao-8",
@@ -95801,7 +97079,8 @@
             "v2l_ms78"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         }
       ],
       "sources": [
@@ -96172,7 +97451,8 @@
             "v2f_ms127"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "lishanzhang-f2",
@@ -96184,7 +97464,8 @@
           "kind": "史实与解读",
           "events": [
             "v15_lishanzhang_statecraft"
-          ]
+          ],
+          "people": []
         },
         {
           "id": "lishanzhang-f3",
@@ -96194,7 +97475,8 @@
             "v2f_ms127"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "lishanzhang-f4",
@@ -96204,7 +97486,8 @@
             "v2f_ms127"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "lishanzhang-f5",
@@ -96214,7 +97497,8 @@
             "v2f_ms127"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         }
       ],
       "sources": [
@@ -96236,7 +97520,8 @@
           "kind": "史实与解读",
           "events": [
             "v15_lanyu_yunnan"
-          ]
+          ],
+          "people": []
         },
         {
           "id": "lanyu-f2",
@@ -96246,7 +97531,8 @@
             "v2f_ms132"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "lanyu-f3",
@@ -96256,7 +97542,8 @@
             "v2f_ms132"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "lanyu-f4",
@@ -96266,7 +97553,8 @@
             "v2f_ms132"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "lanyu-f5",
@@ -96276,7 +97564,8 @@
             "v2f_ms132"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         }
       ],
       "sources": [
@@ -96296,7 +97585,8 @@
             "v2f_ms125"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "xuda-f2",
@@ -96306,7 +97596,8 @@
             "v2f_ms125"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "xuda-f3",
@@ -96318,7 +97609,8 @@
           "kind": "史实与解读",
           "events": [
             "v15_xuda_1372"
-          ]
+          ],
+          "people": []
         },
         {
           "id": "xuda-f4",
@@ -96329,7 +97621,8 @@
             "v2f_ms113"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "xuda-f5",
@@ -96339,7 +97632,8 @@
             "v2f_ms125"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         }
       ],
       "sources": [
@@ -96360,7 +97654,8 @@
             "v2f_ms126"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "tanghe-f2",
@@ -96370,7 +97665,8 @@
             "v2f_ms126"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "tanghe-f3",
@@ -96381,7 +97677,8 @@
             "v2f_ms127"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "tanghe-f4",
@@ -96393,7 +97690,8 @@
           "kind": "史实与解读",
           "events": [
             "v15_tanghe_coast"
-          ]
+          ],
+          "people": []
         },
         {
           "id": "tanghe-f5",
@@ -96403,7 +97701,8 @@
             "v2f_ms126"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         }
       ],
       "sources": [
@@ -96424,7 +97723,8 @@
             "v2f_ms126"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "lijinglong-f2",
@@ -96434,7 +97734,8 @@
             "v2f_ms126"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "lijinglong-f3",
@@ -96444,7 +97745,8 @@
             "v2f_ms126"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "lijinglong-f4",
@@ -96454,7 +97756,8 @@
             "v2f_ms126"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "lijinglong-f5",
@@ -96466,7 +97769,8 @@
           "kind": "史实与解读",
           "events": [
             "v15_lijinglong_fall"
-          ]
+          ],
+          "people": []
         }
       ],
       "sources": [
@@ -96486,7 +97790,8 @@
             "v2f_ms122"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "guo-f2",
@@ -96496,7 +97801,8 @@
             "v2f_ms122"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "guo-f3",
@@ -96506,7 +97812,8 @@
             "v2f_ms122"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "guo-f4",
@@ -96517,7 +97824,8 @@
             "v2f_ms1"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "guo-f5",
@@ -96527,7 +97835,8 @@
             "v2f_ms122"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         }
       ],
       "sources": [
@@ -97576,7 +98885,8 @@
             "v5qe_qsg1"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "q-nurhaci-2",
@@ -97586,7 +98896,8 @@
             "v5qe_qsg1"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "q-nurhaci-3",
@@ -97598,7 +98909,8 @@
           "kind": "史实与解读",
           "events": [
             "qev_later_jin_1616"
-          ]
+          ],
+          "people": []
         },
         {
           "id": "q-nurhaci-4",
@@ -97630,7 +98942,8 @@
             "v5qe_qsg1"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "q-nurhaci-6",
@@ -97642,7 +98955,8 @@
           "kind": "史实与解读",
           "events": [
             "qev_nurhaci_death_1626"
-          ]
+          ],
+          "people": []
         },
         {
           "id": "q-nurhaci-7",
@@ -97653,7 +98967,8 @@
             "v5qe_dpm_lineage"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         }
       ],
       "sources": [
@@ -97679,7 +98994,8 @@
           "kind": "史实与解读",
           "events": [
             "qev_hongtaiji_khan_1626"
-          ]
+          ],
+          "people": []
         },
         {
           "id": "q-hongtaiji-2",
@@ -97710,7 +99026,8 @@
             "v5qe_qsg2_3"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "q-hongtaiji-4",
@@ -97723,7 +99040,8 @@
           "kind": "史实与解读",
           "events": [
             "qev_qing_name_1636"
-          ]
+          ],
+          "people": []
         },
         {
           "id": "q-hongtaiji-5",
@@ -97735,7 +99053,8 @@
           "kind": "史实与解读",
           "events": [
             "v13_hongtaiji_songjin"
-          ]
+          ],
+          "people": []
         },
         {
           "id": "q-hongtaiji-6",
@@ -97745,7 +99064,8 @@
             "v5qe_qsg2_3"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "q-hongtaiji-7",
@@ -97756,7 +99076,8 @@
             "v5qe_dpm_lineage"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         }
       ],
       "sources": [
@@ -97780,7 +99101,8 @@
             "v5qe_dpm_lineage"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "q-shunzhi-2",
@@ -97812,7 +99134,8 @@
           "kind": "史实与解读",
           "events": [
             "v12_shunzhi_hair_order"
-          ]
+          ],
+          "people": []
         },
         {
           "id": "q-shunzhi-4",
@@ -97844,7 +99167,8 @@
             "v5qe_qsg4_5"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "q-shunzhi-6",
@@ -97855,7 +99179,8 @@
             "v5qe_dpm_reader"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "q-shunzhi-7",
@@ -97866,7 +99191,8 @@
             "v5qe_dpm_lineage"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         }
       ],
       "sources": [
@@ -99085,7 +100411,8 @@
             "v5qe_dpm_lineage"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "q-daoguang-2",
@@ -99196,7 +100523,8 @@
             "v5qe_chn_jintian"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "q-daoguang-7",
@@ -99208,7 +100536,8 @@
             "v5qe_chn_opium"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         }
       ],
       "sources": [
@@ -99243,7 +100572,8 @@
           "events": [
             "v163_accession_crisis",
             "v163_guangxi_command"
-          ]
+          ],
+          "people": []
         },
         {
           "id": "q-xianfeng-2",
@@ -99291,7 +100621,8 @@
             "v163_yangtze_fiscal_break",
             "v163_lijin_yangzhou",
             "v163_campaign_wages"
-          ]
+          ],
+          "people": []
         },
         {
           "id": "q-xianfeng-4",
@@ -99307,7 +100638,8 @@
             "qev_second_opium_war_1856",
             "v163_shanghai_customs",
             "v163_battle_language"
-          ]
+          ],
+          "people": []
         },
         {
           "id": "q-xianfeng-5",
@@ -99323,7 +100655,8 @@
             "v13_xianfeng_zongli",
             "v163_land_program",
             "v163_exam_printing"
-          ]
+          ],
+          "people": []
         },
         {
           "id": "q-xianfeng-6",
@@ -99708,7 +101041,66 @@
           ],
           "kind": "史实与解读",
           "events": [
-            "qev_guangxu_accession_1875"
+            "qev_guangxu_accession_1875",
+            "v167_guangxu_regency",
+            "v167_defense_debate",
+            "v167_guo_appointment",
+            "v167_london_legation",
+            "v167_lividia_treaty",
+            "v167_reject_lividia",
+            "v167_zeng_renegotiates",
+            "v167_ili_revised",
+            "v167_xinjiang_province_plan",
+            "v167_western_logistics",
+            "v167_gumu_dihua",
+            "v167_manas",
+            "v167_turpan",
+            "v167_yaqub_death",
+            "v167_southern_oases",
+            "v167_bai_exile",
+            "v167_ili_preparation",
+            "v167_postwar_garrisons",
+            "v167_western_loans",
+            "v167_grain_transport",
+            "v167_famine_remission",
+            "v167_famine_grain_market",
+            "v167_relief_fundraising",
+            "v167_kaiping_mine",
+            "v167_coal_canal",
+            "v167_tangxu_rail",
+            "v167_telegraph_finance",
+            "v167_famine_drought",
+            "v167_famine_prices",
+            "v167_famine_mortality",
+            "v167_famine_displacement",
+            "v167_official_relief",
+            "v167_merchant_relief",
+            "v167_mission_relief",
+            "v167_xinjiang_displacement",
+            "v167_students_return",
+            "v167_guangxu_school",
+            "v167_shixi_jicheng",
+            "v167_legation_knowledge",
+            "v167_students_daily",
+            "v167_students_debate",
+            "v167_famine_press",
+            "v167_relief_accounts",
+            "v167_telegraph_school",
+            "v167_industrial_survey"
+          ],
+          "people": [
+            "q_zengjize",
+            "q_liujintang",
+            "q167_guosongtao",
+            "q167_aguabai",
+            "q167_baiyanhu",
+            "q167_zhangyao",
+            "q167_jinshun",
+            "q167_dingbaozhen",
+            "q167_yanjingming",
+            "q167_shengxuanhuai",
+            "q167_jingyuanshan",
+            "q167_litimotai"
           ]
         },
         {
@@ -99722,7 +101114,8 @@
           "kind": "史实与解读",
           "events": [
             "v65q_famine"
-          ]
+          ],
+          "people": []
         },
         {
           "id": "q-guangxu-3",
@@ -99770,7 +101163,8 @@
             "v5qe_qsg23_24"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "q-guangxu-6",
@@ -99815,7 +101209,8 @@
             "v5qe_dpm_lineage"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         }
       ],
       "sources": [
@@ -99828,7 +101223,31 @@
         "v40q_tongmenghui",
         "v41q_qsg462",
         "v41q_liang_press",
-        "v41q_tianyan"
+        "v41q_tianyan",
+        "v167_dpm_guangxu",
+        "v167_dpm_yuqing",
+        "v167_neac_campaign",
+        "v167_neac_xinjiang",
+        "v167_xinjiang_ili",
+        "v167_mfa_ili",
+        "v167_qsg446",
+        "v167_qsg454",
+        "v167_qsg412",
+        "v167_qsg21_22",
+        "v167_qsg447",
+        "v167_qsg438",
+        "v167_qsg471",
+        "v167_cssn_famine",
+        "v167_ruc_relief",
+        "v167_shanxi_famine",
+        "v167_zhejiang_jing",
+        "v167_timothy_study",
+        "v167_nopss_students",
+        "v167_embassy_london",
+        "v167_xiangyin_journey",
+        "v167_hebei_rail",
+        "v167_gd_telegraph",
+        "v167_shanghai_gazette"
       ]
     },
     {
@@ -99847,7 +101266,8 @@
           "kind": "史实与解读",
           "events": [
             "qev_xuantong_accession_1908"
-          ]
+          ],
+          "people": []
         },
         {
           "id": "q-xuantong-2",
@@ -99875,7 +101295,8 @@
             "v12_xuantong_railway",
             "v65q_jingzhang",
             "v65q_plague"
-          ]
+          ],
+          "people": []
         },
         {
           "id": "q-xuantong-4",
@@ -99916,7 +101337,8 @@
           "kind": "史实与解读",
           "events": [
             "qev_abdication_1912"
-          ]
+          ],
+          "people": []
         },
         {
           "id": "q-xuantong-6",
@@ -99929,7 +101351,8 @@
           "kind": "史实与解读",
           "events": [
             "qev_manchukuo_1932"
-          ]
+          ],
+          "people": []
         },
         {
           "id": "q-xuantong-7",
@@ -99940,7 +101363,8 @@
             "v5qe_saac_abdication"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         }
       ],
       "sources": [
@@ -101352,7 +102776,8 @@
           "kind": "史实与解读",
           "events": [
             "v15_chang_caishi"
-          ]
+          ],
+          "people": []
         },
         {
           "id": "changyuchun-2",
@@ -101363,7 +102788,8 @@
             "v15_dpm_hongwu"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "changyuchun-3",
@@ -101376,7 +102802,8 @@
           "kind": "史实与解读",
           "events": [
             "v15_chang_north"
-          ]
+          ],
+          "people": []
         },
         {
           "id": "changyuchun-4",
@@ -101386,7 +102813,8 @@
             "v2f_ms125"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "changyuchun-5",
@@ -101399,7 +102827,8 @@
           "kind": "史实与解读",
           "events": [
             "v15_chang_death"
-          ]
+          ],
+          "people": []
         }
       ],
       "sources": [
@@ -101421,7 +102850,8 @@
             "v2f_ms126"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "liwenzhong-2",
@@ -101433,7 +102863,8 @@
           "kind": "史实与解读",
           "events": [
             "v15_liwenzhong_yingchang"
-          ]
+          ],
+          "people": []
         },
         {
           "id": "liwenzhong-3",
@@ -101446,7 +102877,8 @@
           "kind": "史实与解读",
           "events": [
             "v15_xuda_1372"
-          ]
+          ],
+          "people": []
         },
         {
           "id": "liwenzhong-4",
@@ -101459,7 +102891,8 @@
           "kind": "史实与解读",
           "events": [
             "v15_liwenzhong_central"
-          ]
+          ],
+          "people": []
         },
         {
           "id": "liwenzhong-5",
@@ -101471,7 +102904,8 @@
           "kind": "史实与解读",
           "events": [
             "v15_liwenzhong_death"
-          ]
+          ],
+          "people": []
         }
       ],
       "sources": [
@@ -101496,7 +102930,8 @@
           "kind": "史实与解读",
           "events": [
             "v15_liuji_arrival"
-          ]
+          ],
+          "people": []
         },
         {
           "id": "liuji-2",
@@ -101510,7 +102945,8 @@
           "kind": "史实与解读",
           "events": [
             "v15_liuji_poyang"
-          ]
+          ],
+          "people": []
         },
         {
           "id": "liuji-3",
@@ -101523,7 +102959,8 @@
           "kind": "史实与解读",
           "events": [
             "v15_liuji_law"
-          ]
+          ],
+          "people": []
         },
         {
           "id": "liuji-4",
@@ -101534,7 +102971,8 @@
             "v2f_ms127"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "liuji-5",
@@ -101547,7 +102985,8 @@
           "kind": "史实与解读",
           "events": [
             "v15_liuji_retirement"
-          ]
+          ],
+          "people": []
         }
       ],
       "sources": [
@@ -103754,7 +105193,8 @@
           "sources": [
             "v40m2_ms195"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "people": []
         },
         {
           "id": "v54_m40_wangshouren_2",
@@ -103764,7 +105204,8 @@
           "sources": [
             "v40m2_ms195"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "people": []
         },
         {
           "id": "v54_m40_wangshouren_3",
@@ -103774,7 +105215,8 @@
           "sources": [
             "v40m2_ms195"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "people": []
         },
         {
           "id": "v54_m40_wangshouren_4",
@@ -103786,7 +105228,8 @@
           "sources": [
             "v40m2_ms195"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "people": []
         },
         {
           "id": "v54_m40_wangshouren_5",
@@ -103796,7 +105239,8 @@
           "sources": [
             "v40m2_ms195"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "people": []
         }
       ],
       "sources": [
@@ -104853,7 +106297,8 @@
             "v40m2_ms251",
             "v40m2_ihns_xu"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "people": []
         },
         {
           "id": "v54_m40_xuguangqi_2",
@@ -104866,7 +106311,8 @@
             "v40m2_ms251",
             "v40m2_ihns_xu"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "people": []
         },
         {
           "id": "v54_m40_xuguangqi_3",
@@ -104877,7 +106323,8 @@
             "v40m2_ms251",
             "v40m2_ihns_xu"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "people": []
         },
         {
           "id": "v54_m40_xuguangqi_4",
@@ -104890,7 +106337,8 @@
             "v40m2_ms251",
             "v40m2_ihns_xu"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "people": []
         },
         {
           "id": "v54_m40_xuguangqi_5",
@@ -104901,7 +106349,8 @@
             "v40m2_ms251",
             "v40m2_ihns_xu"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "people": []
         }
       ],
       "sources": [
@@ -105599,7 +107048,8 @@
             "v41q_qsg363",
             "v54q_chnmuseum_humen"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "people": []
         },
         {
           "id": "v54_q_linzexu_2",
@@ -105611,7 +107061,8 @@
             "v41q_qsg363",
             "v54q_chnmuseum_humen"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "people": []
         },
         {
           "id": "v54_q_linzexu_3",
@@ -105625,7 +107076,8 @@
             "v41q_qsg363",
             "v54q_chnmuseum_humen"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "people": []
         },
         {
           "id": "v54_q_linzexu_4",
@@ -105640,7 +107092,8 @@
             "v41q_qsg363",
             "v54q_chnmuseum_humen"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "people": []
         },
         {
           "id": "v54_q_linzexu_5",
@@ -105654,7 +107107,8 @@
             "v41q_qsg363",
             "v54q_chnmuseum_humen"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "people": []
         }
       ],
       "sources": [
@@ -105757,7 +107211,8 @@
           "sources": [
             "v40q_qsg405"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "people": []
         },
         {
           "id": "v54_q_zengguofan_2",
@@ -105769,7 +107224,8 @@
           "sources": [
             "v40q_qsg405"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "people": []
         },
         {
           "id": "v54_q_zengguofan_3",
@@ -105781,7 +107237,8 @@
           "sources": [
             "v40q_qsg405"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "people": []
         },
         {
           "id": "v54_q_zengguofan_4",
@@ -105794,7 +107251,8 @@
           "sources": [
             "v40q_qsg405"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "people": []
         },
         {
           "id": "v54_q_zengguofan_5",
@@ -105804,7 +107262,8 @@
           "sources": [
             "v40q_qsg405"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "people": []
         }
       ],
       "sources": [
@@ -105826,7 +107285,8 @@
             "v41q_qsg454",
             "v41q_qsg446"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "people": []
         },
         {
           "id": "v54_q_zuozongtang_2",
@@ -105838,7 +107298,8 @@
             "v41q_qsg454",
             "v41q_qsg446"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "people": []
         },
         {
           "id": "v54_q_zuozongtang_3",
@@ -105853,7 +107314,8 @@
             "v41q_qsg454",
             "v41q_qsg446"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "people": []
         },
         {
           "id": "v54_q_zuozongtang_4",
@@ -105868,7 +107330,8 @@
             "v41q_qsg454",
             "v41q_qsg446"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "people": []
         },
         {
           "id": "v54_q_zuozongtang_5",
@@ -105882,7 +107345,8 @@
             "v41q_qsg454",
             "v41q_qsg446"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "people": []
         }
       ],
       "sources": [
@@ -105906,7 +107370,8 @@
             "v41q_qsg462",
             "v41q_yan_bio"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "people": []
         },
         {
           "id": "v54_q_lihongzhang_2",
@@ -105918,7 +107383,8 @@
             "v41q_qsg462",
             "v41q_yan_bio"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "people": []
         },
         {
           "id": "v54_q_lihongzhang_3",
@@ -105935,7 +107401,8 @@
             "v41q_qsg462",
             "v41q_yan_bio"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "people": []
         },
         {
           "id": "v54_q_lihongzhang_4",
@@ -105947,7 +107414,8 @@
             "v41q_qsg462",
             "v41q_yan_bio"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "people": []
         },
         {
           "id": "v54_q_lihongzhang_5",
@@ -105963,7 +107431,8 @@
             "v41q_qsg462",
             "v41q_yan_bio"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "people": []
         }
       ],
       "sources": [
@@ -106794,7 +108263,8 @@
             "v41m_ms299",
             "v41m_hb_bencao"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "people": []
         },
         {
           "id": "v54_m41_lishizhen_2",
@@ -106805,7 +108275,8 @@
             "v41m_ms299",
             "v41m_hb_bencao"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "people": []
         },
         {
           "id": "v54_m41_lishizhen_3",
@@ -106818,7 +108289,8 @@
             "v41m_ms299",
             "v41m_hb_bencao"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "people": []
         },
         {
           "id": "v54_m41_lishizhen_4",
@@ -106831,7 +108303,8 @@
             "v41m_ms299",
             "v41m_hb_bencao"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "people": []
         },
         {
           "id": "v54_m41_lishizhen_5",
@@ -106842,7 +108315,8 @@
             "v41m_ms299",
             "v41m_hb_bencao"
           ],
-          "kind": "史实与解读"
+          "kind": "史实与解读",
+          "people": []
         }
       ],
       "sources": [
@@ -107081,113 +108555,196 @@
     },
     {
       "person": "q_liujintang",
-      "title": "刘锦棠：从湘军进入西北战场",
-      "dek": "在左宗棠麾下统军西征，随后参与新疆建省和地方制度重组，经历从战争到行政建设的转变。",
+      "title": "刘锦棠：西征前线统帅与新疆首任巡抚",
+      "dek": "由金积堡战事进入西征前线，负责北疆、南疆主要战役，后参与建省；军功、处决和战后治理必须并读。",
       "sections": [
         {
           "id": "v41q_liujintang_1",
           "title": "从湘军进入西北战场",
           "text": "刘锦棠随叔父刘松山从军，参与对捻军及西北反清力量的战争。刘松山战死后，他接领部队，在左宗棠节制下继续作战。这支军队依靠将领之间的私人信任和地方筹饷维系，统帅更替必须同时稳定军心与补给。西北战争伴随围困、处决和人口强制迁移，《清史稿》即有相关记载，却常使用清廷敌我语言和褒扬军功的笔法。理解刘锦棠的崛起，既需交代指挥能力和军事网络，也须把战争中的非战斗人员放回叙事，不能将所有被镇压者都当成同一类军事敌人。",
-          "kind": "史实与解读",
           "sources": [
-            "v41q_qsg454"
+            "v167_qsg454",
+            "v167_neac_campaign",
+            "v167_neac_xinjiang"
           ],
-          "people": [
-            "q_tongzhi",
-            "q_zuozongtang"
+          "kind": "史实与解读",
+          "events": [
+            "v40q_xinjiang_campaign",
+            "v41q_xinjiang_province",
+            "v166_jinji_siege"
           ],
-          "events": []
+          "people": []
         },
         {
           "id": "v41q_liujintang_2",
           "title": "新疆战役中的前线指挥",
           "text": "1876—1877年，左宗棠统筹粮饷和进军方向，刘锦棠等将领执行前线行动，先后攻取乌鲁木齐、达坂城等地，继续向南疆推进。穿越缺水地区、保持粮道和处理投降部众，同攻城一样关系战局。他并非独自完成全部战役，其他部队与运输人员同样承担关键任务。清军恢复对新疆主要地区的控制后，俄国占据伊犁的问题仍未解决，需要后续交涉。《清史稿》关于阿古柏死亡的细节有争议，不能把一种叙述直接等同于定论；军事成果与当地社会经历也应分别观察。",
-          "kind": "史实与解读",
           "sources": [
-            "v41q_qsg454"
+            "v167_qsg454",
+            "v167_neac_campaign",
+            "v167_neac_xinjiang"
           ],
-          "people": [
-            "q_guangxu",
-            "q_zuozongtang"
-          ],
+          "kind": "史实与解读",
           "events": [
-            "v40q_xinjiang_campaign"
-          ]
+            "v41q_xinjiang_province",
+            "v166_jinji_siege",
+            "v166_liusongshan_death"
+          ],
+          "people": []
         },
         {
           "id": "v41q_liujintang_3",
           "title": "建省意味着什么",
           "text": "1884年新疆建省，刘锦棠成为首任巡抚。新的安排逐步建立府州县、驿传和学校，整理赋税、屯垦与水利，使地方治理更紧密地接入清朝省制。他从战场统帅转向行政主持者，所面对的已不仅是军事据点，还包括人口恢复、耕作和财政持续性。省制并未让当地原有制度一夜消失，伊犁等地仍有不同军政安排；各地区执行也需要时间。把建省写成一次命令即可完成的改革，会遮住长期制度调整以及民众承受的负担。它同时体现清廷加强边疆控制与战后重建的双重目标。",
-          "kind": "史实与解读",
           "sources": [
-            "v41q_qsg454",
-            "v41q_province"
+            "v167_qsg454",
+            "v167_neac_campaign",
+            "v167_neac_xinjiang"
           ],
-          "people": [
-            "q_guangxu",
-            "q_zuozongtang"
-          ],
+          "kind": "史实与解读",
           "events": [
-            "v41q_xinjiang_province"
-          ]
+            "v166_jinji_siege",
+            "v166_liusongshan_death",
+            "v166_ma_surrender"
+          ],
+          "people": []
+        },
+        {
+          "id": "v167_liujintang_4",
+          "title": "追击、处置与居民代价",
+          "text": "白彦虎等部越境，战俘、投降者和地方官绅面临不同处置。清方传记突出克城受降，地方居民经历的征粮、逃亡和报复较少进入军功叙事，这一沉默必须明确。从资源与普通人的处境观察，1870年的“刘松山攻马五寨中炮身亡”提供了另一个切面：清军围攻金积堡外围寨堡时，刘松山阵亡，部队由刘锦棠接统。私人营制在亲属接替中延续，也加深军队与将领网络的绑定。",
+          "sources": [
+            "v167_qsg454",
+            "v167_neac_campaign",
+            "v167_neac_xinjiang"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_liusongshan_death",
+            "v166_ma_surrender",
+            "v166_hexi_campaign"
+          ],
+          "people": []
+        },
+        {
+          "id": "v167_liujintang_5",
+          "title": "从将领到巡抚",
+          "text": "新疆建省后刘锦棠任首任巡抚，推动州县、财政、驿路与屯垦重组。制度转型的重要性不低于战役，但1884年以后的治理不能倒写成1877年已经完成。在结果之外还应注意，1870—1871年的“马化龙出降后被处决”提供了另一个切面：金积堡陷入绝境后马化龙投降，清军随后以藏械等理由处决其家族和部属。投降、问责与大规模杀戮的边界，是必须揭示的史料争议。",
+          "sources": [
+            "v167_qsg454",
+            "v167_neac_campaign",
+            "v167_neac_xinjiang"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v166_ma_surrender",
+            "v166_hexi_campaign",
+            "v167_zeng_renegotiates"
+          ],
+          "people": []
         }
       ],
       "sources": [
-        "v41q_qsg454",
-        "v41q_province"
+        "v167_qsg454",
+        "v167_neac_campaign",
+        "v167_neac_xinjiang"
       ]
     },
     {
       "person": "q_zengjize",
-      "title": "曾纪泽：从家学走向驻外使馆",
-      "dek": "曾国藩之子，长期从事驻外外交，参与重订伊犁条约；其工作体现交涉与军事、财政条件之间的关系。",
+      "title": "曾纪泽：出使英法俄大臣",
+      "dek": "从家学和自学外语进入常驻外交，在伊犁改约中争回部分权益；结果仍包括割地、赔款和贸易特权。",
       "sections": [
         {
           "id": "v41q_zengjize_1",
           "title": "从家学走向驻外使馆",
           "text": "曾纪泽为曾国藩长子，早年通过荫叙进入官场，父亲去世后承袭爵位。1878年奉命出使英国、法国，后来兼使俄国。驻外使臣必须持续处理本国指示、外国政府程序和复杂的信息来源，工作方式与临时奉命远行的旧式使者不同。曾纪泽不仅需要传递文书，也要判断对方的底线，并把当地政治变化解释给清廷。家族声望有助于其进入官僚体系，却不能替代实际交涉能力。观察他的经历，可以把晚清外交从几次签约现场扩展为使馆中的日常沟通、报告与决策过程。",
-          "kind": "史实与解读",
           "sources": [
-            "v41q_qsg446"
+            "v167_qsg446",
+            "v167_mfa_ili",
+            "v167_xinjiang_ili"
           ],
-          "people": [
-            "q_guangxu",
-            "q_zengguofan"
+          "kind": "史实与解读",
+          "events": [
+            "v41q_ili_treaty",
+            "v167_lividia_treaty",
+            "v167_reject_lividia"
           ],
-          "events": []
+          "people": []
         },
         {
           "id": "v41q_zengjize_2",
           "title": "伊犁改约的取舍",
           "text": "俄国占据伊犁后，崇厚谈成的条约受到清廷强烈反对，曾纪泽被派去重议。他判断领土边界难以日后改动，应优先争取，而商务条款尚有调整空间。这并不是认定赔款和通商毫无代价，而是在不利条件下设定谈判次序。1881年重订条约，使清廷收回伊犁主要地区及重要通道，但仍付出赔款、部分土地和其他权益的损失。左宗棠等人的军事准备是交涉背景之一，外交也避免了直接对俄开战的更大风险。成果既不宜写成毫无损失的胜利，也不应抹去相对前约所争得的实际改善。",
-          "kind": "史实与解读",
           "sources": [
-            "v41q_qsg446"
+            "v167_qsg446",
+            "v167_mfa_ili",
+            "v167_xinjiang_ili"
           ],
-          "people": [
-            "q_guangxu",
-            "q_zuozongtang"
-          ],
+          "kind": "史实与解读",
           "events": [
-            "v41q_ili_treaty"
-          ]
+            "v167_lividia_treaty",
+            "v167_reject_lividia",
+            "v167_zeng_renegotiates"
+          ],
+          "people": []
         },
         {
           "id": "v41q_zengjize_3",
           "title": "使臣能改变多少",
           "text": "曾纪泽随后继续处理法国侵越等交涉，并参与洋药税厘问题，回国后任职总理衙门及部院。他的工作横跨疆界、贸易与军事采购，表明外交不能同财政和技术事务截然分开。然而使臣并不掌握全部军队、经费和最高决策权，奏议能否采用仍取决于清廷。后世常以善辩塑造外交家的形象，但谈判结果更来自准备、授权、力量对比和时机。曾纪泽的意义在于把具体利益拆开衡量，通过反复文书与谈判争取可行结果；这种专业工作与宫廷中的名望政治既相互联系，也存在张力。",
-          "kind": "史实与解读",
           "sources": [
-            "v41q_qsg446"
+            "v167_qsg446",
+            "v167_mfa_ili",
+            "v167_xinjiang_ili"
           ],
-          "people": [
-            "q_guangxu"
+          "kind": "史实与解读",
+          "events": [
+            "v167_reject_lividia",
+            "v167_zeng_renegotiates",
+            "v167_ili_revised"
           ],
-          "events": []
+          "people": []
+        },
+        {
+          "id": "v167_zengjize_4",
+          "title": "改订伊犁条约的所得与代价",
+          "text": "1881年改约收回伊犁大部并缩减部分俄方权益，但中国仍失去部分土地，赔款反而增加，俄商贸易便利延续。称它为相对改善较准确，不能把“外交胜利”写成完整主权恢复。从资源与普通人的处境观察，1880—1881年的“曾纪泽赴俄重开伊犁谈判”提供了另一个切面：曾纪泽比较条款、交涉土地和通商条件，左宗棠的军事部署构成压力背景。谈判成果来自外交、军事和俄国国际处境共同作用。",
+          "sources": [
+            "v167_qsg446",
+            "v167_mfa_ili",
+            "v167_xinjiang_ili"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v167_zeng_renegotiates",
+            "v167_ili_revised",
+            "v167_legation_knowledge"
+          ],
+          "people": []
+        },
+        {
+          "id": "v167_zengjize_5",
+          "title": "条约文本比英雄故事更重要",
+          "text": "评价曾纪泽应逐条比较新旧约，并结合左宗棠备战、俄国国际处境和清廷财政。使臣有实际贡献，却不能独占所有原因；条约的长期边界和贸易后果也不能被个人赞誉遮住。在结果之外还应注意，1881年的“《中俄改订条约》收回伊犁大部但保留代价”提供了另一个切面：新约改善原约部分条款，仍割失土地、增加赔款并保留贸易便利。称为相对改约比无条件外交胜利更准确。",
+          "sources": [
+            "v167_qsg446",
+            "v167_mfa_ili",
+            "v167_xinjiang_ili"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v167_ili_revised",
+            "v167_legation_knowledge",
+            "v41q_ili_treaty"
+          ],
+          "people": []
         }
       ],
       "sources": [
-        "v41q_qsg446"
+        "v167_qsg446",
+        "v167_mfa_ili",
+        "v167_xinjiang_ili"
       ]
     },
     {
@@ -183722,7 +185279,8 @@
             "sheng-study"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "sheng-e2",
@@ -183733,7 +185291,8 @@
             "sheng-study"
           ],
           "kind": "关系与制度",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "sheng-e3",
@@ -183744,7 +185303,8 @@
             "sheng-study"
           ],
           "kind": "历史背景",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "sheng-e4",
@@ -183755,7 +185315,8 @@
             "sheng-study"
           ],
           "kind": "证据说明",
-          "events": []
+          "events": [],
+          "people": []
         },
         {
           "id": "sheng-e5",
@@ -183766,7 +185327,8 @@
             "sheng-study"
           ],
           "kind": "阅读方法",
-          "events": []
+          "events": [],
+          "people": []
         }
       ],
       "sources": [
@@ -210075,6 +211637,948 @@
         "v166_martin_law",
         "v165_dpm_lecture",
         "v165_qsg448"
+      ]
+    },
+    {
+      "person": "q167_guosongtao",
+      "title": "郭嵩焘：首任驻英公使",
+      "dek": "由湘军与地方官经历转入常驻外交，记录英国政治经济；其观察受到激烈攻讦，也有自身立场和盲区。",
+      "sections": [
+        {
+          "id": "v167_guosongtao_1",
+          "title": "为何由谢罪专使转为常驻公使",
+          "text": "马嘉理案与《烟台条约》迫使清廷派员赴英致歉，郭嵩焘同时承担常驻使节任务。外交制度的起点带有不平等压力，不能只写成主动走向世界。与此相连的是，1875—1876年的“郭嵩焘由谢罪专使转为驻英公使”提供了另一个切面：马嘉理案善后要求赴英致歉，清廷同时建立常驻使节职位。不平等外交压力与制度创新在同一任命中并存。",
+          "sources": [
+            "v167_qsg446",
+            "v167_embassy_london",
+            "v167_xiangyin_journey"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v167_guo_appointment",
+            "v167_london_legation",
+            "v167_shixi_jicheng"
+          ],
+          "people": []
+        },
+        {
+          "id": "v167_guosongtao_2",
+          "title": "使团不是一个人的旅行",
+          "text": "使团包括副使、参赞、翻译、随员和家属，海关驻伦敦人员先行租馆。国书、礼仪、翻译和经费共同支撑公使馆，郭嵩焘的个人见识必须放回这个团队。从同一时期的制度环境看，1877年的“中国首个常驻海外公使馆在伦敦运作”提供了另一个切面：郭嵩焘递交国书，租赁馆舍和使团人员开始连续办理外交。常驻机构改善信息来源，但授权、经费和译员体系仍在试验。",
+          "sources": [
+            "v167_qsg446",
+            "v167_embassy_london",
+            "v167_xiangyin_journey"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v167_london_legation",
+            "v167_shixi_jicheng",
+            "v167_legation_knowledge"
+          ],
+          "people": []
+        },
+        {
+          "id": "v167_guosongtao_3",
+          "title": "《使西纪程》的观察方法",
+          "text": "他按日记录航程、城市、机器、学校和政治制度，并奉命抄送总理衙门。日记既保存现场观察，也带有比较和取舍，不能把赞叹直接当作英国社会全貌。把视线转向具体现场，1876—1877年的“《使西纪程》把海外观察送回中枢”提供了另一个切面：郭嵩焘按日记录航程、城市、技术与政治制度，抄送总理衙门。日记是有立场的观察，不是整个欧洲的透明窗口。",
+          "sources": [
+            "v167_qsg446",
+            "v167_embassy_london",
+            "v167_xiangyin_journey"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v167_shixi_jicheng",
+            "v167_legation_knowledge",
+            "v167_guo_appointment"
+          ],
+          "people": []
+        },
+        {
+          "id": "v167_guosongtao_4",
+          "title": "驻外使馆改变信息节奏",
+          "text": "常驻机构能持续收集报刊、参与交涉并联系侨民，比临时专使更稳定。但远距离通信、授权含糊和京内舆论仍限制使臣，使馆并未立刻形成现代外交部体系。从资源与普通人的处境观察，1877—1881年的“常驻使馆形成连续的报刊与制度观察”提供了另一个切面：使臣、参赞和译员收集新闻、参访机构并处理照会。海外知识由团队筛选翻译，再进入京内决策，传播并非无损。",
+          "sources": [
+            "v167_qsg446",
+            "v167_embassy_london",
+            "v167_xiangyin_journey"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v167_legation_knowledge",
+            "v167_guo_appointment",
+            "v167_london_legation"
+          ],
+          "people": []
+        },
+        {
+          "id": "v167_guosongtao_5",
+          "title": "毁版与后世先觉叙事",
+          "text": "《使西纪程》因称许西方制度引发攻击，书版遭毁的记忆强化了“孤独先觉”形象。其远见值得辨认，也应检视他对帝国扩张、阶级和殖民秩序认识的局限。在结果之外还应注意，1875—1876年的“郭嵩焘由谢罪专使转为驻英公使”提供了另一个切面：马嘉理案善后要求赴英致歉，清廷同时建立常驻使节职位。不平等外交压力与制度创新在同一任命中并存。",
+          "sources": [
+            "v167_qsg446",
+            "v167_embassy_london",
+            "v167_xiangyin_journey"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v167_guo_appointment",
+            "v167_london_legation",
+            "v167_shixi_jicheng"
+          ],
+          "people": []
+        }
+      ],
+      "sources": [
+        "v167_qsg446",
+        "v167_embassy_london",
+        "v167_xiangyin_journey"
+      ]
+    },
+    {
+      "person": "q167_aguabai",
+      "title": "阿古柏：浩罕军事首领",
+      "dek": "在新疆地方内乱与浩罕势力进入的背景下建立政权，借英俄竞争求生；清军进攻与其死亡共同导致政权崩解。",
+      "sections": [
+        {
+          "id": "v167_aguabai_1",
+          "title": "进入南疆的条件",
+          "text": "1860年代新疆军政崩溃、多地割据，浩罕军官阿古柏随军进入喀什噶尔并逐步夺权。他的崛起依赖地方冲突和跨境军事网络，不是突然出现的外来个人冒险。与此相连的是，1877年的“阿古柏在战局恶化中死亡”提供了另一个切面：清军推进与政权内部危机并行，阿古柏突然死亡。疾病、自杀或被杀等说法不一，政权瓦解不能只归因于死因。",
+          "sources": [
+            "v167_neac_campaign",
+            "v167_qsg21_22",
+            "v167_qsg412"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v167_yaqub_death",
+            "v167_southern_oases",
+            "v167_xinjiang_displacement"
+          ],
+          "people": []
+        },
+        {
+          "id": "v167_aguabai_2",
+          "title": "统治如何维持",
+          "text": "政权以军队、税收、宗教合法性和地方伯克网络控制城市与绿洲。不同地区顺从程度不一，重税和军役记载多见于敌对材料，应与外交观察和地方记忆互证。从同一时期的制度环境看，1877—1878年的“清军进入库车、阿克苏与喀什噶尔等地”提供了另一个切面：西征军沿绿洲交通线推进，阿古柏继承集团迅速失去控制。军事占领与基层恢复、税收重建和居民认同是不同阶段。",
+          "sources": [
+            "v167_neac_campaign",
+            "v167_qsg21_22",
+            "v167_qsg412"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v167_southern_oases",
+            "v167_xinjiang_displacement",
+            "v167_yaqub_death"
+          ],
+          "people": []
+        },
+        {
+          "id": "v167_aguabai_3",
+          "title": "在英俄之间寻求承认",
+          "text": "阿古柏派遣使者、接受外交接触，试图利用英俄竞争获得武器、贸易和政治空间。外部承认并未变成可靠军事同盟，列强首先服从自身中亚利益。把视线转向具体现场，1876—1878年的“新疆战争造成逃亡、越境和聚落重组”提供了另一个切面：不同武装、清军推进和报复使居民迁移，部分人员随白彦虎越境。胜利者档案对普通人的损失记录不均，空白不等于没有伤害。",
+          "sources": [
+            "v167_neac_campaign",
+            "v167_qsg21_22",
+            "v167_qsg412"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v167_xinjiang_displacement",
+            "v167_yaqub_death",
+            "v167_southern_oases"
+          ],
+          "people": []
+        },
+        {
+          "id": "v167_aguabai_4",
+          "title": "清军进攻与内部瓦解",
+          "text": "清军1876年恢复北疆重要城镇，次年越天山推进。阿古柏在战局不利时死亡，死因材料有疾病、自杀或被杀等说法，不能选择最戏剧化版本当作定论。从资源与普通人的处境观察，1877年的“阿古柏在战局恶化中死亡”提供了另一个切面：清军推进与政权内部危机并行，阿古柏突然死亡。疾病、自杀或被杀等说法不一，政权瓦解不能只归因于死因。",
+          "sources": [
+            "v167_neac_campaign",
+            "v167_qsg21_22",
+            "v167_qsg412"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v167_yaqub_death",
+            "v167_southern_oases",
+            "v167_xinjiang_displacement"
+          ],
+          "people": []
+        },
+        {
+          "id": "v167_aguabai_5",
+          "title": "失败者材料为何稀少",
+          "text": "清方本纪和将领传记占据主要叙述位置，阿古柏政权自身文书保存有限。人物页应区分可确认的外交、征税与战局，以及由胜利者赋予的贬称和动机判断。在结果之外还应注意，1877—1878年的“清军进入库车、阿克苏与喀什噶尔等地”提供了另一个切面：西征军沿绿洲交通线推进，阿古柏继承集团迅速失去控制。军事占领与基层恢复、税收重建和居民认同是不同阶段。",
+          "sources": [
+            "v167_neac_campaign",
+            "v167_qsg21_22",
+            "v167_qsg412"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v167_southern_oases",
+            "v167_xinjiang_displacement",
+            "v167_yaqub_death"
+          ],
+          "people": []
+        }
+      ],
+      "sources": [
+        "v167_neac_campaign",
+        "v167_qsg21_22",
+        "v167_qsg412"
+      ]
+    },
+    {
+      "person": "q167_baiyanhu",
+      "title": "白彦虎：陕甘回民武装首领",
+      "dek": "由陕甘战争转入新疆，最终率部越境；清方长期以敌对称谓书写，追击与流亡应和西北迁徙连续观察。",
+      "sections": [
+        {
+          "id": "v167_baiyanhu_1",
+          "title": "从陕甘战争进入新疆",
+          "text": "白彦虎所部经历陕甘回汉冲突、清军西进和河西战败后退入新疆。其行动跨越多个区域，不能把1877年的南疆战事与此前十余年战争切断。与此相连的是，1877年的“白彦虎等部越境进入俄境”提供了另一个切面：连续退却后，白彦虎率余部出境，部分人员留在中亚。越境同时形成难民、边防和外交问题，不只是追击终点。",
+          "sources": [
+            "v167_qsg21_22",
+            "v167_qsg412",
+            "v167_neac_campaign"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v167_bai_exile",
+            "v167_xinjiang_displacement"
+          ],
+          "people": []
+        },
+        {
+          "id": "v167_baiyanhu_2",
+          "title": "与阿古柏并非简单上下级",
+          "text": "进入新疆后，他借阿古柏政权继续活动，但双方的目标、兵源和地方关系并不完全相同。清方常把不同武装合称，容易抹平内部差异。从同一时期的制度环境看，1876—1878年的“新疆战争造成逃亡、越境和聚落重组”提供了另一个切面：不同武装、清军推进和报复使居民迁移，部分人员随白彦虎越境。胜利者档案对普通人的损失记录不均，空白不等于没有伤害。",
+          "sources": [
+            "v167_qsg21_22",
+            "v167_qsg412",
+            "v167_neac_campaign"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v167_xinjiang_displacement",
+            "v167_bai_exile"
+          ],
+          "people": []
+        },
+        {
+          "id": "v167_baiyanhu_3",
+          "title": "南疆撤退路线",
+          "text": "清军越天山后，白彦虎等在库车、阿克苏、喀什噶尔方向退却。撤退伴随征粮、战斗和居民逃亡，具体责任需逐地核对，不能由一个首领概括全部暴力。把视线转向具体现场，1877年的“白彦虎等部越境进入俄境”提供了另一个切面：连续退却后，白彦虎率余部出境，部分人员留在中亚。越境同时形成难民、边防和外交问题，不只是追击终点。",
+          "sources": [
+            "v167_qsg21_22",
+            "v167_qsg412",
+            "v167_neac_campaign"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v167_bai_exile",
+            "v167_xinjiang_displacement"
+          ],
+          "people": []
+        },
+        {
+          "id": "v167_baiyanhu_4",
+          "title": "越境后的政治问题",
+          "text": "其部最终进入俄境，部分人员在中亚定居。越境既结束了清军直接追击，也形成难民、边境治安和中俄交涉问题。从资源与普通人的处境观察，1876—1878年的“新疆战争造成逃亡、越境和聚落重组”提供了另一个切面：不同武装、清军推进和报复使居民迁移，部分人员随白彦虎越境。胜利者档案对普通人的损失记录不均，空白不等于没有伤害。",
+          "sources": [
+            "v167_qsg21_22",
+            "v167_qsg412",
+            "v167_neac_campaign"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v167_xinjiang_displacement",
+            "v167_bai_exile"
+          ],
+          "people": []
+        },
+        {
+          "id": "v167_baiyanhu_5",
+          "title": "敌对档案中的人物",
+          "text": "清方材料多用“匪首”等词，后世民族叙事又可能完全反转评价。较稳妥的是呈现路线、联盟、战斗与流亡，对无法确认的个人命令和伤亡数字保持克制。在结果之外还应注意，1877年的“白彦虎等部越境进入俄境”提供了另一个切面：连续退却后，白彦虎率余部出境，部分人员留在中亚。越境同时形成难民、边防和外交问题，不只是追击终点。",
+          "sources": [
+            "v167_qsg21_22",
+            "v167_qsg412",
+            "v167_neac_campaign"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v167_bai_exile",
+            "v167_xinjiang_displacement"
+          ],
+          "people": []
+        }
+      ],
+      "sources": [
+        "v167_qsg21_22",
+        "v167_qsg412",
+        "v167_neac_campaign"
+      ]
+    },
+    {
+      "person": "q167_zhangyao",
+      "title": "张曜：西征将领与新疆帮办",
+      "dek": "从捻军、西北战事进入新疆，率嵩武军参与南疆作战和伊犁备战，后来转任地方行政。",
+      "sections": [
+        {
+          "id": "v167_zhangyao_1",
+          "title": "从地方武装到嵩武军",
+          "text": "张曜早年以团练和作战升迁，所部在长期内战中形成将领依附和营制。进入新疆前，其军队已经具备远程行军经验，也带着欠饷和补给压力。与此相连的是，1882—1884年的“新疆由军府体制转向建省”提供了另一个切面：战后朝廷推进州县、财政和巡抚体系，1884年正式建省。行政整合并非战役结束即完成，也改变既有军府与地方权力。",
+          "sources": [
+            "v167_qsg454",
+            "v167_qsg412"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v167_xinjiang_province_plan",
+            "v167_turpan",
+            "v167_southern_oases"
+          ],
+          "people": []
+        },
+        {
+          "id": "v167_zhangyao_2",
+          "title": "南路与中路协同",
+          "text": "西征中张曜部参与吐鲁番等方向作战，与刘锦棠、金顺所部相互策应。清方军报常突出主帅，实际推进依赖多支军队、地方向导和粮台。从同一时期的制度环境看，1877年的“吐鲁番方向突破天山防线”提供了另一个切面：张曜等部与刘锦棠军协同，推进吐鲁番、达坂城等要点。多路协同和地方向导不应被单一名将叙事遮盖。",
+          "sources": [
+            "v167_qsg454",
+            "v167_qsg412"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v167_turpan",
+            "v167_southern_oases",
+            "v167_ili_preparation"
+          ],
+          "people": []
+        },
+        {
+          "id": "v167_zhangyao_3",
+          "title": "战后驻防不是停止战争",
+          "text": "城镇收复后仍需追剿、受降、驻守和恢复驿路。军队与居民之间的粮草、治安和报复问题，决定军事占领能否转为行政秩序。把视线转向具体现场，1877—1878年的“清军进入库车、阿克苏与喀什噶尔等地”提供了另一个切面：西征军沿绿洲交通线推进，阿古柏继承集团迅速失去控制。军事占领与基层恢复、税收重建和居民认同是不同阶段。",
+          "sources": [
+            "v167_qsg454",
+            "v167_qsg412"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v167_southern_oases",
+            "v167_ili_preparation",
+            "v167_postwar_garrisons"
+          ],
+          "people": []
+        },
+        {
+          "id": "v167_zhangyao_4",
+          "title": "伊犁危机中的备战",
+          "text": "崇厚条约被拒后，张曜被列入分路备战部署。军事压力为谈判提供背景，但清廷是否真能长期对俄作战，受到军费与海防顾虑限制。从资源与普通人的处境观察，1880年的“左宗棠移营哈密准备伊犁交涉破裂后的战争”提供了另一个切面：清军规划多路进取并加强沿海警备，以防俄国海陆施压。军事准备增强谈判筹码，但真实作战能力仍受财政和距离限制。",
+          "sources": [
+            "v167_qsg454",
+            "v167_qsg412"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v167_ili_preparation",
+            "v167_postwar_garrisons",
+            "v167_xinjiang_province_plan"
+          ],
+          "people": []
+        },
+        {
+          "id": "v167_zhangyao_5",
+          "title": "功名之外的制度变化",
+          "text": "张曜后来调任内地，显示西征将领可从军功转入封疆。评价他不能只按攻城数量，也要问其部队怎样筹饷、驻防，以及地方社会承担什么。在结果之外还应注意，1878—1884年的“新疆战后驻防、裁军与追捕并行”提供了另一个切面：清军在城镇设防、整顿营伍并处理残余武装和地方治安。战后安全措施也可能带来征粮、报复和持续军事管制。",
+          "sources": [
+            "v167_qsg454",
+            "v167_qsg412"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v167_postwar_garrisons",
+            "v167_xinjiang_province_plan",
+            "v167_turpan"
+          ],
+          "people": []
+        }
+      ],
+      "sources": [
+        "v167_qsg454",
+        "v167_qsg412"
+      ]
+    },
+    {
+      "person": "q167_jinshun",
+      "title": "金顺：伊犁将军与西征将领",
+      "dek": "满洲将领，率部参与北疆战事并在伊犁方向承担驻防；其作用常被左宗棠、刘锦棠主线遮蔽。",
+      "sections": [
+        {
+          "id": "v167_jinshun_1",
+          "title": "八旗将领进入西北战场",
+          "text": "金顺有长期西北军旅经历，在清军重组新疆行动时承担一支主力。其部不应被笼统并入湘军，兵源、指挥和财政渠道有所不同。与此相连的是，1882—1884年的“新疆由军府体制转向建省”提供了另一个切面：战后朝廷推进州县、财政和巡抚体系，1884年正式建省。行政整合并非战役结束即完成，也改变既有军府与地方权力。",
+          "sources": [
+            "v167_qsg454",
+            "v167_neac_campaign",
+            "v167_qsg412"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v167_xinjiang_province_plan",
+            "v167_gumu_dihua",
+            "v167_manas"
+          ],
+          "people": []
+        },
+        {
+          "id": "v167_jinshun_2",
+          "title": "古牧地、迪化与玛纳斯",
+          "text": "1876年北疆作战由多路军协同，金顺部参与推进和围攻。城镇名称在清代档案、现代地名间有变化，阅读战图时应同时核对路线和时间。从同一时期的制度环境看，1876年的“清军攻取古牧地与迪化”提供了另一个切面：刘锦棠、金顺等部由东向北疆推进，攻占古牧地和迪化。城池易手伴随战斗、征粮和居民避乱，不能只用“收复”省略过程。",
+          "sources": [
+            "v167_qsg454",
+            "v167_neac_campaign",
+            "v167_qsg412"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v167_gumu_dihua",
+            "v167_manas",
+            "v167_ili_preparation"
+          ],
+          "people": []
+        },
+        {
+          "id": "v167_jinshun_3",
+          "title": "围城后的处置问题",
+          "text": "玛纳斯等地攻克后出现处决和俘虏处置记载。官书的“肃清”用语不能替代对投降条件、平民身份和暴力范围的追问。把视线转向具体现场，1876年的“玛纳斯围城结束北疆主要抵抗”提供了另一个切面：清军围攻玛纳斯，攻克后对守军和降者实施处置。官军奏报中的肃清与战俘、平民身份需要分别核查。",
+          "sources": [
+            "v167_qsg454",
+            "v167_neac_campaign",
+            "v167_qsg412"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v167_manas",
+            "v167_ili_preparation",
+            "v167_xinjiang_province_plan"
+          ],
+          "people": []
+        },
+        {
+          "id": "v167_jinshun_4",
+          "title": "伊犁方向的驻防压力",
+          "text": "俄军占据伊犁期间，金顺在邻近区域承担防务。边境驻军既服务外交施压，也消耗粮饷，并使当地居民持续处于战争预备状态。从资源与普通人的处境观察，1880年的“左宗棠移营哈密准备伊犁交涉破裂后的战争”提供了另一个切面：清军规划多路进取并加强沿海警备，以防俄国海陆施压。军事准备增强谈判筹码，但真实作战能力仍受财政和距离限制。",
+          "sources": [
+            "v167_qsg454",
+            "v167_neac_campaign",
+            "v167_qsg412"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v167_ili_preparation",
+            "v167_xinjiang_province_plan",
+            "v167_gumu_dihua"
+          ],
+          "people": []
+        },
+        {
+          "id": "v167_jinshun_5",
+          "title": "被主帅叙事遮住的协同",
+          "text": "左宗棠负责总体筹划，刘锦棠常被视为前线核心，但金顺、张曜及各军粮台共同构成行动。多人协同不等于责任均匀，仍需逐案判断。在结果之外还应注意，1882—1884年的“新疆由军府体制转向建省”提供了另一个切面：战后朝廷推进州县、财政和巡抚体系，1884年正式建省。行政整合并非战役结束即完成，也改变既有军府与地方权力。",
+          "sources": [
+            "v167_qsg454",
+            "v167_neac_campaign",
+            "v167_qsg412"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v167_xinjiang_province_plan",
+            "v167_gumu_dihua",
+            "v167_manas"
+          ],
+          "people": []
+        }
+      ],
+      "sources": [
+        "v167_qsg454",
+        "v167_neac_campaign",
+        "v167_qsg412"
+      ]
+    },
+    {
+      "person": "q167_dingbaozhen",
+      "title": "丁宝桢：山东巡抚与四川总督",
+      "dek": "在地方财政、黄河治理、赈务和四川机器局间工作；廉吏形象不能代替对政策效果的核查。",
+      "sections": [
+        {
+          "id": "v167_dingbaozhen_1",
+          "title": "地方官从军务转向善后",
+          "text": "丁宝桢在山东处理治安、河工和财政，后任四川总督。晚清封疆大吏的工作并非只有洋务，日常钱粮、灾报和州县考成同样决定居民生活。与此相连的是，1876—1879年的“灾区蠲缓钱粮与停征难以覆盖全部损失”提供了另一个切面：各省奏报成灾并申请蠲缓、赈恤，执行依赖州县户籍与查灾。账面减免可能漏掉流民、佃户和无地家庭。",
+          "sources": [
+            "v167_qsg447",
+            "v167_cssn_famine"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v167_famine_remission",
+            "v167_official_relief"
+          ],
+          "people": []
+        },
+        {
+          "id": "v167_dingbaozhen_2",
+          "title": "灾荒时期的行政责任",
+          "text": "丁戊奇荒波及山东等省，地方政府需要勘灾、蠲缓、购粮和发赈。奏报中的“户口”“成灾分数”是行政口径，不能直接等同真实死亡与流亡人数。从同一时期的制度环境看，1876—1879年的“官赈在勘灾、蠲免和放粮中仍居核心”提供了另一个切面：中央与地方动用仓粮、赈银并设局办理，但行政延迟和基层舞弊限制效果。不能因民间义赈兴起就宣称政府完全退出。",
+          "sources": [
+            "v167_qsg447",
+            "v167_cssn_famine"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v167_official_relief",
+            "v167_famine_remission"
+          ],
+          "people": []
+        },
+        {
+          "id": "v167_dingbaozhen_3",
+          "title": "四川机器局的财政选择",
+          "text": "他在四川推动机器制造，试图就地生产军械。设备、技术人员和原料都需长期投入，建局不等于立刻形成稳定产能。把视线转向具体现场，1876—1879年的“灾区蠲缓钱粮与停征难以覆盖全部损失”提供了另一个切面：各省奏报成灾并申请蠲缓、赈恤，执行依赖州县户籍与查灾。账面减免可能漏掉流民、佃户和无地家庭。",
+          "sources": [
+            "v167_qsg447",
+            "v167_cssn_famine"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v167_famine_remission",
+            "v167_official_relief"
+          ],
+          "people": []
+        },
+        {
+          "id": "v167_dingbaozhen_4",
+          "title": "家书与官箴的证据层级",
+          "text": "丁宝桢家书强调使民受实惠、避免赈款虚糜，能显示个人原则；但原则是否落实，还须看地方账册、灾民名册和执行者。从资源与普通人的处境观察，1876—1879年的“官赈在勘灾、蠲免和放粮中仍居核心”提供了另一个切面：中央与地方动用仓粮、赈银并设局办理，但行政延迟和基层舞弊限制效果。不能因民间义赈兴起就宣称政府完全退出。",
+          "sources": [
+            "v167_qsg447",
+            "v167_cssn_famine"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v167_official_relief",
+            "v167_famine_remission"
+          ],
+          "people": []
+        },
+        {
+          "id": "v167_dingbaozhen_5",
+          "title": "廉吏记忆如何形成",
+          "text": "后世常以诛安德海和清廉故事概括他。那些故事有传播价值，却容易遮蔽财政、赈灾与工业试验中更复杂的制度选择。在结果之外还应注意，1876—1879年的“灾区蠲缓钱粮与停征难以覆盖全部损失”提供了另一个切面：各省奏报成灾并申请蠲缓、赈恤，执行依赖州县户籍与查灾。账面减免可能漏掉流民、佃户和无地家庭。",
+          "sources": [
+            "v167_qsg447",
+            "v167_cssn_famine"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v167_famine_remission",
+            "v167_official_relief"
+          ],
+          "people": []
+        }
+      ],
+      "sources": [
+        "v167_qsg447",
+        "v167_cssn_famine"
+      ]
+    },
+    {
+      "person": "q167_yanjingming",
+      "title": "阎敬铭：财政官员",
+      "dek": "以清查和节用著称，参与灾荒与军费压力下的财政整顿；账面节省与地方承受须分别检验。",
+      "sections": [
+        {
+          "id": "v167_yanjingming_1",
+          "title": "从地方钱谷进入中枢",
+          "text": "阎敬铭熟悉州县、布政和户部财政，声誉来自核账与节用。晚清财政却分散在户部、地方、厘金、海关和军营，个人清查无法自动形成统一预算。与此相连的是，1875—1878年的“西征军费依赖借款、协饷与海关收入”提供了另一个切面：朝廷和地方为远征筹集巨额银款，东南财源承担西北运输。军事统一的账单跨省分摊，并挤压救灾和其他建设。",
+          "sources": [
+            "v167_qsg438",
+            "v167_cssn_famine"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v167_western_loans",
+            "v167_famine_remission",
+            "v167_famine_prices"
+          ],
+          "people": []
+        },
+        {
+          "id": "v167_yanjingming_2",
+          "title": "西征与赈灾同时争夺资源",
+          "text": "光绪初年西征军费高昂，北方灾荒又要求蠲赋、购粮和赈银。中央必须在军事、河工、宫廷与救荒之间调度，所谓节流具有明确的受益者和承受者。从同一时期的制度环境看，1876—1879年的“灾区蠲缓钱粮与停征难以覆盖全部损失”提供了另一个切面：各省奏报成灾并申请蠲缓、赈恤，执行依赖州县户籍与查灾。账面减免可能漏掉流民、佃户和无地家庭。",
+          "sources": [
+            "v167_qsg438",
+            "v167_cssn_famine"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v167_famine_remission",
+            "v167_famine_prices",
+            "v167_official_relief"
+          ],
+          "people": []
+        },
+        {
+          "id": "v167_yanjingming_3",
+          "title": "查账不等于钱能到灾民手中",
+          "text": "财政官可削减浮冒、要求报销，但从省库到州县再到灾户仍有运输、银钱兑换和基层舞弊。判断成效不能只看核减数字。把视线转向具体现场，1877—1879年的“粮价与银钱比价剧烈变动”提供了另一个切面：粮食短缺、运输困难和救济购粮推高价格，不同地区货币兑换也发生变化。灾民拥有银钱仍可能买不到足够粮食。",
+          "sources": [
+            "v167_qsg438",
+            "v167_cssn_famine"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v167_famine_prices",
+            "v167_official_relief",
+            "v167_western_loans"
+          ],
+          "people": []
+        },
+        {
+          "id": "v167_yanjingming_4",
+          "title": "清名与官僚摩擦",
+          "text": "严格审核容易获得廉洁声誉，也会与既有利益和应急需求冲突。有些支出在账面不整齐，却可能是战争或灾荒中的即时需要。从资源与普通人的处境观察，1876—1879年的“官赈在勘灾、蠲免和放粮中仍居核心”提供了另一个切面：中央与地方动用仓粮、赈银并设局办理，但行政延迟和基层舞弊限制效果。不能因民间义赈兴起就宣称政府完全退出。",
+          "sources": [
+            "v167_qsg438",
+            "v167_cssn_famine"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v167_official_relief",
+            "v167_western_loans",
+            "v167_famine_remission"
+          ],
+          "people": []
+        },
+        {
+          "id": "v167_yanjingming_5",
+          "title": "制度限度",
+          "text": "阎敬铭后来居中枢要职，但早期经验显示晚清财政缺少完整统一信息。个人能力可以改善一环，不能替代税制、预算和监督结构。在结果之外还应注意，1875—1878年的“西征军费依赖借款、协饷与海关收入”提供了另一个切面：朝廷和地方为远征筹集巨额银款，东南财源承担西北运输。军事统一的账单跨省分摊，并挤压救灾和其他建设。",
+          "sources": [
+            "v167_qsg438",
+            "v167_cssn_famine"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v167_western_loans",
+            "v167_famine_remission",
+            "v167_famine_prices"
+          ],
+          "people": []
+        }
+      ],
+      "sources": [
+        "v167_qsg438",
+        "v167_cssn_famine"
+      ]
+    },
+    {
+      "person": "q167_shengxuanhuai",
+      "title": "盛宣怀：电报总局总办",
+      "dek": "由李鸿章幕府与招商局进入电报事业，组织津沪线路和电报学堂；后来的庞大企业网络不应提前投射。",
+      "sections": [
+        {
+          "id": "v167_shengxuanhuai_1",
+          "title": "幕府中的年轻办事者",
+          "text": "盛宣怀以文书、筹款和商务能力进入李鸿章洋务网络，早期地位低于唐廷枢、徐润等商办经理。把其一生事业倒投回1870年代，会夸大他当时权力。与此相连的是，1878—1881年的“开平矿务局从筹办进入出煤”提供了另一个切面：李鸿章委唐廷枢等筹办煤矿，以供应轮船和机器工业。矿井、机器、技术人员和销路需共同形成，设局不等于立即盈利。",
+          "sources": [
+            "v167_qsg471",
+            "v167_gd_telegraph",
+            "v167_shanghai_gazette"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v167_kaiping_mine",
+            "v167_telegraph_finance",
+            "v167_telegraph_school"
+          ],
+          "people": []
+        },
+        {
+          "id": "v167_shengxuanhuai_2",
+          "title": "为何先办电报",
+          "text": "海防、军情和跨省调度需要更快通信，外商海缆又掌握重要线路。1880年筹设津沪电报，首先是军事行政工程，同时预留商报收入。从同一时期的制度环境看，1880—1881年的“津沪电报以军用需求和商报收入筹资”提供了另一个切面：官方推动跨省线路，同时希望商业电报补贴运营。官督商办通信兼具公共基础设施与收费企业性质。",
+          "sources": [
+            "v167_qsg471",
+            "v167_gd_telegraph",
+            "v167_shanghai_gazette"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v167_telegraph_finance",
+            "v167_telegraph_school",
+            "v167_industrial_survey"
+          ],
+          "people": []
+        },
+        {
+          "id": "v167_shengxuanhuai_3",
+          "title": "从线路到总局",
+          "text": "盛宣怀受命主持，沿大沽、济宁、清江、镇江、苏州、上海设置节点。线路要征地、架杆、训练报务员并处理外商竞争，不是铺完电线即告完成。把视线转向具体现场，1880年起的“天津电报学堂培养报务与维修人员”提供了另一个切面：线路建设同步训练译码、操作和技术人员。学堂规模与课程需按初创阶段理解，不能用后来电报网络倒推。",
+          "sources": [
+            "v167_qsg471",
+            "v167_gd_telegraph",
+            "v167_shanghai_gazette"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v167_telegraph_school",
+            "v167_industrial_survey",
+            "v167_kaiping_mine"
+          ],
+          "people": []
+        },
+        {
+          "id": "v167_shengxuanhuai_4",
+          "title": "电报学堂与技术人员",
+          "text": "设备可购，报务、维修和密码人才必须培养。天津电报学堂体现企业与教育结合，也受招生基础和职业出路限制。从资源与普通人的处境观察，1878—1881年的“矿务勘测与铁路工程形成新的实作知识”提供了另一个切面：开平煤矿测量矿层、购置机器并规划煤河和铁路。外籍工程师、中国商办人员和工匠共同参与，不能归功于单一创办者。",
+          "sources": [
+            "v167_qsg471",
+            "v167_gd_telegraph",
+            "v167_shanghai_gazette"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v167_industrial_survey",
+            "v167_kaiping_mine",
+            "v167_telegraph_finance"
+          ],
+          "people": []
+        },
+        {
+          "id": "v167_shengxuanhuai_5",
+          "title": "官商网络的双面性",
+          "text": "官方授权帮助线路跨省推进，商款和业务收入支持扩张；同一网络也带来人事集中与监督问题。不能因后来的成败，把初创期写成必然通向现代通信。在结果之外还应注意，1878—1881年的“开平矿务局从筹办进入出煤”提供了另一个切面：李鸿章委唐廷枢等筹办煤矿，以供应轮船和机器工业。矿井、机器、技术人员和销路需共同形成，设局不等于立即盈利。",
+          "sources": [
+            "v167_qsg471",
+            "v167_gd_telegraph",
+            "v167_shanghai_gazette"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v167_kaiping_mine",
+            "v167_telegraph_finance",
+            "v167_telegraph_school"
+          ],
+          "people": []
+        }
+      ],
+      "sources": [
+        "v167_qsg471",
+        "v167_gd_telegraph",
+        "v167_shanghai_gazette"
+      ]
+    },
+    {
+      "person": "q167_jingyuanshan",
+      "title": "经元善：义赈组织者",
+      "dek": "上海绅商，丁戊奇荒期间组织协赈公所、募款与查户放赈，推动跨区域义赈网络。",
+      "sections": [
+        {
+          "id": "v167_jingyuanshan_1",
+          "title": "从钱庄经营转入义赈",
+          "text": "经元善身处上海商业与慈善网络，1878年前后停下部分经营投入北方赈灾。商业信用、同乡关系和汇兑能力，使远距离募款成为可能。与此相连的是，1877—1879年的“购粮、运粮与粮价成为赈灾瓶颈”提供了另一个切面：灾区本地粮源枯竭，需要跨省采购，运输成本和商人囤积影响价格。有赈银不等于能及时买到并送达粮食。",
+          "sources": [
+            "v167_zhejiang_jing",
+            "v167_cssn_famine",
+            "v167_ruc_relief"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v167_famine_grain_market",
+            "v167_relief_fundraising",
+            "v167_famine_drought"
+          ],
+          "people": []
+        },
+        {
+          "id": "v167_jingyuanshan_2",
+          "title": "协赈公所怎样运作",
+          "text": "公所发布劝捐、登记捐款、委人赴灾区查户和散放。它不是现代非营利组织，但已经重视账目、征信和跨区域协作。从同一时期的制度环境看，1877—1881年的“上海绅商义赈募集跨区域资金”提供了另一个切面：协赈公所通过同乡、商号、报刊和汇兑网络筹款。商业信用被转化为公共救济能力，也需要账目与征信维持。",
+          "sources": [
+            "v167_zhejiang_jing",
+            "v167_cssn_famine",
+            "v167_ruc_relief"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v167_relief_fundraising",
+            "v167_famine_drought",
+            "v167_famine_prices"
+          ],
+          "people": []
+        },
+        {
+          "id": "v167_jingyuanshan_3",
+          "title": "查户与公平的难题",
+          "text": "按户核灾有助减少冒领，也可能遗漏流亡、无保甲身份者和妇女儿童。义赈强调亲查，并不能保证所有灾民被看见。把视线转向具体现场，1876—1879年的“持续旱灾波及华北多省”提供了另一个切面：降水不足、粮食歉收与既有贫困、仓储和交通条件叠加，形成特大饥荒。自然灾害不能替代对制度脆弱和资源分配的分析。",
+          "sources": [
+            "v167_zhejiang_jing",
+            "v167_cssn_famine",
+            "v167_ruc_relief"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v167_famine_drought",
+            "v167_famine_prices",
+            "v167_famine_displacement"
+          ],
+          "people": []
+        },
+        {
+          "id": "v167_jingyuanshan_4",
+          "title": "官赈与商赈不是简单替代",
+          "text": "绅商赈济依赖官府通行、地方协助和治安，又以较灵活的募款补政府不足。两者既合作也互相质疑，不能写成民间完全取代国家。从资源与普通人的处境观察，1877—1879年的“粮价与银钱比价剧烈变动”提供了另一个切面：粮食短缺、运输困难和救济购粮推高价格，不同地区货币兑换也发生变化。灾民拥有银钱仍可能买不到足够粮食。",
+          "sources": [
+            "v167_zhejiang_jing",
+            "v167_cssn_famine",
+            "v167_ruc_relief"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v167_famine_prices",
+            "v167_famine_displacement",
+            "v167_merchant_relief"
+          ],
+          "people": []
+        },
+        {
+          "id": "v167_jingyuanshan_5",
+          "title": "慈善声誉与洋务网络",
+          "text": "办赈积累的信用让部分绅商后来进入电报、教育等事业。赈灾既是救命行动，也改变了城市商人参与公共事务的方式。在结果之外还应注意，1877—1879年的“逃荒、卖子与家庭离散扩大”提供了另一个切面：灾民跨县跨省求生，典卖人口、遗弃儿童等记载增多。极端个案反映危机，不应猎奇化，也不能推定每个地区程度相同。",
+          "sources": [
+            "v167_zhejiang_jing",
+            "v167_cssn_famine",
+            "v167_ruc_relief"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v167_famine_displacement",
+            "v167_merchant_relief",
+            "v167_famine_press"
+          ],
+          "people": []
+        }
+      ],
+      "sources": [
+        "v167_zhejiang_jing",
+        "v167_cssn_famine",
+        "v167_ruc_relief"
+      ]
+    },
+    {
+      "person": "q167_litimotai",
+      "title": "李提摩太：传教士与赈灾组织者",
+      "dek": "英国浸礼会传教士，在山东、山西饥荒中募款放赈并形成改革主张；救济、人道关怀和传教目标需要同时说明。",
+      "sections": [
+        {
+          "id": "v167_litimotai_1",
+          "title": "在山东看见饥荒",
+          "text": "李提摩太在山东传教时遭遇1876年旱荒，调查粮价与村落灾情，并向沿海外国社群募款。他的报告扩大国际注意，也由外来观察者选择和表述灾情。与此相连的是，1877—1879年的“购粮、运粮与粮价成为赈灾瓶颈”提供了另一个切面：灾区本地粮源枯竭，需要跨省采购，运输成本和商人囤积影响价格。有赈银不等于能及时买到并送达粮食。",
+          "sources": [
+            "v167_timothy_study",
+            "v167_cssn_famine",
+            "v167_shanxi_famine"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v167_famine_grain_market",
+            "v167_famine_drought",
+            "v167_famine_mortality"
+          ],
+          "people": []
+        },
+        {
+          "id": "v167_litimotai_2",
+          "title": "从山东到山西",
+          "text": "灾情加重后，他进入山西参与放赈。长距离运输、地方官许可、兑换货币和识别灾户都构成现实障碍，外来资金不能自动变成公平救济。从同一时期的制度环境看，1876—1879年的“持续旱灾波及华北多省”提供了另一个切面：降水不足、粮食歉收与既有贫困、仓储和交通条件叠加，形成特大饥荒。自然灾害不能替代对制度脆弱和资源分配的分析。",
+          "sources": [
+            "v167_timothy_study",
+            "v167_cssn_famine",
+            "v167_shanxi_famine"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v167_famine_drought",
+            "v167_famine_mortality",
+            "v167_famine_displacement"
+          ],
+          "people": []
+        },
+        {
+          "id": "v167_litimotai_3",
+          "title": "教赈与传教的关系",
+          "text": "救济确有挽救生命的人道效果，传教机构也借此建立地方联系。承认两者并存，比把赈灾全写成宗教工具或完全排除宗教目的更接近历史。把视线转向具体现场，1877—1879年的“死亡、疫病与失踪形成难以精确统计的灾难”提供了另一个切面：研究普遍确认死亡规模极大，但官册、地方志和后出估算口径不同。应呈现估计范围和材料限制，不能把单一数字当作精确人口普查。",
+          "sources": [
+            "v167_timothy_study",
+            "v167_cssn_famine",
+            "v167_shanxi_famine"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v167_famine_mortality",
+            "v167_famine_displacement",
+            "v167_mission_relief"
+          ],
+          "people": []
+        },
+        {
+          "id": "v167_litimotai_4",
+          "title": "与官绅的合作和摩擦",
+          "text": "传教士需同地方官、士绅和其他赈员协作，同时面对谣言与不信任。账目、户口和散放办法成为跨文化协商的具体接口。从资源与普通人的处境观察，1877—1879年的“逃荒、卖子与家庭离散扩大”提供了另一个切面：灾民跨县跨省求生，典卖人口、遗弃儿童等记载增多。极端个案反映危机，不应猎奇化，也不能推定每个地区程度相同。",
+          "sources": [
+            "v167_timothy_study",
+            "v167_cssn_famine",
+            "v167_shanxi_famine"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v167_famine_displacement",
+            "v167_mission_relief",
+            "v167_famine_press"
+          ],
+          "people": []
+        },
+        {
+          "id": "v167_litimotai_5",
+          "title": "灾荒如何改变改革观",
+          "text": "经历饥荒后，李提摩太更强调交通、教育与经济开发。那些主张受到灾区经验推动，却也带有当时传教与西方进步观，不能直接当作中立处方。在结果之外还应注意，1876—1879年的“传教士参与募款与山东、山西放赈”提供了另一个切面：李提摩太等向外国社群报告灾情、募集资金并与地方官绅协作。救命效果、传教目的和文化摩擦应同时呈现。",
+          "sources": [
+            "v167_timothy_study",
+            "v167_cssn_famine",
+            "v167_shanxi_famine"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v167_mission_relief",
+            "v167_famine_press",
+            "v167_famine_grain_market"
+          ],
+          "people": []
+        }
+      ],
+      "sources": [
+        "v167_timothy_study",
+        "v167_cssn_famine",
+        "v167_shanxi_famine"
       ]
     }
   ],
@@ -236576,6 +239080,191 @@
       "sources": [
         "v166_qsg_liusongshan"
       ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q167_guosongtao",
+      "role": "光绪前期重要人物",
+      "inverse": "所处时期的皇帝",
+      "period": "光绪前期",
+      "note": "郭嵩焘的经历连接首任驻英公使及其制度背景。",
+      "sources": [
+        "v167_qsg446",
+        "v167_embassy_london",
+        "v167_xiangyin_journey"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q167_aguabai",
+      "role": "光绪前期重要人物",
+      "inverse": "所处时期的皇帝",
+      "period": "光绪前期",
+      "note": "阿古柏的经历连接浩罕军事首领及其制度背景。",
+      "sources": [
+        "v167_neac_campaign",
+        "v167_qsg21_22",
+        "v167_qsg412"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q167_baiyanhu",
+      "role": "光绪前期重要人物",
+      "inverse": "所处时期的皇帝",
+      "period": "光绪前期",
+      "note": "白彦虎的经历连接陕甘回民武装首领及其制度背景。",
+      "sources": [
+        "v167_qsg21_22",
+        "v167_qsg412",
+        "v167_neac_campaign"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q167_zhangyao",
+      "role": "光绪前期重要人物",
+      "inverse": "所处时期的皇帝",
+      "period": "光绪前期",
+      "note": "张曜的经历连接西征将领与新疆帮办及其制度背景。",
+      "sources": [
+        "v167_qsg454",
+        "v167_qsg412"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q167_jinshun",
+      "role": "光绪前期重要人物",
+      "inverse": "所处时期的皇帝",
+      "period": "光绪前期",
+      "note": "金顺的经历连接伊犁将军与西征将领及其制度背景。",
+      "sources": [
+        "v167_qsg454",
+        "v167_neac_campaign",
+        "v167_qsg412"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q167_dingbaozhen",
+      "role": "光绪前期重要人物",
+      "inverse": "所处时期的皇帝",
+      "period": "光绪前期",
+      "note": "丁宝桢的经历连接山东巡抚与四川总督及其制度背景。",
+      "sources": [
+        "v167_qsg447",
+        "v167_cssn_famine"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q167_yanjingming",
+      "role": "光绪前期重要人物",
+      "inverse": "所处时期的皇帝",
+      "period": "光绪前期",
+      "note": "阎敬铭的经历连接财政官员及其制度背景。",
+      "sources": [
+        "v167_qsg438",
+        "v167_cssn_famine"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q167_shengxuanhuai",
+      "role": "光绪前期重要人物",
+      "inverse": "所处时期的皇帝",
+      "period": "光绪前期",
+      "note": "盛宣怀的经历连接电报总局总办及其制度背景。",
+      "sources": [
+        "v167_qsg471",
+        "v167_gd_telegraph",
+        "v167_shanghai_gazette"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q167_jingyuanshan",
+      "role": "光绪前期重要人物",
+      "inverse": "所处时期的皇帝",
+      "period": "光绪前期",
+      "note": "经元善的经历连接义赈组织者及其制度背景。",
+      "sources": [
+        "v167_zhejiang_jing",
+        "v167_cssn_famine",
+        "v167_ruc_relief"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q167_litimotai",
+      "role": "光绪前期重要人物",
+      "inverse": "所处时期的皇帝",
+      "period": "光绪前期",
+      "note": "李提摩太的经历连接传教士与赈灾组织者及其制度背景。",
+      "sources": [
+        "v167_timothy_study",
+        "v167_cssn_famine",
+        "v167_shanxi_famine"
+      ]
+    },
+    {
+      "from": "q167_guosongtao",
+      "to": "q_zengjize",
+      "role": "前后任驻英法使臣",
+      "inverse": "继任驻英法使臣",
+      "period": "1878—1879年交接",
+      "note": "常驻使馆制度在前后任之间延续，观察重点和政治处境不同。",
+      "sources": [
+        "v167_qsg446",
+        "v167_embassy_london"
+      ]
+    },
+    {
+      "from": "q_liujintang",
+      "to": "q167_zhangyao",
+      "role": "西征协同将领",
+      "inverse": "西征协同将领",
+      "period": "1876—1881年",
+      "note": "分路推进南北疆并参与伊犁备战。",
+      "sources": [
+        "v167_qsg454"
+      ]
+    },
+    {
+      "from": "q_liujintang",
+      "to": "q167_jinshun",
+      "role": "西征协同将领",
+      "inverse": "西征协同将领",
+      "period": "1876年起",
+      "note": "不同军系共同参与北疆战事与驻防。",
+      "sources": [
+        "v167_qsg454"
+      ]
+    },
+    {
+      "from": "q167_aguabai",
+      "to": "q167_baiyanhu",
+      "role": "阶段性军事合作者",
+      "inverse": "阶段性军事合作者",
+      "period": "同治末至1877年",
+      "note": "双方在新疆战局中合作，但兵源、经历和目标并不相同。",
+      "sources": [
+        "v167_qsg21_22",
+        "v167_qsg412"
+      ]
+    },
+    {
+      "from": "q167_jingyuanshan",
+      "to": "q167_litimotai",
+      "role": "不同赈济网络的参与者",
+      "inverse": "不同赈济网络的参与者",
+      "period": "1876—1879年",
+      "note": "绅商义赈与传教士教赈在部分灾区并行，也各有组织和文化边界。",
+      "sources": [
+        "v167_cssn_famine",
+        "v167_ruc_relief"
+      ]
     }
   ],
   "dynasties": [
@@ -241934,7 +244623,17 @@
         "q_liangqichao",
         "q_yanfu",
         "q_huangxing",
-        "q_qiujin"
+        "q_qiujin",
+        "q167_guosongtao",
+        "q167_aguabai",
+        "q167_baiyanhu",
+        "q167_zhangyao",
+        "q167_jinshun",
+        "q167_dingbaozhen",
+        "q167_yanjingming",
+        "q167_shengxuanhuai",
+        "q167_jingyuanshan",
+        "q167_litimotai"
       ],
       "events": [
         "qev_guangxu_accession_1875",
@@ -241958,7 +244657,52 @@
         "v66q_women_schools",
         "v66q_womens_journal",
         "v66q_women_normal",
-        "v66q_ningbo_charity"
+        "v66q_ningbo_charity",
+        "v167_guangxu_regency",
+        "v167_defense_debate",
+        "v167_guo_appointment",
+        "v167_london_legation",
+        "v167_lividia_treaty",
+        "v167_reject_lividia",
+        "v167_zeng_renegotiates",
+        "v167_ili_revised",
+        "v167_xinjiang_province_plan",
+        "v167_western_logistics",
+        "v167_gumu_dihua",
+        "v167_manas",
+        "v167_turpan",
+        "v167_yaqub_death",
+        "v167_southern_oases",
+        "v167_bai_exile",
+        "v167_ili_preparation",
+        "v167_postwar_garrisons",
+        "v167_western_loans",
+        "v167_grain_transport",
+        "v167_famine_remission",
+        "v167_famine_grain_market",
+        "v167_relief_fundraising",
+        "v167_kaiping_mine",
+        "v167_coal_canal",
+        "v167_tangxu_rail",
+        "v167_telegraph_finance",
+        "v167_famine_drought",
+        "v167_famine_prices",
+        "v167_famine_mortality",
+        "v167_famine_displacement",
+        "v167_official_relief",
+        "v167_merchant_relief",
+        "v167_mission_relief",
+        "v167_xinjiang_displacement",
+        "v167_students_return",
+        "v167_guangxu_school",
+        "v167_shixi_jicheng",
+        "v167_legation_knowledge",
+        "v167_students_daily",
+        "v167_students_debate",
+        "v167_famine_press",
+        "v167_relief_accounts",
+        "v167_telegraph_school",
+        "v167_industrial_survey"
       ],
       "sources": [
         "v5qn_qsg221",
@@ -241991,9 +244735,33 @@
         "v66_zjut_qiujin",
         "v66_zs_women_school",
         "v66_bjww_normal",
-        "v66_ningbo_charity"
+        "v66_ningbo_charity",
+        "v167_dpm_guangxu",
+        "v167_dpm_yuqing",
+        "v167_neac_campaign",
+        "v167_neac_xinjiang",
+        "v167_xinjiang_ili",
+        "v167_mfa_ili",
+        "v167_qsg446",
+        "v167_qsg454",
+        "v167_qsg412",
+        "v167_qsg21_22",
+        "v167_qsg447",
+        "v167_qsg438",
+        "v167_qsg471",
+        "v167_cssn_famine",
+        "v167_ruc_relief",
+        "v167_shanxi_famine",
+        "v167_zhejiang_jing",
+        "v167_timothy_study",
+        "v167_nopss_students",
+        "v167_embassy_london",
+        "v167_xiangyin_journey",
+        "v167_hebei_rail",
+        "v167_gd_telegraph",
+        "v167_shanghai_gazette"
       ],
-      "note": ""
+      "note": "光绪前期由两宫再次垂帘，幼帝主要处于受教阶段。1875至1884年间，新疆战争与伊犁交涉、丁戊奇荒、常驻外交、留美幼童撤回、开平矿路和津沪电报同时展开；军事与工业成果必须同借款、死亡、迁徙和制度中断并读。"
     },
     {
       "person": "q_xuantong",

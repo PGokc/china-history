@@ -3401,3 +3401,42 @@ if d['version'] >= 140:
  assert all(item['sectionID'].startswith('q-tongzhi-') for item in narration['entries'] if item['articleID']=='q_tongzhi')
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将',corpus,re.I)
  print('V140 PASS: twelve late-Tongzhi readings and forty-five balanced events connect Tianjin, Jinjibao, Dali, the imperial wedding, personal rule, overseas education, shipping enterprise and Taiwan without hiding civilian costs or source disagreement')
+
+if d['version'] >= 141:
+ v167_people=['q_zengjize','q_liujintang','q167_guosongtao','q167_aguabai','q167_baiyanhu','q167_zhangyao','q167_jinshun','q167_dingbaozhen','q167_yanjingming','q167_shengxuanhuai','q167_jingyuanshan','q167_litimotai']
+ v167_new_people=[pid for pid in v167_people if pid.startswith('q167_')]
+ v167_events={item['id'] for item in d['events'] if item['id'].startswith('v167_')}
+ v167_sources={item['id'] for item in d['sources'] if item['id'].startswith('v167_')}
+ v167_objects={item['id'] for item in d['objects'] if item['id'].startswith('v167_')}
+ object_map={item['id']:item for item in d['objects']}
+ assert len(v167_new_people)==10 and len(v167_events)==45 and len(v167_sources)==24 and len(v167_objects)==6
+ assert set(v167_people)<=people.keys() and set(v167_people)<=articles.keys()
+ assert {events[event_id]['category'] for event_id in v167_events}=={'政治','军事','经济','社会','文化'}
+ assert all(sum(events[event_id]['category']==category for event_id in v167_events)==9 for category in ['政治','军事','经济','社会','文化'])
+ for pid in v167_people:
+  reading=articles[pid]; ss=reading['sections']
+  chars=sum(len(re.findall(r'[\u4e00-\u9fff]',section['text'])) for section in ss)
+  assert len(ss)==5 and chars>=600 and all(section['sources'] and section['events'] for section in ss),(pid,chars)
+  assert all(set(section['sources'])<=sources.keys() and set(section['events'])<=events.keys() and set(section.get('people',[]))<=people.keys() for section in ss)
+  assert set(reading['sources'])=={source for section in ss for source in section['sources']}
+ assert all(set(events[event_id]['people'])<=people.keys() and set(events[event_id]['sources'])<=sources.keys() for event_id in v167_events)
+ for object_id in v167_objects:
+  item=object_map[object_id]
+  assert item['dynasties']==['qing'] and item['people'] and item['sources']
+  assert set(item['people'])<=people.keys() and set(item['sources'])<=sources.keys()
+ corpus=json.dumps([articles[pid] for pid in v167_people]+[events[event_id] for event_id in v167_events]+[object_map[object_id] for object_id in v167_objects]+[sources[source_id] for source_id in v167_sources],ensure_ascii=False)
+ for term in ['毓庆宫','海防与塞防','古牧地','玛纳斯','吐鲁番','阿古柏','白彦虎','伊犁','里瓦几亚条约','九百万卢布','丁戊奇荒','协赈公所','留美幼童','开平矿务局','唐胥铁路','津沪电报','《使西纪程》']:
+  assert term in corpus,('missing early-Guangxu evidence term',term)
+ for boundary in ['不是简单的爱国与卖国之争','不能把单一数字当作精确人口普查','不能只用“收复”省略过程','不能选择最戏剧化版本当作定论','不能把“外交胜利”写成完整主权恢复','不能写成民间完全取代国家','不能按后来全国电报网理解','不能抹去此前吴淞铁路']:
+  assert boundary in corpus,('missing early-Guangxu evidence boundary',boundary)
+ ctx=next(item for item in d['reignContexts'] if item['person']=='q_guangxu')
+ assert set(v167_people)<=set(ctx['people']) and v167_events<=set(ctx['events']) and v167_sources<=set(ctx['sources'])
+ pairset={(item['from'],item['to']) for item in d['associations']}
+ assert {('q_guangxu',pid) for pid in v167_new_people}<=pairset
+ assert {('q167_guosongtao','q_zengjize'),('q_liujintang','q167_zhangyao'),('q_liujintang','q167_jinshun'),('q167_aguabai','q167_baiyanhu'),('q167_jingyuanshan','q167_litimotai')}<=pairset
+ emperor=articles['q_guangxu']
+ assert v167_events<={event_id for section in emperor['sections'] for event_id in section.get('events',[])}
+ assert set(v167_people)<={person_id for section in emperor['sections'] for person_id in section.get('people',[])}
+ assert all(item['sectionID'].startswith('q-guangxu-') for item in narration['entries'] if item['articleID']=='q_guangxu')
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将',corpus,re.I)
+ print('V141 PASS: twelve early-Guangxu readings and forty-five balanced events connect renewed regency, Xinjiang war, Ili renegotiation, the North China famine, permanent diplomacy, overseas students, mining, railway and telegraph with explicit human costs and source limits')
