@@ -5724,4 +5724,47 @@ final class MingJiUITests: XCTestCase {
         shot("v188-dong-xian-private-favor-and-public-power", favor)
     }
 
+    @MainActor func testV189XinTransitionAndOverviewUsesOnlyFixedDestinations() throws {
+        let overview = XCUIApplication()
+        overview.launchArguments = ["--uitesting", "--ui-dynasty", "han"]
+        overview.launch()
+        XCTAssertTrue(overview.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        reach(overview.buttons["dynasty_han"], in: overview, attempts: 14)
+        overview.buttons["dynasty_han"].tap()
+        XCTAssertTrue(overview.descendants(matching: .any)["dynastyDetail_han"].waitForExistence(timeout: 5))
+        XCTAssertTrue(overview.staticTexts["朝代总览"].exists)
+        XCTAssertFalse(overview.staticTexts["从这里继续"].exists)
+        XCTAssertFalse(overview.buttons["dynastySequence_han"].exists)
+        XCTAssertFalse(overview.buttons["dynastyFamily_han"].exists)
+        XCTAssertFalse(overview.buttons["dynastyCollection_han"].exists)
+        XCTAssertEqual(overview.tabBars.buttons.allElementsBoundByIndex.map(\.label), ["朝代", "帝序", "家族", "遗珍"])
+        shot("v189-han-overview-without-duplicate-guide", overview)
+        overview.terminate()
+
+        let reading = XCUIApplication()
+        reading.launchArguments = ["--uitesting", "--ui-dynasty", "han"]
+        reading.launch()
+        XCTAssertTrue(reading.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        reading.buttons["globalSearch"].tap()
+        let search = reading.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("王莽")
+        let wangMang = reading.buttons["search_person_han_wangmang"]
+        XCTAssertTrue(wangMang.waitForExistence(timeout: 5)); wangMang.tap()
+        XCTAssertTrue(reading.buttons["articleEntry"].waitForExistence(timeout: 5))
+        openArticle(in: reading)
+        reading.buttons["articleContents"].tap()
+        let reform = reading.buttons["王田、私属与反复币制"]
+        XCTAssertTrue(reform.exists); reform.tap()
+        let boundary = reading.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "难以形成稳定预期")).firstMatch
+        XCTAssertTrue(boundary.waitForExistence(timeout: 5))
+        shot("v189-wang-mang-reform-and-execution-cost", reading)
+        reach(reading.buttons["资料与出处"], in: reading, attempts: 18)
+        reading.buttons["资料与出处"].tap()
+        let source = reading.descendants(matching: .any)["source_v189_hanshu99b"]
+        reach(source, in: reading, attempts: 8)
+        XCTAssertTrue(source.exists)
+        XCTAssertLessThanOrEqual(source.frame.maxY, reading.tabBars.firstMatch.frame.minY - 16)
+        shot("v189-wang-mang-primary-sources-and-safe-ending", reading)
+    }
+
 }

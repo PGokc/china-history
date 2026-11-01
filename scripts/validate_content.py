@@ -4130,3 +4130,36 @@ if d['version'] >= 162:
  overview_source=(R/'App/DynastyViews.swift').read_text()
  assert '从这里继续' not in overview_source and 'DynastyContinuationGuide' not in overview_source
  print('V162 PASS: Yuan, Cheng, Ai and Ping reigns now connect document control, Western Regions war, flood relief, library collation, land limits, private favor, education and regency with explicit evidence boundaries')
+
+if d['version'] >= 163:
+ transition_sources={'v189_hanshu99a','v189_hanshu99b','v189_hanshu99c','v189_houhanshu1a','v189_houhanshu1b','v189_houhanshu11'}
+ assert transition_sources<=sources.keys()
+ event_map={event['id']:event for event in d['events']}
+ transition_events={'v49h_wangmang','v49h_greenred','v49h_guangwu_accession','v49h_guangwu_theme','v49h_land','v96h_guangwu_relief','v101h_guangwu_taixue'}
+ for event_id in transition_events:
+  event=event_map[event_id]
+  assert len(re.findall(r'[\u4e00-\u9fff]',event['body']))>=85,(event_id,'body')
+  assert len(re.findall(r'[\u4e00-\u9fff]',event['impact']))>=65,(event_id,'impact')
+  assert set(event['sources'])<=sources.keys()
+  assert set(event['people'])==set(event['peopleRoles']),(event_id,'person-role mismatch')
+ transition_articles={article['person']:article for article in d['articles'] if article['person'] in {'han_wangmang','han_guangwu'}}
+ assert transition_articles.keys()=={'han_wangmang','han_guangwu'}
+ for person_id,article in transition_articles.items():
+  text=''.join(section['text'] for section in article['sections'])
+  assert len(article['sections'])==5 and len(re.findall(r'[\u4e00-\u9fff]',text))>=650,(person_id,'article too short')
+  assert len({section['id'] for section in article['sections']})==5
+  assert all(len(re.findall(r'[\u4e00-\u9fff]',section['text']))>=115 for section in article['sections'])
+  assert transition_sources & set(article['sources'])
+  for section in article['sections']:
+   assert set(section['sources'])<=sources.keys()
+   assert set(section.get('events',[]))<=event_map.keys()
+   assert set(section.get('people',[]))<=people.keys()
+ corpus=json.dumps(list(transition_articles.values())+[event_map[event_id] for event_id in transition_events],ensure_ascii=False)
+ for term in ['在王氏家族之外经营声望','辅政、符命与称帝程序','王田、私属与反复币制','南阳饥荒、起兵与昆阳','河北不是一人一骑取得','十余年统一战争与功臣网络','洛阳太学与“中兴”边界']:
+  assert term in corpus,('missing Xin-Eastern Han term',term)
+ for boundary in ['不能当作精确战场统计','不等于全国一次性废除奴婢','不是后世宋太祖式的“杯酒释兵权”','不能用一次行动证明豪强已被压服','不能当作现代现场记录']:
+  assert boundary in corpus,('missing Xin-Eastern Han evidence boundary',boundary)
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品不用|产品将|产品采用',corpus,re.I)
+ overview_source=(R/'App/DynastyViews.swift').read_text()
+ assert '从这里继续' not in overview_source and 'DynastyContinuationGuide' not in overview_source
+ print('V163 PASS: Wang Mang and Guangwu readings now connect regency, reform, disaster, competing Han regimes, war and reconstruction while every dynasty overview keeps only the four fixed tab destinations')
