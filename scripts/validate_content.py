@@ -3680,3 +3680,28 @@ if d['version'] >= 148:
   assert boundary in corpus,('missing Shang evidence boundary',boundary)
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将|产品采用',corpus,re.I)
  print('V148 PASS: fourteen Shang sites and objects now read in three evidence layers, while fifty thematic events carry distinct consequences and explicit source limits')
+
+if d['version'] >= 149:
+ v175_object_ids={'v58_obj_li','v58_obj_hezun','v58_obj_dayuding','v58_obj_maogong','v58_obj_guopan','v58_obj_jinhou','v58_obj_zhouyuan','v58_obj_fenghao'}
+ v175_source_ids={item['id'] for item in d['sources'] if item['id'].startswith('v175_')}
+ v175_events=[item for item in d['events'] if re.fullmatch(r'v58_[pmces]\d{2}',item['id'])]
+ object_map={item['id']:item for item in d['objects']}
+ assert len(v175_source_ids)==6 and v175_source_ids<=sources.keys()
+ assert v175_object_ids<=object_map.keys()
+ for object_id in v175_object_ids:
+  item=object_map[object_id]
+  chars=len(re.findall(r'[\u4e00-\u9fff]',item['body']+item['note']))
+  assert chars>=270 and item['body'].count('\n\n')>=2,(object_id,chars)
+  assert item['dynasties']==['zhou'] and len(item['sources'])>=3
+  assert set(item['sources'])<=sources.keys() and set(item['people'])<=people.keys()
+ assert len(v175_events)==50 and Counter(item['category'] for item in v175_events)=={'政治':10,'军事':10,'文化':10,'经济':10,'社会':10}
+ assert len({item['body'] for item in v175_events})==50 and len({item['impact'] for item in v175_events})==50
+ assert all(len(re.findall(r'[\u4e00-\u9fff]',item['body']))>=40 and len(re.findall(r'[\u4e00-\u9fff]',item['impact']))>=38 for item in v175_events)
+ assert all(set(item['sources'])<=sources.keys() and set(item['people'])<=people.keys() for item in v175_events)
+ corpus=json.dumps([object_map[object_id] for object_id in v175_object_ids]+v175_events+[sources[source_id] for source_id in v175_source_ids],ensure_ascii=False)
+ for term in ['4行32字','12行122字','291字','五百字','215.3千克','355字','凤雏','马王村']:
+  assert term in corpus,('missing Western Zhou material-history term',term)
+ for boundary in ['不能直接等同现代国家名称','不能被当作商朝覆灭的中立、唯一原因','不能单独证明“宣王中兴”的成效','具体王年、人物对应','无法完全找回被盗掘破坏的信息','不是现代意义的全民起义或共和制','不能归罪于一位女性或一次玩笑','不能全部直接换算为传记事实']:
+  assert boundary in corpus,('missing Western Zhou evidence boundary',boundary)
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将|产品采用',corpus,re.I)
+ print('V149 PASS: eight Western Zhou inscriptions and capitals now read in three evidence layers; fifty Zhou thematic events replace generic bodies and impacts with distinct mechanisms, social costs and source limits')

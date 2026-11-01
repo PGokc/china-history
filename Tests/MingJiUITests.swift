@@ -5217,4 +5217,43 @@ final class MingJiUITests: XCTestCase {
         shot("v174-yinxu-sources-and-page-ending", collection)
     }
 
+    @MainActor func testV175ZhouOverviewAndHeZunKeepAncientChinaMeaningBounded() throws {
+        let overview = XCUIApplication()
+        overview.launchArguments = ["--uitesting", "--ui-dynasty", "zhou"]
+        overview.launch()
+        XCTAssertTrue(overview.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        XCTAssertTrue(overview.buttons["dynasty_zhou"].waitForExistence(timeout: 5))
+        overview.buttons["dynasty_zhou"].tap()
+        XCTAssertTrue(overview.descendants(matching: .any)["dynastyDetail_zhou"].waitForExistence(timeout: 5))
+        XCTAssertFalse(overview.staticTexts["从这里继续"].exists)
+        XCTAssertFalse(overview.buttons["dynastySequence_zhou"].exists)
+        XCTAssertFalse(overview.buttons["dynastyFamily_zhou"].exists)
+        XCTAssertFalse(overview.buttons["dynastyCollection_zhou"].exists)
+        shot("v175-zhou-overview-without-duplicate-guide", overview)
+        overview.terminate()
+
+        let collection = XCUIApplication()
+        collection.launchArguments = ["--uitesting", "--ui-dynasty", "zhou"]
+        collection.launch()
+        XCTAssertTrue(collection.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        collection.tabBars.buttons["遗珍"].tap()
+        XCTAssertTrue(collection.descendants(matching: .any)["collectionPage_zhou"].waitForExistence(timeout: 5))
+        collection.buttons["collectionCategory_objects"].tap()
+        XCTAssertTrue(collection.descendants(matching: .any)["collectionCategoryPage_objects"].waitForExistence(timeout: 5))
+        let heZun = collection.buttons["artifact_v58_obj_hezun"]
+        XCTAssertTrue(heZun.waitForExistence(timeout: 5)); heZun.tap()
+        XCTAssertTrue(collection.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "12行122字铭文")).firstMatch.waitForExistence(timeout: 5))
+        XCTAssertTrue(collection.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不能直接等同现代国家名称")).firstMatch.exists)
+        shot("v175-he-zun-ancient-china-evidence-boundary", collection)
+        reach(collection.buttons["资料与出处"], in: collection, attempts: 18)
+        XCTAssertTrue(collection.buttons["资料与出处"].isHittable); collection.buttons["资料与出处"].tap()
+        XCTAssertTrue(collection.descendants(matching: .any)["source_v175_saac_hezun"].waitForExistence(timeout: 5))
+        let finalSource = collection.descendants(matching: .any)["source_v58_topic_duke_zhou_1"]
+        reach(finalSource, in: collection, attempts: 8)
+        for _ in 0..<3 { collection.swipeUp() }
+        XCTAssertTrue(finalSource.isHittable)
+        XCTAssertLessThanOrEqual(finalSource.frame.maxY, collection.tabBars.firstMatch.frame.minY - 16)
+        shot("v175-he-zun-sources-and-page-ending", collection)
+    }
+
 }
