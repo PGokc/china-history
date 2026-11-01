@@ -701,7 +701,7 @@ final class MingJiUITests: XCTestCase {
         reach(app.buttons["zhouTopic_confucius"], in: app, attempts: 10)
         app.buttons["zhouTopic_confucius"].tap()
         XCTAssertTrue(app.descendants(matching: .any)["eraTopic_confucius"].waitForExistence(timeout: 5))
-        XCTAssertTrue(app.staticTexts["仁、礼与君子"].exists)
+        XCTAssertTrue(app.staticTexts["仁礼不是两套分离的口号"].exists)
         shot("v29-zhou-confucius", app)
     }
 
@@ -2749,8 +2749,9 @@ final class MingJiUITests: XCTestCase {
         let note = app.staticTexts["zhouSourceProvenanceNote"]
         reach(note, in: app, attempts: 18)
         XCTAssertTrue(note.isHittable)
-        XCTAssertEqual(app.staticTexts["zhouSourceKind_0"].label, "学术研究　plato.stanford.edu")
-        XCTAssertEqual(app.staticTexts["zhouSourceKind_1"].label, "古籍转录　ctext.org")
+        XCTAssertEqual(app.staticTexts["zhouSourceKind_0"].label, "学术研究　cssn.cn")
+        XCTAssertEqual(app.staticTexts["zhouSourceKind_1"].label, "公共机构　ve.china-embassy.gov.cn")
+        XCTAssertEqual(app.staticTexts["zhouSourceKind_2"].label, "古籍转录　ctext.org")
         shot("v77-zhou-source-provenance", app)
     }
 
@@ -5302,6 +5303,30 @@ final class MingJiUITests: XCTestCase {
         for _ in 0..<3 { app.swipeUp() }
         XCTAssertLessThanOrEqual(finalSource.frame.maxY, app.tabBars.firstMatch.frame.minY - 16)
         shot("v177-republic-three-sources-and-page-ending", app)
+    }
+
+    @MainActor func testV178MohismSeparatesEthicsGovernanceAndTextLayers() throws {
+        let app = launch(enterFamily: false)
+        reach(app.buttons["dynasty_zhou"], in: app, attempts: 8); app.buttons["dynasty_zhou"].tap()
+        reach(app.buttons["zhouGuideEntry"], in: app, attempts: 12); app.buttons["zhouGuideEntry"].tap()
+        XCTAssertTrue(app.descendants(matching: .any)["zhouGuidePage"].waitForExistence(timeout: 5))
+        app.buttons["zhouPeriod_战国"].tap()
+        let topic = app.buttons["zhouTopic_mozi"]
+        reach(topic, in: app, attempts: 8); XCTAssertTrue(topic.isHittable); topic.tap()
+        XCTAssertTrue(app.descendants(matching: .any)["eraTopic_mozi"].waitForExistence(timeout: 5))
+        let governanceBoundary = app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不能直接改写成现代平等或民主理论")).firstMatch
+        reach(governanceBoundary, in: app, attempts: 5)
+        XCTAssertTrue(governanceBoundary.exists)
+        let textBoundary = app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不能把古代概念直接换成现代学科教材")).firstMatch
+        reach(textBoundary, in: app, attempts: 6)
+        XCTAssertTrue(textBoundary.exists)
+        shot("v178-mozi-ethics-governance-and-text-layers", app)
+        let finalSource = app.staticTexts["zhouSourceKind_2"]
+        reach(finalSource, in: app, attempts: 18)
+        XCTAssertEqual(finalSource.label, "古籍转录　ctext.org")
+        for _ in 0..<3 { app.swipeUp() }
+        XCTAssertLessThanOrEqual(finalSource.frame.maxY, app.tabBars.firstMatch.frame.minY - 16)
+        shot("v178-mozi-sources-and-page-ending", app)
     }
 
 }

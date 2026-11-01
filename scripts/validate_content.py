@@ -3745,3 +3745,23 @@ if d['version'] >= 151:
  assert len({section['text'] for topic in v177_topics.values() for section in topic['sections']})==30
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将|产品采用',corpus,re.I)
  print('V151 PASS: ten Western Zhou and Spring-Autumn topics now explain political mechanisms, social costs, source layers and later memory in three substantial reading sections')
+
+if d['version'] >= 152:
+ zhou_guide=json.loads((R/'App/Resources/zhou_topics.json').read_text())
+ v178_topic_ids={'confucius','laozi','sun-wu','mozi','mencius'}
+ v178_topics={topic['id']:topic for topic in zhou_guide['topics'] if topic['id'] in v178_topic_ids}
+ assert v178_topics.keys()==v178_topic_ids
+ for topic_id,topic in v178_topics.items():
+  chars=len(re.findall(r'[\u4e00-\u9fff]',topic['summary']+''.join(section['text'] for section in topic['sections'])))
+  assert chars>=520,(topic_id,chars)
+  assert len(topic['sections'])==3 and len({section['id'] for section in topic['sections']})==3
+  assert len(topic['sources'])>=3 and all(source['url'].startswith('https://') for source in topic['sources'])
+  assert all(len(re.findall(r'[\u4e00-\u9fff]',section['text']))>=140 for section in topic['sections'])
+ corpus=json.dumps(list(v178_topics.values()),ensure_ascii=False)
+ for term in ['三桓','正名','郭店一号楚墓','无为','银雀山','不战而屈人之兵','尚同','三表法','制民之产','四端']:
+  assert term in corpus,('missing Zhou thought-history term',term)
+ for boundary in ['不能把完整传记当作同时代日记','人物传说与文本年代分别标注','不是孙武亲笔稿','不能直接改写成现代平等或民主理论','不等于人民主权']:
+  assert boundary in corpus,('missing Zhou thought interpretive boundary',boundary)
+ assert len({section['text'] for topic in v178_topics.values() for section in topic['sections']})==15
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将|产品采用',corpus,re.I)
+ print('V152 PASS: Confucius, Laozi, Sun Wu, Mozi and Mencius now separate historical actors, core arguments, textual formation and modern category boundaries')
