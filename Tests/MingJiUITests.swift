@@ -6569,4 +6569,42 @@ final class MingJiUITests: XCTestCase {
         shot("v207-chen-qingzhi-source-and-safe-ending", app)
     }
 
+    @MainActor func testV208LiangCollapseKeepsCulturalLossEvidenceBounded() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["--uitesting", "--ui-dynasty", "northern_southern"]
+        app.launch()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        app.buttons["dynasty_northern_southern"].tap()
+        let overview = app.descendants(matching: .any)["dynastyDetail_northern_southern"]
+        XCTAssertTrue(overview.waitForExistence(timeout: 5))
+        XCTAssertTrue(overview.staticTexts["朝代总览"].exists)
+        XCTAssertFalse(overview.staticTexts["从这里继续"].exists)
+        XCTAssertFalse(overview.buttons["dynastySequence_northern_southern"].exists)
+        XCTAssertFalse(overview.buttons["dynastyFamily_northern_southern"].exists)
+        XCTAssertFalse(overview.buttons["dynastyCollection_northern_southern"].exists)
+        shot("v208-overview-keeps-only-four-fixed-destinations", app)
+
+        app.navigationBars.buttons.firstMatch.tap()
+        app.buttons["globalSearch"].tap()
+        let search = app.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("萧绎")
+        let emperor = app.buttons["search_person_ns_liang_yuan"]
+        XCTAssertTrue(emperor.waitForExistence(timeout: 5)); emperor.tap()
+        XCTAssertTrue(app.buttons["articleEntry"].waitForExistence(timeout: 5))
+        openArticle(in: app)
+        app.buttons["articleContents"].tap()
+        let chapter = app.buttons["焚书行为不能替全部文化损失背锅"]
+        XCTAssertTrue(chapter.exists); chapter.tap()
+        let boundary = app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "数字与对白未必可精确核验")).firstMatch
+        XCTAssertTrue(boundary.waitForExistence(timeout: 5))
+        XCTAssertFalse(app.staticTexts["从这里继续"].exists)
+        shot("v208-jiangling-books-separates-decision-from-total-loss", app)
+        openChapterSources("ns_liang_yuan_v208_7", in: app)
+        let source = app.descendants(matching: .any)["source_v208_zztj165"]
+        reach(source, in: app, attempts: 8)
+        XCTAssertTrue(source.exists)
+        XCTAssertLessThanOrEqual(source.frame.maxY, app.tabBars.firstMatch.frame.minY - 16)
+        shot("v208-jiangling-source-and-safe-ending", app)
+    }
+
 }
