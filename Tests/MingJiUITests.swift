@@ -5281,4 +5281,27 @@ final class MingJiUITests: XCTestCase {
         shot("v176-guodian-sources-and-page-ending", collection)
     }
 
+    @MainActor func testV177RepublicTopicSeparatesChronologyFromModernRepublic() throws {
+        let app = launch(enterFamily: false)
+        reach(app.buttons["dynasty_zhou"], in: app, attempts: 8); app.buttons["dynasty_zhou"].tap()
+        reach(app.buttons["zhouGuideEntry"], in: app, attempts: 12); app.buttons["zhouGuideEntry"].tap()
+        XCTAssertTrue(app.descendants(matching: .any)["zhouGuidePage"].waitForExistence(timeout: 5))
+        let topic = app.buttons["zhouTopic_liwang-republic"]
+        reach(topic, in: app, attempts: 8); XCTAssertTrue(topic.isHittable); topic.tap()
+        XCTAssertTrue(app.descendants(matching: .any)["eraTopic_liwang-republic"].waitForExistence(timeout: 5))
+        let citizenBoundary = app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "拥有同等政治权利的全国公民")).firstMatch
+        reach(citizenBoundary, in: app, attempts: 4)
+        XCTAssertTrue(citizenBoundary.exists)
+        let evidenceBoundary = app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不能把争议包装成已经找到唯一“历史真相”")).firstMatch
+        reach(evidenceBoundary, in: app, attempts: 5)
+        XCTAssertTrue(evidenceBoundary.exists)
+        shot("v177-republic-chronology-and-power-crisis", app)
+        let finalSource = app.staticTexts["zhouSourceKind_2"]
+        reach(finalSource, in: app, attempts: 20)
+        XCTAssertTrue(finalSource.label.contains("古籍转录"))
+        for _ in 0..<3 { app.swipeUp() }
+        XCTAssertLessThanOrEqual(finalSource.frame.maxY, app.tabBars.firstMatch.frame.minY - 16)
+        shot("v177-republic-three-sources-and-page-ending", app)
+    }
+
 }

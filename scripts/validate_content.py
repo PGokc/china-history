@@ -3725,3 +3725,23 @@ if d['version'] >= 150:
   assert boundary in corpus,('missing Eastern Zhou evidence boundary',boundary)
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将|产品采用',corpus,re.I)
  print('V150 PASS: six Eastern Zhou cities, ritual texts, currencies, instruments, manuscripts and waterworks now carry three evidence layers and explicit interpretive boundaries')
+
+if d['version'] >= 151:
+ zhou_guide=json.loads((R/'App/Resources/zhou_topics.json').read_text())
+ v177_topic_ids={'zhou-wu','duke-zhou','duke-shao','liwang-republic','pingwang-eastward','qi-huan-guanzhong','jin-wen','chu-zhuang','qin-mugong','wu-yue-rivalry'}
+ v177_topics={topic['id']:topic for topic in zhou_guide['topics'] if topic['id'] in v177_topic_ids}
+ assert v177_topics.keys()==v177_topic_ids
+ for topic_id,topic in v177_topics.items():
+  chars=len(re.findall(r'[\u4e00-\u9fff]',topic['summary']+''.join(section['text'] for section in topic['sections'])))
+  assert chars>=450,(topic_id,chars)
+  assert len(topic['sections'])==3 and len({section['id'] for section in topic['sections']})==3
+  assert len(topic['sources'])>=3 and all(source['url'].startswith('https://') for source in topic['sources'])
+  assert all(len(re.findall(r'[\u4e00-\u9fff]',section['text']))>=110 for section in topic['sections'])
+ corpus=json.dumps(list(v177_topics.values()),ensure_ascii=False)
+ for term in ['甲子朝','共伯和','携王','召陵','城濮','邲之战','韩原','黄池']:
+  assert term in corpus,('missing Zhou person-history term',term)
+ for boundary in ['不能把周初数十年的制度建设全部压缩成一位君主的个人设计','不能把争议包装成已经找到唯一“历史真相”','不是现代共和国','不能把全部结果归给一名宰相','不能无条件当作现场事实','“五霸”称号说明什么','不能直接代表普通士卒装备']:
+  assert boundary in corpus,('missing Zhou interpretive boundary',boundary)
+ assert len({section['text'] for topic in v177_topics.values() for section in topic['sections']})==30
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将|产品采用',corpus,re.I)
+ print('V151 PASS: ten Western Zhou and Spring-Autumn topics now explain political mechanisms, social costs, source layers and later memory in three substantial reading sections')
