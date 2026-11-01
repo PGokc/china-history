@@ -4911,4 +4911,26 @@ final class MingJiUITests: XCTestCase {
         shot("v164-hong-rengan-proposal-and-implementation", app)
     }
 
+    @MainActor func testV165EarlyTongzhiShowsJointRegencyAndDocumentProcedure() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["--uitesting", "--ui-dynasty", "qing"]
+        app.launch()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        app.buttons.matching(NSPredicate(format: "identifier == %@", "globalSearch")).firstMatch.tap()
+        let search = app.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("慈安")
+        let result = app.buttons["search_person_q165_cian"]
+        XCTAssertTrue(result.waitForExistence(timeout: 8)); Thread.sleep(forTimeInterval: 1); result.tap()
+        if !app.buttons["articleEntry"].waitForExistence(timeout: 5) { app.buttons["search_person_q165_cian"].tap() }
+        XCTAssertTrue(app.buttons["articleEntry"].waitForExistence(timeout: 5)); app.buttons["articleEntry"].tap()
+        XCTAssertTrue(app.buttons["articleContents"].waitForExistence(timeout: 5)); app.buttons["articleContents"].tap()
+        let chapter = app.buttons["两枚印章把幼帝名义转成审阅程序"]
+        XCTAssertTrue(chapter.exists); chapter.tap()
+        XCTAssertTrue(app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "同道堂")).firstMatch.waitForExistence(timeout: 5))
+        openChapterSources("v165_cian_2", in: app)
+        XCTAssertTrue(app.descendants(matching: .any)["source_v165_dpm_curtain"].waitForExistence(timeout: 3))
+        app.swipeUp()
+        shot("v165-cian-joint-regency-document-procedure", app)
+    }
+
 }

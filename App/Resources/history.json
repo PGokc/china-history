@@ -1,5 +1,5 @@
 {
-  "version": 138,
+  "version": 139,
   "reviewed": "2026-10-31",
   "people": [
     {
@@ -19392,6 +19392,216 @@
       "kind": "清朝人物",
       "note": "人物行动置于制度、战争与信息条件中解释；传记功罪与可核事实分开阅读。",
       "dynasty": "qing"
+    },
+    {
+      "id": "q165_cian",
+      "name": "慈安",
+      "call": "母后皇太后",
+      "temple": "",
+      "era": "1837—1881",
+      "reign": "咸丰至同治时期",
+      "summary": "咸丰帝皇后、同治帝嫡母，与慈禧共同垂帘；两宫名位相等并不等于每一决策都能分出相同作用。",
+      "parent": null,
+      "sources": [
+        "v5qn_qsg214",
+        "v165_dpm_curtain",
+        "v165_dpm_lecture"
+      ],
+      "kind": "重要人物",
+      "note": "咸丰帝皇后、同治帝嫡母，与慈禧共同垂帘；两宫名位相等并不等于每一决策都能分出相同作用。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q165_woren",
+      "name": "倭仁",
+      "call": "帝师与理学大臣",
+      "temple": "",
+      "era": "1804—1871",
+      "reign": "咸丰至同治时期",
+      "summary": "担任同治帝师，批评地方吏治并反对以西人为师教授天文算学，是同治初年制度争论的重要一方。",
+      "parent": null,
+      "sources": [
+        "v165_qsg391",
+        "v165_dpm_restoration"
+      ],
+      "kind": "重要人物",
+      "note": "担任同治帝师，批评地方吏治并反对以西人为师教授天文算学，是同治初年制度争论的重要一方。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q165_zengguoquan",
+      "name": "曾国荃",
+      "call": "围攻天京的湘军将领",
+      "temple": "",
+      "era": "1824—1890",
+      "reign": "咸丰至同治时期",
+      "summary": "曾国藩之弟，长期围攻天京并率部破城；军功叙事必须与饥荒、杀戮和战后善后并读。",
+      "parent": null,
+      "sources": [
+        "v165_qsg413",
+        "v165_nmc_seal",
+        "v165_ruc_recovery"
+      ],
+      "kind": "重要人物",
+      "note": "曾国藩之弟，长期围攻天京并率部破城；军功叙事必须与饥荒、杀戮和战后善后并读。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q165_lixiucheng",
+      "name": "李秀成",
+      "call": "太平天国忠王",
+      "temple": "",
+      "era": "1823—1864",
+      "reign": "咸丰至同治时期",
+      "summary": "太平天国后期主要统帅，经营苏浙、救援天京，败后囚中自述留下版本与拘押语境复杂的史料。",
+      "parent": null,
+      "sources": [
+        "v165_qsg475",
+        "v165_li_proclamation",
+        "v165_li_confession",
+        "v165_nmc_sword"
+      ],
+      "kind": "重要人物",
+      "note": "太平天国后期主要统帅，经营苏浙、救援天京，败后囚中自述留下版本与拘押语境复杂的史料。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q165_luobingzhang",
+      "name": "骆秉章",
+      "call": "湖南四川督抚",
+      "temple": "",
+      "era": "1793—1867",
+      "reign": "咸丰至同治时期",
+      "summary": "在湖南依托幕府和湘军网络，后督四川军务；能吏评价不能遮蔽征兵、刑杀和石达开案。",
+      "parent": null,
+      "sources": [
+        "v165_qsg406",
+        "v165_ruc_recovery"
+      ],
+      "kind": "重要人物",
+      "note": "在湖南依托幕府和湘军网络，后督四川军务；能吏评价不能遮蔽征兵、刑杀和石达开案。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q165_shenbaozhen",
+      "name": "沈葆桢",
+      "call": "江西巡抚与船政大臣",
+      "temple": "",
+      "era": "1820—1879",
+      "reign": "咸丰至同治时期",
+      "summary": "同治初年任江西巡抚，处理战乱与财政，后来主持福州船政；技术事业建立在督抚财政和跨区域人才网络上。",
+      "parent": null,
+      "sources": [
+        "v165_qsg413",
+        "v165_cssn_translation"
+      ],
+      "kind": "重要人物",
+      "note": "同治初年任江西巡抚，处理战乱与财政，后来主持福州船政；技术事业建立在督抚财政和跨区域人才网络上。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q165_dingrichang",
+      "name": "丁日昌",
+      "call": "机器局与战后治理官员",
+      "temple": "",
+      "era": "1823—1882",
+      "reign": "咸丰至同治时期",
+      "summary": "由幕府、机器局进入地方治理，参与江南制造总局与江苏善后；其行政改革兼有效率、控制与财政目的。",
+      "parent": null,
+      "sources": [
+        "v165_qsg448",
+        "v165_shanghai_gazette"
+      ],
+      "kind": "重要人物",
+      "note": "由幕府、机器局进入地方治理，参与江南制造总局与江苏善后；其行政改革兼有效率、控制与财政目的。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q165_xushou",
+      "name": "徐寿",
+      "call": "格致家与翻译组织者",
+      "temple": "",
+      "era": "1818—1884",
+      "reign": "咸丰至同治时期",
+      "summary": "以实验、制器和合译进入洋务机构，参与黄鹄号与江南制造局翻译馆；知识生产是多人协作而非孤立天才故事。",
+      "parent": null,
+      "sources": [
+        "v165_cssn_translation",
+        "v165_shm_translation",
+        "v165_wuxi_steam"
+      ],
+      "kind": "重要人物",
+      "note": "以实验、制器和合译进入洋务机构，参与黄鹄号与江南制造局翻译馆；知识生产是多人协作而非孤立天才故事。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q165_huahengfang",
+      "name": "华蘅芳",
+      "call": "数学家与制器译书者",
+      "temple": "",
+      "era": "1833—1902",
+      "reign": "咸丰至同治时期",
+      "summary": "参与蒸汽机、轮船试制和科技译述，把传统数学训练、实测与外文知识连接起来。",
+      "parent": null,
+      "sources": [
+        "v165_cssn_translation",
+        "v165_shm_translation",
+        "v165_wuxi_steam"
+      ],
+      "kind": "重要人物",
+      "note": "参与蒸汽机、轮船试制和科技译述，把传统数学训练、实测与外文知识连接起来。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q165_yungrong",
+      "name": "容闳",
+      "call": "机器采购与留学倡议者",
+      "temple": "",
+      "era": "1828—1912",
+      "reign": "咸丰至同治时期",
+      "summary": "早年赴美求学，受曾国藩委托采购机器，后推动幼童留学；个人方案能否落地取决于官僚、经费和跨国网络。",
+      "parent": null,
+      "sources": [
+        "v165_zhongshan_yung",
+        "v165_shanghai_gazette"
+      ],
+      "kind": "重要人物",
+      "note": "早年赴美求学，受曾国藩委托采购机器，后推动幼童留学；个人方案能否落地取决于官僚、经费和跨国网络。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q165_laiwenguang",
+      "name": "赖文光",
+      "call": "太平军余部与东捻领袖",
+      "temple": "",
+      "era": "1827—1868",
+      "reign": "咸丰至同治时期",
+      "summary": "天京陷落后整合太平军余部与捻军，跨省机动作战；官军围堵与地方社会供给共同决定其结局。",
+      "parent": null,
+      "sources": [
+        "v165_qsg475",
+        "v165_qsg416"
+      ],
+      "kind": "重要人物",
+      "note": "天京陷落后整合太平军余部与捻军，跨省机动作战；官军围堵与地方社会供给共同决定其结局。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q165_liumingchuan",
+      "name": "刘铭传",
+      "call": "淮军将领",
+      "temple": "",
+      "era": "1836—1896",
+      "reign": "咸丰至同治时期",
+      "summary": "由安徽团练进入淮军，在苏南和捻军战事中升迁；后来的台湾治理不应倒过来遮蔽早年战争经验。",
+      "parent": null,
+      "sources": [
+        "v165_qsg416",
+        "v165_nmc_army_pay"
+      ],
+      "kind": "重要人物",
+      "note": "由安徽团练进入淮军，在苏南和捻军战事中升迁；后来的台湾治理不应倒过来遮蔽早年战争经验。",
+      "dynasty": "qing"
     }
   ],
   "sources": [
@@ -26984,6 +27194,150 @@
       "title": "北京大学《史学月刊》：太平天国镇境苏浙社会经济秩序",
       "url": "https://fh.pku.edu.cn/docs/2023-01/20230112203302509564.pdf",
       "note": "研究占领区钱粮、基层治理与农村秩序，提醒理想制度、征粮实践和地方差异必须分开。"
+    },
+    {
+      "id": "v165_dpm_curtain",
+      "title": "故宫博物院：垂帘听政",
+      "url": "https://www.dpm.org.cn/court/event/157160.html",
+      "note": "核对辛酉政变后两宫垂帘、御赏与同道堂两印、养心殿听政及1873年归政。页面评价语言较强，具体责任仍需与制度档案对读。"
+    },
+    {
+      "id": "v165_dpm_lecture",
+      "title": "故宫博物院：咸同之际两宫皇太后的理政、听政与垂帘",
+      "url": "https://www.dpm.org.cn/research_institute/activity/detail/256587.html",
+      "note": "依据奏折与《垂帘章程十一条》讨论制度形成，区分两宫、奕訢与廷臣各自作用。"
+    },
+    {
+      "id": "v165_qsg391",
+      "title": "《清史稿》卷391 · 倭仁",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷391",
+      "note": "核对倭仁担任帝师、议论州县治理及反对同文馆天文算学课程。此传偏重道德评价，不能据此推定政策实际效果。"
+    },
+    {
+      "id": "v165_qsg406",
+      "title": "《清史稿》卷406 · 骆秉章",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷406",
+      "note": "核对骆秉章在湖南、四川军政及石达开案中的经历；官修列传的军功与忠逆语言须结合地方社会代价阅读。"
+    },
+    {
+      "id": "v165_qsg413",
+      "title": "《清史稿》卷413 · 曾国荃、沈葆桢",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷413",
+      "note": "核对曾国荃围攻天京、沈葆桢在江西任职及后续船政经历；战果数字与褒奖不直接等于中立统计。"
+    },
+    {
+      "id": "v165_qsg416",
+      "title": "《清史稿》卷416 · 刘铭传",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷416",
+      "note": "核对刘铭传由团练进入淮军、苏南与捻军战事；本传从清军统帅立场记录，需保留对俘降者和居民的证据边界。"
+    },
+    {
+      "id": "v165_qsg448",
+      "title": "《清史稿》卷448 · 丁日昌",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷448",
+      "note": "核对丁日昌筹办机器局、盐务与战后江苏治理；列传的能吏评价须与具体行政措施分开。"
+    },
+    {
+      "id": "v165_qsg475",
+      "title": "《清史稿》卷475 · 李秀成及太平天国后期",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷475",
+      "note": "核对李秀成、天京末期与太平军余部活动。全卷使用清廷敌对称谓，叙事立场本身也是需要说明的史料条件。"
+    },
+    {
+      "id": "v165_li_proclamation",
+      "title": "李秀成《告上海松江人民清朝兵勇及外国侵略者谆谕》",
+      "url": "https://zh.wikisource.org/zh-hans/忠王李秀成告上海松江人民清朝兵勇及外國侵略者諄諭",
+      "note": "1861年太平天国方面公开文本，可观察其对居民、清军与洋商的政治语言；宣示不能当作占领区普遍实践。"
+    },
+    {
+      "id": "v165_li_confession",
+      "title": "《太平天国战记》所收李秀成囚中自述与批跋",
+      "url": "https://zh.wikisource.org/zh-hans/太平天國戰記",
+      "note": "保存李秀成囚中书写及后人评论线索；文本经过曾国藩删改、转抄与出版，版本差异和拘押情境必须明示。"
+    },
+    {
+      "id": "v165_nmc_seal",
+      "title": "中国国家博物馆：太平天国天王洪秀全玉玺",
+      "url": "https://www.chnmuseum.cn/zp/zpml/gmww/202112/t20211214_253202.shtml",
+      "note": "核对玉玺作为政权物证及1864年天京陷落后进入清廷档案系统的路径。"
+    },
+    {
+      "id": "v165_nmc_sword",
+      "title": "中国国家博物馆：太平天国忠王李秀成的宝剑",
+      "url": "https://www.chnmuseum.cn/zp/zpml/csp/202112/t20211214_253147.shtml",
+      "note": "核对李秀成身份、宝剑铭文与流传背景；个人佩剑不能代替对军队组织和战争责任的讨论。"
+    },
+    {
+      "id": "v165_nmc_cannon",
+      "title": "中国国家博物馆馆刊：太平天国谒天义陈铜炮考析",
+      "url": "https://www.chnmuseum.cn/yj/xscg/xslw/201812/t20181224_36503.shtml",
+      "note": "通过带纪年铭文的铜炮讨论常州守备、地方铸造与边缘将领，提供官修人物传之外的实物证据。"
+    },
+    {
+      "id": "v165_nmc_army_pay",
+      "title": "中国国家博物馆：常胜军饷银册等革命文物目录",
+      "url": "https://m.chnmuseum.cn/zp/zpml/gmww/index_55.html",
+      "note": "馆藏目录记录1863年常胜军饷银册，可用于说明上海战场的跨国军事雇佣与按月财政成本。"
+    },
+    {
+      "id": "v165_dpm_restoration",
+      "title": "故宫博物院：同治中兴",
+      "url": "https://www.dpm.org.cn/court/event/161110.html",
+      "note": "概述同文馆、江南制造总局等洋务项目；“中兴”是评价框架，不能抵消内战、强制征收和地区差异。"
+    },
+    {
+      "id": "v165_ruc_politics",
+      "title": "中国人民大学清史研究所：咸同政局与近代外交中枢",
+      "url": "https://iqh.ruc.edu.cn/old/qdzzsyj/gjzz/7fd159c708d44432b78a2f953cec19a7.htm",
+      "note": "讨论辛酉政变、总理衙门、地方督抚与同治初年政治重组；文章中的现代化评价须与制度实际分开。"
+    },
+    {
+      "id": "v165_cssn_translation",
+      "title": "中国社会科学网：因制造而译书——江南制造局翻译馆",
+      "url": "https://cssn.cn/skgz/bwyc/202503/t20250303_5855187.shtml",
+      "note": "核对翻译馆设立、徐寿华蘅芳参与、口译笔述流程及生产需求；不把合译作品简单归于单一作者。"
+    },
+    {
+      "id": "v165_shm_translation",
+      "title": "上海博物馆：江南制造局翻译馆史料说明",
+      "url": "https://www.shanghaimuseum.net/mu/asset1/20150521/1e031b1d-8f28-4191-8b77-472692ebaf2d.pdf",
+      "note": "核对1868年建馆、馆舍、译员与出版数量等物质信息；后期累计数据不等于初建当年规模。"
+    },
+    {
+      "id": "v165_shanghai_gazette",
+      "title": "上海市人民政府：《上海通志》",
+      "url": "https://www.shanghai.gov.cn/shanghai/newshanghai/上海通志.pdf",
+      "note": "核对江南制造总局1865年创办及开办经费等城市工业史数据。"
+    },
+    {
+      "id": "v165_wuxi_steam",
+      "title": "无锡市档案史志馆：科技双雄与黄鹄号",
+      "url": "https://daj.wuxi.gov.cn/doc/2014/11/24/2425697.shtml",
+      "note": "核对徐寿、华蘅芳试制蒸汽机与黄鹄号的地方史线索；“第一”称谓依对象定义而异，正文采用审慎表述。"
+    },
+    {
+      "id": "v165_zhongshan_yung",
+      "title": "中山市人民政府：容闳与机器采购",
+      "url": "https://www.zs.gov.cn/zjzs/zsmr/content/post_220052.html",
+      "note": "核对容闳1863年受委托赴美采购机器及后续留学倡议；自述与纪念叙事须和官方项目时间线对读。"
+    },
+    {
+      "id": "v165_ruc_recovery",
+      "title": "中国人民大学清史研究所：晚清战后垦务与流民安置",
+      "url": "https://iqh.ruc.edu.cn/old/zgzhslt/ztyj_zh/mq/80d0c4ee46404c07aeb97a3e9a2b1a7c.htm",
+      "note": "讨论太平天国战争后劝农局、招垦、减免与地方财政恢复；政策文本不等于所有返乡者顺利复业。"
+    },
+    {
+      "id": "v165_ruc_northwest",
+      "title": "中国人民大学清史研究所：同治年间西北战争与人口迁移",
+      "url": "https://iqh.ruc.edu.cn/old/zglsdlyj/lsdl_lzjj/qsdlyj/5c59f3ef12334f08ad01e9204f22495a.htm",
+      "note": "讨论陕甘战争、人口损失与强制迁移的长期影响；估算数字受口径与资料限制，正文不作精确断言。"
+    },
+    {
+      "id": "v165_ruc_hui_society",
+      "title": "中国人民大学清史研究所：同治西北战争后的回民社会经济",
+      "url": "https://iqh.ruc.edu.cn/old/qdshsyj/shyjj/727d799a73434da2af00a78c9b8024bb.htm",
+      "note": "讨论战争、迁徙、农业商业结构和战后管制；避免把多方暴力简化为单一族群的固定行为。"
     }
   ],
   "relations": [
@@ -78614,6 +78968,835 @@
       ],
       "kind": "史实与解读",
       "category": "文化"
+    },
+    {
+      "id": "v165_xinyou_coup",
+      "year": "1861年",
+      "sortYear": 1861,
+      "title": "辛酉政变重组顾命与宗室权力",
+      "body": "两宫皇太后联合奕訢等人在梓宫回京过程中解除八大臣权力，载垣、端华、肃顺等被处置。",
+      "impact": "政变不是一人密谋的宫廷戏，而是热河与北京两套权力网络、印章程序和军事控制共同作用。",
+      "people": [
+        "q_tongzhi",
+        "q_cixi",
+        "q_yixin",
+        "q165_cian"
+      ],
+      "sources": [
+        "v165_dpm_curtain",
+        "v165_dpm_lecture",
+        "v164_qsg220",
+        "v164_qsg387"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v165_curtain_rules",
+      "year": "1861年",
+      "sortYear": 1861,
+      "title": "《垂帘章程》把共同听政写入程序",
+      "body": "章程规定养心殿召见、帘幕、引见和两宫与幼帝同御等事项。",
+      "impact": "两宫拥有最高名义并不等于亲自起草全部政策；军机、部院与地方督抚仍构成信息链。",
+      "people": [
+        "q_tongzhi",
+        "q_cixi",
+        "q_yixin",
+        "q165_cian"
+      ],
+      "sources": [
+        "v165_dpm_lecture",
+        "v165_dpm_curtain"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v165_reign_title_change",
+      "year": "1861年",
+      "sortYear": 1861,
+      "title": "年号由祺祥改为同治",
+      "body": "新政局废止顾命大臣所拟祺祥年号，以“同治”表达两宫与幼帝共同治政的合法性。",
+      "impact": "年号是政变结果的公开政治语言，不等于社会立即进入稳定与恢复。",
+      "people": [
+        "q_tongzhi",
+        "q_cixi",
+        "q165_cian"
+      ],
+      "sources": [
+        "v165_dpm_curtain",
+        "v165_dpm_lecture"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v165_court_return",
+      "year": "1861年",
+      "sortYear": 1861,
+      "title": "朝廷由热河回到北京并重建中枢",
+      "body": "咸丰梓宫与幼帝、两宫回京，留京王公和总理衙门人员重新进入决策中心。",
+      "impact": "空间转换改变了谁能接近印章、军队和奏折，是辛酉政变成功的重要条件。",
+      "people": [
+        "q_tongzhi",
+        "q_yixin",
+        "q165_cian"
+      ],
+      "sources": [
+        "v165_dpm_lecture",
+        "v165_ruc_politics"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v165_yixin_deliberative",
+      "year": "1861—1865年",
+      "sortYear": 1861,
+      "title": "议政王与总理衙门形成新的中枢接口",
+      "body": "奕訢以议政王、军机和总理衙门职务参与内外事务，文祥等协助日常运转。",
+      "impact": "危机催生了跨机构协调，但权力仍受两宫、宗室和官僚弹劾制约。",
+      "people": [
+        "q_yixin",
+        "q164_wenxiang",
+        "q_cixi"
+      ],
+      "sources": [
+        "v165_ruc_politics",
+        "v164_qsg386"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v165_yixin_dismissal",
+      "year": "1865年",
+      "sortYear": 1865,
+      "title": "奕訢遭罢议政王后恢复部分职务",
+      "body": "两宫以办事不妥等理由处分奕訢，随后保留其总理衙门等部分作用。",
+      "impact": "所谓洋务派并非稳定掌权集团，中枢合作始终伴随名位竞争和皇太后制衡。",
+      "people": [
+        "q_yixin",
+        "q_cixi",
+        "q165_cian"
+      ],
+      "sources": [
+        "v165_ruc_politics",
+        "v5qn_qsg221"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v165_governor_power",
+      "year": "1860—1869年",
+      "sortYear": 1862,
+      "title": "督抚保举与跨省军务成为常态",
+      "body": "曾国藩、李鸿章、左宗棠等通过保举、调兵和筹饷形成跨省网络。",
+      "impact": "中央依靠地方力量结束战争，也使财政、用人与军队更依附区域督抚。",
+      "people": [
+        "q_zengguofan",
+        "q_lihongzhang",
+        "q_zuozongtang"
+      ],
+      "sources": [
+        "v165_ruc_politics",
+        "v40q_qsg405",
+        "v40q_qsg411"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v165_postwar_appointments",
+      "year": "1864年",
+      "sortYear": 1864,
+      "title": "天京陷落后的封赏重排官场资源",
+      "body": "清廷按军功封爵、升迁并安排湘淮将领进入督抚和提镇体系。",
+      "impact": "奖赏巩固忠诚，也把战时私人军队的人事网络带入常态行政。",
+      "people": [
+        "q_zengguofan",
+        "q165_zengguoquan",
+        "q_lihongzhang"
+      ],
+      "sources": [
+        "v165_qsg413",
+        "v40q_qsg405"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v165_restoration_label",
+      "year": "1860—1869年",
+      "sortYear": 1868,
+      "title": "“同治中兴”把多重变化压缩为复兴叙事",
+      "body": "内战结束、外交暂缓、洋务起步和财政恢复后来常被合称同治中兴。",
+      "impact": "评价框架有助于概括王朝恢复，却不能遮蔽地区战争、人口损失和制度依赖地方军队的代价。",
+      "people": [
+        "q_tongzhi",
+        "q_cixi",
+        "q_yixin"
+      ],
+      "sources": [
+        "v165_dpm_restoration",
+        "v165_ruc_politics"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v165_huai_arrives",
+      "year": "1862年",
+      "sortYear": 1862,
+      "title": "淮军乘轮船抵沪进入苏南战场",
+      "body": "李鸿章率淮军由安徽赴上海，吸收地方练勇并使用新式枪炮。",
+      "impact": "口岸财政、外国运输和地方兵员共同塑造新军，不是单纯武器升级。",
+      "people": [
+        "q_lihongzhang",
+        "q165_liumingchuan"
+      ],
+      "sources": [
+        "v165_qsg416",
+        "v40q_qsg411"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v165_shanghai_defense",
+      "year": "1862—1863年",
+      "sortYear": 1862,
+      "title": "上海周边形成清军、淮军与外国武装并行战场",
+      "body": "太平军进逼松江上海，常胜军、外国军官和淮军共同作战。",
+      "impact": "内战与条约口岸利益交叠，外国参战首先服务商贸与侨民安全。",
+      "people": [
+        "q165_lixiucheng",
+        "q_lihongzhang",
+        "q165_liumingchuan"
+      ],
+      "sources": [
+        "v165_li_proclamation",
+        "v165_nmc_army_pay"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v165_shidakai_capture",
+      "year": "1863年",
+      "sortYear": 1863,
+      "title": "石达开部在大渡河地区覆败",
+      "body": "石达开军受地形、粮食和多路围堵限制，主将被俘后在成都处死。",
+      "impact": "俘降过程与清方承诺存在叙事差异，不能只用“擒获”略过俘虏命运。",
+      "people": [
+        "q163_shidakai",
+        "q165_luobingzhang"
+      ],
+      "sources": [
+        "v165_qsg406",
+        "v163_qsg475"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v165_suzhou_campaign",
+      "year": "1863年",
+      "sortYear": 1863,
+      "title": "苏州投降与降将处置引发争议",
+      "body": "淮军围攻苏州，部分守将杀谭绍光投降，随后被处死。",
+      "impact": "军事承诺、外国中介与胜方安全判断发生冲突，事件长期影响信用评价。",
+      "people": [
+        "q_lihongzhang",
+        "q165_lixiucheng",
+        "q165_liumingchuan"
+      ],
+      "sources": [
+        "v165_qsg416",
+        "v165_qsg475"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v165_changzhou_fall",
+      "year": "1864年",
+      "sortYear": 1864,
+      "title": "常州失守结束苏南主要据点",
+      "body": "淮军等攻取常州，太平军地方铸炮和守备体系随之瓦解。",
+      "impact": "铭文铜炮证明地方制造与守军组织，战果奏报不能代替居民损失记录。",
+      "people": [
+        "q_lihongzhang",
+        "q165_liumingchuan"
+      ],
+      "sources": [
+        "v165_nmc_cannon",
+        "v165_qsg416"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v165_tianjing_fall",
+      "year": "1864年7月",
+      "sortYear": 1864,
+      "title": "湘军攻入天京",
+      "body": "曾国荃部经长期围困和地道爆破进入城内，太平天国中央政权覆亡。",
+      "impact": "城破是后勤封锁和多线战争结果，不能缩成一次冲锋或单一名将功劳。",
+      "people": [
+        "q165_zengguoquan",
+        "q165_lixiucheng",
+        "q_hongxiuquan"
+      ],
+      "sources": [
+        "v165_qsg413",
+        "v165_nmc_seal",
+        "v165_qsg475"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v165_li_confession_event",
+      "year": "1864年",
+      "sortYear": 1864,
+      "title": "李秀成被俘、书写自述并被处死",
+      "body": "李秀成突围后被俘，在囚禁中书写长篇供述，曾国藩审阅删改后将其处死。",
+      "impact": "文本含重要内部信息，却受求生、审讯、删改与版本传播影响。",
+      "people": [
+        "q165_lixiucheng",
+        "q_zengguofan"
+      ],
+      "sources": [
+        "v165_li_confession",
+        "v165_qsg475"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v165_senggelinqin_death",
+      "year": "1865年",
+      "sortYear": 1865,
+      "title": "僧格林沁在高楼寨战死",
+      "body": "长期追击捻军的僧格林沁部遭伏击，主将阵亡，清廷转而更倚重曾国藩、李鸿章。",
+      "impact": "失利加速八旗绿营与勇营权力转换，也显示连续追击的补给和情报风险。",
+      "people": [
+        "q163_senggelinqin",
+        "q_zengguofan",
+        "q_lihongzhang"
+      ],
+      "sources": [
+        "v163_qsg404",
+        "v165_ruc_politics"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v165_east_nian_end",
+      "year": "1866—1868年",
+      "sortYear": 1866,
+      "title": "东捻在河防与机动围堵中覆败",
+      "body": "李鸿章统筹淮军等部压缩东捻活动空间，任柱死亡，赖文光被俘处死。",
+      "impact": "围河与追击需要多省财政、地方情报和居民通行限制，胜利并非一次会战。",
+      "people": [
+        "q165_laiwenguang",
+        "q165_liumingchuan",
+        "q_lihongzhang"
+      ],
+      "sources": [
+        "v165_qsg416",
+        "v165_qsg475"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v165_lijin_persists",
+      "year": "1860—1869年",
+      "sortYear": 1861,
+      "title": "厘金由战时筹饷转为地方长期财源",
+      "body": "商路抽厘继续支持湘淮军、善后和洋务项目。",
+      "impact": "临时税常态化增强督抚财政，也提高贸易成本并形成复杂卡局利益。",
+      "people": [
+        "q_zengguofan",
+        "q_lihongzhang"
+      ],
+      "sources": [
+        "v164_ruc_lijin",
+        "v165_ruc_politics"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v165_customs_funds",
+      "year": "1860—1869年",
+      "sortYear": 1862,
+      "title": "海关税收成为军工与外交的重要资金接口",
+      "body": "通商口岸税收的一部分被用于赔款、军费和新式项目。",
+      "impact": "稳定现金收入支持制造，却受条约制度和外籍税务人员参与约束。",
+      "people": [
+        "q_yixin",
+        "q164_wenxiang"
+      ],
+      "sources": [
+        "v164_ruc_ports",
+        "v165_ruc_politics"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v165_machine_purchase",
+      "year": "1863—1865年",
+      "sortYear": 1863,
+      "title": "容闳赴美采购机器并运回上海",
+      "body": "曾国藩委托容闳购买设备，随后与上海既有机器局合并使用。",
+      "impact": "采购只是起点，厂房、燃料、操作、维修和持续预算决定机器能否运行。",
+      "people": [
+        "q165_yungrong",
+        "q_zengguofan",
+        "q_lihongzhang"
+      ],
+      "sources": [
+        "v165_zhongshan_yung",
+        "v165_shanghai_gazette"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v165_jiangnan_arsenal",
+      "year": "1865年",
+      "sortYear": 1865,
+      "title": "江南制造总局由多处机器局合并成形",
+      "body": "李鸿章、丁日昌等整合购入铁厂、旧局和设备，形成大型官办军工机构。",
+      "impact": "它推动机器生产，也高度依赖官款、外购设备和军事订单。",
+      "people": [
+        "q_lihongzhang",
+        "q165_dingrichang",
+        "q165_yungrong"
+      ],
+      "sources": [
+        "v165_shanghai_gazette",
+        "v165_dpm_restoration"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v165_salt_reform",
+      "year": "1864—1867年",
+      "sortYear": 1865,
+      "title": "两淮盐务整顿试图恢复战后收入",
+      "body": "丁日昌清理运销、私贩和吏弊，增加盐课与地方财政可见度。",
+      "impact": "财政改善可能伴随更严缉私，小贩、船户和消费者承担不同成本。",
+      "people": [
+        "q165_dingrichang",
+        "q_lihongzhang"
+      ],
+      "sources": [
+        "v165_qsg448"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v165_jiangxi_recovery",
+      "year": "1862—1867年",
+      "sortYear": 1862,
+      "title": "江西清查钱粮并恢复州县运转",
+      "body": "沈葆桢在战争余波中处理税收、治安、田地和流民。",
+      "impact": "恢复额征是政府目标，不等于缺种少劳力的民户已恢复生产。",
+      "people": [
+        "q165_shenbaozhen"
+      ],
+      "sources": [
+        "v165_qsg413",
+        "v165_ruc_recovery"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v165_jiangnan_reclamation",
+      "year": "1864年后",
+      "sortYear": 1864,
+      "title": "江南劝农、招垦与田界重建同步展开",
+      "body": "地方设置劝农机构，招回流民、处理绝户田与减免。",
+      "impact": "返乡者面对房屋损毁、契据缺失和强势占垦，政策效果地区差异很大。",
+      "people": [
+        "q_zengguofan",
+        "q165_zengguoquan",
+        "q165_dingrichang"
+      ],
+      "sources": [
+        "v165_ruc_recovery"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v165_demobilization_finance",
+      "year": "1864—1868年",
+      "sortYear": 1864,
+      "title": "撤勇、欠饷与保留核心部队并行",
+      "body": "湘军大规模裁撤，淮军等仍因捻军和海防继续领饷。",
+      "impact": "裁军减轻支出，也把失业、伤病与返乡路费转给士兵家庭和地方社会。",
+      "people": [
+        "q_zengguofan",
+        "q165_zengguoquan",
+        "q_lihongzhang"
+      ],
+      "sources": [
+        "v40q_qsg405",
+        "v165_qsg413"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v165_war_remittance",
+      "year": "1860—1869年",
+      "sortYear": 1866,
+      "title": "协饷把沿海收入输往跨省战场",
+      "body": "东南各省和海关向捻军、西北等战场调拨军费。",
+      "impact": "跨省汇款维持战争，却挤压地方恢复与常规公共支出。",
+      "people": [
+        "q_lihongzhang",
+        "q_zuozongtang"
+      ],
+      "sources": [
+        "v165_ruc_northwest",
+        "v165_ruc_politics"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v165_tianjing_civilians",
+      "year": "1864年",
+      "sortYear": 1864,
+      "title": "围城饥饿与破城暴力落在天京居民身上",
+      "body": "长期封锁造成粮食枯竭，城破后又发生杀戮、焚掠与人口流散。",
+      "impact": "具体数字有争议，不能因此否认居民灾难，也不应把全城人口视为同一政治身份。",
+      "people": [
+        "q165_zengguoquan",
+        "q165_lixiucheng"
+      ],
+      "sources": [
+        "v165_qsg413",
+        "v165_qsg475",
+        "v165_nmc_seal"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v165_suzhou_displacement",
+      "year": "1862—1864年",
+      "sortYear": 1862,
+      "title": "苏南反复攻守推动居民迁往上海及乡村",
+      "body": "战争、征粮和城池易手迫使家庭分散，口岸人口与租住压力上升。",
+      "impact": "避难者既是劳动力和商贩，也面临疫病、失业与身份审查。",
+      "people": [
+        "q165_lixiucheng",
+        "q_lihongzhang"
+      ],
+      "sources": [
+        "v165_li_proclamation",
+        "v165_nmc_army_pay"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v165_return_land_claims",
+      "year": "1864年后",
+      "sortYear": 1864,
+      "title": "流民返乡遭遇绝户田与契据争议",
+      "body": "地方招垦时需决定原户、亲族、同甲与外来者的承种顺序。",
+      "impact": "恢复农业同时重新分配土地，弱势返乡者未必能取回原有权益。",
+      "people": [
+        "q165_dingrichang",
+        "q_zengguofan"
+      ],
+      "sources": [
+        "v165_ruc_recovery"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v165_disbanded_soldiers",
+      "year": "1864年后",
+      "sortYear": 1864,
+      "title": "撤遣营勇的返乡与就业成为治安问题",
+      "body": "士兵带着武器经验、伤病和欠饷离营，部分回乡务农，部分转入其他军队或地方武装。",
+      "impact": "裁军不是名册数字变化，还影响家庭生计和地方暴力资源。",
+      "people": [
+        "q165_zengguoquan",
+        "q165_liumingchuan"
+      ],
+      "sources": [
+        "v165_qsg413",
+        "v165_qsg416"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v165_northwest_violence",
+      "year": "1862年起",
+      "sortYear": 1862,
+      "title": "陕甘地方冲突扩大为长期族群与国家战争",
+      "body": "陕西地方械斗、官府处置、武装动员和报复相互升级，战火向甘肃等地扩展。",
+      "impact": "不能用单一导火线或固定族群性格解释；多方暴力和制度歧视须分别追踪。",
+      "people": [
+        "q_zuozongtang"
+      ],
+      "sources": [
+        "v165_ruc_northwest",
+        "v165_ruc_hui_society"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v165_northwest_migration",
+      "year": "1862—1868年",
+      "sortYear": 1862,
+      "title": "西北战争造成逃亡、饥馑与聚落破坏",
+      "body": "回汉各地居民在围城、屠杀、征粮和道路中断中迁徙，生产与商业网络受损。",
+      "impact": "人口估算口径不一，但长期劳力损失与被迫迁移有充分证据。",
+      "people": [
+        "q_zuozongtang"
+      ],
+      "sources": [
+        "v165_ruc_northwest",
+        "v165_ruc_hui_society"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v165_widows_orphans",
+      "year": "1860—1869年",
+      "sortYear": 1864,
+      "title": "战后寡孤、伤兵与失亲儿童进入地方救济网络",
+      "body": "善堂、宗族、官赈和私人收养承担部分照护，覆盖范围和持续经费有限。",
+      "impact": "“善后”不能只看田赋恢复，家庭结构破裂是更长期的战争后果。",
+      "people": [
+        "q165_dingrichang",
+        "q165_shenbaozhen"
+      ],
+      "sources": [
+        "v165_ruc_recovery"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v165_port_labor",
+      "year": "1860—1869年",
+      "sortYear": 1865,
+      "title": "机器局聚集工匠、翻译与日常劳工",
+      "body": "上海官办工厂需要机匠、木工、搬运、印刷和学徒，并形成新的工场纪律。",
+      "impact": "技术史不能只写官员和机器；工资、技能分层与危险劳动同样构成项目。",
+      "people": [
+        "q165_xushou",
+        "q165_huahengfang",
+        "q165_dingrichang"
+      ],
+      "sources": [
+        "v165_cssn_translation",
+        "v165_shanghai_gazette"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v165_rural_security",
+      "year": "1864—1868年",
+      "sortYear": 1864,
+      "title": "团练与保甲在战后继续影响乡村秩序",
+      "body": "地方以团练、联甲和清查户口防止余部与盗匪，同时处理返乡人口。",
+      "impact": "治安措施可能保护村庄，也可能强化绅权、连坐和对流动人口的怀疑。",
+      "people": [
+        "q165_luobingzhang",
+        "q165_dingrichang"
+      ],
+      "sources": [
+        "v165_qsg406",
+        "v165_ruc_recovery"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v165_imperial_tutoring",
+      "year": "1862年起",
+      "sortYear": 1862,
+      "title": "倭仁等为幼帝编讲帝王与名臣言行",
+      "body": "上书房教育强调经史、书写、礼仪和君德，课程受两宫与师傅共同监督。",
+      "impact": "帝王教育塑造政治语言，却无法替代亲自处理政务的经验。",
+      "people": [
+        "q_tongzhi",
+        "q165_woren"
+      ],
+      "sources": [
+        "v165_qsg391"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v165_tongwen_school",
+      "year": "1862年",
+      "sortYear": 1862,
+      "title": "京师同文馆从外语训练起步",
+      "body": "总理衙门设馆培养翻译，后来逐步增加其他课程。",
+      "impact": "初创规模有限，服务外交需求；不能按后来的课程倒推1862年已是综合大学。",
+      "people": [
+        "q_yixin",
+        "q164_wenxiang"
+      ],
+      "sources": [
+        "v165_dpm_restoration",
+        "v165_ruc_politics"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v165_shanghai_language_school",
+      "year": "1863年",
+      "sortYear": 1863,
+      "title": "上海广方言馆培养口岸翻译人才",
+      "body": "地方官在上海设馆教授外语，回应交涉和通商文书需求。",
+      "impact": "语言教育由现实行政推动，学生来源、职位和课程均受官僚体系限制。",
+      "people": [
+        "q_lihongzhang",
+        "q165_dingrichang"
+      ],
+      "sources": [
+        "v165_cssn_translation",
+        "v165_shanghai_gazette"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v165_international_law",
+      "year": "1864年",
+      "sortYear": 1864,
+      "title": "《万国公法》译印进入交涉语汇",
+      "body": "总理衙门支持丁韪良等译印国际法文本，文祥等参与推动。",
+      "impact": "翻译提供新概念，但列强并未因共享术语而放弃武力与不平等条约优势。",
+      "people": [
+        "q164_wenxiang",
+        "q_yixin"
+      ],
+      "sources": [
+        "v165_ruc_politics"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v165_huanghu",
+      "year": "1865—1866年",
+      "sortYear": 1865,
+      "title": "徐寿、华蘅芳等试制黄鹄号",
+      "body": "团队利用译书、观察、计算与工匠加工完成早期蒸汽轮船试制。",
+      "impact": "“自制”体现学习能力，不等于所有材料、知识和设备均与外部隔绝。",
+      "people": [
+        "q165_xushou",
+        "q165_huahengfang",
+        "q_zengguofan"
+      ],
+      "sources": [
+        "v165_wuxi_steam",
+        "v165_cssn_translation"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v165_woren_debate",
+      "year": "1867年",
+      "sortYear": 1867,
+      "title": "同文馆天文算学招生引发倭仁反对",
+      "body": "总理衙门拟聘西人教授官员，倭仁以人心名教和师承秩序为由反对。",
+      "impact": "争论涉及知识权威、官员身份和人才短缺，不宜简化成科学与愚昧二元对立。",
+      "people": [
+        "q165_woren",
+        "q_yixin",
+        "q164_wenxiang"
+      ],
+      "sources": [
+        "v165_qsg391"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v165_translation_hall",
+      "year": "1868年",
+      "sortYear": 1868,
+      "title": "江南制造局翻译馆正式设立",
+      "body": "徐寿等建议设馆，外籍译员与中国学者合作翻译机械、化学和数学书籍。",
+      "impact": "翻译馆连接工场和出版，但初建规模与后来累计成果必须区分。",
+      "people": [
+        "q165_xushou",
+        "q165_huahengfang",
+        "q165_shenbaozhen"
+      ],
+      "sources": [
+        "v165_cssn_translation",
+        "v165_shm_translation"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v165_translation_workflow",
+      "year": "1867—1869年",
+      "sortYear": 1868,
+      "title": "口译、笔述、校算形成合作译书流程",
+      "body": "外籍译员解释原文，中国学者笔录润色、重画图表并核算术语。",
+      "impact": "译著是共同生产，作者署名不能完全呈现工匠、排字和校对劳动。",
+      "people": [
+        "q165_xushou",
+        "q165_huahengfang"
+      ],
+      "sources": [
+        "v165_cssn_translation",
+        "v165_shm_translation"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v165_technical_printing",
+      "year": "1868年起",
+      "sortYear": 1868,
+      "title": "技术译书刻印把工场知识带向更广读者",
+      "body": "翻译馆边译边印，机械、化学、数学等书逐步进入学堂和地方知识网络。",
+      "impact": "出版扩大可得性，但价格、术语和数学训练仍限制实际读者。",
+      "people": [
+        "q165_xushou",
+        "q165_huahengfang"
+      ],
+      "sources": [
+        "v165_cssn_translation",
+        "v165_shm_translation"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
     }
   ],
   "objects": [
@@ -84247,6 +85430,125 @@
       "sources": [
         "v164_zizheng",
         "v164_pku_jiangnan"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v165_obj_two_seals",
+      "title": "“御赏”与“同道堂”印",
+      "subtitle": "幼帝名义下的文书控制",
+      "symbol": "seal",
+      "image": null,
+      "body": "咸丰临终安排两印参与上谕生效程序，载淳年幼使印章分别与两宫权力相连。",
+      "note": "印章证明制度程序与实物传承，不能单独证明每道上谕由哪位太后亲自决定。",
+      "people": [
+        "q_tongzhi",
+        "q165_cian",
+        "q_cixi"
+      ],
+      "sources": [
+        "v165_dpm_curtain"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v165_obj_curtain_rules",
+      "title": "《垂帘章程十一条》",
+      "subtitle": "非常权力的礼制化程序",
+      "symbol": "doc.text",
+      "image": null,
+      "body": "1861年廷臣议定召见、帘幕、引见等程序，使两宫听政获得可重复的办事形式。",
+      "note": "章程规定名义和礼仪，不等于保存所有实际讨论过程。",
+      "people": [
+        "q165_cian",
+        "q_cixi",
+        "q_yixin"
+      ],
+      "sources": [
+        "v165_dpm_lecture"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v165_obj_taiping_seal",
+      "title": "太平天国天王玉玺",
+      "subtitle": "政权象征与战后档案化",
+      "symbol": "seal",
+      "image": null,
+      "body": "玉玺承载太平天国政治名号，天京陷落后由湘军取得并送入清廷军机处方略馆。",
+      "note": "胜方接收路径改变了器物语境；铭文可证名号，不足以还原全部政务。",
+      "people": [
+        "q_hongxiuquan",
+        "q165_zengguoquan"
+      ],
+      "sources": [
+        "v165_nmc_seal"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v165_obj_li_sword",
+      "title": "李秀成宝剑",
+      "subtitle": "个人佩用物与流散经历",
+      "symbol": "shield",
+      "image": null,
+      "body": "剑身、剑柄铭文与装饰保存忠王个人物质线索，战后又进入海外收藏。",
+      "note": "器物来源可讨论身份和流传，不能凭装饰推断全部战场行为。",
+      "people": [
+        "q165_lixiucheng"
+      ],
+      "sources": [
+        "v165_nmc_sword"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v165_obj_huanghu",
+      "title": "黄鹄号蒸汽轮船",
+      "subtitle": "计算、观察与工场试制",
+      "symbol": "ferry",
+      "image": null,
+      "body": "徐寿、华蘅芳与工匠团队在有限资料和设备条件下试制早期蒸汽轮船。",
+      "note": "“第一艘”随自制、设计或建造口径而异，重点在协作试验和能力形成。",
+      "people": [
+        "q165_xushou",
+        "q165_huahengfang",
+        "q_zengguofan"
+      ],
+      "sources": [
+        "v165_wuxi_steam",
+        "v165_cssn_translation"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v165_obj_translation_hall",
+      "title": "江南制造局翻译馆译书",
+      "subtitle": "因制造而翻译的知识工程",
+      "symbol": "books.vertical",
+      "image": null,
+      "body": "外籍译员口译，中国学者笔述校订，工场需求推动机械、化学、数学等书的翻译出版。",
+      "note": "后期累计书目不能倒算为1868年初建规模，合译成果也不能只署给一位名人。",
+      "people": [
+        "q165_xushou",
+        "q165_huahengfang",
+        "q165_shenbaozhen"
+      ],
+      "sources": [
+        "v165_cssn_translation",
+        "v165_shm_translation"
       ],
       "dynasties": [
         "qing"
@@ -96874,10 +98176,24 @@
           "text": "载淳生于1856年，是咸丰帝独子。1861年咸丰去世，遗诏命八大臣辅政，原拟年号祺祥。慈安、慈禧太后与恭亲王奕䜣合作发动政变，处置肃顺等人，改年号同治，实行两宫垂帘听政。年号常解释为共同治理，但它首先是政变后新权力安排的标志。六岁皇帝不能对初期重大政策承担成年君主式的直接责任。",
           "sources": [
             "v5qe_qsg21_22",
-            "v5qe_dpm_lineage"
+            "v5qe_dpm_lineage",
+            "v165_dpm_lecture",
+            "v165_ruc_politics",
+            "v165_dpm_restoration"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [
+            "v165_xinyou_coup",
+            "v165_curtain_rules",
+            "v165_reign_title_change",
+            "v165_court_return",
+            "v165_yixin_deliberative",
+            "v165_yixin_dismissal"
+          ],
+          "people": [
+            "q165_cian",
+            "q165_woren"
+          ]
         },
         {
           "id": "q-tongzhi-2",
@@ -96885,11 +98201,24 @@
           "text": "同治初年清军继续对太平天国作战。曾国藩、曾国荃统率湘军，李鸿章组织淮军，1864年天京陷落。捻军战争随后延续到1868年。地方督抚凭借自筹军饷和私人募兵获得更大权力，中央依赖他们恢复秩序。战争结束让部分地区重建生产，却伴随屠杀、人口损失和地方社会军事化。把胜利统称皇帝英明，会忽略太后、亲王、督抚及无数军民的不同作用。",
           "sources": [
             "v5qe_qsg21_22",
-            "v5qe_chn_jintian"
+            "v5qe_chn_jintian",
+            "v165_dpm_lecture",
+            "v165_ruc_politics",
+            "v165_dpm_restoration"
           ],
           "kind": "史实与解读",
           "events": [
-            "qev_tongzhi_restoration_1861"
+            "qev_tongzhi_restoration_1861",
+            "v165_governor_power",
+            "v165_postwar_appointments",
+            "v165_restoration_label",
+            "v165_huai_arrives",
+            "v165_shanghai_defense",
+            "v165_shidakai_capture"
+          ],
+          "people": [
+            "q165_zengguoquan",
+            "q165_lixiucheng"
           ]
         },
         {
@@ -96902,7 +98231,10 @@
             "v40q_qsg475",
             "v40q_hong_seal",
             "v40q_qsg412",
-            "v40q_qsg411"
+            "v40q_qsg411",
+            "v165_dpm_lecture",
+            "v165_ruc_politics",
+            "v165_dpm_restoration"
           ],
           "kind": "史实与解读",
           "events": [
@@ -96911,7 +98243,13 @@
             "v40q_tianjing_fall",
             "v40q_fuzhou_shipyard",
             "v40q_overseas_students",
-            "v65q_shipping"
+            "v65q_shipping",
+            "v165_suzhou_campaign",
+            "v165_changzhou_fall",
+            "v165_tianjing_fall",
+            "v165_li_confession_event",
+            "v165_senggelinqin_death",
+            "v165_east_nian_end"
           ],
           "people": [
             "q_zengguofan",
@@ -96919,7 +98257,9 @@
             "q_lihongzhang",
             "q_hongxiuquan",
             "q_cixi",
-            "q_yixin"
+            "q_yixin",
+            "q165_luobingzhang",
+            "q165_shenbaozhen"
           ]
         },
         {
@@ -96927,10 +98267,24 @@
           "title": "财政和社会的修复",
           "text": "战争结束后，朝廷要求复垦、减免受灾地区赋税、恢复漕运与科举，并处理黄河、灾荒和回民战争。西北战事仍在继续，左宗棠所部需要巨额军费。厘金、海关税和地方筹款成为重要财源，临时财政逐渐常态化。沿海通商口岸扩展，商人、买办、传教士与新式企业进入城市生活。所谓“中兴”对不同地区感受不同，有的地方复苏，有的仍处于战争与迁徙之中。",
           "sources": [
-            "v5qe_qsg21_22"
+            "v5qe_qsg21_22",
+            "v165_dpm_lecture",
+            "v165_ruc_politics",
+            "v165_dpm_restoration"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [
+            "v165_lijin_persists",
+            "v165_customs_funds",
+            "v165_machine_purchase",
+            "v165_jiangnan_arsenal",
+            "v165_salt_reform",
+            "v165_jiangxi_recovery"
+          ],
+          "people": [
+            "q165_dingrichang",
+            "q165_xushou"
+          ]
         },
         {
           "id": "q-tongzhi-5",
@@ -96938,20 +98292,48 @@
           "text": "1873年载淳正式亲政，此前重大决策由两宫太后、议政王与军机大臣共同推动。亲政后他试图重修圆明园，计划耗资巨大，在恭亲王等反对下受挫。这件事常被解释为个人享乐，也牵涉为太后营建退居之所、皇帝摆脱垂帘的权力愿望。史料不足以让人断定他的全部内心，能确认的是财政紧张时大工程引发广泛政治反对。",
           "sources": [
             "v5qe_qsg21_22",
-            "v5qe_dpm_reader"
+            "v5qe_dpm_reader",
+            "v165_dpm_lecture",
+            "v165_ruc_politics",
+            "v165_dpm_restoration"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [
+            "v165_jiangnan_reclamation",
+            "v165_demobilization_finance",
+            "v165_war_remittance",
+            "v165_tianjing_civilians",
+            "v165_suzhou_displacement",
+            "v165_return_land_claims"
+          ],
+          "people": [
+            "q165_huahengfang",
+            "q165_yungrong"
+          ]
         },
         {
           "id": "q-tongzhi-6",
           "title": "婚姻、亲政与早逝",
           "text": "同治帝1872年大婚，皇后阿鲁特氏由选秀册立。两宫太后、皇帝与皇后之间的关系被后世演绎出许多宫廷故事，可靠史料能确定的内容有限。1874年底载淳患天花，次年初去世，年仅十九岁，没有留下子女。关于死于梅毒的说法缺少同等级证据，不宜代替宫廷医疗记录中的天花。短暂亲政使他几乎没有时间形成稳定的个人施政路线。",
           "sources": [
-            "v5qe_qsg21_22"
+            "v5qe_qsg21_22",
+            "v165_dpm_lecture",
+            "v165_ruc_politics",
+            "v165_dpm_restoration"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [
+            "v165_disbanded_soldiers",
+            "v165_northwest_violence",
+            "v165_northwest_migration",
+            "v165_widows_orphans",
+            "v165_port_labor",
+            "v165_rural_security"
+          ],
+          "people": [
+            "q165_laiwenguang",
+            "q165_liumingchuan"
+          ]
         },
         {
           "id": "q-tongzhi-7",
@@ -96959,10 +98341,27 @@
           "text": "同治死后，慈安、慈禧选择醇亲王奕譞之子载湉入承大统，成为光绪帝。这不是同治的儿子继位，而是从道光帝孙辈中另择幼主；按宗法安排，载湉兼承咸丰一系。选择三岁的孩子也使太后垂帘得以继续。同治葬清东陵惠陵，庙号穆宗。其年号代表战后重建和洋务起步，但实际执政者众多，必须区分皇帝名义、太后决策和地方督抚执行。\n\n“中兴”是谁的经验。“同治中兴”是后人对内乱平定、财政稍稳、外交机构建立和洋务起步的概括，也带有维护王朝正统的评价。对朝廷和一些地方精英而言，科举恢复、城市重建与贸易复苏确实带来秩序；对太平军、清军交战地区的幸存者以及西北战乱中的民众，人口死亡、流离和土地重分配则是更直接的经验。两宫太后能够平衡恭亲王、军机处与督抚，也在1865年罢去奕䜣议政王职，显示合作并不稳定。幼帝教育强调经史与礼法，却很少让他系统参与前线与财政实践。年号下的复苏真实而不均衡，不能据此证明旧制度已经解决危机。\n\n同治帝去世的时间还造成纪年差异：他在同治十三年十二月去世，换算公历已是1875年1月；光绪元年则从随后农历新年起算。人物在位可写至1875年，年号通常写1862至1874年，二者并不矛盾。处理清代帝王年代时，应区分即位日、改元年和公历换算，避免把年号范围直接当作全部在位日期。",
           "sources": [
             "v5qe_qsg21_22",
-            "v5qe_dpm_lineage"
+            "v5qe_dpm_lineage",
+            "v165_dpm_lecture",
+            "v165_ruc_politics",
+            "v165_dpm_restoration"
           ],
           "kind": "史实与解读",
-          "events": []
+          "events": [
+            "v165_imperial_tutoring",
+            "v165_tongwen_school",
+            "v165_shanghai_language_school",
+            "v165_international_law",
+            "v165_huanghu",
+            "v165_woren_debate",
+            "v165_translation_hall",
+            "v165_translation_workflow",
+            "v165_technical_printing"
+          ],
+          "people": [
+            "q165_cian",
+            "q165_woren"
+          ]
         }
       ],
       "sources": [
@@ -96974,7 +98373,12 @@
         "v40q_qsg475",
         "v40q_hong_seal",
         "v40q_qsg412",
-        "v40q_qsg411"
+        "v40q_qsg411",
+        "v165_dpm_lecture",
+        "v165_ruc_politics",
+        "v165_dpm_restoration",
+        "v165_ruc_recovery",
+        "v165_ruc_northwest"
       ]
     },
     {
@@ -205181,6 +206585,1074 @@
         "v163_qsg475",
         "v164_pku_jiangnan"
       ]
+    },
+    {
+      "person": "q165_cian",
+      "title": "慈安：母后名位与共同垂帘",
+      "dek": "她不是无名的“东太后”，也不能因材料较少就把同治初年全部宫廷决策归给慈禧。",
+      "sections": [
+        {
+          "id": "v165_cian_1",
+          "title": "从皇后到母后皇太后",
+          "text": "钮祜禄氏在咸丰朝为皇后。同治帝载淳并非她亲生，但依礼制尊她为母后皇太后，生母叶赫那拉氏则为圣母皇太后。两宫并尊是政治与宗法安排，不是现代意义的共同监护合同。现存官书常并列两宫，私人记述又容易突出慈禧，材料的不均衡本身限制了我们给每次决策分配个人责任。",
+          "sources": [
+            "v5qn_qsg214",
+            "v165_dpm_curtain",
+            "v165_dpm_lecture"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_xinyou_coup",
+            "v165_curtain_rules"
+          ],
+          "people": []
+        },
+        {
+          "id": "v165_cian_2",
+          "title": "两枚印章把幼帝名义转成审阅程序",
+          "text": "咸丰临终把“御赏”和“同道堂”两印置于新权力结构中，上谕需经用印。载淳年幼，同道堂印实际由其生母掌管，御赏印与皇后相连。印章既是实物，也是文书能否生效的程序节点。它没有消除辅政大臣、军机处和地方督抚的作用，却给两宫与八大臣之间的冲突提供了制度抓手。",
+          "sources": [
+            "v5qn_qsg214",
+            "v165_dpm_curtain",
+            "v165_dpm_lecture"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_xinyou_coup",
+            "v165_curtain_rules"
+          ],
+          "people": []
+        },
+        {
+          "id": "v165_cian_3",
+          "title": "辛酉政变是联盟行动",
+          "text": "热河行在、北京留守王公和两宫之间存在信息与军政资源差距。慈安与慈禧联合奕訢等人，利用梓宫回京、诏令与宗室会议改变顾命格局。载垣、端华、肃顺被处置后，胜方诏令把政变解释为清除专擅。不能只用后来的个人性格解释结果，也不能把慈安写成完全没有判断的签名者。",
+          "sources": [
+            "v5qn_qsg214",
+            "v165_dpm_curtain",
+            "v165_dpm_lecture"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_xinyou_coup",
+            "v165_curtain_rules"
+          ],
+          "people": []
+        },
+        {
+          "id": "v165_cian_4",
+          "title": "垂帘章程把非常状态制度化",
+          "text": "1861年冬制定的章程规定召见地点、帘幕、引见及两宫与幼帝同坐等程序。它为女性临朝寻找历史与礼制依据，也把奕訢、军机大臣和部院官员嵌入日常办事。听政并不等于两宫亲自拟定所有政策；奏折、召见与地方信息仍经过层层筛选。判断个人作用，需要落到具体案件和文书。",
+          "sources": [
+            "v5qn_qsg214",
+            "v165_dpm_curtain",
+            "v165_dpm_lecture"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_xinyou_coup",
+            "v165_curtain_rules"
+          ],
+          "people": []
+        },
+        {
+          "id": "v165_cian_5",
+          "title": "后世记忆不应抹去材料空白",
+          "text": "慈安在同治、光绪两朝均处于最高名位，1881年去世。关于她与慈禧关系的许多戏剧化故事证据不足。较可靠的写法，是确认她参与共同垂帘、仪制和重大名义决策，同时承认私人意见常未留下可单独辨认的记录。没有证据证明她主导某事，也不等于可以把她从制度中删除。\n\n还要注意称谓变化：她生前的徽号、后世常用的慈安名称与当时奏折中的母后皇太后并不完全相同。检索材料时若只搜一个名字，容易漏掉共同上谕和礼仪记录。产品因此优先展示身份与时期，而不拿俗称替代制度位置。",
+          "sources": [
+            "v5qn_qsg214",
+            "v165_dpm_curtain",
+            "v165_dpm_lecture"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_xinyou_coup",
+            "v165_curtain_rules"
+          ],
+          "people": []
+        }
+      ],
+      "sources": [
+        "v5qn_qsg214",
+        "v165_dpm_curtain",
+        "v165_dpm_lecture"
+      ]
+    },
+    {
+      "person": "q165_woren",
+      "title": "倭仁：帝师、吏治与西学争论",
+      "dek": "把倭仁只写成“顽固派”会漏掉他的州县批评；把道德主张当作治理方案，又会高估其执行能力。",
+      "sections": [
+        {
+          "id": "v165_woren_1",
+          "title": "理学声望进入帝师制度",
+          "text": "倭仁以翰林、都察院和理学名望进入同治朝，两宫命他为幼帝师傅。他编录帝王与名臣言行，强调君主修身、辨别君子小人。帝师工作塑造皇帝阅读和礼仪，却不等于能决定财政、战争与外交。幼帝的学习还受两宫、上书房与日常政务安排共同制约。",
+          "sources": [
+            "v165_qsg391",
+            "v165_dpm_restoration"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_woren_debate",
+            "v165_imperial_tutoring"
+          ],
+          "people": []
+        },
+        {
+          "id": "v165_woren_2",
+          "title": "他对河南吏治的批评并非空泛守旧",
+          "text": "倭仁指出战乱后的河南不能只责怪“民刁”，州县诛求、督抚用人和官员贪庸同样可能制造反抗。他把道德语言用于行政责任，要求朝廷慎选大吏。这些意见揭示官方内部也知道基层失序与官府行为有关；但奏疏是否转化为持续整顿，仍需查具体任免和地方档案。",
+          "sources": [
+            "v165_qsg391",
+            "v165_dpm_restoration"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_woren_debate",
+            "v165_imperial_tutoring"
+          ],
+          "people": []
+        },
+        {
+          "id": "v165_woren_3",
+          "title": "同文馆争论关乎谁有资格教授知识",
+          "text": "1867年总理衙门拟令官员学习天文算学并聘西人为教习。倭仁反对，主张治国根本在人心，也担心以外国人为师损害名教。朝廷让他推荐本国人才，他又承认无人可保。这一往返显示争论不只是“科学对迷信”，还牵涉官员身份、知识权威、外交压力和人才供给。",
+          "sources": [
+            "v165_qsg391",
+            "v165_dpm_restoration"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_woren_debate",
+            "v165_imperial_tutoring"
+          ],
+          "people": []
+        },
+        {
+          "id": "v165_woren_4",
+          "title": "反对者也被放进新机构",
+          "text": "朝廷一度命倭仁到总理衙门行走，他屡辞才获解兼职。这种安排表明中枢并非两个固定阵营，而会让批评者承担制度责任。洋务项目得以推进，不意味着反对意见消失；它们会影响招生范围、课程名义与政治合法性。倭仁的失败也不能被写成所有传统学术都拒绝数学和技术。",
+          "sources": [
+            "v165_qsg391",
+            "v165_dpm_restoration"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_woren_debate",
+            "v165_imperial_tutoring"
+          ],
+          "people": []
+        },
+        {
+          "id": "v165_woren_5",
+          "title": "评价应区分问题意识与可行方案",
+          "text": "倭仁警惕技术脱离政治伦理，并批评地方官侵民，这些问题意识值得保留；但只诉诸人心，无法回答机器、翻译、海关和条约交涉所需的专业训练。把他简单嘲笑为无知，会遮蔽制度焦虑；把他塑成清醒先知，则忽视人才断层和知识组织的现实需求。\n\n倭仁留下的奏疏还提醒读者，政策争论常由不同问题混合而成。他既担忧西人教习的政治象征，也确实面对本国合格教员不足。若只截取“人心不在技艺”，就会漏掉朝廷要求他提出替代方案、而他无法举荐人选的关键后续。",
+          "sources": [
+            "v165_qsg391",
+            "v165_dpm_restoration"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_woren_debate",
+            "v165_imperial_tutoring"
+          ],
+          "people": []
+        }
+      ],
+      "sources": [
+        "v165_qsg391",
+        "v165_dpm_restoration"
+      ]
+    },
+    {
+      "person": "q165_zengguoquan",
+      "title": "曾国荃：围城、破城与胜利代价",
+      "dek": "“克复天京”的军功背后，是长期围困、军队利益和难以被胜者奏报完整记录的居民灾难。",
+      "sections": [
+        {
+          "id": "v165_zengguoquan_1",
+          "title": "兄弟网络不是单纯家族私兵",
+          "text": "曾国荃在江西募勇起家，依靠曾国藩的战略、保举与饷源，也必须与地方官、水师和其他湘军将领协作。亲属信任降低了远距离指挥成本，却让军队、官职与私人关系紧密结合。朝廷借此弥补绿营失效，同时也把更大征收和用人权交给督抚网络。",
+          "sources": [
+            "v165_qsg413",
+            "v165_nmc_seal",
+            "v165_ruc_recovery"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_tianjing_fall",
+            "v165_tianjing_civilians"
+          ],
+          "people": []
+        },
+        {
+          "id": "v165_zengguoquan_2",
+          "title": "天京围攻首先是一场后勤战",
+          "text": "围城部队修筑长壕、争夺沿江据点并切断粮道。营勇的薪饷、粮食、火药和疾病决定围困能否维持，城内居民与守军则面对物价、饥饿和逃亡困难。只写地道爆破与城墙突破，会把数年消耗压成一日战功，也会忽略周边乡村承担的征粮和运输。",
+          "sources": [
+            "v165_qsg413",
+            "v165_nmc_seal",
+            "v165_ruc_recovery"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_tianjing_fall",
+            "v165_tianjing_civilians"
+          ],
+          "people": []
+        },
+        {
+          "id": "v165_zengguoquan_3",
+          "title": "1864年破城不能回避杀戮与掠夺",
+          "text": "湘军进入天京后发生大规模杀戮、焚掠和财物流散。胜方奏报、私人日记、地方记忆和后来研究对数量与细节并不一致，但暴力本身不能因数字有争议而消失。曾国荃作为主将获得最高军功，也必须放在军纪失控、奖赏机制和围城仇恨中承担历史责任。",
+          "sources": [
+            "v165_qsg413",
+            "v165_nmc_seal",
+            "v165_ruc_recovery"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_tianjing_fall",
+            "v165_tianjing_civilians"
+          ],
+          "people": []
+        },
+        {
+          "id": "v165_zengguoquan_4",
+          "title": "裁军与善后暴露勇营制度难题",
+          "text": "战争结束后，大批营勇需要撤遣，欠饷、伤病与返乡生计可能转成治安风险。曾氏集团一面裁撤，一面保留核心部队并安排将领进入地方职位。朝廷恢复田赋和地方行政，也依赖曾经筹饷打仗的同一批人。军事胜利因此没有自动恢复常态官僚治理。",
+          "sources": [
+            "v165_qsg413",
+            "v165_nmc_seal",
+            "v165_ruc_recovery"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_tianjing_fall",
+            "v165_tianjing_civilians"
+          ],
+          "people": []
+        },
+        {
+          "id": "v165_zengguoquan_5",
+          "title": "功臣传与城市记忆必须对读",
+          "text": "官修列传围绕忠勇、战功和封爵组织材料，太平天国文献则以另一套政治语言记录守城。南京地方社会的死亡、房屋与人口恢复需要户籍、善后和物质遗存补充。稳妥评价既不把曾国荃写成单独挽救王朝的英雄，也不以一句暴行概括整个湘军权力结构。\n\n战后封爵又塑造公共记忆：祠祀、传记与地方纪念倾向保存胜者功名，太平军和城中居民的姓名则大量散失。把物质遗存、人口恢复和不同立场的文字并列，不是取消军事实绩，而是防止功名体系替所有死者发言。",
+          "sources": [
+            "v165_qsg413",
+            "v165_nmc_seal",
+            "v165_ruc_recovery"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_tianjing_fall",
+            "v165_tianjing_civilians"
+          ],
+          "people": []
+        }
+      ],
+      "sources": [
+        "v165_qsg413",
+        "v165_nmc_seal",
+        "v165_ruc_recovery"
+      ]
+    },
+    {
+      "person": "q165_lixiucheng",
+      "title": "李秀成：苏浙战争、天京末路与囚中自述",
+      "dek": "他的宣传、战场行动和被俘文字来自不同处境，不能拼成一份毫无裂缝的自传。",
+      "sections": [
+        {
+          "id": "v165_lixiucheng_1",
+          "title": "天京事变后进入核心军权",
+          "text": "李秀成由基层军职上升，在太平天国内讧后成为主要统帅。他与陈玉成等承担重建战线的任务，封王并不表示能完全支配天京内廷、地方守将和各路资源。后期太平天国权力分散，军队需在征粮、守城、地方关系与中央命令之间不断协调。",
+          "sources": [
+            "v165_qsg475",
+            "v165_li_proclamation",
+            "v165_li_confession",
+            "v165_nmc_sword"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_suzhou_campaign",
+            "v165_li_confession_event"
+          ],
+          "people": []
+        },
+        {
+          "id": "v165_lixiucheng_2",
+          "title": "经营苏浙既有行政也有强制征取",
+          "text": "李秀成控制苏州等地后发布告示、任命官员并试图维持税粮和商业。他对上海松江的谕文承诺安民、招降并约束洋商关系，这是争取支持的公开政治语言。占领区实际仍有征粮、军事动员与地方差异，不能把宣示直接当作所有居民的生活经验。",
+          "sources": [
+            "v165_qsg475",
+            "v165_li_proclamation",
+            "v165_li_confession",
+            "v165_nmc_sword"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_suzhou_campaign",
+            "v165_li_confession_event"
+          ],
+          "people": []
+        },
+        {
+          "id": "v165_lixiucheng_3",
+          "title": "上海战场打破内战与外战的界线",
+          "text": "太平军进逼上海时，清军、淮军、地方团练、外国军官和常胜军共同参与。外国势力首先维护口岸与条约利益，不是天然支持某一中国政权。李秀成与领事、商人及雇佣军的交涉随战况变化。军事失败因此涉及城防、火器、财政和国际口岸结构，而非单一将领失误。",
+          "sources": [
+            "v165_qsg475",
+            "v165_li_proclamation",
+            "v165_li_confession",
+            "v165_nmc_sword"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_suzhou_campaign",
+            "v165_li_confession_event"
+          ],
+          "people": []
+        },
+        {
+          "id": "v165_lixiucheng_4",
+          "title": "救援天京与地方军权发生冲突",
+          "text": "天京长期被围，李秀成主张转移或机动作战的记载，与洪秀全坚持守城的决定形成张力。他仍返回救援，并在城破后护送幼主突围。官修材料强调其失败，太平天国方面材料强调忠诚；两者都可能压缩内部争论、粮食枯竭和普通守军的选择。",
+          "sources": [
+            "v165_qsg475",
+            "v165_li_proclamation",
+            "v165_li_confession",
+            "v165_nmc_sword"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_suzhou_campaign",
+            "v165_li_confession_event"
+          ],
+          "people": []
+        },
+        {
+          "id": "v165_lixiucheng_5",
+          "title": "囚中自述必须连同删改与威压阅读",
+          "text": "李秀成被俘后在囚禁和即将被处死的条件下写下长篇文字，曾国藩对文本有删改和批跋，后世又出现不同版本。它保存大量内部线索，却不是自由环境中的回忆录。读者应把可与其他材料互证的时间、人物和制度信息，与求生策略、胜者审阅和后人英雄化分开。\n\n李秀成佩剑、告示和囚中自述分别属于器物、公开宣传与受审文本，证明力不同。剑上铭文可辅助身份与工艺研究，告示呈现希望居民如何回应，自述则保留回顾性解释。将三者分开，是避免以一件明星文物替代人物全部经历。",
+          "sources": [
+            "v165_qsg475",
+            "v165_li_proclamation",
+            "v165_li_confession",
+            "v165_nmc_sword"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_suzhou_campaign",
+            "v165_li_confession_event"
+          ],
+          "people": []
+        }
+      ],
+      "sources": [
+        "v165_qsg475",
+        "v165_li_proclamation",
+        "v165_li_confession",
+        "v165_nmc_sword"
+      ]
+    },
+    {
+      "person": "q165_luobingzhang",
+      "title": "骆秉章：督抚、幕府与四川军政",
+      "dek": "“善用人才”的能吏形象建立在非常时期的财政、团练和严厉司法之上。",
+      "sections": [
+        {
+          "id": "v165_luobingzhang_1",
+          "title": "湖南巡抚衙门成为军政网络节点",
+          "text": "骆秉章在湖南任职时依靠左宗棠等幕僚处理文书、筹饷和军事。湘军并非由一纸诏令建成，而由省级财政、绅士团练、保举和私人信任逐步连接。督抚能够快速调动资源，也会绕开常规考成，让幕府和营务人员获得超出正式品级的影响。",
+          "sources": [
+            "v165_qsg406",
+            "v165_ruc_recovery"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_shidakai_capture",
+            "v165_rural_security"
+          ],
+          "people": []
+        },
+        {
+          "id": "v165_luobingzhang_2",
+          "title": "筹饷与保境转嫁到地方社会",
+          "text": "湖南既是兵源和饷源，也是太平军经过后的受损地区。厘金、捐输、团练和运输支撑前线，具体负担由商路、州县和乡村分摊。官修传记重视军功与秩序恢复，普通家庭的逃亡、差役和欠粮较少进入人物传。评价行政能力，必须追问资源从哪里来。",
+          "sources": [
+            "v165_qsg406",
+            "v165_ruc_recovery"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_shidakai_capture",
+            "v165_rural_security"
+          ],
+          "people": []
+        },
+        {
+          "id": "v165_luobingzhang_3",
+          "title": "入四川后面对多股战争与行政崩解",
+          "text": "骆秉章督四川军务，不只对付石达开部，还需处理地方军队、道路、粮饷和州县失序。外省将领与本地官绅协作并不顺畅，军令能够集中，信息却仍受地形和层级限制。所谓平定是一系列围堵、招降和处置的结果，不是一场决战。",
+          "sources": [
+            "v165_qsg406",
+            "v165_ruc_recovery"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_shidakai_capture",
+            "v165_rural_security"
+          ],
+          "people": []
+        },
+        {
+          "id": "v165_luobingzhang_4",
+          "title": "石达开案体现俘降与司法边界",
+          "text": "石达开部在大渡河一带陷入绝境，随后本人被俘并遭处死。关于他是否以自身换取部众生命、清方承诺怎样执行，材料立场不同。可以确认的是，军事投降没有进入平等司法程序。骆秉章作为最高地方长官参与处置，不能只用“擒获首领”略过俘虏命运。",
+          "sources": [
+            "v165_qsg406",
+            "v165_ruc_recovery"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_shidakai_capture",
+            "v165_rural_security"
+          ],
+          "people": []
+        },
+        {
+          "id": "v165_luobingzhang_5",
+          "title": "能吏叙事应与制度后果同读",
+          "text": "骆秉章善任幕僚、支持湘军，确实提高危机中的动员效率；这种模式也推动督抚、幕府和勇营相互依赖。它帮助清廷度过战争，却让常规绿营与中央财政更显薄弱。人物评价应同时保留行政能力、战争暴力与权力结构变化。\n\n石达开及其部众的结局尤其需要分层：主将审判、成年战士处置、被裹挟者和家属命运并非同一问题。官修传记常把这些压进“平贼”二字，现代阅读若照抄称谓，就会同时丢失司法程序和普通人的历史。",
+          "sources": [
+            "v165_qsg406",
+            "v165_ruc_recovery"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_shidakai_capture",
+            "v165_rural_security"
+          ],
+          "people": []
+        }
+      ],
+      "sources": [
+        "v165_qsg406",
+        "v165_ruc_recovery"
+      ]
+    },
+    {
+      "person": "q165_shenbaozhen",
+      "title": "沈葆桢：江西善后到船政组织",
+      "dek": "他的技术事业并非突然开眼看世界，而从守城、筹饷和地方行政经验中生长。",
+      "sections": [
+        {
+          "id": "v165_shenbaozhen_1",
+          "title": "江西经历塑造危机治理方式",
+          "text": "沈葆桢在江西任职时经历太平军进攻、城守和地方筹饷。官员、家属、团练与援军共同维持城池，说明战争不只由正式军队承担。他以强硬与能办事获得保举，也曾因与上司冲突离职。个人声望来自具体网络，不是抽象清望自动转成行政能力。",
+          "sources": [
+            "v165_qsg413",
+            "v165_cssn_translation"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_jiangxi_recovery",
+            "v165_translation_hall"
+          ],
+          "people": []
+        },
+        {
+          "id": "v165_shenbaozhen_2",
+          "title": "巡抚职位连接战争与恢复",
+          "text": "同治初年出任江西巡抚后，他要同时处理余部、赋税、流民和州县重建。恢复钱粮是政府运转需要，却可能与民户缺种、田界争议和劳动力不足冲突。招垦、减免和清查必须落到地方执行；奏报中的复苏数字不必然代表每个家庭已经恢复。",
+          "sources": [
+            "v165_qsg413",
+            "v165_cssn_translation"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_jiangxi_recovery",
+            "v165_translation_hall"
+          ],
+          "people": []
+        },
+        {
+          "id": "v165_shenbaozhen_3",
+          "title": "船政是组织工程而非购买一艘船",
+          "text": "后来主持福州船政，需要厂址、经费、外国技术人员、学堂、工匠和原料共同运行。沈葆桢是制度组织者之一，不是单独发明舰船的人。项目借助海关、地方财政与督抚权限，也受成本、人才和外国合同约束。",
+          "sources": [
+            "v165_qsg413",
+            "v165_cssn_translation"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_jiangxi_recovery",
+            "v165_translation_hall"
+          ],
+          "people": []
+        },
+        {
+          "id": "v165_shenbaozhen_4",
+          "title": "制造与教育必须同步",
+          "text": "机器若依赖外籍人员操作，购买本身无法形成持续能力。船政学堂与艺圃尝试培养驾驶、制造和翻译人才，学习过程带有语言、数学和工场纪律。学生获得新机会，也被纳入军事国家的需求。教育成果需要多年积累，不能用创办年份立即宣告成功。",
+          "sources": [
+            "v165_qsg413",
+            "v165_cssn_translation"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_jiangxi_recovery",
+            "v165_translation_hall"
+          ],
+          "people": []
+        },
+        {
+          "id": "v165_shenbaozhen_5",
+          "title": "后世功绩不应倒灌早年",
+          "text": "沈葆桢后来办理台湾与海防，使其早期经历常被写成通往海防名臣的直线。实际选择受到每次危机、任命和资源条件影响。把江西善后与船政连接起来，可以看到洋务并非孤立的技术觉醒，而是战后国家在地方权力、财政和知识组织上的再组合。\n\n船政后来的舰船数量、毕业学生与海防效果属于不同指标。工厂能造船，不代表舰队已有稳定训练；学生完成课程，也不保证获得合适职位。沈葆桢的组织能力应由预算、课程、工场和持续运转综合判断，不能只数开办项目。",
+          "sources": [
+            "v165_qsg413",
+            "v165_cssn_translation"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_jiangxi_recovery",
+            "v165_translation_hall"
+          ],
+          "people": []
+        }
+      ],
+      "sources": [
+        "v165_qsg413",
+        "v165_cssn_translation"
+      ]
+    },
+    {
+      "person": "q165_dingrichang",
+      "title": "丁日昌：机器局、盐务与战后行政",
+      "dek": "他以项目和报表重组地方治理，也把技术、财政与更密集的行政控制连在一起。",
+      "sections": [
+        {
+          "id": "v165_dingrichang_1",
+          "title": "非典型科举路径进入幕府",
+          "text": "丁日昌由基层教职、知县和团练经历进入曾国藩、李鸿章网络。他熟悉案件、文书与地方筹办，能在军事急务中承担具体项目。幕府提供跨越常规升迁的通道，也让个人前途与督抚信任紧密相连。所谓洋务人才，很多先是能够处理钱粮和交涉的行政人员。",
+          "sources": [
+            "v165_qsg448",
+            "v165_shanghai_gazette"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_jiangnan_arsenal",
+            "v165_salt_reform"
+          ],
+          "people": []
+        },
+        {
+          "id": "v165_dingrichang_2",
+          "title": "机器局把采购、仿造和管理放在一起",
+          "text": "在上海筹办机器局时，他要处理厂房、外购设备、洋匠、工料和军方需求。江南制造总局由多个旧局和收购设备合并而来，不是一次完整设计后开门生产。技术选择受战争和军火急需推动，也持续依赖外部零件与知识。",
+          "sources": [
+            "v165_qsg448",
+            "v165_shanghai_gazette"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_jiangnan_arsenal",
+            "v165_salt_reform"
+          ],
+          "people": []
+        },
+        {
+          "id": "v165_dingrichang_3",
+          "title": "战后江苏治理强调可见的行政记录",
+          "text": "丁日昌任苏松太道、江苏巡抚期间整顿诉讼、漕粮、盐务并要求定期报表。月报与统一科则有助于上级监督，但数据会受基层填报和考成压力影响。减少隐性收费、恢复交通和清理积案可能改善治理，也可能扩大官府对户籍、税粮和纠纷的介入。",
+          "sources": [
+            "v165_qsg448",
+            "v165_shanghai_gazette"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_jiangnan_arsenal",
+            "v165_salt_reform"
+          ],
+          "people": []
+        },
+        {
+          "id": "v165_dingrichang_4",
+          "title": "盐务改革连接财政与生计",
+          "text": "两淮盐务积弊涉及官商、私运、运输与沿岸居民。丁日昌整顿运销以增加收入，不能只按国库数字评价：严格缉私会改变小贩、船户与地方关系。合法与非法边界由制度设定，战后生计困难使执行更复杂。",
+          "sources": [
+            "v165_qsg448",
+            "v165_shanghai_gazette"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_jiangnan_arsenal",
+            "v165_salt_reform"
+          ],
+          "people": []
+        },
+        {
+          "id": "v165_dingrichang_5",
+          "title": "能办事不等于没有政治边界",
+          "text": "丁日昌提出海防、教育和吏治主张，展现较强项目意识；但经费、任命、中央争论和地方反弹决定实施范围。把他称作改革者时，应同时说明项目服务军事与财政目标，百姓获得的便利和承受的控制可能并存。\n\n他留下的条陈和制度办法多以官府视角描述效率。对照地方生活时，还需追问报表由谁填写、讼案压缩是否意味着纠纷真正解决，以及新增收入来自清弊还是更严征收。只有把行政记录的可见性与百姓经验分开，才不会把表格整齐误作社会安定。",
+          "sources": [
+            "v165_qsg448",
+            "v165_shanghai_gazette"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_jiangnan_arsenal",
+            "v165_salt_reform"
+          ],
+          "people": []
+        }
+      ],
+      "sources": [
+        "v165_qsg448",
+        "v165_shanghai_gazette"
+      ]
+    },
+    {
+      "person": "q165_xushou",
+      "title": "徐寿：实验、制器与合译知识",
+      "dek": "从蒸汽机到化学译名，成果来自工场、书本、观察和多人协作。",
+      "sections": [
+        {
+          "id": "v165_xushou_1",
+          "title": "传统学术与新器物之间没有绝对断裂",
+          "text": "徐寿早年学习经史、数学和工艺，在上海接触译著与仪器。他通过阅读、观察外国轮船和实际试验理解蒸汽原理。这样的学习并非完整复制西方学校课程，而是用已有术语、手艺和测量经验重新组织知识。",
+          "sources": [
+            "v165_cssn_translation",
+            "v165_shm_translation",
+            "v165_wuxi_steam"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_huanghu",
+            "v165_translation_workflow"
+          ],
+          "people": []
+        },
+        {
+          "id": "v165_xushou_2",
+          "title": "安庆制器依赖团队与试错",
+          "text": "在安庆内军械所，徐寿与华蘅芳、工匠及官员合作试制蒸汽机和轮船。黄鹄号常被称为早期自制蒸汽轮船，但“自制”仍包含参考译书、观察外船和采购材料。强调自主尝试，不必虚构完全封闭条件下的独立发明。",
+          "sources": [
+            "v165_cssn_translation",
+            "v165_shm_translation",
+            "v165_wuxi_steam"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_huanghu",
+            "v165_translation_workflow"
+          ],
+          "people": []
+        },
+        {
+          "id": "v165_xushou_3",
+          "title": "进入江南制造局改变知识规模",
+          "text": "大型机器局提供资金、设备、工场与持续订单，使个人实验转成组织生产。徐寿既参与制器，也推动译书。工厂需求决定优先翻译机械、化学等内容；知识选择因此受军工目标影响，并非对全部现代科学的中立引进。",
+          "sources": [
+            "v165_cssn_translation",
+            "v165_shm_translation",
+            "v165_wuxi_steam"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_huanghu",
+            "v165_translation_workflow"
+          ],
+          "people": []
+        },
+        {
+          "id": "v165_xushou_4",
+          "title": "口译笔述是共同作者机制",
+          "text": "翻译馆常由外籍译员口译，中国学者笔述、校订并寻找汉语术语。徐寿在化学译述中贡献显著，但一本书可能经历多人分工。元素译名的形成也有修改和沿用过程，不能把所有现代术语归于一人瞬间创造。",
+          "sources": [
+            "v165_cssn_translation",
+            "v165_shm_translation",
+            "v165_wuxi_steam"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_huanghu",
+            "v165_translation_workflow"
+          ],
+          "people": []
+        },
+        {
+          "id": "v165_xushou_5",
+          "title": "科学传播不止发生在宫廷命令中",
+          "text": "译书刻印、销售、学堂和格致社群让知识离开工场，进入更多读者网络。传播范围仍受价格、识字、数学基础和地域限制。徐寿的重要性在于把实验、制造、翻译与出版连接起来，而不是证明洋务时期已经建立完整现代科研制度。\n\n所谓格致在当时既指对事物原理的探求，也进入制造、翻译和教育的具体语境。徐寿使用的概念并不与今天学科分类完全重合。以现代“化学家”“工程师”称呼便于理解，但正文仍保留其跨越制器、译述和办学的多重角色。",
+          "sources": [
+            "v165_cssn_translation",
+            "v165_shm_translation",
+            "v165_wuxi_steam"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_huanghu",
+            "v165_translation_workflow"
+          ],
+          "people": []
+        }
+      ],
+      "sources": [
+        "v165_cssn_translation",
+        "v165_shm_translation",
+        "v165_wuxi_steam"
+      ]
+    },
+    {
+      "person": "q165_huahengfang",
+      "title": "华蘅芳：数学、测量与机器工场",
+      "dek": "他的工作显示晚清技术学习需要把公式、图样、材料和工匠语言互相翻译。",
+      "sections": [
+        {
+          "id": "v165_huahengfang_1",
+          "title": "数学训练成为理解机器的工具",
+          "text": "华蘅芳出身无锡学术环境，研习传统数学并接触西学译著。数学能力使他能处理测量、比例和机械问题，但书面计算仍需与材料、加工精度和工匠经验结合。把传统数学说成毫无用处，或说它自然会通向现代工程，都过于简单。",
+          "sources": [
+            "v165_cssn_translation",
+            "v165_shm_translation",
+            "v165_wuxi_steam"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_huanghu",
+            "v165_technical_printing"
+          ],
+          "people": []
+        },
+        {
+          "id": "v165_huahengfang_2",
+          "title": "与徐寿合作不是附属关系",
+          "text": "安庆试制蒸汽机和黄鹄号时，华蘅芳承担计算、设计与实际制造工作。史料常以徐寿、华蘅芳并称，反映项目由伙伴和工匠群体完成。个人贡献难以按现代专利方式精确切分，稳妥写法应保留协作。",
+          "sources": [
+            "v165_cssn_translation",
+            "v165_shm_translation",
+            "v165_wuxi_steam"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_huanghu",
+            "v165_technical_printing"
+          ],
+          "people": []
+        },
+        {
+          "id": "v165_huahengfang_3",
+          "title": "机器从图样到成品需要现场知识",
+          "text": "有限译图和观察不能直接变成可运行机器。尺寸换算、金属加工、密封、燃料与装配都需反复修正。试制成功说明本地工场具备学习能力，也暴露标准件、材料与测量体系不足。一次运行不等于已经能够稳定批量生产。",
+          "sources": [
+            "v165_cssn_translation",
+            "v165_shm_translation",
+            "v165_wuxi_steam"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_huanghu",
+            "v165_technical_printing"
+          ],
+          "people": []
+        },
+        {
+          "id": "v165_huahengfang_4",
+          "title": "译书把数学语言重新编排",
+          "text": "进入江南制造局后，华蘅芳与外籍译员合作翻译数学、测量和工程著作。口译与笔述之间需要寻找等价概念、重画图表并核算例题。译文既传播新方法，也可能因术语和原书版本产生误差；读者需有相应训练才能使用。",
+          "sources": [
+            "v165_cssn_translation",
+            "v165_shm_translation",
+            "v165_wuxi_steam"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_huanghu",
+            "v165_technical_printing"
+          ],
+          "people": []
+        },
+        {
+          "id": "v165_huahengfang_5",
+          "title": "人物史应回到知识基础设施",
+          "text": "华蘅芳的成就常被压缩成若干“第一”。更重要的是，他处于书局、工场、官员、外籍译员和地方学者组成的基础设施中。技术现代化不是几位天才单向输入，而是长期翻译、教学、采购和试验的累积。\n\n他的数学著译也说明术语不是一次定型。旧有算法名称、新译概念和符号表达可能并存，后来的教科书还会继续改写。读者看到今日熟悉的公式时，不应假定十九世纪读者拥有相同课程背景；知识传播需要教师、例题和反复训练。",
+          "sources": [
+            "v165_cssn_translation",
+            "v165_shm_translation",
+            "v165_wuxi_steam"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_huanghu",
+            "v165_technical_printing"
+          ],
+          "people": []
+        }
+      ],
+      "sources": [
+        "v165_cssn_translation",
+        "v165_shm_translation",
+        "v165_wuxi_steam"
+      ]
+    },
+    {
+      "person": "q165_yungrong",
+      "title": "容闳：跨国采购与留学方案的制度门槛",
+      "dek": "海外经历提供信息和联系，却只有进入督抚财政与官僚程序后才能变成国家项目。",
+      "sections": [
+        {
+          "id": "v165_yungrong_1",
+          "title": "留学经历不等于自动拥有改革权力",
+          "text": "容闳早年在教会学校和美国学习，取得大学教育后回国。他熟悉英语与部分美国社会，这使他拥有罕见跨文化能力；但回国后的职业机会有限，个人知识并不会自动被清廷采用。传记中的报国理想需要与谋职、经商和人际网络一起理解。",
+          "sources": [
+            "v165_zhongshan_yung",
+            "v165_shanghai_gazette"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_machine_purchase",
+            "v40q_overseas_students"
+          ],
+          "people": []
+        },
+        {
+          "id": "v165_yungrong_2",
+          "title": "太平天国接触未形成长期合作",
+          "text": "容闳曾到天京观察并提出若干建议，但没有留在太平天国任职。后世容易按最终选择把这段写成预见胜负，实际更可能涉及制度环境、个人安全与方案能否实施。他的回忆写于后来，也受一生道路影响。",
+          "sources": [
+            "v165_zhongshan_yung",
+            "v165_shanghai_gazette"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_machine_purchase",
+            "v40q_overseas_students"
+          ],
+          "people": []
+        },
+        {
+          "id": "v165_yungrong_3",
+          "title": "赴美采购是江南制造局的关键环节",
+          "text": "1863年前后，曾国藩委托容闳赴美购买机器。采购需要把中国官员的军事需求转成设备清单，并处理运输、价格和验收。机器回国后还需厂房、动力、工匠和维护，跨国购买只是项目开端。容闳连接市场与官府，但并非制造局唯一创办者。",
+          "sources": [
+            "v165_zhongshan_yung",
+            "v165_shanghai_gazette"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_machine_purchase",
+            "v40q_overseas_students"
+          ],
+          "people": []
+        },
+        {
+          "id": "v165_yungrong_4",
+          "title": "留学方案依赖多方担保",
+          "text": "幼童出洋设想经过容闳倡议、曾国藩和李鸿章奏请、经费安排及美国驻地管理才逐步实施。家庭是否愿意送子、学生年龄、课程与监督都需要制度设计。把成果全归于个人会抹去家长、学生和官员承担的风险。",
+          "sources": [
+            "v165_zhongshan_yung",
+            "v165_shanghai_gazette"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_machine_purchase",
+            "v40q_overseas_students"
+          ],
+          "people": []
+        },
+        {
+          "id": "v165_yungrong_5",
+          "title": "跨国中介既有优势也受怀疑",
+          "text": "容闳能在不同语言和制度间沟通，却也可能被双方视为不完全属于自己。留学项目后来因经费、纪律、文化和政治疑虑中止，说明跨国方案持续依赖信任。评价他应承认开路作用，也不把后来的所有留学生成就倒算为最初计划已经成功。\n\n容闳自传是理解个人动机的重要材料，却写于许多事件之后。回忆中的因果线可能受后见之明整理。与地方志、奏案和项目档案对读，可以确认采购与留学的制度节点，同时保留他对个人选择的主观解释，而不把两者混成一份无误年表。",
+          "sources": [
+            "v165_zhongshan_yung",
+            "v165_shanghai_gazette"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_machine_purchase",
+            "v40q_overseas_students"
+          ],
+          "people": []
+        }
+      ],
+      "sources": [
+        "v165_zhongshan_yung",
+        "v165_shanghai_gazette"
+      ]
+    },
+    {
+      "person": "q165_laiwenguang",
+      "title": "赖文光：太平军余部、捻军与跨省战争",
+      "dek": "“流动作战”既是军事策略，也是失去稳定根据地后依赖沿途供给的困境。",
+      "sections": [
+        {
+          "id": "v165_laiwenguang_1",
+          "title": "从太平军体系进入后期战场",
+          "text": "赖文光在太平天国后期获得军职，天京陷落并未使各地部队同时消失。部分余部向北转移，与既有捻军网络结合。组织名称、旗号与将领关系发生变化，不能把1864年后的战事只写成同一支军队机械延续。",
+          "sources": [
+            "v165_qsg475",
+            "v165_qsg416"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_senggelinqin_death",
+            "v165_east_nian_end"
+          ],
+          "people": []
+        },
+        {
+          "id": "v165_laiwenguang_2",
+          "title": "骑兵机动利用了行政边界",
+          "text": "东捻跨越河南、山东、湖北、安徽等地，利用道路、河流和省界避开集中围剿。快速移动扩大了官军防守成本，也让部队难以长期建立税粮与行政系统。沿途征集、掠夺和居民逃避共同影响行军，普通村镇不是空白地图。",
+          "sources": [
+            "v165_qsg475",
+            "v165_qsg416"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_senggelinqin_death",
+            "v165_east_nian_end"
+          ],
+          "people": []
+        },
+        {
+          "id": "v165_laiwenguang_3",
+          "title": "曾国藩的设防并未立即奏效",
+          "text": "清廷先后调曾国藩、李鸿章等统筹。围河、筑墙、分区设防和机动追击不断调整，反映中央必须把多省督抚、淮军和地方团练协调起来。军事方法变化不是单一名将灵机一动，而是对前次失败、地形与补给的回应。",
+          "sources": [
+            "v165_qsg475",
+            "v165_qsg416"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_senggelinqin_death",
+            "v165_east_nian_end"
+          ],
+          "people": []
+        },
+        {
+          "id": "v165_laiwenguang_4",
+          "title": "东捻覆败包含围堵与内部瓦解",
+          "text": "1867至1868年，东捻活动空间逐渐被压缩，任柱死亡，赖文光最终被俘处死。清方记载强调歼获数字和将领功劳，较少记录溃散者、被裹挟者与沿途居民。对“匪”“民”的分类常由胜方司法完成，应避免把所有参与者视为同质。",
+          "sources": [
+            "v165_qsg475",
+            "v165_qsg416"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_senggelinqin_death",
+            "v165_east_nian_end"
+          ],
+          "people": []
+        },
+        {
+          "id": "v165_laiwenguang_5",
+          "title": "结束一场战争不等于恢复地方社会",
+          "text": "军队散亡后，村庄仍面对人口流失、牲畜粮食损失、团练武装与田界纠纷。清廷把胜利写入同治中兴，地方恢复却需要多年。赖文光的结局说明太平天国末期与捻军战争相连，也提醒王朝时间线上的“平定”只是社会重建的起点。\n\n捻军材料尤其偏向清军奏报，行动迅速又使地方记录破碎。将领名号和歼获数字较容易留下，被迫供给、短期加入或战后返村的人较难识别。因此文章不把“捻”当成固定身份，而把组织、战区和史料命名分别说明。",
+          "sources": [
+            "v165_qsg475",
+            "v165_qsg416"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_senggelinqin_death",
+            "v165_east_nian_end"
+          ],
+          "people": []
+        }
+      ],
+      "sources": [
+        "v165_qsg475",
+        "v165_qsg416"
+      ]
+    },
+    {
+      "person": "q165_liumingchuan",
+      "title": "刘铭传：淮军成长与围堵捻军",
+      "dek": "早年军功塑造了他的行政风格；后来的台湾名臣形象不能替代对内战经验的审视。",
+      "sections": [
+        {
+          "id": "v165_liumingchuan_1",
+          "title": "安徽团练是进入国家军队的入口",
+          "text": "刘铭传在安徽乡里组织武装，太平军战争使地方自卫、私人纠纷和官军征募交织。李鸿章组建淮军时吸收这些练勇，刘的铭字营由此进入更大军事网络。团练地方性带来信任和战斗力，也使兵员依附将领而非抽象国家。",
+          "sources": [
+            "v165_qsg416",
+            "v165_nmc_army_pay"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_huai_arrives",
+            "v165_east_nian_end"
+          ],
+          "people": []
+        },
+        {
+          "id": "v165_liumingchuan_2",
+          "title": "上海训练连接本地兵员与外国军火",
+          "text": "淮军到上海后接触新式枪炮、城市财政与外国雇佣军。训练和装备升级并非全军同步，弹药、教习与维修都需持续经费。刘铭传在苏南战事升迁，军功记录同时包含攻城、俘斩和招降，不能只以技术进步概括。",
+          "sources": [
+            "v165_qsg416",
+            "v165_nmc_army_pay"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_huai_arrives",
+            "v165_east_nian_end"
+          ],
+          "people": []
+        },
+        {
+          "id": "v165_liumingchuan_3",
+          "title": "苏南战争改变城市和乡村秩序",
+          "text": "江阴、无锡、常州等战事涉及水陆交通、地方守军和居民迁移。淮军胜利帮助清廷恢复州县，却也伴随征粮、军纪和投降者处置问题。将领奏报从军事目标出发，居民经历需由地方材料与物证补足。",
+          "sources": [
+            "v165_qsg416",
+            "v165_nmc_army_pay"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_huai_arrives",
+            "v165_east_nian_end"
+          ],
+          "people": []
+        },
+        {
+          "id": "v165_liumingchuan_4",
+          "title": "围堵捻军依赖区域协同",
+          "text": "对东捻作战时，刘铭传执行追击、河防和包围，需要李鸿章统筹多军，并借助地方情报与粮运。任柱死亡、赖文光覆败被写成决定性军功，但战果来自长期压缩活动空间。严格围堵也会限制百姓渡河、贸易和迁徙。",
+          "sources": [
+            "v165_qsg416",
+            "v165_nmc_army_pay"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_huai_arrives",
+            "v165_east_nian_end"
+          ],
+          "people": []
+        },
+        {
+          "id": "v165_liumingchuan_5",
+          "title": "从战场能力到治理能力并非自然转换",
+          "text": "刘铭传后来治理台湾时重视交通、军防与财政，常被追溯到淮军经验。军事组织确实训练了项目动员和用人，但战场命令模式也可能扩大强制。理解其一生，应把早年内战、后来海防和地方治理分段评价，而非用晚年成就洗去前期暴力。\n\n淮军档案中的营制和战功还需要与军饷册、地方志互证。名册能显示编制与发饷，不一定等于实际到员；奏报能说明上级如何评价一战，也不等于完整伤亡统计。刘铭传的上升路径正建立在这种军功核报制度之中。",
+          "sources": [
+            "v165_qsg416",
+            "v165_nmc_army_pay"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v165_huai_arrives",
+            "v165_east_nian_end"
+          ],
+          "people": []
+        }
+      ],
+      "sources": [
+        "v165_qsg416",
+        "v165_nmc_army_pay"
+      ]
     }
   ],
   "portraits": [
@@ -231256,6 +233728,238 @@
         "v164_zizheng",
         "v163_qsg475"
       ]
+    },
+    {
+      "from": "q_tongzhi",
+      "to": "q165_cian",
+      "role": "嫡母与母后皇太后",
+      "inverse": "所处时期的皇帝",
+      "period": "同治初年",
+      "note": "用于连接同治朝人物、制度和战争；不表示幼年皇帝亲自指挥其全部活动。",
+      "sources": [
+        "v5qn_qsg214",
+        "v165_dpm_curtain",
+        "v165_dpm_lecture"
+      ]
+    },
+    {
+      "from": "q_tongzhi",
+      "to": "q165_woren",
+      "role": "帝师与大学士",
+      "inverse": "所处时期的皇帝",
+      "period": "同治初年",
+      "note": "用于连接同治朝人物、制度和战争；不表示幼年皇帝亲自指挥其全部活动。",
+      "sources": [
+        "v165_qsg391",
+        "v165_dpm_restoration"
+      ]
+    },
+    {
+      "from": "q_tongzhi",
+      "to": "q165_zengguoquan",
+      "role": "湘军将领与天京围城主将",
+      "inverse": "所处时期的皇帝",
+      "period": "同治初年",
+      "note": "用于连接同治朝人物、制度和战争；不表示幼年皇帝亲自指挥其全部活动。",
+      "sources": [
+        "v165_qsg413",
+        "v165_nmc_seal",
+        "v165_ruc_recovery"
+      ]
+    },
+    {
+      "from": "q_tongzhi",
+      "to": "q165_lixiucheng",
+      "role": "太平天国后期统帅",
+      "inverse": "所处时期的皇帝",
+      "period": "同治初年",
+      "note": "用于连接同治朝人物、制度和战争；不表示幼年皇帝亲自指挥其全部活动。",
+      "sources": [
+        "v165_qsg475",
+        "v165_li_proclamation",
+        "v165_li_confession",
+        "v165_nmc_sword"
+      ]
+    },
+    {
+      "from": "q_tongzhi",
+      "to": "q165_luobingzhang",
+      "role": "四川总督与军务统筹者",
+      "inverse": "所处时期的皇帝",
+      "period": "同治初年",
+      "note": "用于连接同治朝人物、制度和战争；不表示幼年皇帝亲自指挥其全部活动。",
+      "sources": [
+        "v165_qsg406",
+        "v165_ruc_recovery"
+      ]
+    },
+    {
+      "from": "q_tongzhi",
+      "to": "q165_shenbaozhen",
+      "role": "江西巡抚与后续船政组织者",
+      "inverse": "所处时期的皇帝",
+      "period": "同治初年",
+      "note": "用于连接同治朝人物、制度和战争；不表示幼年皇帝亲自指挥其全部活动。",
+      "sources": [
+        "v165_qsg413",
+        "v165_cssn_translation"
+      ]
+    },
+    {
+      "from": "q_tongzhi",
+      "to": "q165_dingrichang",
+      "role": "机器局与江苏善后官员",
+      "inverse": "所处时期的皇帝",
+      "period": "同治初年",
+      "note": "用于连接同治朝人物、制度和战争；不表示幼年皇帝亲自指挥其全部活动。",
+      "sources": [
+        "v165_qsg448",
+        "v165_shanghai_gazette"
+      ]
+    },
+    {
+      "from": "q_tongzhi",
+      "to": "q165_xushou",
+      "role": "制器与译书组织者",
+      "inverse": "所处时期的皇帝",
+      "period": "同治初年",
+      "note": "用于连接同治朝人物、制度和战争；不表示幼年皇帝亲自指挥其全部活动。",
+      "sources": [
+        "v165_cssn_translation",
+        "v165_shm_translation",
+        "v165_wuxi_steam"
+      ]
+    },
+    {
+      "from": "q_tongzhi",
+      "to": "q165_huahengfang",
+      "role": "数学、制器与译书者",
+      "inverse": "所处时期的皇帝",
+      "period": "同治初年",
+      "note": "用于连接同治朝人物、制度和战争；不表示幼年皇帝亲自指挥其全部活动。",
+      "sources": [
+        "v165_cssn_translation",
+        "v165_shm_translation",
+        "v165_wuxi_steam"
+      ]
+    },
+    {
+      "from": "q_tongzhi",
+      "to": "q165_yungrong",
+      "role": "跨国机器采购与留学倡议者",
+      "inverse": "所处时期的皇帝",
+      "period": "同治初年",
+      "note": "用于连接同治朝人物、制度和战争；不表示幼年皇帝亲自指挥其全部活动。",
+      "sources": [
+        "v165_zhongshan_yung",
+        "v165_shanghai_gazette"
+      ]
+    },
+    {
+      "from": "q_tongzhi",
+      "to": "q165_laiwenguang",
+      "role": "太平军余部与东捻领袖",
+      "inverse": "所处时期的皇帝",
+      "period": "同治初年",
+      "note": "用于连接同治朝人物、制度和战争；不表示幼年皇帝亲自指挥其全部活动。",
+      "sources": [
+        "v165_qsg475",
+        "v165_qsg416"
+      ]
+    },
+    {
+      "from": "q_tongzhi",
+      "to": "q165_liumingchuan",
+      "role": "淮军将领",
+      "inverse": "所处时期的皇帝",
+      "period": "同治初年",
+      "note": "用于连接同治朝人物、制度和战争；不表示幼年皇帝亲自指挥其全部活动。",
+      "sources": [
+        "v165_qsg416",
+        "v165_nmc_army_pay"
+      ]
+    },
+    {
+      "from": "q165_cian",
+      "to": "q_cixi",
+      "role": "共同垂帘的圣母皇太后",
+      "inverse": "共同垂帘的母后皇太后",
+      "period": "1861—1881年",
+      "note": "两宫名位与听政程序并列，具体案件中的意见分工常无法从现存材料精确拆分。",
+      "sources": [
+        "v165_dpm_lecture"
+      ]
+    },
+    {
+      "from": "q165_zengguoquan",
+      "to": "q_zengguofan",
+      "role": "兄长与湘军统筹者",
+      "inverse": "弟弟与天京围城主将",
+      "period": "湘军时期",
+      "note": "亲属信任与正式督抚权限共同构成军政关系。",
+      "sources": [
+        "v165_qsg413",
+        "v40q_qsg405"
+      ]
+    },
+    {
+      "from": "q165_lixiucheng",
+      "to": "q_hongxiuquan",
+      "role": "天王与最高名义领袖",
+      "inverse": "后期主要统帅",
+      "period": "太平天国后期",
+      "note": "封王与军权并存，但战略意见及中央地方关系并非始终一致。",
+      "sources": [
+        "v165_qsg475",
+        "v165_li_confession"
+      ]
+    },
+    {
+      "from": "q165_shenbaozhen",
+      "to": "q165_xushou",
+      "role": "船政与译书项目中的技术人才",
+      "inverse": "地方项目与制度组织者",
+      "period": "同治时期",
+      "note": "项目依赖官款、工场、译员和技术人员协作。",
+      "sources": [
+        "v165_qsg413",
+        "v165_cssn_translation"
+      ]
+    },
+    {
+      "from": "q165_xushou",
+      "to": "q165_huahengfang",
+      "role": "共同制器与译书的数学家",
+      "inverse": "共同制器与译书的格致家",
+      "period": "安庆与江南制造局时期",
+      "note": "贡献不宜按现代单一发明人模式切割。",
+      "sources": [
+        "v165_wuxi_steam",
+        "v165_cssn_translation"
+      ]
+    },
+    {
+      "from": "q165_yungrong",
+      "to": "q_zengguofan",
+      "role": "委托机器采购与支持留学奏案的督抚",
+      "inverse": "机器采购与留学倡议者",
+      "period": "同治时期",
+      "note": "个人倡议通过督抚财政和奏请程序转成项目。",
+      "sources": [
+        "v165_zhongshan_yung"
+      ]
+    },
+    {
+      "from": "q165_laiwenguang",
+      "to": "q165_liumingchuan",
+      "role": "参与围堵东捻的淮军将领",
+      "inverse": "东捻主要领袖",
+      "period": "1866—1868年",
+      "note": "双方处于战争关系；清方材料的俘斩分类须谨慎阅读。",
+      "sources": [
+        "v165_qsg416",
+        "v165_qsg475"
+      ]
     }
   ],
   "dynasties": [
@@ -236401,7 +239105,19 @@
         "q_lihongzhang",
         "q_hongxiuquan",
         "q_cixi",
-        "q_yixin"
+        "q_yixin",
+        "q165_cian",
+        "q165_woren",
+        "q165_zengguoquan",
+        "q165_lixiucheng",
+        "q165_luobingzhang",
+        "q165_shenbaozhen",
+        "q165_dingrichang",
+        "q165_xushou",
+        "q165_huahengfang",
+        "q165_yungrong",
+        "q165_laiwenguang",
+        "q165_liumingchuan"
       ],
       "events": [
         "qev_tongzhi_restoration_1861",
@@ -236411,7 +239127,52 @@
         "v40q_overseas_students",
         "qev_self_strengthening_1860s",
         "v65q_shipping",
-        "v66q_xingke_records"
+        "v66q_xingke_records",
+        "v165_xinyou_coup",
+        "v165_curtain_rules",
+        "v165_reign_title_change",
+        "v165_court_return",
+        "v165_yixin_deliberative",
+        "v165_yixin_dismissal",
+        "v165_governor_power",
+        "v165_postwar_appointments",
+        "v165_restoration_label",
+        "v165_huai_arrives",
+        "v165_shanghai_defense",
+        "v165_shidakai_capture",
+        "v165_suzhou_campaign",
+        "v165_changzhou_fall",
+        "v165_tianjing_fall",
+        "v165_li_confession_event",
+        "v165_senggelinqin_death",
+        "v165_east_nian_end",
+        "v165_lijin_persists",
+        "v165_customs_funds",
+        "v165_machine_purchase",
+        "v165_jiangnan_arsenal",
+        "v165_salt_reform",
+        "v165_jiangxi_recovery",
+        "v165_jiangnan_reclamation",
+        "v165_demobilization_finance",
+        "v165_war_remittance",
+        "v165_tianjing_civilians",
+        "v165_suzhou_displacement",
+        "v165_return_land_claims",
+        "v165_disbanded_soldiers",
+        "v165_northwest_violence",
+        "v165_northwest_migration",
+        "v165_widows_orphans",
+        "v165_port_labor",
+        "v165_rural_security",
+        "v165_imperial_tutoring",
+        "v165_tongwen_school",
+        "v165_shanghai_language_school",
+        "v165_international_law",
+        "v165_huanghu",
+        "v165_woren_debate",
+        "v165_translation_hall",
+        "v165_translation_workflow",
+        "v165_technical_printing"
       ],
       "sources": [
         "v5qn_qsg221",
@@ -236426,9 +239187,33 @@
         "v40q_hong_army",
         "v40q_tianchao",
         "v66_saac_xingke",
-        "v66_fhac_xingke"
+        "v66_fhac_xingke",
+        "v165_dpm_curtain",
+        "v165_dpm_lecture",
+        "v165_qsg391",
+        "v165_qsg406",
+        "v165_qsg413",
+        "v165_qsg416",
+        "v165_qsg448",
+        "v165_qsg475",
+        "v165_li_proclamation",
+        "v165_li_confession",
+        "v165_nmc_seal",
+        "v165_nmc_sword",
+        "v165_nmc_cannon",
+        "v165_nmc_army_pay",
+        "v165_dpm_restoration",
+        "v165_ruc_politics",
+        "v165_cssn_translation",
+        "v165_shm_translation",
+        "v165_shanghai_gazette",
+        "v165_wuxi_steam",
+        "v165_zhongshan_yung",
+        "v165_ruc_recovery",
+        "v165_ruc_northwest",
+        "v165_ruc_hui_society"
       ],
-      "note": "同治初年由两宫皇太后垂帘，奕訢等参与主持政务，不宜把所有决策直接归于幼帝。"
+      "note": "同治初年由慈安、慈禧两宫垂帘，奕訢及军机、总理衙门参与中枢，曾国藩、李鸿章等督抚掌握区域军政。幼帝在1873年亲政前不是多数政策的直接决策者；所谓‘同治中兴’须与内战、西北战争、战后迁徙和地方权力扩张并读。"
     },
     {
       "person": "q_guangxu",

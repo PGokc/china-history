@@ -3325,3 +3325,41 @@ if d['version'] >= 138:
  assert all(item['sectionID'].startswith('yixin-q') for item in narration['entries'] if item['articleID']=='q_yixin')
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将',corpus,re.I)
  print('V138 PASS: twelve late-Xianfeng readings and forty-five balanced events connect treaty revision, Guangzhou occupation, Dagu, Beijing, regional armies, war finance, displacement, photography and evidence-bounded memory')
+
+if d['version'] >= 139:
+ v165_people=['q165_cian','q165_woren','q165_zengguoquan','q165_lixiucheng','q165_luobingzhang','q165_shenbaozhen','q165_dingrichang','q165_xushou','q165_huahengfang','q165_yungrong','q165_laiwenguang','q165_liumingchuan']
+ v165_events={item['id'] for item in d['events'] if item['id'].startswith('v165_')}
+ v165_sources={item['id'] for item in d['sources'] if item['id'].startswith('v165_')}
+ v165_objects={item['id'] for item in d['objects'] if item['id'].startswith('v165_')}
+ object_map={item['id']:item for item in d['objects']}
+ assert len(v165_people)==12 and len(v165_events)==45 and len(v165_sources)==24 and len(v165_objects)==6
+ assert set(v165_people)<=people.keys() and set(v165_people)<=articles.keys()
+ assert {events[event_id]['category'] for event_id in v165_events}=={'政治','军事','经济','社会','文化'}
+ assert all(sum(events[event_id]['category']==category for event_id in v165_events)==9 for category in ['政治','军事','经济','社会','文化'])
+ for pid in v165_people:
+  reading=articles[pid]; ss=reading['sections']
+  chars=sum(len(re.findall(r'[\u4e00-\u9fff]',section['text'])) for section in ss)
+  assert len(ss)==5 and chars>=500 and all(section['sources'] and section['events'] for section in ss),(pid,chars)
+  assert all(set(section['sources'])<=sources.keys() and set(section['events'])<=events.keys() and set(section.get('people',[]))<=people.keys() for section in ss)
+  assert set(reading['sources'])=={source for section in ss for source in section['sources']}
+ assert all(set(events[event_id]['people'])<=people.keys() and set(events[event_id]['sources'])<=sources.keys() for event_id in v165_events)
+ for object_id in v165_objects:
+  item=object_map[object_id]
+  assert item['dynasties']==['qing'] and item['people'] and item['sources']
+  assert set(item['people'])<=people.keys() and set(item['sources'])<=sources.keys()
+ corpus=json.dumps([articles[pid] for pid in v165_people]+[events[event_id] for event_id in v165_events]+[object_map[object_id] for object_id in v165_objects]+[sources[source_id] for source_id in v165_sources],ensure_ascii=False)
+ for term in ['御赏','同道堂','《垂帘章程》','倭仁','苏州投降','天京','高楼寨','东捻','江南制造总局','黄鹄号','翻译馆','口译笔述','陕甘','流民返乡']:
+  assert term in corpus,('missing early-Tongzhi evidence term',term)
+ for boundary in ['不能只用后来的个人性格解释结果','不能把宣示直接当作所有居民的生活经验','不能只用“擒获首领”略过俘虏命运','避免以一件明星文物替代人物全部经历','不能按后来的课程倒推1862年','不能用单一导火线或固定族群性格解释']:
+  assert boundary in corpus,('missing early-Tongzhi evidence boundary',boundary)
+ ctx=next(item for item in d['reignContexts'] if item['person']=='q_tongzhi')
+ assert set(v165_people)<=set(ctx['people']) and v165_events<=set(ctx['events']) and v165_sources<=set(ctx['sources'])
+ pairset={(item['from'],item['to']) for item in d['associations']}
+ assert {('q_tongzhi',pid) for pid in v165_people}<=pairset
+ assert {('q165_cian','q_cixi'),('q165_zengguoquan','q_zengguofan'),('q165_lixiucheng','q_hongxiuquan'),('q165_shenbaozhen','q165_xushou'),('q165_xushou','q165_huahengfang'),('q165_yungrong','q_zengguofan'),('q165_laiwenguang','q165_liumingchuan')}<=pairset
+ emperor=articles['q_tongzhi']
+ assert v165_events<={event_id for section in emperor['sections'] for event_id in section.get('events',[])}
+ assert set(v165_people)<={person_id for section in emperor['sections'] for person_id in section.get('people',[])}
+ assert all(item['sectionID'].startswith('q-tongzhi-') for item in narration['entries'] if item['articleID']=='q_tongzhi')
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将',corpus,re.I)
+ print('V139 PASS: twelve early-Tongzhi readings and forty-five balanced events connect joint regency, the final Taiping campaigns, regional armies, postwar livelihoods, arsenals, translation and northwest displacement without turning restoration into a cost-free success story')
