@@ -3650,3 +3650,33 @@ if d['version'] >= 147:
  assert '从这里继续' not in overview and 'dynastySequence_' not in overview and 'dynastyFamily_' not in overview and 'dynastyCollection_' not in overview
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将|产品采用',corpus,re.I)
  print('V147 PASS: sixteen Xia sites and objects now explain context, technology, society and evidence limits; forty thematic events have distinct interpretations; dynasty overviews contain no duplicate destination guide')
+
+if d['version'] >= 148:
+ v174_object_ids={
+  'v57_obj_yinxu','v57_obj_huanbei','v57_obj_zhengzhou','v57_obj_yanshi',
+  'v57_obj_oracle','v57_obj_oracle6006','v57_obj_fuhaotomb','v57_obj_owl',
+  'v57_obj_houmuwu','v57_obj_foundry','v57_obj_chariot','v57_obj_royaltombs',
+  'v57_obj_jade','v57_obj_bonework'
+ }
+ v174_source_ids={item['id'] for item in d['sources'] if item['id'].startswith('v174_')}
+ v174_events=[item for item in d['events'] if re.fullmatch(r'v57_[pmces]\d{2}',item['id'])]
+ object_map={item['id']:item for item in d['objects']}
+ assert len(v174_source_ids)==12 and v174_source_ids<=sources.keys()
+ assert v174_object_ids<=object_map.keys()
+ for object_id in v174_object_ids:
+  item=object_map[object_id]
+  chars=len(re.findall(r'[\u4e00-\u9fff]',item['body']+item['note']))
+  assert chars>=260 and item['body'].count('\n\n')>=2,(object_id,chars)
+  assert item['dynasties']==['shang'] and len(item['sources'])>=3
+  assert set(item['sources'])<=sources.keys() and set(item['people'])<=people.keys()
+ assert len(v174_events)==50 and len({item['impact'] for item in v174_events})==50
+ assert all(sum(item['category']==category for item in v174_events)==10 for category in ['政治','军事','文化','经济','社会'])
+ assert all(len(re.findall(r'[\u4e00-\u9fff]',item['impact']))>=40 for item in v174_events)
+ assert all(set(item['sources'])<=sources.keys() and set(item['people'])<=people.keys() for item in v174_events)
+ corpus=json.dumps([object_map[object_id] for object_id in v174_object_ids]+v174_events+[sources[source_id] for source_id in v174_source_ids],ensure_ascii=False)
+ for term in ['十余米','供水管道','832.84','超过一吨','近两千件','两轮','吨计','人牲']:
+  assert term in corpus,('missing Shang material-history term',term)
+ for boundary in ['王室就是社会全部','古名和具体王都归属仍需分层说明','问”不等于事件已经发生','不能把每组随葬车辆直接当成真实军队编制','不能把所有人骨都不加区分地称为战俘或奴隶','不能把所有工匠都笼统称为奴隶']:
+  assert boundary in corpus,('missing Shang evidence boundary',boundary)
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将|产品采用',corpus,re.I)
+ print('V148 PASS: fourteen Shang sites and objects now read in three evidence layers, while fifty thematic events carry distinct consequences and explicit source limits')

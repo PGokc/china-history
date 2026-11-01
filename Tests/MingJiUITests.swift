@@ -5178,4 +5178,43 @@ final class MingJiUITests: XCTestCase {
         shot("v173-erlitou-sources-and-page-ending", collection)
     }
 
+    @MainActor func testV174ShangOverviewAndMaterialHistoryKeepEvidenceLayers() throws {
+        let overview = XCUIApplication()
+        overview.launchArguments = ["--uitesting", "--ui-dynasty", "shang"]
+        overview.launch()
+        XCTAssertTrue(overview.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        XCTAssertTrue(overview.buttons["dynasty_shang"].waitForExistence(timeout: 5))
+        overview.buttons["dynasty_shang"].tap()
+        XCTAssertTrue(overview.descendants(matching: .any)["dynastyDetail_shang"].waitForExistence(timeout: 5))
+        XCTAssertFalse(overview.staticTexts["从这里继续"].exists)
+        XCTAssertFalse(overview.buttons["dynastySequence_shang"].exists)
+        XCTAssertFalse(overview.buttons["dynastyFamily_shang"].exists)
+        XCTAssertFalse(overview.buttons["dynastyCollection_shang"].exists)
+        shot("v174-shang-overview-without-duplicate-guide", overview)
+        overview.terminate()
+
+        let collection = XCUIApplication()
+        collection.launchArguments = ["--uitesting", "--ui-dynasty", "shang"]
+        collection.launch()
+        XCTAssertTrue(collection.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        collection.tabBars.buttons["遗珍"].tap()
+        XCTAssertTrue(collection.descendants(matching: .any)["collectionPage_shang"].waitForExistence(timeout: 5))
+        collection.buttons["collectionCategory_architecture"].tap()
+        XCTAssertTrue(collection.descendants(matching: .any)["collectionCategoryPage_architecture"].waitForExistence(timeout: 5))
+        let yinxu = collection.buttons["artifact_v57_obj_yinxu"]
+        XCTAssertTrue(yinxu.waitForExistence(timeout: 5)); yinxu.tap()
+        XCTAssertTrue(collection.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不是一座被城墙整齐圈住的单一宫城")).firstMatch.waitForExistence(timeout: 5))
+        XCTAssertTrue(collection.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "王室文字最清楚，不等于王室就是社会全部")).firstMatch.exists)
+        shot("v174-yinxu-city-and-evidence-layers", collection)
+        reach(collection.buttons["资料与出处"], in: collection, attempts: 18)
+        XCTAssertTrue(collection.buttons["资料与出处"].isHittable); collection.buttons["资料与出处"].tap()
+        XCTAssertTrue(collection.descendants(matching: .any)["source_v174_neac_yinxu"].waitForExistence(timeout: 5))
+        let finalSource = collection.descendants(matching: .any)["source_v57_ndrc"]
+        reach(finalSource, in: collection, attempts: 8)
+        for _ in 0..<3 { collection.swipeUp() }
+        XCTAssertTrue(finalSource.isHittable)
+        XCTAssertLessThanOrEqual(finalSource.frame.maxY, collection.tabBars.firstMatch.frame.minY - 16)
+        shot("v174-yinxu-sources-and-page-ending", collection)
+    }
+
 }
