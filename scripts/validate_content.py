@@ -1473,7 +1473,7 @@ if d['version'] >= 62:
 if d['version'] >= 63:
  complete,total=durable_coverage({'xia','shang','zhou','five_dynasties'})
  assert complete>=16 and total==21
- assert d['reviewed'] in {'2026-10-19','2026-10-28','2026-10-29','2026-10-31'}
+ assert d['reviewed'] in {'2026-10-19','2026-10-28','2026-10-29','2026-10-31','2026-11-01'}
  print('V63 PASS: early-state and Five-Dynasties contexts complete a five-pass audit without inventing evidence for the remaining gaps')
 
 if d['version'] >= 64:
@@ -3440,3 +3440,41 @@ if d['version'] >= 141:
  assert all(item['sectionID'].startswith('q-guangxu-') for item in narration['entries'] if item['articleID']=='q_guangxu')
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将',corpus,re.I)
  print('V141 PASS: twelve early-Guangxu readings and forty-five balanced events connect renewed regency, Xinjiang war, Ili renegotiation, the North China famine, permanent diplomacy, overseas students, mining, railway and telegraph with explicit human costs and source limits')
+
+if d['version'] >= 142:
+ v168_people=['q165_liumingchuan','q168_zhangpeilun','q168_chenbaochen','q168_heruzhang','q168_tangjiong','q168_cenyuying','q168_fengzicai','q168_liuyongfu','q168_tangjingsong','q168_wuchangqing','q168_wudacheng','q168_chenqiyuan']
+ v168_new_people=[pid for pid in v168_people if pid.startswith('q168_')]
+ v168_events={item['id'] for item in d['events'] if item['id'].startswith('v168_')}
+ v168_sources={item['id'] for item in d['sources'] if item['id'].startswith('v168_')}
+ v168_objects={item['id'] for item in d['objects'] if item['id'].startswith('v168_')}
+ object_map={item['id']:item for item in d['objects']}
+ assert len(v168_new_people)==11 and len(v168_events)==45 and len(v168_sources)==24 and len(v168_objects)==6
+ assert set(v168_people)<=people.keys() and set(v168_people)<=articles.keys()
+ assert all(sum(events[event_id]['category']==category for event_id in v168_events)==9 for category in ['政治','军事','经济','社会','文化'])
+ for pid in v168_people:
+  reading=articles[pid]; ss=reading['sections']
+  chars=sum(len(re.findall(r'[\u4e00-\u9fff]',section['text'])) for section in ss)
+  assert len(ss)==5 and chars>=600 and all(section['sources'] and section['events'] for section in ss),(pid,chars)
+  assert all(set(section['sources'])<=sources.keys() and set(section['events'])<=events.keys() and set(section.get('people',[]))<=people.keys() for section in ss)
+  assert set(reading['sources'])=={source for section in ss for source in section['sources']}
+ assert all(set(events[event_id]['people'])<=people.keys() and set(events[event_id]['sources'])<=sources.keys() for event_id in v168_events)
+ for object_id in v168_objects:
+  item=object_map[object_id]
+  assert item['dynasties']==['qing'] and item['people'] and item['sources']
+  assert set(item['people'])<=people.keys() and set(item['sources'])<=sources.keys()
+ corpus=json.dumps([articles[pid] for pid in v168_people]+[events[event_id] for event_id in v168_events]+[object_map[object_id] for object_id in v168_objects]+[sources[source_id] for source_id in v168_sources],ensure_ascii=False)
+ for term in ['壬午军乱','甲申政变','中法新约','马尾海战','基隆','淡水','澎湖','宣光','镇南关','海军衙门','台湾建省','继昌隆','黄河决口','光绪大婚','颐和园']:
+  assert term in corpus,('missing middle-Guangxu evidence term',term)
+ for boundary in ['不是简单的战胜或战败标签','不能只用突袭或个人怯战概括','不能把多人协同、边民运输和法军处境压缩为单一英雄故事','不是精确人口普查','不采用一个神奇数字解释海军弱点','不能把“开山”写成无人之地开发','不宜把“第一”当作无争议称号']:
+  assert boundary in corpus,('missing middle-Guangxu evidence boundary',boundary)
+ ctx=next(item for item in d['reignContexts'] if item['person']=='q_guangxu')
+ assert set(v168_people)<=set(ctx['people']) and v168_events<=set(ctx['events']) and v168_sources<=set(ctx['sources'])
+ pairset={(item['from'],item['to']) for item in d['associations']}
+ assert {('q_guangxu',pid) for pid in v168_new_people}<=pairset
+ assert {('q168_zhangpeilun','q168_chenbaochen'),('q168_tangjiong','q168_cenyuying'),('q168_fengzicai','q168_cenyuying'),('q168_liuyongfu','q168_tangjingsong'),('q165_liumingchuan','q168_zhangpeilun'),('q168_wuchangqing','q_yuanshikai')}<=pairset
+ emperor=articles['q_guangxu']
+ assert v168_events<={event_id for section in emperor['sections'] for event_id in section.get('events',[])}
+ assert set(v168_people)<={person_id for section in emperor['sections'] for person_id in section.get('people',[])}
+ assert all(item['sectionID'].startswith('q-guangxu-') for item in narration['entries'] if item['articleID']=='q_guangxu')
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将',corpus,re.I)
+ print('V142 PASS: twelve middle-Guangxu readings and forty-five balanced events connect the Korea crises, Sino-French War, Taiwan province, naval institutions, Yellow River flood, machine silk and staged personal rule without collapsing battles, treaties or modernization into slogans')

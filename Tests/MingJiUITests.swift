@@ -4977,4 +4977,27 @@ final class MingJiUITests: XCTestCase {
         shot("v167-jing-yuanshan-relief-registration-boundary", app)
     }
 
+    @MainActor func testV168TaiwanModernizationKeepsLandAndIndigenousBoundary() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["--uitesting", "--ui-dynasty", "qing"]
+        app.launch()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        app.buttons.matching(NSPredicate(format: "identifier == %@", "globalSearch")).firstMatch.tap()
+        let search = app.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("刘铭传")
+        let result = app.buttons["search_person_q165_liumingchuan"]
+        XCTAssertTrue(result.waitForExistence(timeout: 8)); Thread.sleep(forTimeInterval: 1); result.tap()
+        if !app.buttons["articleEntry"].waitForExistence(timeout: 5) { app.buttons["search_person_q165_liumingchuan"].tap() }
+        XCTAssertTrue(app.buttons["articleEntry"].waitForExistence(timeout: 5)); app.buttons["articleEntry"].tap()
+        XCTAssertTrue(app.buttons["articleContents"].waitForExistence(timeout: 5)); app.buttons["articleContents"].tap()
+        let chapter = app.buttons["山地政策的土地边界"]
+        XCTAssertTrue(chapter.exists); chapter.tap()
+        XCTAssertTrue(app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "原住民族土地")).firstMatch.waitForExistence(timeout: 5))
+        shot("v168-liu-mingchuan-land-and-indigenous-chapter", app)
+        openChapterSources("v168_liumingchuan_5", in: app)
+        XCTAssertTrue(app.descendants(matching: .any)["source_v168_taiwan"].waitForExistence(timeout: 3))
+        app.swipeUp()
+        shot("v168-liu-mingchuan-land-and-indigenous-sources", app)
+    }
+
 }

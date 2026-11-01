@@ -1,6 +1,6 @@
 {
-  "version": 141,
-  "reviewed": "2026-10-31",
+  "version": 142,
+  "reviewed": "2026-11-01",
   "people": [
     {
       "id": "yuanzhang",
@@ -19595,15 +19595,15 @@
       "call": "淮军将领",
       "temple": "",
       "era": "1836—1896",
-      "reign": "咸丰至同治时期",
-      "summary": "由安徽团练进入淮军，在苏南和捻军战事中升迁；后来的台湾治理不应倒过来遮蔽早年战争经验。",
+      "reign": "咸丰至光绪时期",
+      "summary": "由淮军将领转任台湾防务与首任巡抚，推动铁路、电报、税制和防务改革；建设成效必须与财政压力、土地清丈及原住民族处境同时阅读。",
       "parent": null,
       "sources": [
-        "v165_qsg416",
-        "v165_nmc_army_pay"
+        "v168_qsg416",
+        "v168_taiwan"
       ],
       "kind": "重要人物",
-      "note": "由安徽团练进入淮军，在苏南和捻军战事中升迁；后来的台湾治理不应倒过来遮蔽早年战争经验。",
+      "note": "1884年赴台主持抗法防务，建省后任台湾巡抚。其改革不是无成本的单线现代化。",
       "dynasty": "qing"
     },
     {
@@ -19989,6 +19989,182 @@
       ],
       "kind": "重要人物",
       "note": "英国浸礼会传教士，在山东、山西饥荒中募款放赈并形成改革主张；救济、人道关怀和传教目标需要同时说明。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q168_zhangpeilun",
+      "name": "张佩纶",
+      "call": "清流言官",
+      "temple": "",
+      "era": "1848—1903",
+      "reign": "光绪前中期",
+      "summary": "以奏议论海防与吏治，后督福建海防而在马尾战败中被追责；言论声望与现场统军能力不能混为一谈。",
+      "parent": null,
+      "sources": [
+        "v168_qsg444"
+      ],
+      "kind": "重要人物",
+      "note": "以奏议论海防与吏治，后督福建海防而在马尾战败中被追责；言论声望与现场统军能力不能混为一谈。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q168_chenbaochen",
+      "name": "陈宝琛",
+      "call": "清流官员",
+      "temple": "",
+      "era": "1848—1935",
+      "reign": "光绪前中期",
+      "summary": "以直言和边防奏议知名，中法战争期间参与筹防；后来成为溥仪师傅不应遮蔽其光绪前期经历。",
+      "parent": null,
+      "sources": [
+        "v168_qsg444"
+      ],
+      "kind": "重要人物",
+      "note": "以直言和边防奏议知名，中法战争期间参与筹防；后来成为溥仪师傅不应遮蔽其光绪前期经历。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q168_heruzhang",
+      "name": "何如璋",
+      "call": "外交官",
+      "temple": "",
+      "era": "1838—1891",
+      "reign": "光绪前中期",
+      "summary": "首任驻日本公使之一，持续报告日本对琉球、朝鲜和海疆的动作，体现常驻外交的信息价值及其决策限度。",
+      "parent": null,
+      "sources": [
+        "v168_qsg444"
+      ],
+      "kind": "重要人物",
+      "note": "首任驻日本公使之一，持续报告日本对琉球、朝鲜和海疆的动作，体现常驻外交的信息价值及其决策限度。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q168_tangjiong",
+      "name": "唐炯",
+      "call": "云南巡抚",
+      "temple": "",
+      "era": "1829—1909",
+      "reign": "光绪前中期",
+      "summary": "受命经营越南军务，北宁失守后获罪；他的经历连接边疆后勤、指挥分散与战败问责。",
+      "parent": null,
+      "sources": [
+        "v168_qsg458"
+      ],
+      "kind": "重要人物",
+      "note": "受命经营越南军务，北宁失守后获罪；他的经历连接边疆后勤、指挥分散与战败问责。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q168_cenyuying",
+      "name": "岑毓英",
+      "call": "云贵总督",
+      "temple": "",
+      "era": "1829—1889",
+      "reign": "光绪前中期",
+      "summary": "从云南战后治理进入中越边防，组织滇军入越；地方军政经验既提供动员能力，也加剧多头指挥。",
+      "parent": null,
+      "sources": [
+        "v168_qsg419"
+      ],
+      "kind": "重要人物",
+      "note": "从云南战后治理进入中越边防，组织滇军入越；地方军政经验既提供动员能力，也加剧多头指挥。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q168_fengzicai",
+      "name": "冯子材",
+      "call": "边军将领",
+      "temple": "",
+      "era": "1818—1903",
+      "reign": "光绪前中期",
+      "summary": "镇南关战役的重要指挥者，与王孝祺、苏元春等协同反攻；胜利属于多支部队和边民后勤。",
+      "parent": null,
+      "sources": [
+        "v168_qsg459"
+      ],
+      "kind": "重要人物",
+      "note": "镇南关战役的重要指挥者，与王孝祺、苏元春等协同反攻；胜利属于多支部队和边民后勤。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q168_liuyongfu",
+      "name": "刘永福",
+      "call": "黑旗军首领",
+      "temple": "",
+      "era": "1837—1917",
+      "reign": "光绪前中期",
+      "summary": "率黑旗军在越南北部活动并抗法，兼有越南授职、地方征税和清廷招抚关系，不能简单归入正规清军。",
+      "parent": null,
+      "sources": [
+        "v168_qsg463"
+      ],
+      "kind": "重要人物",
+      "note": "率黑旗军在越南北部活动并抗法，兼有越南授职、地方征税和清廷招抚关系，不能简单归入正规清军。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q168_tangjingsong",
+      "name": "唐景崧",
+      "call": "前线官员",
+      "temple": "",
+      "era": "1841—1903",
+      "reign": "光绪前中期",
+      "summary": "赴越联络刘永福并参与宣光战事，后来任台湾巡抚；招抚、联军与地方自主之间始终有张力。",
+      "parent": null,
+      "sources": [
+        "v168_qsg463"
+      ],
+      "kind": "重要人物",
+      "note": "赴越联络刘永福并参与宣光战事，后来任台湾巡抚；招抚、联军与地方自主之间始终有张力。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q168_wuchangqing",
+      "name": "吴长庆",
+      "call": "淮军将领",
+      "temple": "",
+      "era": "1834—1884",
+      "reign": "光绪前中期",
+      "summary": "1882年率军入朝鲜并控制大院君，其行动恢复王宫秩序，也扩大清军驻留和对朝鲜政治的干预。",
+      "parent": null,
+      "sources": [
+        "v168_qsg416"
+      ],
+      "kind": "重要人物",
+      "note": "1882年率军入朝鲜并控制大院君，其行动恢复王宫秩序，也扩大清军驻留和对朝鲜政治的干预。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q168_wudacheng",
+      "name": "吴大澂",
+      "call": "官员与金石学者",
+      "temple": "",
+      "era": "1835—1902",
+      "reign": "光绪前中期",
+      "summary": "参与边界交涉、黄河堵口与军务，同时搜集古器文字；工程行政与学术实践在其生涯中并行。",
+      "parent": null,
+      "sources": [
+        "v168_qsg450"
+      ],
+      "kind": "重要人物",
+      "note": "参与边界交涉、黄河堵口与军务，同时搜集古器文字；工程行政与学术实践在其生涯中并行。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q168_chenqiyuan",
+      "name": "陈启沅",
+      "call": "机器缫丝实业家",
+      "temple": "",
+      "era": "1834—1903",
+      "reign": "光绪前中期",
+      "summary": "在南海创办继昌隆机器缫丝厂，把海外技术带入乡村产业；女工劳动、金融风险和机器冲突同样重要。",
+      "parent": null,
+      "sources": [
+        "v168_chenqiyuan"
+      ],
+      "kind": "重要人物",
+      "note": "在南海创办继昌隆机器缫丝厂，把海外技术带入乡村产业；女工劳动、金融风险和机器冲突同样重要。",
       "dynasty": "qing"
     }
   ],
@@ -28014,6 +28190,150 @@
       "title": "上海市政府《上海通志》：近代电报机构",
       "url": "https://www.shanghai.gov.cn/shanghai/newshanghai/上海通志.pdf",
       "note": "核对1880年津沪电报总局和1881年上海分局等制度节点。"
+    },
+    {
+      "id": "v168_dpm_guangxu",
+      "title": "故宫博物院：光绪皇帝年表",
+      "url": "https://www.dpm.org.cn/court/lineage/226254.html",
+      "note": "核对海军衙门、亲政、大婚与归政的时间层次。"
+    },
+    {
+      "id": "v168_dpm_wedding",
+      "title": "故宫博物院：光绪大婚典礼的筹办",
+      "url": "https://www.dpm.org.cn/journal/257131.html",
+      "note": "核对大婚礼仪机构、采办与财政背景。"
+    },
+    {
+      "id": "v168_dpm_yiheyuan",
+      "title": "故宫博物院：颐和园工程及水操学堂研究",
+      "url": "https://www.dpm.org.cn/journal/257905.html",
+      "note": "核对水操学堂与园工交叠，避免使用单一挪款数字。"
+    },
+    {
+      "id": "v168_dpm_navy",
+      "title": "故宫博物院：晚清海军建设历史照片",
+      "url": "https://www.dpm.org.cn/learing_detail/253439.html",
+      "note": "核对海军衙门与醇亲王检阅北洋海防。"
+    },
+    {
+      "id": "v168_mfa_mawei",
+      "title": "外交部：马尾海战",
+      "url": "https://www.mfa.gov.cn/web/ziliao_674904/historytoday_674971/200308/t20030823_7949134.shtml",
+      "note": "核对1884年8月23日马尾海战及福建水师损失。"
+    },
+    {
+      "id": "v168_treaty",
+      "title": "深圳盐田区档案史志馆：中法新约",
+      "url": "https://www.yantian.gov.cn/ytdayszxxw/lsjt/content/post_11736705.html",
+      "note": "核对越南、边界通商、铁路与台湾撤军条款。"
+    },
+    {
+      "id": "v168_cssn_france",
+      "title": "中国社会科学网：中法战争与东亚国际关系",
+      "url": "https://www.cssn.cn/lsx/lsx_sjs/202210/t20221024_5552161.shtml",
+      "note": "用于区分战场进退、外交结果与东亚格局。"
+    },
+    {
+      "id": "v168_cssn_vietnam",
+      "title": "中国社会科学网：晚清中越关系",
+      "url": "https://www.cssn.cn/lsx/slcz/202305/t20230506_5627133.shtml",
+      "note": "核对宗藩观念、边疆安全与越南自主诉求之间的张力。"
+    },
+    {
+      "id": "v168_qsg23",
+      "title": "《清史稿》卷二十三·德宗本纪一",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷23",
+      "note": "核对光绪前中期编年；官修本纪需与专题材料互证。"
+    },
+    {
+      "id": "v168_qsg444",
+      "title": "《清史稿》卷四百四十四·张佩纶、何如璋",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷444",
+      "note": "核对清流奏议、外交经历与马尾问责，注意官修褒贬。"
+    },
+    {
+      "id": "v168_qsg419",
+      "title": "《清史稿》卷四百十九·岑毓英",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷419",
+      "note": "核对云南、越南边防和军政经历。"
+    },
+    {
+      "id": "v168_qsg458",
+      "title": "《清史稿》卷四百五十八·唐炯",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷458",
+      "note": "核对云南军务、越南战场与处分。"
+    },
+    {
+      "id": "v168_qsg459",
+      "title": "《清史稿》卷四百五十九·冯子材",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷459",
+      "note": "核对镇南关前线及参战诸军，避免单一英雄叙事。"
+    },
+    {
+      "id": "v168_qsg463",
+      "title": "《清史稿》卷四百六十三·唐景崧、刘永福",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷463",
+      "note": "核对黑旗军、宣光战事和唐景崧招抚活动。"
+    },
+    {
+      "id": "v168_qsg416",
+      "title": "《清史稿》卷四百十六·吴长庆、刘铭传",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷416",
+      "note": "核对朝鲜出兵、台湾防务和建省治理。"
+    },
+    {
+      "id": "v168_qsg450",
+      "title": "《清史稿》卷四百五十·吴大澂",
+      "url": "https://zh.wikisource.org/wiki/清史稿/卷450",
+      "note": "核对边界交涉、河工与金石学活动。"
+    },
+    {
+      "id": "v168_qsg119",
+      "title": "《清史稿》卷一百十九·海军",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷119",
+      "note": "核对海军衙门、北洋海防机构与制度沿革。"
+    },
+    {
+      "id": "v168_war_records",
+      "title": "《中法兵事本末》",
+      "url": "https://zh.wikisource.org/zh-hant/中法兵事本末",
+      "note": "战争同时代汇编，用于核对战役叙述并识别立场。"
+    },
+    {
+      "id": "v168_taiwan",
+      "title": "国务院台湾事务办公室：刘铭传与台湾近代化",
+      "url": "https://www.gwytb.gov.cn/local/201304/t20130411_4065952.htm",
+      "note": "核对建省后铁路、电报、税制等项目；与土地和族群研究并读。"
+    },
+    {
+      "id": "v168_chenqiyuan",
+      "title": "广东文史网：陈启沅与继昌隆缫丝厂",
+      "url": "https://www.gdwsw.gov.cn/wsgdsdjy/content/post_30311.html",
+      "note": "核对机器缫丝、经营方式与女工劳动。"
+    },
+    {
+      "id": "v168_korea",
+      "title": "深圳盐田区档案史志馆：甲申政变与天津条约",
+      "url": "https://www.yantian.gov.cn/ytdayszxxw/lsjt/content/post_11737049.html",
+      "note": "核对1884年朝鲜政变、撤兵和预先照会安排。"
+    },
+    {
+      "id": "v168_korea_crises",
+      "title": "国家国防科技工业局：晚清朝鲜两次危机",
+      "url": "https://www.sastind.gov.cn/n10086205/n10086403/c10259885/content.html",
+      "note": "核对壬午、甲申两次危机及中日军事介入。"
+    },
+    {
+      "id": "v168_yellow_river",
+      "title": "宁夏水利厅：郑州黄河决口与合龙",
+      "url": "https://slt.nx.gov.cn/slxc/jswm/wxwh/202407/t20240710_4591501.html",
+      "note": "核对1887年决口、受灾范围估计与1888年合龙。"
+    },
+    {
+      "id": "v168_wudacheng",
+      "title": "江苏省纪委监委：吴大澂与黄河工程",
+      "url": "https://www.jssjw.gov.cn/art/2016/11/29/art_437_31440.html",
+      "note": "核对河工组织、边界勘定与吴大澂经历。"
     }
   ],
   "relations": [
@@ -82026,6 +82346,755 @@
       ],
       "kind": "史实与解读",
       "category": "文化"
+    },
+    {
+      "id": "v168_korea_imo",
+      "year": "1882年",
+      "sortYear": 1882,
+      "title": "壬午军乱后清军进入朝鲜",
+      "body": "朝鲜军乱冲击王宫和日本使馆，吴长庆所部奉命入境。",
+      "impact": "清军恢复王宫控制并驻留，也把朝鲜内政更深卷入中日竞争。",
+      "people": [
+        "q168_wuchangqing"
+      ],
+      "sources": [
+        "v168_korea_crises"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v168_daewongun",
+      "year": "1882年",
+      "sortYear": 1882,
+      "title": "大院君被带离朝鲜",
+      "body": "清军控制被视为军乱政治核心的大院君，将其押往中国。",
+      "impact": "行动具有强制性，不能只写成和平调停，也触及朝鲜政治自主。",
+      "people": [
+        "q168_wuchangqing"
+      ],
+      "sources": [
+        "v168_korea_crises"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v168_gapsin",
+      "year": "1884年",
+      "sortYear": 1884,
+      "title": "甲申政变迅速失败",
+      "body": "朝鲜开化派借日本守军发动政变，清军介入后局势逆转。",
+      "impact": "中日部队在汉城对峙，朝鲜改革议题被列强军事存在压缩。",
+      "people": [
+        "q168_wuchangqing"
+      ],
+      "sources": [
+        "v168_korea"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v168_tianjin_convention",
+      "year": "1885年",
+      "sortYear": 1885,
+      "title": "中日天津条约约定撤兵",
+      "body": "中日同意从朝鲜撤军，今后派兵须事先照会。",
+      "impact": "条约没有解决两国竞争，也没有把朝鲜变成双方可以任意处置的对象。",
+      "people": [
+        "q_guangxu"
+      ],
+      "sources": [
+        "v168_korea"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v168_jiasen_change",
+      "year": "1884年",
+      "sortYear": 1884,
+      "title": "甲申易枢重组中枢",
+      "body": "军机处和总理衙门要员被更换，恭亲王退出权力中枢。",
+      "impact": "人事重组发生在中法危机中，不能用单一宫廷私怨解释。",
+      "people": [
+        "q_guangxu",
+        "q168_zhangpeilun"
+      ],
+      "sources": [
+        "v168_qsg23"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v168_war_breakdown",
+      "year": "1883—1884年",
+      "sortYear": 1883,
+      "title": "越南交涉滑向全面战争",
+      "body": "驻越军队、法国扩张与反复谈判并行，临时协议未能约束前线。",
+      "impact": "宗藩安全、越南自身政治和法国殖民目标互相冲突。",
+      "people": [
+        "q168_tangjiong",
+        "q168_cenyuying"
+      ],
+      "sources": [
+        "v168_cssn_vietnam",
+        "v168_cssn_france"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v168_treaty_1885",
+      "year": "1885年",
+      "sortYear": 1885,
+      "title": "《中法新约》结束战争",
+      "body": "清廷承认法国与越南的条约并开放边界商埠，法国撤出台湾占领点。",
+      "impact": "局部战胜没有逆转清廷退出越南的外交结果，也不是简单的战胜或战败标签。",
+      "people": [
+        "q_guangxu",
+        "q168_fengzicai"
+      ],
+      "sources": [
+        "v168_treaty"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v168_taiwan_province",
+      "year": "1885年",
+      "sortYear": 1885,
+      "title": "清廷决定台湾建省",
+      "body": "战后清廷调整福建台湾体制，刘铭传主持筹办。",
+      "impact": "建省增强行政资源，却不等于中央能力已均匀覆盖全岛。",
+      "people": [
+        "q165_liumingchuan"
+      ],
+      "sources": [
+        "v168_taiwan"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v168_personal_rule",
+      "year": "1887—1889年",
+      "sortYear": 1887,
+      "title": "亲政、训政与归政分阶段展开",
+      "body": "光绪先名义亲政，慈禧继续训政，至大婚后再宣布归政。",
+      "impact": "皇帝开始处理政务，但宫廷、军机和太后权力并未在同一天交清。",
+      "people": [
+        "q_guangxu"
+      ],
+      "sources": [
+        "v168_dpm_guangxu",
+        "v168_dpm_wedding"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v168_paper_bridge",
+      "year": "1883年",
+      "sortYear": 1883,
+      "title": "纸桥战事扩大北越冲突",
+      "body": "刘永福黑旗军在河内附近与法军交战，法国指挥官李威利阵亡。",
+      "impact": "黑旗军受越南官职和清廷联络影响，仍保有自身组织与利益。",
+      "people": [
+        "q168_liuyongfu",
+        "q168_tangjingsong"
+      ],
+      "sources": [
+        "v168_qsg463"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v168_bac_ninh",
+      "year": "1884年",
+      "sortYear": 1884,
+      "title": "北宁失守暴露多头指挥",
+      "body": "滇桂各军与越南部队防务分散，法军攻占北宁。",
+      "impact": "战败不能只归咎一名将领，后勤、命令和跨军协同均有责任。",
+      "people": [
+        "q168_tangjiong",
+        "q168_cenyuying"
+      ],
+      "sources": [
+        "v168_qsg458",
+        "v168_qsg419"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v168_mawei",
+      "year": "1884年",
+      "sortYear": 1884,
+      "title": "马尾海战重创福建水师",
+      "body": "法国舰队在紧张交涉中发动攻击，福建水师舰船和船政设施遭重创。",
+      "impact": "限制开火的命令、戒备不足和现场处置共同构成责任，不能只用突袭或个人怯战概括。",
+      "people": [
+        "q168_zhangpeilun"
+      ],
+      "sources": [
+        "v168_mfa_mawei",
+        "v168_qsg444"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v168_keelung",
+      "year": "1884年",
+      "sortYear": 1884,
+      "title": "基隆争夺持续拉锯",
+      "body": "法军登陆并控制部分矿区和港口，清军退守周边防线。",
+      "impact": "台湾战场并非处处获胜，基隆的失守必须与淡水防御并列。",
+      "people": [
+        "q165_liumingchuan"
+      ],
+      "sources": [
+        "v168_qsg416",
+        "v168_war_records"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v168_tamsui",
+      "year": "1884年",
+      "sortYear": 1884,
+      "title": "淡水守军击退法军登陆",
+      "body": "孙开华等守军在沪尾阻止法军扩大登陆。",
+      "impact": "刘铭传统筹防务，但具体胜利来自地方守军、水雷和多层协作。",
+      "people": [
+        "q165_liumingchuan"
+      ],
+      "sources": [
+        "v168_qsg416",
+        "v168_war_records"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v168_blockade_penghu",
+      "year": "1884—1885年",
+      "sortYear": 1884,
+      "title": "封锁台湾并占领澎湖",
+      "body": "法国海军封锁港口，战争末期攻占澎湖。",
+      "impact": "海上封锁影响粮食、煤炭与贸易，说明陆战胜利不能抵消制海权劣势。",
+      "people": [
+        "q165_liumingchuan"
+      ],
+      "sources": [
+        "v168_war_records",
+        "v168_treaty"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v168_tuyen_quang",
+      "year": "1884—1885年",
+      "sortYear": 1884,
+      "title": "宣光围攻牵制法军",
+      "body": "刘永福、唐景崧等参与围攻宣光，法军最终解围。",
+      "impact": "战斗显示联合作战能力，也暴露补给、统属和战果叙述的差异。",
+      "people": [
+        "q168_liuyongfu",
+        "q168_tangjingsong"
+      ],
+      "sources": [
+        "v168_qsg463"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v168_zhennan",
+      "year": "1885年",
+      "sortYear": 1885,
+      "title": "镇南关反攻扭转边境战局",
+      "body": "冯子材与王孝祺、苏元春等部反击法军并推进谅山。",
+      "impact": "不能把多人协同、边民运输和法军处境压缩为单一英雄故事。",
+      "people": [
+        "q168_fengzicai",
+        "q168_cenyuying"
+      ],
+      "sources": [
+        "v168_qsg459",
+        "v168_war_records"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v168_langson_peace",
+      "year": "1885年",
+      "sortYear": 1885,
+      "title": "谅山进展与议和同时发生",
+      "body": "边军向越南境内推进时，清廷依据总体财政和外交判断议和。",
+      "impact": "战术优势不自动等于可长期占领，议和也不能抹去前线胜利。",
+      "people": [
+        "q168_fengzicai",
+        "q168_cenyuying"
+      ],
+      "sources": [
+        "v168_treaty",
+        "v168_cssn_france"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v168_war_finance",
+      "year": "1883—1885年",
+      "sortYear": 1883,
+      "title": "多战场军费挤压财政",
+      "body": "越南、福建、台湾及沿海设防同时需要饷械、运输和借款。",
+      "impact": "经费分属不同体系，账面拨款不等于前线按时收到。",
+      "people": [
+        "q168_tangjiong",
+        "q165_liumingchuan"
+      ],
+      "sources": [
+        "v168_qsg23"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v168_navy_yamen",
+      "year": "1885年",
+      "sortYear": 1885,
+      "title": "海军衙门统筹海防经费",
+      "body": "清廷设海军衙门，以醇亲王等领衔协调各洋水师。",
+      "impact": "新机构没有立即消除分区筹款、舰队分立和宫廷工程竞争。",
+      "people": [
+        "q_guangxu",
+        "q_yixuan"
+      ],
+      "sources": [
+        "v168_qsg119",
+        "v168_dpm_navy"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v168_taiwan_land_tax",
+      "year": "1886—1890年",
+      "sortYear": 1886,
+      "title": "台湾清丈与赋税重整",
+      "body": "刘铭传整顿田赋、厘金与茶盐等收入，为建设筹款。",
+      "impact": "清册改善财政可见度，也引发业户、隐田和土地权属冲突。",
+      "people": [
+        "q165_liumingchuan"
+      ],
+      "sources": [
+        "v168_taiwan"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v168_taiwan_railway",
+      "year": "1887—1891年",
+      "sortYear": 1887,
+      "title": "台湾铁路分段修筑",
+      "body": "台北至基隆、新竹方向铁路在财政和技术限制下推进。",
+      "impact": "它是早期官办铁路实践，不应按后来环岛网络想象其覆盖。",
+      "people": [
+        "q165_liumingchuan"
+      ],
+      "sources": [
+        "v168_taiwan"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v168_taiwan_telegraph",
+      "year": "1885—1890年",
+      "sortYear": 1885,
+      "title": "台湾电报与邮政扩展",
+      "body": "军用通信转化为行政网络，并试办近代邮政。",
+      "impact": "线路维修、台风和使用成本限制了日常覆盖。",
+      "people": [
+        "q165_liumingchuan"
+      ],
+      "sources": [
+        "v168_taiwan"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v168_silk_factory",
+      "year": "1873—1880年代",
+      "sortYear": 1873,
+      "title": "继昌隆采用机器缫丝",
+      "body": "陈启沅在南海引入蒸汽缫丝设备，组织女工集中生产。",
+      "impact": "常称中国最早的民族资本机器缫丝厂之一，不宜把“第一”当作无争议称号。",
+      "people": [
+        "q168_chenqiyuan"
+      ],
+      "sources": [
+        "v168_chenqiyuan"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v168_silk_credit",
+      "year": "1880年代",
+      "sortYear": 1880,
+      "title": "机器缫丝依赖生丝市场与信用",
+      "body": "设备、燃料、蚕茧收购和出口价格共同决定工厂盈亏。",
+      "impact": "技术输入不是自动获利，乡村金融与国际行情同样关键。",
+      "people": [
+        "q168_chenqiyuan"
+      ],
+      "sources": [
+        "v168_chenqiyuan"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v168_palace_competition",
+      "year": "1886—1889年",
+      "sortYear": 1886,
+      "title": "园工与大婚扩大宫廷支出",
+      "body": "颐和园工程、水操学堂和大婚采办在财政紧张中并行。",
+      "impact": "海防经费与园工存在交叠和转移，但精确总额有争议，不采用一个神奇数字解释海军弱点。",
+      "people": [
+        "q_guangxu",
+        "q_yixuan"
+      ],
+      "sources": [
+        "v168_dpm_yiheyuan",
+        "v168_dpm_wedding"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v168_river_repair_cost",
+      "year": "1887—1888年",
+      "sortYear": 1887,
+      "title": "郑州决口动员巨额河工",
+      "body": "堵口需要石料、秸料、船只、民夫与跨省拨款。",
+      "impact": "合龙是工程成果，也应核算征调、欠饷和灾区家庭承担的成本。",
+      "people": [
+        "q168_wudacheng"
+      ],
+      "sources": [
+        "v168_yellow_river",
+        "v168_wudacheng"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v168_korea_civilians",
+      "year": "1882—1884年",
+      "sortYear": 1882,
+      "title": "朝鲜兵乱与政变波及城市居民",
+      "body": "汉城暴力、军队进入和政权反复使居民、商人及使馆人员承受风险。",
+      "impact": "不能把两次危机只写成中日外交棋局。",
+      "people": [
+        "q168_wuchangqing"
+      ],
+      "sources": [
+        "v168_korea",
+        "v168_korea_crises"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v168_frontier_refugees",
+      "year": "1883—1885年",
+      "sortYear": 1883,
+      "title": "中越边境出现难民与运输压力",
+      "body": "战争使居民迁避，军队征用粮食、役夫和道路。",
+      "impact": "正史集中将领战功，普通人的损失需从地方与后勤线索谨慎重建。",
+      "people": [
+        "q168_cenyuying",
+        "q168_fengzicai"
+      ],
+      "sources": [
+        "v168_cssn_vietnam"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v168_mawei_families",
+      "year": "1884年",
+      "sortYear": 1884,
+      "title": "马尾阵亡者留下家庭与祭祀问题",
+      "body": "水师官兵大量死伤，地方后来形成祭祀与名录。",
+      "impact": "舰船损失数字之外，还应看抚恤、遗属和船政社区。",
+      "people": [
+        "q168_zhangpeilun"
+      ],
+      "sources": [
+        "v168_mfa_mawei"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v168_taiwan_blockade_life",
+      "year": "1884—1885年",
+      "sortYear": 1884,
+      "title": "封锁扰动台湾粮价与港口生计",
+      "body": "海运受阻影响煤炭、粮食、茶叶和港口劳作。",
+      "impact": "军事叙事不能只记录炮台得失。",
+      "people": [
+        "q165_liumingchuan"
+      ],
+      "sources": [
+        "v168_war_records"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v168_indigenous_policy",
+      "year": "1886—1891年",
+      "sortYear": 1886,
+      "title": "开山抚番进入原住民族土地",
+      "body": "道路、清丈、樟脑和驻军扩展到山地边缘。",
+      "impact": "建设叙事必须说明强制迁移、冲突与不对等土地权，不能把“开山”写成无人之地开发。",
+      "people": [
+        "q165_liumingchuan"
+      ],
+      "sources": [
+        "v168_taiwan"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v168_yellow_river_flood",
+      "year": "1887年",
+      "sortYear": 1887,
+      "title": "郑州决口造成广泛水灾",
+      "body": "黄河在郑州附近决口，豫皖多地村庄、农田与道路受淹。",
+      "impact": "约一百八十万人受灾是特定材料估计，不是精确人口普查。",
+      "people": [
+        "q168_wudacheng"
+      ],
+      "sources": [
+        "v168_yellow_river"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v168_river_relief",
+      "year": "1887—1888年",
+      "sortYear": 1887,
+      "title": "赈济与堵口同时展开",
+      "body": "官赈、捐输、迁避和河工征调交织，灾民既是受助者也可能成为劳力。",
+      "impact": "合龙日期不能代表生活已经恢复。",
+      "people": [
+        "q168_wudacheng"
+      ],
+      "sources": [
+        "v168_yellow_river"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v168_silk_women",
+      "year": "1870—1880年代",
+      "sortYear": 1870,
+      "title": "女工成为机器缫丝生产主体",
+      "body": "集中工场改变蚕丝家庭劳动的时间、技能和收入分配。",
+      "impact": "“民族工业”成就不能遮蔽工资纪律与性别化劳动。",
+      "people": [
+        "q168_chenqiyuan"
+      ],
+      "sources": [
+        "v168_chenqiyuan"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v168_wedding_labor",
+      "year": "1888—1889年",
+      "sortYear": 1888,
+      "title": "大婚采办连接各地工匠与差役",
+      "body": "礼器、织绣、陈设和运输经多机构催办。",
+      "impact": "典礼审美背后有工价、期限、材料和地方摊派。",
+      "people": [
+        "q_guangxu"
+      ],
+      "sources": [
+        "v168_dpm_wedding"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v168_qingliu_memorials",
+      "year": "1870—1880年代",
+      "sortYear": 1870,
+      "title": "清流奏议塑造舆论政治",
+      "body": "张佩纶、陈宝琛等借奏折批评人事、边防和外交。",
+      "impact": "道德声望不自动等于行政和军事能力。",
+      "people": [
+        "q168_zhangpeilun",
+        "q168_chenbaochen"
+      ],
+      "sources": [
+        "v168_qsg444"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v168_diplomatic_reporting",
+      "year": "1877—1882年",
+      "sortYear": 1877,
+      "title": "驻日使馆持续报告东亚变化",
+      "body": "何如璋等分析琉球、朝鲜与日本军政。",
+      "impact": "信息更及时不保证中枢采纳，也不意味着观察完全中立。",
+      "people": [
+        "q168_heruzhang"
+      ],
+      "sources": [
+        "v168_qsg444"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v168_war_telegrams",
+      "year": "1883—1885年",
+      "sortYear": 1883,
+      "title": "电报压缩战场与京师距离",
+      "body": "军情、谕令和外交消息加速往返。",
+      "impact": "通信变快也可能放大不完整情报和催战压力。",
+      "people": [
+        "q168_tangjiong",
+        "q168_zhangpeilun"
+      ],
+      "sources": [
+        "v168_war_records"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v168_war_press",
+      "year": "1884—1885年",
+      "sortYear": 1884,
+      "title": "报刊与图像传播战争消息",
+      "body": "沿海报刊转述战报、外交电讯和传闻。",
+      "impact": "读者看到的是筛选后的消息，不能把当天报道直接当作最终战史。",
+      "people": [
+        "q168_fengzicai"
+      ],
+      "sources": [
+        "v168_cssn_france"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v168_naval_education",
+      "year": "1885—1888年",
+      "sortYear": 1885,
+      "title": "海军制度讨论扩展到教育训练",
+      "body": "船政、北洋学堂和海军衙门讨论驾驶、轮机、测绘与操练。",
+      "impact": "购舰只是体系一环，维护、人员与跨舰队协同同样重要。",
+      "people": [
+        "q_guangxu",
+        "q_yixuan"
+      ],
+      "sources": [
+        "v168_qsg119",
+        "v168_dpm_navy"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v168_taiwan_knowledge",
+      "year": "1886—1891年",
+      "sortYear": 1886,
+      "title": "测量、电报与新式学堂服务治理",
+      "body": "地籍、铁路勘测、通信和教育共同制造新的行政知识。",
+      "impact": "地图与清册也可成为征税和进入原住民族土地的工具。",
+      "people": [
+        "q165_liumingchuan"
+      ],
+      "sources": [
+        "v168_taiwan"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v168_sericulture_book",
+      "year": "1870—1880年代",
+      "sortYear": 1870,
+      "title": "陈启沅整理蚕桑与机器经验",
+      "body": "技术知识在海外观察、地方蚕事和工场试验之间转译。",
+      "impact": "近代技术并非单向复制，地方工匠与女工参与了实际调整。",
+      "people": [
+        "q168_chenqiyuan"
+      ],
+      "sources": [
+        "v168_chenqiyuan"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v168_epigraphy_maps",
+      "year": "1880年代",
+      "sortYear": 1880,
+      "title": "吴大澂在政务之外研究金石舆图",
+      "body": "古文字摹录、边界图和工程图显示不同的证据制度。",
+      "impact": "学术名望不能替代对其军政成败的分别评价。",
+      "people": [
+        "q168_wudacheng"
+      ],
+      "sources": [
+        "v168_qsg450"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v168_wedding_archives",
+      "year": "1888—1889年",
+      "sortYear": 1888,
+      "title": "大婚档案保存礼制与物质细节",
+      "body": "礼仪处档册记录人员、物件、尺寸、期限和经费。",
+      "impact": "宫廷盛典可由制度性清单研究，不必依赖后出秘闻。",
+      "people": [
+        "q_guangxu"
+      ],
+      "sources": [
+        "v168_dpm_wedding"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
     }
   ],
   "objects": [
@@ -88008,6 +89077,117 @@
       "sources": [
         "v167_gd_telegraph",
         "v167_shanghai_gazette"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v168_obj_mawei",
+      "title": "马江昭忠祠与阵亡名录",
+      "subtitle": "从舰船损失回到官兵与遗属",
+      "symbol": "building.columns",
+      "image": null,
+      "body": "马尾海战后的祭祀、碑刻与名录保存部分阵亡者信息，也显示国家如何重建战败记忆。",
+      "note": "纪念名录仍可能遗漏夫役和非正式人员，应与船政档案互证。",
+      "people": [
+        "q168_zhangpeilun"
+      ],
+      "sources": [
+        "v168_mfa_mawei"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v168_obj_treaty",
+      "title": "《中法新约》文本",
+      "subtitle": "边界通商、越南与台湾撤军的制度结果",
+      "symbol": "doc.text",
+      "image": null,
+      "body": "条约把战场局势转化为越南地位、边界商埠、铁路优先与撤军等条款。",
+      "note": "条约文本说明外交结果，不应被一句胜负口号替代。",
+      "people": [
+        "q_guangxu",
+        "q168_fengzicai"
+      ],
+      "sources": [
+        "v168_treaty"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v168_obj_zhennan",
+      "title": "镇南关战役图像与关隘遗址",
+      "subtitle": "英雄图像之外的多人协同",
+      "symbol": "mountain.2",
+      "image": null,
+      "body": "关隘地形、后出战图与纪念设施共同塑造镇南关记忆。",
+      "note": "后出图像不是战场摄影，人物位置和动作应视为纪念性表达。",
+      "people": [
+        "q168_fengzicai"
+      ],
+      "sources": [
+        "v168_qsg459",
+        "v168_war_records"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v168_obj_taiwan",
+      "title": "台湾铁路与电报遗存",
+      "subtitle": "短线路如何改变军政通信",
+      "symbol": "tram",
+      "image": null,
+      "body": "铁路路基、车站记录、电报线路与邮政票据呈现建省初期的基础设施网络。",
+      "note": "遗存展示早期节点，不等于当时已形成覆盖全岛的公共服务。",
+      "people": [
+        "q165_liumingchuan"
+      ],
+      "sources": [
+        "v168_taiwan"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v168_obj_river",
+      "title": "郑工合龙碑与河工档册",
+      "subtitle": "工程成功和灾民代价的两类记录",
+      "symbol": "water.waves",
+      "image": null,
+      "body": "碑记强调堵口完成，料物、夫役和赈济档册则能追踪工程如何被组织。",
+      "note": "纪功文字不能替代对征调、欠饷和灾后恢复的核算。",
+      "people": [
+        "q168_wudacheng"
+      ],
+      "sources": [
+        "v168_yellow_river",
+        "v168_wudacheng"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v168_obj_silk",
+      "title": "继昌隆缫丝机器与《蚕桑谱》",
+      "subtitle": "设备、知识与女工共同组成的生产现场",
+      "symbol": "gearshape.2",
+      "image": null,
+      "body": "机器、蚕桑知识和工场记录把海外观察转化为广东地方生产。",
+      "note": "陈启沅是关键创办者，实际技术适配还依赖工匠、女工和原料网络。",
+      "people": [
+        "q168_chenqiyuan"
+      ],
+      "sources": [
+        "v168_chenqiyuan"
       ],
       "dynasties": [
         "qing"
@@ -101086,7 +102266,52 @@
             "v167_famine_press",
             "v167_relief_accounts",
             "v167_telegraph_school",
-            "v167_industrial_survey"
+            "v167_industrial_survey",
+            "v168_korea_imo",
+            "v168_daewongun",
+            "v168_gapsin",
+            "v168_tianjin_convention",
+            "v168_jiasen_change",
+            "v168_war_breakdown",
+            "v168_treaty_1885",
+            "v168_taiwan_province",
+            "v168_personal_rule",
+            "v168_paper_bridge",
+            "v168_bac_ninh",
+            "v168_mawei",
+            "v168_keelung",
+            "v168_tamsui",
+            "v168_blockade_penghu",
+            "v168_tuyen_quang",
+            "v168_zhennan",
+            "v168_langson_peace",
+            "v168_war_finance",
+            "v168_navy_yamen",
+            "v168_taiwan_land_tax",
+            "v168_taiwan_railway",
+            "v168_taiwan_telegraph",
+            "v168_silk_factory",
+            "v168_silk_credit",
+            "v168_palace_competition",
+            "v168_river_repair_cost",
+            "v168_korea_civilians",
+            "v168_frontier_refugees",
+            "v168_mawei_families",
+            "v168_taiwan_blockade_life",
+            "v168_indigenous_policy",
+            "v168_yellow_river_flood",
+            "v168_river_relief",
+            "v168_silk_women",
+            "v168_wedding_labor",
+            "v168_qingliu_memorials",
+            "v168_diplomatic_reporting",
+            "v168_war_telegrams",
+            "v168_war_press",
+            "v168_naval_education",
+            "v168_taiwan_knowledge",
+            "v168_sericulture_book",
+            "v168_epigraphy_maps",
+            "v168_wedding_archives"
           ],
           "people": [
             "q_zengjize",
@@ -101100,7 +102325,19 @@
             "q167_yanjingming",
             "q167_shengxuanhuai",
             "q167_jingyuanshan",
-            "q167_litimotai"
+            "q167_litimotai",
+            "q165_liumingchuan",
+            "q168_zhangpeilun",
+            "q168_chenbaochen",
+            "q168_heruzhang",
+            "q168_tangjiong",
+            "q168_cenyuying",
+            "q168_fengzicai",
+            "q168_liuyongfu",
+            "q168_tangjingsong",
+            "q168_wuchangqing",
+            "q168_wudacheng",
+            "q168_chenqiyuan"
           ]
         },
         {
@@ -101247,7 +102484,31 @@
         "v167_xiangyin_journey",
         "v167_hebei_rail",
         "v167_gd_telegraph",
-        "v167_shanghai_gazette"
+        "v167_shanghai_gazette",
+        "v168_dpm_guangxu",
+        "v168_dpm_wedding",
+        "v168_dpm_yiheyuan",
+        "v168_dpm_navy",
+        "v168_mfa_mawei",
+        "v168_treaty",
+        "v168_cssn_france",
+        "v168_cssn_vietnam",
+        "v168_qsg23",
+        "v168_qsg444",
+        "v168_qsg419",
+        "v168_qsg458",
+        "v168_qsg459",
+        "v168_qsg463",
+        "v168_qsg416",
+        "v168_qsg450",
+        "v168_qsg119",
+        "v168_war_records",
+        "v168_taiwan",
+        "v168_chenqiyuan",
+        "v168_korea",
+        "v168_korea_crises",
+        "v168_yellow_river",
+        "v168_wudacheng"
       ]
     },
     {
@@ -210444,88 +211705,98 @@
     },
     {
       "person": "q165_liumingchuan",
-      "title": "刘铭传：淮军成长与围堵捻军",
-      "dek": "早年军功塑造了他的行政风格；后来的台湾名臣形象不能替代对内战经验的审视。",
+      "title": "刘铭传：台湾防务与治理代价",
+      "dek": "从基隆、淡水战场到建省后的铁路和清丈，他的改革必须与海上劣势、财政征取及原住民族土地同时评估。",
       "sections": [
         {
-          "id": "v165_liumingchuan_1",
-          "title": "安徽团练是进入国家军队的入口",
-          "text": "刘铭传在安徽乡里组织武装，太平军战争使地方自卫、私人纠纷和官军征募交织。李鸿章组建淮军时吸收这些练勇，刘的铭字营由此进入更大军事网络。团练地方性带来信任和战斗力，也使兵员依附将领而非抽象国家。",
+          "id": "v168_liumingchuan_1",
+          "title": "基隆失守与淡水守住",
+          "text": "1884年刘铭传赴台主持防务。法军在基隆取得立足点，淡水守军则击退登陆。两处结果不同，不能只用“台湾保卫成功”概括。刘铭传负责总体部署，具体作战又依赖孙开华等将领、炮台、水雷和地方运输。\n\n把这段经历放回同一时期，1885年的“清廷决定台湾建省”尤其重要：战后清廷调整福建台湾体制，刘铭传主持筹办。建省增强行政资源，却不等于中央能力已均匀覆盖全岛。",
           "sources": [
-            "v165_qsg416",
-            "v165_nmc_army_pay"
+            "v168_qsg416",
+            "v168_taiwan",
+            "v168_war_records"
           ],
           "kind": "史实与解读",
           "events": [
-            "v165_huai_arrives",
-            "v165_east_nian_end"
+            "v168_taiwan_province",
+            "v168_keelung"
           ],
           "people": []
         },
         {
-          "id": "v165_liumingchuan_2",
-          "title": "上海训练连接本地兵员与外国军火",
-          "text": "淮军到上海后接触新式枪炮、城市财政与外国雇佣军。训练和装备升级并非全军同步，弹药、教习与维修都需持续经费。刘铭传在苏南战事升迁，军功记录同时包含攻城、俘斩和招降，不能只以技术进步概括。",
+          "id": "v168_liumingchuan_2",
+          "title": "封锁揭示制海权差距",
+          "text": "法国舰队封锁台湾并在战争末期占领澎湖，港口贸易、煤粮运输和居民生计受扰。陆上防守没有消除海上劣势。《中法新约》后法国撤离台湾据点，属于条约交换，而不是清军逐处以战斗收复。\n\n把这段经历放回同一时期，1884年的“基隆争夺持续拉锯”尤其重要：法军登陆并控制部分矿区和港口，清军退守周边防线。台湾战场并非处处获胜，基隆的失守必须与淡水防御并列。",
           "sources": [
-            "v165_qsg416",
-            "v165_nmc_army_pay"
+            "v168_qsg416",
+            "v168_taiwan",
+            "v168_war_records"
           ],
           "kind": "史实与解读",
           "events": [
-            "v165_huai_arrives",
-            "v165_east_nian_end"
+            "v168_keelung",
+            "v168_tamsui"
           ],
           "people": []
         },
         {
-          "id": "v165_liumingchuan_3",
-          "title": "苏南战争改变城市和乡村秩序",
-          "text": "江阴、无锡、常州等战事涉及水陆交通、地方守军和居民迁移。淮军胜利帮助清廷恢复州县，却也伴随征粮、军纪和投降者处置问题。将领奏报从军事目标出发，居民经历需由地方材料与物证补足。",
+          "id": "v168_liumingchuan_3",
+          "title": "建省后的财政基础",
+          "text": "清廷决定台湾建省后，刘铭传整顿田赋、厘金、盐务和樟脑等收入。清丈增加行政可见度，为工程筹款，也触动隐田、业户和既有权利。账面增收不能直接等同居民负担公平。\n\n把这段经历放回同一时期，1884年的“淡水守军击退法军登陆”尤其重要：孙开华等守军在沪尾阻止法军扩大登陆。刘铭传统筹防务，但具体胜利来自地方守军、水雷和多层协作。",
           "sources": [
-            "v165_qsg416",
-            "v165_nmc_army_pay"
+            "v168_qsg416",
+            "v168_taiwan",
+            "v168_war_records"
           ],
           "kind": "史实与解读",
           "events": [
-            "v165_huai_arrives",
-            "v165_east_nian_end"
+            "v168_tamsui",
+            "v168_blockade_penghu"
           ],
           "people": []
         },
         {
-          "id": "v165_liumingchuan_4",
-          "title": "围堵捻军依赖区域协同",
-          "text": "对东捻作战时，刘铭传执行追击、河防和包围，需要李鸿章统筹多军，并借助地方情报与粮运。任柱死亡、赖文光覆败被写成决定性军功，但战果来自长期压缩活动空间。严格围堵也会限制百姓渡河、贸易和迁徙。",
+          "id": "v168_liumingchuan_4",
+          "title": "铁路电报不是完成式网络",
+          "text": "铁路向基隆、新竹方向分段推进，电报与邮政也扩展。它们是重要早期实践，但路线短、维护难、成本高，不能按后来全岛网络想象当时覆盖。技术设施同时服务军务、征税和资源运输。\n\n把这段经历放回同一时期，1884—1885年的“封锁台湾并占领澎湖”尤其重要：法国海军封锁港口，战争末期攻占澎湖。海上封锁影响粮食、煤炭与贸易，说明陆战胜利不能抵消制海权劣势。",
           "sources": [
-            "v165_qsg416",
-            "v165_nmc_army_pay"
+            "v168_qsg416",
+            "v168_taiwan",
+            "v168_war_records",
+            "v168_treaty"
           ],
           "kind": "史实与解读",
           "events": [
-            "v165_huai_arrives",
-            "v165_east_nian_end"
+            "v168_blockade_penghu",
+            "v168_war_finance"
           ],
           "people": []
         },
         {
-          "id": "v165_liumingchuan_5",
-          "title": "从战场能力到治理能力并非自然转换",
-          "text": "刘铭传后来治理台湾时重视交通、军防与财政，常被追溯到淮军经验。军事组织确实训练了项目动员和用人，但战场命令模式也可能扩大强制。理解其一生，应把早年内战、后来海防和地方治理分段评价，而非用晚年成就洗去前期暴力。\n\n淮军档案中的营制和战功还需要与军饷册、地方志互证。名册能显示编制与发饷，不一定等于实际到员；奏报能说明上级如何评价一战，也不等于完整伤亡统计。刘铭传的上升路径正建立在这种军功核报制度之中。",
+          "id": "v168_liumingchuan_5",
+          "title": "山地政策的土地边界",
+          "text": "道路、驻军、清丈与樟脑利益进入山地边缘，官方称“开山抚番”。这个用语把原住民族土地写成待开发空间，遮蔽武力、不对等交易和迁移。评价刘铭传，既要承认制度创新，也不能让现代化叙事替代对代价的说明。\n\n把这段经历放回同一时期，1883—1885年的“多战场军费挤压财政”尤其重要：越南、福建、台湾及沿海设防同时需要饷械、运输和借款。经费分属不同体系，账面拨款不等于前线按时收到。",
           "sources": [
-            "v165_qsg416",
-            "v165_nmc_army_pay"
+            "v168_qsg416",
+            "v168_taiwan",
+            "v168_war_records",
+            "v168_qsg23"
           ],
           "kind": "史实与解读",
           "events": [
-            "v165_huai_arrives",
-            "v165_east_nian_end"
+            "v168_war_finance",
+            "v168_taiwan_land_tax"
           ],
           "people": []
         }
       ],
       "sources": [
-        "v165_qsg416",
-        "v165_nmc_army_pay"
+        "v168_qsg416",
+        "v168_taiwan",
+        "v168_war_records",
+        "v168_treaty",
+        "v168_qsg23"
       ]
     },
     {
@@ -212579,6 +213850,998 @@
         "v167_timothy_study",
         "v167_cssn_famine",
         "v167_shanxi_famine"
+      ]
+    },
+    {
+      "person": "q168_zhangpeilun",
+      "title": "张佩纶：奏议声望与马尾责任",
+      "dek": "从清流言官到福建海防大臣，他的生涯提醒人们：锐利批评、制度方案与现场指挥是三种不同能力。",
+      "sections": [
+        {
+          "id": "v168_zhangpeilun_1",
+          "title": "奏折建立的政治声望",
+          "text": "张佩纶以弹劾和边防奏议进入清流名列。他敢于指出军政积弊，也善于用道德语言组织论证。奏议让问题进入中枢视野，却未必包含可执行的后勤、训练与跨部门协调方案；不能因后来战败便否认此前批评，也不能因文字有力就预设他能统军。\n\n把这段经历放回同一时期，1884年的“甲申易枢重组中枢”尤其重要：军机处和总理衙门要员被更换，恭亲王退出权力中枢。人事重组发生在中法危机中，不能用单一宫廷私怨解释。",
+          "sources": [
+            "v168_qsg444",
+            "v168_mfa_mawei",
+            "v168_qsg23"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_jiasen_change",
+            "v168_mawei"
+          ],
+          "people": []
+        },
+        {
+          "id": "v168_zhangpeilun_2",
+          "title": "从评论者转为负责者",
+          "text": "中法危机中他被派往福建会办海防，从审议别人转为承担舰队、炮台和官员协调。临战时法国舰队已在马尾，谈判与戒备并行，清廷又限制先行开火。制度授权含混使地方既怕挑衅又须备战，现场判断空间因而十分狭窄。\n\n把这段经历放回同一时期，1884年的“马尾海战重创福建水师”尤其重要：法国舰队在紧张交涉中发动攻击，福建水师舰船和船政设施遭重创。限制开火的命令、戒备不足和现场处置共同构成责任，不能只用突袭或个人怯战概括。",
+          "sources": [
+            "v168_qsg444",
+            "v168_mfa_mawei"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_mawei",
+            "v168_mawei_families"
+          ],
+          "people": []
+        },
+        {
+          "id": "v168_zhangpeilun_3",
+          "title": "马尾不是一个人的失败",
+          "text": "1884年法国舰队发动攻击，福建水师迅速遭重创。张佩纶离开前沿、指挥准备不足，确有应负责任；但舰队配置、武器性能、交战规则和中枢决策同样构成原因。不能把整场失败化为一名文官怯战，也不能以体系问题免除个人职责。\n\n把这段经历放回同一时期，1884年的“马尾阵亡者留下家庭与祭祀问题”尤其重要：水师官兵大量死伤，地方后来形成祭祀与名录。舰船损失数字之外，还应看抚恤、遗属和船政社区。",
+          "sources": [
+            "v168_qsg444",
+            "v168_mfa_mawei"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_mawei_families",
+            "v168_qingliu_memorials"
+          ],
+          "people": []
+        },
+        {
+          "id": "v168_zhangpeilun_4",
+          "title": "处分与政治记忆",
+          "text": "战后张佩纶被遣戍，清流声望严重受损。官修传记常以马尾成败反照其早年言论，形成“能言不能行”的道德结构。这种结构便于人物评判，却可能把复杂的海军制度、外交时序和其他负责者从画面中移走。\n\n把这段经历放回同一时期，1870—1880年代的“清流奏议塑造舆论政治”尤其重要：张佩纶、陈宝琛等借奏折批评人事、边防和外交。道德声望不自动等于行政和军事能力。",
+          "sources": [
+            "v168_qsg444",
+            "v168_mfa_mawei"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_qingliu_memorials",
+            "v168_war_telegrams"
+          ],
+          "people": []
+        },
+        {
+          "id": "v168_zhangpeilun_5",
+          "title": "把锐论放回制度现场",
+          "text": "阅读张佩纶最有价值的方式，是把奏折主张同实际调兵、通信、经费和命令逐项对照。他后来与李鸿章家族的关系属于另一阶段，不应用私人经历倒推马尾责任。人物评价应在文本能力、行政能力与战争责任之间保持区分。\n\n把这段经历放回同一时期，1883—1885年的“电报压缩战场与京师距离”尤其重要：军情、谕令和外交消息加速往返。通信变快也可能放大不完整情报和催战压力。",
+          "sources": [
+            "v168_qsg444",
+            "v168_mfa_mawei",
+            "v168_war_records"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_war_telegrams",
+            "v168_jiasen_change"
+          ],
+          "people": []
+        }
+      ],
+      "sources": [
+        "v168_qsg444",
+        "v168_mfa_mawei",
+        "v168_qsg23",
+        "v168_war_records"
+      ]
+    },
+    {
+      "person": "q168_chenbaochen",
+      "title": "陈宝琛：清流、边议与长期退居",
+      "dek": "他在光绪前期以奏议介入边防和吏治，随后因中法战局获谴离京；晚年的帝师身份只是漫长生涯的一部分。",
+      "sections": [
+        {
+          "id": "v168_chenbaochen_1",
+          "title": "清流不是一个正式政党",
+          "text": "陈宝琛与张佩纶等因直言被后人归入清流。这个称呼概括共同风格，却不代表成员有统一组织、政策或利益。他们借奏折监督用人和边务，在信息不足的京师政治中，声誉、道德判断与事实核验常纠缠在一起。\n\n把这段经历放回同一时期，1870—1880年代的“清流奏议塑造舆论政治”尤其重要：张佩纶、陈宝琛等借奏折批评人事、边防和外交。道德声望不自动等于行政和军事能力。",
+          "sources": [
+            "v168_qsg444",
+            "v168_qsg23"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_qingliu_memorials",
+            "v168_korea_imo"
+          ],
+          "people": []
+        },
+        {
+          "id": "v168_chenbaochen_2",
+          "title": "边防奏议的知识来源",
+          "text": "他依据邸报、奏折和官员网络讨论东北、越南与海防。言官能横向比较政策，但距前线遥远，所见多经层层转述。常驻使馆、电报逐渐增加信息速度，仍无法消除战报夸大、地方隐瞒和跨部门壁垒。\n\n把这段经历放回同一时期，1882年的“壬午军乱后清军进入朝鲜”尤其重要：朝鲜军乱冲击王宫和日本使馆，吴长庆所部奉命入境。清军恢复王宫控制并驻留，也把朝鲜内政更深卷入中日竞争。",
+          "sources": [
+            "v168_qsg444",
+            "v168_qsg23",
+            "v168_korea_crises"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_korea_imo",
+            "v168_daewongun"
+          ],
+          "people": []
+        },
+        {
+          "id": "v168_chenbaochen_3",
+          "title": "战局失利与政治追责",
+          "text": "中法战争期间陈宝琛参与筹议，北宁等处失利后受到处分。追责既回应现实失败，也体现中枢通过人事处置重建权威。应分别考察他提出过什么、负责到何种程度以及处分依据，不能让清流标签代替证据。\n\n把这段经历放回同一时期，1882年的“大院君被带离朝鲜”尤其重要：清军控制被视为军乱政治核心的大院君，将其押往中国。行动具有强制性，不能只写成和平调停，也触及朝鲜政治自主。",
+          "sources": [
+            "v168_qsg444",
+            "v168_qsg23",
+            "v168_korea_crises"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_daewongun",
+            "v168_qingliu_memorials"
+          ],
+          "people": []
+        },
+        {
+          "id": "v168_chenbaochen_4",
+          "title": "退居福建的教育活动",
+          "text": "离开中枢后，他长期居闽，参与地方教育与文献活动。退居并不等于完全退出公共生活，地方书院、家族网络和官绅交往仍能生产知识与人才。这也显示晚清政治不只发生在军机处和总理衙门。\n\n把这段经历放回同一时期，1870—1880年代的“清流奏议塑造舆论政治”尤其重要：张佩纶、陈宝琛等借奏折批评人事、边防和外交。道德声望不自动等于行政和军事能力。",
+          "sources": [
+            "v168_qsg444",
+            "v168_qsg23"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_qingliu_memorials",
+            "v168_korea_imo"
+          ],
+          "people": []
+        },
+        {
+          "id": "v168_chenbaochen_5",
+          "title": "晚年帝师如何被回看",
+          "text": "陈宝琛后来成为溥仪师傅，使其形象常被清室终局覆盖。若从光绪前期观察，他更像一个在奏议政治、边疆危机和地方教育之间移动的官员。忠君立场需要说明，但不必把每次选择都解释成预先注定的遗老道路。\n\n把这段经历放回同一时期，1882年的“壬午军乱后清军进入朝鲜”尤其重要：朝鲜军乱冲击王宫和日本使馆，吴长庆所部奉命入境。清军恢复王宫控制并驻留，也把朝鲜内政更深卷入中日竞争。",
+          "sources": [
+            "v168_qsg444",
+            "v168_qsg23",
+            "v168_korea_crises"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_korea_imo",
+            "v168_daewongun"
+          ],
+          "people": []
+        }
+      ],
+      "sources": [
+        "v168_qsg444",
+        "v168_qsg23",
+        "v168_korea_crises"
+      ]
+    },
+    {
+      "person": "q168_heruzhang",
+      "title": "何如璋：驻日观察与预警的限度",
+      "dek": "常驻使馆让清廷第一次持续观察明治日本；他的报告有预见，也受信息、立场和中枢采纳能力限制。",
+      "sections": [
+        {
+          "id": "v168_heruzhang_1",
+          "title": "常驻外交改变信息节奏",
+          "text": "何如璋出使日本后，不再只在使团短暂停留中观察。他能够跟踪政府人事、军备、报刊和港口变化，再经电报与公文报告。常驻制度提高连续性，却需要翻译、经费、可靠消息源和中枢阅读能力共同支撑。\n\n把这段经历放回同一时期，1877—1882年的“驻日使馆持续报告东亚变化”尤其重要：何如璋等分析琉球、朝鲜与日本军政。信息更及时不保证中枢采纳，也不意味着观察完全中立。",
+          "sources": [
+            "v168_qsg444",
+            "v168_korea_crises"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_diplomatic_reporting",
+            "v168_korea_imo"
+          ],
+          "people": []
+        },
+        {
+          "id": "v168_heruzhang_2",
+          "title": "琉球问题中的警告",
+          "text": "日本处置琉球时，何如璋持续报告并主张交涉。他的判断显示对海疆连锁影响的敏感，但清廷同时面对条约体系、证据、军力与其他边疆危机。预警正确不等于存在低成本解决方案，也不能忽略琉球人的政治主体性。\n\n把这段经历放回同一时期，1882年的“壬午军乱后清军进入朝鲜”尤其重要：朝鲜军乱冲击王宫和日本使馆，吴长庆所部奉命入境。清军恢复王宫控制并驻留，也把朝鲜内政更深卷入中日竞争。",
+          "sources": [
+            "v168_qsg444",
+            "v168_korea_crises"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_korea_imo",
+            "v168_daewongun"
+          ],
+          "people": []
+        },
+        {
+          "id": "v168_heruzhang_3",
+          "title": "朝鲜成为新的观察焦点",
+          "text": "壬午军乱前后，日本与清朝在朝鲜的驻兵、通商和改革主张冲突加深。何如璋式的使馆报告帮助中枢理解日本动作，却也常从清朝安全视角安排朝鲜位置。朝鲜不是两国争夺的空白棋盘，其内部派别有自己的议程。\n\n把这段经历放回同一时期，1882年的“大院君被带离朝鲜”尤其重要：清军控制被视为军乱政治核心的大院君，将其押往中国。行动具有强制性，不能只写成和平调停，也触及朝鲜政治自主。",
+          "sources": [
+            "v168_qsg444",
+            "v168_korea_crises"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_daewongun",
+            "v168_diplomatic_reporting"
+          ],
+          "people": []
+        },
+        {
+          "id": "v168_heruzhang_4",
+          "title": "报告如何进入决策",
+          "text": "外交官可提供材料，却无权决定中枢如何在新疆、越南、海军和朝鲜之间分配资源。奏报还会经过总理衙门、军机处与地方督抚解读。把没有采纳都归因于顽固，或把报告写成完全准确的预言，都过于简单。\n\n把这段经历放回同一时期，1877—1882年的“驻日使馆持续报告东亚变化”尤其重要：何如璋等分析琉球、朝鲜与日本军政。信息更及时不保证中枢采纳，也不意味着观察完全中立。",
+          "sources": [
+            "v168_qsg444",
+            "v168_korea_crises"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_diplomatic_reporting",
+            "v168_korea_imo"
+          ],
+          "people": []
+        },
+        {
+          "id": "v168_heruzhang_5",
+          "title": "信息现代化并非决策现代化",
+          "text": "使馆、电报与翻译构成新型知识基础设施，但组织仍可能选择性接收消息。何如璋的价值在于让我们看见信息从东京到北京的路径及损耗，而不仅是评判某条建议后来是否应验。制度有了眼睛，不代表行动的手脚已经协调。\n\n把这段经历放回同一时期，1882年的“壬午军乱后清军进入朝鲜”尤其重要：朝鲜军乱冲击王宫和日本使馆，吴长庆所部奉命入境。清军恢复王宫控制并驻留，也把朝鲜内政更深卷入中日竞争。",
+          "sources": [
+            "v168_qsg444",
+            "v168_korea_crises"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_korea_imo",
+            "v168_daewongun"
+          ],
+          "people": []
+        }
+      ],
+      "sources": [
+        "v168_qsg444",
+        "v168_korea_crises"
+      ]
+    },
+    {
+      "person": "q168_tangjiong",
+      "title": "唐炯：北宁失守与边疆后勤",
+      "dek": "从云南财政到越南军务，他的经历揭示边疆战争中军费、粮道、统属和追责如何相互牵连。",
+      "sections": [
+        {
+          "id": "v168_tangjiong_1",
+          "title": "云南经验成为用人依据",
+          "text": "唐炯长期处理云南善后、盐务和军需，因而被视为熟悉西南的人选。地方经验可帮助筹饷和识别交通，却不能自动转化为跨境联军指挥。越南境内存在滇军、桂军、越军和黑旗军，各有命令与补给来源。\n\n把这段经历放回同一时期，1883—1884年的“越南交涉滑向全面战争”尤其重要：驻越军队、法国扩张与反复谈判并行，临时协议未能约束前线。宗藩安全、越南自身政治和法国殖民目标互相冲突。",
+          "sources": [
+            "v168_qsg458",
+            "v168_cssn_vietnam",
+            "v168_cssn_france"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_war_breakdown",
+            "v168_bac_ninh"
+          ],
+          "people": []
+        },
+        {
+          "id": "v168_tangjiong_2",
+          "title": "进入越南的模糊战争",
+          "text": "清廷一面避免正式宣战，一面让地方军队越境布防。这种安排保留外交回旋，也使责任链模糊：前线究竟守何处、受谁节制、何时可战，并不总有一致答案。唐炯的任务因此兼具军事、外交和后勤三重矛盾。\n\n把这段经历放回同一时期，1884年的“北宁失守暴露多头指挥”尤其重要：滇桂各军与越南部队防务分散，法军攻占北宁。战败不能只归咎一名将领，后勤、命令和跨军协同均有责任。",
+          "sources": [
+            "v168_qsg458",
+            "v168_cssn_vietnam",
+            "v168_qsg419"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_bac_ninh",
+            "v168_war_finance"
+          ],
+          "people": []
+        },
+        {
+          "id": "v168_tangjiong_3",
+          "title": "北宁失守不能只找替罪者",
+          "text": "1884年法军攻占北宁，守军撤退暴露侦察、工事、军心与多头指挥问题。唐炯作为高级负责者被处分有其依据，但把败局只归于个人畏缩，会遮蔽临时拼接的军队体系和中枢犹疑。追责应与制度分析并存。\n\n把这段经历放回同一时期，1883—1885年的“多战场军费挤压财政”尤其重要：越南、福建、台湾及沿海设防同时需要饷械、运输和借款。经费分属不同体系，账面拨款不等于前线按时收到。",
+          "sources": [
+            "v168_qsg458",
+            "v168_cssn_vietnam",
+            "v168_qsg23"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_war_finance",
+            "v168_war_telegrams"
+          ],
+          "people": []
+        },
+        {
+          "id": "v168_tangjiong_4",
+          "title": "军需比战报更接近战争底部",
+          "text": "饷银能否兑换、粮食能否送达、夫役是否逃散，决定纸面兵额能否作战。越南雨季、道路和疫病增加运输困难，地方征发又把成本转给边民。将领传记往往略写这些环节，理解败局却不能略过。\n\n把这段经历放回同一时期，1883—1885年的“电报压缩战场与京师距离”尤其重要：军情、谕令和外交消息加速往返。通信变快也可能放大不完整情报和催战压力。",
+          "sources": [
+            "v168_qsg458",
+            "v168_cssn_vietnam",
+            "v168_war_records"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_war_telegrams",
+            "v168_war_breakdown"
+          ],
+          "people": []
+        },
+        {
+          "id": "v168_tangjiong_5",
+          "title": "失败之后仍须区分事实与褒贬",
+          "text": "官修传记用成败组织人物评价，唐炯尤其容易成为北宁的代名词。更稳妥的阅读是把他的奏报、处分和其他军队记录并列，看哪些是可核行动、哪些是战后自辩。失败确实发生，原因却不止一个人格判断。\n\n把这段经历放回同一时期，1883—1884年的“越南交涉滑向全面战争”尤其重要：驻越军队、法国扩张与反复谈判并行，临时协议未能约束前线。宗藩安全、越南自身政治和法国殖民目标互相冲突。",
+          "sources": [
+            "v168_qsg458",
+            "v168_cssn_vietnam",
+            "v168_cssn_france"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_war_breakdown",
+            "v168_bac_ninh"
+          ],
+          "people": []
+        }
+      ],
+      "sources": [
+        "v168_qsg458",
+        "v168_cssn_vietnam",
+        "v168_cssn_france",
+        "v168_qsg419",
+        "v168_qsg23",
+        "v168_war_records"
+      ]
+    },
+    {
+      "person": "q168_cenyuying",
+      "title": "岑毓英：滇军、越南与多头边防",
+      "dek": "他把云南战争积累的军政网络带入中法冲突，既提供动员能力，也显示地方化军队难以统一协调。",
+      "sections": [
+        {
+          "id": "v168_cenyuying_1",
+          "title": "云南战后的权力基础",
+          "text": "岑毓英在云南战争与善后中建立军队、粮饷和官员网络。这样的地方化能力使中枢在越南危机中依赖滇军，却也意味着军队首先熟悉本省供应与主帅关系。中央名义统筹和地方实际控制之间存在距离。\n\n把这段经历放回同一时期，1883—1884年的“越南交涉滑向全面战争”尤其重要：驻越军队、法国扩张与反复谈判并行，临时协议未能约束前线。宗藩安全、越南自身政治和法国殖民目标互相冲突。",
+          "sources": [
+            "v168_qsg419",
+            "v168_cssn_vietnam",
+            "v168_cssn_france"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_war_breakdown",
+            "v168_bac_ninh"
+          ],
+          "people": []
+        },
+        {
+          "id": "v168_cenyuying_2",
+          "title": "为什么进入越南",
+          "text": "法国向越南北部推进威胁云南边境与商路，清廷又以传统关系支持越方。滇军越境布防兼有安全与宗藩考虑，但越南朝廷、地方将领和居民并非同一意志。不能把入越军队简单写成单向援助。\n\n把这段经历放回同一时期，1884年的“北宁失守暴露多头指挥”尤其重要：滇桂各军与越南部队防务分散，法军攻占北宁。战败不能只归咎一名将领，后勤、命令和跨军协同均有责任。",
+          "sources": [
+            "v168_qsg419",
+            "v168_cssn_vietnam",
+            "v168_qsg458"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_bac_ninh",
+            "v168_zhennan"
+          ],
+          "people": []
+        },
+        {
+          "id": "v168_cenyuying_3",
+          "title": "滇桂军之间的协调难题",
+          "text": "不同督抚统辖的军队在北越并存，命令、情报和战功计算各自成套。北宁失利及后续作战显示，多支军队并不因共同对敌就自动形成联合司令部。岑毓英能够动员，仍难完全控制其他系统。\n\n把这段经历放回同一时期，1885年的“镇南关反攻扭转边境战局”尤其重要：冯子材与王孝祺、苏元春等部反击法军并推进谅山。不能把多人协同、边民运输和法军处境压缩为单一英雄故事。",
+          "sources": [
+            "v168_qsg419",
+            "v168_cssn_vietnam",
+            "v168_qsg459",
+            "v168_war_records"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_zhennan",
+            "v168_langson_peace"
+          ],
+          "people": []
+        },
+        {
+          "id": "v168_cenyuying_4",
+          "title": "镇南关后的推进",
+          "text": "镇南关反攻后，滇桂方向战事出现有利变化。岑毓英参与的西线压力与冯子材等东线行动应放在同一战局中观察。任何一路胜利都不能证明清军已具备长期占领越南、持续供给大军的能力。\n\n把这段经历放回同一时期，1885年的“谅山进展与议和同时发生”尤其重要：边军向越南境内推进时，清廷依据总体财政和外交判断议和。战术优势不自动等于可长期占领，议和也不能抹去前线胜利。",
+          "sources": [
+            "v168_qsg419",
+            "v168_cssn_vietnam",
+            "v168_treaty",
+            "v168_cssn_france"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_langson_peace",
+            "v168_frontier_refugees"
+          ],
+          "people": []
+        },
+        {
+          "id": "v168_cenyuying_5",
+          "title": "地方军政遗产的两面",
+          "text": "地方化军队帮助清廷应对紧急战争，却使国家财政、训练和指挥更碎片化。岑毓英不应只被写成边功名臣或封疆军阀；他的生涯更能说明晚清如何借地方网络维持边防，以及这种办法为何难以形成统一军事制度。\n\n把这段经历放回同一时期，1883—1885年的“中越边境出现难民与运输压力”尤其重要：战争使居民迁避，军队征用粮食、役夫和道路。正史集中将领战功，普通人的损失需从地方与后勤线索谨慎重建。",
+          "sources": [
+            "v168_qsg419",
+            "v168_cssn_vietnam"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_frontier_refugees",
+            "v168_war_breakdown"
+          ],
+          "people": []
+        }
+      ],
+      "sources": [
+        "v168_qsg419",
+        "v168_cssn_vietnam",
+        "v168_cssn_france",
+        "v168_qsg458",
+        "v168_qsg459",
+        "v168_war_records",
+        "v168_treaty"
+      ]
+    },
+    {
+      "person": "q168_fengzicai",
+      "title": "冯子材：镇南关胜利的协同现场",
+      "dek": "他的前线指挥不可抹去，但关前关后的作战由多军、民夫、地形和法军决策共同塑造。",
+      "sections": [
+        {
+          "id": "v168_fengzicai_1",
+          "title": "退居老将为何再被起用",
+          "text": "冯子材有长期广西军旅经验，中法战局恶化后再赴边关。他熟悉地方道路、军队和防御方法，这些经验比抽象勇气更关键。重新起用也显示清廷在危机中依赖个人网络，而非完备的常备指挥体系。\n\n把这段经历放回同一时期，1885年的“《中法新约》结束战争”尤其重要：清廷承认法国与越南的条约并开放边界商埠，法国撤出台湾占领点。局部战胜没有逆转清廷退出越南的外交结果，也不是简单的战胜或战败标签。",
+          "sources": [
+            "v168_qsg459",
+            "v168_war_records",
+            "v168_treaty"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_treaty_1885",
+            "v168_zhennan"
+          ],
+          "people": []
+        },
+        {
+          "id": "v168_fengzicai_2",
+          "title": "关前工事与近距离作战",
+          "text": "镇南关一带的关隘、壕墙和山地限制法军展开。冯子材组织部队坚守反击，但参战还有王孝祺、苏元春等部。后世图像常把一位老将置于中央，真实战场则依赖多支军队和运输人员。\n\n把这段经历放回同一时期，1885年的“镇南关反攻扭转边境战局”尤其重要：冯子材与王孝祺、苏元春等部反击法军并推进谅山。不能把多人协同、边民运输和法军处境压缩为单一英雄故事。",
+          "sources": [
+            "v168_qsg459",
+            "v168_war_records"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_zhennan",
+            "v168_langson_peace"
+          ],
+          "people": []
+        },
+        {
+          "id": "v168_fengzicai_3",
+          "title": "胜利之后的谅山进展",
+          "text": "法军后撤后，清军向谅山方向推进，前线士气和谈判位置改善。战术追击仍受补给、疾病和越境距离限制，不能由数日胜利推导出可长期控制北越。军事史需要把时间和空间边界说清。\n\n把这段经历放回同一时期，1885年的“谅山进展与议和同时发生”尤其重要：边军向越南境内推进时，清廷依据总体财政和外交判断议和。战术优势不自动等于可长期占领，议和也不能抹去前线胜利。",
+          "sources": [
+            "v168_qsg459",
+            "v168_war_records",
+            "v168_treaty",
+            "v168_cssn_france"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_langson_peace",
+            "v168_frontier_refugees"
+          ],
+          "people": []
+        },
+        {
+          "id": "v168_fengzicai_4",
+          "title": "议和不是否定胜利",
+          "text": "《中法新约》确认法国在越南的优势，常被概括为“法国不胜而胜、中国不败而败”。口号抓住战场与外交落差，却掩盖多战场差异、财政约束和越南主权。冯子材的胜利真实存在，但没有自动决定全部战争结果。\n\n把这段经历放回同一时期，1883—1885年的“中越边境出现难民与运输压力”尤其重要：战争使居民迁避，军队征用粮食、役夫和道路。正史集中将领战功，普通人的损失需从地方与后勤线索谨慎重建。",
+          "sources": [
+            "v168_qsg459",
+            "v168_war_records",
+            "v168_cssn_vietnam"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_frontier_refugees",
+            "v168_war_press"
+          ],
+          "people": []
+        },
+        {
+          "id": "v168_fengzicai_5",
+          "title": "英雄记忆如何形成",
+          "text": "镇南关被纪念为抵抗外侮的重要象征，冯子材也成为核心人物。纪念能够保存共同经验，同时倾向简化协作者、伤亡与边民负担。尊重个人勇气与恢复多人协同并不冲突，反而让胜利更接近历史现场。\n\n把这段经历放回同一时期，1884—1885年的“报刊与图像传播战争消息”尤其重要：沿海报刊转述战报、外交电讯和传闻。读者看到的是筛选后的消息，不能把当天报道直接当作最终战史。",
+          "sources": [
+            "v168_qsg459",
+            "v168_war_records",
+            "v168_cssn_france"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_war_press",
+            "v168_treaty_1885"
+          ],
+          "people": []
+        }
+      ],
+      "sources": [
+        "v168_qsg459",
+        "v168_war_records",
+        "v168_treaty",
+        "v168_cssn_france",
+        "v168_cssn_vietnam"
+      ]
+    },
+    {
+      "person": "q168_liuyongfu",
+      "title": "刘永福：黑旗军的多重归属",
+      "dek": "黑旗军既抗击法国扩张，也在越南北部建立自己的军事与财政空间；他的身份不能被单一国籍和官衔概括。",
+      "sections": [
+        {
+          "id": "v168_liuyongfu_1",
+          "title": "从边境武装到越南授职",
+          "text": "刘永福率黑旗军进入越南北部，逐渐获得越南方面授职，并控制部分交通与税收。这个群体有华人来源，却不是一开始就由清廷编制、供饷的正规军。流动边疆中的归属比后来国族叙事更复杂。\n\n把这段经历放回同一时期，1883年的“纸桥战事扩大北越冲突”尤其重要：刘永福黑旗军在河内附近与法军交战，法国指挥官李威利阵亡。黑旗军受越南官职和清廷联络影响，仍保有自身组织与利益。",
+          "sources": [
+            "v168_qsg463",
+            "v168_cssn_vietnam"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_paper_bridge",
+            "v168_tuyen_quang"
+          ],
+          "people": []
+        },
+        {
+          "id": "v168_liuyongfu_2",
+          "title": "纸桥战事与抗法声望",
+          "text": "黑旗军在纸桥等战斗中重创法军，刘永福由此获得声望。战果依赖地形、伏击和地方网络，不代表拥有与法国海陆军全面对抗的资源。战报中的人数和损失各有立场，应避免只取最戏剧化数字。\n\n把这段经历放回同一时期，1884—1885年的“宣光围攻牵制法军”尤其重要：刘永福、唐景崧等参与围攻宣光，法军最终解围。战斗显示联合作战能力，也暴露补给、统属和战果叙述的差异。",
+          "sources": [
+            "v168_qsg463",
+            "v168_cssn_vietnam"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_tuyen_quang",
+            "v168_korea_imo"
+          ],
+          "people": []
+        },
+        {
+          "id": "v168_liuyongfu_3",
+          "title": "清廷招抚的实际含义",
+          "text": "清官员试图以官衔、饷械和联络把黑旗军纳入战局，唐景崧是重要中介。招抚形成合作，却未立即消除刘永福对越南官职、地盘和部众的责任。把他直接称为清军将领会抹去这种半自主性。\n\n把这段经历放回同一时期，1882年的“壬午军乱后清军进入朝鲜”尤其重要：朝鲜军乱冲击王宫和日本使馆，吴长庆所部奉命入境。清军恢复王宫控制并驻留，也把朝鲜内政更深卷入中日竞争。",
+          "sources": [
+            "v168_qsg463",
+            "v168_cssn_vietnam",
+            "v168_korea_crises"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_korea_imo",
+            "v168_paper_bridge"
+          ],
+          "people": []
+        },
+        {
+          "id": "v168_liuyongfu_4",
+          "title": "宣光围攻与联军局限",
+          "text": "围攻宣光期间，黑旗军同滇军等协作，给法军压力，也遭受伤亡并最终未能阻止解围。不同部队在战功、补给和指挥上并不完全一致。抗法目标相近，不等于组织已融为一体。\n\n把这段经历放回同一时期，1883年的“纸桥战事扩大北越冲突”尤其重要：刘永福黑旗军在河内附近与法军交战，法国指挥官李威利阵亡。黑旗军受越南官职和清廷联络影响，仍保有自身组织与利益。",
+          "sources": [
+            "v168_qsg463",
+            "v168_cssn_vietnam"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_paper_bridge",
+            "v168_tuyen_quang"
+          ],
+          "people": []
+        },
+        {
+          "id": "v168_liuyongfu_5",
+          "title": "条约之后的身份转换",
+          "text": "1885年议和后，黑旗军在越南的空间被压缩，部分人员接受安置。刘永福后来赴台抗日属于另一段历史。理解其光绪中期位置，应承认抵抗殖民扩张的作用，也说明征税、地方武装和多重效忠的现实。\n\n把这段经历放回同一时期，1884—1885年的“宣光围攻牵制法军”尤其重要：刘永福、唐景崧等参与围攻宣光，法军最终解围。战斗显示联合作战能力，也暴露补给、统属和战果叙述的差异。",
+          "sources": [
+            "v168_qsg463",
+            "v168_cssn_vietnam"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_tuyen_quang",
+            "v168_korea_imo"
+          ],
+          "people": []
+        }
+      ],
+      "sources": [
+        "v168_qsg463",
+        "v168_cssn_vietnam",
+        "v168_korea_crises"
+      ]
+    },
+    {
+      "person": "q168_tangjingsong",
+      "title": "唐景崧：招抚、联络与前线政治",
+      "dek": "他穿行于清廷官僚、越南官府与黑旗军之间，显示战争中的中介工作既重要又不稳定。",
+      "sections": [
+        {
+          "id": "v168_tangjingsong_1",
+          "title": "赴越任务不只是统兵",
+          "text": "唐景崧进入越南的重要任务是联络、招抚刘永福并搜集军情。他没有一开始就能直接命令黑旗军，必须借官衔、饷械和共同敌人建立合作。中介关系靠谈判维持，而非一道公文即可完成。\n\n把这段经历放回同一时期，1883年的“纸桥战事扩大北越冲突”尤其重要：刘永福黑旗军在河内附近与法军交战，法国指挥官李威利阵亡。黑旗军受越南官职和清廷联络影响，仍保有自身组织与利益。",
+          "sources": [
+            "v168_qsg463",
+            "v168_war_records"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_paper_bridge",
+            "v168_tuyen_quang"
+          ],
+          "people": []
+        },
+        {
+          "id": "v168_tangjingsong_2",
+          "title": "共同抗法与不同利益",
+          "text": "清廷关注边防，越南朝廷维护自身统治，黑旗军保护部众和地盘。三者可在战斗中合作，却对战后安排、粮饷和指挥有不同期待。唐景崧的活动正发生在这些目标的交叉处。\n\n把这段经历放回同一时期，1884—1885年的“宣光围攻牵制法军”尤其重要：刘永福、唐景崧等参与围攻宣光，法军最终解围。战斗显示联合作战能力，也暴露补给、统属和战果叙述的差异。",
+          "sources": [
+            "v168_qsg463",
+            "v168_war_records"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_tuyen_quang",
+            "v168_korea_imo"
+          ],
+          "people": []
+        },
+        {
+          "id": "v168_tangjingsong_3",
+          "title": "宣光战场的组织难题",
+          "text": "围攻宣光需要协调部队、炮位、交通和补给。法军被牵制但最终解围，说明局部包围不等于掌握战场主动。唐景崧的奏报可见清方视角，仍需同法越材料和其他军队记录互证。\n\n把这段经历放回同一时期，1882年的“壬午军乱后清军进入朝鲜”尤其重要：朝鲜军乱冲击王宫和日本使馆，吴长庆所部奉命入境。清军恢复王宫控制并驻留，也把朝鲜内政更深卷入中日竞争。",
+          "sources": [
+            "v168_qsg463",
+            "v168_war_records",
+            "v168_korea_crises"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_korea_imo",
+            "v168_paper_bridge"
+          ],
+          "people": []
+        },
+        {
+          "id": "v168_tangjingsong_4",
+          "title": "文书如何制造可见的战功",
+          "text": "官员必须把半自主武装的行动翻译成朝廷可理解的军功、官衔和赏罚。这个过程既帮助合作，也会把复杂关系整理成整齐名册。人物关系页应呈现中介身份，而不是把所有参与者压成同一指挥链。\n\n把这段经历放回同一时期，1883年的“纸桥战事扩大北越冲突”尤其重要：刘永福黑旗军在河内附近与法军交战，法国指挥官李威利阵亡。黑旗军受越南官职和清廷联络影响，仍保有自身组织与利益。",
+          "sources": [
+            "v168_qsg463",
+            "v168_war_records"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_paper_bridge",
+            "v168_tuyen_quang"
+          ],
+          "people": []
+        },
+        {
+          "id": "v168_tangjingsong_5",
+          "title": "不要用台湾结局倒推越南经历",
+          "text": "唐景崧后来在台湾民主国中的短暂角色更为人熟知，但那不应取代其早年越南经验。两段经历都涉及中央权力撤退、地方武装和临时政治安排，却有不同制度背景，不能用后来的失败预判早年的每次选择。\n\n把这段经历放回同一时期，1884—1885年的“宣光围攻牵制法军”尤其重要：刘永福、唐景崧等参与围攻宣光，法军最终解围。战斗显示联合作战能力，也暴露补给、统属和战果叙述的差异。",
+          "sources": [
+            "v168_qsg463",
+            "v168_war_records"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_tuyen_quang",
+            "v168_korea_imo"
+          ],
+          "people": []
+        }
+      ],
+      "sources": [
+        "v168_qsg463",
+        "v168_war_records",
+        "v168_korea_crises"
+      ]
+    },
+    {
+      "person": "q168_wuchangqing",
+      "title": "吴长庆：朝鲜出兵与驻军政治",
+      "dek": "1882年的快速军事介入平定王宫危机，也把清朝、朝鲜与日本的竞争推向更深层。",
+      "sections": [
+        {
+          "id": "v168_wuchangqing_1",
+          "title": "淮军体系中的将领",
+          "text": "吴长庆长期处于淮军网络，军队的饷源、将领关系和训练方式带有地方军事色彩。朝鲜危机中，这种可迅速调动的部队成为清廷工具，也显示中央处理邻国事务时依赖既有区域军队。\n\n把这段经历放回同一时期，1882年的“壬午军乱后清军进入朝鲜”尤其重要：朝鲜军乱冲击王宫和日本使馆，吴长庆所部奉命入境。清军恢复王宫控制并驻留，也把朝鲜内政更深卷入中日竞争。",
+          "sources": [
+            "v168_qsg416",
+            "v168_korea",
+            "v168_korea_crises"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_korea_imo",
+            "v168_daewongun"
+          ],
+          "people": []
+        },
+        {
+          "id": "v168_wuchangqing_2",
+          "title": "壬午军乱的多重原因",
+          "text": "军人欠饷、粮米问题、旧新军矛盾和宫廷派别共同引发1882年动乱。日本使馆受袭只是危机的一部分。若只写成亲清与亲日对决，会忽略军人和城市居民的经济不满。\n\n把这段经历放回同一时期，1882年的“大院君被带离朝鲜”尤其重要：清军控制被视为军乱政治核心的大院君，将其押往中国。行动具有强制性，不能只写成和平调停，也触及朝鲜政治自主。",
+          "sources": [
+            "v168_qsg416",
+            "v168_korea",
+            "v168_korea_crises"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_daewongun",
+            "v168_gapsin"
+          ],
+          "people": []
+        },
+        {
+          "id": "v168_wuchangqing_3",
+          "title": "控制大院君的强制性",
+          "text": "吴长庆所部控制大院君并将其带往中国，迅速改变朝鲜权力格局。清方称此为止乱与问责，从朝鲜政治自主看则是外军强制介入。两种视角都必须呈现，不能用“保护属邦”消除行动性质。\n\n把这段经历放回同一时期，1884年的“甲申政变迅速失败”尤其重要：朝鲜开化派借日本守军发动政变，清军介入后局势逆转。中日部队在汉城对峙，朝鲜改革议题被列强军事存在压缩。",
+          "sources": [
+            "v168_qsg416",
+            "v168_korea",
+            "v168_korea_crises"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_gapsin",
+            "v168_korea_civilians"
+          ],
+          "people": []
+        },
+        {
+          "id": "v168_wuchangqing_4",
+          "title": "驻军带来的新秩序",
+          "text": "清军留驻并训练朝鲜部队，袁世凯等逐渐参与当地政治。短期秩序恢复的同时，日本也强化权益要求，朝鲜内部改革派寻求不同外援。驻军因此不是危机终点，而是下一轮冲突的条件。\n\n把这段经历放回同一时期，1882—1884年的“朝鲜兵乱与政变波及城市居民”尤其重要：汉城暴力、军队进入和政权反复使居民、商人及使馆人员承受风险。不能把两次危机只写成中日外交棋局。",
+          "sources": [
+            "v168_qsg416",
+            "v168_korea",
+            "v168_korea_crises"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_korea_civilians",
+            "v168_korea_imo"
+          ],
+          "people": []
+        },
+        {
+          "id": "v168_wuchangqing_5",
+          "title": "从壬午到甲申",
+          "text": "吴长庆1884年去世不久，甲申政变再次爆发。两次事件的连续性说明，军事压制没有解决财政、军制和改革方向分歧。评价他的行动，应同时看快速执行能力、对暴力的控制和外国军队介入邻国内政的长期后果。\n\n把这段经历放回同一时期，1882年的“壬午军乱后清军进入朝鲜”尤其重要：朝鲜军乱冲击王宫和日本使馆，吴长庆所部奉命入境。清军恢复王宫控制并驻留，也把朝鲜内政更深卷入中日竞争。",
+          "sources": [
+            "v168_qsg416",
+            "v168_korea",
+            "v168_korea_crises"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_korea_imo",
+            "v168_daewongun"
+          ],
+          "people": []
+        }
+      ],
+      "sources": [
+        "v168_qsg416",
+        "v168_korea",
+        "v168_korea_crises"
+      ]
+    },
+    {
+      "person": "q168_wudacheng",
+      "title": "吴大澂：河工、边界与金石证据",
+      "dek": "他在工程、交涉和古文字研究之间移动，显示晚清官员如何用不同清册、地图与器物建立事实。",
+      "sections": [
+        {
+          "id": "v168_wudacheng_1",
+          "title": "金石学不是仕途装饰",
+          "text": "吴大澂长期搜集、摹录古器文字，借器形与铭文校读古书。金石学讲求拓本、出处和字形比较，与行政中核对档册、地形和旧界碑有相通之处，但学术严谨不保证每次军政判断都正确。\n\n把这段经历放回同一时期，1887—1888年的“郑州决口动员巨额河工”尤其重要：堵口需要石料、秸料、船只、民夫与跨省拨款。合龙是工程成果，也应核算征调、欠饷和灾区家庭承担的成本。",
+          "sources": [
+            "v168_qsg450",
+            "v168_yellow_river",
+            "v168_wudacheng"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_river_repair_cost",
+            "v168_yellow_river_flood"
+          ],
+          "people": []
+        },
+        {
+          "id": "v168_wudacheng_2",
+          "title": "边界需要在地面上落实",
+          "text": "东北边界交涉涉及条约文字、河道、界牌和地方利用。地图上的线必须由实地勘测和双方谈判转化为标志。吴大澂的相关经历说明，边界不是一句“收回”即可概括，而是持续维护的制度。\n\n把这段经历放回同一时期，1887年的“郑州决口造成广泛水灾”尤其重要：黄河在郑州附近决口，豫皖多地村庄、农田与道路受淹。约一百八十万人受灾是特定材料估计，不是精确人口普查。",
+          "sources": [
+            "v168_qsg450",
+            "v168_yellow_river",
+            "v168_wudacheng"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_yellow_river_flood",
+            "v168_river_relief"
+          ],
+          "people": []
+        },
+        {
+          "id": "v168_wudacheng_3",
+          "title": "郑州决口后的巨大工程",
+          "text": "1887年黄河决口淹及广泛地区，堵口需跨省调集料物、船只和民夫。吴大澂参与督办，至1888年完成合龙。工程成功值得记录，但合龙日期并不等于灾民复业、债务和淤沙问题已经结束。\n\n把这段经历放回同一时期，1887—1888年的“赈济与堵口同时展开”尤其重要：官赈、捐输、迁避和河工征调交织，灾民既是受助者也可能成为劳力。合龙日期不能代表生活已经恢复。",
+          "sources": [
+            "v168_qsg450",
+            "v168_yellow_river",
+            "v168_wudacheng"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_river_relief",
+            "v168_epigraphy_maps"
+          ],
+          "people": []
+        },
+        {
+          "id": "v168_wudacheng_4",
+          "title": "受灾数字应怎样使用",
+          "text": "近代材料常给出约一百八十万人受灾等数字，它有助理解规模，却来自特定调查与汇总口径，不是精确人口普查。河流改道、逃亡和重复报灾使统计困难。呈现数字必须同时标注估计性质。\n\n把这段经历放回同一时期，1880年代的“吴大澂在政务之外研究金石舆图”尤其重要：古文字摹录、边界图和工程图显示不同的证据制度。学术名望不能替代对其军政成败的分别评价。",
+          "sources": [
+            "v168_qsg450",
+            "v168_yellow_river",
+            "v168_wudacheng"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_epigraphy_maps",
+            "v168_river_repair_cost"
+          ],
+          "people": []
+        },
+        {
+          "id": "v168_wudacheng_5",
+          "title": "多面官员不等于完人",
+          "text": "吴大澂后来还有军务失败，其学术收藏也涉及器物流传与私人资源。把河工、边界和金石分别评价，能避免用一项成就为全部生涯背书。人物详情的意义正在于保留这些不同能力之间的不对称。\n\n把这段经历放回同一时期，1887—1888年的“郑州决口动员巨额河工”尤其重要：堵口需要石料、秸料、船只、民夫与跨省拨款。合龙是工程成果，也应核算征调、欠饷和灾区家庭承担的成本。",
+          "sources": [
+            "v168_qsg450",
+            "v168_yellow_river",
+            "v168_wudacheng"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_river_repair_cost",
+            "v168_yellow_river_flood"
+          ],
+          "people": []
+        }
+      ],
+      "sources": [
+        "v168_qsg450",
+        "v168_yellow_river",
+        "v168_wudacheng"
+      ]
+    },
+    {
+      "person": "q168_chenqiyuan",
+      "title": "陈启沅：机器缫丝与乡村工场",
+      "dek": "继昌隆把蒸汽动力、蚕茧市场和女工劳动带进南海乡村，也引发融资、技术适配和社会冲突。",
+      "sections": [
+        {
+          "id": "v168_chenqiyuan_1",
+          "title": "海外经验如何带回乡里",
+          "text": "陈启沅在海外接触机器缫丝，回到广东后筹办继昌隆。设备并非搬来即可运行，还要适应本地蚕茧、燃料、水质和工匠维修。所谓技术引进其实是一连串翻译、试验和失败。\n\n把这段经历放回同一时期，1873—1880年代的“继昌隆采用机器缫丝”尤其重要：陈启沅在南海引入蒸汽缫丝设备，组织女工集中生产。常称中国最早的民族资本机器缫丝厂之一，不宜把“第一”当作无争议称号。",
+          "sources": [
+            "v168_chenqiyuan"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_silk_factory",
+            "v168_silk_credit"
+          ],
+          "people": []
+        },
+        {
+          "id": "v168_chenqiyuan_2",
+          "title": "“第一家”的说法要留边界",
+          "text": "继昌隆常被称为中国第一家民族资本经营的机器缫丝厂，更谨慎的说法是最早且影响重要的中国人自办机器缫丝厂之一。不同研究对机器规模、投产时间和企业定义有差异，教育产品不应把宣传称号当作绝对事实。\n\n把这段经历放回同一时期，1880年代的“机器缫丝依赖生丝市场与信用”尤其重要：设备、燃料、蚕茧收购和出口价格共同决定工厂盈亏。技术输入不是自动获利，乡村金融与国际行情同样关键。",
+          "sources": [
+            "v168_chenqiyuan"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_silk_credit",
+            "v168_silk_women"
+          ],
+          "people": []
+        },
+        {
+          "id": "v168_chenqiyuan_3",
+          "title": "女工不是背景人物",
+          "text": "缫丝依赖大量女性劳动，机器工场改变她们的工作地点、时间纪律、技能和工资关系。企业史若只列资本、机器和出口，会把实际操作技术的人移出画面。工业成就与劳动条件需要同页出现。\n\n把这段经历放回同一时期，1870—1880年代的“女工成为机器缫丝生产主体”尤其重要：集中工场改变蚕丝家庭劳动的时间、技能和收入分配。“民族工业”成就不能遮蔽工资纪律与性别化劳动。",
+          "sources": [
+            "v168_chenqiyuan"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_silk_women",
+            "v168_sericulture_book"
+          ],
+          "people": []
+        },
+        {
+          "id": "v168_chenqiyuan_4",
+          "title": "机器冲突来自利益重组",
+          "text": "机器缫丝影响传统手工生产、蚕茧收购和地方行业秩序，因而遭遇抵制。冲突不能简单写成愚昧反对先进技术，其中包含生计、市场控制、火灾风险和乡村权力。现代化不是一条没有输家的直线。\n\n把这段经历放回同一时期，1870—1880年代的“陈启沅整理蚕桑与机器经验”尤其重要：技术知识在海外观察、地方蚕事和工场试验之间转译。近代技术并非单向复制，地方工匠与女工参与了实际调整。",
+          "sources": [
+            "v168_chenqiyuan"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_sericulture_book",
+            "v168_silk_factory"
+          ],
+          "people": []
+        },
+        {
+          "id": "v168_chenqiyuan_5",
+          "title": "全球市场下的地方企业",
+          "text": "生丝价格受海外需求影响，工厂还面临信用、运输与原料波动。陈启沅的实践说明民族工业从诞生之初就连接全球市场，同时依赖本地家族、商人、工匠和女工。个人创办者重要，却不是唯一行动者。\n\n把这段经历放回同一时期，1873—1880年代的“继昌隆采用机器缫丝”尤其重要：陈启沅在南海引入蒸汽缫丝设备，组织女工集中生产。常称中国最早的民族资本机器缫丝厂之一，不宜把“第一”当作无争议称号。",
+          "sources": [
+            "v168_chenqiyuan"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v168_silk_factory",
+            "v168_silk_credit"
+          ],
+          "people": []
+        }
+      ],
+      "sources": [
+        "v168_chenqiyuan"
       ]
     }
   ],
@@ -239265,6 +241528,246 @@
         "v167_cssn_famine",
         "v167_ruc_relief"
       ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q168_zhangpeilun",
+      "role": "在位时期人物",
+      "inverse": "在位君主",
+      "period": "光绪前中期",
+      "note": "人物活动处于光绪在位时期，具体权力关系见事件与长读。",
+      "sources": [
+        "v168_qsg444",
+        "v168_mfa_mawei"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q168_chenbaochen",
+      "role": "在位时期人物",
+      "inverse": "在位君主",
+      "period": "光绪前中期",
+      "note": "人物活动处于光绪在位时期，具体权力关系见事件与长读。",
+      "sources": [
+        "v168_qsg444",
+        "v168_qsg23"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q168_heruzhang",
+      "role": "在位时期人物",
+      "inverse": "在位君主",
+      "period": "光绪前中期",
+      "note": "人物活动处于光绪在位时期，具体权力关系见事件与长读。",
+      "sources": [
+        "v168_qsg444",
+        "v168_korea_crises"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q168_tangjiong",
+      "role": "在位时期人物",
+      "inverse": "在位君主",
+      "period": "光绪前中期",
+      "note": "人物活动处于光绪在位时期，具体权力关系见事件与长读。",
+      "sources": [
+        "v168_qsg458",
+        "v168_cssn_vietnam"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q168_cenyuying",
+      "role": "在位时期人物",
+      "inverse": "在位君主",
+      "period": "光绪前中期",
+      "note": "人物活动处于光绪在位时期，具体权力关系见事件与长读。",
+      "sources": [
+        "v168_qsg419",
+        "v168_cssn_vietnam"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q168_fengzicai",
+      "role": "在位时期人物",
+      "inverse": "在位君主",
+      "period": "光绪前中期",
+      "note": "人物活动处于光绪在位时期，具体权力关系见事件与长读。",
+      "sources": [
+        "v168_qsg459",
+        "v168_war_records"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q168_liuyongfu",
+      "role": "在位时期人物",
+      "inverse": "在位君主",
+      "period": "光绪前中期",
+      "note": "人物活动处于光绪在位时期，具体权力关系见事件与长读。",
+      "sources": [
+        "v168_qsg463",
+        "v168_cssn_vietnam"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q168_tangjingsong",
+      "role": "在位时期人物",
+      "inverse": "在位君主",
+      "period": "光绪前中期",
+      "note": "人物活动处于光绪在位时期，具体权力关系见事件与长读。",
+      "sources": [
+        "v168_qsg463",
+        "v168_war_records"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q168_wuchangqing",
+      "role": "在位时期人物",
+      "inverse": "在位君主",
+      "period": "光绪前中期",
+      "note": "人物活动处于光绪在位时期，具体权力关系见事件与长读。",
+      "sources": [
+        "v168_qsg416",
+        "v168_korea",
+        "v168_korea_crises"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q168_wudacheng",
+      "role": "在位时期人物",
+      "inverse": "在位君主",
+      "period": "光绪前中期",
+      "note": "人物活动处于光绪在位时期，具体权力关系见事件与长读。",
+      "sources": [
+        "v168_qsg450",
+        "v168_yellow_river",
+        "v168_wudacheng"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q168_chenqiyuan",
+      "role": "在位时期人物",
+      "inverse": "在位君主",
+      "period": "光绪前中期",
+      "note": "人物活动处于光绪在位时期，具体权力关系见事件与长读。",
+      "sources": [
+        "v168_chenqiyuan"
+      ]
+    },
+    {
+      "from": "q168_zhangpeilun",
+      "to": "q168_chenbaochen",
+      "role": "清流同道",
+      "inverse": "清流同道",
+      "period": "光绪前期",
+      "note": "二人以奏议介入边防与用人。",
+      "sources": [
+        "v168_qsg444",
+        "v168_mfa_mawei",
+        "v168_qsg23"
+      ]
+    },
+    {
+      "from": "q168_tangjiong",
+      "to": "q168_cenyuying",
+      "role": "越南军务协作者",
+      "inverse": "越南军务协作者",
+      "period": "1883—1884年",
+      "note": "滇军体系内分工并受多头指挥影响。",
+      "sources": [
+        "v168_qsg458",
+        "v168_cssn_vietnam",
+        "v168_qsg419"
+      ]
+    },
+    {
+      "from": "q168_fengzicai",
+      "to": "q168_cenyuying",
+      "role": "不同战线将领",
+      "inverse": "不同战线将领",
+      "period": "1884—1885年",
+      "note": "分别连接广西与云南方向战事。",
+      "sources": [
+        "v168_qsg459",
+        "v168_war_records",
+        "v168_qsg419",
+        "v168_cssn_vietnam"
+      ]
+    },
+    {
+      "from": "q168_liuyongfu",
+      "to": "q168_tangjingsong",
+      "role": "招抚与军事合作",
+      "inverse": "接受联络的黑旗军首领",
+      "period": "1883—1885年",
+      "note": "合作未消除黑旗军半自主地位。",
+      "sources": [
+        "v168_qsg463",
+        "v168_cssn_vietnam",
+        "v168_war_records"
+      ]
+    },
+    {
+      "from": "q165_liumingchuan",
+      "to": "q168_zhangpeilun",
+      "role": "同场中法战争负责人",
+      "inverse": "同场中法战争负责人",
+      "period": "1884—1885年",
+      "note": "分处台湾与福建战场，结果和责任不同。",
+      "sources": [
+        "v168_qsg416",
+        "v168_taiwan",
+        "v168_war_records",
+        "v168_qsg444",
+        "v168_mfa_mawei"
+      ]
+    },
+    {
+      "from": "q168_wuchangqing",
+      "to": "q_yuanshikai",
+      "role": "前后驻朝军政人物",
+      "inverse": "后续驻朝军政人物",
+      "period": "1882—1884年",
+      "note": "吴长庆部入朝后，袁世凯在驻朝体系中上升。",
+      "sources": [
+        "v168_qsg416",
+        "v168_korea",
+        "v168_korea_crises"
+      ]
+    },
+    {
+      "from": "q168_wudacheng",
+      "to": "q_guangxu",
+      "role": "河工与边务官员",
+      "inverse": "在位君主",
+      "period": "1880年代",
+      "note": "承担河工及边界事务。",
+      "sources": [
+        "v168_qsg450",
+        "v168_yellow_river",
+        "v168_wudacheng"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q165_liumingchuan",
+      "role": "在位时期人物",
+      "inverse": "在位君主",
+      "period": "光绪前中期",
+      "note": "人物活动处于光绪在位时期，具体权力关系见事件与长读。",
+      "sources": [
+        "v168_qsg416",
+        "v168_taiwan",
+        "v168_war_records"
+      ]
     }
   ],
   "dynasties": [
@@ -244633,7 +247136,19 @@
         "q167_yanjingming",
         "q167_shengxuanhuai",
         "q167_jingyuanshan",
-        "q167_litimotai"
+        "q167_litimotai",
+        "q165_liumingchuan",
+        "q168_zhangpeilun",
+        "q168_chenbaochen",
+        "q168_heruzhang",
+        "q168_tangjiong",
+        "q168_cenyuying",
+        "q168_fengzicai",
+        "q168_liuyongfu",
+        "q168_tangjingsong",
+        "q168_wuchangqing",
+        "q168_wudacheng",
+        "q168_chenqiyuan"
       ],
       "events": [
         "qev_guangxu_accession_1875",
@@ -244702,7 +247217,52 @@
         "v167_famine_press",
         "v167_relief_accounts",
         "v167_telegraph_school",
-        "v167_industrial_survey"
+        "v167_industrial_survey",
+        "v168_korea_imo",
+        "v168_daewongun",
+        "v168_gapsin",
+        "v168_tianjin_convention",
+        "v168_jiasen_change",
+        "v168_war_breakdown",
+        "v168_treaty_1885",
+        "v168_taiwan_province",
+        "v168_personal_rule",
+        "v168_paper_bridge",
+        "v168_bac_ninh",
+        "v168_mawei",
+        "v168_keelung",
+        "v168_tamsui",
+        "v168_blockade_penghu",
+        "v168_tuyen_quang",
+        "v168_zhennan",
+        "v168_langson_peace",
+        "v168_war_finance",
+        "v168_navy_yamen",
+        "v168_taiwan_land_tax",
+        "v168_taiwan_railway",
+        "v168_taiwan_telegraph",
+        "v168_silk_factory",
+        "v168_silk_credit",
+        "v168_palace_competition",
+        "v168_river_repair_cost",
+        "v168_korea_civilians",
+        "v168_frontier_refugees",
+        "v168_mawei_families",
+        "v168_taiwan_blockade_life",
+        "v168_indigenous_policy",
+        "v168_yellow_river_flood",
+        "v168_river_relief",
+        "v168_silk_women",
+        "v168_wedding_labor",
+        "v168_qingliu_memorials",
+        "v168_diplomatic_reporting",
+        "v168_war_telegrams",
+        "v168_war_press",
+        "v168_naval_education",
+        "v168_taiwan_knowledge",
+        "v168_sericulture_book",
+        "v168_epigraphy_maps",
+        "v168_wedding_archives"
       ],
       "sources": [
         "v5qn_qsg221",
@@ -244759,9 +247319,33 @@
         "v167_xiangyin_journey",
         "v167_hebei_rail",
         "v167_gd_telegraph",
-        "v167_shanghai_gazette"
+        "v167_shanghai_gazette",
+        "v168_dpm_guangxu",
+        "v168_dpm_wedding",
+        "v168_dpm_yiheyuan",
+        "v168_dpm_navy",
+        "v168_mfa_mawei",
+        "v168_treaty",
+        "v168_cssn_france",
+        "v168_cssn_vietnam",
+        "v168_qsg23",
+        "v168_qsg444",
+        "v168_qsg419",
+        "v168_qsg458",
+        "v168_qsg459",
+        "v168_qsg463",
+        "v168_qsg416",
+        "v168_qsg450",
+        "v168_qsg119",
+        "v168_war_records",
+        "v168_taiwan",
+        "v168_chenqiyuan",
+        "v168_korea",
+        "v168_korea_crises",
+        "v168_yellow_river",
+        "v168_wudacheng"
       ],
-      "note": "光绪前期由两宫再次垂帘，幼帝主要处于受教阶段。1875至1884年间，新疆战争与伊犁交涉、丁戊奇荒、常驻外交、留美幼童撤回、开平矿路和津沪电报同时展开；军事与工业成果必须同借款、死亡、迁徙和制度中断并读。"
+      "note": "光绪前期由再度垂帘、新疆战事与灾荒进入中法战争、朝鲜危机、台湾建省和分阶段亲政。战场胜负、条约结果、海军制度、基础设施与普通人的税役、迁徙和土地代价必须并读。"
     },
     {
       "person": "q_xuantong",
