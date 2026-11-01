@@ -5060,4 +5060,41 @@ final class MingJiUITests: XCTestCase {
         shot("v170-tan-sitong-source-cards", app)
     }
 
+    @MainActor func testV171YuxianKeepsAntiImperialismSeparateFromCivilianKilling() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["--uitesting", "--ui-dynasty", "qing"]
+        app.launch()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        app.buttons.matching(NSPredicate(format: "identifier == %@", "globalSearch")).firstMatch.tap()
+        let search = app.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("毓贤")
+        let result = app.buttons["search_person_q171_yuxian"]
+        XCTAssertTrue(result.waitForExistence(timeout: 8)); Thread.sleep(forTimeInterval: 1); result.tap()
+        if !app.buttons["articleEntry"].waitForExistence(timeout: 5) { app.buttons["search_person_q171_yuxian"].tap() }
+        XCTAssertTrue(app.buttons["articleEntry"].waitForExistence(timeout: 5)); app.buttons["articleEntry"].tap()
+        XCTAssertTrue(app.buttons["articleContents"].waitForExistence(timeout: 5)); app.buttons["articleContents"].tap()
+        let chapter = app.buttons["山西杀戮不是失控传闻"]
+        XCTAssertTrue(chapter.exists); chapter.tap()
+        XCTAssertTrue(app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "反对外国教会特权与杀害本地平民是两件事")).firstMatch.waitForExistence(timeout: 5))
+        shot("v171-yuxian-civilian-responsibility", app)
+        openChapterSources("q171_yuxian-3", in: app)
+        XCTAssertTrue(app.descendants(matching: .any)["source_v171_qsg465"].waitForExistence(timeout: 3))
+        shot("v171-yuxian-source-cards", app)
+        let lastSource = app.descendants(matching: .any)["source_v171_dpm_gengzi"]
+        reach(lastSource, in: app, attempts: 8)
+        XCTAssertTrue(lastSource.isHittable)
+        let lastSourceNote = app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "以清宫档案讨论联军入京")).firstMatch
+        reach(lastSourceNote, in: app, attempts: 4)
+        XCTAssertTrue(lastSourceNote.isHittable)
+        var clearanceAttempts = 0
+        while lastSourceNote.frame.maxY > app.frame.height - 190, clearanceAttempts < 4 {
+            let start = app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.72))
+            let end = app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.58))
+            start.press(forDuration: 0.05, thenDragTo: end)
+            clearanceAttempts += 1
+        }
+        XCTAssertLessThanOrEqual(lastSourceNote.frame.maxY, app.frame.height - 190)
+        shot("v171-yuxian-source-ending-above-bars", app)
+    }
+
 }

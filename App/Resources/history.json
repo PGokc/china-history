@@ -1,5 +1,5 @@
 {
-  "version": 144,
+  "version": 145,
   "reviewed": "2026-11-01",
   "people": [
     {
@@ -20582,6 +20582,182 @@
       "kind": "重要人物",
       "note": "办通艺学堂、上书改革，政变后革职转入南洋公学译书院，后来以出版与教科书延续教育实践。",
       "dynasty": "qing"
+    },
+    {
+      "id": "q171_yikuang",
+      "name": "奕劻",
+      "call": "庆亲王、晚清中枢重臣",
+      "temple": "",
+      "era": "1838—1917",
+      "reign": "同治至宣统",
+      "summary": "长期主持总理衙门与外务部，庚子议和后进入权力核心，1911年组织首届责任内阁并参与起用袁世凯与退位讨论。",
+      "parent": null,
+      "sources": [
+        "v171_qsg221",
+        "v171_qsg24",
+        "v171_qsg25"
+      ],
+      "kind": "重要人物",
+      "note": "长期主持总理衙门与外务部，庚子议和后进入权力核心，1911年组织首届责任内阁并参与起用袁世凯与退位讨论。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q171_liukunyi",
+      "name": "刘坤一",
+      "call": "两江总督",
+      "temple": "",
+      "era": "1830—1902",
+      "reign": "咸丰至光绪",
+      "summary": "由湘军将领转为封疆大吏，庚子年与张之洞等维持东南秩序，随后联衔提出改革方案；互保既避免战火扩大，也包含地方权力自行决断。",
+      "parent": null,
+      "sources": [
+        "v171_qsg413",
+        "v171_dpm_guangxu"
+      ],
+      "kind": "重要人物",
+      "note": "由湘军将领转为封疆大吏，庚子年与张之洞等维持东南秩序，随后联衔提出改革方案；互保既避免战火扩大，也包含地方权力自行决断。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q171_yuxian",
+      "name": "毓贤",
+      "call": "山东、山西巡抚",
+      "temple": "",
+      "era": "1842—1901",
+      "reign": "光绪",
+      "summary": "在山东纵容拳团、任山西巡抚后组织杀害教士教民，议和时被列为罪责官员并处死；反侵略口号不能遮蔽其对平民暴力的直接责任。",
+      "parent": null,
+      "sources": [
+        "v171_qsg465",
+        "v171_qsg24"
+      ],
+      "kind": "重要人物",
+      "note": "在山东纵容拳团、任山西巡抚后组织杀害教士教民，议和时被列为罪责官员并处死；反侵略口号不能遮蔽其对平民暴力的直接责任。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q171_zhangbaixi",
+      "name": "张百熙",
+      "call": "管学大臣",
+      "temple": "",
+      "era": "1847—1907",
+      "reign": "同治至光绪",
+      "summary": "庚子后主张改官制、理财政、变科举和建学堂，主持京师大学堂及学制筹划；新式教育不是废科举一纸命令即可完成。",
+      "parent": null,
+      "sources": [
+        "v171_qsg443",
+        "v171_cp_textbook"
+      ],
+      "kind": "重要人物",
+      "note": "庚子后主张改官制、理财政、变科举和建学堂，主持京师大学堂及学制筹划；新式教育不是废科举一纸命令即可完成。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q171_duanfang",
+      "name": "端方",
+      "call": "地方督抚与出洋考察大臣",
+      "temple": "",
+      "era": "1861—1911",
+      "reign": "光绪至宣统",
+      "summary": "在多省推动学堂、警政和文物收藏，参加五大臣出洋考察；1911年督办川汉、粤汉铁路时被新军杀害，改革官员身份与强制接路责任并存。",
+      "parent": null,
+      "sources": [
+        "v171_qsg469",
+        "v171_qsg25"
+      ],
+      "kind": "重要人物",
+      "note": "在多省推动学堂、警政和文物收藏，参加五大臣出洋考察；1911年督办川汉、粤汉铁路时被新军杀害，改革官员身份与强制接路责任并存。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q171_zaize",
+      "name": "载泽",
+      "call": "出洋考察政治大臣",
+      "temple": "",
+      "era": "1868—1929",
+      "reign": "光绪至宣统",
+      "summary": "宗室成员，参与五大臣出洋考察并奏请预备立宪，后来掌度支等事务；学习宪政与维护皇权在其方案中同时存在。",
+      "parent": null,
+      "sources": [
+        "v171_qsg25",
+        "v171_constitution",
+        "v171_cssn_newpolicy"
+      ],
+      "kind": "重要人物",
+      "note": "宗室成员，参与五大臣出洋考察并奏请预备立宪，后来掌度支等事务；学习宪政与维护皇权在其方案中同时存在。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q171_wutingfang",
+      "name": "伍廷芳",
+      "call": "外交官、南方议和代表",
+      "temple": "",
+      "era": "1842—1922",
+      "reign": "光绪至民国初",
+      "summary": "受英式法律教育，历任驻外使臣；辛亥时代表南方与唐绍仪议和，主张共和。法律语言、外交经验和革命政治在谈判桌上交汇。",
+      "parent": null,
+      "sources": [
+        "v171_qsg25",
+        "v171_1911_timeline",
+        "v171_chn_representatives"
+      ],
+      "kind": "重要人物",
+      "note": "受英式法律教育，历任驻外使臣；辛亥时代表南方与唐绍仪议和，主张共和。法律语言、外交经验和革命政治在谈判桌上交汇。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q171_tangshaoyi",
+      "name": "唐绍仪",
+      "call": "外交官、北方议和代表",
+      "temple": "",
+      "era": "1862—1938",
+      "reign": "光绪至民国",
+      "summary": "有朝鲜、铁路与外交事务经验，辛亥时受袁世凯委派赴上海议和；他接受共和方向后与北京授权发生张力，说明谈判代表并非完全自主。",
+      "parent": null,
+      "sources": [
+        "v171_qsg25",
+        "v171_1911_timeline",
+        "v171_chn_representatives"
+      ],
+      "kind": "重要人物",
+      "note": "有朝鲜、铁路与外交事务经验，辛亥时受袁世凯委派赴上海议和；他接受共和方向后与北京授权发生张力，说明谈判代表并非完全自主。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q171_liyuanhong",
+      "name": "黎元洪",
+      "call": "湖北军政府都督",
+      "temple": "",
+      "era": "1864—1928",
+      "reign": "光绪至民国",
+      "summary": "湖北新军协统，武昌起义后被推为都督；其地位来自首义军政现实、地方精英支持和各省协商，不应写成预先策划起义的革命领袖。",
+      "parent": null,
+      "sources": [
+        "v171_1911_timeline",
+        "v171_chn_knife",
+        "v171_chn_representatives"
+      ],
+      "kind": "重要人物",
+      "note": "湖北新军协统，武昌起义后被推为都督；其地位来自首义军政现实、地方精英支持和各省协商，不应写成预先策划起义的革命领袖。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q171_songjiaoren",
+      "name": "宋教仁",
+      "call": "革命组织者与政党政治倡导者",
+      "temple": "",
+      "era": "1882—1913",
+      "reign": "光绪至民国初",
+      "summary": "参与华兴会、同盟会及中部总会，辛亥期间推动统一政府和制度设计；其后政党活动属于民国阶段，不能反向覆盖起义前的组织分歧。",
+      "parent": null,
+      "sources": [
+        "v171_chn_tongmeng",
+        "v171_chn_representatives",
+        "v171_1911_timeline"
+      ],
+      "kind": "重要人物",
+      "note": "参与华兴会、同盟会及中部总会，辛亥期间推动统一政府和制度设计；其后政党活动属于民国阶段，不能反向覆盖起义前的组织分歧。",
+      "dynasty": "qing"
     }
   ],
   "sources": [
@@ -29038,6 +29214,144 @@
       "title": "美国国会图书馆：中国近代报刊与改革图像资料",
       "url": "https://www.loc.gov/pictures/search/?q=China%20reform%201898",
       "note": "作为跨国图像检索入口；图像题名和年代须逐件核对，不把搜索缩略图当作史证。"
+    },
+    {
+      "id": "v171_qsg24",
+      "title": "《清史稿》卷二十四·德宗本纪二",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷24",
+      "note": "核对庚子事变、议和与1901—1908年任免和制度时序；本纪呈现朝廷文书视角，须与档案、地方材料及受害者记录互证。"
+    },
+    {
+      "id": "v171_qsg25",
+      "title": "《清史稿》卷二十五·宣统皇帝本纪",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷25",
+      "note": "核对宣统朝立宪、铁路国有、武昌起义、南北议和和退位时序；对革命阵营的评价带有清遗民修史立场。"
+    },
+    {
+      "id": "v171_qsg131",
+      "title": "《清史稿》卷一百三十一·兵志",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷131",
+      "note": "核对裁减绿营、编练新军及军费安排；制度志记载规则与奏议，不等于各省执行完全一致。"
+    },
+    {
+      "id": "v171_qsg221",
+      "title": "《清史稿》卷二百二十一·奕劻传",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷221",
+      "note": "核对奕劻主持总署、议和、外务部、责任内阁及起用袁世凯；官修传对受贿指控的处理仍须结合弹劾材料阅读。"
+    },
+    {
+      "id": "v171_qsg413",
+      "title": "《清史稿》卷四百一十三·刘坤一传",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷413",
+      "note": "核对刘坤一军政履历、庚子时东南处置及与张之洞联衔变法；传记的褒忠语言不替代具体政策评价。"
+    },
+    {
+      "id": "v171_qsg443",
+      "title": "《清史稿》卷四百四十三·张百熙传",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷443",
+      "note": "核对张百熙庚子后条陈、管学大臣任职及京师大学堂改革；办学成效须同章程和实际招生互证。"
+    },
+    {
+      "id": "v171_qsg465",
+      "title": "《清史稿》卷四百六十五·毓贤传",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷465",
+      "note": "核对毓贤在山东、山西支持拳团及杀害教士教民的责任；官修追责形成于议和背景，但具体命令和遇害规模有多源材料支持。"
+    },
+    {
+      "id": "v171_qsg469",
+      "title": "《清史稿》卷四百六十九·端方传",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷469",
+      "note": "核对端方地方任职、出洋考察、办学警政及督办铁路时遇害；传末赞语与革命者叙事均需分层阅读。"
+    },
+    {
+      "id": "v171_dpm_guangxu",
+      "title": "故宫博物院：光绪皇帝大事年表",
+      "url": "https://www.dpm.org.cn/court/lineage/226254.html",
+      "note": "核对义和团入京、宣战、东南互保、北京失守、西狩、辛丑议和与新政启动的宫廷时序。"
+    },
+    {
+      "id": "v171_dpm_gengzi",
+      "title": "故宫研究：庚子事变与《辛丑条约》档案",
+      "url": "https://www.dpm.org.cn/Uploads/pdf/3476/T00006_00.pdf",
+      "note": "以清宫档案讨论联军入京、帝后西逃、议和赔款和条约约束；使用时区分档案原文与研究者概括。"
+    },
+    {
+      "id": "v171_chn_map",
+      "title": "中国国家博物馆：《京城各国暂分界址全图》",
+      "url": "https://www.chnmuseum.cn/zp/zpml/gmww/202112/t20211209_252843.shtml",
+      "note": "馆藏图与说明展示1900年北京被分区占领的空间事实，并提供大沽、天津和北京失守的基本时序。"
+    },
+    {
+      "id": "v171_chn_flag",
+      "title": "中国国家博物馆：义和神团“坎”字旗",
+      "url": "https://www.chnmuseum.cn/zp/zpml/gmww/202112/t20211209_252844.shtml",
+      "note": "馆藏实物说明义和团组织、八卦字号及文物被掠后归还经历；旗帜不能代表所有拳民的共同纲领。"
+    },
+    {
+      "id": "v171_chn_oath",
+      "title": "中国国家博物馆：光复会誓言",
+      "url": "https://www.chnmuseum.cn/zp/zpml/gmww/202104/t20210402_249489.shtml",
+      "note": "核对光复会成立、成员与江浙革命活动；誓言是组织政治表达，不等于每名成员行动完全一致。"
+    },
+    {
+      "id": "v171_chn_tongmeng",
+      "title": "中国国家博物馆：中国同盟会上海支部总章草案",
+      "url": "https://www.chnmuseum.cn/zp/zpml/gmww/202104/t20210406_249548.shtml",
+      "note": "核对同盟会上海组织、中部总会和长江流域革命网络；文物说明同时揭示组织名称与时序变化。"
+    },
+    {
+      "id": "v171_chn_rail",
+      "title": "中国国家博物馆：《蜀报》保路号外",
+      "url": "https://www.chnmuseum.cn/zp/zpml/gmww/202104/t20210402_249508.shtml",
+      "note": "馆藏号外反映保路运动的政治动员语言；其指控需与铁路合同、股款处置和清廷文书交叉阅读。"
+    },
+    {
+      "id": "v171_chn_zhao",
+      "title": "中国国家博物馆：四川人民批驳赵尔丰布告",
+      "url": "https://www.chnmuseum.cn/zp/zpml/gmww/202104/t20210402_249510.shtml",
+      "note": "同一纸面保存官方镇压说明与民众逐条批驳，适合展示权力文书和社会反应并存，而不能只取一方为全部事实。"
+    },
+    {
+      "id": "v171_chn_knife",
+      "title": "中国国家博物馆：武昌起义军劈牢门用刀",
+      "url": "https://www.chnmuseum.cn/zp/zpml/gmww/202112/t20211209_252825.shtml",
+      "note": "以具体器物连接武昌起义、释放被捕者和城市行动；不把单件器物夸大为起义全部因果。"
+    },
+    {
+      "id": "v171_1911_timeline",
+      "title": "辛亥革命博物院：武昌起义大事记",
+      "url": "https://www.1911museum.cn/list_31.html",
+      "note": "核对武昌起义、军政府、阳夏战事、各省代表和临时政府筹组的连续时序。"
+    },
+    {
+      "id": "v171_chn_representatives",
+      "title": "中国国家博物馆研究：各省都督府代表会",
+      "url": "https://www.chnmuseum.cn/yj/xscg/xslw/201812/t20181224_36349.shtml",
+      "note": "讨论黎元洪、黄兴、宋教仁、立宪派及各省代表之间的竞争与协商，避免把共和建立写成单一领袖的直线成果。"
+    },
+    {
+      "id": "v171_cssn_newpolicy",
+      "title": "中国社会科学网：清末新政与预备立宪",
+      "url": "https://www.cssn.cn/lsx/202303/t20230314_5607541.shtml",
+      "note": "用于理解新政、九年筹备清单与皇族内阁的制度矛盾；文章具有明确学术论辩立场，具体事实另与诏令互证。"
+    },
+    {
+      "id": "v171_cp_textbook",
+      "title": "商务印书馆：张元济与新式教科书",
+      "url": "https://www.cp.com.cn/Content/2014/07-03/1040509445.html",
+      "note": "核对1902年后商务编译所、最新教科书与废科举背景；企业馆史需与学制和出版物实物互证。"
+    },
+    {
+      "id": "v171_constitution",
+      "title": "《钦定宪法大纲》",
+      "url": "https://zh.wikisource.org/zh-hans/钦定宪法大纲",
+      "note": "1908年清廷公布的宪制文本，可直接核对君上大权与臣民权利义务条目；文本愿景不等于制度已经实行。"
+    },
+    {
+      "id": "v171_protocol",
+      "title": "《辛丑条约》文本",
+      "url": "https://zh.wikisource.org/zh-hans/辛丑条约",
+      "note": "用于核对赔款、使馆区、驻兵、惩办和外交礼仪等条款；条约文本不能单独呈现执行中的地方差异和社会代价。"
     }
   ],
   "relations": [
@@ -85469,6 +85783,782 @@
         "v170_dpm_archives"
       ],
       "peopleRoles": {}
+    },
+    {
+      "id": "v171_declaration",
+      "year": "1900",
+      "title": "清廷向列强宣战，朝廷内部并无一致方案",
+      "body": "义和团进入北京、列强军队扩大干涉后，清廷以光绪帝名义向多国宣战。主战、主和与观望意见同时存在，部分督抚并未执行全面开战命令。",
+      "impact": "宣战把拳民、清军、使馆和列强军队卷入同一场危机，也暴露中央命令已难整合各地。不能把它写成全体中国人与全体外国人的单一阵线。",
+      "kind": "历史事件",
+      "sortYear": 1900,
+      "category": "政治",
+      "people": [
+        "q_cixi",
+        "q170_ronglu",
+        "q171_yikuang"
+      ],
+      "sources": [
+        "v171_qsg24",
+        "v171_dpm_guangxu"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v171_southeast",
+      "year": "1900",
+      "title": "东南督抚形成互保安排",
+      "body": "刘坤一、张之洞、李鸿章等地方重臣同列强驻沪人员达成维持长江流域秩序的安排，不按北京宣战诏扩大冲突。",
+      "impact": "互保减少东南卷入战火和贸易中断，却使地方督抚自行解释中央命令。它既是危机控制，也是晚清中央权威分裂的证据。",
+      "kind": "历史事件",
+      "sortYear": 1900,
+      "category": "政治",
+      "people": [
+        "q171_liukunyi",
+        "q_zhangzhidong",
+        "q_lihongzhang",
+        "q167_shengxuanhuai"
+      ],
+      "sources": [
+        "v171_dpm_guangxu",
+        "v171_qsg413"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v171_protocol_politics",
+      "year": "1901",
+      "title": "《辛丑条约》重组清廷对外关系",
+      "body": "奕劻、李鸿章代表清廷与十一国签订条约，接受惩办官员、使馆区、驻兵、赔款和外交礼仪等条件。",
+      "impact": "条约严重限制国家主权并把长期财政负担转入各级税收。签字者承担谈判职责，但战争与条约不能归结为两人的个人选择。",
+      "kind": "历史事件",
+      "sortYear": 1901,
+      "category": "政治",
+      "people": [
+        "q171_yikuang",
+        "q_lihongzhang",
+        "q_cixi"
+      ],
+      "sources": [
+        "v171_protocol",
+        "v171_dpm_gengzi",
+        "v171_qsg24"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v171_reform_edict",
+      "year": "1901",
+      "title": "西安诏令启动清末新政",
+      "body": "庚子失败后，清廷要求中外官员陈述改革意见，随后逐步调整官制、军制、教育、法律和财政。最高决策仍由慈禧及重臣控制。",
+      "impact": "不少戊戌议题重新出现，但新政规模更大、执行期更长。改革旨在巩固王朝，也释放了学校、新军、地方议会等超出宫廷控制的力量。",
+      "kind": "历史事件",
+      "sortYear": 1901,
+      "category": "政治",
+      "people": [
+        "q_cixi",
+        "q_zhangzhidong",
+        "q171_liukunyi",
+        "q171_zhangbaixi"
+      ],
+      "sources": [
+        "v171_qsg24",
+        "v171_cssn_newpolicy"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v171_five_ministers",
+      "year": "1905—1906",
+      "title": "五大臣出洋考察政治",
+      "body": "载泽、端方等受命考察日本、欧美政治制度。出发前发生炸弹袭击，行程延后，归国后奏请预备立宪。",
+      "impact": "考察带回宪法、议会和行政资料，却把君主立宪解释为巩固皇位的工具。制度移植从来不是照搬一部外国宪法。",
+      "kind": "历史事件",
+      "sortYear": 1905,
+      "category": "政治",
+      "people": [
+        "q171_zaize",
+        "q171_duanfang"
+      ],
+      "sources": [
+        "v171_qsg24",
+        "v171_qsg469",
+        "v171_cssn_newpolicy"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v171_constitutional_prep",
+      "year": "1906—1908",
+      "title": "预备立宪与《钦定宪法大纲》",
+      "body": "清廷宣布仿行立宪，随后公布《钦定宪法大纲》和九年筹备清单。大纲列出臣民权利义务，也把广泛权力保留给君主。",
+      "impact": "立宪语言进入国家制度，但国会期限、皇权范围和责任政府问题持续引发争论。文本公布不等于权力已经受到有效约束。",
+      "kind": "历史事件",
+      "sortYear": 1906,
+      "category": "政治",
+      "people": [
+        "q171_zaize",
+        "q_zaifeng",
+        "q171_yikuang"
+      ],
+      "sources": [
+        "v171_constitution",
+        "v171_qsg24",
+        "v171_cssn_newpolicy"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v171_councils",
+      "year": "1909—1910",
+      "title": "咨议局与资政院开启有限议政",
+      "body": "各省咨议局成立，资政院随后开会。议员主要由有限选举和指定产生，但预算、国会期限和地方事务开始进入公开辩论。",
+      "impact": "有限议政培养了跨省联络与程序经验，也使立宪派更清楚地看到朝廷不愿迅速交出权力。新机构既是改革成果，也成为批评朝廷的平台。",
+      "kind": "历史事件",
+      "sortYear": 1909,
+      "category": "政治",
+      "people": [
+        "q_zaifeng",
+        "q171_zaize"
+      ],
+      "sources": [
+        "v171_qsg25",
+        "v171_cssn_newpolicy"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v171_royal_cabinet",
+      "year": "1911",
+      "title": "责任内阁因皇族比例失去信用",
+      "body": "清廷裁军机处、设责任内阁，由奕劻任总理大臣。十三名国务大臣中皇族占据重要位置，社会舆论称为“皇族内阁”。",
+      "impact": "制度名称改变而权力仍集中于亲贵，使部分立宪派对清廷失望。问题不只是人数，还在内阁能否向代表机关负责。",
+      "kind": "历史事件",
+      "sortYear": 1911,
+      "category": "政治",
+      "people": [
+        "q171_yikuang",
+        "q_zaifeng",
+        "q171_zaize"
+      ],
+      "sources": [
+        "v171_qsg25",
+        "v171_qsg221",
+        "v171_cssn_newpolicy"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v171_boxers_beijing",
+      "year": "1900",
+      "title": "义和团进入京津，官军与拳团关系反复",
+      "body": "义和团由山东、直隶扩展至京津，清廷先后出现查禁、招抚和利用等政策。拳团并非统一军队，各坛口、地方官和清军之间关系不同。",
+      "impact": "反侵略诉求动员了大量民众，刀枪不入信仰和排外暴力又造成严重误判与伤害。理解其社会来源不能取消对杀戮平民的评价。",
+      "kind": "历史事件",
+      "sortYear": 1900,
+      "category": "军事",
+      "people": [
+        "q171_yuxian",
+        "q_cixi",
+        "q170_gangyi"
+      ],
+      "sources": [
+        "v171_qsg465",
+        "v171_chn_flag",
+        "v171_qsg24"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v171_dagu_1900",
+      "year": "1900",
+      "title": "联军攻占大沽炮台，冲突全面升级",
+      "body": "列强舰队要求接管炮台未果后发动进攻，大沽失守使天津、北京之间的军事冲突升级。守军、舰队与附近居民都被卷入。",
+      "impact": "炮台失守切断清廷部分海口控制，也促使朝廷走向宣战。不能把联军行动说成单纯保护使馆，它包含主动扩大军事占领。",
+      "kind": "历史事件",
+      "sortYear": 1900,
+      "category": "军事",
+      "people": [],
+      "sources": [
+        "v171_qsg24",
+        "v171_dpm_gengzi",
+        "v171_chn_map"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v171_langfang",
+      "year": "1900",
+      "title": "西摩联军在廊坊受阻后撤回天津",
+      "body": "先期联军沿铁路向北京推进，铁路破坏、补给困难并遭义和团和清军攻击，最终退回天津。",
+      "impact": "廊坊作战显示拳团在熟悉地形和清军配合下能够阻滞小规模远征，却不能证明神术可抵现代火力。随后列强投入更大兵力。",
+      "kind": "历史事件",
+      "sortYear": 1900,
+      "category": "军事",
+      "people": [
+        "q169_nieshicheng"
+      ],
+      "sources": [
+        "v171_chn_map",
+        "v171_qsg24"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v171_tianjin_fall",
+      "year": "1900",
+      "title": "天津攻防与聂士成战死",
+      "body": "清军、义和团与联军在天津及租界周边交战。聂士成部承担多处防务，他在战斗中阵亡；联军随后攻占天津。",
+      "impact": "城市居民面临炮火、征用、逃难和报复。聂士成既与联军作战，也曾约束拳团，不能被塞进单一“扶拳”或“剿拳”标签。",
+      "kind": "历史事件",
+      "sortYear": 1900,
+      "category": "军事",
+      "people": [
+        "q169_nieshicheng",
+        "q170_ronglu"
+      ],
+      "sources": [
+        "v171_qsg24",
+        "v171_chn_map"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v171_beijing_fall",
+      "year": "1900",
+      "title": "八国联军攻占并分区控制北京",
+      "body": "联军自天津向北推进，8月攻入北京。慈禧、光绪和亲贵西逃，联军按国别划区占领官署与街区。",
+      "impact": "占领伴随抢掠、杀戮、搜捕和财产损失，城市权力被外军切割。《京城各国暂分界址全图》保存了占领空间的直接证据。",
+      "kind": "历史事件",
+      "sortYear": 1900,
+      "category": "军事",
+      "people": [
+        "q_cixi",
+        "q_guangxu",
+        "q171_yikuang"
+      ],
+      "sources": [
+        "v171_chn_map",
+        "v171_dpm_gengzi",
+        "v171_qsg24"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v171_new_armies",
+      "year": "1901—1908",
+      "title": "各省编练新军并建立军官教育",
+      "body": "清末新政以新式编制、操典、武器和军校扩充常备军，北洋六镇较早形成，各省也陆续建军。",
+      "impact": "新军提高训练和组织能力，却依赖督练者、军官同学网络和地方饷源。现代军制并不会自动带来对中央王朝的政治忠诚。",
+      "kind": "历史事件",
+      "sortYear": 1901,
+      "category": "军事",
+      "people": [
+        "q_yuanshikai",
+        "q_zhangzhidong",
+        "q171_duanfang"
+      ],
+      "sources": [
+        "v171_qsg131",
+        "v171_qsg24"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v171_anqing",
+      "year": "1907",
+      "title": "徐锡麟安庆起义失败",
+      "body": "光复会成员徐锡麟在安徽发动起义并刺杀巡抚恩铭，因准备不足、援应未至而失败，徐锡麟被处死。",
+      "impact": "事件显示革命者试图从新式警政和军校内部发动行动，也暴露秘密组织、跨地协同和武器控制的困难。秋瑾随后被捕遇害。",
+      "kind": "历史事件",
+      "sortYear": 1907,
+      "category": "军事",
+      "people": [
+        "q_qiujin"
+      ],
+      "sources": [
+        "v171_chn_oath",
+        "v171_qsg469"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v171_wuchang_armory",
+      "year": "1911",
+      "title": "武昌新军夺取楚望台军械所与总督署",
+      "body": "革命党名单暴露并有人被捕处决后，湖北新军中的文学社、共进会成员提前起事，夺取军械所并进攻总督署。",
+      "impact": "起义成功依赖新军内部组织、城市军械和清方指挥崩解，不是某位海外领袖远程下令的结果。随后推举黎元洪，是军政整合而非起义预案。",
+      "kind": "历史事件",
+      "sortYear": 1911,
+      "category": "军事",
+      "people": [
+        "q171_liyuanhong",
+        "q_huangxing"
+      ],
+      "sources": [
+        "v171_chn_knife",
+        "v171_1911_timeline",
+        "v171_qsg25"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v171_indemnity",
+      "year": "1901",
+      "title": "四亿五千万两赔款转化为长期财政负担",
+      "body": "《辛丑条约》规定清廷赔款海关银四亿五千万两，分期付息，并以海关税、常关税、盐税等作担保。",
+      "impact": "中央负担通过税收、附加和地方摊派向社会传导，实际支付还受汇率、利息和各国后续退还安排影响。只报本金会低估制度后果。",
+      "kind": "历史事件",
+      "sortYear": 1901,
+      "category": "经济",
+      "people": [
+        "q171_yikuang",
+        "q_lihongzhang"
+      ],
+      "sources": [
+        "v171_protocol",
+        "v171_dpm_gengzi"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v171_occupation_economy",
+      "year": "1900—1901",
+      "title": "京津占领破坏商路、住房与城市资产",
+      "body": "战争与占领使店铺停业、货运中断，军队征用住房、粮秣和交通工具，抢掠又造成难以统计的私人财产损失。",
+      "impact": "宏观赔款之外，家庭、商号和手工业者承受即时损失；恢复营业还取决于治安、道路、信用和人口返城。",
+      "kind": "历史事件",
+      "sortYear": 1900,
+      "category": "经济",
+      "people": [],
+      "sources": [
+        "v171_chn_map",
+        "v171_dpm_gengzi"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v171_finance_offices",
+      "year": "1903—1906",
+      "title": "财政处与度支部尝试汇总国家收支",
+      "body": "清廷设财政处，官制改革后由度支部承担财政事务，要求各地造报收支、清理旧有款项。",
+      "impact": "统一预算面对中央与地方分税、旧债赔款和报表不实等困难。建立机关是财政国家化的起点，不等于立即掌握全部收入。",
+      "kind": "历史事件",
+      "sortYear": 1903,
+      "category": "经济",
+      "people": [
+        "q171_yikuang",
+        "q171_zaize"
+      ],
+      "sources": [
+        "v171_qsg24",
+        "v171_qsg25"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v171_commerce_ministry",
+      "year": "1903—1906",
+      "title": "商部、农工商部与商会制度出现",
+      "body": "清廷设商部，后改农工商部，颁行商会等章程，试图以登记、奖章、公司规则和行业组织促进工商。",
+      "impact": "商人获得新的集体表达渠道，也被要求承担筹款、劝业和地方公共事务。国家扶商与行政控制同时存在。",
+      "kind": "历史事件",
+      "sortYear": 1903,
+      "category": "经济",
+      "people": [
+        "q171_yikuang",
+        "q167_shengxuanhuai",
+        "q170_zhangyuanji"
+      ],
+      "sources": [
+        "v171_qsg24",
+        "v171_cp_textbook"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v171_hubu_bank",
+      "year": "1905—1908",
+      "title": "户部银行改组为大清银行",
+      "body": "户部试办国家银行，后来改称大清银行，经营纸币、存放款和国库相关业务。各地银两、铜元和外国银行仍共同流通。",
+      "impact": "中央银行名称出现，并不表示全国货币已经统一。财政信用、准备金和地方币制仍限制其能力。",
+      "kind": "历史事件",
+      "sortYear": 1905,
+      "category": "经济",
+      "people": [
+        "q171_zaize"
+      ],
+      "sources": [
+        "v171_qsg24",
+        "v171_qsg25"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v171_railway_redemption",
+      "year": "1905",
+      "title": "粤汉铁路赎回与地方商办期待上升",
+      "body": "反对美国公司转售筑路权的运动推动清廷赎回粤汉铁路，随后鄂、湘、粤商办公司筹集股款。",
+      "impact": "赎路强化了地方绅商对路权和股款的所有感，也为1911年国有化冲突埋下制度背景。商办并非天然高效，中央接收也不能绕过补偿。",
+      "kind": "历史事件",
+      "sortYear": 1905,
+      "category": "经济",
+      "people": [
+        "q_zhangzhidong",
+        "q167_shengxuanhuai"
+      ],
+      "sources": [
+        "v171_qsg24",
+        "v171_chn_rail"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v171_huguang_loan",
+      "year": "1911",
+      "title": "湖广铁路借款与铁路国有政策相互捆绑",
+      "body": "清廷为取得英、法、德、美银行团借款，将川汉、粤汉干线收归国有，并提出处理各省商办股款。四川公司亏空使补偿尤其尖锐。",
+      "impact": "外债、中央集权、地方投资和腐败亏空叠加，工程融资迅速转为政治危机。铁路建设目标不能证明具体接收程序公平。",
+      "kind": "历史事件",
+      "sortYear": 1911,
+      "category": "经济",
+      "people": [
+        "q167_shengxuanhuai",
+        "q171_duanfang",
+        "q_zaifeng"
+      ],
+      "sources": [
+        "v171_qsg25",
+        "v171_chn_rail",
+        "v171_chn_zhao"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v171_reform_surcharges",
+      "year": "1901—1911",
+      "title": "新政经费依赖地方附加与旧税挪移",
+      "body": "练兵、警政、学堂和自治都需要持续经费，各省常从田赋、厘金、盐税或地方附加中筹措。",
+      "impact": "制度扩张并非免费：经费不足造成学校规模缩水、军饷拖欠和负担不均。评价新政成效必须追问钱从哪里来、由谁承担。",
+      "kind": "历史事件",
+      "sortYear": 1901,
+      "category": "经济",
+      "people": [
+        "q171_liukunyi",
+        "q171_duanfang",
+        "q171_zhangbaixi"
+      ],
+      "sources": [
+        "v171_qsg24",
+        "v171_cssn_newpolicy"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v171_christian_victims",
+      "year": "1899—1900",
+      "title": "教士、教民及被指为“二毛子”者遭到杀害",
+      "body": "拳团攻击教堂、学校和中国基督徒，部分地方官纵容甚至组织杀戮。山西等地出现妇女、儿童和本地教民共同遇害。",
+      "impact": "反对列强侵略不能成为杀害平民的理由。教案中的特权冲突、地方积怨和群众暴力需要同时说明，不能把中国教民排除在社会史之外。",
+      "kind": "历史事件",
+      "sortYear": 1899,
+      "category": "社会",
+      "people": [
+        "q171_yuxian",
+        "q170_gangyi"
+      ],
+      "sources": [
+        "v171_qsg465",
+        "v171_dpm_gengzi"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v171_legation_refuge",
+      "year": "1900",
+      "title": "使馆区与北堂围困形成多类避难人群",
+      "body": "外交人员、卫队和许多中国教民进入使馆区或西什库教堂避难，围困中面临炮击、饥饿、伤病与内部供给压力。",
+      "impact": "被围者并非只有外国人，中国教民数量更大；围攻与联军后来的占领暴行都应进入同一叙述，不能互相抵销。",
+      "kind": "历史事件",
+      "sortYear": 1900,
+      "category": "社会",
+      "people": [
+        "q170_ronglu"
+      ],
+      "sources": [
+        "v171_qsg24",
+        "v171_dpm_gengzi"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v171_occupation_violence",
+      "year": "1900—1901",
+      "title": "占领军抢掠、报复与居民逃亡",
+      "body": "联军进入京津后实施搜捕和报复，各国部队及随军人员发生抢掠与暴力。大量居民逃离或失去住房、财物。",
+      "impact": "把北京失守只写成宫廷西逃，会遮蔽普通居民的遭遇。不同军队纪律有差异，但分区占领本身制造了缺乏统一司法的暴力环境。",
+      "kind": "历史事件",
+      "sortYear": 1900,
+      "category": "社会",
+      "people": [],
+      "sources": [
+        "v171_chn_map",
+        "v171_dpm_gengzi"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v171_return_capital",
+      "year": "1901—1902",
+      "title": "两宫回銮与北京秩序重建",
+      "body": "条约签订后，慈禧、光绪从西安返京。官署、街区和市场逐步恢复，外国驻军和扩大后的使馆区却成为长期存在。",
+      "impact": "回銮恢复宫廷仪式，不等于危机结束。失踪人口、房产归属、赔偿、教民与非教民冲突仍需地方处理。",
+      "kind": "历史事件",
+      "sortYear": 1901,
+      "category": "社会",
+      "people": [
+        "q_cixi",
+        "q_guangxu",
+        "q171_yikuang"
+      ],
+      "sources": [
+        "v171_qsg24",
+        "v171_dpm_gengzi"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v171_modern_police",
+      "year": "1901—1908",
+      "title": "巡警与城市警政逐步制度化",
+      "body": "北京及多省仿照外地经验设巡警、警务学堂和分区管理，承担治安、交通、户口、卫生与消防等职责。",
+      "impact": "警察改善部分城市管理，也扩大国家对日常生活和集会的监控。机构名称相同，各地经费、训练和法定权限并不一致。",
+      "kind": "历史事件",
+      "sortYear": 1901,
+      "category": "社会",
+      "people": [
+        "q171_duanfang",
+        "q171_zaize"
+      ],
+      "sources": [
+        "v171_qsg24",
+        "v171_qsg469"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v171_anti_opium",
+      "year": "1906—1911",
+      "title": "十年禁烟计划进入种植、销售与吸食治理",
+      "body": "清廷宣布限期禁绝鸦片，调查烟民、限制烟馆并推动减种，同时与英国交涉减少印度鸦片输入。",
+      "impact": "禁烟取得阶段性进展，也可能通过登记、处罚和地方摊派伤害贫困烟民与种植户。政策成效不能只看诏令数量。",
+      "kind": "历史事件",
+      "sortYear": 1906,
+      "category": "社会",
+      "people": [
+        "q171_yikuang",
+        "q_zaifeng"
+      ],
+      "sources": [
+        "v171_qsg24",
+        "v171_qsg25"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v171_students_public",
+      "year": "1902—1911",
+      "title": "新式学生成为跨地域公共行动者",
+      "body": "学堂与留学扩大后，学生通过社团、拒俄、抵制、请愿和报刊参与公共事务。清廷一面利用新知识，一面限制政治活动。",
+      "impact": "学生不是天然革命派；立宪、保皇、革命和职业选择同时存在。新教育改变了青年进入政治的路径。",
+      "kind": "历史事件",
+      "sortYear": 1902,
+      "category": "社会",
+      "people": [
+        "q171_songjiaoren",
+        "q_qiujin",
+        "q_liangqichao"
+      ],
+      "sources": [
+        "v171_cp_textbook",
+        "v171_chn_tongmeng"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v171_chengdu_bloodshed",
+      "year": "1911",
+      "title": "成都请愿遭镇压，保路运动转向武装冲突",
+      "body": "四川保路团体以罢市、罢课和请愿反对接路方案。赵尔丰拘捕代表并命军队开枪，随后各地冲突扩大。",
+      "impact": "死伤与逮捕使股款争议转化为对清廷合法性的全面反抗。人民在官布告上的批驳保存了被治理者自己的文字回应。",
+      "kind": "历史事件",
+      "sortYear": 1911,
+      "category": "社会",
+      "people": [
+        "q171_duanfang",
+        "q167_shengxuanhuai"
+      ],
+      "sources": [
+        "v171_chn_zhao",
+        "v171_chn_rail",
+        "v171_qsg25"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v171_pku_reopen",
+      "year": "1900—1902",
+      "title": "京师大学堂在庚子停办后恢复",
+      "body": "联军入京使京师大学堂停顿，庚子后恢复并调整课程、管理与师资，逐步承担最高学府和教育行政试验角色。",
+      "impact": "一所大学的恢复无法代替全国教育体系，却为章程、译书、师范和专业教育提供了持续机构。",
+      "kind": "历史事件",
+      "sortYear": 1900,
+      "category": "文化",
+      "people": [
+        "q171_zhangbaixi",
+        "q170_sunjianai"
+      ],
+      "sources": [
+        "v171_qsg443",
+        "v170_moe_pku"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v171_renyin_system",
+      "year": "1902",
+      "title": "《钦定学堂章程》提出分级学校体系",
+      "body": "壬寅学制尝试把蒙学、小学、中学、高等学堂和大学衔接起来，但颁布后并未充分实行。",
+      "impact": "章程的重要性在于第一次系统设计，不应把纸面学制写成全国学校已整齐建立。次年的癸卯学制又作修订。",
+      "kind": "历史事件",
+      "sortYear": 1902,
+      "category": "文化",
+      "people": [
+        "q171_zhangbaixi"
+      ],
+      "sources": [
+        "v171_qsg443",
+        "v171_cp_textbook"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v171_guimao_system",
+      "year": "1904",
+      "title": "《奏定学堂章程》推动癸卯学制实施",
+      "body": "清廷公布较完整的各级学堂、课程、师范和管理章程，各省据此改书院、办小学中学并选派留学生。",
+      "impact": "新体系扩大算学、格致、外语和实业教育，也保留经学、伦理与等级规范。学校数量、师资和女生入学仍高度不均。",
+      "kind": "历史事件",
+      "sortYear": 1904,
+      "category": "文化",
+      "people": [
+        "q171_zhangbaixi",
+        "q171_duanfang"
+      ],
+      "sources": [
+        "v171_qsg443",
+        "v171_cp_textbook"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v171_textbooks",
+      "year": "1904年起",
+      "title": "新式教科书进入课堂与出版市场",
+      "body": "商务印书馆等机构组织编辑国文、历史、地理、算学等教科书，以分课、插图和年级安排服务新学制。",
+      "impact": "教材把国家、世界和日常知识带入更多课堂，也由出版企业、审定制度和市场共同塑造。一本畅销书不能代表所有地区实际教学。",
+      "kind": "历史事件",
+      "sortYear": 1904,
+      "category": "文化",
+      "people": [
+        "q170_zhangyuanji",
+        "q171_zhangbaixi"
+      ],
+      "sources": [
+        "v171_cp_textbook"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v171_abolish_exams",
+      "year": "1905",
+      "title": "停止科举改变读书人的制度路径",
+      "body": "清廷决定自1906年起停止乡试、会试，各地学额和学校体系成为新的资格入口。延续千余年的考试制度由此退出国家选官中心。",
+      "impact": "废科举推动新学，却使旧学师生、乡村教育和功名预期骤然转型。制度退出并未自动带来公平普及的现代学校。",
+      "kind": "历史事件",
+      "sortYear": 1905,
+      "category": "文化",
+      "people": [
+        "q_zhangzhidong",
+        "q171_zhangbaixi",
+        "q171_yikuang"
+      ],
+      "sources": [
+        "v171_qsg24",
+        "v171_cp_textbook"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v171_study_japan",
+      "year": "1901—1907",
+      "title": "留日潮带回新知识与政治组织经验",
+      "body": "距离、费用和制度相近使日本成为主要留学目的地。学生学习军事、师范、法政和实业，也接触立宪、民族主义和革命思想。",
+      "impact": "留学生并非同一政治阵营；官费、自费、速成班和正规学校经历差异很大。跨国教育同时服务改革国家与反清组织。",
+      "kind": "历史事件",
+      "sortYear": 1901,
+      "category": "文化",
+      "people": [
+        "q171_songjiaoren",
+        "q_huangxing",
+        "q_qiujin"
+      ],
+      "sources": [
+        "v171_chn_oath",
+        "v171_chn_tongmeng"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v171_revolutionary_print",
+      "year": "1903—1908",
+      "title": "《苏报》《民报》等重塑革命论辩",
+      "body": "上海、东京等地报刊传播共和、民族与民权主张，也发生查禁、诉讼和跨境发行。不同刊物之间围绕革命与立宪激烈争论。",
+      "impact": "印刷扩大政治参与，却不等于读者自动接受同一纲领。报刊文字既是思想资料，也是组织动员和论战文本。",
+      "kind": "历史事件",
+      "sortYear": 1903,
+      "category": "文化",
+      "people": [
+        "q_sunyatsen",
+        "q_liangqichao",
+        "q171_songjiaoren"
+      ],
+      "sources": [
+        "v171_chn_tongmeng",
+        "v171_chn_oath"
+      ],
+      "peopleRoles": {}
+    },
+    {
+      "id": "v171_constitutional_vocab",
+      "year": "1906—1911",
+      "title": "国会、预算与责任内阁成为公共词汇",
+      "body": "预备立宪、咨议局和报刊讨论使宪法、国会、选举、预算、权利等概念进入士绅、学生和商人的政治语言。",
+      "impact": "概念传播不代表含义一致。朝廷、立宪派和革命者对主权归属与君主权限有根本差异，恰是冲突所在。",
+      "kind": "历史事件",
+      "sortYear": 1906,
+      "category": "文化",
+      "people": [
+        "q171_zaize",
+        "q171_songjiaoren",
+        "q_liangqichao"
+      ],
+      "sources": [
+        "v171_constitution",
+        "v171_cssn_newpolicy",
+        "v171_chn_representatives"
+      ],
+      "peopleRoles": {}
     }
   ],
   "objects": [
@@ -91791,6 +92881,153 @@
       "sources": [
         "v170_dpm_archives",
         "v170_dpm_petitions"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v171_obj_city_map",
+      "title": "《京城各国暂分界址全图》",
+      "subtitle": "被占领城市的空间证据",
+      "symbol": "map",
+      "image": null,
+      "body": "图上以颜色标出各国军队在北京控制的街区、官署与设施。",
+      "note": "它证明分区占领格局，不记录每条街的全部暴力与居民经历。",
+      "people": [],
+      "sources": [
+        "v171_chn_map"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v171_obj_boxer_flag",
+      "title": "义和神团“坎”字旗",
+      "subtitle": "民间组织、战争与文物流离",
+      "symbol": "flag",
+      "image": null,
+      "body": "旗帜来自直隶义和团坛口，1900年被德军掠走，后于1955年归还中国。",
+      "note": "单面旗只能说明一个组织单位，不能代表所有拳团或参与者。",
+      "people": [
+        "q171_yuxian"
+      ],
+      "sources": [
+        "v171_chn_flag"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v171_obj_constitution",
+      "title": "《钦定宪法大纲》",
+      "subtitle": "权利条目与君上大权并置",
+      "symbol": "doc.text",
+      "image": null,
+      "body": "1908年宪制文本列出君主权力和臣民权利义务，呈现清廷预备立宪的制度边界。",
+      "note": "文本公布不等于国会、责任内阁和权利救济已经落地。",
+      "people": [
+        "q171_zaize",
+        "q_zaifeng"
+      ],
+      "sources": [
+        "v171_constitution"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v171_obj_oath",
+      "title": "光复会誓言",
+      "subtitle": "革命团体的自我约束文本",
+      "symbol": "doc.text",
+      "image": null,
+      "body": "誓言与组织材料保存光复会的政治目标及成员联结。",
+      "note": "誓词是规范性表达，须与成员实际行动和不同组织关系互证。",
+      "people": [
+        "q_qiujin",
+        "q171_songjiaoren"
+      ],
+      "sources": [
+        "v171_chn_oath"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v171_obj_tongmeng_charter",
+      "title": "中国同盟会上海支部总章草案",
+      "subtitle": "从秘密网络到分部制度",
+      "symbol": "doc.text",
+      "image": null,
+      "body": "章程呈现上海分部及中部总会的组织设计、职务与地域联络。",
+      "note": "现存草案反映制度设想，不宜据此推定各条都被完整执行。",
+      "people": [
+        "q171_songjiaoren",
+        "q_sunyatsen",
+        "q_huangxing"
+      ],
+      "sources": [
+        "v171_chn_tongmeng"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v171_obj_rail_extra",
+      "title": "《蜀报》保路号外",
+      "subtitle": "铁路股款争议成为政治动员",
+      "symbol": "newspaper",
+      "image": null,
+      "body": "号外以强烈语言指控铁路国有和借款政策，推动公众理解并参与保路。",
+      "note": "它是运动方文献；具体合同和股款损失仍需同官方文件互证。",
+      "people": [
+        "q167_shengxuanhuai",
+        "q171_duanfang"
+      ],
+      "sources": [
+        "v171_chn_rail"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v171_obj_zhao_broadside",
+      "title": "四川人民逐条批驳赵尔丰布告",
+      "subtitle": "同一纸面上的官民争论",
+      "symbol": "doc.text.magnifyingglass",
+      "image": null,
+      "body": "官方布告试图说明镇压，民众在其上逐条写下反驳，留下罕见的对读材料。",
+      "note": "两种声音都处在冲突现场，需结合死伤、拘捕和命令时序阅读。",
+      "people": [
+        "q171_duanfang"
+      ],
+      "sources": [
+        "v171_chn_zhao"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v171_obj_wuchang_knife",
+      "title": "武昌起义军劈牢门用刀",
+      "subtitle": "一件器物连接城市行动",
+      "symbol": "shield",
+      "image": null,
+      "body": "起义军用刀破开按察使司牢门木栅，释放被捕者。",
+      "note": "器物提供具体行动证据，不把起义成败归因于单一英雄或物件。",
+      "people": [
+        "q171_liyuanhong"
+      ],
+      "sources": [
+        "v171_chn_knife"
       ],
       "dynasties": [
         "qing"
@@ -105212,11 +106449,19 @@
             "v170_rail_mine_bureau",
             "v170_urban_readers",
             "v170_exile_routes",
-            "v170_exam_reform"
+            "v170_exam_reform",
+            "v171_declaration",
+            "v171_southeast",
+            "v171_protocol_politics",
+            "v171_reform_edict"
           ],
           "people": [
             "q169_xubangdao",
-            "q170_linxu"
+            "q170_linxu",
+            "q171_yikuang",
+            "q171_liukunyi",
+            "q171_yuxian",
+            "q171_zhangbaixi"
           ]
         }
       ],
@@ -105326,7 +106571,10 @@
         "v170_wuxu_record",
         "v170_renxue",
         "v170_guowenbao",
-        "v170_loc_reform"
+        "v170_loc_reform",
+        "v171_qsg24",
+        "v171_dpm_guangxu",
+        "v171_dpm_gengzi"
       ]
     },
     {
@@ -105358,9 +106606,14 @@
           "kind": "史实与解读",
           "events": [
             "v66q_women_normal",
-            "v66q_ningbo_charity"
+            "v66q_ningbo_charity",
+            "v171_councils",
+            "v171_royal_cabinet"
           ],
-          "people": []
+          "people": [
+            "q171_yikuang",
+            "q171_zaize"
+          ]
         },
         {
           "id": "q-xuantong-3",
@@ -105394,7 +106647,8 @@
             "v40q_yuan_return",
             "v40q_nanjing_republic",
             "v41q_huanghuagang",
-            "v41q_yangxia"
+            "v41q_yangxia",
+            "v171_wuchang_armory"
           ],
           "people": [
             "q_zaifeng",
@@ -105402,7 +106656,11 @@
             "q_yuanshikai",
             "q_sunyatsen",
             "q_zhangzhidong",
-            "q_huangxing"
+            "q_huangxing",
+            "q171_liyuanhong",
+            "q171_songjiaoren",
+            "q171_wutingfang",
+            "q171_tangshaoyi"
           ]
         },
         {
@@ -105453,7 +106711,10 @@
         "v40q_qsg25",
         "v40q_sun_declaration",
         "v41q_huang_archive",
-        "v41q_huanghuagang"
+        "v41q_huanghuagang",
+        "v171_qsg25",
+        "v171_constitution",
+        "v171_chn_representatives"
       ]
     },
     {
@@ -219713,6 +220974,895 @@
         "v170_cp_zhang",
         "v170_cp_path"
       ]
+    },
+    {
+      "person": "q171_yikuang",
+      "title": "奕劻：议和、外务部与皇族内阁",
+      "dek": "他的长期在位来自外交与宫廷位置，也让议和、用人和财富争议都集中到一人身上。",
+      "sections": [
+        {
+          "id": "q171_yikuang-1",
+          "title": "从宗室边缘进入总理衙门",
+          "text": "奕劻并非最初就处在最高权力中心。他由辅国将军、贝子逐步晋封，1884年奉命管理总理各国事务衙门，此后长期处理外交。宗室身份提供接近宫廷的资格，真正扩大其权力的则是持续任职、熟悉使臣交涉和能够在慈禧、军机与外务官员之间传递意见。把他简单称为‘卖国亲王’，会遮蔽一个关键制度问题：晚清重大外交由少数兼任多职的亲贵掌握，议和责任、信息优势和私人请托因此高度集中。",
+          "sources": [
+            "v171_qsg221"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v171_declaration"
+          ],
+          "people": [
+            "q_cixi"
+          ]
+        },
+        {
+          "id": "q171_yikuang-2",
+          "title": "庚子留京与辛丑议和",
+          "text": "1900年北京危机中，奕劻先参与朝议，帝后西逃后留在议和体系内，与李鸿章共同承担全权大臣。谈判面对已经占领京津的列强，选择空间极窄，但具体条款、惩办名单和财政担保仍需逐项讨论。签订《辛丑条约》使他承担不可回避的政治责任；同时，不能把四亿五千万两赔款、驻兵和使馆区全部解释成两名签字者主动设计。战争决策、清廷权力结构与列强强迫共同构成结果。",
+          "sources": [
+            "v171_qsg24",
+            "v171_protocol"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v171_protocol_politics",
+            "v171_indemnity"
+          ],
+          "people": [
+            "q_lihongzhang"
+          ]
+        },
+        {
+          "id": "q171_yikuang-3",
+          "title": "外务部、财政处与请托网络",
+          "text": "总理衙门改为外务部后，奕劻仍居首位，又管理财政、练兵等事务。权力横跨多个新机构，使他成为官员和商人争取职位、合同与批示的重要入口。《清史稿》保留御史对其父子收贿和生活奢侈的弹劾，也记调查未得实；这不等于指控全部虚构，也不能把传闻当判决。更可靠的读法是承认门庭如市、任命不透明的制度风险，同时标明个别金钱数字的证据限度。",
+          "sources": [
+            "v171_qsg221"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v171_finance_offices",
+            "v171_commerce_ministry"
+          ],
+          "people": []
+        },
+        {
+          "id": "q171_yikuang-4",
+          "title": "首届责任内阁为何失去信用",
+          "text": "1911年军机处裁撤，奕劻出任内阁总理大臣。名义上这是责任内阁，实际国务大臣中皇族比例过高，内阁也不真正向资政院负责。社会讥称‘皇族内阁’，不是只在反感某几张面孔，而是在追问改革是否愿意约束皇室权力。奕劻既是制度转型的执行者，也是旧权力结构的受益者。他请求辞职未获准，说明个人去留仍由宫廷决定，所谓责任制缺少稳定程序。",
+          "sources": [
+            "v171_qsg25",
+            "v171_cssn_newpolicy"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v171_royal_cabinet"
+          ],
+          "people": [
+            "q_zaifeng",
+            "q171_zaize"
+          ]
+        },
+        {
+          "id": "q171_yikuang-5",
+          "title": "起用袁世凯与退位讨论",
+          "text": "武昌起义后，奕劻主张重新起用袁世凯，希望借北洋军挽救局势。袁掌握军政后取代他任内阁总理，奕劻转入弼德院。清廷内部对战、和、立宪与共和反复争论，奕劻后来倾向接受退位。说他一人‘卖掉大清’过于简单：各省独立、北洋军权、南京政府与列强态度都限制皇室选择。但他长期构成宫廷与袁世凯之间的桥梁，也应对权力转移承担具体责任。",
+          "sources": [
+            "v171_qsg25",
+            "v171_qsg221",
+            "v5qe_saac_abdication"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "qev_abdication_1912"
+          ],
+          "people": [
+            "q_yuanshikai",
+            "q_longyu"
+          ]
+        }
+      ],
+      "sources": [
+        "v171_qsg221",
+        "v171_qsg24",
+        "v171_protocol",
+        "v171_qsg25",
+        "v171_cssn_newpolicy",
+        "v5qe_saac_abdication"
+      ]
+    },
+    {
+      "person": "q171_liukunyi",
+      "title": "刘坤一：从湘军到东南互保",
+      "dek": "他的庚子选择保护了东南，也显示地方督抚已能自行解释中央命令。",
+      "sections": [
+        {
+          "id": "q171_liukunyi-1",
+          "title": "军功出身与封疆治理",
+          "text": "刘坤一在太平天国战争中随湘军系统起家，长期从军后转任巡抚、总督。到晚年任两江总督时，他掌握的不是一支私人军队那么简单，而是长江下游财政、漕运、海防和地方官僚网络。军功资历使他在中央危机中拥有较大议价能力，也意味着其政治视野深受战争和地方秩序经验影响。评价庚子选择前，应先看清他能调动哪些资源，而不是把互保只写成一句电报。",
+          "sources": [
+            "v171_qsg413"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v171_southeast"
+          ],
+          "people": []
+        },
+        {
+          "id": "q171_liukunyi-2",
+          "title": "1900年为什么不全面奉诏开战",
+          "text": "清廷宣战后，刘坤一与张之洞等通过上海方面同列强约定维持长江流域秩序，不扩大攻击侨民和租界。地方督抚把北京命令解释为受拳团胁迫的非常诏令。这避免东南主要港口和税源立即陷入战争，也明显越过通常的中央服从关系。互保不是宣布独立，却让外界看到：最高命令若与地方利益和军力判断冲突，督抚可以联合选择另一条路线。",
+          "sources": [
+            "v171_dpm_guangxu",
+            "v171_qsg413"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v171_southeast"
+          ],
+          "people": [
+            "q_zhangzhidong",
+            "q_lihongzhang"
+          ]
+        },
+        {
+          "id": "q171_liukunyi-3",
+          "title": "保护秩序也有边界",
+          "text": "东南互保常被赞为保境安民，但‘安民’的范围和代价仍要追问。地方政府加强城防、约束反教活动并维持贸易，保护了许多居民和商业；同时租界、海关与外国利益也在协议中占据重要位置。它没有解决华北的战火，更不能把东南写成完全和平的旁观区。地方官对报刊、集会和革命活动依然警惕，所谓秩序包含对社会动员的控制。",
+          "sources": [
+            "v171_dpm_guangxu"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v171_occupation_economy"
+          ],
+          "people": []
+        },
+        {
+          "id": "q171_liukunyi-4",
+          "title": "与张之洞联奏新政",
+          "text": "危机过后，刘坤一与张之洞提出改革意见，涉及兴学、练兵、财政、司法和行政。他们支持制度更新，却强调次第、官僚执行与维持清廷秩序，和革命方案不同，也不等同于戊戌时康梁的急速路径。两江、湖广的地方试办经验为建议提供基础，但地方经费和人员条件并不能直接复制到全国。联奏进入新政议程，说明改革并非只由宫廷忽然醒悟。",
+          "sources": [
+            "v171_qsg413",
+            "v171_qsg131"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v171_reform_edict",
+            "v171_new_armies"
+          ],
+          "people": [
+            "q_zhangzhidong"
+          ]
+        },
+        {
+          "id": "q171_liukunyi-5",
+          "title": "地方权力上升的两面",
+          "text": "刘坤一1902年去世，没有经历新政后期和辛亥革命。后人容易把互保直接解释成1911年地方独立的预演，两者确有中央权威弱化的连续性，却不能等同。1900年的目标仍是保存清朝统治下的东南，1911年许多省份则宣布脱离清廷。刘坤一留下的关键问题是：地方掌握军队、财政和外交协调后，中央怎样在危机中重新建立共同决策，而不是只靠名义上的诏令。",
+          "sources": [
+            "v171_qsg413"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v171_southeast"
+          ],
+          "people": []
+        }
+      ],
+      "sources": [
+        "v171_qsg413",
+        "v171_dpm_guangxu",
+        "v171_qsg131"
+      ]
+    },
+    {
+      "person": "q171_yuxian",
+      "title": "毓贤：扶拳政策与官员责任",
+      "dek": "解释义和团的社会来源，绝不意味着模糊纵容、组织杀戮者的责任。",
+      "sections": [
+        {
+          "id": "q171_yuxian-1",
+          "title": "以严酷治盗建立声名",
+          "text": "毓贤由捐纳入仕，在山东地方官任上以强力治盗和严刑获得升迁。他熟悉地方团练、秘密结社与教案冲突，却倾向把复杂矛盾转化为忠奸和镇压问题。这样的治理方式使他容易相信，只要把民间武力纳入官府名义，就能同时对付教会势力和地方不安。官员对社会组织的命名与奖惩，会改变其行动空间；拳民扩张并非完全发生在国家之外。",
+          "sources": [
+            "v171_qsg465"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v171_boxers_beijing"
+          ],
+          "people": []
+        },
+        {
+          "id": "q171_yuxian-2",
+          "title": "山东纵容拳团",
+          "text": "义和拳在山东活动时，毓贤把部分团体视为可用力量，对攻击教会和教民的行为制止不力，还向朝廷和亲贵宣传拳民忠勇、神术可恃。不同拳团的来源、目标并不完全一致，官府支持却提高了其公开设坛和扩张能力。把后来的全面灾难都归到一位巡抚不准确，但他对风险已有信息仍选择纵容，构成明确行政责任。",
+          "sources": [
+            "v171_qsg465",
+            "v171_chn_flag"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v171_boxers_beijing"
+          ],
+          "people": [
+            "q170_gangyi"
+          ]
+        },
+        {
+          "id": "q171_yuxian-3",
+          "title": "山西杀戮不是失控传闻",
+          "text": "调任山西巡抚后，毓贤表面传令保护教士教民，实际把多人集中到省城后组织处死，妇女儿童也在受害者之列。地方还发生更广泛杀戮。材料对具体人数和每起案件的直接命令需要逐案核对，但巡抚对省城行动的责任并不含糊。反对外国教会特权与杀害本地平民是两件事，任何民族主义叙述都不能用前者消解后者。",
+          "sources": [
+            "v171_qsg465",
+            "v171_dpm_gengzi"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v171_christian_victims"
+          ],
+          "people": []
+        },
+        {
+          "id": "q171_yuxian-4",
+          "title": "议和追责与处死",
+          "text": "联军占领京津后，列强把惩办主战和扶拳官员列为议和条件，清廷先革职遣戍，后在甘肃处死毓贤。列强干预清廷人事本身是主权受损的一部分，不等于被惩办者没有罪责。评价必须把两层同时保留：惩罚程序受战胜国强迫，毓贤纵容拳团和杀害平民又有独立证据。不能因为程序屈辱就把其塑造成无辜殉国者。",
+          "sources": [
+            "v171_protocol",
+            "v171_qsg465"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v171_protocol_politics"
+          ],
+          "people": []
+        },
+        {
+          "id": "q171_yuxian-5",
+          "title": "如何阅读官修传记",
+          "text": "《清史稿》在清亡后编成，对庚子官员既有替王朝追责的需要，也带有遗老立场。传记中的戏剧性言行不宜全部当逐字记录，任命、奏报、保护命令、集中教士和处死等制度节点则可与本纪、教会档案和地方材料互证。人物页不把毓贤写成‘迷信的怪人’便停止解释，而是追问严刑治理、亲贵支持、信息过滤和官府授权如何把偏见变成大规模伤害。",
+          "sources": [
+            "v171_qsg465",
+            "v171_qsg24"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v171_christian_victims"
+          ],
+          "people": []
+        }
+      ],
+      "sources": [
+        "v171_qsg465",
+        "v171_chn_flag",
+        "v171_dpm_gengzi",
+        "v171_protocol",
+        "v171_qsg24"
+      ]
+    },
+    {
+      "person": "q171_zhangbaixi",
+      "title": "张百熙：废科举之前，先要建立学校",
+      "dek": "他推动的不是一句“兴新学”，而是一整套课程、师资、经费和资格制度。",
+      "sections": [
+        {
+          "id": "q171_zhangbaixi-1",
+          "title": "从翰林与学政经验出发",
+          "text": "张百熙由进士、翰林进入官场，曾督学与主持考试，熟悉科举如何选拔官员，也看得到旧制度在新知识和国家危机面前的限制。甲午时他弹劾中枢误事，戊戌因举荐康有为受处分，说明他支持改革却并非康梁组织成员。庚子后再被起用，他提出改官制、理财政、变科举、建学堂、设报馆，把教育放在国家能力而非装饰位置。",
+          "sources": [
+            "v171_qsg443"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v171_reform_edict"
+          ],
+          "people": []
+        },
+        {
+          "id": "q171_zhangbaixi-2",
+          "title": "主持京师大学堂改革",
+          "text": "担任管学大臣后，张百熙主持京师大学堂恢复与整顿。大学堂既要培养高等人才，也承担译书、师范和教育行政试验，旧书院人员、新聘教习与留学经验在其中碰撞。办学需要校舍、课程、经费和稳定学生来源，不能用一纸任命解决。他礼聘吴汝纶等人的故事显示人才稀缺，但传记中的礼贤叙述也带有塑造贤臣形象的意味。",
+          "sources": [
+            "v171_qsg443",
+            "v170_moe_pku"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v171_pku_reopen"
+          ],
+          "people": [
+            "q170_sunjianai"
+          ]
+        },
+        {
+          "id": "q171_zhangbaixi-3",
+          "title": "壬寅与癸卯学制不是同一件事",
+          "text": "1902年《钦定学堂章程》提出分级体系，却未充分实施；1904年《奏定学堂章程》再作修订，才成为各省较多遵循的框架。两套章程之间有人员、意见与政治环境变化，不能统称一次‘颁布现代学制’。课程增加算学、格致、外语、师范和实业内容，同时保留经学与伦理要求，表现出新知识和王朝秩序并置。",
+          "sources": [
+            "v171_qsg443",
+            "v171_cp_textbook"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v171_renyin_system",
+            "v171_guimao_system"
+          ],
+          "people": []
+        },
+        {
+          "id": "q171_zhangbaixi-4",
+          "title": "废科举必须有替代入口",
+          "text": "若先废考试而没有足够学校，读书人会失去明确进身路径；若只办学校又继续以八股取士，新学难获社会投入。张百熙所处阶段正是在两者间搭桥。1905年停科举发生在其办学之后，说明制度退出建立在多年争论和试办上。新学堂迅速扩张，但小学经费、合格教师和地区差距仍严重，不能用学校名册代替教育质量。",
+          "sources": [
+            "v171_qsg443",
+            "v171_qsg24"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v171_abolish_exams",
+            "v171_reform_surcharges"
+          ],
+          "people": []
+        },
+        {
+          "id": "q171_zhangbaixi-5",
+          "title": "教材、出版与学校共同生长",
+          "text": "学制创造了分年级教材需求，商务印书馆等出版机构据此组织编译和发行。国家章程、地方学堂与市场出版互相推动，教育现代化并非教育部单线下达。张百熙的贡献在搭建制度起点，不能把全国成果全归个人；他与荣庆等共同管学，也经历舆论和官僚掣肘。阅读其人物页，应同时看到理想、组织工作和经费师资的现实边界。",
+          "sources": [
+            "v171_cp_textbook",
+            "v171_qsg443"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v171_textbooks"
+          ],
+          "people": [
+            "q170_zhangyuanji"
+          ]
+        }
+      ],
+      "sources": [
+        "v171_qsg443",
+        "v170_moe_pku",
+        "v171_cp_textbook",
+        "v171_qsg24"
+      ]
+    },
+    {
+      "person": "q171_duanfang",
+      "title": "端方：地方新政、收藏与保路危机",
+      "dek": "同一个人可以推动学校警政，也可以在强制接路中成为王朝危机的一环。",
+      "sections": [
+        {
+          "id": "q171_duanfang-1",
+          "title": "多省任职形成的改革经验",
+          "text": "端方在陕西、河南、湖北、湖南、江苏等地任职，接触赈务、财政、教育、警政和对外交涉。清末督抚的改革往往从城市和省城开始：办学堂、派留学生、设巡警、办劝业与新式行政。这些措施可能改善公共管理，也扩大地方政府征费和监控能力。用‘开明官员’概括他，会忽略政策对不同群体产生的成本。",
+          "sources": [
+            "v171_qsg469"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v171_modern_police",
+            "v171_reform_surcharges"
+          ],
+          "people": []
+        },
+        {
+          "id": "q171_duanfang-2",
+          "title": "五大臣出洋考察",
+          "text": "1905年端方与载泽等奉命考察各国政治，出发前遭革命者炸弹袭击，行程延后。考察团访问日本、欧美，搜集宪法、议会、警察、教育和工商制度材料。回国奏请预备立宪，强调立宪可以巩固皇权、安定社会。这个目标与共和革命不同，也说明学习外国制度并不自动导向限制君主。",
+          "sources": [
+            "v171_qsg469",
+            "v171_qsg24"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v171_five_ministers"
+          ],
+          "people": [
+            "q171_zaize"
+          ]
+        },
+        {
+          "id": "q171_duanfang-3",
+          "title": "教育、警政和文物收藏",
+          "text": "端方重视学堂、图书馆和文物金石收藏，曾推动保存地方藏书与古器。收藏既留下重要材料，也与督抚财力、私人网络和文物流通相连；不能只以审美趣味评价。他办理警政和新式行政时，制度效率与权力扩张同时发生。人物页把这些放在一起，是为了说明晚清现代化不是一条纯粹进步线，而是国家能力重新组织。",
+          "sources": [
+            "v171_qsg469"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v171_modern_police",
+            "v171_guimao_system"
+          ],
+          "people": []
+        },
+        {
+          "id": "q171_duanfang-4",
+          "title": "督办铁路与四川僵局",
+          "text": "1911年铁路国有政策引发四川强烈反对，端方受命率湖北新军入川并督办粤汉、川汉铁路。接收商办公司牵涉股款亏空、补偿和外债，不是单纯技术工程。他试图争取地方人士，也服从中央迅速接路命令。成都镇压与各地冲突扩大后，军队内部政治动摇，端方的改革资历没有消除他作为强制执行者的责任。",
+          "sources": [
+            "v171_qsg25",
+            "v171_chn_rail",
+            "v171_chn_zhao"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v171_huguang_loan",
+            "v171_chengdu_bloodshed"
+          ],
+          "people": [
+            "q167_shengxuanhuai"
+          ]
+        },
+        {
+          "id": "q171_duanfang-5",
+          "title": "资州遇害与证据边界",
+          "text": "武昌起义后，入川新军反叛，端方及其弟在资州被杀。官修传记将其塑造成尽忠遇害者，革命叙事则容易把死亡写成必然报应。较可靠的评价应分开：杀害俘获官员不是正常司法；端方对接路和军事行动又负有行政责任。关于临死改姓、求生等细节多来自后出记述，不作为定论。王朝瓦解时，命令链和军纪同时崩溃，正是事件的制度含义。",
+          "sources": [
+            "v171_qsg469",
+            "v171_qsg25"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v171_chengdu_bloodshed"
+          ],
+          "people": []
+        }
+      ],
+      "sources": [
+        "v171_qsg469",
+        "v171_qsg24",
+        "v171_qsg25",
+        "v171_chn_rail",
+        "v171_chn_zhao"
+      ]
+    },
+    {
+      "person": "q171_zaize",
+      "title": "载泽：考察宪政与维护皇权",
+      "dek": "他真心主张制度改革，却把改革目的限定为皇位稳固，这正是预备立宪的内在矛盾。",
+      "sections": [
+        {
+          "id": "q171_zaize-1",
+          "title": "宗室身份与制度任务",
+          "text": "载泽是宗室成员，在晚清亲贵政治中拥有进入中枢的资格。朝廷派他参与出洋考察，不只是看重个人知识，也希望由皇族掌握制度输入。亲贵主持改革可以减少宫廷疑惧，却容易让社会怀疑改革仍由既得利益者控制。理解载泽必须把个人主张与宗室位置并置，而不是在‘开明’与‘守旧’之间二选一。",
+          "sources": [
+            "v171_qsg25"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v171_five_ministers"
+          ],
+          "people": []
+        },
+        {
+          "id": "q171_zaize-2",
+          "title": "考察并非旅游见闻",
+          "text": "五大臣分赴日本、欧美，接触议会、宪法、警政、财政和教育机构，并组织翻译资料。载泽回国后主张预备立宪，强调可使皇位永固、外患减轻、内乱平息。此论承认旧制度不足，也把宪政视为强化王朝的治理技术。考察带回的是多国差异经验，清廷最后选择的制度组合仍由国内权力关系决定。",
+          "sources": [
+            "v171_qsg24",
+            "v171_cssn_newpolicy"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v171_five_ministers"
+          ],
+          "people": [
+            "q171_duanfang"
+          ]
+        },
+        {
+          "id": "q171_zaize-3",
+          "title": "《钦定宪法大纲》的双重结构",
+          "text": "1908年大纲列出臣民权利义务，却先以‘君上大权’规定皇帝统治、召集解散议院、任免官员和统率军队等广泛权力。载泽等亲贵参与的立宪路径，并不打算立即建立议会主权。文本仍有历史意义，因为权利、预算和法律程序获得正式表达；它的局限也同样清楚，权力约束依赖未来制度而非当下可执行保障。",
+          "sources": [
+            "v171_constitution",
+            "v171_cssn_newpolicy"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v171_constitutional_prep",
+            "v171_constitutional_vocab"
+          ],
+          "people": []
+        },
+        {
+          "id": "q171_zaize-4",
+          "title": "财政与改革为何相互牵制",
+          "text": "载泽后来掌度支等事务，面对赔款、军费、新政经费和地方财政分散。立宪需要预算和审计，财政集中又触动各省既有收入。清廷要求统计收支、整理税项，却难在短期内取得完整数据。财政改革若只增加报表和附加，社会会感到负担上升而非责任政府出现。载泽的经历说明宪制问题不能脱离钱粮。",
+          "sources": [
+            "v171_qsg25",
+            "v171_protocol"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v171_finance_offices",
+            "v171_reform_surcharges"
+          ],
+          "people": []
+        },
+        {
+          "id": "q171_zaize-5",
+          "title": "宣统朝亲贵政治的困局",
+          "text": "载沣摄政后继续使用载泽等宗室，既希望皇族承担改革，也加深权力未开放的印象。皇族内阁和国会期限争议使部分立宪派转向反对清廷。辛亥后，载泽在亲贵会议中对共和与退位有过复杂态度，材料不宜压成一句‘赞成’或‘反对’。真正重要的是：当军队和各省已经脱离控制，亲贵内部意见再精细，也难恢复制度信用。",
+          "sources": [
+            "v171_qsg25",
+            "v171_cssn_newpolicy"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v171_royal_cabinet",
+            "qev_abdication_1912"
+          ],
+          "people": [
+            "q_zaifeng",
+            "q171_yikuang"
+          ]
+        }
+      ],
+      "sources": [
+        "v171_qsg25",
+        "v171_qsg24",
+        "v171_cssn_newpolicy",
+        "v171_constitution",
+        "v171_protocol"
+      ]
+    },
+    {
+      "person": "q171_wutingfang",
+      "title": "伍廷芳：法律、外交与南北议和",
+      "dek": "他把英美法政经验带入清廷外交，又在王朝终局代表南方坚持共和。",
+      "sections": [
+        {
+          "id": "q171_wutingfang-1",
+          "title": "香港教育与法律训练",
+          "text": "伍廷芳早年在香港接受教育，后赴英国学习法律并取得执业资格。这样的经历使他熟悉普通法、领事裁判与国际交涉语言。回到中国后，他先在香港从事法律和公共事务，再进入李鸿章幕府及清廷外交体系。不能把海外学历直接等同于现代自由主义者；他在具体岗位上仍服务清朝国家利益，也受制于不平等条约结构。",
+          "sources": [
+            "v171_qsg25"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v171_constitutional_vocab"
+          ],
+          "people": []
+        },
+        {
+          "id": "q171_wutingfang-2",
+          "title": "驻外使臣与华侨权益",
+          "text": "出任驻美等国使臣期间，伍廷芳处理排华、侨民保护、条约和公众演说。他能用英语向外国政府和社会解释中国立场，也面对清廷信息、经费和授权限制。外交官个人表达并不能取消美国排华制度，更不应把每项交涉结果归为口才胜负。其价值在于把法律论证、媒体沟通和侨民案件带入常设外交实践。",
+          "sources": [
+            "v171_qsg25"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v171_students_public"
+          ],
+          "people": []
+        },
+        {
+          "id": "q171_wutingfang-3",
+          "title": "从清廷官员到革命阵营",
+          "text": "辛亥革命爆发后，伍廷芳选择支持共和，并担任南方议和代表。这是政治立场转换，不是他早年全部外交工作都在秘密为革命服务。清末官员在王朝崩解时有多种选择：继续效忠、转向立宪、参加独立或暂时观望。人物页明确分期，避免以后来的共和身份反向改写此前履历。",
+          "sources": [
+            "v171_1911_timeline",
+            "v171_chn_representatives"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "qev_xinhai_1911"
+          ],
+          "people": [
+            "q_sunyatsen"
+          ]
+        },
+        {
+          "id": "q171_wutingfang-4",
+          "title": "与唐绍仪在上海议和",
+          "text": "伍廷芳代表南方，唐绍仪代表袁世凯方面，在上海讨论停战、国体、清室待遇和临时政府安排。谈判不只是两位旧识之间的私人协商：南京、武昌、北京、各省和列强都在施加压力。伍坚持共和，唐一度表示接受方向，却仍需北京授权。会议记录和往来电报比后来的‘一席话说服对方’更能说明制度选择如何形成。",
+          "sources": [
+            "v171_1911_timeline",
+            "v171_chn_representatives",
+            "v171_qsg25"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "qev_abdication_1912"
+          ],
+          "people": [
+            "q171_tangshaoyi",
+            "q_yuanshikai"
+          ]
+        },
+        {
+          "id": "q171_wutingfang-5",
+          "title": "法律语言与政治妥协",
+          "text": "退位诏书、优待条件和临时政府文件用法律形式包装军事政治妥协。伍廷芳参与的意义在于把国体、权利和程序写成可讨论条款，但文本不能自动保证执行。南北议和结束王朝统治，未解决军队国家化、财政和中央地方关系。评价他不必在‘和平功臣’与‘向袁妥协’之间二选一，应说明当时各方为何需要停战，又牺牲了哪些更彻底方案。",
+          "sources": [
+            "v5qe_saac_abdication",
+            "v171_chn_representatives"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "qev_abdication_1912"
+          ],
+          "people": []
+        }
+      ],
+      "sources": [
+        "v171_qsg25",
+        "v171_1911_timeline",
+        "v171_chn_representatives",
+        "v5qe_saac_abdication"
+      ]
+    },
+    {
+      "person": "q171_tangshaoyi",
+      "title": "唐绍仪：从清廷外交到北方议和",
+      "dek": "他的谈判授权来自袁世凯，而个人接受共和之后，授权边界立刻成为问题。",
+      "sections": [
+        {
+          "id": "q171_tangshaoyi-1",
+          "title": "留学与朝鲜事务经验",
+          "text": "唐绍仪早年作为留美幼童赴美，回国后进入外交与朝鲜事务系统，长期与袁世凯共事。他熟悉英文、条约和跨文化交涉，也在清廷等级官僚中逐步升迁。留学经历提供技能，不会自动决定政治立场；他在朝鲜、铁路和税务等岗位上的选择，应按具体授权和结果评价。",
+          "sources": [
+            "v171_qsg25"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v171_students_public"
+          ],
+          "people": [
+            "q_yuanshikai"
+          ]
+        },
+        {
+          "id": "q171_tangshaoyi-2",
+          "title": "铁路、关税与外债事务",
+          "text": "清末铁路和借款常把工程、外交与财政绑在一起，唐绍仪参与多项交涉。外方银行、清廷部门、地方督抚和商办公司各有利益，所谓‘谈成’常意味着在利率、担保、路权和人员控制之间交换。外交官能够改善条款，却不能消除弱国融资结构。理解其能力要看具体文本，不能只用亲袁或亲外标签。",
+          "sources": [
+            "v171_qsg25"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v171_huguang_loan"
+          ],
+          "people": []
+        },
+        {
+          "id": "q171_tangshaoyi-3",
+          "title": "作为袁世凯的议和代表",
+          "text": "武昌起义后袁世凯重新掌权，派唐绍仪赴上海与伍廷芳谈判。唐的身份既是北方代表，也是熟悉南方人士与国际环境的外交官。他并不代表幼帝个人，也不拥有独立决定国体的无限授权。把南北议和写成唐伍两人的友谊，会遮蔽北洋军战场优势、各省独立、南京政府筹组和列强停战压力。",
+          "sources": [
+            "v171_1911_timeline",
+            "v171_qsg25"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "qev_xinhai_1911"
+          ],
+          "people": [
+            "q171_wutingfang",
+            "q_yuanshikai"
+          ]
+        },
+        {
+          "id": "q171_tangshaoyi-4",
+          "title": "接受共和与辞去代表",
+          "text": "谈判中唐绍仪逐渐认可共和方案，但北京方面和袁世凯对步骤、总统人选与授权范围仍有计算。唐后来辞去议和代表，说明代表意见与委任者策略并不一致。这个分歧不能简化为他突然背叛，也不能说袁完全不知共和方向；双方在是否先退位、如何确认袁任总统等问题上有不同风险判断。",
+          "sources": [
+            "v171_chn_representatives",
+            "v171_qsg25"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "qev_abdication_1912"
+          ],
+          "people": []
+        },
+        {
+          "id": "q171_tangshaoyi-5",
+          "title": "跨越王朝的官僚连续性",
+          "text": "唐绍仪后来成为民国首任内阁总理，已属于新的政治阶段。清末训练出的外交、财政与行政人才大量进入民国，说明王朝终结不等于国家机关和知识全部归零。连续性也带来旧有关系网和责任问题。人物页在1912年前收束，不用后来的党争和遇害倒写清末表现；只提示读者，制度改变需要重新安排人，而不是凭国号自动产生全新官僚。新国家是否能以公开程序约束这些熟练官员，比简单更换称号更重要。",
+          "sources": [
+            "v171_chn_representatives"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v171_constitutional_vocab",
+            "v40q_nanjing_republic"
+          ],
+          "people": []
+        }
+      ],
+      "sources": [
+        "v171_qsg25",
+        "v171_1911_timeline",
+        "v171_chn_representatives"
+      ]
+    },
+    {
+      "person": "q171_liyuanhong",
+      "title": "黎元洪：被推举的都督与首义政治",
+      "dek": "他不是武昌起义的预先领导者，却很快成为各方必须面对的军政府首脑。",
+      "sections": [
+        {
+          "id": "q171_liyuanhong-1",
+          "title": "湖北新军协统",
+          "text": "黎元洪有海军学习与服役经历，后来在湖北新军任协统。张之洞经营湖北军政教育，使军官、学生和士兵接触新知识，也形成不同结社网络。黎本人并非文学社、共进会的起义策划者，他的正式军职和相对声望却让革命者在指挥体系崩解后看中。把他写成首义英雄或纯粹被绑架者，都不足以解释其后迅速进入领导位置。",
+          "sources": [
+            "v171_1911_timeline",
+            "v171_chn_representatives"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v171_new_armies"
+          ],
+          "people": [
+            "q_zhangzhidong"
+          ]
+        },
+        {
+          "id": "q171_liyuanhong-2",
+          "title": "武昌城内为何推举他",
+          "text": "10月10日起义者夺取军械所和总督署后，需要稳定军队、城市与对外名义。原有主要组织者有人被捕、逃离或资历不足，黎元洪被推为湖北军政府都督。他起初处境受迫，随后开始签发命令、任用人员并争取地方支持。强迫起点不能证明其以后毫无政治能动性；接受职位也不等于他从一开始就是革命设计者。",
+          "sources": [
+            "v171_chn_knife",
+            "v171_1911_timeline"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v171_wuchang_armory"
+          ],
+          "people": []
+        },
+        {
+          "id": "q171_liyuanhong-3",
+          "title": "军政府不是一个人的政府",
+          "text": "湖北军政府由革命团体、新军军官、旧官僚和地方立宪派共同构成，内部围绕军令、财政、约法和人事不断竞争。黎元洪需要在孙武、蒋翊武、汤化龙等不同力量之间维持平衡。称他为都督说明法定名位，不代表每项决定都由他独断；反过来，把所有问题推给派系，也会逃避首脑责任。",
+          "sources": [
+            "v171_chn_representatives",
+            "v171_1911_timeline"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "qev_xinhai_1911"
+          ],
+          "people": [
+            "q171_songjiaoren"
+          ]
+        },
+        {
+          "id": "q171_liyuanhong-4",
+          "title": "阳夏战事与黄兴",
+          "text": "清军南下后，黄兴到武汉任战时总司令，汉口、汉阳战事惨烈。黎元洪和湖北将领、黄兴及各省援军在守城与转移方案上有分歧。汉阳失守没有使革命立即失败，因为更多省份已宣布独立，政治重心也向上海、南京移动。人物评价不能只看一城胜负，应观察军政府如何把首义象征转化为全国协商资源。",
+          "sources": [
+            "v171_1911_timeline",
+            "v171_chn_representatives"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v41q_yangxia"
+          ],
+          "people": [
+            "q_huangxing"
+          ]
+        },
+        {
+          "id": "q171_liyuanhong-5",
+          "title": "从武昌中央到南京政府",
+          "text": "湖北方面曾主张以武昌为中央，各省代表会起初承认其中央军政府地位；江浙光复后，上海和南京又成为组织政府的重要中心。孙中山回国、代表选举和军事形势共同改变权力布局。黎元洪后来任临时副总统，是首义地位与政治妥协的结果。民国后经历另属下一阶段，不应反向证明他在1911年所有选择早有长远计划。",
+          "sources": [
+            "v171_chn_representatives",
+            "v171_1911_timeline"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v40q_nanjing_republic"
+          ],
+          "people": [
+            "q_sunyatsen"
+          ]
+        }
+      ],
+      "sources": [
+        "v171_1911_timeline",
+        "v171_chn_representatives",
+        "v171_chn_knife"
+      ]
+    },
+    {
+      "person": "q171_songjiaoren",
+      "title": "宋教仁：组织革命，也设计共和制度",
+      "dek": "辛亥不是只有起义枪声；组织章程、代表会议和政府结构同样决定革命走向。",
+      "sections": [
+        {
+          "id": "q171_songjiaoren-1",
+          "title": "从华兴会到同盟会",
+          "text": "宋教仁在湖南接触革命活动，参与华兴会，起事计划失败后流亡日本，后加入同盟会。革命组织之间既合作也有路线、地域和人事差异，不能把同盟会成立前后的所有团体写成同一支严密政党。他擅长撰写章程、编辑报刊和联络成员，这类工作不像战斗那样醒目，却决定跨省网络能否持续。",
+          "sources": [
+            "v171_chn_tongmeng",
+            "v171_chn_oath"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v171_study_japan",
+            "v40q_tongmenghui"
+          ],
+          "people": [
+            "q_huangxing",
+            "q_sunyatsen"
+          ]
+        },
+        {
+          "id": "q171_songjiaoren-2",
+          "title": "报刊与制度知识",
+          "text": "在日本期间，宋教仁参与报刊和政治研究，关注各国宪法、议会与政党。革命主张不只是推翻清廷，也要回答新国家如何组织。译介和比较材料会受到日本及欧洲概念框架影响，不能说他已经拥有后来成熟的议会政治方案；但制度问题确实贯穿其活动，而非1912年后才突然出现。",
+          "sources": [
+            "v171_chn_tongmeng",
+            "v171_constitution"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v171_revolutionary_print",
+            "v171_constitutional_vocab"
+          ],
+          "people": []
+        },
+        {
+          "id": "q171_songjiaoren-3",
+          "title": "同盟会中部总会",
+          "text": "1911年宋教仁等在上海推动同盟会中部总会，重点经营长江流域。它与东京本部、地方光复会及其他革命团体有合作也有摩擦。武昌起义并非中部总会按既定日期直接指挥，但长期联络、报刊和人员网络为各地响应提供条件。说明组织影响，不应夸成单一总部控制全国；说明起义偶发，也不能否认多年准备。",
+          "sources": [
+            "v171_chn_tongmeng"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v171_wuchang_armory"
+          ],
+          "people": [
+            "q_qiujin"
+          ]
+        },
+        {
+          "id": "q171_songjiaoren-4",
+          "title": "赴武昌与政府设计争论",
+          "text": "起义后宋教仁赴武汉，参与军政府制度讨论，并希望建立更具法理结构的统一政府。湖北军官、地方立宪派和同盟会人士对谁领导、政府设在哪里意见不同。宋教仁不能凭一份章程消除军事和地域力量，却把行政组织、代议程序和权力边界带入谈判。各省代表会后来制定临时政府组织大纲，正体现枪战之外的建制过程。",
+          "sources": [
+            "v171_chn_representatives",
+            "v171_1911_timeline"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "qev_xinhai_1911",
+            "v40q_nanjing_republic"
+          ],
+          "people": [
+            "q171_liyuanhong"
+          ]
+        },
+        {
+          "id": "q171_songjiaoren-5",
+          "title": "把1913年的结局留到下一阶段",
+          "text": "宋教仁在民国初推动政党和议会政治，1913年遇刺，是理解早期民国的重要事件，却不应倒过来把其清末活动写成通往遇刺的悲剧直线。1911年前的他首先是组织者、编辑者和制度设计参与者，也会在派系竞争中作策略选择。人物页在王朝终结处暂时收束，既保留后续入口，也避免把民国责任混入清朝事件分类。",
+          "sources": [
+            "v171_chn_representatives"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v40q_nanjing_republic"
+          ],
+          "people": []
+        }
+      ],
+      "sources": [
+        "v171_chn_tongmeng",
+        "v171_chn_oath",
+        "v171_constitution",
+        "v171_chn_representatives",
+        "v171_1911_timeline"
+      ]
     }
   ],
   "portraits": [
@@ -247052,6 +249202,288 @@
       "sources": [
         "v170_cp_zhang"
       ]
+    },
+    {
+      "from": "q171_yikuang",
+      "to": "q_yuanshikai",
+      "role": "请起用并交出内阁位置",
+      "inverse": "借北洋军权进入中枢",
+      "period": "1911",
+      "note": "合作源于镇压与议和需要，不等于目标始终一致",
+      "sources": [
+        "v171_qsg221",
+        "v171_qsg25"
+      ]
+    },
+    {
+      "from": "q171_liukunyi",
+      "to": "q_zhangzhidong",
+      "role": "东南互保与联衔变法",
+      "inverse": "共同协调督抚政策",
+      "period": "1900—1901",
+      "note": "地方合作维持秩序，也改变中央地方关系",
+      "sources": [
+        "v171_qsg413",
+        "v171_dpm_guangxu"
+      ]
+    },
+    {
+      "from": "q171_duanfang",
+      "to": "q171_zaize",
+      "role": "共同出洋考察政治",
+      "inverse": "共同出洋考察政治",
+      "period": "1905—1906",
+      "note": "两人都主张预备立宪，地方经验与宗室位置不同",
+      "sources": [
+        "v171_qsg469",
+        "v171_qsg24"
+      ]
+    },
+    {
+      "from": "q171_wutingfang",
+      "to": "q171_tangshaoyi",
+      "role": "南方议和代表",
+      "inverse": "北方议和代表",
+      "period": "1911—1912",
+      "note": "代表意见受南京、北京与袁世凯授权约束",
+      "sources": [
+        "v171_1911_timeline",
+        "v171_chn_representatives"
+      ]
+    },
+    {
+      "from": "q171_liyuanhong",
+      "to": "q_huangxing",
+      "role": "湖北军政府都督",
+      "inverse": "战时总司令",
+      "period": "1911",
+      "note": "军政合作中伴随守城与转移方案分歧",
+      "sources": [
+        "v171_1911_timeline",
+        "v171_chn_representatives"
+      ]
+    },
+    {
+      "from": "q171_songjiaoren",
+      "to": "q171_liyuanhong",
+      "role": "制度与统一政府倡议者",
+      "inverse": "首义军政府首脑",
+      "period": "1911",
+      "note": "同盟会组织力与湖北军政现实并不重合",
+      "sources": [
+        "v171_chn_representatives"
+      ]
+    },
+    {
+      "from": "q171_zhangbaixi",
+      "to": "q170_zhangyuanji",
+      "role": "学制与官办教育推动者",
+      "inverse": "教科书与出版实践者",
+      "period": "1902—1905",
+      "note": "国家章程和出版市场共同塑造新教育",
+      "sources": [
+        "v171_qsg443",
+        "v171_cp_textbook"
+      ]
+    },
+    {
+      "from": "q171_yuxian",
+      "to": "q170_gangyi",
+      "role": "地方扶拳官员",
+      "inverse": "中枢主战官员",
+      "period": "1899—1900",
+      "note": "立场相近不等于共同策划每项暴力",
+      "sources": [
+        "v171_qsg465",
+        "v171_qsg24"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q171_yikuang",
+      "role": "在位时期的重要人物",
+      "inverse": "光绪朝的制度与危机背景",
+      "period": "1875—1908",
+      "note": "在位年代不等于皇帝亲自任命或支持其全部行动",
+      "sources": [
+        "v171_qsg24"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q171_liukunyi",
+      "role": "在位时期的重要人物",
+      "inverse": "光绪朝的制度与危机背景",
+      "period": "1875—1908",
+      "note": "在位年代不等于皇帝亲自任命或支持其全部行动",
+      "sources": [
+        "v171_qsg24"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q171_yuxian",
+      "role": "在位时期的重要人物",
+      "inverse": "光绪朝的制度与危机背景",
+      "period": "1875—1908",
+      "note": "在位年代不等于皇帝亲自任命或支持其全部行动",
+      "sources": [
+        "v171_qsg24"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q171_zhangbaixi",
+      "role": "在位时期的重要人物",
+      "inverse": "光绪朝的制度与危机背景",
+      "period": "1875—1908",
+      "note": "在位年代不等于皇帝亲自任命或支持其全部行动",
+      "sources": [
+        "v171_qsg24"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q171_duanfang",
+      "role": "在位时期的重要人物",
+      "inverse": "光绪朝的制度与危机背景",
+      "period": "1875—1908",
+      "note": "在位年代不等于皇帝亲自任命或支持其全部行动",
+      "sources": [
+        "v171_qsg24"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q171_zaize",
+      "role": "在位时期的重要人物",
+      "inverse": "光绪朝的制度与危机背景",
+      "period": "1875—1908",
+      "note": "在位年代不等于皇帝亲自任命或支持其全部行动",
+      "sources": [
+        "v171_qsg24"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q171_wutingfang",
+      "role": "在位时期的重要人物",
+      "inverse": "光绪朝的制度与危机背景",
+      "period": "1875—1908",
+      "note": "在位年代不等于皇帝亲自任命或支持其全部行动",
+      "sources": [
+        "v171_qsg24"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q171_tangshaoyi",
+      "role": "在位时期的重要人物",
+      "inverse": "光绪朝的制度与危机背景",
+      "period": "1875—1908",
+      "note": "在位年代不等于皇帝亲自任命或支持其全部行动",
+      "sources": [
+        "v171_qsg24"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q171_liyuanhong",
+      "role": "在位时期的重要人物",
+      "inverse": "光绪朝的制度与危机背景",
+      "period": "1875—1908",
+      "note": "在位年代不等于皇帝亲自任命或支持其全部行动",
+      "sources": [
+        "v171_qsg24"
+      ]
+    },
+    {
+      "from": "q_guangxu",
+      "to": "q171_songjiaoren",
+      "role": "在位时期的重要人物",
+      "inverse": "光绪朝的制度与危机背景",
+      "period": "1875—1908",
+      "note": "在位年代不等于皇帝亲自任命或支持其全部行动",
+      "sources": [
+        "v171_qsg24"
+      ]
+    },
+    {
+      "from": "q_xuantong",
+      "to": "q171_yikuang",
+      "role": "宣统朝的重要人物",
+      "inverse": "幼帝名义下的政治行动者",
+      "period": "1908—1912",
+      "note": "溥仪年幼，人物行动应归于摄政、内阁、军队或革命组织本身",
+      "sources": [
+        "v171_qsg25"
+      ]
+    },
+    {
+      "from": "q_xuantong",
+      "to": "q171_duanfang",
+      "role": "宣统朝的重要人物",
+      "inverse": "幼帝名义下的政治行动者",
+      "period": "1908—1912",
+      "note": "溥仪年幼，人物行动应归于摄政、内阁、军队或革命组织本身",
+      "sources": [
+        "v171_qsg25"
+      ]
+    },
+    {
+      "from": "q_xuantong",
+      "to": "q171_zaize",
+      "role": "宣统朝的重要人物",
+      "inverse": "幼帝名义下的政治行动者",
+      "period": "1908—1912",
+      "note": "溥仪年幼，人物行动应归于摄政、内阁、军队或革命组织本身",
+      "sources": [
+        "v171_qsg25"
+      ]
+    },
+    {
+      "from": "q_xuantong",
+      "to": "q171_wutingfang",
+      "role": "宣统朝的重要人物",
+      "inverse": "幼帝名义下的政治行动者",
+      "period": "1908—1912",
+      "note": "溥仪年幼，人物行动应归于摄政、内阁、军队或革命组织本身",
+      "sources": [
+        "v171_qsg25"
+      ]
+    },
+    {
+      "from": "q_xuantong",
+      "to": "q171_tangshaoyi",
+      "role": "宣统朝的重要人物",
+      "inverse": "幼帝名义下的政治行动者",
+      "period": "1908—1912",
+      "note": "溥仪年幼，人物行动应归于摄政、内阁、军队或革命组织本身",
+      "sources": [
+        "v171_qsg25"
+      ]
+    },
+    {
+      "from": "q_xuantong",
+      "to": "q171_liyuanhong",
+      "role": "宣统朝的重要人物",
+      "inverse": "幼帝名义下的政治行动者",
+      "period": "1908—1912",
+      "note": "溥仪年幼，人物行动应归于摄政、内阁、军队或革命组织本身",
+      "sources": [
+        "v171_qsg25"
+      ]
+    },
+    {
+      "from": "q_xuantong",
+      "to": "q171_songjiaoren",
+      "role": "宣统朝的重要人物",
+      "inverse": "幼帝名义下的政治行动者",
+      "period": "1908—1912",
+      "note": "溥仪年幼，人物行动应归于摄政、内阁、军队或革命组织本身",
+      "sources": [
+        "v171_qsg25"
+      ]
     }
   ],
   "dynasties": [
@@ -252456,7 +254888,17 @@
         "q170_kangguangren",
         "q170_liduanfen",
         "q170_sunjianai",
-        "q170_zhangyuanji"
+        "q170_zhangyuanji",
+        "q171_yikuang",
+        "q171_liukunyi",
+        "q171_yuxian",
+        "q171_zhangbaixi",
+        "q171_duanfang",
+        "q171_zaize",
+        "q171_wutingfang",
+        "q171_tangshaoyi",
+        "q171_liyuanhong",
+        "q171_songjiaoren"
       ],
       "events": [
         "qev_guangxu_accession_1875",
@@ -252660,7 +255102,42 @@
         "v170_exam_reform",
         "v170_pku_charter",
         "v170_tongyi_school",
-        "v170_wuxu_memory"
+        "v170_wuxu_memory",
+        "v171_declaration",
+        "v171_southeast",
+        "v171_protocol_politics",
+        "v171_reform_edict",
+        "v171_five_ministers",
+        "v171_constitutional_prep",
+        "v171_boxers_beijing",
+        "v171_dagu_1900",
+        "v171_langfang",
+        "v171_tianjin_fall",
+        "v171_beijing_fall",
+        "v171_new_armies",
+        "v171_anqing",
+        "v171_indemnity",
+        "v171_occupation_economy",
+        "v171_finance_offices",
+        "v171_commerce_ministry",
+        "v171_hubu_bank",
+        "v171_railway_redemption",
+        "v171_reform_surcharges",
+        "v171_christian_victims",
+        "v171_legation_refuge",
+        "v171_occupation_violence",
+        "v171_return_capital",
+        "v171_modern_police",
+        "v171_anti_opium",
+        "v171_students_public",
+        "v171_pku_reopen",
+        "v171_renyin_system",
+        "v171_guimao_system",
+        "v171_textbooks",
+        "v171_abolish_exams",
+        "v171_study_japan",
+        "v171_revolutionary_print",
+        "v171_constitutional_vocab"
       ],
       "sources": [
         "v5qn_qsg221",
@@ -252789,7 +255266,30 @@
         "v170_wuxu_record",
         "v170_renxue",
         "v170_guowenbao",
-        "v170_loc_reform"
+        "v170_loc_reform",
+        "v171_qsg24",
+        "v171_qsg25",
+        "v171_qsg131",
+        "v171_qsg221",
+        "v171_qsg413",
+        "v171_qsg443",
+        "v171_qsg465",
+        "v171_qsg469",
+        "v171_dpm_guangxu",
+        "v171_dpm_gengzi",
+        "v171_chn_map",
+        "v171_chn_flag",
+        "v171_chn_oath",
+        "v171_chn_tongmeng",
+        "v171_chn_rail",
+        "v171_chn_zhao",
+        "v171_chn_knife",
+        "v171_1911_timeline",
+        "v171_chn_representatives",
+        "v171_cssn_newpolicy",
+        "v171_cp_textbook",
+        "v171_constitution",
+        "v171_protocol"
       ],
       "note": "光绪前期由再度垂帘、新疆战事与灾荒进入中法战争、朝鲜危机、台湾建省和分阶段亲政。战场胜负、条约结果、海军制度、基础设施与普通人的税役、迁徙和土地代价必须并读。"
     },
@@ -252809,7 +255309,14 @@
         "q_sunyatsen",
         "q_zhangzhidong",
         "q_huangxing",
-        "q_yanfu"
+        "q_yanfu",
+        "q171_yikuang",
+        "q171_duanfang",
+        "q171_zaize",
+        "q171_wutingfang",
+        "q171_tangshaoyi",
+        "q171_liyuanhong",
+        "q171_songjiaoren"
       ],
       "events": [
         "qev_xuantong_accession_1908",
@@ -252823,7 +255330,13 @@
         "v65q_jingzhang",
         "v65q_plague",
         "v66q_women_normal",
-        "v66q_ningbo_charity"
+        "v66q_ningbo_charity",
+        "v171_councils",
+        "v171_royal_cabinet",
+        "v171_huguang_loan",
+        "v171_chengdu_bloodshed",
+        "v171_wuchang_armory",
+        "v171_constitutional_vocab"
       ],
       "sources": [
         "v5qn_qsg221",
@@ -252843,7 +255356,30 @@
         "v41q_tianyan",
         "v41q_yan_manuscript",
         "v66_bjww_normal",
-        "v66_ningbo_charity"
+        "v66_ningbo_charity",
+        "v171_qsg24",
+        "v171_qsg25",
+        "v171_qsg131",
+        "v171_qsg221",
+        "v171_qsg413",
+        "v171_qsg443",
+        "v171_qsg465",
+        "v171_qsg469",
+        "v171_dpm_guangxu",
+        "v171_dpm_gengzi",
+        "v171_chn_map",
+        "v171_chn_flag",
+        "v171_chn_oath",
+        "v171_chn_tongmeng",
+        "v171_chn_rail",
+        "v171_chn_zhao",
+        "v171_chn_knife",
+        "v171_1911_timeline",
+        "v171_chn_representatives",
+        "v171_cssn_newpolicy",
+        "v171_cp_textbook",
+        "v171_constitution",
+        "v171_protocol"
       ],
       "note": "清朝宣统时期为1908—1912年，载沣摄政，隆裕参与退位决策。溥仪后来的个人经历另见生平相关事件。"
     },

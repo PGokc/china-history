@@ -3550,3 +3550,43 @@ if d['version'] >= 144:
  assert set(v170_people)<={person_id for section in emperor['sections'] for person_id in section.get('people',[])}
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将|产品采用',corpus,re.I)
  print('V144 PASS: twelve post-Jiawu and Wuxu readings plus forty-five balanced events connect reform proposals, decree drafting, military power, schools, press, finance, coup procedure and differentiated political memory')
+
+if d['version'] >= 145:
+ v171_people=['q171_yikuang','q171_liukunyi','q171_yuxian','q171_zhangbaixi','q171_duanfang','q171_zaize','q171_wutingfang','q171_tangshaoyi','q171_liyuanhong','q171_songjiaoren']
+ v171_events={item['id'] for item in d['events'] if item['id'].startswith('v171_')}
+ v171_sources={item['id'] for item in d['sources'] if item['id'].startswith('v171_')}
+ v171_objects={item['id'] for item in d['objects'] if item['id'].startswith('v171_')}
+ object_map={item['id']:item for item in d['objects']}
+ assert len(v171_people)==10 and len(v171_events)==40 and len(v171_sources)==23 and len(v171_objects)==8
+ assert set(v171_people)<=people.keys() and set(v171_people)<=articles.keys()
+ assert all(sum(events[event_id]['category']==category for event_id in v171_events)==8 for category in ['政治','军事','经济','社会','文化'])
+ for pid in v171_people:
+  reading=articles[pid]; ss=reading['sections']
+  chars=sum(len(re.findall(r'[\u4e00-\u9fff]',section['text'])) for section in ss)
+  assert len(ss)==5 and chars>=600 and all(section['sources'] and section['events'] for section in ss),(pid,chars)
+  assert all(set(section['sources'])<=sources.keys() and set(section['events'])<=events.keys() and set(section.get('people',[]))<=people.keys() for section in ss)
+  assert set(reading['sources'])=={source for section in ss for source in section['sources']}
+ assert all(set(events[event_id]['people'])<=people.keys() and set(events[event_id]['sources'])<=sources.keys() for event_id in v171_events)
+ for object_id in v171_objects:
+  item=object_map[object_id]
+  assert item['dynasties']==['qing'] and item['sources']
+  assert set(item['people'])<=people.keys() and set(item['sources'])<=sources.keys()
+ corpus=json.dumps([articles[pid] for pid in v171_people]+[events[event_id] for event_id in v171_events]+[object_map[object_id] for object_id in v171_objects]+[sources[source_id] for source_id in v171_sources],ensure_ascii=False)
+ for term in ['东南互保','辛丑条约','使馆区','庚子','五大臣','预备立宪','钦定宪法大纲','咨议局','资政院','皇族内阁','新军','四亿五千万两','度支部','巡警','十年禁烟','壬寅学制','癸卯学制','保路','武昌起义','南北议和']:
+  assert term in corpus,('missing late-Qing evidence term',term)
+ for boundary in ['不能把它写成全体中国人与全体外国人的单一阵线','不能把联军行动说成单纯保护使馆','不能成为杀害平民的理由','不能互相抵销','不等于立即掌握全部收入','并不表示全国货币已经统一','不等于权力已经受到有效约束','不是某位海外领袖远程下令的结果','不应夸成单一总部控制全国']:
+  assert boundary in corpus,('missing late-Qing evidence boundary',boundary)
+ gctx=next(item for item in d['reignContexts'] if item['person']=='q_guangxu')
+ xctx=next(item for item in d['reignContexts'] if item['person']=='q_xuantong')
+ post_guangxu={'v171_councils','v171_royal_cabinet','v171_huguang_loan','v171_chengdu_bloodshed','v171_wuchang_armory'}
+ assert set(v171_people)<=set(gctx['people']) and (v171_events-post_guangxu)<=set(gctx['events']) and not (post_guangxu&set(gctx['events'])) and v171_sources<=set(gctx['sources'])
+ xuantong_people={'q171_yikuang','q171_duanfang','q171_zaize','q171_wutingfang','q171_tangshaoyi','q171_liyuanhong','q171_songjiaoren'}
+ xuantong_events={'v171_councils','v171_royal_cabinet','v171_huguang_loan','v171_chengdu_bloodshed','v171_wuchang_armory','v171_constitutional_vocab'}
+ assert {pid for pid in xctx['people'] if pid.startswith('q171_')}==xuantong_people
+ assert {eid for eid in xctx['events'] if eid.startswith('v171_')}==xuantong_events
+ pairset={(item['from'],item['to']) for item in d['associations']}
+ assert {('q_guangxu',pid) for pid in v171_people}<=pairset
+ assert {('q_xuantong',pid) for pid in xuantong_people}<=pairset
+ assert {('q171_yikuang','q_yuanshikai'),('q171_liukunyi','q_zhangzhidong'),('q171_duanfang','q171_zaize'),('q171_wutingfang','q171_tangshaoyi'),('q171_liyuanhong','q_huangxing'),('q171_songjiaoren','q171_liyuanhong'),('q171_zhangbaixi','q170_zhangyuanji'),('q171_yuxian','q170_gangyi')}<=pairset
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将|产品采用',corpus,re.I)
+ print('V145 PASS: ten late-Qing readings and forty balanced events connect Boxer violence, occupation, treaty burdens, New Policies, education, constitutional preparation, railway conflict, Wuchang and negotiated abdication with separate court, local and civilian perspectives')
