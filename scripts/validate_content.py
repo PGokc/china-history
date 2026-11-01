@@ -4163,3 +4163,46 @@ if d['version'] >= 163:
  overview_source=(R/'App/DynastyViews.swift').read_text()
  assert '从这里继续' not in overview_source and 'DynastyContinuationGuide' not in overview_source
  print('V163 PASS: Wang Mang and Guangwu readings now connect regency, reform, disaster, competing Han regimes, war and reconstruction while every dynasty overview keeps only the four fixed tab destinations')
+
+if d['version'] >= 164:
+ founding_people={'han_liuyan','han_liuxuan','han_fanchong','han_liupenzi','han_fengyi','han_gengyan','han_wuhan'}
+ founding_sources={'v190_houhanshu14','v190_houhanshu17','v190_houhanshu18','v190_houhanshu19'}
+ founding_events={'v190_chongling_gengshi','v190_chimei_penzi','v190_hebei_generals'}
+ assert founding_people<=people.keys() and founding_sources<=sources.keys()
+ assert all(people[person_id]['dynasty']=='han' for person_id in founding_people)
+ event_map={event['id']:event for event in d['events']}
+ assert founding_events<=event_map.keys()
+ founding_articles={article['person']:article for article in d['articles'] if article['person'] in founding_people}
+ assert founding_articles.keys()==founding_people
+ for person_id,article in founding_articles.items():
+  text=''.join(section['text'] for section in article['sections'])
+  chars=len(re.findall(r'[\u4e00-\u9fff]',text))
+  assert len(article['sections'])==5 and chars>=600,(person_id,chars)
+  assert len({section['id'] for section in article['sections']})==5
+  assert all(len(re.findall(r'[\u4e00-\u9fff]',section['text']))>=125 for section in article['sections']),(person_id,'thin section')
+  assert len(article['sources'])>=2 and set(article['sources'])<=sources.keys()
+  for section in article['sections']:
+   assert set(section['sources'])<=sources.keys()
+   assert set(section.get('events',[]))<=event_map.keys()
+   assert set(section.get('people',[]))<=people.keys()
+ for event_id in founding_events:
+  event=event_map[event_id]
+  assert len(re.findall(r'[\u4e00-\u9fff]',event['body']))>=120,(event_id,'body')
+  assert len(re.findall(r'[\u4e00-\u9fff]',event['impact']))>=110,(event_id,'impact')
+  assert len(event['sources'])>=3 and set(event['sources'])<=sources.keys()
+  assert set(event['people'])==set(event['peopleRoles']),(event_id,'person-role mismatch')
+ association_pairs={(item['from'],item['to']) for item in d['associations']}
+ assert {('han_guangwu','han_fengyi'),('han_guangwu','han_gengyan'),('han_guangwu','han_wuhan')}<=association_pairs
+ context_map={context['person']:context for context in d['reignContexts']}
+ assert {'han_fengyi','han_gengyan','han_wuhan'}<=set(context_map['han_guangwu']['people'])
+ assert {'v190_hebei_generals','v190_chimei_penzi'}<=set(context_map['han_guangwu']['events'])
+ corpus=json.dumps(list(founding_articles.values())+[event_map[event_id] for event_id in founding_events],ensure_ascii=False)
+ for term in ['宗室名望和多支武装妥协','无文书旌旗部曲号令','名位与实际军权分离','边郡长期军政体系','大司马与主力军事统帅']:
+  assert term in corpus or term in json.dumps(d['associations'],ensure_ascii=False),('missing Eastern Han founding term',term)
+ for boundary in ['不能视作经过清点的兵员与伤亡统计','投降后的安置和再编户也是战争结束的一部分','不能把皇帝赞语当成跨时代排行榜','不能用结果替将领免除军纪与平民损失的责任']:
+  assert boundary in corpus,('missing Eastern Han founding boundary',boundary)
+ assert len({section['text'] for article in founding_articles.values() for section in article['sections']})==35
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品不用|产品将|产品采用',corpus,re.I)
+ overview_source=(R/'App/DynastyViews.swift').read_text()
+ assert '从这里继续' not in overview_source and 'DynastyContinuationGuide' not in overview_source
+ print('V164 PASS: Gengshi, Chimei and Eastern Han founding networks now include seven full readings, three linked events, military logistics, coercion and evidence boundaries without restoring the duplicate dynasty guide')

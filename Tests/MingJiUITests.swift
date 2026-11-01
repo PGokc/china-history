@@ -5767,4 +5767,32 @@ final class MingJiUITests: XCTestCase {
         shot("v189-wang-mang-primary-sources-and-safe-ending", reading)
     }
 
+    @MainActor func testV190EasternHanFoundingNetworksAndEvidenceBoundaries() throws {
+        let reading = XCUIApplication()
+        reading.launchArguments = ["--uitesting", "--ui-dynasty", "han"]
+        reading.launch()
+        XCTAssertTrue(reading.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        XCTAssertFalse(reading.staticTexts["从这里继续"].exists)
+        reading.buttons["globalSearch"].tap()
+        let search = reading.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("冯异")
+        let fengYi = reading.buttons["search_person_han_fengyi"]
+        XCTAssertTrue(fengYi.waitForExistence(timeout: 5)); fengYi.tap()
+        XCTAssertTrue(reading.buttons["articleEntry"].waitForExistence(timeout: 5))
+        openArticle(in: reading)
+        reading.buttons["articleContents"].tap()
+        let guanzhong = reading.buttons["关中失败、崤底反击与赤眉投降"]
+        XCTAssertTrue(guanzhong.exists); guanzhong.tap()
+        let countBoundary = reading.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不能视作经过清点的兵员与伤亡统计")).firstMatch
+        XCTAssertTrue(countBoundary.waitForExistence(timeout: 5))
+        shot("v190-feng-yi-guanzhong-logistics-and-evidence", reading)
+        reach(reading.buttons["资料与出处"], in: reading, attempts: 18)
+        XCTAssertTrue(reading.buttons["资料与出处"].isHittable); reading.buttons["资料与出处"].tap()
+        let source = reading.descendants(matching: .any)["source_v190_houhanshu17"]
+        reach(source, in: reading, attempts: 8)
+        XCTAssertTrue(source.exists)
+        XCTAssertLessThanOrEqual(source.frame.maxY, reading.tabBars.firstMatch.frame.minY - 16)
+        shot("v190-feng-yi-primary-source-and-safe-ending", reading)
+    }
+
 }
