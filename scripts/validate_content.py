@@ -3765,3 +3765,23 @@ if d['version'] >= 152:
  assert len({section['text'] for topic in v178_topics.values() for section in topic['sections']})==15
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将|产品采用',corpus,re.I)
  print('V152 PASS: Confucius, Laozi, Sun Wu, Mozi and Mencius now separate historical actors, core arguments, textual formation and modern category boundaries')
+
+if d['version'] >= 153:
+ zhou_guide=json.loads((R/'App/Resources/zhou_topics.json').read_text())
+ v179_topic_ids={'zhuangzi','xunzi','hanfei','shang-yang','zhao-wuling'}
+ v179_topics={topic['id']:topic for topic in zhou_guide['topics'] if topic['id'] in v179_topic_ids}
+ assert v179_topics.keys()==v179_topic_ids
+ for topic_id,topic in v179_topics.items():
+  chars=len(re.findall(r'[\u4e00-\u9fff]',topic['summary']+''.join(section['text'] for section in topic['sections'])))
+  assert chars>=540,(topic_id,chars)
+  assert len(topic['sections'])==3 and len({section['id'] for section in topic['sections']})==3
+  assert len(topic['sources'])>=3 and all(source['url'].startswith('https://') for source in topic['sources'])
+  assert all(len(re.findall(r'[\u4e00-\u9fff]',section['text']))>=140 for section in topic['sections'])
+ corpus=json.dumps(list(v179_topics.values()),ensure_ascii=False)
+ for term in ['漆园吏','五十二篇','化性起伪','天人之分','循名责实','法家学派','睡虎地秦简','军功爵','前307年','沙丘宫变']:
+  assert term in corpus,('missing Warring States thought-history term',term)
+ for boundary in ['不能拿寓言人物与作者本人互相作证','不是虚假伪装','不能与保障权利、限制公权的现代法治混同','不能把每条秦律都倒推为商鞅亲定','不能把胡服骑射美化成没有暴力的民族融合']:
+  assert boundary in corpus,('missing Warring States interpretive boundary',boundary)
+ assert len({section['text'] for topic in v179_topics.values() for section in topic['sections']})==15
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将|产品采用',corpus,re.I)
+ print('V153 PASS: Zhuangzi, Xunzi, Han Fei, Shang Yang and King Wuling now separate biography, doctrine, institutions, textual layers and human costs')

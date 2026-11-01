@@ -5329,4 +5329,28 @@ final class MingJiUITests: XCTestCase {
         shot("v178-mozi-sources-and-page-ending", app)
     }
 
+    @MainActor func testV179KingWulingConnectsReformWarAndSuccession() throws {
+        let app = launch(enterFamily: false)
+        reach(app.buttons["dynasty_zhou"], in: app, attempts: 8); app.buttons["dynasty_zhou"].tap()
+        reach(app.buttons["zhouGuideEntry"], in: app, attempts: 12); app.buttons["zhouGuideEntry"].tap()
+        XCTAssertTrue(app.descendants(matching: .any)["zhouGuidePage"].waitForExistence(timeout: 5))
+        app.buttons["zhouPeriod_战国"].tap()
+        let topic = app.buttons["zhouTopic_zhao-wuling"]
+        reach(topic, in: app, attempts: 8); XCTAssertTrue(topic.isHittable); topic.tap()
+        XCTAssertTrue(app.descendants(matching: .any)["eraTopic_zhao-wuling"].waitForExistence(timeout: 5))
+        let sourceBoundary = app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不能视为前307年的会议录音")).firstMatch
+        reach(sourceBoundary, in: app, attempts: 5)
+        XCTAssertTrue(sourceBoundary.exists)
+        let successionBoundary = app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "军事改革与稳定继承是两种不同能力")).firstMatch
+        reach(successionBoundary, in: app, attempts: 7)
+        XCTAssertTrue(successionBoundary.exists)
+        shot("v179-wuling-reform-war-and-succession", app)
+        let finalSource = app.staticTexts["zhouSourceKind_2"]
+        reach(finalSource, in: app, attempts: 18)
+        XCTAssertEqual(finalSource.label, "古籍转录　ctext.org")
+        for _ in 0..<3 { app.swipeUp() }
+        XCTAssertLessThanOrEqual(finalSource.frame.maxY, app.tabBars.firstMatch.frame.minY - 16)
+        shot("v179-wuling-sources-and-page-ending", app)
+    }
+
 }
