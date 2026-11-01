@@ -4535,3 +4535,50 @@ if d['version'] >= 171:
  overview_source=(R/'App/DynastyViews.swift').read_text()
  assert '从这里继续' not in overview_source and 'DynastyContinuationGuide' not in overview_source
  print('V171 PASS: late Three Kingdoms politics now connect Huainan military regions, Shu information channels, Wu coups, siege society, administrative surrender and the making of historical memory without restoring the duplicate dynasty guide')
+
+if d['version'] >= 172:
+ western_jin_people={'jin_jiachong','jin_yanghu','jin_duyu','jin_peixiu','jin_weiguan','jin_zhanghua','jin_fuxuan','jin_yangjun','jin_jiangtong','jin_liukun','jin_simayou','jin_simaliang','jin_simawei','jin_simalun','jin_simajiong','jin_simaai','jin_simaying','jin_simayong'}
+ western_jin_sources={f'v198_js{volume}' for volume in [3,4,5,26,30,34,35,36,40,47,56,59,60,62]}
+ assert western_jin_people<=people.keys() and western_jin_sources<=sources.keys()
+ assert all(people[pid]['dynasty']=='jin' for pid in western_jin_people)
+ event_map={event['id']:event for event in d['events']}
+ western_jin_events={eid for eid in event_map if eid.startswith('v198_')}
+ assert len(western_jin_events)==31,(len(western_jin_events),'Western Jin event count')
+ category_counts={category:sum(event_map[eid]['category']==category for eid in western_jin_events) for category in ['政治','军事','文化','经济','社会']}
+ assert category_counts=={'政治':6,'军事':7,'文化':6,'经济':6,'社会':6},category_counts
+ target_articles={article['person']:article for article in d['articles'] if article['person'] in western_jin_people}
+ assert target_articles.keys()==western_jin_people
+ for person_id,article in target_articles.items():
+  chars=len(re.findall(r'[\u4e00-\u9fff]',''.join(section['text'] for section in article['sections'])))
+  assert len(article['sections'])==5 and chars>=520,(person_id,chars)
+  assert len({section['id'] for section in article['sections']})==5
+  assert all(len(re.findall(r'[\u4e00-\u9fff]',section['text']))>=45 for section in article['sections']),(person_id,'thin section')
+  assert set(article['sources'])<=sources.keys() and set(article['sources'])&western_jin_sources
+  for section in article['sections']:
+   assert set(section['sources'])<=sources.keys() and set(section['sources'])&western_jin_sources
+   assert set(section.get('events',[]))<=event_map.keys()
+   assert set(section.get('people',[]))<=people.keys()
+ for event_id in western_jin_events:
+  event=event_map[event_id]
+  assert len(re.findall(r'[\u4e00-\u9fff]',event['body']))>=50,(event_id,'body')
+  assert len(re.findall(r'[\u4e00-\u9fff]',event['impact']))>=45,(event_id,'impact')
+  assert set(event['people'])==set(event['peopleRoles']),(event_id,'person-role mismatch')
+  assert set(event['sources'])<=sources.keys() and set(event['sources'])&western_jin_sources,(event_id,'sources')
+ family_pairs={(link['from'],link['to'],link['kind']) for link in d['familyLinks']}
+ assert {('jin_wudi','tk_simazhao','father'),('jin_huidi','jin_wudi','father'),('jin_huaidi','jin_wudi','father'),('jin_simayou','tk_simazhao','father'),('jin_simayou','tk_simashi','adoptiveFather'),('jin_simajiong','jin_simayou','father'),('jin_jiananfeng','jin_jiachong','father')}<=family_pairs
+ association_pairs={(item['from'],item['to']) for item in d['associations']}
+ assert {('jin_wudi','jin_yanghu'),('jin_wudi','jin_duyu'),('jin_wudi','jin_jiachong'),('jin_huidi','jin_jiananfeng'),('jin_huidi','jin_simaying'),('jin_huidi','jin_simayong'),('jin_huaidi','jin_simayue'),('jin_huaidi','jin_liukun')}<=association_pairs
+ context_map={context['person']:context for context in d['reignContexts']}
+ assert {'jin_jiachong','jin_yanghu','jin_duyu','jin_peixiu','jin_fuxuan','jin_zhanghua'}<=set(context_map['jin_wudi']['people'])
+ assert {'jin_simaliang','jin_simawei','jin_simalun','jin_simajiong','jin_simaai','jin_simaying','jin_simayong'}<=set(context_map['jin_huidi']['people'])
+ assert {'v198_luoyang_fall_311','v198_supply_collapse','v198_yongjia_displacement'}<=set(context_map['jin_huaidi']['events'])
+ corpus=json.dumps(list(target_articles.values())+[event_map[event_id] for event_id in western_jin_events],ensure_ascii=False)
+ for term in ['八王之乱是连续联盟更替而非八方同时开战','户调式把土地、绢绵和年龄编入家庭义务','官品荫亲属、衣食客与佃客形成差等保护','后来战乱不能反向证明族群预言','皇太弟并不等于正式即位']:
+  assert term in corpus,('missing Western Jin term',term)
+ for boundary in ['不作现代统计值','不证明各地均按额执行','不能把后世全部庄园形态都倒推到一纸条文','不能仅因纪载“免调”就断定家庭当年没有其他征发','不把后来所有战争责任平均分给八个名字']:
+  assert boundary in corpus or boundary in json.dumps([sources[sid] for sid in western_jin_sources],ensure_ascii=False),('missing Western Jin evidence boundary',boundary)
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品不用|产品将|产品采用',corpus,re.I)
+ overview_source=(R/'App/DynastyViews.swift').read_text()
+ assert '从这里继续' not in overview_source and 'DynastyContinuationGuide' not in overview_source
+ assert overview_source.count('DynastyOverviewBlock(title: "朝代总览", text: profile.overview)')==1
+ print('V172 PASS: Western Jin foundation, law, households, conquest, court coups, sequential princely wars and Yongjia collapse are linked without restoring the duplicate dynasty guide')

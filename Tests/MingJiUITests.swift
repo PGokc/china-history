@@ -6118,4 +6118,68 @@ final class MingJiUITests: XCTestCase {
         shot("v197-wei-zhao-name-and-taboo-layer", nameLayer)
     }
 
+    @MainActor func testV198WesternJinSequenceAndOverviewWithoutDuplicateGuide() throws {
+        let overview = XCUIApplication()
+        overview.launchArguments = ["--uitesting", "--ui-dynasty", "jin"]
+        overview.launch()
+        XCTAssertTrue(overview.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        let jin = overview.buttons["dynasty_jin"]
+        XCTAssertTrue(jin.waitForExistence(timeout: 5)); jin.tap()
+        XCTAssertTrue(overview.descendants(matching: .any)["dynastyDetail_jin"].waitForExistence(timeout: 5))
+        XCTAssertTrue(overview.staticTexts["朝代总览"].exists)
+        XCTAssertFalse(overview.staticTexts["从这里继续"].exists)
+        XCTAssertFalse(overview.staticTexts["帝序与在位人物"].exists)
+        XCTAssertFalse(overview.staticTexts["家族世系"].exists)
+        XCTAssertFalse(overview.staticTexts["思想与遗珍"].exists)
+        XCTAssertEqual(overview.tabBars.buttons.allElementsBoundByIndex.map(\.label), ["朝代", "帝序", "家族", "遗珍"])
+        shot("v198-jin-overview-directly-enters-history", overview)
+        overview.terminate()
+
+        let princes = XCUIApplication()
+        princes.launchArguments = ["--uitesting", "--ui-dynasty", "jin"]
+        princes.launch()
+        XCTAssertTrue(princes.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        XCTAssertFalse(princes.staticTexts["从这里继续"].exists)
+        princes.buttons["globalSearch"].tap()
+        let search = princes.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("司马亮")
+        let simaLiang = princes.buttons["search_person_jin_simaliang"]
+        XCTAssertTrue(simaLiang.waitForExistence(timeout: 5)); simaLiang.tap()
+        XCTAssertTrue(princes.buttons["articleEntry"].waitForExistence(timeout: 5))
+        openArticle(in: princes)
+        princes.buttons["articleContents"].tap()
+        let sequence = princes.buttons["司马亮是八王序列的开端但不是长期混战者"]
+        XCTAssertTrue(sequence.exists); sequence.tap()
+        let boundary = princes.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "容易制造同时参战错觉")).firstMatch
+        XCTAssertTrue(boundary.waitForExistence(timeout: 5))
+        XCTAssertFalse(princes.staticTexts["从这里继续"].exists)
+        shot("v198-sima-liang-sequential-eight-princes", princes)
+        openChapterSources("jin_simaliang_5", in: princes)
+        let source = princes.descendants(matching: .any)["source_v198_js59"]
+        reach(source, in: princes, attempts: 8)
+        XCTAssertTrue(source.exists)
+        XCTAssertLessThanOrEqual(source.frame.maxY, princes.tabBars.firstMatch.frame.minY - 16)
+        shot("v198-sima-liang-source-and-safe-ending", princes)
+        princes.terminate()
+
+        let policy = XCUIApplication()
+        policy.launchArguments = ["--uitesting", "--ui-dynasty", "jin"]
+        policy.launch()
+        XCTAssertTrue(policy.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        policy.buttons["globalSearch"].tap()
+        let policySearch = policy.searchFields.firstMatch
+        XCTAssertTrue(policySearch.waitForExistence(timeout: 5)); policySearch.tap(); policySearch.typeText("江统")
+        let jiangTong = policy.buttons["search_person_jin_jiangtong"]
+        XCTAssertTrue(jiangTong.waitForExistence(timeout: 5)); jiangTong.tap()
+        XCTAssertTrue(policy.buttons["articleEntry"].waitForExistence(timeout: 5))
+        openArticle(in: policy)
+        policy.buttons["articleContents"].tap()
+        let prophecy = policy.buttons["后来战乱不能反向证明族群预言"]
+        XCTAssertTrue(prophecy.exists); prophecy.tap()
+        let evidence = policy.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不等于排斥性因果模型得到验证")).firstMatch
+        XCTAssertTrue(evidence.waitForExistence(timeout: 5))
+        XCTAssertFalse(policy.staticTexts["从这里继续"].exists)
+        shot("v198-jiang-tong-policy-and-prophecy-boundary", policy)
+    }
+
 }
