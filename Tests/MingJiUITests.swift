@@ -4874,4 +4874,41 @@ final class MingJiUITests: XCTestCase {
         shot("v163-yang-xiuqing-power-and-evidence", reading)
     }
 
+    @MainActor func testV164DynastyOverviewOmitsDuplicateDestinationGuide() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["--uitesting", "--ui-dynasty", "qing"]
+        app.launch()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        reach(app.buttons["dynasty_qing"], in: app, attempts: 14)
+        app.buttons["dynasty_qing"].tap()
+        XCTAssertTrue(app.staticTexts["朝代总览"].waitForExistence(timeout: 5))
+        XCTAssertFalse(app.staticTexts["从这里继续"].exists)
+        XCTAssertFalse(app.buttons["dynastySequence_qing"].exists)
+        XCTAssertFalse(app.buttons["dynastyFamily_qing"].exists)
+        XCTAssertFalse(app.buttons["dynastyCollection_qing"].exists)
+        shot("v164-qing-overview-without-duplicate-destination-guide", app)
+    }
+
+    @MainActor func testV164LateXianfengSeparatesReformProposalFromImplementation() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["--uitesting", "--ui-dynasty", "qing"]
+        app.launch()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        app.buttons.matching(NSPredicate(format: "identifier == %@", "globalSearch")).firstMatch.tap()
+        let search = app.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("洪仁玕")
+        let result = app.buttons["search_person_q164_hongrengan"]
+        XCTAssertTrue(result.waitForExistence(timeout: 8)); Thread.sleep(forTimeInterval: 1); result.tap()
+        if !app.buttons["articleEntry"].waitForExistence(timeout: 5) { app.buttons["search_person_q164_hongrengan"].tap() }
+        XCTAssertTrue(app.buttons["articleEntry"].waitForExistence(timeout: 5)); app.buttons["articleEntry"].tap()
+        XCTAssertTrue(app.buttons["articleContents"].waitForExistence(timeout: 5)); app.buttons["articleContents"].tap()
+        let chapter = app.buttons["《资政新篇》是建议书而非成就清单"]
+        XCTAssertTrue(chapter.exists); chapter.tap()
+        XCTAssertTrue(app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不等于建立预算")).firstMatch.waitForExistence(timeout: 5))
+        openChapterSources("v164_hongrengan3", in: app)
+        XCTAssertTrue(app.descendants(matching: .any)["source_v164_zizheng"].waitForExistence(timeout: 3))
+        app.swipeUp()
+        shot("v164-hong-rengan-proposal-and-implementation", app)
+    }
+
 }

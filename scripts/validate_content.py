@@ -3288,3 +3288,40 @@ if d['version'] >= 137:
  assert all(item['sectionID'].startswith('q-xianfeng-') for item in narration['entries'] if item['articleID']=='q_xianfeng')
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将',corpus,re.I)
  print('V137 PASS: twelve early-Xianfeng readings and forty-five balanced events connect Guangxi mobilization, Yong’an, the Yangzi advance, Northern Expedition, war finance, ordinary displacement, Tianjing government and evidence-bounded memory')
+
+
+if d['version'] >= 138:
+ v164_people=['q164_wenxiang','q164_guiliang','q164_huashana','q164_sushun','q164_zaiyuan','q164_duanhua','q164_guanwen','q164_hulinyi','q164_luozennan','q164_lixubin','q164_chenyucheng','q164_hongrengan']
+ v164_events={item['id'] for item in d['events'] if item['id'].startswith('v164_')}
+ v164_sources={item['id'] for item in d['sources'] if item['id'].startswith('v164_')}
+ v164_objects={item['id'] for item in d['objects'] if item['id'].startswith('v164_')}
+ object_map={item['id']:item for item in d['objects']}
+ assert len(v164_people)==12 and len(v164_events)==45 and len(v164_sources)==23 and len(v164_objects)==5
+ assert set(v164_people)<=people.keys() and set(v164_people)<=articles.keys()
+ assert {events[event_id]['category'] for event_id in v164_events}=={'政治','军事','经济','社会','文化'}
+ assert all(sum(events[event_id]['category']==category for event_id in v164_events)==9 for category in ['政治','军事','经济','社会','文化'])
+ for pid in v164_people:
+  reading=articles[pid]; ss=reading['sections']
+  chars=sum(len(re.findall(r'[\u4e00-\u9fff]',section['text'])) for section in ss)
+  assert len(ss)==5 and chars>=500 and all(section['sources'] and section['events'] for section in ss),(pid,chars)
+  assert all(set(section['sources'])<=sources.keys() and set(section['events'])<=events.keys() and set(section.get('people',[]))<=people.keys() for section in ss)
+  assert set(reading['sources'])=={source for section in ss for source in section['sources']}
+ assert all(set(events[event_id]['people'])<=people.keys() and set(events[event_id]['sources'])<=sources.keys() for event_id in v164_events)
+ for object_id in v164_objects:
+  item=object_map[object_id]
+  assert item['dynasties']==['qing'] and item['people'] and item['sources']
+  assert set(item['people'])<=people.keys() and set(item['sources'])<=sources.keys()
+ corpus=json.dumps([articles[pid] for pid in v164_people]+[events[event_id] for event_id in v164_events]+[object_map[object_id] for object_id in v164_objects]+[sources[source_id] for source_id in v164_sources],ensure_ascii=False)
+ for term in ['亚罗号','广州陷落','《天津条约》','换约路线','大沽','北塘','八里桥','圆明园','三河','安庆','厘金','铺商歇业','华工出洋','战争摄影','《资政新篇》']:
+  assert term in corpus,('missing late-Xianfeng evidence term',term)
+ for boundary in ['签字不等于双方形成相同理解','不能把被迫议和美化为平等外交','不能写成社会危害获得解决','不能用单一数字概括损失','确认俘虏受害不等于集体惩罚正当','不能单凭姿态推断心理','建议书不等于已经实施','思想史上的新意与行政史上的落实是两个问题']:
+  assert boundary in corpus,('missing late-Xianfeng evidence boundary',boundary)
+ ctx=next(item for item in d['reignContexts'] if item['person']=='q_xianfeng')
+ assert set(v164_people)<=set(ctx['people']) and v164_events<=set(ctx['events']) and v164_sources<=set(ctx['sources'])
+ pairset={(item['from'],item['to']) for item in d['associations']}
+ assert {('q_xianfeng',pid) for pid in v164_people}<=pairset
+ assert {('q164_guiliang','q164_huashana'),('q164_sushun','q164_zaiyuan'),('q164_sushun','q164_duanhua'),('q164_guanwen','q164_hulinyi'),('q164_hulinyi','q164_luozennan'),('q164_luozennan','q164_lixubin'),('q164_lixubin','q164_chenyucheng'),('q164_hongrengan','q164_chenyucheng'),('q_yixin','q164_wenxiang')}<=pairset
+ assert all(item['sectionID'].startswith('q-xianfeng-') for item in narration['entries'] if item['articleID']=='q_xianfeng')
+ assert all(item['sectionID'].startswith('yixin-q') for item in narration['entries'] if item['articleID']=='q_yixin')
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将',corpus,re.I)
+ print('V138 PASS: twelve late-Xianfeng readings and forty-five balanced events connect treaty revision, Guangzhou occupation, Dagu, Beijing, regional armies, war finance, displacement, photography and evidence-bounded memory')

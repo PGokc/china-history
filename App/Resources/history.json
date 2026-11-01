@@ -1,5 +1,5 @@
 {
-  "version": 137,
+  "version": 138,
   "reviewed": "2026-10-31",
   "people": [
     {
@@ -19185,6 +19185,213 @@
       "kind": "清朝官员",
       "note": "人物事迹须结合不同阵营材料阅读，官修史中的敌对称谓不沿用为产品判断。",
       "dynasty": "qing"
+    },
+    {
+      "id": "q164_wenxiang",
+      "name": "文祥",
+      "call": "留京交涉与新外交机构的组织者",
+      "temple": "",
+      "era": "咸丰后期",
+      "reign": "1818—1876",
+      "summary": "从京师防务与危机交涉进入总理衙门核心，代表清廷在战败压力下形成新的常设对外事务机制。",
+      "parent": null,
+      "sources": [
+        "v164_qsg386",
+        "v164_dpm_yuanmingyuan"
+      ],
+      "kind": "清朝人物",
+      "note": "人物行动置于制度、战争与信息条件中解释；传记功罪与可核事实分开阅读。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q164_guiliang",
+      "name": "桂良",
+      "call": "两次天津议约的资深钦差",
+      "temple": "",
+      "era": "咸丰后期",
+      "reign": "1785—1862",
+      "summary": "在1858与1860年参与天津交涉，既执行皇帝不断变化的指令，也面对列强军事压力与翻译差异。",
+      "parent": null,
+      "sources": [
+        "v164_qsg388",
+        "v164_tianjin_uk",
+        "v164_nmc_treaty"
+      ],
+      "kind": "清朝人物",
+      "note": "人物行动置于制度、战争与信息条件中解释；传记功罪与可核事实分开阅读。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q164_huashana",
+      "name": "花沙纳",
+      "call": "《天津条约》清方全权大臣",
+      "temple": "",
+      "era": "咸丰后期",
+      "reign": "1806—1859",
+      "summary": "与桂良共同签订中英、中法《天津条约》，显示钦差名义全权仍受北京密旨和现场武力约束。",
+      "parent": null,
+      "sources": [
+        "v164_tianjin_uk",
+        "v164_tianjin_fr",
+        "v164_nmc_treaty"
+      ],
+      "kind": "清朝人物",
+      "note": "人物行动置于制度、战争与信息条件中解释；传记功罪与可核事实分开阅读。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q164_sushun",
+      "name": "肃顺",
+      "call": "军兴财政与热河行在的权力人物",
+      "temple": "",
+      "era": "咸丰后期",
+      "reign": "1816—1861",
+      "summary": "以敢任事获咸丰信任，参与财政整顿、战和决策和热河行在政务，后成为顾命集团核心。",
+      "parent": null,
+      "sources": [
+        "v164_qsg387",
+        "v163_qsg20"
+      ],
+      "kind": "清朝人物",
+      "note": "人物行动置于制度、战争与信息条件中解释；传记功罪与可核事实分开阅读。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q164_zaiyuan",
+      "name": "载垣",
+      "call": "通州交涉与顾命集团中的怡亲王",
+      "temple": "",
+      "era": "咸丰后期",
+      "reign": "1816—1861",
+      "summary": "1860年奉命赴通州议和，随后随驾热河并受顾命；其经历横跨战争决策和皇权交接。",
+      "parent": null,
+      "sources": [
+        "v164_qsg220",
+        "v164_qsg387"
+      ],
+      "kind": "清朝人物",
+      "note": "人物行动置于制度、战争与信息条件中解释；传记功罪与可核事实分开阅读。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q164_duanhua",
+      "name": "端华",
+      "call": "热河行在与顾命集团中的郑亲王",
+      "temple": "",
+      "era": "咸丰后期",
+      "reign": "1807—1861",
+      "summary": "以宗室近臣身份参与行在政务和皇位交接，与载垣、肃顺构成紧密政治联盟。",
+      "parent": null,
+      "sources": [
+        "v164_qsg220",
+        "v164_qsg387"
+      ],
+      "kind": "清朝人物",
+      "note": "人物行动置于制度、战争与信息条件中解释；传记功罪与可核事实分开阅读。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q164_guanwen",
+      "name": "官文",
+      "call": "湖北军政中的旗员总督",
+      "temple": "",
+      "era": "咸丰后期",
+      "reign": "1798—1871",
+      "summary": "长期督办湖北军务，与胡林翼及湘军系统合作又相互制衡，连接朝廷任命、地方财政和区域军队。",
+      "parent": null,
+      "sources": [
+        "v164_qsg388",
+        "v164_qsg406"
+      ],
+      "kind": "清朝人物",
+      "note": "人物行动置于制度、战争与信息条件中解释；传记功罪与可核事实分开阅读。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q164_hulinyi",
+      "name": "胡林翼",
+      "call": "湖北筹饷、整军与区域协调者",
+      "temple": "",
+      "era": "咸丰后期",
+      "reign": "1812—1861",
+      "summary": "在湖北组织军政、筹措厘金并协调湘军将领，对安庆战局和晚清地方军政结构影响深远。",
+      "parent": null,
+      "sources": [
+        "v164_qsg406",
+        "v164_ruc_lijin"
+      ],
+      "kind": "清朝人物",
+      "note": "人物行动置于制度、战争与信息条件中解释；传记功罪与可核事实分开阅读。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q164_luozennan",
+      "name": "罗泽南",
+      "call": "由讲学团练转入湘军的将领",
+      "temple": "",
+      "era": "咸丰后期",
+      "reign": "1807—1856",
+      "summary": "从乡里讲学和团练进入跨省作战，参与建立湘军营制，最终在攻武昌时负伤去世。",
+      "parent": null,
+      "sources": [
+        "v164_qsg407",
+        "v164_qsg406"
+      ],
+      "kind": "清朝人物",
+      "note": "人物行动置于制度、战争与信息条件中解释；传记功罪与可核事实分开阅读。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q164_lixubin",
+      "name": "李续宾",
+      "call": "九江胜利与三河覆军之间的湘军将领",
+      "temple": "",
+      "era": "咸丰后期",
+      "reign": "1818—1858",
+      "summary": "承接罗泽南部队，长期攻坚后取得九江，又在三河陷入包围战死，显示区域军队扩张的能力与风险。",
+      "parent": null,
+      "sources": [
+        "v164_qsg408",
+        "v163_qsg475"
+      ],
+      "kind": "清朝人物",
+      "note": "人物行动置于制度、战争与信息条件中解释；传记功罪与可核事实分开阅读。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q164_chenyucheng",
+      "name": "陈玉成",
+      "call": "太平天国后期机动作战核心",
+      "temple": "",
+      "era": "咸丰后期",
+      "reign": "1837—1862",
+      "summary": "天京事变后承担长江中游重要军务，在三河、江北和安庆战场活动，军事声望不能遮蔽征粮与持久战成本。",
+      "parent": null,
+      "sources": [
+        "v163_qsg475",
+        "v164_taiping_joint"
+      ],
+      "kind": "清朝人物",
+      "note": "人物行动置于制度、战争与信息条件中解释；传记功罪与可核事实分开阅读。",
+      "dynasty": "qing"
+    },
+    {
+      "id": "q164_hongrengan",
+      "name": "洪仁玕",
+      "call": "《资政新篇》的提出者与干王",
+      "temple": "",
+      "era": "咸丰后期",
+      "reign": "1822—1864",
+      "summary": "在香港等地生活后抵达天京，以《资政新篇》提出交通、工商、新闻和公共设施设想，但落实条件有限。",
+      "parent": null,
+      "sources": [
+        "v164_zizheng",
+        "v164_taiping_joint",
+        "v163_qsg475"
+      ],
+      "kind": "清朝人物",
+      "note": "人物行动置于制度、战争与信息条件中解释；传记功罪与可核事实分开阅读。",
+      "dynasty": "qing"
     }
   ],
   "sources": [
@@ -26639,6 +26846,144 @@
       "title": "《天朝田亩制度》原文",
       "url": "https://zh.wikisource.org/zh-hans/天朝田畝制度",
       "note": "制度文本表达理想秩序，不等于占领区已经按条文普遍分田和组织生产。"
+    },
+    {
+      "id": "v164_qsg220",
+      "title": "《清史稿》卷220 · 载垣、端华",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷220",
+      "note": "核对载垣、端华在通州交涉、热河行在与顾命阶段的经历；政变后的定罪结论须与同时期诏令对读。"
+    },
+    {
+      "id": "v164_qsg386",
+      "title": "《清史稿》卷386 · 文祥",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷386",
+      "note": "核对文祥在京师防务、留京交涉和总理衙门初设前后的履历；传记对普通居民经验着墨有限。"
+    },
+    {
+      "id": "v164_qsg387",
+      "title": "《清史稿》卷387 · 肃顺",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷387",
+      "note": "核对肃顺办理财政案件、参与战和决策、随驾热河及受顾命等事实；卷末评价受辛酉政变胜方语言影响。"
+    },
+    {
+      "id": "v164_qsg388",
+      "title": "《清史稿》卷388 · 桂良、官文",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷388",
+      "note": "核对桂良参与天津与北京交涉、官文督办湖北军政等履历。"
+    },
+    {
+      "id": "v164_qsg406",
+      "title": "《清史稿》卷406 · 胡林翼",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷406",
+      "note": "核对胡林翼在湖北整军、筹饷、协调官文与湘军、围攻安庆等经历；军功数字不直接等同实数。"
+    },
+    {
+      "id": "v164_qsg407",
+      "title": "《清史稿》卷407 · 罗泽南",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷407",
+      "note": "核对罗泽南由讲学、团练到湘军将领的路径及武昌战事；忠烈叙述不能替代对募勇成本的考察。"
+    },
+    {
+      "id": "v164_qsg408",
+      "title": "《清史稿》卷408 · 李续宾",
+      "url": "https://zh.wikisource.org/zh-hans/清史稿/卷408",
+      "note": "核对李续宾统率湘军陆师、九江与三河战事及其战死经过。"
+    },
+    {
+      "id": "v164_tianjin_uk",
+      "title": "《中英天津条约》",
+      "url": "https://zh.wikisource.org/zh-hans/中英天津條約",
+      "note": "1858年条约文本，可核对公使驻京、增开口岸、内地旅行等条款；不同语种与版本须分别核查。"
+    },
+    {
+      "id": "v164_tianjin_fr",
+      "title": "《中法天津条约》",
+      "url": "https://zh.wikisource.org/zh-hans/中法天津條約",
+      "note": "1858年中法条约文本，用于核对驻使、传教与通商条款；条文与地方执行不是同一件事。"
+    },
+    {
+      "id": "v164_beijing_uk",
+      "title": "《中英北京条约》",
+      "url": "https://zh.wikisource.org/zh-hans/中英北京續增條約",
+      "note": "1860年续约文本，核对批准旧约、天津开埠、赔款与华工出洋；条约在军事占领压力下签订。"
+    },
+    {
+      "id": "v164_beijing_fr",
+      "title": "《中法北京条约》",
+      "url": "https://zh.wikisource.org/zh-hans/中法北京條約",
+      "note": "1860年续约文本，核对赔款与宗教相关条文；中法文本差异及地方执行须单独说明。"
+    },
+    {
+      "id": "v164_beijing_ru",
+      "title": "《中俄北京条约》",
+      "url": "https://zh.wikisource.org/zh-hans/中俄北京條約",
+      "note": "1860年条约文本，核对东部边界与通商安排；俄国调停角色与自身诉求须同时呈现。"
+    },
+    {
+      "id": "v164_zizheng",
+      "title": "洪仁玕《资政新篇》",
+      "url": "https://zh.wikisource.org/zh-hans/資政新篇",
+      "note": "1859年制度建议原文，包含交通、新闻、工商与公共设施设想；建议书不等于已经实施。"
+    },
+    {
+      "id": "v164_taiping_joint",
+      "title": "洪仁玕等《劝谕清朝官兵弃暗投明檄》",
+      "url": "https://zh.wikisource.org/zh-hans/干王洪仁玕等勸諭清朝官兵棄暗投明檄",
+      "note": "太平天国后期多位将领联名文本，可观察新领导层的名号与宣传语言，不能据此推定战场实际。"
+    },
+    {
+      "id": "v164_dpm_yuanmingyuan",
+      "title": "故宫博物院：圆明园的历史与1860年劫焚档案",
+      "url": "https://www.dpm.org.cn/Uploads/pdf/1538/T00005_00.pdf",
+      "note": "依据清宫档案讨论北京恐慌、铺商歇业、军队溃散及圆明园劫焚。"
+    },
+    {
+      "id": "v164_dpm_photo",
+      "title": "故宫博物院：早期宫廷摄影与奕訢照片",
+      "url": "https://www.dpm.org.cn/learing_detail/253439.html",
+      "note": "核对1860年比托拍摄奕訢和桂良早期照片的背景，并提示影像由占领者视角生产。"
+    },
+    {
+      "id": "v164_nmc_treaty",
+      "title": "中国国家博物馆：《天津条约》签订后清廷悔约问题研究",
+      "url": "https://www.chnmuseum.cn/yj/xscg/xslw/201812/t20181224_36659.shtml",
+      "note": "讨论清廷试图挽回驻使等条款、1859年大沽胜利与政策误判，避免把战争续起写成偶发事件。"
+    },
+    {
+      "id": "v164_ruc_trade",
+      "title": "中国人民大学清史研究所：第二次鸦片战争后的开埠通商",
+      "url": "https://iqh.ruc.edu.cn/old/qdjjsyj/jjs_ztyj/dwmy/fd35f01bd03140d2b6e4ee1792407ea2.htm",
+      "note": "核对新开口岸、长江通商和三口通商管理；条约规定与实际开放存在时间差。"
+    },
+    {
+      "id": "v164_ruc_indemnity",
+      "title": "中国人民大学清史研究所：第二次鸦片战争赔款分配研究",
+      "url": "https://iqh.ruc.edu.cn/old/qdzwgxyj/zwgx_xgd/ff4117d5216c4edfadbef7e005f9ee2e.htm",
+      "note": "依据法国外交档案讨论赔款构成与分配，说明赔款与军费及索赔相连。"
+    },
+    {
+      "id": "v164_ruc_lijin",
+      "title": "《清史研究》：晚清浙江厘金的开征及收支结构",
+      "url": "https://qsyj.ruc.edu.cn/CN/abstract/abstract2418.shtml",
+      "note": "厘金由临时筹饷逐步转为地方重要财源，用于解释区域军队、商路和财政权力重组。"
+    },
+    {
+      "id": "v164_ruc_opium",
+      "title": "中国人民大学清史研究所：晚清鸦片税研究",
+      "url": "https://iqh.ruc.edu.cn/old/qdzwgxyj/zwgx_yjqy/my/2be05ac4fe4e4c009eeaf8320412d061.htm",
+      "note": "核对1858年后鸦片从严禁到征税的转折及财政动因，不把征税误写为消除社会危害。"
+    },
+    {
+      "id": "v164_ruc_ports",
+      "title": "中国人民大学清史研究所：海关与通商口岸管理",
+      "url": "https://iqh.ruc.edu.cn/old/qdjjsyj/jjs_ztyj/dwmy/f664eb10c13743a58762e54ae51b0423.htm",
+      "note": "核对通商章程后外籍税务人员参与海关管理和口岸调查的制度背景。"
+    },
+    {
+      "id": "v164_pku_jiangnan",
+      "title": "北京大学《史学月刊》：太平天国镇境苏浙社会经济秩序",
+      "url": "https://fh.pku.edu.cn/docs/2023-01/20230112203302509564.pdf",
+      "note": "研究占领区钱粮、基层治理与农村秩序，提醒理想制度、征粮实践和地方差异必须分开。"
     }
   ],
   "relations": [
@@ -77437,6 +77782,838 @@
       ],
       "kind": "史实与解读",
       "category": "文化"
+    },
+    {
+      "id": "v164_arrow_escalation",
+      "year": "1856年",
+      "sortYear": 1856,
+      "title": "亚罗号争议成为扩大军事行动的触发点",
+      "body": "广州当局查缉后，英国围绕船籍、旗帜和人员提出交涉并动武；修约和扩大在华权利的目标早已形成。",
+      "impact": "战争不能归结为一次现场冲突或一名地方官的态度；列强扩张、地方误判和沟通迟缓须分层解释。",
+      "people": [
+        "q163_yemingchen",
+        "q_xianfeng"
+      ],
+      "sources": [
+        "v163_qsg154",
+        "v164_nmc_treaty"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v164_guangzhou_joint_rule",
+      "year": "1857—1861年",
+      "sortYear": 1857,
+      "title": "广州陷落后出现占领军监督下的地方行政",
+      "body": "英法联军俘走叶名琛后，在军事占领和外国委员会监督下利用原有官署维持征税与城市管理。",
+      "impact": "占领秩序依赖旧官僚、商人和基层差役，主权受损不总以行政机构完全消失表现。",
+      "people": [
+        "q163_yemingchen",
+        "q164_guiliang"
+      ],
+      "sources": [
+        "v163_qsg154",
+        "v164_ruc_trade"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v164_tianjin_treaties",
+      "year": "1858年",
+      "sortYear": 1858,
+      "title": "《天津条约》在军舰逼近下签订",
+      "body": "桂良、花沙纳与英法等国分别议约，条款涉及驻使、口岸、内地旅行和赔款；名义全权仍受北京谕旨牵制。",
+      "impact": "条约改变交涉结构；签字不等于双方形成相同理解，也不等于各条立即落实。",
+      "people": [
+        "q164_guiliang",
+        "q164_huashana",
+        "q_xianfeng"
+      ],
+      "sources": [
+        "v164_tianjin_uk",
+        "v164_tianjin_fr",
+        "v164_nmc_treaty"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v164_ratification_dispute",
+      "year": "1858—1859年",
+      "sortYear": 1858,
+      "title": "换约路线与公使驻京引发持续悔约争论",
+      "body": "清廷试图借税则谈判、限制换约礼仪和调整进京路线挽回条款；英法坚持履约，战和准备并行。",
+      "impact": "1859年冲突不是和平突然破裂，而是文本、礼仪主权与军事威慑长期未解的结果。",
+      "people": [
+        "q164_guiliang",
+        "q164_huashana",
+        "q_xianfeng"
+      ],
+      "sources": [
+        "v164_nmc_treaty",
+        "v164_tianjin_uk"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v164_rehe_flight",
+      "year": "1860年",
+      "sortYear": 1860,
+      "title": "咸丰离京使北京与热河形成两个决策中心",
+      "body": "咸丰携后妃皇子前往热河，留下奕訢办理交涉；行在掌握皇帝与谕旨，北京承担占领下的即时谈判。",
+      "impact": "空间分离放大信息延迟和派系差异，也为翌年皇位交接冲突埋下条件。",
+      "people": [
+        "q_xianfeng",
+        "q_yixin",
+        "q164_sushun",
+        "q164_zaiyuan"
+      ],
+      "sources": [
+        "v164_qsg220",
+        "v164_qsg387",
+        "v164_dpm_yuanmingyuan"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v164_yixin_negotiation",
+      "year": "1860年",
+      "sortYear": 1860,
+      "title": "奕訢在北京承担停战与交涉",
+      "body": "咸丰出走后，奕訢、文祥等在军事压力、俘虏事件和城门安全之间联系英法代表。",
+      "impact": "这提高了留京集团处理外务的政治资本，但不能把被迫议和美化为平等外交。",
+      "people": [
+        "q_yixin",
+        "q164_wenxiang"
+      ],
+      "sources": [
+        "v5qn_qsg221",
+        "v164_qsg386",
+        "v164_beijing_uk"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v164_beijing_conventions",
+      "year": "1860年",
+      "sortYear": 1860,
+      "title": "《北京条约》批准旧约并增加新让步",
+      "body": "奕訢分别与英、法、俄签约，涉及天津开埠、赔款、九龙部分地区及东北边界。",
+      "impact": "三份条约内容和对手目标不同；俄国借调停推进边界利益，不能与英法行动混写。",
+      "people": [
+        "q_yixin",
+        "q164_wenxiang"
+      ],
+      "sources": [
+        "v164_beijing_uk",
+        "v164_beijing_fr",
+        "v164_beijing_ru"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v164_taiping_reorganization",
+      "year": "1859年",
+      "sortYear": 1859,
+      "title": "洪仁玕到天京后进入新的领导结构",
+      "body": "洪仁玕获封干王并提出制度建议，陈玉成等年轻将领承担主要军务，重组天京事变后的权力。",
+      "impact": "新领导层带来方案和机动力量，却未消除权责分散与长期围城压力。",
+      "people": [
+        "q164_hongrengan",
+        "q164_chenyucheng"
+      ],
+      "sources": [
+        "v164_zizheng",
+        "v164_taiping_joint",
+        "v163_qsg475"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v164_regional_command",
+      "year": "1860年",
+      "sortYear": 1860,
+      "title": "曾国藩获授两江总督并统筹江南军务",
+      "body": "江南大营再溃后，朝廷进一步依赖曾国藩及湘军系统，胡林翼、官文等以饷源和战区协商支撑。",
+      "impact": "军权向区域军政网络偏移，是授权、筹款和问责方式改变，不是中央简单退出。",
+      "people": [
+        "q_zengguofan",
+        "q164_hulinyi",
+        "q164_guanwen"
+      ],
+      "sources": [
+        "v40q_qsg405",
+        "v164_qsg406",
+        "v164_qsg388"
+      ],
+      "kind": "史实与解读",
+      "category": "政治"
+    },
+    {
+      "id": "v164_guangzhou_capture",
+      "year": "1857年",
+      "sortYear": 1857,
+      "title": "英法联军攻占广州并俘走叶名琛",
+      "body": "炮火、陆上进攻和城防失效共同导致广州陷落；清军、团练与居民并未立即从城市政治中消失。",
+      "impact": "应同时观察技术、指挥、占领治理和居民损失，避免用一人被俘概括整场战役。",
+      "people": [
+        "q163_yemingchen"
+      ],
+      "sources": [
+        "v163_qsg154",
+        "v164_dpm_yuanmingyuan"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v164_dagu_1858",
+      "year": "1858年",
+      "sortYear": 1858,
+      "title": "第一次大沽口进攻打开通往天津的水路",
+      "body": "英法舰队突破炮台后逼近天津，直接改变桂良、花沙纳谈判的力量条件。",
+      "impact": "外交文件不能脱离炮台、舰队和首都安全阅读；全权谈判在军事胁迫中进行。",
+      "people": [
+        "q164_guiliang",
+        "q164_huashana",
+        "q163_senggelinqin"
+      ],
+      "sources": [
+        "v163_qsg404",
+        "v164_nmc_treaty"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v164_dagu_1859",
+      "year": "1859年",
+      "sortYear": 1859,
+      "title": "大沽防御击退试图换约的英法舰队",
+      "body": "僧格林沁加强炮台、障碍和滩涂防御，英法舰艇强行通过时失败；战果有具体条件。",
+      "impact": "胜利提高挽回条约的信心，也促使对手次年改用北塘登陆；战术成功不等于战略解决。",
+      "people": [
+        "q163_senggelinqin",
+        "q_xianfeng"
+      ],
+      "sources": [
+        "v163_qsg404",
+        "v164_nmc_treaty"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v164_beitang_1860",
+      "year": "1860年",
+      "sortYear": 1860,
+      "title": "联军从北塘登陆绕开大沽正面防御",
+      "body": "英法联军调整路线，从北塘登陆后夺取大沽并进入天津，固定防御未覆盖更广海岸。",
+      "impact": "失利不只在武器差距，也涉及侦察、兵力配置、撤守命令和联合作战能力。",
+      "people": [
+        "q163_senggelinqin",
+        "q_xianfeng"
+      ],
+      "sources": [
+        "v163_qsg404",
+        "v163_qsg20"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v164_zhangjiawan_baliqiao",
+      "year": "1860年",
+      "sortYear": 1860,
+      "title": "张家湾与八里桥战败打开北京门户",
+      "body": "谈判破裂后清军在通州迎战，火力、队形、指挥和疲惫造成整体劣势。",
+      "impact": "战败触发皇帝出走和京师防务崩解；传统兵种并非天生无效，组织与情报更关键。",
+      "people": [
+        "q163_senggelinqin",
+        "q164_zaiyuan"
+      ],
+      "sources": [
+        "v163_qsg404",
+        "v164_qsg220",
+        "v164_dpm_yuanmingyuan"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v164_yuanmingyuan_destruction",
+      "year": "1860年",
+      "sortYear": 1860,
+      "title": "圆明园遭劫掠焚毁",
+      "body": "联军掠走文物、档案和陈设并焚毁建筑；英方以被扣人员死亡为报复理由，惩罚却施于文化财产。",
+      "impact": "劫掠物进入军人私藏、拍卖和海外收藏；来源研究须记录流散链条。",
+      "people": [
+        "q_yixin",
+        "q164_wenxiang"
+      ],
+      "sources": [
+        "v164_dpm_yuanmingyuan",
+        "v164_dpm_photo"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v164_sanhe_defeat",
+      "year": "1858年",
+      "sortYear": 1858,
+      "title": "三河战役使湘军精锐遭受覆灭",
+      "body": "李续宾部连续攻城后深入安徽，陈玉成等集中兵力包围三河；援路、疲劳、地形和判断共同造成失败。",
+      "impact": "军功体系会把胜利延伸成过度进取；地方军队同样受补给线和情报误判制约。",
+      "people": [
+        "q164_lixubin",
+        "q164_chenyucheng"
+      ],
+      "sources": [
+        "v164_qsg408",
+        "v163_qsg475"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v164_jiangnan_camp_1860",
+      "year": "1860年",
+      "sortYear": 1860,
+      "title": "第二次江南大营崩溃改变东南战局",
+      "body": "太平军集中突击使清军营垒再溃，苏南城市相继卷入战争，固定大营无法持续封锁天京。",
+      "impact": "大营失效促使朝廷依赖湘军和地方筹饷，也把压力扩散到更广城镇乡村。",
+      "people": [
+        "q164_chenyucheng",
+        "q_zengguofan"
+      ],
+      "sources": [
+        "v163_qsg475",
+        "v164_pku_jiangnan"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v164_anqing_encirclement",
+      "year": "1859—1861年",
+      "sortYear": 1859,
+      "title": "安庆围攻成为长江上游控制权的枢纽战",
+      "body": "湘军水陆部队逐步切断外援，陈玉成多次救援；胡林翼、曾国藩把城池、江运和外围据点组成连续战区。",
+      "impact": "长期围困靠粮道、疫病、炮垒和协同，不应仅归为决战；居民承担饥饿与毁坏。",
+      "people": [
+        "q164_hulinyi",
+        "q164_chenyucheng",
+        "q_zengguofan"
+      ],
+      "sources": [
+        "v164_qsg406",
+        "v163_qsg475"
+      ],
+      "kind": "史实与解读",
+      "category": "军事"
+    },
+    {
+      "id": "v164_new_treaty_ports",
+      "year": "1858—1861年",
+      "sortYear": 1858,
+      "title": "新口岸与长江通商重新排列区域贸易",
+      "body": "条约增开多处口岸并允许在长江选择通商点，随后各口陆续开放。",
+      "impact": "纸面开埠不等于贸易立刻增长；战事、地方执行、航道和海关设置决定节奏。",
+      "people": [
+        "q164_guiliang",
+        "q164_huashana"
+      ],
+      "sources": [
+        "v164_tianjin_uk",
+        "v164_ruc_trade"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v164_tariff_opium",
+      "year": "1858年",
+      "sortYear": 1858,
+      "title": "通商税则把鸦片纳入征税体系",
+      "body": "严禁政策在战争和财政压力下转向征税；收入增加没有消除成瘾、白银与走私问题。",
+      "impact": "合法化与征税是财政和主权受压下的变化，不能写成社会危害获得解决。",
+      "people": [
+        "q164_guiliang",
+        "q_xianfeng"
+      ],
+      "sources": [
+        "v164_ruc_opium",
+        "v164_tianjin_uk"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v164_indemnities",
+      "year": "1858—1860年",
+      "sortYear": 1858,
+      "title": "两轮条约赔款转化为跨地区财政负担",
+      "body": "条约规定对英法赔款，部分用于军费、商人和传教士索赔；清廷须在战争军费外继续筹银。",
+      "impact": "赔款通过海关、地方解款和财政腾挪传导，不能只呈现总额而忽略征收路径。",
+      "people": [
+        "q_yixin",
+        "q164_wenxiang"
+      ],
+      "sources": [
+        "v164_beijing_uk",
+        "v164_beijing_fr",
+        "v164_ruc_indemnity"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v164_lijin_expansion",
+      "year": "1850年代后期",
+      "sortYear": 1857,
+      "title": "厘金从临时筹饷扩展为地方重要税源",
+      "body": "商业流通抽厘为湘军和地方军务提供现银，各省卡局逐渐制度化，税率与用途因地而异。",
+      "impact": "厘金支持区域军队，也增加商路成本并强化督抚财政支配。",
+      "people": [
+        "q164_hulinyi",
+        "q164_guanwen",
+        "q_zengguofan"
+      ],
+      "sources": [
+        "v164_ruc_lijin",
+        "v164_qsg406"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v164_customs_inspectorate",
+      "year": "1858—1861年",
+      "sortYear": 1858,
+      "title": "外籍税务人员参与海关管理进一步制度化",
+      "body": "新章程后税务司参与征税、界址、航标和报告，海关收入成为偿付赔款与维持财政的重要来源。",
+      "impact": "制度提高部分税收可见度，也把外国人员嵌入主权机关；效率与主权损失须同时说明。",
+      "people": [
+        "q164_guiliang",
+        "q164_wenxiang"
+      ],
+      "sources": [
+        "v164_ruc_ports",
+        "v164_ruc_trade"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v164_xiang_pay_network",
+      "year": "1856—1861年",
+      "sortYear": 1856,
+      "title": "湘军饷源依赖地方劝捐、厘金与跨省协商",
+      "body": "胡林翼、曾国藩等在湖北、湖南、江西和商人网络间调拨银粮，兵勇薪饷与统帅关系紧密。",
+      "impact": "融资维持长期战争，也使军队更依附统帅和地方筹饷者，改变国家军政关系。",
+      "people": [
+        "q164_hulinyi",
+        "q_zengguofan",
+        "q164_guanwen"
+      ],
+      "sources": [
+        "v164_qsg406",
+        "v40q_qsg405",
+        "v164_ruc_lijin"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v164_guangzhou_market",
+      "year": "1856—1858年",
+      "sortYear": 1856,
+      "title": "炮击、封锁与占领冲击广州市场",
+      "body": "珠江航运、铺户和船民受军事行动影响，部分交易转移或停顿，也有人继续提供运输物资。",
+      "impact": "战争经济不是全城同步停摆；行业、地点和身份不同，损失与适应能力也不同。",
+      "people": [
+        "q163_yemingchen"
+      ],
+      "sources": [
+        "v163_qsg154",
+        "v164_ruc_trade"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v164_beijing_shops",
+      "year": "1860年",
+      "sortYear": 1860,
+      "title": "联军逼近时北京铺商歇业、供应紧张",
+      "body": "档案记录京师人心惶惑和铺商歇业，官员、旗民、商户以不同资源安排逃难、守宅或囤积。",
+      "impact": "首都危机首先表现为信息混乱与日常供应中断，不只是宫廷出走。",
+      "people": [
+        "q164_wenxiang",
+        "q_yixin"
+      ],
+      "sources": [
+        "v164_dpm_yuanmingyuan",
+        "v164_qsg386"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v164_yangtze_trade_war",
+      "year": "1856—1861年",
+      "sortYear": 1856,
+      "title": "长江攻守把粮运、盐路与税源变成战场",
+      "body": "九江、武昌、安庆、南京间水道兼运兵粮，双方争夺码头、船只和市镇。",
+      "impact": "军事控制线不等于稳定征税；城镇易手时乡村和水上网络仍保持多重联系。",
+      "people": [
+        "q164_hulinyi",
+        "q164_chenyucheng"
+      ],
+      "sources": [
+        "v164_qsg406",
+        "v164_pku_jiangnan"
+      ],
+      "kind": "史实与解读",
+      "category": "经济"
+    },
+    {
+      "id": "v164_guangzhou_displacement",
+      "year": "1856—1858年",
+      "sortYear": 1856,
+      "title": "广州居民在炮火、搜捕与占领之间迁移",
+      "body": "居民可能投亲、移居近郊、留守铺面或被卷入团练劳役，普通家庭多只留下零散痕迹。",
+      "impact": "不能用单一数字概括损失；性别、职业、住区与材料来源造成可见度差异。",
+      "people": [
+        "q163_yemingchen"
+      ],
+      "sources": [
+        "v163_qsg154",
+        "v164_dpm_yuanmingyuan"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v164_coastal_labor",
+      "year": "1858—1860年",
+      "sortYear": 1858,
+      "title": "大沽与北塘防务征用兵丁、夫役和船只",
+      "body": "修炮台、运土石、设障碍和转军粮需要沿海村民与雇役，登陆后另一套军队又征取物资。",
+      "impact": "海防不只有炮舰；普通劳动者维持工事，也承担战败后的毁损和清算风险。",
+      "people": [
+        "q163_senggelinqin"
+      ],
+      "sources": [
+        "v163_qsg404",
+        "v164_dpm_yuanmingyuan"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v164_emigration_clause",
+      "year": "1860年",
+      "sortYear": 1860,
+      "title": "华工出洋条款把劳动力迁移写入条约",
+      "body": "《中英北京条约》允许华民与英商订约出洋，并要求制定保全章程。",
+      "impact": "法律许可不自动保证自愿安全；须区分合同、招募与海外劳动条件。",
+      "people": [
+        "q_yixin",
+        "q164_wenxiang"
+      ],
+      "sources": [
+        "v164_beijing_uk"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v164_beijing_flight",
+      "year": "1860年",
+      "sortYear": 1860,
+      "title": "北京居民面对皇帝离城和联军逼近",
+      "body": "宫廷、旗民和商户获知消息时间不同，有人逃往亲族住所，有人守宅或依赖不稳定市场。",
+      "impact": "京师大乱不能把居民写成同一群体；逃难能力由财富、户籍和网络决定。",
+      "people": [
+        "q164_wenxiang",
+        "q_yixin"
+      ],
+      "sources": [
+        "v164_dpm_yuanmingyuan",
+        "v164_qsg386"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v164_prisoners_retaliation",
+      "year": "1860年",
+      "sortYear": 1860,
+      "title": "被扣谈判人员死亡与报复性惩罚相互升级",
+      "body": "通州谈判破裂后巴夏礼等被扣，部分人在拘押中受虐死亡；英方随后以报复为由焚毁圆明园。",
+      "impact": "确认俘虏受害不等于集体惩罚正当，两类暴力须分别负责。",
+      "people": [
+        "q164_zaiyuan",
+        "q_yixin"
+      ],
+      "sources": [
+        "v164_qsg220",
+        "v164_dpm_yuanmingyuan"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v164_loot_dispersal",
+      "year": "1860年以后",
+      "sortYear": 1860,
+      "title": "被掠园林物品沿奖赏、拍卖与收藏流散",
+      "body": "联军人员将园内物品带走，部分现场分配、回国拍卖或进入收藏，原有陈设语境被拆散。",
+      "impact": "识别旧藏需要连续来源证据；风格相似或市场传说不能替代记录。",
+      "people": [
+        "q_yixin"
+      ],
+      "sources": [
+        "v164_dpm_yuanmingyuan",
+        "v164_dpm_photo"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v164_recruitment_households",
+      "year": "1856—1861年",
+      "sortYear": 1856,
+      "title": "区域军队通过同乡、师生和亲族网络募勇",
+      "body": "罗泽南、李续宾、胡林翼等部常以地方关系招募；网络增强信任，也把阵亡、欠饷带回原乡。",
+      "impact": "只写组织创新会漏掉妻子、父母、债务和地方治安成本。",
+      "people": [
+        "q164_luozennan",
+        "q164_lixubin",
+        "q164_hulinyi"
+      ],
+      "sources": [
+        "v164_qsg407",
+        "v164_qsg408",
+        "v164_qsg406"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v164_jiangnan_refugees",
+      "year": "1858—1861年",
+      "sortYear": 1858,
+      "title": "江南反复易手造成逃难、复业与重新纳粮",
+      "body": "居民可能迁入城镇、租界或乡村，也可能战后返回并面对房地、债务和税粮争议。",
+      "impact": "占领区并非完全静止或崩溃；基层组织在征粮、保护和强制间重组。",
+      "people": [
+        "q164_chenyucheng",
+        "q164_hongrengan"
+      ],
+      "sources": [
+        "v164_pku_jiangnan",
+        "v163_qsg475"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v164_siege_dead",
+      "year": "1858—1861年",
+      "sortYear": 1858,
+      "title": "围城死亡难以由战报数字完整呈现",
+      "body": "三河、安庆和苏南死者包括兵勇、被裹挟者、夫役与居民，胜方常以歼敌数证明军功。",
+      "impact": "数字应注明来源和统计目的；无法确认总数时承认缺口更可靠。",
+      "people": [
+        "q164_lixubin",
+        "q164_chenyucheng",
+        "q164_hulinyi"
+      ],
+      "sources": [
+        "v164_qsg408",
+        "v164_qsg406",
+        "v163_qsg475"
+      ],
+      "kind": "史实与解读",
+      "category": "社会"
+    },
+    {
+      "id": "v164_treaty_translation",
+      "year": "1858—1860年",
+      "sortYear": 1858,
+      "title": "多语种条约让翻译成为权力环节",
+      "body": "中、英、法、俄文本在概念、效力和措辞上不总完全对应；翻译也参与决定条款如何理解。",
+      "impact": "只读一个中文版本可能漏掉差异；解释须说明语种、版本与执行争议。",
+      "people": [
+        "q164_guiliang",
+        "q164_huashana",
+        "q_yixin"
+      ],
+      "sources": [
+        "v164_tianjin_uk",
+        "v164_tianjin_fr",
+        "v164_beijing_fr"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v164_diplomatic_protocol",
+      "year": "1858—1860年",
+      "sortYear": 1858,
+      "title": "公使驻京与觐见礼仪触动天下秩序观",
+      "body": "双方围绕递交国书、进京路线和礼仪争执，既有安全考虑，也关涉国家平等与皇权象征。",
+      "impact": "礼仪不是纯粹无知，但象征焦虑也延误了对现实力量和制度变化的判断。",
+      "people": [
+        "q_xianfeng",
+        "q164_guiliang",
+        "q_yixin"
+      ],
+      "sources": [
+        "v164_tianjin_uk",
+        "v164_nmc_treaty"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v164_war_photography",
+      "year": "1860年",
+      "sortYear": 1860,
+      "title": "战争摄影留下奕訢与占领现场的选择性图像",
+      "body": "比托随联军拍摄战场、建筑和奕訢，长曝光与拍摄权限决定什么能被留下。",
+      "impact": "影像是珍贵证据，也带有占领军观看、传播和纪念战争的框架。",
+      "people": [
+        "q_yixin",
+        "q164_guiliang"
+      ],
+      "sources": [
+        "v164_dpm_photo"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v164_zizheng_program",
+      "year": "1859年",
+      "sortYear": 1859,
+      "title": "《资政新篇》提出交通、新闻与工商设想",
+      "body": "洪仁玕把香港等地见闻转成制度建议，涉及铁路轮船、新闻、医院、商业与人才。",
+      "impact": "战争、财政和权力分散限制落实；新颖性与实际制度能力必须分开。",
+      "people": [
+        "q164_hongrengan"
+      ],
+      "sources": [
+        "v164_zizheng"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v164_mission_property",
+      "year": "1858—1860年后",
+      "sortYear": 1858,
+      "title": "传教与地产条文在不同文本和地方执行中产生争议",
+      "body": "中法条约允许传教，后来中文条文涉及归还教产；语种文本、地方产权和中介操作造成交涉。",
+      "impact": "一纸条文没有让内地社会立即统一改变，须逐案研究教会、官府和业户。",
+      "people": [
+        "q164_guiliang",
+        "q_yixin"
+      ],
+      "sources": [
+        "v164_tianjin_fr",
+        "v164_beijing_fr"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v164_dispatch_numbers",
+      "year": "1856—1861年",
+      "sortYear": 1856,
+      "title": "战报以胜负数字争取奖惩和资源",
+      "body": "清军、太平军与联军文书都以歼敌、缴获和伤亡数字塑造战果，军功审核和宣传影响记录。",
+      "impact": "数字可比较叙事目标，却不能未经交叉核对直接相加为真实伤亡。",
+      "people": [
+        "q164_lixubin",
+        "q164_chenyucheng",
+        "q163_senggelinqin"
+      ],
+      "sources": [
+        "v164_qsg408",
+        "v163_qsg404",
+        "v164_taiping_joint"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v164_object_provenance",
+      "year": "1860年至今",
+      "sortYear": 1860,
+      "title": "圆明园旧藏的来源研究连接物品与暴力历史",
+      "body": "海外目录、军人家族记录、拍卖标签和清宫档案可帮助重建印章、绘画与陈设的流散路径。",
+      "impact": "来源不明时应写疑似或传称；民族情感和市场证书都不能替代物证。",
+      "people": [
+        "q_yixin"
+      ],
+      "sources": [
+        "v164_dpm_yuanmingyuan",
+        "v164_dpm_photo"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v164_memorial_delay",
+      "year": "1860年",
+      "sortYear": 1860,
+      "title": "北京、前线与热河之间的奏报延迟改变决策",
+      "body": "战况、谈判和城市消息经驿递、军报流转，皇帝与留京大臣掌握的信息常不同步。",
+      "impact": "解释战和反复时应把通信时间纳入，而非把所有命令视作同一信息条件下作出。",
+      "people": [
+        "q_xianfeng",
+        "q_yixin",
+        "q164_wenxiang",
+        "q164_sushun"
+      ],
+      "sources": [
+        "v163_qsl",
+        "v164_qsg386",
+        "v164_qsg387"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
+    },
+    {
+      "id": "v164_war_memory",
+      "year": "1860年至今",
+      "sortYear": 1860,
+      "title": "第二次鸦片战争被不同记忆框架反复重述",
+      "body": "外交史关注条约，军事史关注大沽与八里桥，遗产叙事聚焦圆明园，社会史追问居民市场。",
+      "impact": "视角并不互斥；可靠叙事应说明材料来自谁、记录什么、又遗漏了谁。",
+      "people": [
+        "q_xianfeng",
+        "q_yixin",
+        "q163_senggelinqin"
+      ],
+      "sources": [
+        "v164_dpm_yuanmingyuan",
+        "v164_nmc_treaty",
+        "v164_ruc_trade"
+      ],
+      "kind": "史实与解读",
+      "category": "文化"
     }
   ],
   "objects": [
@@ -82971,6 +84148,105 @@
         "v163_tianchao",
         "v163_pku_rural",
         "v163_chn_seal"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v164_obj_tianjin",
+      "title": "《中英天津条约》",
+      "subtitle": "签字不是争议终点",
+      "symbol": "doc.text",
+      "image": null,
+      "body": "1858年文本涉及公使驻京、增开口岸、内地旅行和通商安排。清廷此后试图挽回部分条款。",
+      "note": "须同时阅读原文、不同语种版本和执行过程，不能把签订写成平等协商或即时落实。",
+      "people": [
+        "q164_guiliang",
+        "q164_huashana",
+        "q_xianfeng"
+      ],
+      "sources": [
+        "v164_tianjin_uk",
+        "v164_nmc_treaty"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v164_obj_beijing",
+      "title": "《中英北京条约》",
+      "subtitle": "军事占领压力下的续约文本",
+      "symbol": "doc.text",
+      "image": null,
+      "body": "1860年由奕訢与额尔金签订，批准此前条约并增列天津开埠、赔款、华工出洋等内容。",
+      "note": "中英、中法、中俄三份北京条约内容不同，不应合成一个模糊条目。",
+      "people": [
+        "q_yixin",
+        "q164_wenxiang"
+      ],
+      "sources": [
+        "v164_beijing_uk",
+        "v164_beijing_fr",
+        "v164_beijing_ru"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v164_obj_yixin_photo",
+      "title": "1860年奕訢照片",
+      "subtitle": "战争摄影中的交涉者形象",
+      "symbol": "photo",
+      "image": null,
+      "body": "比托在北京拍摄奕訢。照片保存早期宫廷人物影像，也由占领环境、技术与传播目的塑造。",
+      "note": "影像可证明外观与拍摄情境，不能单凭姿态推断心理。",
+      "people": [
+        "q_yixin"
+      ],
+      "sources": [
+        "v164_dpm_photo"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v164_obj_yuanmingyuan_archive",
+      "title": "圆明园劫焚档案与流散物",
+      "subtitle": "从宫廷陈设到海外收藏的断裂",
+      "symbol": "building.columns",
+      "image": null,
+      "body": "清宫奏折记录京师恐慌、守军状态和园林被抢被焚；海外目录与拍卖记录保存部分物品后续路径。",
+      "note": "具体器物必须有连续来源证据，传称旧藏不等于已经确认。",
+      "people": [
+        "q_yixin",
+        "q164_wenxiang"
+      ],
+      "sources": [
+        "v164_dpm_yuanmingyuan",
+        "v164_dpm_photo"
+      ],
+      "dynasties": [
+        "qing"
+      ]
+    },
+    {
+      "id": "v164_obj_zizheng",
+      "title": "《资政新篇》",
+      "subtitle": "制度建议与执行能力之间",
+      "symbol": "book.closed",
+      "image": null,
+      "body": "洪仁玕1859年提出交通、新闻、工商、医院和人才等设想，反映跨地域知识进入天京政治语言。",
+      "note": "原文是建议书，战争中的太平天国未把全部方案普遍实施。",
+      "people": [
+        "q164_hongrengan"
+      ],
+      "sources": [
+        "v164_zizheng",
+        "v164_pku_jiangnan"
       ],
       "dynasties": [
         "qing"
@@ -95524,12 +96800,22 @@
             "v5qe_qsg20",
             "v5qe_dpm_life",
             "v163_qsg20",
-            "v163_dpm_xianfeng"
+            "v163_dpm_xianfeng",
+            "v164_nmc_treaty",
+            "v164_dpm_yuanmingyuan"
           ],
           "kind": "史实与解读",
           "events": [
             "v163_tuanlian_expansion",
-            "v163_market_survival"
+            "v163_market_survival",
+            "v164_tianjin_treaties",
+            "v164_ratification_dispute",
+            "v164_dagu_1859"
+          ],
+          "people": [
+            "q164_guiliang",
+            "q164_huashana",
+            "q163_senggelinqin"
           ]
         },
         {
@@ -95540,12 +96826,22 @@
             "v5qe_qsg20",
             "v5qe_dpm_life",
             "v163_qsg20",
-            "v163_dpm_xianfeng"
+            "v163_dpm_xianfeng",
+            "v164_nmc_treaty",
+            "v164_dpm_yuanmingyuan"
           ],
           "kind": "史实与解读",
           "events": [
             "v163_tianjing_incident",
-            "v163_memory_frames"
+            "v163_memory_frames",
+            "v164_rehe_flight",
+            "v164_beijing_conventions",
+            "v164_yuanmingyuan_destruction"
+          ],
+          "people": [
+            "q_yixin",
+            "q164_wenxiang",
+            "q164_sushun"
           ]
         }
       ],
@@ -95560,7 +96856,11 @@
         "v40q_qsg405",
         "v163_qsg20",
         "v163_dpm_xianfeng",
-        "v163_ruc_memory"
+        "v163_ruc_memory",
+        "v164_nmc_treaty",
+        "v164_dpm_yuanmingyuan",
+        "v164_beijing_uk",
+        "v164_qsg387"
       ]
     },
     {
@@ -202680,6 +203980,1207 @@
         "v163_qsg154",
         "v163_qsg388"
       ]
+    },
+    {
+      "person": "q164_wenxiang",
+      "title": "文祥：城门危机中的行政连续性",
+      "dek": "他的重要性不只在谈判桌，也在于让北京官署在皇帝离城后继续运转。",
+      "sections": [
+        {
+          "id": "v164_wenxiang1",
+          "title": "旧官僚技能进入陌生事务",
+          "text": "文祥由科举入仕，长期在部院和军机体系工作。1860年前，他的优势不是熟悉一套现成国际法，而是能处理奏折、调兵、治安和跨衙门协调。联军逼近时，这种经验使他参与留京事务。他是在危机中学习新的交涉对象、信息速度和法律文本，旧官僚技能与新问题发生结合，而非突然变成现代外交家。",
+          "sources": [
+            "v164_qsg386",
+            "v164_dpm_yuanmingyuan"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_memorial_delay"
+          ],
+          "people": [
+            "q_xianfeng",
+            "q_yixin"
+          ]
+        },
+        {
+          "id": "v164_wenxiang2",
+          "title": "皇帝离城后首先要维持城市",
+          "text": "咸丰前往热河后，北京并未停止行政。守门、巡防、市场供应、递送消息和安置官署仍需处理。档案所见铺商歇业和军心疲惫，说明留京官员面对具体城市危机。文祥奏报以官署视角为主，不能代表所有居民，却可见国家机器如何在军事失败中勉强维持连续。",
+          "sources": [
+            "v164_qsg386",
+            "v164_dpm_yuanmingyuan"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_beijing_shops",
+            "v164_beijing_flight"
+          ],
+          "people": [
+            "q_yixin"
+          ]
+        },
+        {
+          "id": "v164_wenxiang3",
+          "title": "交涉要转化为可执行文书",
+          "text": "谈判不只靠口才。条件需要翻译、核对、请示、盖印，再转成各衙门能执行的命令。北京与热河信息往返延迟，对方军队又不断移动，使授权抵达时可能落后现场。文祥等人连接皇族钦差、军机文书和城中执行，错误或含混也会沿这条链条被放大。",
+          "sources": [
+            "v164_qsg386",
+            "v164_dpm_yuanmingyuan"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_yixin_negotiation",
+            "v164_treaty_translation"
+          ],
+          "people": [
+            "q_yixin",
+            "q164_guiliang"
+          ]
+        },
+        {
+          "id": "v164_wenxiang4",
+          "title": "常设外务机构来自失败经验",
+          "text": "总理衙门成立后，文祥成为核心成员。它处理公使、通商、海关和条约事务，却没有把地方外交权一次收回中央。上海、广州、天津仍有各自网络，海关又嵌入外籍税务人员。文祥参与的是在旧衙门框架中增加协调中心，而非瞬间照搬西方制度。",
+          "sources": [
+            "v164_qsg386",
+            "v164_dpm_yuanmingyuan"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_customs_inspectorate",
+            "v164_diplomatic_protocol"
+          ],
+          "people": [
+            "q_yixin",
+            "q164_guiliang"
+          ]
+        },
+        {
+          "id": "v164_wenxiang5",
+          "title": "务实声誉也有证据边界",
+          "text": "后世常以稳健、通达概括文祥，这类评价来自长期政绩和同僚记忆。个人能力影响文件质量与用人，但条约压力、外国武力、皇帝授权和地方执行限制更大。不能根据一段奏折猜测内心，也不能把总理衙门全部成败归于一人；可确认的是，他连接了1860年危机应对与此后的制度连续。",
+          "sources": [
+            "v164_qsg386",
+            "v164_dpm_yuanmingyuan"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_war_memory"
+          ],
+          "people": [
+            "q_yixin",
+            "q164_sushun"
+          ]
+        }
+      ],
+      "sources": [
+        "v164_qsg386",
+        "v164_dpm_yuanmingyuan"
+      ]
+    },
+    {
+      "person": "q164_guiliang",
+      "title": "桂良：钦差全权与不断变化的北京指令",
+      "dek": "他的签名很醒目，真正难题却是全权名义、皇帝密旨和炮舰压力彼此冲突。",
+      "sections": [
+        {
+          "id": "v164_guiliang1",
+          "title": "资深官僚被派往陌生制度现场",
+          "text": "桂良历任地方和中央高官，1858年以大学士赴天津。朝廷选择资历深、品级高者，是为了赋予谈判权威，并不表示已掌握多语种条约与近代国际法。现场依赖翻译、随员和不断请旨，对方舰队又压缩时间。理解其选择，须先看到清廷派遣制度与谈判知识的落差。",
+          "sources": [
+            "v164_qsg388",
+            "v164_tianjin_uk",
+            "v164_nmc_treaty",
+            "v164_dpm_photo"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_tianjin_treaties"
+          ],
+          "people": [
+            "q164_huashana",
+            "q_xianfeng"
+          ]
+        },
+        {
+          "id": "v164_guiliang2",
+          "title": "条约签字不等于自由裁量",
+          "text": "条约把桂良、花沙纳列为全权大臣，实际仍受谕旨和廷议约束。公使驻京、内地旅行和礼仪触动皇权秩序，北京希望限制或挽回。钦差在对方武力和本朝问责之间承担风险，签字后仍可能因解释不合皇意受责。所谓全权是外交形式，不是脱离政治结构的个人自由。",
+          "sources": [
+            "v164_qsg388",
+            "v164_tianjin_uk",
+            "v164_nmc_treaty",
+            "v164_dpm_photo"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_tianjin_treaties",
+            "v164_ratification_dispute"
+          ],
+          "people": [
+            "q164_huashana"
+          ]
+        },
+        {
+          "id": "v164_guiliang3",
+          "title": "1859年胜利没有消除文本矛盾",
+          "text": "大沽防御成功后，朝廷更相信可以改变换约条件，桂良等人的早期妥协受到严格审视。国家博物馆研究显示，清廷试图借税则谈判挽回关键条款，却未形成共同接受的方案。把后来战争全怪罪于钦差软弱，会忽略皇帝、廷议和军事信心共同塑造政策。",
+          "sources": [
+            "v164_qsg388",
+            "v164_tianjin_uk",
+            "v164_nmc_treaty",
+            "v164_dpm_photo"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_ratification_dispute",
+            "v164_dagu_1859"
+          ],
+          "people": [
+            "q_xianfeng",
+            "q163_senggelinqin"
+          ]
+        },
+        {
+          "id": "v164_guiliang4",
+          "title": "1860年再出场说明经验仍被需要",
+          "text": "联军再来时，桂良再次参与天津交涉。此前经验使他熟悉对手与文本，却无法逆转军事败局。北京与前线指令变化、是否允许公使亲递国书、军队继续推进等问题让协议不断失效。外交经验有价值，但只有在稳定授权和可执行停战条件下才能发挥作用。",
+          "sources": [
+            "v164_qsg388",
+            "v164_tianjin_uk",
+            "v164_nmc_treaty",
+            "v164_dpm_photo"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_beijing_conventions",
+            "v164_memorial_delay"
+          ],
+          "people": [
+            "q_yixin",
+            "q164_wenxiang"
+          ]
+        },
+        {
+          "id": "v164_guiliang5",
+          "title": "照片与传记留下两种不完整记录",
+          "text": "1858年谈判留下桂良照片，这是早期清廷官员影像。照片呈现衣着仪态，却不能证明他对条款的态度；官修传记列出奉使和官阶，也少记翻译细节。把图像、条约正文、皇帝谕旨和后续执行放在一起，才不会用一张脸或一个签名替代复杂决策。",
+          "sources": [
+            "v164_qsg388",
+            "v164_tianjin_uk",
+            "v164_nmc_treaty",
+            "v164_dpm_photo"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_war_photography",
+            "v164_treaty_translation"
+          ],
+          "people": [
+            "q164_huashana",
+            "q_yixin"
+          ]
+        }
+      ],
+      "sources": [
+        "v164_qsg388",
+        "v164_tianjin_uk",
+        "v164_nmc_treaty",
+        "v164_dpm_photo"
+      ]
+    },
+    {
+      "person": "q164_huashana",
+      "title": "花沙纳：条约文本背后的翻译与问责",
+      "dek": "他与桂良共同署名，提醒外交不是一位钦差的独角戏。",
+      "sections": [
+        {
+          "id": "v164_huashana1",
+          "title": "尚书品级不等于现代外交训练",
+          "text": "花沙纳以吏部尚书等身份参与天津议约。清廷重视品级、礼仪和皇帝授权，而谈判要求处理驻使、通商、旅行和不同法权概念。双方制度语言不对称，翻译成为实质权力环节。不能因条款不利就推定他完全不懂，也不能因有译员便假定理解没有偏差。",
+          "sources": [
+            "v164_tianjin_uk",
+            "v164_tianjin_fr",
+            "v164_nmc_treaty"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_tianjin_treaties"
+          ],
+          "people": [
+            "q164_guiliang"
+          ]
+        },
+        {
+          "id": "v164_huashana2",
+          "title": "中英与中法文本需要分别阅读",
+          "text": "花沙纳参与多国条约，英法诉求有共同处也有差异。中法文本涉及传教，中英文本细列驻使与通商。把数份条约缩成一行，会抹去不同法律后果。钦差在有限时间内处理多套文本，后来的执行又由不同口岸与地方官接手。",
+          "sources": [
+            "v164_tianjin_uk",
+            "v164_tianjin_fr",
+            "v164_nmc_treaty"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_treaty_translation",
+            "v164_mission_property"
+          ],
+          "people": [
+            "q164_guiliang"
+          ]
+        },
+        {
+          "id": "v164_huashana3",
+          "title": "北京悔约使签字者处在夹层",
+          "text": "条约签订后，朝廷对公使驻京等条款强烈不满，试图另行安排换约。花沙纳等人的现场判断遂与廷议期待发生张力。后世以主战、主和标签分类官员，实际一名钦差可能同时请求增防、争改条款并接受停战，标签无法表达军事胁迫与事后问责。",
+          "sources": [
+            "v164_tianjin_uk",
+            "v164_tianjin_fr",
+            "v164_nmc_treaty"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_ratification_dispute"
+          ],
+          "people": [
+            "q_xianfeng",
+            "q164_guiliang"
+          ]
+        },
+        {
+          "id": "v164_huashana4",
+          "title": "早逝使其未直接参与1860年收局",
+          "text": "花沙纳1859年去世，没有参与1860年北京交涉。不能把后来全部条约结果倒算为他的个人路线；可以确认的是，他参与的1858年文本为随后冲突设定了核心争议。人物时间边界很重要，尤其不能让同一清方钦差标签掩盖人员更替。",
+          "sources": [
+            "v164_tianjin_uk",
+            "v164_tianjin_fr",
+            "v164_nmc_treaty"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_dagu_1859",
+            "v164_beijing_conventions"
+          ],
+          "people": [
+            "q_yixin"
+          ]
+        },
+        {
+          "id": "v164_huashana5",
+          "title": "材料缺口本身值得标明",
+          "text": "相比奕訢、桂良，花沙纳留下的公众叙述较少。条约署名能确认职务和法律行为，却不足以还原每次发言与动机。可靠叙述不虚构密室争论，只从原约、朝廷政策变化和传记履历建立边界。人物重要性不以轶事多少决定，他代表共同署名、共同执行而记忆不均的一类官员。条约谈判中的共同署名还提示一种常被忽略的责任结构：随员、译员和北京决策者共同参与形成结果。不能把集体制度行为压缩为一人卖国或一人救国的道德故事。",
+          "sources": [
+            "v164_tianjin_uk",
+            "v164_tianjin_fr",
+            "v164_nmc_treaty"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_war_memory",
+            "v164_treaty_translation"
+          ],
+          "people": [
+            "q164_guiliang",
+            "q164_wenxiang"
+          ]
+        }
+      ],
+      "sources": [
+        "v164_tianjin_uk",
+        "v164_tianjin_fr",
+        "v164_nmc_treaty"
+      ]
+    },
+    {
+      "person": "q164_sushun",
+      "title": "肃顺：整饬、苛决与行在权力",
+      "dek": "他能发现财政弊端，也以重刑和排斥积累敌意；战争危机放大了这种政治方式。",
+      "sections": [
+        {
+          "id": "v164_sushun1",
+          "title": "敢任事成为咸丰选择他的原因",
+          "text": "肃顺出身宗室支系，咸丰朝迅速升迁。皇帝面对财政、军务和官僚推诿，希望有人承担整顿责任，肃顺以直接强硬获得信任。他与兄端华、怡亲王载垣形成联盟。个人上升不只靠性格，也依赖皇帝希望绕开旧资历秩序的用人需求。",
+          "sources": [
+            "v164_qsg387",
+            "v163_qsg20"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_regional_command"
+          ],
+          "people": [
+            "q_xianfeng",
+            "q164_zaiyuan",
+            "q164_duanhua"
+          ]
+        },
+        {
+          "id": "v164_sushun2",
+          "title": "军兴财政让整顿与强制并行",
+          "text": "战争造成国库紧张，官票、大钱和官号试图扩大支付，却因信用不足、兑换困难和舞弊使官民受累。肃顺查办官员商人，确实揭出账目问题；重罚籍没也制造恐惧。评价不能只写成改革能臣或酷吏，制度信用、货币接受和执法边界同样关键。",
+          "sources": [
+            "v164_qsg387",
+            "v163_qsg20"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_lijin_expansion",
+            "v164_xiang_pay_network"
+          ],
+          "people": [
+            "q164_guanwen",
+            "q164_hulinyi"
+          ]
+        },
+        {
+          "id": "v164_sushun3",
+          "title": "支持汉臣和地方军队有现实目的",
+          "text": "肃顺支持重用曾国藩等汉族官员，部分原因是绿营与中央营伍难控东南战局。此举扩大地方军政空间，并非出于抽象族群平等。中央仍以任命、爵赏和问责控制，地方军队掌握募勇饷源。称作单纯开明，会忽略镇压战争和权力再分配。",
+          "sources": [
+            "v164_qsg387",
+            "v163_qsg20"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_regional_command",
+            "v164_xiang_pay_network"
+          ],
+          "people": [
+            "q_zengguofan",
+            "q164_hulinyi"
+          ]
+        },
+        {
+          "id": "v164_sushun4",
+          "title": "战和判断与皇帝出走相连",
+          "text": "1860年交涉反复、通州冲突和军队败退时，肃顺参与决策并随驾热河。官修传记把多项失策归于其赞画，材料又由政变胜方整理，需谨慎使用。可以确认的是，他反对轻易回銮、掌管行在事务，并与留京议和集团形成权力距离。",
+          "sources": [
+            "v164_qsg387",
+            "v163_qsg20"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_rehe_flight",
+            "v164_memorial_delay"
+          ],
+          "people": [
+            "q_yixin",
+            "q164_wenxiang"
+          ]
+        },
+        {
+          "id": "v164_sushun5",
+          "title": "顾命结局不能倒写整个生涯",
+          "text": "咸丰死后，肃顺与载垣、端华等受命赞襄政务，旋即在辛酉政变中被处死。胜方诏书强调跋扈，民间又有对严刑和减俸的不满。应区分确证行动、政敌定罪语言和逸闻。其生涯揭示危机政治两面：强力执行能突破拖延，也会因缺少制衡和联盟而反噬。肃顺的财政举措还受到白银短缺、铜钱信用和跨省军费需求限制。查出个别舞弊不表示制度已经恢复信用，严惩也不能替代可持续的收入与公开核算。",
+          "sources": [
+            "v164_qsg387",
+            "v163_qsg20"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_war_memory"
+          ],
+          "people": [
+            "q164_zaiyuan",
+            "q164_duanhua",
+            "q_yixin"
+          ]
+        }
+      ],
+      "sources": [
+        "v164_qsg387",
+        "v163_qsg20"
+      ]
+    },
+    {
+      "person": "q164_zaiyuan",
+      "title": "载垣：亲王权威在通州与热河之间",
+      "dek": "他的失败不只是一场谈判失败，也显示宗室政治如何承担陌生的交涉任务。",
+      "sections": [
+        {
+          "id": "v164_zaiyuan1",
+          "title": "世袭亲王进入皇帝近侧",
+          "text": "载垣承袭怡亲王爵，长期担任御前和宗人府职务。咸丰信任其亲近与礼制地位，使他参与海防、交涉和最高层决策。世袭身份能快速赋予代表权，却不自动提供军事、语言和条约知识。写成无能亲贵，会忽略清廷为何在危机中反复依靠近支王公。",
+          "sources": [
+            "v164_qsg220",
+            "v164_qsg387"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_diplomatic_protocol"
+          ],
+          "people": [
+            "q_xianfeng",
+            "q164_sushun"
+          ]
+        },
+        {
+          "id": "v164_zaiyuan2",
+          "title": "通州交涉受制于推进中的军队",
+          "text": "1860年载垣与穆荫赴通州，朝廷同意部分安排，却拒绝公使进京亲递国书。谈判与军队部署没有真正分离，双方互不信任。联军代表团被扣后交涉恶化。具体抓捕命令和责任需依多方材料辨析，不能只由任一方战时叙述下结论。",
+          "sources": [
+            "v164_qsg220",
+            "v164_qsg387"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_zhangjiawan_baliqiao",
+            "v164_prisoners_retaliation"
+          ],
+          "people": [
+            "q163_senggelinqin"
+          ]
+        },
+        {
+          "id": "v164_zaiyuan3",
+          "title": "战败使钦差权威迅速失效",
+          "text": "张家湾、八里桥失利后，载垣被撤去钦差职务并随驾热河。亲王头衔无法弥补前线武力和授权变化。外交代表若不能保证停战、对方又继续推进，文本承诺就难执行。这比谈判失败更能说明军事和外交必须处在同一指挥链。",
+          "sources": [
+            "v164_qsg220",
+            "v164_qsg387"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_rehe_flight",
+            "v164_memorial_delay"
+          ],
+          "people": [
+            "q164_sushun",
+            "q164_duanhua"
+          ]
+        },
+        {
+          "id": "v164_zaiyuan4",
+          "title": "热河行在重新放大近臣优势",
+          "text": "在热河，载垣接近病中的咸丰，留京奕訢反而远离皇帝。1861年他与端华、肃顺等受顾命，掌握新帝初期政务。空间距离和宫廷门禁影响谁能见皇帝、谁能起草谕旨。顾命集团由行在位置、官职和亲属身份共同形成。",
+          "sources": [
+            "v164_qsg220",
+            "v164_qsg387"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_rehe_flight"
+          ],
+          "people": [
+            "q164_sushun",
+            "q164_duanhua",
+            "q_yixin"
+          ]
+        },
+        {
+          "id": "v164_zaiyuan5",
+          "title": "政变定罪材料需要反向阅读",
+          "text": "辛酉政变后载垣被赐自尽，传记以专擅收束。他确实参与阻止垂帘和权力争夺，但胜方诏书也为新秩序提供正当性。既不能抹去责任，也不能把罪名无条件当中立调查。通州与热河经历显示，其权力始终依附皇帝近侧，一旦联盟改变便迅速崩解。其结局还说明世袭爵位提供的是进入决策圈的资格，而不是面对新式战争的专业能力。制度若不能把军事情报、外交授权和文书执行连起来，再高的礼制身份也难以补救。",
+          "sources": [
+            "v164_qsg220",
+            "v164_qsg387"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_war_memory"
+          ],
+          "people": [
+            "q164_sushun",
+            "q164_duanhua"
+          ]
+        }
+      ],
+      "sources": [
+        "v164_qsg220",
+        "v164_qsg387"
+      ]
+    },
+    {
+      "person": "q164_duanhua",
+      "title": "端华：王府联盟中的可见与不可见",
+      "dek": "他常被肃顺的强烈形象遮蔽，却是宗室身份、行在权力和顾命结构的重要一环。",
+      "sections": [
+        {
+          "id": "v164_duanhua1",
+          "title": "郑亲王爵位提供制度位置",
+          "text": "端华承袭郑亲王，任宗人府与御前职务。相较弟弟肃顺以敢言任事闻名，端华权力更多来自宗室爵位和接近皇帝。两人合作不只是兄弟私情，也连接王府人员、官职与资源。危机时期皇帝以亲近宗室制衡常规官僚，端华因此进入核心。",
+          "sources": [
+            "v164_qsg220",
+            "v164_qsg387"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_rehe_flight"
+          ],
+          "people": [
+            "q_xianfeng",
+            "q164_sushun"
+          ]
+        },
+        {
+          "id": "v164_duanhua2",
+          "title": "联盟不意味着三人意见相同",
+          "text": "官修材料常把端华、载垣、肃顺并列为一党，便于解释共同失败。实际决策中三人的官职、资历和责任不同，端华未必设计每项财政或外交政策。可靠叙述只确认共同参与和政治支持，不把肃顺言行自动复制给兄长。",
+          "sources": [
+            "v164_qsg220",
+            "v164_qsg387"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_memorial_delay"
+          ],
+          "people": [
+            "q164_sushun",
+            "q164_zaiyuan"
+          ]
+        },
+        {
+          "id": "v164_duanhua3",
+          "title": "随驾热河改变权力地理",
+          "text": "1860年皇帝离京，端华随行。北京承担占领与议和，热河保留君主、后妃和皇子。端华优势来自进入行在决策圈，也因此与留京奕訢集团形成距离。朝廷不是一个同时行动的点，消息往返和空间隔离让政治分歧逐步固化。",
+          "sources": [
+            "v164_qsg220",
+            "v164_qsg387"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_rehe_flight",
+            "v164_memorial_delay"
+          ],
+          "people": [
+            "q_yixin",
+            "q164_wenxiang"
+          ]
+        },
+        {
+          "id": "v164_duanhua4",
+          "title": "受顾命把联盟转为正式权力",
+          "text": "咸丰病重时，端华与载垣、肃顺等受命赞襄政务。幼帝、两宫太后、顾命大臣和未在遗命核心中的奕訢各有权力依据。端华王爵提供礼制权威，却不能解决太后是否垂帘、谕旨如何用印和是否回京等制度冲突。",
+          "sources": [
+            "v164_qsg220",
+            "v164_qsg387"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_war_memory"
+          ],
+          "people": [
+            "q164_zaiyuan",
+            "q164_sushun",
+            "q_yixin"
+          ]
+        },
+        {
+          "id": "v164_duanhua5",
+          "title": "结局材料由胜者集中塑形",
+          "text": "政变后端华被赐自尽，官方指控强调专擅。此后他常只作为八大臣之一出现，个人行动反而模糊。应承认史料不均：可确认官职、随驾、受顾命和结局，却不虚构每次会议发言。保留这种沉默，胜过用戏剧化对白填补。端华材料稀少也提醒读者，政治联盟中的成员可见度并不均等。不能因为史料多写肃顺，就认定所有主张均由肃顺一人决定；也不能因为端华少有独立奏议，就免除其共同决策责任。人物档案需要同时保留责任与不确定性。",
+          "sources": [
+            "v164_qsg220",
+            "v164_qsg387"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_war_memory"
+          ],
+          "people": [
+            "q164_zaiyuan",
+            "q164_sushun"
+          ]
+        }
+      ],
+      "sources": [
+        "v164_qsg220",
+        "v164_qsg387"
+      ]
+    },
+    {
+      "person": "q164_guanwen",
+      "title": "官文：总督名位与区域军队的合作边界",
+      "dek": "他既不是湘军的傀儡，也不能脱离胡林翼的网络单独解释湖北。",
+      "sections": [
+        {
+          "id": "v164_guanwen1",
+          "title": "旗员总督提供行政框架",
+          "text": "官文以旗员身份出任湖广总督，掌握名义上的跨省军政权。湖北反复易手、绿营受损后，他需要依靠胡林翼和湘军将领，同时仍控制奏报、任免和与中央沟通的正式渠道。双方合作是利益与分工，不是简单私人友谊，也不是一方完全支配另一方。",
+          "sources": [
+            "v164_qsg388",
+            "v164_qsg406"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_regional_command"
+          ],
+          "people": [
+            "q164_hulinyi",
+            "q_xianfeng"
+          ]
+        },
+        {
+          "id": "v164_guanwen2",
+          "title": "督抚同城不等于指挥链清楚",
+          "text": "总督、巡抚、提督和各营统帅权限交叉。官文与胡林翼在战区目标、将领调度和军饷上不断协商。官修传记倾向把成功写成和衷共济，把冲突淡化；实际合作依赖书信、幕僚和对朝廷的共同奏报。组织运转不能化为两位名臣惺惺相惜的故事。",
+          "sources": [
+            "v164_qsg388",
+            "v164_qsg406"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_xiang_pay_network",
+            "v164_yangtze_trade_war"
+          ],
+          "people": [
+            "q164_hulinyi",
+            "q164_luozennan"
+          ]
+        },
+        {
+          "id": "v164_guanwen3",
+          "title": "财政是合作持续的核心",
+          "text": "军队需要饷银、粮食、船只和军械。湖北厘金与地方劝捐让督抚获得持续资金，也让商人和过境货物承担更多成本。官文的行政印信、胡林翼的筹饷网络和将领营制互相依赖。只写战役会误以为军队从中央国库自动得到供应。",
+          "sources": [
+            "v164_qsg388",
+            "v164_qsg406"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_lijin_expansion",
+            "v164_xiang_pay_network"
+          ],
+          "people": [
+            "q164_hulinyi",
+            "q_zengguofan"
+          ]
+        },
+        {
+          "id": "v164_guanwen4",
+          "title": "支持与牵制同时存在",
+          "text": "官文曾参与对左宗棠的弹劾等争议，说明地方督抚并非无缝的湘军集团。军功扩大汉员与幕府网络影响，也让旗员总督维护自身权威。朝廷有时利用差异防止某一统帅独大。区域军政结构在合作、竞争和皇帝裁决之间运行。",
+          "sources": [
+            "v164_qsg388",
+            "v164_qsg406"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_regional_command"
+          ],
+          "people": [
+            "q_zuozongtang",
+            "q164_hulinyi"
+          ]
+        },
+        {
+          "id": "v164_guanwen5",
+          "title": "中兴叙事容易淡化普通成本",
+          "text": "清方传记以收复城池评价官文，太平天国材料把他置于敌对阵营。两者都少记抽厘商民、被征夫役和反复易手地区居民。评价组织能力时，应同时看到区域国家能力增强与战争汲取加深，并对战报数字保留核查，不把督抚功名当成全部历史。官文所代表的正式官僚层级仍决定军功如何上报、饷项如何核销及地方官如何任免。湘军网络扩大并未让总督职位失去作用，而是让双方在相互需要中重新分配实际权力。",
+          "sources": [
+            "v164_qsg388",
+            "v164_qsg406"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_siege_dead",
+            "v164_recruitment_households"
+          ],
+          "people": [
+            "q164_hulinyi",
+            "q164_chenyucheng"
+          ]
+        }
+      ],
+      "sources": [
+        "v164_qsg388",
+        "v164_qsg406"
+      ]
+    },
+    {
+      "person": "q164_hulinyi",
+      "title": "胡林翼：把战区变成财政与信息网络",
+      "dek": "他的关键能力不是亲自赢下每一战，而是让分散将领、税源和情报持续协同。",
+      "sections": [
+        {
+          "id": "v164_hulinyi1",
+          "title": "贵州经验塑造治理方式",
+          "text": "胡林翼在贵州任职时即接触保甲、团练、碉堡和地方治安。进入湖北后，他面对更大规模战争和破碎财政。早期经验使他重视地方网络、粮储和情报，但同样包含严厉镇压。经世能力不能脱离强制国家权力评价，也不能把地方治安经验自然等同于现代治理。",
+          "sources": [
+            "v164_qsg406",
+            "v164_ruc_lijin"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_recruitment_households"
+          ],
+          "people": [
+            "q164_luozennan"
+          ]
+        },
+        {
+          "id": "v164_hulinyi2",
+          "title": "湖北须先重建组织而非追求决战",
+          "text": "武昌、汉阳反复易手，兵少、饷绝和后路不稳使胜利难维持。胡林翼召集罗泽南等部、协调水陆军并重整溃兵，把城市、江道和外围州县作为整体。传记所称临危镇静是人物评价，真正可核的是持续调兵、筹款和选择战区重点。",
+          "sources": [
+            "v164_qsg406",
+            "v164_ruc_lijin"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_yangtze_trade_war",
+            "v164_anqing_encirclement"
+          ],
+          "people": [
+            "q164_luozennan",
+            "q164_guanwen"
+          ]
+        },
+        {
+          "id": "v164_hulinyi3",
+          "title": "厘金把商路转化为饷源",
+          "text": "传统田赋难在战乱区足额征收，胡林翼依靠厘金、劝捐和跨省借款维持军队。抽厘有地点与税率差异，不能写成统一成熟制度。它提高地方动员能力，也增加货物流通成本，并让掌握税卡的督抚拥有更大财政自主，影响延续至战争以后。",
+          "sources": [
+            "v164_qsg406",
+            "v164_ruc_lijin"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_lijin_expansion",
+            "v164_xiang_pay_network"
+          ],
+          "people": [
+            "q164_guanwen",
+            "q_zengguofan"
+          ]
+        },
+        {
+          "id": "v164_hulinyi4",
+          "title": "安庆连接湖北安全与天京上游",
+          "text": "胡林翼推动沿长江向安庆施压并与曾国藩协同。围城不只是攻一座城，而是控制外围据点、粮路与水师。陈玉成救援说明太平军也理解其枢纽价值。长期围困造成军民饥饿与死亡，不能用收复二字略过，更不能把全部结果归给某个统帅。",
+          "sources": [
+            "v164_qsg406",
+            "v164_ruc_lijin"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_anqing_encirclement",
+            "v164_siege_dead"
+          ],
+          "people": [
+            "q164_chenyucheng",
+            "q_zengguofan"
+          ]
+        },
+        {
+          "id": "v164_hulinyi5",
+          "title": "病逝与中兴评价不应遮蔽后果",
+          "text": "胡林翼1861年去世，未见太平天国最终失败。后世常把他列入中兴名臣，强调识人与调度。还应追问：区域军队和地方财政为何在危机中有效，又如何改变中央与督抚关系。个人功绩可以确认，战争汲取、严厉镇压和地方权力扩大也应在同一画面。胡林翼留下的大量书信和传记能展示精英决策，却仍难完整呈现税卡旁的小商、围城中的居民和被征募家庭。组织史必须主动补入这些材料沉默。",
+          "sources": [
+            "v164_qsg406",
+            "v164_ruc_lijin"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_war_memory",
+            "v164_regional_command"
+          ],
+          "people": [
+            "q164_guanwen",
+            "q_zengguofan"
+          ]
+        }
+      ],
+      "sources": [
+        "v164_qsg406",
+        "v164_ruc_lijin"
+      ]
+    },
+    {
+      "person": "q164_luozennan",
+      "title": "罗泽南：讲学网络如何转成营伍",
+      "dek": "他把师生与乡里信任带入募勇，也把地方社会卷入跨省战争。",
+      "sections": [
+        {
+          "id": "v164_luozennan1",
+          "title": "乡里讲学提供最初人际基础",
+          "text": "罗泽南原为诸生，在湘乡讲学并有门生。太平军进入湖南后，他组织团练。儒学理念影响其自我表达，但军队形成更依赖同乡、师生、保结和地方资源。不能把湘军纪律全归为思想教化，也不能忽略强制招募、身份排斥和地方冲突。",
+          "sources": [
+            "v164_qsg407",
+            "v164_qsg406"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_recruitment_households"
+          ],
+          "people": [
+            "q_zengguofan"
+          ]
+        },
+        {
+          "id": "v164_luozennan2",
+          "title": "从守乡到跨省改变团练性质",
+          "text": "曾国藩整顿乡勇后，罗泽南部逐渐跨省作战。营制、训练、饷银和将领私人关系使其不同于临时守村武装。跨省意味着原乡家庭长期失去劳动力，也意味着军队必须从战区和筹饷网络获得补给。地方防卫由此转成王朝战争力量。",
+          "sources": [
+            "v164_qsg407",
+            "v164_qsg406"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_xiang_pay_network"
+          ],
+          "people": [
+            "q_zengguofan",
+            "q164_hulinyi"
+          ]
+        },
+        {
+          "id": "v164_luozennan3",
+          "title": "战术经验在连续攻坚中积累",
+          "text": "罗泽南参与岳州、武昌、田家镇等战事，重视地形、炮垒和水陆配合。官修传记以少胜多和冲锋塑造名将，数字需谨慎；更可靠的是路线、营垒与协作记录。军队学习来自反复失败和调整，不是初战即成熟，也不是儒生天然善战。",
+          "sources": [
+            "v164_qsg407",
+            "v164_qsg406"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_dispatch_numbers",
+            "v164_yangtze_trade_war"
+          ],
+          "people": [
+            "q164_hulinyi"
+          ]
+        },
+        {
+          "id": "v164_luozennan4",
+          "title": "攻武昌去世使其进入忠烈记忆",
+          "text": "1856年罗泽南在攻武昌过程中受伤去世。清廷赐恤和后世湘军叙事强调忠勇，太平军材料则从守城一方观察。个人死亡可以明确，临终言行和精确杀伤常受纪念书写加工。战斗还包括城内居民、夫役和双方无名士兵。",
+          "sources": [
+            "v164_qsg407",
+            "v164_qsg406"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_siege_dead"
+          ],
+          "people": [
+            "q164_hulinyi"
+          ]
+        },
+        {
+          "id": "v164_luozennan5",
+          "title": "他留下可复制的关系结构",
+          "text": "李续宾等承接其部众和训练方式，说明影响不只在个人战绩。师生、同乡与营官关系形成信任，也使部队依附特定领袖。其后湘军扩张证明这种结构有效，三河覆军又揭示关系网可能带来的情报偏差、同质判断和连续进军压力。罗泽南的思想影响可从讲学与书信考察，营伍实际则需看名册、饷项、路线和战报。把两类证据合并为所谓儒将精神，容易把组织条件和普通兵勇的劳动隐藏在人格赞美之后。",
+          "sources": [
+            "v164_qsg407",
+            "v164_qsg406"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_sanhe_defeat",
+            "v164_recruitment_households"
+          ],
+          "people": [
+            "q164_lixubin",
+            "q_zengguofan"
+          ]
+        }
+      ],
+      "sources": [
+        "v164_qsg407",
+        "v164_qsg406"
+      ]
+    },
+    {
+      "person": "q164_lixubin",
+      "title": "李续宾：从九江攻坚到三河覆军",
+      "dek": "同一套组织既能产生连续胜利，也会在疲劳和深入中放大风险。",
+      "sections": [
+        {
+          "id": "v164_lixubin1",
+          "title": "承接罗泽南部众而非从零建军",
+          "text": "李续宾原从罗泽南办团练，逐渐成为主要将领。罗死后，他承接一部分营伍、人际关系和作战经验。将领更替不等于军队重新组成，原有营官、同乡和薪饷承诺维持连续。个人声望也依赖前任留下的组织资本，不能只以天赋解释。",
+          "sources": [
+            "v164_qsg408",
+            "v163_qsg475"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_recruitment_households"
+          ],
+          "people": [
+            "q164_luozennan",
+            "q_zengguofan"
+          ]
+        },
+        {
+          "id": "v164_lixubin2",
+          "title": "长期围攻九江磨炼也消耗部队",
+          "text": "湘军围攻九江多年，水陆封锁、炮垒和外围据点逐步压缩城防。最终攻克带来巨大军功，也伴随长期伤亡与城市破坏。攻坚成功容易强化继续深入的信心；士兵疲劳、补员质量和粮道风险却不一定在捷报中充分显现。",
+          "sources": [
+            "v164_qsg408",
+            "v163_qsg475"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_yangtze_trade_war",
+            "v164_siege_dead"
+          ],
+          "people": [
+            "q164_hulinyi"
+          ]
+        },
+        {
+          "id": "v164_lixubin3",
+          "title": "进军安徽使胜利惯性超过支援能力",
+          "text": "九江后李续宾部进入安徽，连续行动拉长补给线。三河与庐州、舒城和多路太平军相连，陈玉成等能够集中兵力。是否撤退、援军速度和敌情判断共同决定风险。不能以个人勇怯解释一支疲惫军队被包围。",
+          "sources": [
+            "v164_qsg408",
+            "v163_qsg475"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_sanhe_defeat"
+          ],
+          "people": [
+            "q164_chenyucheng"
+          ]
+        },
+        {
+          "id": "v164_lixubin4",
+          "title": "三河覆军暴露军功体制压力",
+          "text": "将领靠攻城与斩获升迁，连续胜利提高朝廷和上级期待。李续宾及大批将士战死后，清方以忠烈哀悼，战报又可能夸大敌我数量。确认覆败重要，更要看军功激励、情报与增援为何未能及时纠正过度进取。",
+          "sources": [
+            "v164_qsg408",
+            "v163_qsg475"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_dispatch_numbers",
+            "v164_siege_dead"
+          ],
+          "people": [
+            "q164_chenyucheng",
+            "q_zengguofan"
+          ]
+        },
+        {
+          "id": "v164_lixubin5",
+          "title": "家乡社会承接阵亡余波",
+          "text": "湘军依赖同乡招募，三河死亡集中影响若干湖南地区。抚恤、灵柩、家属生计与补募进入地方社会。官修传记列爵赏谥号，普通兵勇家属多不具名。若只停在将领殉难，就会再次把维持军队的人群从画面移走。三河之后的抚恤名单和地方记忆可能保存部分姓名，但不能据此认为所有死者都被完整登记。无名夫役、临时补募者、被裹挟者和当地居民往往留在统计边缘，这正是军功档案的结构性限制。",
+          "sources": [
+            "v164_qsg408",
+            "v163_qsg475"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_recruitment_households",
+            "v164_war_memory"
+          ],
+          "people": [
+            "q164_luozennan",
+            "q164_hulinyi"
+          ]
+        }
+      ],
+      "sources": [
+        "v164_qsg408",
+        "v163_qsg475"
+      ]
+    },
+    {
+      "person": "q164_chenyucheng",
+      "title": "陈玉成：机动战声望与安庆困局",
+      "dek": "年轻名将的传奇不应遮蔽组织、后勤与占领区社会。",
+      "sections": [
+        {
+          "id": "v164_chenyucheng1",
+          "title": "从基层军职进入后期核心",
+          "text": "陈玉成早年参加太平军，在长期战争中以战功升迁。天京事变后前期核心崩解，年轻将领承担更大责任。其爵号与清方材料的敌对称谓都带有阵营立场；可核的是他控制部队、参与多战区调动并成为后期军事核心，而非传说中的每次个人冲锋。",
+          "sources": [
+            "v163_qsg475",
+            "v164_taiping_joint"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_taiping_reorganization"
+          ],
+          "people": [
+            "q164_hongrengan"
+          ]
+        },
+        {
+          "id": "v164_chenyucheng2",
+          "title": "三河胜利来自集中兵力与地形配合",
+          "text": "面对深入安徽的李续宾部，陈玉成等调集部队形成包围。胜利并非个人武勇瞬间决定，而是情报、路线、援军和对方疲劳共同作用。太平天国记忆突出英王军功，清方强调湘军忠烈；两边都可能压缩普通士兵和当地居民经历。",
+          "sources": [
+            "v163_qsg475",
+            "v164_taiping_joint"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_sanhe_defeat",
+            "v164_dispatch_numbers"
+          ],
+          "people": [
+            "q164_lixubin"
+          ]
+        },
+        {
+          "id": "v164_chenyucheng3",
+          "title": "江北机动依赖占领区征粮",
+          "text": "快速调军需要船只、粮食、民夫与地方官。太平天国在部分地区利用既有钱粮制度，军队也可能直接征取。把机动作战只写成地图箭头，会遗漏乡村如何供给、逃避或与不同武装谈判。制度文本与战时实践不能混为一谈。",
+          "sources": [
+            "v163_qsg475",
+            "v164_taiping_joint"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_yangtze_trade_war",
+            "v164_jiangnan_refugees"
+          ],
+          "people": [
+            "q164_hongrengan"
+          ]
+        },
+        {
+          "id": "v164_chenyucheng4",
+          "title": "安庆救援面对逐步收紧的网络",
+          "text": "湘军围攻安庆时，不只围一座城，还控制外围据点和长江水路。陈玉成多次救援，需同时应对多支清军和水师。局部突破未能改变粮道收紧。安庆失守是长期封锁结果，不宜归为某次救援失误，也不能忽视城中饥饿。",
+          "sources": [
+            "v163_qsg475",
+            "v164_taiping_joint"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_anqing_encirclement",
+            "v164_siege_dead"
+          ],
+          "people": [
+            "q164_hulinyi",
+            "q_zengguofan"
+          ]
+        },
+        {
+          "id": "v164_chenyucheng5",
+          "title": "后来的被俘不能倒写咸丰时期",
+          "text": "陈玉成1862年被俘处死，已在咸丰去世之后。后世常用少年名将、忠烈或悍敌概括一生。应把三河、江南大营和安庆分别放回当时条件，并承认清方材料对其内部决策记录有限。军事能力可以评价，具体动机和对平民政策需更多占领区材料。太平天国封号、清方审讯与后世口述分别服务不同目的。若缺少可相互校验的同时期记录，应明确写成某方记载或后人传说，而不是补出精确对白与心理。",
+          "sources": [
+            "v163_qsg475",
+            "v164_taiping_joint"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_war_memory"
+          ],
+          "people": [
+            "q164_hongrengan",
+            "q164_lixubin"
+          ]
+        }
+      ],
+      "sources": [
+        "v163_qsg475",
+        "v164_taiping_joint"
+      ]
+    },
+    {
+      "person": "q164_hongrengan",
+      "title": "洪仁玕：跨地域知识与未完成的制度建议",
+      "dek": "《资政新篇》的价值在展示知识流动，不在把文本想象成已经实行的现代化蓝图。",
+      "sections": [
+        {
+          "id": "v164_hongrengan1",
+          "title": "香港经历带来不同知识环境",
+          "text": "洪仁玕是洪秀全族弟，早期未能一直随太平军，后来在香港等地接触传教士、印刷与城市制度。1859年抵达天京时，他带入的不只是宗族关系，也有对轮船、新闻、商业和公共设施的观察。知识来源多元，并不表示已系统掌握所有技术。",
+          "sources": [
+            "v164_zizheng",
+            "v164_taiping_joint",
+            "v163_qsg475",
+            "v164_pku_jiangnan"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_taiping_reorganization"
+          ],
+          "people": [
+            "q_hongxiuquan"
+          ]
+        },
+        {
+          "id": "v164_hongrengan2",
+          "title": "获封干王反映天京急需重建权力",
+          "text": "天京事变后旧王体系破裂，洪仁玕因亲属身份与知识经历迅速进入高位。封爵提供政治名分，却不自动带来对各地军队的实际控制。陈玉成、李秀成等掌握兵力和地盘，中央建议必须经过分散军政网络才能执行。",
+          "sources": [
+            "v164_zizheng",
+            "v164_taiping_joint",
+            "v163_qsg475",
+            "v164_pku_jiangnan"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_taiping_reorganization"
+          ],
+          "people": [
+            "q164_chenyucheng"
+          ]
+        },
+        {
+          "id": "v164_hongrengan3",
+          "title": "《资政新篇》是建议书而非成就清单",
+          "text": "文本讨论铁路轮船、新闻、医院、商业和人才，显示作者试图把见闻转成治国方案。原文也包含宗教与道德治理语言，不能只挑选看似现代的词汇。洪秀全批示不等于建立预算、技术人员和地方执行机构，战争更限制长期项目。",
+          "sources": [
+            "v164_zizheng",
+            "v164_taiping_joint",
+            "v163_qsg475",
+            "v164_pku_jiangnan"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_zizheng_program"
+          ],
+          "people": [
+            "q_hongxiuquan"
+          ]
+        },
+        {
+          "id": "v164_hongrengan4",
+          "title": "对外认识不等于摆脱列强结构",
+          "text": "洪仁玕熟悉部分外国人和基督教网络，但太平天国与英法不存在天然联盟。列强首先维护通商与条约利益，并根据上海、长江和战争局势调整。洪仁玕的宣传文本可显示政治诉求，不能直接证明所有外交接触的效果。",
+          "sources": [
+            "v164_zizheng",
+            "v164_taiping_joint",
+            "v163_qsg475",
+            "v164_pku_jiangnan"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_treaty_translation",
+            "v164_taiping_reorganization"
+          ],
+          "people": [
+            "q164_chenyucheng"
+          ]
+        },
+        {
+          "id": "v164_hongrengan5",
+          "title": "评价不应在先驱与空想间二选一",
+          "text": "有人把洪仁玕视为近代化先驱，也有人强调方案脱离战时条件。两种标签都易让文本失去语境。较稳妥的阅读承认其制度想象与跨地域知识价值，同时核对占领区仍以征粮、军政和既有基层制度维持秩序。思想史上的新意与行政史上的落实是两个问题。《资政新篇》的传播史也影响后世评价：研究者会从长篇文本中选择最接近现代制度的段落。完整阅读其宗教、伦理和行政内容，才能避免用少数名词制造一条直线进步史。",
+          "sources": [
+            "v164_zizheng",
+            "v164_taiping_joint",
+            "v163_qsg475",
+            "v164_pku_jiangnan"
+          ],
+          "kind": "史实与解读",
+          "events": [
+            "v164_zizheng_program",
+            "v164_jiangnan_refugees",
+            "v164_war_memory"
+          ],
+          "people": [
+            "q164_chenyucheng",
+            "q_hongxiuquan"
+          ]
+        }
+      ],
+      "sources": [
+        "v164_zizheng",
+        "v164_taiping_joint",
+        "v163_qsg475",
+        "v164_pku_jiangnan"
+      ]
     }
   ],
   "portraits": [
@@ -228516,6 +231017,245 @@
       "sources": [
         "v163_qsg404"
       ]
+    },
+    {
+      "from": "q_xianfeng",
+      "to": "q164_wenxiang",
+      "role": "留京办理城防与交涉的臣僚",
+      "inverse": "所服务的皇帝",
+      "period": "1860—1861年",
+      "note": "关系按同时期职务和行动描述，不把后来的褒贬倒推为当时动机。",
+      "sources": [
+        "v164_qsg386"
+      ]
+    },
+    {
+      "from": "q_xianfeng",
+      "to": "q164_guiliang",
+      "role": "奉派天津议约的钦差",
+      "inverse": "奉命出使的皇帝",
+      "period": "1858—1860年",
+      "note": "关系按同时期职务和行动描述，不把后来的褒贬倒推为当时动机。",
+      "sources": [
+        "v164_qsg388"
+      ]
+    },
+    {
+      "from": "q164_guiliang",
+      "to": "q164_huashana",
+      "role": "共同签订天津条约的钦差搭档",
+      "inverse": "共同签订天津条约的钦差搭档",
+      "period": "1858年",
+      "note": "关系按同时期职务和行动描述，不把后来的褒贬倒推为当时动机。",
+      "sources": [
+        "v164_tianjin_uk",
+        "v164_tianjin_fr"
+      ]
+    },
+    {
+      "from": "q_xianfeng",
+      "to": "q164_sushun",
+      "role": "倚重的财政与行在大臣",
+      "inverse": "信任并随侍的皇帝",
+      "period": "1850—1861年",
+      "note": "关系按同时期职务和行动描述，不把后来的褒贬倒推为当时动机。",
+      "sources": [
+        "v164_qsg387"
+      ]
+    },
+    {
+      "from": "q164_sushun",
+      "to": "q164_zaiyuan",
+      "role": "行在与顾命集团的政治同盟",
+      "inverse": "行在与顾命集团的政治同盟",
+      "period": "1860—1861年",
+      "note": "关系按同时期职务和行动描述，不把后来的褒贬倒推为当时动机。",
+      "sources": [
+        "v164_qsg220",
+        "v164_qsg387"
+      ]
+    },
+    {
+      "from": "q164_sushun",
+      "to": "q164_duanhua",
+      "role": "兄弟与政治同盟",
+      "inverse": "兄弟与政治同盟",
+      "period": "咸丰朝",
+      "note": "关系按同时期职务和行动描述，不把后来的褒贬倒推为当时动机。",
+      "sources": [
+        "v164_qsg387"
+      ]
+    },
+    {
+      "from": "q164_guanwen",
+      "to": "q164_hulinyi",
+      "role": "湖北总督与巡抚的合作及制衡",
+      "inverse": "湖北巡抚与总督的合作及制衡",
+      "period": "1855—1861年",
+      "note": "关系按同时期职务和行动描述，不把后来的褒贬倒推为当时动机。",
+      "sources": [
+        "v164_qsg388",
+        "v164_qsg406"
+      ]
+    },
+    {
+      "from": "q164_hulinyi",
+      "to": "q164_luozennan",
+      "role": "调入湖北作战的将领",
+      "inverse": "受其协调与支持的巡抚",
+      "period": "1855—1856年",
+      "note": "关系按同时期职务和行动描述，不把后来的褒贬倒推为当时动机。",
+      "sources": [
+        "v164_qsg406",
+        "v164_qsg407"
+      ]
+    },
+    {
+      "from": "q164_luozennan",
+      "to": "q164_lixubin",
+      "role": "营伍与将领关系的前后承接",
+      "inverse": "承接其营伍传统的后继将领",
+      "period": "1850年代",
+      "note": "关系按同时期职务和行动描述，不把后来的褒贬倒推为当时动机。",
+      "sources": [
+        "v164_qsg407",
+        "v164_qsg408"
+      ]
+    },
+    {
+      "from": "q164_lixubin",
+      "to": "q164_chenyucheng",
+      "role": "三河战场的交战对手",
+      "inverse": "三河战场的交战对手",
+      "period": "1858年",
+      "note": "关系按同时期职务和行动描述，不把后来的褒贬倒推为当时动机。",
+      "sources": [
+        "v164_qsg408",
+        "v163_qsg475"
+      ]
+    },
+    {
+      "from": "q164_hongrengan",
+      "to": "q164_chenyucheng",
+      "role": "后期天京文政与军事核心",
+      "inverse": "后期天京军事与文政核心",
+      "period": "1859—1861年",
+      "note": "关系按同时期职务和行动描述，不把后来的褒贬倒推为当时动机。",
+      "sources": [
+        "v164_taiping_joint"
+      ]
+    },
+    {
+      "from": "q_yixin",
+      "to": "q164_wenxiang",
+      "role": "留京交涉与总理衙门同僚",
+      "inverse": "留京交涉与总理衙门同僚",
+      "period": "1860年以后",
+      "note": "关系按同时期职务和行动描述，不把后来的褒贬倒推为当时动机。",
+      "sources": [
+        "v164_qsg386",
+        "v5qn_qsg221"
+      ]
+    },
+    {
+      "from": "q_xianfeng",
+      "to": "q164_huashana",
+      "role": "奉派天津议约的尚书",
+      "inverse": "奉命出使的皇帝",
+      "period": "1858年",
+      "note": "关系按任命、交战或同时期政治行动描述，不把后出的褒贬当作动机事实。",
+      "sources": [
+        "v164_tianjin_uk"
+      ]
+    },
+    {
+      "from": "q_xianfeng",
+      "to": "q164_zaiyuan",
+      "role": "倚重并派赴通州交涉的亲王",
+      "inverse": "受信任的皇帝",
+      "period": "咸丰朝",
+      "note": "关系按任命、交战或同时期政治行动描述，不把后出的褒贬当作动机事实。",
+      "sources": [
+        "v164_qsg220"
+      ]
+    },
+    {
+      "from": "q_xianfeng",
+      "to": "q164_duanhua",
+      "role": "倚重并随驾热河的亲王",
+      "inverse": "受信任的皇帝",
+      "period": "咸丰朝",
+      "note": "关系按任命、交战或同时期政治行动描述，不把后出的褒贬当作动机事实。",
+      "sources": [
+        "v164_qsg220"
+      ]
+    },
+    {
+      "from": "q_xianfeng",
+      "to": "q164_guanwen",
+      "role": "任命的湖广总督与军务大臣",
+      "inverse": "任命并接受奏报的皇帝",
+      "period": "1854—1861年",
+      "note": "关系按任命、交战或同时期政治行动描述，不把后出的褒贬当作动机事实。",
+      "sources": [
+        "v164_qsg388"
+      ]
+    },
+    {
+      "from": "q_xianfeng",
+      "to": "q164_hulinyi",
+      "role": "任用的湖北巡抚与军务组织者",
+      "inverse": "任命并接受奏报的皇帝",
+      "period": "1855—1861年",
+      "note": "关系按任命、交战或同时期政治行动描述，不把后出的褒贬当作动机事实。",
+      "sources": [
+        "v164_qsg406"
+      ]
+    },
+    {
+      "from": "q_xianfeng",
+      "to": "q164_luozennan",
+      "role": "受朝廷奖叙的湘军将领",
+      "inverse": "授予官阶奖叙的皇帝",
+      "period": "1853—1856年",
+      "note": "关系按任命、交战或同时期政治行动描述，不把后出的褒贬当作动机事实。",
+      "sources": [
+        "v164_qsg407"
+      ]
+    },
+    {
+      "from": "q_xianfeng",
+      "to": "q164_lixubin",
+      "role": "受朝廷奖叙的湘军将领",
+      "inverse": "授予官阶奖叙的皇帝",
+      "period": "1853—1858年",
+      "note": "关系按任命、交战或同时期政治行动描述，不把后出的褒贬当作动机事实。",
+      "sources": [
+        "v164_qsg408"
+      ]
+    },
+    {
+      "from": "q_xianfeng",
+      "to": "q164_chenyucheng",
+      "role": "长期交战的太平天国将领",
+      "inverse": "所对抗的清朝皇帝",
+      "period": "咸丰后期",
+      "note": "关系按任命、交战或同时期政治行动描述，不把后出的褒贬当作动机事实。",
+      "sources": [
+        "v163_qsg475"
+      ]
+    },
+    {
+      "from": "q_xianfeng",
+      "to": "q164_hongrengan",
+      "role": "太平天国后期政治人物与对手",
+      "inverse": "所对抗的清朝皇帝",
+      "period": "1859—1861年",
+      "note": "关系按任命、交战或同时期政治行动描述，不把后出的褒贬当作动机事实。",
+      "sources": [
+        "v164_zizheng",
+        "v163_qsg475"
+      ]
     }
   ],
   "dynasties": [
@@ -233469,7 +236209,19 @@
         "q163_xiangrong",
         "q163_wulantai",
         "q163_yemingchen",
-        "q163_senggelinqin"
+        "q163_senggelinqin",
+        "q164_wenxiang",
+        "q164_guiliang",
+        "q164_huashana",
+        "q164_sushun",
+        "q164_zaiyuan",
+        "q164_duanhua",
+        "q164_guanwen",
+        "q164_hulinyi",
+        "q164_luozennan",
+        "q164_lixubin",
+        "q164_chenyucheng",
+        "q164_hongrengan"
       ],
       "events": [
         "qev_taiping_1851",
@@ -233524,7 +236276,52 @@
         "v163_exam_printing",
         "v163_temple_change",
         "v163_battle_language",
-        "v163_memory_frames"
+        "v163_memory_frames",
+        "v164_arrow_escalation",
+        "v164_guangzhou_joint_rule",
+        "v164_tianjin_treaties",
+        "v164_ratification_dispute",
+        "v164_rehe_flight",
+        "v164_yixin_negotiation",
+        "v164_beijing_conventions",
+        "v164_taiping_reorganization",
+        "v164_regional_command",
+        "v164_guangzhou_capture",
+        "v164_dagu_1858",
+        "v164_dagu_1859",
+        "v164_beitang_1860",
+        "v164_zhangjiawan_baliqiao",
+        "v164_yuanmingyuan_destruction",
+        "v164_sanhe_defeat",
+        "v164_jiangnan_camp_1860",
+        "v164_anqing_encirclement",
+        "v164_new_treaty_ports",
+        "v164_tariff_opium",
+        "v164_indemnities",
+        "v164_lijin_expansion",
+        "v164_customs_inspectorate",
+        "v164_xiang_pay_network",
+        "v164_guangzhou_market",
+        "v164_beijing_shops",
+        "v164_yangtze_trade_war",
+        "v164_guangzhou_displacement",
+        "v164_coastal_labor",
+        "v164_emigration_clause",
+        "v164_beijing_flight",
+        "v164_prisoners_retaliation",
+        "v164_loot_dispersal",
+        "v164_recruitment_households",
+        "v164_jiangnan_refugees",
+        "v164_siege_dead",
+        "v164_treaty_translation",
+        "v164_diplomatic_protocol",
+        "v164_war_photography",
+        "v164_zizheng_program",
+        "v164_mission_property",
+        "v164_dispatch_numbers",
+        "v164_object_provenance",
+        "v164_memorial_delay",
+        "v164_war_memory"
       ],
       "sources": [
         "v5qn_qing_annals",
@@ -233562,7 +236359,30 @@
         "v163_qingji51",
         "v163_ruc_lijin",
         "v163_sh_nanjing",
-        "v163_tianchao"
+        "v163_tianchao",
+        "v164_qsg220",
+        "v164_qsg386",
+        "v164_qsg387",
+        "v164_qsg388",
+        "v164_qsg406",
+        "v164_qsg407",
+        "v164_qsg408",
+        "v164_tianjin_uk",
+        "v164_tianjin_fr",
+        "v164_beijing_uk",
+        "v164_beijing_fr",
+        "v164_beijing_ru",
+        "v164_zizheng",
+        "v164_taiping_joint",
+        "v164_dpm_yuanmingyuan",
+        "v164_dpm_photo",
+        "v164_nmc_treaty",
+        "v164_ruc_trade",
+        "v164_ruc_indemnity",
+        "v164_ruc_lijin",
+        "v164_ruc_opium",
+        "v164_ruc_ports",
+        "v164_pku_jiangnan"
       ],
       "note": ""
     },
