@@ -3834,3 +3834,27 @@ if d['version'] >= 155:
  assert len({object_map[object_id]['note'] for object_id in qin_object_ids})==9
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将|产品采用',corpus,re.I)
  print('V155 PASS: nine Qin army, archive, currency, measurement and command objects now carry three evidence layers, source boundaries and no duplicate dynasty-overview guide')
+
+if d['version'] >= 156:
+ qin_events=[item for item in d['events'] if item['id'].startswith('v48q_')]
+ v182_source_ids={item['id'] for item in d['sources'] if item['id'].startswith('v182_')}
+ assert len(qin_events)==27
+ assert Counter(item['category'] for item in qin_events)=={'政治':6,'军事':6,'文化':5,'经济':5,'社会':5}
+ assert len(v182_source_ids)==4 and v182_source_ids<=sources.keys()
+ for item in qin_events:
+  body_chars=len(re.findall(r'[\u4e00-\u9fff]',item['body']))
+  impact_chars=len(re.findall(r'[\u4e00-\u9fff]',item['impact']))
+  assert body_chars>=170 and impact_chars>=95,(item['id'],body_chars,impact_chars)
+  assert item['body'].count('\n\n')>=1 and len(item['sources'])>=2
+  assert set(item['sources'])<=sources.keys() and set(item['people'])<=people.keys()
+  assert set(item['peopleRoles'])==set(item['people']),(item['id'],'person-role mismatch')
+ assert len({item['body'] for item in qin_events})==27 and len({item['impact'] for item in qin_events})==27
+ event_map={item['id']:item for item in qin_events}
+ assert event_map['v48q_wei']['people']==['qin_shihuang']
+ corpus=json.dumps(qin_events+[sources[source_id] for source_id in v182_source_ids],ensure_ascii=False)
+ for term in ['十年统一战争','县令长','始皇帝','泰山','沙丘平台','望夷宫','代地','引河沟灌大梁','六十万','秦长城','灵渠','巨鹿','小篆','四百六十余人','三万八千余枚','重11.5克','使黔首自实田','十二万户','一千一百五十五枚','约法三章']:
+  assert term in corpus,('missing Qin event-history term',term)
+ for boundary in ['不能把组织设计等同于处处高效执行','不能当作现场录音','不能把今天最常见的明代砖石长城直接称作秦长城','不能直接当作秦法通则','不能把现存完整工程冻结成前214年的原貌','不能由一句本纪断言全国土地关系','不等于每件器物完全相同','不能把所有古车辙都归为秦始皇工程','不能把后世绘画和传说当成现场材料']:
+  assert boundary in corpus,('missing Qin event evidence boundary',boundary)
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将|产品采用',corpus,re.I)
+ print('V156 PASS: all twenty-seven Qin political, military, cultural, economic and social events now separate mechanisms, ordinary costs, transmitted narrative and excavated evidence')

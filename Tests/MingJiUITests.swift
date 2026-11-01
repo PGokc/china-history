@@ -5413,4 +5413,41 @@ final class MingJiUITests: XCTestCase {
         shot("v181-shuihudi-sources-and-page-ending", app)
     }
 
+    @MainActor func testV182DazexiangSeparatesMobilizingNarrativeFromQinLaw() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["--uitesting", "--ui-dynasty", "qin"]
+        app.launch()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        app.tabBars.buttons["帝序"].tap()
+        XCTAssertTrue(app.descendants(matching: .any)["successionPage_qin"].waitForExistence(timeout: 5))
+        app.buttons["succession_qin_0"].tap()
+        XCTAssertTrue(app.buttons["personHero"].waitForExistence(timeout: 5)); app.buttons["personHero"].tap()
+        reach(app.buttons["eventCategory_社会"], in: app, attempts: 12)
+        app.buttons["eventCategory_社会"].tap()
+        reach(app.buttons["category_events"], in: app, attempts: 12)
+        app.buttons["category_events"].tap()
+
+        let uprising = app.buttons["event_v48q_dazexiang"]
+        reach(uprising, in: app, attempts: 10)
+        XCTAssertTrue(uprising.isHittable); uprising.tap()
+        XCTAssertTrue(app.staticTexts["发生了什么"].waitForExistence(timeout: 5))
+        let lawBoundary = app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不能直接当作秦法通则")).firstMatch
+        reach(lawBoundary, in: app, attempts: 10)
+        XCTAssertTrue(lawBoundary.exists)
+        let broaderCause = app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "秦亡还涉及二世政治")).firstMatch
+        reach(broaderCause, in: app, attempts: 6)
+        XCTAssertTrue(broaderCause.exists)
+        shot("v182-dazexiang-mobilization-law-and-broader-causes", app)
+
+        reach(app.buttons["资料与出处"], in: app, attempts: 8)
+        XCTAssertTrue(app.buttons["资料与出处"].isHittable); app.buttons["资料与出处"].tap()
+        XCTAssertTrue(app.descendants(matching: .any)["source_v48q_shiji48"].waitForExistence(timeout: 5))
+        let finalSource = app.descendants(matching: .any)["source_v48q_hubei_slips"]
+        reach(finalSource, in: app, attempts: 8)
+        for _ in 0..<3 { app.swipeUp() }
+        XCTAssertTrue(finalSource.isHittable)
+        XCTAssertLessThanOrEqual(finalSource.frame.maxY, app.tabBars.firstMatch.frame.minY - 16)
+        shot("v182-dazexiang-sources-and-page-ending", app)
+    }
+
 }
