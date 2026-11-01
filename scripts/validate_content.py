@@ -665,6 +665,7 @@ if d['version'] >= 30:
  required_people={
   'qin_zhuangxiang','qin_zhaoji','qin_shihuang','qin_fusu','qin_er_shi','qin_ziying',
   'qin_lvbuwei','qin_lisi','qin_zhaogao','qin_mengtian','qin_wangjian','qin_chen_sheng',
+  'qin_wangben','qin_lixin','qin_zhanghan','qin_wangli','qin_zhaotuo',
   'qin_wuguang','qin_xiangyu','qin_liubang','qin_xi'
  }
  assert qin_people==required_people,('Qin people coverage',qin_people^required_people)
@@ -687,7 +688,7 @@ if d['version'] >= 30:
   assert all(s['sources'] and (s.get('events') or s.get('people')) for s in a['sections']),(pid,'chapter lacks evidence or exploration')
  assert {c['person'] for c in d['reignContexts'] if c['person'] in qin_people}=={'qin_shihuang','qin_er_shi'}
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成',json.dumps([people[p] for p in qin_people]+qin_events+qin_objects+list(qin_articles.values()),ensure_ascii=False))
- print('V30 PASS: Qin has a bounded two-emperor sequence, sixteen sourced people, five event lenses, nine heritage entries, a tomb and fourteen full readings')
+ print(f'V30 PASS: Qin has a bounded two-emperor sequence, {len(qin_people)} sourced people, five event lenses, nine heritage entries, a tomb and full linked readings')
 
 if d['version'] >= 31:
  han_people={p['id'] for p in d['people'] if p.get('dynasty')=='han'}
@@ -3850,7 +3851,7 @@ if d['version'] >= 156:
   assert set(item['peopleRoles'])==set(item['people']),(item['id'],'person-role mismatch')
  assert len({item['body'] for item in qin_events})==27 and len({item['impact'] for item in qin_events})==27
  event_map={item['id']:item for item in qin_events}
- assert event_map['v48q_wei']['people']==['qin_shihuang']
+ assert event_map['v48q_wei']['people']==['qin_shihuang','qin_wangben']
  corpus=json.dumps(qin_events+[sources[source_id] for source_id in v182_source_ids],ensure_ascii=False)
  for term in ['十年统一战争','县令长','始皇帝','泰山','沙丘平台','望夷宫','代地','引河沟灌大梁','六十万','秦长城','灵渠','巨鹿','小篆','四百六十余人','三万八千余枚','重11.5克','使黔首自实田','十二万户','一千一百五十五枚','约法三章']:
   assert term in corpus,('missing Qin event-history term',term)
@@ -3858,3 +3859,38 @@ if d['version'] >= 156:
   assert boundary in corpus,('missing Qin event evidence boundary',boundary)
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将|产品采用',corpus,re.I)
  print('V156 PASS: all twenty-seven Qin political, military, cultural, economic and social events now separate mechanisms, ordinary costs, transmitted narrative and excavated evidence')
+
+if d['version'] >= 157:
+ qin_person_ids={'qin_wangben','qin_lixin','qin_zhanghan','qin_wangli','qin_zhaotuo'}
+ v183_source_ids={item['id'] for item in d['sources'] if item['id'].startswith('v183_')}
+ assert qin_person_ids<=people.keys() and len(v183_source_ids)==6 and v183_source_ids<=sources.keys()
+ assert people['qin_wangben']['parent']=='qin_wangjian'
+ assert people['qin_wangli']['parent']=='qin_wangben'
+ assert all(people[person_id]['dynasty']=='qin' for person_id in qin_person_ids)
+ qin_articles={article['person']:article for article in d['articles'] if article['person'] in qin_person_ids}
+ assert qin_articles.keys()==qin_person_ids
+ for person_id,article in qin_articles.items():
+  chars=len(re.findall(r'[\u4e00-\u9fff]',''.join(section['text'] for section in article['sections'])))
+  assert len(article['sections'])==5 and chars>=700,(person_id,chars)
+  assert len({section['id'] for section in article['sections']})==5
+  assert len(article['sources'])>=4 and set(article['sources'])<=sources.keys()
+  for section in article['sections']:
+   assert len(re.findall(r'[\u4e00-\u9fff]',section['text']))>=120,(person_id,section['id'])
+   assert set(section['sources'])<=sources.keys()
+   assert set(section.get('events',[]))<={item['id'] for item in d['events']}
+   assert set(section.get('people',[]))<=people.keys()
+ event_map={item['id']:item for item in d['events']}
+ assert 'qin_wangben' in event_map['v48q_wei']['people']
+ assert 'qin_lixin' in event_map['v48q_chu']['people']
+ assert {'qin_zhanghan','qin_wangli'}<=set(event_map['v48q_julu']['people'])
+ assert 'qin_zhaotuo' in event_map['v48q_lingnan']['people']
+ for event_id in ['v48q_unification','v48q_wei','v48q_chu','v48q_lingnan','v48q_julu']:
+  assert set(event_map[event_id]['people'])==set(event_map[event_id]['peopleRoles'])
+ corpus=json.dumps(list(qin_articles.values())+[sources[source_id] for source_id in v183_source_ids],ensure_ascii=False)
+ for term in ['引河灌大梁','辽东与代地','二十万伐楚','败后仍见于燕齐战线','少府为何走上前线','甬道与两支秦军','琅邪刻辞中的武城侯','被俘不是章邯投降的同义词','封关自守','并桂林、象郡']:
+  assert term in corpus,('missing Qin biography term',term)
+ for boundary in ['不能据短短几句还原精确渠道','现存材料主要在需要衬托王翦时','只用“骄傲轻敌”解释','不能简单写成个人怯懦','不能作为无争议事实','史料沉默本身就是人物阅读应展示的边界','不能用单向“教化开发”概括','不把单一年份写成毫无争议的精确日历']:
+  assert boundary in corpus,('missing Qin biography evidence boundary',boundary)
+ assert len({section['text'] for article in qin_articles.values() for section in article['sections']})==25
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将|产品采用',corpus,re.I)
+ print('V157 PASS: Wang Ben, Li Xin, Zhang Han, Wang Li and Zhao Tuo now carry five-layer readings, direct event links, family continuity and explicit evidence limits')

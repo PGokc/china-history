@@ -5450,4 +5450,56 @@ final class MingJiUITests: XCTestCase {
         shot("v182-dazexiang-sources-and-page-ending", app)
     }
 
+    @MainActor func testV183QinCommandersAndZhaoTuoHaveEvidenceBoundedReadings() throws {
+        let commander = XCUIApplication()
+        commander.launchArguments = ["--uitesting", "--ui-dynasty", "qin"]
+        commander.launch()
+        XCTAssertTrue(commander.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        commander.buttons["globalSearch"].tap()
+        let commanderSearch = commander.searchFields.firstMatch
+        XCTAssertTrue(commanderSearch.waitForExistence(timeout: 5)); commanderSearch.tap(); commanderSearch.typeText("王贲")
+        let wangBen = commander.buttons["search_person_qin_wangben"]
+        XCTAssertTrue(wangBen.waitForExistence(timeout: 5)); wangBen.tap()
+        XCTAssertTrue(commander.buttons["articleEntry"].waitForExistence(timeout: 5))
+        openArticle(in: commander)
+        commander.buttons["articleContents"].tap()
+        XCTAssertTrue(commander.buttons["引河灌大梁"].exists)
+        commander.buttons["引河灌大梁"].tap()
+        let waterBoundary = commander.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不能据短短几句还原精确渠道")).firstMatch
+        XCTAssertTrue(waterBoundary.waitForExistence(timeout: 5))
+        shot("v183-wang-ben-water-attack-and-civilian-boundary", commander)
+        reach(commander.buttons["资料与出处"], in: commander, attempts: 18)
+        XCTAssertTrue(commander.buttons["资料与出处"].isHittable)
+        shot("v183-wang-ben-reading-ending", commander)
+        commander.terminate()
+
+        let lingnan = XCUIApplication()
+        lingnan.launchArguments = ["--uitesting", "--ui-dynasty", "qin"]
+        lingnan.launch()
+        XCTAssertTrue(lingnan.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        lingnan.buttons["globalSearch"].tap()
+        let lingnanSearch = lingnan.searchFields.firstMatch
+        XCTAssertTrue(lingnanSearch.waitForExistence(timeout: 5)); lingnanSearch.tap(); lingnanSearch.typeText("赵佗")
+        let zhaoTuo = lingnan.buttons["search_person_qin_zhaotuo"]
+        XCTAssertTrue(zhaoTuo.waitForExistence(timeout: 5))
+        reach(zhaoTuo, in: lingnan, attempts: 6)
+        XCTAssertTrue(zhaoTuo.isHittable); zhaoTuo.tap()
+        XCTAssertTrue(lingnan.buttons["articleEntry"].waitForExistence(timeout: 5))
+        openArticle(in: lingnan)
+        lingnan.buttons["articleContents"].tap()
+        XCTAssertTrue(lingnan.buttons["岭南不是等待开发的空地"].exists)
+        lingnan.buttons["岭南不是等待开发的空地"].tap()
+        let localSociety = lingnan.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不能用单向“教化开发”概括")).firstMatch
+        XCTAssertTrue(localSociety.waitForExistence(timeout: 5))
+        shot("v183-zhao-tuo-lingnan-local-society-boundary", lingnan)
+        reach(lingnan.buttons["资料与出处"], in: lingnan, attempts: 18)
+        XCTAssertTrue(lingnan.buttons["资料与出处"].isHittable); lingnan.buttons["资料与出处"].tap()
+        let museum = lingnan.descendants(matching: .any)["source_v183_nanyue_zhaotuo"]
+        reach(museum, in: lingnan, attempts: 10)
+        for _ in 0..<3 { lingnan.swipeUp() }
+        XCTAssertTrue(museum.exists)
+        XCTAssertLessThanOrEqual(museum.frame.maxY, lingnan.tabBars.firstMatch.frame.minY - 16)
+        shot("v183-zhao-tuo-sources-and-page-ending", lingnan)
+    }
+
 }
