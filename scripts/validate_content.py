@@ -4840,11 +4840,12 @@ if d['version'] >= 180:
  target_articles={item['person']:item for item in d['articles'] if item['person'] in v180_people}
  assert target_articles.keys()==v180_people
  for pid,article in target_articles.items():
-  section_chars=[len(re.findall(r'[\u4e00-\u9fff]',section['text'])) for section in article['sections']]
-  assert len(article['sections'])==6 and sum(section_chars)>=(750 if pid=='ns_liang_wu' else 520),(pid,sum(section_chars))
+  v180_sections=[section for section in article['sections'] if '_v206_' in section['id']]
+  section_chars=[len(re.findall(r'[\u4e00-\u9fff]',section['text'])) for section in v180_sections]
+  assert len(v180_sections)==6 and sum(section_chars)>=(750 if pid=='ns_liang_wu' else 520),(pid,sum(section_chars))
   assert min(section_chars)>=65,(pid,section_chars)
-  assert set(article['sources'])<=v180_sources and article['sources']
-  assert all(section['kind']=='史实与解读' and section['events'] and section['people'] and set(section['sources'])<=v180_sources for section in article['sections'])
+  assert set(article['sources'])&v180_sources and set(article['sources'])<=sources.keys()
+  assert all(section['kind']=='史实与解读' and section['events'] and section['people'] and set(section['sources'])<=sources.keys() for section in v180_sections)
  context=next(item for item in d['reignContexts'] if item['person']=='ns_liang_wu')
  assert v180_people-{'ns_liang_wu'}<=set(context['people']) and {item['id'] for item in v180_events}<=set(context['events'])
  association_pairs={(item['from'],item['to']) for item in d['associations']}
@@ -4859,3 +4860,44 @@ if d['version'] >= 180:
  assert '从这里继续' not in overview_source and 'DynastyContinuationGuide' not in overview_source
  assert overview_source.count('DynastyOverviewBlock(title: "朝代总览", text: profile.overview)')==1
  print('V180 PASS: 502-527 early Liang now connects the new bureaucracy, schools, ritual compilation, Zhongli, Fushan dam, Eastern Palace learning, religious debate, relief and household burdens without restoring the duplicate dynasty guide')
+
+if d['version'] >= 181:
+ v181_people={'ns_liang_wu','ns_xiao_tong','ns_chen_qingzhi','ns_liang_jianwen','ns_zhu_yi','ns_he_chen','ns_he_jingrong','ns_yuan_hao','ns_hou_jing'}
+ v181_full_people={'ns_chen_qingzhi','ns_liang_jianwen','ns_zhu_yi','ns_he_chen','ns_he_jingrong','ns_yuan_hao','ns_hou_jing'}
+ v181_new_people={'ns_zhu_yi','ns_he_chen','ns_he_jingrong','ns_yuan_hao'}
+ v181_sources={item['id'] for item in d['sources'] if item['id'].startswith('v207_')}
+ v181_events=[item for item in d['events'] if item['id'].startswith('v207_')]
+ assert len(v181_sources)==9 and v181_sources<=sources.keys()
+ assert len(v181_events)==30 and Counter(item['category'] for item in v181_events)=={'政治':6,'军事':6,'文化':6,'经济':6,'社会':6}
+ assert len({item['body'] for item in v181_events})==30 and len({item['impact'] for item in v181_events})==30
+ assert all(item.get('sortYear') is not None and set(item['people'])==set(item['peopleRoles']) and set(item['sources'])<=v181_sources for item in v181_events)
+ assert v181_new_people<=people.keys() and all(people[pid]['dynasty']=='northern_southern' for pid in v181_new_people)
+ target_articles={item['person']:item for item in d['articles'] if item['person'] in v181_people}
+ assert target_articles.keys()==v181_people
+ for pid in v181_full_people:
+  article=target_articles[pid]
+  sections=[section for section in article['sections'] if '_v207_' in section['id']]
+  section_chars=[len(re.findall(r'[\u4e00-\u9fff]',section['text'])) for section in sections]
+  assert len(sections)==6 and sum(section_chars)>=(750 if pid=='ns_liang_jianwen' else 520),(pid,sum(section_chars))
+  assert min(section_chars)>=65,(pid,section_chars)
+  assert set(article['sources'])<=v181_sources and article['sources']
+  assert all(section['kind']=='史实与解读' and section['events'] and section['people'] and set(section['sources'])<=v181_sources for section in sections)
+ liang_wu_sections=[section for section in target_articles['ns_liang_wu']['sections'] if section['id'].startswith('ns_liang_wu_v207_')]
+ assert len(liang_wu_sections)==6 and all(section['events'] and section['people'] for section in liang_wu_sections)
+ assert sum(len(re.findall(r'[\u4e00-\u9fff]',section['text'])) for section in liang_wu_sections)>=520
+ assert target_articles['ns_xiao_tong']['sections'][-1]['title']=='去世后的继承安排改变宗室政治'
+ context=next(item for item in d['reignContexts'] if item['person']=='ns_liang_wu')
+ liang_wu_event_ids={item['id'] for item in v181_events if 'ns_liang_wu' in item['people']}
+ assert liang_wu_event_ids<=set(context['events'])
+ association_pairs={(item['from'],item['to']) for item in d['associations']}
+ assert all(any(pair in association_pairs for pair in {(pid,'ns_liang_wu'),('ns_liang_wu',pid)}) for pid in {'ns_yuan_hao','ns_liang_jianwen','ns_zhu_yi','ns_he_chen','ns_he_jingrong','ns_hou_jing'})
+ corpus=json.dumps(list(target_articles.values())+v181_events+[item for item in d['sources'] if item['id'] in v181_sources],ensure_ascii=False)
+ for term in ['进入洛阳不等于建立稳定统治','宫体诗是宫廷写作网络而非淫靡标签','548年预警被压下是更直接的责任','省费休民针对二十年战争积累','寿阳经营把社会资源变为私人军力','建康围城初期的城市灾难']:
+  assert term in corpus,('missing mid-late Liang term',term)
+ for boundary in ['不是现代战报','后世私怨故事不能代替可核任命','不能把每项细节都当审计结论','奏疏不能提供全国统计','不能归咎于阅读《老子》《庄子》','领土承诺远大于实际控制']:
+  assert boundary in corpus,('missing mid-late Liang evidence boundary',boundary)
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品不用|产品将|产品采用|本产品|从产品|人物页面|页面采用|页面因此|让用户',corpus,re.I)
+ overview_source=(R/'App/DynastyViews.swift').read_text()
+ assert '从这里继续' not in overview_source and 'DynastyContinuationGuide' not in overview_source
+ assert overview_source.count('DynastyOverviewBlock(title: "朝代总览", text: profile.overview)')==1
+ print('V181 PASS: 528-548 Liang now connects Yuan Hao, Chen Qingzhi, succession, court information, fiscal warnings, Hou Jing acceptance and the opening siege without restoring the duplicate dynasty guide')

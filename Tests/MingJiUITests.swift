@@ -6531,4 +6531,42 @@ final class MingJiUITests: XCTestCase {
         shot("v206-fushan-source-and-safe-ending", app)
     }
 
+    @MainActor func testV207MidLiangSeparatesNorthernExpeditionFromLegend() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["--uitesting", "--ui-dynasty", "northern_southern"]
+        app.launch()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        app.buttons["dynasty_northern_southern"].tap()
+        let overview = app.descendants(matching: .any)["dynastyDetail_northern_southern"]
+        XCTAssertTrue(overview.waitForExistence(timeout: 5))
+        XCTAssertTrue(overview.staticTexts["朝代总览"].exists)
+        XCTAssertFalse(overview.staticTexts["从这里继续"].exists)
+        XCTAssertFalse(overview.buttons["dynastySequence_northern_southern"].exists)
+        XCTAssertFalse(overview.buttons["dynastyFamily_northern_southern"].exists)
+        XCTAssertFalse(overview.buttons["dynastyCollection_northern_southern"].exists)
+        shot("v207-overview-still-has-no-duplicate-guide", app)
+
+        app.navigationBars.buttons.firstMatch.tap()
+        app.buttons["globalSearch"].tap()
+        let search = app.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("陈庆之")
+        let generalRow = app.buttons["search_person_ns_chen_qingzhi"]
+        XCTAssertTrue(generalRow.waitForExistence(timeout: 5)); generalRow.tap()
+        XCTAssertTrue(app.buttons["articleEntry"].waitForExistence(timeout: 5))
+        openArticle(in: app)
+        app.buttons["articleContents"].tap()
+        let chapter = app.buttons["进入洛阳不等于建立稳定统治"]
+        XCTAssertTrue(chapter.exists); chapter.tap()
+        let boundary = app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "远征的结构性限制")).firstMatch
+        XCTAssertTrue(boundary.waitForExistence(timeout: 5))
+        XCTAssertFalse(app.staticTexts["从这里继续"].exists)
+        shot("v207-chen-qingzhi-expedition-and-governance-boundary", app)
+        openChapterSources("ns_chen_qingzhi_v207_4", in: app)
+        let source = app.descendants(matching: .any)["source_v207_ls32"]
+        reach(source, in: app, attempts: 8)
+        XCTAssertTrue(source.exists)
+        XCTAssertLessThanOrEqual(source.frame.maxY, app.tabBars.firstMatch.frame.minY - 16)
+        shot("v207-chen-qingzhi-source-and-safe-ending", app)
+    }
+
 }
