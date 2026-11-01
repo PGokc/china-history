@@ -5983,4 +5983,45 @@ final class MingJiUITests: XCTestCase {
         shot("v194-xian-eastward-return-and-material-state", returnJourney)
     }
 
+    @MainActor func testV195HanWeiTransitionAndOverviewWithoutDuplicateGuide() throws {
+        let overview = XCUIApplication()
+        overview.launchArguments = ["--uitesting", "--ui-dynasty", "qing"]
+        overview.launch()
+        XCTAssertTrue(overview.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        overview.buttons["dynasty_qing"].tap()
+        XCTAssertTrue(overview.descendants(matching: .any)["dynastyDetail_qing"].waitForExistence(timeout: 5))
+        XCTAssertTrue(overview.staticTexts["朝代总览"].exists)
+        XCTAssertFalse(overview.staticTexts["从这里继续"].exists)
+        XCTAssertFalse(overview.staticTexts["帝序与在位人物"].exists)
+        XCTAssertFalse(overview.staticTexts["家族世系"].exists)
+        XCTAssertFalse(overview.staticTexts["思想与遗珍"].exists)
+        shot("v195-qing-overview-directly-enters-history", overview)
+        overview.terminate()
+
+        let reading = XCUIApplication()
+        reading.launchArguments = ["--uitesting", "--ui-dynasty", "han"]
+        reading.launch()
+        XCTAssertTrue(reading.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        reading.buttons["globalSearch"].tap()
+        let search = reading.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("荀彧")
+        let xunYu = reading.buttons["search_person_han_xunyu"]
+        XCTAssertTrue(xunYu.waitForExistence(timeout: 5)); xunYu.tap()
+        XCTAssertTrue(reading.buttons["articleEntry"].waitForExistence(timeout: 5))
+        openArticle(in: reading)
+        reading.buttons["articleContents"].tap()
+        let chapter = reading.buttons["迎献帝：复兴汉廷与增强曹操同时发生"]
+        XCTAssertTrue(chapter.exists); chapter.tap()
+        let boundary = reading.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "同时服务两个并不永远一致的主体")).firstMatch
+        XCTAssertTrue(boundary.waitForExistence(timeout: 5))
+        XCTAssertFalse(reading.staticTexts["从这里继续"].exists)
+        shot("v195-xun-yu-han-court-and-cao-cao", reading)
+        openChapterSources("han_xunyu_2", in: reading)
+        let source = reading.descendants(matching: .any)["source_v195_sanguozhi10"]
+        reach(source, in: reading, attempts: 8)
+        XCTAssertTrue(source.exists)
+        XCTAssertLessThanOrEqual(source.frame.maxY, reading.tabBars.firstMatch.frame.minY - 16)
+        shot("v195-xun-yu-source-and-safe-ending", reading)
+    }
+
 }

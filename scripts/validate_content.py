@@ -4395,3 +4395,48 @@ if d['version'] >= 168:
  overview_source=(R/'App/DynastyViews.swift').read_text()
  assert '从这里继续' not in overview_source and 'DynastyContinuationGuide' not in overview_source
  print('V168 PASS: late Eastern Han succession, state-pastor reform, palace violence, coalition finance, forced migration, knowledge loss and the imperial eastward return are linked without conflating Liu Yan 劉縯 with Liu Yan 劉焉')
+
+if d['version'] >= 169:
+ transition_people={'han_lijue','han_guosi','han_jiaxu','han_dongcheng','han_xunyu','han_xunyou','han_yuanshu','han_liubiao','han_zhangxiu','han_fushou'}
+ transition_sources={'v195_sanguozhi1','v195_sanguozhi6','v195_sanguozhi10','v195_houhanshu9','v195_houhanshu10b'}
+ assert transition_people<=people.keys() and transition_sources<=sources.keys()
+ assert all(people[pid]['dynasty']=='han' for pid in transition_people)
+ event_map={event['id']:event for event in d['events']}
+ transition_events={eid for eid in event_map if eid.startswith('v195_')}
+ assert len(transition_events)==25,(len(transition_events),'Han-Wei transition event count')
+ category_counts={category:sum(event_map[eid]['category']==category for eid in transition_events) for category in ['政治','军事','文化','经济','社会']}
+ assert category_counts=={'政治':5,'军事':5,'文化':5,'经济':5,'社会':5},category_counts
+ target_people=transition_people|{'han_caocao'}
+ target_articles={article['person']:article for article in d['articles'] if article['person'] in target_people}
+ assert target_articles.keys()==target_people
+ for person_id,article in target_articles.items():
+  chars=len(re.findall(r'[\u4e00-\u9fff]',''.join(section['text'] for section in article['sections'])))
+  assert len(article['sections'])==5 and chars>=590,(person_id,chars)
+  assert all(len(re.findall(r'[\u4e00-\u9fff]',section['text']))>=110 for section in article['sections']),(person_id,'thin section')
+  assert set(article['sources'])<=sources.keys() and set(article['sources'])&transition_sources
+  for section in article['sections']:
+   assert set(section['sources'])<=sources.keys()
+   assert set(section.get('events',[]))<=event_map.keys()
+   assert set(section.get('people',[]))<=people.keys()
+ for event_id in transition_events:
+  event=event_map[event_id]
+  assert len(re.findall(r'[\u4e00-\u9fff]',event['body']))>=65,(event_id,'body')
+  assert len(re.findall(r'[\u4e00-\u9fff]',event['impact']))>=65,(event_id,'impact')
+  assert set(event['people'])==set(event['peopleRoles']),(event_id,'person-role mismatch')
+  assert set(event['sources'])<=transition_sources and event['sources'],(event_id,'sources')
+ association_pairs={(item['from'],item['to']) for item in d['associations']}
+ assert {('han_xian','han_dongcheng'),('han_xian','han_fushou'),('han_caocao','han_xunyu'),('han_caocao','han_xunyou'),('han_caocao','han_jiaxu'),('han_liubiao','han_zhangxiu'),('han_zhangxiu','han_jiaxu'),('han_lijue','han_guosi')}<=association_pairs
+ context_map={context['person']:context for context in d['reignContexts']}
+ assert transition_people<=set(context_map['han_xian']['people'])
+ assert transition_events<=set(context_map['han_xian']['events'])
+ assert {event_map[event_id]['category'] for event_id in context_map['han_xian']['events']}=={'政治','军事','文化','经济','社会'}
+ corpus=json.dumps(list(target_articles.values())+[event_map[event_id] for event_id in transition_events],ensure_ascii=False)
+ for term in ['控制皇帝能提供封赏语言，不能自动把部曲联盟变成国家机器','迎献帝：复兴汉廷与增强曹操同时发生','官渡胜负来自情报、粮道与联盟裂缝','屯田既可能恢复耕作，也改变土地权属和人口自由','禅让以礼仪确认既成权力转移']:
+  assert term in corpus,('missing Han-Wei transition term',term)
+ for boundary in ['不能视作完整统计','不能当成逐字会议记录','不能把空食盒等后出细节当作法证结论','不能用现代病名倒推古代记录','不能用小说补齐空白']:
+  assert boundary in corpus,('missing Han-Wei evidence boundary',boundary)
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品不用|产品将|产品采用',corpus,re.I)
+ overview_source=(R/'App/DynastyViews.swift').read_text()
+ assert '从这里继续' not in overview_source and 'DynastyContinuationGuide' not in overview_source
+ assert 'DynastyOverviewBlock(title: "朝代总览", text: profile.overview)' in overview_source
+ print('V169 PASS: the 195-220 Han-Wei transition now links ten missing people, five balanced event dimensions, material administration, court coercion and evidence limits while every dynasty overview begins directly with its historical overview')
