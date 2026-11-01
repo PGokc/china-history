@@ -6291,4 +6291,51 @@ final class MingJiUITests: XCTestCase {
         shot("v200-haixi-deposition-evidence-boundary", deposition)
     }
 
+    @MainActor func testV201FeishuiDistributedCommandAndCaptiveBoundaries() throws {
+        let command = XCUIApplication()
+        command.launchArguments = ["--uitesting", "--ui-dynasty", "jin"]
+        command.launch()
+        XCTAssertTrue(command.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        XCTAssertFalse(command.staticTexts["从这里继续"].exists)
+        command.buttons["globalSearch"].tap()
+        let emperorSearch = command.searchFields.firstMatch
+        XCTAssertTrue(emperorSearch.waitForExistence(timeout: 5)); emperorSearch.tap(); emperorSearch.typeText("司马曜")
+        let emperor = command.buttons["search_person_jin_xiaowudi"]
+        XCTAssertTrue(emperor.waitForExistence(timeout: 5)); emperor.tap()
+        XCTAssertTrue(command.buttons["articleEntry"].waitForExistence(timeout: 5))
+        openArticle(in: command)
+        command.buttons["articleContents"].tap()
+        let commandChapter = command.buttons["淝水时皇帝在位但不在前线指挥"]
+        XCTAssertTrue(commandChapter.exists); commandChapter.tap()
+        let commandBoundary = command.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不能因此把战术决定写成皇帝亲自指挥")).firstMatch
+        XCTAssertTrue(commandBoundary.waitForExistence(timeout: 5))
+        shot("v201-xiaowu-distributed-command-boundary", command)
+        openChapterSources("jin_xiaowudi_4", in: command)
+        let emperorSource = command.descendants(matching: .any)["source_v201_js9"]
+        reach(emperorSource, in: command, attempts: 8)
+        XCTAssertTrue(emperorSource.exists)
+        XCTAssertLessThanOrEqual(emperorSource.frame.maxY, command.tabBars.firstMatch.frame.minY - 16)
+        shot("v201-xiaowu-source-and-safe-ending", command)
+        command.terminate()
+
+        let captive = XCUIApplication()
+        captive.launchArguments = ["--uitesting", "--ui-dynasty", "jin"]
+        captive.launch()
+        XCTAssertTrue(captive.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        captive.buttons["globalSearch"].tap()
+        let captiveSearch = captive.searchFields.firstMatch
+        XCTAssertTrue(captiveSearch.waitForExistence(timeout: 5)); captiveSearch.tap(); captiveSearch.typeText("朱序")
+        let defender = captive.buttons["search_person_jin_zhuxu"]
+        XCTAssertTrue(defender.waitForExistence(timeout: 5)); defender.tap()
+        XCTAssertTrue(captive.buttons["articleEntry"].waitForExistence(timeout: 5))
+        openArticle(in: captive)
+        captive.buttons["articleContents"].tap()
+        let captiveChapter = captive.buttons["被俘后任官不是简单自愿投降标签"]
+        XCTAssertTrue(captiveChapter.exists); captiveChapter.tap()
+        let captiveBoundary = captive.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "可能包含强制、求生和有限选择")).firstMatch
+        XCTAssertTrue(captiveBoundary.waitForExistence(timeout: 5))
+        XCTAssertFalse(captive.staticTexts["从这里继续"].exists)
+        shot("v201-zhu-xu-captive-service-boundary", captive)
+    }
+
 }

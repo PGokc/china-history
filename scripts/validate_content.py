@@ -4683,3 +4683,50 @@ if d['version'] >= 174:
  assert '从这里继续' not in overview_source and 'DynastyContinuationGuide' not in overview_source
  assert overview_source.count('DynastyOverviewBlock(title: "朝代总览", text: profile.overview)')==1
  print('V174 PASS: 329-372 Eastern Jin history now links disputed succession, repeated regency, regional armies, taxation, forced service, migration, historical writing, northern expeditions and the coercive 371 deposition without restoring the duplicate dynasty guide')
+
+if d['version'] >= 175:
+ feishui_new_people={'jin_huanchong','jin_wangtanzhi','jin_xieshi','jin_liulaozhi','jin_zhuxu','jin_furong','jin_huanyi','jin_murongchui'}
+ feishui_people=feishui_new_people|{'jin_xiaowudi','jin_xiean','jin_xiexuan','jin_fujian','jin_wangmeng'}
+ feishui_sources={f'v201_js{volume}' for volume in [9,74,75,79,81,84,86,113,114,123]}
+ assert feishui_new_people<=people.keys() and feishui_sources<=sources.keys()
+ assert all(people[pid]['dynasty']=='jin' for pid in feishui_people)
+ event_map={event['id']:event for event in d['events']}
+ feishui_events={eid for eid in event_map if eid.startswith('v201_')}
+ assert len(feishui_events)==30,(len(feishui_events),'372-383 Eastern Jin event count')
+ category_counts={category:sum(event_map[eid]['category']==category for eid in feishui_events) for category in ['政治','军事','文化','经济','社会']}
+ assert category_counts=={'政治':6,'军事':6,'文化':6,'经济':6,'社会':6},category_counts
+ target_articles={article['person']:article for article in d['articles'] if article['person'] in feishui_people}
+ assert target_articles.keys()==feishui_people
+ for person_id,article in target_articles.items():
+  chars=len(re.findall(r'[\u4e00-\u9fff]',''.join(section['text'] for section in article['sections'])))
+  minimum=750 if person_id=='jin_xiaowudi' else 520
+  assert len(article['sections'])==6 and chars>=minimum,(person_id,chars)
+  assert len({section['id'] for section in article['sections']})==6
+  assert all(len(re.findall(r'[\u4e00-\u9fff]',section['text']))>=65 for section in article['sections']),(person_id,'thin section')
+  assert set(article['sources'])<=sources.keys() and set(article['sources'])&feishui_sources
+  for section in article['sections']:
+   assert set(section['sources'])<=sources.keys() and set(section['sources'])&feishui_sources
+   assert set(section.get('events',[]))<=event_map.keys() and section.get('events')
+   assert set(section.get('people',[]))<=people.keys() and section.get('people')
+ for event_id in feishui_events:
+  event=event_map[event_id]
+  assert len(re.findall(r'[\u4e00-\u9fff]',event['body']))>=35,(event_id,'body')
+  assert len(re.findall(r'[\u4e00-\u9fff]',event['impact']))>=30,(event_id,'impact')
+  assert set(event['people'])==set(event['peopleRoles']),(event_id,'person-role mismatch')
+  assert set(event['sources'])<=sources.keys() and set(event['sources'])&feishui_sources,(event_id,'sources')
+ association_pairs={(item['from'],item['to']) for item in d['associations']}
+ assert {('jin_xiaowudi','jin_xiean'),('jin_xiaowudi','jin_huanchong'),('jin_xiean','jin_wangtanzhi'),('jin_xiean','jin_xieshi'),('jin_xiean','jin_xiexuan'),('jin_xiexuan','jin_liulaozhi'),('jin_xiexuan','jin_zhuxu'),('jin_xiexuan','jin_huanyi'),('jin_fujian','jin_furong'),('jin_fujian','jin_murongchui')}<=association_pairs
+ context_map={context['person']:context for context in d['reignContexts']}
+ assert context_map['jin_xiaowudi']['periods']==[{'label':'372—396','start':372,'end':396}]
+ assert feishui_new_people<=set(context_map['jin_xiaowudi']['people'])
+ assert {'v201_xiaowu_accession','v201_return_government','v201_xiangyang_siege','v201_huainan_war','v201_feishui','v201_threewu_famine','v201_tax_reform_376','v201_daoan_changan','v201_postfeishui_migration'}<=set(context_map['jin_xiaowudi']['events'])
+ corpus=json.dumps(list(target_articles.values())+[event_map[event_id] for event_id in feishui_events],ensure_ascii=False)
+ for term in ['桓温去世后桓氏军权被拆分承接','北府军不是到383年才突然出现','前秦灭前凉与代，控制北方大部','洛涧突击为淝水主战场打开通道','肥水退阵失控，晋军乘势反击','被俘者在新政权中任职可能包含强制、求生和有限选择']:
+  assert term in corpus,('missing 372-383 Eastern Jin term',term)
+ for boundary in ['“百万”是史书表现规模的数字，不能当逐人点名册','不能把天象当作皇帝行为的自然因果','不是摄像式战场记录','不能把沉默的数年自动解释为秘密潜伏','不足以证明他在战前故意制造失败','不能据一次吹笛复原完整曲目或现场对白']:
+  assert boundary in corpus,('missing 372-383 evidence boundary',boundary)
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品不用|产品将|产品采用|人物页面|页面采用|页面因此|对产品而言',corpus,re.I)
+ overview_source=(R/'App/DynastyViews.swift').read_text()
+ assert '从这里继续' not in overview_source and 'DynastyContinuationGuide' not in overview_source
+ assert overview_source.count('DynastyOverviewBlock(title: "朝代总览", text: profile.overview)')==1
+ print('V175 PASS: 372-383 Eastern Jin and Former Qin history now links court-military rebalancing, northern unification, Xiangyang and Huainan wars, Beifu formation, logistics, disaster relief, religious mobility and Feishui without reducing victory to a single hero or restoring the duplicate dynasty guide')
