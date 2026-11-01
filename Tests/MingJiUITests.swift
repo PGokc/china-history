@@ -6493,4 +6493,42 @@ final class MingJiUITests: XCTestCase {
         shot("v205-wudi-source-and-safe-ending", app)
     }
 
+    @MainActor func testV206EarlyLiangShowsEngineeringCostAndSources() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["--uitesting", "--ui-dynasty", "northern_southern"]
+        app.launch()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        app.buttons["dynasty_northern_southern"].tap()
+        let overview = app.descendants(matching: .any)["dynastyDetail_northern_southern"]
+        XCTAssertTrue(overview.waitForExistence(timeout: 5))
+        XCTAssertTrue(overview.staticTexts["朝代总览"].exists)
+        XCTAssertFalse(overview.staticTexts["从这里继续"].exists)
+        XCTAssertFalse(overview.buttons["dynastySequence_northern_southern"].exists)
+        XCTAssertFalse(overview.buttons["dynastyFamily_northern_southern"].exists)
+        XCTAssertFalse(overview.buttons["dynastyCollection_northern_southern"].exists)
+        shot("v206-overview-keeps-only-fixed-tab-navigation", app)
+
+        app.navigationBars.buttons.firstMatch.tap()
+        app.buttons["globalSearch"].tap()
+        let search = app.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("萧衍")
+        let emperor = app.buttons["search_person_ns_liang_wu"]
+        XCTAssertTrue(emperor.waitForExistence(timeout: 5)); emperor.tap()
+        XCTAssertTrue(app.buttons["articleEntry"].waitForExistence(timeout: 5))
+        openArticle(in: app)
+        app.buttons["articleContents"].tap()
+        let chapter = app.buttons["浮山堰暴露宏大工程的风险"]
+        XCTAssertTrue(chapter.exists); chapter.tap()
+        let cost = app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "死亡和下游灾害不能从军事奇谋中删去")).firstMatch
+        XCTAssertTrue(cost.waitForExistence(timeout: 5))
+        XCTAssertFalse(app.staticTexts["从这里继续"].exists)
+        shot("v206-fushan-dam-engineering-and-human-cost", app)
+        openChapterSources("ns_liang_wu_v206_4", in: app)
+        let source = app.descendants(matching: .any)["source_v206_ls2"]
+        reach(source, in: app, attempts: 8)
+        XCTAssertTrue(source.exists)
+        XCTAssertLessThanOrEqual(source.frame.maxY, app.tabBars.firstMatch.frame.minY - 16)
+        shot("v206-fushan-source-and-safe-ending", app)
+    }
+
 }

@@ -4826,3 +4826,36 @@ if d['version'] >= 179:
  assert '从这里继续' not in overview_source and 'DynastyContinuationGuide' not in overview_source
  assert overview_source.count('DynastyOverviewBlock(title: "朝代总览", text: profile.overview)')==1
  print('V179 PASS: 479-502 Southern Qi now connects registration, relief, Western Residence culture, repeated depositions, lineage purges, Northern Wei war and the Qi-Liang transition without restoring the duplicate dynasty guide')
+
+if d['version'] >= 180:
+ v180_people={'ns_liang_wu','ns_xiao_tong','ns_shen_yue','ns_fan_zhen','ns_tao_hongjing','ns_wei_rui','ns_wang_mao_liang','ns_cao_jingzong','ns_fan_yun','ns_zhou_she','ns_xu_mian','ns_he_tongzhi'}
+ v180_new_people={'ns_wang_mao_liang','ns_cao_jingzong','ns_fan_yun','ns_zhou_she','ns_xu_mian','ns_he_tongzhi'}
+ v180_sources={item['id'] for item in d['sources'] if item['id'].startswith('v206_')}
+ v180_events=[item for item in d['events'] if item['id'].startswith('v206_')]
+ assert len(v180_sources)==11 and v180_sources<=sources.keys()
+ assert len(v180_events)==30 and Counter(item['category'] for item in v180_events)=={'政治':6,'军事':6,'文化':6,'经济':6,'社会':6}
+ assert len({item['body'] for item in v180_events})==30 and len({item['impact'] for item in v180_events})==30
+ assert all(item.get('sortYear') is not None and set(item['people'])==set(item['peopleRoles']) and set(item['sources'])<=v180_sources for item in v180_events)
+ assert v180_new_people<=people.keys() and all(people[pid]['dynasty']=='northern_southern' for pid in v180_new_people)
+ target_articles={item['person']:item for item in d['articles'] if item['person'] in v180_people}
+ assert target_articles.keys()==v180_people
+ for pid,article in target_articles.items():
+  section_chars=[len(re.findall(r'[\u4e00-\u9fff]',section['text'])) for section in article['sections']]
+  assert len(article['sections'])==6 and sum(section_chars)>=(750 if pid=='ns_liang_wu' else 520),(pid,sum(section_chars))
+  assert min(section_chars)>=65,(pid,section_chars)
+  assert set(article['sources'])<=v180_sources and article['sources']
+  assert all(section['kind']=='史实与解读' and section['events'] and section['people'] and set(section['sources'])<=v180_sources for section in article['sections'])
+ context=next(item for item in d['reignContexts'] if item['person']=='ns_liang_wu')
+ assert v180_people-{'ns_liang_wu'}<=set(context['people']) and {item['id'] for item in v180_events}<=set(context['events'])
+ association_pairs={(item['from'],item['to']) for item in d['associations']}
+ assert all(('ns_liang_wu',pid) in association_pairs or (pid,'ns_liang_wu') in association_pairs for pid in v180_people-{'ns_liang_wu'})
+ corpus=json.dumps(list(target_articles.values())+v180_events+[item for item in d['sources'] if item['id'] in v180_sources],ensure_ascii=False)
+ for term in ['官署、档案和人事逐层转换','钟离胜利来自工程与协同','浮山堰役夫、疫病与水患','东宫藏书依靠抄写与校雠','形与神被解释为质与用','朝廷每有大事必咨询陶弘景']:
+  assert term in corpus,('missing early Liang term',term)
+ for boundary in ['诏令表达治理目标，不等同地方全部落实','不是现代点名统计','不把每一问都指定给某位真实对手','不应把军事、财政或人事决策都归入茅山','精确兵数和杀伤缺乏独立名册']:
+  assert boundary in corpus,('missing early Liang evidence boundary',boundary)
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品不用|产品将|产品采用|本产品|从产品|人物页面|页面采用|页面因此|让用户',corpus,re.I)
+ overview_source=(R/'App/DynastyViews.swift').read_text()
+ assert '从这里继续' not in overview_source and 'DynastyContinuationGuide' not in overview_source
+ assert overview_source.count('DynastyOverviewBlock(title: "朝代总览", text: profile.overview)')==1
+ print('V180 PASS: 502-527 early Liang now connects the new bureaucracy, schools, ritual compilation, Zhongli, Fushan dam, Eastern Palace learning, religious debate, relief and household burdens without restoring the duplicate dynasty guide')
