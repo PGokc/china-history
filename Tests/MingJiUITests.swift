@@ -5377,4 +5377,40 @@ final class MingJiUITests: XCTestCase {
         shot("v180-dujiangyan-sources-and-page-ending", app)
     }
 
+    @MainActor func testV181ShuihudiSeparatesLegalTextsFromLocalPractice() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["--uitesting", "--ui-dynasty", "qin"]
+        app.launch()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        reach(app.buttons["dynasty_qin"], in: app, attempts: 12)
+        XCTAssertTrue(app.buttons["dynasty_qin"].isHittable); app.buttons["dynasty_qin"].tap()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyDetail_qin"].waitForExistence(timeout: 5))
+        XCTAssertFalse(app.staticTexts["从这里继续"].exists)
+        XCTAssertEqual(app.tabBars.buttons.allElementsBoundByIndex.map(\.label), ["朝代", "帝序", "家族", "遗珍"])
+        shot("v181-qin-overview-without-duplicate-guide", app)
+
+        app.tabBars.buttons["遗珍"].tap()
+        XCTAssertTrue(app.descendants(matching: .any)["collectionPage_qin"].waitForExistence(timeout: 5))
+        app.buttons["collectionCategory_texts"].tap()
+        XCTAssertTrue(app.descendants(matching: .any)["collectionCategoryPage_texts"].waitForExistence(timeout: 5))
+        let slips = app.buttons["artifact_v48q_shuihudi"]
+        XCTAssertTrue(slips.waitForExistence(timeout: 5)); slips.tap()
+        let excavation = app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "一千一百五十五枚竹简")).firstMatch
+        XCTAssertTrue(excavation.waitForExistence(timeout: 5))
+        shot("v181-shuihudi-text-types-and-official-practice", app)
+
+        let boundary = app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "不能把整批简都笼统称为“秦法典”")).firstMatch
+        reach(boundary, in: app, attempts: 16)
+        XCTAssertTrue(boundary.exists)
+        reach(app.buttons["资料与出处"], in: app, attempts: 8)
+        XCTAssertTrue(app.buttons["资料与出处"].isHittable); app.buttons["资料与出处"].tap()
+        XCTAssertTrue(app.descendants(matching: .any)["source_v48q_hubei_slips"].waitForExistence(timeout: 5))
+        let finalSource = app.descendants(matching: .any)["source_v181_hubei_slips_catalog"]
+        reach(finalSource, in: app, attempts: 8)
+        for _ in 0..<3 { app.swipeUp() }
+        XCTAssertTrue(finalSource.isHittable)
+        XCTAssertLessThanOrEqual(finalSource.frame.maxY, app.tabBars.firstMatch.frame.minY - 16)
+        shot("v181-shuihudi-sources-and-page-ending", app)
+    }
+
 }

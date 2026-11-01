@@ -3805,3 +3805,32 @@ if d['version'] >= 154:
  assert len({section['text'] for topic in v180_topics.values() for section in topic['sections']})==15
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将|产品采用',corpus,re.I)
  print('V154 PASS: Wu Qi, Li Kui, Su Qin and Zhang Yi, Qu Yuan, and Dujiangyan now separate received biography, excavated evidence, institutions, textual formation and long-term maintenance')
+
+if d['version'] >= 155:
+ qin_object_ids={
+  'v48q_terracotta','v48q_chariots','v48q_stone_armor','v48q_shuihudi','v48q_liye',
+  'v48q_halfliang','v48q_weight','v48q_tiger_tally','v48q_double_edict'
+ }
+ v181_source_ids={item['id'] for item in d['sources'] if item['id'].startswith('v181_')}
+ object_map={item['id']:item for item in d['objects']}
+ assert len(v181_source_ids)==4 and v181_source_ids<=sources.keys()
+ assert qin_object_ids<=object_map.keys() and len(qin_object_ids)==9
+ for object_id in qin_object_ids:
+  item=object_map[object_id]
+  body_chars=len(re.findall(r'[\u4e00-\u9fff]',item['body']))
+  note_chars=len(re.findall(r'[\u4e00-\u9fff]',item['note']))
+  assert body_chars>=300 and note_chars>=110,(object_id,body_chars,note_chars)
+  assert item['body'].count('\n\n')>=2 and item['dynasties']==['qin']
+  assert len(item['sources'])>=2 and set(item['sources'])<=sources.keys()
+  assert set(item['people'])<=people.keys()
+ corpus=json.dumps([object_map[object_id] for object_id in qin_object_ids]+[sources[source_id] for source_id in v181_source_ids],ensure_ascii=False)
+ for term in ['生漆为底','服马','六百一十二片','一千一百五十五枚','三万八千余枚','重11.5克','重2053.5克','右在皇帝','阴文反书']:
+  assert term in corpus,('missing Qin material-history term',term)
+ for boundary in ['不是未经扰动的出土状态','不能直接证明秦军日常穿着','不能把整批简都笼统称为“秦法典”','不能代表所有郡县','不等于每枚实物恰好同重','不能据一器推定','不是秦代每次调兵的完整档案','不能把制度连续等同于二世朝政治稳定']:
+  assert boundary in corpus,('missing Qin evidence boundary',boundary)
+ overview=(R/'App/DynastyViews.swift').read_text()
+ assert '从这里继续' not in overview and 'dynastySequence_' not in overview and 'dynastyFamily_' not in overview and 'dynastyCollection_' not in overview
+ assert len({object_map[object_id]['body'] for object_id in qin_object_ids})==9
+ assert len({object_map[object_id]['note'] for object_id in qin_object_ids})==9
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将|产品采用',corpus,re.I)
+ print('V155 PASS: nine Qin army, archive, currency, measurement and command objects now carry three evidence layers, source boundaries and no duplicate dynasty-overview guide')
