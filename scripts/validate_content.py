@@ -3078,7 +3078,10 @@ if d['version'] >= 131:
 if d['version'] >= 132:
  v158_people=['q158_fuheng','q158_gaobin','q158_liutongxun','q158_chenhongmou','q158_sunjiagan','q158_bandi','q158_erongan','q158_zhaohui','q158_amursana','q158_dawaci','q158_burhan','q158_khoja_jahan']
  v158_events={item['id'] for item in d['events'] if item['id'].startswith('v158_')}
- v158_sources={item['id'] for item in d['sources'] if item['id'].startswith('v158_')}
+ # Early-Qianlong source IDs predate the later Han iteration that reused the
+ # release number; keep this legacy validator scoped to its own twelve sources.
+ v158_han_sources={'v158_shiji54','v158_shiji57','v158_shiji90','v158_shiji91','v158_shiji93','v158_shiji95','v158_nopss_village','v158_nopss_titles','v158_nopss_lu_tomb'}
+ v158_sources={item['id'] for item in d['sources'] if item['id'].startswith('v158_') and item['id'] not in v158_han_sources}
  v158_objects={item['id'] for item in d['objects'] if item['id'].startswith('v158_')}
  v158_object_map={item['id']:item for item in d['objects']}
  assert len(v158_people)==12 and len(v158_events)==28 and len(v158_sources)==12 and len(v158_objects)==4
@@ -3894,3 +3897,44 @@ if d['version'] >= 157:
  assert len({section['text'] for article in qin_articles.values() for section in article['sections']})==25
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品将|产品采用',corpus,re.I)
  print('V157 PASS: Wang Ben, Li Xin, Zhang Han, Wang Li and Zhao Tuo now carry five-layer readings, direct event links, family continuity and explicit evidence limits')
+
+if d['version'] >= 158:
+ han_person_ids={'han_caoshen','han_zhoubo','han_guanying','han_pengyue','han_yingbu','han_luwan'}
+ han_source_ids={'v158_shiji54','v158_shiji57','v158_shiji90','v158_shiji91','v158_shiji93','v158_shiji95','v158_nopss_village','v158_nopss_titles','v158_nopss_lu_tomb'}
+ assert han_person_ids<=people.keys() and han_source_ids<=sources.keys()
+ assert all(people[person_id]['dynasty']=='han' for person_id in han_person_ids)
+ han_articles={article['person']:article for article in d['articles'] if article['person'] in han_person_ids}
+ assert han_articles.keys()==han_person_ids
+ for person_id,article in han_articles.items():
+  chars=len(re.findall(r'[\u4e00-\u9fff]',''.join(section['text'] for section in article['sections'])))
+  assert len(article['sections'])==5 and chars>=500,(person_id,chars)
+  assert len({section['id'] for section in article['sections']})==5
+  assert len(article['sources'])>=2 and set(article['sources'])<=sources.keys()
+  for section in article['sections']:
+   assert len(re.findall(r'[\u4e00-\u9fff]',section['text']))>=95,(person_id,section['id'])
+   assert set(section['sources'])<=sources.keys()
+   assert set(section.get('events',[]))<={item['id'] for item in d['events']}
+   assert set(section.get('people',[]))<=people.keys()
+ han_event_ids={'v49h_gaozu_accession','v49h_gaozu_theme','v49h_hui_theme','v49h_houshao_theme','v49h_wen_accession','v49h_chuhan','v49h_baideng','v49h_rest'}
+ event_map={item['id']:item for item in d['events']}
+ assert han_event_ids<=event_map.keys()
+ for event_id in han_event_ids:
+  event=event_map[event_id]
+  assert len(re.findall(r'[\u4e00-\u9fff]',event['body']))>=80,(event_id,'body')
+  assert len(re.findall(r'[\u4e00-\u9fff]',event['impact']))>=55,(event_id,'impact')
+  assert len(event['sources'])>=2 and set(event['sources'])<=sources.keys()
+  assert set(event['people'])==set(event['peopleRoles']),(event_id,'person-role mismatch')
+ direct_links={person_id for event_id in han_event_ids for person_id in event_map[event_id]['people']}
+ assert han_person_ids<=direct_links
+ assert people['han_zhouyafu']['parent']=='han_zhoubo'
+ assert any(link['from']=='han_zhouyafu' and link['to']=='han_zhoubo' and link['kind']=='father' for link in d['familyLinks'])
+ corpus=json.dumps(list(han_articles.values())+[event_map[event_id] for event_id in han_event_ids]+[sources[source_id] for source_id in han_source_ids],ensure_ascii=False)
+ for term in ['诸侯国不只是皇子的封地','北军为何决定政变','骑兵不是一人创建','封梁王是联盟交换','恐惧、谋划与前196年起兵','陈豨之乱与双向通信']:
+  assert term in corpus,('missing early Han term',term)
+ for boundary in ['不能还原每场战斗的全部参战者与伤亡','不应虚构一套每项都能归于曹参的政策清单','不能归入父亲事迹','不宜擅加','不能将告发、审判和政治必要性合并成无争议事实','并非皇帝单方面恩赐','不能把战争只写成两人问答的宿命对决','因而对其动机应保持分层表述']:
+  assert boundary in corpus,('missing early Han evidence boundary',boundary)
+ assert len({section['text'] for article in han_articles.values() for section in article['sections']})==30
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品不用|产品将|产品采用',corpus,re.I)
+ overview_source=(R/'App/DynastyViews.swift').read_text()
+ assert '从这里继续' not in overview_source and 'DynastyContinuationGuide' not in overview_source
+ print('V158 PASS: the early Han founding coalition now has six five-layer biographies, eight rewritten events, family continuity and no duplicate dynasty-overview guide')

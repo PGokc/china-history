@@ -5502,4 +5502,48 @@ final class MingJiUITests: XCTestCase {
         shot("v183-zhao-tuo-sources-and-page-ending", lingnan)
     }
 
+    @MainActor func testV184DynastyOverviewAndEarlyHanCoalition() throws {
+        let overview = XCUIApplication()
+        overview.launchArguments = ["--uitesting", "--ui-dynasty", "han"]
+        overview.launch()
+        XCTAssertTrue(overview.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        reach(overview.buttons["dynasty_han"], in: overview, attempts: 12)
+        XCTAssertTrue(overview.buttons["dynasty_han"].isHittable); overview.buttons["dynasty_han"].tap()
+        XCTAssertTrue(overview.descendants(matching: .any)["dynastyDetail_han"].waitForExistence(timeout: 5))
+        XCTAssertTrue(overview.staticTexts["朝代总览"].exists)
+        XCTAssertFalse(overview.staticTexts["从这里继续"].exists)
+        XCTAssertFalse(overview.buttons["dynastySequence_han"].exists)
+        XCTAssertFalse(overview.buttons["dynastyFamily_han"].exists)
+        XCTAssertFalse(overview.buttons["dynastyCollection_han"].exists)
+        XCTAssertEqual(overview.tabBars.buttons.allElementsBoundByIndex.map(\.label), ["朝代", "帝序", "家族", "遗珍"])
+        shot("v184-han-overview-without-duplicate-guide", overview)
+        overview.terminate()
+
+        let reading = XCUIApplication()
+        reading.launchArguments = ["--uitesting", "--ui-dynasty", "han"]
+        reading.launch()
+        XCTAssertTrue(reading.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        reading.buttons["globalSearch"].tap()
+        let search = reading.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("曹参")
+        let result = reading.buttons["search_person_han_caoshen"]
+        XCTAssertTrue(result.waitForExistence(timeout: 5)); result.tap()
+        XCTAssertTrue(reading.buttons["articleEntry"].waitForExistence(timeout: 5))
+        openArticle(in: reading)
+        reading.buttons["articleContents"].tap()
+        XCTAssertTrue(reading.buttons["相齐不是入朝前的空白"].exists)
+        reading.buttons["相齐不是入朝前的空白"].tap()
+        let stateAdministration = reading.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "诸侯国不只是皇子的封地")).firstMatch
+        XCTAssertTrue(stateAdministration.waitForExistence(timeout: 5))
+        shot("v184-cao-shen-qi-administration", reading)
+        reach(reading.buttons["资料与出处"], in: reading, attempts: 18)
+        XCTAssertTrue(reading.buttons["资料与出处"].isHittable); reading.buttons["资料与出处"].tap()
+        let source = reading.descendants(matching: .any)["source_v158_shiji54"]
+        reach(source, in: reading, attempts: 8)
+        for _ in 0..<3 { reading.swipeUp() }
+        XCTAssertTrue(source.exists)
+        XCTAssertLessThanOrEqual(source.frame.maxY, reading.tabBars.firstMatch.frame.minY - 16)
+        shot("v184-cao-shen-sources-and-page-ending", reading)
+    }
+
 }
