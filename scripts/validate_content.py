@@ -4799,3 +4799,30 @@ if d['version'] >= 178:
  overview_source=(R/'App/DynastyViews.swift').read_text()
  assert '从这里继续' not in overview_source and 'DynastyContinuationGuide' not in overview_source
  print('V178 PASS: 453-479 late Liu Song now links centralization, rival emperors, civil-war logistics, Qing-Xu losses, household burdens, military strongholds and the Song-Qi transition without restoring the duplicate dynasty guide')
+
+if d['version'] >= 179:
+ v179_people={'ns_qi_wu','ns_qi_yulin','ns_qi_hailing','ns_qi_ming','ns_qi_donghun','ns_qi_he','ns_xiao_ziliang','ns_dai_faxing','ns_xue_andu','ns_yuan_can','ns_chu_yuan','ns_wang_jian_qi'}
+ v179_emperors={'ns_qi_wu','ns_qi_yulin','ns_qi_hailing','ns_qi_ming','ns_qi_donghun','ns_qi_he'}
+ v179_sources={item['id'] for item in d['sources'] if item['id'].startswith('v205_')}
+ v179_events=[item for item in d['events'] if item['id'].startswith('v205_')]
+ assert len(v179_sources)==12 and v179_sources<=sources.keys()
+ assert len(v179_events)==30 and Counter(item['category'] for item in v179_events)=={'政治':6,'军事':6,'文化':6,'经济':6,'社会':6}
+ assert len({item['body'] for item in v179_events})==30 and len({item['impact'] for item in v179_events})==30
+ assert all(set(item['people'])<=people.keys() and set(item['sources'])<=v179_sources for item in v179_events)
+ target_articles={item['person']:item for item in d['articles'] if item['person'] in v179_people}
+ assert target_articles.keys()==v179_people
+ for pid,article in target_articles.items():
+  chars=len(re.findall(r'[\u4e00-\u9fff]',''.join(section['text'] for section in article['sections'])))
+  assert len(article['sections'])==6 and chars>=(750 if pid in v179_emperors else 520),(pid,chars)
+  assert set(article['sources'])<=v179_sources and article['sources']
+  assert all(section['events'] and section['people'] and set(section['sources'])<=v179_sources for section in article['sections'])
+ corpus=json.dumps(list(target_articles.values())+v179_events+[item for item in d['sources'] if item['id'] in v179_sources],ensure_ascii=False)
+ for term in ['检籍是高帝遗政而非武帝新创','皇太孙制度解决了父亲早逝后的名分','寿阳居民并不会随刺史表态整齐改变身份','和帝名义连接了齐朝反对力量','礼遇条款存在，却没有独立力量保证退位者安全']:
+  assert term in corpus,('missing Southern Qi term',term)
+ for boundary in ['不足以逐项复原全部财政规模','不能用文学鲜明度替代日期、官职和物资记录','不宜作为现代精确统计','不能充当自由选择的心理记录']:
+  assert boundary in corpus,('missing Southern Qi evidence boundary',boundary)
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品不用|产品将|产品采用|本产品|从产品|人物页面|页面采用|页面因此|让用户',corpus,re.I)
+ overview_source=(R/'App/DynastyViews.swift').read_text()
+ assert '从这里继续' not in overview_source and 'DynastyContinuationGuide' not in overview_source
+ assert overview_source.count('DynastyOverviewBlock(title: "朝代总览", text: profile.overview)')==1
+ print('V179 PASS: 479-502 Southern Qi now connects registration, relief, Western Residence culture, repeated depositions, lineage purges, Northern Wei war and the Qi-Liang transition without restoring the duplicate dynasty guide')
