@@ -1292,7 +1292,10 @@ if d['version'] >= 52:
  assert contexts['han_zhi']['people']==['han_liangna','han_liangji'] and 'han_liangna' in contexts['han_huan']['people']
  assert any(x['from']=='han_liangna' and x['to']=='han_shun' and x['kind']=='spouse' for x in d['familyLinks'])
  assert all('han_zhi' not in {x['from'],x['to']} or 'han_chenfan' not in {x['from'],x['to']} for x in d['associations'])
- assert all(set(s.get('events',[]))=={'v49h_huan_theme','v49h_partisan'} for s in articles['han_chenfan']['sections'])
+ if d['version'] < 167:
+  assert all(set(s.get('events',[]))=={'v49h_huan_theme','v49h_partisan'} for s in articles['han_chenfan']['sections'])
+ else:
+  assert {'v49h_huan_theme','v49h_partisan'}<=set(e for s in articles['han_chenfan']['sections'] for e in s.get('events',[]))
  corpus=json.dumps([people['han_liangna'],liang_article,events['v52h_liang_dowager_regency']],ensure_ascii=False)
  assert all(term in corpus for term in ['皇太后临朝','连续拥立','归政','制度权力','不能混成一个行动主体'])
  assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成',corpus)
@@ -4300,3 +4303,50 @@ if d['version'] >= 166:
  overview_source=(R/'App/DynastyViews.swift').read_text()
  assert '从这里继续' not in overview_source and 'DynastyContinuationGuide' not in overview_source
  print('V166 PASS: He, Shang, An and Shun reigns now connect regency, frontier war, palace access, disaster relief, fiscal strain, succession and evidence boundaries without restoring the duplicate dynasty guide')
+
+if d['version'] >= 167:
+ late_han_people={'han_chong','han_zhi','han_huan','han_ling','han_liangji','han_chenfan','han_douwu','han_liying','han_zhangrang','han_huangfusong'}
+ late_han_sources={'v193_houhanshu7','v193_houhanshu8','v193_houhanshu34','v193_houhanshu66','v193_houhanshu67','v193_houhanshu69','v193_houhanshu71','v193_houhanshu78'}
+ rewritten_events={'v49h_chong_accession','v49h_chong_theme','v49h_zhi_accession','v49h_zhi_theme','v49h_huan_accession','v49h_huan_theme','v49h_ling_accession','v49h_ling_theme','v49h_partisan','v49h_epidemics','v49h_yellow','v52h_liang_dowager_regency','v96h_huan_students','v96h_ling_hongdu','v101h_huan_qiang'}
+ new_events={'v193_chong_relief','v193_chong_succession','v193_zhi_death','v193_zhi_disaster','v193_huan_selection','v193_huan_return','v193_huan_liang_fall','v193_huan_relief','v193_liang_extraction','v193_first_proscription_case','v193_ling_dou_coup','v193_ling_second_proscription','v193_ling_stone_classics','v193_ling_office_sale','v193_ling_palace_tax','v193_ling_xiyuan','v193_dou_entry','v193_liying_border','v193_zhangrang_network','v193_huangfu_mobilization','v193_huangfu_campaign'}
+ assert late_han_people<=people.keys() and late_han_sources<=sources.keys()
+ event_map={event['id']:event for event in d['events']}
+ assert rewritten_events|new_events<=event_map.keys()
+ target_articles={article['person']:article for article in d['articles'] if article['person'] in late_han_people}
+ assert target_articles.keys()==late_han_people
+ for person_id,article in target_articles.items():
+  chars=sum(len(re.findall(r'[\u4e00-\u9fff]',section['text'])) for section in article['sections'])
+  assert len(article['sections'])==5 and chars>=600,(person_id,chars)
+  assert len({section['id'] for section in article['sections']})==5
+  assert all(len(re.findall(r'[\u4e00-\u9fff]',section['text']))>=100 for section in article['sections']),(person_id,'thin section')
+  assert set(article['sources'])<=sources.keys() and set(article['sources'])&late_han_sources
+  for section in article['sections']:
+   assert set(section['sources'])<=sources.keys()
+   assert set(section.get('events',[]))<=event_map.keys()
+   assert set(section.get('people',[]))<=people.keys()
+ for event_id in rewritten_events|new_events:
+  event=event_map[event_id]
+  assert len(re.findall(r'[\u4e00-\u9fff]',event['body']))>=90,(event_id,'body')
+  assert len(re.findall(r'[\u4e00-\u9fff]',event['impact']))>=70,(event_id,'impact')
+  assert set(event['people'])==set(event['peopleRoles']),(event_id,'person-role mismatch')
+  assert set(event['sources'])<=sources.keys()
+ association_pairs={(item['from'],item['to']) for item in d['associations']}
+ assert {('han_huan','han_liangji'),('han_huan','han_liying'),('han_huan','han_douwu'),('han_ling','han_douwu'),('han_ling','han_chenfan'),('han_ling','han_liying'),('han_ling','han_zhangrang'),('han_ling','han_huangfusong'),('han_douwu','han_chenfan'),('han_liying','han_chenfan'),('han_zhangrang','han_liying'),('han_huangfusong','han_zhangjue')}<=association_pairs
+ context_map={context['person']:context for context in d['reignContexts']}
+ assert {'v193_huan_return','v193_huan_liang_fall','v193_first_proscription_case'}<=set(context_map['han_huan']['events'])
+ assert {'v193_ling_dou_coup','v193_ling_second_proscription','v193_ling_office_sale','v193_huangfu_campaign','v193_ling_palace_tax'}<=set(context_map['han_ling']['events'])
+ assert {'han_douwu','han_chenfan','han_liying','han_zhangrang','han_huangfusong'}<=set(context_map['han_ling']['people'])
+ for person_id in ['han_huan','han_ling']:
+  assert {event_map[event_id]['category'] for event_id in context_map[person_id]['events']}=={'政治','军事','文化','经济','社会'}
+ assert 'han_zhangrang' not in event_map['v193_huan_liang_fall']['people']
+ assert 'han_zhangrang' not in event_map['v193_ling_dou_coup']['people']
+ relevant_associations=[item for item in d['associations'] if item['from'] in late_han_people or item['to'] in late_han_people]
+ corpus=json.dumps([people[person_id] for person_id in late_han_people]+list(target_articles.values())+[event_map[event_id] for event_id in rewritten_events|new_events]+relevant_associations,ensure_ascii=False)
+ for term in ['两岁即位，不等于两岁执政','“跋扈将军”为什么流传下来','159年宫中密谋如何成功','西邸卖官为何不仅是道德丑闻','八十余人入宫不是和平请愿','一次路旁迎拜如何制造权力印象','长社、广宗与分区战争']:
+  assert term in corpus,('missing late Han term',term)
+ for boundary in ['不能当作现场录音','无法像现代案件一样复验','不能把所有宦官视作单一集团','不能依据文学中的“家家有僵尸”推算全帝国精确死亡率','不是精确人口统计','不能证明每次任官都按同一方式运行']:
+  assert boundary in corpus,('missing late Han evidence boundary',boundary)
+ assert not re.search(r'han_[a-z0-9_]+所代表|关系按同时期职务|本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善',corpus,re.I)
+ overview_source=(R/'App/DynastyViews.swift').read_text()
+ assert '从这里继续' not in overview_source and 'DynastyContinuationGuide' not in overview_source
+ print('V167 PASS: Chong, Zhi, Huan and Ling reigns now connect regency, succession, palace force, partisan bans, fiscal extraction, public health, knowledge institutions and regional militarization with explicit evidence boundaries')

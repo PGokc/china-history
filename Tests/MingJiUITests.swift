@@ -5889,4 +5889,51 @@ final class MingJiUITests: XCTestCase {
         shot("v192-sun-cheng-palace-access-and-violence", palace)
     }
 
+    @MainActor func testV193LateHanPalaceFinanceAndEvidenceBoundaries() throws {
+        let regency = XCUIApplication()
+        regency.launchArguments = ["--uitesting", "--ui-dynasty", "han"]
+        regency.launch()
+        XCTAssertTrue(regency.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        XCTAssertFalse(regency.staticTexts["从这里继续"].exists)
+        regency.buttons["globalSearch"].tap()
+        let search = regency.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("窦武")
+        let douWu = regency.buttons["search_person_han_douwu"]
+        XCTAssertTrue(douWu.waitForExistence(timeout: 5)); douWu.tap()
+        XCTAssertTrue(regency.buttons["articleEntry"].waitForExistence(timeout: 5))
+        openArticle(in: regency)
+        regency.buttons["articleContents"].tap()
+        let coup = regency.buttons["泄密之后，诏令与军队倒向谁"]
+        XCTAssertTrue(coup.exists); coup.tap()
+        let accessBoundary = regency.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "没有一条天然服从“正义”的军队")).firstMatch
+        XCTAssertTrue(accessBoundary.waitForExistence(timeout: 5))
+        shot("v193-dou-wu-palace-command-and-army", regency)
+        openChapterSources("han_douwu_4", in: regency)
+        let source = regency.descendants(matching: .any)["source_v193_houhanshu69"]
+        reach(source, in: regency, attempts: 8)
+        XCTAssertTrue(source.exists)
+        XCTAssertLessThanOrEqual(source.frame.maxY, regency.tabBars.firstMatch.frame.minY - 16)
+        shot("v193-dou-wu-primary-source-and-safe-ending", regency)
+        regency.terminate()
+
+        let finance = XCUIApplication()
+        finance.launchArguments = ["--uitesting", "--ui-dynasty", "han"]
+        finance.launch()
+        XCTAssertTrue(finance.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        finance.buttons["globalSearch"].tap()
+        let financeSearch = finance.searchFields.firstMatch
+        XCTAssertTrue(financeSearch.waitForExistence(timeout: 5)); financeSearch.tap(); financeSearch.typeText("汉灵帝")
+        let ling = finance.buttons["search_person_han_ling"]
+        XCTAssertTrue(ling.waitForExistence(timeout: 5)); ling.tap()
+        XCTAssertTrue(finance.buttons["articleEntry"].waitForExistence(timeout: 5))
+        openArticle(in: finance)
+        finance.buttons["articleContents"].tap()
+        let officeSale = finance.buttons["西邸卖官为何不仅是道德丑闻"]
+        XCTAssertTrue(officeSale.exists); officeSale.tap()
+        let fiscalMechanism = finance.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "地方百姓承担制度外溢")).firstMatch
+        XCTAssertTrue(fiscalMechanism.waitForExistence(timeout: 5))
+        XCTAssertFalse(finance.staticTexts["从这里继续"].exists)
+        shot("v193-ling-office-sale-and-local-cost", finance)
+    }
+
 }
