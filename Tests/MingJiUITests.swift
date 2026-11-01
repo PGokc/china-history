@@ -6420,4 +6420,39 @@ final class MingJiUITests: XCTestCase {
         shot("v203-wendi-source-and-safe-ending", app)
     }
 
+    @MainActor func testV204LateLiuSongShowsRivalCourtsAndEvidenceBoundary() throws {
+        let app = XCUIApplication()
+        app.launchArguments = ["--uitesting", "--ui-dynasty", "northern_southern"]
+        app.launch()
+        XCTAssertTrue(app.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        app.buttons["dynasty_northern_southern"].tap()
+        let overview = app.descendants(matching: .any)["dynastyDetail_northern_southern"]
+        XCTAssertTrue(overview.waitForExistence(timeout: 5))
+        XCTAssertTrue(overview.staticTexts["朝代总览"].exists)
+        XCTAssertFalse(overview.staticTexts["从这里继续"].exists)
+        shot("v204-overview-keeps-four-tab-navigation-only", app)
+
+        app.navigationBars.buttons.firstMatch.tap()
+        app.buttons["globalSearch"].tap()
+        let search = app.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("刘彧")
+        let emperor = app.buttons["search_person_ns_song_ming"]
+        XCTAssertTrue(emperor.waitForExistence(timeout: 5)); emperor.tap()
+        XCTAssertTrue(app.buttons["articleEntry"].waitForExistence(timeout: 5))
+        openArticle(in: app)
+        app.buttons["articleContents"].tap()
+        let chapter = app.buttons["建康拥立不等于全国承认"]
+        XCTAssertTrue(chapter.exists); chapter.tap()
+        let parallel = app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "全国性内战")).firstMatch
+        XCTAssertTrue(parallel.waitForExistence(timeout: 5))
+        XCTAssertFalse(app.staticTexts["从这里继续"].exists)
+        shot("v204-mingdi-rival-courts-not-local-rebellion", app)
+        openChapterSources("ns_song_ming_v204_1", in: app)
+        let source = app.descendants(matching: .any)["source_v204_ss8"]
+        reach(source, in: app, attempts: 8)
+        XCTAssertTrue(source.exists)
+        XCTAssertLessThanOrEqual(source.frame.maxY, app.tabBars.firstMatch.frame.minY - 16)
+        shot("v204-mingdi-source-and-safe-ending", app)
+    }
+
 }
