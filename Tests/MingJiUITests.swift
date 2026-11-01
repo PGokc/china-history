@@ -5936,4 +5936,51 @@ final class MingJiUITests: XCTestCase {
         shot("v193-ling-office-sale-and-local-cost", finance)
     }
 
+    @MainActor func testV194LateHanStatePastorsAndImperialReturn() throws {
+        let state = XCUIApplication()
+        state.launchArguments = ["--uitesting", "--ui-dynasty", "han"]
+        state.launch()
+        XCTAssertTrue(state.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        XCTAssertFalse(state.staticTexts["从这里继续"].exists)
+        state.buttons["globalSearch"].tap()
+        let search = state.searchFields.firstMatch
+        XCTAssertTrue(search.waitForExistence(timeout: 5)); search.tap(); search.typeText("刘焉")
+        let liuYan = state.buttons["search_person_han_liuyan_yizhou"]
+        XCTAssertTrue(liuYan.waitForExistence(timeout: 5)); liuYan.tap()
+        XCTAssertTrue(state.buttons["articleEntry"].waitForExistence(timeout: 5))
+        openArticle(in: state)
+        state.buttons["articleContents"].tap()
+        let motive = state.buttons["列传没有隐藏其避乱动机"]
+        XCTAssertTrue(motive.exists); motive.tap()
+        let mixedMotive = state.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "动机混合不自动否定制度问题")).firstMatch
+        XCTAssertTrue(mixedMotive.waitForExistence(timeout: 5))
+        shot("v194-liu-yan-state-pastor-and-motive-boundary", state)
+        openChapterSources("han_liuyan_yizhou_3", in: state)
+        let source = state.descendants(matching: .any)["source_v194_houhanshu75"]
+        reach(source, in: state, attempts: 8)
+        XCTAssertTrue(source.exists)
+        XCTAssertLessThanOrEqual(source.frame.maxY, state.tabBars.firstMatch.frame.minY - 16)
+        shot("v194-liu-yan-source-and-safe-ending", state)
+        state.terminate()
+
+        let returnJourney = XCUIApplication()
+        returnJourney.launchArguments = ["--uitesting", "--ui-dynasty", "han"]
+        returnJourney.launch()
+        XCTAssertTrue(returnJourney.descendants(matching: .any)["dynastyPage"].waitForExistence(timeout: 10))
+        returnJourney.buttons["globalSearch"].tap()
+        let returnSearch = returnJourney.searchFields.firstMatch
+        XCTAssertTrue(returnSearch.waitForExistence(timeout: 5)); returnSearch.tap(); returnSearch.typeText("汉献帝")
+        let xian = returnJourney.buttons["search_person_han_xian"]
+        XCTAssertTrue(xian.waitForExistence(timeout: 5)); xian.tap()
+        XCTAssertTrue(returnJourney.buttons["articleEntry"].waitForExistence(timeout: 5))
+        openArticle(in: returnJourney)
+        returnJourney.buttons["articleContents"].tap()
+        let eastward = returnJourney.buttons["东归把名义中央的贫困暴露出来"]
+        XCTAssertTrue(eastward.exists); eastward.tap()
+        let materialLimit = returnJourney.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "官员饥饿、宫室残破")).firstMatch
+        XCTAssertTrue(materialLimit.waitForExistence(timeout: 5))
+        XCTAssertFalse(returnJourney.staticTexts["从这里继续"].exists)
+        shot("v194-xian-eastward-return-and-material-state", returnJourney)
+    }
+
 }

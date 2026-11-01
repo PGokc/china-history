@@ -4350,3 +4350,48 @@ if d['version'] >= 167:
  overview_source=(R/'App/DynastyViews.swift').read_text()
  assert '从这里继续' not in overview_source and 'DynastyContinuationGuide' not in overview_source
  print('V167 PASS: Chong, Zhi, Huan and Ling reigns now connect regency, succession, palace force, partisan bans, fiscal extraction, public health, knowledge institutions and regional militarization with explicit evidence boundaries')
+
+if d['version'] >= 168:
+ late_people={'han_shao','han_xian','han_hejin','han_dongzhuo','han_luzhi','han_caiyong','han_liuyan_yizhou','han_yuanshao','han_wangyun','han_lubu'}
+ new_people={'han_luzhi','han_caiyong','han_liuyan_yizhou','han_yuanshao','han_wangyun','han_lubu'}
+ late_sources={'v194_houhanshu9','v194_houhanshu10b','v194_houhanshu60b','v194_houhanshu64','v194_houhanshu66','v194_houhanshu69','v194_houhanshu72','v194_houhanshu74a','v194_houhanshu75'}
+ assert new_people<=people.keys() and late_sources<=sources.keys()
+ assert people['han_liuyan']['name']=='刘縯' and people['han_liuyan_yizhou']['name']=='刘焉'
+ assert people['han_liuyan']['call']=='刘伯升、齐武王' and people['han_liuyan_yizhou']['call']=='益州牧'
+ event_map={event['id']:event for event in d['events']}
+ late_events={eid for eid in event_map if eid.startswith('v194_')}
+ assert len(late_events)==30,(len(late_events),'late-Han event count')
+ category_counts={category:sum(event_map[eid]['category']==category for eid in late_events) for category in ['政治','军事','文化','经济','社会']}
+ assert all(count>=5 for count in category_counts.values()),category_counts
+ late_articles={article['person']:article for article in d['articles'] if article['person'] in late_people}
+ assert late_articles.keys()==late_people
+ for person_id,article in late_articles.items():
+  chars=len(re.findall(r'[\u4e00-\u9fff]',''.join(section['text'] for section in article['sections'])))
+  floor=1000 if person_id in {'han_shao','han_xian'} else 700
+  assert len(article['sections'])==5 and chars>=floor,(person_id,chars)
+  assert all(len(re.findall(r'[\u4e00-\u9fff]',section['text']))>=135 for section in article['sections']),(person_id,'thin section')
+  assert len(article['sources'])>=1 and set(article['sources'])<=sources.keys()
+  for section in article['sections']:
+   assert set(section['sources'])<=sources.keys()
+   assert set(section.get('events',[]))<=event_map.keys()
+   assert set(section.get('people',[]))<=people.keys()
+ for event_id in late_events:
+  event=event_map[event_id]
+  assert len(re.findall(r'[\u4e00-\u9fff]',event['body']))>=75,(event_id,'body')
+  assert len(re.findall(r'[\u4e00-\u9fff]',event['impact']))>=65,(event_id,'impact')
+  assert set(event['people'])==set(event['peopleRoles']),(event_id,'person-role mismatch')
+  assert set(event['sources'])<=sources.keys() and event['sources'],(event_id,'sources')
+ association_pairs={(item['from'],item['to']) for item in d['associations']}
+ assert {('han_shao','han_hejin'),('han_shao','han_dongzhuo'),('han_xian','han_dongzhuo'),('han_hejin','han_yuanshao'),('han_hejin','han_luzhi'),('han_dongzhuo','han_lubu'),('han_wangyun','han_lubu'),('han_caiyong','han_wangyun'),('han_liuyan_yizhou','han_ling')}<=association_pairs
+ context_map={context['person']:context for context in d['reignContexts']}
+ assert {'v194_succession_189','v194_summon_armies','v194_palace_massacre','v194_deposition'}<=set(context_map['han_shao']['events'])
+ assert {'v194_forced_move','v194_small_coin','v194_wangyun_coup','v194_changan_fall','v194_eastward_return'}<=set(context_map['han_xian']['events'])
+ corpus=json.dumps(list(late_articles.values())+[event_map[event_id] for event_id in late_events],ensure_ascii=False)
+ for term in ['外军入京','身份误杀','州牧改制','铸小钱','知识也会死于清算','联盟有盟主，却没有共同国家机器','道德正确不等于治理充分']:
+  assert term in corpus,('missing late-Han term',term)
+ for boundary in ['不能把所有地方武装都称为黄巾余党','不能虚构精确人数','不宜当作完整伤亡统计','不能把它等同现代学校建制','后来的争霸结局不可倒推']:
+  assert boundary in corpus or boundary in json.dumps([sources[sid] for sid in late_sources],ensure_ascii=False),('missing late-Han evidence boundary',boundary)
+ assert not re.search(r'本轮|补充内容|数据缺口|高标准|验收线|开发进度|AI生成|fallback|占位|正在完善|产品不用|产品将|产品采用',corpus,re.I)
+ overview_source=(R/'App/DynastyViews.swift').read_text()
+ assert '从这里继续' not in overview_source and 'DynastyContinuationGuide' not in overview_source
+ print('V168 PASS: late Eastern Han succession, state-pastor reform, palace violence, coalition finance, forced migration, knowledge loss and the imperial eastward return are linked without conflating Liu Yan 劉縯 with Liu Yan 劉焉')
